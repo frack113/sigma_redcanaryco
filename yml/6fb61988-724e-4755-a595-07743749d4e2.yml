@@ -1,0 +1,8 @@
+guid: 6fb61988-724e-4755-a595-07743749d4e2
+name: Launchctl
+tactic:
+  - execution
+technique:
+  - T1569.001
+sigma: false
+sigma_rule: []

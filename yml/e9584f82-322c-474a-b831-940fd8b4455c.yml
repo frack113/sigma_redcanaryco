@@ -1,0 +1,8 @@
+guid: e9584f82-322c-474a-b831-940fd8b4455c
+name: GPP Passwords (Get-GPPPassword)
+tactic:
+  - credential-access
+technique:
+  - T1552.006
+sigma: false
+sigma_rule: []

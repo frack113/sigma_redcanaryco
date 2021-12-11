@@ -1,0 +1,10 @@
+guid: 435057fb-74b1-410e-9403-d81baf194f75
+name: Cron - Replace crontab with referenced file
+tactic:
+  - privilege-escalation
+  - persistence
+  - execution
+technique:
+  - T1053.003
+sigma: false
+sigma_rule: []

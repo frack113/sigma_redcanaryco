@@ -1,0 +1,8 @@
+guid: 1f454dd6-e134-44df-bebb-67de70fb6cd8
+name: Basic Permission Groups Discovery Windows (Local)
+tactic:
+  - discovery
+technique:
+  - T1069.001
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: 0330a5d2-a45a-4272-a9ee-e364411c4b18
+name: Maldoc choice flags command execution
+tactic:
+  - execution
+technique:
+  - T1204.002
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: cddb9098-3b47-4e01-9d3b-6f5f323288a9
+name: Mac Hidden file
+tactic:
+  - defense-evasion
+technique:
+  - T1564.001
+sigma: false
+sigma_rule: []

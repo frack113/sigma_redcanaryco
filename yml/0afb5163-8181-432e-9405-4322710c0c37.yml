@@ -1,0 +1,8 @@
+guid: 0afb5163-8181-432e-9405-4322710c0c37
+name: Elevated group enumeration using net group (Domain)
+tactic:
+  - discovery
+technique:
+  - T1069.002
+sigma: false
+sigma_rule: []

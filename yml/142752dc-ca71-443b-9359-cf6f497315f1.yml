@@ -1,0 +1,8 @@
+guid: 142752dc-ca71-443b-9359-cf6f497315f1
+name: Encrypt files using openssl (Linux)
+tactic:
+  - impact
+technique:
+  - T1486
+sigma: false
+sigma_rule: []

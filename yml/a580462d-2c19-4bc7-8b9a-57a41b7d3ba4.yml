@@ -1,0 +1,8 @@
+guid: a580462d-2c19-4bc7-8b9a-57a41b7d3ba4
+name: Permission Groups Discovery PowerShell (Local)
+tactic:
+  - discovery
+technique:
+  - T1069.001
+sigma: false
+sigma_rule: []

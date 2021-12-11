@@ -1,0 +1,8 @@
+guid: 0fd48ef7-d890-4e93-a533-f7dedd5191d3
+name: WMI Reconnaissance List Remote Services
+tactic:
+  - execution
+technique:
+  - T1047
+sigma: false
+sigma_rule: []

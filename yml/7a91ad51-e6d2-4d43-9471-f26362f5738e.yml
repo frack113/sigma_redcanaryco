@@ -1,0 +1,8 @@
+guid: 7a91ad51-e6d2-4d43-9471-f26362f5738e
+name: Install Outlook Home Page Persistence
+tactic:
+  - persistence
+technique:
+  - T1137.004
+sigma: false
+sigma_rule: []

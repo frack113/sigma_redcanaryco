@@ -1,0 +1,8 @@
+guid: 811b3e76-c41b-430c-ac0d-e2380bfaa164
+name: Unload Sysmon Filter Driver
+tactic:
+  - defense-evasion
+technique:
+  - T1562.001
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: c89becbe-1758-4e7d-a0f4-97d2188a23e3
+name: Dump credentials from Windows Credential Manager With PowerShell [windows Credentials]
+tactic:
+  - credential-access
+technique:
+  - T1555
+sigma: false
+sigma_rule: []

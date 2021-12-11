@@ -1,0 +1,8 @@
+guid: afedc8c4-038c-4d82-b3e5-623a95f8a612
+name: Disable Microsoft Defender Firewall via Registry
+tactic:
+  - defense-evasion
+technique:
+  - T1562.004
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: 8faff437-a114-4547-9a60-749652a03df6
+name: Extract Memory via VBA
+tactic:
+  - execution
+technique:
+  - T1059.005
+sigma: false
+sigma_rule: []

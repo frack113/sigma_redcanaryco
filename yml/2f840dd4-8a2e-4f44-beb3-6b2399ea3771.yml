@@ -1,0 +1,8 @@
+guid: 2f840dd4-8a2e-4f44-beb3-6b2399ea3771
+name: Changing RDP Port to Non Standard Port via Powershell
+tactic:
+  - lateral-movement
+technique:
+  - T1021.001
+sigma: false
+sigma_rule: []

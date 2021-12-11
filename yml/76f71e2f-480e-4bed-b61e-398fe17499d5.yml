@@ -1,0 +1,8 @@
+guid: 76f71e2f-480e-4bed-b61e-398fe17499d5
+name: List Google Chrome / Edge Chromium Bookmarks on Windows with command prompt
+tactic:
+  - discovery
+technique:
+  - T1217
+sigma: false
+sigma_rule: []

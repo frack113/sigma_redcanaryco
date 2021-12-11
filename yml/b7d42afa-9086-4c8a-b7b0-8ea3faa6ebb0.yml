@@ -1,0 +1,10 @@
+guid: b7d42afa-9086-4c8a-b7b0-8ea3faa6ebb0
+name: Cron - Add script to all cron subfolders
+tactic:
+  - privilege-escalation
+  - persistence
+  - execution
+technique:
+  - T1053.003
+sigma: false
+sigma_rule: []

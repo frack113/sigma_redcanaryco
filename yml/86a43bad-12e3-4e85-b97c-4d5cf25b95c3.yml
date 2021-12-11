@@ -1,0 +1,8 @@
+guid: 86a43bad-12e3-4e85-b97c-4d5cf25b95c3
+name: ATHPowerShellCommandLineParameter -EncodedCommand parameter variations
+tactic:
+  - execution
+technique:
+  - T1059.001
+sigma: false
+sigma_rule: []

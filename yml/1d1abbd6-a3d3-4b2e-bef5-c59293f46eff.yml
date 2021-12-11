@@ -1,0 +1,8 @@
+guid: 1d1abbd6-a3d3-4b2e-bef5-c59293f46eff
+name: Exfiltration Over Alternative Protocol - HTTP
+tactic:
+  - exfiltration
+technique:
+  - T1048.003
+sigma: false
+sigma_rule: []

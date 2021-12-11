@@ -1,0 +1,8 @@
+guid: 5e2938fb-f919-47b6-8b29-2f6a1f718e99
+name: Adfind - Enumerate Active Directory Exchange AD Objects
+tactic:
+  - discovery
+technique:
+  - T1087.002
+sigma: false
+sigma_rule: []

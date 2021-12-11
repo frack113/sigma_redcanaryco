@@ -1,0 +1,10 @@
+guid: 65208808-3125-4a2e-8389-a0a00e9ab326
+name: Malicious PAM module
+tactic:
+  - credential-access
+  - defense-evasion
+  - persistence
+technique:
+  - T1556.003
+sigma: false
+sigma_rule: []

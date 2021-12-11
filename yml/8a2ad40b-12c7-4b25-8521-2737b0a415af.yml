@@ -1,0 +1,8 @@
+guid: 8a2ad40b-12c7-4b25-8521-2737b0a415af
+name: Powershell invoke mshta.exe download
+tactic:
+  - execution
+technique:
+  - T1059.001
+sigma: false
+sigma_rule: []

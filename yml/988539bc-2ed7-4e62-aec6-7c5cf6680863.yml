@@ -1,0 +1,8 @@
+guid: 988539bc-2ed7-4e62-aec6-7c5cf6680863
+name: Request A Single Ticket via PowerShell
+tactic:
+  - credential-access
+technique:
+  - T1558.003
+sigma: false
+sigma_rule: []

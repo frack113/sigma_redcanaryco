@@ -1,0 +1,8 @@
+guid: cbb6799a-425c-4f83-9194-5447a909d67f
+name: Word spawned a command shell and used an IP address in the command line
+tactic:
+  - initial-access
+technique:
+  - T1566.001
+sigma: false
+sigma_rule: []

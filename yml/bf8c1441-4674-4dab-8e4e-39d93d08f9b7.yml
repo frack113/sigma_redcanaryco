@@ -1,0 +1,8 @@
+guid: bf8c1441-4674-4dab-8e4e-39d93d08f9b7
+name: Run Bloodhound from Memory using Download Cradle
+tactic:
+  - execution
+technique:
+  - T1059.001
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: ae4b6361-b5f8-46cb-a3f9-9cf108ccfe7b
+name: Enumerate all accounts via PowerShell (Local)
+tactic:
+  - discovery
+technique:
+  - T1087.001
+sigma: false
+sigma_rule: []

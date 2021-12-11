@@ -1,0 +1,8 @@
+guid: cb790029-17e6-4c43-b96f-002ce5f10938
+name: Firefox
+tactic:
+  - persistence
+technique:
+  - T1176
+sigma: false
+sigma_rule: []

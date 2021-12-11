@@ -1,0 +1,8 @@
+guid: dc7726d2-8ccb-4cc6-af22-0d5afb53a548
+name: Create a new account similar to ANONYMOUS LOGON
+tactic:
+  - persistence
+technique:
+  - T1136.002
+sigma: false
+sigma_rule: []

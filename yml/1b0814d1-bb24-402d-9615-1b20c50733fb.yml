@@ -1,0 +1,8 @@
+guid: 1b0814d1-bb24-402d-9615-1b20c50733fb
+name: Network Share Discovery PowerShell
+tactic:
+  - discovery
+technique:
+  - T1135
+sigma: false
+sigma_rule: []

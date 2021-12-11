@@ -1,0 +1,8 @@
+guid: 1a02df58-09af-4064-a765-0babe1a0d1e2
+name: Download a file with IMEWDBLD.exe
+tactic:
+  - command-and-control
+technique:
+  - T1105
+sigma: false
+sigma_rule: []

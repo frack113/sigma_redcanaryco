@@ -1,0 +1,8 @@
+guid: 638730e7-7aed-43dc-bf8c-8117f805f5bb
+name: Rundll32 execute VBscript command
+tactic:
+  - defense-evasion
+technique:
+  - T1218.011
+sigma: false
+sigma_rule: []

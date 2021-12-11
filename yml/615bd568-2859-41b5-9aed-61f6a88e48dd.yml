@@ -1,0 +1,8 @@
+guid: 615bd568-2859-41b5-9aed-61f6a88e48dd
+name: Rubeus asreproast
+tactic:
+  - credential-access
+technique:
+  - T1558.004
+sigma: false
+sigma_rule: []

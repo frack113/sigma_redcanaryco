@@ -1,0 +1,8 @@
+guid: 31dad7ad-2286-4c02-ae92-274418c85fec
+name: Linux VM Check via Hardware
+tactic:
+  - discovery
+technique:
+  - T1082
+sigma: false
+sigma_rule: []

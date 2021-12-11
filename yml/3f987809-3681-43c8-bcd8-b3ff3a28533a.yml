@@ -1,0 +1,8 @@
+guid: 3f987809-3681-43c8-bcd8-b3ff3a28533a
+name: Request for service tickets
+tactic:
+  - credential-access
+technique:
+  - T1558.003
+sigma: false
+sigma_rule: []

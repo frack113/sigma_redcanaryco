@@ -1,0 +1,8 @@
+guid: 71bfbfac-60b1-4fc0-ac8b-2cedbbdcb112
+name: Regasm Uninstall Method Call Test
+tactic:
+  - defense-evasion
+technique:
+  - T1218.009
+sigma: false
+sigma_rule: []

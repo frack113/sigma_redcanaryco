@@ -1,0 +1,8 @@
+guid: 6502c8f0-b775-4dbd-9193-1298f56b6781
+name: Dump LSASS.exe Memory using Out-Minidump.ps1
+tactic:
+  - credential-access
+technique:
+  - T1003.001
+sigma: false
+sigma_rule: []

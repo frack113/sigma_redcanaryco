@@ -1,0 +1,8 @@
+guid: 06a220b6-7e29-4bd8-9d07-5b4d86742372
+name: Invoke-AppPathBypass
+tactic:
+  - execution
+technique:
+  - T1059.001
+sigma: false
+sigma_rule: []

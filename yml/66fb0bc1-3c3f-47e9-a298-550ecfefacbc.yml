@@ -1,0 +1,8 @@
+guid: 66fb0bc1-3c3f-47e9-a298-550ecfefacbc
+name: Powershell Mimikatz
+tactic:
+  - credential-access
+technique:
+  - T1003.001
+sigma: false
+sigma_rule: []

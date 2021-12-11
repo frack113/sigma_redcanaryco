@@ -1,0 +1,8 @@
+guid: 476419b5-aebf-4366-a131-ae3e8dae5fc2
+name: Windows - Overwrite file with Sysinternals SDelete
+tactic:
+  - impact
+technique:
+  - T1485
+sigma: false
+sigma_rule: []

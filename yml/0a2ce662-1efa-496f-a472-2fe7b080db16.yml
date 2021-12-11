@@ -1,0 +1,8 @@
+guid: 0a2ce662-1efa-496f-a472-2fe7b080db16
+name: Web Shell Written to Disk
+tactic:
+  - persistence
+technique:
+  - T1505.003
+sigma: false
+sigma_rule: []

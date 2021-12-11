@@ -1,0 +1,8 @@
+guid: 5f864a3f-8ce9-45c0-812c-bdf7d8aeacc3
+name: System Service Discovery - net.exe
+tactic:
+  - discovery
+technique:
+  - T1007
+sigma: true
+sigma_rule: []

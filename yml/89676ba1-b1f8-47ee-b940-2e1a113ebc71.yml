@@ -1,0 +1,8 @@
+guid: 89676ba1-b1f8-47ee-b940-2e1a113ebc71
+name: System Service Discovery
+tactic:
+  - discovery
+technique:
+  - T1007
+sigma: true
+sigma_rule: []

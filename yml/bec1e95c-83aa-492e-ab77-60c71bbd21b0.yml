@@ -1,0 +1,8 @@
+guid: bec1e95c-83aa-492e-ab77-60c71bbd21b0
+name: attrib - Remove read-only attribute
+tactic:
+  - defense-evasion
+technique:
+  - T1222.001
+sigma: false
+sigma_rule: []

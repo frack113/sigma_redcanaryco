@@ -1,0 +1,8 @@
+guid: c1d8c4eb-88da-4927-ae97-c7c25893803b
+name: Edit UFW firewall ufw.conf file
+tactic:
+  - defense-evasion
+technique:
+  - T1562.004
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: 6c4d1dcb-33c7-4c36-a8df-c6cfd0408be8
+name: Execute Python via scripts (Linux)
+tactic:
+  - execution
+technique:
+  - T1059.006
+sigma: false
+sigma_rule: []

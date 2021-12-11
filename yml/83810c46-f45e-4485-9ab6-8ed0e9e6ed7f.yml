@@ -1,0 +1,8 @@
+guid: 83810c46-f45e-4485-9ab6-8ed0e9e6ed7f
+name: Malicious process Masquerading as LSM.exe
+tactic:
+  - defense-evasion
+technique:
+  - T1036.003
+sigma: false
+sigma_rule: []

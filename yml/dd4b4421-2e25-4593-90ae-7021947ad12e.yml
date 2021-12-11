@@ -1,0 +1,8 @@
+guid: dd4b4421-2e25-4593-90ae-7021947ad12e
+name: Exfiltration Over Alternative Protocol - ICMP
+tactic:
+  - exfiltration
+technique:
+  - T1048.003
+sigma: false
+sigma_rule: []

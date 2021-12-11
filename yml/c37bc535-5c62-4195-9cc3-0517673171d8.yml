@@ -1,0 +1,8 @@
+guid: c37bc535-5c62-4195-9cc3-0517673171d8
+name: LSASS read with pypykatz
+tactic:
+  - credential-access
+technique:
+  - T1003.001
+sigma: false
+sigma_rule: []

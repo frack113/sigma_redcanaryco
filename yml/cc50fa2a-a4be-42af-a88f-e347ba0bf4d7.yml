@@ -1,0 +1,8 @@
+guid: cc50fa2a-a4be-42af-a88f-e347ba0bf4d7
+name: Powershell Invoke-DownloadCradle
+tactic:
+  - execution
+technique:
+  - T1059.001
+sigma: false
+sigma_rule: []

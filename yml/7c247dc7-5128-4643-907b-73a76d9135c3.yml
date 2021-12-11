@@ -1,0 +1,8 @@
+guid: 7c247dc7-5128-4643-907b-73a76d9135c3
+name: Copy Private SSH Keys with CP
+tactic:
+  - credential-access
+technique:
+  - T1552.004
+sigma: false
+sigma_rule: []

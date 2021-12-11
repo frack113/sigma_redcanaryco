@@ -1,0 +1,8 @@
+guid: 4ea1fc97-8a46-4b4e-ba48-af43d2a98052
+name: Excel 4 Macro
+tactic:
+  - execution
+technique:
+  - T1204.002
+sigma: false
+sigma_rule: []

@@ -1,0 +1,9 @@
+guid: d40da266-e073-4e5a-bb8b-2b385023e5f9
+name: Winlogon Notify Key Logon Persistence - PowerShell
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1547.004
+sigma: false
+sigma_rule: []

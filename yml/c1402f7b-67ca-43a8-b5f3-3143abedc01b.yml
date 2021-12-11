@@ -1,0 +1,8 @@
+guid: c1402f7b-67ca-43a8-b5f3-3143abedc01b
+name: Search macOS Safari Cookies
+tactic:
+  - credential-access
+technique:
+  - T1555.003
+sigma: false
+sigma_rule: []

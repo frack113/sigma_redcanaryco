@@ -1,0 +1,9 @@
+guid: 3244697d-5a3a-4dfc-941c-550f69f91a4d
+name: Netsh Helper DLL Registration
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1546.007
+sigma: false
+sigma_rule: []

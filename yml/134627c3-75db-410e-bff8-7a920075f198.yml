@@ -1,0 +1,9 @@
+guid: 134627c3-75db-410e-bff8-7a920075f198
+name: Add file to Local Library StartupItems
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1037.005
+sigma: false
+sigma_rule: []

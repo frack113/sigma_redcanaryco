@@ -1,0 +1,8 @@
+guid: 3ecd790d-2617-4abf-9a8c-4e8d47da9ee1
+name: Chrome (Developer Mode)
+tactic:
+  - persistence
+technique:
+  - T1176
+sigma: false
+sigma_rule: []

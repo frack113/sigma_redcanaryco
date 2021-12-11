@@ -1,0 +1,8 @@
+guid: 873106b7-cfed-454b-8680-fa9f6400431c
+name: Use PsExec to execute a command on a remote host
+tactic:
+  - execution
+technique:
+  - T1569.002
+sigma: false
+sigma_rule: []

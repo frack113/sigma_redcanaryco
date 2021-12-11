@@ -1,0 +1,8 @@
+guid: 4a18cc4e-416f-4966-9a9d-75731c4684c0
+name: ScreenConnect Application Download and Install on Windows
+tactic:
+  - command-and-control
+technique:
+  - T1219
+sigma: false
+sigma_rule: []

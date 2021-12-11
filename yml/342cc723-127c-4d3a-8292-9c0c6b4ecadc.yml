@@ -1,0 +1,8 @@
+guid: 342cc723-127c-4d3a-8292-9c0c6b4ecadc
+name: Modify SSH Authorized Keys
+tactic:
+  - persistence
+technique:
+  - T1098.004
+sigma: false
+sigma_rule: []

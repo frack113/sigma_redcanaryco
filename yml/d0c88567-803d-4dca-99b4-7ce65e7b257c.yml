@@ -1,0 +1,8 @@
+guid: d0c88567-803d-4dca-99b4-7ce65e7b257c
+name: Command-Line Interface
+tactic:
+  - execution
+technique:
+  - T1059.004
+sigma: false
+sigma_rule: []

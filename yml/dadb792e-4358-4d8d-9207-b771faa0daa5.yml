@@ -1,0 +1,8 @@
+guid: dadb792e-4358-4d8d-9207-b771faa0daa5
+name: Create Windows Hidden File with Attrib
+tactic:
+  - defense-evasion
+technique:
+  - T1564.001
+sigma: false
+sigma_rule: []

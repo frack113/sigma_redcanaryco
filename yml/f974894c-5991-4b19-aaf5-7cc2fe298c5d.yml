@@ -1,0 +1,8 @@
+guid: f974894c-5991-4b19-aaf5-7cc2fe298c5d
+name: Get-DomainTrust with PowerView
+tactic:
+  - discovery
+technique:
+  - T1482
+sigma: false
+sigma_rule: []

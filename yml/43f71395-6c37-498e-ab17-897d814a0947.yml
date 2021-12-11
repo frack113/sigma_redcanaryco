@@ -1,0 +1,8 @@
+guid: 43f71395-6c37-498e-ab17-897d814a0947
+name: Remove Account From Domain Admin Group
+tactic:
+  - impact
+technique:
+  - T1531
+sigma: false
+sigma_rule: []

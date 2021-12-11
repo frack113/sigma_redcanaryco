@@ -1,0 +1,8 @@
+guid: 8e5c5532-1181-4c1d-bb79-b3a9f5dbd680
+name: NTFS Alternate Data Stream Access
+tactic:
+  - execution
+technique:
+  - T1059.001
+sigma: false
+sigma_rule: []

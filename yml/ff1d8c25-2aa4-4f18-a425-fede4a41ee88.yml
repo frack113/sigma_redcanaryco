@@ -1,0 +1,8 @@
+guid: ff1d8c25-2aa4-4f18-a425-fede4a41ee88
+name: List macOS Firewall Rules
+tactic:
+  - discovery
+technique:
+  - T1016
+sigma: false
+sigma_rule: []

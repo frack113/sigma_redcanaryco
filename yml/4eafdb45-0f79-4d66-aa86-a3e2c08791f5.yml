@@ -1,0 +1,8 @@
+guid: 4eafdb45-0f79-4d66-aa86-a3e2c08791f5
+name: Disable history collection
+tactic:
+  - defense-evasion
+technique:
+  - T1562.003
+sigma: false
+sigma_rule: []

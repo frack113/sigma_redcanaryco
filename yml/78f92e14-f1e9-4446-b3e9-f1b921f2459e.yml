@@ -1,0 +1,8 @@
+guid: 78f92e14-f1e9-4446-b3e9-f1b921f2459e
+name: Reboot System via `halt` - Linux
+tactic:
+  - impact
+technique:
+  - T1529
+sigma: false
+sigma_rule: []

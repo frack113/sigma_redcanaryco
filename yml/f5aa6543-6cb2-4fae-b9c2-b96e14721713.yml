@@ -1,0 +1,8 @@
+guid: f5aa6543-6cb2-4fae-b9c2-b96e14721713
+name: Access /etc/{shadow,passwd} with shell builtins
+tactic:
+  - credential-access
+technique:
+  - T1003.008
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: 2364e33d-ceab-4641-8468-bfb1d7cc2723
+name: Dump Active Directory Database with NTDSUtil
+tactic:
+  - credential-access
+technique:
+  - T1003.003
+sigma: false
+sigma_rule: []

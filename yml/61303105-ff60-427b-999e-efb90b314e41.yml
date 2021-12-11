@@ -1,0 +1,8 @@
+guid: 61303105-ff60-427b-999e-efb90b314e41
+name: Reboot System via `poweroff` - Linux
+tactic:
+  - impact
+technique:
+  - T1529
+sigma: false
+sigma_rule: []

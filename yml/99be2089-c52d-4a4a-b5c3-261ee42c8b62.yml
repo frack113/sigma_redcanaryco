@@ -1,0 +1,8 @@
+guid: 99be2089-c52d-4a4a-b5c3-261ee42c8b62
+name: Execution through API - CreateProcess
+tactic:
+  - execution
+technique:
+  - T1106
+sigma: false
+sigma_rule: []

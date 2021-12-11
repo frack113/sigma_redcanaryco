@@ -1,0 +1,8 @@
+guid: 9059e8de-3d7d-4954-a322-46161880b9cf
+name: Enable Windows Remote Management
+tactic:
+  - lateral-movement
+technique:
+  - T1021.006
+sigma: false
+sigma_rule: []

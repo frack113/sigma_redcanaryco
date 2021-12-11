@@ -1,0 +1,8 @@
+guid: 4b467538-f102-491d-ace7-ed487b853bf5
+name: List Open Egress Ports
+tactic:
+  - discovery
+technique:
+  - T1016
+sigma: false
+sigma_rule: []

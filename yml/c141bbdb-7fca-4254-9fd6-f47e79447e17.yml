@@ -1,0 +1,8 @@
+guid: c141bbdb-7fca-4254-9fd6-f47e79447e17
+name: System Network Configuration Discovery
+tactic:
+  - discovery
+technique:
+  - T1016
+sigma: false
+sigma_rule: []

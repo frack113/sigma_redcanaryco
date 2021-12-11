@@ -1,0 +1,8 @@
+guid: 727dbcdb-e495-4ab1-a6c4-80c7f77aef85
+name: List Internet Explorer Bookmarks using the command prompt
+tactic:
+  - discovery
+technique:
+  - T1217
+sigma: false
+sigma_rule: []

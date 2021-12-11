@@ -1,0 +1,8 @@
+guid: b1636f0a-ba82-435c-b699-0d78794d8bfd
+name: Share Discovery with PowerView
+tactic:
+  - discovery
+technique:
+  - T1135
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: '0268e63c-e244-42db-bef7-72a9e59fc1fc'
+name: ICMP C2
+tactic:
+  - command-and-control
+technique:
+  - T1095
+sigma: false
+sigma_rule: []

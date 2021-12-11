@@ -1,0 +1,8 @@
+guid: f400d1c0-1804-4ff8-b069-ef5ddd2adbf3
+name: Environment variables discovery on windows
+tactic:
+  - discovery
+technique:
+  - T1082
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: 486e88ea-4f56-470f-9b57-3f4d73f39133
+name: Hostname Discovery
+tactic:
+  - discovery
+technique:
+  - T1082
+sigma: false
+sigma_rule: []

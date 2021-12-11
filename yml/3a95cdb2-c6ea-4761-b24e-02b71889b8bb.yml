@@ -1,0 +1,8 @@
+guid: 3a95cdb2-c6ea-4761-b24e-02b71889b8bb
+name: Execute shell script via python's command mode arguement
+tactic:
+  - execution
+technique:
+  - T1059.006
+sigma: false
+sigma_rule: []

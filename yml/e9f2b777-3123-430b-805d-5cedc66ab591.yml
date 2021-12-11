@@ -1,0 +1,9 @@
+guid: e9f2b777-3123-430b-805d-5cedc66ab591
+name: Parent PID Spoofing - Spawn from svchost.exe
+tactic:
+  - privilege-escalation
+  - defense-evasion
+technique:
+  - T1134.004
+sigma: false
+sigma_rule: []

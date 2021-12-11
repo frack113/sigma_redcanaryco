@@ -1,0 +1,8 @@
+guid: 4963a81e-a3ad-4f02-adda-812343b351de
+name: Shutdown System via `shutdown` - macOS/Linux
+tactic:
+  - impact
+technique:
+  - T1529
+sigma: false
+sigma_rule: []

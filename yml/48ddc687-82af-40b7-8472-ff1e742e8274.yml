@@ -1,0 +1,8 @@
+guid: 48ddc687-82af-40b7-8472-ff1e742e8274
+name: Adfind - Query Active Directory Groups
+tactic:
+  - discovery
+technique:
+  - T1069.002
+sigma: false
+sigma_rule: []

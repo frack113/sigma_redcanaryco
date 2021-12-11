@@ -1,0 +1,8 @@
+guid: 4d46e16b-5765-4046-9f25-a600d3e65e4d
+name: Binary packed by UPX, with modified headers
+tactic:
+  - defense-evasion
+technique:
+  - T1027.002
+sigma: false
+sigma_rule: []

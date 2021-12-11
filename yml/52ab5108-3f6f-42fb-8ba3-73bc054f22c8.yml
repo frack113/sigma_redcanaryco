@@ -1,0 +1,8 @@
+guid: 52ab5108-3f6f-42fb-8ba3-73bc054f22c8
+name: Remote System Discovery - nltest
+tactic:
+  - discovery
+technique:
+  - T1018
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: 3600d97d-81b9-4171-ab96-e4386506e2c2
+name: AppleScript
+tactic:
+  - execution
+technique:
+  - T1059.002
+sigma: false
+sigma_rule: []

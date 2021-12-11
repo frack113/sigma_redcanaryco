@@ -1,0 +1,9 @@
+guid: bf9f9d65-ee4d-4c3e-a843-777d04f19c38
+name: Winlogon Shell Key Persistence - PowerShell
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1547.004
+sigma: false
+sigma_rule: []

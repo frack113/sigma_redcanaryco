@@ -1,0 +1,8 @@
+guid: c51cec55-28dd-4ad2-9461-1eacbc82c3a0
+name: Data Compressed - nix - zip
+tactic:
+  - collection
+technique:
+  - T1560.001
+sigma: false
+sigma_rule: []

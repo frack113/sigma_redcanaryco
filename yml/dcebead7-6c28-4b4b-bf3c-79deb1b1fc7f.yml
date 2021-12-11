@@ -1,0 +1,8 @@
+guid: dcebead7-6c28-4b4b-bf3c-79deb1b1fc7f
+name: Create Volume Shadow Copy with vssadmin
+tactic:
+  - credential-access
+technique:
+  - T1003.003
+sigma: false
+sigma_rule: []

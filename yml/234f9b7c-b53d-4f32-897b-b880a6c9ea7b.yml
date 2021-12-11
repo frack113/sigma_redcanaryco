@@ -1,0 +1,8 @@
+guid: 234f9b7c-b53d-4f32-897b-b880a6c9ea7b
+name: Extract Windows Credential Manager via VBA
+tactic:
+  - credential-access
+technique:
+  - T1555
+sigma: false
+sigma_rule: []

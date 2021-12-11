@@ -1,0 +1,8 @@
+guid: 9215ea92-1ded-41b7-9cd6-79f9a78397aa
+name: Office launching .bat file from AppData
+tactic:
+  - execution
+technique:
+  - T1204.002
+sigma: false
+sigma_rule: []

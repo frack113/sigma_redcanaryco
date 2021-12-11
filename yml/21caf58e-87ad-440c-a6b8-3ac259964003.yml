@@ -1,0 +1,8 @@
+guid: 21caf58e-87ad-440c-a6b8-3ac259964003
+name: OpenSSL C2
+tactic:
+  - command-and-control
+technique:
+  - T1573
+sigma: false
+sigma_rule: []

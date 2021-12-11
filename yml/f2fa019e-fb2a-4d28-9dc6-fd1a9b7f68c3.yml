@@ -1,0 +1,10 @@
+guid: f2fa019e-fb2a-4d28-9dc6-fd1a9b7f68c3
+name: CreateCronjob
+tactic:
+  - privilege-escalation
+  - persistence
+  - execution
+technique:
+  - T1053.007
+sigma: false
+sigma_rule: []

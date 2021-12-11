@@ -1,0 +1,8 @@
+guid: bc8be0ac-475c-4fbf-9b1d-9fffd77afbde
+name: Create a new user in PowerShell
+tactic:
+  - persistence
+technique:
+  - T1136.001
+sigma: false
+sigma_rule: []

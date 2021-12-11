@@ -1,0 +1,8 @@
+guid: 6fbc9e68-5ad7-444a-bd11-8bf3136c477e
+name: Enumerate all accounts (Domain)
+tactic:
+  - discovery
+technique:
+  - T1087.002
+sigma: false
+sigma_rule: []

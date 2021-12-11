@@ -1,0 +1,8 @@
+guid: 68e907da-2539-48f6-9fc9-257a78c05540
+name: Port Scan
+tactic:
+  - discovery
+technique:
+  - T1046
+sigma: false
+sigma_rule: []

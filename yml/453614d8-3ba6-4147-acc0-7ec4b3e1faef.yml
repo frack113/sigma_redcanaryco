@@ -1,0 +1,8 @@
+guid: 453614d8-3ba6-4147-acc0-7ec4b3e1faef
+name: Dynamic C# Compile
+tactic:
+  - defense-evasion
+technique:
+  - T1027.004
+sigma: false
+sigma_rule: []

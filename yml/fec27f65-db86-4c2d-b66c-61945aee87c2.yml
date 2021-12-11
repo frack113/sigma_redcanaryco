@@ -1,0 +1,10 @@
+guid: fec27f65-db86-4c2d-b66c-61945aee87c2
+name: Scheduled Task Startup Script
+tactic:
+  - privilege-escalation
+  - persistence
+  - execution
+technique:
+  - T1053.005
+sigma: false
+sigma_rule: []

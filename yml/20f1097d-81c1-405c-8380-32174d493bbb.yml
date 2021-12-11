@@ -1,0 +1,8 @@
+guid: 20f1097d-81c1-405c-8380-32174d493bbb
+name: Network Share Discovery command prompt
+tactic:
+  - discovery
+technique:
+  - T1135
+sigma: false
+sigma_rule: []

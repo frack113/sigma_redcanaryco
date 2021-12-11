@@ -1,0 +1,9 @@
+guid: 281201e7-de41-4dc9-b73d-f288938cbb64
+name: Set Arbitrary Binary as Screensaver
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1546.002
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: 30558d53-9d76-41c4-9267-a7bd5184bed3
+name: Replace Desktop Wallpaper
+tactic:
+  - impact
+technique:
+  - T1491.001
+sigma: false
+sigma_rule: []

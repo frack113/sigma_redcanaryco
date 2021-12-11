@@ -1,0 +1,8 @@
+guid: 4297c41a-8168-4138-972d-01f3ee92c804
+name: Obfuscation Tests
+tactic:
+  - execution
+technique:
+  - T1059.001
+sigma: false
+sigma_rule: []

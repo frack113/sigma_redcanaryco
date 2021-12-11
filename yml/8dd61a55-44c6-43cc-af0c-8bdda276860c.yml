@@ -1,0 +1,8 @@
+guid: 8dd61a55-44c6-43cc-af0c-8bdda276860c
+name: Compress Data and lock with password for Exfiltration with winrar
+tactic:
+  - collection
+technique:
+  - T1560.001
+sigma: false
+sigma_rule: []

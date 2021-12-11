@@ -1,0 +1,9 @@
+guid: fdda2626-5234-4c90-b163-60849a24c0b8
+name: IFEO Add Debugger
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1546.012
+sigma: false
+sigma_rule: []

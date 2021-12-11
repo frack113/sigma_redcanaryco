@@ -1,0 +1,8 @@
+guid: 21dfb440-830d-4c86-a3e5-2a491d5a8d04
+name: Windows - Stop service using Service Controller
+tactic:
+  - impact
+technique:
+  - T1489
+sigma: false
+sigma_rule: []

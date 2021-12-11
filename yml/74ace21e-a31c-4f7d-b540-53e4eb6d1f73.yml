@@ -1,0 +1,8 @@
+guid: 74ace21e-a31c-4f7d-b540-53e4eb6d1f73
+name: Changing RDP Port to Non Standard Port via Command_Prompt
+tactic:
+  - lateral-movement
+technique:
+  - T1021.001
+sigma: false
+sigma_rule: []

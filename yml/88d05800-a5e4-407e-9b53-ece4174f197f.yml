@@ -1,0 +1,8 @@
+guid: 88d05800-a5e4-407e-9b53-ece4174f197f
+name: Disable Microsoft Defender Firewall
+tactic:
+  - defense-evasion
+technique:
+  - T1562.004
+sigma: false
+sigma_rule: []

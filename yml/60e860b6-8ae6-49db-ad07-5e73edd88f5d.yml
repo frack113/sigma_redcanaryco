@@ -1,0 +1,8 @@
+guid: 60e860b6-8ae6-49db-ad07-5e73edd88f5d
+name: Access /etc/passwd (Local)
+tactic:
+  - credential-access
+technique:
+  - T1003.008
+sigma: false
+sigma_rule: []

@@ -1,0 +1,10 @@
+guid: af9fd58f-c4ac-4bf2-a9ba-224b71ff25fd
+name: Powershell Cmdlet Scheduled Task
+tactic:
+  - privilege-escalation
+  - persistence
+  - execution
+technique:
+  - T1053.005
+sigma: false
+sigma_rule: []

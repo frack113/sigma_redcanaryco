@@ -1,0 +1,8 @@
+guid: c107778c-dcf5-47c5-af2e-1d058a3df3ea
+name: WMI Reconnaissance Users
+tactic:
+  - execution
+technique:
+  - T1047
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: 3efc144e-1af8-46bb-8ca2-1376bb6db8b6
+name: DNS Regular Beaconing
+tactic:
+  - command-and-control
+technique:
+  - T1071.004
+sigma: false
+sigma_rule: []

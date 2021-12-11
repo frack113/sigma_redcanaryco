@@ -1,0 +1,8 @@
+guid: a96872b2-cbf3-46cf-8eb4-27e8c0e85263
+name: Registry parse with pypykatz
+tactic:
+  - credential-access
+technique:
+  - T1003.002
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: e1ec8d20-509a-4b9a-b820-06c9b2da8eb7
+name: Adfind - Enumerate Active Directory User Objects
+tactic:
+  - discovery
+technique:
+  - T1087.002
+sigma: false
+sigma_rule: []

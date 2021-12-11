@@ -1,0 +1,8 @@
+guid: 40d8eabd-e394-46f6-8785-b9bfa1d011d2
+name: Create a user account on a Linux system
+tactic:
+  - persistence
+technique:
+  - T1136.001
+sigma: false
+sigma_rule: []

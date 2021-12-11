@@ -1,0 +1,8 @@
+guid: 02ea31cb-3b4c-4a2d-9bf1-e4e70ebcf5d0
+name: Compress Data for Exfiltration With Rar
+tactic:
+  - collection
+technique:
+  - T1560.001
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: 9d0072c8-7cca-45c4-bd14-f852cfa35cf0
+name: Dump LSASS with .Net 5 createdump.exe
+tactic:
+  - credential-access
+technique:
+  - T1003.001
+sigma: false
+sigma_rule: []

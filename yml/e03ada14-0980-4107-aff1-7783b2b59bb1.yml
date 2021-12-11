@@ -1,0 +1,8 @@
+guid: e03ada14-0980-4107-aff1-7783b2b59bb1
+name: SharpHound3 - LocalAdmin
+tactic:
+  - discovery
+technique:
+  - T1069.001
+sigma: false
+sigma_rule: []

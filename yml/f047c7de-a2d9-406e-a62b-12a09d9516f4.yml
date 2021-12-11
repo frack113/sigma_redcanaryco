@@ -1,0 +1,9 @@
+guid: f047c7de-a2d9-406e-a62b-12a09d9516f4
+name: Logon Scripts - Mac
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1037.002
+sigma: false
+sigma_rule: []

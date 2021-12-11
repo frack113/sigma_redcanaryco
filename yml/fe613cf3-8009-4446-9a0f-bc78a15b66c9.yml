@@ -1,0 +1,8 @@
+guid: fe613cf3-8009-4446-9a0f-bc78a15b66c9
+name: Security Software Discovery - Sysmon Service
+tactic:
+  - discovery
+technique:
+  - T1518.001
+sigma: false
+sigma_rule: []

@@ -1,0 +1,9 @@
+guid: 76628574-0bc1-4646-8fe2-8f4427b47d15
+name: AppleScript - Prompt User for Password
+tactic:
+  - credential-access
+  - collection
+technique:
+  - T1056.002
+sigma: false
+sigma_rule: []

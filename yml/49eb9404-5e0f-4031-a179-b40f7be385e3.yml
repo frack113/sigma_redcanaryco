@@ -1,0 +1,8 @@
+guid: 49eb9404-5e0f-4031-a179-b40f7be385e3
+name: PowerShell Invoke Known Malicious Cmdlets
+tactic:
+  - execution
+technique:
+  - T1059.001
+sigma: false
+sigma_rule: []

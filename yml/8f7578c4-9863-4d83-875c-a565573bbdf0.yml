@@ -1,0 +1,8 @@
+guid: 8f7578c4-9863-4d83-875c-a565573bbdf0
+name: Query Registry
+tactic:
+  - discovery
+technique:
+  - T1012
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: a55a22e9-a3d3-42ce-bd48-2653adb8f7a9
+name: Domain Account and Group Manipulate
+tactic:
+  - persistence
+technique:
+  - T1098
+sigma: false
+sigma_rule: []

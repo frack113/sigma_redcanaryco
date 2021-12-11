@@ -1,0 +1,8 @@
+guid: 1d5711d6-655c-4a47-ae9c-6503c74fa877
+name: System Time Discovery - PowerShell
+tactic:
+  - discovery
+technique:
+  - T1124
+sigma: false
+sigma_rule: []

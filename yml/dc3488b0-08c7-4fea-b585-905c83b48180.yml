@@ -1,0 +1,8 @@
+guid: dc3488b0-08c7-4fea-b585-905c83b48180
+name: Malicious User Agents - CMD
+tactic:
+  - command-and-control
+technique:
+  - T1071.001
+sigma: false
+sigma_rule: []

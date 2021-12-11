@@ -1,0 +1,8 @@
+guid: fc225f36-9279-4c39-b3f9-5141ab74f8d8
+name: Disable SELinux
+tactic:
+  - defense-evasion
+technique:
+  - T1562.001
+sigma: false
+sigma_rule: []

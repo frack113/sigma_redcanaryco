@@ -1,0 +1,8 @@
+guid: 6657864e-0323-4206-9344-ac9cd7265a4f
+name: Create a new user in a command prompt
+tactic:
+  - persistence
+technique:
+  - T1136.001
+sigma: false
+sigma_rule: []

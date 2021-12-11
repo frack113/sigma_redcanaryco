@@ -1,0 +1,8 @@
+guid: b3b2c408-2ff0-4a33-b89b-1cb46a9e6a9c
+name: Windows - Modify file creation timestamp with PowerShell
+tactic:
+  - defense-evasion
+technique:
+  - T1070.006
+sigma: false
+sigma_rule: []

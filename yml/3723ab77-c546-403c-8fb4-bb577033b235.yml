@@ -1,0 +1,8 @@
+guid: 3723ab77-c546-403c-8fb4-bb577033b235
+name: Access /etc/shadow (Local)
+tactic:
+  - credential-access
+technique:
+  - T1003.008
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: b8a8bdb2-7eae-490d-8251-d5e0295b2362
+name: Invoke HTML Application - Simulate Lateral Movement over UNC Path
+tactic:
+  - defense-evasion
+technique:
+  - T1218.005
+sigma: false
+sigma_rule: []

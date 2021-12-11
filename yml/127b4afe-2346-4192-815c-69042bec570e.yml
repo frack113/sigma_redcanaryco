@@ -1,0 +1,8 @@
+guid: 127b4afe-2346-4192-815c-69042bec570e
+name: Writes text to a file and displays it.
+tactic:
+  - execution
+technique:
+  - T1059.003
+sigma: false
+sigma_rule: []

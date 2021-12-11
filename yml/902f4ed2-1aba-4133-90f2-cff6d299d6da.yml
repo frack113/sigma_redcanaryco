@@ -1,0 +1,8 @@
+guid: 902f4ed2-1aba-4133-90f2-cff6d299d6da
+name: Request All Tickets via PowerShell
+tactic:
+  - credential-access
+technique:
+  - T1558.003
+sigma: false
+sigma_rule: []

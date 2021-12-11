@@ -1,0 +1,9 @@
+guid: dbf38128-7ba7-4776-bedf-cc2eed432098
+name: Mimikatz Kerberos Ticket Attack
+tactic:
+  - defense-evasion
+  - lateral-movement
+technique:
+  - T1550.003
+sigma: false
+sigma_rule: []

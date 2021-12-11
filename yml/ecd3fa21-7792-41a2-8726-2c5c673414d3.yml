@@ -1,0 +1,10 @@
+guid: ecd3fa21-7792-41a2-8726-2c5c673414d3
+name: Task Scheduler via VBA
+tactic:
+  - privilege-escalation
+  - persistence
+  - execution
+technique:
+  - T1053.005
+sigma: false
+sigma_rule: []

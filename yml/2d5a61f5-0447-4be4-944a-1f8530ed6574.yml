@@ -1,0 +1,8 @@
+guid: 2d5a61f5-0447-4be4-944a-1f8530ed6574
+name: Remote System Discovery - arp
+tactic:
+  - discovery
+technique:
+  - T1018
+sigma: false
+sigma_rule: []

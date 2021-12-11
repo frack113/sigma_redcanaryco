@@ -1,0 +1,8 @@
+guid: 9e2173c0-ba26-4cdf-b0ed-8c54b27e3ad6
+name: Credential Dumping with NPPSpy
+tactic:
+  - credential-access
+technique:
+  - T1003
+sigma: false
+sigma_rule: []

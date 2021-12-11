@@ -1,0 +1,9 @@
+guid: 7fe741f7-b265-4951-a7c7-320889083b3e
+name: Packet Capture Linux
+tactic:
+  - credential-access
+  - discovery
+technique:
+  - T1040
+sigma: false
+sigma_rule: []

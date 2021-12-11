@@ -1,0 +1,8 @@
+guid: 7e7ac3ed-f795-4fa5-b711-09d6fbe9b873
+name: Create and Execute Bash Shell Script
+tactic:
+  - execution
+technique:
+  - T1059.004
+sigma: false
+sigma_rule: []

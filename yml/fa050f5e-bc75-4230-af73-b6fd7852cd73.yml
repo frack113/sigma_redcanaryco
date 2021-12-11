@@ -1,0 +1,8 @@
+guid: fa050f5e-bc75-4230-af73-b6fd7852cd73
+name: PowerShell Fileless Script Execution
+tactic:
+  - execution
+technique:
+  - T1059.001
+sigma: false
+sigma_rule: []

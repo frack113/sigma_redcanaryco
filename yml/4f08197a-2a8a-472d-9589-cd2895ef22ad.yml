@@ -1,0 +1,8 @@
+guid: 4f08197a-2a8a-472d-9589-cd2895ef22ad
+name: SSH Credential Stuffing From Linux
+tactic:
+  - credential-access
+technique:
+  - T1110.004
+sigma: false
+sigma_rule: []

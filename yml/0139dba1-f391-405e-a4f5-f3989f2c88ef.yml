@@ -1,0 +1,8 @@
+guid: '0139dba1-f391-405e-a4f5-f3989f2c88ef'
+name: sftp remote file copy (pull)
+tactic:
+  - command-and-control
+technique:
+  - T1105
+sigma: false
+sigma_rule: []

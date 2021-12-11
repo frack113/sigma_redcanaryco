@@ -1,0 +1,8 @@
+guid: f4648f0d-bf78-483c-bafc-3ec99cd1c302
+name: Restart System - Windows
+tactic:
+  - impact
+technique:
+  - T1529
+sigma: false
+sigma_rule: []

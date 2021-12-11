@@ -1,0 +1,8 @@
+guid: 804f28fc-68fc-40da-b5a2-e9d0bce5c193
+name: PowerDump Registry dump of SAM for hashes and usernames
+tactic:
+  - credential-access
+technique:
+  - T1003.002
+sigma: false
+sigma_rule: []

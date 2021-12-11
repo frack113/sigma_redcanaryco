@@ -1,0 +1,9 @@
+guid: 611b39b7-e243-4c81-87a4-7145a90358b1
+name: Process Injection via C#
+tactic:
+  - privilege-escalation
+  - defense-evasion
+technique:
+  - T1055.004
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: 06d9deba-f732-48a8-af8e-bdd6e4d98c1d
+name: InstallUtil Uninstall method call - '/installtype=notransaction /action=uninstall' variant
+tactic:
+  - defense-evasion
+technique:
+  - T1218.004
+sigma: false
+sigma_rule: []

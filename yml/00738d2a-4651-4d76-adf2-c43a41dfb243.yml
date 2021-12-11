@@ -1,0 +1,8 @@
+guid: '00738d2a-4651-4d76-adf2-c43a41dfb243'
+name: WMI Execute rundll32
+tactic:
+  - execution
+technique:
+  - T1047
+sigma: false
+sigma_rule: []

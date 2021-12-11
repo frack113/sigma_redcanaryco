@@ -1,0 +1,8 @@
+guid: 9c780d3d-3a14-4278-8ee5-faaeb2ccfbe0
+name: IcedID Botnet HTTP PUT
+tactic:
+  - exfiltration
+technique:
+  - T1020
+sigma: false
+sigma_rule: []

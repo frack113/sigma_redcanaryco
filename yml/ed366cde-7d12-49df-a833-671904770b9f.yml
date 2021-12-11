@@ -1,0 +1,9 @@
+guid: ed366cde-7d12-49df-a833-671904770b9f
+name: Modify Fax service to run PowerShell
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1543.003
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: dea6c349-f1c6-44f3-87a1-1ed33a59a607
+name: Dump LSASS.exe Memory using Windows Task Manager
+tactic:
+  - credential-access
+technique:
+  - T1003.001
+sigma: false
+sigma_rule: []

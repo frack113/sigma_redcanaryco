@@ -1,0 +1,8 @@
+guid: 9cd1cccb-91e4-4550-9139-e20a586fcea1
+name: Capture Linux Desktop using Import Tool
+tactic:
+  - collection
+technique:
+  - T1113
+sigma: false
+sigma_rule: []

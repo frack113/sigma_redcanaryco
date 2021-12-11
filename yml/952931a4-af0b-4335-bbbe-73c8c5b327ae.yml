@@ -1,0 +1,8 @@
+guid: 952931a4-af0b-4335-bbbe-73c8c5b327ae
+name: Permission Groups Discovery (Local)
+tactic:
+  - discovery
+technique:
+  - T1069.001
+sigma: false
+sigma_rule: []

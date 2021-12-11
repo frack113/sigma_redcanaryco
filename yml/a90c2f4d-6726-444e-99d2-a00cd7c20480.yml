@@ -1,0 +1,8 @@
+guid: a90c2f4d-6726-444e-99d2-a00cd7c20480
+name: esentutl.exe SAM copy
+tactic:
+  - credential-access
+technique:
+  - T1003.002
+sigma: false
+sigma_rule: []

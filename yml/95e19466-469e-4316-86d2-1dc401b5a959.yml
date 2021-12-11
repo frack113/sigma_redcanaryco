@@ -1,0 +1,8 @@
+guid: 95e19466-469e-4316-86d2-1dc401b5a959
+name: Remote System Discovery - adidnsdump
+tactic:
+  - discovery
+technique:
+  - T1018
+sigma: false
+sigma_rule: []

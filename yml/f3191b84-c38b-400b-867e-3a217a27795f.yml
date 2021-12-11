@@ -1,0 +1,8 @@
+guid: f3191b84-c38b-400b-867e-3a217a27795f
+name: Windows - Stop service by killing process
+tactic:
+  - impact
+technique:
+  - T1489
+sigma: false
+sigma_rule: []

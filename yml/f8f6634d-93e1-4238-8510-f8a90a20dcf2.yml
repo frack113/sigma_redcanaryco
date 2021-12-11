@@ -1,0 +1,8 @@
+guid: f8f6634d-93e1-4238-8510-f8a90a20dcf2
+name: Windows - Modify file last modified timestamp with PowerShell
+tactic:
+  - defense-evasion
+technique:
+  - T1070.006
+sigma: false
+sigma_rule: []

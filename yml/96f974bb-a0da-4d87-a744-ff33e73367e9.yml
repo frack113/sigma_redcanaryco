@@ -1,0 +1,8 @@
+guid: 96f974bb-a0da-4d87-a744-ff33e73367e9
+name: System Discovery using SharpView
+tactic:
+  - discovery
+technique:
+  - T1049
+sigma: false
+sigma_rule: []

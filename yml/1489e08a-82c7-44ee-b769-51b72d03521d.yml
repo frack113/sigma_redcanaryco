@@ -1,0 +1,8 @@
+guid: 1489e08a-82c7-44ee-b769-51b72d03521d
+name: WINWORD Remote Template Injection
+tactic:
+  - defense-evasion
+technique:
+  - T1221
+sigma: false
+sigma_rule: []

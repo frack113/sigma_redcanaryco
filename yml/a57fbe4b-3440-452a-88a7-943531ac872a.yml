@@ -1,0 +1,8 @@
+guid: a57fbe4b-3440-452a-88a7-943531ac872a
+name: Zip a Folder with PowerShell for Staging in Temp
+tactic:
+  - collection
+technique:
+  - T1074.001
+sigma: false
+sigma_rule: []

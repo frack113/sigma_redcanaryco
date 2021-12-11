@@ -1,0 +1,8 @@
+guid: ec3a835e-adca-4c7c-88d2-853b69c11bb9
+name: Exfiltration Over Alternative Protocol - SMTP
+tactic:
+  - exfiltration
+technique:
+  - T1048.003
+sigma: false
+sigma_rule: []

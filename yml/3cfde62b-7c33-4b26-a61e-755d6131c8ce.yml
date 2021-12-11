@@ -1,0 +1,8 @@
+guid: 3cfde62b-7c33-4b26-a61e-755d6131c8ce
+name: Search Through Bash History
+tactic:
+  - credential-access
+technique:
+  - T1552.003
+sigma: false
+sigma_rule: []

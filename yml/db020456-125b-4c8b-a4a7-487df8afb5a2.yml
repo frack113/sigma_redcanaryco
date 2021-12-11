@@ -1,0 +1,8 @@
+guid: db020456-125b-4c8b-a4a7-487df8afb5a2
+name: ProtocolHandler.exe Downloaded a Suspicious File
+tactic:
+  - defense-evasion
+technique:
+  - T1218
+sigma: false
+sigma_rule: []

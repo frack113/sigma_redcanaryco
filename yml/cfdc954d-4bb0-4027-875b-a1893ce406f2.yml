@@ -1,0 +1,9 @@
+guid: cfdc954d-4bb0-4027-875b-a1893ce406f2
+name: Create shortcut to cmd in startup folders
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1547.009
+sigma: false
+sigma_rule: []

@@ -1,0 +1,10 @@
+guid: 9d5f89dc-c3a5-4f8a-a4fc-a6ed02e7cb5a
+name: User scope COR_PROFILER
+tactic:
+  - privilege-escalation
+  - defense-evasion
+  - persistence
+technique:
+  - T1574.012
+sigma: false
+sigma_rule: []

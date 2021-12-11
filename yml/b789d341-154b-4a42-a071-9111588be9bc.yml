@@ -1,0 +1,8 @@
+guid: b789d341-154b-4a42-a071-9111588be9bc
+name: List Google Chrome Bookmark JSON Files on macOS
+tactic:
+  - discovery
+technique:
+  - T1217
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: 970ab6a1-0157-4f3f-9a73-ec4166754b23
+name: System Network Configuration Discovery on Windows
+tactic:
+  - discovery
+technique:
+  - T1016
+sigma: false
+sigma_rule: []

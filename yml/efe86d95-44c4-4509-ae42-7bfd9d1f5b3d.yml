@@ -1,0 +1,8 @@
+guid: efe86d95-44c4-4509-ae42-7bfd9d1f5b3d
+name: WinRM Access with Evil-WinRM
+tactic:
+  - lateral-movement
+technique:
+  - T1021.006
+sigma: false
+sigma_rule: []

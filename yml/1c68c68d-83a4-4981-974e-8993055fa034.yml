@@ -1,0 +1,8 @@
+guid: 1c68c68d-83a4-4981-974e-8993055fa034
+name: Windows - Disable the SR scheduled task
+tactic:
+  - impact
+technique:
+  - T1490
+sigma: false
+sigma_rule: []

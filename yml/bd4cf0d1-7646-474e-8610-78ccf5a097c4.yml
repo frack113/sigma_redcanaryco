@@ -1,0 +1,8 @@
+guid: bd4cf0d1-7646-474e-8610-78ccf5a097c4
+name: Extract passwords with grep
+tactic:
+  - credential-access
+technique:
+  - T1552.001
+sigma: false
+sigma_rule: []

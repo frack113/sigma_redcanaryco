@@ -1,0 +1,9 @@
+guid: aefd6866-d753-431f-a7a4-215ca7e3f13d
+name: New shim database files created in the default shim database directory
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1546.011
+sigma: false
+sigma_rule: []

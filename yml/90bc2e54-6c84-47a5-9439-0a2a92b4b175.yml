@@ -1,0 +1,8 @@
+guid: 90bc2e54-6c84-47a5-9439-0a2a92b4b175
+name: Password Spray all Domain Users
+tactic:
+  - credential-access
+technique:
+  - T1110.003
+sigma: false
+sigma_rule: []

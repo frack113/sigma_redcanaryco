@@ -1,0 +1,8 @@
+guid: 7b8ce084-3922-4618-8d22-95f996173765
+name: Encrypt files using gpg (Linux)
+tactic:
+  - impact
+technique:
+  - T1486
+sigma: false
+sigma_rule: []

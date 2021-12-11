@@ -1,0 +1,8 @@
+guid: 3c898f62-626c-47d5-aad2-6de873d69153
+name: Windows Screencapture
+tactic:
+  - collection
+technique:
+  - T1113
+sigma: false
+sigma_rule: []

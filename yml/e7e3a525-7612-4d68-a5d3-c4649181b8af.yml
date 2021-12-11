@@ -1,0 +1,8 @@
+guid: e7e3a525-7612-4d68-a5d3-c4649181b8af
+name: Invoke HTML Application - JScript Engine with Rundll32 and Inline Protocol Handler
+tactic:
+  - defense-evasion
+technique:
+  - T1218.005
+sigma: false
+sigma_rule: []

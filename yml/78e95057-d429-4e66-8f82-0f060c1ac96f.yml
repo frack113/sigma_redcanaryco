@@ -1,0 +1,8 @@
+guid: 78e95057-d429-4e66-8f82-0f060c1ac96f
+name: ADFS token signing and encryption certificates theft - Local
+tactic:
+  - credential-access
+technique:
+  - T1552.004
+sigma: false
+sigma_rule: []

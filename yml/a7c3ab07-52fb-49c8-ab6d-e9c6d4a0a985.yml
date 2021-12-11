@@ -1,0 +1,8 @@
+guid: a7c3ab07-52fb-49c8-ab6d-e9c6d4a0a985
+name: MSXSL Bypass using remote files
+tactic:
+  - defense-evasion
+technique:
+  - T1220
+sigma: false
+sigma_rule: []

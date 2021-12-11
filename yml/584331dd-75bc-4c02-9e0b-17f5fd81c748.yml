@@ -1,0 +1,8 @@
+guid: 584331dd-75bc-4c02-9e0b-17f5fd81c748
+name: Windows - wbadmin Delete systemstatebackup
+tactic:
+  - impact
+technique:
+  - T1490
+sigma: false
+sigma_rule: []

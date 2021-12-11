@@ -1,0 +1,9 @@
+guid: '090e5aa5-32b6-473b-a49b-21e843a56896'
+name: Append malicious start-process cmdlet
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1546.013
+sigma: false
+sigma_rule: []

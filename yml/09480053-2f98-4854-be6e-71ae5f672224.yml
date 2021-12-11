@@ -1,0 +1,8 @@
+guid: '09480053-2f98-4854-be6e-71ae5f672224'
+name: Brute Force Credentials of all Active Directory domain users via SMB
+tactic:
+  - credential-access
+technique:
+  - T1110.001
+sigma: false
+sigma_rule: []

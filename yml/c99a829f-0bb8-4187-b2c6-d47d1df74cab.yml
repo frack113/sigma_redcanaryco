@@ -1,0 +1,8 @@
+guid: c99a829f-0bb8-4187-b2c6-d47d1df74cab
+name: whois file download
+tactic:
+  - command-and-control
+technique:
+  - T1105
+sigma: false
+sigma_rule: []

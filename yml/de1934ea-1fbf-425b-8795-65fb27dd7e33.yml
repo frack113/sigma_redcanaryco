@@ -1,0 +1,9 @@
+guid: de1934ea-1fbf-425b-8795-65fb27dd7e33
+name: Hook PowerShell TLS Encrypt/Decrypt Messages
+tactic:
+  - credential-access
+  - collection
+technique:
+  - T1056.004
+sigma: false
+sigma_rule: []

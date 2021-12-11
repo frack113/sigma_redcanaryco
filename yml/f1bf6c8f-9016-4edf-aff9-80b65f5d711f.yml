@@ -1,0 +1,8 @@
+guid: f1bf6c8f-9016-4edf-aff9-80b65f5d711f
+name: Remote System Discovery - net group Domain Computers
+tactic:
+  - discovery
+technique:
+  - T1018
+sigma: false
+sigma_rule: []

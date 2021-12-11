@@ -1,0 +1,9 @@
+guid: 491a4af6-a521-4b74-b23b-f7b3f1ee9e77
+name: Service Installation PowerShell
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1543.003
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: 875805bc-9e86-4e87-be86-3a5527315cae
+name: Network Share Discovery - linux
+tactic:
+  - discovery
+technique:
+  - T1135
+sigma: false
+sigma_rule: []

@@ -1,0 +1,9 @@
+guid: 2988133e-561c-4e42-a15f-6281e6a9b2db
+name: Parent PID Spoofing - Spawn from New Process
+tactic:
+  - privilege-escalation
+  - defense-evasion
+technique:
+  - T1134.004
+sigma: false
+sigma_rule: []

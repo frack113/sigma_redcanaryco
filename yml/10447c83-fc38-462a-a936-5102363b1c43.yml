@@ -1,0 +1,8 @@
+guid: 10447c83-fc38-462a-a936-5102363b1c43
+name: Create a Process using obfuscated Win32_Process
+tactic:
+  - execution
+technique:
+  - T1047
+sigma: false
+sigma_rule: []

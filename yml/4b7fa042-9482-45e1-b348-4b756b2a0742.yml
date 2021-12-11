@@ -1,0 +1,8 @@
+guid: 4b7fa042-9482-45e1-b348-4b756b2a0742
+name: Examine password policy - macOS
+tactic:
+  - discovery
+technique:
+  - T1201
+sigma: false
+sigma_rule: []

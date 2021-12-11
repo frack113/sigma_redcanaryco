@@ -1,0 +1,8 @@
+guid: 21748c28-2793-4284-9e07-d6d028b66702
+name: Create Symlink to Volume Shadow Copy
+tactic:
+  - credential-access
+technique:
+  - T1003.003
+sigma: false
+sigma_rule: []

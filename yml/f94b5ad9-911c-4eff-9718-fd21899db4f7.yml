@@ -1,0 +1,8 @@
+guid: f94b5ad9-911c-4eff-9718-fd21899db4f7
+name: Network Share Discovery
+tactic:
+  - discovery
+technique:
+  - T1135
+sigma: false
+sigma_rule: []

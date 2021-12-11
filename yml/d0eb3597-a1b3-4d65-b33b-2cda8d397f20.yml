@@ -1,0 +1,8 @@
+guid: d0eb3597-a1b3-4d65-b33b-2cda8d397f20
+name: Suspicious Execution via Windows Command Shell
+tactic:
+  - execution
+technique:
+  - T1059.003
+sigma: false
+sigma_rule: []

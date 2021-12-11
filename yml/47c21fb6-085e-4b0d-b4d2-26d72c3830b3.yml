@@ -1,0 +1,8 @@
+guid: 47c21fb6-085e-4b0d-b4d2-26d72c3830b3
+name: Execute PowerShell script via Word DDE
+tactic:
+  - execution
+technique:
+  - T1559.002
+sigma: false
+sigma_rule: []

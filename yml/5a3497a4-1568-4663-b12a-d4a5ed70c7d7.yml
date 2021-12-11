@@ -1,0 +1,8 @@
+guid: 5a3497a4-1568-4663-b12a-d4a5ed70c7d7
+name: Create a new Domain Account using PowerShell
+tactic:
+  - persistence
+technique:
+  - T1136.002
+sigma: false
+sigma_rule: []

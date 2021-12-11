@@ -1,0 +1,8 @@
+guid: da4f751a-020b-40d7-b9ff-d433b7799803
+name: Find and Access Github Credentials
+tactic:
+  - credential-access
+technique:
+  - T1552.001
+sigma: false
+sigma_rule: []

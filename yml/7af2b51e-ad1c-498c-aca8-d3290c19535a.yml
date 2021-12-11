@@ -1,0 +1,8 @@
+guid: 7af2b51e-ad1c-498c-aca8-d3290c19535a
+name: Data Compressed - nix - tar Folder or File
+tactic:
+  - collection
+technique:
+  - T1560.001
+sigma: false
+sigma_rule: []

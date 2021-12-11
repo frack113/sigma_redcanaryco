@@ -1,0 +1,8 @@
+guid: 85321a9c-897f-4a60-9f20-29788e50bccd
+name: Remote System Discovery - net
+tactic:
+  - discovery
+technique:
+  - T1018
+sigma: false
+sigma_rule: []

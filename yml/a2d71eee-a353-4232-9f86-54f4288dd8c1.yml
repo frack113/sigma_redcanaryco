@@ -1,0 +1,8 @@
+guid: a2d71eee-a353-4232-9f86-54f4288dd8c1
+name: Find machines where user has local admin access (PowerView)
+tactic:
+  - discovery
+technique:
+  - T1069.002
+sigma: false
+sigma_rule: []

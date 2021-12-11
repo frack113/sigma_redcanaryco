@@ -1,0 +1,8 @@
+guid: 4588d243-f24e-4549-b2e3-e627acc089f6
+name: Examine local password policy - Windows
+tactic:
+  - discovery
+technique:
+  - T1201
+sigma: false
+sigma_rule: []

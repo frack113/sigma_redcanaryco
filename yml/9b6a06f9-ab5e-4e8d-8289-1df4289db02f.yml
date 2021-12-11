@@ -1,0 +1,9 @@
+guid: 9b6a06f9-ab5e-4e8d-8289-1df4289db02f
+name: Registry key creation and/or modification events for SDB
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1546.011
+sigma: false
+sigma_rule: []

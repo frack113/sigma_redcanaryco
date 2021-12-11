@@ -1,0 +1,8 @@
+guid: cde3c2af-3485-49eb-9c1f-0ed60e9cc0af
+name: Data Compressed - nix - gzip Single File
+tactic:
+  - collection
+technique:
+  - T1560.001
+sigma: false
+sigma_rule: []

@@ -1,0 +1,9 @@
+guid: eb44f842-0457-4ddc-9b92-c4caa144ac42
+name: PowerShell Registry RunOnce
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1547.001
+sigma: false
+sigma_rule: []

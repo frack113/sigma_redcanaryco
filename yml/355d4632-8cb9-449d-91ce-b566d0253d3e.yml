@@ -1,0 +1,8 @@
+guid: 355d4632-8cb9-449d-91ce-b566d0253d3e
+name: RDP to DomainController
+tactic:
+  - lateral-movement
+technique:
+  - T1021.001
+sigma: false
+sigma_rule: []

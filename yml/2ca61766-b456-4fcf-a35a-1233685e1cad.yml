@@ -1,0 +1,8 @@
+guid: 2ca61766-b456-4fcf-a35a-1233685e1cad
+name: OSTAP Worming Activity
+tactic:
+  - command-and-control
+technique:
+  - T1105
+sigma: false
+sigma_rule: []

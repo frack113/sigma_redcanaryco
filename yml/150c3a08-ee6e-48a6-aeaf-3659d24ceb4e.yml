@@ -1,0 +1,9 @@
+guid: 150c3a08-ee6e-48a6-aeaf-3659d24ceb4e
+name: Sudo usage
+tactic:
+  - privilege-escalation
+  - defense-evasion
+technique:
+  - T1548.003
+sigma: false
+sigma_rule: []

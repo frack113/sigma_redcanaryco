@@ -1,0 +1,8 @@
+guid: cccb070c-df86-4216-a5bc-9fb60c74e27c
+name: List OS Information
+tactic:
+  - discovery
+technique:
+  - T1082
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: 5295bd61-bd7e-4744-9d52-85962a4cf2d6
+name: Invoke-Command
+tactic:
+  - lateral-movement
+technique:
+  - T1021.006
+sigma: false
+sigma_rule: []

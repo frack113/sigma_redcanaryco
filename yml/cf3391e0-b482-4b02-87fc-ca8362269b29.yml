@@ -1,0 +1,8 @@
+guid: cf3391e0-b482-4b02-87fc-ca8362269b29
+name: Indirect Command Execution - conhost.exe
+tactic:
+  - defense-evasion
+technique:
+  - T1202
+sigma: false
+sigma_rule: []

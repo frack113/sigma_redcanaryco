@@ -1,0 +1,8 @@
+guid: 904a5a0e-fb02-490d-9f8d-0e256eb37549
+name: macOS/Linux - Simulate CPU Load with Yes
+tactic:
+  - impact
+technique:
+  - T1496
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: b26a3340-dad7-4360-9176-706269c74103
+name: Disable Event Logging with wevtutil
+tactic:
+  - defense-evasion
+technique:
+  - T1562.002
+sigma: false
+sigma_rule: []

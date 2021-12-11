@@ -1,0 +1,8 @@
+guid: ae9ef4b0-d8c1-49d4-8758-06206f19af0a
+name: DNS over HTTPS Large Query Volume
+tactic:
+  - command-and-control
+technique:
+  - T1572
+sigma: false
+sigma_rule: []

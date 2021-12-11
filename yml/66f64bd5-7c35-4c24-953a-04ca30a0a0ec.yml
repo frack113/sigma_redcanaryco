@@ -1,0 +1,8 @@
+guid: 66f64bd5-7c35-4c24-953a-04ca30a0a0ec
+name: Msiexec.exe - Execute Arbitrary DLL
+tactic:
+  - defense-evasion
+technique:
+  - T1218.007
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: 4396927f-e503-427b-b023-31049b9b09a6
+name: Powershell XML requests
+tactic:
+  - execution
+technique:
+  - T1059.001
+sigma: false
+sigma_rule: []

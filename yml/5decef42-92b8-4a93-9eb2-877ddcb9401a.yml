@@ -1,0 +1,8 @@
+guid: 5decef42-92b8-4a93-9eb2-877ddcb9401a
+name: Invoke CHM Simulate Double click
+tactic:
+  - defense-evasion
+technique:
+  - T1218.001
+sigma: false
+sigma_rule: []

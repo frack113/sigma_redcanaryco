@@ -1,0 +1,11 @@
+guid: aa6cb8c4-b582-4f8e-b677-37733914abda
+name: Activate Guest Account
+tactic:
+  - privilege-escalation
+  - defense-evasion
+  - persistence
+  - initial-access
+technique:
+  - T1078.001
+sigma: false
+sigma_rule: []

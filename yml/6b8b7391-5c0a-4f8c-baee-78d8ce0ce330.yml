@@ -1,0 +1,8 @@
+guid: 6b8b7391-5c0a-4f8c-baee-78d8ce0ce330
+name: AnyDesk Files Detected Test on Windows
+tactic:
+  - command-and-control
+technique:
+  - T1219
+sigma: false
+sigma_rule: []

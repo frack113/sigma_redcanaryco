@@ -1,0 +1,8 @@
+guid: 13f09b91-c953-438e-845b-b585e51cac9b
+name: AMSI Bypass - Remove AMSI Provider Reg Key
+tactic:
+  - defense-evasion
+technique:
+  - T1562.001
+sigma: false
+sigma_rule: []

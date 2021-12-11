@@ -1,0 +1,8 @@
+guid: a889f5be-2d54-4050-bd05-884578748bb4
+name: Adfind - Enumerate Active Directory Computer Objects
+tactic:
+  - discovery
+technique:
+  - T1018
+sigma: false
+sigma_rule: []

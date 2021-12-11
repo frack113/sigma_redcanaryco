@@ -1,0 +1,8 @@
+guid: a138085e-bfe5-46ba-a242-74a6fb884af3
+name: Enumerate logged on users via CMD (Local)
+tactic:
+  - discovery
+technique:
+  - T1087.001
+sigma: false
+sigma_rule: []

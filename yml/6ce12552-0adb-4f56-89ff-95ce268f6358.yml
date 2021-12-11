@@ -1,0 +1,8 @@
+guid: 6ce12552-0adb-4f56-89ff-95ce268f6358
+name: Examine password complexity policy - CentOS/RHEL 6.x
+tactic:
+  - discovery
+technique:
+  - T1201
+sigma: false
+sigma_rule: []

@@ -1,0 +1,10 @@
+guid: 7266d898-ac82-4ec0-97c7-436075d0d08e
+name: At - Schedule a job
+tactic:
+  - privilege-escalation
+  - persistence
+  - execution
+technique:
+  - T1053.001
+sigma: false
+sigma_rule: []

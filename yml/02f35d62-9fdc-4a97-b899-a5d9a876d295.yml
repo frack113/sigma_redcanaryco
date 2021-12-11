@@ -1,0 +1,8 @@
+guid: 02f35d62-9fdc-4a97-b899-a5d9a876d295
+name: Potentially Unwanted Applications (PUA)
+tactic:
+  - execution
+technique:
+  - T1204.002
+sigma: false
+sigma_rule: []

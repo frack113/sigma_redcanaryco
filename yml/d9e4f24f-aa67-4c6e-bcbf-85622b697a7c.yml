@@ -1,0 +1,9 @@
+guid: d9e4f24f-aa67-4c6e-bcbf-85622b697a7c
+name: Create Systemd Service
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1543.002
+sigma: false
+sigma_rule: []

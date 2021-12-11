@@ -1,0 +1,9 @@
+guid: 687dcb93-9656-4853-9c36-9977315e9d23
+name: Linux - Load Kernel Module via insmod
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1547.006
+sigma: false
+sigma_rule: []

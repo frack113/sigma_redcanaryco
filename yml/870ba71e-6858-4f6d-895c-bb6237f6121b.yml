@@ -1,0 +1,8 @@
+guid: 870ba71e-6858-4f6d-895c-bb6237f6121b
+name: Enumerate Users Not Requiring Pre Auth (ASRepRoast)
+tactic:
+  - discovery
+technique:
+  - T1069.002
+sigma: false
+sigma_rule: []

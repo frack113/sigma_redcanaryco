@@ -1,0 +1,9 @@
+guid: 126f71af-e1c9-405c-94ef-26a47b16c102
+name: rc.local
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1037.004
+sigma: false
+sigma_rule: []

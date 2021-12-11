@@ -1,0 +1,10 @@
+guid: f7536d63-7fd4-466f-89da-7e48d550752a
+name: Service Registry Permissions Weakness
+tactic:
+  - privilege-escalation
+  - defense-evasion
+  - persistence
+technique:
+  - T1574.011
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: cbf506a5-dd78-43e5-be7e-a46b7c7a0a11
+name: Clear Bash history (echo)
+tactic:
+  - defense-evasion
+technique:
+  - T1070.003
+sigma: false
+sigma_rule: []

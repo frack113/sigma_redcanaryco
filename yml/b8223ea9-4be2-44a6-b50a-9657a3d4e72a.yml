@@ -1,0 +1,8 @@
+guid: b8223ea9-4be2-44a6-b50a-9657a3d4e72a
+name: portproxy reg key
+tactic:
+  - command-and-control
+technique:
+  - T1090.001
+sigma: false
+sigma_rule: []

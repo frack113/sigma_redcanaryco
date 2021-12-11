@@ -1,0 +1,8 @@
+guid: 1700f5d6-5a44-487b-84de-bc66f507b0a6
+name: DNS Large Query Volume
+tactic:
+  - command-and-control
+technique:
+  - T1071.004
+sigma: false
+sigma_rule: []

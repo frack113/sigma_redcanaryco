@@ -1,0 +1,8 @@
+guid: d07e4cc1-98ae-447e-9d31-36cb430d28c4
+name: PowerView ShareFinder
+tactic:
+  - discovery
+technique:
+  - T1135
+sigma: false
+sigma_rule: []

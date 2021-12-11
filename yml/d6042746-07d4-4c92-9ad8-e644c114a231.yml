@@ -1,0 +1,9 @@
+guid: d6042746-07d4-4c92-9ad8-e644c114a231
+name: Logon Scripts
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1037.001
+sigma: false
+sigma_rule: []

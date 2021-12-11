@@ -1,0 +1,9 @@
+guid: 934e90cf-29ca-48b3-863c-411737ad44e3
+name: Replace binary of sticky keys
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1546.008
+sigma: false
+sigma_rule: []

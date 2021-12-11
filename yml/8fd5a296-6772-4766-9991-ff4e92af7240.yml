@@ -1,0 +1,8 @@
+guid: 8fd5a296-6772-4766-9991-ff4e92af7240
+name: Dump credentials from Windows Credential Manager With PowerShell [web Credentials]
+tactic:
+  - credential-access
+technique:
+  - T1555
+sigma: false
+sigma_rule: []

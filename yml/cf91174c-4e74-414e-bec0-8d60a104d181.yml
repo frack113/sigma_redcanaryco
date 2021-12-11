@@ -1,0 +1,8 @@
+guid: cf91174c-4e74-414e-bec0-8d60a104d181
+name: DDEAUTO
+tactic:
+  - execution
+technique:
+  - T1559.002
+sigma: false
+sigma_rule: []

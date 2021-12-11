@@ -1,0 +1,9 @@
+guid: 56163687-081f-47da-bb9c-7b231c5585cf
+name: UACME Bypass Method 39
+tactic:
+  - privilege-escalation
+  - defense-evasion
+technique:
+  - T1548.002
+sigma: false
+sigma_rule: []

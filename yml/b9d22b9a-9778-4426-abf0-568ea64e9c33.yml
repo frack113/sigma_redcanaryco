@@ -1,0 +1,8 @@
+guid: b9d22b9a-9778-4426-abf0-568ea64e9c33
+name: scp remote file copy (pull)
+tactic:
+  - command-and-control
+technique:
+  - T1105
+sigma: false
+sigma_rule: []

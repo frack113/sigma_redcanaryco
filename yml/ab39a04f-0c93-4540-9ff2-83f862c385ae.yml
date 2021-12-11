@@ -1,0 +1,8 @@
+guid: ab39a04f-0c93-4540-9ff2-83f862c385ae
+name: View available share drives
+tactic:
+  - discovery
+technique:
+  - T1135
+sigma: false
+sigma_rule: []

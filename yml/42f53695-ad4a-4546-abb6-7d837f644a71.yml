@@ -1,0 +1,10 @@
+guid: 42f53695-ad4a-4546-abb6-7d837f644a71
+name: Scheduled task Local
+tactic:
+  - privilege-escalation
+  - persistence
+  - execution
+technique:
+  - T1053.005
+sigma: false
+sigma_rule: []

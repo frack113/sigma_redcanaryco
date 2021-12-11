@@ -1,0 +1,8 @@
+guid: 3386975b-367a-4fbb-9d77-4dcf3639ffd3
+name: Map admin share
+tactic:
+  - lateral-movement
+technique:
+  - T1021.002
+sigma: false
+sigma_rule: []

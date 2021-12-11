@@ -1,0 +1,8 @@
+guid: f592ba2a-e9e8-4d62-a459-ef63abd819fd
+name: Execute Commands
+tactic:
+  - execution
+technique:
+  - T1559.002
+sigma: false
+sigma_rule: []

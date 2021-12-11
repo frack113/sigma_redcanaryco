@@ -1,0 +1,8 @@
+guid: 39a295ca-7059-4a88-86f6-09556c1211e7
+name: Windows - Delete Volume Shadow Copies via WMI with PowerShell
+tactic:
+  - impact
+technique:
+  - T1490
+sigma: false
+sigma_rule: []

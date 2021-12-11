@@ -1,0 +1,8 @@
+guid: 96345bfc-8ae7-4b6a-80b7-223200f24ef9
+name: Gsecdump
+tactic:
+  - credential-access
+technique:
+  - T1003
+sigma: false
+sigma_rule: []

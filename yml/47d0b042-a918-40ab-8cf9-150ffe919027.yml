@@ -1,0 +1,8 @@
+guid: 47d0b042-a918-40ab-8cf9-150ffe919027
+name: Restart System via `reboot` - macOS/Linux
+tactic:
+  - impact
+technique:
+  - T1529
+sigma: false
+sigma_rule: []

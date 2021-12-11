@@ -1,0 +1,8 @@
+guid: a19ee671-ed98-4e9d-b19c-d1954a51585a
+name: Headless Chrome code execution via VBA
+tactic:
+  - execution
+technique:
+  - T1204.002
+sigma: false
+sigma_rule: []

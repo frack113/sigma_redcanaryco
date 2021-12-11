@@ -1,0 +1,8 @@
+guid: 870fe8fb-5e23-4f5f-b89d-dd7fe26f3b5f
+name: GPP Passwords (findstr)
+tactic:
+  - credential-access
+technique:
+  - T1552.006
+sigma: false
+sigma_rule: []

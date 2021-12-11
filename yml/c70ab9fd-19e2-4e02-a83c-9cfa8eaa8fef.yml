@@ -1,0 +1,8 @@
+guid: c70ab9fd-19e2-4e02-a83c-9cfa8eaa8fef
+name: Enumerate Default Domain Admin Details (Domain)
+tactic:
+  - discovery
+technique:
+  - T1087.002
+sigma: false
+sigma_rule: []

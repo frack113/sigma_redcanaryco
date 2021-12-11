@@ -1,0 +1,8 @@
+guid: 2e22641d-0498-48d2-b9ff-c71e496ccdbe
+name: Windows - Discover domain trusts with nltest
+tactic:
+  - discovery
+technique:
+  - T1482
+sigma: false
+sigma_rule: []

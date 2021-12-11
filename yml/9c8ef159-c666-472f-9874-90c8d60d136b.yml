@@ -1,0 +1,8 @@
+guid: 9c8ef159-c666-472f-9874-90c8d60d136b
+name: WMI Execute Remote Process
+tactic:
+  - execution
+technique:
+  - T1047
+sigma: false
+sigma_rule: []

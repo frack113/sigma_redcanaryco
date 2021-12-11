@@ -1,0 +1,9 @@
+guid: dfb1b667-4bb8-4a63-a85e-29936ea75f29
+name: UACME Bypass Method 59
+tactic:
+  - privilege-escalation
+  - defense-evasion
+technique:
+  - T1548.002
+sigma: false
+sigma_rule: []

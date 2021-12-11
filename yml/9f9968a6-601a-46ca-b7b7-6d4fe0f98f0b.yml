@@ -1,0 +1,8 @@
+guid: 9f9968a6-601a-46ca-b7b7-6d4fe0f98f0b
+name: InstallUtil Install method call
+tactic:
+  - defense-evasion
+technique:
+  - T1218.004
+sigma: false
+sigma_rule: []

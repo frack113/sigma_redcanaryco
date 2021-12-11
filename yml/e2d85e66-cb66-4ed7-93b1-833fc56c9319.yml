@@ -1,0 +1,8 @@
+guid: e2d85e66-cb66-4ed7-93b1-833fc56c9319
+name: DLP Evasion via Sensitive Data in VBA Macro over HTTP
+tactic:
+  - defense-evasion
+technique:
+  - T1027
+sigma: false
+sigma_rule: []

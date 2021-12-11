@@ -1,0 +1,9 @@
+guid: afdfd7e3-8a0b-409f-85f7-886fdf249c9e
+name: Modify SSP configuration in registry
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1547.005
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: 9a2915b3-3954-4cce-8c76-00fbf4dbd014
+name: LaZagne - Credentials from Browser
+tactic:
+  - credential-access
+technique:
+  - T1555.003
+sigma: false
+sigma_rule: []

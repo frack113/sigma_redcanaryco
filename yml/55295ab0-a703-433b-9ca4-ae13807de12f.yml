@@ -1,0 +1,8 @@
+guid: 55295ab0-a703-433b-9ca4-ae13807de12f
+name: Dumping LSA Secrets
+tactic:
+  - credential-access
+technique:
+  - T1003.004
+sigma: false
+sigma_rule: []

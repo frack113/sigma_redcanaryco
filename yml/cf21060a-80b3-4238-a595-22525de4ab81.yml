@@ -1,0 +1,8 @@
+guid: cf21060a-80b3-4238-a595-22525de4ab81
+name: Windows - Disable Windows Recovery Console Repair
+tactic:
+  - impact
+technique:
+  - T1490
+sigma: false
+sigma_rule: []

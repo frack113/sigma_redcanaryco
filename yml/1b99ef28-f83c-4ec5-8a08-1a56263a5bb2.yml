@@ -1,0 +1,8 @@
+guid: 1b99ef28-f83c-4ec5-8a08-1a56263a5bb2
+name: Change User Password - Windows
+tactic:
+  - impact
+technique:
+  - T1531
+sigma: false
+sigma_rule: []

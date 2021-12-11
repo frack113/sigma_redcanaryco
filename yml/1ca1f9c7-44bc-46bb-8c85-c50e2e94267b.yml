@@ -1,0 +1,8 @@
+guid: 1ca1f9c7-44bc-46bb-8c85-c50e2e94267b
+name: List Mozilla Firefox Bookmark Database Files on macOS
+tactic:
+  - discovery
+technique:
+  - T1217
+sigma: false
+sigma_rule: []

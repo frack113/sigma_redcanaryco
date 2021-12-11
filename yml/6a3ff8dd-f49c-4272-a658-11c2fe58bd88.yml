@@ -1,0 +1,8 @@
+guid: 6a3ff8dd-f49c-4272-a658-11c2fe58bd88
+name: Windows - Delete Volume Shadow Copies via WMI
+tactic:
+  - impact
+technique:
+  - T1490
+sigma: false
+sigma_rule: []

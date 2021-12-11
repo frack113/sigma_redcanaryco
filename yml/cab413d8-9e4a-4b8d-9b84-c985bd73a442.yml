@@ -1,0 +1,8 @@
+guid: cab413d8-9e4a-4b8d-9b84-c985bd73a442
+name: ADFS token signing and encryption certificates theft - Remote
+tactic:
+  - credential-access
+technique:
+  - T1552.004
+sigma: false
+sigma_rule: []

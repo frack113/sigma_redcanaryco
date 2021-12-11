@@ -1,0 +1,8 @@
+guid: d03683ec-aae0-42f9-9b4c-534780e0f8e1
+name: LogMeIn Files Detected Test on Windows
+tactic:
+  - command-and-control
+technique:
+  - T1219
+sigma: false
+sigma_rule: []

@@ -1,0 +1,10 @@
+guid: f4983098-bb13-44fb-9b2c-46149961807b
+name: Create Systemd Service and Timer
+tactic:
+  - privilege-escalation
+  - persistence
+  - execution
+technique:
+  - T1053.006
+sigma: false
+sigma_rule: []

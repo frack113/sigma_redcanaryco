@@ -1,0 +1,8 @@
+guid: d696a3cb-d7a8-4976-8eb5-5af4abf2e3df
+name: Port Scan NMap for Windows
+tactic:
+  - discovery
+technique:
+  - T1046
+sigma: false
+sigma_rule: []

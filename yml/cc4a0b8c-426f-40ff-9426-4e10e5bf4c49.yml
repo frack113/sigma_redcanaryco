@@ -1,0 +1,8 @@
+guid: cc4a0b8c-426f-40ff-9426-4e10e5bf4c49
+name: Install root CA on macOS
+tactic:
+  - defense-evasion
+technique:
+  - T1553.004
+sigma: false
+sigma_rule: []

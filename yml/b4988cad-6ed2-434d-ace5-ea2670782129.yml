@@ -1,0 +1,9 @@
+guid: b4988cad-6ed2-434d-ace5-ea2670782129
+name: Radmin Viewer Utility
+tactic:
+  - execution
+  - lateral-movement
+technique:
+  - T1072
+sigma: false
+sigma_rule: []

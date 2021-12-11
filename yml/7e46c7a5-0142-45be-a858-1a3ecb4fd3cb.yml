@@ -1,0 +1,8 @@
+guid: 7e46c7a5-0142-45be-a858-1a3ecb4fd3cb
+name: List opened files by user
+tactic:
+  - discovery
+technique:
+  - T1087.001
+sigma: false
+sigma_rule: []

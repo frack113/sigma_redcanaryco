@@ -1,0 +1,8 @@
+guid: d400090a-d8ca-4be0-982e-c70598a23de9
+name: Dump svchost.exe to gather RDP credentials
+tactic:
+  - credential-access
+technique:
+  - T1003
+sigma: false
+sigma_rule: []

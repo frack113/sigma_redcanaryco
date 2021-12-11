@@ -1,0 +1,8 @@
+guid: 2158908e-b7ef-4c21-8a83-3ce4dd05a924
+name: File and Directory Discovery (PowerShell)
+tactic:
+  - discovery
+technique:
+  - T1083
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: 388a7340-dbc1-4c9d-8e59-b75ad8c6d5da
+name: Powershell MsXml COM object - with prompt
+tactic:
+  - execution
+technique:
+  - T1059.001
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: f21a1d7d-a62f-442a-8c3a-2440d43b19e5
+name: Delete User - Windows
+tactic:
+  - impact
+technique:
+  - T1531
+sigma: false
+sigma_rule: []

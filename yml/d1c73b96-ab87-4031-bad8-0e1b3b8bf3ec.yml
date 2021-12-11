@@ -1,0 +1,8 @@
+guid: d1c73b96-ab87-4031-bad8-0e1b3b8bf3ec
+name: Adfind - Enumerate Active Directory OUs
+tactic:
+  - discovery
+technique:
+  - T1482
+sigma: false
+sigma_rule: []

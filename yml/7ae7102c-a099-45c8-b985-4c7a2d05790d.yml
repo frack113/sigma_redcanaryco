@@ -1,0 +1,8 @@
+guid: 7ae7102c-a099-45c8-b985-4c7a2d05790d
+name: Dump LSASS.exe Memory using direct system calls and API unhooking
+tactic:
+  - credential-access
+technique:
+  - T1003.001
+sigma: false
+sigma_rule: []

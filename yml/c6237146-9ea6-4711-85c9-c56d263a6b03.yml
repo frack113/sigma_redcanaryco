@@ -1,0 +1,8 @@
+guid: c6237146-9ea6-4711-85c9-c56d263a6b03
+name: Copy NTDS.dit from Volume Shadow Copy
+tactic:
+  - credential-access
+technique:
+  - T1003.003
+sigma: false
+sigma_rule: []

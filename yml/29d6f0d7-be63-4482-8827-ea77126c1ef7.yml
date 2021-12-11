@@ -1,0 +1,8 @@
+guid: 29d6f0d7-be63-4482-8827-ea77126c1ef7
+name: Invoke CHM with default Shortcut Command Execution
+tactic:
+  - defense-evasion
+technique:
+  - T1218.001
+sigma: false
+sigma_rule: []

@@ -1,0 +1,9 @@
+guid: 2cb98256-625e-4da9-9d44-f2e5f90b8bd5
+name: Suspicious vbs file run from startup Folder
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1547.001
+sigma: false
+sigma_rule: []

@@ -1,0 +1,9 @@
+guid: a960185f-aef6-4547-8350-d1ce16680d09
+name: Detect Virtualization Environment (MacOS)
+tactic:
+  - defense-evasion
+  - discovery
+technique:
+  - T1497.001
+sigma: false
+sigma_rule: []

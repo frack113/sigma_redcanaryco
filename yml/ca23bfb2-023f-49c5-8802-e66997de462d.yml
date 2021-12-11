@@ -1,0 +1,8 @@
+guid: ca23bfb2-023f-49c5-8802-e66997de462d
+name: MSXSL Bypass using local files
+tactic:
+  - defense-evasion
+technique:
+  - T1220
+sigma: false
+sigma_rule: []

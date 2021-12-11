@@ -1,0 +1,9 @@
+guid: c35ac4a8-19de-43af-b9f8-755da7e89c89
+name: Create Systemd Service file,  Enable the service , Modify and Reload the service.
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1543.002
+sigma: false
+sigma_rule: []

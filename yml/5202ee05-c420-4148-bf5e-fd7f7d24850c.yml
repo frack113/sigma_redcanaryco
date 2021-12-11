@@ -1,0 +1,8 @@
+guid: 5202ee05-c420-4148-bf5e-fd7f7d24850c
+name: Office Generic Payload Download
+tactic:
+  - execution
+technique:
+  - T1204.002
+sigma: false
+sigma_rule: []

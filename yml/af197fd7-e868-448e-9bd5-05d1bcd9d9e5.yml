@@ -1,0 +1,8 @@
+guid: af197fd7-e868-448e-9bd5-05d1bcd9d9e5
+name: Enumeration for PuTTY Credentials in Registry
+tactic:
+  - credential-access
+technique:
+  - T1552.002
+sigma: false
+sigma_rule: []

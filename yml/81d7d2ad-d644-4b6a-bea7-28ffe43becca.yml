@@ -1,0 +1,9 @@
+guid: 81d7d2ad-d644-4b6a-bea7-28ffe43becca
+name: SSHD PAM keylogger
+tactic:
+  - credential-access
+  - collection
+technique:
+  - T1056.001
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: 514e9cd7-9207-4882-98b1-c8f791bae3c5
+name: Map Admin Share PowerShell
+tactic:
+  - lateral-movement
+technique:
+  - T1021.002
+sigma: false
+sigma_rule: []

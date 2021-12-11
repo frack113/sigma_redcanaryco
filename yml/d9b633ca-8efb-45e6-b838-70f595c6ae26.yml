@@ -1,0 +1,9 @@
+guid: d9b633ca-8efb-45e6-b838-70f595c6ae26
+name: Input Capture
+tactic:
+  - credential-access
+  - collection
+technique:
+  - T1056.001
+sigma: false
+sigma_rule: []

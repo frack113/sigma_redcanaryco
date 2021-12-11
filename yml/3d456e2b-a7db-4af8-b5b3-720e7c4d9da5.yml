@@ -1,0 +1,8 @@
+guid: 3d456e2b-a7db-4af8-b5b3-720e7c4d9da5
+name: Edge Chromium Addon - VPN
+tactic:
+  - persistence
+technique:
+  - T1176
+sigma: false
+sigma_rule: []

@@ -1,0 +1,9 @@
+guid: a5b2f6a0-24b4-493e-9590-c699f75723ca
+name: Packet Capture Windows Command Prompt
+tactic:
+  - credential-access
+  - discovery
+technique:
+  - T1040
+sigma: false
+sigma_rule: []

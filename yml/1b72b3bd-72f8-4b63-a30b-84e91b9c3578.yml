@@ -1,0 +1,8 @@
+guid: 1b72b3bd-72f8-4b63-a30b-84e91b9c3578
+name: GoToAssist Files Detected Test on Windows
+tactic:
+  - command-and-control
+technique:
+  - T1219
+sigma: false
+sigma_rule: []

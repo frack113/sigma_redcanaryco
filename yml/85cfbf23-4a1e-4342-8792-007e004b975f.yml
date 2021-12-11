@@ -1,0 +1,8 @@
+guid: 85cfbf23-4a1e-4342-8792-007e004b975f
+name: Hostname Discovery (Windows)
+tactic:
+  - discovery
+technique:
+  - T1082
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: dddd4aca-bbed-46f0-984d-e4c5971c51ea
+name: Dump LSASS.exe Memory using NanoDump
+tactic:
+  - credential-access
+technique:
+  - T1003.001
+sigma: false
+sigma_rule: []

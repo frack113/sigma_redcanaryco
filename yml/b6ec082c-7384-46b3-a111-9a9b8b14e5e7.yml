@@ -1,0 +1,8 @@
+guid: b6ec082c-7384-46b3-a111-9a9b8b14e5e7
+name: Enumeration for Credentials in Registry
+tactic:
+  - credential-access
+technique:
+  - T1552.002
+sigma: false
+sigma_rule: []

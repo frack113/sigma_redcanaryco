@@ -1,0 +1,10 @@
+guid: 8549ad4b-b5df-4a2d-a3d7-2aee9e7052a3
+name: DLL Search Order Hijacking - amsi.dll
+tactic:
+  - privilege-escalation
+  - defense-evasion
+  - persistence
+technique:
+  - T1574.001
+sigma: false
+sigma_rule: []

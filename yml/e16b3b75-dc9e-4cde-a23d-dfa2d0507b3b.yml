@@ -1,0 +1,10 @@
+guid: e16b3b75-dc9e-4cde-a23d-dfa2d0507b3b
+name: WMI Invoke-CimMethod Scheduled Task
+tactic:
+  - privilege-escalation
+  - persistence
+  - execution
+technique:
+  - T1053.005
+sigma: false
+sigma_rule: []

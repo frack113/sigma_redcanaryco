@@ -1,0 +1,9 @@
+guid: a668edb9-334e-48eb-8c2e-5413a40867af
+name: Auditd keylogger
+tactic:
+  - credential-access
+  - collection
+technique:
+  - T1056.001
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: 8164a4a6-f99c-4661-ac4f-80f5e4e78d2b
+name: Set a file's creation timestamp
+tactic:
+  - defense-evasion
+technique:
+  - T1070.006
+sigma: false
+sigma_rule: []

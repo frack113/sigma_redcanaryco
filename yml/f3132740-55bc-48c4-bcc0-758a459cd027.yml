@@ -1,0 +1,8 @@
+guid: f3132740-55bc-48c4-bcc0-758a459cd027
+name: Mimikatz
+tactic:
+  - execution
+technique:
+  - T1059.001
+sigma: false
+sigma_rule: []

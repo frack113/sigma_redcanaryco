@@ -1,0 +1,8 @@
+guid: e6f4affd-d826-4871-9a62-6c9004b8fe06
+name: Extract all accounts in use as SPN using setspn
+tactic:
+  - credential-access
+technique:
+  - T1558.003
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: 95018438-454a-468c-a0fa-59c800149b59
+name: Automated AD Recon (ADRecon)
+tactic:
+  - discovery
+technique:
+  - T1087.002
+sigma: false
+sigma_rule: []

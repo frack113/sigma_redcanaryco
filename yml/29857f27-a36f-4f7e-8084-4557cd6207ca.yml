@@ -1,0 +1,8 @@
+guid: 29857f27-a36f-4f7e-8084-4557cd6207ca
+name: Find computers where user has session - Stealth mode (PowerView)
+tactic:
+  - discovery
+technique:
+  - T1033
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: bcf0d1c1-3f6a-4847-b1c9-7ed4ea321f37
+name: Netcat C2
+tactic:
+  - command-and-control
+technique:
+  - T1095
+sigma: false
+sigma_rule: []

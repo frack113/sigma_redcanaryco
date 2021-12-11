@@ -1,0 +1,8 @@
+guid: '005943f9-8dd5-4349-8b46-0313c0a9f973'
+name: Hex decoding with shell utilities
+tactic:
+  - defense-evasion
+technique:
+  - T1140
+sigma: false
+sigma_rule: []

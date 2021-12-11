@@ -1,0 +1,8 @@
+guid: 6dc74eb1-c9d6-4c53-b3b5-6f50ae339673
+name: PowerShell Lateral Movement using MMC20
+tactic:
+  - lateral-movement
+technique:
+  - T1021.003
+sigma: false
+sigma_rule: []

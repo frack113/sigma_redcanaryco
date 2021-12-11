@@ -1,0 +1,8 @@
+guid: 1864fdec-ff86-4452-8c30-f12507582a93
+name: Keychain
+tactic:
+  - credential-access
+technique:
+  - T1555.001
+sigma: false
+sigma_rule: []

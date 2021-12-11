@@ -1,0 +1,8 @@
+guid: 649349c7-9abf-493b-a7a2-b1aa4d141528
+name: PureLocker Ransom Note
+tactic:
+  - impact
+technique:
+  - T1486
+sigma: false
+sigma_rule: []

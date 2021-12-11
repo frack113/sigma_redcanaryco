@@ -1,0 +1,8 @@
+guid: 815bef8b-bf91-4b67-be4c-abe4c2a94ccc
+name: Download a File with Windows Defender MpCmdRun.exe
+tactic:
+  - command-and-control
+technique:
+  - T1105
+sigma: false
+sigma_rule: []

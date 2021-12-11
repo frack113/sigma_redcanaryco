@@ -1,0 +1,8 @@
+guid: 5838c31e-a0e2-4b9f-b60a-d79d2cb7995e
+name: Adfind - Enumerate Active Directory Domain Controller Objects
+tactic:
+  - discovery
+technique:
+  - T1018
+sigma: false
+sigma_rule: []

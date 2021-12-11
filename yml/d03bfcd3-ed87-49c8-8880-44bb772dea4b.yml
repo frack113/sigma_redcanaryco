@@ -1,0 +1,8 @@
+guid: d03bfcd3-ed87-49c8-8880-44bb772dea4b
+name: ExecIntoContainer
+tactic:
+  - execution
+technique:
+  - T1609
+sigma: false
+sigma_rule: []

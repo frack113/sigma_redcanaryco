@@ -1,0 +1,8 @@
+guid: eeb9751a-d598-42d3-b11c-c122d9c3f6c7
+name: dump volume shadow copy hives with certutil
+tactic:
+  - credential-access
+technique:
+  - T1003.002
+sigma: false
+sigma_rule: []

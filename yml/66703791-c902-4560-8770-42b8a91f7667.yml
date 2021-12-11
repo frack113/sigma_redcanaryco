@@ -1,0 +1,8 @@
+guid: 66703791-c902-4560-8770-42b8a91f7667
+name: System Information Discovery
+tactic:
+  - discovery
+technique:
+  - T1082
+sigma: false
+sigma_rule: []

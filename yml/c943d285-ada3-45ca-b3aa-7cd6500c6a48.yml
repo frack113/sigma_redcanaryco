@@ -1,0 +1,8 @@
+guid: c943d285-ada3-45ca-b3aa-7cd6500c6a48
+name: DNSExfiltration (doh)
+tactic:
+  - exfiltration
+technique:
+  - T1048
+sigma: false
+sigma_rule: []

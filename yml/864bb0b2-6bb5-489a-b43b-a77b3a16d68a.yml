@@ -1,0 +1,8 @@
+guid: 864bb0b2-6bb5-489a-b43b-a77b3a16d68a
+name: Copy Private SSH Keys with rsync
+tactic:
+  - credential-access
+technique:
+  - T1552.004
+sigma: false
+sigma_rule: []

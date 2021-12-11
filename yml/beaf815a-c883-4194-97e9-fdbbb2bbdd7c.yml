@@ -1,0 +1,8 @@
+guid: beaf815a-c883-4194-97e9-fdbbb2bbdd7c
+name: Edit UFW firewall user.rules file
+tactic:
+  - defense-evasion
+technique:
+  - T1562.004
+sigma: false
+sigma_rule: []

@@ -1,0 +1,9 @@
+guid: 9d04efee-eff5-4240-b8d2-07792b873608
+name: Packet Capture macOS
+tactic:
+  - credential-access
+  - discovery
+technique:
+  - T1040
+sigma: false
+sigma_rule: []

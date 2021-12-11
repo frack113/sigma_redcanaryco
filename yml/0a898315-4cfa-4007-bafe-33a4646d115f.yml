@@ -1,0 +1,9 @@
+guid: 0a898315-4cfa-4007-bafe-33a4646d115f
+name: Add command to .bashrc
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1546.004
+sigma: false
+sigma_rule: []

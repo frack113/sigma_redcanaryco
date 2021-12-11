@@ -1,0 +1,8 @@
+guid: da627f63-b9bd-4431-b6f8-c5b44d061a62
+name: Windows - Modify file last access timestamp with PowerShell
+tactic:
+  - defense-evasion
+technique:
+  - T1070.006
+sigma: false
+sigma_rule: []

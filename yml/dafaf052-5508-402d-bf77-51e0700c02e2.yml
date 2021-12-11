@@ -1,0 +1,8 @@
+guid: dafaf052-5508-402d-bf77-51e0700c02e2
+name: System Network Configuration Discovery (TrickBot Style)
+tactic:
+  - discovery
+technique:
+  - T1016
+sigma: false
+sigma_rule: []

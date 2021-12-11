@@ -1,0 +1,8 @@
+guid: fd3c1c6a-02d2-4b72-82d9-71c527abb126
+name: Regsvcs Uninstall Method Call Test
+tactic:
+  - defense-evasion
+technique:
+  - T1218.009
+sigma: false
+sigma_rule: []

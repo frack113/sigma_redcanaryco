@@ -1,0 +1,8 @@
+guid: 46f8dbe9-22a5-4770-8513-66119c5be63b
+name: Enumerate Active Directory for Unconstrained Delegation
+tactic:
+  - discovery
+technique:
+  - T1087.002
+sigma: false
+sigma_rule: []

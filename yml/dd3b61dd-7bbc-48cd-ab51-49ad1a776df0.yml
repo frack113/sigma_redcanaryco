@@ -1,0 +1,8 @@
+guid: dd3b61dd-7bbc-48cd-ab51-49ad1a776df0
+name: certutil download (urlcache)
+tactic:
+  - command-and-control
+technique:
+  - T1105
+sigma: false
+sigma_rule: []

@@ -1,0 +1,9 @@
+guid: a58d9386-3080-4242-ab5f-454c16503d18
+name: Install AppInit Shim
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1546.010
+sigma: false
+sigma_rule: []

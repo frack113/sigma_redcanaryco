@@ -1,0 +1,8 @@
+guid: faab755e-4299-48ec-8202-fc7885eb6545
+name: List Google Chrome Bookmarks on Windows with powershell
+tactic:
+  - discovery
+technique:
+  - T1217
+sigma: false
+sigma_rule: []

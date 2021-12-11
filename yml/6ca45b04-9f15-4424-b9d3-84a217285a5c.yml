@@ -1,0 +1,8 @@
+guid: 6ca45b04-9f15-4424-b9d3-84a217285a5c
+name: Port Scan using python
+tactic:
+  - discovery
+technique:
+  - T1046
+sigma: false
+sigma_rule: []

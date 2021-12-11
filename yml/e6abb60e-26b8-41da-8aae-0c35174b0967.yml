@@ -1,0 +1,8 @@
+guid: e6abb60e-26b8-41da-8aae-0c35174b0967
+name: Clear Logs
+tactic:
+  - defense-evasion
+technique:
+  - T1070.001
+sigma: false
+sigma_rule: []

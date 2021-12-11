@@ -1,0 +1,8 @@
+guid: 0cd14633-58d4-4422-9ede-daa2c9474ae7
+name: Utilize Clipboard to store or execute commands from
+tactic:
+  - collection
+technique:
+  - T1115
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: a5f0d9f8-d3c9-46c0-8378-846ddd6b1cbd
+name: Find local admins on all machines in domain (PowerView)
+tactic:
+  - discovery
+technique:
+  - T1069.002
+sigma: false
+sigma_rule: []

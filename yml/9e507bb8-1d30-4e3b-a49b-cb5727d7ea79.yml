@@ -1,0 +1,8 @@
+guid: 9e507bb8-1d30-4e3b-a49b-cb5727d7ea79
+name: Extract Browser and System credentials with LaZagne
+tactic:
+  - credential-access
+technique:
+  - T1552.001
+sigma: false
+sigma_rule: []

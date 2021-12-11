@@ -1,0 +1,8 @@
+guid: 736b4f53-f400-4c22-855d-1a6b5a551600
+name: Adfind -Listing password policy
+tactic:
+  - discovery
+technique:
+  - T1087.002
+sigma: false
+sigma_rule: []

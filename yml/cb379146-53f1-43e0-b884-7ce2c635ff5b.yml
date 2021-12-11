@@ -1,0 +1,8 @@
+guid: cb379146-53f1-43e0-b884-7ce2c635ff5b
+name: Automated Collection Command Prompt
+tactic:
+  - collection
+technique:
+  - T1119
+sigma: false
+sigma_rule: []

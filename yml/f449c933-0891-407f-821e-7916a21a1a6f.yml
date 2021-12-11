@@ -1,0 +1,8 @@
+guid: f449c933-0891-407f-821e-7916a21a1a6f
+name: System Time Discovery in macOS
+tactic:
+  - discovery
+technique:
+  - T1124
+sigma: false
+sigma_rule: []

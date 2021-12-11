@@ -1,0 +1,10 @@
+guid: 65526037-7079-44a9-bda1-2cb624838040
+name: DLL Side-Loading using the Notepad++ GUP.exe binary
+tactic:
+  - privilege-escalation
+  - defense-evasion
+  - persistence
+technique:
+  - T1574.002
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: 391f5298-b12d-4636-8482-35d9c17d53a8
+name: Compressing data using GZip in Python (Linux)
+tactic:
+  - collection
+technique:
+  - T1560.002
+sigma: false
+sigma_rule: []

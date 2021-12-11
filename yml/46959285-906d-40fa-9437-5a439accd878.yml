@@ -1,0 +1,8 @@
+guid: 46959285-906d-40fa-9437-5a439accd878
+name: Discover Private SSH Keys
+tactic:
+  - credential-access
+technique:
+  - T1552.004
+sigma: false
+sigma_rule: []

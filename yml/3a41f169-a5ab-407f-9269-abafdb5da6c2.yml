@@ -1,0 +1,8 @@
+guid: 3a41f169-a5ab-407f-9269-abafdb5da6c2
+name: List Mozilla Firefox Bookmark Database Files on Linux
+tactic:
+  - discovery
+technique:
+  - T1217
+sigma: false
+sigma_rule: []

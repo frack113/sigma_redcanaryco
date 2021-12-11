@@ -1,0 +1,8 @@
+guid: f3a6cceb-06c9-48e5-8df8-8867a6814245
+name: Change Powershell Execution Policy to Bypass
+tactic:
+  - defense-evasion
+technique:
+  - T1112
+sigma: false
+sigma_rule: []

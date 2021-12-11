@@ -1,0 +1,8 @@
+guid: ffcdbd6a-b0e8-487d-927a-09127fe9a206
+name: Compile After Delivery using csc.exe
+tactic:
+  - defense-evasion
+technique:
+  - T1027.004
+sigma: false
+sigma_rule: []

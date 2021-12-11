@@ -1,0 +1,10 @@
+guid: 39cb0e67-dd0d-4b74-a74b-c072db7ae991
+name: Shared Library Injection via /etc/ld.so.preload
+tactic:
+  - privilege-escalation
+  - defense-evasion
+  - persistence
+technique:
+  - T1574.006
+sigma: false
+sigma_rule: []

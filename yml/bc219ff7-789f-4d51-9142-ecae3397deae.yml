@@ -1,0 +1,10 @@
+guid: bc219ff7-789f-4d51-9142-ecae3397deae
+name: Shared Library Injection via LD_PRELOAD
+tactic:
+  - privilege-escalation
+  - defense-evasion
+  - persistence
+technique:
+  - T1574.006
+sigma: false
+sigma_rule: []

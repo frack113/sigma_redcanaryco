@@ -1,0 +1,8 @@
+guid: 8c05b133-d438-47ca-a630-19cc464c4622
+name: Run Chrome-password Collector
+tactic:
+  - credential-access
+technique:
+  - T1555.003
+sigma: false
+sigma_rule: []

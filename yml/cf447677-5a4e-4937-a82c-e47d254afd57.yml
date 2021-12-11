@@ -1,0 +1,8 @@
+guid: cf447677-5a4e-4937-a82c-e47d254afd57
+name: Add domain to Trusted sites Zone
+tactic:
+  - defense-evasion
+technique:
+  - T1112
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: '038263cb-00f4-4b0a-98ae-0696c67e1752'
+name: List Windows Firewall Rules
+tactic:
+  - discovery
+technique:
+  - T1016
+sigma: false
+sigma_rule: []

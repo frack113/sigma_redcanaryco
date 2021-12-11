@@ -1,0 +1,8 @@
+guid: 001a042b-859f-44d9-bf81-fd1c4e2200b0
+name: Compressing data using zipfile in Python (Linux)
+tactic:
+  - collection
+technique:
+  - T1560.002
+sigma: false
+sigma_rule: []

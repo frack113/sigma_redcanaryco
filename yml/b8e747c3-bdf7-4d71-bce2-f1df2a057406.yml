@@ -1,0 +1,8 @@
+guid: b8e747c3-bdf7-4d71-bce2-f1df2a057406
+name: Azure AD Application Hijacking - Service Principal
+tactic:
+  - persistence
+technique:
+  - T1098.001
+sigma: false
+sigma_rule: []

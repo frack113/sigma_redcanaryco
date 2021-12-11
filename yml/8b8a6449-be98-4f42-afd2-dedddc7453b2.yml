@@ -1,0 +1,8 @@
+guid: 8b8a6449-be98-4f42-afd2-dedddc7453b2
+name: Enumerate all accounts via PowerShell (Domain)
+tactic:
+  - discovery
+technique:
+  - T1087.002
+sigma: false
+sigma_rule: []

@@ -1,0 +1,11 @@
+guid: 99747561-ed8d-47f2-9c91-1e5fde1ed6e0
+name: Enable Guest account with RDP capability and admin privileges
+tactic:
+  - privilege-escalation
+  - defense-evasion
+  - persistence
+  - initial-access
+technique:
+  - T1078.001
+sigma: false
+sigma_rule: []

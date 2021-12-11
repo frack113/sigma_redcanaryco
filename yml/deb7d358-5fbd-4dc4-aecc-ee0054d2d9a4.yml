@@ -1,0 +1,8 @@
+guid: deb7d358-5fbd-4dc4-aecc-ee0054d2d9a4
+name: Screencapture (silent)
+tactic:
+  - collection
+technique:
+  - T1113
+sigma: false
+sigma_rule: []

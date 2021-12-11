@@ -1,0 +1,9 @@
+guid: e514bb03-f71c-4b22-9092-9f961ec6fb03
+name: UACME Bypass Method 33
+tactic:
+  - privilege-escalation
+  - defense-evasion
+technique:
+  - T1548.002
+sigma: false
+sigma_rule: []

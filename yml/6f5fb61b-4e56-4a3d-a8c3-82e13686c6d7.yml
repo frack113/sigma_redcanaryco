@@ -1,0 +1,8 @@
+guid: 6f5fb61b-4e56-4a3d-a8c3-82e13686c6d7
+name: Disable Microsoft Office Security Features
+tactic:
+  - defense-evasion
+technique:
+  - T1562.001
+sigma: false
+sigma_rule: []

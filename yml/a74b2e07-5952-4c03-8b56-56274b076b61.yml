@@ -1,0 +1,9 @@
+guid: a74b2e07-5952-4c03-8b56-56274b076b61
+name: Trap
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1546.005
+sigma: false
+sigma_rule: []

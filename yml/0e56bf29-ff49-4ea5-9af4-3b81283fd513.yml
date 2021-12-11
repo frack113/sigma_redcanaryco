@@ -1,0 +1,8 @@
+guid: 0e56bf29-ff49-4ea5-9af4-3b81283fd513
+name: Extracting passwords with findstr
+tactic:
+  - credential-access
+technique:
+  - T1552.001
+sigma: false
+sigma_rule: []

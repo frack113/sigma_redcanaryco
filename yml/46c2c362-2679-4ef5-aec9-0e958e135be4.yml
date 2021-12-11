@@ -1,0 +1,8 @@
+guid: 46c2c362-2679-4ef5-aec9-0e958e135be4
+name: Examine domain password policy - Windows
+tactic:
+  - discovery
+technique:
+  - T1201
+sigma: false
+sigma_rule: []

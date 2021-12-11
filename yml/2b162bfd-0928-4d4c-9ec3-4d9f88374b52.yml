@@ -1,0 +1,9 @@
+guid: 2b162bfd-0928-4d4c-9ec3-4d9f88374b52
+name: PowerShell - Prompt User for Password
+tactic:
+  - credential-access
+  - collection
+technique:
+  - T1056.002
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: a1230893-56ac-4c81-b644-2108e982f8f5
+name: Disable Arbitrary Security Windows Service
+tactic:
+  - defense-evasion
+technique:
+  - T1562.001
+sigma: false
+sigma_rule: []

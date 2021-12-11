@@ -1,0 +1,8 @@
+guid: f92a380f-ced9-491f-b338-95a991418ce2
+name: Security Software Discovery
+tactic:
+  - discovery
+technique:
+  - T1518.001
+sigma: false
+sigma_rule: []

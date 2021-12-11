@@ -1,0 +1,8 @@
+guid: 7413be50-be8e-430f-ad4d-07bf197884b2
+name: Wmic Group Discovery
+tactic:
+  - discovery
+technique:
+  - T1069.001
+sigma: false
+sigma_rule: []

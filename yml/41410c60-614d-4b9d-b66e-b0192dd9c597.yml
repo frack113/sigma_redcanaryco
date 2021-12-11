@@ -1,0 +1,8 @@
+guid: 41410c60-614d-4b9d-b66e-b0192dd9c597
+name: Compress Data for Exfiltration With PowerShell
+tactic:
+  - collection
+technique:
+  - T1560
+sigma: false
+sigma_rule: []

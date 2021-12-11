@@ -1,0 +1,8 @@
+guid: 129efd28-8497-4c87-a1b0-73b9a870ca3e
+name: DCSync (Active Directory)
+tactic:
+  - credential-access
+technique:
+  - T1003.006
+sigma: false
+sigma_rule: []

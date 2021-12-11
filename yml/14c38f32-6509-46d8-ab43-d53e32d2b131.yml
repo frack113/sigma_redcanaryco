@@ -1,0 +1,8 @@
+guid: 14c38f32-6509-46d8-ab43-d53e32d2b131
+name: Add Network Share
+tactic:
+  - defense-evasion
+technique:
+  - T1070.005
+sigma: false
+sigma_rule: []

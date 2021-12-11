@@ -1,0 +1,8 @@
+guid: a538de64-1c74-46ed-aa60-b995ed302598
+name: PowerShell Command Execution
+tactic:
+  - execution
+technique:
+  - T1059.001
+sigma: false
+sigma_rule: []

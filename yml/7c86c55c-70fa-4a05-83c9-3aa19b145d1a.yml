@@ -1,0 +1,8 @@
+guid: 7c86c55c-70fa-4a05-83c9-3aa19b145d1a
+name: Examine password expiration policy - All Linux
+tactic:
+  - discovery
+technique:
+  - T1201
+sigma: false
+sigma_rule: []

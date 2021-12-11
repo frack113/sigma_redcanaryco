@@ -1,0 +1,8 @@
+guid: 161dcd85-d014-4f5e-900c-d3eaae82a0f7
+name: Enumerate logged on users via CMD (Domain)
+tactic:
+  - discovery
+technique:
+  - T1087.002
+sigma: false
+sigma_rule: []

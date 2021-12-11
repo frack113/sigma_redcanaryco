@@ -1,0 +1,8 @@
+guid: 1620de42-160a-4fe5-bbaf-d3fef0181ce9
+name: Visual Basic script execution to gather local computer information
+tactic:
+  - execution
+technique:
+  - T1059.005
+sigma: false
+sigma_rule: []

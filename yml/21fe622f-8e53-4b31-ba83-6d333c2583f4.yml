@@ -1,0 +1,8 @@
+guid: 21fe622f-8e53-4b31-ba83-6d333c2583f4
+name: Testing usage of uncommonly used port with PowerShell
+tactic:
+  - command-and-control
+technique:
+  - T1571
+sigma: false
+sigma_rule: []

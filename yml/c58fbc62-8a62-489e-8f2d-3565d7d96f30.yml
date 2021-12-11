@@ -1,0 +1,8 @@
+guid: c58fbc62-8a62-489e-8f2d-3565d7d96f30
+name: Powershell enumerate domains and forests
+tactic:
+  - discovery
+technique:
+  - T1482
+sigma: false
+sigma_rule: []

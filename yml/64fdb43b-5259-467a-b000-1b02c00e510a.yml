@@ -1,0 +1,8 @@
+guid: 64fdb43b-5259-467a-b000-1b02c00e510a
+name: Find Local Admins via Group Policy (PowerView)
+tactic:
+  - discovery
+technique:
+  - T1069.002
+sigma: false
+sigma_rule: []

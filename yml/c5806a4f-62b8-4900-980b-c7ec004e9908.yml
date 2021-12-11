@@ -1,0 +1,8 @@
+guid: c5806a4f-62b8-4900-980b-c7ec004e9908
+name: Process Discovery - tasklist
+tactic:
+  - discovery
+technique:
+  - T1057
+sigma: false
+sigma_rule: []

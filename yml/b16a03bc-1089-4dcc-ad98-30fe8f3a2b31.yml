@@ -1,0 +1,8 @@
+guid: b16a03bc-1089-4dcc-ad98-30fe8f3a2b31
+name: Golden SAML
+tactic:
+  - credential-access
+technique:
+  - T1606.002
+sigma: false
+sigma_rule: []

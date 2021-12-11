@@ -1,0 +1,8 @@
+guid: 64b12afc-18b8-4d3f-9eab-7f6cae7c73f9
+name: Remove the Zone.Identifier alternate data stream
+tactic:
+  - defense-evasion
+technique:
+  - T1553.005
+sigma: false
+sigma_rule: []

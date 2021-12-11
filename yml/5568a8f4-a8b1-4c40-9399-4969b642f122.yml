@@ -1,0 +1,8 @@
+guid: 5568a8f4-a8b1-4c40-9399-4969b642f122
+name: Data Exfiltration with ConfigSecurityPolicy
+tactic:
+  - exfiltration
+technique:
+  - T1567
+sigma: false
+sigma_rule: []

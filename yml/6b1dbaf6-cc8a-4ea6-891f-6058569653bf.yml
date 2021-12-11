@@ -1,0 +1,8 @@
+guid: 6b1dbaf6-cc8a-4ea6-891f-6058569653bf
+name: Windows - Delete Backup Files
+tactic:
+  - impact
+technique:
+  - T1490
+sigma: false
+sigma_rule: []

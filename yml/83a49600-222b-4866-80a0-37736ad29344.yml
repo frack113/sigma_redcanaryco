@@ -1,0 +1,8 @@
+guid: 83a49600-222b-4866-80a0-37736ad29344
+name: scp remote file copy (push)
+tactic:
+  - command-and-control
+technique:
+  - T1105
+sigma: false
+sigma_rule: []

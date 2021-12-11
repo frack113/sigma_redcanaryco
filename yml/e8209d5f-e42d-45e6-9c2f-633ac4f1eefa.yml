@@ -1,0 +1,8 @@
+guid: e8209d5f-e42d-45e6-9c2f-633ac4f1eefa
+name: Encoded VBS code execution
+tactic:
+  - execution
+technique:
+  - T1059.005
+sigma: false
+sigma_rule: []

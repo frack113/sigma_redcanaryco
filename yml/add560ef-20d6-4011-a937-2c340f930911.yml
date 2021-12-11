@@ -1,0 +1,8 @@
+guid: add560ef-20d6-4011-a937-2c340f930911
+name: OSTAP JS version
+tactic:
+  - execution
+technique:
+  - T1204.002
+sigma: false
+sigma_rule: []

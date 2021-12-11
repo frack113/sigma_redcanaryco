@@ -1,0 +1,9 @@
+guid: 502a7dc4-9d6f-4d28-abf2-f0e84692562d
+name: Detect Virtualization Environment (Windows)
+tactic:
+  - defense-evasion
+  - discovery
+technique:
+  - T1497.001
+sigma: false
+sigma_rule: []

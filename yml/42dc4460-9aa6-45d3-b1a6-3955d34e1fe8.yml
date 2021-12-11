@@ -1,0 +1,8 @@
+guid: 42dc4460-9aa6-45d3-b1a6-3955d34e1fe8
+name: Windows - PowerShell Download
+tactic:
+  - command-and-control
+technique:
+  - T1105
+sigma: false
+sigma_rule: []

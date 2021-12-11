@@ -1,0 +1,8 @@
+guid: 520ce462-7ca7-441e-b5a5-f8347f632696
+name: Private Keys
+tactic:
+  - credential-access
+technique:
+  - T1552.004
+sigma: false
+sigma_rule: []

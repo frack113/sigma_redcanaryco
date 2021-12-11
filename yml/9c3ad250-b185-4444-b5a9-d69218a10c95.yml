@@ -1,0 +1,8 @@
+guid: 9c3ad250-b185-4444-b5a9-d69218a10c95
+name: using device audio capture commandlet
+tactic:
+  - collection
+technique:
+  - T1123
+sigma: false
+sigma_rule: []

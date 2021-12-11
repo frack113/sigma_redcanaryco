@@ -1,0 +1,8 @@
+guid: 1289f78d-22d2-4590-ac76-166737e1811b
+name: PowerUp Invoke-AllChecks
+tactic:
+  - execution
+technique:
+  - T1059.001
+sigma: false
+sigma_rule: []

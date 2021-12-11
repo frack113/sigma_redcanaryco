@@ -1,0 +1,8 @@
+guid: 0045ea16-ed3c-4d4c-a9ee-15e44d1560d1
+name: Create ADS PowerShell
+tactic:
+  - defense-evasion
+technique:
+  - T1564.004
+sigma: false
+sigma_rule: []

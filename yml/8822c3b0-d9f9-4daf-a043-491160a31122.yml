@@ -1,0 +1,8 @@
+guid: 8822c3b0-d9f9-4daf-a043-491160a31122
+name: AWS - Create Access Key and Secret Key
+tactic:
+  - persistence
+technique:
+  - T1098.001
+sigma: false
+sigma_rule: []

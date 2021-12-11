@@ -1,0 +1,8 @@
+guid: 559e6d06-bb42-4307-bff7-3b95a8254bad
+name: InstallUtil evasive invocation
+tactic:
+  - defense-evasion
+technique:
+  - T1218.004
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: 8057d484-0fae-49a4-8302-4812c4f1e64e
+name: Linux VM Check via Kernel Modules
+tactic:
+  - discovery
+technique:
+  - T1082
+sigma: false
+sigma_rule: []

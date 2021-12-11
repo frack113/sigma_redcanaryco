@@ -1,0 +1,8 @@
+guid: dd66d77d-8998-48c0-8024-df263dc2ce5d
+name: Basic Permission Groups Discovery Windows (Domain)
+tactic:
+  - discovery
+technique:
+  - T1069.002
+sigma: false
+sigma_rule: []

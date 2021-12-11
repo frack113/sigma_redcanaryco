@@ -1,0 +1,8 @@
+guid: 9bb45dd7-c466-4f93-83a1-be30e56033ee
+name: Adfind - Enumerate Active Directory Subnet Objects
+tactic:
+  - discovery
+technique:
+  - T1016
+sigma: false
+sigma_rule: []

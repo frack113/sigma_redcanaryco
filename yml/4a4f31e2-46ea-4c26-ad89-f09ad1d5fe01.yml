@@ -1,0 +1,8 @@
+guid: 4a4f31e2-46ea-4c26-ad89-f09ad1d5fe01
+name: Exfiltrate data HTTPS using curl
+tactic:
+  - exfiltration
+technique:
+  - T1048.002
+sigma: false
+sigma_rule: []

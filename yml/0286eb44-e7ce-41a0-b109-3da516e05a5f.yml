@@ -1,0 +1,8 @@
+guid: '0286eb44-e7ce-41a0-b109-3da516e05a5f'
+name: Data Encrypted with zip and gpg symmetric
+tactic:
+  - collection
+technique:
+  - T1560.001
+sigma: false
+sigma_rule: []

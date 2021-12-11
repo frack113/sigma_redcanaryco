@@ -1,0 +1,8 @@
+guid: c403b5a4-b5fc-49f2-b181-d1c80d27db45
+name: Exfiltration Over Alternative Protocol - DNS
+tactic:
+  - exfiltration
+technique:
+  - T1048.003
+sigma: false
+sigma_rule: []

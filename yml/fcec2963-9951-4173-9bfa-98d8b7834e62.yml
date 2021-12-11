@@ -1,0 +1,8 @@
+guid: fcec2963-9951-4173-9bfa-98d8b7834e62
+name: Create a new Windows domain admin user
+tactic:
+  - persistence
+technique:
+  - T1136.002
+sigma: false
+sigma_rule: []

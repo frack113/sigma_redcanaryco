@@ -1,0 +1,8 @@
+guid: '01993ba5-1da3-4e15-a719-b690d4f0f0b2'
+name: Create a user account on a MacOS system
+tactic:
+  - persistence
+technique:
+  - T1136.001
+sigma: false
+sigma_rule: []

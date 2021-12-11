@@ -1,0 +1,8 @@
+guid: 43e92449-ff60-46e9-83a3-1a38089df94d
+name: Install MS Exchange Transport Agent Persistence
+tactic:
+  - persistence
+technique:
+  - T1505.002
+sigma: false
+sigma_rule: []

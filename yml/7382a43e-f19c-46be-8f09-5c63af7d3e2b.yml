@@ -1,0 +1,8 @@
+guid: 7382a43e-f19c-46be-8f09-5c63af7d3e2b
+name: RDP to Server
+tactic:
+  - lateral-movement
+technique:
+  - T1021.001
+sigma: false
+sigma_rule: []

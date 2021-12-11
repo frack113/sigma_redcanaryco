@@ -1,0 +1,8 @@
+guid: 01df0353-d531-408d-a0c5-3161bf822134
+name: Compress Data and lock with password for Exfiltration with winzip
+tactic:
+  - collection
+technique:
+  - T1560.001
+sigma: false
+sigma_rule: []

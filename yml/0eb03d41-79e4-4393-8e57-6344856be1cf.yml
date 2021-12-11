@@ -1,0 +1,8 @@
+guid: 0eb03d41-79e4-4393-8e57-6344856be1cf
+name: Copy and Execute File with PsExec
+tactic:
+  - lateral-movement
+technique:
+  - T1021.002
+sigma: false
+sigma_rule: []

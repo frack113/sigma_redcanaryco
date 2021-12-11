@@ -1,0 +1,8 @@
+guid: 114ccff9-ae6d-4547-9ead-4cd69f687306
+name: Download Phishing Attachment - VBScript
+tactic:
+  - initial-access
+technique:
+  - T1566.001
+sigma: false
+sigma_rule: []

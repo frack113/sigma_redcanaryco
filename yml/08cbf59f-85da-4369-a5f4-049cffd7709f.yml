@@ -1,0 +1,8 @@
+guid: '08cbf59f-85da-4369-a5f4-049cffd7709f'
+name: Encrypt files using ccrypt (Linux)
+tactic:
+  - impact
+technique:
+  - T1486
+sigma: false
+sigma_rule: []

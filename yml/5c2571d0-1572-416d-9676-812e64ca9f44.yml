@@ -1,0 +1,8 @@
+guid: 5c2571d0-1572-416d-9676-812e64ca9f44
+name: Registry dump of SAM, creds, and secrets
+tactic:
+  - credential-access
+technique:
+  - T1003.002
+sigma: false
+sigma_rule: []

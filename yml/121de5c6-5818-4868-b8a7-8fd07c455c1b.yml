@@ -1,0 +1,8 @@
+guid: 121de5c6-5818-4868-b8a7-8fd07c455c1b
+name: Qakbot Recon
+tactic:
+  - discovery
+technique:
+  - T1016
+sigma: false
+sigma_rule: []

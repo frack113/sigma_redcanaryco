@@ -1,0 +1,8 @@
+guid: fe94a1c3-3e22-4dc9-9fdf-3a8bdbc10dc4
+name: List Process Main Windows - C# .NET
+tactic:
+  - discovery
+technique:
+  - T1010
+sigma: false
+sigma_rule: []

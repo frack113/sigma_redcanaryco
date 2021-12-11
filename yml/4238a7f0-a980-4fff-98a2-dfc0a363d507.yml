@@ -1,0 +1,8 @@
+guid: 4238a7f0-a980-4fff-98a2-dfc0a363d507
+name: Create Hidden User using UniqueID < 500
+tactic:
+  - defense-evasion
+technique:
+  - T1564.002
+sigma: false
+sigma_rule: []

@@ -1,0 +1,9 @@
+guid: 03ab8df5-3a6b-4417-b6bd-bb7a5cfd74cf
+name: Launch Daemon
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1543.004
+sigma: false
+sigma_rule: []

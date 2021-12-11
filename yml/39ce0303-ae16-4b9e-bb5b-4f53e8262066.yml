@@ -1,0 +1,8 @@
+guid: 39ce0303-ae16-4b9e-bb5b-4f53e8262066
+name: Stage data from Discovery.sh
+tactic:
+  - collection
+technique:
+  - T1074.001
+sigma: false
+sigma_rule: []

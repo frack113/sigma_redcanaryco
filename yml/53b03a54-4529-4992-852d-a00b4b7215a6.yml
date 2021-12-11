@@ -1,0 +1,8 @@
+guid: 53b03a54-4529-4992-852d-a00b4b7215a6
+name: Use Space Before Command to Avoid Logging to History
+tactic:
+  - defense-evasion
+technique:
+  - T1070.003
+sigma: false
+sigma_rule: []

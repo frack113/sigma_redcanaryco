@@ -1,0 +1,8 @@
+guid: c955a599-3653-4fe5-b631-f11c00eb0397
+name: View accounts with UID 0
+tactic:
+  - discovery
+technique:
+  - T1087.001
+sigma: false
+sigma_rule: []

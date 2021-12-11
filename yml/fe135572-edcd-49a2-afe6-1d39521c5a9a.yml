@@ -1,0 +1,8 @@
+guid: fe135572-edcd-49a2-afe6-1d39521c5a9a
+name: Stop/Start UFW firewall
+tactic:
+  - defense-evasion
+technique:
+  - T1562.004
+sigma: false
+sigma_rule: []

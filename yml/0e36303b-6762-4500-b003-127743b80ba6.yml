@@ -1,0 +1,8 @@
+guid: 0e36303b-6762-4500-b003-127743b80ba6
+name: File and Directory Discovery (cmd.exe)
+tactic:
+  - discovery
+technique:
+  - T1083
+sigma: false
+sigma_rule: []

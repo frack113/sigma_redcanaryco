@@ -1,0 +1,8 @@
+guid: c3e35b58-fe1c-480b-b540-7600fb612563
+name: Office Application Startup Test Persistence
+tactic:
+  - persistence
+technique:
+  - T1137.002
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: a21bb23e-e677-4ee7-af90-6931b57b6350
+name: Run BloodHound from local disk
+tactic:
+  - execution
+technique:
+  - T1059.001
+sigma: false
+sigma_rule: []

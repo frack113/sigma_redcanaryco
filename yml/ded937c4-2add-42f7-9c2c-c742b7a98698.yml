@@ -1,0 +1,8 @@
+guid: ded937c4-2add-42f7-9c2c-c742b7a98698
+name: Delete an entire folder - Windows cmd
+tactic:
+  - defense-evasion
+technique:
+  - T1070.004
+sigma: false
+sigma_rule: []

@@ -1,0 +1,9 @@
+guid: 97a48daa-8bca-4bc0-b1a9-c1d163e762de
+name: rc.common
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1037.004
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: 8bebc690-18c7-4549-bc98-210f7019efff
+name: OSTap Style Macro Execution
+tactic:
+  - execution
+technique:
+  - T1204.002
+sigma: false
+sigma_rule: []

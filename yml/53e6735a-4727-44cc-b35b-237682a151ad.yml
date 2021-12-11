@@ -1,0 +1,8 @@
+guid: 53e6735a-4727-44cc-b35b-237682a151ad
+name: Encrypt files using 7z (Linux)
+tactic:
+  - impact
+technique:
+  - T1486
+sigma: false
+sigma_rule: []

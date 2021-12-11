@@ -1,0 +1,8 @@
+guid: c4b97eeb-5249-4455-a607-59f95485cb45
+name: Mshta Executes Remote HTML Application (HTA)
+tactic:
+  - defense-evasion
+technique:
+  - T1218.005
+sigma: false
+sigma_rule: []

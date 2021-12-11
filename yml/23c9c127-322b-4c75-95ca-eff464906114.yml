@@ -1,0 +1,9 @@
+guid: 23c9c127-322b-4c75-95ca-eff464906114
+name: Persistance with Event Monitor - emond
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1546.014
+sigma: false
+sigma_rule: []

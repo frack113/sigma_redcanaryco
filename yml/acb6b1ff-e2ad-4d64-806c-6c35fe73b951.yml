@@ -1,0 +1,8 @@
+guid: acb6b1ff-e2ad-4d64-806c-6c35fe73b951
+name: Remote System Discovery - arp nix
+tactic:
+  - discovery
+technique:
+  - T1018
+sigma: false
+sigma_rule: []

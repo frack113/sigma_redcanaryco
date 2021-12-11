@@ -1,0 +1,8 @@
+guid: 515942b0-a09f-4163-a7bb-22fefb6f185f
+name: Port Scan Nmap
+tactic:
+  - discovery
+technique:
+  - T1046
+sigma: false
+sigma_rule: []

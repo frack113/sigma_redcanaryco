@@ -1,0 +1,10 @@
+guid: f38e9eea-e1d7-4ba6-b716-584791963827
+name: Service ImagePath Change with reg.exe
+tactic:
+  - privilege-escalation
+  - defense-evasion
+  - persistence
+technique:
+  - T1574.011
+sigma: false
+sigma_rule: []

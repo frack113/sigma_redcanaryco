@@ -1,0 +1,9 @@
+guid: 9c6bdb34-a89f-4b90-acb1-5970614c711b
+name: Living off the land Terminal Input Capture on Linux with pam.d
+tactic:
+  - credential-access
+  - collection
+technique:
+  - T1056.001
+sigma: false
+sigma_rule: []

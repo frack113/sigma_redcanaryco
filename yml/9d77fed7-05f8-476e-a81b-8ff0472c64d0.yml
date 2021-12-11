@@ -1,0 +1,8 @@
+guid: 9d77fed7-05f8-476e-a81b-8ff0472c64d0
+name: dump volume shadow copy hives with System.IO.File
+tactic:
+  - credential-access
+technique:
+  - T1003.002
+sigma: false
+sigma_rule: []

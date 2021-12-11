@@ -1,0 +1,8 @@
+guid: 39ceed55-f653-48ac-bd19-aceceaf525db
+name: Invoke HTML Application - Direct download from URI
+tactic:
+  - defense-evasion
+technique:
+  - T1218.005
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: d893459f-71f0-484d-9808-ec83b2b64226
+name: Create Volume Shadow Copy remotely with WMI
+tactic:
+  - credential-access
+technique:
+  - T1003.003
+sigma: false
+sigma_rule: []

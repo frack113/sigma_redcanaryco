@@ -1,0 +1,8 @@
+guid: c49978f6-bd6e-4221-ad2c-9e3e30cc1e3b
+name: Applications Installed
+tactic:
+  - discovery
+technique:
+  - T1518
+sigma: false
+sigma_rule: []

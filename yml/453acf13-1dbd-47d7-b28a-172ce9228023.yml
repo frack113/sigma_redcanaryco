@@ -1,0 +1,8 @@
+guid: 453acf13-1dbd-47d7-b28a-172ce9228023
+name: Offline Credential Theft With Mimikatz
+tactic:
+  - credential-access
+technique:
+  - T1003.001
+sigma: false
+sigma_rule: []

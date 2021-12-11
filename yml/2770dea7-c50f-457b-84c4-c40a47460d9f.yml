@@ -1,0 +1,10 @@
+guid: 2770dea7-c50f-457b-84c4-c40a47460d9f
+name: Execution of program.exe as service with unquoted service path
+tactic:
+  - privilege-escalation
+  - defense-evasion
+  - persistence
+technique:
+  - T1574.009
+sigma: false
+sigma_rule: []

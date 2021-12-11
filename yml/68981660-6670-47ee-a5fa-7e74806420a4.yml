@@ -1,0 +1,8 @@
+guid: 68981660-6670-47ee-a5fa-7e74806420a4
+name: Find and Display Internet Explorer Browser Version
+tactic:
+  - discovery
+technique:
+  - T1518
+sigma: false
+sigma_rule: []

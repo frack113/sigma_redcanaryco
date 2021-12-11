@@ -1,0 +1,8 @@
+guid: d1334303-59cb-4a03-8313-b3e24d02c198
+name: Compress Data and lock with password for Exfiltration with 7zip
+tactic:
+  - collection
+technique:
+  - T1560.001
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: 8d1c2368-b503-40c9-9057-8e42f21c58ad
+name: AWS - Create a new IAM user
+tactic:
+  - persistence
+technique:
+  - T1136.003
+sigma: false
+sigma_rule: []

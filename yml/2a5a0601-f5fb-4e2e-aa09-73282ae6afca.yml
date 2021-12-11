@@ -1,0 +1,8 @@
+guid: 2a5a0601-f5fb-4e2e-aa09-73282ae6afca
+name: Copy the users GnuPG directory with rsync
+tactic:
+  - credential-access
+technique:
+  - T1552.004
+sigma: false
+sigma_rule: []

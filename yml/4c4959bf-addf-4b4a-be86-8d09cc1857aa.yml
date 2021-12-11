@@ -1,0 +1,8 @@
+guid: 4c4959bf-addf-4b4a-be86-8d09cc1857aa
+name: System Owner/User Discovery
+tactic:
+  - discovery
+technique:
+  - T1033
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: 686a9785-f99b-41d4-90df-66ed515f81d7
+name: ATHPowerShellCommandLineParameter -Command parameter variations
+tactic:
+  - execution
+technique:
+  - T1059.001
+sigma: false
+sigma_rule: []

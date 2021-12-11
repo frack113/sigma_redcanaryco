@@ -1,0 +1,8 @@
+guid: e9313014-985a-48ef-80d9-cde604ffc187
+name: Windows Screen Capture (CopyFromScreen)
+tactic:
+  - collection
+technique:
+  - T1113
+sigma: false
+sigma_rule: []

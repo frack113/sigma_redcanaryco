@@ -1,0 +1,8 @@
+guid: 8ca3b96d-8983-4a7f-b125-fc98cc0a2aa0
+name: TeamViewer Files Detected Test on Windows
+tactic:
+  - command-and-control
+technique:
+  - T1219
+sigma: false
+sigma_rule: []

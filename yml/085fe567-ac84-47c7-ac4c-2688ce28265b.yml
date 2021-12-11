@@ -1,0 +1,8 @@
+guid: '085fe567-ac84-47c7-ac4c-2688ce28265b'
+name: Examine password complexity policy - Ubuntu
+tactic:
+  - discovery
+technique:
+  - T1201
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: 441b1a0f-a771-428a-8af0-e99e4698cda3
+name: Code Executed Via Excel Add-in File (Xll)
+tactic:
+  - persistence
+technique:
+  - T1137.006
+sigma: false
+sigma_rule: []

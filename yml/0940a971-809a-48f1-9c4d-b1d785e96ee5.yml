@@ -1,0 +1,8 @@
+guid: '0940a971-809a-48f1-9c4d-b1d785e96ee5'
+name: System Network Connections Discovery
+tactic:
+  - discovery
+technique:
+  - T1049
+sigma: false
+sigma_rule: []

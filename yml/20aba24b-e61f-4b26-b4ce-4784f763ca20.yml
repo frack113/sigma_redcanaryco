@@ -1,0 +1,8 @@
+guid: 20aba24b-e61f-4b26-b4ce-4784f763ca20
+name: System Time Discovery
+tactic:
+  - discovery
+technique:
+  - T1124
+sigma: false
+sigma_rule: []

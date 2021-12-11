@@ -1,0 +1,9 @@
+guid: fb32c935-ee2e-454b-8fa3-1c46b42e8dfb
+name: Winlogon Userinit Key Persistence - PowerShell
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1547.004
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: 367d4004-5fc0-446d-823f-960c74ae52c3
+name: Access unattend.xml
+tactic:
+  - credential-access
+technique:
+  - T1552.001
+sigma: false
+sigma_rule: []

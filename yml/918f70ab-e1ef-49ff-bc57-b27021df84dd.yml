@@ -1,0 +1,8 @@
+guid: 918f70ab-e1ef-49ff-bc57-b27021df84dd
+name: Shutdown System via `halt` - Linux
+tactic:
+  - impact
+technique:
+  - T1529
+sigma: false
+sigma_rule: []

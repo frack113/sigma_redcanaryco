@@ -1,0 +1,10 @@
+guid: 4a6c0dc4-0f2a-4203-9298-a5a9bdc21ed8
+name: At.exe Scheduled task
+tactic:
+  - privilege-escalation
+  - persistence
+  - execution
+technique:
+  - T1053.002
+sigma: false
+sigma_rule: []

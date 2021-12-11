@@ -1,0 +1,9 @@
+guid: 554cbd88-cde1-4b56-8168-0be552eed9eb
+name: Reg Key RunOnce
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1547.001
+sigma: false
+sigma_rule: []

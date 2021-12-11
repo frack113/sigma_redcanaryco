@@ -1,0 +1,8 @@
+guid: 0f7c5301-6859-45ba-8b4d-1fac30fc31ed
+name: Windows Credential Editor
+tactic:
+  - credential-access
+technique:
+  - T1003.001
+sigma: false
+sigma_rule: []

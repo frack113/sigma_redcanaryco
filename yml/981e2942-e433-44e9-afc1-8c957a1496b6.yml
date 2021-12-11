@@ -1,0 +1,9 @@
+guid: 981e2942-e433-44e9-afc1-8c957a1496b6
+name: Service Installation CMD
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1543.003
+sigma: false
+sigma_rule: []

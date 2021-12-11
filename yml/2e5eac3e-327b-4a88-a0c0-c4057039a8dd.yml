@@ -1,0 +1,10 @@
+guid: 2e5eac3e-327b-4a88-a0c0-c4057039a8dd
+name: Scheduled task Remote
+tactic:
+  - privilege-escalation
+  - persistence
+  - execution
+technique:
+  - T1053.005
+sigma: false
+sigma_rule: []

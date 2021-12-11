@@ -1,0 +1,8 @@
+guid: 9726592a-dabc-4d4d-81cd-44070008b3af
+name: Crafting Active Directory golden tickets with mimikatz
+tactic:
+  - credential-access
+technique:
+  - T1558.001
+sigma: false
+sigma_rule: []

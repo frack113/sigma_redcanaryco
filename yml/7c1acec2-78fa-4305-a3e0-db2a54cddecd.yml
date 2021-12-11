@@ -1,0 +1,8 @@
+guid: 7c1acec2-78fa-4305-a3e0-db2a54cddecd
+name: PowerShell Session Creation and Use
+tactic:
+  - execution
+technique:
+  - T1059.001
+sigma: false
+sigma_rule: []

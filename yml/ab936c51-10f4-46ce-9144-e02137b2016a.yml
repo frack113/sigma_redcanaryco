@@ -1,0 +1,8 @@
+guid: ab936c51-10f4-46ce-9144-e02137b2016a
+name: Data Transfer Size Limits
+tactic:
+  - exfiltration
+technique:
+  - T1030
+sigma: false
+sigma_rule: []

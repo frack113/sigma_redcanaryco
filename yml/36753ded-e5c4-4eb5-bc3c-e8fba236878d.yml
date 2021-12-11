@@ -1,0 +1,8 @@
+guid: 36753ded-e5c4-4eb5-bc3c-e8fba236878d
+name: Enumerate credentials from Windows Credential Manager using vaultcmd.exe [Windows Credentials]
+tactic:
+  - credential-access
+technique:
+  - T1555
+sigma: false
+sigma_rule: []

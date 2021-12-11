@@ -1,0 +1,9 @@
+guid: 0e59d59d-3265-4d35-bebd-bf5c1ec40db5
+name: Logging bash history to syslog
+tactic:
+  - credential-access
+  - collection
+technique:
+  - T1056.001
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: 449aa403-6aba-47ce-8a37-247d21ef0306
+name: Regsvr32 local COM scriptlet execution
+tactic:
+  - defense-evasion
+technique:
+  - T1218.010
+sigma: false
+sigma_rule: []

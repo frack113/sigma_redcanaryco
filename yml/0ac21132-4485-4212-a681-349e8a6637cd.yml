@@ -1,0 +1,8 @@
+guid: 0ac21132-4485-4212-a681-349e8a6637cd
+name: Connection Proxy
+tactic:
+  - command-and-control
+technique:
+  - T1090.001
+sigma: false
+sigma_rule: []

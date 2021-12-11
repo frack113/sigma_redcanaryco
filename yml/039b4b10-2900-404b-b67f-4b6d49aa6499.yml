@@ -1,0 +1,8 @@
+guid: '039b4b10-2900-404b-b67f-4b6d49aa6499'
+name: Overwrite and delete a file with shred
+tactic:
+  - defense-evasion
+technique:
+  - T1070.004
+sigma: false
+sigma_rule: []

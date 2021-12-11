@@ -1,0 +1,8 @@
+guid: 485ce873-2e65-4706-9c7e-ae3ab9e14213
+name: PetitPotam
+tactic:
+  - credential-access
+technique:
+  - T1187
+sigma: false
+sigma_rule: []

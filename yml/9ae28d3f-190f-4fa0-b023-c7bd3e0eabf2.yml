@@ -1,0 +1,8 @@
+guid: 9ae28d3f-190f-4fa0-b023-c7bd3e0eabf2
+name: System Network Connections Discovery Linux & MacOS
+tactic:
+  - discovery
+technique:
+  - T1049
+sigma: false
+sigma_rule: []

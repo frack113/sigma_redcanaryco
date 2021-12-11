@@ -1,0 +1,8 @@
+guid: 2a821573-fb3f-4e71-92c3-daac7432f053
+name: Disable macOS Gatekeeper
+tactic:
+  - defense-evasion
+technique:
+  - T1562.001
+sigma: false
+sigma_rule: []

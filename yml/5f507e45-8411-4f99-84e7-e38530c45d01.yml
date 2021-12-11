@@ -1,0 +1,8 @@
+guid: 5f507e45-8411-4f99-84e7-e38530c45d01
+name: File download with finger.exe on Windows
+tactic:
+  - command-and-control
+technique:
+  - T1105
+sigma: false
+sigma_rule: []

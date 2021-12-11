@@ -1,0 +1,8 @@
+guid: 224f7de0-8f0a-4a94-b5d8-989b036c86da
+name: Create Volume Shadow Copy with WMI
+tactic:
+  - credential-access
+technique:
+  - T1003.003
+sigma: false
+sigma_rule: []

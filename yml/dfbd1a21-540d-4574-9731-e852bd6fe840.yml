@@ -1,0 +1,9 @@
+guid: dfbd1a21-540d-4574-9731-e852bd6fe840
+name: Detect Virtualization Environment (Linux)
+tactic:
+  - defense-evasion
+  - discovery
+technique:
+  - T1497.001
+sigma: false
+sigma_rule: []

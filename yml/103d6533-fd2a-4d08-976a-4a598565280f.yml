@@ -1,0 +1,8 @@
+guid: 103d6533-fd2a-4d08-976a-4a598565280f
+name: Find and Display Safari Browser Version
+tactic:
+  - discovery
+technique:
+  - T1518
+sigma: false
+sigma_rule: []

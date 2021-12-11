@@ -1,0 +1,9 @@
+guid: 5fefd767-ef54-4ac6-84d3-751ab85e8aba
+name: Re-Opened Applications
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1547.007
+sigma: false
+sigma_rule: []

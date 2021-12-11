@@ -1,0 +1,8 @@
+guid: 11c46cd8-e471-450e-acb8-52a1216ae6a4
+name: Binary simply packed by UPX (linux)
+tactic:
+  - defense-evasion
+technique:
+  - T1027.002
+sigma: false
+sigma_rule: []

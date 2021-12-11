@@ -1,0 +1,8 @@
+guid: d546a3d9-0be5-40c7-ad82-5a7d79e1b66b
+name: SSH Credential Stuffing From MacOS
+tactic:
+  - credential-access
+technique:
+  - T1110.004
+sigma: false
+sigma_rule: []

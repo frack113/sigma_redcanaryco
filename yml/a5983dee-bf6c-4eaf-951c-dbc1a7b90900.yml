@@ -1,0 +1,9 @@
+guid: a5983dee-bf6c-4eaf-951c-dbc1a7b90900
+name: Launch Agent
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1543.001
+sigma: false
+sigma_rule: []

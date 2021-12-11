@@ -1,0 +1,9 @@
+guid: ec23cef9-27d9-46e4-a68d-6f75f7b86908
+name: Mimikatz Pass the Hash
+tactic:
+  - defense-evasion
+  - lateral-movement
+technique:
+  - T1550.002
+sigma: false
+sigma_rule: []

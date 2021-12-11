@@ -1,0 +1,8 @@
+guid: 81c13829-f6c9-45b8-85a6-053366d55297
+name: Malicious User Agents - Powershell
+tactic:
+  - command-and-control
+technique:
+  - T1071.001
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: fed9be70-0186-4bde-9f8a-20945f9370c2
+name: View sudoers access
+tactic:
+  - discovery
+technique:
+  - T1087.001
+sigma: false
+sigma_rule: []

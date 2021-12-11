@@ -1,0 +1,8 @@
+guid: 4700a710-c821-4e17-a3ec-9e4c81d6845f
+name: Windows - Discover domain trusts with dsquery
+tactic:
+  - discovery
+technique:
+  - T1482
+sigma: false
+sigma_rule: []

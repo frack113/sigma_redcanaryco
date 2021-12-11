@@ -1,0 +1,8 @@
+guid: 7cede33f-0acd-44ef-9774-15511300b24b
+name: Create Mini Dump of LSASS.exe using ProcDump
+tactic:
+  - credential-access
+technique:
+  - T1003.001
+sigma: false
+sigma_rule: []

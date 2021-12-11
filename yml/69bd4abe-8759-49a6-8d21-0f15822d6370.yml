@@ -1,0 +1,8 @@
+guid: 69bd4abe-8759-49a6-8d21-0f15822d6370
+name: Griffon Recon
+tactic:
+  - discovery
+technique:
+  - T1082
+sigma: false
+sigma_rule: []

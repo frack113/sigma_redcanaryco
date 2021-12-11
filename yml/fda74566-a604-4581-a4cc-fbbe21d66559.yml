@@ -1,0 +1,8 @@
+guid: fda74566-a604-4581-a4cc-fbbe21d66559
+name: Create a new Windows admin user
+tactic:
+  - persistence
+technique:
+  - T1136.001
+sigma: false
+sigma_rule: []

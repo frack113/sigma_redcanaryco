@@ -1,0 +1,8 @@
+guid: 96db2632-8417-4dbb-b8bb-a8b92ba391de
+name: Remote System Discovery - sweep
+tactic:
+  - discovery
+technique:
+  - T1018
+sigma: false
+sigma_rule: []

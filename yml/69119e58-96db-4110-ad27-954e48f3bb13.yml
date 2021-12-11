@@ -1,0 +1,8 @@
+guid: 69119e58-96db-4110-ad27-954e48f3bb13
+name: WMIObject Group Discovery
+tactic:
+  - discovery
+technique:
+  - T1069.001
+sigma: false
+sigma_rule: []

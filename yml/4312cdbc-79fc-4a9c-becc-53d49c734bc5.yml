@@ -1,0 +1,8 @@
+guid: 4312cdbc-79fc-4a9c-becc-53d49c734bc5
+name: List Mozilla Firefox bookmarks on Windows with command prompt
+tactic:
+  - discovery
+technique:
+  - T1217
+sigma: false
+sigma_rule: []

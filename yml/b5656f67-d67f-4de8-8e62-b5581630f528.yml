@@ -1,0 +1,9 @@
+guid: b5656f67-d67f-4de8-8e62-b5581630f528
+name: Windows Internal Packet Capture
+tactic:
+  - credential-access
+  - discovery
+technique:
+  - T1040
+sigma: false
+sigma_rule: []

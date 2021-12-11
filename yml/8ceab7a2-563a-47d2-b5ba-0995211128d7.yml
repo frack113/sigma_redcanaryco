@@ -1,0 +1,9 @@
+guid: 8ceab7a2-563a-47d2-b5ba-0995211128d7
+name: UACME Bypass Method 23
+tactic:
+  - privilege-escalation
+  - defense-evasion
+technique:
+  - T1548.002
+sigma: false
+sigma_rule: []

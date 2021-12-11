@@ -1,0 +1,9 @@
+guid: f63b8bc4-07e5-4112-acba-56f646f3f0bc
+name: Bitsadmin Download (PowerShell)
+tactic:
+  - defense-evasion
+  - persistence
+technique:
+  - T1197
+sigma: false
+sigma_rule: []

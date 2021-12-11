@@ -1,0 +1,9 @@
+guid: 3f627297-6c38-4e7d-a278-fc2563eaaeaa
+name: Bypass UAC using Fodhelper - PowerShell
+tactic:
+  - privilege-escalation
+  - defense-evasion
+technique:
+  - T1548.002
+sigma: false
+sigma_rule: []

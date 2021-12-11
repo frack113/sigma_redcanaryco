@@ -1,0 +1,8 @@
+guid: 76f49d86-5eb1-461a-a032-a480f86652f1
+name: Install root CA on Windows
+tactic:
+  - defense-evasion
+technique:
+  - T1553.004
+sigma: false
+sigma_rule: []

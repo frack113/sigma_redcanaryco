@@ -1,0 +1,8 @@
+guid: baa01aaa-5e13-45ec-8a0d-e46c93c9760f
+name: Remote System Discovery - nslookup
+tactic:
+  - discovery
+technique:
+  - T1018
+sigma: false
+sigma_rule: []

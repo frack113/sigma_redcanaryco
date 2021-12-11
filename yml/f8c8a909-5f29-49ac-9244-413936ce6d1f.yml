@@ -1,0 +1,8 @@
+guid: f8c8a909-5f29-49ac-9244-413936ce6d1f
+name: Execution from Compressed File
+tactic:
+  - defense-evasion
+technique:
+  - T1027
+sigma: false
+sigma_rule: []

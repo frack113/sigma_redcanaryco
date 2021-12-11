@@ -1,0 +1,8 @@
+guid: aa875ed4-8935-47e2-b2c5-6ec00ab220d2
+name: Tamper with Windows Defender Command Prompt
+tactic:
+  - defense-evasion
+technique:
+  - T1562.001
+sigma: false
+sigma_rule: []

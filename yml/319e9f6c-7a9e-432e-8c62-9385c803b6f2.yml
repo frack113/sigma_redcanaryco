@@ -1,0 +1,8 @@
+guid: 319e9f6c-7a9e-432e-8c62-9385c803b6f2
+name: Enumerate users and groups
+tactic:
+  - discovery
+technique:
+  - T1087.001
+sigma: false
+sigma_rule: []

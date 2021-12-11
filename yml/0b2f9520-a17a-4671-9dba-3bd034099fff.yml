@@ -1,0 +1,8 @@
+guid: 0b2f9520-a17a-4671-9dba-3bd034099fff
+name: Deploy container using nsenter container escape
+tactic:
+  - privilege-escalation
+technique:
+  - T1611
+sigma: false
+sigma_rule: []

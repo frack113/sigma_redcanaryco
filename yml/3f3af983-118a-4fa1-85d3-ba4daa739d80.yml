@@ -1,0 +1,8 @@
+guid: 3f3af983-118a-4fa1-85d3-ba4daa739d80
+name: OSTap Payload Download
+tactic:
+  - execution
+technique:
+  - T1204.002
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: d1253f6e-c29b-49dc-b466-2147a6191932
+name: C2 Data Exfiltration
+tactic:
+  - exfiltration
+technique:
+  - T1041
+sigma: false
+sigma_rule: []

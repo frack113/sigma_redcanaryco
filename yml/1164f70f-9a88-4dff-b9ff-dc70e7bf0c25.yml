@@ -1,0 +1,8 @@
+guid: 1164f70f-9a88-4dff-b9ff-dc70e7bf0c25
+name: Base64 Encoded data.
+tactic:
+  - command-and-control
+technique:
+  - T1132.001
+sigma: false
+sigma_rule: []

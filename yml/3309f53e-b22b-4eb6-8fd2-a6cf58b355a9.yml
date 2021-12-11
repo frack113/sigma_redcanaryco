@@ -1,0 +1,9 @@
+guid: 3309f53e-b22b-4eb6-8fd2-a6cf58b355a9
+name: Attaches Command Prompt as a Debugger to a List of Target Processes
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1546.008
+sigma: false
+sigma_rule: []

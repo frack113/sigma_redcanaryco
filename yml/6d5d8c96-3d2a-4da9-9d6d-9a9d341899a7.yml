@@ -1,0 +1,8 @@
+guid: 6d5d8c96-3d2a-4da9-9d6d-9a9d341899a7
+name: Permission Groups Discovery PowerShell (Domain)
+tactic:
+  - discovery
+technique:
+  - T1069.002
+sigma: false
+sigma_rule: []

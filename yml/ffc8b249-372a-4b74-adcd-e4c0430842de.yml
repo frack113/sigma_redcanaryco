@@ -1,0 +1,8 @@
+guid: ffc8b249-372a-4b74-adcd-e4c0430842de
+name: Nix File and Diectory Discovery
+tactic:
+  - discovery
+technique:
+  - T1083
+sigma: false
+sigma_rule: []

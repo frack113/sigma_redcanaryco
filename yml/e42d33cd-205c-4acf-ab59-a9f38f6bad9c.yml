@@ -1,0 +1,8 @@
+guid: e42d33cd-205c-4acf-ab59-a9f38f6bad9c
+name: Crafting Active Directory golden tickets with Rubeus
+tactic:
+  - credential-access
+technique:
+  - T1558.001
+sigma: false
+sigma_rule: []

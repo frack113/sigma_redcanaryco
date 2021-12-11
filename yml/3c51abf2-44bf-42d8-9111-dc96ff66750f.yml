@@ -1,0 +1,9 @@
+guid: 3c51abf2-44bf-42d8-9111-dc96ff66750f
+name: Bypass UAC using ComputerDefaults (PowerShell)
+tactic:
+  - privilege-escalation
+  - defense-evasion
+technique:
+  - T1548.002
+sigma: false
+sigma_rule: []

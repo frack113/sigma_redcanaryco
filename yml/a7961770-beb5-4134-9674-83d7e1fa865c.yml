@@ -1,0 +1,10 @@
+guid: a7961770-beb5-4134-9674-83d7e1fa865c
+name: Install and Register Password Filter DLL
+tactic:
+  - credential-access
+  - defense-evasion
+  - persistence
+technique:
+  - T1556.002
+sigma: false
+sigma_rule: []

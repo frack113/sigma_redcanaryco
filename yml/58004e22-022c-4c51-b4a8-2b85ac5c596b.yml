@@ -1,0 +1,9 @@
+guid: 58004e22-022c-4c51-b4a8-2b85ac5c596b
+name: Deploy container using nsenter container escape
+tactic:
+  - defense-evasion
+  - execution
+technique:
+  - T1610
+sigma: false
+sigma_rule: []

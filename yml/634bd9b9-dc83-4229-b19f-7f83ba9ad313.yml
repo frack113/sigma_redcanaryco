@@ -1,0 +1,8 @@
+guid: 634bd9b9-dc83-4229-b19f-7f83ba9ad313
+name: Automated Collection PowerShell
+tactic:
+  - collection
+technique:
+  - T1119
+sigma: false
+sigma_rule: []

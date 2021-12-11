@@ -1,0 +1,8 @@
+guid: d41aaab5-bdfe-431d-a3d5-c29e9136ff46
+name: Execute command writing output to local Admin Share
+tactic:
+  - lateral-movement
+technique:
+  - T1021.002
+sigma: false
+sigma_rule: []

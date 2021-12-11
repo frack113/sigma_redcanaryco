@@ -1,0 +1,8 @@
+guid: 86fc3f40-237f-4701-b155-81c01c48d697
+name: Dump LSASS.exe using imported Microsoft DLLs
+tactic:
+  - credential-access
+technique:
+  - T1003.001
+sigma: false
+sigma_rule: []

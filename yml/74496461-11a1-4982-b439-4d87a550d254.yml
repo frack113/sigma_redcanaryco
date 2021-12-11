@@ -1,0 +1,9 @@
+guid: 74496461-11a1-4982-b439-4d87a550d254
+name: Process Injection via mavinject.exe
+tactic:
+  - privilege-escalation
+  - defense-evasion
+technique:
+  - T1055.001
+sigma: false
+sigma_rule: []

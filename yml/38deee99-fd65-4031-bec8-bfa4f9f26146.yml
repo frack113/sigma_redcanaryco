@@ -1,0 +1,8 @@
+guid: 38deee99-fd65-4031-bec8-bfa4f9f26146
+name: macOS/Linux - Overwrite file with DD
+tactic:
+  - impact
+technique:
+  - T1485
+sigma: false
+sigma_rule: []

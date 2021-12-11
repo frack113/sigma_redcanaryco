@@ -1,0 +1,8 @@
+guid: 224b4daf-db44-404e-b6b2-f4d1f0126ef8
+name: Windows MachineGUID Discovery
+tactic:
+  - discovery
+technique:
+  - T1082
+sigma: false
+sigma_rule: []

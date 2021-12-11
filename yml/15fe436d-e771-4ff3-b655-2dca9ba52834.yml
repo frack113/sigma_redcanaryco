@@ -1,0 +1,8 @@
+guid: 15fe436d-e771-4ff3-b655-2dca9ba52834
+name: Adfind - Enumerate Active Directory Trusts
+tactic:
+  - discovery
+technique:
+  - T1482
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: f069f0f1-baad-4831-aa2b-eddac4baac4a
+name: System Network Connections Discovery with PowerShell
+tactic:
+  - discovery
+technique:
+  - T1049
+sigma: false
+sigma_rule: []

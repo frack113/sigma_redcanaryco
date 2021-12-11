@@ -1,0 +1,8 @@
+guid: 9e8894c0-50bd-4525-a96c-d4ac78ece388
+name: Create and Execute Batch Script
+tactic:
+  - execution
+technique:
+  - T1059.003
+sigma: false
+sigma_rule: []

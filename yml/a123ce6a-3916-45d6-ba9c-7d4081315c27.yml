@@ -1,0 +1,8 @@
+guid: a123ce6a-3916-45d6-ba9c-7d4081315c27
+name: Tamper with Windows Defender Evade Scanning -Process
+tactic:
+  - defense-evasion
+technique:
+  - T1562.001
+sigma: false
+sigma_rule: []

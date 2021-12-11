@@ -1,0 +1,9 @@
+guid: 24e55612-85f6-4bd6-ae74-a73d02e3441d
+name: Add Executable Shortcut Link to User Startup Folder
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1547.001
+sigma: false
+sigma_rule: []

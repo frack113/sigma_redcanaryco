@@ -1,0 +1,8 @@
+guid: b95fd967-4e62-4109-b48d-265edfd28c3a
+name: Adfind - Enumerate Active Directory Admins
+tactic:
+  - discovery
+technique:
+  - T1087.002
+sigma: false
+sigma_rule: []

@@ -1,0 +1,8 @@
+guid: df1a55ae-019d-4120-bc35-94f4bc5c4b0a
+name: Access /etc/{shadow,passwd} with a standard bin that's not cat
+tactic:
+  - credential-access
+technique:
+  - T1003.008
+sigma: false
+sigma_rule: []

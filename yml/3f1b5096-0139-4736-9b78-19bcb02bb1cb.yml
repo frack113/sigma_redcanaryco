@@ -1,0 +1,8 @@
+guid: 3f1b5096-0139-4736-9b78-19bcb02bb1cb
+name: Email Collection with PowerShell Get-Inbox
+tactic:
+  - collection
+technique:
+  - T1114.001
+sigma: false
+sigma_rule: []

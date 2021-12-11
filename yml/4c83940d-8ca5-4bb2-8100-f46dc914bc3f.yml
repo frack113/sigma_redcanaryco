@@ -1,0 +1,8 @@
+guid: 4c83940d-8ca5-4bb2-8100-f46dc914bc3f
+name: Chrome (Chrome Web Store)
+tactic:
+  - persistence
+technique:
+  - T1176
+sigma: false
+sigma_rule: []

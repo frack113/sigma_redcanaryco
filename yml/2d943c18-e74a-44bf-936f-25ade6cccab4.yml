@@ -1,0 +1,10 @@
+guid: 2d943c18-e74a-44bf-936f-25ade6cccab4
+name: Cron - Add script to /var/spool/cron/crontabs/ folder
+tactic:
+  - privilege-escalation
+  - persistence
+  - execution
+technique:
+  - T1053.003
+sigma: false
+sigma_rule: []

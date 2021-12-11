@@ -1,0 +1,8 @@
+guid: 14625569-6def-4497-99ac-8e7817105b55
+name: Rubeus kerberoast
+tactic:
+  - credential-access
+technique:
+  - T1558.003
+sigma: false
+sigma_rule: []

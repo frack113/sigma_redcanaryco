@@ -1,0 +1,8 @@
+guid: 58ed10e8-0738-4651-8408-3a3e9a526279
+name: Get-ForestTrust with PowerView
+tactic:
+  - discovery
+technique:
+  - T1482
+sigma: false
+sigma_rule: []

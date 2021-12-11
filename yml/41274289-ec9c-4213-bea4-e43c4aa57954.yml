@@ -1,0 +1,8 @@
+guid: 41274289-ec9c-4213-bea4-e43c4aa57954
+name: Windows - Stop service using net.exe
+tactic:
+  - impact
+technique:
+  - T1489
+sigma: false
+sigma_rule: []

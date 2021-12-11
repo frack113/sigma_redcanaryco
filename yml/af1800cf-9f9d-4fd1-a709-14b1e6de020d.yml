@@ -1,0 +1,8 @@
+guid: af1800cf-9f9d-4fd1-a709-14b1e6de020d
+name: Mimikatz - Cradlecraft PsSendKeys
+tactic:
+  - execution
+technique:
+  - T1059.001
+sigma: false
+sigma_rule: []

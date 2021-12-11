@@ -1,0 +1,10 @@
+guid: f373b482-48c8-4ce4-85ed-d40c8b3f7310
+name: System Scope COR_PROFILER
+tactic:
+  - privilege-escalation
+  - defense-evasion
+  - persistence
+technique:
+  - T1574.012
+sigma: false
+sigma_rule: []

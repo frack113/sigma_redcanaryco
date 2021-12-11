@@ -1,0 +1,10 @@
+guid: d3eda496-1fc0-49e9-aff5-3bec5da9fa22
+name: Create a system level transient systemd service and timer
+tactic:
+  - privilege-escalation
+  - persistence
+  - execution
+technique:
+  - T1053.006
+sigma: false
+sigma_rule: []

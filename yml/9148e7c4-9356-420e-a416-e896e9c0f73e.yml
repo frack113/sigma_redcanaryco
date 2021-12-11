@@ -1,0 +1,8 @@
+guid: 9148e7c4-9356-420e-a416-e896e9c0f73e
+name: PowerShell Downgrade Attack
+tactic:
+  - execution
+technique:
+  - T1059.001
+sigma: false
+sigma_rule: []

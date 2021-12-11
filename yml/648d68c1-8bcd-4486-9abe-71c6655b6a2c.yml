@@ -1,0 +1,8 @@
+guid: 648d68c1-8bcd-4486-9abe-71c6655b6a2c
+name: Connection Proxy for macOS UI
+tactic:
+  - command-and-control
+technique:
+  - T1090.001
+sigma: false
+sigma_rule: []

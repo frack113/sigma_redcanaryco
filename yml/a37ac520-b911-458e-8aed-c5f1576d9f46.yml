@@ -1,0 +1,8 @@
+guid: a37ac520-b911-458e-8aed-c5f1576d9f46
+name: RDP hijacking
+tactic:
+  - lateral-movement
+technique:
+  - T1563.002
+sigma: false
+sigma_rule: []

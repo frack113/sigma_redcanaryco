@@ -1,0 +1,8 @@
+guid: 263ba6cb-ea2b-41c9-9d4e-b652dadd002c
+name: Windows - wbadmin Delete Windows Backup Catalog
+tactic:
+  - impact
+technique:
+  - T1490
+sigma: false
+sigma_rule: []

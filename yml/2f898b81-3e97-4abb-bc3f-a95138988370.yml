@@ -1,0 +1,8 @@
+guid: 2f898b81-3e97-4abb-bc3f-a95138988370
+name: Prevent Powershell History Logging
+tactic:
+  - defense-evasion
+technique:
+  - T1070.003
+sigma: false
+sigma_rule: []

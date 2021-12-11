@@ -1,0 +1,8 @@
+guid: 542bb97e-da53-436b-8e43-e0a7d31a6c24
+name: Create Volume Shadow Copy with Powershell
+tactic:
+  - credential-access
+technique:
+  - T1003.003
+sigma: false
+sigma_rule: []

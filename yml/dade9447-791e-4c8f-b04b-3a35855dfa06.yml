@@ -1,0 +1,9 @@
+guid: dade9447-791e-4c8f-b04b-3a35855dfa06
+name: Suspicious jse file run from startup Folder
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1547.001
+sigma: false
+sigma_rule: []

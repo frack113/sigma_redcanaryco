@@ -1,0 +1,8 @@
+guid: f6786cc8-beda-4915-a4d6-ac2f193bb988
+name: Exfiltration Over Alternative Protocol - SSH
+tactic:
+  - exfiltration
+technique:
+  - T1048
+sigma: false
+sigma_rule: []

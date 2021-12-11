@@ -1,0 +1,8 @@
+guid: 5a51ef57-299e-4d62-8e11-2d440df55e69
+name: Brute Force Credentials of single Azure AD user
+tactic:
+  - credential-access
+technique:
+  - T1110.001
+sigma: false
+sigma_rule: []

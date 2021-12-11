@@ -1,0 +1,8 @@
+guid: 1ae5ea1f-0a4e-4e54-b2f5-4ac328a7f421
+name: Regsvr32 Registering Non DLL
+tactic:
+  - defense-evasion
+technique:
+  - T1218.010
+sigma: false
+sigma_rule: []

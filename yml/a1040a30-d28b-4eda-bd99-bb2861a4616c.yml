@@ -1,0 +1,8 @@
+guid: a1040a30-d28b-4eda-bd99-bb2861a4616c
+name: Create a new user in Linux with `root` UID and GID.
+tactic:
+  - persistence
+technique:
+  - T1136.001
+sigma: false
+sigma_rule: []

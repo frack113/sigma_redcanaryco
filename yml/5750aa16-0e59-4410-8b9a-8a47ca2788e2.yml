@@ -1,0 +1,8 @@
+guid: 5750aa16-0e59-4410-8b9a-8a47ca2788e2
+name: WMI Reconnaissance Processes
+tactic:
+  - execution
+technique:
+  - T1047
+sigma: false
+sigma_rule: []

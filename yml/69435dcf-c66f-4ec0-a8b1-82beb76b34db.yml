@@ -1,0 +1,8 @@
+guid: 69435dcf-c66f-4ec0-a8b1-82beb76b34db
+name: Disable Windows IIS HTTP Logging
+tactic:
+  - defense-evasion
+technique:
+  - T1562.002
+sigma: false
+sigma_rule: []

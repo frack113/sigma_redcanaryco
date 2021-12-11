@@ -1,0 +1,8 @@
+guid: 54a4daf1-71df-4383-9ba7-f1a295d8b6d2
+name: File Download via PowerShell
+tactic:
+  - command-and-control
+technique:
+  - T1105
+sigma: false
+sigma_rule: []

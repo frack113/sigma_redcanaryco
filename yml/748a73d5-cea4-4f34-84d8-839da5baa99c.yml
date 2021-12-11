@@ -1,0 +1,8 @@
+guid: 748a73d5-cea4-4f34-84d8-839da5baa99c
+name: DNS over HTTPS Long Domain Query
+tactic:
+  - command-and-control
+technique:
+  - T1572
+sigma: false
+sigma_rule: []

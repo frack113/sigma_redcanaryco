@@ -1,0 +1,10 @@
+guid: 11979f23-9b9d-482a-9935-6fc9cd022c3e
+name: Event Monitor Daemon Persistence
+tactic:
+  - privilege-escalation
+  - persistence
+  - execution
+technique:
+  - T1053.004
+sigma: false
+sigma_rule: []

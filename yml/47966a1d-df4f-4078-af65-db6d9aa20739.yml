@@ -1,0 +1,8 @@
+guid: 47966a1d-df4f-4078-af65-db6d9aa20739
+name: Clear Bash history (truncate)
+tactic:
+  - defense-evasion
+technique:
+  - T1070.003
+sigma: false
+sigma_rule: []

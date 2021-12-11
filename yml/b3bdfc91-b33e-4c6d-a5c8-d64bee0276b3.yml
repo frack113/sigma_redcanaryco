@@ -1,0 +1,8 @@
+guid: b3bdfc91-b33e-4c6d-a5c8-d64bee0276b3
+name: WMI Execute Local Process
+tactic:
+  - execution
+technique:
+  - T1047
+sigma: false
+sigma_rule: []

@@ -1,0 +1,9 @@
+guid: 9ab27e22-ee62-4211-962b-d36d9a0e6a18
+name: Application Shim Installation
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1546.011
+sigma: false
+sigma_rule: []

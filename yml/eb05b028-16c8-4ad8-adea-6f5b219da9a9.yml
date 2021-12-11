@@ -1,0 +1,9 @@
+guid: eb05b028-16c8-4ad8-adea-6f5b219da9a9
+name: crackmapexec Pass the Hash
+tactic:
+  - defense-evasion
+  - lateral-movement
+technique:
+  - T1550.002
+sigma: false
+sigma_rule: []

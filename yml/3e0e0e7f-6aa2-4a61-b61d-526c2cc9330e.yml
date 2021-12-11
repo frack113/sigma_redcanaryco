@@ -1,0 +1,8 @@
+guid: 3e0e0e7f-6aa2-4a61-b61d-526c2cc9330e
+name: Powercat C2
+tactic:
+  - command-and-control
+technique:
+  - T1095
+sigma: false
+sigma_rule: []

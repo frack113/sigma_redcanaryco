@@ -1,0 +1,9 @@
+guid: 394a538e-09bb-4a4a-95d1-b93cf12682a8
+name: Plist Modification
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1547.011
+sigma: false
+sigma_rule: []

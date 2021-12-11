@@ -1,0 +1,9 @@
+guid: 10a08978-2045-4d62-8c42-1957bbbea102
+name: Change Default File Association
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1546.001
+sigma: false
+sigma_rule: []

@@ -1,0 +1,9 @@
+guid: ce4fc678-364f-4282-af16-2fb4c78005ce
+name: Shortcut Modification
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1547.009
+sigma: false
+sigma_rule: []

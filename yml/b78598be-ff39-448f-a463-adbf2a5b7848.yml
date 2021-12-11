@@ -1,0 +1,8 @@
+guid: b78598be-ff39-448f-a463-adbf2a5b7848
+name: chown - Change file or folder ownership and group recursively
+tactic:
+  - defense-evasion
+technique:
+  - T1222.002
+sigma: false
+sigma_rule: []
