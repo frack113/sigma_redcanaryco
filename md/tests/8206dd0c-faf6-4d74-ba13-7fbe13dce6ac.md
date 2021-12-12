@@ -1,9 +1,14 @@
 [back](../index.md)
 # X Windows Capture
 Cover by sigma :x: 
+
 ## MITRE
 ### Tactic
-collection
+  - collection
+
 ### technique
-T1113
-Many more think to do...
+  - T1113
+
+### Sigma
+
+ So many other things to do...

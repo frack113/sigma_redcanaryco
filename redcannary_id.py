@@ -55,13 +55,16 @@ class mydata():
             my_str += f"Cover by sigma :heavy_check_mark: \n"
         else:
             my_str += f"Cover by sigma :x: \n"
-        my_str +=  "## MITRE\n### Tactic\n"
+        my_str +=  "\n## MITRE\n### Tactic\n"
         for tactic in self.data['tactic']:
-            my_str += f"{tactic}\n"
-        my_str +=  "### technique\n"
+            my_str += f"  - {tactic}\n"
+        my_str +=  "\n### technique\n"
         for technique in self.data['technique']:
-            my_str += f"{technique}\n"
-        my_str += "Many more think to do..."
+            my_str += f"  - {technique}\n"
+        my_str +=  "\n### Sigma\n"
+        for sigma in self.data['sigma_rule']:
+            my_str += f" - {sigma['name']} id: {sigma['id']}\n\n"
+        my_str += "\n So many other things to do..."
         return my_str
 
 yaml = YAML()

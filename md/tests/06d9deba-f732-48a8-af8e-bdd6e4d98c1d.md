@@ -1,9 +1,14 @@
 [back](../index.md)
 # InstallUtil Uninstall method call - '/installtype=notransaction /action=uninstall' variant
 Cover by sigma :x: 
+
 ## MITRE
 ### Tactic
-defense-evasion
+  - defense-evasion
+
 ### technique
-T1218.004
-Many more think to do...
+  - T1218.004
+
+### Sigma
+
+ So many other things to do...
