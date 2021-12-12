@@ -1,11 +1,9 @@
+[back](../index.md)
 # Rundll32 execute JavaScript Remote Payload With GetObject
-
+Cover by sigma :x: 
 ## MITRE
-
 ### Tactic
-['defense-evasion']
-
+defense-evasion
 ### technique
-['T1218.011']
-
-Many more to do...
+T1218.011
+Many more think to do...

@@ -49,18 +49,19 @@ class mydata():
             self.data = yaml.load(file)
     
     def build_md(self):
-        my_str = f"""# {self.data['name']}
-
-## MITRE
-
-### Tactic
-{self.data['tactic']}
-
-### technique
-{self.data['technique']}
-
-Many more to do...
-"""
+        my_str =   "[back](../index.md)\n"
+        my_str += f"# {self.data['name']}\n"
+        if self.data['sigma'] == True:
+            my_str += f"Cover by sigma :heavy_check_mark: \n"
+        else:
+            my_str += f"Cover by sigma :x: \n"
+        my_str +=  "## MITRE\n### Tactic\n"
+        for tactic in self.data['tactic']:
+            my_str += f"{tactic}\n"
+        my_str +=  "### technique\n"
+        for technique in self.data['technique']:
+            my_str += f"{technique}\n"
+        my_str += "Many more think to do..."
         return my_str
 
 yaml = YAML()
@@ -103,7 +104,11 @@ with pathlib.Path('index.yaml').open('r',encoding='UTF-8') as file:
                     md_file.parent.mkdir(parents=True, exist_ok=True)
                     with md_file.open('w',encoding='UTF-8', newline='\n') as file_id:
                         file_id.write(redcannary_info.build_md())
-                    str_index += f"[{redcannary_info.data['name']}](tests/{guid}.md)\n\n"
+                    if redcannary_info.data['sigma'] == True:
+                        smiley = " :heavy_check_mark: "
+                    else:
+                        smiley = " :x: "
+                    str_index += f"[{redcannary_info.data['name']}](tests/{guid}.md){smiley}\n\n"
 
 md_file = pathlib.Path(f'md/index.md')
 with md_file.open('w',encoding='UTF-8', newline='\n') as file_id:

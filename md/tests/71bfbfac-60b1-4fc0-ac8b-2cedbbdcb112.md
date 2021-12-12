@@ -1,11 +1,9 @@
+[back](../index.md)
 # Regasm Uninstall Method Call Test
-
+Cover by sigma :x: 
 ## MITRE
-
 ### Tactic
-['defense-evasion']
-
+defense-evasion
 ### technique
-['T1218.009']
-
-Many more to do...
+T1218.009
+Many more think to do...

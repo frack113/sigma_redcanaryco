@@ -1,11 +1,9 @@
+[back](../index.md)
 # Enumerate Default Domain Admin Details (Domain)
-
+Cover by sigma :x: 
 ## MITRE
-
 ### Tactic
-['discovery']
-
+discovery
 ### technique
-['T1087.002']
-
-Many more to do...
+T1087.002
+Many more think to do...
