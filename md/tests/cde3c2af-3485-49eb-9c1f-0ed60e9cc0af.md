@@ -1,0 +1,11 @@
+# Data Compressed - nix - gzip Single File
+
+## MITRE
+
+### Tactic
+['collection']
+
+### technique
+['T1560.001']
+
+Many more to do...

@@ -1,0 +1,11 @@
+# XOR Encoded data.
+
+## MITRE
+
+### Tactic
+['command-and-control']
+
+### technique
+['T1132.001']
+
+Many more to do...
