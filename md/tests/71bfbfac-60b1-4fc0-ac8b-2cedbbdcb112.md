@@ -1,0 +1,11 @@
+# Regasm Uninstall Method Call Test
+
+## MITRE
+
+### Tactic
+['defense-evasion']
+
+### technique
+['T1218.009']
+
+Many more to do...

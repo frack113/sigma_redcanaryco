@@ -47,6 +47,21 @@ class mydata():
     def load(self,filepath):
         with filepath.open('r',encoding='UTF-8') as file:
             self.data = yaml.load(file)
+    
+    def build_md(self):
+        my_str = f"""# {self.data['name']}
+
+## MITRE
+
+### Tactic
+{self.data['tactic']}
+
+### technique
+{self.data['technique']}
+
+Many more to do...
+"""
+        return my_str
 
 yaml = YAML()
 yaml.preserve_quotes = True
@@ -59,6 +74,12 @@ redcannary_info = mydata()
 
 #https://github.com/redcanaryco/atomic-red-team/raw/master/atomics/Indexes/index.yaml
 # No auto update ? well next time
+str_index ="""# Welcome to my beta projet
+## Purpose
+Knowing which rule should trigger when running a [redcannary test](https://github.com/redcanaryco/atomic-red-team)
+
+## Tests\n
+"""
 
 with pathlib.Path('index.yaml').open('r',encoding='UTF-8') as file:
     yml_index = yaml.load(file)
@@ -76,5 +97,14 @@ with pathlib.Path('index.yaml').open('r',encoding='UTF-8') as file:
                          redcannary_info.load(yml_file)
                     redcannary_info.add(tactic,technique,test)
                     yml_file.parent.mkdir(parents=True, exist_ok=True)
-                    with yml_file.open('w',encoding='UTF-8') as file_id:
+                    with yml_file.open('w',encoding='UTF-8', newline='\n') as file_id:
                         yaml.dump(redcannary_info.data,file_id)
+                    md_file = pathlib.Path(f'md/tests/{guid}.md')
+                    md_file.parent.mkdir(parents=True, exist_ok=True)
+                    with md_file.open('w',encoding='UTF-8', newline='\n') as file_id:
+                        file_id.write(redcannary_info.build_md())
+                    str_index += f"[{redcannary_info.data['name']}](tests/{guid}.md)\n\n"
+
+md_file = pathlib.Path(f'md/index.md')
+with md_file.open('w',encoding='UTF-8', newline='\n') as file_id:
+    file_id.write(str_index)

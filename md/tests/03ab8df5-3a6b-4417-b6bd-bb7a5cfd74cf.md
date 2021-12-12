@@ -1,0 +1,11 @@
+# Launch Daemon
+
+## MITRE
+
+### Tactic
+['privilege-escalation', 'persistence']
+
+### technique
+['T1543.004']
+
+Many more to do...
