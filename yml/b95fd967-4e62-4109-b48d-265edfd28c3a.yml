@@ -4,7 +4,9 @@ tactic:
   - discovery
 technique:
   - T1087.002
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 455b9d50-15a1-4b99-853f-8d37655a4c1b
+    name: win_susp_adfind_enumerate.yml
 os:
   - windows

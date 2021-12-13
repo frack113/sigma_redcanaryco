@@ -4,7 +4,9 @@ tactic:
   - discovery
 technique:
   - T1087.002
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: bf72941a-cba0-41ea-b18c-9aca3925690d
+    name: powershell_adrecon_execution.yml
 os:
   - windows

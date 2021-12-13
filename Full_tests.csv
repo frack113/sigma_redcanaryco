@@ -729,16 +729,16 @@ discovery;T1217;['windows'];List Google Chrome Bookmarks on Windows with powersh
 discovery;T1217;['windows'];List Google Chrome / Edge Chromium Bookmarks on Windows with command prompt;76f71e2f-480e-4bed-b61e-398fe17499d5;True
 discovery;T1217;['windows'];List Mozilla Firefox bookmarks on Windows with command prompt;4312cdbc-79fc-4a9c-becc-53d49c734bc5;True
 discovery;T1217;['windows'];List Internet Explorer Bookmarks using the command prompt;727dbcdb-e495-4ab1-a6c4-80c7f77aef85;True
-discovery;T1087.002;['windows'];Enumerate all accounts (Domain);6fbc9e68-5ad7-444a-bd11-8bf3136c477e;False
-discovery;T1087.002;['windows'];Enumerate all accounts via PowerShell (Domain);8b8a6449-be98-4f42-afd2-dedddc7453b2;False
-discovery;T1087.002;['windows'];Enumerate logged on users via CMD (Domain);161dcd85-d014-4f5e-900c-d3eaae82a0f7;False
-discovery;T1087.002;['windows'];Automated AD Recon (ADRecon);95018438-454a-468c-a0fa-59c800149b59;False
-discovery;T1087.002;['windows'];Adfind -Listing password policy;736b4f53-f400-4c22-855d-1a6b5a551600;False
-discovery;T1087.002;['windows'];Adfind - Enumerate Active Directory Admins;b95fd967-4e62-4109-b48d-265edfd28c3a;False
-discovery;T1087.002;['windows'];Adfind - Enumerate Active Directory User Objects;e1ec8d20-509a-4b9a-b820-06c9b2da8eb7;False
-discovery;T1087.002;['windows'];Adfind - Enumerate Active Directory Exchange AD Objects;5e2938fb-f919-47b6-8b29-2f6a1f718e99;False
-discovery;T1087.002;['windows'];Enumerate Default Domain Admin Details (Domain);c70ab9fd-19e2-4e02-a83c-9cfa8eaa8fef;False
-discovery;T1087.002;['windows'];Enumerate Active Directory for Unconstrained Delegation;46f8dbe9-22a5-4770-8513-66119c5be63b;False
+discovery;T1087.002;['windows'];Enumerate all accounts (Domain);6fbc9e68-5ad7-444a-bd11-8bf3136c477e;True
+discovery;T1087.002;['windows'];Enumerate all accounts via PowerShell (Domain);8b8a6449-be98-4f42-afd2-dedddc7453b2;True
+discovery;T1087.002;['windows'];Enumerate logged on users via CMD (Domain);161dcd85-d014-4f5e-900c-d3eaae82a0f7;True
+discovery;T1087.002;['windows'];Automated AD Recon (ADRecon);95018438-454a-468c-a0fa-59c800149b59;True
+discovery;T1087.002;['windows'];Adfind -Listing password policy;736b4f53-f400-4c22-855d-1a6b5a551600;True
+discovery;T1087.002;['windows'];Adfind - Enumerate Active Directory Admins;b95fd967-4e62-4109-b48d-265edfd28c3a;True
+discovery;T1087.002;['windows'];Adfind - Enumerate Active Directory User Objects;e1ec8d20-509a-4b9a-b820-06c9b2da8eb7;True
+discovery;T1087.002;['windows'];Adfind - Enumerate Active Directory Exchange AD Objects;5e2938fb-f919-47b6-8b29-2f6a1f718e99;True
+discovery;T1087.002;['windows'];Enumerate Default Domain Admin Details (Domain);c70ab9fd-19e2-4e02-a83c-9cfa8eaa8fef;True
+discovery;T1087.002;['windows'];Enumerate Active Directory for Unconstrained Delegation;46f8dbe9-22a5-4770-8513-66119c5be63b;True
 discovery;T1069.002;['windows'];Basic Permission Groups Discovery Windows (Domain);dd66d77d-8998-48c0-8024-df263dc2ce5d;False
 discovery;T1069.002;['windows'];Permission Groups Discovery PowerShell (Domain);6d5d8c96-3d2a-4da9-9d6d-9a9d341899a7;False
 discovery;T1069.002;['windows'];Elevated group enumeration using net group (Domain);0afb5163-8181-432e-9405-4322710c0c37;False

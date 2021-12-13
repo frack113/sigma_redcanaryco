@@ -1464,25 +1464,25 @@ Knowing which rule should trigger when running a [redcannary test](https://githu
 
 [List Internet Explorer Bookmarks using the command prompt](tests/727dbcdb-e495-4ab1-a6c4-80c7f77aef85.md) ['windows'] :heavy_check_mark: 
 
-[Enumerate all accounts (Domain)](tests/6fbc9e68-5ad7-444a-bd11-8bf3136c477e.md) ['windows'] :x: 
+[Enumerate all accounts (Domain)](tests/6fbc9e68-5ad7-444a-bd11-8bf3136c477e.md) ['windows'] :heavy_check_mark: 
 
-[Enumerate all accounts via PowerShell (Domain)](tests/8b8a6449-be98-4f42-afd2-dedddc7453b2.md) ['windows'] :x: 
+[Enumerate all accounts via PowerShell (Domain)](tests/8b8a6449-be98-4f42-afd2-dedddc7453b2.md) ['windows'] :heavy_check_mark: 
 
-[Enumerate logged on users via CMD (Domain)](tests/161dcd85-d014-4f5e-900c-d3eaae82a0f7.md) ['windows'] :x: 
+[Enumerate logged on users via CMD (Domain)](tests/161dcd85-d014-4f5e-900c-d3eaae82a0f7.md) ['windows'] :heavy_check_mark: 
 
-[Automated AD Recon (ADRecon)](tests/95018438-454a-468c-a0fa-59c800149b59.md) ['windows'] :x: 
+[Automated AD Recon (ADRecon)](tests/95018438-454a-468c-a0fa-59c800149b59.md) ['windows'] :heavy_check_mark: 
 
-[Adfind -Listing password policy](tests/736b4f53-f400-4c22-855d-1a6b5a551600.md) ['windows'] :x: 
+[Adfind -Listing password policy](tests/736b4f53-f400-4c22-855d-1a6b5a551600.md) ['windows'] :heavy_check_mark: 
 
-[Adfind - Enumerate Active Directory Admins](tests/b95fd967-4e62-4109-b48d-265edfd28c3a.md) ['windows'] :x: 
+[Adfind - Enumerate Active Directory Admins](tests/b95fd967-4e62-4109-b48d-265edfd28c3a.md) ['windows'] :heavy_check_mark: 
 
-[Adfind - Enumerate Active Directory User Objects](tests/e1ec8d20-509a-4b9a-b820-06c9b2da8eb7.md) ['windows'] :x: 
+[Adfind - Enumerate Active Directory User Objects](tests/e1ec8d20-509a-4b9a-b820-06c9b2da8eb7.md) ['windows'] :heavy_check_mark: 
 
-[Adfind - Enumerate Active Directory Exchange AD Objects](tests/5e2938fb-f919-47b6-8b29-2f6a1f718e99.md) ['windows'] :x: 
+[Adfind - Enumerate Active Directory Exchange AD Objects](tests/5e2938fb-f919-47b6-8b29-2f6a1f718e99.md) ['windows'] :heavy_check_mark: 
 
-[Enumerate Default Domain Admin Details (Domain)](tests/c70ab9fd-19e2-4e02-a83c-9cfa8eaa8fef.md) ['windows'] :x: 
+[Enumerate Default Domain Admin Details (Domain)](tests/c70ab9fd-19e2-4e02-a83c-9cfa8eaa8fef.md) ['windows'] :heavy_check_mark: 
 
-[Enumerate Active Directory for Unconstrained Delegation](tests/46f8dbe9-22a5-4770-8513-66119c5be63b.md) ['windows'] :x: 
+[Enumerate Active Directory for Unconstrained Delegation](tests/46f8dbe9-22a5-4770-8513-66119c5be63b.md) ['windows'] :heavy_check_mark: 
 
 [Basic Permission Groups Discovery Windows (Domain)](tests/dd66d77d-8998-48c0-8024-df263dc2ce5d.md) ['windows'] :x: 
 

@@ -4,7 +4,9 @@ tactic:
   - discovery
 technique:
   - T1087.002
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: dcd74b95-3f36-4ed9-9598-0490951643aa
+    name: powershell_powerview_malicious_commandlets.yml
 os:
   - windows
