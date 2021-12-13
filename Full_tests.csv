@@ -725,10 +725,10 @@ discovery;T1010;['windows'];List Process Main Windows - C# .NET;fe94a1c3-3e22-4d
 discovery;T1217;['linux'];List Mozilla Firefox Bookmark Database Files on Linux;3a41f169-a5ab-407f-9269-abafdb5da6c2;False
 discovery;T1217;['macos'];List Mozilla Firefox Bookmark Database Files on macOS;1ca1f9c7-44bc-46bb-8c85-c50e2e94267b;False
 discovery;T1217;['macos'];List Google Chrome Bookmark JSON Files on macOS;b789d341-154b-4a42-a071-9111588be9bc;False
-discovery;T1217;['windows'];List Google Chrome Bookmarks on Windows with powershell;faab755e-4299-48ec-8202-fc7885eb6545;False
-discovery;T1217;['windows'];List Google Chrome / Edge Chromium Bookmarks on Windows with command prompt;76f71e2f-480e-4bed-b61e-398fe17499d5;False
-discovery;T1217;['windows'];List Mozilla Firefox bookmarks on Windows with command prompt;4312cdbc-79fc-4a9c-becc-53d49c734bc5;False
-discovery;T1217;['windows'];List Internet Explorer Bookmarks using the command prompt;727dbcdb-e495-4ab1-a6c4-80c7f77aef85;False
+discovery;T1217;['windows'];List Google Chrome Bookmarks on Windows with powershell;faab755e-4299-48ec-8202-fc7885eb6545;True
+discovery;T1217;['windows'];List Google Chrome / Edge Chromium Bookmarks on Windows with command prompt;76f71e2f-480e-4bed-b61e-398fe17499d5;True
+discovery;T1217;['windows'];List Mozilla Firefox bookmarks on Windows with command prompt;4312cdbc-79fc-4a9c-becc-53d49c734bc5;True
+discovery;T1217;['windows'];List Internet Explorer Bookmarks using the command prompt;727dbcdb-e495-4ab1-a6c4-80c7f77aef85;True
 discovery;T1087.002;['windows'];Enumerate all accounts (Domain);6fbc9e68-5ad7-444a-bd11-8bf3136c477e;False
 discovery;T1087.002;['windows'];Enumerate all accounts via PowerShell (Domain);8b8a6449-be98-4f42-afd2-dedddc7453b2;False
 discovery;T1087.002;['windows'];Enumerate logged on users via CMD (Domain);161dcd85-d014-4f5e-900c-d3eaae82a0f7;False
@@ -960,7 +960,7 @@ command-and-control;T1105;['linux', 'macos'];scp remote file copy (push);83a4960
 command-and-control;T1105;['linux', 'macos'];scp remote file copy (pull);b9d22b9a-9778-4426-abf0-568ea64e9c33;False
 command-and-control;T1105;['linux', 'macos'];sftp remote file copy (push);f564c297-7978-4aa9-b37a-d90477feea4e;False
 command-and-control;T1105;['linux', 'macos'];sftp remote file copy (pull);0139dba1-f391-405e-a4f5-f3989f2c88ef;False
-command-and-control;T1105;['windows'];certutil download (urlcache);dd3b61dd-7bbc-48cd-ab51-49ad1a776df0;False
+command-and-control;T1105;['windows'];certutil download (urlcache);dd3b61dd-7bbc-48cd-ab51-49ad1a776df0;True
 command-and-control;T1105;['windows'];certutil download (verifyctl);ffd492e3-0455-4518-9fb1-46527c9f241b;False
 command-and-control;T1105;['windows'];Windows - BITSAdmin BITS Download;a1921cd3-9a2d-47d5-a891-f1d0f2a7a31b;False
 command-and-control;T1105;['windows'];Windows - PowerShell Download;42dc4460-9aa6-45d3-b1a6-3955d34e1fe8;False

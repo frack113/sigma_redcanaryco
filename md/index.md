@@ -1456,13 +1456,13 @@ Knowing which rule should trigger when running a [redcannary test](https://githu
 
 [List Google Chrome Bookmark JSON Files on macOS](tests/b789d341-154b-4a42-a071-9111588be9bc.md) ['macos'] :x: 
 
-[List Google Chrome Bookmarks on Windows with powershell](tests/faab755e-4299-48ec-8202-fc7885eb6545.md) ['windows'] :x: 
+[List Google Chrome Bookmarks on Windows with powershell](tests/faab755e-4299-48ec-8202-fc7885eb6545.md) ['windows'] :heavy_check_mark: 
 
-[List Google Chrome / Edge Chromium Bookmarks on Windows with command prompt](tests/76f71e2f-480e-4bed-b61e-398fe17499d5.md) ['windows'] :x: 
+[List Google Chrome / Edge Chromium Bookmarks on Windows with command prompt](tests/76f71e2f-480e-4bed-b61e-398fe17499d5.md) ['windows'] :heavy_check_mark: 
 
-[List Mozilla Firefox bookmarks on Windows with command prompt](tests/4312cdbc-79fc-4a9c-becc-53d49c734bc5.md) ['windows'] :x: 
+[List Mozilla Firefox bookmarks on Windows with command prompt](tests/4312cdbc-79fc-4a9c-becc-53d49c734bc5.md) ['windows'] :heavy_check_mark: 
 
-[List Internet Explorer Bookmarks using the command prompt](tests/727dbcdb-e495-4ab1-a6c4-80c7f77aef85.md) ['windows'] :x: 
+[List Internet Explorer Bookmarks using the command prompt](tests/727dbcdb-e495-4ab1-a6c4-80c7f77aef85.md) ['windows'] :heavy_check_mark: 
 
 [Enumerate all accounts (Domain)](tests/6fbc9e68-5ad7-444a-bd11-8bf3136c477e.md) ['windows'] :x: 
 
@@ -1926,7 +1926,7 @@ Knowing which rule should trigger when running a [redcannary test](https://githu
 
 [sftp remote file copy (pull)](tests/0139dba1-f391-405e-a4f5-f3989f2c88ef.md) ['linux', 'macos'] :x: 
 
-[certutil download (urlcache)](tests/dd3b61dd-7bbc-48cd-ab51-49ad1a776df0.md) ['windows'] :x: 
+[certutil download (urlcache)](tests/dd3b61dd-7bbc-48cd-ab51-49ad1a776df0.md) ['windows'] :heavy_check_mark: 
 
 [certutil download (verifyctl)](tests/ffd492e3-0455-4518-9fb1-46527c9f241b.md) ['windows'] :x: 
 
