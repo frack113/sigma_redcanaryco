@@ -8,3 +8,5 @@ technique:
   - T1574.006
 sigma: false
 sigma_rule: []
+os:
+  - linux

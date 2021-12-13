@@ -6,3 +6,5 @@ technique:
   - T1098
 sigma: false
 sigma_rule: []
+os:
+  - windows

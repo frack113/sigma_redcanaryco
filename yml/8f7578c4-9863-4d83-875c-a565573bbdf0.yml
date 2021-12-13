@@ -4,5 +4,9 @@ tactic:
   - discovery
 technique:
   - T1012
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 970007b7-ce32-49d0-a4a4-fbef016950bd
+    name: win_query_registry.yml
+os:
+  - windows

@@ -7,3 +7,5 @@ technique:
   - T1037.004
 sigma: false
 sigma_rule: []
+os:
+  - macos

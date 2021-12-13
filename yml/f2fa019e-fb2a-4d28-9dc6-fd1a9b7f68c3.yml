@@ -8,3 +8,5 @@ technique:
   - T1053.007
 sigma: false
 sigma_rule: []
+os:
+  - containers

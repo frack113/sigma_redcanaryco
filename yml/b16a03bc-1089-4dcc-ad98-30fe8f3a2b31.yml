@@ -6,3 +6,5 @@ technique:
   - T1606.002
 sigma: false
 sigma_rule: []
+os:
+  - azure-ad

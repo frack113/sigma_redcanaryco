@@ -6,3 +6,6 @@ technique:
   - T1176
 sigma: false
 sigma_rule: []
+os:
+  - windows
+  - macos

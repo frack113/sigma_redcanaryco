@@ -7,3 +7,5 @@ technique:
   - T1610
 sigma: false
 sigma_rule: []
+os:
+  - linux

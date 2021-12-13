@@ -9,3 +9,5 @@ technique:
   - T1078.003
 sigma: false
 sigma_rule: []
+os:
+  - windows

@@ -4,5 +4,9 @@ tactic:
   - discovery
 technique:
   - T1217
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule: 
+    - id: e0565f5d-d420-4e02-8a68-ac00d864f9cf
+      name: powershell_ps_get-childItem_bookmarks.yml
+os:
+  - windows

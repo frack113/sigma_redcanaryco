@@ -8,3 +8,5 @@ sigma: true
 sigma_rule:
   - id: 164eda96-11b2-430b-85ff-6a265c15bf32
     name: win_pc_suspicious_ad_reco.yml
+os:
+  - windows

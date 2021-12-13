@@ -7,3 +7,5 @@ technique:
   - T1546.003
 sigma: false
 sigma_rule: []
+os:
+  - windows

@@ -6,3 +6,5 @@ technique:
   - T1569.001
 sigma: false
 sigma_rule: []
+os:
+  - macos

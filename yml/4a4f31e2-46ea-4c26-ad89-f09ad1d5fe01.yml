@@ -6,3 +6,7 @@ technique:
   - T1048.002
 sigma: false
 sigma_rule: []
+os:
+  - windows
+  - macos
+  - linux

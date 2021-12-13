@@ -15,6 +15,7 @@ Requirements:
 
 import pathlib
 from ruamel.yaml import YAML
+import csv
 
 class mydata():
     def __init__(self):
@@ -23,6 +24,7 @@ class mydata():
             'name':         "",
             'tactic':       [],
             'technique':    [],
+            'os':           "",
             'sigma':        False,
             'sigma_rule':   []
         }
@@ -33,12 +35,14 @@ class mydata():
             'name':         "",
             'tactic':       [],
             'technique':    [],
+            'os':           "",
             'sigma':        False,
             'sigma_rule':   []
         }
     def add(self,tactic,technique,test):
         self.data['guid'] = test['auto_generated_guid']
         self.data['name'] = test['name']
+        self.data['os'] = test['supported_platforms']
         if not tactic in self.data['tactic']:
             self.data['tactic'].append(tactic)
         if not technique in self.data['technique']:
@@ -47,14 +51,19 @@ class mydata():
     def load(self,filepath):
         with filepath.open('r',encoding='UTF-8') as file:
             self.data = yaml.load(file)
+
+    def save(self,filepath):
+        filepath.parent.mkdir(parents=True, exist_ok=True)
+        with filepath.open('w',encoding='UTF-8', newline='\n') as file:
+            yaml.dump(self.data,file)
     
-    def build_md(self):
+    def build_md(self,filepath):
         my_str =   "[back](../index.md)\n"
         my_str += f"# {self.data['name']}\n"
         if self.data['sigma'] == True:
-            my_str += f"Cover by sigma :heavy_check_mark: \n"
+            my_str += "Cover by sigma :heavy_check_mark: \n"
         else:
-            my_str += f"Cover by sigma :x: \n"
+            my_str += "Cover by sigma :x: \n"
         my_str +=  "\n## MITRE\n### Tactic\n"
         for tactic in self.data['tactic']:
             my_str += f"  - {tactic}\n"
@@ -65,7 +74,9 @@ class mydata():
         for sigma in self.data['sigma_rule']:
             my_str += f" - {sigma['name']} id: {sigma['id']}\n\n"
         my_str += "\n So many other things to do..."
-        return my_str
+        filepath.parent.mkdir(parents=True, exist_ok=True)
+        with filepath.open('w',encoding='UTF-8', newline='\n') as file:
+            file.write(my_str)
 
 yaml = YAML()
 yaml.preserve_quotes = True
@@ -78,6 +89,9 @@ redcannary_info = mydata()
 
 #https://github.com/redcanaryco/atomic-red-team/raw/master/atomics/Indexes/index.yaml
 # No auto update ? well next time
+
+all_csv =[["tactic","technique","os","name","guid","sigma"]]
+
 str_index ="""# Welcome to my beta projet
 ## Purpose
 Knowing which rule should trigger when running a [redcannary test](https://github.com/redcanaryco/atomic-red-team)
@@ -100,19 +114,21 @@ with pathlib.Path('index.yaml').open('r',encoding='UTF-8') as file:
                     if yml_file.exists():
                          redcannary_info.load(yml_file)
                     redcannary_info.add(tactic,technique,test)
-                    yml_file.parent.mkdir(parents=True, exist_ok=True)
-                    with yml_file.open('w',encoding='UTF-8', newline='\n') as file_id:
-                        yaml.dump(redcannary_info.data,file_id)
+                    redcannary_info.save(yml_file)
                     md_file = pathlib.Path(f'md/tests/{guid}.md')
-                    md_file.parent.mkdir(parents=True, exist_ok=True)
-                    with md_file.open('w',encoding='UTF-8', newline='\n') as file_id:
-                        file_id.write(redcannary_info.build_md())
+                    redcannary_info.build_md(md_file)
                     if redcannary_info.data['sigma'] == True:
                         smiley = " :heavy_check_mark: "
                     else:
                         smiley = " :x: "
-                    str_index += f"[{redcannary_info.data['name']}](tests/{guid}.md){smiley}\n\n"
+                    all_csv.append([tactic,technique,redcannary_info.data['os'],redcannary_info.data['name'],redcannary_info.data['guid'],redcannary_info.data['sigma']])
+                    str_index += f"[{redcannary_info.data['name']}](tests/{guid}.md) {redcannary_info.data['os']}{smiley}\n\n"
 
 md_file = pathlib.Path(f'md/index.md')
 with md_file.open('w',encoding='UTF-8', newline='\n') as file_id:
     file_id.write(str_index)
+
+csv_file = pathlib.Path(f'Full_tests.csv')
+with csv_file.open('w',encoding='UTF-8', newline='\n') as csvfile:
+    writer = csv.writer(csvfile, delimiter=';', quoting=csv.QUOTE_MINIMAL)
+    writer.writerows(all_csv)

@@ -8,3 +8,5 @@ technique:
   - T1053.004
 sigma: false
 sigma_rule: []
+os:
+  - macos

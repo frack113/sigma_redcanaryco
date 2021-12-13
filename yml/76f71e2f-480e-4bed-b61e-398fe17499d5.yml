@@ -4,5 +4,9 @@ tactic:
   - discovery
 technique:
   - T1217
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule: 
+    - id: 725a9768-0f5e-4cb3-aec2-bc5719c6831a
+      name: win_pc_susp_where_execution.yml
+os:
+  - windows
