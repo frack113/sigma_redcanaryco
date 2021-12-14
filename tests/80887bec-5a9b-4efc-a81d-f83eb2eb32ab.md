@@ -19,7 +19,9 @@ Commands such as <code>net user</code> and <code>net localgroup</code> of the [N
 
 OS: ['windows']
 
-Description: Enumerate all accounts
+Description:
+
+ Enumerate all accounts
 Upon execution, multiple enumeration commands will be run and their output displayed in the PowerShell session
 
 

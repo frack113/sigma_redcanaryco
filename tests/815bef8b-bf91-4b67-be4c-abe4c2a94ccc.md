@@ -17,7 +17,9 @@ Cover by sigma :x:
 
 OS: ['windows']
 
-Description: Uses the Windows Defender to download a file from the internet (must have version 4.18.2007.8-0, 4.18.2007.9, or 4.18.2009.9 installed).
+Description:
+
+ Uses the Windows Defender to download a file from the internet (must have version 4.18.2007.8-0, 4.18.2007.9, or 4.18.2009.9 installed).
 The input arguments "remote_file" and "local_path" can be used to specify the download URL and the name of the output file.
 By default, the test downloads the Atomic Red Team license file to the temp directory.
 

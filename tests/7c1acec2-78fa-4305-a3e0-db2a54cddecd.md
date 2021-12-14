@@ -23,7 +23,9 @@ PowerShell commands/scripts can also be executed without directly invoking the <
 
 OS: ['windows']
 
-Description: Connect to a remote powershell session and interact with the host.
+Description:
+
+ Connect to a remote powershell session and interact with the host.
 Upon execution, network test info and 'T1086 PowerShell Session Creation and Use' will be displayed.
 
 

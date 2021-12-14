@@ -21,7 +21,9 @@ In the case of network-based reporting of indicators, an adversary may block tra
 
 OS: ['linux']
 
-Description: Emulates modification of syslog configuration.
+Description:
+
+ Emulates modification of syslog configuration.
 
 
 # Sigma

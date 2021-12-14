@@ -23,7 +23,9 @@ Adversaries may abuse COR_PROFILER to establish persistence that executes a mali
 
 OS: ['windows']
 
-Description: Creates user scope environment variables and CLSID COM object to enable a .NET profiler (COR_PROFILER).
+Description:
+
+ Creates user scope environment variables and CLSID COM object to enable a .NET profiler (COR_PROFILER).
 The unmanaged profiler DLL (`T1574.012x64.dll`) executes when the CLR is loaded by the Event Viewer process.
 Additionally, the profiling DLL will inherit the integrity level of Event Viewer bypassing UAC and executing `notepad.exe` with high integrity.
 If the account used is not a local administrator the profiler DLL will still execute each time the CLR is loaded by a process, however,

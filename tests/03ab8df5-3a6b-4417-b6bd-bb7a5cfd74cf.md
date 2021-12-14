@@ -22,7 +22,9 @@ The plist file permissions must be root:wheel, but the script or program that it
 
 OS: ['macos']
 
-Description: Utilize LaunchDaemon to launch `Hello World`
+Description:
+
+ Utilize LaunchDaemon to launch `Hello World`
 
 
 # Sigma

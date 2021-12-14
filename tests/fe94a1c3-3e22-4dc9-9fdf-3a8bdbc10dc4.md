@@ -17,7 +17,9 @@ Cover by sigma :heavy_check_mark:
 
 OS: ['windows']
 
-Description: Compiles and executes C# code to list main window titles associated with each process.
+Description:
+
+ Compiles and executes C# code to list main window titles associated with each process.
 
 Upon successful execution, powershell will download the .cs from the Atomic Red Team repo, and cmd.exe will compile and execute T1010.exe. Upon T1010.exe execution, expected output will be via stdout.
 

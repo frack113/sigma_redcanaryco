@@ -25,7 +25,9 @@ Mshta.exe can be used to bypass application control solutions that do not accoun
 
 OS: ['windows']
 
-Description: Executes an HTA Application by directly downloading from remote URI.
+Description:
+
+ Executes an HTA Application by directly downloading from remote URI.
 
 # Sigma
 

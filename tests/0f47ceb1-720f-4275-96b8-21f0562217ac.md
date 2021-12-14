@@ -18,7 +18,9 @@ Cover by sigma :x:
 
 OS: ['macos']
 
-Description: Use screencapture command to collect a full desktop screenshot
+Description:
+
+ Use screencapture command to collect a full desktop screenshot
 
 
 # Sigma

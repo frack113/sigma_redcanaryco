@@ -19,7 +19,9 @@ Commands such as <code>net user /domain</code> and <code>net group /domain</code
 
 OS: ['windows']
 
-Description: This test will enumerate the details of the built-in domain admin account
+Description:
+
+ This test will enumerate the details of the built-in domain admin account
 
 
 # Sigma

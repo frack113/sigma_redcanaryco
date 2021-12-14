@@ -19,7 +19,9 @@ Some 3rd party utilities may be preinstalled, such as `tar` on Linux and macOS o
 
 OS: ['linux', 'macos']
 
-Description: An adversary may compress data (e.g., sensitive documents) that is collected prior to exfiltration. This test uses standard gzip compression.
+Description:
+
+ An adversary may compress data (e.g., sensitive documents) that is collected prior to exfiltration. This test uses standard gzip compression.
 
 
 # Sigma
