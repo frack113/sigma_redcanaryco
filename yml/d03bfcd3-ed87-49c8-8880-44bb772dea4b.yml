@@ -8,7 +8,8 @@ sigma: false
 sigma_rule: []
 os:
   - containers
-description: 'Attackers who have permissions, can run malicious commands in containers in the cluster using exec command (“kubectl exec”). In this method, attackers can use legitimate images, such as an OS image (e.g., Ubuntu) as a backdoor container, and run their malicious code remotely by using “kubectl exec”.
+description: 'Attackers who have permissions, can run malicious commands in containers in the cluster using exec command (“kubectl exec”). In this method, attackers can use legitimate images, such as an
+  OS image (e.g., Ubuntu) as a backdoor container, and run their malicious code remotely by using “kubectl exec”.
 
   '
 Attack_name: Container Administration Command

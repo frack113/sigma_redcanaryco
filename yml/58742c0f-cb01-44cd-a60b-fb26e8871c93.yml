@@ -8,7 +8,8 @@ sigma: false
 sigma_rule: []
 os:
   - windows
-description: 'Executes the code in a project file using msbuild.exe. The default C# project example file (T1127.001.csproj) will simply print "Hello From a Code Fragment" and "Hello From a Class." to the screen.
+description: 'Executes the code in a project file using msbuild.exe. The default C# project example file (T1127.001.csproj) will simply print "Hello From a Code Fragment" and "Hello From a Class." to the
+  screen.
 
   '
 Attack_name: MSBuild

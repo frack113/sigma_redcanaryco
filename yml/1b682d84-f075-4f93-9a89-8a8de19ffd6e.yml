@@ -8,7 +8,8 @@ sigma: false
 sigma_rule: []
 os:
   - windows
-description: "This module utilizes WMI via VBA to clear the Security and Backup eventlogs from the system. \n\nElevation is required for this module to execute properly, otherwise WINWORD will throw an \"Access Denied\" error\n"
+description: "This module utilizes WMI via VBA to clear the Security and Backup eventlogs from the system. \n\nElevation is required for this module to execute properly, otherwise WINWORD will throw an\
+  \ \"Access Denied\" error\n"
 Attack_name: Clear Windows Event Logs
 Attack_description: |-
   Adversaries may clear Windows Event Logs to hide the activity of an intrusion. Windows Event Logs are a record of a computer's alerts and notifications. There are three system-defined sources of events: System, Application, and Security, with five event types: Error, Warning, Information, Success Audit, and Failure Audit.

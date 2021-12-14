@@ -8,6 +8,9 @@ sigma: false
 sigma_rule: []
 os:
   - windows
-description: "The following Atomic will attempt to disable Windows-Defender using the built in DISM.exe, Deployment Image Servicing and Management tool. \nDISM is used to enumerate, install, uninstall, configure, and update features and packages in Windows images.\nA successful execution will not standard-out any details. Remove the quiet switch if verbosity is needed.\nThis method will remove Defender and it's package.\n"
+description: "The following Atomic will attempt to disable Windows-Defender using the built in DISM.exe, Deployment Image Servicing and Management tool. \nDISM is used to enumerate, install, uninstall,\
+  \ configure, and update features and packages in Windows images.\nA successful execution will not standard-out any details. Remove the quiet switch if verbosity is needed.\nThis method will remove Defender\
+  \ and it's package.\n"
 Attack_name: Disable or Modify Tools
-Attack_description: Adversaries may disable security tools to avoid possible detection of their tools and activities. This can take the form of killing security software or event logging processes, deleting Registry keys so that tools do not start at run time, or other methods to interfere with security tools scanning or reporting information.
+Attack_description: Adversaries may disable security tools to avoid possible detection of their tools and activities. This can take the form of killing security software or event logging processes, deleting
+  Registry keys so that tools do not start at run time, or other methods to interfere with security tools scanning or reporting information.

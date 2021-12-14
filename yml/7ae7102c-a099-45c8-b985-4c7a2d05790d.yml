@@ -8,7 +8,9 @@ sigma: false
 sigma_rule: []
 os:
   - windows
-description: "The memory of lsass.exe is often dumped for offline credential theft attacks. This can be achieved using direct system calls and API unhooking in an effort to avoid detection. \nhttps://github.com/outflanknl/Dumpert\nhttps://outflank.nl/blog/2019/06/19/red-team-tactics-combining-direct-system-calls-and-srdi-to-bypass-av-edr/\nUpon successful execution, you should see the following file created C:\\\\windows\\\\temp\\\\dumpert.dmp.\n\nIf you see a message saying \\\"The system cannot find the path specified.\\\", try using the  get-prereq_commands to download the  tool first.\n"
+description: "The memory of lsass.exe is often dumped for offline credential theft attacks. This can be achieved using direct system calls and API unhooking in an effort to avoid detection. \nhttps://github.com/outflanknl/Dumpert\n\
+  https://outflank.nl/blog/2019/06/19/red-team-tactics-combining-direct-system-calls-and-srdi-to-bypass-av-edr/\nUpon successful execution, you should see the following file created C:\\\\windows\\\\temp\\\
+  \\dumpert.dmp.\n\nIf you see a message saying \\\"The system cannot find the path specified.\\\", try using the  get-prereq_commands to download the  tool first.\n"
 Attack_name: LSASS Memory
 Attack_description: |
   Adversaries may attempt to access credential material stored in the process memory of the Local Security Authority Subsystem Service (LSASS). After a user logs on, the system generates and stores a variety of credential materials in LSASS process memory. These credential materials can be harvested by an administrative user or SYSTEM and used to conduct [Lateral Movement](https://attack.mitre.org/tactics/TA0008) using [Use Alternate Authentication Material](https://attack.mitre.org/techniques/T1550).

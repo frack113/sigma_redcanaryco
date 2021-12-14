@@ -8,7 +8,8 @@ sigma: false
 sigma_rule: []
 os:
   - azure-ad
-description: "Forge a \"Golden SAML\" token which allows to impersonate any Azure AD user, and authenticate to AADGraph (as a proof). \nYou will need the ADFS token signing certificate (see T1552.004 to export it).\nMore info here : https://o365blog.com/post/adfs/\n"
+description: "Forge a \"Golden SAML\" token which allows to impersonate any Azure AD user, and authenticate to AADGraph (as a proof). \nYou will need the ADFS token signing certificate (see T1552.004 to\
+  \ export it).\nMore info here : https://o365blog.com/post/adfs/\n"
 Attack_name: SAML Tokens
 Attack_description: |-
   An adversary may forge SAML tokens with any permissions claims and lifetimes if they possess a valid SAML token-signing certificate.(Citation: Microsoft SolarWinds Steps) The default lifetime of a SAML token is one hour, but the validity period can be specified in the <code>NotOnOrAfter</code> value of the <code>conditions ...</code> element in a token. This value can be changed using the <code>AccessTokenLifetime</code> in a <code>LifetimeTokenPolicy</code>.(Citation: Microsoft SAML Token Lifetimes) Forged SAML tokens enable adversaries to authenticate across services that use SAML 2.0 as an SSO (single sign-on) mechanism.(Citation: Cyberark Golden SAML)

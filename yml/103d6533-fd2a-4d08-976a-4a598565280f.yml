@@ -8,7 +8,8 @@ sigma: false
 sigma_rule: []
 os:
   - macos
-description: 'Adversaries may attempt to get a listing of non-security related software that is installed on the system. Adversaries may use the information from Software Discovery during automated discovery to shape follow-on behaviors
+description: 'Adversaries may attempt to get a listing of non-security related software that is installed on the system. Adversaries may use the information from Software Discovery during automated discovery
+  to shape follow-on behaviors
 
   '
 Attack_name: Software Discovery

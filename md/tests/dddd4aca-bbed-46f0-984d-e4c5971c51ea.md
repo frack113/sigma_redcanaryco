@@ -39,7 +39,9 @@ The following SSPs can be used to access credentials:
 
 OS: ['windows']
 
-Description: The NanoDump tool uses syscalls and an invalid dump signature to avoid detection.
+Description:
+
+ The NanoDump tool uses syscalls and an invalid dump signature to avoid detection.
 
 https://github.com/helpsystems/nanodump
 

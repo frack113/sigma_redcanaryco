@@ -21,7 +21,9 @@ Utilities and commands that acquire this information include [netstat](https://a
 
 OS: ['windows']
 
-Description: Get a listing of network connections.
+Description:
+
+ Get a listing of network connections.
 
 Upon successful execution, powershell.exe will execute `get-NetTCPConnection`. Results will output via stdout.
 

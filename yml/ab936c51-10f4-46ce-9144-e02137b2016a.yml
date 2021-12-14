@@ -13,4 +13,5 @@ description: 'Take a file/directory, split it into 5Mb chunks
 
   '
 Attack_name: Data Transfer Size Limits
-Attack_description: An adversary may exfiltrate data in fixed size chunks instead of whole files or limit packet sizes below certain thresholds. This approach may be used to avoid triggering network data transfer threshold alerts.
+Attack_description: An adversary may exfiltrate data in fixed size chunks instead of whole files or limit packet sizes below certain thresholds. This approach may be used to avoid triggering network data
+  transfer threshold alerts.

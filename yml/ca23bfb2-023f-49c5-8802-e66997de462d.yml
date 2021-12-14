@@ -8,7 +8,8 @@ sigma: false
 sigma_rule: []
 os:
   - windows
-description: "Executes the code specified within a XSL script tag during XSL transformation using a local payload. \nRequires download of MSXSL. No longer available from Microsoft.\n(Available via Internet Archive https://web.archive.org/web/20200825011623/https://www.microsoft.com/en-us/download/details.aspx?id=21714 ) \nOpen Calculator.exe when test successfully executed, while AV turned off.\n"
+description: "Executes the code specified within a XSL script tag during XSL transformation using a local payload. \nRequires download of MSXSL. No longer available from Microsoft.\n(Available via Internet\
+  \ Archive https://web.archive.org/web/20200825011623/https://www.microsoft.com/en-us/download/details.aspx?id=21714 ) \nOpen Calculator.exe when test successfully executed, while AV turned off.\n"
 Attack_name: XSL Script Processing
 Attack_description: |-
   Adversaries may bypass application control and obscure execution of code by embedding scripts inside XSL files. Extensible Stylesheet Language (XSL) files are commonly used to describe the processing and rendering of data within XML files. To support complex operations, the XSL standard includes support for embedded scripting in various languages. (Citation: Microsoft XSLT Script Mar 2017)

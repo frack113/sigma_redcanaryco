@@ -8,7 +8,9 @@ sigma: false
 sigma_rule: []
 os:
   - macos
-description: "Shell Script with AppleScript. The encoded python script will perform an HTTP GET request to 127.0.0.1:80 with a session cookie of \"t3VhVOs/DyCcDTFzIKanRxkvk3I=\", unless 'Little Snitch' is installed, in which case it will just exit. \nYou can use netcat to listen for the connection and verify execution, e.g. use \"nc -l 80\" in another terminal window before executing this test and watch for the request.\n\nReference: https://github.com/EmpireProject/Empire\n"
+description: "Shell Script with AppleScript. The encoded python script will perform an HTTP GET request to 127.0.0.1:80 with a session cookie of \"t3VhVOs/DyCcDTFzIKanRxkvk3I=\", unless 'Little Snitch'\
+  \ is installed, in which case it will just exit. \nYou can use netcat to listen for the connection and verify execution, e.g. use \"nc -l 80\" in another terminal window before executing this test and\
+  \ watch for the request.\n\nReference: https://github.com/EmpireProject/Empire\n"
 Attack_name: AppleScript
 Attack_description: |-
   Adversaries may abuse AppleScript for execution. AppleScript is a macOS scripting language designed to control applications and parts of the OS via inter-application messages called AppleEvents.(Citation: Apple AppleScript) These AppleEvent messages can be sent independently or easily scripted with AppleScript. These events can locate open windows, send keystrokes, and interact with almost any open application locally or remotely.

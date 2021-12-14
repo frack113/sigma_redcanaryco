@@ -39,7 +39,9 @@ The following SSPs can be used to access credentials:
 
 OS: ['windows']
 
-Description: Dumps credentials from memory via Powershell by invoking a remote mimikatz script.
+Description:
+
+ Dumps credentials from memory via Powershell by invoking a remote mimikatz script.
 If Mimikatz runs successfully you will see several usernames and hashes output to the screen.
 Common failures include seeing an \"access denied\" error which results when Anti-Virus blocks execution. 
 Or, if you try to run the test without the required administrative privleges you will see this error near the bottom of the output to the screen "ERROR kuhl_m_sekurlsa_acquireLSA"

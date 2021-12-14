@@ -17,7 +17,9 @@ Cover by sigma :x:
 
 OS: ['windows']
 
-Description: XOR encodes the data with a XOR key.
+Description:
+
+ XOR encodes the data with a XOR key.
 Reference - https://gist.github.com/loadenmb/8254cee0f0287b896a05dcdc8a30042f
 
 

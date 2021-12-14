@@ -12,4 +12,6 @@ description: |
   Exfiltration of specified file over HTTP.
   Upon successful execution, powershell will invoke web request using POST method to exfiltrate notepad.exe to a remote address (default http://127.0.0.1). Results will be via stdout.
 Attack_name: Exfiltration Over Unencrypted/Obfuscated Non-C2 Protocol
-Attack_description: "Adversaries may steal data by exfiltrating it over an un-encrypted network protocol other than that of the existing command and control channel. The data may also be sent to an alternate network location from the main command and control server. \n\nAdversaries may opt to obfuscate this data, without the use of encryption, within network protocols that are natively unencrypted (such as HTTP, FTP, or DNS). This may include custom or publicly available encoding/compression algorithms (such as base64) as well as embedding data within protocol headers and fields. "
+Attack_description: "Adversaries may steal data by exfiltrating it over an un-encrypted network protocol other than that of the existing command and control channel. The data may also be sent to an alternate\
+  \ network location from the main command and control server. \n\nAdversaries may opt to obfuscate this data, without the use of encryption, within network protocols that are natively unencrypted (such\
+  \ as HTTP, FTP, or DNS). This may include custom or publicly available encoding/compression algorithms (such as base64) as well as embedding data within protocol headers and fields. "

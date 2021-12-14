@@ -21,7 +21,9 @@ Rundll32 can also be used to execute scripts such as JavaScript. This can be don
 
 OS: ['windows']
 
-Description: Test execution of a remote script using rundll32.exe. Upon execution notepad.exe will be opened.
+Description:
+
+ Test execution of a remote script using rundll32.exe. Upon execution notepad.exe will be opened.
 
 
 # Sigma

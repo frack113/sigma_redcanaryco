@@ -8,6 +8,8 @@ sigma: false
 sigma_rule: []
 os:
   - windows
-description: "Malware can exclude specific extensions from being scanned and evading detection. \nUpon successful execution, the extension(s) should be on the list of excluded extensions.\nTo check the exclusion list using poweshell  (Get-MpPreference).ExclusionExtension.\n"
+description: "Malware can exclude specific extensions from being scanned and evading detection. \nUpon successful execution, the extension(s) should be on the list of excluded extensions.\nTo check the\
+  \ exclusion list using poweshell  (Get-MpPreference).ExclusionExtension.\n"
 Attack_name: Disable or Modify Tools
-Attack_description: Adversaries may disable security tools to avoid possible detection of their tools and activities. This can take the form of killing security software or event logging processes, deleting Registry keys so that tools do not start at run time, or other methods to interfere with security tools scanning or reporting information.
+Attack_description: Adversaries may disable security tools to avoid possible detection of their tools and activities. This can take the form of killing security software or event logging processes, deleting
+  Registry keys so that tools do not start at run time, or other methods to interfere with security tools scanning or reporting information.

@@ -23,7 +23,9 @@ Adversaries can use this to their advantage to hide files and folders anywhere o
 
 OS: ['macos']
 
-Description: Hide a directory on MacOS
+Description:
+
+ Hide a directory on MacOS
 
 
 # Sigma

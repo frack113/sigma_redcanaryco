@@ -9,7 +9,8 @@ sigma: false
 sigma_rule: []
 os:
   - windows
-description: "This test simulates using desktopimgdownldr.exe to download a malicious file\ninstead of a desktop or lockscreen background img. The process that actually makes \nthe TCP connection and creates the file on the disk is a svchost process (“-k netsvc -p -s BITS”) \nand not desktopimgdownldr.exe. See https://labs.sentinelone.com/living-off-windows-land-a-new-native-file-downldr/\n"
+description: "This test simulates using desktopimgdownldr.exe to download a malicious file\ninstead of a desktop or lockscreen background img. The process that actually makes \nthe TCP connection and creates\
+  \ the file on the disk is a svchost process (“-k netsvc -p -s BITS”) \nand not desktopimgdownldr.exe. See https://labs.sentinelone.com/living-off-windows-land-a-new-native-file-downldr/\n"
 Attack_name: BITS Jobs
 Attack_description: |-
   Adversaries may abuse BITS jobs to persistently execute or clean up after malicious payloads. Windows Background Intelligent Transfer Service (BITS) is a low-bandwidth, asynchronous file transfer mechanism exposed through [Component Object Model](https://attack.mitre.org/techniques/T1559/001) (COM).(Citation: Microsoft COM)(Citation: Microsoft BITS) BITS is commonly used by updaters, messengers, and other applications preferred to operate in the background (using available idle bandwidth) without interrupting other networked applications. File transfer tasks are implemented as BITS jobs, which contain a queue of one or more file operations.

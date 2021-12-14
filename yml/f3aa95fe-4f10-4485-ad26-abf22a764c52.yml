@@ -8,7 +8,8 @@ sigma: false
 sigma_rule: []
 os:
   - linux
-description: 'This test deletes the entire root filesystem of a Linux system. This technique was used by Amnesia IoT malware to avoid analysis. This test is dangerous and destructive, do NOT use on production equipment.
+description: 'This test deletes the entire root filesystem of a Linux system. This technique was used by Amnesia IoT malware to avoid analysis. This test is dangerous and destructive, do NOT use on production
+  equipment.
 
   '
 Attack_name: File Deletion

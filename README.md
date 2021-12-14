@@ -21,6 +21,7 @@ os:
 
 ## Works in progress
 
-- [ ] better MITRE extract
+- [X] better MITRE extract
 - [ ] add github action
-- [x] update readme
+- [ ] update readme
+- [ ] fix `expected <block end>, but found '<scalar>'`

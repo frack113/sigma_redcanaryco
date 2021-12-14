@@ -23,7 +23,9 @@ An adversary may use Windows Task Scheduler to execute programs at system startu
 
 OS: ['windows']
 
-Description: Create an atomic scheduled task that leverages native powershell cmdlets.
+Description:
+
+ Create an atomic scheduled task that leverages native powershell cmdlets.
 
 Upon successful execution, powershell.exe will create a scheduled task to spawn cmd.exe at 20:10.
 

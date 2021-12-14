@@ -8,7 +8,9 @@ sigma: false
 sigma_rule: []
 os:
   - windows
-description: "Dumps credentials from memory via Powershell by invoking a remote mimikatz script.\nIf Mimikatz runs successfully you will see several usernames and hashes output to the screen.\nCommon failures include seeing an \\\"access denied\\\" error which results when Anti-Virus blocks execution. \nOr, if you try to run the test without the required administrative privleges you will see this error near the bottom of the output to the screen \"ERROR kuhl_m_sekurlsa_acquireLSA\"\n"
+description: "Dumps credentials from memory via Powershell by invoking a remote mimikatz script.\nIf Mimikatz runs successfully you will see several usernames and hashes output to the screen.\nCommon failures\
+  \ include seeing an \\\"access denied\\\" error which results when Anti-Virus blocks execution. \nOr, if you try to run the test without the required administrative privleges you will see this error near\
+  \ the bottom of the output to the screen \"ERROR kuhl_m_sekurlsa_acquireLSA\"\n"
 Attack_name: LSASS Memory
 Attack_description: |
   Adversaries may attempt to access credential material stored in the process memory of the Local Security Authority Subsystem Service (LSASS). After a user logs on, the system generates and stores a variety of credential materials in LSASS process memory. These credential materials can be harvested by an administrative user or SYSTEM and used to conduct [Lateral Movement](https://attack.mitre.org/tactics/TA0008) using [Use Alternate Authentication Material](https://attack.mitre.org/techniques/T1550).

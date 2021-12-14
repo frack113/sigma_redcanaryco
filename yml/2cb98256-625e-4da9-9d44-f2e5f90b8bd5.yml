@@ -9,7 +9,8 @@ sigma: false
 sigma_rule: []
 os:
   - windows
-description: "vbs files can be placed in and ran from the startup folder to maintain persistance. Upon execution, \"T1547.001 Hello, World VBS!\" will be displayed twice. \nAdditionally, the new files can be viewed in the \"$env:APPDATA\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\"\nfolder and will also run when the computer is restarted and the user logs in.\n"
+description: "vbs files can be placed in and ran from the startup folder to maintain persistance. Upon execution, \"T1547.001 Hello, World VBS!\" will be displayed twice. \nAdditionally, the new files can\
+  \ be viewed in the \"$env:APPDATA\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\"\nfolder and will also run when the computer is restarted and the user logs in.\n"
 Attack_name: Registry Run Keys / Startup Folder
 Attack_description: |-
   Adversaries may achieve persistence by adding a program to a startup folder or referencing it with a Registry run key. Adding an entry to the "run keys" in the Registry or startup folder will cause the program referenced to be executed when a user logs in. (Citation: Microsoft Run Key) These programs will be executed under the context of the user and will have the account's associated permissions level.

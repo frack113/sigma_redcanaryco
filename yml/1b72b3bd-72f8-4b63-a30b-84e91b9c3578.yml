@@ -8,7 +8,8 @@ sigma: false
 sigma_rule: []
 os:
   - windows
-description: 'An adversary may attempt to trick the user into downloading GoToAssist and use to establish C2. Download of GoToAssist installer will be at the destination location and ran when sucessfully executed.
+description: 'An adversary may attempt to trick the user into downloading GoToAssist and use to establish C2. Download of GoToAssist installer will be at the destination location and ran when sucessfully
+  executed.
 
   '
 Attack_name: Remote Access Software

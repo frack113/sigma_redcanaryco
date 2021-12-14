@@ -18,7 +18,9 @@ Cover by sigma :x:
 
 OS: ['linux']
 
-Description: Use xwd command to collect a full desktop screenshot and review file with xwud
+Description:
+
+ Use xwd command to collect a full desktop screenshot and review file with xwud
 
 
 # Sigma

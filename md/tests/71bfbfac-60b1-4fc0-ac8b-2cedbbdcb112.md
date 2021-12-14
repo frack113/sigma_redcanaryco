@@ -19,7 +19,9 @@ Both utilities may be used to bypass application control through use of attribut
 
 OS: ['windows']
 
-Description: Executes the Uninstall Method, No Admin Rights Required. Upon execution, "I shouldn't really execute either." will be displayed.
+Description:
+
+ Executes the Uninstall Method, No Admin Rights Required. Upon execution, "I shouldn't really execute either." will be displayed.
 
 
 # Sigma

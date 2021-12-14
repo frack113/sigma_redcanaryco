@@ -8,7 +8,9 @@ sigma: false
 sigma_rule: []
 os:
   - windows
-description: "Dump credentials from memory using Gsecdump.\n\nUpon successful execution, you should see domain\\username's following by two 32 characters hashes.\n\nIf you see output that says \"compat: error: failed to create child process\", execution was likely blocked by Anti-Virus. \nYou will receive only error output if you do not run this test from an elevated context (run as administrator)\n\nIf you see a message saying \"The system cannot find the path specified\", try using the get-prereq_commands to download and install Gsecdump first.\n"
+description: "Dump credentials from memory using Gsecdump.\n\nUpon successful execution, you should see domain\\username's following by two 32 characters hashes.\n\nIf you see output that says \"compat:\
+  \ error: failed to create child process\", execution was likely blocked by Anti-Virus. \nYou will receive only error output if you do not run this test from an elevated context (run as administrator)\n\
+  \nIf you see a message saying \"The system cannot find the path specified\", try using the get-prereq_commands to download and install Gsecdump first.\n"
 Attack_name: OS Credential Dumping
 Attack_description: |
   Adversaries may attempt to dump credentials to obtain account login and credential material, normally in the form of a hash or a clear text password, from the operating system and software. Credentials can then be used to perform [Lateral Movement](https://attack.mitre.org/tactics/TA0008) and access restricted information.
