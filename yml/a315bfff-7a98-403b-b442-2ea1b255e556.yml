@@ -8,3 +8,9 @@ sigma: false
 sigma_rule: []
 os:
   - linux
+description: |
+  Copies sh process, renames it as crond, and executes it to masquerade as the cron daemon.
+
+  Upon successful execution, sh is renamed to `crond` and executed.
+Attack_name: Rename System Utilities
+Attack_description: 'Adversaries may rename legitimate system utilities to try to evade security mechanisms concerning the usage of those utilities. Security monitoring and control mechanisms may be in place for system utilities adversaries are capable of abusing. (Citation: LOLBAS Main Site) It may be possible to bypass those security mechanisms by renaming the utility prior to utilization (ex: rename <code>rundll32.exe</code>). (Citation: Elastic Masquerade Ball) An alternative case occurs when a legitimate utility is copied or moved to a different directory and renamed to avoid detections based on system utilities executing from non-standard paths. (Citation: F-Secure CozyDuke)'

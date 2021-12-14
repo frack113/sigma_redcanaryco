@@ -8,3 +8,11 @@ sigma: false
 sigma_rule: []
 os:
   - windows
+description: |
+  Uses the Windows Defender to download a file from the internet (must have version 4.18.2007.8-0, 4.18.2007.9, or 4.18.2009.9 installed).
+  The input arguments "remote_file" and "local_path" can be used to specify the download URL and the name of the output file.
+  By default, the test downloads the Atomic Red Team license file to the temp directory.
+
+  More info and how to find your version can be found here https://lolbas-project.github.io/lolbas/Binaries/MpCmdRun/
+Attack_name: Ingress Tool Transfer
+Attack_description: Adversaries may transfer tools or other files from an external system into a compromised environment. Files may be copied from an external adversary controlled system through the command and control channel to bring tools into the victim network or through alternate protocols with another tool such as FTP. Files can also be copied over on Mac and Linux with native tools like scp, rsync, and sftp.

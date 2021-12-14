@@ -10,3 +10,11 @@ sigma_rule:
     name: powershell_adrecon_execution.yml
 os:
   - windows
+description: |
+  ADRecon extracts and combines information about an AD environement into a report. Upon execution, an Excel file with all of the data will be generated and its
+  path will be displayed.
+Attack_name: Domain Account
+Attack_description: |-
+  Adversaries may attempt to get a listing of domain accounts. This information can help adversaries determine which domain accounts exist to aid in follow-on behavior.
+
+  Commands such as <code>net user /domain</code> and <code>net group /domain</code> of the [Net](https://attack.mitre.org/software/S0039) utility, <code>dscacheutil -q group</code>on macOS, and <code>ldapsearch</code> on Linux can list domain users and groups.

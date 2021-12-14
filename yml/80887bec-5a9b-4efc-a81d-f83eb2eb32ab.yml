@@ -8,3 +8,11 @@ sigma: false
 sigma_rule: []
 os:
   - windows
+description: |
+  Enumerate all accounts
+  Upon execution, multiple enumeration commands will be run and their output displayed in the PowerShell session
+Attack_name: Local Account
+Attack_description: |-
+  Adversaries may attempt to get a listing of local system accounts. This information can help adversaries determine which local accounts exist on a system to aid in follow-on behavior.
+
+  Commands such as <code>net user</code> and <code>net localgroup</code> of the [Net](https://attack.mitre.org/software/S0039) utility and <code>id</code> and <code>groups</code>on macOS and Linux can list local users and groups. On Linux, local users can also be enumerated through the use of the <code>/etc/passwd</code> file.

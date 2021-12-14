@@ -8,3 +8,8 @@ sigma: false
 sigma_rule: []
 os:
   - iaas:aws
+description: 'Creates a new cloudTrail in AWS, Upon successful creation it will Update,Stop and Delete the cloudTrail
+
+  '
+Attack_name: Disable Cloud Logs
+Attack_description: "An adversary may disable cloud logging capabilities and integrations to limit what data is collected on their activities and avoid detection. \n\nCloud environments allow for collection and analysis of audit and application logs that provide insight into what activities a user does within the environment. If an attacker has sufficient permissions, they can disable logging to avoid detection of their activities. For example, in AWS an adversary may disable CloudWatch/CloudTrail integrations prior to conducting further malicious activity.(Citation: Following the CloudTrail: Generating strong AWS security signals with Sumo Logic)"

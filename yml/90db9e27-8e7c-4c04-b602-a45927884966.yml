@@ -9,3 +9,13 @@ sigma: false
 sigma_rule: []
 os:
   - windows
+description: |-
+  Uses PowerShell and Empire's [GetSystem module](https://github.com/BC-SECURITY/Empire/blob/v3.4.0/data/module_source/privesc/Get-System.ps1). The script creates a named pipe, and a service that writes to that named pipe. When the service connects to the named pipe, the script impersonates its security context.
+  When executed successfully, the test displays the domain and name of the account it's impersonating (local SYSTEM).
+
+  Reference: https://blog.cobaltstrike.com/2014/04/02/what-happens-when-i-type-getsystem/
+Attack_name: Token Impersonation/Theft
+Attack_description: |-
+  Adversaries may duplicate then impersonate another user's token to escalate privileges and bypass access controls. An adversary can create a new access token that duplicates an existing token using <code>DuplicateToken(Ex)</code>. The token can then be used with <code>ImpersonateLoggedOnUser</code> to allow the calling thread to impersonate a logged on user's security context, or with <code>SetThreadToken</code> to assign the impersonated token to a thread.
+
+  An adversary may do this when they have a specific, existing process they want to assign the new token to. For example, this may be useful for when the target user has a non-network logon session on the system.

@@ -8,3 +8,11 @@ sigma: false
 sigma_rule: []
 os:
   - windows
+description: |
+  Take a screen capture of the desktop through a call to the [Graphics.CopyFromScreen] .NET API.
+
+  [Graphics.CopyFromScreen]: https://docs.microsoft.com/en-us/dotnet/api/system.drawing.graphics.copyfromscreen
+Attack_name: Screen Capture
+Attack_description: 'Adversaries may attempt to take screen captures of the desktop to gather information over the course of an operation. Screen capturing functionality may be included as a feature of a remote access tool used in post-compromise operations. Taking a screenshot is also typically possible through native utilities or API calls, such as <code>CopyFromScreen</code>, <code>xwd</code>, or <code>screencapture</code>.(Citation: CopyFromScreen .NET)(Citation: Antiquated Mac Malware)
+
+  '

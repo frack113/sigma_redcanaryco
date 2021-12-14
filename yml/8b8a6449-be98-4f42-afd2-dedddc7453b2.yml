@@ -12,3 +12,11 @@ sigma_rule:
     name: powershell_ps_suspicious_local_group_reco.yml
 os:
   - windows
+description: 'Enumerate all accounts via PowerShell. Upon execution, lots of user account and group information will be displayed.
+
+  '
+Attack_name: Domain Account
+Attack_description: |-
+  Adversaries may attempt to get a listing of domain accounts. This information can help adversaries determine which domain accounts exist to aid in follow-on behavior.
+
+  Commands such as <code>net user /domain</code> and <code>net group /domain</code> of the [Net](https://attack.mitre.org/software/S0039) utility, <code>dscacheutil -q group</code>on macOS, and <code>ldapsearch</code> on Linux can list domain users and groups.

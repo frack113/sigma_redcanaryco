@@ -10,3 +10,11 @@ sigma_rule:
     name: win_pc_susp_dir.yml
 os:
   - windows
+description: This test will list the bookmarks for Internet Explorer that are found in the Favorites folder
+Attack_name: Browser Bookmark Discovery
+Attack_description: |-
+  Adversaries may enumerate browser bookmarks to learn more about compromised hosts. Browser bookmarks may reveal personal information about users (ex: banking sites, interests, social media, etc.) as well as details about internal network resources such as servers, tools/dashboards, or other related infrastructure.
+
+  Browser bookmarks may also highlight additional targets after an adversary has access to valid credentials, especially [Credentials In Files](https://attack.mitre.org/techniques/T1552/001) associated with logins cached by a browser.
+
+  Specific storage locations vary based on platform and/or application, but browser bookmarks are typically stored in local files/databases.

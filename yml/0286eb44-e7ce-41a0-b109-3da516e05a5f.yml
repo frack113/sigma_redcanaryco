@@ -9,3 +9,11 @@ sigma_rule: []
 os:
   - macos
   - linux
+description: 'Encrypt data for exiltration
+
+  '
+Attack_name: Archive via Utility
+Attack_description: |-
+  An adversary may compress or encrypt data that is collected prior to exfiltration using 3rd party utilities. Many utilities exist that can archive data, including 7-Zip(Citation: 7zip Homepage), WinRAR(Citation: WinRAR Homepage), and WinZip(Citation: WinZip Homepage). Most utilities include functionality to encrypt and/or compress data.
+
+  Some 3rd party utilities may be preinstalled, such as `tar` on Linux and macOS or `zip` on Windows systems.

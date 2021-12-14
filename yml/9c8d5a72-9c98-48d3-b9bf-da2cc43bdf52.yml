@@ -8,3 +8,8 @@ sigma: false
 sigma_rule: []
 os:
   - windows
+description: 'This module copies the data stored in the user''s clipboard and writes it to a file, $env:TEMP\atomic_T1115_clipboard_data.txt
+
+  '
+Attack_name: Clipboard Data
+Attack_description: "Adversaries may collect data stored in the clipboard from users copying information within or between applications. \n\nIn Windows, Applications can access clipboard data by using the Windows API.(Citation: MSDN Clipboard) OSX provides a native command, <code>pbpaste</code>, to grab clipboard contents.(Citation: Operating with EmPyre)"

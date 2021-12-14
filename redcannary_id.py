@@ -20,34 +20,46 @@ import csv
 class mydata():
     def __init__(self):
         self.data = {
-            'guid':         "",
-            'name':         "",
-            'tactic':       [],
-            'technique':    [],
-            'os':           "",
-            'sigma':        False,
-            'sigma_rule':   []
+            'Attack_name':          "",
+            'Attack_description':   "",
+            'guid':                 "",
+            'name':                 "",
+            'tactic':               [],
+            'technique':            [],
+            'os':                   "",
+            'description':          "",
+            'sigma':                False,
+            'sigma_rule':           []
         }
 
     def clean(self):
         self.data = {
-            'guid':         "",
-            'name':         "",
-            'tactic':       [],
-            'technique':    [],
-            'os':           "",
-            'sigma':        False,
-            'sigma_rule':   []
+            'Attack_name':          "",
+            'Attack_description':   "",
+            'guid':                 "",
+            'name':                 "",
+            'tactic':               [],
+            'technique':            [],
+            'os':                   "",
+            'description':          "",
+            'sigma':                False,
+            'sigma_rule':           []
         }
-    def add(self,tactic,technique,test):
+
+    def add(self,head_info,test):
+        self.data['Attack_name'] =  head_info['name']
+        self.data['Attack_description'] =  head_info['description']
         self.data['guid'] = test['auto_generated_guid']
         self.data['name'] = test['name']
         self.data['os'] = test['supported_platforms']
-        if not tactic in self.data['tactic']:
-            self.data['tactic'].append(tactic)
-        if not technique in self.data['technique']:
-            self.data['technique'].append(technique)   
-    
+        self.data['description'] = test['description']
+        for tactic in head_info['tactic']:  # better way to do?
+            if not tactic in self.data['tactic']:
+                self.data['tactic'].append(tactic)
+        for technique in head_info['technique']:
+            if not technique in self.data['technique']:
+                self.data['technique'].append(technique)
+
     def load(self,filepath):
         with filepath.open('r',encoding='UTF-8') as file:
             self.data = yaml.load(file)
@@ -59,18 +71,22 @@ class mydata():
     
     def build_md(self,filepath):
         my_str =   "[back](../index.md)\n"
-        my_str += f"# {self.data['name']}\n"
         if self.data['sigma'] == True:
-            my_str += "Cover by sigma :heavy_check_mark: \n"
+            my_str += "\nCover by sigma :heavy_check_mark: \n"
         else:
-            my_str += "Cover by sigma :x: \n"
-        my_str +=  "\n## MITRE\n### Tactic\n"
+            my_str += "\nCover by sigma :x: \n"
+        my_str += f"\n# Attack: {self.data['Attack_name']}\n"
+        my_str += f"\n {self.data['Attack_description']}\n"
+        my_str +=  "\n# MITRE\n## Tactic\n"
         for tactic in self.data['tactic']:
             my_str += f"  - {tactic}\n"
-        my_str +=  "\n### technique\n"
+        my_str +=  "\n## technique\n"
         for technique in self.data['technique']:
             my_str += f"  - {technique}\n"
-        my_str +=  "\n### Sigma\n"
+        my_str += f"\n# Test : {self.data['name']}\n"
+        my_str += f"\nOS: {self.data['os']}\n"    
+        my_str += f"\nDescription: {self.data['description']}\n"
+        my_str +=  "\n# Sigma\n"
         for sigma in self.data['sigma_rule']:
             my_str += f" - {sigma['name']} id: {sigma['id']}\n\n"
         my_str += "\n So many other things to do..."
@@ -106,6 +122,26 @@ with pathlib.Path('index.yaml').open('r',encoding='UTF-8') as file:
             atomic_tests = yml_index[tactic][technique]['atomic_tests']
             nb_tests = len(atomic_tests)
             print (f'found {tactic} / {technique} : {nb_tests} tests')
+            if 'technique' in yml_index[tactic][technique]:
+                head_info = {}
+                technique_part =yml_index[tactic][technique]['technique']
+                head_info['description'] = technique_part['description']
+                head_info['name'] = technique_part['name']
+                head_info['technique'] = []
+                for ext_ref in technique_part['external_references']:
+                    if ext_ref['source_name'] == 'mitre-attack':
+                        head_info['technique'].append(ext_ref['external_id'])
+                head_info['tactic'] = []
+                for kill_ref in technique_part['kill_chain_phases']:
+                    if kill_ref['kill_chain_name'] == 'mitre-attack':
+                        head_info['tactic'].append(kill_ref['phase_name'])
+            else:
+                head_info ={
+                    'description': "",
+                    'name': "",
+                    'technique': [],
+                    'tactic': []
+                }
             if nb_tests>0:
                 for test in atomic_tests:
                     redcannary_info.clean()
@@ -113,7 +149,7 @@ with pathlib.Path('index.yaml').open('r',encoding='UTF-8') as file:
                     yml_file = pathlib.Path(f'yml/{guid}.yml')
                     if yml_file.exists():
                          redcannary_info.load(yml_file)
-                    redcannary_info.add(tactic,technique,test)
+                    redcannary_info.add(head_info,test)
                     redcannary_info.save(yml_file)
                     md_file = pathlib.Path(f'md/tests/{guid}.md')
                     redcannary_info.build_md(md_file)

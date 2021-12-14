@@ -8,3 +8,8 @@ sigma: false
 sigma_rule: []
 os:
   - windows
+description: 'Exfiltrates a file present on the victim machine to the C2 server.
+
+  '
+Attack_name: Exfiltration Over C2 Channel
+Attack_description: Adversaries may steal data by exfiltrating it over an existing command and control channel. Stolen data is encoded into the normal communications channel using the same protocol as command and control communications.

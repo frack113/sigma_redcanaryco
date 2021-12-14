@@ -8,3 +8,8 @@ sigma: false
 sigma_rule: []
 os:
   - windows
+description: 'Utilize PowerShell to echo a command to clipboard and execute it
+
+  '
+Attack_name: Clipboard Data
+Attack_description: "Adversaries may collect data stored in the clipboard from users copying information within or between applications. \n\nIn Windows, Applications can access clipboard data by using the Windows API.(Citation: MSDN Clipboard) OSX provides a native command, <code>pbpaste</code>, to grab clipboard contents.(Citation: Operating with EmPyre)"

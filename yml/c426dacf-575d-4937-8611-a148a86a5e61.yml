@@ -8,3 +8,8 @@ sigma: false
 sigma_rule: []
 os:
   - windows
+description: 'Injects arbitrary DLL into running process specified by process ID. Requires Windows 10.
+
+  '
+Attack_name: Signed Binary Proxy Execution
+Attack_description: Adversaries may bypass process and/or signature-based defenses by proxying execution of malicious content with signed binaries. Binaries signed with trusted digital certificates can execute on Windows systems protected by digital signature validation. Several Microsoft signed binaries that are default on Windows installations can be used to proxy execution of other files.

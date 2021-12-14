@@ -8,3 +8,8 @@ sigma: false
 sigma_rule: []
 os:
   - windows
+description: 'Execute arbitrary dll. Requires at least Windows 8/2012. Also note this dll can be served up via SMB
+
+  '
+Attack_name: Signed Binary Proxy Execution
+Attack_description: Adversaries may bypass process and/or signature-based defenses by proxying execution of malicious content with signed binaries. Binaries signed with trusted digital certificates can execute on Windows systems protected by digital signature validation. Several Microsoft signed binaries that are default on Windows installations can be used to proxy execution of other files.

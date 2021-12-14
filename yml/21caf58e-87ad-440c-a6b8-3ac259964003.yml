@@ -8,3 +8,12 @@ sigma: false
 sigma_rule: []
 os:
   - windows
+description: |
+  Thanks to @OrOneEqualsOne for this quick C2 method.
+  This is to test to see if a C2 session can be established using an SSL socket.
+  More information about this technique, including how to set up the listener, can be found here:
+  https://medium.com/walmartlabs/openssl-server-reverse-shell-from-windows-client-aee2dbfa0926
+
+  Upon successful execution, powershell will make a network connection to 127.0.0.1 over 443.
+Attack_name: Encrypted Channel
+Attack_description: Adversaries may employ a known encryption algorithm to conceal command and control traffic rather than relying on any inherent protections provided by a communication protocol. Despite the use of a secure algorithm, these implementations may be vulnerable to reverse engineering if secret keys are encoded and/or generated within malware samples/configuration files.

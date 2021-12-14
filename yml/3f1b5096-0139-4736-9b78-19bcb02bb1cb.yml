@@ -8,3 +8,13 @@ sigma: false
 sigma_rule: []
 os:
   - windows
+description: |
+  Search through local Outlook installation, extract mail, compress the contents, and saves everything to a directory for later exfiltration.
+  Successful execution will produce stdout message stating "Please be patient, this may take some time...". Upon completion, final output will be a mail.csv file.
+
+  Note: Outlook is required, but no email account necessary to produce artifacts.
+Attack_name: Local Email Collection
+Attack_description: |-
+  Adversaries may target user email on local systems to collect sensitive information. Files containing email data can be acquired from a user’s local system, such as Outlook storage or cache files.
+
+  Outlook stores data locally in offline data files with an extension of .ost. Outlook 2010 and later supports .ost file sizes up to 50GB, while earlier versions of Outlook support up to 20GB.(Citation: Outlook File Sizes) IMAP accounts in Outlook 2013 (and earlier) and POP accounts use Outlook Data Files (.pst) as opposed to .ost, whereas IMAP accounts in Outlook 2016 (and later) use .ost files. Both types of Outlook data files are typically stored in `C:\Users\<username>\Documents\Outlook Files` or `C:\Users\<username>\AppData\Local\Microsoft\Outlook`.(Citation: Microsoft Outlook Files)

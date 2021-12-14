@@ -8,3 +8,8 @@ sigma: false
 sigma_rule: []
 os:
   - windows
+description: |
+  Executes the signed SyncAppvPublishingServer script with options to execute an arbitrary PowerShell command.
+  Upon execution, calc.exe will be launched.
+Attack_name: Signed Script Proxy Execution
+Attack_description: 'Adversaries may use scripts signed with trusted certificates to proxy execution of malicious files. Several Microsoft signed scripts that are default on Windows installations can be used to proxy execution of other files. This behavior may be abused by adversaries to execute malicious files that could bypass application control and signature validation on systems.(Citation: GitHub Ultimate AppLocker Bypass List)'

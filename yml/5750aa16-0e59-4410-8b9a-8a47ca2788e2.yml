@@ -8,3 +8,11 @@ sigma: false
 sigma_rule: []
 os:
   - windows
+description: |
+  An adversary might use WMI to list Processes running on the compromised host.
+  When the test completes , there should be running processes listed on the command line.
+Attack_name: Windows Management Instrumentation
+Attack_description: |-
+  Adversaries may abuse Windows Management Instrumentation (WMI) to achieve execution. WMI is a Windows administration feature that provides a uniform environment for local and remote access to Windows system components. It relies on the WMI service for local and remote access and the server message block (SMB) (Citation: Wikipedia SMB) and Remote Procedure Call Service (RPCS) (Citation: TechNet RPC) for remote access. RPCS operates over port 135. (Citation: MSDN WMI)
+
+  An adversary can use WMI to interact with local and remote systems and use it as a means to perform many tactic functions, such as gathering information for Discovery and remote Execution of files as part of Lateral Movement. (Citation: FireEye WMI SANS 2015) (Citation: FireEye WMI 2015)
