@@ -1,14 +1,27 @@
 [back](../index.md)
-# Edit UFW firewall user.rules file
+
 Cover by sigma :x: 
 
-## MITRE
-### Tactic
+# Attack: Disable or Modify System Firewall
+
+ Adversaries may disable or modify system firewalls in order to bypass controls limiting network usage. Changes could be disabling the entire mechanism as well as adding, deleting, or modifying particular rules. This can be done numerous ways depending on the operating system, including via command-line, editing Windows Registry keys, and Windows Control Panel.
+
+Modifying or disabling a system firewall may enable adversary C2 communications, lateral movement, and/or data exfiltration that would otherwise not be allowed. 
+
+# MITRE
+## Tactic
   - defense-evasion
 
-### technique
+## technique
   - T1562.004
 
-### Sigma
+# Test : Edit UFW firewall user.rules file
+
+OS: ['linux']
+
+Description: Edit the Uncomplicated Firewall (UFW) rules file /etc/ufw/user.rules.
+
+
+# Sigma
 
  So many other things to do...

@@ -1,14 +1,26 @@
 [back](../index.md)
-# Screencapture (silent)
+
 Cover by sigma :x: 
 
-## MITRE
-### Tactic
+# Attack: Screen Capture
+
+ Adversaries may attempt to take screen captures of the desktop to gather information over the course of an operation. Screen capturing functionality may be included as a feature of a remote access tool used in post-compromise operations. Taking a screenshot is also typically possible through native utilities or API calls, such as <code>CopyFromScreen</code>, <code>xwd</code>, or <code>screencapture</code>.(Citation: CopyFromScreen .NET)(Citation: Antiquated Mac Malware)
+
+
+# MITRE
+## Tactic
   - collection
 
-### technique
+## technique
   - T1113
 
-### Sigma
+# Test : Screencapture (silent)
+
+OS: ['macos']
+
+Description: Use screencapture command to collect a full desktop screenshot
+
+
+# Sigma
 
  So many other things to do...
