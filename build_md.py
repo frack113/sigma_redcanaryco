@@ -20,7 +20,6 @@ from  mydata import my_data
 yaml = YAML()
 yaml.preserve_quotes = True
 yaml.explicit_start = False
-yaml.preserve_quotes =True
 yaml.width = 200
 yaml.indent(sequence=4, offset=2)
 
@@ -39,7 +38,8 @@ print("Build index")
 str_index ="""# Welcome to my sigma redcannary cover projet
 ## Purpose
 Knowing which rule should trigger when running a [redcannary test](https://github.com/redcanaryco/atomic-red-team)
-When run a test many noisy can trigger too... 
+
+When run a test noisy many rules can trigger too...
 
 ## Tests\n\n
 """

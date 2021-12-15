@@ -47,10 +47,15 @@ class my_data():
         with filepath.open('r',encoding='UTF-8') as file:
             self.data = self.yaml.load(file)
 
-    def save(self,filepath):
+    def save(self,filepath): # very bad because of scolar -> |2 
         filepath.parent.mkdir(parents=True, exist_ok=True)
         with filepath.open('w',encoding='UTF-8', newline='\n') as file:
             self.yaml.dump(self.data,file)
+        with filepath.open('r',encoding='UTF-8', newline='\n') as file:
+            file_lines = file.readlines()
+        with filepath.open('w',encoding='UTF-8', newline='\n') as file:
+            for line in file_lines:
+                file.write(line.replace('|4','|-').replace('|2','|-'))
     
     def build_md(self,filepath):
         my_str =   "[back](../index.md)\n"

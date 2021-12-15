@@ -8,7 +8,7 @@ sigma: false
 sigma_rule: []
 os:
   - windows
-description: |4
+description: |-
 
   TrustedSec - Unicorn - https://github.com/trustedsec/unicorn
 

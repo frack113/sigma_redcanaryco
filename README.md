@@ -1,6 +1,9 @@
 # sigma_redcanaryco
 Knowing which rule should sound according to the redcannary test
 
+https://frack113.github.io/sigma_redcanaryco/
+
+
 ## Yaml file
 ```yaml
 guid: redcanary test guid
@@ -22,6 +25,6 @@ os:
 ## Works in progress
 
 - [X] better MITRE extract
-- [ ] add github action
+- [ ] add github action (in progress)
 - [ ] update readme
-- [ ] fix `expected <block end>, but found '<scalar>'`
+- [X] fix `expected <block end>, but found '<scalar>'`

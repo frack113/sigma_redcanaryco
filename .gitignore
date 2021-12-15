@@ -2,3 +2,5 @@ index.yaml
 md/*
 md/png/*
 md/test/*
+__pycache__
+__pycache__/*

@@ -17,12 +17,11 @@ import pathlib
 from ruamel.yaml import YAML
 import csv
 from  mydata import my_data
-
+import sys
 
 yaml = YAML()
 yaml.preserve_quotes = True
 yaml.explicit_start = False
-yaml.preserve_quotes =True
 yaml.width = 200
 yaml.indent(sequence=4, offset=2)
 
