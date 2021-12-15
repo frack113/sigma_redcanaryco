@@ -4,8 +4,10 @@ tactic:
   - discovery
 technique:
   - T1201
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 183e7ea8-ac4b-4c23-9aec-b3dac4e401ac
+    name: win_susp_net_execution.yml
 os:
   - windows
 description: 'Lists the domain password policy to console on Windows.

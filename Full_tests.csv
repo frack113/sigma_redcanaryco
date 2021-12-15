@@ -69,8 +69,8 @@ credential-access;T1003.003;['windows'];Create Volume Shadow Copy with Powershel
 credential-access;T1003.003;['windows'];Create Symlink to Volume Shadow Copy;21748c28-2793-4284-9e07-d6d028b66702;False
 credential-access;T1040;['linux'];Packet Capture Linux;7fe741f7-b265-4951-a7c7-320889083b3e;False
 credential-access;T1040;['macos'];Packet Capture macOS;9d04efee-eff5-4240-b8d2-07792b873608;False
-credential-access;T1040;['windows'];Packet Capture Windows Command Prompt;a5b2f6a0-24b4-493e-9590-c699f75723ca;False
-credential-access;T1040;['windows'];Windows Internal Packet Capture;b5656f67-d67f-4de8-8e62-b5581630f528;False
+credential-access;T1040;['windows'];Packet Capture Windows Command Prompt;a5b2f6a0-24b4-493e-9590-c699f75723ca;True
+credential-access;T1040;['windows'];Windows Internal Packet Capture;b5656f67-d67f-4de8-8e62-b5581630f528;True
 credential-access;T1003;['windows'];Gsecdump;96345bfc-8ae7-4b6a-80b7-223200f24ef9;False
 credential-access;T1003;['windows'];Credential Dumping with NPPSpy;9e2173c0-ba26-4cdf-b0ed-8c54b27e3ad6;False
 credential-access;T1003;['windows'];Dump svchost.exe to gather RDP credentials;d400090a-d8ca-4be0-982e-c70598a23de9;False
@@ -739,23 +739,23 @@ discovery;T1087.002;['windows'];Adfind - Enumerate Active Directory User Objects
 discovery;T1087.002;['windows'];Adfind - Enumerate Active Directory Exchange AD Objects;5e2938fb-f919-47b6-8b29-2f6a1f718e99;True
 discovery;T1087.002;['windows'];Enumerate Default Domain Admin Details (Domain);c70ab9fd-19e2-4e02-a83c-9cfa8eaa8fef;True
 discovery;T1087.002;['windows'];Enumerate Active Directory for Unconstrained Delegation;46f8dbe9-22a5-4770-8513-66119c5be63b;True
-discovery;T1069.002;['windows'];Basic Permission Groups Discovery Windows (Domain);dd66d77d-8998-48c0-8024-df263dc2ce5d;False
-discovery;T1069.002;['windows'];Permission Groups Discovery PowerShell (Domain);6d5d8c96-3d2a-4da9-9d6d-9a9d341899a7;False
-discovery;T1069.002;['windows'];Elevated group enumeration using net group (Domain);0afb5163-8181-432e-9405-4322710c0c37;False
-discovery;T1069.002;['windows'];Find machines where user has local admin access (PowerView);a2d71eee-a353-4232-9f86-54f4288dd8c1;False
-discovery;T1069.002;['windows'];Find local admins on all machines in domain (PowerView);a5f0d9f8-d3c9-46c0-8378-846ddd6b1cbd;False
-discovery;T1069.002;['windows'];Find Local Admins via Group Policy (PowerView);64fdb43b-5259-467a-b000-1b02c00e510a;False
-discovery;T1069.002;['windows'];Enumerate Users Not Requiring Pre Auth (ASRepRoast);870ba71e-6858-4f6d-895c-bb6237f6121b;False
-discovery;T1069.002;['windows'];Adfind - Query Active Directory Groups;48ddc687-82af-40b7-8472-ff1e742e8274;False
-discovery;T1482;['windows'];Windows - Discover domain trusts with dsquery;4700a710-c821-4e17-a3ec-9e4c81d6845f;False
-discovery;T1482;['windows'];Windows - Discover domain trusts with nltest;2e22641d-0498-48d2-b9ff-c71e496ccdbe;False
-discovery;T1482;['windows'];Powershell enumerate domains and forests;c58fbc62-8a62-489e-8f2d-3565d7d96f30;False
-discovery;T1482;['windows'];Adfind - Enumerate Active Directory OUs;d1c73b96-ab87-4031-bad8-0e1b3b8bf3ec;False
-discovery;T1482;['windows'];Adfind - Enumerate Active Directory Trusts;15fe436d-e771-4ff3-b655-2dca9ba52834;False
-discovery;T1482;['windows'];Get-DomainTrust with PowerView;f974894c-5991-4b19-aaf5-7cc2fe298c5d;False
-discovery;T1482;['windows'];Get-ForestTrust with PowerView;58ed10e8-0738-4651-8408-3a3e9a526279;False
-discovery;T1083;['windows'];File and Directory Discovery (cmd.exe);0e36303b-6762-4500-b003-127743b80ba6;False
-discovery;T1083;['windows'];File and Directory Discovery (PowerShell);2158908e-b7ef-4c21-8a83-3ce4dd05a924;False
+discovery;T1069.002;['windows'];Basic Permission Groups Discovery Windows (Domain);dd66d77d-8998-48c0-8024-df263dc2ce5d;True
+discovery;T1069.002;['windows'];Permission Groups Discovery PowerShell (Domain);6d5d8c96-3d2a-4da9-9d6d-9a9d341899a7;True
+discovery;T1069.002;['windows'];Elevated group enumeration using net group (Domain);0afb5163-8181-432e-9405-4322710c0c37;True
+discovery;T1069.002;['windows'];Find machines where user has local admin access (PowerView);a2d71eee-a353-4232-9f86-54f4288dd8c1;True
+discovery;T1069.002;['windows'];Find local admins on all machines in domain (PowerView);a5f0d9f8-d3c9-46c0-8378-846ddd6b1cbd;True
+discovery;T1069.002;['windows'];Find Local Admins via Group Policy (PowerView);64fdb43b-5259-467a-b000-1b02c00e510a;True
+discovery;T1069.002;['windows'];Enumerate Users Not Requiring Pre Auth (ASRepRoast);870ba71e-6858-4f6d-895c-bb6237f6121b;True
+discovery;T1069.002;['windows'];Adfind - Query Active Directory Groups;48ddc687-82af-40b7-8472-ff1e742e8274;True
+discovery;T1482;['windows'];Windows - Discover domain trusts with dsquery;4700a710-c821-4e17-a3ec-9e4c81d6845f;True
+discovery;T1482;['windows'];Windows - Discover domain trusts with nltest;2e22641d-0498-48d2-b9ff-c71e496ccdbe;True
+discovery;T1482;['windows'];Powershell enumerate domains and forests;c58fbc62-8a62-489e-8f2d-3565d7d96f30;True
+discovery;T1482;['windows'];Adfind - Enumerate Active Directory OUs;d1c73b96-ab87-4031-bad8-0e1b3b8bf3ec;True
+discovery;T1482;['windows'];Adfind - Enumerate Active Directory Trusts;15fe436d-e771-4ff3-b655-2dca9ba52834;True
+discovery;T1482;['windows'];Get-DomainTrust with PowerView;f974894c-5991-4b19-aaf5-7cc2fe298c5d;True
+discovery;T1482;['windows'];Get-ForestTrust with PowerView;58ed10e8-0738-4651-8408-3a3e9a526279;True
+discovery;T1083;['windows'];File and Directory Discovery (cmd.exe);0e36303b-6762-4500-b003-127743b80ba6;True
+discovery;T1083;['windows'];File and Directory Discovery (PowerShell);2158908e-b7ef-4c21-8a83-3ce4dd05a924;True
 discovery;T1083;['macos', 'linux'];Nix File and Diectory Discovery;ffc8b249-372a-4b74-adcd-e4c0430842de;False
 discovery;T1083;['macos', 'linux'];Nix File and Directory Discovery 2;13c5e1ae-605b-46c4-a79f-db28c77ff24e;False
 discovery;T1087.001;['linux'];Enumerate all accounts (Local);f8aab3dd-5990-4bf8-b8ab-2226c951696f;False
@@ -765,52 +765,52 @@ discovery;T1087.001;['linux', 'macos'];List opened files by user;7e46c7a5-0142-4
 discovery;T1087.001;['linux'];Show if a user account has ever logged in remotely;0f0b6a29-08c3-44ad-a30b-47fd996b2110;False
 discovery;T1087.001;['linux', 'macos'];Enumerate users and groups;e6f36545-dc1e-47f0-9f48-7f730f54a02e;False
 discovery;T1087.001;['macos'];Enumerate users and groups;319e9f6c-7a9e-432e-8c62-9385c803b6f2;False
-discovery;T1087.001;['windows'];Enumerate all accounts on Windows (Local);80887bec-5a9b-4efc-a81d-f83eb2eb32ab;False
-discovery;T1087.001;['windows'];Enumerate all accounts via PowerShell (Local);ae4b6361-b5f8-46cb-a3f9-9cf108ccfe7b;False
-discovery;T1087.001;['windows'];Enumerate logged on users via CMD (Local);a138085e-bfe5-46ba-a242-74a6fb884af3;False
+discovery;T1087.001;['windows'];Enumerate all accounts on Windows (Local);80887bec-5a9b-4efc-a81d-f83eb2eb32ab;True
+discovery;T1087.001;['windows'];Enumerate all accounts via PowerShell (Local);ae4b6361-b5f8-46cb-a3f9-9cf108ccfe7b;True
+discovery;T1087.001;['windows'];Enumerate logged on users via CMD (Local);a138085e-bfe5-46ba-a242-74a6fb884af3;True
 discovery;T1069.001;['macos', 'linux'];Permission Groups Discovery (Local);952931a4-af0b-4335-bbbe-73c8c5b327ae;False
-discovery;T1069.001;['windows'];Basic Permission Groups Discovery Windows (Local);1f454dd6-e134-44df-bebb-67de70fb6cd8;False
+discovery;T1069.001;['windows'];Basic Permission Groups Discovery Windows (Local);1f454dd6-e134-44df-bebb-67de70fb6cd8;True
 discovery;T1069.001;['windows'];Permission Groups Discovery PowerShell (Local);a580462d-2c19-4bc7-8b9a-57a41b7d3ba4;True
-discovery;T1069.001;['windows'];SharpHound3 - LocalAdmin;e03ada14-0980-4107-aff1-7783b2b59bb1;False
+discovery;T1069.001;['windows'];SharpHound3 - LocalAdmin;e03ada14-0980-4107-aff1-7783b2b59bb1;True
 discovery;T1069.001;['windows'];Wmic Group Discovery;7413be50-be8e-430f-ad4d-07bf197884b2;True
 discovery;T1069.001;['windows'];WMIObject Group Discovery;69119e58-96db-4110-ad27-954e48f3bb13;True
 discovery;T1046;['linux', 'macos'];Port Scan;68e907da-2539-48f6-9fc9-257a78c05540;False
-discovery;T1046;['linux', 'macos'];Port Scan Nmap;515942b0-a09f-4163-a7bb-22fefb6f185f;False
-discovery;T1046;['windows'];Port Scan NMap for Windows;d696a3cb-d7a8-4976-8eb5-5af4abf2e3df;False
-discovery;T1046;['windows'];Port Scan using python;6ca45b04-9f15-4424-b9d3-84a217285a5c;False
+discovery;T1046;['linux', 'macos'];Port Scan Nmap;515942b0-a09f-4163-a7bb-22fefb6f185f;True
+discovery;T1046;['windows'];Port Scan NMap for Windows;d696a3cb-d7a8-4976-8eb5-5af4abf2e3df;True
+discovery;T1046;['windows'];Port Scan using python;6ca45b04-9f15-4424-b9d3-84a217285a5c;True
 discovery;T1135;['macos'];Network Share Discovery;f94b5ad9-911c-4eff-9718-fd21899db4f7;False
 discovery;T1135;['linux'];Network Share Discovery - linux;875805bc-9e86-4e87-be86-3a5527315cae;False
-discovery;T1135;['windows'];Network Share Discovery command prompt;20f1097d-81c1-405c-8380-32174d493bbb;False
-discovery;T1135;['windows'];Network Share Discovery PowerShell;1b0814d1-bb24-402d-9615-1b20c50733fb;False
-discovery;T1135;['windows'];View available share drives;ab39a04f-0c93-4540-9ff2-83f862c385ae;False
-discovery;T1135;['windows'];Share Discovery with PowerView;b1636f0a-ba82-435c-b699-0d78794d8bfd;False
-discovery;T1135;['windows'];PowerView ShareFinder;d07e4cc1-98ae-447e-9d31-36cb430d28c4;False
+discovery;T1135;['windows'];Network Share Discovery command prompt;20f1097d-81c1-405c-8380-32174d493bbb;True
+discovery;T1135;['windows'];Network Share Discovery PowerShell;1b0814d1-bb24-402d-9615-1b20c50733fb;True
+discovery;T1135;['windows'];View available share drives;ab39a04f-0c93-4540-9ff2-83f862c385ae;True
+discovery;T1135;['windows'];Share Discovery with PowerView;b1636f0a-ba82-435c-b699-0d78794d8bfd;True
+discovery;T1135;['windows'];PowerView ShareFinder;d07e4cc1-98ae-447e-9d31-36cb430d28c4;True
 discovery;T1040;['linux'];Packet Capture Linux;7fe741f7-b265-4951-a7c7-320889083b3e;False
 discovery;T1040;['macos'];Packet Capture macOS;9d04efee-eff5-4240-b8d2-07792b873608;False
-discovery;T1040;['windows'];Packet Capture Windows Command Prompt;a5b2f6a0-24b4-493e-9590-c699f75723ca;False
-discovery;T1040;['windows'];Windows Internal Packet Capture;b5656f67-d67f-4de8-8e62-b5581630f528;False
+discovery;T1040;['windows'];Packet Capture Windows Command Prompt;a5b2f6a0-24b4-493e-9590-c699f75723ca;True
+discovery;T1040;['windows'];Windows Internal Packet Capture;b5656f67-d67f-4de8-8e62-b5581630f528;True
 discovery;T1201;['linux'];Examine password complexity policy - Ubuntu;085fe567-ac84-47c7-ac4c-2688ce28265b;False
 discovery;T1201;['linux'];Examine password complexity policy - CentOS/RHEL 7.x;78a12e65-efff-4617-bc01-88f17d71315d;False
 discovery;T1201;['linux'];Examine password complexity policy - CentOS/RHEL 6.x;6ce12552-0adb-4f56-89ff-95ce268f6358;False
 discovery;T1201;['linux'];Examine password expiration policy - All Linux;7c86c55c-70fa-4a05-83c9-3aa19b145d1a;False
-discovery;T1201;['windows'];Examine local password policy - Windows;4588d243-f24e-4549-b2e3-e627acc089f6;False
-discovery;T1201;['windows'];Examine domain password policy - Windows;46c2c362-2679-4ef5-aec9-0e958e135be4;False
+discovery;T1201;['windows'];Examine local password policy - Windows;4588d243-f24e-4549-b2e3-e627acc089f6;True
+discovery;T1201;['windows'];Examine domain password policy - Windows;46c2c362-2679-4ef5-aec9-0e958e135be4;True
 discovery;T1201;['macos'];Examine password policy - macOS;4b7fa042-9482-45e1-b348-4b756b2a0742;False
-discovery;T1120;['windows'];Win32_PnPEntity Hardware Inventory;2cb4dbf2-2dca-4597-8678-4d39d207a3a5;False
+discovery;T1120;['windows'];Win32_PnPEntity Hardware Inventory;2cb4dbf2-2dca-4597-8678-4d39d207a3a5;True
 discovery;T1057;['macos', 'linux'];Process Discovery - ps;4ff64f0b-aaf2-4866-b39d-38d9791407cc;False
-discovery;T1057;['windows'];Process Discovery - tasklist;c5806a4f-62b8-4900-980b-c7ec004e9908;False
+discovery;T1057;['windows'];Process Discovery - tasklist;c5806a4f-62b8-4900-980b-c7ec004e9908;True
 discovery;T1012;['windows'];Query Registry;8f7578c4-9863-4d83-875c-a565573bbdf0;True
-discovery;T1018;['windows'];Remote System Discovery - net;85321a9c-897f-4a60-9f20-29788e50bccd;False
-discovery;T1018;['windows'];Remote System Discovery - net group Domain Computers;f1bf6c8f-9016-4edf-aff9-80b65f5d711f;False
-discovery;T1018;['windows'];Remote System Discovery - nltest;52ab5108-3f6f-42fb-8ba3-73bc054f22c8;False
+discovery;T1018;['windows'];Remote System Discovery - net;85321a9c-897f-4a60-9f20-29788e50bccd;True
+discovery;T1018;['windows'];Remote System Discovery - net group Domain Computers;f1bf6c8f-9016-4edf-aff9-80b65f5d711f;True
+discovery;T1018;['windows'];Remote System Discovery - nltest;52ab5108-3f6f-42fb-8ba3-73bc054f22c8;True
 discovery;T1018;['windows'];Remote System Discovery - ping sweep;6db1f57f-d1d5-4223-8a66-55c9c65a9592;False
-discovery;T1018;['windows'];Remote System Discovery - arp;2d5a61f5-0447-4be4-944a-1f8530ed6574;False
+discovery;T1018;['windows'];Remote System Discovery - arp;2d5a61f5-0447-4be4-944a-1f8530ed6574;True
 discovery;T1018;['linux', 'macos'];Remote System Discovery - arp nix;acb6b1ff-e2ad-4d64-806c-6c35fe73b951;False
 discovery;T1018;['linux', 'macos'];Remote System Discovery - sweep;96db2632-8417-4dbb-b8bb-a8b92ba391de;False
 discovery;T1018;['windows'];Remote System Discovery - nslookup;baa01aaa-5e13-45ec-8a0d-e46c93c9760f;False
 discovery;T1018;['windows'];Remote System Discovery - adidnsdump;95e19466-469e-4316-86d2-1dc401b5a959;False
-discovery;T1018;['windows'];Adfind - Enumerate Active Directory Computer Objects;a889f5be-2d54-4050-bd05-884578748bb4;False
-discovery;T1018;['windows'];Adfind - Enumerate Active Directory Domain Controller Objects;5838c31e-a0e2-4b9f-b60a-d79d2cb7995e;False
+discovery;T1018;['windows'];Adfind - Enumerate Active Directory Computer Objects;a889f5be-2d54-4050-bd05-884578748bb4;True
+discovery;T1018;['windows'];Adfind - Enumerate Active Directory Domain Controller Objects;5838c31e-a0e2-4b9f-b60a-d79d2cb7995e;True
 discovery;T1518.001;['windows'];Security Software Discovery;f92a380f-ced9-491f-b338-95a991418ce2;False
 discovery;T1518.001;['windows'];Security Software Discovery - powershell;7f566051-f033-49fb-89de-b6bacab730f0;False
 discovery;T1518.001;['macos'];Security Software Discovery - ps (macOS);ba62ce11-e820-485f-9c17-6f3c857cd840;False

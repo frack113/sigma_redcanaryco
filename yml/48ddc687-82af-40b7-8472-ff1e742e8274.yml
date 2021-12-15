@@ -5,11 +5,11 @@ tactic:
 technique:
   - T1069.002
 sigma: true
-sigma_rule: 
-    - id: 9a132afa-654e-11eb-ae93-0242ac130002
-      name: win_ad_find_discovery.yml
-    - id: 75df3b17-8bcc-4565-b89b-c9898acef911
-      name: win_susp_adfind.yml
+sigma_rule:
+  - id: 9a132afa-654e-11eb-ae93-0242ac130002
+    name: win_ad_find_discovery.yml
+  - id: 75df3b17-8bcc-4565-b89b-c9898acef911
+    name: win_susp_adfind.yml
 os:
   - windows
 description: |

@@ -4,8 +4,10 @@ tactic:
   - discovery
 technique:
   - T1083
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: d23f2ba5-9da0-4463-8908-8ee47f614bb9
+    name: powershell_ps_file_and_directory_discovery.yml
 os:
   - windows
 description: 'Find or discover files on the file system. Upon execution, file and folder information will be displayed.

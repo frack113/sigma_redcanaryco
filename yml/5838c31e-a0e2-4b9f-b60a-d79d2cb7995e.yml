@@ -4,8 +4,10 @@ tactic:
   - discovery
 technique:
   - T1018
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 75df3b17-8bcc-4565-b89b-c9898acef911
+    name: win_susp_adfind.yml
 os:
   - windows
 description: |

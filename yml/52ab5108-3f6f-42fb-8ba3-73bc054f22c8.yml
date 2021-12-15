@@ -4,8 +4,12 @@ tactic:
   - discovery
 technique:
   - T1018
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 3bad990e-4848-4a78-9530-b427d854aac0
+    name: win_trust_discovery.yml
+  - id: 5cc90652-4cbd-4241-aa3b-4b462fa5a248
+    name: win_nltest_recon.yml
 os:
   - windows
 description: |

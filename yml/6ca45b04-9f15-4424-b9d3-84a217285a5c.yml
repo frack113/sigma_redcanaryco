@@ -4,8 +4,10 @@ tactic:
   - discovery
 technique:
   - T1046
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: bef0bc5a-b9ae-425d-85c6-7b2d705980c6
+    name: win_net_python.yml
 os:
   - windows
 description: 'Scan ports to check for listening ports with python

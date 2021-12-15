@@ -72,12 +72,11 @@ class my_data():
         for technique in self.data['technique']:
             my_str += f"  - {technique}\n"
         my_str += f"\n# Test : {self.data['name']}\n"
-        my_str += f"\nOS: {self.data['os']}\n"    
-        my_str += f"\nDescription:\n\n {self.data['description']}\n"
-        my_str +=  "\n# Sigma\n"
+        my_str += f"\n## OS\n\n {self.data['os']}\n"    
+        my_str += f"\n## Description:\n\n {self.data['description']}\n"
+        my_str +=  "\n# Sigma Rule\n"
         for sigma in self.data['sigma_rule']:
             my_str += f" - {sigma['name']} id: {sigma['id']}\n\n"
-        my_str += "\n So many other things to do..."
         filepath.parent.mkdir(parents=True, exist_ok=True)
         with filepath.open('w',encoding='UTF-8', newline='\n') as file:
             file.write(my_str)

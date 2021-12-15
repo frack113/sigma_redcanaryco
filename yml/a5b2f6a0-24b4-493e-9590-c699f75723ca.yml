@@ -5,8 +5,10 @@ tactic:
   - discovery
 technique:
   - T1040
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: ba1f7802-adc7-48b4-9ecb-81e227fddfd5
+    name: win_network_sniffing.yml
 os:
   - windows
 description: |

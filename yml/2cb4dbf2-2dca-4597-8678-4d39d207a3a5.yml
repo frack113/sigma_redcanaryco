@@ -4,8 +4,10 @@ tactic:
   - discovery
 technique:
   - T1120
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: b26647de-4feb-4283-af6b-6117661283c5
+    name: powershell_suspicious_win32_pnpentity.yml
 os:
   - windows
 description: Perform peripheral device discovery using Get-WMIObject Win32_PnPEntity
