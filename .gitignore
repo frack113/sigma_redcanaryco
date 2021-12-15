@@ -1,6 +1,6 @@
 index.yaml
-md/*
-md/png/*
-md/test/*
+md/*.md
+md/png/*.png
+md/test/*.md
 __pycache__
 __pycache__/*
