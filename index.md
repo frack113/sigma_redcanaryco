@@ -1,7 +1,8 @@
 # Welcome to my sigma redcannary cover projet
 ## Purpose
 Knowing which rule should trigger when running a [redcannary test](https://github.com/redcanaryco/atomic-red-team)
-When run a test many noisy can trigger too... 
+
+When run a test noisy many rules can trigger too...
 
 ## Tests
 
