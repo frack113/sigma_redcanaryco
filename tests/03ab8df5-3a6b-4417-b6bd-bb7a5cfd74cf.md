@@ -20,13 +20,13 @@ The plist file permissions must be root:wheel, but the script or program that it
 
 # Test : Launch Daemon
 
-OS: ['macos']
+## OS
 
-Description:
+ ['macos']
+
+## Description:
 
  Utilize LaunchDaemon to launch `Hello World`
 
 
-# Sigma
-
- So many other things to do...
+# Sigma Rule

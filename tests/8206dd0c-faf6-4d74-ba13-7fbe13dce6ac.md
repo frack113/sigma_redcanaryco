@@ -16,13 +16,13 @@ Cover by sigma :x:
 
 # Test : X Windows Capture
 
-OS: ['linux']
+## OS
 
-Description:
+ ['linux']
+
+## Description:
 
  Use xwd command to collect a full desktop screenshot and review file with xwud
 
 
-# Sigma
-
- So many other things to do...
+# Sigma Rule

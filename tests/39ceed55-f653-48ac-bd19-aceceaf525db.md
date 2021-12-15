@@ -23,12 +23,12 @@ Mshta.exe can be used to bypass application control solutions that do not accoun
 
 # Test : Invoke HTML Application - Direct download from URI
 
-OS: ['windows']
+## OS
 
-Description:
+ ['windows']
+
+## Description:
 
  Executes an HTA Application by directly downloading from remote URI.
 
-# Sigma
-
- So many other things to do...
+# Sigma Rule

@@ -15,14 +15,14 @@ Cover by sigma :x:
 
 # Test : XOR Encoded data.
 
-OS: ['windows']
+## OS
 
-Description:
+ ['windows']
+
+## Description:
 
  XOR encodes the data with a XOR key.
 Reference - https://gist.github.com/loadenmb/8254cee0f0287b896a05dcdc8a30042f
 
 
-# Sigma
-
- So many other things to do...
+# Sigma Rule

@@ -17,13 +17,13 @@ Both utilities may be used to bypass application control through use of attribut
 
 # Test : Regasm Uninstall Method Call Test
 
-OS: ['windows']
+## OS
 
-Description:
+ ['windows']
+
+## Description:
 
  Executes the Uninstall Method, No Admin Rights Required. Upon execution, "I shouldn't really execute either." will be displayed.
 
 
-# Sigma
-
- So many other things to do...
+# Sigma Rule

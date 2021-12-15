@@ -17,14 +17,14 @@ Some 3rd party utilities may be preinstalled, such as `tar` on Linux and macOS o
 
 # Test : Compress Data for Exfiltration With Rar
 
-OS: ['windows']
+## OS
 
-Description:
+ ['windows']
+
+## Description:
 
  An adversary may compress data (e.g., sensitive documents) that is collected prior to exfiltration.
 When the test completes you should find the txt files from the %USERPROFILE% directory compressed in a file called T1560.001-data.rar in the %USERPROFILE% directory 
 
 
-# Sigma
-
- So many other things to do...
+# Sigma Rule

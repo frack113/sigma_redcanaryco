@@ -21,13 +21,13 @@ An adversary may use Windows Task Scheduler to execute programs at system startu
 
 # Test : WMI Invoke-CimMethod Scheduled Task
 
-OS: ['windows']
+## OS
 
-Description:
+ ['windows']
+
+## Description:
 
  Create an scheduled task that executes notepad.exe after user login from XML by leveraging WMI class PS_ScheduledTask. Does the same thing as Register-ScheduledTask cmdlet behind the scenes.
 
 
-# Sigma
-
- So many other things to do...
+# Sigma Rule

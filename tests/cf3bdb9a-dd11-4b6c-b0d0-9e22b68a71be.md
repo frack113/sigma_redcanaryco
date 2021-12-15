@@ -19,13 +19,13 @@ Rundll32 can also be used to execute scripts such as JavaScript. This can be don
 
 # Test : Rundll32 execute JavaScript Remote Payload With GetObject
 
-OS: ['windows']
+## OS
 
-Description:
+ ['windows']
+
+## Description:
 
  Test execution of a remote script using rundll32.exe. Upon execution notepad.exe will be opened.
 
 
-# Sigma
-
- So many other things to do...
+# Sigma Rule

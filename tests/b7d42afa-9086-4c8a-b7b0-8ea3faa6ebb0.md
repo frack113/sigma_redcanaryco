@@ -19,13 +19,13 @@ An adversary may use <code>cron</code> in Linux or Unix environments to execute 
 
 # Test : Cron - Add script to all cron subfolders
 
-OS: ['macos', 'linux']
+## OS
 
-Description:
+ ['macos', 'linux']
+
+## Description:
 
  This test adds a script to /etc/cron.hourly, /etc/cron.daily, /etc/cron.monthly and /etc/cron.weekly folders configured to execute on a schedule. This technique was used by the threat actor Rocke during the exploitation of Linux web servers.
 
 
-# Sigma
-
- So many other things to do...
+# Sigma Rule

@@ -21,9 +21,11 @@ Adversaries may abuse COR_PROFILER to establish persistence that executes a mali
 
 # Test : User scope COR_PROFILER
 
-OS: ['windows']
+## OS
 
-Description:
+ ['windows']
+
+## Description:
 
  Creates user scope environment variables and CLSID COM object to enable a .NET profiler (COR_PROFILER).
 The unmanaged profiler DLL (`T1574.012x64.dll`) executes when the CLR is loaded by the Event Viewer process.
@@ -34,6 +36,4 @@ the notepad process will not execute with high integrity.
 Reference: https://redcanary.com/blog/cor_profiler-for-persistence/
 
 
-# Sigma
-
- So many other things to do...
+# Sigma Rule

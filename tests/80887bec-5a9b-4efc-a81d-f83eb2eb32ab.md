@@ -1,6 +1,6 @@
 [back](../index.md)
 
-Cover by sigma :x: 
+Cover by sigma :heavy_check_mark: 
 
 # Attack: Local Account
 
@@ -17,14 +17,18 @@ Commands such as <code>net user</code> and <code>net localgroup</code> of the [N
 
 # Test : Enumerate all accounts on Windows (Local)
 
-OS: ['windows']
+## OS
 
-Description:
+ ['windows']
+
+## Description:
 
  Enumerate all accounts
 Upon execution, multiple enumeration commands will be run and their output displayed in the PowerShell session
 
 
-# Sigma
+# Sigma Rule
+ - win_susp_net_execution.yml id: 183e7ea8-ac4b-4c23-9aec-b3dac4e401ac
 
- So many other things to do...
+ - win_cmdkey_recon.yml id: 07f8bdc2-c9b3-472a-9817-5a670b872f53
+

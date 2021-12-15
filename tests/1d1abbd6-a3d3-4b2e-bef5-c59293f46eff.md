@@ -17,15 +17,15 @@ Adversaries may opt to obfuscate this data, without the use of encryption, withi
 
 # Test : Exfiltration Over Alternative Protocol - HTTP
 
-OS: ['macos', 'linux']
+## OS
 
-Description:
+ ['macos', 'linux']
+
+## Description:
 
  A firewall rule (iptables or firewalld) will be needed to allow exfiltration on port 1337.
 
 Upon successful execution, sh will be used to make a directory (/tmp/victim-staging-area), write a txt file, and host the directory with Python on port 1337, to be later downloaded.
 
 
-# Sigma
-
- So many other things to do...
+# Sigma Rule

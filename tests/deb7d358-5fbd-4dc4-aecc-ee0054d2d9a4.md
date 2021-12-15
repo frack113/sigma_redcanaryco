@@ -16,13 +16,13 @@ Cover by sigma :x:
 
 # Test : Screencapture (silent)
 
-OS: ['macos']
+## OS
 
-Description:
+ ['macos']
+
+## Description:
 
  Use screencapture command to collect a full desktop screenshot
 
 
-# Sigma
-
- So many other things to do...
+# Sigma Rule

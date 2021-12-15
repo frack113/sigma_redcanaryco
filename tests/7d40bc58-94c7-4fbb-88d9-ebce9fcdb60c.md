@@ -19,13 +19,13 @@ In the case of network-based reporting of indicators, an adversary may block tra
 
 # Test : Logging Configuration Changes on Linux Host
 
-OS: ['linux']
+## OS
 
-Description:
+ ['linux']
+
+## Description:
 
  Emulates modification of syslog configuration.
 
 
-# Sigma
-
- So many other things to do...
+# Sigma Rule

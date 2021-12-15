@@ -21,13 +21,13 @@ Adversaries can use this to their advantage to hide files and folders anywhere o
 
 # Test : Hide a Directory
 
-OS: ['macos']
+## OS
 
-Description:
+ ['macos']
+
+## Description:
 
  Hide a directory on MacOS
 
 
-# Sigma
-
- So many other things to do...
+# Sigma Rule

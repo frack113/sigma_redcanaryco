@@ -17,15 +17,15 @@ Commands such as <code>net user /domain</code> and <code>net group /domain</code
 
 # Test : Enumerate Default Domain Admin Details (Domain)
 
-OS: ['windows']
+## OS
 
-Description:
+ ['windows']
+
+## Description:
 
  This test will enumerate the details of the built-in domain admin account
 
 
-# Sigma
+# Sigma Rule
  - win_susp_net_execution.yml id: 183e7ea8-ac4b-4c23-9aec-b3dac4e401ac
 
-
- So many other things to do...

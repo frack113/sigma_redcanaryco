@@ -37,9 +37,11 @@ The following SSPs can be used to access credentials:
 
 # Test : Dump LSASS.exe Memory using NanoDump
 
-OS: ['windows']
+## OS
 
-Description:
+ ['windows']
+
+## Description:
 
  The NanoDump tool uses syscalls and an invalid dump signature to avoid detection.
 
@@ -48,6 +50,4 @@ https://github.com/helpsystems/nanodump
 Upon successful execution, you should find the nanondump.dmp file in the temp directory
 
 
-# Sigma
-
- So many other things to do...
+# Sigma Rule

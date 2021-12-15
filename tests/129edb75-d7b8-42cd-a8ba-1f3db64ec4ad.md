@@ -21,14 +21,14 @@ Adversaries may also obfuscate commands executed from payloads or directly via a
 
 # Test : DLP Evasion via Sensitive Data in VBA Macro over email
 
-OS: ['windows']
+## OS
 
-Description:
+ ['windows']
+
+## Description:
 
  Upon successful execution, an excel containing VBA Macro containing sensitive data will be sent outside the network using email.
 Sensitive data includes about around 20 odd simulated credit card numbers that passes the LUHN check.
 
 
-# Sigma
-
- So many other things to do...
+# Sigma Rule

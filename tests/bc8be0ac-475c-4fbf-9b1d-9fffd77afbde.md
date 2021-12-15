@@ -17,14 +17,14 @@ Such accounts may be used to establish secondary credentialed access that do not
 
 # Test : Create a new user in PowerShell
 
-OS: ['windows']
+## OS
 
-Description:
+ ['windows']
+
+## Description:
 
  Creates a new user in PowerShell. Upon execution, details about the new account will be displayed in the powershell session. To verify the
 new account, run "net user" in powershell or CMD and observe that there is a new user named "T1136.001_PowerShell"
 
 
-# Sigma
-
- So many other things to do...
+# Sigma Rule

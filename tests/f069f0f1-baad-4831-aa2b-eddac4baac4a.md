@@ -19,15 +19,15 @@ Utilities and commands that acquire this information include [netstat](https://a
 
 # Test : System Network Connections Discovery with PowerShell
 
-OS: ['windows']
+## OS
 
-Description:
+ ['windows']
+
+## Description:
 
  Get a listing of network connections.
 
 Upon successful execution, powershell.exe will execute `get-NetTCPConnection`. Results will output via stdout.
 
 
-# Sigma
-
- So many other things to do...
+# Sigma Rule

@@ -19,15 +19,15 @@ The KDC service runs all on domain controllers that are part of an Active Direct
 
 # Test : Crafting Active Directory golden tickets with Rubeus
 
-OS: ['windows']
+## OS
 
-Description:
+ ['windows']
+
+## Description:
 
  Once the hash of the special krbtgt user is retrieved it is possible to craft Kerberos Ticket Granting Ticket impersonating any user in the Active Directory domain.
 This test crafts a Golden Ticket and then performs an SMB request with it for the SYSVOL share, thus triggering a service ticket request (event ID 4769).
 The generated ticket is injected in a new empty Windows session and discarded after, so it does not pollute the current Windows session.
 
 
-# Sigma
-
- So many other things to do...
+# Sigma Rule

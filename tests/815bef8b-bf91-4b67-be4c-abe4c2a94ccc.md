@@ -15,9 +15,11 @@ Cover by sigma :x:
 
 # Test : Download a File with Windows Defender MpCmdRun.exe
 
-OS: ['windows']
+## OS
 
-Description:
+ ['windows']
+
+## Description:
 
  Uses the Windows Defender to download a file from the internet (must have version 4.18.2007.8-0, 4.18.2007.9, or 4.18.2009.9 installed).
 The input arguments "remote_file" and "local_path" can be used to specify the download URL and the name of the output file.
@@ -26,6 +28,4 @@ By default, the test downloads the Atomic Red Team license file to the temp dire
 More info and how to find your version can be found here https://lolbas-project.github.io/lolbas/Binaries/MpCmdRun/
 
 
-# Sigma
-
- So many other things to do...
+# Sigma Rule
