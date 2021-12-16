@@ -1,28 +1,29 @@
+
 [back](../index.md)
+Find sigma rule :x: 
 
-Cover by sigma :x: 
+# Attack: Screen Capture 
 
-# Attack: Screen Capture
-
- Adversaries may attempt to take screen captures of the desktop to gather information over the course of an operation. Screen capturing functionality may be included as a feature of a remote access tool used in post-compromise operations. Taking a screenshot is also typically possible through native utilities or API calls, such as <code>CopyFromScreen</code>, <code>xwd</code>, or <code>screencapture</code>.(Citation: CopyFromScreen .NET)(Citation: Antiquated Mac Malware)
+Adversaries may attempt to take screen captures of the desktop to gather information over the course of an operation. Screen capturing functionality may be included as a feature of a remote access tool used in post-compromise operations. Taking a screenshot is also typically possible through native utilities or API calls, such as <code>CopyFromScreen</code>, <code>xwd</code>, or <code>screencapture</code>.(Citation: CopyFromScreen .NET)(Citation: Antiquated Mac Malware)
 
 
 # MITRE
 ## Tactic
   - collection
 
+
 ## technique
   - T1113
 
+
 # Test : X Windows Capture
-
-OS: ['linux']
-
-Description:
-
- Use xwd command to collect a full desktop screenshot and review file with xwud
+## OS
+  - linux
 
 
-# Sigma
+## Description:
+Use xwd command to collect a full desktop screenshot and review file with xwud
 
- So many other things to do...
+
+# Sigma Rule
+

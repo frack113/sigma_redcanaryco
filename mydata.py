@@ -58,25 +58,55 @@ class my_data():
                 file.write(line.replace('|4','|-').replace('|2','|-'))
     
     def build_md(self,filepath):
-        my_str =   "[back](../index.md)\n"
-        if self.data['sigma'] == True:
-            my_str += "\nCover by sigma :heavy_check_mark: \n"
-        else:
-            my_str += "\nCover by sigma :x: \n"
-        my_str += f"\n# Attack: {self.data['Attack_name']}\n"
-        my_str += f"\n {self.data['Attack_description']}\n"
-        my_str +=  "\n# MITRE\n## Tactic\n"
+        test_str="""
+[back](../index.md)
+Find sigma rule %%state%% 
+
+# Attack: %%Attack_name%% 
+
+%%Attack_description%%
+
+# MITRE
+## Tactic
+%%tactic%%
+
+## technique
+%%technique%%
+
+# Test : %%test_name%%
+## OS
+%%os%%
+
+## Description:
+%%description%%
+
+# Sigma Rule
+%%sigma_rule%%
+
+[back](../index.md)
+"""
+        state=":heavy_check_mark:" if self.data['sigma'] == True else ":x:"
+        str_tactic=""
         for tactic in self.data['tactic']:
-            my_str += f"  - {tactic}\n"
-        my_str +=  "\n## technique\n"
+            str_tactic += f"  - {tactic}\n"
+        str_technique =""
         for technique in self.data['technique']:
-            my_str += f"  - {technique}\n"
-        my_str += f"\n# Test : {self.data['name']}\n"
-        my_str += f"\n## OS\n\n {self.data['os']}\n"    
-        my_str += f"\n## Description:\n\n {self.data['description']}\n"
-        my_str +=  "\n# Sigma Rule\n"
+            str_technique += f"  - {technique}\n"
+        str_os =""
+        for os in self.data['os']:
+            str_os += f"  - {os}\n"
+        str_sigma = ""
         for sigma in self.data['sigma_rule']:
-            my_str += f" - {sigma['name']} id: {sigma['id']}\n\n"
+            str_sigma += f" - {sigma['name']} (id: {sigma['id']})\n\n"   
+        test_str = test_str.replace('%%state%%',state)
+        test_str = test_str.replace('%%Attack_name%%',self.data['Attack_name'])
+        test_str = test_str.replace('%%Attack_description%%',self.data['Attack_description'])
+        test_str = test_str.replace('%%tactic%%',str_tactic)
+        test_str = test_str.replace('%%technique%%',str_technique)
+        test_str = test_str.replace('%%test_name%%',self.data['name'])
+        test_str = test_str.replace('%%os%%',str_os)
+        test_str = test_str.replace('%%description%%',self.data['description'])
+        test_str = test_str.replace('%%sigma_rule%%',str_sigma)
         filepath.parent.mkdir(parents=True, exist_ok=True)
         with filepath.open('w',encoding='UTF-8', newline='\n') as file:
-            file.write(my_str)
+            file.write(test_str)

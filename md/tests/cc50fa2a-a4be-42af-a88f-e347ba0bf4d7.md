@@ -1,10 +1,10 @@
+
 [back](../index.md)
+Find sigma rule :x: 
 
-Cover by sigma :x: 
+# Attack: PowerShell 
 
-# Attack: PowerShell
-
- Adversaries may abuse PowerShell commands and scripts for execution. PowerShell is a powerful interactive command-line interface and scripting environment included in the Windows operating system. (Citation: TechNet PowerShell) Adversaries can use PowerShell to perform a number of actions, including discovery of information and execution of code. Examples include the <code>Start-Process</code> cmdlet which can be used to run an executable and the <code>Invoke-Command</code> cmdlet which runs a command locally or on a remote computer (though administrator permissions are required to use PowerShell to connect to remote systems).
+Adversaries may abuse PowerShell commands and scripts for execution. PowerShell is a powerful interactive command-line interface and scripting environment included in the Windows operating system. (Citation: TechNet PowerShell) Adversaries can use PowerShell to perform a number of actions, including discovery of information and execution of code. Examples include the <code>Start-Process</code> cmdlet which can be used to run an executable and the <code>Invoke-Command</code> cmdlet which runs a command locally or on a remote computer (though administrator permissions are required to use PowerShell to connect to remote systems).
 
 PowerShell may also be used to download and run executables from the Internet, which can be executed from disk or in memory without touching disk.
 
@@ -16,19 +16,20 @@ PowerShell commands/scripts can also be executed without directly invoking the <
 ## Tactic
   - execution
 
+
 ## technique
   - T1059.001
 
+
 # Test : Powershell Invoke-DownloadCradle
+## OS
+  - windows
 
-OS: ['windows']
 
-Description:
-
- Provided by https://github.com/mgreen27/mgreen27.github.io
+## Description:
+Provided by https://github.com/mgreen27/mgreen27.github.io
 Invoke-DownloadCradle is used to generate Network and Endpoint artifacts.
 
 
-# Sigma
+# Sigma Rule
 
- So many other things to do...

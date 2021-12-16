@@ -1,10 +1,10 @@
+
 [back](../index.md)
+Find sigma rule :x: 
 
-Cover by sigma :x: 
+# Attack: System Network Connections Discovery 
 
-# Attack: System Network Connections Discovery
-
- Adversaries may attempt to get a listing of network connections to or from the compromised system they are currently accessing or from remote systems by querying for information over the network. 
+Adversaries may attempt to get a listing of network connections to or from the compromised system they are currently accessing or from remote systems by querying for information over the network. 
 
 An adversary who gains access to a system that is part of a cloud-based environment may map out Virtual Private Clouds or Virtual Networks in order to determine what systems and services are connected. The actions performed are likely the same types of discovery techniques depending on the operating system, but the resulting information may include details about the networked cloud environment relevant to the adversary's goals. Cloud providers may have different ways in which their virtual networks operate.(Citation: Amazon AWS VPC Guide)(Citation: Microsoft Azure Virtual Network Overview)(Citation: Google VPC Overview)
 
@@ -14,20 +14,21 @@ Utilities and commands that acquire this information include [netstat](https://a
 ## Tactic
   - discovery
 
+
 ## technique
   - T1049
 
+
 # Test : System Network Connections Discovery with PowerShell
+## OS
+  - windows
 
-OS: ['windows']
 
-Description:
-
- Get a listing of network connections.
+## Description:
+Get a listing of network connections.
 
 Upon successful execution, powershell.exe will execute `get-NetTCPConnection`. Results will output via stdout.
 
 
-# Sigma
+# Sigma Rule
 
- So many other things to do...
