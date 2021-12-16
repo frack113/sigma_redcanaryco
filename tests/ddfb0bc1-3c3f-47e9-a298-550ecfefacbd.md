@@ -1,10 +1,10 @@
+
 [back](../index.md)
+Find sigma rule :x: 
 
-Cover by sigma :x: 
+# Attack: Container Orchestration Job 
 
-# Attack: Container Orchestration Job
-
- Adversaries may abuse task scheduling functionality provided by container orchestration tools such as Kubernetes to schedule deployment of containers configured to execute malicious code. Container orchestration jobs run these automated tasks at a specific date and time, similar to cron jobs on a Linux system. Deployments of this type can also be configured to maintain a quantity of containers over time, automating the process of maintaining persistence within a cluster.
+Adversaries may abuse task scheduling functionality provided by container orchestration tools such as Kubernetes to schedule deployment of containers configured to execute malicious code. Container orchestration jobs run these automated tasks at a specific date and time, similar to cron jobs on a Linux system. Deployments of this type can also be configured to maintain a quantity of containers over time, automating the process of maintaining persistence within a cluster.
 
 In Kubernetes, a CronJob may be used to schedule a Job that runs one or more containers to perform specific tasks.(Citation: Kubernetes Jobs)(Citation: Kubernetes CronJob) An adversary therefore may utilize a CronJob to schedule deployment of a Job that executes malicious code in the cluster.(Citation: Threat Matrix for Kubernetes)
 
@@ -14,18 +14,21 @@ In Kubernetes, a CronJob may be used to schedule a Job that runs one or more con
   - persistence
   - execution
 
+
 ## technique
   - T1053.007
 
+
 # Test : ListCronjobs
-
 ## OS
+  - containers
 
- ['containers']
 
 ## Description:
-
- Kubernetes Job is a controller that creates one or more pods and ensures that a specified number of them successfully terminate. Kubernetes Job can be used to run containers that perform finite tasks for batch jobs. Kubernetes CronJob is used to schedule Jobs. Attackers may use Kubernetes CronJob for scheduling execution of malicious code that would run as a container in the cluster.
+Kubernetes Job is a controller that creates one or more pods and ensures that a specified number of them successfully terminate. Kubernetes Job can be used to run containers that perform finite tasks for batch jobs. Kubernetes CronJob is used to schedule Jobs. Attackers may use Kubernetes CronJob for scheduling execution of malicious code that would run as a container in the cluster.
 
 
 # Sigma Rule
+
+
+[back](../index.md)

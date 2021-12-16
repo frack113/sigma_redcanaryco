@@ -1,10 +1,10 @@
+
 [back](../index.md)
+Find sigma rule :x: 
 
-Cover by sigma :x: 
+# Attack: PowerShell 
 
-# Attack: PowerShell
-
- Adversaries may abuse PowerShell commands and scripts for execution. PowerShell is a powerful interactive command-line interface and scripting environment included in the Windows operating system. (Citation: TechNet PowerShell) Adversaries can use PowerShell to perform a number of actions, including discovery of information and execution of code. Examples include the <code>Start-Process</code> cmdlet which can be used to run an executable and the <code>Invoke-Command</code> cmdlet which runs a command locally or on a remote computer (though administrator permissions are required to use PowerShell to connect to remote systems).
+Adversaries may abuse PowerShell commands and scripts for execution. PowerShell is a powerful interactive command-line interface and scripting environment included in the Windows operating system. (Citation: TechNet PowerShell) Adversaries can use PowerShell to perform a number of actions, including discovery of information and execution of code. Examples include the <code>Start-Process</code> cmdlet which can be used to run an executable and the <code>Invoke-Command</code> cmdlet which runs a command locally or on a remote computer (though administrator permissions are required to use PowerShell to connect to remote systems).
 
 PowerShell may also be used to download and run executables from the Internet, which can be executed from disk or in memory without touching disk.
 
@@ -16,19 +16,22 @@ PowerShell commands/scripts can also be executed without directly invoking the <
 ## Tactic
   - execution
 
+
 ## technique
   - T1059.001
 
+
 # Test : PowerShell Session Creation and Use
-
 ## OS
+  - windows
 
- ['windows']
 
 ## Description:
-
- Connect to a remote powershell session and interact with the host.
+Connect to a remote powershell session and interact with the host.
 Upon execution, network test info and 'T1086 PowerShell Session Creation and Use' will be displayed.
 
 
 # Sigma Rule
+
+
+[back](../index.md)
