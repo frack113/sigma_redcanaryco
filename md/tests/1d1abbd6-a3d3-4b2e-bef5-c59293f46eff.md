@@ -1,5 +1,6 @@
 
 [back](../index.md)
+
 Find sigma rule :x: 
 
 # Attack: Exfiltration Over Unencrypted/Obfuscated Non-C2 Protocol 
@@ -31,3 +32,5 @@ Upon successful execution, sh will be used to make a directory (/tmp/victim-stag
 
 # Sigma Rule
 
+
+[back](../index.md)

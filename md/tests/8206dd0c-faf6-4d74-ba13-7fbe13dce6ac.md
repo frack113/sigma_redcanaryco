@@ -1,5 +1,6 @@
 
 [back](../index.md)
+
 Find sigma rule :x: 
 
 # Attack: Screen Capture 
@@ -27,3 +28,5 @@ Use xwd command to collect a full desktop screenshot and review file with xwud
 
 # Sigma Rule
 
+
+[back](../index.md)

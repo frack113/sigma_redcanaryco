@@ -1,5 +1,6 @@
 
 [back](../index.md)
+
 Find sigma rule :x: 
 
 # Attack: Indicator Blocking 
@@ -30,3 +31,5 @@ Emulates modification of syslog configuration.
 
 # Sigma Rule
 
+
+[back](../index.md)

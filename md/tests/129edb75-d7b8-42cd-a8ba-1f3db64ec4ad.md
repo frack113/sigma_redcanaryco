@@ -1,5 +1,6 @@
 
 [back](../index.md)
+
 Find sigma rule :x: 
 
 # Attack: Obfuscated Files or Information 
@@ -33,3 +34,5 @@ Sensitive data includes about around 20 odd simulated credit card numbers that p
 
 # Sigma Rule
 
+
+[back](../index.md)

@@ -1,5 +1,6 @@
 
 [back](../index.md)
+
 Find sigma rule :x: 
 
 # Attack: Regsvcs/Regasm 
@@ -28,3 +29,5 @@ Executes the Uninstall Method, No Admin Rights Required. Upon execution, "I shou
 
 # Sigma Rule
 
+
+[back](../index.md)

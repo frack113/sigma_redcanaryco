@@ -2,11 +2,12 @@
 #
 # You should have received a copy of the GNU Lesser General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
 """
 Project: redcannary_id.py
-Date: 2021/12/14
+Date: 2021/12/19
 Author: frack113
-Version: 1.1
+Version: 1.2
 Description: 
     generate the md file
 Requirements:
@@ -15,7 +16,7 @@ Requirements:
 
 import pathlib
 from ruamel.yaml import YAML
-from  mydata import my_data
+from mydata import my_data
 
 yaml = YAML()
 yaml.preserve_quotes = True
@@ -25,27 +26,48 @@ yaml.indent(sequence=4, offset=2)
 
 redcannary_info = my_data(yaml)
 index = {}
-yml_files = pathlib.Path('./yml').glob('**/*.yml')
+yml_files = pathlib.Path("./yml").glob("**/*.yml")
 for yml_file in yml_files:
-    print (f"Parse :{yml_file.name}")
+    print(f"Parse :{yml_file.name}")
+
     redcannary_info.load(yml_file)
-    guid = redcannary_info.data['guid']
-    md_file = pathlib.Path(f'./md/tests/{guid}.md')
+
+    guid = redcannary_info.data["guid"]
+    md_file = pathlib.Path(f"./md/tests/{guid}.md")
     redcannary_info.build_md(md_file)
-    index[guid]={'os':redcannary_info.data['os'],'name':redcannary_info.data['name']}
+    index[guid] = {
+        "os": redcannary_info.data["os"],
+        "name": redcannary_info.data["name"],
+        "technique": redcannary_info.data["technique"][0],
+        "file_link": f"tests/{guid}.md",
+    }
 
 print("Build index")
-str_index ="""# Welcome to my sigma redcannary cover projet
+
+full_technique = {}
+
+for dictionnary in index.values():
+    if dictionnary["technique"] in full_technique:
+        full_technique[dictionnary["technique"]].append(dictionnary)
+
+    else:
+        full_technique[dictionnary["technique"]] = [dictionnary]
+
+string_index = """# Welcome to my sigma redcannary cover projet
 ## Purpose
+
 Knowing which rule should trigger when running a [redcannary test](https://github.com/redcanaryco/atomic-red-team)
 
 When run a test noisy many rules can trigger too...
 
 ## Tests\n\n
 """
-for test in index.keys():
-    str_index += f"[{index[test]['name']}](tests/{test}.md) {index[test]['os']}\n\n"
 
-md_file = pathlib.Path(f'md/index.md')
-with md_file.open('w',encoding='UTF-8', newline='\n') as file_id:
-    file_id.write(str_index)
+for technique,test_lst in full_technique.items():
+    string_index += f"\n### {technique}\n"
+    for test in test_lst:
+        string_index += f"[{test['name']}](tests/{test['file_link']}.md) {test['os']}\n\n"
+
+md_file = pathlib.Path(f"md/index.md")
+with md_file.open("w", encoding="UTF-8", newline="\n") as file_id:
+    file_id.write(string_index)

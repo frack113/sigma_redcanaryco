@@ -1,5 +1,6 @@
 
 [back](../index.md)
+
 Find sigma rule :heavy_check_mark: 
 
 # Attack: Local Account 
@@ -28,8 +29,10 @@ Upon execution, multiple enumeration commands will be run and their output displ
 
 
 # Sigma Rule
- - win_susp_net_execution.yml id: 183e7ea8-ac4b-4c23-9aec-b3dac4e401ac
+ - win_susp_net_execution.yml (id: 183e7ea8-ac4b-4c23-9aec-b3dac4e401ac)
 
- - win_cmdkey_recon.yml id: 07f8bdc2-c9b3-472a-9817-5a670b872f53
+ - win_cmdkey_recon.yml (id: 07f8bdc2-c9b3-472a-9817-5a670b872f53)
 
 
+
+[back](../index.md)

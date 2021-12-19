@@ -6,8 +6,8 @@ technique:
   - T1518.001
 sigma: true
 sigma_rule:
-    - id: 37db85d1-b089-490a-a59a-c7b6f984f480
-      name: win_pc_susp_findstr_385201.yml
+  - id: 37db85d1-b089-490a-a59a-c7b6f984f480
+    name: win_pc_susp_findstr_385201.yml
 os:
   - windows
 description: |

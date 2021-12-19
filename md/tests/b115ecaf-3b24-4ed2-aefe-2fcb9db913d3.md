@@ -1,5 +1,6 @@
 
 [back](../index.md)
+
 Find sigma rule :x: 
 
 # Attack: Hidden Files and Directories 
@@ -32,3 +33,5 @@ Hide a directory on MacOS
 
 # Sigma Rule
 
+
+[back](../index.md)

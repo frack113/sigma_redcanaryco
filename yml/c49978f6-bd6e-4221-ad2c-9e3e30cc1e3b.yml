@@ -5,9 +5,9 @@ tactic:
 technique:
   - T1518
 sigma: true
-sigma_rule: 
-    - id: 2650dd1a-eb2a-412d-ac36-83f06c4f2282
-      name: powershell_software_discovery.yml
+sigma_rule:
+  - id: 2650dd1a-eb2a-412d-ac36-83f06c4f2282
+    name: powershell_software_discovery.yml
 os:
   - windows
 description: |

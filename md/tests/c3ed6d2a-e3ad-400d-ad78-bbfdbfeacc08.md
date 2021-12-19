@@ -1,5 +1,6 @@
 
 [back](../index.md)
+
 Find sigma rule :x: 
 
 # Attack: Standard Encoding 
@@ -27,3 +28,5 @@ Reference - https://gist.github.com/loadenmb/8254cee0f0287b896a05dcdc8a30042f
 
 # Sigma Rule
 
+
+[back](../index.md)

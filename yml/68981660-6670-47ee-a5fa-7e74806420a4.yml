@@ -6,8 +6,8 @@ technique:
   - T1518
 sigma: true
 sigma_rule:
-    - id: e13f668e-7f95-443d-98d2-1816a7648a7b
-      name: process_creation_software_discovery.yml
+  - id: e13f668e-7f95-443d-98d2-1816a7648a7b
+    name: process_creation_software_discovery.yml
 os:
   - windows
 description: |

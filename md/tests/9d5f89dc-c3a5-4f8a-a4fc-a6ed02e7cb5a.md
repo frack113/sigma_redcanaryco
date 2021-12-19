@@ -1,5 +1,6 @@
 
 [back](../index.md)
+
 Find sigma rule :x: 
 
 # Attack: COR_PROFILER 
@@ -38,3 +39,5 @@ Reference: https://redcanary.com/blog/cor_profiler-for-persistence/
 
 # Sigma Rule
 
+
+[back](../index.md)

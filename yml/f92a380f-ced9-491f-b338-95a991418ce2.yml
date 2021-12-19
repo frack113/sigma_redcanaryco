@@ -5,9 +5,9 @@ tactic:
 technique:
   - T1518.001
 sigma: true
-sigma_rule: 
-    - id: 63332011-f057-496c-ad8d-d2b6afb27f96
-      name: win_pc_susp_tasklist_command.yml
+sigma_rule:
+  - id: 63332011-f057-496c-ad8d-d2b6afb27f96
+    name: win_pc_susp_tasklist_command.yml
 os:
   - windows
 description: |

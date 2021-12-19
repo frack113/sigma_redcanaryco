@@ -3,17 +3,17 @@ credential-access;T1003.008;['linux'];Access /etc/shadow (Local);3723ab77-c546-4
 credential-access;T1003.008;['linux'];Access /etc/passwd (Local);60e860b6-8ae6-49db-ad07-5e73edd88f5d;False
 credential-access;T1003.008;['linux'];Access /etc/{shadow,passwd} with a standard bin that's not cat;df1a55ae-019d-4120-bc35-94f4bc5c4b0a;False
 credential-access;T1003.008;['linux'];Access /etc/{shadow,passwd} with shell builtins;f5aa6543-6cb2-4fae-b9c2-b96e14721713;False
-credential-access;T1558.004;['windows'];Rubeus asreproast;615bd568-2859-41b5-9aed-61f6a88e48dd;False
+credential-access;T1558.004;['windows'];Rubeus asreproast;615bd568-2859-41b5-9aed-61f6a88e48dd;True
 credential-access;T1552.003;['linux', 'macos'];Search Through Bash History;3cfde62b-7c33-4b26-a61e-755d6131c8ce;False
 credential-access;T1552.007;['containers'];ListSecrets;43c3a49d-d15c-45e6-b303-f6e177e44a9a;False
 credential-access;T1552.007;['linux'];Cat the contents of a Kubernetes service account token file;788e0019-a483-45da-bcfe-96353d46820f;False
-credential-access;T1056.004;['windows'];Hook PowerShell TLS Encrypt/Decrypt Messages;de1934ea-1fbf-425b-8795-65fb27dd7e33;False
+credential-access;T1056.004;['windows'];Hook PowerShell TLS Encrypt/Decrypt Messages;de1934ea-1fbf-425b-8795-65fb27dd7e33;True
 credential-access;T1110.004;['linux'];SSH Credential Stuffing From Linux;4f08197a-2a8a-472d-9589-cd2895ef22ad;False
 credential-access;T1110.004;['macos'];SSH Credential Stuffing From MacOS;d546a3d9-0be5-40c7-ad82-5a7d79e1b66b;False
 credential-access;T1552.001;['macos'];Extract Browser and System credentials with LaZagne;9e507bb8-1d30-4e3b-a49b-cb5727d7ea79;False
 credential-access;T1552.001;['macos', 'linux'];Extract passwords with grep;bd4cf0d1-7646-474e-8610-78ccf5a097c4;False
-credential-access;T1552.001;['windows'];Extracting passwords with findstr;0e56bf29-ff49-4ea5-9af4-3b81283fd513;False
-credential-access;T1552.001;['windows'];Access unattend.xml;367d4004-5fc0-446d-823f-960c74ae52c3;False
+credential-access;T1552.001;['windows'];Extracting passwords with findstr;0e56bf29-ff49-4ea5-9af4-3b81283fd513;True
+credential-access;T1552.001;['windows'];Access unattend.xml;367d4004-5fc0-446d-823f-960c74ae52c3;True
 credential-access;T1552.001;['macos', 'linux'];Find and Access Github Credentials;da4f751a-020b-40d7-b9ff-d433b7799803;False
 credential-access;T1555;['windows'];Extract Windows Credential Manager via VBA;234f9b7c-b53d-4f32-897b-b880a6c9ea7b;False
 credential-access;T1555;['windows'];Dump credentials from Windows Credential Manager With PowerShell [windows Credentials];c89becbe-1758-4e7d-a0f4-97d2188a23e3;False
@@ -76,7 +76,7 @@ credential-access;T1003;['windows'];Credential Dumping with NPPSpy;9e2173c0-ba26
 credential-access;T1003;['windows'];Dump svchost.exe to gather RDP credentials;d400090a-d8ca-4be0-982e-c70598a23de9;False
 credential-access;T1110.002;['windows'];Password Cracking with Hashcat;6d27df5d-69d4-4c91-bc33-5983ffe91692;False
 credential-access;T1556.002;['windows'];Install and Register Password Filter DLL;a7961770-beb5-4134-9674-83d7e1fa865c;False
-credential-access;T1110.001;['windows'];Brute Force Credentials of all Active Directory domain users via SMB;09480053-2f98-4854-be6e-71ae5f672224;False
+credential-access;T1110.001;['windows'];Brute Force Credentials of single Active Directory domain users via SMB;09480053-2f98-4854-be6e-71ae5f672224;False
 credential-access;T1110.001;['windows'];Brute Force Credentials of single Active Directory domain user via LDAP against domain controller (NTLM or Kerberos);c2969434-672b-4ec8-8df0-bbb91f40e250;False
 credential-access;T1110.001;['azure-ad'];Brute Force Credentials of single Azure AD user;5a51ef57-299e-4d62-8e11-2d440df55e69;False
 credential-access;T1110.003;['windows'];Password Spray all Domain Users;90bc2e54-6c84-47a5-9439-0a2a92b4b175;False
@@ -123,7 +123,7 @@ collection;T1115;['windows'];Utilize Clipboard to store or execute commands from
 collection;T1115;['windows'];Execute Commands from Clipboard using PowerShell;d6dc21af-bec9-4152-be86-326b6babd416;False
 collection;T1115;['macos'];Execute commands from clipboard;1ac2247f-65f8-4051-b51f-b0ccdfaaa5ff;False
 collection;T1115;['windows'];Collect Clipboard Data via VBA;9c8d5a72-9c98-48d3-b9bf-da2cc43bdf52;False
-collection;T1056.004;['windows'];Hook PowerShell TLS Encrypt/Decrypt Messages;de1934ea-1fbf-425b-8795-65fb27dd7e33;False
+collection;T1056.004;['windows'];Hook PowerShell TLS Encrypt/Decrypt Messages;de1934ea-1fbf-425b-8795-65fb27dd7e33;True
 collection;T1056.002;['macos'];AppleScript - Prompt User for Password;76628574-0bc1-4646-8fe2-8f4427b47d15;False
 collection;T1056.002;['windows'];PowerShell - Prompt User for Password;2b162bfd-0928-4d4c-9ec3-4d9f88374b52;False
 collection;T1056.001;['windows'];Input Capture;d9b633ca-8efb-45e6-b838-70f595c6ae26;False
@@ -811,14 +811,14 @@ discovery;T1018;['windows'];Remote System Discovery - nslookup;baa01aaa-5e13-45e
 discovery;T1018;['windows'];Remote System Discovery - adidnsdump;95e19466-469e-4316-86d2-1dc401b5a959;False
 discovery;T1018;['windows'];Adfind - Enumerate Active Directory Computer Objects;a889f5be-2d54-4050-bd05-884578748bb4;True
 discovery;T1018;['windows'];Adfind - Enumerate Active Directory Domain Controller Objects;5838c31e-a0e2-4b9f-b60a-d79d2cb7995e;True
-discovery;T1518.001;['windows'];Security Software Discovery;f92a380f-ced9-491f-b338-95a991418ce2;False
-discovery;T1518.001;['windows'];Security Software Discovery - powershell;7f566051-f033-49fb-89de-b6bacab730f0;False
+discovery;T1518.001;['windows'];Security Software Discovery;f92a380f-ced9-491f-b338-95a991418ce2;True
+discovery;T1518.001;['windows'];Security Software Discovery - powershell;7f566051-f033-49fb-89de-b6bacab730f0;True
 discovery;T1518.001;['macos'];Security Software Discovery - ps (macOS);ba62ce11-e820-485f-9c17-6f3c857cd840;False
 discovery;T1518.001;['linux'];Security Software Discovery - ps (Linux);23b91cd2-c99c-4002-9e41-317c63e024a2;False
-discovery;T1518.001;['windows'];Security Software Discovery - Sysmon Service;fe613cf3-8009-4446-9a0f-bc78a15b66c9;False
-discovery;T1518.001;['windows'];Security Software Discovery - AV Discovery via WMI;1553252f-14ea-4d3b-8a08-d7a4211aa945;False
-discovery;T1518;['windows'];Find and Display Internet Explorer Browser Version;68981660-6670-47ee-a5fa-7e74806420a4;False
-discovery;T1518;['windows'];Applications Installed;c49978f6-bd6e-4221-ad2c-9e3e30cc1e3b;False
+discovery;T1518.001;['windows'];Security Software Discovery - Sysmon Service;fe613cf3-8009-4446-9a0f-bc78a15b66c9;True
+discovery;T1518.001;['windows'];Security Software Discovery - AV Discovery via WMI;1553252f-14ea-4d3b-8a08-d7a4211aa945;True
+discovery;T1518;['windows'];Find and Display Internet Explorer Browser Version;68981660-6670-47ee-a5fa-7e74806420a4;True
+discovery;T1518;['windows'];Applications Installed;c49978f6-bd6e-4221-ad2c-9e3e30cc1e3b;True
 discovery;T1518;['macos'];Find and Display Safari Browser Version;103d6533-fd2a-4d08-976a-4a598565280f;False
 discovery;T1497.001;['linux'];Detect Virtualization Environment (Linux);dfbd1a21-540d-4574-9731-e852bd6fe840;False
 discovery;T1497.001;['windows'];Detect Virtualization Environment (Windows);502a7dc4-9d6f-4d28-abf2-f0e84692562d;False

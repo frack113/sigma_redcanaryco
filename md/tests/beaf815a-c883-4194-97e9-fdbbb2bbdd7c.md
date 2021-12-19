@@ -1,5 +1,6 @@
 
 [back](../index.md)
+
 Find sigma rule :x: 
 
 # Attack: Disable or Modify System Firewall 
@@ -28,3 +29,5 @@ Edit the Uncomplicated Firewall (UFW) rules file /etc/ufw/user.rules.
 
 # Sigma Rule
 
+
+[back](../index.md)

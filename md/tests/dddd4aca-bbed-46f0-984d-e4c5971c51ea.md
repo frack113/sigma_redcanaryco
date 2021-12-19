@@ -1,5 +1,6 @@
 
 [back](../index.md)
+
 Find sigma rule :x: 
 
 # Attack: LSASS Memory 
@@ -52,3 +53,5 @@ Upon successful execution, you should find the nanondump.dmp file in the temp di
 
 # Sigma Rule
 
+
+[back](../index.md)

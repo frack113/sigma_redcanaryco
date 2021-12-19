@@ -4,8 +4,10 @@ tactic:
   - credential-access
 technique:
   - T1552.001
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 1a3d42dd-3763-46b9-8025-b5f17f340dfb
+    name: win_fe_susp_unattend_xml.yml
 os:
   - windows
 description: |

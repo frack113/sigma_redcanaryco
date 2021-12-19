@@ -1,5 +1,6 @@
 
 [back](../index.md)
+
 Find sigma rule :x: 
 
 # Attack: LSASS Memory 
@@ -51,3 +52,5 @@ Or, if you try to run the test without the required administrative privleges you
 
 # Sigma Rule
 
+
+[back](../index.md)

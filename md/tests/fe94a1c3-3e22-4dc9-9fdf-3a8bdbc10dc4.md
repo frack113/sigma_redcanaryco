@@ -1,5 +1,6 @@
 
 [back](../index.md)
+
 Find sigma rule :heavy_check_mark: 
 
 # Attack: Application Window Discovery 
@@ -27,6 +28,8 @@ Upon successful execution, powershell will download the .cs from the Atomic Red 
 
 
 # Sigma Rule
- - win_susp_csc_folder.yml id: dcaa3f04-70c3-427a-80b4-b870d73c94c4
+ - win_susp_csc_folder.yml (id: dcaa3f04-70c3-427a-80b4-b870d73c94c4)
 
 
+
+[back](../index.md)
