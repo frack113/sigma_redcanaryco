@@ -40,6 +40,7 @@ for yml_file in yml_files:
         "name": redcannary_info.data["name"],
         "technique": redcannary_info.data["technique"][0],
         "file_link": f"tests/{guid}.md",
+        "sigma": redcannary_info.data["sigma"]
     }
 
 print("Build index")
@@ -66,7 +67,8 @@ When run a test noisy many rules can trigger too...
 for technique,test_lst in full_technique.items():
     string_index += f"\n### {technique}\n"
     for test in test_lst:
-        string_index += f"[{test['name']}]({test['file_link']}) {test['os']}\n\n"
+        state = ":heavy_check_mark:" if test["sigma"] == True else ":x:"
+        string_index += f"[{test['name']}]({test['file_link']}) {test['os']} (sigma rule {state})\n\n"
 
 md_file = pathlib.Path(f"md/index.md")
 with md_file.open("w", encoding="UTF-8", newline="\n") as file_id:
