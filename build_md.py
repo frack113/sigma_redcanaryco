@@ -66,7 +66,7 @@ When run a test noisy many rules can trigger too...
 for technique,test_lst in full_technique.items():
     string_index += f"\n### {technique}\n"
     for test in test_lst:
-        string_index += f"[{test['name']}](tests/{test['file_link']}.md) {test['os']}\n\n"
+        string_index += f"[{test['name']}]({test['file_link']}) {test['os']}\n\n"
 
 md_file = pathlib.Path(f"md/index.md")
 with md_file.open("w", encoding="UTF-8", newline="\n") as file_id:
