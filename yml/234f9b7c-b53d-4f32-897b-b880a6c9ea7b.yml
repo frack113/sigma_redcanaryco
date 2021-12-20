@@ -4,8 +4,10 @@ tactic:
   - credential-access
 technique:
   - T1555
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: e6ce8457-68b1-485b-9bdd-3c2b5d679aa9
+    name: sysmon_susp_winword_vbadll_load.yml
 os:
   - windows
 description: |

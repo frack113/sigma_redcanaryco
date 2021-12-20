@@ -15,17 +15,17 @@ credential-access;T1552.001;['macos', 'linux'];Extract passwords with grep;bd4cf
 credential-access;T1552.001;['windows'];Extracting passwords with findstr;0e56bf29-ff49-4ea5-9af4-3b81283fd513;True
 credential-access;T1552.001;['windows'];Access unattend.xml;367d4004-5fc0-446d-823f-960c74ae52c3;True
 credential-access;T1552.001;['macos', 'linux'];Find and Access Github Credentials;da4f751a-020b-40d7-b9ff-d433b7799803;False
-credential-access;T1555;['windows'];Extract Windows Credential Manager via VBA;234f9b7c-b53d-4f32-897b-b880a6c9ea7b;False
-credential-access;T1555;['windows'];Dump credentials from Windows Credential Manager With PowerShell [windows Credentials];c89becbe-1758-4e7d-a0f4-97d2188a23e3;False
-credential-access;T1555;['windows'];Dump credentials from Windows Credential Manager With PowerShell [web Credentials];8fd5a296-6772-4766-9991-ff4e92af7240;False
-credential-access;T1555;['windows'];Enumerate credentials from Windows Credential Manager using vaultcmd.exe [Windows Credentials];36753ded-e5c4-4eb5-bc3c-e8fba236878d;False
-credential-access;T1555;['windows'];Enumerate credentials from Windows Credential Manager using vaultcmd.exe [Web Credentials];bc071188-459f-44d5-901a-f8f2625b2d2e;False
-credential-access;T1555.003;['windows'];Run Chrome-password Collector;8c05b133-d438-47ca-a630-19cc464c4622;False
+credential-access;T1555;['windows'];Extract Windows Credential Manager via VBA;234f9b7c-b53d-4f32-897b-b880a6c9ea7b;True
+credential-access;T1555;['windows'];Dump credentials from Windows Credential Manager With PowerShell [windows Credentials];c89becbe-1758-4e7d-a0f4-97d2188a23e3;True
+credential-access;T1555;['windows'];Dump credentials from Windows Credential Manager With PowerShell [web Credentials];8fd5a296-6772-4766-9991-ff4e92af7240;True
+credential-access;T1555;['windows'];Enumerate credentials from Windows Credential Manager using vaultcmd.exe [Windows Credentials];36753ded-e5c4-4eb5-bc3c-e8fba236878d;True
+credential-access;T1555;['windows'];Enumerate credentials from Windows Credential Manager using vaultcmd.exe [Web Credentials];bc071188-459f-44d5-901a-f8f2625b2d2e;True
+credential-access;T1555.003;['windows'];Run Chrome-password Collector;8c05b133-d438-47ca-a630-19cc464c4622;True
 credential-access;T1555.003;['macos'];Search macOS Safari Cookies;c1402f7b-67ca-43a8-b5f3-3143abedc01b;False
-credential-access;T1555.003;['windows'];LaZagne - Credentials from Browser;9a2915b3-3954-4cce-8c76-00fbf4dbd014;False
-credential-access;T1555.003;['windows'];Simulating access to Chrome Login Data;3d111226-d09a-4911-8715-fe11664f960d;False
-credential-access;T1552.002;['windows'];Enumeration for Credentials in Registry;b6ec082c-7384-46b3-a111-9a9b8b14e5e7;False
-credential-access;T1552.002;['windows'];Enumeration for PuTTY Credentials in Registry;af197fd7-e868-448e-9bd5-05d1bcd9d9e5;False
+credential-access;T1555.003;['windows'];LaZagne - Credentials from Browser;9a2915b3-3954-4cce-8c76-00fbf4dbd014;True
+credential-access;T1555.003;['windows'];Simulating access to Chrome Login Data;3d111226-d09a-4911-8715-fe11664f960d;True
+credential-access;T1552.002;['windows'];Enumeration for Credentials in Registry;b6ec082c-7384-46b3-a111-9a9b8b14e5e7;True
+credential-access;T1552.002;['windows'];Enumeration for PuTTY Credentials in Registry;af197fd7-e868-448e-9bd5-05d1bcd9d9e5;True
 credential-access;T1003.006;['windows'];DCSync (Active Directory);129efd28-8497-4c87-a1b0-73b9a870ca3e;False
 credential-access;T1187;['windows'];PetitPotam;485ce873-2e65-4706-9c7e-ae3ab9e14213;False
 credential-access;T1056.002;['macos'];AppleScript - Prompt User for Password;76628574-0bc1-4646-8fe2-8f4427b47d15;False

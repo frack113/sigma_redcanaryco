@@ -4,8 +4,10 @@ tactic:
   - credential-access
 technique:
   - T1552.002
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: e0b0c2ab-3d52-46d9-8cb7-049dc775fbd1
+    name: win_pc_enumeration_for_credentials_in_registry.yml
 os:
   - windows
 description: |

@@ -4,8 +4,10 @@ tactic:
   - credential-access
 technique:
   - T1555.003
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: cbb56d62-4060-40f7-9466-d8aaf3123f83
+    name: sysmon_susp_python_image_load.yml
 os:
   - windows
 description: "The following Atomic test utilizes [LaZagne](https://github.com/AlessandroZ/LaZagne) to extract passwords from browsers on the Windows operating system.\nLaZagne is an open source application\

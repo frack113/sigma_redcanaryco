@@ -4,8 +4,10 @@ tactic:
   - credential-access
 technique:
   - T1555.003
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 98f4c75c-3089-44f3-b733-b327b9cd9c9d
+    name: powershell_ps_access_to_chrome_login_data.yml
 os:
   - windows
 description: "Simulates an adversary accessing encrypted credentials from Google Chrome Login database. \n"

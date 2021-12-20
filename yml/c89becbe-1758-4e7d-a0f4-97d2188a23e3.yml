@@ -4,8 +4,10 @@ tactic:
   - credential-access
 technique:
   - T1555
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 99c49d9c-34ea-45f7-84a7-4751ae6b2cbc
+    name: powershell_ps_dump_password_windows_credential_manager.yml
 os:
   - windows
 description: This module will extract the credentials from Windows Credential Manager

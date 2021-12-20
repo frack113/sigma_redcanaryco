@@ -4,8 +4,10 @@ tactic:
   - credential-access
 technique:
   - T1555.003
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 7cce6fc8-a07f-4d84-a53e-96e1879843c9
+    name: win_pc_false_sysinternalsuite.yml
 os:
   - windows
 description: |
