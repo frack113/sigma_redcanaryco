@@ -1,20 +1,20 @@
+Attack_name: Domain Account
+Attack_description: |-
+  Adversaries may attempt to get a listing of domain accounts. This information can help adversaries determine which domain accounts exist to aid in follow-on behavior.
+
+  Commands such as <code>net user /domain</code> and <code>net group /domain</code> of the [Net](https://attack.mitre.org/software/S0039) utility, <code>dscacheutil -q group</code>on macOS, and <code>ldapsearch</code> on Linux can list domain users and groups.
 guid: 736b4f53-f400-4c22-855d-1a6b5a551600
 name: Adfind -Listing password policy
 tactic:
   - discovery
 technique:
   - T1087.002
-sigma: true
-sigma_rule:
-  - id: 455b9d50-15a1-4b99-853f-8d37655a4c1b
-    name: win_susp_adfind_enumerate.yml
 os:
   - windows
 description: |
   Adfind tool can be used for reconnaissance in an Active directory environment. The example chosen illustrates adfind used to query the local password policy.
   reference- http://www.joeware.net/freetools/tools/adfind/, https://social.technet.microsoft.com/wiki/contents/articles/7535.adfind-command-examples.aspx
-Attack_name: Domain Account
-Attack_description: |-
-  Adversaries may attempt to get a listing of domain accounts. This information can help adversaries determine which domain accounts exist to aid in follow-on behavior.
-
-  Commands such as <code>net user /domain</code> and <code>net group /domain</code> of the [Net](https://attack.mitre.org/software/S0039) utility, <code>dscacheutil -q group</code>on macOS, and <code>ldapsearch</code> on Linux can list domain users and groups.
+sigma: true
+sigma_rule:
+  - id: 455b9d50-15a1-4b99-853f-8d37655a4c1b
+    name: win_susp_adfind_enumerate.yml

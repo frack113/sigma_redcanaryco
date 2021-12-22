@@ -1,17 +1,3 @@
-guid: 46959285-906d-40fa-9437-5a439accd878
-name: Discover Private SSH Keys
-tactic:
-  - credential-access
-technique:
-  - T1552.004
-sigma: false
-sigma_rule: []
-os:
-  - macos
-  - linux
-description: 'Discover private SSH keys on a macOS or Linux system.
-
-  '
 Attack_name: Private Keys
 Attack_description: "Adversaries may search for private key certificate files on compromised systems for insecurely stored credentials. Private cryptographic keys and certificates are used for authentication,\
   \ encryption/decryption, and digital signatures.(Citation: Wikipedia Public Key Crypto) Common key and certificate file extensions include: .key, .pgp, .gpg, .ppk., .p12, .pem, .pfx, .cer, .p7b, .asc.\
@@ -20,3 +6,17 @@ Attack_description: "Adversaries may search for private key certificate files on
   \ that search compromised systems for file extensions relating to cryptographic keys and certificates.(Citation: Kaspersky Careto)(Citation: Palo Alto Prince of Persia)\n\nSome private keys require a\
   \ password or passphrase for operation, so an adversary may also use [Input Capture](https://attack.mitre.org/techniques/T1056) for keylogging or attempt to [Brute Force](https://attack.mitre.org/techniques/T1110)\
   \ the passphrase off-line."
+guid: 46959285-906d-40fa-9437-5a439accd878
+name: Discover Private SSH Keys
+tactic:
+  - credential-access
+technique:
+  - T1552.004
+os:
+  - macos
+  - linux
+description: 'Discover private SSH keys on a macOS or Linux system.
+
+  '
+sigma: false
+sigma_rule: []

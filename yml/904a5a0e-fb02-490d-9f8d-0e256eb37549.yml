@@ -1,17 +1,3 @@
-guid: 904a5a0e-fb02-490d-9f8d-0e256eb37549
-name: macOS/Linux - Simulate CPU Load with Yes
-tactic:
-  - impact
-technique:
-  - T1496
-sigma: false
-sigma_rule: []
-os:
-  - macos
-  - linux
-description: |
-  This test simulates a high CPU load as you might observe during cryptojacking attacks.
-  End the test by using CTRL/CMD+C to break.
 Attack_name: Resource Hijacking
 Attack_description: "Adversaries may leverage the resources of co-opted systems in order to solve resource intensive problems which may impact system and/or hosted service availability. \n\nOne common purpose\
   \ for Resource Hijacking is to validate transactions of cryptocurrency networks and earn virtual currency. Adversaries may consume enough system resources to negatively impact and/or cause affected machines\
@@ -20,3 +6,17 @@ Attack_description: "Adversaries may leverage the resources of co-opted systems 
   \ of deployment via exposed APIs and the potential for scaling mining activities by deploying or compromising multiple containers within an environment or cluster.(Citation: Unit 42 Hildegard Malware)(Citation:\
   \ Trend Micro Exposed Docker APIs)\n\nAdditionally, some cryptocurrency mining malware kills off processes for competing malware to ensure it’s not competing for resources.(Citation: Trend Micro War of\
   \ Crypto Miners)"
+guid: 904a5a0e-fb02-490d-9f8d-0e256eb37549
+name: macOS/Linux - Simulate CPU Load with Yes
+tactic:
+  - impact
+technique:
+  - T1496
+os:
+  - macos
+  - linux
+description: |
+  This test simulates a high CPU load as you might observe during cryptojacking attacks.
+  End the test by using CTRL/CMD+C to break.
+sigma: false
+sigma_rule: []

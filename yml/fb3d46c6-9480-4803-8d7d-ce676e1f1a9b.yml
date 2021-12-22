@@ -1,16 +1,3 @@
-guid: fb3d46c6-9480-4803-8d7d-ce676e1f1a9b
-name: Gatekeeper Bypass
-tactic:
-  - defense-evasion
-technique:
-  - T1553.001
-sigma: false
-sigma_rule: []
-os:
-  - macos
-description: 'Gatekeeper Bypass via command line
-
-  '
 Attack_name: Gatekeeper Bypass
 Attack_description: "Adversaries may modify file attributes that signify programs are from untrusted sources to subvert Gatekeeper controls. In macOS and OS X, when applications or programs are downloaded\
   \ from the internet, there is a special attribute set on the file called <code>com.apple.quarantine</code>. This attribute is read by Apple's Gatekeeper defense program at execution time and provides\
@@ -21,3 +8,16 @@ Attack_description: "Adversaries may modify file attributes that signify program
   \ (Citation: OceanLotus for OS X)\n \nIn typical operation, a file will be downloaded from the internet and given a quarantine flag before being saved to disk. When the user tries to open the file or\
   \ application, macOS’s gatekeeper will step in and check for the presence of this flag. If it exists, then macOS will then prompt the user to confirmation that they want to run the program and will even\
   \ provide the URL where the application came from. However, this is all based on the file being downloaded from a quarantine-savvy application. (Citation: Bypassing Gatekeeper)"
+guid: fb3d46c6-9480-4803-8d7d-ce676e1f1a9b
+name: Gatekeeper Bypass
+tactic:
+  - defense-evasion
+technique:
+  - T1553.001
+os:
+  - macos
+description: 'Gatekeeper Bypass via command line
+
+  '
+sigma: false
+sigma_rule: []

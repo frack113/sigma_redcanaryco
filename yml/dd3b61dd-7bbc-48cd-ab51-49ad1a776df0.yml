@@ -1,21 +1,21 @@
+Attack_name: Ingress Tool Transfer
+Attack_description: Adversaries may transfer tools or other files from an external system into a compromised environment. Files may be copied from an external adversary controlled system through the command
+  and control channel to bring tools into the victim network or through alternate protocols with another tool such as FTP. Files can also be copied over on Mac and Linux with native tools like scp, rsync,
+  and sftp.
 guid: dd3b61dd-7bbc-48cd-ab51-49ad1a776df0
 name: certutil download (urlcache)
 tactic:
   - command-and-control
 technique:
   - T1105
+os:
+  - windows
+description: 'Use certutil -urlcache argument to download a file from the web. Note - /urlcache also works!
+
+  '
 sigma: true
 sigma_rule:
   - id: 1277f594-a7d1-4f28-a2d3-73af5cbeab43
     name: file_event_win_shell_write_susp_directory.yml
   - id: e011a729-98a6-4139-b5c4-bf6f6dd8239a
     name: win_susp_certutil_command.yml
-os:
-  - windows
-description: 'Use certutil -urlcache argument to download a file from the web. Note - /urlcache also works!
-
-  '
-Attack_name: Ingress Tool Transfer
-Attack_description: Adversaries may transfer tools or other files from an external system into a compromised environment. Files may be copied from an external adversary controlled system through the command
-  and control channel to bring tools into the victim network or through alternate protocols with another tool such as FTP. Files can also be copied over on Mac and Linux with native tools like scp, rsync,
-  and sftp.

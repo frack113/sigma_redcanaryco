@@ -1,17 +1,3 @@
-guid: 39cb0e67-dd0d-4b74-a74b-c072db7ae991
-name: Shared Library Injection via /etc/ld.so.preload
-tactic:
-  - privilege-escalation
-  - defense-evasion
-  - persistence
-technique:
-  - T1574.006
-sigma: false
-sigma_rule: []
-os:
-  - linux
-description: "This test adds a shared library to the `ld.so.preload` list to execute and intercept API calls. This technique was used by threat actor Rocke during the exploitation of Linux web servers.\
-  \ This requires the `glibc` package.\n\nUpon successful execution, bash will echo `../bin/T1574.006.so` to /etc/ld.so.preload. \n"
 Attack_name: Dynamic Linker Hijacking
 Attack_description: "Adversaries may execute their own malicious payloads by hijacking environment variables the dynamic linker uses to load shared libraries. During the execution preparation phase of a\
   \ program, the dynamic linker loads specified absolute paths of shared libraries from environment variables and files, such as <code>LD_PRELOAD</code> on Linux or <code>DYLD_INSERT_LIBRARIES</code> on\
@@ -27,3 +13,17 @@ Attack_description: "Adversaries may execute their own malicious payloads by hij
   \ 1997)(Citation: Brown Exploiting Linkers) \n\nOn macOS this behavior is conceptually the same as on Linux, differing only in how the macOS dynamic libraries (dyld) is implemented at a lower level. Adversaries\
   \ can set the <code>DYLD_INSERT_LIBRARIES</code> environment variable to point to malicious libraries containing names of legitimate libraries or functions requested by a victim program.(Citation: TheEvilBit\
   \ DYLD_INSERT_LIBRARIES)(Citation: Timac DYLD_INSERT_LIBRARIES)(Citation: Gabilondo DYLD_INSERT_LIBRARIES Catalina Bypass) "
+guid: 39cb0e67-dd0d-4b74-a74b-c072db7ae991
+name: Shared Library Injection via /etc/ld.so.preload
+tactic:
+  - privilege-escalation
+  - defense-evasion
+  - persistence
+technique:
+  - T1574.006
+os:
+  - linux
+description: "This test adds a shared library to the `ld.so.preload` list to execute and intercept API calls. This technique was used by threat actor Rocke during the exploitation of Linux web servers.\
+  \ This requires the `glibc` package.\n\nUpon successful execution, bash will echo `../bin/T1574.006.so` to /etc/ld.so.preload. \n"
+sigma: false
+sigma_rule: []

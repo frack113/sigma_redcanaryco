@@ -1,16 +1,3 @@
-guid: 53bcf8a0-1549-4b85-b919-010c56d724ff
-name: Install root CA on Debian/Ubuntu
-tactic:
-  - defense-evasion
-technique:
-  - T1553.004
-sigma: false
-sigma_rule: []
-os:
-  - linux
-description: 'Creates a root CA with openssl
-
-  '
 Attack_name: Install Root Certificate
 Attack_description: |-
   Adversaries may install a root certificate on a compromised system to avoid warnings when connecting to adversary controlled web servers. Root certificates are used in public key cryptography to identify a root certificate authority (CA). When a root certificate is installed, the system or application will trust certificates in the root's chain of trust that have been signed by the root certificate. (Citation: Wikipedia Root Certificate) Certificates are commonly used for establishing secure TLS/SSL communications within a web browser. When a user attempts to browse a website that presents a certificate that is not trusted an error message will be displayed to warn the user of the security risk. Depending on the security settings, the browser may not allow the user to establish a connection to the website.
@@ -22,3 +9,16 @@ Attack_description: |-
   Root certificates (and their associated chains) can also be cloned and reinstalled. Cloned certificate chains will carry many of the same metadata characteristics of the source and can be used to sign malicious code that may then bypass signature validation tools (ex: Sysinternals, antivirus, etc.) used to block execution and/or uncover artifacts of Persistence. (Citation: SpectorOps Code Signing Dec 2017)
 
   In macOS, the Ay MaMi malware uses <code>/usr/bin/security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain /path/to/malicious/cert</code> to install a malicious certificate as a trusted root certificate into the system keychain. (Citation: objective-see ay mami 2018)
+guid: 53bcf8a0-1549-4b85-b919-010c56d724ff
+name: Install root CA on Debian/Ubuntu
+tactic:
+  - defense-evasion
+technique:
+  - T1553.004
+os:
+  - linux
+description: 'Creates a root CA with openssl
+
+  '
+sigma: false
+sigma_rule: []

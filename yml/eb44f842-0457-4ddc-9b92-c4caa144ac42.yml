@@ -1,17 +1,3 @@
-guid: eb44f842-0457-4ddc-9b92-c4caa144ac42
-name: PowerShell Registry RunOnce
-tactic:
-  - privilege-escalation
-  - persistence
-technique:
-  - T1547.001
-sigma: false
-sigma_rule: []
-os:
-  - windows
-description: |
-  RunOnce Key Persistence via PowerShell
-  Upon successful execution, a new entry will be added to the runonce item in the registry.
 Attack_name: Registry Run Keys / Startup Folder
 Attack_description: |-
   Adversaries may achieve persistence by adding a program to a startup folder or referencing it with a Registry run key. Adding an entry to the "run keys" in the Registry or startup folder will cause the program referenced to be executed when a user logs in. (Citation: Microsoft Run Key) These programs will be executed under the context of the user and will have the account's associated permissions level.
@@ -53,3 +39,17 @@ Attack_description: |-
   By default, the multistring <code>BootExecute</code> value of the registry key <code>HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager</code> is set to <code>autocheck autochk *</code>. This value causes Windows, at startup, to check the file-system integrity of the hard disks if the system has been shut down abnormally. Adversaries can add other programs or processes to this registry value which will automatically launch at boot.
 
   Adversaries can use these configuration locations to execute malware, such as remote access tools, to maintain persistence through system reboots. Adversaries may also use [Masquerading](https://attack.mitre.org/techniques/T1036) to make the Registry entries look as if they are associated with legitimate programs.
+guid: eb44f842-0457-4ddc-9b92-c4caa144ac42
+name: PowerShell Registry RunOnce
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1547.001
+os:
+  - windows
+description: |
+  RunOnce Key Persistence via PowerShell
+  Upon successful execution, a new entry will be added to the runonce item in the registry.
+sigma: false
+sigma_rule: []

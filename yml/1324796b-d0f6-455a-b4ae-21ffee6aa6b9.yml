@@ -1,16 +1,3 @@
-guid: 1324796b-d0f6-455a-b4ae-21ffee6aa6b9
-name: Modify Registry of Current User Profile - cmd
-tactic:
-  - defense-evasion
-technique:
-  - T1112
-sigma: false
-sigma_rule: []
-os:
-  - windows
-description: |
-  Modify the registry of the currently logged in user using reg.exe via cmd console. Upon execution, the message "The operation completed successfully."
-  will be displayed. Additionally, open Registry Editor to view the new entry in HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced.
 Attack_name: Modify Registry
 Attack_description: |-
   Adversaries may interact with the Windows Registry to hide configuration information within Registry keys, remove information as part of cleaning up, or as part of other techniques to aid in persistence and execution.
@@ -20,3 +7,16 @@ Attack_description: |-
   Registry modifications may also include actions to hide keys, such as prepending key names with a null character, which will cause an error and/or be ignored when read via [Reg](https://attack.mitre.org/software/S0075) or other utilities using the Win32 API. (Citation: Microsoft Reghide NOV 2006) Adversaries may abuse these pseudo-hidden keys to conceal payloads/commands used to maintain persistence. (Citation: TrendMicro POWELIKS AUG 2014) (Citation: SpectorOps Hiding Reg Jul 2017)
 
   The Registry of a remote system may be modified to aid in execution of files as part of lateral movement. It requires the remote Registry service to be running on the target system. (Citation: Microsoft Remote) Often [Valid Accounts](https://attack.mitre.org/techniques/T1078) are required, along with access to the remote system's [SMB/Windows Admin Shares](https://attack.mitre.org/techniques/T1021/002) for RPC communication.
+guid: 1324796b-d0f6-455a-b4ae-21ffee6aa6b9
+name: Modify Registry of Current User Profile - cmd
+tactic:
+  - defense-evasion
+technique:
+  - T1112
+os:
+  - windows
+description: |
+  Modify the registry of the currently logged in user using reg.exe via cmd console. Upon execution, the message "The operation completed successfully."
+  will be displayed. Additionally, open Registry Editor to view the new entry in HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced.
+sigma: false
+sigma_rule: []

@@ -1,14 +1,3 @@
-guid: 86a43bad-12e3-4e85-b97c-4d5cf25b95c3
-name: ATHPowerShellCommandLineParameter -EncodedCommand parameter variations
-tactic:
-  - execution
-technique:
-  - T1059.001
-sigma: false
-sigma_rule: []
-os:
-  - windows
-description: Executes powershell.exe with variations of the -EncodedCommand parameter
 Attack_name: PowerShell
 Attack_description: |-
   Adversaries may abuse PowerShell commands and scripts for execution. PowerShell is a powerful interactive command-line interface and scripting environment included in the Windows operating system. (Citation: TechNet PowerShell) Adversaries can use PowerShell to perform a number of actions, including discovery of information and execution of code. Examples include the <code>Start-Process</code> cmdlet which can be used to run an executable and the <code>Invoke-Command</code> cmdlet which runs a command locally or on a remote computer (though administrator permissions are required to use PowerShell to connect to remote systems).
@@ -18,3 +7,14 @@ Attack_description: |-
   A number of PowerShell-based offensive testing tools are available, including [Empire](https://attack.mitre.org/software/S0363),  [PowerSploit](https://attack.mitre.org/software/S0194), [PoshC2](https://attack.mitre.org/software/S0378), and PSAttack.(Citation: Github PSAttack)
 
   PowerShell commands/scripts can also be executed without directly invoking the <code>powershell.exe</code> binary through interfaces to PowerShell's underlying <code>System.Management.Automation</code> assembly DLL exposed through the .NET framework and Windows Common Language Interface (CLI). (Citation: Sixdub PowerPick Jan 2016)(Citation: SilentBreak Offensive PS Dec 2015)(Citation: Microsoft PSfromCsharp APR 2014)
+guid: 86a43bad-12e3-4e85-b97c-4d5cf25b95c3
+name: ATHPowerShellCommandLineParameter -EncodedCommand parameter variations
+tactic:
+  - execution
+technique:
+  - T1059.001
+os:
+  - windows
+description: Executes powershell.exe with variations of the -EncodedCommand parameter
+sigma: false
+sigma_rule: []

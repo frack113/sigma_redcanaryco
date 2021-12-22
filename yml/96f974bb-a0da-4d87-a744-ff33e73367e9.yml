@@ -1,15 +1,3 @@
-guid: 96f974bb-a0da-4d87-a744-ff33e73367e9
-name: System Discovery using SharpView
-tactic:
-  - discovery
-technique:
-  - T1049
-sigma: false
-sigma_rule: []
-os:
-  - windows
-description: "Get a listing of network connections, domains, domain users, and etc.  \nsharpview.exe located in the bin folder, an opensource red-team tool.\nUpon successful execution, cmd.exe will execute\
-  \ sharpview.exe <method>. Results will output via stdout.\n"
 Attack_name: System Network Connections Discovery
 Attack_description: "Adversaries may attempt to get a listing of network connections to or from the compromised system they are currently accessing or from remote systems by querying for information over\
   \ the network. \n\nAn adversary who gains access to a system that is part of a cloud-based environment may map out Virtual Private Clouds or Virtual Networks in order to determine what systems and services\
@@ -18,3 +6,15 @@ Attack_description: "Adversaries may attempt to get a listing of network connect
   \ Overview)(Citation: Google VPC Overview)\n\nUtilities and commands that acquire this information include [netstat](https://attack.mitre.org/software/S0104), \"net use,\" and \"net session\" with [Net](https://attack.mitre.org/software/S0039).\
   \ In Mac and Linux, [netstat](https://attack.mitre.org/software/S0104) and <code>lsof</code> can be used to list current connections. <code>who -a</code> and <code>w</code> can be used to show which users\
   \ are currently logged in, similar to \"net session\"."
+guid: 96f974bb-a0da-4d87-a744-ff33e73367e9
+name: System Discovery using SharpView
+tactic:
+  - discovery
+technique:
+  - T1049
+os:
+  - windows
+description: "Get a listing of network connections, domains, domain users, and etc.  \nsharpview.exe located in the bin folder, an opensource red-team tool.\nUpon successful execution, cmd.exe will execute\
+  \ sharpview.exe <method>. Results will output via stdout.\n"
+sigma: false
+sigma_rule: []

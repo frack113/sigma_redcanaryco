@@ -1,18 +1,22 @@
+Attack_name: Automated Collection
+Attack_description: "Once established within a system or network, an adversary may use automated techniques for collecting internal data. Methods for performing this technique could include use of a [Command\
+  \ and Scripting Interpreter](https://attack.mitre.org/techniques/T1059) to search for and copy information fitting set criteria such as file type, location, or name at specific time intervals. This functionality\
+  \ could also be built into remote access tools. \n\nThis technique may incorporate use of other techniques such as [File and Directory Discovery](https://attack.mitre.org/techniques/T1083) and [Lateral\
+  \ Tool Transfer](https://attack.mitre.org/techniques/T1570) to identify and move files."
 guid: aa1180e2-f329-4e1e-8625-2472ec0bfaf3
 name: Recon information for export with Command Prompt
 tactic:
   - collection
 technique:
   - T1119
-sigma: false
-sigma_rule: []
 os:
   - windows
 description: |
   collect information for exfiltration. Upon execution, check the users temp directory (%temp%) for files T1119_*.txt
   to see what was collected.
-Attack_name: Automated Collection
-Attack_description: "Once established within a system or network, an adversary may use automated techniques for collecting internal data. Methods for performing this technique could include use of a [Command\
-  \ and Scripting Interpreter](https://attack.mitre.org/techniques/T1059) to search for and copy information fitting set criteria such as file type, location, or name at specific time intervals. This functionality\
-  \ could also be built into remote access tools. \n\nThis technique may incorporate use of other techniques such as [File and Directory Discovery](https://attack.mitre.org/techniques/T1083) and [Lateral\
-  \ Tool Transfer](https://attack.mitre.org/techniques/T1570) to identify and move files."
+sigma: false
+sigma_rule:
+  - id: 57712d7a-679c-4a41-a913-87e7175ae429
+    name: win_pc_susp_sc_query.yml
+  - id: aa2efee7-34dd-446e-8a37-40790a66efd7
+    name: process_creation_susp_recon.yml

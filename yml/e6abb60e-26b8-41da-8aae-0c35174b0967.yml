@@ -1,16 +1,3 @@
-guid: e6abb60e-26b8-41da-8aae-0c35174b0967
-name: Clear Logs
-tactic:
-  - defense-evasion
-technique:
-  - T1070.001
-sigma: false
-sigma_rule: []
-os:
-  - windows
-description: 'Upon execution this test will clear Windows Event Logs. Open the System.evtx logs at C:\Windows\System32\winevt\Logs and verify that it is now empty.
-
-  '
 Attack_name: Clear Windows Event Logs
 Attack_description: |-
   Adversaries may clear Windows Event Logs to hide the activity of an intrusion. Windows Event Logs are a record of a computer's alerts and notifications. There are three system-defined sources of events: System, Application, and Security, with five event types: Error, Warning, Information, Success Audit, and Failure Audit.
@@ -22,3 +9,16 @@ Attack_description: |-
   * <code>wevtutil cl security</code>
 
   These logs may also be cleared through other mechanisms, such as the event viewer GUI or [PowerShell](https://attack.mitre.org/techniques/T1059/001).
+guid: e6abb60e-26b8-41da-8aae-0c35174b0967
+name: Clear Logs
+tactic:
+  - defense-evasion
+technique:
+  - T1070.001
+os:
+  - windows
+description: 'Upon execution this test will clear Windows Event Logs. Open the System.evtx logs at C:\Windows\System32\winevt\Logs and verify that it is now empty.
+
+  '
+sigma: false
+sigma_rule: []

@@ -1,23 +1,23 @@
+Attack_name: System Service Discovery
+Attack_description: Adversaries may try to get information about registered services. Commands that may obtain information about services using operating system utilities are "sc," "tasklist /svc" using
+  [Tasklist](https://attack.mitre.org/software/S0057), and "net start" using [Net](https://attack.mitre.org/software/S0039), but adversaries may also use other tools as well. Adversaries may use the information
+  from [System Service Discovery](https://attack.mitre.org/techniques/T1007) during automated discovery to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or
+  attempts specific actions.
 guid: 5f864a3f-8ce9-45c0-812c-bdf7d8aeacc3
 name: System Service Discovery - net.exe
 tactic:
   - discovery
 technique:
   - T1007
-sigma: true
-sigma_rule:
-  - id: 2a072a96-a086-49fa-bcb5-15cc5a619093
-    name: win_service_execution.yml
-  - id: 183e7ea8-ac4b-4c23-9aec-b3dac4e401ac
-    name: win_susp_net_execution.yml
 os:
   - windows
 description: |
   Enumerates started system services using net.exe and writes them to a file. This technique has been used by multiple threat actors.
 
   Upon successful execution, net.exe will run from cmd.exe that queries services. Expected output is to a txt file in c:\Windows\Temp\service-list.txt.s
-Attack_name: System Service Discovery
-Attack_description: Adversaries may try to get information about registered services. Commands that may obtain information about services using operating system utilities are "sc," "tasklist /svc" using
-  [Tasklist](https://attack.mitre.org/software/S0057), and "net start" using [Net](https://attack.mitre.org/software/S0039), but adversaries may also use other tools as well. Adversaries may use the information
-  from [System Service Discovery](https://attack.mitre.org/techniques/T1007) during automated discovery to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or
-  attempts specific actions.
+sigma: true
+sigma_rule:
+  - id: 2a072a96-a086-49fa-bcb5-15cc5a619093
+    name: win_service_execution.yml
+  - id: 183e7ea8-ac4b-4c23-9aec-b3dac4e401ac
+    name: win_susp_net_execution.yml

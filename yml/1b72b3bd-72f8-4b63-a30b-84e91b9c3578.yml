@@ -1,17 +1,3 @@
-guid: 1b72b3bd-72f8-4b63-a30b-84e91b9c3578
-name: GoToAssist Files Detected Test on Windows
-tactic:
-  - command-and-control
-technique:
-  - T1219
-sigma: false
-sigma_rule: []
-os:
-  - windows
-description: 'An adversary may attempt to trick the user into downloading GoToAssist and use to establish C2. Download of GoToAssist installer will be at the destination location and ran when sucessfully
-  executed.
-
-  '
 Attack_name: Remote Access Software
 Attack_description: |-
   An adversary may use legitimate desktop support and remote access software, such as Team Viewer, Go2Assist, LogMein, AmmyyAdmin, etc, to establish an interactive command and control channel to target systems within networks. These services are commonly used as legitimate technical support software, and may be allowed by application control within a target environment. Remote access tools like VNC, Ammyy, and Teamviewer are used frequently when compared with other legitimate software commonly used by adversaries. (Citation: Symantec Living off the Land)
@@ -19,3 +5,17 @@ Attack_description: |-
   Remote access tools may be established and used post-compromise as alternate communications channel for redundant access or as a way to establish an interactive remote desktop session with the target system. They may also be used as a component of malware to establish a reverse connection or back-connect to a service or adversary controlled system.
 
   Admin tools such as TeamViewer have been used by several groups targeting institutions in countries of interest to the Russian state and criminal campaigns. (Citation: CrowdStrike 2015 Global Threat Report) (Citation: CrySyS Blog TeamSpy)
+guid: 1b72b3bd-72f8-4b63-a30b-84e91b9c3578
+name: GoToAssist Files Detected Test on Windows
+tactic:
+  - command-and-control
+technique:
+  - T1219
+os:
+  - windows
+description: 'An adversary may attempt to trick the user into downloading GoToAssist and use to establish C2. Download of GoToAssist installer will be at the destination location and ran when sucessfully
+  executed.
+
+  '
+sigma: false
+sigma_rule: []

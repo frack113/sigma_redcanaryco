@@ -1,19 +1,19 @@
+Attack_name: Cloud Account
+Attack_description: |-
+  Adversaries may create a cloud account to maintain access to victim systems. With a sufficient level of access, such accounts may be used to establish secondary credentialed access that does not require persistent remote access tools to be deployed on the system.(Citation: Microsoft O365 Admin Roles)(Citation: Microsoft Support O365 Add Another Admin, October 2019)(Citation: AWS Create IAM User)(Citation: GCP Create Cloud Identity Users)(Citation: Microsoft Azure AD Users)
+
+  Adversaries may create accounts that only have access to specific cloud services, which can reduce the chance of detection.
 guid: 8d1c2368-b503-40c9-9057-8e42f21c58ad
 name: AWS - Create a new IAM user
 tactic:
   - persistence
 technique:
   - T1136.003
-sigma: false
-sigma_rule: []
 os:
   - iaas:aws
 description: 'Creates a new IAM user in AWS. Upon successful creation, a new user will be created. Adversaries create new IAM users so that their malicious activity do not interupt the normal functions
   of the compromised users and can remain undetected for a long time
 
   '
-Attack_name: Cloud Account
-Attack_description: |-
-  Adversaries may create a cloud account to maintain access to victim systems. With a sufficient level of access, such accounts may be used to establish secondary credentialed access that does not require persistent remote access tools to be deployed on the system.(Citation: Microsoft O365 Admin Roles)(Citation: Microsoft Support O365 Add Another Admin, October 2019)(Citation: AWS Create IAM User)(Citation: GCP Create Cloud Identity Users)(Citation: Microsoft Azure AD Users)
-
-  Adversaries may create accounts that only have access to specific cloud services, which can reduce the chance of detection.
+sigma: false
+sigma_rule: []

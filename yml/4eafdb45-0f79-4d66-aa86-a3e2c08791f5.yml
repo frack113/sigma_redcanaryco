@@ -1,17 +1,3 @@
-guid: 4eafdb45-0f79-4d66-aa86-a3e2c08791f5
-name: Disable history collection
-tactic:
-  - defense-evasion
-technique:
-  - T1562.003
-sigma: false
-sigma_rule: []
-os:
-  - linux
-  - macos
-description: 'Disables history collection in shells
-
-  '
 Attack_name: Impair Command History Logging
 Attack_description: "Adversaries may impair command history logging to hide commands they run on a compromised system. Various command interpreters keep track of the commands users type in their terminal\
   \ so that users can retrace what they've done. \n\nOn Linux and macOS, command history is tracked in a file pointed to by the environment variable <code>HISTFILE</code>. When a user logs off a system,\
@@ -25,3 +11,17 @@ Attack_description: "Adversaries may impair command history logging to hide comm
   \ where these logs are saved using <code>Set-PSReadLineOption -HistorySavePath {File Path}</code>. This will cause <code>ConsoleHost_history.txt</code> to stop receiving logs. Additionally, it is possible\
   \ to turn off logging to this file using the PowerShell command <code>Set-PSReadlineOption -HistorySaveStyle SaveNothing</code>.(Citation: Microsoft PowerShell Command History)(Citation: Sophos PowerShell\
   \ command audit)(Citation: Sophos PowerShell Command History Forensics)"
+guid: 4eafdb45-0f79-4d66-aa86-a3e2c08791f5
+name: Disable history collection
+tactic:
+  - defense-evasion
+technique:
+  - T1562.003
+os:
+  - linux
+  - macos
+description: 'Disables history collection in shells
+
+  '
+sigma: false
+sigma_rule: []

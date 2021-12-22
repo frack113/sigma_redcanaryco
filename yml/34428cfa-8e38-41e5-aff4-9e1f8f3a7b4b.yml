@@ -1,18 +1,18 @@
+Attack_name: InstallUtil
+Attack_description: |-
+  Adversaries may use InstallUtil to proxy execution of code through a trusted Windows utility. InstallUtil is a command-line utility that allows for installation and uninstallation of resources by executing specific installer components specified in .NET binaries. (Citation: MSDN InstallUtil) InstallUtil is digitally signed by Microsoft and located in the .NET directories on a Windows system: <code>C:\Windows\Microsoft.NET\Framework\v<version>\InstallUtil.exe</code> and <code>C:\Windows\Microsoft.NET\Framework64\v<version>\InstallUtil.exe</code>.
+
+  InstallUtil may also be used to bypass application control through use of attributes within the binary that execute the class decorated with the attribute <code>[System.ComponentModel.RunInstaller(true)]</code>. (Citation: LOLBAS Installutil)
 guid: 34428cfa-8e38-41e5-aff4-9e1f8f3a7b4b
 name: InstallUtil Uninstall method call - /U variant
 tactic:
   - defense-evasion
 technique:
   - T1218.004
-sigma: false
-sigma_rule: []
 os:
   - windows
 description: 'Executes the Uninstall Method. Upon execution, version information will be displayed the .NET framework install utility.
 
   '
-Attack_name: InstallUtil
-Attack_description: |-
-  Adversaries may use InstallUtil to proxy execution of code through a trusted Windows utility. InstallUtil is a command-line utility that allows for installation and uninstallation of resources by executing specific installer components specified in .NET binaries. (Citation: MSDN InstallUtil) InstallUtil is digitally signed by Microsoft and located in the .NET directories on a Windows system: <code>C:\Windows\Microsoft.NET\Framework\v<version>\InstallUtil.exe</code> and <code>C:\Windows\Microsoft.NET\Framework64\v<version>\InstallUtil.exe</code>.
-
-  InstallUtil may also be used to bypass application control through use of attributes within the binary that execute the class decorated with the attribute <code>[System.ComponentModel.RunInstaller(true)]</code>. (Citation: LOLBAS Installutil)
+sigma: false
+sigma_rule: []

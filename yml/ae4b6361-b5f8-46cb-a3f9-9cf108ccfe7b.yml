@@ -1,9 +1,19 @@
+Attack_name: Local Account
+Attack_description: |-
+  Adversaries may attempt to get a listing of local system accounts. This information can help adversaries determine which local accounts exist on a system to aid in follow-on behavior.
+
+  Commands such as <code>net user</code> and <code>net localgroup</code> of the [Net](https://attack.mitre.org/software/S0039) utility and <code>id</code> and <code>groups</code>on macOS and Linux can list local users and groups. On Linux, local users can also be enumerated through the use of the <code>/etc/passwd</code> file.
 guid: ae4b6361-b5f8-46cb-a3f9-9cf108ccfe7b
 name: Enumerate all accounts via PowerShell (Local)
 tactic:
   - discovery
 technique:
   - T1087.001
+os:
+  - windows
+description: 'Enumerate all accounts via PowerShell. Upon execution, lots of user account and group information will be displayed.
+
+  '
 sigma: true
 sigma_rule:
   - id: cef24b90-dddc-4ae1-a09a-8764872f69fc
@@ -14,13 +24,3 @@ sigma_rule:
     name: win_susp_net_execution.yml
   - id: 07f8bdc2-c9b3-472a-9817-5a670b872f53
     name: win_cmdkey_recon.yml
-os:
-  - windows
-description: 'Enumerate all accounts via PowerShell. Upon execution, lots of user account and group information will be displayed.
-
-  '
-Attack_name: Local Account
-Attack_description: |-
-  Adversaries may attempt to get a listing of local system accounts. This information can help adversaries determine which local accounts exist on a system to aid in follow-on behavior.
-
-  Commands such as <code>net user</code> and <code>net localgroup</code> of the [Net](https://attack.mitre.org/software/S0039) utility and <code>id</code> and <code>groups</code>on macOS and Linux can list local users and groups. On Linux, local users can also be enumerated through the use of the <code>/etc/passwd</code> file.

@@ -1,16 +1,3 @@
-guid: '09480053-2f98-4854-be6e-71ae5f672224'
-name: Brute Force Credentials of single Active Directory domain users via SMB
-tactic:
-  - credential-access
-technique:
-  - T1110.001
-sigma: false
-sigma_rule: []
-os:
-  - windows
-description: 'Attempts to brute force a single Active Directory account by testing connectivity to the IPC$ share on a domain controller
-
-  '
 Attack_name: Password Guessing
 Attack_description: |-
   Adversaries with no prior knowledge of legitimate credentials within the system or environment may guess passwords to attempt access to accounts. Without knowledge of the password for an account, an adversary may opt to systematically guess the password using a repetitive or iterative mechanism. An adversary may guess login credentials without prior knowledge of system or environment passwords during an operation by using a list of common passwords. Password guessing may or may not take into account the target's policies on password complexity or use policies that may lock accounts out after a number of failed attempts.
@@ -35,3 +22,16 @@ Attack_description: |-
   In addition to management services, adversaries may "target single sign-on (SSO) and cloud-based applications utilizing federated authentication protocols," as well as externally facing email applications, such as Office 365.(Citation: US-CERT TA18-068A 2018)
 
   In default environments, LDAP and Kerberos connection attempts are less likely to trigger events over SMB, which creates Windows "logon failure" event ID 4625.
+guid: '09480053-2f98-4854-be6e-71ae5f672224'
+name: Brute Force Credentials of single Active Directory domain users via SMB
+tactic:
+  - credential-access
+technique:
+  - T1110.001
+os:
+  - windows
+description: 'Attempts to brute force a single Active Directory account by testing connectivity to the IPC$ share on a domain controller
+
+  '
+sigma: false
+sigma_rule: []

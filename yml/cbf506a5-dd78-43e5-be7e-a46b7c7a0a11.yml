@@ -1,16 +1,3 @@
-guid: cbf506a5-dd78-43e5-be7e-a46b7c7a0a11
-name: Clear Bash history (echo)
-tactic:
-  - defense-evasion
-technique:
-  - T1070.003
-sigma: false
-sigma_rule: []
-os:
-  - linux
-description: 'Clears bash history via rm
-
-  '
 Attack_name: Clear Command History
 Attack_description: |-
   In addition to clearing system logs, an adversary may clear the command history of a compromised account to conceal the actions undertaken during an intrusion. Various command interpreters keep track of the commands users type in their terminal so that users can retrace what they've done.
@@ -24,3 +11,16 @@ Attack_description: |-
   The <code>PSReadLine</code> command history tracks the commands used in all PowerShell sessions and writes them to a file (<code>$env:APPDATA\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt</code> by default). This history file is available to all sessions and contains all past history since the file is not deleted when the session ends.(Citation: Microsoft PowerShell Command History)
 
   Adversaries may run the PowerShell command <code>Clear-History</code> to flush the entire command history from a current PowerShell session. This, however, will not delete/flush the <code>ConsoleHost_history.txt</code> file. Adversaries may also delete the <code>ConsoleHost_history.txt</code> file or edit its contents to hide PowerShell commands they have run.(Citation: Sophos PowerShell command audit)(Citation: Sophos PowerShell Command History Forensics)
+guid: cbf506a5-dd78-43e5-be7e-a46b7c7a0a11
+name: Clear Bash history (echo)
+tactic:
+  - defense-evasion
+technique:
+  - T1070.003
+os:
+  - linux
+description: 'Clears bash history via rm
+
+  '
+sigma: false
+sigma_rule: []

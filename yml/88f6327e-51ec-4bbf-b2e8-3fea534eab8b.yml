@@ -1,11 +1,14 @@
+Attack_name: Direct Volume Access
+Attack_description: |-
+  Adversaries may directly access a volume to bypass file access controls and file system monitoring. Windows allows programs to have direct access to logical volumes. Programs with direct access may read and write files directly from the drive by analyzing file system data structures. This technique bypasses Windows file access controls as well as file system monitoring tools. (Citation: Hakobyan 2009)
+
+  Utilities, such as NinjaCopy, exist to perform these actions in PowerShell. (Citation: Github PowerSploit Ninjacopy)
 guid: 88f6327e-51ec-4bbf-b2e8-3fea534eab8b
 name: Read volume boot sector via DOS device path (PowerShell)
 tactic:
   - defense-evasion
 technique:
   - T1006
-sigma: false
-sigma_rule: []
 os:
   - windows
 description: |-
@@ -18,8 +21,5 @@ description: |-
 
   00000000   EB 52 90 4E 54 46 53 20 20 20 20                 ëR?NTFS
   ```
-Attack_name: Direct Volume Access
-Attack_description: |-
-  Adversaries may directly access a volume to bypass file access controls and file system monitoring. Windows allows programs to have direct access to logical volumes. Programs with direct access may read and write files directly from the drive by analyzing file system data structures. This technique bypasses Windows file access controls as well as file system monitoring tools. (Citation: Hakobyan 2009)
-
-  Utilities, such as NinjaCopy, exist to perform these actions in PowerShell. (Citation: Github PowerSploit Ninjacopy)
+sigma: false
+sigma_rule: []

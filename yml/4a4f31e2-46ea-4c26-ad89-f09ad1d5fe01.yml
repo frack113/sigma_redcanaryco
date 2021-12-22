@@ -1,11 +1,15 @@
+Attack_name: Exfiltration Over Asymmetric Encrypted Non-C2 Protocol
+Attack_description: "Adversaries may steal data by exfiltrating it over an asymmetrically encrypted network protocol other than that of the existing command and control channel. The data may also be sent\
+  \ to an alternate network location from the main command and control server. \n\nAsymmetric encryption algorithms are those that use different keys on each end of the channel. Also known as public-key\
+  \ cryptography, this requires pairs of cryptographic keys that can encrypt/decrypt data from the corresponding key. Each end of the communication channels requires a private key (only in the procession\
+  \ of that entity) and the public key of the other entity. The public keys of each entity are exchanged before encrypted communications begin. \n\nNetwork protocols that use asymmetric encryption (such\
+  \ as HTTPS/TLS/SSL) often utilize symmetric encryption once keys are exchanged. Adversaries may opt to use these encrypted mechanisms that are baked into a protocol. "
 guid: 4a4f31e2-46ea-4c26-ad89-f09ad1d5fe01
 name: Exfiltrate data HTTPS using curl
 tactic:
   - exfiltration
 technique:
   - T1048.002
-sigma: false
-sigma_rule: []
 os:
   - windows
   - macos
@@ -13,9 +17,5 @@ os:
 description: 'Exfiltrate data HTTPS using curl to file share site file.io
 
   '
-Attack_name: Exfiltration Over Asymmetric Encrypted Non-C2 Protocol
-Attack_description: "Adversaries may steal data by exfiltrating it over an asymmetrically encrypted network protocol other than that of the existing command and control channel. The data may also be sent\
-  \ to an alternate network location from the main command and control server. \n\nAsymmetric encryption algorithms are those that use different keys on each end of the channel. Also known as public-key\
-  \ cryptography, this requires pairs of cryptographic keys that can encrypt/decrypt data from the corresponding key. Each end of the communication channels requires a private key (only in the procession\
-  \ of that entity) and the public key of the other entity. The public keys of each entity are exchanged before encrypted communications begin. \n\nNetwork protocols that use asymmetric encryption (such\
-  \ as HTTPS/TLS/SSL) often utilize symmetric encryption once keys are exchanged. Adversaries may opt to use these encrypted mechanisms that are baked into a protocol. "
+sigma: false
+sigma_rule: []

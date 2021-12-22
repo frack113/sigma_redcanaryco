@@ -1,16 +1,18 @@
+Attack_name: Audio Capture
+Attack_description: |-
+  An adversary can leverage a computer's peripheral devices (e.g., microphones and webcams) or applications (e.g., voice and video call services) to capture audio recordings for the purpose of listening into sensitive conversations to gather information.
+
+  Malware or scripts may be used to interact with the devices through an available API provided by the operating system or an application to capture audio. Audio files may be written to disk and exfiltrated later.
 guid: 9c3ad250-b185-4444-b5a9-d69218a10c95
 name: using device audio capture commandlet
 tactic:
   - collection
 technique:
   - T1123
-sigma: false
-sigma_rule: []
 os:
   - windows
 description: "[AudioDeviceCmdlets](https://github.com/cdhunt/WindowsAudioDevice-Powershell-Cmdlet)\n"
-Attack_name: Audio Capture
-Attack_description: |-
-  An adversary can leverage a computer's peripheral devices (e.g., microphones and webcams) or applications (e.g., voice and video call services) to capture audio recordings for the purpose of listening into sensitive conversations to gather information.
-
-  Malware or scripts may be used to interact with the devices through an available API provided by the operating system or an application to capture audio. Audio files may be written to disk and exfiltrated later.
+sigma: true
+sigma_rule:
+  - id: 932fb0d8-692b-4b0f-a26e-5643a50fe7d6
+    name: win_powershell_audio_capture.yml

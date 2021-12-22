@@ -1,18 +1,20 @@
+Attack_name: Automated Collection
+Attack_description: "Once established within a system or network, an adversary may use automated techniques for collecting internal data. Methods for performing this technique could include use of a [Command\
+  \ and Scripting Interpreter](https://attack.mitre.org/techniques/T1059) to search for and copy information fitting set criteria such as file type, location, or name at specific time intervals. This functionality\
+  \ could also be built into remote access tools. \n\nThis technique may incorporate use of other techniques such as [File and Directory Discovery](https://attack.mitre.org/techniques/T1083) and [Lateral\
+  \ Tool Transfer](https://attack.mitre.org/techniques/T1570) to identify and move files."
 guid: cb379146-53f1-43e0-b884-7ce2c635ff5b
 name: Automated Collection Command Prompt
 tactic:
   - collection
 technique:
   - T1119
-sigma: false
-sigma_rule: []
 os:
   - windows
 description: |
   Automated Collection. Upon execution, check the users temp directory (%temp%) for the folder T1119_command_prompt_collection
   to see what was collected.
-Attack_name: Automated Collection
-Attack_description: "Once established within a system or network, an adversary may use automated techniques for collecting internal data. Methods for performing this technique could include use of a [Command\
-  \ and Scripting Interpreter](https://attack.mitre.org/techniques/T1059) to search for and copy information fitting set criteria such as file type, location, or name at specific time intervals. This functionality\
-  \ could also be built into remote access tools. \n\nThis technique may incorporate use of other techniques such as [File and Directory Discovery](https://attack.mitre.org/techniques/T1083) and [Lateral\
-  \ Tool Transfer](https://attack.mitre.org/techniques/T1570) to identify and move files."
+sigma: true
+sigma_rule:
+  - id: f576a613-2392-4067-9d1a-9345fb58d8d1
+    name: process_creation_automated_collection.yml

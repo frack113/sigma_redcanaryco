@@ -1,17 +1,3 @@
-guid: 0c5f9705-c575-42a6-9609-cbbff4b2fc9b
-name: DNS over HTTPS Regular Beaconing
-tactic:
-  - command-and-control
-technique:
-  - T1572
-sigma: false
-sigma_rule: []
-os:
-  - windows
-description: |
-  This test simulates an infected host beaconing via DoH queries to a command and control server at regular intervals over time.
-  This behaviour is typical of implants either in an idle state waiting for instructions or configured to use a low query volume over time to evade threshold based detection.
-  A custom domain and sub-domain will need to be passed as input parameters for this test to work. Upon execution, DNS information about the domain will be displayed for each callout in a JSON format.
 Attack_name: Protocol Tunneling
 Attack_description: "Adversaries may tunnel network communications to and from a victim system within a separate protocol to avoid detection/network filtering and/or enable access to otherwise unreachable\
   \ systems. Tunneling involves explicitly encapsulating a protocol within another. This behavior may conceal malicious traffic by blending in with existing traffic and/or provide an outer layer of encryption\
@@ -21,3 +7,17 @@ Attack_description: "Adversaries may tunnel network communications to and from a
   \ adversaries during [Dynamic Resolution](https://attack.mitre.org/techniques/T1568). Known as DNS over HTTPS (DoH), queries to resolve C2 infrastructure may be encapsulated within encrypted HTTPS packets.(Citation:\
   \ BleepingComp Godlua JUL19) \n\nAdversaries may also leverage [Protocol Tunneling](https://attack.mitre.org/techniques/T1572) in conjunction with [Proxy](https://attack.mitre.org/techniques/T1090) and/or\
   \ [Protocol Impersonation](https://attack.mitre.org/techniques/T1001/003) to further conceal C2 communications and infrastructure. "
+guid: 0c5f9705-c575-42a6-9609-cbbff4b2fc9b
+name: DNS over HTTPS Regular Beaconing
+tactic:
+  - command-and-control
+technique:
+  - T1572
+os:
+  - windows
+description: |
+  This test simulates an infected host beaconing via DoH queries to a command and control server at regular intervals over time.
+  This behaviour is typical of implants either in an idle state waiting for instructions or configured to use a low query volume over time to evade threshold based detection.
+  A custom domain and sub-domain will need to be passed as input parameters for this test to work. Upon execution, DNS information about the domain will be displayed for each callout in a JSON format.
+sigma: false
+sigma_rule: []

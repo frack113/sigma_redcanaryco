@@ -1,18 +1,18 @@
+Attack_name: Ingress Tool Transfer
+Attack_description: Adversaries may transfer tools or other files from an external system into a compromised environment. Files may be copied from an external adversary controlled system through the command
+  and control channel to bring tools into the victim network or through alternate protocols with another tool such as FTP. Files can also be copied over on Mac and Linux with native tools like scp, rsync,
+  and sftp.
 guid: b9d22b9a-9778-4426-abf0-568ea64e9c33
 name: scp remote file copy (pull)
 tactic:
   - command-and-control
 technique:
   - T1105
-sigma: false
-sigma_rule: []
 os:
   - linux
   - macos
 description: 'Utilize scp to perform a remote file copy (pull)
 
   '
-Attack_name: Ingress Tool Transfer
-Attack_description: Adversaries may transfer tools or other files from an external system into a compromised environment. Files may be copied from an external adversary controlled system through the command
-  and control channel to bring tools into the victim network or through alternate protocols with another tool such as FTP. Files can also be copied over on Mac and Linux with native tools like scp, rsync,
-  and sftp.
+sigma: false
+sigma_rule: []

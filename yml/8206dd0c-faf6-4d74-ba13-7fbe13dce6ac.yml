@@ -1,19 +1,19 @@
-guid: 8206dd0c-faf6-4d74-ba13-7fbe13dce6ac
-name: X Windows Capture
-tactic:
-  - collection
-technique:
-  - T1113
-sigma: false
-sigma_rule: []
-os:
-  - linux
-description: 'Use xwd command to collect a full desktop screenshot and review file with xwud
-
-  '
 Attack_name: Screen Capture
 Attack_description: 'Adversaries may attempt to take screen captures of the desktop to gather information over the course of an operation. Screen capturing functionality may be included as a feature of
   a remote access tool used in post-compromise operations. Taking a screenshot is also typically possible through native utilities or API calls, such as <code>CopyFromScreen</code>, <code>xwd</code>, or
   <code>screencapture</code>.(Citation: CopyFromScreen .NET)(Citation: Antiquated Mac Malware)
 
   '
+guid: 8206dd0c-faf6-4d74-ba13-7fbe13dce6ac
+name: X Windows Capture
+tactic:
+  - collection
+technique:
+  - T1113
+os:
+  - linux
+description: 'Use xwd command to collect a full desktop screenshot and review file with xwud
+
+  '
+sigma: false
+sigma_rule: []

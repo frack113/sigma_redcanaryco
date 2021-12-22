@@ -19,7 +19,8 @@ from ruamel.yaml import YAML
 from mydata import my_data
 import csv
 import requests
-from dateutil.parser import parse as parsedate
+from collections import OrderedDict
+
 
 yaml = YAML()
 yaml.preserve_quotes = True
@@ -71,6 +72,7 @@ with pathlib.Path("index.yaml").open("r", encoding="UTF-8") as file:
                     if yml_file.exists():
                         redcannary_info.load(yml_file)
                     redcannary_info.add(head_info, test)
+                    redcannary_info.order()
                     redcannary_info.save(yml_file)
                     all_csv.append(
                         [

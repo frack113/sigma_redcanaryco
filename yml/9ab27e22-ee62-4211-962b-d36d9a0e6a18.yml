@@ -1,17 +1,3 @@
-guid: 9ab27e22-ee62-4211-962b-d36d9a0e6a18
-name: Application Shim Installation
-tactic:
-  - privilege-escalation
-  - persistence
-technique:
-  - T1546.011
-sigma: false
-sigma_rule: []
-os:
-  - windows
-description: "Install a shim database. This technique is used for privilege escalation and bypassing user access control.\nUpon execution, \"Installation of AtomicShim complete.\" will be displayed. To\
-  \ verify the shim behavior, run \nthe AtomicTest.exe from the <PathToAtomicsFolder>\\\\T1546.011\\\\bin directory. You should see a message box appear\nwith \"Atomic Shim DLL Test!\" as defined in the\
-  \ AtomicTest.dll. To better understand what is happening, review\nthe source code files is the <PathToAtomicsFolder>\\\\T1546.011\\\\src directory.\n"
 Attack_name: Application Shimming
 Attack_description: "Adversaries may establish persistence and/or elevate privileges by executing malicious content triggered by application shims. The Microsoft Windows Application Compatibility Infrastructure/Framework\
   \ (Application Shim) was created to allow for backward compatibility of software as the operating system codebase changes over time. For example, the application shimming feature allows developers to\
@@ -24,3 +10,17 @@ Attack_description: "Adversaries may establish persistence and/or elevate privil
   \ be used to [Bypass User Account Control](https://attack.mitre.org/techniques/T1548/002) (UAC and RedirectEXE), inject DLLs into processes (InjectDLL), disable Data Execution Prevention (DisableNX) and\
   \ Structure Exception Handling (DisableSEH), and intercept memory addresses (GetProcAddress).\n\nUtilizing these shims may allow an adversary to perform several malicious acts such as elevate privileges,\
   \ install backdoors, disable defenses like Windows Defender, etc. (Citation: FireEye Application Shimming) Shims can also be abused to establish persistence by continuously being invoked by affected programs."
+guid: 9ab27e22-ee62-4211-962b-d36d9a0e6a18
+name: Application Shim Installation
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1546.011
+os:
+  - windows
+description: "Install a shim database. This technique is used for privilege escalation and bypassing user access control.\nUpon execution, \"Installation of AtomicShim complete.\" will be displayed. To\
+  \ verify the shim behavior, run \nthe AtomicTest.exe from the <PathToAtomicsFolder>\\\\T1546.011\\\\bin directory. You should see a message box appear\nwith \"Atomic Shim DLL Test!\" as defined in the\
+  \ AtomicTest.dll. To better understand what is happening, review\nthe source code files is the <PathToAtomicsFolder>\\\\T1546.011\\\\src directory.\n"
+sigma: false
+sigma_rule: []

@@ -1,18 +1,3 @@
-guid: 91a60b03-fb75-4d24-a42e-2eb8956e8de1
-name: Disable tty_tickets for sudo caching
-tactic:
-  - privilege-escalation
-  - defense-evasion
-technique:
-  - T1548.003
-sigma: false
-sigma_rule: []
-os:
-  - macos
-  - linux
-description: 'Sets sudo caching tty_tickets value to disabled. This is dangerous to modify without using ''visudo'', do not do this on a production system.
-
-  '
 Attack_name: Sudo and Sudo Caching
 Attack_description: |-
   Adversaries may perform sudo caching and/or use the suoders file to elevate privileges. Adversaries may do this to execute commands as other users or spawn processes with higher privileges.
@@ -24,3 +9,18 @@ Attack_description: |-
   Adversaries can also abuse poor configurations of these mechanisms to escalate privileges without needing the user's password. For example, <code>/var/db/sudo</code>'s timestamp can be monitored to see if it falls within the <code>timestamp_timeout</code> range. If it does, then malware can execute sudo commands without needing to supply the user's password. Additional, if <code>tty_tickets</code> is disabled, adversaries can do this from any tty for that user.
 
   In the wild, malware has disabled <code>tty_tickets</code> to potentially make scripting easier by issuing <code>echo \'Defaults !tty_tickets\' >> /etc/sudoers</code> (Citation: cybereason osx proton). In order for this change to be reflected, the malware also issued <code>killall Terminal</code>. As of macOS Sierra, the sudoers file has <code>tty_tickets</code> enabled by default.
+guid: 91a60b03-fb75-4d24-a42e-2eb8956e8de1
+name: Disable tty_tickets for sudo caching
+tactic:
+  - privilege-escalation
+  - defense-evasion
+technique:
+  - T1548.003
+os:
+  - macos
+  - linux
+description: 'Sets sudo caching tty_tickets value to disabled. This is dangerous to modify without using ''visudo'', do not do this on a production system.
+
+  '
+sigma: false
+sigma_rule: []

@@ -1,16 +1,3 @@
-guid: 89a7dd26-e510-4c9f-9b15-f3bae333360f
-name: Space After Filename (Manual)
-tactic:
-  - defense-evasion
-technique:
-  - T1036.006
-sigma: false
-sigma_rule: []
-os:
-  - macos
-description: 'Space After Filename
-
-  '
 Attack_name: Space after Filename
 Attack_description: |-
   Adversaries can hide a program's true filetype by changing the extension of a file. With certain file types (specifically this does not work with .app extensions), appending a space to the end of a filename will change how the file is processed by the operating system.
@@ -18,3 +5,16 @@ Attack_description: |-
   For example, if there is a Mach-O executable file called <code>evil.bin</code>, when it is double clicked by a user, it will launch Terminal.app and execute. If this file is renamed to <code>evil.txt</code>, then when double clicked by a user, it will launch with the default text editing application (not executing the binary). However, if the file is renamed to <code>evil.txt </code> (note the space at the end), then when double clicked by a user, the true file type is determined by the OS and handled appropriately and the binary will be executed (Citation: Mac Backdoors are back).
 
   Adversaries can use this feature to trick users into double clicking benign-looking files of any format and ultimately executing something malicious.
+guid: 89a7dd26-e510-4c9f-9b15-f3bae333360f
+name: Space After Filename (Manual)
+tactic:
+  - defense-evasion
+technique:
+  - T1036.006
+os:
+  - macos
+description: 'Space After Filename
+
+  '
+sigma: false
+sigma_rule: []

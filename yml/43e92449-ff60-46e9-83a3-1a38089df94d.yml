@@ -1,16 +1,3 @@
-guid: 43e92449-ff60-46e9-83a3-1a38089df94d
-name: Install MS Exchange Transport Agent Persistence
-tactic:
-  - persistence
-technique:
-  - T1505.002
-sigma: false
-sigma_rule: []
-os:
-  - windows
-description: |
-  Install a Microsoft Exchange Transport Agent for persistence. This requires execution from an Exchange Client Access Server and the creation of a DLL with specific exports. Seen in use by Turla.
-  More details- https://docs.microsoft.com/en-us/exchange/transport-agents-exchange-2013-help
 Attack_name: Transport Agent
 Attack_description: "Adversaries may abuse Microsoft transport agents to establish persistent access to systems. Microsoft Exchange transport agents can operate on email messages passing through the transport\
   \ pipeline to perform various tasks such as filtering spam, filtering malicious attachments, journaling, or adding a corporate signature to the end of all outgoing emails.(Citation: Microsoft TransportAgent\
@@ -19,3 +6,16 @@ Attack_description: "Adversaries may abuse Microsoft transport agents to establi
   \ mechanism in Exchange Server that can be triggered by adversary-specified email events.(Citation: ESET LightNeuron May 2019) Though a malicious transport agent may be invoked for all emails passing\
   \ through the Exchange transport pipeline, the agent can be configured to only carry out specific tasks in response to adversary defined criteria. For example, the transport agent may only carry out an\
   \ action like copying in-transit attachments and saving them for later exfiltration if the recipient email address matches an entry on a list provided by the adversary. "
+guid: 43e92449-ff60-46e9-83a3-1a38089df94d
+name: Install MS Exchange Transport Agent Persistence
+tactic:
+  - persistence
+technique:
+  - T1505.002
+os:
+  - windows
+description: |
+  Install a Microsoft Exchange Transport Agent for persistence. This requires execution from an Exchange Client Access Server and the creation of a DLL with specific exports. Seen in use by Turla.
+  More details- https://docs.microsoft.com/en-us/exchange/transport-agents-exchange-2013-help
+sigma: false
+sigma_rule: []

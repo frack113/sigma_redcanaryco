@@ -1,3 +1,6 @@
+import copy
+from collections import OrderedDict
+
 class my_data:
     def __init__(self, yaml):
         self.yaml = yaml
@@ -41,6 +44,20 @@ class my_data:
         for technique in head_info["technique"]:
             if not technique in self.data["technique"]:
                 self.data["technique"].append(technique)
+
+    def order(self):
+        old_yml = copy.deepcopy(self.data)
+        self.data = {}
+        self.data["Attack_name"] = old_yml["Attack_name"]
+        self.data["Attack_description"] = old_yml["Attack_description"]
+        self.data["guid"] = old_yml["guid"]
+        self.data["name"] = old_yml["name"]
+        self.data["tactic"] = old_yml["tactic"]
+        self.data["technique"] = old_yml["technique"]
+        self.data["os"] = old_yml["os"]
+        self.data["description"] = old_yml["description"]
+        self.data["sigma"] = old_yml["sigma"]
+        self.data["sigma_rule"] = old_yml["sigma_rule"]
 
     def load(self, filepath):
         with filepath.open("r", encoding="UTF-8") as file:

@@ -1,18 +1,3 @@
-guid: 2b162bfd-0928-4d4c-9ec3-4d9f88374b52
-name: PowerShell - Prompt User for Password
-tactic:
-  - credential-access
-  - collection
-technique:
-  - T1056.002
-sigma: false
-sigma_rule: []
-os:
-  - windows
-description: |
-  Prompt User for Password (Local Phishing) as seen in Stitch RAT. Upon execution, a window will appear for the user to enter their credentials.
-
-  Reference: https://github.com/nathanlopez/Stitch/blob/master/PyLib/askpass.py
 Attack_name: GUI Input Capture
 Attack_description: "Adversaries may mimic common operating system GUI components to prompt users for credentials with a seemingly legitimate prompt. When programs are executed that need additional privileges\
   \ than are present in the current user context, it is common for the operating system to prompt the user for proper credentials to authorize the elevated privileges for the task (ex: [Bypass User Account\
@@ -20,3 +5,20 @@ Attack_description: "Adversaries may mimic common operating system GUI component
   \ mimic normal usage, such as a fake installer requiring additional access or a fake malware removal suite.(Citation: OSX Malware Exploits MacKeeper) This type of prompt can be used to collect credentials\
   \ via various languages such as AppleScript(Citation: LogRhythm Do You Trust Oct 2014)(Citation: OSX Keydnap malware) and PowerShell(Citation: LogRhythm Do You Trust Oct 2014)(Citation: Enigma Phishing\
   \ for Credentials Jan 2015). "
+guid: 2b162bfd-0928-4d4c-9ec3-4d9f88374b52
+name: PowerShell - Prompt User for Password
+tactic:
+  - credential-access
+  - collection
+technique:
+  - T1056.002
+os:
+  - windows
+description: |
+  Prompt User for Password (Local Phishing) as seen in Stitch RAT. Upon execution, a window will appear for the user to enter their credentials.
+
+  Reference: https://github.com/nathanlopez/Stitch/blob/master/PyLib/askpass.py
+sigma: true
+sigma_rule:
+  - id: ca8b77a9-d499-4095-b793-5d5f330d450e
+    name: powershell_prompt_credentials.yml

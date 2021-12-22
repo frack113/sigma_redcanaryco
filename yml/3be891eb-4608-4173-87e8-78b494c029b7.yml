@@ -1,19 +1,3 @@
-guid: 3be891eb-4608-4173-87e8-78b494c029b7
-name: Bypass UAC using sdclt DelegateExecute
-tactic:
-  - privilege-escalation
-  - defense-evasion
-technique:
-  - T1548.002
-sigma: false
-sigma_rule: []
-os:
-  - windows
-description: |
-  Bypasses User Account Control using a fileless method, registry only.
-  Upon successful execution, sdclt.exe will spawn cmd.exe to spawn notepad.exe
-  [Reference - sevagas.com](http://blog.sevagas.com/?Yet-another-sdclt-UAC-bypass)
-  Adapted from [MITRE ATT&CK Evals](https://github.com/mitre-attack/attack-arsenal/blob/66650cebd33b9a1e180f7b31261da1789cdceb66/adversary_emulation/APT29/CALDERA_DIY/evals/payloads/stepFourteen_bypassUAC.ps1)
 Attack_name: Bypass User Account Control
 Attack_description: |-
   Adversaries may bypass UAC mechanisms to elevate process privileges on system. Windows User Account Control (UAC) allows a program to elevate its privileges (tracked as integrity levels ranging from low to high) to perform a task under administrator-level permissions, possibly by prompting the user for confirmation. The impact to the user ranges from denying the operation under high enforcement to allowing the user to perform the action if they are in the local administrators group and click through the prompt or allowing them to enter an administrator password to complete the action. (Citation: TechNet How UAC Works)
@@ -25,3 +9,19 @@ Attack_description: |-
   * <code>eventvwr.exe</code> can auto-elevate and execute a specified binary or script.(Citation: enigma0x3 Fileless UAC Bypass)(Citation: Fortinet Fareit)
 
   Another bypass is possible through some lateral movement techniques if credentials for an account with administrator privileges are known, since UAC is a single system security mechanism, and the privilege or integrity of a process running on one system will be unknown on remote systems and default to high integrity.(Citation: SANS UAC Bypass)
+guid: 3be891eb-4608-4173-87e8-78b494c029b7
+name: Bypass UAC using sdclt DelegateExecute
+tactic:
+  - privilege-escalation
+  - defense-evasion
+technique:
+  - T1548.002
+os:
+  - windows
+description: |
+  Bypasses User Account Control using a fileless method, registry only.
+  Upon successful execution, sdclt.exe will spawn cmd.exe to spawn notepad.exe
+  [Reference - sevagas.com](http://blog.sevagas.com/?Yet-another-sdclt-UAC-bypass)
+  Adapted from [MITRE ATT&CK Evals](https://github.com/mitre-attack/attack-arsenal/blob/66650cebd33b9a1e180f7b31261da1789cdceb66/adversary_emulation/APT29/CALDERA_DIY/evals/payloads/stepFourteen_bypassUAC.ps1)
+sigma: false
+sigma_rule: []

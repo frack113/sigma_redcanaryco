@@ -1,24 +1,24 @@
-guid: 85321a9c-897f-4a60-9f20-29788e50bccd
-name: Remote System Discovery - net
-tactic:
-  - discovery
-technique:
-  - T1018
-sigma: true
-sigma_rule:
-  - id: 62510e69-616b-4078-b371-847da438cc03
-    name: win_net_enum.yml
-  - id: 183e7ea8-ac4b-4c23-9aec-b3dac4e401ac
-    name: win_susp_net_execution.yml
-os:
-  - windows
-description: |
-  Identify remote systems with net.exe.
-
-  Upon successful execution, cmd.exe will execute `net.exe view` and display results of local systems on the network that have file and print sharing enabled.
 Attack_name: Remote System Discovery
 Attack_description: "Adversaries may attempt to get a listing of other systems by IP address, hostname, or other logical identifier on a network that may be used for Lateral Movement from the current system.\
   \ Functionality could exist within remote access tools to enable this, but utilities available on the operating system could also be used such as  [Ping](https://attack.mitre.org/software/S0097) or <code>net\
   \ view</code> using [Net](https://attack.mitre.org/software/S0039). Adversaries may also use local host files (ex: <code>C:\\Windows\\System32\\Drivers\\etc\\hosts</code> or <code>/etc/hosts</code>) in\
   \ order to discover the hostname to IP address mappings of remote systems. \n\nSpecific to macOS, the <code>bonjour</code> protocol exists to discover additional Mac-based systems within the same broadcast\
   \ domain."
+guid: 85321a9c-897f-4a60-9f20-29788e50bccd
+name: Remote System Discovery - net
+tactic:
+  - discovery
+technique:
+  - T1018
+os:
+  - windows
+description: |
+  Identify remote systems with net.exe.
+
+  Upon successful execution, cmd.exe will execute `net.exe view` and display results of local systems on the network that have file and print sharing enabled.
+sigma: true
+sigma_rule:
+  - id: 62510e69-616b-4078-b371-847da438cc03
+    name: win_net_enum.yml
+  - id: 183e7ea8-ac4b-4c23-9aec-b3dac4e401ac
+    name: win_susp_net_execution.yml

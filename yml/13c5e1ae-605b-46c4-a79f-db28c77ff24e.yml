@@ -1,19 +1,19 @@
+Attack_name: File and Directory Discovery
+Attack_description: |-
+  Adversaries may enumerate files and directories or may search in specific locations of a host or network share for certain information within a file system. Adversaries may use the information from [File and Directory Discovery](https://attack.mitre.org/techniques/T1083) during automated discovery to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or attempts specific actions.
+
+  Many command shell utilities can be used to obtain this information. Examples include <code>dir</code>, <code>tree</code>, <code>ls</code>, <code>find</code>, and <code>locate</code>. (Citation: Windows Commands JPCERT) Custom tools may also be used to gather file and directory information and interact with the [Native API](https://attack.mitre.org/techniques/T1106).
 guid: 13c5e1ae-605b-46c4-a79f-db28c77ff24e
 name: Nix File and Directory Discovery 2
 tactic:
   - discovery
 technique:
   - T1083
-sigma: false
-sigma_rule: []
 os:
   - macos
   - linux
 description: 'Find or discover files on the file system
 
   '
-Attack_name: File and Directory Discovery
-Attack_description: |-
-  Adversaries may enumerate files and directories or may search in specific locations of a host or network share for certain information within a file system. Adversaries may use the information from [File and Directory Discovery](https://attack.mitre.org/techniques/T1083) during automated discovery to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or attempts specific actions.
-
-  Many command shell utilities can be used to obtain this information. Examples include <code>dir</code>, <code>tree</code>, <code>ls</code>, <code>find</code>, and <code>locate</code>. (Citation: Windows Commands JPCERT) Custom tools may also be used to gather file and directory information and interact with the [Native API](https://attack.mitre.org/techniques/T1106).
+sigma: false
+sigma_rule: []

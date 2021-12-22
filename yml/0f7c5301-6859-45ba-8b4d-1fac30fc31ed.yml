@@ -1,16 +1,3 @@
-guid: 0f7c5301-6859-45ba-8b4d-1fac30fc31ed
-name: Windows Credential Editor
-tactic:
-  - credential-access
-technique:
-  - T1003.001
-sigma: false
-sigma_rule: []
-os:
-  - windows
-description: "Dump user credentials using Windows Credential Editor (supports Windows XP, 2003, Vista, 7, 2008 and Windows 8 only)\n\nUpon successful execution, you should see a file with user passwords/hashes\
-  \ at %temp%/wce-output.file.\n\nIf you see no output it is likely that execution was blocked by Anti-Virus. \n\nIf you see a message saying \\\"wce.exe is not recognized as an internal or external command\\\
-  \", try using the  get-prereq_commands to download and install Windows Credential Editor first.\n"
 Attack_name: LSASS Memory
 Attack_description: |
   Adversaries may attempt to access credential material stored in the process memory of the Local Security Authority Subsystem Service (LSASS). After a user logs on, the system generates and stores a variety of credential materials in LSASS process memory. These credential materials can be harvested by an administrative user or SYSTEM and used to conduct [Lateral Movement](https://attack.mitre.org/tactics/TA0008) using [Use Alternate Authentication Material](https://attack.mitre.org/techniques/T1550).
@@ -35,3 +22,16 @@ Attack_description: |
   * Wdigest: The Digest Authentication protocol is designed for use with Hypertext Transfer Protocol (HTTP) and Simple Authentication Security Layer (SASL) exchanges.(Citation: TechNet Blogs Credential Protection)
   * Kerberos: Preferred for mutual client-server domain authentication in Windows 2000 and later.
   * CredSSP:  Provides SSO and Network Level Authentication for Remote Desktop Services.(Citation: TechNet Blogs Credential Protection)
+guid: 0f7c5301-6859-45ba-8b4d-1fac30fc31ed
+name: Windows Credential Editor
+tactic:
+  - credential-access
+technique:
+  - T1003.001
+os:
+  - windows
+description: "Dump user credentials using Windows Credential Editor (supports Windows XP, 2003, Vista, 7, 2008 and Windows 8 only)\n\nUpon successful execution, you should see a file with user passwords/hashes\
+  \ at %temp%/wce-output.file.\n\nIf you see no output it is likely that execution was blocked by Anti-Virus. \n\nIf you see a message saying \\\"wce.exe is not recognized as an internal or external command\\\
+  \", try using the  get-prereq_commands to download and install Windows Credential Editor first.\n"
+sigma: false
+sigma_rule: []

@@ -1,19 +1,19 @@
+Attack_name: Rename System Utilities
+Attack_description: 'Adversaries may rename legitimate system utilities to try to evade security mechanisms concerning the usage of those utilities. Security monitoring and control mechanisms may be in
+  place for system utilities adversaries are capable of abusing. (Citation: LOLBAS Main Site) It may be possible to bypass those security mechanisms by renaming the utility prior to utilization (ex: rename
+  <code>rundll32.exe</code>). (Citation: Elastic Masquerade Ball) An alternative case occurs when a legitimate utility is copied or moved to a different directory and renamed to avoid detections based on
+  system utilities executing from non-standard paths. (Citation: F-Secure CozyDuke)'
 guid: bc15c13f-d121-4b1f-8c7d-28d95854d086
 name: Masquerading - non-windows exe running as windows exe
 tactic:
   - defense-evasion
 technique:
   - T1036.003
-sigma: false
-sigma_rule: []
 os:
   - windows
 description: |
   Copies an exe, renames it as a windows exe, and launches it to masquerade as a real windows exe
 
   Upon successful execution, powershell will execute T1036.003.exe as svchost.exe from on a non-standard path.
-Attack_name: Rename System Utilities
-Attack_description: 'Adversaries may rename legitimate system utilities to try to evade security mechanisms concerning the usage of those utilities. Security monitoring and control mechanisms may be in
-  place for system utilities adversaries are capable of abusing. (Citation: LOLBAS Main Site) It may be possible to bypass those security mechanisms by renaming the utility prior to utilization (ex: rename
-  <code>rundll32.exe</code>). (Citation: Elastic Masquerade Ball) An alternative case occurs when a legitimate utility is copied or moved to a different directory and renamed to avoid detections based on
-  system utilities executing from non-standard paths. (Citation: F-Secure CozyDuke)'
+sigma: false
+sigma_rule: []

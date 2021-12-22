@@ -1,16 +1,18 @@
+Attack_name: Clipboard Data
+Attack_description: "Adversaries may collect data stored in the clipboard from users copying information within or between applications. \n\nIn Windows, Applications can access clipboard data by using the\
+  \ Windows API.(Citation: MSDN Clipboard) OSX provides a native command, <code>pbpaste</code>, to grab clipboard contents.(Citation: Operating with EmPyre)"
 guid: 9c8d5a72-9c98-48d3-b9bf-da2cc43bdf52
 name: Collect Clipboard Data via VBA
 tactic:
   - collection
 technique:
   - T1115
-sigma: false
-sigma_rule: []
 os:
   - windows
 description: 'This module copies the data stored in the user''s clipboard and writes it to a file, $env:TEMP\atomic_T1115_clipboard_data.txt
 
   '
-Attack_name: Clipboard Data
-Attack_description: "Adversaries may collect data stored in the clipboard from users copying information within or between applications. \n\nIn Windows, Applications can access clipboard data by using the\
-  \ Windows API.(Citation: MSDN Clipboard) OSX provides a native command, <code>pbpaste</code>, to grab clipboard contents.(Citation: Operating with EmPyre)"
+sigma: true
+sigma_rule:
+  - id: e6ce8457-68b1-485b-9bdd-3c2b5d679aa9
+    name: sysmon_susp_winword_vbadll_load.yml

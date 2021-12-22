@@ -1,17 +1,3 @@
-guid: '090e5aa5-32b6-473b-a49b-21e843a56896'
-name: Append malicious start-process cmdlet
-tactic:
-  - privilege-escalation
-  - persistence
-technique:
-  - T1546.013
-sigma: false
-sigma_rule: []
-os:
-  - windows
-description: 'Appends a start process cmdlet to the current user''s powershell profile pofile that points to a malicious executable. Upon execution, calc.exe will be launched.
-
-  '
 Attack_name: PowerShell Profile
 Attack_description: "Adversaries may gain persistence and elevate privileges by executing malicious content triggered by PowerShell profiles. A PowerShell profile  (<code>profile.ps1</code>) is a script\
   \ that runs when [PowerShell](https://attack.mitre.org/techniques/T1059/001) starts and can be used as a logon script to customize user environments.\n\n[PowerShell](https://attack.mitre.org/techniques/T1059/001)\
@@ -21,3 +7,17 @@ Attack_description: "Adversaries may gain persistence and elevate privileges by 
   \ Every time a user opens a [PowerShell](https://attack.mitre.org/techniques/T1059/001) session the modified script will be executed unless the <code>-NoProfile</code> flag is used when it is launched.\
   \ (Citation: ESET Turla PowerShell May 2019) \n\nAn adversary may also be able to escalate privileges if a script in a PowerShell profile is loaded and executed by an account with higher privileges, such\
   \ as a domain administrator. (Citation: Wits End and Shady PowerShell Profiles)"
+guid: '090e5aa5-32b6-473b-a49b-21e843a56896'
+name: Append malicious start-process cmdlet
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1546.013
+os:
+  - windows
+description: 'Appends a start process cmdlet to the current user''s powershell profile pofile that points to a malicious executable. Upon execution, calc.exe will be launched.
+
+  '
+sigma: false
+sigma_rule: []

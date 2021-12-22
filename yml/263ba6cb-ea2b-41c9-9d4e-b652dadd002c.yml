@@ -1,16 +1,3 @@
-guid: 263ba6cb-ea2b-41c9-9d4e-b652dadd002c
-name: Windows - wbadmin Delete Windows Backup Catalog
-tactic:
-  - impact
-technique:
-  - T1490
-sigma: false
-sigma_rule: []
-os:
-  - windows
-description: |
-  Deletes Windows Backup Catalog. This technique is used by numerous ransomware families and APT malware such as Olympic Destroyer. Upon execution,
-  "The backup catalog has been successfully deleted." will be displayed in the PowerShell session.
 Attack_name: Inhibit System Recovery
 Attack_description: |-
   Adversaries may delete or remove built-in operating system data and turn off services designed to aid in the recovery of a corrupted system to prevent recovery.(Citation: Talos Olympic Destroyer 2018)(Citation: FireEye WannaCry 2017) Operating systems may contain features that can help fix corrupted systems, such as a backup catalog, volume shadow copies, and automatic repair features. Adversaries may disable or delete system recovery features to augment the effects of [Data Destruction](https://attack.mitre.org/techniques/T1485) and [Data Encrypted for Impact](https://attack.mitre.org/techniques/T1486).(Citation: Talos Olympic Destroyer 2018)(Citation: FireEye WannaCry 2017)
@@ -21,3 +8,16 @@ Attack_description: |-
   * [Windows Management Instrumentation](https://attack.mitre.org/techniques/T1047) can be used to delete volume shadow copies - <code>wmic shadowcopy delete</code>
   * <code>wbadmin.exe</code> can be used to delete the Windows Backup Catalog - <code>wbadmin.exe delete catalog -quiet</code>
   * <code>bcdedit.exe</code> can be used to disable automatic Windows recovery features by modifying boot configuration data - <code>bcdedit.exe /set {default} bootstatuspolicy ignoreallfailures & bcdedit /set {default} recoveryenabled no</code>
+guid: 263ba6cb-ea2b-41c9-9d4e-b652dadd002c
+name: Windows - wbadmin Delete Windows Backup Catalog
+tactic:
+  - impact
+technique:
+  - T1490
+os:
+  - windows
+description: |
+  Deletes Windows Backup Catalog. This technique is used by numerous ransomware families and APT malware such as Olympic Destroyer. Upon execution,
+  "The backup catalog has been successfully deleted." will be displayed in the PowerShell session.
+sigma: false
+sigma_rule: []

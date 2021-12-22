@@ -1,21 +1,3 @@
-guid: 2364e33d-ceab-4641-8468-bfb1d7cc2723
-name: Dump Active Directory Database with NTDSUtil
-tactic:
-  - credential-access
-technique:
-  - T1003.003
-sigma: false
-sigma_rule: []
-os:
-  - windows
-description: |
-  This test is intended to be run on a domain Controller.
-
-  The Active Directory database NTDS.dit may be dumped using NTDSUtil for offline credential theft attacks. This capability
-  uses the "IFM" or "Install From Media" backup functionality that allows Active Directory restoration or installation of
-  subsequent domain controllers without the need of network-based replication.
-
-  Upon successful completion, you will find a copy of the ntds.dit file in the C:\Windows\Temp directory.
 Attack_name: NTDS
 Attack_description: |
   Adversaries may attempt to access or create a copy of the Active Directory domain database in order to steal credential information, as well as obtain other information about domain members such as devices, users, and access rights. By default, the NTDS file (NTDS.dit) is located in <code>%SystemRoot%\NTDS\Ntds.dit</code> of a domain controller.(Citation: Wikipedia Active Directory)
@@ -28,3 +10,21 @@ Attack_description: |
   * secretsdump.py
   * Using the in-built Windows tool, ntdsutil.exe
   * Invoke-NinjaCopy
+guid: 2364e33d-ceab-4641-8468-bfb1d7cc2723
+name: Dump Active Directory Database with NTDSUtil
+tactic:
+  - credential-access
+technique:
+  - T1003.003
+os:
+  - windows
+description: |
+  This test is intended to be run on a domain Controller.
+
+  The Active Directory database NTDS.dit may be dumped using NTDSUtil for offline credential theft attacks. This capability
+  uses the "IFM" or "Install From Media" backup functionality that allows Active Directory restoration or installation of
+  subsequent domain controllers without the need of network-based replication.
+
+  Upon successful completion, you will find a copy of the ntds.dit file in the C:\Windows\Temp directory.
+sigma: false
+sigma_rule: []

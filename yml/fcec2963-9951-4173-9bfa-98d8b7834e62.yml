@@ -1,18 +1,18 @@
+Attack_name: Domain Account
+Attack_description: |-
+  Adversaries may create a domain account to maintain access to victim systems. Domain accounts are those managed by Active Directory Domain Services where access and permissions are configured across systems and services that are part of that domain. Domain accounts can cover user, administrator, and service accounts. With a sufficient level of access, the <code>net user /add /domain</code> command can be used to create a domain account.
+
+  Such accounts may be used to establish secondary credentialed access that do not require persistent remote access tools to be deployed on the system.
 guid: fcec2963-9951-4173-9bfa-98d8b7834e62
 name: Create a new Windows domain admin user
 tactic:
   - persistence
 technique:
   - T1136.002
-sigma: false
-sigma_rule: []
 os:
   - windows
 description: 'Creates a new domain admin user in a command prompt.
 
   '
-Attack_name: Domain Account
-Attack_description: |-
-  Adversaries may create a domain account to maintain access to victim systems. Domain accounts are those managed by Active Directory Domain Services where access and permissions are configured across systems and services that are part of that domain. Domain accounts can cover user, administrator, and service accounts. With a sufficient level of access, the <code>net user /add /domain</code> command can be used to create a domain account.
-
-  Such accounts may be used to establish secondary credentialed access that do not require persistent remote access tools to be deployed on the system.
+sigma: false
+sigma_rule: []

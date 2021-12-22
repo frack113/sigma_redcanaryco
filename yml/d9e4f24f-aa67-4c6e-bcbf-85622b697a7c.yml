@@ -1,17 +1,3 @@
-guid: d9e4f24f-aa67-4c6e-bcbf-85622b697a7c
-name: Create Systemd Service
-tactic:
-  - privilege-escalation
-  - persistence
-technique:
-  - T1543.002
-sigma: false
-sigma_rule: []
-os:
-  - linux
-description: 'This test creates a Systemd service unit file and enables it as a service.
-
-  '
 Attack_name: Systemd Service
 Attack_description: "Adversaries may create or modify systemd services to repeatedly execute malicious payloads as part of persistence. The systemd service manager is commonly used for managing background\
   \ daemon processes (also known as services) and other system resources.(Citation: Linux man-pages: systemd January 2014)(Citation: Freedesktop.org Linux systemd 29SEP2018) Systemd is the default initialization\
@@ -24,3 +10,17 @@ Attack_description: "Adversaries may create or modify systemd services to repeat
   \ boot.(Citation: Anomali Rocke March 2019)\n\nWhile adversaries typically require root privileges to create/modify service unit files in the <code>/etc/systemd/system</code> and <code>/usr/lib/systemd/system</code>\
   \ directories, low privilege users can create/modify service unit files in directories such as <code>~/.config/systemd/user/</code> to achieve user-level persistence.(Citation: Rapid7 Service Persistence\
   \ 22JUNE2016)"
+guid: d9e4f24f-aa67-4c6e-bcbf-85622b697a7c
+name: Create Systemd Service
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1543.002
+os:
+  - linux
+description: 'This test creates a Systemd service unit file and enables it as a service.
+
+  '
+sigma: false
+sigma_rule: []

@@ -1,16 +1,16 @@
+Attack_name: Disable or Modify Tools
+Attack_description: Adversaries may disable security tools to avoid possible detection of their tools and activities. This can take the form of killing security software or event logging processes, deleting
+  Registry keys so that tools do not start at run time, or other methods to interfere with security tools scanning or reporting information.
 guid: 811b3e76-c41b-430c-ac0d-e2380bfaa164
 name: Unload Sysmon Filter Driver
 tactic:
   - defense-evasion
 technique:
   - T1562.001
-sigma: false
-sigma_rule: []
 os:
   - windows
 description: |
   Unloads the Sysinternals Sysmon filter driver without stopping the Sysmon service. To verify successful execution, o verify successful execution,
   run the prereq_command's and it should fail with an error of "sysmon filter must be loaded".
-Attack_name: Disable or Modify Tools
-Attack_description: Adversaries may disable security tools to avoid possible detection of their tools and activities. This can take the form of killing security software or event logging processes, deleting
-  Registry keys so that tools do not start at run time, or other methods to interfere with security tools scanning or reporting information.
+sigma: false
+sigma_rule: []

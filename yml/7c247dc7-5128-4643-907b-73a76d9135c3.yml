@@ -1,16 +1,3 @@
-guid: 7c247dc7-5128-4643-907b-73a76d9135c3
-name: Copy Private SSH Keys with CP
-tactic:
-  - credential-access
-technique:
-  - T1552.004
-sigma: false
-sigma_rule: []
-os:
-  - linux
-description: 'Copy private SSH keys on a Linux system to a staging folder using the `cp` command.
-
-  '
 Attack_name: Private Keys
 Attack_description: "Adversaries may search for private key certificate files on compromised systems for insecurely stored credentials. Private cryptographic keys and certificates are used for authentication,\
   \ encryption/decryption, and digital signatures.(Citation: Wikipedia Public Key Crypto) Common key and certificate file extensions include: .key, .pgp, .gpg, .ppk., .p12, .pem, .pfx, .cer, .p7b, .asc.\
@@ -19,3 +6,16 @@ Attack_description: "Adversaries may search for private key certificate files on
   \ that search compromised systems for file extensions relating to cryptographic keys and certificates.(Citation: Kaspersky Careto)(Citation: Palo Alto Prince of Persia)\n\nSome private keys require a\
   \ password or passphrase for operation, so an adversary may also use [Input Capture](https://attack.mitre.org/techniques/T1056) for keylogging or attempt to [Brute Force](https://attack.mitre.org/techniques/T1110)\
   \ the passphrase off-line."
+guid: 7c247dc7-5128-4643-907b-73a76d9135c3
+name: Copy Private SSH Keys with CP
+tactic:
+  - credential-access
+technique:
+  - T1552.004
+os:
+  - linux
+description: 'Copy private SSH keys on a Linux system to a staging folder using the `cp` command.
+
+  '
+sigma: false
+sigma_rule: []

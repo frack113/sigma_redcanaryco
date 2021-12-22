@@ -1,3 +1,8 @@
+Attack_name: Cron
+Attack_description: |-
+  Adversaries may abuse the <code>cron</code> utility to perform task scheduling for initial or recurring execution of malicious code. The <code>cron</code> utility is a time-based job scheduler for Unix-like operating systems.  The <code> crontab</code> file contains the schedule of cron entries to be run and the specified times for execution. Any <code>crontab</code> files are stored in operating system-specific file paths.
+
+  An adversary may use <code>cron</code> in Linux or Unix environments to execute programs at system startup or on a scheduled basis for persistence. <code>cron</code> can also be abused to conduct remote Execution as part of Lateral Movement and or to run a process under the context of a specified account.
 guid: 2d943c18-e74a-44bf-936f-25ade6cccab4
 name: Cron - Add script to /var/spool/cron/crontabs/ folder
 tactic:
@@ -6,15 +11,10 @@ tactic:
   - execution
 technique:
   - T1053.003
-sigma: false
-sigma_rule: []
 os:
   - linux
 description: 'This test adds a script to a /var/spool/cron/crontabs folder configured to execute on a schedule. This technique was used by the threat actor Rocke during the exploitation of Linux web servers.
 
   '
-Attack_name: Cron
-Attack_description: |-
-  Adversaries may abuse the <code>cron</code> utility to perform task scheduling for initial or recurring execution of malicious code. The <code>cron</code> utility is a time-based job scheduler for Unix-like operating systems.  The <code> crontab</code> file contains the schedule of cron entries to be run and the specified times for execution. Any <code>crontab</code> files are stored in operating system-specific file paths.
-
-  An adversary may use <code>cron</code> in Linux or Unix environments to execute programs at system startup or on a scheduled basis for persistence. <code>cron</code> can also be abused to conduct remote Execution as part of Lateral Movement and or to run a process under the context of a specified account.
+sigma: false
+sigma_rule: []

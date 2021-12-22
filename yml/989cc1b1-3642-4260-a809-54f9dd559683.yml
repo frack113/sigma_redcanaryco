@@ -1,17 +1,3 @@
-guid: 989cc1b1-3642-4260-a809-54f9dd559683
-name: rm -rf
-tactic:
-  - defense-evasion
-technique:
-  - T1070.002
-sigma: false
-sigma_rule: []
-os:
-  - macos
-  - linux
-description: 'Delete system and audit logs
-
-  '
 Attack_name: Clear Linux or Mac System Logs
 Attack_description: |
   Adversaries may clear system logs to hide evidence of an intrusion. macOS and Linux both keep track of system or user-initiated actions via system logs. The majority of native system logging is stored under the <code>/var/log/</code> directory. Subfolders in this directory categorize logs by their related functions, such as:(Citation: Linux Logs)
@@ -23,3 +9,17 @@ Attack_description: |
   * <code>/var/log/cron.log</code>: Crond logs
   * <code>/var/log/maillog</code>: Mail server logs
   * <code>/var/log/httpd/</code>: Web server access and error logs
+guid: 989cc1b1-3642-4260-a809-54f9dd559683
+name: rm -rf
+tactic:
+  - defense-evasion
+technique:
+  - T1070.002
+os:
+  - macos
+  - linux
+description: 'Delete system and audit logs
+
+  '
+sigma: false
+sigma_rule: []

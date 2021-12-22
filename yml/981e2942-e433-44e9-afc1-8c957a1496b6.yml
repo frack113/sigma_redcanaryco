@@ -1,17 +1,3 @@
-guid: 981e2942-e433-44e9-afc1-8c957a1496b6
-name: Service Installation CMD
-tactic:
-  - privilege-escalation
-  - persistence
-technique:
-  - T1543.003
-sigma: false
-sigma_rule: []
-os:
-  - windows
-description: |
-  Download an executable from github and start it as a service.
-  Upon successful execution, powershell will download `AtomicService.exe` from github. cmd.exe will spawn sc.exe which will create and start the service. Results will output via stdout.
 Attack_name: Windows Service
 Attack_description: "Adversaries may create or modify Windows services to repeatedly execute malicious payloads as part of persistence. When Windows boots up, it starts programs or applications called services\
   \ that perform background system functions.(Citation: TechNet Services) Windows service configuration information, including the file path to the service's executable or recovery programs/commands, is\
@@ -21,3 +7,17 @@ Attack_description: "Adversaries may create or modify Windows services to repeat
   \ operating system or benign software, or by modifying existing services to make detection analysis more challenging. Modifying existing services may interrupt their functionality or may enable services\
   \ that are disabled or otherwise not commonly used. \n\nServices may be created with administrator privileges but are executed under SYSTEM privileges, so an adversary may also use a service to escalate\
   \ privileges from administrator to SYSTEM. Adversaries may also directly start services through [Service Execution](https://attack.mitre.org/techniques/T1569/002). "
+guid: 981e2942-e433-44e9-afc1-8c957a1496b6
+name: Service Installation CMD
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1543.003
+os:
+  - windows
+description: |
+  Download an executable from github and start it as a service.
+  Upon successful execution, powershell will download `AtomicService.exe` from github. cmd.exe will spawn sc.exe which will create and start the service. Results will output via stdout.
+sigma: false
+sigma_rule: []

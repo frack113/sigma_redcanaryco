@@ -1,17 +1,17 @@
+Attack_name: Signed Script Proxy Execution
+Attack_description: 'Adversaries may use scripts signed with trusted certificates to proxy execution of malicious files. Several Microsoft signed scripts that are default on Windows installations can be
+  used to proxy execution of other files. This behavior may be abused by adversaries to execute malicious files that could bypass application control and signature validation on systems.(Citation: GitHub
+  Ultimate AppLocker Bypass List)'
 guid: 2a8f2d3c-3dec-4262-99dd-150cb2a4d63a
 name: manage-bde.wsf Signed Script Command Execution
 tactic:
   - defense-evasion
 technique:
   - T1216
-sigma: false
-sigma_rule: []
 os:
   - windows
 description: 'Executes the signed manage-bde.wsf script with options to execute an arbitrary command.
 
   '
-Attack_name: Signed Script Proxy Execution
-Attack_description: 'Adversaries may use scripts signed with trusted certificates to proxy execution of malicious files. Several Microsoft signed scripts that are default on Windows installations can be
-  used to proxy execution of other files. This behavior may be abused by adversaries to execute malicious files that could bypass application control and signature validation on systems.(Citation: GitHub
-  Ultimate AppLocker Bypass List)'
+sigma: false
+sigma_rule: []

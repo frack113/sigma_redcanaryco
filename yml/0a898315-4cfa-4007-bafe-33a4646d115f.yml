@@ -1,18 +1,3 @@
-guid: 0a898315-4cfa-4007-bafe-33a4646d115f
-name: Add command to .bashrc
-tactic:
-  - privilege-escalation
-  - persistence
-technique:
-  - T1546.004
-sigma: false
-sigma_rule: []
-os:
-  - macos
-  - linux
-description: 'Adds a command to the .bashrc file of the current user
-
-  '
 Attack_name: Unix Shell Configuration Modification
 Attack_description: "Adversaries may establish persistence through executing malicious commands triggered by a user’s shell. User [Unix Shell](https://attack.mitre.org/techniques/T1059/004)s execute several\
   \ configuration scripts at different points throughout the session based on events. For example, when a user opens a command-line interface or remotely logs in (such as via SSH) a login shell is initiated.\
@@ -30,3 +15,18 @@ Attack_description: "Adversaries may establish persistence through executing mal
   \ using <code>/etc/profile</code>, <code>/etc/zshenv</code>, <code>/etc/zprofile</code>, and <code>/etc/zlogin</code>.(Citation: ScriptingOSX zsh)(Citation: PersistentJXA_leopitt)(Citation: code_persistence_zsh)\
   \ The login shell then configures the user environment with <code>~/.zprofile</code> and <code>~/.zlogin</code>. The interactive shell uses the <code>~/.zshrc</code> to configure the user environment.\
   \ Upon exiting, <code>/etc/zlogout</code> and <code>~/.zlogout</code> are executed. For legacy programs, macOS executes <code>/etc/bashrc</code> on startup."
+guid: 0a898315-4cfa-4007-bafe-33a4646d115f
+name: Add command to .bashrc
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1546.004
+os:
+  - macos
+  - linux
+description: 'Adds a command to the .bashrc file of the current user
+
+  '
+sigma: false
+sigma_rule: []

@@ -1,18 +1,3 @@
-guid: 615bd568-2859-41b5-9aed-61f6a88e48dd
-name: Rubeus asreproast
-tactic:
-  - credential-access
-technique:
-  - T1558.004
-sigma: true
-sigma_rule:
-  - id: 7ec2c172-dceb-4c10-92c9-87c1881b7e18
-    name: win_hack_rubeus.yml
-os:
-  - windows
-description: |
-  Information on the Rubeus tool and it's creators found here: https://github.com/GhostPack/Rubeus#asreproast
-  This build targets .NET 4.5.  If targeting a different version you will need to compile Rubeus
 Attack_name: AS-REP Roasting
 Attack_description: "Adversaries may reveal credentials of accounts that have disabled Kerberos preauthentication by [Password Cracking](https://attack.mitre.org/techniques/T1110/002) Kerberos messages.(Citation:\
   \ Harmj0y Roasting AS-REPs Jan 2017) \n\nPreauthentication offers protection against offline [Password Cracking](https://attack.mitre.org/techniques/T1110/002). When enabled, a user requesting access\
@@ -26,3 +11,18 @@ Attack_description: "Adversaries may reveal credentials of accounts that have di
   \ may send an AS-REQ message for each user. If the DC responds without errors, the account does not require preauthentication and the AS-REP message will already contain the encrypted data. (Citation:\
   \ Harmj0y Roasting AS-REPs Jan 2017)(Citation: Stealthbits Cracking AS-REP Roasting Jun 2019)\n\nCracked hashes may enable [Persistence](https://attack.mitre.org/tactics/TA0003), [Privilege Escalation](https://attack.mitre.org/tactics/TA0004),\
   \ and [Lateral Movement](https://attack.mitre.org/tactics/TA0008) via access to [Valid Accounts](https://attack.mitre.org/techniques/T1078).(Citation: SANS Attacking Kerberos Nov 2014)"
+guid: 615bd568-2859-41b5-9aed-61f6a88e48dd
+name: Rubeus asreproast
+tactic:
+  - credential-access
+technique:
+  - T1558.004
+os:
+  - windows
+description: |
+  Information on the Rubeus tool and it's creators found here: https://github.com/GhostPack/Rubeus#asreproast
+  This build targets .NET 4.5.  If targeting a different version you will need to compile Rubeus
+sigma: true
+sigma_rule:
+  - id: 7ec2c172-dceb-4c10-92c9-87c1881b7e18
+    name: win_hack_rubeus.yml

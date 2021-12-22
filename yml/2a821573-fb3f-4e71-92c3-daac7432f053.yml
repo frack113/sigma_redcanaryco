@@ -1,16 +1,16 @@
+Attack_name: Disable or Modify Tools
+Attack_description: Adversaries may disable security tools to avoid possible detection of their tools and activities. This can take the form of killing security software or event logging processes, deleting
+  Registry keys so that tools do not start at run time, or other methods to interfere with security tools scanning or reporting information.
 guid: 2a821573-fb3f-4e71-92c3-daac7432f053
 name: Disable macOS Gatekeeper
 tactic:
   - defense-evasion
 technique:
   - T1562.001
-sigma: false
-sigma_rule: []
 os:
   - macos
 description: 'Disables macOS Gatekeeper
 
   '
-Attack_name: Disable or Modify Tools
-Attack_description: Adversaries may disable security tools to avoid possible detection of their tools and activities. This can take the form of killing security software or event logging processes, deleting
-  Registry keys so that tools do not start at run time, or other methods to interfere with security tools scanning or reporting information.
+sigma: false
+sigma_rule: []

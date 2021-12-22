@@ -1,19 +1,3 @@
-guid: 9b6a06f9-ab5e-4e8d-8289-1df4289db02f
-name: Registry key creation and/or modification events for SDB
-tactic:
-  - privilege-escalation
-  - persistence
-technique:
-  - T1546.011
-sigma: false
-sigma_rule: []
-os:
-  - windows
-description: |
-  Create registry keys in locations where fin7 typically places SDB patches. Upon execution, output will be displayed describing
-  the registry keys that were created. These keys can also be viewed using the Registry Editor.
-
-  https://www.fireeye.com/blog/threat-research/2017/05/fin7-shim-databases-persistence.html
 Attack_name: Application Shimming
 Attack_description: "Adversaries may establish persistence and/or elevate privileges by executing malicious content triggered by application shims. The Microsoft Windows Application Compatibility Infrastructure/Framework\
   \ (Application Shim) was created to allow for backward compatibility of software as the operating system codebase changes over time. For example, the application shimming feature allows developers to\
@@ -26,3 +10,19 @@ Attack_description: "Adversaries may establish persistence and/or elevate privil
   \ be used to [Bypass User Account Control](https://attack.mitre.org/techniques/T1548/002) (UAC and RedirectEXE), inject DLLs into processes (InjectDLL), disable Data Execution Prevention (DisableNX) and\
   \ Structure Exception Handling (DisableSEH), and intercept memory addresses (GetProcAddress).\n\nUtilizing these shims may allow an adversary to perform several malicious acts such as elevate privileges,\
   \ install backdoors, disable defenses like Windows Defender, etc. (Citation: FireEye Application Shimming) Shims can also be abused to establish persistence by continuously being invoked by affected programs."
+guid: 9b6a06f9-ab5e-4e8d-8289-1df4289db02f
+name: Registry key creation and/or modification events for SDB
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1546.011
+os:
+  - windows
+description: |
+  Create registry keys in locations where fin7 typically places SDB patches. Upon execution, output will be displayed describing
+  the registry keys that were created. These keys can also be viewed using the Registry Editor.
+
+  https://www.fireeye.com/blog/threat-research/2017/05/fin7-shim-databases-persistence.html
+sigma: false
+sigma_rule: []

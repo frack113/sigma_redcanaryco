@@ -1,18 +1,3 @@
-guid: f7536d63-7fd4-466f-89da-7e48d550752a
-name: Service Registry Permissions Weakness
-tactic:
-  - privilege-escalation
-  - defense-evasion
-  - persistence
-technique:
-  - T1574.011
-sigma: false
-sigma_rule: []
-os:
-  - windows
-description: |
-  Service registry permissions weakness check and then which can lead to privilege escalation with ImagePath. eg.
-  reg add "HKLM\SYSTEM\CurrentControlSet\Services\#{weak_service_name}" /v ImagePath /d "C:\temp\AtomicRedteam.exe"
 Attack_name: Services Registry Permissions Weakness
 Attack_description: "Adversaries may execute their own malicious payloads by hijacking the Registry entries used by services. Adversaries may use flaws in the permissions for registry to redirect from the\
   \ originally specified executable to one that they control, in order to launch their own code at Service start.  Windows stores local service configuration information in the Registry under <code>HKLM\\\
@@ -23,3 +8,18 @@ Attack_description: "Adversaries may execute their own malicious payloads by hij
   \ privilege escalation to the account context the service is set to execute under (local/domain account, SYSTEM, LocalService, or NetworkService).\n\nAdversaries may also alter Registry keys associated\
   \ with service failure parameters (such as <code>FailureCommand</code>) that may be executed in an elevated context anytime the service fails or is intentionally corrupted.(Citation: Kansa Service related\
   \ collectors)(Citation: Tweet Registry Perms Weakness) "
+guid: f7536d63-7fd4-466f-89da-7e48d550752a
+name: Service Registry Permissions Weakness
+tactic:
+  - privilege-escalation
+  - defense-evasion
+  - persistence
+technique:
+  - T1574.011
+os:
+  - windows
+description: |
+  Service registry permissions weakness check and then which can lead to privilege escalation with ImagePath. eg.
+  reg add "HKLM\SYSTEM\CurrentControlSet\Services\#{weak_service_name}" /v ImagePath /d "C:\temp\AtomicRedteam.exe"
+sigma: false
+sigma_rule: []

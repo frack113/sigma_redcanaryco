@@ -1,17 +1,3 @@
-guid: 21748c28-2793-4284-9e07-d6d028b66702
-name: Create Symlink to Volume Shadow Copy
-tactic:
-  - credential-access
-technique:
-  - T1003.003
-sigma: false
-sigma_rule: []
-os:
-  - windows
-description: |
-  This test is intended to be run on a domain Controller.
-
-  The Active Directory database NTDS.dit may be dumped by creating a symlink to Volume Shadow Copy.
 Attack_name: NTDS
 Attack_description: |
   Adversaries may attempt to access or create a copy of the Active Directory domain database in order to steal credential information, as well as obtain other information about domain members such as devices, users, and access rights. By default, the NTDS file (NTDS.dit) is located in <code>%SystemRoot%\NTDS\Ntds.dit</code> of a domain controller.(Citation: Wikipedia Active Directory)
@@ -24,3 +10,17 @@ Attack_description: |
   * secretsdump.py
   * Using the in-built Windows tool, ntdsutil.exe
   * Invoke-NinjaCopy
+guid: 21748c28-2793-4284-9e07-d6d028b66702
+name: Create Symlink to Volume Shadow Copy
+tactic:
+  - credential-access
+technique:
+  - T1003.003
+os:
+  - windows
+description: |
+  This test is intended to be run on a domain Controller.
+
+  The Active Directory database NTDS.dit may be dumped by creating a symlink to Volume Shadow Copy.
+sigma: false
+sigma_rule: []

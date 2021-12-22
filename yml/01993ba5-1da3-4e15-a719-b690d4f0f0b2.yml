@@ -1,18 +1,18 @@
+Attack_name: Local Account
+Attack_description: |-
+  Adversaries may create a local account to maintain access to victim systems. Local accounts are those configured by an organization for use by users, remote support, services, or for administration on a single system or service. With a sufficient level of access, the <code>net user /add</code> command can be used to create a local account.
+
+  Such accounts may be used to establish secondary credentialed access that do not require persistent remote access tools to be deployed on the system.
 guid: '01993ba5-1da3-4e15-a719-b690d4f0f0b2'
 name: Create a user account on a MacOS system
 tactic:
   - persistence
 technique:
   - T1136.001
-sigma: false
-sigma_rule: []
 os:
   - macos
 description: 'Creates a user on a MacOS system with dscl
 
   '
-Attack_name: Local Account
-Attack_description: |-
-  Adversaries may create a local account to maintain access to victim systems. Local accounts are those configured by an organization for use by users, remote support, services, or for administration on a single system or service. With a sufficient level of access, the <code>net user /add</code> command can be used to create a local account.
-
-  Such accounts may be used to establish secondary credentialed access that do not require persistent remote access tools to be deployed on the system.
+sigma: false
+sigma_rule: []

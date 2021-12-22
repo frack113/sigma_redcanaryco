@@ -1,17 +1,17 @@
+Attack_name: Local Data Staging
+Attack_description: Adversaries may stage collected data in a central location or directory on the local system prior to Exfiltration. Data may be kept in separate files or combined into one file through
+  techniques such as [Archive Collected Data](https://attack.mitre.org/techniques/T1560). Interactive command shells may be used, and common functionality within [cmd](https://attack.mitre.org/software/S0106)
+  and bash may be used to copy data into a staging location.
 guid: a57fbe4b-3440-452a-88a7-943531ac872a
 name: Zip a Folder with PowerShell for Staging in Temp
 tactic:
   - collection
 technique:
   - T1074.001
-sigma: false
-sigma_rule: []
 os:
   - windows
 description: |
   Use living off the land tools to zip a file and stage it in the Windows temporary folder for later exfiltration. Upon execution, Verify that a zipped folder named Folder_to_zip.zip
   was placed in the temp directory.
-Attack_name: Local Data Staging
-Attack_description: Adversaries may stage collected data in a central location or directory on the local system prior to Exfiltration. Data may be kept in separate files or combined into one file through
-  techniques such as [Archive Collected Data](https://attack.mitre.org/techniques/T1560). Interactive command shells may be used, and common functionality within [cmd](https://attack.mitre.org/software/S0106)
-  and bash may be used to copy data into a staging location.
+sigma: false
+sigma_rule: []

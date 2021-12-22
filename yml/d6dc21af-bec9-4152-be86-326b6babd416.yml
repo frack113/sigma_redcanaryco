@@ -1,16 +1,18 @@
+Attack_name: Clipboard Data
+Attack_description: "Adversaries may collect data stored in the clipboard from users copying information within or between applications. \n\nIn Windows, Applications can access clipboard data by using the\
+  \ Windows API.(Citation: MSDN Clipboard) OSX provides a native command, <code>pbpaste</code>, to grab clipboard contents.(Citation: Operating with EmPyre)"
 guid: d6dc21af-bec9-4152-be86-326b6babd416
 name: Execute Commands from Clipboard using PowerShell
 tactic:
   - collection
 technique:
   - T1115
-sigma: false
-sigma_rule: []
 os:
   - windows
 description: 'Utilize PowerShell to echo a command to clipboard and execute it
 
   '
-Attack_name: Clipboard Data
-Attack_description: "Adversaries may collect data stored in the clipboard from users copying information within or between applications. \n\nIn Windows, Applications can access clipboard data by using the\
-  \ Windows API.(Citation: MSDN Clipboard) OSX provides a native command, <code>pbpaste</code>, to grab clipboard contents.(Citation: Operating with EmPyre)"
+sigma: true
+sigma_rule:
+  - id: 4cbd4f12-2e22-43e3-882f-bff3247ffb78
+    name: powershell_get_clipboard.yml

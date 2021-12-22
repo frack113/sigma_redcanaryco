@@ -1,20 +1,20 @@
+Attack_name: Domain Account
+Attack_description: |-
+  Adversaries may attempt to get a listing of domain accounts. This information can help adversaries determine which domain accounts exist to aid in follow-on behavior.
+
+  Commands such as <code>net user /domain</code> and <code>net group /domain</code> of the [Net](https://attack.mitre.org/software/S0039) utility, <code>dscacheutil -q group</code>on macOS, and <code>ldapsearch</code> on Linux can list domain users and groups.
 guid: 161dcd85-d014-4f5e-900c-d3eaae82a0f7
 name: Enumerate logged on users via CMD (Domain)
 tactic:
   - discovery
 technique:
   - T1087.002
-sigma: true
-sigma_rule:
-  - id: 502b42de-4306-40b4-9596-6f590c81f073
-    name: win_local_system_owner_account_discovery.yml
 os:
   - windows
 description: 'Enumerate logged on users. Upon exeuction, logged on users will be displayed.
 
   '
-Attack_name: Domain Account
-Attack_description: |-
-  Adversaries may attempt to get a listing of domain accounts. This information can help adversaries determine which domain accounts exist to aid in follow-on behavior.
-
-  Commands such as <code>net user /domain</code> and <code>net group /domain</code> of the [Net](https://attack.mitre.org/software/S0039) utility, <code>dscacheutil -q group</code>on macOS, and <code>ldapsearch</code> on Linux can list domain users and groups.
+sigma: true
+sigma_rule:
+  - id: 502b42de-4306-40b4-9596-6f590c81f073
+    name: win_local_system_owner_account_discovery.yml

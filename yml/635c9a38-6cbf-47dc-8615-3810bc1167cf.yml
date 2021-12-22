@@ -1,17 +1,17 @@
+Attack_name: Ingress Tool Transfer
+Attack_description: Adversaries may transfer tools or other files from an external system into a compromised environment. Files may be copied from an external adversary controlled system through the command
+  and control channel to bring tools into the victim network or through alternate protocols with another tool such as FTP. Files can also be copied over on Mac and Linux with native tools like scp, rsync,
+  and sftp.
 guid: 635c9a38-6cbf-47dc-8615-3810bc1167cf
 name: Curl Upload File
 tactic:
   - command-and-control
 technique:
   - T1105
-sigma: false
-sigma_rule: []
 os:
   - windows
 description: |
   The following Atomic utilizes native curl.exe, or downloads it if not installed, to upload a txt file to simulate data exfiltration
   Expected output will include whether the file uploaded successfully or not.
-Attack_name: Ingress Tool Transfer
-Attack_description: Adversaries may transfer tools or other files from an external system into a compromised environment. Files may be copied from an external adversary controlled system through the command
-  and control channel to bring tools into the victim network or through alternate protocols with another tool such as FTP. Files can also be copied over on Mac and Linux with native tools like scp, rsync,
-  and sftp.
+sigma: false
+sigma_rule: []

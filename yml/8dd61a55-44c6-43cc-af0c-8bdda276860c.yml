@@ -1,18 +1,20 @@
+Attack_name: Archive via Utility
+Attack_description: |-
+  An adversary may compress or encrypt data that is collected prior to exfiltration using 3rd party utilities. Many utilities exist that can archive data, including 7-Zip(Citation: 7zip Homepage), WinRAR(Citation: WinRAR Homepage), and WinZip(Citation: WinZip Homepage). Most utilities include functionality to encrypt and/or compress data.
+
+  Some 3rd party utilities may be preinstalled, such as `tar` on Linux and macOS or `zip` on Windows systems.
 guid: 8dd61a55-44c6-43cc-af0c-8bdda276860c
 name: Compress Data and lock with password for Exfiltration with winrar
 tactic:
   - collection
 technique:
   - T1560.001
-sigma: false
-sigma_rule: []
 os:
   - windows
 description: |
   Note: Requires winrar installation
   rar a -p"blue" hello.rar (VARIANT)
-Attack_name: Archive via Utility
-Attack_description: |-
-  An adversary may compress or encrypt data that is collected prior to exfiltration using 3rd party utilities. Many utilities exist that can archive data, including 7-Zip(Citation: 7zip Homepage), WinRAR(Citation: WinRAR Homepage), and WinZip(Citation: WinZip Homepage). Most utilities include functionality to encrypt and/or compress data.
-
-  Some 3rd party utilities may be preinstalled, such as `tar` on Linux and macOS or `zip` on Windows systems.
+sigma: true
+sigma_rule:
+  - id: 6f3e2987-db24-4c78-a860-b4f4095a7095
+    name: win_data_compressed_with_rar.yml

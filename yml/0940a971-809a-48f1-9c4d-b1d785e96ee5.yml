@@ -1,17 +1,3 @@
-guid: '0940a971-809a-48f1-9c4d-b1d785e96ee5'
-name: System Network Connections Discovery
-tactic:
-  - discovery
-technique:
-  - T1049
-sigma: false
-sigma_rule: []
-os:
-  - windows
-description: |
-  Get a listing of network connections.
-
-  Upon successful execution, cmd.exe will execute `netstat`, `net use` and `net sessions`. Results will output via stdout.
 Attack_name: System Network Connections Discovery
 Attack_description: "Adversaries may attempt to get a listing of network connections to or from the compromised system they are currently accessing or from remote systems by querying for information over\
   \ the network. \n\nAn adversary who gains access to a system that is part of a cloud-based environment may map out Virtual Private Clouds or Virtual Networks in order to determine what systems and services\
@@ -20,3 +6,17 @@ Attack_description: "Adversaries may attempt to get a listing of network connect
   \ Overview)(Citation: Google VPC Overview)\n\nUtilities and commands that acquire this information include [netstat](https://attack.mitre.org/software/S0104), \"net use,\" and \"net session\" with [Net](https://attack.mitre.org/software/S0039).\
   \ In Mac and Linux, [netstat](https://attack.mitre.org/software/S0104) and <code>lsof</code> can be used to list current connections. <code>who -a</code> and <code>w</code> can be used to show which users\
   \ are currently logged in, similar to \"net session\"."
+guid: '0940a971-809a-48f1-9c4d-b1d785e96ee5'
+name: System Network Connections Discovery
+tactic:
+  - discovery
+technique:
+  - T1049
+os:
+  - windows
+description: |
+  Get a listing of network connections.
+
+  Upon successful execution, cmd.exe will execute `netstat`, `net use` and `net sessions`. Results will output via stdout.
+sigma: false
+sigma_rule: []

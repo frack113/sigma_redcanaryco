@@ -1,16 +1,3 @@
-guid: 14625569-6def-4497-99ac-8e7817105b55
-name: Rubeus kerberoast
-tactic:
-  - credential-access
-technique:
-  - T1558.003
-sigma: false
-sigma_rule: []
-os:
-  - windows
-description: |
-  Information on the Rubeus tool and it's creators found here: https://github.com/GhostPack/Rubeus#asreproast
-  This build targets .NET 4.5.  If targeting a different version you will need to compile Rubeus
 Attack_name: Kerberoasting
 Attack_description: "Adversaries may abuse a valid Kerberos ticket-granting ticket (TGT) or sniff network traffic to obtain a ticket-granting service (TGS) ticket that may be vulnerable to [Brute Force](https://attack.mitre.org/techniques/T1110).(Citation:\
   \ Empire InvokeKerberoast Oct 2016)(Citation: AdSecurity Cracking Kerberos Dec 2015) \n\nService principal names (SPNs) are used to uniquely identify each instance of a Windows service. To enable authentication,\
@@ -22,3 +9,16 @@ Attack_description: "Adversaries may abuse a valid Kerberos ticket-granting tick
   \ InvokeKerberoast Oct 2016) (Citation: Harmj0y Kerberoast Nov 2016)\n\nThis same attack could be executed using service tickets captured from network traffic.(Citation: AdSecurity Cracking Kerberos Dec\
   \ 2015)\n\nCracked hashes may enable [Persistence](https://attack.mitre.org/tactics/TA0003), [Privilege Escalation](https://attack.mitre.org/tactics/TA0004), and [Lateral Movement](https://attack.mitre.org/tactics/TA0008)\
   \ via access to [Valid Accounts](https://attack.mitre.org/techniques/T1078).(Citation: SANS Attacking Kerberos Nov 2014)"
+guid: 14625569-6def-4497-99ac-8e7817105b55
+name: Rubeus kerberoast
+tactic:
+  - credential-access
+technique:
+  - T1558.003
+os:
+  - windows
+description: |
+  Information on the Rubeus tool and it's creators found here: https://github.com/GhostPack/Rubeus#asreproast
+  This build targets .NET 4.5.  If targeting a different version you will need to compile Rubeus
+sigma: false
+sigma_rule: []

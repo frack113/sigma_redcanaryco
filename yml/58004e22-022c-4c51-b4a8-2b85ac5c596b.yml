@@ -1,3 +1,8 @@
+Attack_name: Deploy Container
+Attack_description: |-
+  Adversaries may deploy a container into an environment to facilitate execution or evade defenses. In some cases, adversaries may deploy a new container to execute processes associated with a particular image or deployment, such as processes that execute or download malware. In others, an adversary may deploy a new container configured without network rules, user limitations, etc. to bypass existing defenses within the environment.
+
+  Containers can be deployed by various means, such as via Docker's <code>create</code> and <code>start</code> APIs or via a web application such as the Kubernetes dashboard or Kubeflow.(Citation: Docker Containers API)(Citation: Kubernetes Dashboard)(Citation: Kubeflow Pipelines) Adversaries may deploy containers based on retrieved or built malicious images or from benign images that download and execute malicious payloads at runtime.(Citation: Aqua Build Images on Hosts)
 guid: 58004e22-022c-4c51-b4a8-2b85ac5c596b
 name: Deploy container using nsenter container escape
 tactic:
@@ -5,8 +10,6 @@ tactic:
   - execution
 technique:
   - T1610
-sigma: false
-sigma_rule: []
 os:
   - linux
 description: |
@@ -15,8 +18,5 @@ description: |
   Additional Details:
   - https://twitter.com/mauilion/status/1129468485480751104
   - https://securekubernetes.com/scenario_2_attack/
-Attack_name: Deploy Container
-Attack_description: |-
-  Adversaries may deploy a container into an environment to facilitate execution or evade defenses. In some cases, adversaries may deploy a new container to execute processes associated with a particular image or deployment, such as processes that execute or download malware. In others, an adversary may deploy a new container configured without network rules, user limitations, etc. to bypass existing defenses within the environment.
-
-  Containers can be deployed by various means, such as via Docker's <code>create</code> and <code>start</code> APIs or via a web application such as the Kubernetes dashboard or Kubeflow.(Citation: Docker Containers API)(Citation: Kubernetes Dashboard)(Citation: Kubeflow Pipelines) Adversaries may deploy containers based on retrieved or built malicious images or from benign images that download and execute malicious payloads at runtime.(Citation: Aqua Build Images on Hosts)
+sigma: false
+sigma_rule: []

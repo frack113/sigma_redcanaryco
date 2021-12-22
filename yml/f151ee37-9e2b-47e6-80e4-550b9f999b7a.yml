@@ -1,16 +1,3 @@
-guid: f151ee37-9e2b-47e6-80e4-550b9f999b7a
-name: Hidden Window
-tactic:
-  - defense-evasion
-technique:
-  - T1564.003
-sigma: false
-sigma_rule: []
-os:
-  - windows
-description: |
-  Launch PowerShell with the "-WindowStyle Hidden" argument to conceal PowerShell windows by setting the WindowStyle parameter to hidden.
-  Upon execution a hidden PowerShell window will launch calc.exe
 Attack_name: Hidden Window
 Attack_description: "Adversaries may use hidden windows to conceal malicious activity from the plain sight of users. In some cases, windows that would typically be displayed when an application carries\
   \ out an operation can be hidden. This may be utilized by system administrators to avoid disrupting user work environments when carrying out administrative tasks. \n\nOn Windows, there are a variety of\
@@ -19,3 +6,16 @@ Attack_description: "Adversaries may use hidden windows to conceal malicious act
   \ list (plist) files. One of the tags in these files can be <code>apple.awt.UIElement</code>, which allows for Java applications to prevent the application's icon from appearing in the Dock. A common\
   \ use for this is when applications run in the system tray, but don't also want to show up in the Dock.\n\nAdversaries may abuse these functionalities to hide otherwise visible windows from users so as\
   \ not to alert the user to adversary activity on the system.(Citation: Antiquated Mac Malware)"
+guid: f151ee37-9e2b-47e6-80e4-550b9f999b7a
+name: Hidden Window
+tactic:
+  - defense-evasion
+technique:
+  - T1564.003
+os:
+  - windows
+description: |
+  Launch PowerShell with the "-WindowStyle Hidden" argument to conceal PowerShell windows by setting the WindowStyle parameter to hidden.
+  Upon execution a hidden PowerShell window will launch calc.exe
+sigma: false
+sigma_rule: []

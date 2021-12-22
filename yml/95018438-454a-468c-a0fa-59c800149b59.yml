@@ -1,20 +1,20 @@
+Attack_name: Domain Account
+Attack_description: |-
+  Adversaries may attempt to get a listing of domain accounts. This information can help adversaries determine which domain accounts exist to aid in follow-on behavior.
+
+  Commands such as <code>net user /domain</code> and <code>net group /domain</code> of the [Net](https://attack.mitre.org/software/S0039) utility, <code>dscacheutil -q group</code>on macOS, and <code>ldapsearch</code> on Linux can list domain users and groups.
 guid: 95018438-454a-468c-a0fa-59c800149b59
 name: Automated AD Recon (ADRecon)
 tactic:
   - discovery
 technique:
   - T1087.002
-sigma: true
-sigma_rule:
-  - id: bf72941a-cba0-41ea-b18c-9aca3925690d
-    name: powershell_adrecon_execution.yml
 os:
   - windows
 description: |
   ADRecon extracts and combines information about an AD environement into a report. Upon execution, an Excel file with all of the data will be generated and its
   path will be displayed.
-Attack_name: Domain Account
-Attack_description: |-
-  Adversaries may attempt to get a listing of domain accounts. This information can help adversaries determine which domain accounts exist to aid in follow-on behavior.
-
-  Commands such as <code>net user /domain</code> and <code>net group /domain</code> of the [Net](https://attack.mitre.org/software/S0039) utility, <code>dscacheutil -q group</code>on macOS, and <code>ldapsearch</code> on Linux can list domain users and groups.
+sigma: true
+sigma_rule:
+  - id: bf72941a-cba0-41ea-b18c-9aca3925690d
+    name: powershell_adrecon_execution.yml

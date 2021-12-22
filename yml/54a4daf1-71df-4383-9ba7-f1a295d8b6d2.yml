@@ -1,17 +1,17 @@
+Attack_name: Ingress Tool Transfer
+Attack_description: Adversaries may transfer tools or other files from an external system into a compromised environment. Files may be copied from an external adversary controlled system through the command
+  and control channel to bring tools into the victim network or through alternate protocols with another tool such as FTP. Files can also be copied over on Mac and Linux with native tools like scp, rsync,
+  and sftp.
 guid: 54a4daf1-71df-4383-9ba7-f1a295d8b6d2
 name: File Download via PowerShell
 tactic:
   - command-and-control
 technique:
   - T1105
-sigma: false
-sigma_rule: []
 os:
   - windows
 description: 'Use PowerShell to download and write an arbitrary file from the internet. Example is from the 2021 Threat Detection Report by Red Canary.
 
   '
-Attack_name: Ingress Tool Transfer
-Attack_description: Adversaries may transfer tools or other files from an external system into a compromised environment. Files may be copied from an external adversary controlled system through the command
-  and control channel to bring tools into the victim network or through alternate protocols with another tool such as FTP. Files can also be copied over on Mac and Linux with native tools like scp, rsync,
-  and sftp.
+sigma: false
+sigma_rule: []

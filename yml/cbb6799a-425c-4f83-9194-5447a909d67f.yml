@@ -1,16 +1,3 @@
-guid: cbb6799a-425c-4f83-9194-5447a909d67f
-name: Word spawned a command shell and used an IP address in the command line
-tactic:
-  - initial-access
-technique:
-  - T1566.001
-sigma: false
-sigma_rule: []
-os:
-  - windows
-description: |
-  Word spawning a command prompt then running a command with an IP address in the command line is an indiciator of malicious activity.
-  Upon execution, CMD will be lauchned and ping 8.8.8.8
 Attack_name: Spearphishing Attachment
 Attack_description: "Adversaries may send spearphishing emails with a malicious attachment in an attempt to gain access to victim systems. Spearphishing attachment is a specific variant of spearphishing.\
   \ Spearphishing attachment is different from other forms of spearphishing in that it employs the use of malware attached to an email. All forms of spearphishing are electronically delivered social engineering\
@@ -20,3 +7,16 @@ Attack_description: "Adversaries may send spearphishing emails with a malicious 
   \ The text of the spearphishing email usually tries to give a plausible reason why the file should be opened, and may explain how to bypass system protections in order to do so. The email may also contain\
   \ instructions on how to decrypt an attachment, such as a zip file password, in order to evade email boundary defenses. Adversaries frequently manipulate file extensions and icons in order to make attached\
   \ executables appear to be document files, or files exploiting one application appear to be a file for a different one. "
+guid: cbb6799a-425c-4f83-9194-5447a909d67f
+name: Word spawned a command shell and used an IP address in the command line
+tactic:
+  - initial-access
+technique:
+  - T1566.001
+os:
+  - windows
+description: |
+  Word spawning a command prompt then running a command with an IP address in the command line is an indiciator of malicious activity.
+  Upon execution, CMD will be lauchned and ping 8.8.8.8
+sigma: false
+sigma_rule: []

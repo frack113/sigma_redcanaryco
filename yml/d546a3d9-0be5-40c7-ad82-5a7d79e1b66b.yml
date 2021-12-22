@@ -1,16 +1,3 @@
-guid: d546a3d9-0be5-40c7-ad82-5a7d79e1b66b
-name: SSH Credential Stuffing From MacOS
-tactic:
-  - credential-access
-technique:
-  - T1110.004
-sigma: false
-sigma_rule: []
-os:
-  - macos
-description: 'Using username,password combination from a password dump to login over SSH.
-
-  '
 Attack_name: Credential Stuffing
 Attack_description: |-
   Adversaries may use credentials obtained from breach dumps of unrelated accounts to gain access to target accounts through credential overlap. Occasionally, large numbers of username and password pairs are dumped online when a website or service is compromised and the user account credentials accessed. The information may be useful to an adversary attempting to compromise accounts by taking advantage of the tendency for users to use the same passwords across personal and business accounts.
@@ -33,3 +20,16 @@ Attack_description: |-
   * VNC (5900/TCP)
 
   In addition to management services, adversaries may "target single sign-on (SSO) and cloud-based applications utilizing federated authentication protocols," as well as externally facing email applications, such as Office 365.(Citation: US-CERT TA18-068A 2018)
+guid: d546a3d9-0be5-40c7-ad82-5a7d79e1b66b
+name: SSH Credential Stuffing From MacOS
+tactic:
+  - credential-access
+technique:
+  - T1110.004
+os:
+  - macos
+description: 'Using username,password combination from a password dump to login over SSH.
+
+  '
+sigma: false
+sigma_rule: []

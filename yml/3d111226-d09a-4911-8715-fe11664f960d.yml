@@ -1,16 +1,3 @@
-guid: 3d111226-d09a-4911-8715-fe11664f960d
-name: Simulating access to Chrome Login Data
-tactic:
-  - credential-access
-technique:
-  - T1555.003
-sigma: true
-sigma_rule:
-  - id: 98f4c75c-3089-44f3-b733-b327b9cd9c9d
-    name: powershell_ps_access_to_chrome_login_data.yml
-os:
-  - windows
-description: "Simulates an adversary accessing encrypted credentials from Google Chrome Login database. \n"
 Attack_name: Credentials from Web Browsers
 Attack_description: "Adversaries may acquire credentials from web browsers by reading files specific to the target browser.(Citation: Talos Olympic Destroyer 2018) Web browsers commonly save credentials\
   \ such as website usernames and passwords so that they do not need to be entered manually in the future. Web browsers typically store the credentials in an encrypted format within a credential store;\
@@ -22,3 +9,16 @@ Attack_description: "Adversaries may acquire credentials from web browsers by re
   \nAdversaries may also acquire credentials by searching web browser process memory for patterns that commonly match credentials.(Citation: GitHub Mimikittenz July 2016)\n\nAfter acquiring credentials\
   \ from web browsers, adversaries may attempt to recycle the credentials across different systems and/or accounts in order to expand access. This can result in significantly furthering an adversary's objective\
   \ in cases where credentials gained from web browsers overlap with privileged accounts (e.g. domain administrator)."
+guid: 3d111226-d09a-4911-8715-fe11664f960d
+name: Simulating access to Chrome Login Data
+tactic:
+  - credential-access
+technique:
+  - T1555.003
+os:
+  - windows
+description: "Simulates an adversary accessing encrypted credentials from Google Chrome Login database. \n"
+sigma: true
+sigma_rule:
+  - id: 98f4c75c-3089-44f3-b733-b327b9cd9c9d
+    name: powershell_ps_access_to_chrome_login_data.yml

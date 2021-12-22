@@ -1,18 +1,3 @@
-guid: ffe2346c-abd5-4b45-a713-bf5f1ebd573a
-name: Pad Binary to Change Hash - Linux/macOS dd
-tactic:
-  - defense-evasion
-technique:
-  - T1027.001
-sigma: false
-sigma_rule: []
-os:
-  - macos
-  - linux
-description: |
-  Uses dd to add a zero to the binary to change the hash.
-
-  Upon successful execution, dd will modify `/tmp/evil-binary`, therefore the expected hash will change.
 Attack_name: Binary Padding
 Attack_description: "Adversaries may use binary padding to add junk data and change the on-disk representation of malware. This can be done without affecting the functionality or behavior of a binary, but\
   \ can increase the size of the binary beyond what some security tools are capable of handling due to file size limitations. \n\nBinary padding effectively changes the checksum of the file and can also\
@@ -20,3 +5,18 @@ Attack_description: "Adversaries may use binary padding to add junk data and cha
   \ end or applied to sections of malware.(Citation: Securelist Malware Tricks April 2017) Increasing the file size may decrease the effectiveness of certain tools and detection capabilities that are not\
   \ designed or configured to scan large files. This may also reduce the likelihood of being collected for analysis. Public file scanning services, such as VirusTotal, limits the maximum size of an uploaded\
   \ file to be analyzed.(Citation: VirusTotal FAQ) "
+guid: ffe2346c-abd5-4b45-a713-bf5f1ebd573a
+name: Pad Binary to Change Hash - Linux/macOS dd
+tactic:
+  - defense-evasion
+technique:
+  - T1027.001
+os:
+  - macos
+  - linux
+description: |
+  Uses dd to add a zero to the binary to change the hash.
+
+  Upon successful execution, dd will modify `/tmp/evil-binary`, therefore the expected hash will change.
+sigma: false
+sigma_rule: []

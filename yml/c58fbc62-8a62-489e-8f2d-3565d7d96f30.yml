@@ -1,18 +1,3 @@
-guid: c58fbc62-8a62-489e-8f2d-3565d7d96f30
-name: Powershell enumerate domains and forests
-tactic:
-  - discovery
-technique:
-  - T1482
-sigma: true
-sigma_rule:
-  - id: dcd74b95-3f36-4ed9-9598-0490951643aa
-    name: powershell_powerview_malicious_commandlets.yml
-os:
-  - windows
-description: |
-  Use powershell to enumerate AD information.
-  Requires the installation of PowerShell AD admin cmdlets via Windows RSAT or the Windows Server AD DS role.
 Attack_name: Domain Trust Discovery
 Attack_description: 'Adversaries may attempt to gather information on domain trust relationships that may be used to identify lateral movement opportunities in Windows multi-domain/forest environments.
   Domain trusts provide a mechanism for a domain to allow access to resources based on the authentication procedures of another domain.(Citation: Microsoft Trusts) Domain trusts allow the users of the trusted
@@ -20,3 +5,18 @@ Attack_description: 'Adversaries may attempt to gather information on domain tru
   and [Kerberoasting](https://attack.mitre.org/techniques/T1558/003).(Citation: AdSecurity Forging Trust Tickets)(Citation: Harmj0y Domain Trusts) Domain trusts can be enumerated using the `DSEnumerateDomainTrusts()`
   Win32 API call, .NET methods, and LDAP.(Citation: Harmj0y Domain Trusts) The Windows utility [Nltest](https://attack.mitre.org/software/S0359) is known to be used by adversaries to enumerate domain trusts.(Citation:
   Microsoft Operation Wilysupply)'
+guid: c58fbc62-8a62-489e-8f2d-3565d7d96f30
+name: Powershell enumerate domains and forests
+tactic:
+  - discovery
+technique:
+  - T1482
+os:
+  - windows
+description: |
+  Use powershell to enumerate AD information.
+  Requires the installation of PowerShell AD admin cmdlets via Windows RSAT or the Windows Server AD DS role.
+sigma: true
+sigma_rule:
+  - id: dcd74b95-3f36-4ed9-9598-0490951643aa
+    name: powershell_powerview_malicious_commandlets.yml

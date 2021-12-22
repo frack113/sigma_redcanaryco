@@ -1,17 +1,3 @@
-guid: dfbd1a21-540d-4574-9731-e852bd6fe840
-name: Detect Virtualization Environment (Linux)
-tactic:
-  - defense-evasion
-  - discovery
-technique:
-  - T1497.001
-sigma: false
-sigma_rule: []
-os:
-  - linux
-description: |
-  systemd-detect-virt detects execution in a virtualized environment.
-  At boot, dmesg stores a log if a hypervisor is detected.
 Attack_name: System Checks
 Attack_description: "Adversaries may employ various system checks to detect and avoid virtualization and analysis environments. This may include changing behaviors based on the results of checks for the\
   \ presence of artifacts indicative of a virtual machine environment (VME) or sandbox. If the adversary detects a VME, they may alter their malware to disengage from the victim or conceal the core functions\
@@ -25,3 +11,17 @@ Attack_description: "Adversaries may employ various system checks to detect and 
   \ McAfee Virtual Jan 2017) In applications like VMWare, adversaries can also use a special I/O port to send commands and receive output. \n \nHardware checks, such as the presence of the fan, temperature,\
   \ and audio devices, could also be used to gather evidence that can be indicative a virtual environment. Adversaries may also query for specific readings from these devices.(Citation: Unit 42 OilRig Sept\
   \ 2018)"
+guid: dfbd1a21-540d-4574-9731-e852bd6fe840
+name: Detect Virtualization Environment (Linux)
+tactic:
+  - defense-evasion
+  - discovery
+technique:
+  - T1497.001
+os:
+  - linux
+description: |
+  systemd-detect-virt detects execution in a virtualized environment.
+  At boot, dmesg stores a log if a hypervisor is detected.
+sigma: false
+sigma_rule: []

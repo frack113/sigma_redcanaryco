@@ -1,20 +1,3 @@
-guid: 58ed10e8-0738-4651-8408-3a3e9a526279
-name: Get-ForestTrust with PowerView
-tactic:
-  - discovery
-technique:
-  - T1482
-sigma: true
-sigma_rule:
-  - id: f62176f3-8128-4faa-bf6c-83261322e5eb
-    name: powershell_malicious_keywords.yml
-  - id: 03d83090-8cba-44a0-b02f-0b756a050306
-    name: powershell_accessing_win_api.yml
-os:
-  - windows
-description: 'Utilizing PowerView, run Get-ForestTrust to identify forest trusts. Upon execution, progress and info about forest trusts within the domain being scanned will be displayed.
-
-  '
 Attack_name: Domain Trust Discovery
 Attack_description: 'Adversaries may attempt to gather information on domain trust relationships that may be used to identify lateral movement opportunities in Windows multi-domain/forest environments.
   Domain trusts provide a mechanism for a domain to allow access to resources based on the authentication procedures of another domain.(Citation: Microsoft Trusts) Domain trusts allow the users of the trusted
@@ -22,3 +5,20 @@ Attack_description: 'Adversaries may attempt to gather information on domain tru
   and [Kerberoasting](https://attack.mitre.org/techniques/T1558/003).(Citation: AdSecurity Forging Trust Tickets)(Citation: Harmj0y Domain Trusts) Domain trusts can be enumerated using the `DSEnumerateDomainTrusts()`
   Win32 API call, .NET methods, and LDAP.(Citation: Harmj0y Domain Trusts) The Windows utility [Nltest](https://attack.mitre.org/software/S0359) is known to be used by adversaries to enumerate domain trusts.(Citation:
   Microsoft Operation Wilysupply)'
+guid: 58ed10e8-0738-4651-8408-3a3e9a526279
+name: Get-ForestTrust with PowerView
+tactic:
+  - discovery
+technique:
+  - T1482
+os:
+  - windows
+description: 'Utilizing PowerView, run Get-ForestTrust to identify forest trusts. Upon execution, progress and info about forest trusts within the domain being scanned will be displayed.
+
+  '
+sigma: true
+sigma_rule:
+  - id: f62176f3-8128-4faa-bf6c-83261322e5eb
+    name: powershell_malicious_keywords.yml
+  - id: 03d83090-8cba-44a0-b02f-0b756a050306
+    name: powershell_accessing_win_api.yml

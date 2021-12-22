@@ -1,17 +1,3 @@
-guid: 748a73d5-cea4-4f34-84d8-839da5baa99c
-name: DNS over HTTPS Long Domain Query
-tactic:
-  - command-and-control
-technique:
-  - T1572
-sigma: false
-sigma_rule: []
-os:
-  - windows
-description: |
-  This test simulates an infected host returning data to a command and control server using long domain names.
-  The simulation involves sending DoH queries that gradually increase in length until reaching the maximum length. The intent is to test the effectiveness of detection of DoH queries for long domain names over a set threshold.
-   Upon execution, DNS information about the domain will be displayed for each callout in a JSON format.
 Attack_name: Protocol Tunneling
 Attack_description: "Adversaries may tunnel network communications to and from a victim system within a separate protocol to avoid detection/network filtering and/or enable access to otherwise unreachable\
   \ systems. Tunneling involves explicitly encapsulating a protocol within another. This behavior may conceal malicious traffic by blending in with existing traffic and/or provide an outer layer of encryption\
@@ -21,3 +7,17 @@ Attack_description: "Adversaries may tunnel network communications to and from a
   \ adversaries during [Dynamic Resolution](https://attack.mitre.org/techniques/T1568). Known as DNS over HTTPS (DoH), queries to resolve C2 infrastructure may be encapsulated within encrypted HTTPS packets.(Citation:\
   \ BleepingComp Godlua JUL19) \n\nAdversaries may also leverage [Protocol Tunneling](https://attack.mitre.org/techniques/T1572) in conjunction with [Proxy](https://attack.mitre.org/techniques/T1090) and/or\
   \ [Protocol Impersonation](https://attack.mitre.org/techniques/T1001/003) to further conceal C2 communications and infrastructure. "
+guid: 748a73d5-cea4-4f34-84d8-839da5baa99c
+name: DNS over HTTPS Long Domain Query
+tactic:
+  - command-and-control
+technique:
+  - T1572
+os:
+  - windows
+description: |
+  This test simulates an infected host returning data to a command and control server using long domain names.
+  The simulation involves sending DoH queries that gradually increase in length until reaching the maximum length. The intent is to test the effectiveness of detection of DoH queries for long domain names over a set threshold.
+   Upon execution, DNS information about the domain will be displayed for each callout in a JSON format.
+sigma: false
+sigma_rule: []

@@ -1,20 +1,20 @@
+Attack_name: Domain Account
+Attack_description: |-
+  Adversaries may attempt to get a listing of domain accounts. This information can help adversaries determine which domain accounts exist to aid in follow-on behavior.
+
+  Commands such as <code>net user /domain</code> and <code>net group /domain</code> of the [Net](https://attack.mitre.org/software/S0039) utility, <code>dscacheutil -q group</code>on macOS, and <code>ldapsearch</code> on Linux can list domain users and groups.
 guid: 5e2938fb-f919-47b6-8b29-2f6a1f718e99
 name: Adfind - Enumerate Active Directory Exchange AD Objects
 tactic:
   - discovery
 technique:
   - T1087.002
-sigma: true
-sigma_rule:
-  - id: 455b9d50-15a1-4b99-853f-8d37655a4c1b
-    name: win_susp_adfind_enumerate.yml
 os:
   - windows
 description: |
   Adfind tool can be used for reconnaissance in an Active directory environment. This example has been documented by ransomware actors enumerating Active Directory Exchange Objects
   reference- http://www.joeware.net/freetools/tools/adfind/, https://www.fireeye.com/blog/threat-research/2019/04/pick-six-intercepting-a-fin6-intrusion.html
-Attack_name: Domain Account
-Attack_description: |-
-  Adversaries may attempt to get a listing of domain accounts. This information can help adversaries determine which domain accounts exist to aid in follow-on behavior.
-
-  Commands such as <code>net user /domain</code> and <code>net group /domain</code> of the [Net](https://attack.mitre.org/software/S0039) utility, <code>dscacheutil -q group</code>on macOS, and <code>ldapsearch</code> on Linux can list domain users and groups.
+sigma: true
+sigma_rule:
+  - id: 455b9d50-15a1-4b99-853f-8d37655a4c1b
+    name: win_susp_adfind_enumerate.yml

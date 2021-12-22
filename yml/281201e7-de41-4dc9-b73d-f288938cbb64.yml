@@ -1,17 +1,3 @@
-guid: 281201e7-de41-4dc9-b73d-f288938cbb64
-name: Set Arbitrary Binary as Screensaver
-tactic:
-  - privilege-escalation
-  - persistence
-technique:
-  - T1546.002
-sigma: false
-sigma_rule: []
-os:
-  - windows
-description: 'This test copies a binary into the Windows System32 folder and sets it as the screensaver so it will execute for persistence. Requires a reboot and logon.
-
-  '
 Attack_name: Screensaver
 Attack_description: |-
   Adversaries may establish persistence by executing malicious content triggered by user inactivity. Screensavers are programs that execute after a configurable time of user inactivity and consist of Portable Executable (PE) files with a .scr file extension.(Citation: Wikipedia Screensaver) The Windows screensaver application scrnsave.scr is located in <code>C:\Windows\System32\</code>, and <code>C:\Windows\sysWOW64\</code>  on 64-bit Windows systems, along with screensavers included with base Windows installations.
@@ -24,3 +10,17 @@ Attack_description: |-
   * <code>ScreenSaveTimeout</code> - sets user inactivity timeout before screensaver is executed
 
   Adversaries can use screensaver settings to maintain persistence by setting the screensaver to run malware after a certain timeframe of user inactivity. (Citation: ESET Gazer Aug 2017)
+guid: 281201e7-de41-4dc9-b73d-f288938cbb64
+name: Set Arbitrary Binary as Screensaver
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1546.002
+os:
+  - windows
+description: 'This test copies a binary into the Windows System32 folder and sets it as the screensaver so it will execute for persistence. Requires a reboot and logon.
+
+  '
+sigma: false
+sigma_rule: []

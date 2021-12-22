@@ -1,19 +1,19 @@
-guid: 3c898f62-626c-47d5-aad2-6de873d69153
-name: Windows Screencapture
-tactic:
-  - collection
-technique:
-  - T1113
-sigma: false
-sigma_rule: []
-os:
-  - windows
-description: 'Use Psr.exe binary to collect screenshots of user display. Test will do left mouse click to simulate user behaviour
-
-  '
 Attack_name: Screen Capture
 Attack_description: 'Adversaries may attempt to take screen captures of the desktop to gather information over the course of an operation. Screen capturing functionality may be included as a feature of
   a remote access tool used in post-compromise operations. Taking a screenshot is also typically possible through native utilities or API calls, such as <code>CopyFromScreen</code>, <code>xwd</code>, or
   <code>screencapture</code>.(Citation: CopyFromScreen .NET)(Citation: Antiquated Mac Malware)
 
   '
+guid: 3c898f62-626c-47d5-aad2-6de873d69153
+name: Windows Screencapture
+tactic:
+  - collection
+technique:
+  - T1113
+os:
+  - windows
+description: 'Use Psr.exe binary to collect screenshots of user display. Test will do left mouse click to simulate user behaviour
+
+  '
+sigma: false
+sigma_rule: []

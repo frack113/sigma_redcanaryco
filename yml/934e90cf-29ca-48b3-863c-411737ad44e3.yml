@@ -1,17 +1,3 @@
-guid: 934e90cf-29ca-48b3-863c-411737ad44e3
-name: Replace binary of sticky keys
-tactic:
-  - privilege-escalation
-  - persistence
-technique:
-  - T1546.008
-sigma: false
-sigma_rule: []
-os:
-  - windows
-description: 'Replace sticky keys binary (sethc.exe) with cmd.exe
-
-  '
 Attack_name: Accessibility Features
 Attack_description: |-
   Adversaries may establish persistence and/or elevate privileges by executing malicious content triggered by accessibility features. Windows contains accessibility features that may be launched with a key combination before a user has logged in (ex: when the user is on the Windows logon screen). An adversary can modify the way these programs are launched to get a command prompt or backdoor without logging in to the system.
@@ -29,3 +15,17 @@ Attack_description: |-
   * Narrator: <code>C:\Windows\System32\Narrator.exe</code>
   * Display Switcher: <code>C:\Windows\System32\DisplaySwitch.exe</code>
   * App Switcher: <code>C:\Windows\System32\AtBroker.exe</code>
+guid: 934e90cf-29ca-48b3-863c-411737ad44e3
+name: Replace binary of sticky keys
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1546.008
+os:
+  - windows
+description: 'Replace sticky keys binary (sethc.exe) with cmd.exe
+
+  '
+sigma: false
+sigma_rule: []

@@ -1,11 +1,12 @@
+Attack_name: Signed Binary Proxy Execution
+Attack_description: Adversaries may bypass process and/or signature-based defenses by proxying execution of malicious content with signed binaries. Binaries signed with trusted digital certificates can
+  execute on Windows systems protected by digital signature validation. Several Microsoft signed binaries that are default on Windows installations can be used to proxy execution of other files.
 guid: 9ebe7901-7edf-45c0-b5c7-8366300919db
 name: Invoke-ATHRemoteFXvGPUDisablementCommand base test
 tactic:
   - defense-evasion
 technique:
   - T1218
-sigma: false
-sigma_rule: []
 os:
   - windows
 description: |
@@ -18,6 +19,5 @@ description: |
   The Invoke-ATHRemoteFXvGPUDisablementCommand function outputs all relevant execution-related artifacts.
 
   Reference: https://github.com/redcanaryco/AtomicTestHarnesses/blob/master/TestHarnesses/T1218_SignedBinaryProxyExecution/InvokeRemoteFXvGPUDisablementCommand.ps1
-Attack_name: Signed Binary Proxy Execution
-Attack_description: Adversaries may bypass process and/or signature-based defenses by proxying execution of malicious content with signed binaries. Binaries signed with trusted digital certificates can
-  execute on Windows systems protected by digital signature validation. Several Microsoft signed binaries that are default on Windows installations can be used to proxy execution of other files.
+sigma: false
+sigma_rule: []

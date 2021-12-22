@@ -1,17 +1,3 @@
-guid: 3f627297-6c38-4e7d-a278-fc2563eaaeaa
-name: Bypass UAC using Fodhelper - PowerShell
-tactic:
-  - privilege-escalation
-  - defense-evasion
-technique:
-  - T1548.002
-sigma: false
-sigma_rule: []
-os:
-  - windows
-description: |
-  PowerShell code to bypass User Account Control using the Windows 10 Features on Demand Helper (fodhelper.exe). Requires Windows 10.
-  Upon execution command prompt will be opened.
 Attack_name: Bypass User Account Control
 Attack_description: |-
   Adversaries may bypass UAC mechanisms to elevate process privileges on system. Windows User Account Control (UAC) allows a program to elevate its privileges (tracked as integrity levels ranging from low to high) to perform a task under administrator-level permissions, possibly by prompting the user for confirmation. The impact to the user ranges from denying the operation under high enforcement to allowing the user to perform the action if they are in the local administrators group and click through the prompt or allowing them to enter an administrator password to complete the action. (Citation: TechNet How UAC Works)
@@ -23,3 +9,17 @@ Attack_description: |-
   * <code>eventvwr.exe</code> can auto-elevate and execute a specified binary or script.(Citation: enigma0x3 Fileless UAC Bypass)(Citation: Fortinet Fareit)
 
   Another bypass is possible through some lateral movement techniques if credentials for an account with administrator privileges are known, since UAC is a single system security mechanism, and the privilege or integrity of a process running on one system will be unknown on remote systems and default to high integrity.(Citation: SANS UAC Bypass)
+guid: 3f627297-6c38-4e7d-a278-fc2563eaaeaa
+name: Bypass UAC using Fodhelper - PowerShell
+tactic:
+  - privilege-escalation
+  - defense-evasion
+technique:
+  - T1548.002
+os:
+  - windows
+description: |
+  PowerShell code to bypass User Account Control using the Windows 10 Features on Demand Helper (fodhelper.exe). Requires Windows 10.
+  Upon execution command prompt will be opened.
+sigma: false
+sigma_rule: []

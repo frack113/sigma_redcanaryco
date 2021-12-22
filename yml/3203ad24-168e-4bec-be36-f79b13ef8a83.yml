@@ -1,3 +1,9 @@
+Attack_name: Process Injection
+Attack_description: "Adversaries may inject code into processes in order to evade process-based defenses as well as possibly elevate privileges. Process injection is a method of executing arbitrary code\
+  \ in the address space of a separate live process. Running code in the context of another process may allow access to the process's memory, system/network resources, and possibly elevated privileges.\
+  \ Execution via process injection may also evade detection from security products since the execution is masked under a legitimate process. \n\nThere are many different ways to inject code into a process,\
+  \ many of which abuse legitimate functionalities. These implementations exist for every major OS but are typically platform specific. \n\nMore sophisticated samples may perform multiple process injections\
+  \ to segment modules and further evade detection, utilizing named pipes or other inter-process communication (IPC) mechanisms as a communication channel. "
 guid: 3203ad24-168e-4bec-be36-f79b13ef8a83
 name: Remote Process Injection in LSASS via mimikatz
 tactic:
@@ -5,8 +11,6 @@ tactic:
   - defense-evasion
 technique:
   - T1055
-sigma: false
-sigma_rule: []
 os:
   - windows
 description: |
@@ -15,9 +19,5 @@ description: |
   It must be executed in the context of a user who is privileged on remote `machine`.
 
   The effect of `/inject` is explained in <https://blog.3or.de/mimikatz-deep-dive-on-lsadumplsa-patch-and-inject.html>
-Attack_name: Process Injection
-Attack_description: "Adversaries may inject code into processes in order to evade process-based defenses as well as possibly elevate privileges. Process injection is a method of executing arbitrary code\
-  \ in the address space of a separate live process. Running code in the context of another process may allow access to the process's memory, system/network resources, and possibly elevated privileges.\
-  \ Execution via process injection may also evade detection from security products since the execution is masked under a legitimate process. \n\nThere are many different ways to inject code into a process,\
-  \ many of which abuse legitimate functionalities. These implementations exist for every major OS but are typically platform specific. \n\nMore sophisticated samples may perform multiple process injections\
-  \ to segment modules and further evade detection, utilizing named pipes or other inter-process communication (IPC) mechanisms as a communication channel. "
+sigma: false
+sigma_rule: []

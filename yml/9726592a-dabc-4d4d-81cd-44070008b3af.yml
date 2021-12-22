@@ -1,17 +1,3 @@
-guid: 9726592a-dabc-4d4d-81cd-44070008b3af
-name: Crafting Active Directory golden tickets with mimikatz
-tactic:
-  - credential-access
-technique:
-  - T1558.001
-sigma: false
-sigma_rule: []
-os:
-  - windows
-description: |
-  Once the hash of the special krbtgt user is retrieved it is possible to craft Kerberos Ticket Granting Ticket impersonating any user in the Active Directory domain.
-  This test crafts a Golden Ticket and then performs an SMB request with it for the SYSVOL share, thus triggering a service ticket request (event ID 4769).
-  The generated ticket is injected in a new empty Windows session and discarded after, so it does not pollute the current Windows session.
 Attack_name: Golden Ticket
 Attack_description: "Adversaries who have the KRBTGT account password hash may forge Kerberos ticket-granting tickets (TGT), also known as a golden ticket.(Citation: AdSecurity Kerberos GT Aug 2015) Golden\
   \ tickets enable adversaries to generate authentication material for any account in Active Directory.(Citation: CERT-EU Golden Ticket Protection) \n\nUsing a golden ticket, adversaries are then able to\
@@ -19,3 +5,29 @@ Attack_description: "Adversaries who have the KRBTGT account password hash may f
   \ ADSecurity Detecting Forged Tickets)\n\nThe KDC service runs all on domain controllers that are part of an Active Directory domain. KRBTGT is the Kerberos Key Distribution Center (KDC) service account\
   \ and is responsible for encrypting and signing all Kerberos tickets.(Citation: ADSecurity Kerberos and KRBTGT) The KRBTGT password hash may be obtained using [OS Credential Dumping](https://attack.mitre.org/techniques/T1003)\
   \ and privileged access to a domain controller."
+guid: 9726592a-dabc-4d4d-81cd-44070008b3af
+name: Crafting Active Directory golden tickets with mimikatz
+tactic:
+  - credential-access
+technique:
+  - T1558.001
+os:
+  - windows
+description: |
+  Once the hash of the special krbtgt user is retrieved it is possible to craft Kerberos Ticket Granting Ticket impersonating any user in the Active Directory domain.
+  This test crafts a Golden Ticket and then performs an SMB request with it for the SYSVOL share, thus triggering a service ticket request (event ID 4769).
+  The generated ticket is injected in a new empty Windows session and discarded after, so it does not pollute the current Windows session.
+sigma: true
+sigma_rule:
+  - id: 06d71506-7beb-4f22-8888-e2e5e2ca7fd8
+    name: win_alert_mimikatz_keywords.yml
+  - id: a642964e-bead-4bed-8910-1bb4d63e3b4d
+    name: win_mimikatz_command_line.yms
+  - id: f62176f3-8128-4faa-bf6c-83261322e5eb
+    name: powershell_malicious_keywords.yml
+  - id: 602a1f13-c640-4d73-b053-be9a2fa58b96
+    name: sysmon_detect_powerup_dllhijacking.yml
+  - id: 192a0330-c20b-4356-90b6-7b7049ae0b87
+    name: win_overpass_the_hash.yml
+  - id: 8eef149c-bd26-49f2-9e5a-9b00e3af499b
+    name: win_pass_the_hash_2.yml

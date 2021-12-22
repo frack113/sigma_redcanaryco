@@ -1,19 +1,19 @@
+Attack_name: Local Groups
+Attack_description: |-
+  Adversaries may attempt to find local system groups and permission settings. The knowledge of local system permission groups can help adversaries determine which groups exist and which users belong to a particular group. Adversaries may use this information to determine which users have elevated permissions, such as the users found within the local administrators group.
+
+  Commands such as <code>net localgroup</code> of the [Net](https://attack.mitre.org/software/S0039) utility, <code>dscl . -list /Groups</code> on macOS, and <code>groups</code> on Linux can list local groups.
 guid: 952931a4-af0b-4335-bbbe-73c8c5b327ae
 name: Permission Groups Discovery (Local)
 tactic:
   - discovery
 technique:
   - T1069.001
-sigma: false
-sigma_rule: []
 os:
   - macos
   - linux
 description: 'Permission Groups Discovery
 
   '
-Attack_name: Local Groups
-Attack_description: |-
-  Adversaries may attempt to find local system groups and permission settings. The knowledge of local system permission groups can help adversaries determine which groups exist and which users belong to a particular group. Adversaries may use this information to determine which users have elevated permissions, such as the users found within the local administrators group.
-
-  Commands such as <code>net localgroup</code> of the [Net](https://attack.mitre.org/software/S0039) utility, <code>dscl . -list /Groups</code> on macOS, and <code>groups</code> on Linux can list local groups.
+sigma: false
+sigma_rule: []

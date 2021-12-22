@@ -1,19 +1,19 @@
+Attack_name: Software Discovery
+Attack_description: |-
+  Adversaries may attempt to get a listing of software and software versions that are installed on a system or in a cloud environment. Adversaries may use the information from [Software Discovery](https://attack.mitre.org/techniques/T1518) during automated discovery to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or attempts specific actions.
+
+  Adversaries may attempt to enumerate software for a variety of reasons, such as figuring out what security measures are present or if the compromised system has a version of software that is vulnerable to [Exploitation for Privilege Escalation](https://attack.mitre.org/techniques/T1068).
 guid: 103d6533-fd2a-4d08-976a-4a598565280f
 name: Find and Display Safari Browser Version
 tactic:
   - discovery
 technique:
   - T1518
-sigma: false
-sigma_rule: []
 os:
   - macos
 description: 'Adversaries may attempt to get a listing of non-security related software that is installed on the system. Adversaries may use the information from Software Discovery during automated discovery
   to shape follow-on behaviors
 
   '
-Attack_name: Software Discovery
-Attack_description: |-
-  Adversaries may attempt to get a listing of software and software versions that are installed on a system or in a cloud environment. Adversaries may use the information from [Software Discovery](https://attack.mitre.org/techniques/T1518) during automated discovery to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or attempts specific actions.
-
-  Adversaries may attempt to enumerate software for a variety of reasons, such as figuring out what security measures are present or if the compromised system has a version of software that is vulnerable to [Exploitation for Privilege Escalation](https://attack.mitre.org/techniques/T1068).
+sigma: false
+sigma_rule: []

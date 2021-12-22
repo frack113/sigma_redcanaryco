@@ -1,18 +1,18 @@
+Attack_name: Account Access Removal
+Attack_description: |-
+  Adversaries may interrupt availability of system and network resources by inhibiting access to accounts utilized by legitimate users. Accounts may be deleted, locked, or manipulated (ex: changed credentials) to remove access to accounts.
+
+  Adversaries may also subsequently log off and/or reboot boxes to set malicious changes into place.(Citation: CarbonBlack LockerGoga 2019)(Citation: Unit42 LockerGoga 2019)
 guid: 43f71395-6c37-498e-ab17-897d814a0947
 name: Remove Account From Domain Admin Group
 tactic:
   - impact
 technique:
   - T1531
-sigma: false
-sigma_rule: []
 os:
   - windows
 description: 'This test will remove an account from the domain admins group
 
   '
-Attack_name: Account Access Removal
-Attack_description: |-
-  Adversaries may interrupt availability of system and network resources by inhibiting access to accounts utilized by legitimate users. Accounts may be deleted, locked, or manipulated (ex: changed credentials) to remove access to accounts.
-
-  Adversaries may also subsequently log off and/or reboot boxes to set malicious changes into place.(Citation: CarbonBlack LockerGoga 2019)(Citation: Unit42 LockerGoga 2019)
+sigma: false
+sigma_rule: []

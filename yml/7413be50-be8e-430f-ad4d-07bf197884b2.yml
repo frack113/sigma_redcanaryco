@@ -1,20 +1,20 @@
+Attack_name: Local Groups
+Attack_description: |-
+  Adversaries may attempt to find local system groups and permission settings. The knowledge of local system permission groups can help adversaries determine which groups exist and which users belong to a particular group. Adversaries may use this information to determine which users have elevated permissions, such as the users found within the local administrators group.
+
+  Commands such as <code>net localgroup</code> of the [Net](https://attack.mitre.org/software/S0039) utility, <code>dscl . -list /Groups</code> on macOS, and <code>groups</code> on Linux can list local groups.
 guid: 7413be50-be8e-430f-ad4d-07bf197884b2
 name: Wmic Group Discovery
 tactic:
   - discovery
 technique:
   - T1069.001
-sigma: true
-sigma_rule:
-  - id: 164eda96-11b2-430b-85ff-6a265c15bf32
-    name: win_pc_suspicious_ad_reco.yml
 os:
   - windows
 description: 'Utilizing wmic.exe to enumerate groups on the local system. Upon execution, information will be displayed of local groups on system.
 
   '
-Attack_name: Local Groups
-Attack_description: |-
-  Adversaries may attempt to find local system groups and permission settings. The knowledge of local system permission groups can help adversaries determine which groups exist and which users belong to a particular group. Adversaries may use this information to determine which users have elevated permissions, such as the users found within the local administrators group.
-
-  Commands such as <code>net localgroup</code> of the [Net](https://attack.mitre.org/software/S0039) utility, <code>dscl . -list /Groups</code> on macOS, and <code>groups</code> on Linux can list local groups.
+sigma: true
+sigma_rule:
+  - id: 164eda96-11b2-430b-85ff-6a265c15bf32
+    name: win_pc_suspicious_ad_reco.yml

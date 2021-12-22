@@ -1,20 +1,3 @@
-guid: 0e56bf29-ff49-4ea5-9af4-3b81283fd513
-name: Extracting passwords with findstr
-tactic:
-  - credential-access
-technique:
-  - T1552.001
-sigma: true
-sigma_rule:
-  - id: f576a613-2392-4067-9d1a-9345fb58d8d1
-    name: process_creation_automated_collection.yml
-  - id: bd5971a7-626d-46ab-8176-ed643f694f68
-    name: powershell_suspicious_extracting.yml
-os:
-  - windows
-description: 'Extracting Credentials from Files. Upon execution, the contents of files that contain the word "password" will be displayed.
-
-  '
 Attack_name: Credentials In Files
 Attack_description: |-
   Adversaries may search local file systems and remote file shares for files containing insecurely stored credentials. These can be files created by users to store their own credentials, shared credential stores for a group of individuals, configuration files containing passwords for a system or service, or source code/binary files containing embedded passwords.
@@ -22,3 +5,20 @@ Attack_description: |-
   It is possible to extract passwords from backups or saved virtual machines through [OS Credential Dumping](https://attack.mitre.org/techniques/T1003). (Citation: CG 2014) Passwords may also be obtained from Group Policy Preferences stored on the Windows Domain Controller. (Citation: SRD GPP)
 
   In cloud and/or containerized environments, authenticated user and service account credentials are often stored in local configuration and credential files.(Citation: Unit 42 Hildegard Malware) They may also be found as parameters to deployment commands in container logs.(Citation: Unit 42 Unsecured Docker Daemons) In some cases, these files can be copied and reused on another machine or the contents can be read and then used to authenticate without needing to copy any files.(Citation: Specter Ops - Cloud Credential Storage)
+guid: 0e56bf29-ff49-4ea5-9af4-3b81283fd513
+name: Extracting passwords with findstr
+tactic:
+  - credential-access
+technique:
+  - T1552.001
+os:
+  - windows
+description: 'Extracting Credentials from Files. Upon execution, the contents of files that contain the word "password" will be displayed.
+
+  '
+sigma: true
+sigma_rule:
+  - id: f576a613-2392-4067-9d1a-9345fb58d8d1
+    name: process_creation_automated_collection.yml
+  - id: bd5971a7-626d-46ab-8176-ed643f694f68
+    name: powershell_suspicious_extracting.yml

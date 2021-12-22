@@ -1,16 +1,3 @@
-guid: 453acf13-1dbd-47d7-b28a-172ce9228023
-name: Offline Credential Theft With Mimikatz
-tactic:
-  - credential-access
-technique:
-  - T1003.001
-sigma: false
-sigma_rule: []
-os:
-  - windows
-description: |
-  The memory of lsass.exe is often dumped for offline credential theft attacks. Adversaries commonly perform this offline analysis with
-  Mimikatz. This tool is available at https://github.com/gentilkiwi/mimikatz and can be obtained using the get-prereq_commands.
 Attack_name: LSASS Memory
 Attack_description: |
   Adversaries may attempt to access credential material stored in the process memory of the Local Security Authority Subsystem Service (LSASS). After a user logs on, the system generates and stores a variety of credential materials in LSASS process memory. These credential materials can be harvested by an administrative user or SYSTEM and used to conduct [Lateral Movement](https://attack.mitre.org/tactics/TA0008) using [Use Alternate Authentication Material](https://attack.mitre.org/techniques/T1550).
@@ -35,3 +22,16 @@ Attack_description: |
   * Wdigest: The Digest Authentication protocol is designed for use with Hypertext Transfer Protocol (HTTP) and Simple Authentication Security Layer (SASL) exchanges.(Citation: TechNet Blogs Credential Protection)
   * Kerberos: Preferred for mutual client-server domain authentication in Windows 2000 and later.
   * CredSSP:  Provides SSO and Network Level Authentication for Remote Desktop Services.(Citation: TechNet Blogs Credential Protection)
+guid: 453acf13-1dbd-47d7-b28a-172ce9228023
+name: Offline Credential Theft With Mimikatz
+tactic:
+  - credential-access
+technique:
+  - T1003.001
+os:
+  - windows
+description: |
+  The memory of lsass.exe is often dumped for offline credential theft attacks. Adversaries commonly perform this offline analysis with
+  Mimikatz. This tool is available at https://github.com/gentilkiwi/mimikatz and can be obtained using the get-prereq_commands.
+sigma: false
+sigma_rule: []

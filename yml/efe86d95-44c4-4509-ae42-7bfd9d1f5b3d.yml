@@ -1,16 +1,16 @@
+Attack_name: Windows Remote Management
+Attack_description: |-
+  Adversaries may use [Valid Accounts](https://attack.mitre.org/techniques/T1078) to interact with remote systems using Windows Remote Management (WinRM). The adversary may then perform actions as the logged-on user.
+
+  WinRM is the name of both a Windows service and a protocol that allows a user to interact with a remote system (e.g., run an executable, modify the Registry, modify services).(Citation: Microsoft WinRM) It may be called with the `winrm` command or by any number of programs such as PowerShell.(Citation: Jacobsen 2014)
 guid: efe86d95-44c4-4509-ae42-7bfd9d1f5b3d
 name: WinRM Access with Evil-WinRM
 tactic:
   - lateral-movement
 technique:
   - T1021.006
-sigma: false
-sigma_rule: []
 os:
   - windows
 description: An adversary may attempt to use Evil-WinRM with a valid account to interact with remote systems that have WinRM enabled
-Attack_name: Windows Remote Management
-Attack_description: |-
-  Adversaries may use [Valid Accounts](https://attack.mitre.org/techniques/T1078) to interact with remote systems using Windows Remote Management (WinRM). The adversary may then perform actions as the logged-on user.
-
-  WinRM is the name of both a Windows service and a protocol that allows a user to interact with a remote system (e.g., run an executable, modify the Registry, modify services).(Citation: Microsoft WinRM) It may be called with the `winrm` command or by any number of programs such as PowerShell.(Citation: Jacobsen 2014)
+sigma: false
+sigma_rule: []

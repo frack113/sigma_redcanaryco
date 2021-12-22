@@ -1,17 +1,3 @@
-guid: 2382dee2-a75f-49aa-9378-f52df6ed3fb1
-name: Execute a Command as a Service
-tactic:
-  - execution
-technique:
-  - T1569.002
-sigma: false
-sigma_rule: []
-os:
-  - windows
-description: |
-  Creates a service specifying an arbitrary command and executes it. When executing commands such as PowerShell, the service will report that it did not start correctly even when code executes properly.
-
-  Upon successful execution, cmd.exe creates a new service using sc.exe that will start powershell.exe to create a new file `art-marker.txt`
 Attack_name: Service Execution
 Attack_description: |-
   Adversaries may abuse the Windows service control manager to execute malicious commands or payloads. The Windows service control manager (<code>services.exe</code>) is an interface to manage and manipulate services.(Citation: Microsoft Service Control Manager) The service control manager is accessible to users via GUI components as well as system utilities such as <code>sc.exe</code> and [Net](https://attack.mitre.org/software/S0039).
@@ -19,3 +5,17 @@ Attack_description: |-
   [PsExec](https://attack.mitre.org/software/S0029) can also be used to execute commands or payloads via a temporary Windows service created through the service control manager API.(Citation: Russinovich Sysinternals)
 
   Adversaries may leverage these mechanisms to execute malicious content. This can be done by either executing a new or modified service. This technique is the execution used in conjunction with [Windows Service](https://attack.mitre.org/techniques/T1543/003) during service persistence or privilege escalation.
+guid: 2382dee2-a75f-49aa-9378-f52df6ed3fb1
+name: Execute a Command as a Service
+tactic:
+  - execution
+technique:
+  - T1569.002
+os:
+  - windows
+description: |
+  Creates a service specifying an arbitrary command and executes it. When executing commands such as PowerShell, the service will report that it did not start correctly even when code executes properly.
+
+  Upon successful execution, cmd.exe creates a new service using sc.exe that will start powershell.exe to create a new file `art-marker.txt`
+sigma: false
+sigma_rule: []

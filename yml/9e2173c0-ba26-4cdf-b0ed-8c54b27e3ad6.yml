@@ -1,11 +1,14 @@
+Attack_name: OS Credential Dumping
+Attack_description: |
+  Adversaries may attempt to dump credentials to obtain account login and credential material, normally in the form of a hash or a clear text password, from the operating system and software. Credentials can then be used to perform [Lateral Movement](https://attack.mitre.org/tactics/TA0008) and access restricted information.
+
+  Several of the tools mentioned in associated sub-techniques may be used by both adversaries and professional security testers. Additional custom tools likely exist as well.
 guid: 9e2173c0-ba26-4cdf-b0ed-8c54b27e3ad6
 name: Credential Dumping with NPPSpy
 tactic:
   - credential-access
 technique:
   - T1003
-sigma: false
-sigma_rule: []
 os:
   - windows
 description: |-
@@ -13,8 +16,5 @@ description: |-
   After user's logging in cleartext password is saved in C:\NPPSpy.txt.
   Clean up deletes the files and reverses Registry changes.
   NPPSpy Source: https://github.com/gtworek/PSBits/tree/master/PasswordStealing/NPPSpy
-Attack_name: OS Credential Dumping
-Attack_description: |
-  Adversaries may attempt to dump credentials to obtain account login and credential material, normally in the form of a hash or a clear text password, from the operating system and software. Credentials can then be used to perform [Lateral Movement](https://attack.mitre.org/tactics/TA0008) and access restricted information.
-
-  Several of the tools mentioned in associated sub-techniques may be used by both adversaries and professional security testers. Additional custom tools likely exist as well.
+sigma: false
+sigma_rule: []

@@ -1,14 +1,14 @@
+Attack_name: Clipboard Data
+Attack_description: "Adversaries may collect data stored in the clipboard from users copying information within or between applications. \n\nIn Windows, Applications can access clipboard data by using the\
+  \ Windows API.(Citation: MSDN Clipboard) OSX provides a native command, <code>pbpaste</code>, to grab clipboard contents.(Citation: Operating with EmPyre)"
 guid: 1ac2247f-65f8-4051-b51f-b0ccdfaaa5ff
 name: Execute commands from clipboard
 tactic:
   - collection
 technique:
   - T1115
-sigma: false
-sigma_rule: []
 os:
   - macos
 description: Echo a command to clipboard and execute it
-Attack_name: Clipboard Data
-Attack_description: "Adversaries may collect data stored in the clipboard from users copying information within or between applications. \n\nIn Windows, Applications can access clipboard data by using the\
-  \ Windows API.(Citation: MSDN Clipboard) OSX provides a native command, <code>pbpaste</code>, to grab clipboard contents.(Citation: Operating with EmPyre)"
+sigma: false
+sigma_rule: []

@@ -1,22 +1,22 @@
+Attack_name: Domain Account
+Attack_description: |-
+  Adversaries may attempt to get a listing of domain accounts. This information can help adversaries determine which domain accounts exist to aid in follow-on behavior.
+
+  Commands such as <code>net user /domain</code> and <code>net group /domain</code> of the [Net](https://attack.mitre.org/software/S0039) utility, <code>dscacheutil -q group</code>on macOS, and <code>ldapsearch</code> on Linux can list domain users and groups.
 guid: 8b8a6449-be98-4f42-afd2-dedddc7453b2
 name: Enumerate all accounts via PowerShell (Domain)
 tactic:
   - discovery
 technique:
   - T1087.002
+os:
+  - windows
+description: 'Enumerate all accounts via PowerShell. Upon execution, lots of user account and group information will be displayed.
+
+  '
 sigma: true
 sigma_rule:
   - id: cef24b90-dddc-4ae1-a09a-8764872f69fc
     name: powershell_pm_suspicious_local_group_reco.yml
   - id: fa6a5a45-3ee2-4529-aa14-ee5edc9e29cb
     name: powershell_ps_suspicious_local_group_reco.yml
-os:
-  - windows
-description: 'Enumerate all accounts via PowerShell. Upon execution, lots of user account and group information will be displayed.
-
-  '
-Attack_name: Domain Account
-Attack_description: |-
-  Adversaries may attempt to get a listing of domain accounts. This information can help adversaries determine which domain accounts exist to aid in follow-on behavior.
-
-  Commands such as <code>net user /domain</code> and <code>net group /domain</code> of the [Net](https://attack.mitre.org/software/S0039) utility, <code>dscacheutil -q group</code>on macOS, and <code>ldapsearch</code> on Linux can list domain users and groups.

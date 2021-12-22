@@ -1,18 +1,3 @@
-guid: 896dfe97-ae43-4101-8e96-9a7996555d80
-name: Make and modify binary from C source
-tactic:
-  - privilege-escalation
-  - defense-evasion
-technique:
-  - T1548.001
-sigma: false
-sigma_rule: []
-os:
-  - macos
-  - linux
-description: 'Make, change owner, and change file attributes on a C source code file
-
-  '
 Attack_name: Setuid and Setgid
 Attack_description: |-
   An adversary may perform shell escapes or exploit vulnerabilities in an application with the setsuid or setgid bits to get code running in a different user’s context. On Linux or macOS, when the setuid or setgid bits are set for an application, the application will run with the privileges of the owning user or group respectively. (Citation: setuid man page). Normally an application is run in the current user’s context, regardless of which user or group owns the application. However, there are instances where programs need to be executed in an elevated context to function properly, but the user running them doesn’t need the elevated privileges.
@@ -20,3 +5,18 @@ Attack_description: |-
   Instead of creating an entry in the sudoers file, which must be done by root, any user can specify the setuid or setgid flag to be set for their own applications. These bits are indicated with an "s" instead of an "x" when viewing a file's attributes via <code>ls -l</code>. The <code>chmod</code> program can set these bits with via bitmasking, <code>chmod 4777 [file]</code> or via shorthand naming, <code>chmod u+s [file]</code>.
 
   Adversaries can use this mechanism on their own malware to make sure they're able to execute in elevated contexts in the future.(Citation: OSX Keydnap malware).
+guid: 896dfe97-ae43-4101-8e96-9a7996555d80
+name: Make and modify binary from C source
+tactic:
+  - privilege-escalation
+  - defense-evasion
+technique:
+  - T1548.001
+os:
+  - macos
+  - linux
+description: 'Make, change owner, and change file attributes on a C source code file
+
+  '
+sigma: false
+sigma_rule: []

@@ -1,17 +1,3 @@
-guid: 687dcb93-9656-4853-9c36-9977315e9d23
-name: Linux - Load Kernel Module via insmod
-tactic:
-  - privilege-escalation
-  - persistence
-technique:
-  - T1547.006
-sigma: false
-sigma_rule: []
-os:
-  - linux
-description: 'This test uses the insmod command to load a kernel module for Linux.
-
-  '
 Attack_name: Kernel Modules and Extensions
 Attack_description: |-
   Adversaries may modify the kernel to automatically execute programs on system boot. Loadable Kernel Modules (LKMs) are pieces of code that can be loaded and unloaded into the kernel upon demand. They extend the functionality of the kernel without the need to reboot the system. For example, one type of module is the device driver, which allows the kernel to access hardware connected to the system. (Citation: Linux Kernel Programming) 
@@ -21,3 +7,17 @@ Attack_description: |-
   Kernel extensions, also called kext, are used for macOS to load functionality onto a system similar to LKMs for Linux. They are loaded and unloaded through <code>kextload</code> and <code>kextunload</code> commands. Since macOS Catalina 10.15, kernel extensions have been deprecated on macOS systems.(Citation: Apple Kernel Extension Deprecation)
 
   Adversaries can use LKMs and kexts to covertly persist on a system and elevate privileges. Examples have been found in the wild and there are some open source projects. (Citation: Volatility Phalanx2) (Citation: CrowdStrike Linux Rootkit) (Citation: GitHub Reptile) (Citation: GitHub Diamorphine)(Citation: RSAC 2015 San Francisco Patrick Wardle) (Citation: Synack Secure Kernel Extension Broken)(Citation: Securelist Ventir) (Citation: Trend Micro Skidmap)
+guid: 687dcb93-9656-4853-9c36-9977315e9d23
+name: Linux - Load Kernel Module via insmod
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1547.006
+os:
+  - linux
+description: 'This test uses the insmod command to load a kernel module for Linux.
+
+  '
+sigma: false
+sigma_rule: []

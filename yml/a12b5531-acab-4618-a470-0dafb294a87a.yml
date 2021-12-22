@@ -1,17 +1,3 @@
-guid: a12b5531-acab-4618-a470-0dafb294a87a
-name: Azure AD Application Hijacking - App Registration
-tactic:
-  - persistence
-technique:
-  - T1098.001
-sigma: false
-sigma_rule: []
-os:
-  - azure-ad
-description: |
-  Add a certificate to an Application through its App Registration.
-  The certificate can then be used to authenticate as the application and benefit from its rights.
-  An account with high-enough Azure AD privileges is needed, such as Global Administrator or Application Administrator. The account authentication must be without MFA.
 Attack_name: Additional Cloud Credentials
 Attack_description: |-
   Adversaries may add adversary-controlled credentials to a cloud account to maintain persistent access to victim accounts and instances within the environment.
@@ -19,3 +5,17 @@ Attack_description: |-
   Adversaries may add credentials for Service Principals and Applications in addition to existing legitimate credentials in Azure AD.(Citation: Microsoft SolarWinds Customer Guidance)(Citation: Blue Cloud of Death)(Citation: Blue Cloud of Death Video) These credentials include both x509 keys and passwords.(Citation: Microsoft SolarWinds Customer Guidance) With sufficient permissions, there are a variety of ways to add credentials including the Azure Portal, Azure command line interface, and Azure or Az PowerShell modules.(Citation: Demystifying Azure AD Service Principals)
 
   In infrastructure-as-a-service (IaaS) environments, after gaining access through [Cloud Accounts](https://attack.mitre.org/techniques/T1078/004), adversaries may generate or import their own SSH keys using either the <code>CreateKeyPair</code> or <code>ImportKeyPair</code> API in AWS or the <code>gcloud compute os-login ssh-keys add</code> command in GCP.(Citation: GCP SSH Key Add) This allows persistent access to instances within the cloud environment without further usage of the compromised cloud accounts.(Citation: Expel IO Evil in AWS)(Citation: Expel Behind the Scenes)
+guid: a12b5531-acab-4618-a470-0dafb294a87a
+name: Azure AD Application Hijacking - App Registration
+tactic:
+  - persistence
+technique:
+  - T1098.001
+os:
+  - azure-ad
+description: |
+  Add a certificate to an Application through its App Registration.
+  The certificate can then be used to authenticate as the application and benefit from its rights.
+  An account with high-enough Azure AD privileges is needed, such as Global Administrator or Application Administrator. The account authentication must be without MFA.
+sigma: false
+sigma_rule: []

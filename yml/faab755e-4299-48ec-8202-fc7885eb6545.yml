@@ -1,18 +1,3 @@
-guid: faab755e-4299-48ec-8202-fc7885eb6545
-name: List Google Chrome Bookmarks on Windows with powershell
-tactic:
-  - discovery
-technique:
-  - T1217
-sigma: true
-sigma_rule:
-  - id: e0565f5d-d420-4e02-8a68-ac00d864f9cf
-    name: powershell_ps_get-childItem_bookmarks.yml
-os:
-  - windows
-description: |
-  Searches for Google Chromes's Bookmarks file (on Windows distributions) that contains bookmarks.
-  Upon execution, paths that contain bookmark files will be displayed.
 Attack_name: Browser Bookmark Discovery
 Attack_description: |-
   Adversaries may enumerate browser bookmarks to learn more about compromised hosts. Browser bookmarks may reveal personal information about users (ex: banking sites, interests, social media, etc.) as well as details about internal network resources such as servers, tools/dashboards, or other related infrastructure.
@@ -20,3 +5,18 @@ Attack_description: |-
   Browser bookmarks may also highlight additional targets after an adversary has access to valid credentials, especially [Credentials In Files](https://attack.mitre.org/techniques/T1552/001) associated with logins cached by a browser.
 
   Specific storage locations vary based on platform and/or application, but browser bookmarks are typically stored in local files/databases.
+guid: faab755e-4299-48ec-8202-fc7885eb6545
+name: List Google Chrome Bookmarks on Windows with powershell
+tactic:
+  - discovery
+technique:
+  - T1217
+os:
+  - windows
+description: |
+  Searches for Google Chromes's Bookmarks file (on Windows distributions) that contains bookmarks.
+  Upon execution, paths that contain bookmark files will be displayed.
+sigma: true
+sigma_rule:
+  - id: e0565f5d-d420-4e02-8a68-ac00d864f9cf
+    name: powershell_ps_get-childItem_bookmarks.yml

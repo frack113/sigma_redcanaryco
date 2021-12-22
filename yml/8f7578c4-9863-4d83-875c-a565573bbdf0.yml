@@ -1,13 +1,14 @@
+Attack_name: Query Registry
+Attack_description: |-
+  Adversaries may interact with the Windows Registry to gather information about the system, configuration, and installed software.
+
+  The Registry contains a significant amount of information about the operating system, configuration, software, and security.(Citation: Wikipedia Windows Registry) Information can easily be queried using the [Reg](https://attack.mitre.org/software/S0075) utility, though other means to access the Registry exist. Some of the information may help adversaries to further their operation within a network. Adversaries may use the information from [Query Registry](https://attack.mitre.org/techniques/T1012) during automated discovery to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or attempts specific actions.
 guid: 8f7578c4-9863-4d83-875c-a565573bbdf0
 name: Query Registry
 tactic:
   - discovery
 technique:
   - T1012
-sigma: true
-sigma_rule:
-  - id: 970007b7-ce32-49d0-a4a4-fbef016950bd
-    name: win_query_registry.yml
 os:
   - windows
 description: |
@@ -18,8 +19,7 @@ description: |
   https://blog.cylance.com/windows-registry-persistence-part-1-introduction-attack-phases-and-windows-services
   http://www.handgrep.se/repository/cheatsheets/postexploitation/WindowsPost-Exploitation.pdf
   https://www.offensive-security.com/wp-content/uploads/2015/04/wp.Registry_Quick_Find_Chart.en_us.pdf
-Attack_name: Query Registry
-Attack_description: |-
-  Adversaries may interact with the Windows Registry to gather information about the system, configuration, and installed software.
-
-  The Registry contains a significant amount of information about the operating system, configuration, software, and security.(Citation: Wikipedia Windows Registry) Information can easily be queried using the [Reg](https://attack.mitre.org/software/S0075) utility, though other means to access the Registry exist. Some of the information may help adversaries to further their operation within a network. Adversaries may use the information from [Query Registry](https://attack.mitre.org/techniques/T1012) during automated discovery to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or attempts specific actions.
+sigma: true
+sigma_rule:
+  - id: 970007b7-ce32-49d0-a4a4-fbef016950bd
+    name: win_query_registry.yml

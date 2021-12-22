@@ -1,19 +1,19 @@
+Attack_name: Credentials from Password Stores
+Attack_description: Adversaries may search for common password storage locations to obtain user credentials. Passwords are stored in several places on a system, depending on the operating system or application
+  holding the credentials. There are also specific applications that store passwords to make it easier for users manage and maintain. Once credentials are obtained, they can be used to perform lateral movement
+  and access restricted information.
 guid: 234f9b7c-b53d-4f32-897b-b880a6c9ea7b
 name: Extract Windows Credential Manager via VBA
 tactic:
   - credential-access
 technique:
   - T1555
-sigma: true
-sigma_rule:
-  - id: e6ce8457-68b1-485b-9bdd-3c2b5d679aa9
-    name: sysmon_susp_winword_vbadll_load.yml
 os:
   - windows
 description: |
   This module will extract the credentials found within the Windows credential manager and dump
   them to $env:TEMP\windows-credentials.txt
-Attack_name: Credentials from Password Stores
-Attack_description: Adversaries may search for common password storage locations to obtain user credentials. Passwords are stored in several places on a system, depending on the operating system or application
-  holding the credentials. There are also specific applications that store passwords to make it easier for users manage and maintain. Once credentials are obtained, they can be used to perform lateral movement
-  and access restricted information.
+sigma: true
+sigma_rule:
+  - id: e6ce8457-68b1-485b-9bdd-3c2b5d679aa9
+    name: sysmon_susp_winword_vbadll_load.yml

@@ -1,18 +1,3 @@
-guid: 02f35d62-9fdc-4a97-b899-a5d9a876d295
-name: Potentially Unwanted Applications (PUA)
-tactic:
-  - execution
-technique:
-  - T1204.002
-sigma: false
-sigma_rule: []
-os:
-  - windows
-description: 'The Potentially Unwanted Applications (PUA) protection feature in antivirus software can identify and block PUAs from downloading and installing on endpoints in your network. These applications
-  are not considered viruses, malware, or other types of threats, but might perform actions on endpoints that adversely affect their performance or use. This file is similar to EICAR test virus file, but
-  is considered a Potentially Unwanted Application (PUA) instead of a VIRUS (i.e. not actually malicious, but is flagged as it to verify anti-pua protection).
-
-  '
 Attack_name: Malicious File
 Attack_description: |-
   An adversary may rely upon a user opening a malicious file in order to gain execution. Users may be subjected to social engineering to get them to open a file that will lead to code execution. This user action will typically be observed as follow-on behavior from [Spearphishing Attachment](https://attack.mitre.org/techniques/T1566/001). Adversaries may use several types of files that require a user to execute them, including .doc, .pdf, .xls, .rtf, .scr, .exe, .lnk, .pif, and .cpl.
@@ -20,3 +5,18 @@ Attack_description: |-
   Adversaries may employ various forms of [Masquerading](https://attack.mitre.org/techniques/T1036) on the file to increase the likelihood that a user will open it.
 
   While [Malicious File](https://attack.mitre.org/techniques/T1204/002) frequently occurs shortly after Initial Access it may occur at other phases of an intrusion, such as when an adversary places a file in a shared directory or on a user's desktop hoping that a user will click on it. This activity may also be seen shortly after [Internal Spearphishing](https://attack.mitre.org/techniques/T1534).
+guid: 02f35d62-9fdc-4a97-b899-a5d9a876d295
+name: Potentially Unwanted Applications (PUA)
+tactic:
+  - execution
+technique:
+  - T1204.002
+os:
+  - windows
+description: 'The Potentially Unwanted Applications (PUA) protection feature in antivirus software can identify and block PUAs from downloading and installing on endpoints in your network. These applications
+  are not considered viruses, malware, or other types of threats, but might perform actions on endpoints that adversely affect their performance or use. This file is similar to EICAR test virus file, but
+  is considered a Potentially Unwanted Application (PUA) instead of a VIRUS (i.e. not actually malicious, but is flagged as it to verify anti-pua protection).
+
+  '
+sigma: false
+sigma_rule: []

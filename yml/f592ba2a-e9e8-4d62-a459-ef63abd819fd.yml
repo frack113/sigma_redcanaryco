@@ -1,16 +1,3 @@
-guid: f592ba2a-e9e8-4d62-a459-ef63abd819fd
-name: Execute Commands
-tactic:
-  - execution
-technique:
-  - T1559.002
-sigma: false
-sigma_rule: []
-os:
-  - windows
-description: 'Executes commands via DDE using Microsfot Word
-
-  '
 Attack_name: Dynamic Data Exchange
 Attack_description: |-
   Adversaries may use Windows Dynamic Data Exchange (DDE) to execute arbitrary commands. DDE is a client-server protocol for one-time and/or continuous inter-process communication (IPC) between applications. Once a link is established, applications can autonomously exchange transactions consisting of strings, warm data links (notifications when a data item changes), hot data links (duplications of changes to a data item), and requests for command execution.
@@ -18,3 +5,16 @@ Attack_description: |-
   Object Linking and Embedding (OLE), or the ability to link data between documents, was originally implemented through DDE. Despite being superseded by [Component Object Model](https://attack.mitre.org/techniques/T1559/001), DDE may be enabled in Windows 10 and most of Microsoft Office 2016 via Registry keys. (Citation: BleepingComputer DDE Disabled in Word Dec 2017) (Citation: Microsoft ADV170021 Dec 2017) (Citation: Microsoft DDE Advisory Nov 2017)
 
   Microsoft Office documents can be poisoned with DDE commands (Citation: SensePost PS DDE May 2016) (Citation: Kettle CSV DDE Aug 2014), directly or through embedded files (Citation: Enigma Reviving DDE Jan 2018), and used to deliver execution via [Phishing](https://attack.mitre.org/techniques/T1566) campaigns or hosted Web content, avoiding the use of Visual Basic for Applications (VBA) macros. (Citation: SensePost MacroLess DDE Oct 2017) DDE could also be leveraged by an adversary operating on a compromised machine who does not have direct access to a [Command and Scripting Interpreter](https://attack.mitre.org/techniques/T1059).
+guid: f592ba2a-e9e8-4d62-a459-ef63abd819fd
+name: Execute Commands
+tactic:
+  - execution
+technique:
+  - T1559.002
+os:
+  - windows
+description: 'Executes commands via DDE using Microsfot Word
+
+  '
+sigma: false
+sigma_rule: []

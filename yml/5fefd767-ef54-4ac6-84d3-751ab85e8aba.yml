@@ -1,3 +1,8 @@
+Attack_name: Re-opened Applications
+Attack_description: "Adversaries may modify plist files to automatically run an application when a user logs in. Starting in Mac OS X 10.7 (Lion), users can specify certain applications to be re-opened\
+  \ when a user logs into their machine after reboot. While this is usually done via a Graphical User Interface (GUI) on an app-by-app basis, there are property list files (plist) that contain this information\
+  \ as well located at <code>~/Library/Preferences/com.apple.loginwindow.plist</code> and <code>~/Library/Preferences/ByHost/com.apple.loginwindow.* .plist</code>. \n\nAn adversary can modify one of these\
+  \ files directly to include a link to their malicious executable to provide a persistence mechanism each time the user reboots their machine (Citation: Methods of Mac Malware Persistence)."
 guid: 5fefd767-ef54-4ac6-84d3-751ab85e8aba
 name: Re-Opened Applications
 tactic:
@@ -5,16 +10,11 @@ tactic:
   - persistence
 technique:
   - T1547.007
-sigma: false
-sigma_rule: []
 os:
   - macos
 description: |
   Plist Method
 
   [Reference](https://developer.apple.com/library/content/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CustomLogin.html)
-Attack_name: Re-opened Applications
-Attack_description: "Adversaries may modify plist files to automatically run an application when a user logs in. Starting in Mac OS X 10.7 (Lion), users can specify certain applications to be re-opened\
-  \ when a user logs into their machine after reboot. While this is usually done via a Graphical User Interface (GUI) on an app-by-app basis, there are property list files (plist) that contain this information\
-  \ as well located at <code>~/Library/Preferences/com.apple.loginwindow.plist</code> and <code>~/Library/Preferences/ByHost/com.apple.loginwindow.* .plist</code>. \n\nAn adversary can modify one of these\
-  \ files directly to include a link to their malicious executable to provide a persistence mechanism each time the user reboots their machine (Citation: Methods of Mac Malware Persistence)."
+sigma: false
+sigma_rule: []

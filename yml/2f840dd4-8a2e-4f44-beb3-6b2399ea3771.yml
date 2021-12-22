@@ -1,19 +1,19 @@
-guid: 2f840dd4-8a2e-4f44-beb3-6b2399ea3771
-name: Changing RDP Port to Non Standard Port via Powershell
-tactic:
-  - lateral-movement
-technique:
-  - T1021.001
-sigma: false
-sigma_rule: []
-os:
-  - windows
-description: 'Changing RDP Port to Non Standard Port via Remote Desktop Application over Powershell
-
-  '
 Attack_name: Remote Desktop Protocol
 Attack_description: "Adversaries may use [Valid Accounts](https://attack.mitre.org/techniques/T1078) to log into a computer using the Remote Desktop Protocol (RDP). The adversary may then perform actions\
   \ as the logged-on user.\n\nRemote desktop is a common feature in operating systems. It allows a user to log into an interactive session with a system desktop graphical user interface on a remote system.\
   \ Microsoft refers to its implementation of the Remote Desktop Protocol (RDP) as Remote Desktop Services (RDS).(Citation: TechNet Remote Desktop Services) \n\nAdversaries may connect to a remote system\
   \ over RDP/RDS to expand access if the service is enabled and allows access to accounts with known credentials. Adversaries will likely use Credential Access techniques to acquire credentials to use with\
   \ RDP. Adversaries may also use RDP in conjunction with the [Accessibility Features](https://attack.mitre.org/techniques/T1546/008) technique for Persistence.(Citation: Alperovitch Malware)"
+guid: 2f840dd4-8a2e-4f44-beb3-6b2399ea3771
+name: Changing RDP Port to Non Standard Port via Powershell
+tactic:
+  - lateral-movement
+technique:
+  - T1021.001
+os:
+  - windows
+description: 'Changing RDP Port to Non Standard Port via Remote Desktop Application over Powershell
+
+  '
+sigma: false
+sigma_rule: []

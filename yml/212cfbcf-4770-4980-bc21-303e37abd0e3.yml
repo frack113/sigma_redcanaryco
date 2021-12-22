@@ -1,16 +1,3 @@
-guid: 212cfbcf-4770-4980-bc21-303e37abd0e3
-name: Auditing Configuration Changes on Linux Host
-tactic:
-  - defense-evasion
-technique:
-  - T1562.006
-sigma: false
-sigma_rule: []
-os:
-  - linux
-description: 'Emulates modification of auditd configuration files
-
-  '
 Attack_name: Indicator Blocking
 Attack_description: "An adversary may attempt to block indicators or events typically captured by sensors from being gathered and analyzed. This could include maliciously redirecting (Citation: Microsoft\
   \ Lamin Sept 2017) or even disabling host-based sensors, such as Event Tracing for Windows (ETW),(Citation: Microsoft About Event Tracing 2018) by tampering settings that control the collection and flow\
@@ -20,3 +7,16 @@ Attack_description: "An adversary may attempt to block indicators or events typi
   \ with the Registry to make alterations.\n\nIn the case of network-based reporting of indicators, an adversary may block traffic associated with reporting to prevent central analysis. This may be accomplished\
   \ by many means, such as stopping a local process responsible for forwarding telemetry and/or creating a host-based firewall rule to block traffic to specific hosts responsible for aggregating events,\
   \ such as security information and event management (SIEM) products. "
+guid: 212cfbcf-4770-4980-bc21-303e37abd0e3
+name: Auditing Configuration Changes on Linux Host
+tactic:
+  - defense-evasion
+technique:
+  - T1562.006
+os:
+  - linux
+description: 'Emulates modification of auditd configuration files
+
+  '
+sigma: false
+sigma_rule: []

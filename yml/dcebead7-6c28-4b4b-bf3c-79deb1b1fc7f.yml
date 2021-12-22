@@ -1,17 +1,3 @@
-guid: dcebead7-6c28-4b4b-bf3c-79deb1b1fc7f
-name: Create Volume Shadow Copy with vssadmin
-tactic:
-  - credential-access
-technique:
-  - T1003.003
-sigma: false
-sigma_rule: []
-os:
-  - windows
-description: |
-  This test is intended to be run on a domain Controller.
-
-  The Active Directory database NTDS.dit may be dumped by copying it from a Volume Shadow Copy.
 Attack_name: NTDS
 Attack_description: |
   Adversaries may attempt to access or create a copy of the Active Directory domain database in order to steal credential information, as well as obtain other information about domain members such as devices, users, and access rights. By default, the NTDS file (NTDS.dit) is located in <code>%SystemRoot%\NTDS\Ntds.dit</code> of a domain controller.(Citation: Wikipedia Active Directory)
@@ -24,3 +10,17 @@ Attack_description: |
   * secretsdump.py
   * Using the in-built Windows tool, ntdsutil.exe
   * Invoke-NinjaCopy
+guid: dcebead7-6c28-4b4b-bf3c-79deb1b1fc7f
+name: Create Volume Shadow Copy with vssadmin
+tactic:
+  - credential-access
+technique:
+  - T1003.003
+os:
+  - windows
+description: |
+  This test is intended to be run on a domain Controller.
+
+  The Active Directory database NTDS.dit may be dumped by copying it from a Volume Shadow Copy.
+sigma: false
+sigma_rule: []

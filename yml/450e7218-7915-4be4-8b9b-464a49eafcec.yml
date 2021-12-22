@@ -1,17 +1,3 @@
-guid: 450e7218-7915-4be4-8b9b-464a49eafcec
-name: Execute base64-encoded PowerShell from Windows Registry
-tactic:
-  - defense-evasion
-technique:
-  - T1027
-sigma: false
-sigma_rule: []
-os:
-  - windows
-description: |
-  Stores base64-encoded PowerShell code in the Windows Registry and deobfuscates it for execution. This is used by numerous adversaries and malicious tools.
-
-  Upon successful execution, powershell will execute encoded command and read/write from the registry.
 Attack_name: Obfuscated Files or Information
 Attack_description: "Adversaries may attempt to make an executable or file difficult to discover or analyze by encrypting, encoding, or otherwise obfuscating its contents on the system or in transit. This\
   \ is common behavior that can be used across different platforms and the network to evade defenses. \n\nPayloads may be compressed, archived, or encrypted in order to avoid detection. These payloads may\
@@ -22,3 +8,17 @@ Attack_description: "Adversaries may attempt to make an executable or file diffi
   \ when reassembled. (Citation: Carbon Black Obfuscation Sept 2016)\n\nAdversaries may also obfuscate commands executed from payloads or directly via a [Command and Scripting Interpreter](https://attack.mitre.org/techniques/T1059).\
   \ Environment variables, aliases, characters, and other platform/language specific semantics can be used to evade signature based detections and application control mechanisms. (Citation: FireEye Obfuscation\
   \ June 2017) (Citation: FireEye Revoke-Obfuscation July 2017)(Citation: PaloAlto EncodedCommand March 2017) "
+guid: 450e7218-7915-4be4-8b9b-464a49eafcec
+name: Execute base64-encoded PowerShell from Windows Registry
+tactic:
+  - defense-evasion
+technique:
+  - T1027
+os:
+  - windows
+description: |
+  Stores base64-encoded PowerShell code in the Windows Registry and deobfuscates it for execution. This is used by numerous adversaries and malicious tools.
+
+  Upon successful execution, powershell will execute encoded command and read/write from the registry.
+sigma: false
+sigma_rule: []

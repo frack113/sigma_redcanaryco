@@ -26,11 +26,11 @@ credential-access;T1555.003;['windows'];LaZagne - Credentials from Browser;9a291
 credential-access;T1555.003;['windows'];Simulating access to Chrome Login Data;3d111226-d09a-4911-8715-fe11664f960d;True
 credential-access;T1552.002;['windows'];Enumeration for Credentials in Registry;b6ec082c-7384-46b3-a111-9a9b8b14e5e7;True
 credential-access;T1552.002;['windows'];Enumeration for PuTTY Credentials in Registry;af197fd7-e868-448e-9bd5-05d1bcd9d9e5;True
-credential-access;T1003.006;['windows'];DCSync (Active Directory);129efd28-8497-4c87-a1b0-73b9a870ca3e;False
-credential-access;T1187;['windows'];PetitPotam;485ce873-2e65-4706-9c7e-ae3ab9e14213;False
+credential-access;T1003.006;['windows'];DCSync (Active Directory);129efd28-8497-4c87-a1b0-73b9a870ca3e;True
+credential-access;T1187;['windows'];PetitPotam;485ce873-2e65-4706-9c7e-ae3ab9e14213;True
 credential-access;T1056.002;['macos'];AppleScript - Prompt User for Password;76628574-0bc1-4646-8fe2-8f4427b47d15;False
-credential-access;T1056.002;['windows'];PowerShell - Prompt User for Password;2b162bfd-0928-4d4c-9ec3-4d9f88374b52;False
-credential-access;T1558.001;['windows'];Crafting Active Directory golden tickets with mimikatz;9726592a-dabc-4d4d-81cd-44070008b3af;False
+credential-access;T1056.002;['windows'];PowerShell - Prompt User for Password;2b162bfd-0928-4d4c-9ec3-4d9f88374b52;True
+credential-access;T1558.001;['windows'];Crafting Active Directory golden tickets with mimikatz;9726592a-dabc-4d4d-81cd-44070008b3af;True
 credential-access;T1558.001;['windows'];Crafting Active Directory golden tickets with Rubeus;e42d33cd-205c-4acf-ab59-a9f38f6bad9c;False
 credential-access;T1552.006;['windows'];GPP Passwords (findstr);870fe8fb-5e23-4f5f-b89d-dd7fe26f3b5f;False
 credential-access;T1552.006;['windows'];GPP Passwords (Get-GPPPassword);e9584f82-322c-474a-b831-940fd8b4455c;False
@@ -40,7 +40,7 @@ credential-access;T1558.003;['windows'];Extract all accounts in use as SPN using
 credential-access;T1558.003;['windows'];Request A Single Ticket via PowerShell;988539bc-2ed7-4e62-aec6-7c5cf6680863;False
 credential-access;T1558.003;['windows'];Request All Tickets via PowerShell;902f4ed2-1aba-4133-90f2-cff6d299d6da;False
 credential-access;T1555.001;['macos'];Keychain;1864fdec-ff86-4452-8c30-f12507582a93;False
-credential-access;T1056.001;['windows'];Input Capture;d9b633ca-8efb-45e6-b838-70f595c6ae26;False
+credential-access;T1056.001;['windows'];Input Capture;d9b633ca-8efb-45e6-b838-70f595c6ae26;True
 credential-access;T1056.001;['linux'];Living off the land Terminal Input Capture on Linux with pam.d;9c6bdb34-a89f-4b90-acb1-5970614c711b;False
 credential-access;T1056.001;['linux'];Logging bash history to syslog;0e59d59d-3265-4d35-bebd-bf5c1ec40db5;False
 credential-access;T1056.001;['linux'];Bash session based keylogger;7f85a946-a0ea-48aa-b6ac-8ff539278258;False
@@ -101,32 +101,32 @@ credential-access;T1003.002;['windows'];esentutl.exe SAM copy;a90c2f4d-6726-444e
 credential-access;T1003.002;['windows'];PowerDump Registry dump of SAM for hashes and usernames;804f28fc-68fc-40da-b5a2-e9d0bce5c193;False
 credential-access;T1003.002;['windows'];dump volume shadow copy hives with certutil;eeb9751a-d598-42d3-b11c-c122d9c3f6c7;False
 credential-access;T1003.002;['windows'];dump volume shadow copy hives with System.IO.File;9d77fed7-05f8-476e-a81b-8ff0472c64d0;False
-collection;T1560;['windows'];Compress Data for Exfiltration With PowerShell;41410c60-614d-4b9d-b66e-b0192dd9c597;False
+collection;T1560;['windows'];Compress Data for Exfiltration With PowerShell;41410c60-614d-4b9d-b66e-b0192dd9c597;True
 collection;T1560.002;['linux'];Compressing data using GZip in Python (Linux);391f5298-b12d-4636-8482-35d9c17d53a8;False
 collection;T1560.002;['linux'];Compressing data using bz2 in Python (Linux);c75612b2-9de0-4d7c-879c-10d7b077072d;False
 collection;T1560.002;['linux'];Compressing data using zipfile in Python (Linux);001a042b-859f-44d9-bf81-fd1c4e2200b0;False
 collection;T1560.002;['linux'];Compressing data using tarfile in Python (Linux);e86f1b4b-fcc1-4a2a-ae10-b49da01458db;False
-collection;T1560.001;['windows'];Compress Data for Exfiltration With Rar;02ea31cb-3b4c-4a2d-9bf1-e4e70ebcf5d0;False
-collection;T1560.001;['windows'];Compress Data and lock with password for Exfiltration with winrar;8dd61a55-44c6-43cc-af0c-8bdda276860c;False
-collection;T1560.001;['windows'];Compress Data and lock with password for Exfiltration with winzip;01df0353-d531-408d-a0c5-3161bf822134;False
-collection;T1560.001;['windows'];Compress Data and lock with password for Exfiltration with 7zip;d1334303-59cb-4a03-8313-b3e24d02c198;False
+collection;T1560.001;['windows'];Compress Data for Exfiltration With Rar;02ea31cb-3b4c-4a2d-9bf1-e4e70ebcf5d0;True
+collection;T1560.001;['windows'];Compress Data and lock with password for Exfiltration with winrar;8dd61a55-44c6-43cc-af0c-8bdda276860c;True
+collection;T1560.001;['windows'];Compress Data and lock with password for Exfiltration with winzip;01df0353-d531-408d-a0c5-3161bf822134;True
+collection;T1560.001;['windows'];Compress Data and lock with password for Exfiltration with 7zip;d1334303-59cb-4a03-8313-b3e24d02c198;True
 collection;T1560.001;['linux', 'macos'];Data Compressed - nix - zip;c51cec55-28dd-4ad2-9461-1eacbc82c3a0;False
 collection;T1560.001;['linux', 'macos'];Data Compressed - nix - gzip Single File;cde3c2af-3485-49eb-9c1f-0ed60e9cc0af;False
 collection;T1560.001;['linux', 'macos'];Data Compressed - nix - tar Folder or File;7af2b51e-ad1c-498c-aca8-d3290c19535a;False
 collection;T1560.001;['macos', 'linux'];Data Encrypted with zip and gpg symmetric;0286eb44-e7ce-41a0-b109-3da516e05a5f;False
-collection;T1123;['windows'];using device audio capture commandlet;9c3ad250-b185-4444-b5a9-d69218a10c95;False
-collection;T1119;['windows'];Automated Collection Command Prompt;cb379146-53f1-43e0-b884-7ce2c635ff5b;False
-collection;T1119;['windows'];Automated Collection PowerShell;634bd9b9-dc83-4229-b19f-7f83ba9ad313;False
-collection;T1119;['windows'];Recon information for export with PowerShell;c3f6d794-50dd-482f-b640-0384fbb7db26;False
+collection;T1123;['windows'];using device audio capture commandlet;9c3ad250-b185-4444-b5a9-d69218a10c95;True
+collection;T1119;['windows'];Automated Collection Command Prompt;cb379146-53f1-43e0-b884-7ce2c635ff5b;True
+collection;T1119;['windows'];Automated Collection PowerShell;634bd9b9-dc83-4229-b19f-7f83ba9ad313;True
+collection;T1119;['windows'];Recon information for export with PowerShell;c3f6d794-50dd-482f-b640-0384fbb7db26;True
 collection;T1119;['windows'];Recon information for export with Command Prompt;aa1180e2-f329-4e1e-8625-2472ec0bfaf3;False
-collection;T1115;['windows'];Utilize Clipboard to store or execute commands from;0cd14633-58d4-4422-9ede-daa2c9474ae7;False
-collection;T1115;['windows'];Execute Commands from Clipboard using PowerShell;d6dc21af-bec9-4152-be86-326b6babd416;False
+collection;T1115;['windows'];Utilize Clipboard to store or execute commands from;0cd14633-58d4-4422-9ede-daa2c9474ae7;True
+collection;T1115;['windows'];Execute Commands from Clipboard using PowerShell;d6dc21af-bec9-4152-be86-326b6babd416;True
 collection;T1115;['macos'];Execute commands from clipboard;1ac2247f-65f8-4051-b51f-b0ccdfaaa5ff;False
-collection;T1115;['windows'];Collect Clipboard Data via VBA;9c8d5a72-9c98-48d3-b9bf-da2cc43bdf52;False
+collection;T1115;['windows'];Collect Clipboard Data via VBA;9c8d5a72-9c98-48d3-b9bf-da2cc43bdf52;True
 collection;T1056.004;['windows'];Hook PowerShell TLS Encrypt/Decrypt Messages;de1934ea-1fbf-425b-8795-65fb27dd7e33;True
 collection;T1056.002;['macos'];AppleScript - Prompt User for Password;76628574-0bc1-4646-8fe2-8f4427b47d15;False
-collection;T1056.002;['windows'];PowerShell - Prompt User for Password;2b162bfd-0928-4d4c-9ec3-4d9f88374b52;False
-collection;T1056.001;['windows'];Input Capture;d9b633ca-8efb-45e6-b838-70f595c6ae26;False
+collection;T1056.002;['windows'];PowerShell - Prompt User for Password;2b162bfd-0928-4d4c-9ec3-4d9f88374b52;True
+collection;T1056.001;['windows'];Input Capture;d9b633ca-8efb-45e6-b838-70f595c6ae26;True
 collection;T1056.001;['linux'];Living off the land Terminal Input Capture on Linux with pam.d;9c6bdb34-a89f-4b90-acb1-5970614c711b;False
 collection;T1056.001;['linux'];Logging bash history to syslog;0e59d59d-3265-4d35-bebd-bf5c1ec40db5;False
 collection;T1056.001;['linux'];Bash session based keylogger;7f85a946-a0ea-48aa-b6ac-8ff539278258;False
@@ -694,6 +694,7 @@ impact;T1531;['windows'];Delete User - Windows;f21a1d7d-a62f-442a-8c3a-2440d43b1
 impact;T1531;['windows'];Remove Account From Domain Admin Group;43f71395-6c37-498e-ab17-897d814a0947;False
 impact;T1485;['windows'];Windows - Overwrite file with Sysinternals SDelete;476419b5-aebf-4366-a131-ae3e8dae5fc2;False
 impact;T1485;['linux', 'macos'];macOS/Linux - Overwrite file with DD;38deee99-fd65-4031-bec8-bfa4f9f26146;False
+impact;T1485;['windows'];Overwrite deleted data on C drive;321fd25e-0007-417f-adec-33232252be19;False
 impact;T1486;['linux'];Encrypt files using gpg (Linux);7b8ce084-3922-4618-8d22-95f996173765;False
 impact;T1486;['linux'];Encrypt files using 7z (Linux);53e6735a-4727-44cc-b35b-237682a151ad;False
 impact;T1486;['linux'];Encrypt files using ccrypt (Linux);08cbf59f-85da-4369-a5f4-049cffd7709f;False

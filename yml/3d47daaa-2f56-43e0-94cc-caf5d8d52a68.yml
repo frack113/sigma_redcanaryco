@@ -1,11 +1,12 @@
+Attack_name: Disable or Modify Tools
+Attack_description: Adversaries may disable security tools to avoid possible detection of their tools and activities. This can take the form of killing security software or event logging processes, deleting
+  Registry keys so that tools do not start at run time, or other methods to interfere with security tools scanning or reporting information.
 guid: 3d47daaa-2f56-43e0-94cc-caf5d8d52a68
 name: Remove Windows Defender Definition Files
 tactic:
   - defense-evasion
 technique:
   - T1562.001
-sigma: false
-sigma_rule: []
 os:
   - windows
 description: |
@@ -14,6 +15,5 @@ description: |
   command will say completed.
 
   https://unit42.paloaltonetworks.com/unit42-gorgon-group-slithering-nation-state-cybercrime/
-Attack_name: Disable or Modify Tools
-Attack_description: Adversaries may disable security tools to avoid possible detection of their tools and activities. This can take the form of killing security software or event logging processes, deleting
-  Registry keys so that tools do not start at run time, or other methods to interfere with security tools scanning or reporting information.
+sigma: false
+sigma_rule: []

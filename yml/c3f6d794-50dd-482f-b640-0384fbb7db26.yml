@@ -1,18 +1,20 @@
+Attack_name: Automated Collection
+Attack_description: "Once established within a system or network, an adversary may use automated techniques for collecting internal data. Methods for performing this technique could include use of a [Command\
+  \ and Scripting Interpreter](https://attack.mitre.org/techniques/T1059) to search for and copy information fitting set criteria such as file type, location, or name at specific time intervals. This functionality\
+  \ could also be built into remote access tools. \n\nThis technique may incorporate use of other techniques such as [File and Directory Discovery](https://attack.mitre.org/techniques/T1083) and [Lateral\
+  \ Tool Transfer](https://attack.mitre.org/techniques/T1570) to identify and move files."
 guid: c3f6d794-50dd-482f-b640-0384fbb7db26
 name: Recon information for export with PowerShell
 tactic:
   - collection
 technique:
   - T1119
-sigma: false
-sigma_rule: []
 os:
   - windows
 description: |
   collect information for exfiltration. Upon execution, check the users temp directory (%temp%) for files T1119_*.txt
   to see what was collected.
-Attack_name: Automated Collection
-Attack_description: "Once established within a system or network, an adversary may use automated techniques for collecting internal data. Methods for performing this technique could include use of a [Command\
-  \ and Scripting Interpreter](https://attack.mitre.org/techniques/T1059) to search for and copy information fitting set criteria such as file type, location, or name at specific time intervals. This functionality\
-  \ could also be built into remote access tools. \n\nThis technique may incorporate use of other techniques such as [File and Directory Discovery](https://attack.mitre.org/techniques/T1083) and [Lateral\
-  \ Tool Transfer](https://attack.mitre.org/techniques/T1570) to identify and move files."
+sigma: true
+sigma_rule:
+  - id: a9723fcc-881c-424c-8709-fd61442ab3c3
+    name: powershell_script\powershell_suspicious_recon.yml

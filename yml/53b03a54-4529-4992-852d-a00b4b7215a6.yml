@@ -1,17 +1,3 @@
-guid: 53b03a54-4529-4992-852d-a00b4b7215a6
-name: Use Space Before Command to Avoid Logging to History
-tactic:
-  - defense-evasion
-technique:
-  - T1070.003
-sigma: false
-sigma_rule: []
-os:
-  - linux
-  - macos
-description: 'Using a space before a command causes the command to not be logged in the Bash History file
-
-  '
 Attack_name: Clear Command History
 Attack_description: |-
   In addition to clearing system logs, an adversary may clear the command history of a compromised account to conceal the actions undertaken during an intrusion. Various command interpreters keep track of the commands users type in their terminal so that users can retrace what they've done.
@@ -25,3 +11,17 @@ Attack_description: |-
   The <code>PSReadLine</code> command history tracks the commands used in all PowerShell sessions and writes them to a file (<code>$env:APPDATA\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt</code> by default). This history file is available to all sessions and contains all past history since the file is not deleted when the session ends.(Citation: Microsoft PowerShell Command History)
 
   Adversaries may run the PowerShell command <code>Clear-History</code> to flush the entire command history from a current PowerShell session. This, however, will not delete/flush the <code>ConsoleHost_history.txt</code> file. Adversaries may also delete the <code>ConsoleHost_history.txt</code> file or edit its contents to hide PowerShell commands they have run.(Citation: Sophos PowerShell command audit)(Citation: Sophos PowerShell Command History Forensics)
+guid: 53b03a54-4529-4992-852d-a00b4b7215a6
+name: Use Space Before Command to Avoid Logging to History
+tactic:
+  - defense-evasion
+technique:
+  - T1070.003
+os:
+  - linux
+  - macos
+description: 'Using a space before a command causes the command to not be logged in the Bash History file
+
+  '
+sigma: false
+sigma_rule: []

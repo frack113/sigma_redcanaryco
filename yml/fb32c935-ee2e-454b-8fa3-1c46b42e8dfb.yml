@@ -1,18 +1,3 @@
-guid: fb32c935-ee2e-454b-8fa3-1c46b42e8dfb
-name: Winlogon Userinit Key Persistence - PowerShell
-tactic:
-  - privilege-escalation
-  - persistence
-technique:
-  - T1547.004
-sigma: false
-sigma_rule: []
-os:
-  - windows
-description: |
-  PowerShell code to set Winlogon userinit key to execute a binary at logon along with userinit.exe.
-
-  Upon successful execution, PowerShell will modify a registry value to execute cmd.exe upon logon/logoff.
 Attack_name: Winlogon Helper DLL
 Attack_description: "Adversaries may abuse features of Winlogon to execute DLLs and/or executables when a user logs in. Winlogon.exe is a Windows component responsible for actions at logon/logoff as well\
   \ as the secure attention sequence (SAS) triggered by Ctrl-Alt-Delete. Registry entries in <code>HKLM\\Software[\\\\Wow6432Node\\\\]\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon\\</code> and <code>HKCU\\\
@@ -21,3 +6,18 @@ Attack_description: "Adversaries may abuse features of Winlogon to execute DLLs 
   \ to abuse: (Citation: Cylance Reg Persistence Sept 2013)\n\n* Winlogon\\Notify - points to notification package DLLs that handle Winlogon events\n* Winlogon\\Userinit - points to userinit.exe, the user\
   \ initialization program executed when a user logs on\n* Winlogon\\Shell - points to explorer.exe, the system shell executed when a user logs on\n\nAdversaries may take advantage of these features to\
   \ repeatedly execute malicious code and establish persistence."
+guid: fb32c935-ee2e-454b-8fa3-1c46b42e8dfb
+name: Winlogon Userinit Key Persistence - PowerShell
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1547.004
+os:
+  - windows
+description: |
+  PowerShell code to set Winlogon userinit key to execute a binary at logon along with userinit.exe.
+
+  Upon successful execution, PowerShell will modify a registry value to execute cmd.exe upon logon/logoff.
+sigma: false
+sigma_rule: []

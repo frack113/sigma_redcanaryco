@@ -1,18 +1,3 @@
-guid: 134627c3-75db-410e-bff8-7a920075f198
-name: Add file to Local Library StartupItems
-tactic:
-  - privilege-escalation
-  - persistence
-technique:
-  - T1037.005
-sigma: false
-sigma_rule: []
-os:
-  - macos
-description: |
-  Modify or create an file in /Library/StartupItems
-
-  [Reference](https://www.alienvault.com/blogs/labs-research/diversity-in-recent-mac-malware)
 Attack_name: Startup Items
 Attack_description: "Adversaries may use startup items automatically executed at boot initialization to establish persistence. Startup items execute during the final phase of the boot process and contain\
   \ shell scripts or other executable files along with configuration information used by the system to determine the execution order for all startup items. (Citation: Startup Items)\n\nThis is technically\
@@ -20,3 +5,18 @@ Attack_description: "Adversaries may use startup items automatically executed at
   \ on the system by default, but does appear to exist by default on macOS Sierra. A startup item is a directory whose executable and configuration property list (plist), <code>StartupParameters.plist</code>,\
   \ reside in the top-level directory. \n\nAn adversary can create the appropriate folders/files in the StartupItems directory to register their own persistence mechanism (Citation: Methods of Mac Malware\
   \ Persistence). Additionally, since StartupItems run during the bootup phase of macOS, they will run as the elevated root user."
+guid: 134627c3-75db-410e-bff8-7a920075f198
+name: Add file to Local Library StartupItems
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1037.005
+os:
+  - macos
+description: |
+  Modify or create an file in /Library/StartupItems
+
+  [Reference](https://www.alienvault.com/blogs/labs-research/diversity-in-recent-mac-malware)
+sigma: false
+sigma_rule: []

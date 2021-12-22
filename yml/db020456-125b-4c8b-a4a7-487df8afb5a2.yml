@@ -1,16 +1,16 @@
+Attack_name: Signed Binary Proxy Execution
+Attack_description: Adversaries may bypass process and/or signature-based defenses by proxying execution of malicious content with signed binaries. Binaries signed with trusted digital certificates can
+  execute on Windows systems protected by digital signature validation. Several Microsoft signed binaries that are default on Windows installations can be used to proxy execution of other files.
 guid: db020456-125b-4c8b-a4a7-487df8afb5a2
 name: ProtocolHandler.exe Downloaded a Suspicious File
 tactic:
   - defense-evasion
 technique:
   - T1218
-sigma: false
-sigma_rule: []
 os:
   - windows
 description: 'Emulates attack via documents through protocol handler in Microsoft Office.  On successful execution you should see Microsoft Word launch a blank file.
 
   '
-Attack_name: Signed Binary Proxy Execution
-Attack_description: Adversaries may bypass process and/or signature-based defenses by proxying execution of malicious content with signed binaries. Binaries signed with trusted digital certificates can
-  execute on Windows systems protected by digital signature validation. Several Microsoft signed binaries that are default on Windows installations can be used to proxy execution of other files.
+sigma: false
+sigma_rule: []

@@ -1,15 +1,3 @@
-guid: 988539bc-2ed7-4e62-aec6-7c5cf6680863
-name: Request A Single Ticket via PowerShell
-tactic:
-  - credential-access
-technique:
-  - T1558.003
-sigma: false
-sigma_rule: []
-os:
-  - windows
-description: "The following test will utilize native PowerShell Identity modules to query the domain to extract the Service Principal Names for a single computer. This behavior is typically used during\
-  \ a kerberos or silver ticket attack. \nA successful execution will output the SPNs for the endpoint in question.\n"
 Attack_name: Kerberoasting
 Attack_description: "Adversaries may abuse a valid Kerberos ticket-granting ticket (TGT) or sniff network traffic to obtain a ticket-granting service (TGS) ticket that may be vulnerable to [Brute Force](https://attack.mitre.org/techniques/T1110).(Citation:\
   \ Empire InvokeKerberoast Oct 2016)(Citation: AdSecurity Cracking Kerberos Dec 2015) \n\nService principal names (SPNs) are used to uniquely identify each instance of a Windows service. To enable authentication,\
@@ -21,3 +9,15 @@ Attack_description: "Adversaries may abuse a valid Kerberos ticket-granting tick
   \ InvokeKerberoast Oct 2016) (Citation: Harmj0y Kerberoast Nov 2016)\n\nThis same attack could be executed using service tickets captured from network traffic.(Citation: AdSecurity Cracking Kerberos Dec\
   \ 2015)\n\nCracked hashes may enable [Persistence](https://attack.mitre.org/tactics/TA0003), [Privilege Escalation](https://attack.mitre.org/tactics/TA0004), and [Lateral Movement](https://attack.mitre.org/tactics/TA0008)\
   \ via access to [Valid Accounts](https://attack.mitre.org/techniques/T1078).(Citation: SANS Attacking Kerberos Nov 2014)"
+guid: 988539bc-2ed7-4e62-aec6-7c5cf6680863
+name: Request A Single Ticket via PowerShell
+tactic:
+  - credential-access
+technique:
+  - T1558.003
+os:
+  - windows
+description: "The following test will utilize native PowerShell Identity modules to query the domain to extract the Service Principal Names for a single computer. This behavior is typically used during\
+  \ a kerberos or silver ticket attack. \nA successful execution will output the SPNs for the endpoint in question.\n"
+sigma: false
+sigma_rule: []

