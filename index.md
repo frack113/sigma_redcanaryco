@@ -108,13 +108,13 @@ When run a test noisy many rules can trigger too...
 
 
 ### T1119
-[Automated Collection PowerShell](tests/634bd9b9-dc83-4229-b19f-7f83ba9ad313.md) ['windows'] (sigma rule :x:)
+[Automated Collection PowerShell](tests/634bd9b9-dc83-4229-b19f-7f83ba9ad313.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Recon information for export with Command Prompt](tests/aa1180e2-f329-4e1e-8625-2472ec0bfaf3.md) ['windows'] (sigma rule :x:)
 
-[Recon information for export with PowerShell](tests/c3f6d794-50dd-482f-b640-0384fbb7db26.md) ['windows'] (sigma rule :x:)
+[Recon information for export with PowerShell](tests/c3f6d794-50dd-482f-b640-0384fbb7db26.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Automated Collection Command Prompt](tests/cb379146-53f1-43e0-b884-7ce2c635ff5b.md) ['windows'] (sigma rule :x:)
+[Automated Collection Command Prompt](tests/cb379146-53f1-43e0-b884-7ce2c635ff5b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1056.001
@@ -126,7 +126,7 @@ When run a test noisy many rules can trigger too...
 
 [SSHD PAM keylogger](tests/81d7d2ad-d644-4b6a-bea7-28ffe43becca.md) ['linux'] (sigma rule :x:)
 
-[Input Capture](tests/d9b633ca-8efb-45e6-b838-70f595c6ae26.md) ['windows'] (sigma rule :x:)
+[Input Capture](tests/d9b633ca-8efb-45e6-b838-70f595c6ae26.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Auditd keylogger](tests/a668edb9-334e-48eb-8c2e-5413a40867af.md) ['linux'] (sigma rule :x:)
 
@@ -288,7 +288,7 @@ When run a test noisy many rules can trigger too...
 ### T1056.002
 [AppleScript - Prompt User for Password](tests/76628574-0bc1-4646-8fe2-8f4427b47d15.md) ['macos'] (sigma rule :x:)
 
-[PowerShell - Prompt User for Password](tests/2b162bfd-0928-4d4c-9ec3-4d9f88374b52.md) ['windows'] (sigma rule :x:)
+[PowerShell - Prompt User for Password](tests/2b162bfd-0928-4d4c-9ec3-4d9f88374b52.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1036.003
@@ -544,19 +544,19 @@ When run a test noisy many rules can trigger too...
 
 
 ### T1560.001
-[Compress Data for Exfiltration With Rar](tests/02ea31cb-3b4c-4a2d-9bf1-e4e70ebcf5d0.md) ['windows'] (sigma rule :x:)
+[Compress Data for Exfiltration With Rar](tests/02ea31cb-3b4c-4a2d-9bf1-e4e70ebcf5d0.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Data Encrypted with zip and gpg symmetric](tests/0286eb44-e7ce-41a0-b109-3da516e05a5f.md) ['macos', 'linux'] (sigma rule :x:)
 
 [Data Compressed - nix - tar Folder or File](tests/7af2b51e-ad1c-498c-aca8-d3290c19535a.md) ['linux', 'macos'] (sigma rule :x:)
 
-[Compress Data and lock with password for Exfiltration with 7zip](tests/d1334303-59cb-4a03-8313-b3e24d02c198.md) ['windows'] (sigma rule :x:)
+[Compress Data and lock with password for Exfiltration with 7zip](tests/d1334303-59cb-4a03-8313-b3e24d02c198.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Compress Data and lock with password for Exfiltration with winrar](tests/8dd61a55-44c6-43cc-af0c-8bdda276860c.md) ['windows'] (sigma rule :x:)
+[Compress Data and lock with password for Exfiltration with winrar](tests/8dd61a55-44c6-43cc-af0c-8bdda276860c.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Data Compressed - nix - zip](tests/c51cec55-28dd-4ad2-9461-1eacbc82c3a0.md) ['linux', 'macos'] (sigma rule :x:)
 
-[Compress Data and lock with password for Exfiltration with winzip](tests/01df0353-d531-408d-a0c5-3161bf822134.md) ['windows'] (sigma rule :x:)
+[Compress Data and lock with password for Exfiltration with winzip](tests/01df0353-d531-408d-a0c5-3161bf822134.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Data Compressed - nix - gzip Single File](tests/cde3c2af-3485-49eb-9c1f-0ed60e9cc0af.md) ['linux', 'macos'] (sigma rule :x:)
 
@@ -956,7 +956,7 @@ When run a test noisy many rules can trigger too...
 
 
 ### T1187
-[PetitPotam](tests/485ce873-2e65-4706-9c7e-ae3ab9e14213.md) ['windows'] (sigma rule :x:)
+[PetitPotam](tests/485ce873-2e65-4706-9c7e-ae3ab9e14213.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1114.001
@@ -996,13 +996,13 @@ When run a test noisy many rules can trigger too...
 
 
 ### T1115
-[Execute Commands from Clipboard using PowerShell](tests/d6dc21af-bec9-4152-be86-326b6babd416.md) ['windows'] (sigma rule :x:)
+[Execute Commands from Clipboard using PowerShell](tests/d6dc21af-bec9-4152-be86-326b6babd416.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Execute commands from clipboard](tests/1ac2247f-65f8-4051-b51f-b0ccdfaaa5ff.md) ['macos'] (sigma rule :x:)
 
-[Collect Clipboard Data via VBA](tests/9c8d5a72-9c98-48d3-b9bf-da2cc43bdf52.md) ['windows'] (sigma rule :x:)
+[Collect Clipboard Data via VBA](tests/9c8d5a72-9c98-48d3-b9bf-da2cc43bdf52.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Utilize Clipboard to store or execute commands from](tests/0cd14633-58d4-4422-9ede-daa2c9474ae7.md) ['windows'] (sigma rule :x:)
+[Utilize Clipboard to store or execute commands from](tests/0cd14633-58d4-4422-9ede-daa2c9474ae7.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1071.001
@@ -1750,6 +1750,8 @@ When run a test noisy many rules can trigger too...
 
 [macOS/Linux - Overwrite file with DD](tests/38deee99-fd65-4031-bec8-bfa4f9f26146.md) ['linux', 'macos'] (sigma rule :x:)
 
+[Overwrite deleted data on C drive](tests/321fd25e-0007-417f-adec-33232252be19.md) ['windows'] (sigma rule :x:)
+
 
 ### T1505.003
 [Web Shell Written to Disk](tests/0a2ce662-1efa-496f-a472-2fe7b080db16.md) ['windows'] (sigma rule :x:)
@@ -1786,7 +1788,7 @@ When run a test noisy many rules can trigger too...
 
 
 ### T1560
-[Compress Data for Exfiltration With PowerShell](tests/41410c60-614d-4b9d-b66e-b0192dd9c597.md) ['windows'] (sigma rule :x:)
+[Compress Data for Exfiltration With PowerShell](tests/41410c60-614d-4b9d-b66e-b0192dd9c597.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1007
@@ -1836,7 +1838,7 @@ When run a test noisy many rules can trigger too...
 
 
 ### T1123
-[using device audio capture commandlet](tests/9c3ad250-b185-4444-b5a9-d69218a10c95.md) ['windows'] (sigma rule :x:)
+[using device audio capture commandlet](tests/9c3ad250-b185-4444-b5a9-d69218a10c95.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1610
@@ -2082,7 +2084,7 @@ When run a test noisy many rules can trigger too...
 
 
 ### T1003.006
-[DCSync (Active Directory)](tests/129efd28-8497-4c87-a1b0-73b9a870ca3e.md) ['windows'] (sigma rule :x:)
+[DCSync (Active Directory)](tests/129efd28-8497-4c87-a1b0-73b9a870ca3e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1003.007
@@ -2092,7 +2094,7 @@ When run a test noisy many rules can trigger too...
 
 
 ### T1558.001
-[Crafting Active Directory golden tickets with mimikatz](tests/9726592a-dabc-4d4d-81cd-44070008b3af.md) ['windows'] (sigma rule :x:)
+[Crafting Active Directory golden tickets with mimikatz](tests/9726592a-dabc-4d4d-81cd-44070008b3af.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Crafting Active Directory golden tickets with Rubeus](tests/e42d33cd-205c-4acf-ab59-a9f38f6bad9c.md) ['windows'] (sigma rule :x:)
 
