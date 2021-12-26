@@ -40,7 +40,7 @@ for yml_file in yml_files:
         "name": redcannary_info.data["name"],
         "technique": redcannary_info.data["technique"][0],
         "file_link": f"tests/{guid}.md",
-        "sigma": redcannary_info.data["sigma"]
+        "sigma": redcannary_info.data["sigma"],
     }
 
 print("Build index")
@@ -64,7 +64,7 @@ When run a test noisy many rules can trigger too...
 ## Tests\n\n
 """
 
-for technique,test_lst in full_technique.items():
+for technique, test_lst in full_technique.items():
     string_index += f"\n### {technique}\n"
     for test in test_lst:
         state = ":heavy_check_mark:" if test["sigma"] == True else ":x:"

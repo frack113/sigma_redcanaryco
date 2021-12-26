@@ -1,6 +1,7 @@
 import copy
 from collections import OrderedDict
 
+
 class my_data:
     def __init__(self, yaml):
         self.yaml = yaml

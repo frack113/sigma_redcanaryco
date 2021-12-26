@@ -15,5 +15,15 @@ description: |
   Identify network configuration information as seen by Trickbot and described here https://www.sneakymonkey.net/2019/10/29/trickbot-analysis-part-ii/
 
   Upon successful execution, cmd.exe will spawn `ipconfig /all`, `net config workstation`, `net view /all /domain`, `nltest /domain_trusts`. Output will be via stdout.
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: a29c1813-ab1f-4dde-b489-330b952e91ae
+    name: win_pc_susp_network_command.yml
+  - id: 183e7ea8-ac4b-4c23-9aec-b3dac4e401ac
+    name: win_susp_net_execution.yml
+  - id: 62510e69-616b-4078-b371-847da438cc03
+    name: win_net_enum.yml
+  - id: 3bad990e-4848-4a78-9530-b427d854aac0
+    name: win_trust_discovery.yml
+  - id: 5cc90652-4cbd-4241-aa3b-4b462fa5a248
+    name: win_nltest_recon.yml

@@ -32,10 +32,11 @@ redcannary_info = my_data(yaml)
 
 url = "https://github.com/redcanaryco/atomic-red-team/raw/master/atomics/Indexes/index.yaml"
 myfile = requests.get(url)
+
 with pathlib.Path("index.yaml").open("w", encoding="UTF-8", newline="\n") as file:
     file.write(myfile.content.decode())
 
-all_csv = [["tactic", "technique", "os", "name", "guid", "sigma"]]
+all_csv = [["tactic", "technique", "os", "name", "guid", "sigma", "nmr_test"]]
 
 with pathlib.Path("index.yaml").open("r", encoding="UTF-8") as file:
     yml_index = yaml.load(file)
@@ -43,20 +44,26 @@ with pathlib.Path("index.yaml").open("r", encoding="UTF-8") as file:
         for technique in yml_index[tactic]:
             atomic_tests = yml_index[tactic][technique]["atomic_tests"]
             nb_tests = len(atomic_tests)
+
             print(f"found {tactic} / {technique} : {nb_tests} tests")
+
             if "technique" in yml_index[tactic][technique]:
-                head_info = {}
                 technique_part = yml_index[tactic][technique]["technique"]
+                
+                head_info = {}
                 head_info["description"] = technique_part["description"]
                 head_info["name"] = technique_part["name"]
                 head_info["technique"] = []
+
                 for ext_ref in technique_part["external_references"]:
                     if ext_ref["source_name"] == "mitre-attack":
                         head_info["technique"].append(ext_ref["external_id"])
+
                 head_info["tactic"] = []
                 for kill_ref in technique_part["kill_chain_phases"]:
                     if kill_ref["kill_chain_name"] == "mitre-attack":
                         head_info["tactic"].append(kill_ref["phase_name"])
+
             else:
                 head_info = {
                     "description": "",
@@ -64,16 +71,23 @@ with pathlib.Path("index.yaml").open("r", encoding="UTF-8") as file:
                     "technique": [],
                     "tactic": [],
                 }
+
             if nb_tests > 0:
+                nmr_test = 0
                 for test in atomic_tests:
+                    nmr_test += 1
                     redcannary_info.clean()
+
                     guid = test["auto_generated_guid"]
                     yml_file = pathlib.Path(f"yml/{guid}.yml")
+
                     if yml_file.exists():
                         redcannary_info.load(yml_file)
+
                     redcannary_info.add(head_info, test)
                     redcannary_info.order()
                     redcannary_info.save(yml_file)
+
                     all_csv.append(
                         [
                             tactic,
@@ -82,10 +96,11 @@ with pathlib.Path("index.yaml").open("r", encoding="UTF-8") as file:
                             redcannary_info.data["name"],
                             redcannary_info.data["guid"],
                             redcannary_info.data["sigma"],
+                            nmr_test,
                         ]
                     )
 
-csv_file = pathlib.Path(f"Full_tests.csv")
+csv_file = pathlib.Path("Full_tests.csv")
 with csv_file.open("w", encoding="UTF-8", newline="\n") as csvfile:
     writer = csv.writer(csvfile, delimiter=";", quoting=csv.QUOTE_MINIMAL)
     writer.writerows(all_csv)

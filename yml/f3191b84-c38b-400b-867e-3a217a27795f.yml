@@ -18,5 +18,8 @@ description: |
   This technique was used by WannaCry. Upon execution, if the spoolsv service was running "SUCCESS: The process "spoolsv.exe" with PID 2316 has been terminated."
   will be displayed. If the service was not running "ERROR: The process "spoolsv.exe" not found." will be displayed and it can be
   started by running the cleanup command.
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: e17121b4-ef2a-4418-8a59-12fb1631fa9e
+    name: powershell_ps_susp_win32_shadowcopy.yml
+

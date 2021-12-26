@@ -15,5 +15,7 @@ description: |
   Identify network configuration information
 
   Upon successful execution, cmd.exe will spawn multiple commands to list network configuration settings. Output will be via stdout.
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: a29c1813-ab1f-4dde-b489-330b952e91ae
+    name: win_pc_susp_network_command.yml

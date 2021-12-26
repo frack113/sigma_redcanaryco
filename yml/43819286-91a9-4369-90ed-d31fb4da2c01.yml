@@ -23,5 +23,8 @@ description: |
   confirmation prompt. Shadow copies can only be created on Windows server or Windows 8.
 
   https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc788055(v=ws.11)
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: c947b146-0abc-4c87-9c64-b17e9d7274a2
+    name: win_shadow_copies_deletion.yml
+

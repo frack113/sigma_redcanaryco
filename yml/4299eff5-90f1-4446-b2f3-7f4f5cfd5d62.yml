@@ -1,0 +1,16 @@
+Attack_name: Network Share Connection Removal
+Attack_description: 'Adversaries may remove share connections that are no longer useful in order to clean up traces of their operation. Windows shared drive and [SMB/Windows Admin Shares](https://attack.mitre.org/techniques/T1021/002)
+  connections can be removed when no longer needed. [Net](https://attack.mitre.org/software/S0039) is an example utility that can be used to remove network share connections with the <code>net use \\system\share
+  /delete</code> command. (Citation: Technet Net Use)'
+guid: 4299eff5-90f1-4446-b2f3-7f4f5cfd5d62
+name: Remove Administrative Shares
+tactic:
+  - defense-evasion
+technique:
+  - T1070.005
+os:
+  - windows
+description: "Administrative shares are hidden network shares created by Microsoft’s Windows NT operating systems that grant system administrators \nremote access to every disk volume on a network-connected\
+  \ system. As Microsoft puts it, “Missing administrative shares typically \nindicate that the computer in question has been compromised by malicious software.\nhttps://threatpost.com/conti-ransomware-gang-has-full-log4shell-attack-chain/177173/\n"
+sigma: false
+sigma_rule: []

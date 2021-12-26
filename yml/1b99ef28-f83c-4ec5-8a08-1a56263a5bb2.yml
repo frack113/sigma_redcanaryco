@@ -14,5 +14,7 @@ os:
 description: |
   Changes the user password to hinder access attempts. Seen in use by LockerGoga. Upon execution, log into the user account "AtomicAdministrator" with
   the password "HuHuHUHoHo283283".
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 183e7ea8-ac4b-4c23-9aec-b3dac4e401ac
+    name: win_susp_net_execution.yml

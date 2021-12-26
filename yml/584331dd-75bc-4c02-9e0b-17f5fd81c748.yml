@@ -19,5 +19,7 @@ os:
 description: 'Deletes the Windows systemstatebackup using wbadmin.exe. This technique is used by numerous ransomware families. This may only be successful on server platforms that have Windows Backup enabled.
 
   '
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 89f75308-5b1b-4390-b2d8-d6b2340efaf8
+    name: win_pc_delete_systemstatebackup.yml

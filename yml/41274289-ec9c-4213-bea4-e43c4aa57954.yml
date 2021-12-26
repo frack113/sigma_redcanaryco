@@ -17,5 +17,10 @@ description: |
   Stops a specified service using the net.exe command. Upon execution, if the service was running "The Print Spooler service was stopped successfully."
   will be displayed. If the service was not running, "The Print Spooler service is not started." will be displayed and it can be
   started by running the cleanup command.
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: eb87818d-db5d-49cc-a987-d5da331fbd90
+    name: win_service_stop.yml
+  - id: 183e7ea8-ac4b-4c23-9aec-b3dac4e401ac
+    name: win_susp_net_execution.yml
+
