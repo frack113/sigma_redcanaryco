@@ -31,9 +31,9 @@ credential-access;T1187;['windows'];PetitPotam;485ce873-2e65-4706-9c7e-ae3ab9e14
 credential-access;T1056.002;['macos'];AppleScript - Prompt User for Password;76628574-0bc1-4646-8fe2-8f4427b47d15;False;1
 credential-access;T1056.002;['windows'];PowerShell - Prompt User for Password;2b162bfd-0928-4d4c-9ec3-4d9f88374b52;True;2
 credential-access;T1558.001;['windows'];Crafting Active Directory golden tickets with mimikatz;9726592a-dabc-4d4d-81cd-44070008b3af;True;1
-credential-access;T1558.001;['windows'];Crafting Active Directory golden tickets with Rubeus;e42d33cd-205c-4acf-ab59-a9f38f6bad9c;False;2
+credential-access;T1558.001;['windows'];Crafting Active Directory golden tickets with Rubeus;e42d33cd-205c-4acf-ab59-a9f38f6bad9c;True;2
 credential-access;T1552.006;['windows'];GPP Passwords (findstr);870fe8fb-5e23-4f5f-b89d-dd7fe26f3b5f;False;1
-credential-access;T1552.006;['windows'];GPP Passwords (Get-GPPPassword);e9584f82-322c-474a-b831-940fd8b4455c;False;2
+credential-access;T1552.006;['windows'];GPP Passwords (Get-GPPPassword);e9584f82-322c-474a-b831-940fd8b4455c;True;2
 credential-access;T1558.003;['windows'];Request for service tickets;3f987809-3681-43c8-bcd8-b3ff3a28533a;False;1
 credential-access;T1558.003;['windows'];Rubeus kerberoast;14625569-6def-4497-99ac-8e7817105b55;False;2
 credential-access;T1558.003;['windows'];Extract all accounts in use as SPN using setspn;e6f4affd-d826-4871-9a62-6c9004b8fe06;False;3
@@ -46,37 +46,37 @@ credential-access;T1056.001;['linux'];Logging bash history to syslog;0e59d59d-32
 credential-access;T1056.001;['linux'];Bash session based keylogger;7f85a946-a0ea-48aa-b6ac-8ff539278258;False;4
 credential-access;T1056.001;['linux'];SSHD PAM keylogger;81d7d2ad-d644-4b6a-bea7-28ffe43becca;False;5
 credential-access;T1056.001;['linux'];Auditd keylogger;a668edb9-334e-48eb-8c2e-5413a40867af;False;6
-credential-access;T1003.004;['windows'];Dumping LSA Secrets;55295ab0-a703-433b-9ca4-ae13807de12f;False;1
+credential-access;T1003.004;['windows'];Dumping LSA Secrets;55295ab0-a703-433b-9ca4-ae13807de12f;True;1
 credential-access;T1003.001;['windows'];Windows Credential Editor;0f7c5301-6859-45ba-8b4d-1fac30fc31ed;True;1
-credential-access;T1003.001;['windows'];Dump LSASS.exe Memory using ProcDump;0be2230c-9ab3-4ac2-8826-3199b9a0ebf8;False;2
-credential-access;T1003.001;['windows'];Dump LSASS.exe Memory using comsvcs.dll;2536dee2-12fb-459a-8c37-971844fa73be;False;3
-credential-access;T1003.001;['windows'];Dump LSASS.exe Memory using direct system calls and API unhooking;7ae7102c-a099-45c8-b985-4c7a2d05790d;False;4
-credential-access;T1003.001;['windows'];Dump LSASS.exe Memory using NanoDump;dddd4aca-bbed-46f0-984d-e4c5971c51ea;False;5
+credential-access;T1003.001;['windows'];Dump LSASS.exe Memory using ProcDump;0be2230c-9ab3-4ac2-8826-3199b9a0ebf8;True;2
+credential-access;T1003.001;['windows'];Dump LSASS.exe Memory using comsvcs.dll;2536dee2-12fb-459a-8c37-971844fa73be;True;3
+credential-access;T1003.001;['windows'];Dump LSASS.exe Memory using direct system calls and API unhooking;7ae7102c-a099-45c8-b985-4c7a2d05790d;True;4
+credential-access;T1003.001;['windows'];Dump LSASS.exe Memory using NanoDump;dddd4aca-bbed-46f0-984d-e4c5971c51ea;True;5
 credential-access;T1003.001;['windows'];Dump LSASS.exe Memory using Windows Task Manager;dea6c349-f1c6-44f3-87a1-1ed33a59a607;False;6
 credential-access;T1003.001;['windows'];Offline Credential Theft With Mimikatz;453acf13-1dbd-47d7-b28a-172ce9228023;False;7
-credential-access;T1003.001;['windows'];LSASS read with pypykatz;c37bc535-5c62-4195-9cc3-0517673171d8;False;8
-credential-access;T1003.001;['windows'];Dump LSASS.exe Memory using Out-Minidump.ps1;6502c8f0-b775-4dbd-9193-1298f56b6781;False;9
+credential-access;T1003.001;['windows'];LSASS read with pypykatz;c37bc535-5c62-4195-9cc3-0517673171d8;True;8
+credential-access;T1003.001;['windows'];Dump LSASS.exe Memory using Out-Minidump.ps1;6502c8f0-b775-4dbd-9193-1298f56b6781;True;9
 credential-access;T1003.001;['windows'];Create Mini Dump of LSASS.exe using ProcDump;7cede33f-0acd-44ef-9774-15511300b24b;True;10
 credential-access;T1003.001;['windows'];Powershell Mimikatz;66fb0bc1-3c3f-47e9-a298-550ecfefacbc;True;11
 credential-access;T1003.001;['windows'];Dump LSASS with .Net 5 createdump.exe;9d0072c8-7cca-45c4-bd14-f852cfa35cf0;False;12
 credential-access;T1003.001;['windows'];Dump LSASS.exe using imported Microsoft DLLs;86fc3f40-237f-4701-b155-81c01c48d697;False;13
-credential-access;T1003.003;['windows'];Create Volume Shadow Copy with vssadmin;dcebead7-6c28-4b4b-bf3c-79deb1b1fc7f;False;1
-credential-access;T1003.003;['windows'];Copy NTDS.dit from Volume Shadow Copy;c6237146-9ea6-4711-85c9-c56d263a6b03;False;2
-credential-access;T1003.003;['windows'];Dump Active Directory Database with NTDSUtil;2364e33d-ceab-4641-8468-bfb1d7cc2723;False;3
-credential-access;T1003.003;['windows'];Create Volume Shadow Copy with WMI;224f7de0-8f0a-4a94-b5d8-989b036c86da;False;4
-credential-access;T1003.003;['windows'];Create Volume Shadow Copy remotely with WMI;d893459f-71f0-484d-9808-ec83b2b64226;False;5
+credential-access;T1003.003;['windows'];Create Volume Shadow Copy with vssadmin;dcebead7-6c28-4b4b-bf3c-79deb1b1fc7f;True;1
+credential-access;T1003.003;['windows'];Copy NTDS.dit from Volume Shadow Copy;c6237146-9ea6-4711-85c9-c56d263a6b03;True;2
+credential-access;T1003.003;['windows'];Dump Active Directory Database with NTDSUtil;2364e33d-ceab-4641-8468-bfb1d7cc2723;True;3
+credential-access;T1003.003;['windows'];Create Volume Shadow Copy with WMI;224f7de0-8f0a-4a94-b5d8-989b036c86da;True;4
+credential-access;T1003.003;['windows'];Create Volume Shadow Copy remotely with WMI;d893459f-71f0-484d-9808-ec83b2b64226;True;5
 credential-access;T1003.003;['windows'];Create Volume Shadow Copy with Powershell;542bb97e-da53-436b-8e43-e0a7d31a6c24;False;6
-credential-access;T1003.003;['windows'];Create Symlink to Volume Shadow Copy;21748c28-2793-4284-9e07-d6d028b66702;False;7
+credential-access;T1003.003;['windows'];Create Symlink to Volume Shadow Copy;21748c28-2793-4284-9e07-d6d028b66702;True;7
 credential-access;T1040;['linux'];Packet Capture Linux;7fe741f7-b265-4951-a7c7-320889083b3e;False;1
 credential-access;T1040;['macos'];Packet Capture macOS;9d04efee-eff5-4240-b8d2-07792b873608;False;2
 credential-access;T1040;['windows'];Packet Capture Windows Command Prompt;a5b2f6a0-24b4-493e-9590-c699f75723ca;True;3
 credential-access;T1040;['windows'];Windows Internal Packet Capture;b5656f67-d67f-4de8-8e62-b5581630f528;True;4
 credential-access;T1003;['windows'];Gsecdump;96345bfc-8ae7-4b6a-80b7-223200f24ef9;False;1
-credential-access;T1003;['windows'];Credential Dumping with NPPSpy;9e2173c0-ba26-4cdf-b0ed-8c54b27e3ad6;False;2
-credential-access;T1003;['windows'];Dump svchost.exe to gather RDP credentials;d400090a-d8ca-4be0-982e-c70598a23de9;False;3
+credential-access;T1003;['windows'];Credential Dumping with NPPSpy;9e2173c0-ba26-4cdf-b0ed-8c54b27e3ad6;True;2
+credential-access;T1003;['windows'];Dump svchost.exe to gather RDP credentials;d400090a-d8ca-4be0-982e-c70598a23de9;True;3
 credential-access;T1110.002;['windows'];Password Cracking with Hashcat;6d27df5d-69d4-4c91-bc33-5983ffe91692;False;1
-credential-access;T1556.002;['windows'];Install and Register Password Filter DLL;a7961770-beb5-4134-9674-83d7e1fa865c;False;1
-credential-access;T1110.001;['windows'];Brute Force Credentials of single Active Directory domain users via SMB;09480053-2f98-4854-be6e-71ae5f672224;False;1
+credential-access;T1556.002;['windows'];Install and Register Password Filter DLL;a7961770-beb5-4134-9674-83d7e1fa865c;True;1
+credential-access;T1110.001;['windows'];Brute Force Credentials of single Active Directory domain users via SMB;09480053-2f98-4854-be6e-71ae5f672224;True;1
 credential-access;T1110.001;['windows'];Brute Force Credentials of single Active Directory domain user via LDAP against domain controller (NTLM or Kerberos);c2969434-672b-4ec8-8df0-bbb91f40e250;False;2
 credential-access;T1110.001;['azure-ad'];Brute Force Credentials of single Azure AD user;5a51ef57-299e-4d62-8e11-2d440df55e69;False;3
 credential-access;T1110.003;['windows'];Password Spray all Domain Users;90bc2e54-6c84-47a5-9439-0a2a92b4b175;False;1
@@ -97,10 +97,10 @@ credential-access;T1003.007;['linux'];Dump individual process memory with Python
 credential-access;T1606.002;['azure-ad'];Golden SAML;b16a03bc-1089-4dcc-ad98-30fe8f3a2b31;False;1
 credential-access;T1003.002;['windows'];Registry dump of SAM, creds, and secrets;5c2571d0-1572-416d-9676-812e64ca9f44;False;1
 credential-access;T1003.002;['windows'];Registry parse with pypykatz;a96872b2-cbf3-46cf-8eb4-27e8c0e85263;False;2
-credential-access;T1003.002;['windows'];esentutl.exe SAM copy;a90c2f4d-6726-444e-99d2-a00cd7c20480;False;3
-credential-access;T1003.002;['windows'];PowerDump Registry dump of SAM for hashes and usernames;804f28fc-68fc-40da-b5a2-e9d0bce5c193;False;4
-credential-access;T1003.002;['windows'];dump volume shadow copy hives with certutil;eeb9751a-d598-42d3-b11c-c122d9c3f6c7;False;5
-credential-access;T1003.002;['windows'];dump volume shadow copy hives with System.IO.File;9d77fed7-05f8-476e-a81b-8ff0472c64d0;False;6
+credential-access;T1003.002;['windows'];esentutl.exe SAM copy;a90c2f4d-6726-444e-99d2-a00cd7c20480;True;3
+credential-access;T1003.002;['windows'];PowerDump Registry dump of SAM for hashes and usernames;804f28fc-68fc-40da-b5a2-e9d0bce5c193;True;4
+credential-access;T1003.002;['windows'];dump volume shadow copy hives with certutil;eeb9751a-d598-42d3-b11c-c122d9c3f6c7;True;5
+credential-access;T1003.002;['windows'];dump volume shadow copy hives with System.IO.File;9d77fed7-05f8-476e-a81b-8ff0472c64d0;True;6
 collection;T1560;['windows'];Compress Data for Exfiltration With PowerShell;41410c60-614d-4b9d-b66e-b0192dd9c597;True;1
 collection;T1560.002;['linux'];Compressing data using GZip in Python (Linux);391f5298-b12d-4636-8482-35d9c17d53a8;False;1
 collection;T1560.002;['linux'];Compressing data using bz2 in Python (Linux);c75612b2-9de0-4d7c-879c-10d7b077072d;False;2
@@ -492,7 +492,7 @@ defense-evasion;T1134.004;['windows'];Parent PID Spoofing - Spawn from New Proce
 defense-evasion;T1550.002;['windows'];Mimikatz Pass the Hash;ec23cef9-27d9-46e4-a68d-6f75f7b86908;False;1
 defense-evasion;T1550.002;['windows'];crackmapexec Pass the Hash;eb05b028-16c8-4ad8-adea-6f5b219da9a9;False;2
 defense-evasion;T1550.003;['windows'];Mimikatz Kerberos Ticket Attack;dbf38128-7ba7-4776-bedf-cc2eed432098;False;1
-defense-evasion;T1556.002;['windows'];Install and Register Password Filter DLL;a7961770-beb5-4134-9674-83d7e1fa865c;False;1
+defense-evasion;T1556.002;['windows'];Install and Register Password Filter DLL;a7961770-beb5-4134-9674-83d7e1fa865c;True;1
 defense-evasion;T1574.009;['windows'];Execution of program.exe as service with unquoted service path;2770dea7-c50f-457b-84c4-c40a47460d9f;False;1
 defense-evasion;T1556.003;['linux'];Malicious PAM rule;4b9dde80-ae22-44b1-a82a-644bf009eb9c;False;1
 defense-evasion;T1556.003;['linux'];Malicious PAM module;65208808-3125-4a2e-8389-a0a00e9ab326;False;2
@@ -641,7 +641,7 @@ persistence;T1546.007;['windows'];Netsh Helper DLL Registration;3244697d-5a3a-4d
 persistence;T1137;['windows'];Office Application Startup - Outlook as a C2;bfe6ac15-c50b-4c4f-a186-0fc6b8ba936c;False;1
 persistence;T1137.002;['windows'];Office Application Startup Test Persistence;c3e35b58-fe1c-480b-b540-7600fb612563;False;1
 persistence;T1137.004;['windows'];Install Outlook Home Page Persistence;7a91ad51-e6d2-4d43-9471-f26362f5738e;False;1
-persistence;T1556.002;['windows'];Install and Register Password Filter DLL;a7961770-beb5-4134-9674-83d7e1fa865c;False;1
+persistence;T1556.002;['windows'];Install and Register Password Filter DLL;a7961770-beb5-4134-9674-83d7e1fa865c;True;1
 persistence;T1574.009;['windows'];Execution of program.exe as service with unquoted service path;2770dea7-c50f-457b-84c4-c40a47460d9f;False;1
 persistence;T1547.011;['macos'];Plist Modification;394a538e-09bb-4a4a-95d1-b93cf12682a8;False;1
 persistence;T1556.003;['linux'];Malicious PAM rule;4b9dde80-ae22-44b1-a82a-644bf009eb9c;False;1

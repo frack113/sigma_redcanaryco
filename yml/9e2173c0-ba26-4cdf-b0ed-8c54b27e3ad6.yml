@@ -16,5 +16,9 @@ description: |-
   After user's logging in cleartext password is saved in C:\NPPSpy.txt.
   Clean up deletes the files and reverses Registry changes.
   NPPSpy Source: https://github.com/gtworek/PSBits/tree/master/PasswordStealing/NPPSpy
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: cad1fe90-2406-44dc-bd03-59d0b58fe722
+    name: file_event_hktl_nppspy.yml
+  - id: f674e36a-4b91-431e-8aef-f8a96c2aca35
+    name: sysmon_asep_reg_keys_modification_currentcontrolset.yml

@@ -33,5 +33,14 @@ os:
 description: "The memory of lsass.exe is often dumped for offline credential theft attacks. This can be achieved using direct system calls and API unhooking in an effort to avoid detection. \nhttps://github.com/outflanknl/Dumpert\n\
   https://outflank.nl/blog/2019/06/19/red-team-tactics-combining-direct-system-calls-and-srdi-to-bypass-av-edr/\nUpon successful execution, you should see the following file created C:\\\\windows\\\\temp\\\
   \\dumpert.dmp.\n\nIf you see a message saying \\\"The system cannot find the path specified.\\\", try using the  get-prereq_commands to download the  tool first.\n"
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 2704ab9e-afe2-4854-a3b1-0c0706d03578
+    name: process_creation_hack_dumpert.yml
+  - id: a5a2d357-1ab8-4675-a967-ef9990a59391
+    name: file_event_lsass_dump.yml
+  - id: 93d94efc-d7ad-4161-ad7d-1638c4f908d8
+    name: file_event_hack_dumpert.yml
+  - id: 5ef9853e-4d0e-4a70-846f-a9ca37d876da
+    name: sysmon_lsass_memdump.yml
+

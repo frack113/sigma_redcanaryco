@@ -36,5 +36,7 @@ description: |
   Python 3 must be installed, use the get_prereq_command's to meet the prerequisites for this test.
 
   Successful execution of this test will display multiple useranames and passwords/hashes to the screen.
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 7186e989-4ed7-4f4e-a656-4674b9e3e48b
+    name: sysmon_pypykatz_cred_dump_lsass_access.yml

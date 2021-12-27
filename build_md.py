@@ -63,7 +63,7 @@ Knowing which rule should trigger when running a [redcannary test](https://githu
 Caution: a test can generate a lot of noise...
 
 <p align="center" width="100%">
-    <img width="33%" src="./png/allright.jpg "> 
+    <img width="33%" src="./png/allright.jpg"> 
 </p>
 
 ## Tests\n\n

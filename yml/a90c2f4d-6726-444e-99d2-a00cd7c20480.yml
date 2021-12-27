@@ -16,5 +16,9 @@ os:
 description: |
   Copy the SAM hive using the esentutl.exe utility
   This can also be used to copy other files and hives like SYSTEM, NTUSER.dat etc.
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: e7be6119-fc37-43f0-ad4f-1f3f99be2f9f
+    name: win_copying_sensitive_files_with_credential_data.yml
+  - id: 333cdbe8-27bb-4246-bf82-b41a0dca4b70
+    name: win_suspicious_vss_ps_load.yml

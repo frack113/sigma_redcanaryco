@@ -18,5 +18,9 @@ os:
 description: 'Uses PowerShell to install and register a password filter DLL. Requires a reboot and administrative privileges.
 
   '
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: f674e36a-4b91-431e-8aef-f8a96c2aca35
+    name: sysmon_asep_reg_keys_modification_currentcontrolset.yml
+  - id: 63bf8794-9917-45bc-88dd-e1b5abc0ecfd
+    name: powershell_ps_copy_item_system32.yml
