@@ -1,9 +1,14 @@
 # Welcome to my sigma redcannary cover projet
+
 ## Purpose
 
 Knowing which rule should trigger when running a [redcannary test](https://github.com/redcanaryco/atomic-red-team)
 
-When run a test noisy many rules can trigger too...
+Caution: a test can generate a lot of noise...
+
+<p align="center" width="100%">
+    <img width="33%" src="./png/allright.jpg "> 
+</p>
 
 ## Tests
 
@@ -1198,7 +1203,7 @@ When run a test noisy many rules can trigger too...
 ### T1003.001
 [Dump LSASS.exe Memory using Out-Minidump.ps1](tests/6502c8f0-b775-4dbd-9193-1298f56b6781.md) ['windows'] (sigma rule :x:)
 
-[Windows Credential Editor](tests/0f7c5301-6859-45ba-8b4d-1fac30fc31ed.md) ['windows'] (sigma rule :x:)
+[Windows Credential Editor](tests/0f7c5301-6859-45ba-8b4d-1fac30fc31ed.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [LSASS read with pypykatz](tests/c37bc535-5c62-4195-9cc3-0517673171d8.md) ['windows'] (sigma rule :x:)
 
@@ -1208,9 +1213,9 @@ When run a test noisy many rules can trigger too...
 
 [Dump LSASS with .Net 5 createdump.exe](tests/9d0072c8-7cca-45c4-bd14-f852cfa35cf0.md) ['windows'] (sigma rule :x:)
 
-[Create Mini Dump of LSASS.exe using ProcDump](tests/7cede33f-0acd-44ef-9774-15511300b24b.md) ['windows'] (sigma rule :x:)
+[Create Mini Dump of LSASS.exe using ProcDump](tests/7cede33f-0acd-44ef-9774-15511300b24b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Powershell Mimikatz](tests/66fb0bc1-3c3f-47e9-a298-550ecfefacbc.md) ['windows'] (sigma rule :x:)
+[Powershell Mimikatz](tests/66fb0bc1-3c3f-47e9-a298-550ecfefacbc.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Dump LSASS.exe Memory using comsvcs.dll](tests/2536dee2-12fb-459a-8c37-971844fa73be.md) ['windows'] (sigma rule :x:)
 
