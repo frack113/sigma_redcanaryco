@@ -1,7 +1,7 @@
 
 [back](../index.md)
 
-Find sigma rule :x: 
+Find sigma rule :heavy_check_mark: 
 
 # Attack: NTDS 
 
@@ -38,6 +38,8 @@ The Active Directory database NTDS.dit may be dumped by copying it from a Volume
 
 
 # Sigma Rule
+ - win_shadow_copies_creation.yml (id: b17ea6f7-6e90-447e-a799-e6c0a493d6ce)
+
 
 
 [back](../index.md)
