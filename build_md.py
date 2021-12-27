@@ -5,9 +5,9 @@
 
 """
 Project: redcannary_id.py
-Date: 2021/12/19
+Date: 2021/12/27
 Author: frack113
-Version: 1.2
+Version: 1.3
 Description: 
     generate the md file
 Requirements:
@@ -55,11 +55,16 @@ for dictionnary in index.values():
         full_technique[dictionnary["technique"]] = [dictionnary]
 
 string_index = """# Welcome to my sigma redcannary cover projet
+
 ## Purpose
 
 Knowing which rule should trigger when running a [redcannary test](https://github.com/redcanaryco/atomic-red-team)
 
-When run a test noisy many rules can trigger too...
+Caution: a test can generate a lot of noise...
+
+<p align="center" width="100%">
+    <img width="33%" src="./png/allright.jpg "> 
+</p>
 
 ## Tests\n\n
 """

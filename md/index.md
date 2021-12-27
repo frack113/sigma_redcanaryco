@@ -1,9 +1,14 @@
 # Welcome to my sigma redcannary cover projet
+
 ## Purpose
 
 Knowing which rule should trigger when running a [redcannary test](https://github.com/redcanaryco/atomic-red-team)
 
 When run a test noisy many rules can trigger too...
+
+<p align="center" width="100%">
+    <img width="33%" src="./png/allright.jpg "> 
+</p>
 
 ## Tests
 
@@ -148,21 +153,21 @@ When run a test noisy many rules can trigger too...
 
 
 ### T1560.001
-[Compress Data and lock with password for Exfiltration with winzip](tests/01df0353-d531-408d-a0c5-3161bf822134.md) ['windows'] (sigma rule :x:)
+[Compress Data and lock with password for Exfiltration with winzip](tests/01df0353-d531-408d-a0c5-3161bf822134.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Data Encrypted with zip and gpg symmetric](tests/0286eb44-e7ce-41a0-b109-3da516e05a5f.md) ['macos', 'linux'] (sigma rule :x:)
 
-[Compress Data for Exfiltration With Rar](tests/02ea31cb-3b4c-4a2d-9bf1-e4e70ebcf5d0.md) ['windows'] (sigma rule :x:)
+[Compress Data for Exfiltration With Rar](tests/02ea31cb-3b4c-4a2d-9bf1-e4e70ebcf5d0.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Data Compressed - nix - tar Folder or File](tests/7af2b51e-ad1c-498c-aca8-d3290c19535a.md) ['linux', 'macos'] (sigma rule :x:)
 
-[Compress Data and lock with password for Exfiltration with winrar](tests/8dd61a55-44c6-43cc-af0c-8bdda276860c.md) ['windows'] (sigma rule :x:)
+[Compress Data and lock with password for Exfiltration with winrar](tests/8dd61a55-44c6-43cc-af0c-8bdda276860c.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Data Compressed - nix - zip](tests/c51cec55-28dd-4ad2-9461-1eacbc82c3a0.md) ['linux', 'macos'] (sigma rule :x:)
 
 [Data Compressed - nix - gzip Single File](tests/cde3c2af-3485-49eb-9c1f-0ed60e9cc0af.md) ['linux', 'macos'] (sigma rule :x:)
 
-[Compress Data and lock with password for Exfiltration with 7zip](tests/d1334303-59cb-4a03-8313-b3e24d02c198.md) ['windows'] (sigma rule :x:)
+[Compress Data and lock with password for Exfiltration with 7zip](tests/d1334303-59cb-4a03-8313-b3e24d02c198.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1095
@@ -198,19 +203,19 @@ When run a test noisy many rules can trigger too...
 
 
 ### T1016
-[List Windows Firewall Rules](tests/038263cb-00f4-4b0a-98ae-0696c67e1752.md) ['windows'] (sigma rule :x:)
+[List Windows Firewall Rules](tests/038263cb-00f4-4b0a-98ae-0696c67e1752.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Qakbot Recon](tests/121de5c6-5818-4868-b8a7-8fd07c455c1b.md) ['windows'] (sigma rule :x:)
+[Qakbot Recon](tests/121de5c6-5818-4868-b8a7-8fd07c455c1b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[List Open Egress Ports](tests/4b467538-f102-491d-ace7-ed487b853bf5.md) ['windows'] (sigma rule :x:)
+[List Open Egress Ports](tests/4b467538-f102-491d-ace7-ed487b853bf5.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[System Network Configuration Discovery on Windows](tests/970ab6a1-0157-4f3f-9a73-ec4166754b23.md) ['windows'] (sigma rule :x:)
+[System Network Configuration Discovery on Windows](tests/970ab6a1-0157-4f3f-9a73-ec4166754b23.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Adfind - Enumerate Active Directory Subnet Objects](tests/9bb45dd7-c466-4f93-83a1-be30e56033ee.md) ['windows'] (sigma rule :x:)
+[Adfind - Enumerate Active Directory Subnet Objects](tests/9bb45dd7-c466-4f93-83a1-be30e56033ee.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [System Network Configuration Discovery](tests/c141bbdb-7fca-4254-9fd6-f47e79447e17.md) ['macos', 'linux'] (sigma rule :x:)
 
-[System Network Configuration Discovery (TrickBot Style)](tests/dafaf052-5508-402d-bf77-51e0700c02e2.md) ['windows'] (sigma rule :x:)
+[System Network Configuration Discovery (TrickBot Style)](tests/dafaf052-5508-402d-bf77-51e0700c02e2.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [List macOS Firewall Rules](tests/ff1d8c25-2aa4-4f18-a425-fede4a41ee88.md) ['macos'] (sigma rule :x:)
 
@@ -267,6 +272,10 @@ When run a test noisy many rules can trigger too...
 [Remove Network Share](tests/09210ad5-1ef2-4077-9ad3-7351e13e9222.md) ['windows'] (sigma rule :x:)
 
 [Add Network Share](tests/14c38f32-6509-46d8-ab43-d53e32d2b131.md) ['windows'] (sigma rule :x:)
+
+[Remove Administrative Shares](tests/4299eff5-90f1-4446-b2f3-7f4f5cfd5d62.md) ['windows'] (sigma rule :x:)
+
+[Disable Administrative Share Creation at Startup](tests/99c657aa-ebeb-4179-a665-69288fdd12b8.md) ['windows'] (sigma rule :x:)
 
 
 ### T1218.007
@@ -428,7 +437,7 @@ When run a test noisy many rules can trigger too...
 
 [Encrypt files using 7z (Linux)](tests/53e6735a-4727-44cc-b35b-237682a151ad.md) ['linux'] (sigma rule :x:)
 
-[PureLocker Ransom Note](tests/649349c7-9abf-493b-a7a2-b1aa4d141528.md) ['windows'] (sigma rule :x:)
+[PureLocker Ransom Note](tests/649349c7-9abf-493b-a7a2-b1aa4d141528.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Encrypt files using gpg (Linux)](tests/7b8ce084-3922-4618-8d22-95f996173765.md) ['linux'] (sigma rule :x:)
 
@@ -450,9 +459,9 @@ When run a test noisy many rules can trigger too...
 
 
 ### T1049
-[System Network Connections Discovery](tests/0940a971-809a-48f1-9c4d-b1d785e96ee5.md) ['windows'] (sigma rule :x:)
+[System Network Connections Discovery](tests/0940a971-809a-48f1-9c4d-b1d785e96ee5.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[System Discovery using SharpView](tests/96f974bb-a0da-4d87-a744-ff33e73367e9.md) ['windows'] (sigma rule :x:)
+[System Discovery using SharpView](tests/96f974bb-a0da-4d87-a744-ff33e73367e9.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [System Network Connections Discovery Linux & MacOS](tests/9ae28d3f-190f-4fa0-b023-c7bd3e0eabf2.md) ['linux', 'macos'] (sigma rule :x:)
 
@@ -518,7 +527,7 @@ When run a test noisy many rules can trigger too...
 ### T1003.001
 [Dump LSASS.exe Memory using ProcDump](tests/0be2230c-9ab3-4ac2-8826-3199b9a0ebf8.md) ['windows'] (sigma rule :x:)
 
-[Windows Credential Editor](tests/0f7c5301-6859-45ba-8b4d-1fac30fc31ed.md) ['windows'] (sigma rule :x:)
+[Windows Credential Editor](tests/0f7c5301-6859-45ba-8b4d-1fac30fc31ed.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Dump LSASS.exe Memory using comsvcs.dll](tests/2536dee2-12fb-459a-8c37-971844fa73be.md) ['windows'] (sigma rule :x:)
 
@@ -526,11 +535,11 @@ When run a test noisy many rules can trigger too...
 
 [Dump LSASS.exe Memory using Out-Minidump.ps1](tests/6502c8f0-b775-4dbd-9193-1298f56b6781.md) ['windows'] (sigma rule :x:)
 
-[Powershell Mimikatz](tests/66fb0bc1-3c3f-47e9-a298-550ecfefacbc.md) ['windows'] (sigma rule :x:)
+[Powershell Mimikatz](tests/66fb0bc1-3c3f-47e9-a298-550ecfefacbc.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Dump LSASS.exe Memory using direct system calls and API unhooking](tests/7ae7102c-a099-45c8-b985-4c7a2d05790d.md) ['windows'] (sigma rule :x:)
 
-[Create Mini Dump of LSASS.exe using ProcDump](tests/7cede33f-0acd-44ef-9774-15511300b24b.md) ['windows'] (sigma rule :x:)
+[Create Mini Dump of LSASS.exe using ProcDump](tests/7cede33f-0acd-44ef-9774-15511300b24b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Dump LSASS.exe using imported Microsoft DLLs](tests/86fc3f40-237f-4701-b155-81c01c48d697.md) ['windows'] (sigma rule :x:)
 
@@ -552,13 +561,13 @@ When run a test noisy many rules can trigger too...
 
 
 ### T1115
-[Utilize Clipboard to store or execute commands from](tests/0cd14633-58d4-4422-9ede-daa2c9474ae7.md) ['windows'] (sigma rule :x:)
+[Utilize Clipboard to store or execute commands from](tests/0cd14633-58d4-4422-9ede-daa2c9474ae7.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Execute commands from clipboard](tests/1ac2247f-65f8-4051-b51f-b0ccdfaaa5ff.md) ['macos'] (sigma rule :x:)
 
-[Collect Clipboard Data via VBA](tests/9c8d5a72-9c98-48d3-b9bf-da2cc43bdf52.md) ['windows'] (sigma rule :x:)
+[Collect Clipboard Data via VBA](tests/9c8d5a72-9c98-48d3-b9bf-da2cc43bdf52.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Execute Commands from Clipboard using PowerShell](tests/d6dc21af-bec9-4152-be86-326b6babd416.md) ['windows'] (sigma rule :x:)
+[Execute Commands from Clipboard using PowerShell](tests/d6dc21af-bec9-4152-be86-326b6babd416.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1083
@@ -594,7 +603,7 @@ When run a test noisy many rules can trigger too...
 
 [Auditd keylogger](tests/a668edb9-334e-48eb-8c2e-5413a40867af.md) ['linux'] (sigma rule :x:)
 
-[Input Capture](tests/d9b633ca-8efb-45e6-b838-70f595c6ae26.md) ['windows'] (sigma rule :x:)
+[Input Capture](tests/d9b633ca-8efb-45e6-b838-70f595c6ae26.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1021.002
@@ -744,7 +753,7 @@ When run a test noisy many rules can trigger too...
 
 
 ### T1003.006
-[DCSync (Active Directory)](tests/129efd28-8497-4c87-a1b0-73b9a870ca3e.md) ['windows'] (sigma rule :x:)
+[DCSync (Active Directory)](tests/129efd28-8497-4c87-a1b0-73b9a870ca3e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1112
@@ -962,29 +971,29 @@ When run a test noisy many rules can trigger too...
 
 
 ### T1531
-[Change User Password - Windows](tests/1b99ef28-f83c-4ec5-8a08-1a56263a5bb2.md) ['windows'] (sigma rule :x:)
+[Change User Password - Windows](tests/1b99ef28-f83c-4ec5-8a08-1a56263a5bb2.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Remove Account From Domain Admin Group](tests/43f71395-6c37-498e-ab17-897d814a0947.md) ['windows'] (sigma rule :x:)
+[Remove Account From Domain Admin Group](tests/43f71395-6c37-498e-ab17-897d814a0947.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Delete User - Windows](tests/f21a1d7d-a62f-442a-8c3a-2440d43b19e5.md) ['windows'] (sigma rule :x:)
+[Delete User - Windows](tests/f21a1d7d-a62f-442a-8c3a-2440d43b19e5.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1490
-[Windows - Disable the SR scheduled task](tests/1c68c68d-83a4-4981-974e-8993055fa034.md) ['windows'] (sigma rule :x:)
+[Windows - Disable the SR scheduled task](tests/1c68c68d-83a4-4981-974e-8993055fa034.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Windows - wbadmin Delete Windows Backup Catalog](tests/263ba6cb-ea2b-41c9-9d4e-b652dadd002c.md) ['windows'] (sigma rule :x:)
+[Windows - wbadmin Delete Windows Backup Catalog](tests/263ba6cb-ea2b-41c9-9d4e-b652dadd002c.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Windows - Delete Volume Shadow Copies via WMI with PowerShell](tests/39a295ca-7059-4a88-86f6-09556c1211e7.md) ['windows'] (sigma rule :x:)
 
-[Windows - Delete Volume Shadow Copies](tests/43819286-91a9-4369-90ed-d31fb4da2c01.md) ['windows'] (sigma rule :x:)
+[Windows - Delete Volume Shadow Copies](tests/43819286-91a9-4369-90ed-d31fb4da2c01.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Windows - wbadmin Delete systemstatebackup](tests/584331dd-75bc-4c02-9e0b-17f5fd81c748.md) ['windows'] (sigma rule :x:)
+[Windows - wbadmin Delete systemstatebackup](tests/584331dd-75bc-4c02-9e0b-17f5fd81c748.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Windows - Delete Volume Shadow Copies via WMI](tests/6a3ff8dd-f49c-4272-a658-11c2fe58bd88.md) ['windows'] (sigma rule :x:)
+[Windows - Delete Volume Shadow Copies via WMI](tests/6a3ff8dd-f49c-4272-a658-11c2fe58bd88.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Windows - Delete Backup Files](tests/6b1dbaf6-cc8a-4ea6-891f-6058569653bf.md) ['windows'] (sigma rule :x:)
 
-[Windows - Disable Windows Recovery Console Repair](tests/cf21060a-80b3-4238-a595-22525de4ab81.md) ['windows'] (sigma rule :x:)
+[Windows - Disable Windows Recovery Console Repair](tests/cf21060a-80b3-4238-a595-22525de4ab81.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1055
@@ -1088,11 +1097,11 @@ When run a test noisy many rules can trigger too...
 
 
 ### T1489
-[Windows - Stop service using Service Controller](tests/21dfb440-830d-4c86-a3e5-2a491d5a8d04.md) ['windows'] (sigma rule :x:)
+[Windows - Stop service using Service Controller](tests/21dfb440-830d-4c86-a3e5-2a491d5a8d04.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Windows - Stop service using net.exe](tests/41274289-ec9c-4213-bea4-e43c4aa57954.md) ['windows'] (sigma rule :x:)
+[Windows - Stop service using net.exe](tests/41274289-ec9c-4213-bea4-e43c4aa57954.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Windows - Stop service by killing process](tests/f3191b84-c38b-400b-867e-3a217a27795f.md) ['windows'] (sigma rule :x:)
+[Windows - Stop service by killing process](tests/f3191b84-c38b-400b-867e-3a217a27795f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1571
@@ -1144,15 +1153,15 @@ When run a test noisy many rules can trigger too...
 
 
 ### T1555
-[Extract Windows Credential Manager via VBA](tests/234f9b7c-b53d-4f32-897b-b880a6c9ea7b.md) ['windows'] (sigma rule :x:)
+[Extract Windows Credential Manager via VBA](tests/234f9b7c-b53d-4f32-897b-b880a6c9ea7b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Enumerate credentials from Windows Credential Manager using vaultcmd.exe [Windows Credentials]](tests/36753ded-e5c4-4eb5-bc3c-e8fba236878d.md) ['windows'] (sigma rule :x:)
+[Enumerate credentials from Windows Credential Manager using vaultcmd.exe [Windows Credentials]](tests/36753ded-e5c4-4eb5-bc3c-e8fba236878d.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Dump credentials from Windows Credential Manager With PowerShell [web Credentials]](tests/8fd5a296-6772-4766-9991-ff4e92af7240.md) ['windows'] (sigma rule :x:)
+[Dump credentials from Windows Credential Manager With PowerShell [web Credentials]](tests/8fd5a296-6772-4766-9991-ff4e92af7240.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Enumerate credentials from Windows Credential Manager using vaultcmd.exe [Web Credentials]](tests/bc071188-459f-44d5-901a-f8f2625b2d2e.md) ['windows'] (sigma rule :x:)
+[Enumerate credentials from Windows Credential Manager using vaultcmd.exe [Web Credentials]](tests/bc071188-459f-44d5-901a-f8f2625b2d2e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Dump credentials from Windows Credential Manager With PowerShell [windows Credentials]](tests/c89becbe-1758-4e7d-a0f4-97d2188a23e3.md) ['windows'] (sigma rule :x:)
+[Dump credentials from Windows Credential Manager With PowerShell [windows Credentials]](tests/c89becbe-1758-4e7d-a0f4-97d2188a23e3.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1548.002
@@ -1314,7 +1323,7 @@ When run a test noisy many rules can trigger too...
 
 
 ### T1056.002
-[PowerShell - Prompt User for Password](tests/2b162bfd-0928-4d4c-9ec3-4d9f88374b52.md) ['windows'] (sigma rule :x:)
+[PowerShell - Prompt User for Password](tests/2b162bfd-0928-4d4c-9ec3-4d9f88374b52.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [AppleScript - Prompt User for Password](tests/76628574-0bc1-4646-8fe2-8f4427b47d15.md) ['macos'] (sigma rule :x:)
 
@@ -1396,7 +1405,15 @@ When run a test noisy many rules can trigger too...
 
 
 ### T1491.001
-[Replace Desktop Wallpaper](tests/30558d53-9d76-41c4-9267-a7bd5184bed3.md) ['windows'] (sigma rule :x:)
+[Replace Desktop Wallpaper](tests/30558d53-9d76-41c4-9267-a7bd5184bed3.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+
+### T1485
+[Overwrite deleted data on C drive](tests/321fd25e-0007-417f-adec-33232252be19.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[macOS/Linux - Overwrite file with DD](tests/38deee99-fd65-4031-bec8-bfa4f9f26146.md) ['linux', 'macos'] (sigma rule :x:)
+
+[Windows - Overwrite file with Sysinternals SDelete](tests/476419b5-aebf-4366-a131-ae3e8dae5fc2.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1546.007
@@ -1451,12 +1468,6 @@ When run a test noisy many rules can trigger too...
 [Access /etc/{shadow,passwd} with shell builtins](tests/f5aa6543-6cb2-4fae-b9c2-b96e14721713.md) ['linux'] (sigma rule :x:)
 
 
-### T1485
-[macOS/Linux - Overwrite file with DD](tests/38deee99-fd65-4031-bec8-bfa4f9f26146.md) ['linux', 'macos'] (sigma rule :x:)
-
-[Windows - Overwrite file with Sysinternals SDelete](tests/476419b5-aebf-4366-a131-ae3e8dae5fc2.md) ['windows'] (sigma rule :x:)
-
-
 ### T1547.011
 [Plist Modification](tests/394a538e-09bb-4a4a-95d1-b93cf12682a8.md) ['macos'] (sigma rule :x:)
 
@@ -1508,11 +1519,11 @@ When run a test noisy many rules can trigger too...
 
 
 ### T1555.003
-[Simulating access to Chrome Login Data](tests/3d111226-d09a-4911-8715-fe11664f960d.md) ['windows'] (sigma rule :x:)
+[Simulating access to Chrome Login Data](tests/3d111226-d09a-4911-8715-fe11664f960d.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Run Chrome-password Collector](tests/8c05b133-d438-47ca-a630-19cc464c4622.md) ['windows'] (sigma rule :x:)
+[Run Chrome-password Collector](tests/8c05b133-d438-47ca-a630-19cc464c4622.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[LaZagne - Credentials from Browser](tests/9a2915b3-3954-4cce-8c76-00fbf4dbd014.md) ['windows'] (sigma rule :x:)
+[LaZagne - Credentials from Browser](tests/9a2915b3-3954-4cce-8c76-00fbf4dbd014.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Search macOS Safari Cookies](tests/c1402f7b-67ca-43a8-b5f3-3143abedc01b.md) ['macos'] (sigma rule :x:)
 
@@ -1540,7 +1551,7 @@ When run a test noisy many rules can trigger too...
 
 
 ### T1560
-[Compress Data for Exfiltration With PowerShell](tests/41410c60-614d-4b9d-b66e-b0192dd9c597.md) ['windows'] (sigma rule :x:)
+[Compress Data for Exfiltration With PowerShell](tests/41410c60-614d-4b9d-b66e-b0192dd9c597.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1562.002
@@ -1634,7 +1645,7 @@ When run a test noisy many rules can trigger too...
 
 
 ### T1187
-[PetitPotam](tests/485ce873-2e65-4706-9c7e-ae3ab9e14213.md) ['windows'] (sigma rule :x:)
+[PetitPotam](tests/485ce873-2e65-4706-9c7e-ae3ab9e14213.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1543.003
@@ -1804,13 +1815,13 @@ When run a test noisy many rules can trigger too...
 
 
 ### T1119
-[Automated Collection PowerShell](tests/634bd9b9-dc83-4229-b19f-7f83ba9ad313.md) ['windows'] (sigma rule :x:)
+[Automated Collection PowerShell](tests/634bd9b9-dc83-4229-b19f-7f83ba9ad313.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Recon information for export with Command Prompt](tests/aa1180e2-f329-4e1e-8625-2472ec0bfaf3.md) ['windows'] (sigma rule :x:)
 
-[Recon information for export with PowerShell](tests/c3f6d794-50dd-482f-b640-0384fbb7db26.md) ['windows'] (sigma rule :x:)
+[Recon information for export with PowerShell](tests/c3f6d794-50dd-482f-b640-0384fbb7db26.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Automated Collection Command Prompt](tests/cb379146-53f1-43e0-b884-7ce2c635ff5b.md) ['windows'] (sigma rule :x:)
+[Automated Collection Command Prompt](tests/cb379146-53f1-43e0-b884-7ce2c635ff5b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1574.002
@@ -1956,7 +1967,7 @@ When run a test noisy many rules can trigger too...
 
 
 ### T1558.001
-[Crafting Active Directory golden tickets with mimikatz](tests/9726592a-dabc-4d4d-81cd-44070008b3af.md) ['windows'] (sigma rule :x:)
+[Crafting Active Directory golden tickets with mimikatz](tests/9726592a-dabc-4d4d-81cd-44070008b3af.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Crafting Active Directory golden tickets with Rubeus](tests/e42d33cd-205c-4acf-ab59-a9f38f6bad9c.md) ['windows'] (sigma rule :x:)
 
@@ -1984,7 +1995,7 @@ When run a test noisy many rules can trigger too...
 
 
 ### T1123
-[using device audio capture commandlet](tests/9c3ad250-b185-4444-b5a9-d69218a10c95.md) ['windows'] (sigma rule :x:)
+[using device audio capture commandlet](tests/9c3ad250-b185-4444-b5a9-d69218a10c95.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1020
@@ -2024,9 +2035,9 @@ When run a test noisy many rules can trigger too...
 
 
 ### T1552.002
-[Enumeration for PuTTY Credentials in Registry](tests/af197fd7-e868-448e-9bd5-05d1bcd9d9e5.md) ['windows'] (sigma rule :x:)
+[Enumeration for PuTTY Credentials in Registry](tests/af197fd7-e868-448e-9bd5-05d1bcd9d9e5.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Enumeration for Credentials in Registry](tests/b6ec082c-7384-46b3-a111-9a9b8b14e5e7.md) ['windows'] (sigma rule :x:)
+[Enumeration for Credentials in Registry](tests/b6ec082c-7384-46b3-a111-9a9b8b14e5e7.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1547.005
