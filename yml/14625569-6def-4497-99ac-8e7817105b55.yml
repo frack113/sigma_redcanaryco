@@ -20,5 +20,9 @@ os:
 description: |
   Information on the Rubeus tool and it's creators found here: https://github.com/GhostPack/Rubeus#asreproast
   This build targets .NET 4.5.  If targeting a different version you will need to compile Rubeus
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 8d31a8ce-46b5-4dd6-bdc3-680931f1db86
+    name: powershell_bad_opsec_artifacts.yml
+  - id: 8d31a8ce-46b5-4dd6-bdc3-680931f1db86
+    name: powershell_bad_opsec_artifacts.yml

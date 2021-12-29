@@ -21,5 +21,11 @@ description: |
   and execute a payload leveraging PowerShell
 
   Upon execution you will find a github markdown file downloaded to the Temp directory
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: f67dbfce-93bc-440d-86ad-a95ae8858c90
+    name: win_powershell_bitsjob.yml
+  - id: 9fc51a3c-81b3-4fa7-b35f-7c02cf10fd2d
+    name: process_creation_susp_web_request_cmd.yml
+  - id: 1139d2e2-84b1-4226-b445-354492eba8ba
+    name: powershell_web_request.yml

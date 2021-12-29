@@ -14,5 +14,10 @@ os:
 description: |
   Creates a new user in a command prompt. Upon execution, "The command completed successfully." will be displayed. To verify the
   new account, run "net user" in powershell or CMD and observe that there is a new user named "T1136.001_CMD"
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: cd219ff3-fa99-45d4-8380-a7d15116c6dc
+    name: win_net_user_add.yml
+  - id: 183e7ea8-ac4b-4c23-9aec-b3dac4e401ac
+    name: win_susp_net_execution.yml
+

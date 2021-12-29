@@ -15,5 +15,8 @@ os:
 description: 'Netsh interacts with other operating system components using dynamic-link library (DLL) files
 
   '
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 56321594-9087-49d9-bf10-524fe8479452
+    name: win_susp_netsh_dll_persistence.yml
+

@@ -18,5 +18,8 @@ os:
 description: |
   This module utilizes the Windows API to schedule a task for code execution (notepad.exe). The task scheduler will execute "notepad.exe" within
   30 - 40 seconds after this module has run
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: e6ce8457-68b1-485b-9bdd-3c2b5d679aa9
+    name: sysmon_susp_winword_vbadll_load.yml
+

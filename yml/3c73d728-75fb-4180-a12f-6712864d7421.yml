@@ -19,5 +19,7 @@ os:
 description: |
   This test simulates an adversary leveraging bitsadmin.exe to download
   and execute a payload
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: d059842b-6b9d-4ed1-b5c3-5b89143c6ede
+    name: win_process_creation_bitsadmin_download.yml

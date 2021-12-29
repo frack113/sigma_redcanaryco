@@ -13,5 +13,12 @@ os:
 description: |
   Utilize powershell to download discovery.bat and save to a local file. This emulates an attacker downloading data collection tools onto the host. Upon execution,
   verify that the file is saved in the temp directory.
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 1139d2e2-84b1-4226-b445-354492eba8ba
+    name: powershell_web_request.yml
+  - id: 602a1f13-c640-4d73-b053-be9a2fa58b96
+    name: sysmon_detect_powerup_dllhijacking.yml
+  - id: 1f21ec3f-810d-4b0e-8045-322202e22b4b
+    name: sysmon_powershell_network_connection.yml
+

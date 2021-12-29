@@ -19,5 +19,8 @@ description: |
   Note: deprecated in Windows 8+
 
   Upon successful execution, cmd.exe will spawn at.exe and create a scheduled task that will spawn cmd at a specific time.
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 60fc936d-2eb0-4543-8a13-911c750a1dfc
+    name: win_interactive_at.yml
+

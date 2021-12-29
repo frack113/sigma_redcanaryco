@@ -18,5 +18,8 @@ os:
   - windows
 description: "This test simulates using desktopimgdownldr.exe to download a malicious file\ninstead of a desktop or lockscreen background img. The process that actually makes \nthe TCP connection and creates\
   \ the file on the disk is a svchost process (“-k netsvc -p -s BITS”) \nand not desktopimgdownldr.exe. See https://labs.sentinelone.com/living-off-windows-land-a-new-native-file-downldr/\n"
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: bb58aa4a-b80b-415a-a2c0-2f65a4c81009
+    name: win_susp_desktopimgdownldr.yml
+

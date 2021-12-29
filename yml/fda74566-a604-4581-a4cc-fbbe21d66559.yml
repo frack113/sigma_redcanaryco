@@ -14,5 +14,11 @@ os:
 description: 'Creates a new admin user in a command prompt.
 
   '
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 0eb2107b-a596-422e-b123-b389d5594ed7
+    name: win_apt_hurricane_panda.yml
+  - id: c183e7ea8-ac4b-4c23-9aec-b3dac4e401a
+    name: win_susp_net_execution.yml
+  - id: cd219ff3-fa99-45d4-8380-a7d15116c6dc
+    name: win_net_user_add.yml

@@ -17,5 +17,8 @@ technique:
 os:
   - windows
 description: "Change Default File Association From cmd.exe of hta to notepad.\n\nUpon successful execution, cmd.exe will change the file association of .hta to notepad.exe. \n"
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 3d3aa6cd-6272-44d6-8afc-7e88dfef7061
+    name: win_change_default_file_association.yml
+

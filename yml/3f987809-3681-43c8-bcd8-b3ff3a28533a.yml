@@ -20,5 +20,15 @@ os:
 description: "This test uses the Powershell Empire Module: Invoke-Kerberoast.ps1\nThe following are further sources and credits for this attack:\n[Kerberoasting Without Mimikatz source] (https://www.harmj0y.net/blog/powershell/kerberoasting-without-mimikatz/)\n\
   [Invoke-Kerberoast source] (https://powersploit.readthedocs.io/en/latest/Recon/Invoke-Kerberoast/)\nwhen executed successfully , the test displays available services with their hashes. \nIf the testing\
   \ domain doesn't have any service principal name configured, there is no output\n"
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 8d31a8ce-46b5-4dd6-bdc3-680931f1db86
+    name: powershell_bad_opsec_artifacts.yml
+  - id: dcd74b95-3f36-4ed9-9598-0490951643aa
+    name: powershell_powerview_malicious_commandlets.yml
+  - id: 89819aa4-bbd6-46bc-88ec-c7f7fe30efa6
+    name: powershell_malicious_commandlets.yml
+  - id: 03d83090-8cba-44a0-b02f-0b756a050306
+    name: powershell_accessing_win_api.yml
+  - id: 1f21ec3f-810d-4b0e-8045-322202e22b4b
+    name: sysmon_powershell_network_connection.yml

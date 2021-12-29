@@ -19,5 +19,8 @@ description: |
   Create an atomic scheduled task that leverages native powershell cmdlets.
 
   Upon successful execution, powershell.exe will create a scheduled task to spawn cmd.exe at 20:10.
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 363eccc0-279a-4ccf-a3ab-24c2e63b11fb
+    name: powershell_ps_cmdlet_scheduled_task.yml
+

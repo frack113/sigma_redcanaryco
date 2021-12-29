@@ -15,5 +15,10 @@ os:
 description: |
   Adds a registry value to run batch script created in the %temp% directory. Upon execution, there will be a new environment variable in the HKCU\Environment key
   that can be viewed in the Registry Editor.
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 0a98a10c-685d-4ab0-bddc-b6bdd1d48458
+    name: sysmon_logon_scripts_userinitmprlogonscript_proc.yml
+  - id: 9ace0707-b560-49b8-b6ca-5148b42f39fb
+    name: sysmon_logon_scripts_userinitmprlogonscript_reg.yml
+

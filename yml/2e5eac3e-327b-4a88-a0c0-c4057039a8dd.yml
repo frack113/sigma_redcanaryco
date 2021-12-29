@@ -19,5 +19,7 @@ description: |
   Create a task on a remote system.
 
   Upon successful execution, cmd.exe will create a scheduled task to spawn cmd.exe at 20:10 on a remote endpoint.
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 92626ddd-662c-49e3-ac59-f6535f12d189
+    name: win_susp_schtask_creation.yml

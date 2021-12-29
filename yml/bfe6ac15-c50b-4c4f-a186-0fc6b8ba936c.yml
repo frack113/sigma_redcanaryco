@@ -14,5 +14,10 @@ os:
 description: "As outlined in MDSEC's Blog post https://www.mdsec.co.uk/2020/11/a-fresh-outlook-on-mail-based-persistence/ \nit is possible to use Outlook Macro as a way to achieve persistance and execute\
   \ arbitrary commands. This transform Outlook into a C2.\nToo achieve this two things must happened on the syste\n- The macro security registry value must be set to '4'\n- A file called VbaProject.OTM\
   \ must be created in the Outlook Folder.\n"
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: c3cefdf4-6703-4e1c-bad8-bf422fc5015a
+    name: win_re_outlook_security.yml
+  - id: 8c31f563-f9a7-450c-bfa8-35f8f32f1f61
+    name: win_outlook_c2_macro_creation.yml
+

@@ -22,5 +22,8 @@ os:
 description: "Install a shim database. This technique is used for privilege escalation and bypassing user access control.\nUpon execution, \"Installation of AtomicShim complete.\" will be displayed. To\
   \ verify the shim behavior, run \nthe AtomicTest.exe from the <PathToAtomicsFolder>\\\\T1546.011\\\\bin directory. You should see a message box appear\nwith \"Atomic Shim DLL Test!\" as defined in the\
   \ AtomicTest.dll. To better understand what is happening, review\nthe source code files is the <PathToAtomicsFolder>\\\\T1546.011\\\\src directory.\n"
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 517490a7-115a-48c6-8862-1a481504d5a8
+    name: win_sdbinst_shim_persistence.yml
+

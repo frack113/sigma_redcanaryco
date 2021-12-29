@@ -18,5 +18,8 @@ os:
 description: |
   Run an exe on user logon or system startup.  Upon execution, success messages will be displayed for the two scheduled tasks. To view
   the tasks, open the Task Scheduler and look in the Active Tasks pane.
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 92626ddd-662c-49e3-ac59-f6535f12d189
+    name: win_susp_schtask_creation.yml
+
