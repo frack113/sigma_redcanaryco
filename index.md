@@ -115,7 +115,7 @@ Caution: a test can generate a lot of noise...
 ### T1119
 [Automated Collection PowerShell](tests/634bd9b9-dc83-4229-b19f-7f83ba9ad313.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Recon information for export with Command Prompt](tests/aa1180e2-f329-4e1e-8625-2472ec0bfaf3.md) ['windows'] (sigma rule :x:)
+[Recon information for export with Command Prompt](tests/aa1180e2-f329-4e1e-8625-2472ec0bfaf3.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Recon information for export with PowerShell](tests/c3f6d794-50dd-482f-b640-0384fbb7db26.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -261,11 +261,11 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1098
-[Admin Account Manipulate](tests/5598f7cb-cf43-455e-883a-f6008c5d46af.md) ['windows'] (sigma rule :x:)
+[Admin Account Manipulate](tests/5598f7cb-cf43-455e-883a-f6008c5d46af.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [AWS - Create a group and add a user to that group](tests/8822c3b0-d9f9-4daf-a043-49f110a31122.md) ['iaas:aws'] (sigma rule :x:)
 
-[Domain Account and Group Manipulate](tests/a55a22e9-a3d3-42ce-bd48-2653adb8f7a9.md) ['windows'] (sigma rule :x:)
+[Domain Account and Group Manipulate](tests/a55a22e9-a3d3-42ce-bd48-2653adb8f7a9.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1218.003
@@ -435,17 +435,17 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1053.005
-[Scheduled task Local](tests/42f53695-ad4a-4546-abb6-7d837f644a71.md) ['windows'] (sigma rule :x:)
+[Scheduled task Local](tests/42f53695-ad4a-4546-abb6-7d837f644a71.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Powershell Cmdlet Scheduled Task](tests/af9fd58f-c4ac-4bf2-a9ba-224b71ff25fd.md) ['windows'] (sigma rule :x:)
+[Powershell Cmdlet Scheduled Task](tests/af9fd58f-c4ac-4bf2-a9ba-224b71ff25fd.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Task Scheduler via VBA](tests/ecd3fa21-7792-41a2-8726-2c5c673414d3.md) ['windows'] (sigma rule :x:)
+[Task Scheduler via VBA](tests/ecd3fa21-7792-41a2-8726-2c5c673414d3.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Scheduled task Remote](tests/2e5eac3e-327b-4a88-a0c0-c4057039a8dd.md) ['windows'] (sigma rule :x:)
+[Scheduled task Remote](tests/2e5eac3e-327b-4a88-a0c0-c4057039a8dd.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [WMI Invoke-CimMethod Scheduled Task](tests/e16b3b75-dc9e-4cde-a23d-dfa2d0507b3b.md) ['windows'] (sigma rule :x:)
 
-[Scheduled Task Startup Script](tests/fec27f65-db86-4c2d-b66c-61945aee87c2.md) ['windows'] (sigma rule :x:)
+[Scheduled Task Startup Script](tests/fec27f65-db86-4c2d-b66c-61945aee87c2.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1574.009
@@ -485,11 +485,11 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1074.001
-[Zip a Folder with PowerShell for Staging in Temp](tests/a57fbe4b-3440-452a-88a7-943531ac872a.md) ['windows'] (sigma rule :x:)
+[Zip a Folder with PowerShell for Staging in Temp](tests/a57fbe4b-3440-452a-88a7-943531ac872a.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Stage data from Discovery.sh](tests/39ce0303-ae16-4b9e-bb5b-4f53e8262066.md) ['linux', 'macos'] (sigma rule :x:)
 
-[Stage data from Discovery.bat](tests/107706a5-6f9f-451a-adae-bab8c667829f.md) ['windows'] (sigma rule :x:)
+[Stage data from Discovery.bat](tests/107706a5-6f9f-451a-adae-bab8c667829f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1110.003
@@ -525,15 +525,15 @@ Caution: a test can generate a lot of noise...
 ### T1136.001
 [Create a user account on a Linux system](tests/40d8eabd-e394-46f6-8785-b9bfa1d011d2.md) ['linux'] (sigma rule :x:)
 
-[Create a new Windows admin user](tests/fda74566-a604-4581-a4cc-fbbe21d66559.md) ['windows'] (sigma rule :x:)
+[Create a new Windows admin user](tests/fda74566-a604-4581-a4cc-fbbe21d66559.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Create a new user in a command prompt](tests/6657864e-0323-4206-9344-ac9cd7265a4f.md) ['windows'] (sigma rule :x:)
+[Create a new user in a command prompt](tests/6657864e-0323-4206-9344-ac9cd7265a4f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Create a new user in Linux with `root` UID and GID.](tests/a1040a30-d28b-4eda-bd99-bb2861a4616c.md) ['linux'] (sigma rule :x:)
 
 [Create a user account on a MacOS system](tests/01993ba5-1da3-4e15-a719-b690d4f0f0b2.md) ['macos'] (sigma rule :x:)
 
-[Create a new user in PowerShell](tests/bc8be0ac-475c-4fbf-9b1d-9fffd77afbde.md) ['windows'] (sigma rule :x:)
+[Create a new user in PowerShell](tests/bc8be0ac-475c-4fbf-9b1d-9fffd77afbde.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1497.001
@@ -833,7 +833,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1546.011
-[Application Shim Installation](tests/9ab27e22-ee62-4211-962b-d36d9a0e6a18.md) ['windows'] (sigma rule :x:)
+[Application Shim Installation](tests/9ab27e22-ee62-4211-962b-d36d9a0e6a18.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Registry key creation and/or modification events for SDB](tests/9b6a06f9-ab5e-4e8d-8289-1df4289db02f.md) ['windows'] (sigma rule :x:)
 
@@ -969,7 +969,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1114.001
-[Email Collection with PowerShell Get-Inbox](tests/3f1b5096-0139-4736-9b78-19bcb02bb1cb.md) ['windows'] (sigma rule :x:)
+[Email Collection with PowerShell Get-Inbox](tests/3f1b5096-0139-4736-9b78-19bcb02bb1cb.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1012
@@ -1157,9 +1157,9 @@ Caution: a test can generate a lot of noise...
 
 [Screencapture (silent)](tests/deb7d358-5fbd-4dc4-aecc-ee0054d2d9a4.md) ['macos'] (sigma rule :x:)
 
-[Windows Screen Capture (CopyFromScreen)](tests/e9313014-985a-48ef-80d9-cde604ffc187.md) ['windows'] (sigma rule :x:)
+[Windows Screen Capture (CopyFromScreen)](tests/e9313014-985a-48ef-80d9-cde604ffc187.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Windows Screencapture](tests/3c898f62-626c-47d5-aad2-6de873d69153.md) ['windows'] (sigma rule :x:)
+[Windows Screencapture](tests/3c898f62-626c-47d5-aad2-6de873d69153.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1055.004
@@ -1167,7 +1167,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1546.007
-[Netsh Helper DLL Registration](tests/3244697d-5a3a-4dfc-941c-550f69f91a4d.md) ['windows'] (sigma rule :x:)
+[Netsh Helper DLL Registration](tests/3244697d-5a3a-4dfc-941c-550f69f91a4d.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1564.002
@@ -1535,7 +1535,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1505.002
-[Install MS Exchange Transport Agent Persistence](tests/43e92449-ff60-46e9-83a3-1a38089df94d.md) ['windows'] (sigma rule :x:)
+[Install MS Exchange Transport Agent Persistence](tests/43e92449-ff60-46e9-83a3-1a38089df94d.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1564.001
@@ -1555,7 +1555,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1037.001
-[Logon Scripts](tests/d6042746-07d4-4c92-9ad8-e644c114a231.md) ['windows'] (sigma rule :x:)
+[Logon Scripts](tests/d6042746-07d4-4c92-9ad8-e644c114a231.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1027.002
@@ -1599,11 +1599,11 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1136.002
-[Create a new Domain Account using PowerShell](tests/5a3497a4-1568-4663-b12a-d4a5ed70c7d7.md) ['windows'] (sigma rule :x:)
+[Create a new Domain Account using PowerShell](tests/5a3497a4-1568-4663-b12a-d4a5ed70c7d7.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Create a new Windows domain admin user](tests/fcec2963-9951-4173-9bfa-98d8b7834e62.md) ['windows'] (sigma rule :x:)
+[Create a new Windows domain admin user](tests/fcec2963-9951-4173-9bfa-98d8b7834e62.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Create a new account similar to ANONYMOUS LOGON](tests/dc7726d2-8ccb-4cc6-af22-0d5afb53a548.md) ['windows'] (sigma rule :x:)
+[Create a new account similar to ANONYMOUS LOGON](tests/dc7726d2-8ccb-4cc6-af22-0d5afb53a548.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1110.004
@@ -1637,11 +1637,11 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1543.003
-[Service Installation PowerShell](tests/491a4af6-a521-4b74-b23b-f7b3f1ee9e77.md) ['windows'] (sigma rule :x:)
+[Service Installation PowerShell](tests/491a4af6-a521-4b74-b23b-f7b3f1ee9e77.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Modify Fax service to run PowerShell](tests/ed366cde-7d12-49df-a833-671904770b9f.md) ['windows'] (sigma rule :x:)
+[Modify Fax service to run PowerShell](tests/ed366cde-7d12-49df-a833-671904770b9f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Service Installation CMD](tests/981e2942-e433-44e9-afc1-8c957a1496b6.md) ['windows'] (sigma rule :x:)
+[Service Installation CMD](tests/981e2942-e433-44e9-afc1-8c957a1496b6.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1095
@@ -1671,13 +1671,13 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1197
-[Bitsadmin Download (cmd)](tests/3c73d728-75fb-4180-a12f-6712864d7421.md) ['windows'] (sigma rule :x:)
+[Bitsadmin Download (cmd)](tests/3c73d728-75fb-4180-a12f-6712864d7421.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Bits download using desktopimgdownldr.exe (cmd)](tests/afb5e09e-e385-4dee-9a94-6ee60979d114.md) ['windows'] (sigma rule :x:)
+[Bits download using desktopimgdownldr.exe (cmd)](tests/afb5e09e-e385-4dee-9a94-6ee60979d114.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Persist, Download, & Execute](tests/62a06ec5-5754-47d2-bcfc-123d8314c6ae.md) ['windows'] (sigma rule :x:)
+[Persist, Download, & Execute](tests/62a06ec5-5754-47d2-bcfc-123d8314c6ae.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Bitsadmin Download (PowerShell)](tests/f63b8bc4-07e5-4112-acba-56f646f3f0bc.md) ['windows'] (sigma rule :x:)
+[Bitsadmin Download (PowerShell)](tests/f63b8bc4-07e5-4112-acba-56f646f3f0bc.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1053.003
@@ -1711,7 +1711,7 @@ Caution: a test can generate a lot of noise...
 ### T1552.006
 [GPP Passwords (Get-GPPPassword)](tests/e9584f82-322c-474a-b831-940fd8b4455c.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[GPP Passwords (findstr)](tests/870fe8fb-5e23-4f5f-b89d-dd7fe26f3b5f.md) ['windows'] (sigma rule :x:)
+[GPP Passwords (findstr)](tests/870fe8fb-5e23-4f5f-b89d-dd7fe26f3b5f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1053.006
@@ -1763,7 +1763,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1505.003
-[Web Shell Written to Disk](tests/0a2ce662-1efa-496f-a472-2fe7b080db16.md) ['windows'] (sigma rule :x:)
+[Web Shell Written to Disk](tests/0a2ce662-1efa-496f-a472-2fe7b080db16.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1562.003
@@ -1821,7 +1821,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1053.002
-[At.exe Scheduled task](tests/4a6c0dc4-0f2a-4203-9298-a5a9bdc21ed8.md) ['windows'] (sigma rule :x:)
+[At.exe Scheduled task](tests/4a6c0dc4-0f2a-4203-9298-a5a9bdc21ed8.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1552.002
@@ -1903,9 +1903,9 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1546.008
-[Attaches Command Prompt as a Debugger to a List of Target Processes](tests/3309f53e-b22b-4eb6-8fd2-a6cf58b355a9.md) ['windows'] (sigma rule :x:)
+[Attaches Command Prompt as a Debugger to a List of Target Processes](tests/3309f53e-b22b-4eb6-8fd2-a6cf58b355a9.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Replace binary of sticky keys](tests/934e90cf-29ca-48b3-863c-411737ad44e3.md) ['windows'] (sigma rule :x:)
+[Replace binary of sticky keys](tests/934e90cf-29ca-48b3-863c-411737ad44e3.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1543.001
@@ -1953,7 +1953,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1546.010
-[Install AppInit Shim](tests/a58d9386-3080-4242-ab5f-454c16503d18.md) ['windows'] (sigma rule :x:)
+[Install AppInit Shim](tests/a58d9386-3080-4242-ab5f-454c16503d18.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1552.003
@@ -1991,7 +1991,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1137
-[Office Application Startup - Outlook as a C2](tests/bfe6ac15-c50b-4c4f-a186-0fc6b8ba936c.md) ['windows'] (sigma rule :x:)
+[Office Application Startup - Outlook as a C2](tests/bfe6ac15-c50b-4c4f-a186-0fc6b8ba936c.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1496
@@ -1999,19 +1999,19 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1558.003
-[Rubeus kerberoast](tests/14625569-6def-4497-99ac-8e7817105b55.md) ['windows'] (sigma rule :x:)
+[Rubeus kerberoast](tests/14625569-6def-4497-99ac-8e7817105b55.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Extract all accounts in use as SPN using setspn](tests/e6f4affd-d826-4871-9a62-6c9004b8fe06.md) ['windows'] (sigma rule :x:)
+[Extract all accounts in use as SPN using setspn](tests/e6f4affd-d826-4871-9a62-6c9004b8fe06.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Request for service tickets](tests/3f987809-3681-43c8-bcd8-b3ff3a28533a.md) ['windows'] (sigma rule :x:)
+[Request for service tickets](tests/3f987809-3681-43c8-bcd8-b3ff3a28533a.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Request All Tickets via PowerShell](tests/902f4ed2-1aba-4133-90f2-cff6d299d6da.md) ['windows'] (sigma rule :x:)
+[Request All Tickets via PowerShell](tests/902f4ed2-1aba-4133-90f2-cff6d299d6da.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Request A Single Ticket via PowerShell](tests/988539bc-2ed7-4e62-aec6-7c5cf6680863.md) ['windows'] (sigma rule :x:)
+[Request A Single Ticket via PowerShell](tests/988539bc-2ed7-4e62-aec6-7c5cf6680863.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1137.004
-[Install Outlook Home Page Persistence](tests/7a91ad51-e6d2-4d43-9471-f26362f5738e.md) ['windows'] (sigma rule :x:)
+[Install Outlook Home Page Persistence](tests/7a91ad51-e6d2-4d43-9471-f26362f5738e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1041
@@ -2027,7 +2027,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1546.002
-[Set Arbitrary Binary as Screensaver](tests/281201e7-de41-4dc9-b73d-f288938cbb64.md) ['windows'] (sigma rule :x:)
+[Set Arbitrary Binary as Screensaver](tests/281201e7-de41-4dc9-b73d-f288938cbb64.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1218.008
@@ -2079,13 +2079,13 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1078.001
-[Enable Guest account with RDP capability and admin privileges](tests/99747561-ed8d-47f2-9c91-1e5fde1ed6e0.md) ['windows'] (sigma rule :x:)
+[Enable Guest account with RDP capability and admin privileges](tests/99747561-ed8d-47f2-9c91-1e5fde1ed6e0.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Activate Guest Account](tests/aa6cb8c4-b582-4f8e-b677-37733914abda.md) ['windows'] (sigma rule :x:)
+[Activate Guest Account](tests/aa6cb8c4-b582-4f8e-b677-37733914abda.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1546.001
-[Change Default File Association](tests/10a08978-2045-4d62-8c42-1957bbbea102.md) ['windows'] (sigma rule :x:)
+[Change Default File Association](tests/10a08978-2045-4d62-8c42-1957bbbea102.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1543.004
@@ -2121,11 +2121,11 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1546.003
-[Persistence via WMI Event Subscription](tests/3c64f177-28e2-49eb-a799-d767b24dd1e0.md) ['windows'] (sigma rule :x:)
+[Persistence via WMI Event Subscription](tests/3c64f177-28e2-49eb-a799-d767b24dd1e0.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1137.002
-[Office Application Startup Test Persistence](tests/c3e35b58-fe1c-480b-b540-7600fb612563.md) ['windows'] (sigma rule :x:)
+[Office Application Startup Test Persistence](tests/c3e35b58-fe1c-480b-b540-7600fb612563.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1546.013
@@ -2149,9 +2149,9 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1078.003
-[Create local account with admin privileges](tests/a524ce99-86de-4db6-b4f9-e08f35a47a15.md) ['windows'] (sigma rule :x:)
+[Create local account with admin privileges](tests/a524ce99-86de-4db6-b4f9-e08f35a47a15.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1137.006
-[Code Executed Via Excel Add-in File (Xll)](tests/441b1a0f-a771-428a-8af0-e99e4698cda3.md) ['windows'] (sigma rule :x:)
+[Code Executed Via Excel Add-in File (Xll)](tests/441b1a0f-a771-428a-8af0-e99e4698cda3.md) ['windows'] (sigma rule :heavy_check_mark:)
 
