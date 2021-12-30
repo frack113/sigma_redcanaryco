@@ -443,13 +443,13 @@ Caution: a test can generate a lot of noise...
 
 [Scheduled task Remote](tests/2e5eac3e-327b-4a88-a0c0-c4057039a8dd.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[WMI Invoke-CimMethod Scheduled Task](tests/e16b3b75-dc9e-4cde-a23d-dfa2d0507b3b.md) ['windows'] (sigma rule :x:)
+[WMI Invoke-CimMethod Scheduled Task](tests/e16b3b75-dc9e-4cde-a23d-dfa2d0507b3b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Scheduled Task Startup Script](tests/fec27f65-db86-4c2d-b66c-61945aee87c2.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1574.009
-[Execution of program.exe as service with unquoted service path](tests/2770dea7-c50f-457b-84c4-c40a47460d9f.md) ['windows'] (sigma rule :x:)
+[Execution of program.exe as service with unquoted service path](tests/2770dea7-c50f-457b-84c4-c40a47460d9f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1070
@@ -571,9 +571,9 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1574.011
-[Service ImagePath Change with reg.exe](tests/f38e9eea-e1d7-4ba6-b716-584791963827.md) ['windows'] (sigma rule :x:)
+[Service ImagePath Change with reg.exe](tests/f38e9eea-e1d7-4ba6-b716-584791963827.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Service Registry Permissions Weakness](tests/f7536d63-7fd4-466f-89da-7e48d550752a.md) ['windows'] (sigma rule :x:)
+[Service Registry Permissions Weakness](tests/f7536d63-7fd4-466f-89da-7e48d550752a.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1555.003
@@ -835,9 +835,9 @@ Caution: a test can generate a lot of noise...
 ### T1546.011
 [Application Shim Installation](tests/9ab27e22-ee62-4211-962b-d36d9a0e6a18.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Registry key creation and/or modification events for SDB](tests/9b6a06f9-ab5e-4e8d-8289-1df4289db02f.md) ['windows'] (sigma rule :x:)
+[Registry key creation and/or modification events for SDB](tests/9b6a06f9-ab5e-4e8d-8289-1df4289db02f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[New shim database files created in the default shim database directory](tests/aefd6866-d753-431f-a7a4-215ca7e3f13d.md) ['windows'] (sigma rule :x:)
+[New shim database files created in the default shim database directory](tests/aefd6866-d753-431f-a7a4-215ca7e3f13d.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1564
@@ -849,19 +849,19 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1547.001
-[Suspicious jse file run from startup Folder](tests/dade9447-791e-4c8f-b04b-3a35855dfa06.md) ['windows'] (sigma rule :x:)
+[Suspicious jse file run from startup Folder](tests/dade9447-791e-4c8f-b04b-3a35855dfa06.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Reg Key RunOnce](tests/554cbd88-cde1-4b56-8168-0be552eed9eb.md) ['windows'] (sigma rule :x:)
+[Reg Key RunOnce](tests/554cbd88-cde1-4b56-8168-0be552eed9eb.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Reg Key Run](tests/e55be3fd-3521-4610-9d1a-e210e42dcf05.md) ['windows'] (sigma rule :x:)
+[Reg Key Run](tests/e55be3fd-3521-4610-9d1a-e210e42dcf05.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Add Executable Shortcut Link to User Startup Folder](tests/24e55612-85f6-4bd6-ae74-a73d02e3441d.md) ['windows'] (sigma rule :x:)
+[Add Executable Shortcut Link to User Startup Folder](tests/24e55612-85f6-4bd6-ae74-a73d02e3441d.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Suspicious bat file run from startup Folder](tests/5b6768e4-44d2-44f0-89da-a01d1430fd5e.md) ['windows'] (sigma rule :x:)
+[Suspicious bat file run from startup Folder](tests/5b6768e4-44d2-44f0-89da-a01d1430fd5e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Suspicious vbs file run from startup Folder](tests/2cb98256-625e-4da9-9d44-f2e5f90b8bd5.md) ['windows'] (sigma rule :x:)
+[Suspicious vbs file run from startup Folder](tests/2cb98256-625e-4da9-9d44-f2e5f90b8bd5.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[PowerShell Registry RunOnce](tests/eb44f842-0457-4ddc-9b92-c4caa144ac42.md) ['windows'] (sigma rule :x:)
+[PowerShell Registry RunOnce](tests/eb44f842-0457-4ddc-9b92-c4caa144ac42.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1014
@@ -1067,11 +1067,11 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1547.004
-[Winlogon Notify Key Logon Persistence - PowerShell](tests/d40da266-e073-4e5a-bb8b-2b385023e5f9.md) ['windows'] (sigma rule :x:)
+[Winlogon Notify Key Logon Persistence - PowerShell](tests/d40da266-e073-4e5a-bb8b-2b385023e5f9.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Winlogon Userinit Key Persistence - PowerShell](tests/fb32c935-ee2e-454b-8fa3-1c46b42e8dfb.md) ['windows'] (sigma rule :x:)
+[Winlogon Userinit Key Persistence - PowerShell](tests/fb32c935-ee2e-454b-8fa3-1c46b42e8dfb.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Winlogon Shell Key Persistence - PowerShell](tests/bf9f9d65-ee4d-4c3e-a843-777d04f19c38.md) ['windows'] (sigma rule :x:)
+[Winlogon Shell Key Persistence - PowerShell](tests/bf9f9d65-ee4d-4c3e-a843-777d04f19c38.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1547.006
@@ -1229,9 +1229,9 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1546.012
-[IFEO Add Debugger](tests/fdda2626-5234-4c90-b163-60849a24c0b8.md) ['windows'] (sigma rule :x:)
+[IFEO Add Debugger](tests/fdda2626-5234-4c90-b163-60849a24c0b8.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[IFEO Global Flags](tests/46b1f278-c8ee-4aa5-acce-65e77b11f3c1.md) ['windows'] (sigma rule :x:)
+[IFEO Global Flags](tests/46b1f278-c8ee-4aa5-acce-65e77b11f3c1.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1553.005
@@ -1251,7 +1251,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1547.010
-[Add Port Monitor persistence in Registry](tests/d34ef297-f178-4462-871e-9ce618d44e50.md) ['windows'] (sigma rule :x:)
+[Add Port Monitor persistence in Registry](tests/d34ef297-f178-4462-871e-9ce618d44e50.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1529
@@ -1355,7 +1355,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1133
-[Running Chrome VPN Extensions via the Registry 2 vpn extension](tests/4c8db261-a58b-42a6-a866-0a294deedde4.md) ['windows'] (sigma rule :x:)
+[Running Chrome VPN Extensions via the Registry 2 vpn extension](tests/4c8db261-a58b-42a6-a866-0a294deedde4.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1564.003
@@ -1583,7 +1583,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1574.002
-[DLL Side-Loading using the Notepad++ GUP.exe binary](tests/65526037-7079-44a9-bda1-2cb624838040.md) ['windows'] (sigma rule :x:)
+[DLL Side-Loading using the Notepad++ GUP.exe binary](tests/65526037-7079-44a9-bda1-2cb624838040.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1048.002
@@ -1729,9 +1729,9 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1547.009
-[Create shortcut to cmd in startup folders](tests/cfdc954d-4bb0-4027-875b-a1893ce406f2.md) ['windows'] (sigma rule :x:)
+[Create shortcut to cmd in startup folders](tests/cfdc954d-4bb0-4027-875b-a1893ce406f2.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Shortcut Modification](tests/ce4fc678-364f-4282-af16-2fb4c78005ce.md) ['windows'] (sigma rule :x:)
+[Shortcut Modification](tests/ce4fc678-364f-4282-af16-2fb4c78005ce.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1036.005
@@ -1859,7 +1859,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1547.005
-[Modify SSP configuration in registry](tests/afdfd7e3-8a0b-409f-85f7-886fdf249c9e.md) ['windows'] (sigma rule :x:)
+[Modify SSP configuration in registry](tests/afdfd7e3-8a0b-409f-85f7-886fdf249c9e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1550.003
@@ -2019,11 +2019,11 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1574.012
-[System Scope COR_PROFILER](tests/f373b482-48c8-4ce4-85ed-d40c8b3f7310.md) ['windows'] (sigma rule :x:)
+[System Scope COR_PROFILER](tests/f373b482-48c8-4ce4-85ed-d40c8b3f7310.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Registry-free process scope COR_PROFILER](tests/79d57242-bbef-41db-b301-9d01d9f6e817.md) ['windows'] (sigma rule :x:)
+[Registry-free process scope COR_PROFILER](tests/79d57242-bbef-41db-b301-9d01d9f6e817.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[User scope COR_PROFILER](tests/9d5f89dc-c3a5-4f8a-a4fc-a6ed02e7cb5a.md) ['windows'] (sigma rule :x:)
+[User scope COR_PROFILER](tests/9d5f89dc-c3a5-4f8a-a4fc-a6ed02e7cb5a.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1546.002
@@ -2075,7 +2075,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1574.001
-[DLL Search Order Hijacking - amsi.dll](tests/8549ad4b-b5df-4a2d-a3d7-2aee9e7052a3.md) ['windows'] (sigma rule :x:)
+[DLL Search Order Hijacking - amsi.dll](tests/8549ad4b-b5df-4a2d-a3d7-2aee9e7052a3.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1078.001
@@ -2129,7 +2129,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1546.013
-[Append malicious start-process cmdlet](tests/090e5aa5-32b6-473b-a49b-21e843a56896.md) ['windows'] (sigma rule :x:)
+[Append malicious start-process cmdlet](tests/090e5aa5-32b6-473b-a49b-21e843a56896.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1120
