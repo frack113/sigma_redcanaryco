@@ -15,5 +15,9 @@ os:
 description: |
   LNK file to launch CMD placed in startup folder. Upon execution, open File Explorer and browse to "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\"
   to view the new shortcut.
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 92fa78e7-4d39-45f1-91a3-8b23f3f1088d
+    name: sysmon_powershell_startup_shortcuts.yml
+  - id: 2aa0a6b4-a865-495b-ab51-c28249537b75
+    name: sysmon_startup_folder_file_write.yml

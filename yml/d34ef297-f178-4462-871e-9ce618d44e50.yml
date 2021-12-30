@@ -14,5 +14,9 @@ technique:
 os:
   - windows
 description: Add key-value pair to a Windows Port Monitor registry. On the subsequent reboot dll will be execute under spoolsv with NT AUTHORITY/SYSTEM privilege.
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 944e8941-f6f6-4ee8-ac05-1c224e923c0e
+    name: win_re_add_port_monitor.yml
+  - id: f674e36a-4b91-431e-8aef-f8a96c2aca35
+    name: sysmon_asep_reg_keys_modification_currentcontrolset.yml

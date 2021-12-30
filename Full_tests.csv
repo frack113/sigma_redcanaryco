@@ -146,8 +146,8 @@ privilege-escalation;T1546.008;['windows'];Attaches Command Prompt as a Debugger
 privilege-escalation;T1546.008;['windows'];Replace binary of sticky keys;934e90cf-29ca-48b3-863c-411737ad44e3;True;2
 privilege-escalation;T1546.010;['windows'];Install AppInit Shim;a58d9386-3080-4242-ab5f-454c16503d18;True;1
 privilege-escalation;T1546.011;['windows'];Application Shim Installation;9ab27e22-ee62-4211-962b-d36d9a0e6a18;True;1
-privilege-escalation;T1546.011;['windows'];New shim database files created in the default shim database directory;aefd6866-d753-431f-a7a4-215ca7e3f13d;False;2
-privilege-escalation;T1546.011;['windows'];Registry key creation and/or modification events for SDB;9b6a06f9-ab5e-4e8d-8289-1df4289db02f;False;3
+privilege-escalation;T1546.011;['windows'];New shim database files created in the default shim database directory;aefd6866-d753-431f-a7a4-215ca7e3f13d;True;2
+privilege-escalation;T1546.011;['windows'];Registry key creation and/or modification events for SDB;9b6a06f9-ab5e-4e8d-8289-1df4289db02f;True;3
 privilege-escalation;T1055.004;['windows'];Process Injection via C#;611b39b7-e243-4c81-87a4-7145a90358b1;False;1
 privilege-escalation;T1053.001;['linux'];At - Schedule a job;7266d898-ac82-4ec0-97c7-436075d0d08e;False;1
 privilege-escalation;T1053.002;['windows'];At.exe Scheduled task;4a6c0dc4-0f2a-4203-9298-a5a9bdc21ed8;True;1
@@ -168,9 +168,9 @@ privilege-escalation;T1548.002;['windows'];UACME Bypass Method 39;56163687-081f-
 privilege-escalation;T1548.002;['windows'];UACME Bypass Method 56;235ec031-cd2d-465d-a7ae-68bab281e80e;False;15
 privilege-escalation;T1548.002;['windows'];UACME Bypass Method 59;dfb1b667-4bb8-4a63-a85e-29936ea75f29;False;16
 privilege-escalation;T1548.002;['windows'];UACME Bypass Method 61;7825b576-744c-4555-856d-caf3460dc236;False;17
-privilege-escalation;T1574.012;['windows'];User scope COR_PROFILER;9d5f89dc-c3a5-4f8a-a4fc-a6ed02e7cb5a;False;1
-privilege-escalation;T1574.012;['windows'];System Scope COR_PROFILER;f373b482-48c8-4ce4-85ed-d40c8b3f7310;False;2
-privilege-escalation;T1574.012;['windows'];Registry-free process scope COR_PROFILER;79d57242-bbef-41db-b301-9d01d9f6e817;False;3
+privilege-escalation;T1574.012;['windows'];User scope COR_PROFILER;9d5f89dc-c3a5-4f8a-a4fc-a6ed02e7cb5a;True;1
+privilege-escalation;T1574.012;['windows'];System Scope COR_PROFILER;f373b482-48c8-4ce4-85ed-d40c8b3f7310;True;2
+privilege-escalation;T1574.012;['windows'];Registry-free process scope COR_PROFILER;79d57242-bbef-41db-b301-9d01d9f6e817;True;3
 privilege-escalation;T1546.001;['windows'];Change Default File Association;10a08978-2045-4d62-8c42-1957bbbea102;True;1
 privilege-escalation;T1053.007;['containers'];ListCronjobs;ddfb0bc1-3c3f-47e9-a298-550ecfefacbd;False;1
 privilege-escalation;T1053.007;['containers'];CreateCronjob;f2fa019e-fb2a-4d28-9dc6-fd1a9b7f68c3;False;2
@@ -178,8 +178,8 @@ privilege-escalation;T1134.002;['windows'];Access Token Manipulation;dbf4f5a9-b8
 privilege-escalation;T1053.003;['macos', 'linux'];Cron - Replace crontab with referenced file;435057fb-74b1-410e-9403-d81baf194f75;False;1
 privilege-escalation;T1053.003;['macos', 'linux'];Cron - Add script to all cron subfolders;b7d42afa-9086-4c8a-b7b0-8ea3faa6ebb0;False;2
 privilege-escalation;T1053.003;['linux'];Cron - Add script to /var/spool/cron/crontabs/ folder;2d943c18-e74a-44bf-936f-25ade6cccab4;False;3
-privilege-escalation;T1574.001;['windows'];DLL Search Order Hijacking - amsi.dll;8549ad4b-b5df-4a2d-a3d7-2aee9e7052a3;False;1
-privilege-escalation;T1574.002;['windows'];DLL Side-Loading using the Notepad++ GUP.exe binary;65526037-7079-44a9-bda1-2cb624838040;False;1
+privilege-escalation;T1574.001;['windows'];DLL Search Order Hijacking - amsi.dll;8549ad4b-b5df-4a2d-a3d7-2aee9e7052a3;True;1
+privilege-escalation;T1574.002;['windows'];DLL Side-Loading using the Notepad++ GUP.exe binary;65526037-7079-44a9-bda1-2cb624838040;True;1
 privilege-escalation;T1078.001;['windows'];Enable Guest account with RDP capability and admin privileges;99747561-ed8d-47f2-9c91-1e5fde1ed6e0;True;1
 privilege-escalation;T1078.001;['windows'];Activate Guest Account;aa6cb8c4-b582-4f8e-b677-37733914abda;True;2
 privilege-escalation;T1484.002;['azure-ad'];Add Federation to Azure AD;8906c5d0-3ee5-4f63-897a-f6cafd3fdbb7;False;1
@@ -188,8 +188,8 @@ privilege-escalation;T1574.006;['linux'];Shared Library Injection via LD_PRELOAD
 privilege-escalation;T1055.001;['windows'];Process Injection via mavinject.exe;74496461-11a1-4982-b439-4d87a550d254;False;1
 privilege-escalation;T1546.014;['macos'];Persistance with Event Monitor - emond;23c9c127-322b-4c75-95ca-eff464906114;False;1
 privilege-escalation;T1611;['containers'];Deploy container using nsenter container escape;0b2f9520-a17a-4671-9dba-3bd034099fff;False;1
-privilege-escalation;T1546.012;['windows'];IFEO Add Debugger;fdda2626-5234-4c90-b163-60849a24c0b8;False;1
-privilege-escalation;T1546.012;['windows'];IFEO Global Flags;46b1f278-c8ee-4aa5-acce-65e77b11f3c1;False;2
+privilege-escalation;T1546.012;['windows'];IFEO Add Debugger;fdda2626-5234-4c90-b163-60849a24c0b8;True;1
+privilege-escalation;T1546.012;['windows'];IFEO Global Flags;46b1f278-c8ee-4aa5-acce-65e77b11f3c1;True;2
 privilege-escalation;T1547.006;['linux'];Linux - Load Kernel Module via insmod;687dcb93-9656-4853-9c36-9977315e9d23;False;1
 privilege-escalation;T1543.001;['macos'];Launch Agent;a5983dee-bf6c-4eaf-951c-dbc1a7b90900;False;1
 privilege-escalation;T1543.004;['macos'];Launch Daemon;03ab8df5-3a6b-4417-b6bd-bb7a5cfd74cf;False;1
@@ -203,10 +203,10 @@ privilege-escalation;T1134.004;['windows'];Parent PID Spoofing - Spawn from Curr
 privilege-escalation;T1134.004;['windows'];Parent PID Spoofing - Spawn from Specified Process;cbbff285-9051-444a-9d17-c07cd2d230eb;False;3
 privilege-escalation;T1134.004;['windows'];Parent PID Spoofing - Spawn from svchost.exe;e9f2b777-3123-430b-805d-5cedc66ab591;False;4
 privilege-escalation;T1134.004;['windows'];Parent PID Spoofing - Spawn from New Process;2988133e-561c-4e42-a15f-6281e6a9b2db;False;5
-privilege-escalation;T1574.009;['windows'];Execution of program.exe as service with unquoted service path;2770dea7-c50f-457b-84c4-c40a47460d9f;False;1
+privilege-escalation;T1574.009;['windows'];Execution of program.exe as service with unquoted service path;2770dea7-c50f-457b-84c4-c40a47460d9f;True;1
 privilege-escalation;T1547.011;['macos'];Plist Modification;394a538e-09bb-4a4a-95d1-b93cf12682a8;False;1
-privilege-escalation;T1547.010;['windows'];Add Port Monitor persistence in Registry;d34ef297-f178-4462-871e-9ce618d44e50;False;1
-privilege-escalation;T1546.013;['windows'];Append malicious start-process cmdlet;090e5aa5-32b6-473b-a49b-21e843a56896;False;1
+privilege-escalation;T1547.010;['windows'];Add Port Monitor persistence in Registry;d34ef297-f178-4462-871e-9ce618d44e50;True;1
+privilege-escalation;T1546.013;['windows'];Append malicious start-process cmdlet;090e5aa5-32b6-473b-a49b-21e843a56896;True;1
 privilege-escalation;T1055.012;['windows'];Process Hollowing using PowerShell;562427b4-39ef-4e8c-af88-463a78e70b9c;False;1
 privilege-escalation;T1055.012;['windows'];RunPE via VBA;3ad4a037-1598-4136-837c-4027e4fa319b;False;2
 privilege-escalation;T1055;['windows'];Shellcode execution via VBA;1c91e740-1729-4329-b779-feba6e71d048;False;1
@@ -216,30 +216,30 @@ privilege-escalation;T1037.004;['linux'];rc.common;c33f3d80-5f04-419b-a13a-854d1
 privilege-escalation;T1037.004;['linux'];rc.local;126f71af-e1c9-405c-94ef-26a47b16c102;False;3
 privilege-escalation;T1547.007;['macos'];Re-Opened Applications;5fefd767-ef54-4ac6-84d3-751ab85e8aba;False;1
 privilege-escalation;T1547.007;['macos'];Re-Opened Applications;5f5b71da-e03f-42e7-ac98-d63f9e0465cb;False;2
-privilege-escalation;T1547.001;['windows'];Reg Key Run;e55be3fd-3521-4610-9d1a-e210e42dcf05;False;1
-privilege-escalation;T1547.001;['windows'];Reg Key RunOnce;554cbd88-cde1-4b56-8168-0be552eed9eb;False;2
-privilege-escalation;T1547.001;['windows'];PowerShell Registry RunOnce;eb44f842-0457-4ddc-9b92-c4caa144ac42;False;3
-privilege-escalation;T1547.001;['windows'];Suspicious vbs file run from startup Folder;2cb98256-625e-4da9-9d44-f2e5f90b8bd5;False;4
-privilege-escalation;T1547.001;['windows'];Suspicious jse file run from startup Folder;dade9447-791e-4c8f-b04b-3a35855dfa06;False;5
-privilege-escalation;T1547.001;['windows'];Suspicious bat file run from startup Folder;5b6768e4-44d2-44f0-89da-a01d1430fd5e;False;6
-privilege-escalation;T1547.001;['windows'];Add Executable Shortcut Link to User Startup Folder;24e55612-85f6-4bd6-ae74-a73d02e3441d;False;7
+privilege-escalation;T1547.001;['windows'];Reg Key Run;e55be3fd-3521-4610-9d1a-e210e42dcf05;True;1
+privilege-escalation;T1547.001;['windows'];Reg Key RunOnce;554cbd88-cde1-4b56-8168-0be552eed9eb;True;2
+privilege-escalation;T1547.001;['windows'];PowerShell Registry RunOnce;eb44f842-0457-4ddc-9b92-c4caa144ac42;True;3
+privilege-escalation;T1547.001;['windows'];Suspicious vbs file run from startup Folder;2cb98256-625e-4da9-9d44-f2e5f90b8bd5;True;4
+privilege-escalation;T1547.001;['windows'];Suspicious jse file run from startup Folder;dade9447-791e-4c8f-b04b-3a35855dfa06;True;5
+privilege-escalation;T1547.001;['windows'];Suspicious bat file run from startup Folder;5b6768e4-44d2-44f0-89da-a01d1430fd5e;True;6
+privilege-escalation;T1547.001;['windows'];Add Executable Shortcut Link to User Startup Folder;24e55612-85f6-4bd6-ae74-a73d02e3441d;True;7
 privilege-escalation;T1053.005;['windows'];Scheduled Task Startup Script;fec27f65-db86-4c2d-b66c-61945aee87c2;True;1
 privilege-escalation;T1053.005;['windows'];Scheduled task Local;42f53695-ad4a-4546-abb6-7d837f644a71;True;2
 privilege-escalation;T1053.005;['windows'];Scheduled task Remote;2e5eac3e-327b-4a88-a0c0-c4057039a8dd;True;3
 privilege-escalation;T1053.005;['windows'];Powershell Cmdlet Scheduled Task;af9fd58f-c4ac-4bf2-a9ba-224b71ff25fd;True;4
 privilege-escalation;T1053.005;['windows'];Task Scheduler via VBA;ecd3fa21-7792-41a2-8726-2c5c673414d3;True;5
-privilege-escalation;T1053.005;['windows'];WMI Invoke-CimMethod Scheduled Task;e16b3b75-dc9e-4cde-a23d-dfa2d0507b3b;False;6
+privilege-escalation;T1053.005;['windows'];WMI Invoke-CimMethod Scheduled Task;e16b3b75-dc9e-4cde-a23d-dfa2d0507b3b;True;6
 privilege-escalation;T1546.002;['windows'];Set Arbitrary Binary as Screensaver;281201e7-de41-4dc9-b73d-f288938cbb64;True;1
-privilege-escalation;T1547.005;['windows'];Modify SSP configuration in registry;afdfd7e3-8a0b-409f-85f7-886fdf249c9e;False;1
-privilege-escalation;T1574.011;['windows'];Service Registry Permissions Weakness;f7536d63-7fd4-466f-89da-7e48d550752a;False;1
-privilege-escalation;T1574.011;['windows'];Service ImagePath Change with reg.exe;f38e9eea-e1d7-4ba6-b716-584791963827;False;2
+privilege-escalation;T1547.005;['windows'];Modify SSP configuration in registry;afdfd7e3-8a0b-409f-85f7-886fdf249c9e;True;1
+privilege-escalation;T1574.011;['windows'];Service Registry Permissions Weakness;f7536d63-7fd4-466f-89da-7e48d550752a;True;1
+privilege-escalation;T1574.011;['windows'];Service ImagePath Change with reg.exe;f38e9eea-e1d7-4ba6-b716-584791963827;True;2
 privilege-escalation;T1548.001;['macos', 'linux'];Make and modify binary from C source;896dfe97-ae43-4101-8e96-9a7996555d80;False;1
 privilege-escalation;T1548.001;['macos', 'linux'];Set a SetUID flag on file;759055b3-3885-4582-a8ec-c00c9d64dd79;False;2
 privilege-escalation;T1548.001;['macos', 'linux'];Set a SetGID flag on file;db55f666-7cba-46c6-9fe6-205a05c3242c;False;3
 privilege-escalation;T1548.001;['linux'];Make and modify capabilities of a binary;db53959c-207d-4000-9e7a-cd8eb417e072;False;4
 privilege-escalation;T1548.001;['linux'];Provide the SetUID capability to a file;1ac3272f-9bcf-443a-9888-4b1d3de785c1;False;5
-privilege-escalation;T1547.009;['windows'];Shortcut Modification;ce4fc678-364f-4282-af16-2fb4c78005ce;False;1
-privilege-escalation;T1547.009;['windows'];Create shortcut to cmd in startup folders;cfdc954d-4bb0-4027-875b-a1893ce406f2;False;2
+privilege-escalation;T1547.009;['windows'];Shortcut Modification;ce4fc678-364f-4282-af16-2fb4c78005ce;True;1
+privilege-escalation;T1547.009;['windows'];Create shortcut to cmd in startup folders;cfdc954d-4bb0-4027-875b-a1893ce406f2;True;2
 privilege-escalation;T1037.005;['macos'];Add file to Local Library StartupItems;134627c3-75db-410e-bff8-7a920075f198;False;1
 privilege-escalation;T1548.003;['macos', 'linux'];Sudo usage;150c3a08-ee6e-48a6-aeaf-3659d24ceb4e;False;1
 privilege-escalation;T1548.003;['macos', 'linux'];Unlimited sudo cache timeout;a7b17659-dd5e-46f7-b7d1-e6792c91d0bc;False;2
@@ -258,9 +258,9 @@ privilege-escalation;T1546.003;['windows'];Persistence via WMI Event Subscriptio
 privilege-escalation;T1543.003;['windows'];Modify Fax service to run PowerShell;ed366cde-7d12-49df-a833-671904770b9f;True;1
 privilege-escalation;T1543.003;['windows'];Service Installation CMD;981e2942-e433-44e9-afc1-8c957a1496b6;True;2
 privilege-escalation;T1543.003;['windows'];Service Installation PowerShell;491a4af6-a521-4b74-b23b-f7b3f1ee9e77;True;3
-privilege-escalation;T1547.004;['windows'];Winlogon Shell Key Persistence - PowerShell;bf9f9d65-ee4d-4c3e-a843-777d04f19c38;False;1
-privilege-escalation;T1547.004;['windows'];Winlogon Userinit Key Persistence - PowerShell;fb32c935-ee2e-454b-8fa3-1c46b42e8dfb;False;2
-privilege-escalation;T1547.004;['windows'];Winlogon Notify Key Logon Persistence - PowerShell;d40da266-e073-4e5a-bb8b-2b385023e5f9;False;3
+privilege-escalation;T1547.004;['windows'];Winlogon Shell Key Persistence - PowerShell;bf9f9d65-ee4d-4c3e-a843-777d04f19c38;True;1
+privilege-escalation;T1547.004;['windows'];Winlogon Userinit Key Persistence - PowerShell;fb32c935-ee2e-454b-8fa3-1c46b42e8dfb;True;2
+privilege-escalation;T1547.004;['windows'];Winlogon Notify Key Logon Persistence - PowerShell;d40da266-e073-4e5a-bb8b-2b385023e5f9;True;3
 defense-evasion;T1055.004;['windows'];Process Injection via C#;611b39b7-e243-4c81-87a4-7145a90358b1;False;1
 defense-evasion;T1197;['windows'];Bitsadmin Download (cmd);3c73d728-75fb-4180-a12f-6712864d7421;True;1
 defense-evasion;T1197;['windows'];Bitsadmin Download (PowerShell);f63b8bc4-07e5-4112-acba-56f646f3f0bc;True;2
@@ -286,9 +286,9 @@ defense-evasion;T1548.002;['windows'];UACME Bypass Method 59;dfb1b667-4bb8-4a63-
 defense-evasion;T1548.002;['windows'];UACME Bypass Method 61;7825b576-744c-4555-856d-caf3460dc236;False;17
 defense-evasion;T1218.003;['windows'];CMSTP Executing Remote Scriptlet;34e63321-9683-496b-bbc1-7566bc55e624;False;1
 defense-evasion;T1218.003;['windows'];CMSTP Executing UAC Bypass;748cb4f6-2fb3-4e97-b7ad-b22635a09ab0;False;2
-defense-evasion;T1574.012;['windows'];User scope COR_PROFILER;9d5f89dc-c3a5-4f8a-a4fc-a6ed02e7cb5a;False;1
-defense-evasion;T1574.012;['windows'];System Scope COR_PROFILER;f373b482-48c8-4ce4-85ed-d40c8b3f7310;False;2
-defense-evasion;T1574.012;['windows'];Registry-free process scope COR_PROFILER;79d57242-bbef-41db-b301-9d01d9f6e817;False;3
+defense-evasion;T1574.012;['windows'];User scope COR_PROFILER;9d5f89dc-c3a5-4f8a-a4fc-a6ed02e7cb5a;True;1
+defense-evasion;T1574.012;['windows'];System Scope COR_PROFILER;f373b482-48c8-4ce4-85ed-d40c8b3f7310;True;2
+defense-evasion;T1574.012;['windows'];Registry-free process scope COR_PROFILER;79d57242-bbef-41db-b301-9d01d9f6e817;True;3
 defense-evasion;T1070.003;['linux', 'macos'];Clear Bash history (rm);a934276e-2be5-4a36-93fd-98adbb5bd4fc;False;1
 defense-evasion;T1070.003;['linux'];Clear Bash history (echo);cbf506a5-dd78-43e5-be7e-a46b7c7a0a11;False;2
 defense-evasion;T1070.003;['linux', 'macos'];Clear Bash history (cat dev/null);b1251c35-dcd3-4ea1-86da-36d27b54f31f;False;3
@@ -320,8 +320,8 @@ defense-evasion;T1218.001;['windows'];Invoke CHM with Script Engine and Help Top
 defense-evasion;T1218.001;['windows'];Invoke CHM Shortcut Command with ITS and Help Topic;15756147-7470-4a83-87fb-bb5662526247;False;7
 defense-evasion;T1218.002;['windows'];Control Panel Items;037e9d8a-9e46-4255-8b33-2ae3b545ca6f;False;1
 defense-evasion;T1134.002;['windows'];Access Token Manipulation;dbf4f5a9-b8e0-46a3-9841-9ad71247239e;False;1
-defense-evasion;T1574.001;['windows'];DLL Search Order Hijacking - amsi.dll;8549ad4b-b5df-4a2d-a3d7-2aee9e7052a3;False;1
-defense-evasion;T1574.002;['windows'];DLL Side-Loading using the Notepad++ GUP.exe binary;65526037-7079-44a9-bda1-2cb624838040;False;1
+defense-evasion;T1574.001;['windows'];DLL Search Order Hijacking - amsi.dll;8549ad4b-b5df-4a2d-a3d7-2aee9e7052a3;True;1
+defense-evasion;T1574.002;['windows'];DLL Side-Loading using the Notepad++ GUP.exe binary;65526037-7079-44a9-bda1-2cb624838040;True;1
 defense-evasion;T1078.001;['windows'];Enable Guest account with RDP capability and admin privileges;99747561-ed8d-47f2-9c91-1e5fde1ed6e0;True;1
 defense-evasion;T1078.001;['windows'];Activate Guest Account;aa6cb8c4-b582-4f8e-b677-37733914abda;True;2
 defense-evasion;T1140;['windows'];Deobfuscate/Decode Files Or Information;dc6fe391-69e6-4506-bd06-ea5eeb4082f8;False;1
@@ -493,7 +493,7 @@ defense-evasion;T1550.002;['windows'];Mimikatz Pass the Hash;ec23cef9-27d9-46e4-
 defense-evasion;T1550.002;['windows'];crackmapexec Pass the Hash;eb05b028-16c8-4ad8-adea-6f5b219da9a9;False;2
 defense-evasion;T1550.003;['windows'];Mimikatz Kerberos Ticket Attack;dbf38128-7ba7-4776-bedf-cc2eed432098;False;1
 defense-evasion;T1556.002;['windows'];Install and Register Password Filter DLL;a7961770-beb5-4134-9674-83d7e1fa865c;True;1
-defense-evasion;T1574.009;['windows'];Execution of program.exe as service with unquoted service path;2770dea7-c50f-457b-84c4-c40a47460d9f;False;1
+defense-evasion;T1574.009;['windows'];Execution of program.exe as service with unquoted service path;2770dea7-c50f-457b-84c4-c40a47460d9f;True;1
 defense-evasion;T1556.003;['linux'];Malicious PAM rule;4b9dde80-ae22-44b1-a82a-644bf009eb9c;False;1
 defense-evasion;T1556.003;['linux'];Malicious PAM module;65208808-3125-4a2e-8389-a0a00e9ab326;False;2
 defense-evasion;T1055.012;['windows'];Process Hollowing using PowerShell;562427b4-39ef-4e8c-af88-463a78e70b9c;False;1
@@ -529,8 +529,8 @@ defense-evasion;T1218.011;['windows'];Rundll32 syssetup.dll Execution;41fa324a-3
 defense-evasion;T1218.011;['windows'];Rundll32 setupapi.dll Execution;71d771cd-d6b3-4f34-bc76-a63d47a10b19;False;6
 defense-evasion;T1218.011;['windows'];Execution of HTA and VBS Files using Rundll32 and URL.dll;22cfde89-befe-4e15-9753-47306b37a6e3;False;7
 defense-evasion;T1218.011;['windows'];Launches an executable using Rundll32 and pcwutl.dll;9f5d081a-ee5a-42f9-a04e-b7bdc487e676;False;8
-defense-evasion;T1574.011;['windows'];Service Registry Permissions Weakness;f7536d63-7fd4-466f-89da-7e48d550752a;False;1
-defense-evasion;T1574.011;['windows'];Service ImagePath Change with reg.exe;f38e9eea-e1d7-4ba6-b716-584791963827;False;2
+defense-evasion;T1574.011;['windows'];Service Registry Permissions Weakness;f7536d63-7fd4-466f-89da-7e48d550752a;True;1
+defense-evasion;T1574.011;['windows'];Service ImagePath Change with reg.exe;f38e9eea-e1d7-4ba6-b716-584791963827;True;2
 defense-evasion;T1548.001;['macos', 'linux'];Make and modify binary from C source;896dfe97-ae43-4101-8e96-9a7996555d80;False;1
 defense-evasion;T1548.001;['macos', 'linux'];Set a SetUID flag on file;759055b3-3885-4582-a8ec-c00c9d64dd79;False;2
 defense-evasion;T1548.001;['macos', 'linux'];Set a SetGID flag on file;db55f666-7cba-46c6-9fe6-205a05c3242c;False;3
@@ -589,8 +589,8 @@ persistence;T1098.001;['azure-ad'];Azure AD Application Hijacking - App Registra
 persistence;T1098.001;['iaas:aws'];AWS - Create Access Key and Secret Key;8822c3b0-d9f9-4daf-a043-491160a31122;False;3
 persistence;T1546.010;['windows'];Install AppInit Shim;a58d9386-3080-4242-ab5f-454c16503d18;True;1
 persistence;T1546.011;['windows'];Application Shim Installation;9ab27e22-ee62-4211-962b-d36d9a0e6a18;True;1
-persistence;T1546.011;['windows'];New shim database files created in the default shim database directory;aefd6866-d753-431f-a7a4-215ca7e3f13d;False;2
-persistence;T1546.011;['windows'];Registry key creation and/or modification events for SDB;9b6a06f9-ab5e-4e8d-8289-1df4289db02f;False;3
+persistence;T1546.011;['windows'];New shim database files created in the default shim database directory;aefd6866-d753-431f-a7a4-215ca7e3f13d;True;2
+persistence;T1546.011;['windows'];Registry key creation and/or modification events for SDB;9b6a06f9-ab5e-4e8d-8289-1df4289db02f;True;3
 persistence;T1053.001;['linux'];At - Schedule a job;7266d898-ac82-4ec0-97c7-436075d0d08e;False;1
 persistence;T1053.002;['windows'];At.exe Scheduled task;4a6c0dc4-0f2a-4203-9298-a5a9bdc21ed8;True;1
 persistence;T1197;['windows'];Bitsadmin Download (cmd);3c73d728-75fb-4180-a12f-6712864d7421;True;1
@@ -601,9 +601,9 @@ persistence;T1176;['linux', 'windows', 'macos'];Chrome (Developer Mode);3ecd790d
 persistence;T1176;['linux', 'windows', 'macos'];Chrome (Chrome Web Store);4c83940d-8ca5-4bb2-8100-f46dc914bc3f;False;2
 persistence;T1176;['linux', 'windows', 'macos'];Firefox;cb790029-17e6-4c43-b96f-002ce5f10938;False;3
 persistence;T1176;['windows', 'macos'];Edge Chromium Addon - VPN;3d456e2b-a7db-4af8-b5b3-720e7c4d9da5;False;4
-persistence;T1574.012;['windows'];User scope COR_PROFILER;9d5f89dc-c3a5-4f8a-a4fc-a6ed02e7cb5a;False;1
-persistence;T1574.012;['windows'];System Scope COR_PROFILER;f373b482-48c8-4ce4-85ed-d40c8b3f7310;False;2
-persistence;T1574.012;['windows'];Registry-free process scope COR_PROFILER;79d57242-bbef-41db-b301-9d01d9f6e817;False;3
+persistence;T1574.012;['windows'];User scope COR_PROFILER;9d5f89dc-c3a5-4f8a-a4fc-a6ed02e7cb5a;True;1
+persistence;T1574.012;['windows'];System Scope COR_PROFILER;f373b482-48c8-4ce4-85ed-d40c8b3f7310;True;2
+persistence;T1574.012;['windows'];Registry-free process scope COR_PROFILER;79d57242-bbef-41db-b301-9d01d9f6e817;True;3
 persistence;T1546.001;['windows'];Change Default File Association;10a08978-2045-4d62-8c42-1957bbbea102;True;1
 persistence;T1136.003;['iaas:aws'];AWS - Create a new IAM user;8d1c2368-b503-40c9-9057-8e42f21c58ad;False;1
 persistence;T1053.007;['containers'];ListCronjobs;ddfb0bc1-3c3f-47e9-a298-550ecfefacbd;False;1
@@ -611,8 +611,8 @@ persistence;T1053.007;['containers'];CreateCronjob;f2fa019e-fb2a-4d28-9dc6-fd1a9
 persistence;T1053.003;['macos', 'linux'];Cron - Replace crontab with referenced file;435057fb-74b1-410e-9403-d81baf194f75;False;1
 persistence;T1053.003;['macos', 'linux'];Cron - Add script to all cron subfolders;b7d42afa-9086-4c8a-b7b0-8ea3faa6ebb0;False;2
 persistence;T1053.003;['linux'];Cron - Add script to /var/spool/cron/crontabs/ folder;2d943c18-e74a-44bf-936f-25ade6cccab4;False;3
-persistence;T1574.001;['windows'];DLL Search Order Hijacking - amsi.dll;8549ad4b-b5df-4a2d-a3d7-2aee9e7052a3;False;1
-persistence;T1574.002;['windows'];DLL Side-Loading using the Notepad++ GUP.exe binary;65526037-7079-44a9-bda1-2cb624838040;False;1
+persistence;T1574.001;['windows'];DLL Search Order Hijacking - amsi.dll;8549ad4b-b5df-4a2d-a3d7-2aee9e7052a3;True;1
+persistence;T1574.002;['windows'];DLL Side-Loading using the Notepad++ GUP.exe binary;65526037-7079-44a9-bda1-2cb624838040;True;1
 persistence;T1078.001;['windows'];Enable Guest account with RDP capability and admin privileges;99747561-ed8d-47f2-9c91-1e5fde1ed6e0;True;1
 persistence;T1078.001;['windows'];Activate Guest Account;aa6cb8c4-b582-4f8e-b677-37733914abda;True;2
 persistence;T1136.002;['windows'];Create a new Windows domain admin user;fcec2963-9951-4173-9bfa-98d8b7834e62;True;1
@@ -621,9 +621,9 @@ persistence;T1136.002;['windows'];Create a new Domain Account using PowerShell;5
 persistence;T1574.006;['linux'];Shared Library Injection via /etc/ld.so.preload;39cb0e67-dd0d-4b74-a74b-c072db7ae991;False;1
 persistence;T1574.006;['linux'];Shared Library Injection via LD_PRELOAD;bc219ff7-789f-4d51-9142-ecae3397deae;False;2
 persistence;T1546.014;['macos'];Persistance with Event Monitor - emond;23c9c127-322b-4c75-95ca-eff464906114;False;1
-persistence;T1133;['windows'];Running Chrome VPN Extensions via the Registry 2 vpn extension;4c8db261-a58b-42a6-a866-0a294deedde4;False;1
-persistence;T1546.012;['windows'];IFEO Add Debugger;fdda2626-5234-4c90-b163-60849a24c0b8;False;1
-persistence;T1546.012;['windows'];IFEO Global Flags;46b1f278-c8ee-4aa5-acce-65e77b11f3c1;False;2
+persistence;T1133;['windows'];Running Chrome VPN Extensions via the Registry 2 vpn extension;4c8db261-a58b-42a6-a866-0a294deedde4;True;1
+persistence;T1546.012;['windows'];IFEO Add Debugger;fdda2626-5234-4c90-b163-60849a24c0b8;True;1
+persistence;T1546.012;['windows'];IFEO Global Flags;46b1f278-c8ee-4aa5-acce-65e77b11f3c1;True;2
 persistence;T1547.006;['linux'];Linux - Load Kernel Module via insmod;687dcb93-9656-4853-9c36-9977315e9d23;False;1
 persistence;T1543.001;['macos'];Launch Agent;a5983dee-bf6c-4eaf-951c-dbc1a7b90900;False;1
 persistence;T1543.004;['macos'];Launch Daemon;03ab8df5-3a6b-4417-b6bd-bb7a5cfd74cf;False;1
@@ -642,37 +642,37 @@ persistence;T1137;['windows'];Office Application Startup - Outlook as a C2;bfe6a
 persistence;T1137.002;['windows'];Office Application Startup Test Persistence;c3e35b58-fe1c-480b-b540-7600fb612563;True;1
 persistence;T1137.004;['windows'];Install Outlook Home Page Persistence;7a91ad51-e6d2-4d43-9471-f26362f5738e;True;1
 persistence;T1556.002;['windows'];Install and Register Password Filter DLL;a7961770-beb5-4134-9674-83d7e1fa865c;True;1
-persistence;T1574.009;['windows'];Execution of program.exe as service with unquoted service path;2770dea7-c50f-457b-84c4-c40a47460d9f;False;1
+persistence;T1574.009;['windows'];Execution of program.exe as service with unquoted service path;2770dea7-c50f-457b-84c4-c40a47460d9f;True;1
 persistence;T1547.011;['macos'];Plist Modification;394a538e-09bb-4a4a-95d1-b93cf12682a8;False;1
 persistence;T1556.003;['linux'];Malicious PAM rule;4b9dde80-ae22-44b1-a82a-644bf009eb9c;False;1
 persistence;T1556.003;['linux'];Malicious PAM module;65208808-3125-4a2e-8389-a0a00e9ab326;False;2
-persistence;T1547.010;['windows'];Add Port Monitor persistence in Registry;d34ef297-f178-4462-871e-9ce618d44e50;False;1
-persistence;T1546.013;['windows'];Append malicious start-process cmdlet;090e5aa5-32b6-473b-a49b-21e843a56896;False;1
+persistence;T1547.010;['windows'];Add Port Monitor persistence in Registry;d34ef297-f178-4462-871e-9ce618d44e50;True;1
+persistence;T1546.013;['windows'];Append malicious start-process cmdlet;090e5aa5-32b6-473b-a49b-21e843a56896;True;1
 persistence;T1037.004;['macos'];rc.common;97a48daa-8bca-4bc0-b1a9-c1d163e762de;False;1
 persistence;T1037.004;['linux'];rc.common;c33f3d80-5f04-419b-a13a-854d1cbdbf3a;False;2
 persistence;T1037.004;['linux'];rc.local;126f71af-e1c9-405c-94ef-26a47b16c102;False;3
 persistence;T1547.007;['macos'];Re-Opened Applications;5fefd767-ef54-4ac6-84d3-751ab85e8aba;False;1
 persistence;T1547.007;['macos'];Re-Opened Applications;5f5b71da-e03f-42e7-ac98-d63f9e0465cb;False;2
-persistence;T1547.001;['windows'];Reg Key Run;e55be3fd-3521-4610-9d1a-e210e42dcf05;False;1
-persistence;T1547.001;['windows'];Reg Key RunOnce;554cbd88-cde1-4b56-8168-0be552eed9eb;False;2
-persistence;T1547.001;['windows'];PowerShell Registry RunOnce;eb44f842-0457-4ddc-9b92-c4caa144ac42;False;3
-persistence;T1547.001;['windows'];Suspicious vbs file run from startup Folder;2cb98256-625e-4da9-9d44-f2e5f90b8bd5;False;4
-persistence;T1547.001;['windows'];Suspicious jse file run from startup Folder;dade9447-791e-4c8f-b04b-3a35855dfa06;False;5
-persistence;T1547.001;['windows'];Suspicious bat file run from startup Folder;5b6768e4-44d2-44f0-89da-a01d1430fd5e;False;6
-persistence;T1547.001;['windows'];Add Executable Shortcut Link to User Startup Folder;24e55612-85f6-4bd6-ae74-a73d02e3441d;False;7
+persistence;T1547.001;['windows'];Reg Key Run;e55be3fd-3521-4610-9d1a-e210e42dcf05;True;1
+persistence;T1547.001;['windows'];Reg Key RunOnce;554cbd88-cde1-4b56-8168-0be552eed9eb;True;2
+persistence;T1547.001;['windows'];PowerShell Registry RunOnce;eb44f842-0457-4ddc-9b92-c4caa144ac42;True;3
+persistence;T1547.001;['windows'];Suspicious vbs file run from startup Folder;2cb98256-625e-4da9-9d44-f2e5f90b8bd5;True;4
+persistence;T1547.001;['windows'];Suspicious jse file run from startup Folder;dade9447-791e-4c8f-b04b-3a35855dfa06;True;5
+persistence;T1547.001;['windows'];Suspicious bat file run from startup Folder;5b6768e4-44d2-44f0-89da-a01d1430fd5e;True;6
+persistence;T1547.001;['windows'];Add Executable Shortcut Link to User Startup Folder;24e55612-85f6-4bd6-ae74-a73d02e3441d;True;7
 persistence;T1098.004;['macos', 'linux'];Modify SSH Authorized Keys;342cc723-127c-4d3a-8292-9c0c6b4ecadc;False;1
 persistence;T1053.005;['windows'];Scheduled Task Startup Script;fec27f65-db86-4c2d-b66c-61945aee87c2;True;1
 persistence;T1053.005;['windows'];Scheduled task Local;42f53695-ad4a-4546-abb6-7d837f644a71;True;2
 persistence;T1053.005;['windows'];Scheduled task Remote;2e5eac3e-327b-4a88-a0c0-c4057039a8dd;True;3
 persistence;T1053.005;['windows'];Powershell Cmdlet Scheduled Task;af9fd58f-c4ac-4bf2-a9ba-224b71ff25fd;True;4
 persistence;T1053.005;['windows'];Task Scheduler via VBA;ecd3fa21-7792-41a2-8726-2c5c673414d3;True;5
-persistence;T1053.005;['windows'];WMI Invoke-CimMethod Scheduled Task;e16b3b75-dc9e-4cde-a23d-dfa2d0507b3b;False;6
+persistence;T1053.005;['windows'];WMI Invoke-CimMethod Scheduled Task;e16b3b75-dc9e-4cde-a23d-dfa2d0507b3b;True;6
 persistence;T1546.002;['windows'];Set Arbitrary Binary as Screensaver;281201e7-de41-4dc9-b73d-f288938cbb64;True;1
-persistence;T1547.005;['windows'];Modify SSP configuration in registry;afdfd7e3-8a0b-409f-85f7-886fdf249c9e;False;1
-persistence;T1574.011;['windows'];Service Registry Permissions Weakness;f7536d63-7fd4-466f-89da-7e48d550752a;False;1
-persistence;T1574.011;['windows'];Service ImagePath Change with reg.exe;f38e9eea-e1d7-4ba6-b716-584791963827;False;2
-persistence;T1547.009;['windows'];Shortcut Modification;ce4fc678-364f-4282-af16-2fb4c78005ce;False;1
-persistence;T1547.009;['windows'];Create shortcut to cmd in startup folders;cfdc954d-4bb0-4027-875b-a1893ce406f2;False;2
+persistence;T1547.005;['windows'];Modify SSP configuration in registry;afdfd7e3-8a0b-409f-85f7-886fdf249c9e;True;1
+persistence;T1574.011;['windows'];Service Registry Permissions Weakness;f7536d63-7fd4-466f-89da-7e48d550752a;True;1
+persistence;T1574.011;['windows'];Service ImagePath Change with reg.exe;f38e9eea-e1d7-4ba6-b716-584791963827;True;2
+persistence;T1547.009;['windows'];Shortcut Modification;ce4fc678-364f-4282-af16-2fb4c78005ce;True;1
+persistence;T1547.009;['windows'];Create shortcut to cmd in startup folders;cfdc954d-4bb0-4027-875b-a1893ce406f2;True;2
 persistence;T1037.005;['macos'];Add file to Local Library StartupItems;134627c3-75db-410e-bff8-7a920075f198;False;1
 persistence;T1543.002;['linux'];Create Systemd Service;d9e4f24f-aa67-4c6e-bcbf-85622b697a7c;False;1
 persistence;T1543.002;['linux'];Create Systemd Service file,  Enable the service , Modify and Reload the service.;c35ac4a8-19de-43af-b9f8-755da7e89c89;False;2
@@ -688,9 +688,9 @@ persistence;T1546.003;['windows'];Persistence via WMI Event Subscription;3c64f17
 persistence;T1543.003;['windows'];Modify Fax service to run PowerShell;ed366cde-7d12-49df-a833-671904770b9f;True;1
 persistence;T1543.003;['windows'];Service Installation CMD;981e2942-e433-44e9-afc1-8c957a1496b6;True;2
 persistence;T1543.003;['windows'];Service Installation PowerShell;491a4af6-a521-4b74-b23b-f7b3f1ee9e77;True;3
-persistence;T1547.004;['windows'];Winlogon Shell Key Persistence - PowerShell;bf9f9d65-ee4d-4c3e-a843-777d04f19c38;False;1
-persistence;T1547.004;['windows'];Winlogon Userinit Key Persistence - PowerShell;fb32c935-ee2e-454b-8fa3-1c46b42e8dfb;False;2
-persistence;T1547.004;['windows'];Winlogon Notify Key Logon Persistence - PowerShell;d40da266-e073-4e5a-bb8b-2b385023e5f9;False;3
+persistence;T1547.004;['windows'];Winlogon Shell Key Persistence - PowerShell;bf9f9d65-ee4d-4c3e-a843-777d04f19c38;True;1
+persistence;T1547.004;['windows'];Winlogon Userinit Key Persistence - PowerShell;fb32c935-ee2e-454b-8fa3-1c46b42e8dfb;True;2
+persistence;T1547.004;['windows'];Winlogon Notify Key Logon Persistence - PowerShell;d40da266-e073-4e5a-bb8b-2b385023e5f9;True;3
 impact;T1531;['windows'];Change User Password - Windows;1b99ef28-f83c-4ec5-8a08-1a56263a5bb2;True;1
 impact;T1531;['windows'];Delete User - Windows;f21a1d7d-a62f-442a-8c3a-2440d43b19e5;True;2
 impact;T1531;['windows'];Remove Account From Domain Admin Group;43f71395-6c37-498e-ab17-897d814a0947;True;3
@@ -911,7 +911,7 @@ execution;T1053.005;['windows'];Scheduled task Local;42f53695-ad4a-4546-abb6-7d8
 execution;T1053.005;['windows'];Scheduled task Remote;2e5eac3e-327b-4a88-a0c0-c4057039a8dd;True;3
 execution;T1053.005;['windows'];Powershell Cmdlet Scheduled Task;af9fd58f-c4ac-4bf2-a9ba-224b71ff25fd;True;4
 execution;T1053.005;['windows'];Task Scheduler via VBA;ecd3fa21-7792-41a2-8726-2c5c673414d3;True;5
-execution;T1053.005;['windows'];WMI Invoke-CimMethod Scheduled Task;e16b3b75-dc9e-4cde-a23d-dfa2d0507b3b;False;6
+execution;T1053.005;['windows'];WMI Invoke-CimMethod Scheduled Task;e16b3b75-dc9e-4cde-a23d-dfa2d0507b3b;True;6
 execution;T1569.002;['windows'];Execute a Command as a Service;2382dee2-a75f-49aa-9378-f52df6ed3fb1;False;1
 execution;T1569.002;['windows'];Use PsExec to execute a command on a remote host;873106b7-cfed-454b-8680-fa9f6400431c;False;2
 execution;T1072;['windows'];Radmin Viewer Utility;b4988cad-6ed2-434d-ace5-ea2670782129;False;1
@@ -1012,7 +1012,7 @@ exfiltration;T1048.003;['windows'];Exfiltration Over Alternative Protocol - SMTP
 exfiltration;T1567;['windows'];Data Exfiltration with ConfigSecurityPolicy;5568a8f4-a8b1-4c40-9399-4969b642f122;False;1
 initial-access;T1078.001;['windows'];Enable Guest account with RDP capability and admin privileges;99747561-ed8d-47f2-9c91-1e5fde1ed6e0;True;1
 initial-access;T1078.001;['windows'];Activate Guest Account;aa6cb8c4-b582-4f8e-b677-37733914abda;True;2
-initial-access;T1133;['windows'];Running Chrome VPN Extensions via the Registry 2 vpn extension;4c8db261-a58b-42a6-a866-0a294deedde4;False;1
+initial-access;T1133;['windows'];Running Chrome VPN Extensions via the Registry 2 vpn extension;4c8db261-a58b-42a6-a866-0a294deedde4;True;1
 initial-access;T1078.003;['windows'];Create local account with admin privileges;a524ce99-86de-4db6-b4f9-e08f35a47a15;True;1
 initial-access;T1566.001;['windows'];Download Phishing Attachment - VBScript;114ccff9-ae6d-4547-9ead-4cd69f687306;False;1
 initial-access;T1566.001;['windows'];Word spawned a command shell and used an IP address in the command line;cbb6799a-425c-4f83-9194-5447a909d67f;False;2

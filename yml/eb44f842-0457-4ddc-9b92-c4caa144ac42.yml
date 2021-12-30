@@ -51,5 +51,14 @@ os:
 description: |
   RunOnce Key Persistence via PowerShell
   Upon successful execution, a new entry will be added to the runonce item in the registry.
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 3b6ab547-8ec2-4991-b9d2-2b06702a48d7
+    name: win_powershell_download.yml
+  - id: 8ff28fdd-e2fa-4dfa-aeda-ef3d61c62090
+    name: powershell_suspicious_invocation_specific_in_contextinfo.yml
+  - id: ae7fbf8e-f3cb-49fd-8db4-5f3bed522c71
+    name: powershell_suspicious_invocation_specific_in_scripblocktext.yml
+  - id: 20f0ee37-5942-4e45-b7d5-c5b5db9df5cd
+    name: ysmon_asep_reg_keys_modification_currentversion.yml
+

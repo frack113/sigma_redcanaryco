@@ -21,5 +21,8 @@ os:
 description: 'Change Service registry ImagePath of a bengin service to a malicious file
 
   '
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 9b0b7ac3-6223-47aa-a3fd-e8f211e637db
+    name: win_pc_reg_service_imagepath_change.yml
+

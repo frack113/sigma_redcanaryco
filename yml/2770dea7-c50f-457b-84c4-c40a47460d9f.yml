@@ -19,5 +19,9 @@ description: |
   When a service is created whose executable path contains spaces and isn’t enclosed within quotes, leads to a vulnerability
   known as Unquoted Service Path which allows a user to gain SYSTEM privileges.
   In this case, if an executable program.exe in C:\ exists, C:\program.exe will be executed instead of test.exe in C:\Program Files\subfolder\test.exe.
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 8c3c76ca-8f8b-4b1d-aaf3-81aebcd367c9
+    name: win_fe_creation_unquoted_service_path.yml
+  - id: 7fe71fc9-de3b-432a-8d57-8c809efc10ab
+    name: win_new_service_creation.yml

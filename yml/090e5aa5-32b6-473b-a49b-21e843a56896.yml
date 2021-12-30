@@ -19,5 +19,8 @@ os:
 description: 'Appends a start process cmdlet to the current user''s powershell profile pofile that points to a malicious executable. Upon execution, calc.exe will be launched.
 
   '
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 05b3e303-faf0-4f4a-9b30-46cc13e69152
+    name: powershell_trigger_profiles.yml
+

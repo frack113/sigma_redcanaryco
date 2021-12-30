@@ -22,5 +22,11 @@ description: |
   https://enigma0x3.net/2017/07/19/bypassing-amsi-via-com-server-hijacking/
 
   Upon successful execution, powershell.exe will be copied and renamed to updater.exe and load amsi.dll from a non-standard path.
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: fff9d2b7-e11c-4a69-93d3-40ef66189767
+    name: win_susp_copy_system32.yml
+  - id: 092bc4b9-3d1d-43b4-a6b4-8c8acd83522f
+    name: sysmon_in_memory_powershell.yml
+  - id: fe6e002f-f244-4278-9263-20e4b593827f
+    name: sysmon_alternate_powershell_hosts_moduleload.yml

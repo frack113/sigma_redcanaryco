@@ -50,5 +50,12 @@ os:
   - windows
 description: "jse files can be placed in and ran from the startup folder to maintain persistance.\nUpon execution, \"T1547.001 Hello, World JSE!\" will be displayed twice. \nAdditionally, the new files\
   \ can be viewed in the \"$env:APPDATA\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\"\nfolder and will also run when the computer is restarted and the user logs in.\n"
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 2aa0a6b4-a865-495b-ab51-c28249537b75
+    name: sysmon_startup_folder_file_write.yml
+  - id: cea72823-df4d-4567-950c-0b579eaf0846
+    name: win_malware_script_dropper.yml
+  - id: 1e33157c-53b1-41ad-bbcc-780b80b58288
+    name: win_susp_script_execution.yml
+
