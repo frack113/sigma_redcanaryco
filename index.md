@@ -33,11 +33,11 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1059.001
-[PowerShell Invoke Known Malicious Cmdlets](tests/49eb9404-5e0f-4031-a179-b40f7be385e3.md) ['windows'] (sigma rule :x:)
+[PowerShell Invoke Known Malicious Cmdlets](tests/49eb9404-5e0f-4031-a179-b40f7be385e3.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[PowerUp Invoke-AllChecks](tests/1289f78d-22d2-4590-ac76-166737e1811b.md) ['windows'] (sigma rule :x:)
+[PowerUp Invoke-AllChecks](tests/1289f78d-22d2-4590-ac76-166737e1811b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[PowerShell Downgrade Attack](tests/9148e7c4-9356-420e-a416-e896e9c0f73e.md) ['windows'] (sigma rule :x:)
+[PowerShell Downgrade Attack](tests/9148e7c4-9356-420e-a416-e896e9c0f73e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Mimikatz - Cradlecraft PsSendKeys](tests/af1800cf-9f9d-4fd1-a709-14b1e6de020d.md) ['windows'] (sigma rule :x:)
 
@@ -45,13 +45,13 @@ Caution: a test can generate a lot of noise...
 
 [Obfuscation Tests](tests/4297c41a-8168-4138-972d-01f3ee92c804.md) ['windows'] (sigma rule :x:)
 
-[ATHPowerShellCommandLineParameter -EncodedCommand parameter variations](tests/86a43bad-12e3-4e85-b97c-4d5cf25b95c3.md) ['windows'] (sigma rule :x:)
+[ATHPowerShellCommandLineParameter -EncodedCommand parameter variations](tests/86a43bad-12e3-4e85-b97c-4d5cf25b95c3.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [PowerShell Session Creation and Use](tests/7c1acec2-78fa-4305-a3e0-db2a54cddecd.md) ['windows'] (sigma rule :x:)
 
 [Powershell Invoke-DownloadCradle](tests/cc50fa2a-a4be-42af-a88f-e347ba0bf4d7.md) ['windows'] (sigma rule :x:)
 
-[PowerShell Fileless Script Execution](tests/fa050f5e-bc75-4230-af73-b6fd7852cd73.md) ['windows'] (sigma rule :x:)
+[PowerShell Fileless Script Execution](tests/fa050f5e-bc75-4230-af73-b6fd7852cd73.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Invoke-AppPathBypass](tests/06a220b6-7e29-4bd8-9d07-5b4d86742372.md) ['windows'] (sigma rule :x:)
 
@@ -59,29 +59,29 @@ Caution: a test can generate a lot of noise...
 
 [Run Bloodhound from Memory using Download Cradle](tests/bf8c1441-4674-4dab-8e4e-39d93d08f9b7.md) ['windows'] (sigma rule :x:)
 
-[ATHPowerShellCommandLineParameter -Command parameter variations with encoded arguments](tests/1c0a870f-dc74-49cf-9afc-eccc45e58790.md) ['windows'] (sigma rule :x:)
+[ATHPowerShellCommandLineParameter -Command parameter variations with encoded arguments](tests/1c0a870f-dc74-49cf-9afc-eccc45e58790.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Powershell MsXml COM object - with prompt](tests/388a7340-dbc1-4c9d-8e59-b75ad8c6d5da.md) ['windows'] (sigma rule :x:)
 
-[NTFS Alternate Data Stream Access](tests/8e5c5532-1181-4c1d-bb79-b3a9f5dbd680.md) ['windows'] (sigma rule :x:)
+[NTFS Alternate Data Stream Access](tests/8e5c5532-1181-4c1d-bb79-b3a9f5dbd680.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Run BloodHound from local disk](tests/a21bb23e-e677-4ee7-af90-6931b57b6350.md) ['windows'] (sigma rule :x:)
 
-[Powershell invoke mshta.exe download](tests/8a2ad40b-12c7-4b25-8521-2737b0a415af.md) ['windows'] (sigma rule :x:)
+[Powershell invoke mshta.exe download](tests/8a2ad40b-12c7-4b25-8521-2737b0a415af.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[ATHPowerShellCommandLineParameter -EncodedCommand parameter variations with encoded arguments](tests/0d181431-ddf3-4826-8055-2dbf63ae848b.md) ['windows'] (sigma rule :x:)
+[ATHPowerShellCommandLineParameter -EncodedCommand parameter variations with encoded arguments](tests/0d181431-ddf3-4826-8055-2dbf63ae848b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[ATHPowerShellCommandLineParameter -Command parameter variations](tests/686a9785-f99b-41d4-90df-66ed515f81d7.md) ['windows'] (sigma rule :x:)
+[ATHPowerShellCommandLineParameter -Command parameter variations](tests/686a9785-f99b-41d4-90df-66ed515f81d7.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [PowerShell Command Execution](tests/a538de64-1c74-46ed-aa60-b995ed302598.md) ['windows'] (sigma rule :x:)
 
 
 ### T1204.002
-[Maldoc choice flags command execution](tests/0330a5d2-a45a-4272-a9ee-e364411c4b18.md) ['windows'] (sigma rule :x:)
+[Maldoc choice flags command execution](tests/0330a5d2-a45a-4272-a9ee-e364411c4b18.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Excel 4 Macro](tests/4ea1fc97-8a46-4b4e-ba48-af43d2a98052.md) ['windows'] (sigma rule :x:)
+[Excel 4 Macro](tests/4ea1fc97-8a46-4b4e-ba48-af43d2a98052.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Office launching .bat file from AppData](tests/9215ea92-1ded-41b7-9cd6-79f9a78397aa.md) ['windows'] (sigma rule :x:)
+[Office launching .bat file from AppData](tests/9215ea92-1ded-41b7-9cd6-79f9a78397aa.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Office Generic Payload Download](tests/5202ee05-c420-4148-bf5e-fd7f7d24850c.md) ['windows'] (sigma rule :x:)
 
@@ -89,11 +89,11 @@ Caution: a test can generate a lot of noise...
 
 [Potentially Unwanted Applications (PUA)](tests/02f35d62-9fdc-4a97-b899-a5d9a876d295.md) ['windows'] (sigma rule :x:)
 
-[OSTAP JS version](tests/add560ef-20d6-4011-a937-2c340f930911.md) ['windows'] (sigma rule :x:)
+[OSTAP JS version](tests/add560ef-20d6-4011-a937-2c340f930911.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[OSTap Style Macro Execution](tests/8bebc690-18c7-4549-bc98-210f7019efff.md) ['windows'] (sigma rule :x:)
+[OSTap Style Macro Execution](tests/8bebc690-18c7-4549-bc98-210f7019efff.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[OSTap Payload Download](tests/3f3af983-118a-4fa1-85d3-ba4daa739d80.md) ['windows'] (sigma rule :x:)
+[OSTap Payload Download](tests/3f3af983-118a-4fa1-85d3-ba4daa739d80.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1217
@@ -279,9 +279,9 @@ Caution: a test can generate a lot of noise...
 
 [Execute command writing output to local Admin Share](tests/d41aaab5-bdfe-431d-a3d5-c29e9136ff46.md) ['windows'] (sigma rule :x:)
 
-[Map admin share](tests/3386975b-367a-4fbb-9d77-4dcf3639ffd3.md) ['windows'] (sigma rule :x:)
+[Map admin share](tests/3386975b-367a-4fbb-9d77-4dcf3639ffd3.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Copy and Execute File with PsExec](tests/0eb03d41-79e4-4393-8e57-6344856be1cf.md) ['windows'] (sigma rule :x:)
+[Copy and Execute File with PsExec](tests/0eb03d41-79e4-4393-8e57-6344856be1cf.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1556.003
@@ -357,7 +357,7 @@ Caution: a test can generate a lot of noise...
 
 [Linux VM Check via Hardware](tests/31dad7ad-2286-4c02-ae92-274418c85fec.md) ['linux'] (sigma rule :x:)
 
-[System Information Discovery](tests/66703791-c902-4560-8770-42b8a91f7667.md) ['windows'] (sigma rule :x:)
+[System Information Discovery](tests/66703791-c902-4560-8770-42b8a91f7667.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [System Information Discovery](tests/edff98ec-0f73-4f63-9890-6b117092aff6.md) ['macos'] (sigma rule :x:)
 
@@ -541,7 +541,7 @@ Caution: a test can generate a lot of noise...
 
 [Detect Virtualization Environment (Linux)](tests/dfbd1a21-540d-4574-9731-e852bd6fe840.md) ['linux'] (sigma rule :x:)
 
-[Detect Virtualization Environment (Windows)](tests/502a7dc4-9d6f-4d28-abf2-f0e84692562d.md) ['windows'] (sigma rule :x:)
+[Detect Virtualization Environment (Windows)](tests/502a7dc4-9d6f-4d28-abf2-f0e84692562d.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1559.002
@@ -582,6 +582,8 @@ Caution: a test can generate a lot of noise...
 [Run Chrome-password Collector](tests/8c05b133-d438-47ca-a630-19cc464c4622.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Simulating access to Chrome Login Data](tests/3d111226-d09a-4911-8715-fe11664f960d.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Simulating access to Opera Login Data](tests/28498c17-57e4-495a-b0be-cc1e36de408b.md) ['windows'] (sigma rule :x:)
 
 [Search macOS Safari Cookies](tests/c1402f7b-67ca-43a8-b5f3-3143abedc01b.md) ['macos'] (sigma rule :x:)
 
@@ -1061,7 +1063,7 @@ Caution: a test can generate a lot of noise...
 
 [Windows - wbadmin Delete systemstatebackup](tests/584331dd-75bc-4c02-9e0b-17f5fd81c748.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Windows - Delete Volume Shadow Copies via WMI with PowerShell](tests/39a295ca-7059-4a88-86f6-09556c1211e7.md) ['windows'] (sigma rule :x:)
+[Windows - Delete Volume Shadow Copies via WMI with PowerShell](tests/39a295ca-7059-4a88-86f6-09556c1211e7.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Windows - Delete Volume Shadow Copies](tests/43819286-91a9-4369-90ed-d31fb4da2c01.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1263,13 +1265,13 @@ Caution: a test can generate a lot of noise...
 
 [Reboot System via `halt` - Linux](tests/78f92e14-f1e9-4446-b3e9-f1b921f2459e.md) ['linux'] (sigma rule :x:)
 
-[Shutdown System - Windows](tests/ad254fa8-45c0-403b-8c77-e00b3d3e7a64.md) ['windows'] (sigma rule :x:)
+[Shutdown System - Windows](tests/ad254fa8-45c0-403b-8c77-e00b3d3e7a64.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Reboot System via `poweroff` - Linux](tests/61303105-ff60-427b-999e-efb90b314e41.md) ['linux'] (sigma rule :x:)
 
 [Shutdown System via `shutdown` - macOS/Linux](tests/4963a81e-a3ad-4f02-adda-812343b351de.md) ['macos', 'linux'] (sigma rule :x:)
 
-[Restart System - Windows](tests/f4648f0d-bf78-483c-bafc-3ec99cd1c302.md) ['windows'] (sigma rule :x:)
+[Restart System - Windows](tests/f4648f0d-bf78-483c-bafc-3ec99cd1c302.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Shutdown System via `poweroff` - Linux](tests/73a90cd2-48a2-4ac5-8594-2af35fa909fa.md) ['linux'] (sigma rule :x:)
 
@@ -1373,9 +1375,9 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1124
-[System Time Discovery - PowerShell](tests/1d5711d6-655c-4a47-ae9c-6503c74fa877.md) ['windows'] (sigma rule :x:)
+[System Time Discovery - PowerShell](tests/1d5711d6-655c-4a47-ae9c-6503c74fa877.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[System Time Discovery](tests/20aba24b-e61f-4b26-b4ce-4784f763ca20.md) ['windows'] (sigma rule :x:)
+[System Time Discovery](tests/20aba24b-e61f-4b26-b4ce-4784f763ca20.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [System Time Discovery in macOS](tests/f449c933-0891-407f-821e-7916a21a1a6f.md) ['macos'] (sigma rule :x:)
 
@@ -1477,19 +1479,19 @@ Caution: a test can generate a lot of noise...
 
 [WMI Reconnaissance Software](tests/718aebaa-d0e0-471a-8241-c5afa69c7414.md) ['windows'] (sigma rule :x:)
 
-[WMI Execute Remote Process](tests/9c8ef159-c666-472f-9874-90c8d60d136b.md) ['windows'] (sigma rule :x:)
+[WMI Execute Remote Process](tests/9c8ef159-c666-472f-9874-90c8d60d136b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Create a Process using obfuscated Win32_Process](tests/10447c83-fc38-462a-a936-5102363b1c43.md) ['windows'] (sigma rule :x:)
+[Create a Process using obfuscated Win32_Process](tests/10447c83-fc38-462a-a936-5102363b1c43.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[WMI Reconnaissance Users](tests/c107778c-dcf5-47c5-af2e-1d058a3df3ea.md) ['windows'] (sigma rule :x:)
+[WMI Reconnaissance Users](tests/c107778c-dcf5-47c5-af2e-1d058a3df3ea.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [WMI Reconnaissance List Remote Services](tests/0fd48ef7-d890-4e93-a533-f7dedd5191d3.md) ['windows'] (sigma rule :x:)
 
-[WMI Execute Local Process](tests/b3bdfc91-b33e-4c6d-a5c8-d64bee0276b3.md) ['windows'] (sigma rule :x:)
+[WMI Execute Local Process](tests/b3bdfc91-b33e-4c6d-a5c8-d64bee0276b3.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Create a Process using WMI Query and an Encoded Command](tests/7db7a7f9-9531-4840-9b30-46220135441c.md) ['windows'] (sigma rule :x:)
+[Create a Process using WMI Query and an Encoded Command](tests/7db7a7f9-9531-4840-9b30-46220135441c.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[WMI Execute rundll32](tests/00738d2a-4651-4d76-adf2-c43a41dfb243.md) ['windows'] (sigma rule :x:)
+[WMI Execute rundll32](tests/00738d2a-4651-4d76-adf2-c43a41dfb243.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1218.002
@@ -1503,7 +1505,7 @@ Caution: a test can generate a lot of noise...
 
 [System Network Connections Discovery Linux & MacOS](tests/9ae28d3f-190f-4fa0-b023-c7bd3e0eabf2.md) ['linux', 'macos'] (sigma rule :x:)
 
-[System Network Connections Discovery with PowerShell](tests/f069f0f1-baad-4831-aa2b-eddac4baac4a.md) ['windows'] (sigma rule :x:)
+[System Network Connections Discovery with PowerShell](tests/f069f0f1-baad-4831-aa2b-eddac4baac4a.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1036.006
@@ -1779,9 +1781,9 @@ Caution: a test can generate a lot of noise...
 ### T1033
 [System Owner/User Discovery](tests/2a9b677d-a230-44f4-ad86-782df1ef108c.md) ['linux', 'macos'] (sigma rule :x:)
 
-[System Owner/User Discovery](tests/4c4959bf-addf-4b4a-be86-8d09cc1857aa.md) ['windows'] (sigma rule :x:)
+[System Owner/User Discovery](tests/4c4959bf-addf-4b4a-be86-8d09cc1857aa.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Find computers where user has session - Stealth mode (PowerView)](tests/29857f27-a36f-4f7e-8084-4557cd6207ca.md) ['windows'] (sigma rule :x:)
+[Find computers where user has session - Stealth mode (PowerView)](tests/29857f27-a36f-4f7e-8084-4557cd6207ca.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1055.012
@@ -1881,9 +1883,9 @@ Caution: a test can generate a lot of noise...
 ### T1059.005
 [Visual Basic script execution to gather local computer information](tests/1620de42-160a-4fe5-bbaf-d3fef0181ce9.md) ['windows'] (sigma rule :x:)
 
-[Encoded VBS code execution](tests/e8209d5f-e42d-45e6-9c2f-633ac4f1eefa.md) ['windows'] (sigma rule :x:)
+[Encoded VBS code execution](tests/e8209d5f-e42d-45e6-9c2f-633ac4f1eefa.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Extract Memory via VBA](tests/8faff437-a114-4547-9a60-749652a03df6.md) ['windows'] (sigma rule :x:)
+[Extract Memory via VBA](tests/8faff437-a114-4547-9a60-749652a03df6.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1518
@@ -2043,7 +2045,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1021.003
-[PowerShell Lateral Movement using MMC20](tests/6dc74eb1-c9d6-4c53-b3b5-6f50ae339673.md) ['windows'] (sigma rule :x:)
+[PowerShell Lateral Movement using MMC20](tests/6dc74eb1-c9d6-4c53-b3b5-6f50ae339673.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1573
