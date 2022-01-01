@@ -16,5 +16,8 @@ os:
 description: 'Identify the system time. Upon execution, the local computer system time and timezone will be displayed.
 
   '
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: b243b280-65fe-48df-ba07-6ddea7646427
+    name: win_remote_time_discovery.yml
+

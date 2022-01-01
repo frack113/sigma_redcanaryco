@@ -14,5 +14,7 @@ os:
 description: 'This test restarts a Windows system.
 
   '
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 6ec7b48f-4d1e-49c5-a9e9-d269e52afdc2
+    name: win_pc_susp_shutdown.yml

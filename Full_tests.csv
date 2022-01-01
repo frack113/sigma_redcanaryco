@@ -24,6 +24,7 @@ credential-access;T1555.003;['windows'];Run Chrome-password Collector;8c05b133-d
 credential-access;T1555.003;['macos'];Search macOS Safari Cookies;c1402f7b-67ca-43a8-b5f3-3143abedc01b;False;2
 credential-access;T1555.003;['windows'];LaZagne - Credentials from Browser;9a2915b3-3954-4cce-8c76-00fbf4dbd014;True;3
 credential-access;T1555.003;['windows'];Simulating access to Chrome Login Data;3d111226-d09a-4911-8715-fe11664f960d;True;4
+credential-access;T1555.003;['windows'];Simulating access to Opera Login Data;28498c17-57e4-495a-b0be-cc1e36de408b;False;5
 credential-access;T1552.002;['windows'];Enumeration for Credentials in Registry;b6ec082c-7384-46b3-a111-9a9b8b14e5e7;True;1
 credential-access;T1552.002;['windows'];Enumeration for PuTTY Credentials in Registry;af197fd7-e868-448e-9bd5-05d1bcd9d9e5;True;2
 credential-access;T1003.006;['windows'];DCSync (Active Directory);129efd28-8497-4c87-a1b0-73b9a870ca3e;True;1
@@ -556,7 +557,7 @@ defense-evasion;T1548.003;['macos', 'linux'];Sudo usage;150c3a08-ee6e-48a6-aeaf-
 defense-evasion;T1548.003;['macos', 'linux'];Unlimited sudo cache timeout;a7b17659-dd5e-46f7-b7d1-e6792c91d0bc;False;2
 defense-evasion;T1548.003;['macos', 'linux'];Disable tty_tickets for sudo caching;91a60b03-fb75-4d24-a42e-2eb8956e8de1;False;3
 defense-evasion;T1497.001;['linux'];Detect Virtualization Environment (Linux);dfbd1a21-540d-4574-9731-e852bd6fe840;False;1
-defense-evasion;T1497.001;['windows'];Detect Virtualization Environment (Windows);502a7dc4-9d6f-4d28-abf2-f0e84692562d;False;2
+defense-evasion;T1497.001;['windows'];Detect Virtualization Environment (Windows);502a7dc4-9d6f-4d28-abf2-f0e84692562d;True;2
 defense-evasion;T1497.001;['macos'];Detect Virtualization Environment (MacOS);a960185f-aef6-4547-8350-d1ce16680d09;False;3
 defense-evasion;T1221;['windows'];WINWORD Remote Template Injection;1489e08a-82c7-44ee-b769-51b72d03521d;False;1
 defense-evasion;T1070.006;['linux', 'macos'];Set a file's access timestamp;5f9113d5-ed75-47ed-ba23-ea3573d05810;False;1
@@ -706,7 +707,7 @@ impact;T1490;['windows'];Windows - Delete Volume Shadow Copies;43819286-91a9-436
 impact;T1490;['windows'];Windows - Delete Volume Shadow Copies via WMI;6a3ff8dd-f49c-4272-a658-11c2fe58bd88;True;2
 impact;T1490;['windows'];Windows - wbadmin Delete Windows Backup Catalog;263ba6cb-ea2b-41c9-9d4e-b652dadd002c;True;3
 impact;T1490;['windows'];Windows - Disable Windows Recovery Console Repair;cf21060a-80b3-4238-a595-22525de4ab81;True;4
-impact;T1490;['windows'];Windows - Delete Volume Shadow Copies via WMI with PowerShell;39a295ca-7059-4a88-86f6-09556c1211e7;False;5
+impact;T1490;['windows'];Windows - Delete Volume Shadow Copies via WMI with PowerShell;39a295ca-7059-4a88-86f6-09556c1211e7;True;5
 impact;T1490;['windows'];Windows - Delete Backup Files;6b1dbaf6-cc8a-4ea6-891f-6058569653bf;False;6
 impact;T1490;['windows'];Windows - wbadmin Delete systemstatebackup;584331dd-75bc-4c02-9e0b-17f5fd81c748;True;7
 impact;T1490;['windows'];Windows - Disable the SR scheduled task;1c68c68d-83a4-4981-974e-8993055fa034;True;8
@@ -715,8 +716,8 @@ impact;T1496;['macos', 'linux'];macOS/Linux - Simulate CPU Load with Yes;904a5a0
 impact;T1489;['windows'];Windows - Stop service using Service Controller;21dfb440-830d-4c86-a3e5-2a491d5a8d04;True;1
 impact;T1489;['windows'];Windows - Stop service using net.exe;41274289-ec9c-4213-bea4-e43c4aa57954;True;2
 impact;T1489;['windows'];Windows - Stop service by killing process;f3191b84-c38b-400b-867e-3a217a27795f;True;3
-impact;T1529;['windows'];Shutdown System - Windows;ad254fa8-45c0-403b-8c77-e00b3d3e7a64;False;1
-impact;T1529;['windows'];Restart System - Windows;f4648f0d-bf78-483c-bafc-3ec99cd1c302;False;2
+impact;T1529;['windows'];Shutdown System - Windows;ad254fa8-45c0-403b-8c77-e00b3d3e7a64;True;1
+impact;T1529;['windows'];Restart System - Windows;f4648f0d-bf78-483c-bafc-3ec99cd1c302;True;2
 impact;T1529;['macos', 'linux'];Restart System via `shutdown` - macOS/Linux;6326dbc4-444b-4c04-88f4-27e94d0327cb;False;3
 impact;T1529;['macos', 'linux'];Shutdown System via `shutdown` - macOS/Linux;4963a81e-a3ad-4f02-adda-812343b351de;False;4
 impact;T1529;['macos', 'linux'];Restart System via `reboot` - macOS/Linux;47d0b042-a918-40ab-8cf9-150ffe919027;False;5
@@ -824,9 +825,9 @@ discovery;T1518;['windows'];Find and Display Internet Explorer Browser Version;6
 discovery;T1518;['windows'];Applications Installed;c49978f6-bd6e-4221-ad2c-9e3e30cc1e3b;True;2
 discovery;T1518;['macos'];Find and Display Safari Browser Version;103d6533-fd2a-4d08-976a-4a598565280f;False;3
 discovery;T1497.001;['linux'];Detect Virtualization Environment (Linux);dfbd1a21-540d-4574-9731-e852bd6fe840;False;1
-discovery;T1497.001;['windows'];Detect Virtualization Environment (Windows);502a7dc4-9d6f-4d28-abf2-f0e84692562d;False;2
+discovery;T1497.001;['windows'];Detect Virtualization Environment (Windows);502a7dc4-9d6f-4d28-abf2-f0e84692562d;True;2
 discovery;T1497.001;['macos'];Detect Virtualization Environment (MacOS);a960185f-aef6-4547-8350-d1ce16680d09;False;3
-discovery;T1082;['windows'];System Information Discovery;66703791-c902-4560-8770-42b8a91f7667;False;1
+discovery;T1082;['windows'];System Information Discovery;66703791-c902-4560-8770-42b8a91f7667;True;1
 discovery;T1082;['macos'];System Information Discovery;edff98ec-0f73-4f63-9890-6b117092aff6;False;2
 discovery;T1082;['linux', 'macos'];List OS Information;cccb070c-df86-4216-a5bc-9fb60c74e27c;False;3
 discovery;T1082;['linux'];Linux VM Check via Hardware;31dad7ad-2286-4c02-ae92-274418c85fec;False;4
@@ -846,16 +847,16 @@ discovery;T1016;['windows'];Adfind - Enumerate Active Directory Subnet Objects;9
 discovery;T1016;['windows'];Qakbot Recon;121de5c6-5818-4868-b8a7-8fd07c455c1b;True;7
 discovery;T1016;['macos'];List macOS Firewall Rules;ff1d8c25-2aa4-4f18-a425-fede4a41ee88;False;8
 discovery;T1049;['windows'];System Network Connections Discovery;0940a971-809a-48f1-9c4d-b1d785e96ee5;True;1
-discovery;T1049;['windows'];System Network Connections Discovery with PowerShell;f069f0f1-baad-4831-aa2b-eddac4baac4a;False;2
+discovery;T1049;['windows'];System Network Connections Discovery with PowerShell;f069f0f1-baad-4831-aa2b-eddac4baac4a;True;2
 discovery;T1049;['linux', 'macos'];System Network Connections Discovery Linux & MacOS;9ae28d3f-190f-4fa0-b023-c7bd3e0eabf2;False;3
 discovery;T1049;['windows'];System Discovery using SharpView;96f974bb-a0da-4d87-a744-ff33e73367e9;True;4
-discovery;T1033;['windows'];System Owner/User Discovery;4c4959bf-addf-4b4a-be86-8d09cc1857aa;False;1
+discovery;T1033;['windows'];System Owner/User Discovery;4c4959bf-addf-4b4a-be86-8d09cc1857aa;True;1
 discovery;T1033;['linux', 'macos'];System Owner/User Discovery;2a9b677d-a230-44f4-ad86-782df1ef108c;False;2
-discovery;T1033;['windows'];Find computers where user has session - Stealth mode (PowerView);29857f27-a36f-4f7e-8084-4557cd6207ca;False;3
+discovery;T1033;['windows'];Find computers where user has session - Stealth mode (PowerView);29857f27-a36f-4f7e-8084-4557cd6207ca;True;3
 discovery;T1007;['windows'];System Service Discovery;89676ba1-b1f8-47ee-b940-2e1a113ebc71;True;1
 discovery;T1007;['windows'];System Service Discovery - net.exe;5f864a3f-8ce9-45c0-812c-bdf7d8aeacc3;True;2
-discovery;T1124;['windows'];System Time Discovery;20aba24b-e61f-4b26-b4ce-4784f763ca20;False;1
-discovery;T1124;['windows'];System Time Discovery - PowerShell;1d5711d6-655c-4a47-ae9c-6503c74fa877;False;2
+discovery;T1124;['windows'];System Time Discovery;20aba24b-e61f-4b26-b4ce-4784f763ca20;True;1
+discovery;T1124;['windows'];System Time Discovery - PowerShell;1d5711d6-655c-4a47-ae9c-6503c74fa877;True;2
 discovery;T1124;['macos'];System Time Discovery in macOS;f449c933-0891-407f-821e-7916a21a1a6f;False;3
 execution;T1059.002;['macos'];AppleScript;3600d97d-81b9-4171-ab96-e4386506e2c2;False;1
 execution;T1053.001;['linux'];At - Schedule a job;7266d898-ac82-4ec0-97c7-436075d0d08e;False;1
@@ -872,12 +873,12 @@ execution;T1559.002;['windows'];Execute PowerShell script via Word DDE;47c21fb6-
 execution;T1559.002;['windows'];DDEAUTO;cf91174c-4e74-414e-bec0-8d60a104d181;False;3
 execution;T1569.001;['macos'];Launchctl;6fb61988-724e-4755-a595-07743749d4e2;False;1
 execution;T1053.004;['macos'];Event Monitor Daemon Persistence;11979f23-9b9d-482a-9935-6fc9cd022c3e;False;1
-execution;T1204.002;['windows'];OSTap Style Macro Execution;8bebc690-18c7-4549-bc98-210f7019efff;False;1
-execution;T1204.002;['windows'];OSTap Payload Download;3f3af983-118a-4fa1-85d3-ba4daa739d80;False;2
-execution;T1204.002;['windows'];Maldoc choice flags command execution;0330a5d2-a45a-4272-a9ee-e364411c4b18;False;3
-execution;T1204.002;['windows'];OSTAP JS version;add560ef-20d6-4011-a937-2c340f930911;False;4
-execution;T1204.002;['windows'];Office launching .bat file from AppData;9215ea92-1ded-41b7-9cd6-79f9a78397aa;False;5
-execution;T1204.002;['windows'];Excel 4 Macro;4ea1fc97-8a46-4b4e-ba48-af43d2a98052;False;6
+execution;T1204.002;['windows'];OSTap Style Macro Execution;8bebc690-18c7-4549-bc98-210f7019efff;True;1
+execution;T1204.002;['windows'];OSTap Payload Download;3f3af983-118a-4fa1-85d3-ba4daa739d80;True;2
+execution;T1204.002;['windows'];Maldoc choice flags command execution;0330a5d2-a45a-4272-a9ee-e364411c4b18;True;3
+execution;T1204.002;['windows'];OSTAP JS version;add560ef-20d6-4011-a937-2c340f930911;True;4
+execution;T1204.002;['windows'];Office launching .bat file from AppData;9215ea92-1ded-41b7-9cd6-79f9a78397aa;True;5
+execution;T1204.002;['windows'];Excel 4 Macro;4ea1fc97-8a46-4b4e-ba48-af43d2a98052;True;6
 execution;T1204.002;['windows'];Headless Chrome code execution via VBA;a19ee671-ed98-4e9d-b19c-d1954a51585a;False;7
 execution;T1204.002;['windows'];Potentially Unwanted Applications (PUA);02f35d62-9fdc-4a97-b899-a5d9a876d295;False;8
 execution;T1204.002;['windows'];Office Generic Payload Download;5202ee05-c420-4148-bf5e-fd7f7d24850c;False;9
@@ -890,19 +891,19 @@ execution;T1059.001;['windows'];Mimikatz - Cradlecraft PsSendKeys;af1800cf-9f9d-
 execution;T1059.001;['windows'];Invoke-AppPathBypass;06a220b6-7e29-4bd8-9d07-5b4d86742372;False;6
 execution;T1059.001;['windows'];Powershell MsXml COM object - with prompt;388a7340-dbc1-4c9d-8e59-b75ad8c6d5da;False;7
 execution;T1059.001;['windows'];Powershell XML requests;4396927f-e503-427b-b023-31049b9b09a6;False;8
-execution;T1059.001;['windows'];Powershell invoke mshta.exe download;8a2ad40b-12c7-4b25-8521-2737b0a415af;False;9
+execution;T1059.001;['windows'];Powershell invoke mshta.exe download;8a2ad40b-12c7-4b25-8521-2737b0a415af;True;9
 execution;T1059.001;['windows'];Powershell Invoke-DownloadCradle;cc50fa2a-a4be-42af-a88f-e347ba0bf4d7;False;10
-execution;T1059.001;['windows'];PowerShell Fileless Script Execution;fa050f5e-bc75-4230-af73-b6fd7852cd73;False;11
-execution;T1059.001;['windows'];PowerShell Downgrade Attack;9148e7c4-9356-420e-a416-e896e9c0f73e;False;12
-execution;T1059.001;['windows'];NTFS Alternate Data Stream Access;8e5c5532-1181-4c1d-bb79-b3a9f5dbd680;False;13
+execution;T1059.001;['windows'];PowerShell Fileless Script Execution;fa050f5e-bc75-4230-af73-b6fd7852cd73;True;11
+execution;T1059.001;['windows'];PowerShell Downgrade Attack;9148e7c4-9356-420e-a416-e896e9c0f73e;True;12
+execution;T1059.001;['windows'];NTFS Alternate Data Stream Access;8e5c5532-1181-4c1d-bb79-b3a9f5dbd680;True;13
 execution;T1059.001;['windows'];PowerShell Session Creation and Use;7c1acec2-78fa-4305-a3e0-db2a54cddecd;False;14
-execution;T1059.001;['windows'];ATHPowerShellCommandLineParameter -Command parameter variations;686a9785-f99b-41d4-90df-66ed515f81d7;False;15
-execution;T1059.001;['windows'];ATHPowerShellCommandLineParameter -Command parameter variations with encoded arguments;1c0a870f-dc74-49cf-9afc-eccc45e58790;False;16
-execution;T1059.001;['windows'];ATHPowerShellCommandLineParameter -EncodedCommand parameter variations;86a43bad-12e3-4e85-b97c-4d5cf25b95c3;False;17
-execution;T1059.001;['windows'];ATHPowerShellCommandLineParameter -EncodedCommand parameter variations with encoded arguments;0d181431-ddf3-4826-8055-2dbf63ae848b;False;18
+execution;T1059.001;['windows'];ATHPowerShellCommandLineParameter -Command parameter variations;686a9785-f99b-41d4-90df-66ed515f81d7;True;15
+execution;T1059.001;['windows'];ATHPowerShellCommandLineParameter -Command parameter variations with encoded arguments;1c0a870f-dc74-49cf-9afc-eccc45e58790;True;16
+execution;T1059.001;['windows'];ATHPowerShellCommandLineParameter -EncodedCommand parameter variations;86a43bad-12e3-4e85-b97c-4d5cf25b95c3;True;17
+execution;T1059.001;['windows'];ATHPowerShellCommandLineParameter -EncodedCommand parameter variations with encoded arguments;0d181431-ddf3-4826-8055-2dbf63ae848b;True;18
 execution;T1059.001;['windows'];PowerShell Command Execution;a538de64-1c74-46ed-aa60-b995ed302598;False;19
-execution;T1059.001;['windows'];PowerShell Invoke Known Malicious Cmdlets;49eb9404-5e0f-4031-a179-b40f7be385e3;False;20
-execution;T1059.001;['windows'];PowerUp Invoke-AllChecks;1289f78d-22d2-4590-ac76-166737e1811b;False;21
+execution;T1059.001;['windows'];PowerShell Invoke Known Malicious Cmdlets;49eb9404-5e0f-4031-a179-b40f7be385e3;True;20
+execution;T1059.001;['windows'];PowerUp Invoke-AllChecks;1289f78d-22d2-4590-ac76-166737e1811b;True;21
 execution;T1059.006;['linux'];Execute shell script via python's command mode arguement;3a95cdb2-c6ea-4761-b24e-02b71889b8bb;False;1
 execution;T1059.006;['linux'];Execute Python via scripts (Linux);6c4d1dcb-33c7-4c36-a8df-c6cfd0408be8;False;2
 execution;T1059.006;['linux'];Execute Python via Python executables (Linux);0b44d79b-570a-4b27-a31f-3bf2156e5eaa;False;3
@@ -921,21 +922,21 @@ execution;T1053.006;['linux'];Create a system level transient systemd service an
 execution;T1059.004;['macos', 'linux'];Create and Execute Bash Shell Script;7e7ac3ed-f795-4fa5-b711-09d6fbe9b873;False;1
 execution;T1059.004;['macos', 'linux'];Command-Line Interface;d0c88567-803d-4dca-99b4-7ce65e7b257c;False;2
 execution;T1059.005;['windows'];Visual Basic script execution to gather local computer information;1620de42-160a-4fe5-bbaf-d3fef0181ce9;False;1
-execution;T1059.005;['windows'];Encoded VBS code execution;e8209d5f-e42d-45e6-9c2f-633ac4f1eefa;False;2
-execution;T1059.005;['windows'];Extract Memory via VBA;8faff437-a114-4547-9a60-749652a03df6;False;3
+execution;T1059.005;['windows'];Encoded VBS code execution;e8209d5f-e42d-45e6-9c2f-633ac4f1eefa;True;2
+execution;T1059.005;['windows'];Extract Memory via VBA;8faff437-a114-4547-9a60-749652a03df6;True;3
 execution;T1059.003;['windows'];Create and Execute Batch Script;9e8894c0-50bd-4525-a96c-d4ac78ece388;False;1
 execution;T1059.003;['windows'];Writes text to a file and displays it.;127b4afe-2346-4192-815c-69042bec570e;False;2
 execution;T1059.003;['windows'];Suspicious Execution via Windows Command Shell;d0eb3597-a1b3-4d65-b33b-2cda8d397f20;False;3
-execution;T1047;['windows'];WMI Reconnaissance Users;c107778c-dcf5-47c5-af2e-1d058a3df3ea;False;1
+execution;T1047;['windows'];WMI Reconnaissance Users;c107778c-dcf5-47c5-af2e-1d058a3df3ea;True;1
 execution;T1047;['windows'];WMI Reconnaissance Processes;5750aa16-0e59-4410-8b9a-8a47ca2788e2;False;2
 execution;T1047;['windows'];WMI Reconnaissance Software;718aebaa-d0e0-471a-8241-c5afa69c7414;False;3
 execution;T1047;['windows'];WMI Reconnaissance List Remote Services;0fd48ef7-d890-4e93-a533-f7dedd5191d3;False;4
-execution;T1047;['windows'];WMI Execute Local Process;b3bdfc91-b33e-4c6d-a5c8-d64bee0276b3;False;5
-execution;T1047;['windows'];WMI Execute Remote Process;9c8ef159-c666-472f-9874-90c8d60d136b;False;6
-execution;T1047;['windows'];Create a Process using WMI Query and an Encoded Command;7db7a7f9-9531-4840-9b30-46220135441c;False;7
-execution;T1047;['windows'];Create a Process using obfuscated Win32_Process;10447c83-fc38-462a-a936-5102363b1c43;False;8
-execution;T1047;['windows'];WMI Execute rundll32;00738d2a-4651-4d76-adf2-c43a41dfb243;False;9
-lateral-movement;T1021.003;['windows'];PowerShell Lateral Movement using MMC20;6dc74eb1-c9d6-4c53-b3b5-6f50ae339673;False;1
+execution;T1047;['windows'];WMI Execute Local Process;b3bdfc91-b33e-4c6d-a5c8-d64bee0276b3;True;5
+execution;T1047;['windows'];WMI Execute Remote Process;9c8ef159-c666-472f-9874-90c8d60d136b;True;6
+execution;T1047;['windows'];Create a Process using WMI Query and an Encoded Command;7db7a7f9-9531-4840-9b30-46220135441c;True;7
+execution;T1047;['windows'];Create a Process using obfuscated Win32_Process;10447c83-fc38-462a-a936-5102363b1c43;True;8
+execution;T1047;['windows'];WMI Execute rundll32;00738d2a-4651-4d76-adf2-c43a41dfb243;True;9
+lateral-movement;T1021.003;['windows'];PowerShell Lateral Movement using MMC20;6dc74eb1-c9d6-4c53-b3b5-6f50ae339673;True;1
 lateral-movement;T1550.002;['windows'];Mimikatz Pass the Hash;ec23cef9-27d9-46e4-a68d-6f75f7b86908;False;1
 lateral-movement;T1550.002;['windows'];crackmapexec Pass the Hash;eb05b028-16c8-4ad8-adea-6f5b219da9a9;False;2
 lateral-movement;T1550.003;['windows'];Mimikatz Kerberos Ticket Attack;dbf38128-7ba7-4776-bedf-cc2eed432098;False;1
@@ -944,9 +945,9 @@ lateral-movement;T1021.001;['windows'];RDP to DomainController;355d4632-8cb9-449
 lateral-movement;T1021.001;['windows'];RDP to Server;7382a43e-f19c-46be-8f09-5c63af7d3e2b;False;2
 lateral-movement;T1021.001;['windows'];Changing RDP Port to Non Standard Port via Powershell;2f840dd4-8a2e-4f44-beb3-6b2399ea3771;False;3
 lateral-movement;T1021.001;['windows'];Changing RDP Port to Non Standard Port via Command_Prompt;74ace21e-a31c-4f7d-b540-53e4eb6d1f73;False;4
-lateral-movement;T1021.002;['windows'];Map admin share;3386975b-367a-4fbb-9d77-4dcf3639ffd3;False;1
+lateral-movement;T1021.002;['windows'];Map admin share;3386975b-367a-4fbb-9d77-4dcf3639ffd3;True;1
 lateral-movement;T1021.002;['windows'];Map Admin Share PowerShell;514e9cd7-9207-4882-98b1-c8f791bae3c5;False;2
-lateral-movement;T1021.002;['windows'];Copy and Execute File with PsExec;0eb03d41-79e4-4393-8e57-6344856be1cf;False;3
+lateral-movement;T1021.002;['windows'];Copy and Execute File with PsExec;0eb03d41-79e4-4393-8e57-6344856be1cf;True;3
 lateral-movement;T1021.002;['windows'];Execute command writing output to local Admin Share;d41aaab5-bdfe-431d-a3d5-c29e9136ff46;False;4
 lateral-movement;T1072;['windows'];Radmin Viewer Utility;b4988cad-6ed2-434d-ace5-ea2670782129;False;1
 lateral-movement;T1021.006;['windows'];Enable Windows Remote Management;9059e8de-3d7d-4954-a322-46161880b9cf;False;1

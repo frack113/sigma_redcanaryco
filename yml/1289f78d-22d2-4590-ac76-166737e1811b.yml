@@ -18,5 +18,23 @@ os:
 description: 'Check for privilege escalation paths using PowerUp from PowerShellMafia
 
   '
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 89819aa4-bbd6-46bc-88ec-c7f7fe30efa6
+    name: powershell_malicious_commandlets.yml
+  - id: 1139d2e2-84b1-4226-b445-354492eba8ba
+    name: powershell_web_request.yml
+  - id: 635dbb88-67b3-4b41-9ea5-a3af2dd88153
+    name: sysmon_win_binary_github_com.yml
+  - id: 1f21ec3f-810d-4b0e-8045-322202e22b4b
+    name: sysmon_powershell_network_connection.yml
+  - id: 03d83090-8cba-44a0-b02f-0b756a050306
+    name: powershell_accessing_win_api.yml
+  - id: 1f49f2ab-26bc-48b3-96cc-dcffbc93eadf
+    name: powershell_suspicious_keywords.yml
+  - id: d23f2ba5-9da0-4463-8908-8ee47f614bb9
+    name: powershell_ps_file_and_directory_discovery.yml
+  - id: f62176f3-8128-4faa-bf6c-83261322e5eb
+    name: powershell_malicious_keywords.yml
+  - id: c1dda054-d638-4c16-afc8-53e007f3fbc5
+    name: powershell_automated_collection.yml

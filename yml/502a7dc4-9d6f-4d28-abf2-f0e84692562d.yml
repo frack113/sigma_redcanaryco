@@ -24,5 +24,8 @@ description: 'Windows Management Instrumentation(WMI) objects contains system in
   from this object and will check to see if the attempt results in an error that contains the word supported. This is meant to find the result of Not supported, which is the result if run in a virtual machine
 
   '
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: d93129cd-1ee0-479f-bc03-ca6f129882e3
+    name: powershell_detect_vm_env.yml
+

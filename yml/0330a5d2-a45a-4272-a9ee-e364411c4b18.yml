@@ -16,5 +16,9 @@ os:
 description: |
   This Test uses a VBA macro to execute cmd with flags observed in recent maldoc and 2nd stage downloaders. Upon execution, CMD will be launched.
   Execution is handled by [Invoke-MalDoc](https://github.com/redcanaryco/invoke-atomicredteam/blob/master/Public/Invoke-MalDoc.ps1) to load and execute VBA code into Excel or Word documents.
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: e6ce8457-68b1-485b-9bdd-3c2b5d679aa9
+    name: sysmon_susp_winword_vbadll_load.yml
+  - id: 438025f9-5856-4663-83f7-52f878a70a50
+    name: win_office_shell.yml

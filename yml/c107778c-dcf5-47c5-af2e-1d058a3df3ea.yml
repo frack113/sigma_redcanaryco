@@ -12,5 +12,8 @@ technique:
 os:
   - windows
 description: "An adversary might use WMI to list all local User Accounts. \nWhen the test completes , there should be local user accounts information displayed on the command line.\n"
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 502b42de-4306-40b4-9596-6f590c81f073
+    name: win_local_system_owner_account_discovery.yml
+

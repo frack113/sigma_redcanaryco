@@ -14,5 +14,9 @@ os:
 description: |
   This test uses wmic.exe to execute a process on the local host.
   When the test completes , a new process will be started locally .A notepad application will be started when input is left on default.
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 526be59f-a573-4eea-b5f7-f0973207634d
+    name: win_susp_wmi_execution.yml
+  - id: d21374ff-f574-44a7-9998-4a8c8bf33d7d
+    name: win_wmiprvse_spawning_process.yml

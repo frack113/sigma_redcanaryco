@@ -16,5 +16,15 @@ os:
 description: |
   Malicious JavaScript executing CMD which spawns wscript.exe //e:jscript
   Execution is handled by [Invoke-MalDoc](https://github.com/redcanaryco/invoke-atomicredteam/blob/master/Public/Invoke-MalDoc.ps1) to load and execute VBA code into Excel or Word documents.
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: d7bcd677-645d-4691-a8d4-7a5602b780d1
+    name: win_powershell_cmdline_special_characters.yml
+  - id: e6ce8457-68b1-485b-9bdd-3c2b5d679aa9
+    name: sysmon_susp_winword_vbadll_load.yml
+  - id: 438025f9-5856-4663-83f7-52f878a70a50
+    name: win_office_shell.yml
+  - id: 1e33157c-53b1-41ad-bbcc-780b80b58288
+    name: win_susp_script_execution.yml
+  - id: cea72823-df4d-4567-950c-0b579eaf0846
+    name: win_malware_script_dropper.yml

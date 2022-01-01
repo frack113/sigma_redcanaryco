@@ -16,5 +16,8 @@ os:
 description: 'Connecting To Remote Shares
 
   '
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 1c67a717-32ba-409b-a45d-0fb704a73a81
+    name: win_pc_susp_network_listing_connections.yml
+

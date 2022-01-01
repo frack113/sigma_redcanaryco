@@ -18,5 +18,8 @@ os:
 description: |
   Execution of a PowerShell payload from the Windows Registry similar to that seen in fileless malware infections. Upon exection, open "C:\Windows\Temp" and verify that
   art-marker.txt is in the folder.
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: e32d4572-9826-4738-b651-95fa63747e8a
+    name: win_powershell_frombase64string.yml
+

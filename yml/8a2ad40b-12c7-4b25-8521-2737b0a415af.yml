@@ -19,5 +19,22 @@ description: |
   Powershell invoke mshta to download payload. Upon execution, a new PowerShell window will be opened which will display "Download Cradle test success!".
 
   Provided by https://github.com/mgreen27/mgreen27.github.io
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: e32f92d1-523e-49c3-9374-bdb13b46a3ba
+    name: win_susp_mshta_pattern.yml
+  - id: 67f113fa-e23d-4271-befa-30113b3e08b1
+    name: win_mshta_javascript.yml
+  - id: cc7abbd0-762b-41e3-8a26-57ad50d2eea3
+    name: win_susp_mshta_execution.yml
+  - id: 754ed792-634f-40ae-b3bc-e0448d33f695
+    name: win_susp_powershell_parent_process.yml
+  - id: 1277f594-a7d1-4f28-a2d3-73af5cbeab43
+    name: file_event_win_shell_write_susp_directory.yml
+  - id: 772bb24c-8df2-4be0-9157-ae4dfa794037
+    name: win_shell_spawn_mshta.yml
+  - id: 03cc0c25-389f-4bf8-b48d-11878079f1ca
+    name: win_mshta_spawn_shell.yml
+  - id: b243b280-65fe-48df-ba07-6ddea7646427
+    name: win_remote_time_discovery.yml
+

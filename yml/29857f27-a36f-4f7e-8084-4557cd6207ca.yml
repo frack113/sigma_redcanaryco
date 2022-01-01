@@ -12,5 +12,27 @@ technique:
 os:
   - windows
 description: Find existing user session on other computers. Upon execution, information about any sessions discovered will be displayed.
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 1f21ec3f-810d-4b0e-8045-322202e22b4b
+    name: sysmon_powershell_network_connection.yml
+  - id: 89819aa4-bbd6-46bc-88ec-c7f7fe30efa6
+    name: powershell_malicious_commandlets.yml
+  - id: 1f49f2ab-26bc-48b3-96cc-dcffbc93eadf
+    name: powershell_suspicious_keywords.yml
+  - id: 03d83090-8cba-44a0-b02f-0b756a050306
+    name: powershell_accessing_win_api.yml
+  - id: dcd74b95-3f36-4ed9-9598-0490951643aa
+    name: powershell_powerview_malicious_commandlets.yml
+  - id: b29a93fb-087c-4b5b-a84d-ee3309e69d08
+    name: powershell_ps_directoryservices_accountmanagement.yml
+  - id: a861d835-af37-4930-bcd6-5b178bfb54df
+    name: powershell_ps_request_kerberos_ticket.yml
+  - id: d23f2ba5-9da0-4463-8908-8ee47f614bb9
+    name: powershell_ps_file_and_directory_discovery.yml
+  - id: f62176f3-8128-4faa-bf6c-83261322e5eb
+    name: powershell_malicious_keywords.yml
+  - id: 1139d2e2-84b1-4226-b445-354492eba8ba
+    name: powershell_web_request.yml
+  - id: 8d31a8ce-46b5-4dd6-bdc3-680931f1db86
+    name: powershell_bad_opsec_artifacts.yml

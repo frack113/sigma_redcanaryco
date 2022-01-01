@@ -13,5 +13,10 @@ os:
   - windows
 description: "Identify System owner or users on an endpoint.\n\nUpon successful execution, cmd.exe will spawn multiple commands against a target host to identify usernames. Output will be via stdout. \n\
   Additionally, two files will be written to disk - computers.txt and usernames.txt.\n"
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 502b42de-4306-40b4-9596-6f590c81f073
+    name: win_local_system_owner_account_discovery.yml
+  - id: 06ce37c2-61ab-4f05-9ff5-b1a96d18ae32
+    name: sysmon_wmic_remote_xsl_scripting_dlls.yml
+
