@@ -1,4 +1,4 @@
-# Welcome to my sigma redcannary cover projet
+# Welcome to my sigma redcannary cover project
 
 ## Purpose
 
@@ -7,7 +7,7 @@ Knowing which rule should trigger when running a [redcannary test](https://githu
 Caution: a test can generate a lot of noise...
 
 <p align="center" width="100%">
-    <img width="33%" src="./png/allright.jpg"> 
+    <img width="50%" src="./png/allright.jpg"> 
 </p>
 
 ## Tests
@@ -85,7 +85,7 @@ Caution: a test can generate a lot of noise...
 
 [Office Generic Payload Download](tests/5202ee05-c420-4148-bf5e-fd7f7d24850c.md) ['windows'] (sigma rule :x:)
 
-[Headless Chrome code execution via VBA](tests/a19ee671-ed98-4e9d-b19c-d1954a51585a.md) ['windows'] (sigma rule :x:)
+[Headless Chrome code execution via VBA](tests/a19ee671-ed98-4e9d-b19c-d1954a51585a.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Potentially Unwanted Applications (PUA)](tests/02f35d62-9fdc-4a97-b899-a5d9a876d295.md) ['windows'] (sigma rule :x:)
 
@@ -351,7 +351,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1082
-[Griffon Recon](tests/69bd4abe-8759-49a6-8d21-0f15822d6370.md) ['windows'] (sigma rule :x:)
+[Griffon Recon](tests/69bd4abe-8759-49a6-8d21-0f15822d6370.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Hostname Discovery](tests/486e88ea-4f56-470f-9b57-3f4d73f39133.md) ['linux', 'macos'] (sigma rule :x:)
 
@@ -369,7 +369,7 @@ Caution: a test can generate a lot of noise...
 
 [List OS Information](tests/cccb070c-df86-4216-a5bc-9fb60c74e27c.md) ['linux', 'macos'] (sigma rule :x:)
 
-[Hostname Discovery (Windows)](tests/85cfbf23-4a1e-4342-8792-007e004b975f.md) ['windows'] (sigma rule :x:)
+[Hostname Discovery (Windows)](tests/85cfbf23-4a1e-4342-8792-007e004b975f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Environment variables discovery on macos and linux](tests/fcbdd43f-f4ad-42d5-98f3-0218097e2720.md) ['macos', 'linux'] (sigma rule :x:)
 
@@ -733,7 +733,7 @@ Caution: a test can generate a lot of noise...
 
 [Adfind - Enumerate Active Directory Computer Objects](tests/a889f5be-2d54-4050-bd05-884578748bb4.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Remote System Discovery - adidnsdump](tests/95e19466-469e-4316-86d2-1dc401b5a959.md) ['windows'] (sigma rule :x:)
+[Remote System Discovery - adidnsdump](tests/95e19466-469e-4316-86d2-1dc401b5a959.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Remote System Discovery - arp nix](tests/acb6b1ff-e2ad-4d64-806c-6c35fe73b951.md) ['linux', 'macos'] (sigma rule :x:)
 
