@@ -54,7 +54,7 @@ for dictionnary in index.values():
     else:
         full_technique[dictionnary["technique"]] = [dictionnary]
 
-string_index = """# Welcome to my sigma redcannary cover projet
+string_index = """# Welcome to my sigma redcannary cover project
 
 ## Purpose
 
@@ -63,7 +63,7 @@ Knowing which rule should trigger when running a [redcannary test](https://githu
 Caution: a test can generate a lot of noise...
 
 <p align="center" width="100%">
-    <img width="33%" src="./png/allright.jpg"> 
+    <img width="50%" src="./png/allright.jpg"> 
 </p>
 
 ## Tests\n\n

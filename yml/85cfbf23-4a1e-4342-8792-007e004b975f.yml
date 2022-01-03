@@ -16,5 +16,8 @@ os:
 description: 'Identify system hostname for Windows. Upon execution, the hostname of the device will be displayed.
 
   '
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule: 
+    - id: 7be5fb68-f9ef-476d-8b51-0256ebece19e
+      name: win_pc_susp_hostname.yml
+
