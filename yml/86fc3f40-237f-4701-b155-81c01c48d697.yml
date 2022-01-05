@@ -32,5 +32,15 @@ os:
   - windows
 description: "The memory of lsass.exe is often dumped for offline credential theft attacks. This can be achieved by\nimporting built-in DLLs and calling exported functions. Xordump will re-read the resulting\
   \ minidump \nfile and delete it immediately to avoid brittle EDR detections that signature lsass minidump files.\n\nUpon successful execution, you should see the following file created $env:TEMP\\lsass-xordump.t1003.001.dmp.\n"
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: ffa6861c-4461-4f59-8a41-578c39f3f23e
+    name: win_lsass_dump.yml
+  - id: 32d0d3e2-e58d-4d41-926b-18b520b2b32d
+    name: sysmon_cred_dump_lsass_access.yml
+  - id: fa34b441-961a-42fa-a100-ecc28c886725
+    name: win_susp_proc_access_lsass_susp_source.yml
+  - id: 5ef9853e-4d0e-4a70-846f-a9ca37d876da
+    name: sysmon_lsass_memdump.yml
+  - id: 5e3d3601-0662-4af0-b1d2-36a05e90c40a
+    name: sysmon_lsass_memory_dump_file_creation.yml

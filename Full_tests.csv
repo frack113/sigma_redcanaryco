@@ -54,13 +54,13 @@ credential-access;T1003.001;['windows'];Dump LSASS.exe Memory using comsvcs.dll;
 credential-access;T1003.001;['windows'];Dump LSASS.exe Memory using direct system calls and API unhooking;7ae7102c-a099-45c8-b985-4c7a2d05790d;True;4
 credential-access;T1003.001;['windows'];Dump LSASS.exe Memory using NanoDump;dddd4aca-bbed-46f0-984d-e4c5971c51ea;True;5
 credential-access;T1003.001;['windows'];Dump LSASS.exe Memory using Windows Task Manager;dea6c349-f1c6-44f3-87a1-1ed33a59a607;False;6
-credential-access;T1003.001;['windows'];Offline Credential Theft With Mimikatz;453acf13-1dbd-47d7-b28a-172ce9228023;False;7
+credential-access;T1003.001;['windows'];Offline Credential Theft With Mimikatz;453acf13-1dbd-47d7-b28a-172ce9228023;True;7
 credential-access;T1003.001;['windows'];LSASS read with pypykatz;c37bc535-5c62-4195-9cc3-0517673171d8;True;8
 credential-access;T1003.001;['windows'];Dump LSASS.exe Memory using Out-Minidump.ps1;6502c8f0-b775-4dbd-9193-1298f56b6781;True;9
 credential-access;T1003.001;['windows'];Create Mini Dump of LSASS.exe using ProcDump;7cede33f-0acd-44ef-9774-15511300b24b;True;10
 credential-access;T1003.001;['windows'];Powershell Mimikatz;66fb0bc1-3c3f-47e9-a298-550ecfefacbc;True;11
-credential-access;T1003.001;['windows'];Dump LSASS with .Net 5 createdump.exe;9d0072c8-7cca-45c4-bd14-f852cfa35cf0;False;12
-credential-access;T1003.001;['windows'];Dump LSASS.exe using imported Microsoft DLLs;86fc3f40-237f-4701-b155-81c01c48d697;False;13
+credential-access;T1003.001;['windows'];Dump LSASS with .Net 5 createdump.exe;9d0072c8-7cca-45c4-bd14-f852cfa35cf0;True;12
+credential-access;T1003.001;['windows'];Dump LSASS.exe using imported Microsoft DLLs;86fc3f40-237f-4701-b155-81c01c48d697;True;13
 credential-access;T1003.003;['windows'];Create Volume Shadow Copy with vssadmin;dcebead7-6c28-4b4b-bf3c-79deb1b1fc7f;True;1
 credential-access;T1003.003;['windows'];Copy NTDS.dit from Volume Shadow Copy;c6237146-9ea6-4711-85c9-c56d263a6b03;True;2
 credential-access;T1003.003;['windows'];Dump Active Directory Database with NTDSUtil;2364e33d-ceab-4641-8468-bfb1d7cc2723;True;3
@@ -72,27 +72,27 @@ credential-access;T1040;['linux'];Packet Capture Linux;7fe741f7-b265-4951-a7c7-3
 credential-access;T1040;['macos'];Packet Capture macOS;9d04efee-eff5-4240-b8d2-07792b873608;False;2
 credential-access;T1040;['windows'];Packet Capture Windows Command Prompt;a5b2f6a0-24b4-493e-9590-c699f75723ca;True;3
 credential-access;T1040;['windows'];Windows Internal Packet Capture;b5656f67-d67f-4de8-8e62-b5581630f528;True;4
-credential-access;T1003;['windows'];Gsecdump;96345bfc-8ae7-4b6a-80b7-223200f24ef9;False;1
+credential-access;T1003;['windows'];Gsecdump;96345bfc-8ae7-4b6a-80b7-223200f24ef9;True;1
 credential-access;T1003;['windows'];Credential Dumping with NPPSpy;9e2173c0-ba26-4cdf-b0ed-8c54b27e3ad6;True;2
 credential-access;T1003;['windows'];Dump svchost.exe to gather RDP credentials;d400090a-d8ca-4be0-982e-c70598a23de9;True;3
-credential-access;T1110.002;['windows'];Password Cracking with Hashcat;6d27df5d-69d4-4c91-bc33-5983ffe91692;False;1
+credential-access;T1110.002;['windows'];Password Cracking with Hashcat;6d27df5d-69d4-4c91-bc33-5983ffe91692;True;1
 credential-access;T1556.002;['windows'];Install and Register Password Filter DLL;a7961770-beb5-4134-9674-83d7e1fa865c;True;1
 credential-access;T1110.001;['windows'];Brute Force Credentials of single Active Directory domain users via SMB;09480053-2f98-4854-be6e-71ae5f672224;True;1
-credential-access;T1110.001;['windows'];Brute Force Credentials of single Active Directory domain user via LDAP against domain controller (NTLM or Kerberos);c2969434-672b-4ec8-8df0-bbb91f40e250;False;2
+credential-access;T1110.001;['windows'];Brute Force Credentials of single Active Directory domain user via LDAP against domain controller (NTLM or Kerberos);c2969434-672b-4ec8-8df0-bbb91f40e250;True;2
 credential-access;T1110.001;['azure-ad'];Brute Force Credentials of single Azure AD user;5a51ef57-299e-4d62-8e11-2d440df55e69;False;3
-credential-access;T1110.003;['windows'];Password Spray all Domain Users;90bc2e54-6c84-47a5-9439-0a2a92b4b175;False;1
-credential-access;T1110.003;['windows'];Password Spray (DomainPasswordSpray);263ae743-515f-4786-ac7d-41ef3a0d4b2b;False;2
-credential-access;T1110.003;['windows'];Password spray all Active Directory domain users with a single password via LDAP against domain controller (NTLM or Kerberos);f14d956a-5b6e-4a93-847f-0c415142f07d;False;3
+credential-access;T1110.003;['windows'];Password Spray all Domain Users;90bc2e54-6c84-47a5-9439-0a2a92b4b175;True;1
+credential-access;T1110.003;['windows'];Password Spray (DomainPasswordSpray);263ae743-515f-4786-ac7d-41ef3a0d4b2b;True;2
+credential-access;T1110.003;['windows'];Password spray all Active Directory domain users with a single password via LDAP against domain controller (NTLM or Kerberos);f14d956a-5b6e-4a93-847f-0c415142f07d;True;3
 credential-access;T1110.003;['azure-ad'];Password spray all Azure AD users with a single password;a8aa2d3e-1c52-4016-bc73-0f8854cfa80a;False;4
 credential-access;T1556.003;['linux'];Malicious PAM rule;4b9dde80-ae22-44b1-a82a-644bf009eb9c;False;1
 credential-access;T1556.003;['linux'];Malicious PAM module;65208808-3125-4a2e-8389-a0a00e9ab326;False;2
-credential-access;T1552.004;['windows'];Private Keys;520ce462-7ca7-441e-b5a5-f8347f632696;False;1
+credential-access;T1552.004;['windows'];Private Keys;520ce462-7ca7-441e-b5a5-f8347f632696;True;1
 credential-access;T1552.004;['macos', 'linux'];Discover Private SSH Keys;46959285-906d-40fa-9437-5a439accd878;False;2
 credential-access;T1552.004;['linux'];Copy Private SSH Keys with CP;7c247dc7-5128-4643-907b-73a76d9135c3;False;3
 credential-access;T1552.004;['macos', 'linux'];Copy Private SSH Keys with rsync;864bb0b2-6bb5-489a-b43b-a77b3a16d68a;False;4
 credential-access;T1552.004;['macos', 'linux'];Copy the users GnuPG directory with rsync;2a5a0601-f5fb-4e2e-aa09-73282ae6afca;False;5
 credential-access;T1552.004;['windows'];ADFS token signing and encryption certificates theft - Local;78e95057-d429-4e66-8f82-0f060c1ac96f;False;6
-credential-access;T1552.004;['windows'];ADFS token signing and encryption certificates theft - Remote;cab413d8-9e4a-4b8d-9b84-c985bd73a442;False;7
+credential-access;T1552.004;['windows'];ADFS token signing and encryption certificates theft - Remote;cab413d8-9e4a-4b8d-9b84-c985bd73a442;True;7
 credential-access;T1003.007;['linux'];Dump individual process memory with sh (Local);7e91138a-8e74-456d-a007-973d67a0bb80;False;1
 credential-access;T1003.007;['linux'];Dump individual process memory with Python (Local);437b2003-a20d-4ed8-834c-4964f24eec63;False;2
 credential-access;T1606.002;['azure-ad'];Golden SAML;b16a03bc-1089-4dcc-ad98-30fe8f3a2b31;False;1
@@ -812,7 +812,7 @@ discovery;T1018;['windows'];Remote System Discovery - arp;2d5a61f5-0447-4be4-944
 discovery;T1018;['linux', 'macos'];Remote System Discovery - arp nix;acb6b1ff-e2ad-4d64-806c-6c35fe73b951;False;6
 discovery;T1018;['linux', 'macos'];Remote System Discovery - sweep;96db2632-8417-4dbb-b8bb-a8b92ba391de;False;7
 discovery;T1018;['windows'];Remote System Discovery - nslookup;baa01aaa-5e13-45ec-8a0d-e46c93c9760f;False;8
-discovery;T1018;['windows'];Remote System Discovery - adidnsdump;95e19466-469e-4316-86d2-1dc401b5a959;False;9
+discovery;T1018;['windows'];Remote System Discovery - adidnsdump;95e19466-469e-4316-86d2-1dc401b5a959;True;9
 discovery;T1018;['windows'];Adfind - Enumerate Active Directory Computer Objects;a889f5be-2d54-4050-bd05-884578748bb4;True;10
 discovery;T1018;['windows'];Adfind - Enumerate Active Directory Domain Controller Objects;5838c31e-a0e2-4b9f-b60a-d79d2cb7995e;True;11
 discovery;T1518.001;['windows'];Security Software Discovery;f92a380f-ced9-491f-b338-95a991418ce2;True;1
@@ -832,10 +832,10 @@ discovery;T1082;['macos'];System Information Discovery;edff98ec-0f73-4f63-9890-6
 discovery;T1082;['linux', 'macos'];List OS Information;cccb070c-df86-4216-a5bc-9fb60c74e27c;False;3
 discovery;T1082;['linux'];Linux VM Check via Hardware;31dad7ad-2286-4c02-ae92-274418c85fec;False;4
 discovery;T1082;['linux'];Linux VM Check via Kernel Modules;8057d484-0fae-49a4-8302-4812c4f1e64e;False;5
-discovery;T1082;['windows'];Hostname Discovery (Windows);85cfbf23-4a1e-4342-8792-007e004b975f;False;6
+discovery;T1082;['windows'];Hostname Discovery (Windows);85cfbf23-4a1e-4342-8792-007e004b975f;True;6
 discovery;T1082;['linux', 'macos'];Hostname Discovery;486e88ea-4f56-470f-9b57-3f4d73f39133;False;7
 discovery;T1082;['windows'];Windows MachineGUID Discovery;224b4daf-db44-404e-b6b2-f4d1f0126ef8;False;8
-discovery;T1082;['windows'];Griffon Recon;69bd4abe-8759-49a6-8d21-0f15822d6370;False;9
+discovery;T1082;['windows'];Griffon Recon;69bd4abe-8759-49a6-8d21-0f15822d6370;True;9
 discovery;T1082;['windows'];Environment variables discovery on windows;f400d1c0-1804-4ff8-b069-ef5ddd2adbf3;False;10
 discovery;T1082;['macos', 'linux'];Environment variables discovery on macos and linux;fcbdd43f-f4ad-42d5-98f3-0218097e2720;False;11
 discovery;T1016;['windows'];System Network Configuration Discovery on Windows;970ab6a1-0157-4f3f-9a73-ec4166754b23;True;1
@@ -879,8 +879,8 @@ execution;T1204.002;['windows'];Maldoc choice flags command execution;0330a5d2-a
 execution;T1204.002;['windows'];OSTAP JS version;add560ef-20d6-4011-a937-2c340f930911;True;4
 execution;T1204.002;['windows'];Office launching .bat file from AppData;9215ea92-1ded-41b7-9cd6-79f9a78397aa;True;5
 execution;T1204.002;['windows'];Excel 4 Macro;4ea1fc97-8a46-4b4e-ba48-af43d2a98052;True;6
-execution;T1204.002;['windows'];Headless Chrome code execution via VBA;a19ee671-ed98-4e9d-b19c-d1954a51585a;False;7
-execution;T1204.002;['windows'];Potentially Unwanted Applications (PUA);02f35d62-9fdc-4a97-b899-a5d9a876d295;False;8
+execution;T1204.002;['windows'];Headless Chrome code execution via VBA;a19ee671-ed98-4e9d-b19c-d1954a51585a;True;7
+execution;T1204.002;['windows'];Potentially Unwanted Applications (PUA);02f35d62-9fdc-4a97-b899-a5d9a876d295;True;8
 execution;T1204.002;['windows'];Office Generic Payload Download;5202ee05-c420-4148-bf5e-fd7f7d24850c;False;9
 execution;T1106;['windows'];Execution through API - CreateProcess;99be2089-c52d-4a4a-b5c3-261ee42c8b62;False;1
 execution;T1059.001;['windows'];Mimikatz;f3132740-55bc-48c4-bcc0-758a459cd027;False;1

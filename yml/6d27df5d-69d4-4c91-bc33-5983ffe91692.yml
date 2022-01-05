@@ -13,5 +13,8 @@ technique:
 os:
   - windows
 description: Execute Hashcat.exe with provided SAM file from registry of Windows and Password list to crack against
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 39b31e81-5f5f-4898-9c0e-2160cfc0f9bf
+    name: win_pc_hashcat.yml
+

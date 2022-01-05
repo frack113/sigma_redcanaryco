@@ -17,5 +17,9 @@ os:
 description: |
   Find private keys on the Windows file system.
   File extensions include: .key, .pgp, .gpg, .ppk., .p12, .pem, pfx, .cer, .p7b, .asc
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 213d6a77-3d55-4ce8-ba74-fcfef741974e
+    name: process_creation_discover_private_keys.yml
+  - id: 7c9340a9-e2ee-4e43-94c5-c54ebbea1006
+    name: win_pc_susp_dir.yml
