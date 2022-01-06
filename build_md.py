@@ -41,18 +41,30 @@ for yml_file in yml_files:
         "technique": redcannary_info.data["technique"][0],
         "file_link": f"tests/{guid}.md",
         "sigma": redcannary_info.data["sigma"],
+        "rule": redcannary_info.data["sigma_rule"],
     }
 
 print("Build index")
 
 full_technique = {}
-
+full_sigma ={}
 for dictionnary in index.values():
     if dictionnary["technique"] in full_technique:
         full_technique[dictionnary["technique"]].append(dictionnary)
 
     else:
         full_technique[dictionnary["technique"]] = [dictionnary]
+    if dictionnary['sigma'] :
+        for rule in dictionnary['rule']:
+            local_dico = {
+                    "technique": dictionnary["technique"],
+                    "name": dictionnary["name"],
+                    "file_link": dictionnary["file_link"],
+                }
+            if rule['name'] in full_sigma:
+                full_sigma[rule['name']].append(local_dico)
+            else:
+                full_sigma[rule['name']] = [local_dico,]
 
 string_index = """# Welcome to my sigma redcannary cover project
 
@@ -66,6 +78,8 @@ Caution: a test can generate a lot of noise...
     <img width="50%" src="./png/allright.jpg"> 
 </p>
 
+[hidden index ;)](./index2.md)
+
 ## Tests\n\n
 """
 
@@ -76,5 +90,23 @@ for technique, test_lst in full_technique.items():
         string_index += f"[{test['name']}]({test['file_link']}) {test['os']} (sigma rule {state})\n\n"
 
 md_file = pathlib.Path(f"md/index.md")
+with md_file.open("w", encoding="UTF-8", newline="\n") as file_id:
+    file_id.write(string_index)
+
+print("Build index2")
+string_index = """# Find a test to trigger a SigmaHQ rule
+
+[back](./index.md)
+
+## The rules\n
+"""
+namekeys = [x for x in full_sigma.keys()]
+namekeys.sort()
+for name in namekeys:
+    string_index +=  f"\n* {name}"
+    for link in full_sigma[name]:
+        string_index +=  f"\n  * {link['technique']} [{link['name']}]({link['file_link']})"
+ 
+md_file = pathlib.Path(f"md/index2.md")
 with md_file.open("w", encoding="UTF-8", newline="\n") as file_id:
     file_id.write(string_index)

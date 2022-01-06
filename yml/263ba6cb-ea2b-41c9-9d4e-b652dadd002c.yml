@@ -21,7 +21,7 @@ description: |
   "The backup catalog has been successfully deleted." will be displayed in the PowerShell session.
 sigma: true
 sigma_rule:
-  - id: win_malware_wannacry.yml
-    name: 41d40bff-377a-43e2-8e1b-2e543069e079
+  - id: 41d40bff-377a-43e2-8e1b-2e543069e079
+    name: win_malware_wannacry.yml
   - id: c947b146-0abc-4c87-9c64-b17e9d7274a2
     name: win_shadow_copies_deletion.yml

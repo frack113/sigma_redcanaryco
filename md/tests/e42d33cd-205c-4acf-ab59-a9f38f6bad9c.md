@@ -1,7 +1,7 @@
 
 [back](../index.md)
 
-Find sigma rule :x: 
+Find sigma rule :heavy_check_mark: 
 
 # Attack: Golden Ticket 
 
@@ -32,6 +32,16 @@ The generated ticket is injected in a new empty Windows session and discarded af
 
 
 # Sigma Rule
+ - win_alert_mimikatz_keywords.yml (id: 06d71506-7beb-4f22-8888-e2e5e2ca7fd8)
+
+ - win_hack_rubeus.yml (id: 7ec2c172-dceb-4c10-92c9-87c1881b7e18)
+
+ - sysmon_detect_powerup_dllhijacking.yml (id: 602a1f13-c640-4d73-b053-be9a2fa58b96)
+
+ - win_overpass_the_hash.yml (id: 192a0330-c20b-4356-90b6-7b7049ae0b87)
+
+ - win_pass_the_hash_2.yml (id: 8eef149c-bd26-49f2-9e5a-9b00e3af499b)
+
 
 
 [back](../index.md)

@@ -1,7 +1,7 @@
 
 [back](../index.md)
 
-Find sigma rule :x: 
+Find sigma rule :heavy_check_mark: 
 
 # Attack: Scheduled Task 
 
@@ -32,6 +32,8 @@ Create an scheduled task that executes notepad.exe after user login from XML by 
 
 
 # Sigma Rule
+ - powershell_ps_cmdlet_scheduled_task.yml (id: 363eccc0-279a-4ccf-a3ab-24c2e63b11fb)
+
 
 
 [back](../index.md)

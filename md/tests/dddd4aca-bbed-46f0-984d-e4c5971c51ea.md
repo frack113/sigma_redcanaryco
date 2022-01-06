@@ -1,7 +1,7 @@
 
 [back](../index.md)
 
-Find sigma rule :x: 
+Find sigma rule :heavy_check_mark: 
 
 # Attack: LSASS Memory 
 
@@ -52,6 +52,12 @@ Upon successful execution, you should find the nanondump.dmp file in the temp di
 
 
 # Sigma Rule
+ - win_susp_proc_access_lsass_susp_source.yml (id: 5fa34b441-961a-42fa-a100-ecc28c88672)
+
+ - win_susp_proc_access_lsass.yml (id: a18dd26b-6450-46de-8c91-9659150cf088)
+
+ - sysmon_cred_dump_lsass_access.yml (id: 32d0d3e2-e58d-4d41-926b-18b520b2b32d)
+
 
 
 [back](../index.md)
