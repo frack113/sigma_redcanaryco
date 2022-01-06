@@ -149,15 +149,15 @@ privilege-escalation;T1546.010;['windows'];Install AppInit Shim;a58d9386-3080-42
 privilege-escalation;T1546.011;['windows'];Application Shim Installation;9ab27e22-ee62-4211-962b-d36d9a0e6a18;True;1
 privilege-escalation;T1546.011;['windows'];New shim database files created in the default shim database directory;aefd6866-d753-431f-a7a4-215ca7e3f13d;True;2
 privilege-escalation;T1546.011;['windows'];Registry key creation and/or modification events for SDB;9b6a06f9-ab5e-4e8d-8289-1df4289db02f;True;3
-privilege-escalation;T1055.004;['windows'];Process Injection via C#;611b39b7-e243-4c81-87a4-7145a90358b1;False;1
+privilege-escalation;T1055.004;['windows'];Process Injection via C#;611b39b7-e243-4c81-87a4-7145a90358b1;True;1
 privilege-escalation;T1053.001;['linux'];At - Schedule a job;7266d898-ac82-4ec0-97c7-436075d0d08e;False;1
 privilege-escalation;T1053.002;['windows'];At.exe Scheduled task;4a6c0dc4-0f2a-4203-9298-a5a9bdc21ed8;True;1
 privilege-escalation;T1548.002;['windows'];Bypass UAC using Event Viewer (cmd);5073adf8-9a50-4bd9-b298-a9bd2ead8af9;False;1
 privilege-escalation;T1548.002;['windows'];Bypass UAC using Event Viewer (PowerShell);a6ce9acf-842a-4af6-8f79-539be7608e2b;False;2
-privilege-escalation;T1548.002;['windows'];Bypass UAC using Fodhelper;58f641ea-12e3-499a-b684-44dee46bd182;False;3
-privilege-escalation;T1548.002;['windows'];Bypass UAC using Fodhelper - PowerShell;3f627297-6c38-4e7d-a278-fc2563eaaeaa;False;4
-privilege-escalation;T1548.002;['windows'];Bypass UAC using ComputerDefaults (PowerShell);3c51abf2-44bf-42d8-9111-dc96ff66750f;False;5
-privilege-escalation;T1548.002;['windows'];Bypass UAC by Mocking Trusted Directories;f7a35090-6f7f-4f64-bb47-d657bf5b10c1;False;6
+privilege-escalation;T1548.002;['windows'];Bypass UAC using Fodhelper;58f641ea-12e3-499a-b684-44dee46bd182;True;3
+privilege-escalation;T1548.002;['windows'];Bypass UAC using Fodhelper - PowerShell;3f627297-6c38-4e7d-a278-fc2563eaaeaa;True;4
+privilege-escalation;T1548.002;['windows'];Bypass UAC using ComputerDefaults (PowerShell);3c51abf2-44bf-42d8-9111-dc96ff66750f;True;5
+privilege-escalation;T1548.002;['windows'];Bypass UAC by Mocking Trusted Directories;f7a35090-6f7f-4f64-bb47-d657bf5b10c1;True;6
 privilege-escalation;T1548.002;['windows'];Bypass UAC using sdclt DelegateExecute;3be891eb-4608-4173-87e8-78b494c029b7;False;7
 privilege-escalation;T1548.002;['windows'];Disable UAC using reg.exe;9e8af564-53ec-407e-aaa8-3cb20c3af7f9;False;8
 privilege-escalation;T1548.002;['windows'];Bypass UAC using SilentCleanup task;28104f8a-4ff1-4582-bcf6-699dce156608;False;9
@@ -262,7 +262,7 @@ privilege-escalation;T1543.003;['windows'];Service Installation PowerShell;491a4
 privilege-escalation;T1547.004;['windows'];Winlogon Shell Key Persistence - PowerShell;bf9f9d65-ee4d-4c3e-a843-777d04f19c38;True;1
 privilege-escalation;T1547.004;['windows'];Winlogon Userinit Key Persistence - PowerShell;fb32c935-ee2e-454b-8fa3-1c46b42e8dfb;True;2
 privilege-escalation;T1547.004;['windows'];Winlogon Notify Key Logon Persistence - PowerShell;d40da266-e073-4e5a-bb8b-2b385023e5f9;True;3
-defense-evasion;T1055.004;['windows'];Process Injection via C#;611b39b7-e243-4c81-87a4-7145a90358b1;False;1
+defense-evasion;T1055.004;['windows'];Process Injection via C#;611b39b7-e243-4c81-87a4-7145a90358b1;True;1
 defense-evasion;T1197;['windows'];Bitsadmin Download (cmd);3c73d728-75fb-4180-a12f-6712864d7421;True;1
 defense-evasion;T1197;['windows'];Bitsadmin Download (PowerShell);f63b8bc4-07e5-4112-acba-56f646f3f0bc;True;2
 defense-evasion;T1197;['windows'];Persist, Download, & Execute;62a06ec5-5754-47d2-bcfc-123d8314c6ae;True;3
@@ -270,10 +270,10 @@ defense-evasion;T1197;['windows'];Bits download using desktopimgdownldr.exe (cmd
 defense-evasion;T1027.001;['macos', 'linux'];Pad Binary to Change Hash - Linux/macOS dd;ffe2346c-abd5-4b45-a713-bf5f1ebd573a;False;1
 defense-evasion;T1548.002;['windows'];Bypass UAC using Event Viewer (cmd);5073adf8-9a50-4bd9-b298-a9bd2ead8af9;False;1
 defense-evasion;T1548.002;['windows'];Bypass UAC using Event Viewer (PowerShell);a6ce9acf-842a-4af6-8f79-539be7608e2b;False;2
-defense-evasion;T1548.002;['windows'];Bypass UAC using Fodhelper;58f641ea-12e3-499a-b684-44dee46bd182;False;3
-defense-evasion;T1548.002;['windows'];Bypass UAC using Fodhelper - PowerShell;3f627297-6c38-4e7d-a278-fc2563eaaeaa;False;4
-defense-evasion;T1548.002;['windows'];Bypass UAC using ComputerDefaults (PowerShell);3c51abf2-44bf-42d8-9111-dc96ff66750f;False;5
-defense-evasion;T1548.002;['windows'];Bypass UAC by Mocking Trusted Directories;f7a35090-6f7f-4f64-bb47-d657bf5b10c1;False;6
+defense-evasion;T1548.002;['windows'];Bypass UAC using Fodhelper;58f641ea-12e3-499a-b684-44dee46bd182;True;3
+defense-evasion;T1548.002;['windows'];Bypass UAC using Fodhelper - PowerShell;3f627297-6c38-4e7d-a278-fc2563eaaeaa;True;4
+defense-evasion;T1548.002;['windows'];Bypass UAC using ComputerDefaults (PowerShell);3c51abf2-44bf-42d8-9111-dc96ff66750f;True;5
+defense-evasion;T1548.002;['windows'];Bypass UAC by Mocking Trusted Directories;f7a35090-6f7f-4f64-bb47-d657bf5b10c1;True;6
 defense-evasion;T1548.002;['windows'];Bypass UAC using sdclt DelegateExecute;3be891eb-4608-4173-87e8-78b494c029b7;False;7
 defense-evasion;T1548.002;['windows'];Disable UAC using reg.exe;9e8af564-53ec-407e-aaa8-3cb20c3af7f9;False;8
 defense-evasion;T1548.002;['windows'];Bypass UAC using SilentCleanup task;28104f8a-4ff1-4582-bcf6-699dce156608;False;9
