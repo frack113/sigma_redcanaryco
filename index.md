@@ -10,6 +10,8 @@ Caution: a test can generate a lot of noise...
     <img width="50%" src="./png/allright.jpg"> 
 </p>
 
+[hidden index ;)](./index2.md)
+
 ## Tests
 
 
