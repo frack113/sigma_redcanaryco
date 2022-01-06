@@ -1091,7 +1091,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1548.002
-[Bypass UAC by Mocking Trusted Directories](tests/f7a35090-6f7f-4f64-bb47-d657bf5b10c1.md) ['windows'] (sigma rule :x:)
+[Bypass UAC by Mocking Trusted Directories](tests/f7a35090-6f7f-4f64-bb47-d657bf5b10c1.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [UACME Bypass Method 34](tests/695b2dac-423e-448e-b6ef-5b88e93011d6.md) ['windows'] (sigma rule :x:)
 
@@ -1105,7 +1105,7 @@ Caution: a test can generate a lot of noise...
 
 [Bypass UAC using SilentCleanup task](tests/28104f8a-4ff1-4582-bcf6-699dce156608.md) ['windows'] (sigma rule :x:)
 
-[Bypass UAC using Fodhelper](tests/58f641ea-12e3-499a-b684-44dee46bd182.md) ['windows'] (sigma rule :x:)
+[Bypass UAC using Fodhelper](tests/58f641ea-12e3-499a-b684-44dee46bd182.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Bypass UAC using Event Viewer (cmd)](tests/5073adf8-9a50-4bd9-b298-a9bd2ead8af9.md) ['windows'] (sigma rule :x:)
 
@@ -1117,13 +1117,13 @@ Caution: a test can generate a lot of noise...
 
 [UACME Bypass Method 61](tests/7825b576-744c-4555-856d-caf3460dc236.md) ['windows'] (sigma rule :x:)
 
-[Bypass UAC using Fodhelper - PowerShell](tests/3f627297-6c38-4e7d-a278-fc2563eaaeaa.md) ['windows'] (sigma rule :x:)
+[Bypass UAC using Fodhelper - PowerShell](tests/3f627297-6c38-4e7d-a278-fc2563eaaeaa.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [UACME Bypass Method 39](tests/56163687-081f-47da-bb9c-7b231c5585cf.md) ['windows'] (sigma rule :x:)
 
 [UACME Bypass Method 56](tests/235ec031-cd2d-465d-a7ae-68bab281e80e.md) ['windows'] (sigma rule :x:)
 
-[Bypass UAC using ComputerDefaults (PowerShell)](tests/3c51abf2-44bf-42d8-9111-dc96ff66750f.md) ['windows'] (sigma rule :x:)
+[Bypass UAC using ComputerDefaults (PowerShell)](tests/3c51abf2-44bf-42d8-9111-dc96ff66750f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1176
@@ -1167,7 +1167,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1055.004
-[Process Injection via C#](tests/611b39b7-e243-4c81-87a4-7145a90358b1.md) ['windows'] (sigma rule :x:)
+[Process Injection via C#](tests/611b39b7-e243-4c81-87a4-7145a90358b1.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1546.007
