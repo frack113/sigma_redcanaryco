@@ -30,5 +30,7 @@ description: |
   schtasks /run /tn \Microsoft\Windows\DiskCleanup\SilentCleanup /I
 
   REM will tell it to ignore everything after %windir% and treat it just as a NOTE. Therefore just executing cmd with admin privs.
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 724ea201-6514-4f38-9739-e5973c34f49a
+    name: win_re_bypass_uac_using_silentcleanup_task

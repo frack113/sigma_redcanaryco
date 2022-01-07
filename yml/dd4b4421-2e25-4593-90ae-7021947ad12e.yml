@@ -14,5 +14,7 @@ description: |
   Exfiltration of specified file over ICMP protocol.
 
   Upon successful execution, powershell will utilize ping (icmp) to exfiltrate notepad.exe to a remote address (default 127.0.0.1). Results will be via stdout.
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 4c4af3cd-2115-479c-8193-6b8bfce9001c
+    name: powershell_icmp_exfiltration.yml

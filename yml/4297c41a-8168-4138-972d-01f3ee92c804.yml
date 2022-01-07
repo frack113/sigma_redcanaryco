@@ -18,5 +18,29 @@ os:
 description: 'Different obfuscated methods to test. Upon execution, reaches out to bit.ly/L3g1t and displays: "SUCCESSFULLY EXECUTED POWERSHELL CODE FROM REMOTE LOCATION"
 
   '
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 3b6ab547-8ec2-4991-b9d2-2b06702a48d7
+    name: win_powershell_download.yml
+  - id: fb843269-508c-4b76-8b8d-88679db22ce7
+    name: win_pc_susp_powershell_encode.yml
+  - id: cdf05894-89e7-4ead-b2b0-0a5f97a90f2f
+    name: win_powershell_cmdline_specific_comb_methods.yml
+  - id: 9fc51a3c-81b3-4fa7-b35f-7c02cf10fd2d
+    name: process_creation_susp_web_request_cmd.yml
+  - id: 36210e0d-5b19-485d-a087-c096088885f0
+    name: win_powershell_suspicious_parameter_variation.yml
+  - id: bb780e0c-16cf-4383-8383-1e5471db6cf9
+    name: win_powershell_xor_commandline.yml
+  - id: 8ff28fdd-e2fa-4dfa-aeda-ef3d61c62090
+    name: powershell_suspicious_invocation_specific_in_contextinfo.yml
+  - id: ae7fbf8e-f3cb-49fd-8db4-5f3bed522c71
+    name: powershell_suspicious_invocation_specific_in_scripblocktext.yml
+  - id: 1139d2e2-84b1-4226-b445-354492eba8ba
+    name: powershell_web_request.yml
+  - id: f62176f3-8128-4faa-bf6c-83261322e5eb
+    name: powershell_malicious_keywords.yml
+  - id: f772cee9-b7c2-4cb2-8f07-49870adc02e0
+    name: powershell_nishang_malicious_commandlets.yml
+  - id: 89819aa4-bbd6-46bc-88ec-c7f7fe30efa6
+    name: powershell_malicious_commandlets.yml
