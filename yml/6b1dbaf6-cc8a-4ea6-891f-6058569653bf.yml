@@ -19,5 +19,7 @@ os:
 description: |
   Deletes backup files in a manner similar to Ryuk ransomware. Upon exection, many "access is denied" messages will appear as the commands try
   to delete files from around the system.
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 06125661-3814-4e03-bfa2-1e4411c60ac3
+    name: win_fd_delete_backup_file.yml

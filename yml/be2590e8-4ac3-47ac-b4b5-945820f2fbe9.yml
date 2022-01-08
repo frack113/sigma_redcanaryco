@@ -16,5 +16,7 @@ description: |
   Establishes persistence using a custom authentication package for the Local Security Authority (LSA).
   After a reboot, Notepad.exe will be executed as child process of lsass.exe.
   Payload source code: https://github.com/tr4cefl0w/payloads/tree/master/T1547.002/package
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: f674e36a-4b91-431e-8aef-f8a96c2aca35
+    name: sysmon_asep_reg_keys_modification_currentcontrolset.yml

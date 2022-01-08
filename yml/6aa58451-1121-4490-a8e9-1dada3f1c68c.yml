@@ -13,5 +13,11 @@ os:
 description: |
   Exfiltration of specified file over HTTP.
   Upon successful execution, powershell will invoke web request using POST method to exfiltrate notepad.exe to a remote address (default http://127.0.0.1). Results will be via stdout.
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 1f49f2ab-26bc-48b3-96cc-dcffbc93eadf
+    name: powershell_suspicious_keywords.yml
+  - id: d2e3f2f6-7e09-4bf2-bc5d-90186809e7fb
+    name: powershell_ps_upload.yml
+  - id: 1139d2e2-84b1-4226-b445-354492eba8ba
+    name: powershell_web_request.yml

@@ -4,15 +4,14 @@ Attack_description: "Adversaries may steal data by exfiltrating it over an asymm
   \ cryptography, this requires pairs of cryptographic keys that can encrypt/decrypt data from the corresponding key. Each end of the communication channels requires a private key (only in the procession\
   \ of that entity) and the public key of the other entity. The public keys of each entity are exchanged before encrypted communications begin. \n\nNetwork protocols that use asymmetric encryption (such\
   \ as HTTPS/TLS/SSL) often utilize symmetric encryption once keys are exchanged. Adversaries may opt to use these encrypted mechanisms that are baked into a protocol. "
-guid: 4a4f31e2-46ea-4c26-ad89-f09ad1d5fe01
-name: Exfiltrate data HTTPS using curl linux
+guid: 1cdf2fb0-51b6-4fd8-96af-77020d5f1bf0
+name: Exfiltrate data HTTPS using curl windows
 tactic:
   - exfiltration
 technique:
   - T1048.002
 os:
-  - macos
-  - linux
+  - windows
 description: 'Exfiltrate data HTTPS using curl to file share site file.io
 
   '

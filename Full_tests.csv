@@ -152,7 +152,7 @@ privilege-escalation;T1546.011;['windows'];Registry key creation and/or modifica
 privilege-escalation;T1055.004;['windows'];Process Injection via C#;611b39b7-e243-4c81-87a4-7145a90358b1;True;1
 privilege-escalation;T1053.001;['linux'];At - Schedule a job;7266d898-ac82-4ec0-97c7-436075d0d08e;False;1
 privilege-escalation;T1053.002;['windows'];At.exe Scheduled task;4a6c0dc4-0f2a-4203-9298-a5a9bdc21ed8;True;1
-privilege-escalation;T1547.002;['windows'];Authentication Package;be2590e8-4ac3-47ac-b4b5-945820f2fbe9;False;1
+privilege-escalation;T1547.002;['windows'];Authentication Package;be2590e8-4ac3-47ac-b4b5-945820f2fbe9;True;1
 privilege-escalation;T1548.002;['windows'];Bypass UAC using Event Viewer (cmd);5073adf8-9a50-4bd9-b298-a9bd2ead8af9;False;1
 privilege-escalation;T1548.002;['windows'];Bypass UAC using Event Viewer (PowerShell);a6ce9acf-842a-4af6-8f79-539be7608e2b;False;2
 privilege-escalation;T1548.002;['windows'];Bypass UAC using Fodhelper;58f641ea-12e3-499a-b684-44dee46bd182;True;3
@@ -596,7 +596,7 @@ persistence;T1546.011;['windows'];New shim database files created in the default
 persistence;T1546.011;['windows'];Registry key creation and/or modification events for SDB;9b6a06f9-ab5e-4e8d-8289-1df4289db02f;True;3
 persistence;T1053.001;['linux'];At - Schedule a job;7266d898-ac82-4ec0-97c7-436075d0d08e;False;1
 persistence;T1053.002;['windows'];At.exe Scheduled task;4a6c0dc4-0f2a-4203-9298-a5a9bdc21ed8;True;1
-persistence;T1547.002;['windows'];Authentication Package;be2590e8-4ac3-47ac-b4b5-945820f2fbe9;False;1
+persistence;T1547.002;['windows'];Authentication Package;be2590e8-4ac3-47ac-b4b5-945820f2fbe9;True;1
 persistence;T1197;['windows'];Bitsadmin Download (cmd);3c73d728-75fb-4180-a12f-6712864d7421;True;1
 persistence;T1197;['windows'];Bitsadmin Download (PowerShell);f63b8bc4-07e5-4112-acba-56f646f3f0bc;True;2
 persistence;T1197;['windows'];Persist, Download, & Execute;62a06ec5-5754-47d2-bcfc-123d8314c6ae;True;3
@@ -711,7 +711,7 @@ impact;T1490;['windows'];Windows - Delete Volume Shadow Copies via WMI;6a3ff8dd-
 impact;T1490;['windows'];Windows - wbadmin Delete Windows Backup Catalog;263ba6cb-ea2b-41c9-9d4e-b652dadd002c;True;3
 impact;T1490;['windows'];Windows - Disable Windows Recovery Console Repair;cf21060a-80b3-4238-a595-22525de4ab81;True;4
 impact;T1490;['windows'];Windows - Delete Volume Shadow Copies via WMI with PowerShell;39a295ca-7059-4a88-86f6-09556c1211e7;True;5
-impact;T1490;['windows'];Windows - Delete Backup Files;6b1dbaf6-cc8a-4ea6-891f-6058569653bf;False;6
+impact;T1490;['windows'];Windows - Delete Backup Files;6b1dbaf6-cc8a-4ea6-891f-6058569653bf;True;6
 impact;T1490;['windows'];Windows - wbadmin Delete systemstatebackup;584331dd-75bc-4c02-9e0b-17f5fd81c748;True;7
 impact;T1490;['windows'];Windows - Disable the SR scheduled task;1c68c68d-83a4-4981-974e-8993055fa034;True;8
 impact;T1491.001;['windows'];Replace Desktop Wallpaper;30558d53-9d76-41c4-9267-a7bd5184bed3;True;1
@@ -1002,22 +1002,23 @@ command-and-control;T1132.001;['windows'];XOR Encoded data.;c3ed6d2a-e3ad-400d-a
 command-and-control;T1071.001;['windows'];Malicious User Agents - Powershell;81c13829-f6c9-45b8-85a6-053366d55297;False;1
 command-and-control;T1071.001;['windows'];Malicious User Agents - CMD;dc3488b0-08c7-4fea-b585-905c83b48180;False;2
 command-and-control;T1071.001;['linux', 'macos'];Malicious User Agents - Nix;2d7c471a-e887-4b78-b0dc-b0df1f2e0658;False;3
-exfiltration;T1020;['windows'];IcedID Botnet HTTP PUT;9c780d3d-3a14-4278-8ee5-faaeb2ccfbe0;False;1
+exfiltration;T1020;['windows'];IcedID Botnet HTTP PUT;9c780d3d-3a14-4278-8ee5-faaeb2ccfbe0;True;1
 exfiltration;T1030;['macos', 'linux'];Data Transfer Size Limits;ab936c51-10f4-46ce-9144-e02137b2016a;False;1
 exfiltration;T1048;['macos', 'linux'];Exfiltration Over Alternative Protocol - SSH;f6786cc8-beda-4915-a4d6-ac2f193bb988;False;1
 exfiltration;T1048;['macos', 'linux'];Exfiltration Over Alternative Protocol - SSH;7c3cb337-35ae-4d06-bf03-3032ed2ec268;False;2
-exfiltration;T1048;['windows'];DNSExfiltration (doh);c943d285-ada3-45ca-b3aa-7cd6500c6a48;False;3
-exfiltration;T1048.002;['windows', 'macos', 'linux'];Exfiltrate data HTTPS using curl;4a4f31e2-46ea-4c26-ad89-f09ad1d5fe01;False;1
-exfiltration;T1041;['windows'];C2 Data Exfiltration;d1253f6e-c29b-49dc-b466-2147a6191932;False;1
+exfiltration;T1048;['windows'];DNSExfiltration (doh);c943d285-ada3-45ca-b3aa-7cd6500c6a48;True;3
+exfiltration;T1048.002;['windows'];Exfiltrate data HTTPS using curl windows;1cdf2fb0-51b6-4fd8-96af-77020d5f1bf0;False;1
+exfiltration;T1048.002;['macos', 'linux'];Exfiltrate data HTTPS using curl linux;4a4f31e2-46ea-4c26-ad89-f09ad1d5fe01;False;2
+exfiltration;T1041;['windows'];C2 Data Exfiltration;d1253f6e-c29b-49dc-b466-2147a6191932;True;1
 exfiltration;T1048.003;['macos', 'linux'];Exfiltration Over Alternative Protocol - HTTP;1d1abbd6-a3d3-4b2e-bef5-c59293f46eff;False;1
 exfiltration;T1048.003;['windows'];Exfiltration Over Alternative Protocol - ICMP;dd4b4421-2e25-4593-90ae-7021947ad12e;True;2
 exfiltration;T1048.003;['linux'];Exfiltration Over Alternative Protocol - DNS;c403b5a4-b5fc-49f2-b181-d1c80d27db45;False;3
-exfiltration;T1048.003;['windows'];Exfiltration Over Alternative Protocol - HTTP;6aa58451-1121-4490-a8e9-1dada3f1c68c;False;4
-exfiltration;T1048.003;['windows'];Exfiltration Over Alternative Protocol - SMTP;ec3a835e-adca-4c7c-88d2-853b69c11bb9;False;5
-exfiltration;T1567;['windows'];Data Exfiltration with ConfigSecurityPolicy;5568a8f4-a8b1-4c40-9399-4969b642f122;False;1
+exfiltration;T1048.003;['windows'];Exfiltration Over Alternative Protocol - HTTP;6aa58451-1121-4490-a8e9-1dada3f1c68c;True;4
+exfiltration;T1048.003;['windows'];Exfiltration Over Alternative Protocol - SMTP;ec3a835e-adca-4c7c-88d2-853b69c11bb9;True;5
+exfiltration;T1567;['windows'];Data Exfiltration with ConfigSecurityPolicy;5568a8f4-a8b1-4c40-9399-4969b642f122;True;1
 initial-access;T1078.001;['windows'];Enable Guest account with RDP capability and admin privileges;99747561-ed8d-47f2-9c91-1e5fde1ed6e0;True;1
 initial-access;T1078.001;['windows'];Activate Guest Account;aa6cb8c4-b582-4f8e-b677-37733914abda;True;2
 initial-access;T1133;['windows'];Running Chrome VPN Extensions via the Registry 2 vpn extension;4c8db261-a58b-42a6-a866-0a294deedde4;True;1
 initial-access;T1078.003;['windows'];Create local account with admin privileges;a524ce99-86de-4db6-b4f9-e08f35a47a15;True;1
 initial-access;T1566.001;['windows'];Download Phishing Attachment - VBScript;114ccff9-ae6d-4547-9ead-4cd69f687306;False;1
-initial-access;T1566.001;['windows'];Word spawned a command shell and used an IP address in the command line;cbb6799a-425c-4f83-9194-5447a909d67f;False;2
+initial-access;T1566.001;['windows'];Word spawned a command shell and used an IP address in the command line;cbb6799a-425c-4f83-9194-5447a909d67f;True;2

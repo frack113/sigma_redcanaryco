@@ -13,14 +13,13 @@ Requirements:
     python :)
 """
 
-from os import write
 import pathlib
 from ruamel.yaml import YAML
 from mydata import my_data
 import csv
 import requests
 from collections import OrderedDict
-
+import time
 
 yaml = YAML()
 yaml.preserve_quotes = True
@@ -30,15 +29,26 @@ yaml.indent(sequence=4, offset=2)
 
 redcannary_info = my_data(yaml)
 
-url = "https://github.com/redcanaryco/atomic-red-team/raw/master/atomics/Indexes/index.yaml"
-myfile = requests.get(url)
+download = False
+if pathlib.Path("index.yaml").exists():
+    epoch_now = time.time()
+    file_lstat = pathlib.Path("index.yaml").lstat()
+    if epoch_now-file_lstat.st_ctime > 3600:
+        download = True
+else:
+    download = True
 
-with pathlib.Path("index.yaml").open("w", encoding="UTF-8", newline="\n") as file:
-    file.write(myfile.content.decode())
+if download:
+    print("Download index.yaml")
+    url = "https://github.com/redcanaryco/atomic-red-team/raw/master/atomics/Indexes/index.yaml"
+    myfile = requests.get(url)
+    with pathlib.Path("index.yaml").open("w", encoding="UTF-8", newline="\n") as file:
+        file.write(myfile.content.decode())
 
 all_csv = [["tactic", "technique", "os", "name", "guid", "sigma", "nmr_test"]]
 
 with pathlib.Path("index.yaml").open("r", encoding="UTF-8") as file:
+    print("Load index.yaml...")
     yml_index = yaml.load(file)
     for tactic in yml_index.keys():
         for technique in yml_index[tactic]:
