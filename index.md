@@ -1035,9 +1035,9 @@ Caution: a test can generate a lot of noise...
 
 [Exfiltration Over Alternative Protocol - HTTP](tests/1d1abbd6-a3d3-4b2e-bef5-c59293f46eff.md) ['macos', 'linux'] (sigma rule :x:)
 
-[Exfiltration Over Alternative Protocol - SMTP](tests/ec3a835e-adca-4c7c-88d2-853b69c11bb9.md) ['windows'] (sigma rule :x:)
+[Exfiltration Over Alternative Protocol - SMTP](tests/ec3a835e-adca-4c7c-88d2-853b69c11bb9.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Exfiltration Over Alternative Protocol - HTTP](tests/6aa58451-1121-4490-a8e9-1dada3f1c68c.md) ['windows'] (sigma rule :x:)
+[Exfiltration Over Alternative Protocol - HTTP](tests/6aa58451-1121-4490-a8e9-1dada3f1c68c.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1140
@@ -1057,7 +1057,7 @@ Caution: a test can generate a lot of noise...
 ### T1490
 [Windows - Disable the SR scheduled task](tests/1c68c68d-83a4-4981-974e-8993055fa034.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Windows - Delete Backup Files](tests/6b1dbaf6-cc8a-4ea6-891f-6058569653bf.md) ['windows'] (sigma rule :x:)
+[Windows - Delete Backup Files](tests/6b1dbaf6-cc8a-4ea6-891f-6058569653bf.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Windows - Disable Windows Recovery Console Repair](tests/cf21060a-80b3-4238-a595-22525de4ab81.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1253,7 +1253,7 @@ Caution: a test can generate a lot of noise...
 
 [Exfiltration Over Alternative Protocol - SSH](tests/7c3cb337-35ae-4d06-bf03-3032ed2ec268.md) ['macos', 'linux'] (sigma rule :x:)
 
-[DNSExfiltration (doh)](tests/c943d285-ada3-45ca-b3aa-7cd6500c6a48.md) ['windows'] (sigma rule :x:)
+[DNSExfiltration (doh)](tests/c943d285-ada3-45ca-b3aa-7cd6500c6a48.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1547.010
@@ -1579,7 +1579,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1567
-[Data Exfiltration with ConfigSecurityPolicy](tests/5568a8f4-a8b1-4c40-9399-4969b642f122.md) ['windows'] (sigma rule :x:)
+[Data Exfiltration with ConfigSecurityPolicy](tests/5568a8f4-a8b1-4c40-9399-4969b642f122.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1546.004
@@ -1593,7 +1593,9 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1048.002
-[Exfiltrate data HTTPS using curl](tests/4a4f31e2-46ea-4c26-ad89-f09ad1d5fe01.md) ['windows', 'macos', 'linux'] (sigma rule :x:)
+[Exfiltrate data HTTPS using curl linux](tests/4a4f31e2-46ea-4c26-ad89-f09ad1d5fe01.md) ['macos', 'linux'] (sigma rule :x:)
+
+[Exfiltrate data HTTPS using curl windows](tests/1cdf2fb0-51b6-4fd8-96af-77020d5f1bf0.md) ['windows'] (sigma rule :x:)
 
 
 ### T1531
@@ -1629,7 +1631,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1547.002
-[Authentication Package](tests/be2590e8-4ac3-47ac-b4b5-945820f2fbe9.md) ['windows'] (sigma rule :x:)
+[Authentication Package](tests/be2590e8-4ac3-47ac-b4b5-945820f2fbe9.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1572
@@ -1827,7 +1829,7 @@ Caution: a test can generate a lot of noise...
 ### T1566.001
 [Download Phishing Attachment - VBScript](tests/114ccff9-ae6d-4547-9ead-4cd69f687306.md) ['windows'] (sigma rule :x:)
 
-[Word spawned a command shell and used an IP address in the command line](tests/cbb6799a-425c-4f83-9194-5447a909d67f.md) ['windows'] (sigma rule :x:)
+[Word spawned a command shell and used an IP address in the command line](tests/cbb6799a-425c-4f83-9194-5447a909d67f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1053.002
@@ -1997,7 +1999,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1020
-[IcedID Botnet HTTP PUT](tests/9c780d3d-3a14-4278-8ee5-faaeb2ccfbe0.md) ['windows'] (sigma rule :x:)
+[IcedID Botnet HTTP PUT](tests/9c780d3d-3a14-4278-8ee5-faaeb2ccfbe0.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1137
@@ -2025,7 +2027,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1041
-[C2 Data Exfiltration](tests/d1253f6e-c29b-49dc-b466-2147a6191932.md) ['windows'] (sigma rule :x:)
+[C2 Data Exfiltration](tests/d1253f6e-c29b-49dc-b466-2147a6191932.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1574.012
