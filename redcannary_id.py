@@ -4,9 +4,9 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 Project: redcannary_id.py
-Date: 2021/12/19
+Date: 2022/01/09
 Author: frack113
-Version: 1.2
+Version: 1.3
 Description: 
     generate file for redcannary index.yaml
 Requirements:
@@ -29,27 +29,36 @@ yaml.indent(sequence=4, offset=2)
 
 redcannary_info = my_data(yaml)
 
-download = False
+need_to_download = False
+
 if pathlib.Path("index.yaml").exists():
     epoch_now = time.time()
     file_lstat = pathlib.Path("index.yaml").lstat()
-    if epoch_now-file_lstat.st_ctime > 3600:
-        download = True
-else:
-    download = True
+    delta_time = epoch_now-file_lstat.st_mtime
+    if  delta_time > 86400:
+        need_to_download = True
+        pathlib.Path("index.yaml").unlink()
+        
+        print (f"index.yaml is {delta_time}s old need to download")
 
-if download:
+else:
+    need_to_download = True
+
+if need_to_download:
     print("Download index.yaml")
+
     url = "https://github.com/redcanaryco/atomic-red-team/raw/master/atomics/Indexes/index.yaml"
-    myfile = requests.get(url)
+    my_file = requests.get(url)
+
     with pathlib.Path("index.yaml").open("w", encoding="UTF-8", newline="\n") as file:
-        file.write(myfile.content.decode())
+        file.write(my_file.content.decode())
 
 all_csv = [["tactic", "technique", "os", "name", "guid", "sigma", "nmr_test"]]
 
 with pathlib.Path("index.yaml").open("r", encoding="UTF-8") as file:
     print("Load index.yaml...")
     yml_index = yaml.load(file)
+
     for tactic in yml_index.keys():
         for technique in yml_index[tactic]:
             atomic_tests = yml_index[tactic][technique]["atomic_tests"]
@@ -70,6 +79,7 @@ with pathlib.Path("index.yaml").open("r", encoding="UTF-8") as file:
                         head_info["technique"].append(ext_ref["external_id"])
 
                 head_info["tactic"] = []
+
                 for kill_ref in technique_part["kill_chain_phases"]:
                     if kill_ref["kill_chain_name"] == "mitre-attack":
                         head_info["tactic"].append(kill_ref["phase_name"])
@@ -84,8 +94,10 @@ with pathlib.Path("index.yaml").open("r", encoding="UTF-8") as file:
 
             if nb_tests > 0:
                 nmr_test = 0
+
                 for test in atomic_tests:
                     nmr_test += 1
+
                     redcannary_info.clean()
 
                     guid = test["auto_generated_guid"]
@@ -111,6 +123,7 @@ with pathlib.Path("index.yaml").open("r", encoding="UTF-8") as file:
                     )
 
 csv_file = pathlib.Path("Full_tests.csv")
+
 with csv_file.open("w", encoding="UTF-8", newline="\n") as csvfile:
     writer = csv.writer(csvfile, delimiter=";", quoting=csv.QUOTE_MINIMAL)
     writer.writerows(all_csv)

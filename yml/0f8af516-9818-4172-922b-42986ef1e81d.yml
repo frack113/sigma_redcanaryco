@@ -14,5 +14,7 @@ os:
 description: |
   Uses hh.exe to execute a remote compiled HTML Help payload.
   Upon execution displays an error saying the file cannot be open
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 68c8acb4-1b60-4890-8e82-3ddf7a6dba84
+    name: win_hh_chm.yml

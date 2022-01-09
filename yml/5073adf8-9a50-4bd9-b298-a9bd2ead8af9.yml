@@ -21,5 +21,7 @@ os:
 description: |
   Bypasses User Account Control using Event Viewer and a relevant Windows Registry modification. More information here - https://enigma0x3.net/2016/08/15/fileless-uac-bypass-using-eventvwr-exe-and-registry-hijacking/
   Upon execution command prompt should be launched with administrative privelages
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 674202d0-b22a-4af4-ae5f-2eda1f3da1af
+    name: win_re_bypass_uac_using_eventviewer.yml

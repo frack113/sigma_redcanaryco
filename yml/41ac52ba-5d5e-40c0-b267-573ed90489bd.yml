@@ -12,5 +12,17 @@ technique:
 os:
   - windows
 description: Kill Windows Event Log Service Threads using Invoke-Phant0m. WARNING you will need to restart PC to return to normal state with Log Service. https://artofpwn.com/phant0m-killing-windows-event-log.html
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 1f49f2ab-26bc-48b3-96cc-dcffbc93eadf
+    name: powershell_suspicious_keywords.yml
+  - id: 03d83090-8cba-44a0-b02f-0b756a050306
+    name: powershell_accessing_win_api.yml
+  - id: 7b836d7f-179c-4ba4-90a7-a7e60afb48e6
+    name: powershell_ps_invoke_command_remote.yml
+  - id: 89819aa4-bbd6-46bc-88ec-c7f7fe30efa6
+    name: powershell_malicious_commandlets.yml
+  - id: 0e277796-5f23-4e49-a490-483131d4f6e1
+    name: sysmon_suspicious_dbghelp_dbgcore_load.yml
+  - id: 8d31a8ce-46b5-4dd6-bdc3-680931f1db86
+    name: powershell_bad_opsec_artifacts.yml

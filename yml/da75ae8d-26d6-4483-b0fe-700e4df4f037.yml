@@ -22,5 +22,7 @@ os:
 description: 'Clears Powershell history
 
   '
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: bde47d4b-9987-405c-94c7-b080410e8ea7
+    name: powershell_clearing_windows_console_history.yml

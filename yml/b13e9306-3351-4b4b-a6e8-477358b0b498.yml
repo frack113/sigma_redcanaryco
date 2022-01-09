@@ -21,5 +21,13 @@ description: |
   Clear event logs using built-in PowerShell commands.
   Upon successful execution, you should see the list of deleted event logs
   Upon execution, open the Security.evtx logs at C:\Windows\System32\winevt\Logs and verify that it is now empty or has very few logs in it.
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: cc36992a-4671-4f21-a91d-6c2b72a2edf5
+    name: win_susp_eventlog_clear.yml
+  - id: a122ac13-daf8-4175-83a2-72c387be339d
+    name: win_event_log_cleared.yml
+  - id: d99b79d2-0a6f-4f46-ad8b-260b6e17f982
+    name: win_susp_eventlog_cleared.yml
+  - id: a62b37e0-45d3-48d9-a517-90c1a1b0186b
+    name: win_system_susp_eventlog_cleared.yml

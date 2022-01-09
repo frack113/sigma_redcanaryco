@@ -16,5 +16,7 @@ description: |
   This action requires HTTP logging configurations in IIS to be unlocked.
 
   Use the cleanup commands to restore some default auditpol settings (your original settings will be lost)
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: e4ed6030-ffe5-4e6a-8a8a-ab3c1ab9d94e
+    name: win_pc_iis_http_logging.yml

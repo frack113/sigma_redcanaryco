@@ -22,5 +22,7 @@ os:
 description: 'Prevents Powershell history
 
   '
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: f99276ad-d122-4989-a09a-d00904a5f9d2
+    name: powershell_clear_powershell_history.yml

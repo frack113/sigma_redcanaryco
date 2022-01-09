@@ -23,5 +23,12 @@ description: |
   Upon successful execution, sdclt.exe will spawn cmd.exe to spawn notepad.exe
   [Reference - sevagas.com](http://blog.sevagas.com/?Yet-another-sdclt-UAC-bypass)
   Adapted from [MITRE ATT&CK Evals](https://github.com/mitre-attack/attack-arsenal/blob/66650cebd33b9a1e180f7b31261da1789cdceb66/adversary_emulation/APT29/CALDERA_DIY/evals/payloads/stepFourteen_bypassUAC.ps1)
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 46dd5308-4572-4d12-aa43-8938f0184d4f
+    name: win_re_bypass_uac_using_delegateexecute.yml
+  - id: 40f9af16-589d-4984-b78d-8c2aec023197
+    name: sysmon_high_integrity_sdclt.yml
+  - id: da2738f2-fadb-4394-afa7-0a0674885afa
+    name: sysmon_sdclt_child_process.yml
+

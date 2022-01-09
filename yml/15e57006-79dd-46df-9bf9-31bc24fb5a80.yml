@@ -14,5 +14,7 @@ description: |
   This test creates a listening interface on a victim device. This tactic was used by HARDRAIN for proxying.
 
   reference: https://www.us-cert.gov/sites/default/files/publications/MAR-10135536-F.pdf
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: cd5cfd80-aa5f-44c0-9c20-108c4ae12e3c
+    name: win_netsh_fw_add.yml
