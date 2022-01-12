@@ -21,5 +21,8 @@ description: |-
 
   00000000   EB 52 90 4E 54 46 53 20 20 20 20                 ëR?NTFS
   ```
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 70ad982f-67c8-40e0-a955-b920c2fa05cb
+    name: posh_ps_suspicious_iofilestream.yml
+

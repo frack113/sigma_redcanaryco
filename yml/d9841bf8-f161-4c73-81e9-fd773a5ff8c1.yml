@@ -13,5 +13,7 @@ os:
 description: |
   Allow all SMB and RDP rules on the Microsoft Defender Firewall for all profiles.
   Caution if you access remotely the host where the test runs! Especially with the cleanup command which will reset the firewall and risk disabling those services...
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 347906f3-e207-4d18-ae5b-a9403d6bcdef
+    name: win_pc_netsh_fw_enable_group_rule.yml

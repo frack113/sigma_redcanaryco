@@ -13,5 +13,11 @@ description: |
   Attempting to disable scheduled scanning and other parts of windows defender atp. These commands must be run as System, so they still fail as administrator.
   However, adversaries do attempt to perform this action so monitoring for these command lines can help alert to other bad things going on. Upon execution, "Access Denied"
   will be displayed twice and the WinDefend service status will be displayed.
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: a7ee1722-c3c5-aeff-3212-c777e4733217
+    name: win_powershell_disable_windef_av.yml
+  - id: 57712d7a-679c-4a41-a913-87e7175ae429
+    name: win_pc_susp_sc_query.yml
+  - id: eb87818d-db5d-49cc-a987-d5da331fbd90
+    name: win_service_stop.yml

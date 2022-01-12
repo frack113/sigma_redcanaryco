@@ -15,5 +15,7 @@ description: |
   command will say completed.
 
   https://unit42.paloaltonetworks.com/unit42-gorgon-group-slithering-nation-state-cybercrime/
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 9719a8aa-401c-41af-8108-ced7ec9cd75c
+    name: sysmon_remove_windows_defender_definition_files.yml

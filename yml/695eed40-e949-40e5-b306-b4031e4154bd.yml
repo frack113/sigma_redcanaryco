@@ -14,5 +14,7 @@ description: |
   Upon execution, no output is displayed.
 
   https://www.mdsec.co.uk/2018/06/exploring-powershell-amsi-and-logging-evasion/
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 30edb182-aa75-42c0-b0a9-e998bb29067c
+    name: win_powershell_amsi_bypass.yml

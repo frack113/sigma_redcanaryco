@@ -13,5 +13,7 @@ os:
 description: |
   Disables the Microsoft Defender Firewall for the public profile via registry
   Caution if you access remotely the host where the test runs! Especially with the cleanup command which will re-enable firewall for the current profile...
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 974515da-6cc5-4c95-ae65-f97f9150ec7f
+    name: win_re_disable_defender_firewall.yml

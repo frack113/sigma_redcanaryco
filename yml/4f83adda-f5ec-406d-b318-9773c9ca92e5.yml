@@ -12,5 +12,15 @@ technique:
 os:
   - windows
 description: Executes a CHM file with a defined script engine, ITS Protocol Handler, and help topic extension.
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 68c8acb4-1b60-4890-8e82-3ddf7a6dba84
+    name: win_hh_chm.yml
+  - id: d21374ff-f574-44a7-9998-4a8c8bf33d7d
+    name: win_wmiprvse_spawning_process.yml
+  - id: fb843269-508c-4b76-8b8d-88679db22ce7
+    name: win_pc_susp_powershell_encode.yml
+  - id: 52cad028-0ff0-4854-8f67-d25dfcbc78b4
+    name: win_html_help_spawn.yml
+  - id: 313fbb0a-a341-4682-848d-6d6f8c4fab7c
+    name: powershell_suspicious_windowstyle.yml
