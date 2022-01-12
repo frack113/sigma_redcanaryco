@@ -393,7 +393,7 @@ Caution: a test can generate a lot of noise...
 
 [Add and delete UFW firewall rules](tests/b2563a4e-c4b8-429c-8d47-d5bcb227ba7a.md) ['linux'] (sigma rule :x:)
 
-[Allow SMB and RDP on Microsoft Defender Firewall](tests/d9841bf8-f161-4c73-81e9-fd773a5ff8c1.md) ['windows'] (sigma rule :x:)
+[Allow SMB and RDP on Microsoft Defender Firewall](tests/d9841bf8-f161-4c73-81e9-fd773a5ff8c1.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Open a local port through Windows Firewall to any profile](tests/9636dd6e-7599-40d2-8eee-ac16434f35ed.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -409,13 +409,13 @@ Caution: a test can generate a lot of noise...
 
 [Turn off UFW logging](tests/8a95b832-2c2a-494d-9cb0-dc9dd97c8bad.md) ['linux'] (sigma rule :x:)
 
-[Disable Microsoft Defender Firewall via Registry](tests/afedc8c4-038c-4d82-b3e5-623a95f8a612.md) ['windows'] (sigma rule :x:)
+[Disable Microsoft Defender Firewall via Registry](tests/afedc8c4-038c-4d82-b3e5-623a95f8a612.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Edit UFW firewall main configuration file](tests/7b697ece-8270-46b5-bbc7-6b9e27081831.md) ['linux'] (sigma rule :x:)
 
 [Stop/Start UFW firewall](tests/fe135572-edcd-49a2-afe6-1d39521c5a9a.md) ['linux'] (sigma rule :x:)
 
-[Disable Microsoft Defender Firewall](tests/88d05800-a5e4-407e-9b53-ece4174f197f.md) ['windows'] (sigma rule :x:)
+[Disable Microsoft Defender Firewall](tests/88d05800-a5e4-407e-9b53-ece4174f197f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Edit UFW firewall ufw.conf file](tests/c1d8c4eb-88da-4927-ae97-c7c25893803b.md) ['linux'] (sigma rule :x:)
 
@@ -509,19 +509,19 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1218.001
-[Invoke CHM with InfoTech Storage Protocol Handler](tests/b4094750-5fc7-4e8e-af12-b4e36bf5e7f6.md) ['windows'] (sigma rule :x:)
+[Invoke CHM with InfoTech Storage Protocol Handler](tests/b4094750-5fc7-4e8e-af12-b4e36bf5e7f6.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Compiled HTML Help Local Payload](tests/5cb87818-0d7c-4469-b7ef-9224107aebe8.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Compiled HTML Help Remote Payload](tests/0f8af516-9818-4172-922b-42986ef1e81d.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Invoke CHM with Script Engine and Help Topic](tests/4f83adda-f5ec-406d-b318-9773c9ca92e5.md) ['windows'] (sigma rule :x:)
+[Invoke CHM with Script Engine and Help Topic](tests/4f83adda-f5ec-406d-b318-9773c9ca92e5.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Invoke CHM Simulate Double click](tests/5decef42-92b8-4a93-9eb2-877ddcb9401a.md) ['windows'] (sigma rule :x:)
+[Invoke CHM Simulate Double click](tests/5decef42-92b8-4a93-9eb2-877ddcb9401a.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Invoke CHM Shortcut Command with ITS and Help Topic](tests/15756147-7470-4a83-87fb-bb5662526247.md) ['windows'] (sigma rule :x:)
+[Invoke CHM Shortcut Command with ITS and Help Topic](tests/15756147-7470-4a83-87fb-bb5662526247.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Invoke CHM with default Shortcut Command Execution](tests/29d6f0d7-be63-4482-8827-ea77126c1ef7.md) ['windows'] (sigma rule :x:)
+[Invoke CHM with default Shortcut Command Execution](tests/29d6f0d7-be63-4482-8827-ea77126c1ef7.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1136.001
@@ -673,7 +673,7 @@ Caution: a test can generate a lot of noise...
 
 [AMSI Bypass - Remove AMSI Provider Reg Key](tests/13f09b91-c953-438e-845b-b585e51cac9b.md) ['windows'] (sigma rule :x:)
 
-[Tamper with Windows Defender Registry](tests/1b3e0146-a1e5-4c5c-89fb-1bb2ffe8fc45.md) ['windows'] (sigma rule :x:)
+[Tamper with Windows Defender Registry](tests/1b3e0146-a1e5-4c5c-89fb-1bb2ffe8fc45.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Disable Microsoft Office Security Features](tests/6f5fb61b-4e56-4a3d-a8c3-82e13686c6d7.md) ['windows'] (sigma rule :x:)
 
@@ -681,7 +681,7 @@ Caution: a test can generate a lot of noise...
 
 [Tamper with Windows Defender Evade Scanning -Folder](tests/0b19f4ee-de90-4059-88cb-63c800c683ed.md) ['windows'] (sigma rule :x:)
 
-[Remove Windows Defender Definition Files](tests/3d47daaa-2f56-43e0-94cc-caf5d8d52a68.md) ['windows'] (sigma rule :x:)
+[Remove Windows Defender Definition Files](tests/3d47daaa-2f56-43e0-94cc-caf5d8d52a68.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Disable OpenDNS Umbrella](tests/07f43b33-1e15-4e99-be70-bc094157c849.md) ['macos'] (sigma rule :x:)
 
@@ -699,7 +699,7 @@ Caution: a test can generate a lot of noise...
 
 [office-365-Disable-AntiPhishRule](tests/b9bbae2c-2ba6-4cf3-b452-8e8f908696f3.md) ['office-365'] (sigma rule :x:)
 
-[Unload Sysmon Filter Driver](tests/811b3e76-c41b-430c-ac0d-e2380bfaa164.md) ['windows'] (sigma rule :x:)
+[Unload Sysmon Filter Driver](tests/811b3e76-c41b-430c-ac0d-e2380bfaa164.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Disable Windows Defender with DISM](tests/871438ac-7d6e-432a-b27d-3e7db69faf58.md) ['windows'] (sigma rule :x:)
 
@@ -711,15 +711,15 @@ Caution: a test can generate a lot of noise...
 
 [Disable macOS Gatekeeper](tests/2a821573-fb3f-4e71-92c3-daac7432f053.md) ['macos'] (sigma rule :x:)
 
-[AMSI Bypass - AMSI InitFailed](tests/695eed40-e949-40e5-b306-b4031e4154bd.md) ['windows'] (sigma rule :x:)
+[AMSI Bypass - AMSI InitFailed](tests/695eed40-e949-40e5-b306-b4031e4154bd.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Tamper with Windows Defender Command Prompt](tests/aa875ed4-8935-47e2-b2c5-6ec00ab220d2.md) ['windows'] (sigma rule :x:)
+[Tamper with Windows Defender Command Prompt](tests/aa875ed4-8935-47e2-b2c5-6ec00ab220d2.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Uninstall Crowdstrike Falcon on Windows](tests/b32b1ccf-f7c1-49bc-9ddd-7d7466a7b297.md) ['windows'] (sigma rule :x:)
 
 [Tamper with Windows Defender Evade Scanning -Process](tests/a123ce6a-3916-45d6-ba9c-7d4081315c27.md) ['windows'] (sigma rule :x:)
 
-[Disable Arbitrary Security Windows Service](tests/a1230893-56ac-4c81-b644-2108e982f8f5.md) ['windows'] (sigma rule :x:)
+[Disable Arbitrary Security Windows Service](tests/a1230893-56ac-4c81-b644-2108e982f8f5.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1018
@@ -1907,7 +1907,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1006
-[Read volume boot sector via DOS device path (PowerShell)](tests/88f6327e-51ec-4bbf-b2e8-3fea534eab8b.md) ['windows'] (sigma rule :x:)
+[Read volume boot sector via DOS device path (PowerShell)](tests/88f6327e-51ec-4bbf-b2e8-3fea534eab8b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1609
@@ -2088,6 +2088,10 @@ Caution: a test can generate a lot of noise...
 
 ### T1574.001
 [DLL Search Order Hijacking - amsi.dll](tests/8549ad4b-b5df-4a2d-a3d7-2aee9e7052a3.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+
+### T1091
+[USB Malware Spread Simulation](tests/d44b7297-622c-4be8-ad88-ec40d7563c75.md) ['windows'] (sigma rule :x:)
 
 
 ### T1078.001
