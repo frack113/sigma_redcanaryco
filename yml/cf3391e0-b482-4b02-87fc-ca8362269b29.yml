@@ -15,5 +15,7 @@ description: |
   conhost.exe refers to a host process for the console window. It provide an interface between command prompt and Windows explorer.
   Executing it through command line can create process ancestry anomalies
   [Reference] (http://www.hexacorn.com/blog/2020/05/25/how-to-con-your-host/)
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 7dc2dedd-7603-461a-bc13-15803d132355
+    name: win_susp_conhost.yml

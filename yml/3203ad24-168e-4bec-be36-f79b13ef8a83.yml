@@ -19,5 +19,10 @@ description: |
   It must be executed in the context of a user who is privileged on remote `machine`.
 
   The effect of `/inject` is explained in <https://blog.3or.de/mimikatz-deep-dive-on-lsadumplsa-patch-and-inject.html>
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 730fc21b-eaff-474b-ad23-90fd265d4988
+    name: win_susp_psexec_eula.yml
+  - id: 25ffa65d-76d8-4da5-a832-3f2b0136e133
+    name: registry_event_sysinternals_eula_accepted.yml
+

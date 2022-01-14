@@ -19,5 +19,11 @@ description: |
   Modify the Local Machine registry RUN key to change Windows Defender executable that should be ran on startup.  This should only be possible when
   CMD is ran as Administrative rights. Upon execution, the message "The operation completed successfully."
   will be displayed. Additionally, open Registry Editor to view the modified entry in HKCU\Software\Microsoft\Windows\CurrentVersion\Run.
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: de587dce-915e-4218-aac4-835ca6af6f70
+    name: win_reg_add_run_key.yml
+  - id: 24357373-078f-44ed-9ac4-6d334a668a11
+    name: win_susp_direct_asep_reg_keys_modification.yml
+  - id: 20f0ee37-5942-4e45-b7d5-c5b5db9df5cd
+    name: sysmon_asep_reg_keys_modification_currentversion.yml

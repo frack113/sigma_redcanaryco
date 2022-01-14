@@ -12,5 +12,7 @@ os:
 description: 'Uninstall Sysinternals Sysmon for Defense Evasion
 
   '
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 6a5f68d1-c4b5-46b9-94ee-5324892ea939
+    name: win_pc_uninstall_sysmon.yml

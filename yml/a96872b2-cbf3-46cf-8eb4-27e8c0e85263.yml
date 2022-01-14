@@ -16,5 +16,7 @@ os:
 description: 'Parses registry hives to obtain stored credentials
 
   '
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: a29808fd-ef50-49ff-9c7a-59a9b040b404
+    name: win_pc_pypykatz.yml

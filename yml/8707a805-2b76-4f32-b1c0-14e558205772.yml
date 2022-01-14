@@ -17,5 +17,17 @@ os:
 description: 'Use Mshta to execute arbitrary PowerShell. Example is from the 2021 Threat Detection Report by Red Canary.
 
   '
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: e32f92d1-523e-49c3-9374-bdb13b46a3ba
+    name: win_susp_mshta_pattern.yml
+  - id: cc7abbd0-762b-41e3-8a26-57ad50d2eea3
+    name: win_susp_mshta_execution.yml
+  - id: 754ed792-634f-40ae-b3bc-e0448d33f695
+    name: win_susp_powershell_parent_process.yml
+  - id: 03cc0c25-389f-4bf8-b48d-11878079f1ca
+    name: win_mshta_spawn_shell.yml
+  - id: 772bb24c-8df2-4be0-9157-ae4dfa794037
+    name: win_shell_spawn_mshta.yml
+  - id: f4bbd493-b796-416e-bbf2-121235348529
+    name: win_non_interactive_powershell.yml

@@ -22,5 +22,9 @@ description: |
   This test is intended to be run on a domain Controller.
 
   The Active Directory database NTDS.dit may be dumped by copying it from a Volume Shadow Copy.
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: afd12fed-b0ec-45c9-a13d-aa86625dac81
+    name: posh_ps_gwmi_create_volume_shadow_copy.yml
+  - id: 0332a266-b584-47b4-933d-a00b103e1b37
+    name: posh_ps_suspicious_gwmi.yml

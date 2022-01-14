@@ -18,5 +18,9 @@ os:
 description: |
   Attackers need to change the powershell execution policy in order to run their malicious powershell scripts.
   They can either specify it during the execution of the powershell script or change the registry value for it.
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 87e3c4e8-a6a8-4ad9-bb4f-46e7ff99a180
+    name: win_pc_set_policies_to_unsecure_level.yml
+  - id: 61d0475c-173f-4844-86f7-f3eebae1c66b
+    name: powershell_set_policies_to_unsecure_level.yml

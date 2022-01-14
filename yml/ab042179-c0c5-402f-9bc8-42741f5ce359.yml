@@ -14,5 +14,12 @@ os:
 description: 'Executes the code in a project file using msbuild.exe. The default Visual Basic example file (vb.xml) will simply print "Hello from a Visual Basic inline task!" to the screen.
 
   '
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 82a19e3a-2bfe-4a91-8c0d-5d4c98fbb719
+    name: win_possible_applocker_bypass.yml
+  - id: e4a74e34-ecde-4aab-b2fb-9112dd01aed0
+    name: win_fe_csharp_compile_artefact.yml
+  - id: 7b10f171-7f04-47c7-9fa2-5be43c76e535
+    name: win_visual_basic_compiler.yml
+
