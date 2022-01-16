@@ -19,5 +19,11 @@ os:
 description: 'This is an obfuscated PowerShell command which when executed prints "Hello, from PowerShell!". Example is from the 2021 Threat Detection Report by Red Canary.
 
   '
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: d7bcd677-645d-4691-a8d4-7a5602b780d1
+    name: win_powershell_cmdline_special_characters.yml
+  - id: f4bbd493-b796-416e-bbf2-121235348529
+    name: win_non_interactive_powershell.yml
+  - id: bb780e0c-16cf-4383-8383-1e5471db6cf9
+    name: win_powershell_xor_commandline.yml

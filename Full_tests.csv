@@ -93,7 +93,7 @@ credential-access;T1552.004;['macos', 'linux'];Discover Private SSH Keys;4695928
 credential-access;T1552.004;['linux'];Copy Private SSH Keys with CP;7c247dc7-5128-4643-907b-73a76d9135c3;False;3
 credential-access;T1552.004;['macos', 'linux'];Copy Private SSH Keys with rsync;864bb0b2-6bb5-489a-b43b-a77b3a16d68a;False;4
 credential-access;T1552.004;['macos', 'linux'];Copy the users GnuPG directory with rsync;2a5a0601-f5fb-4e2e-aa09-73282ae6afca;False;5
-credential-access;T1552.004;['windows'];ADFS token signing and encryption certificates theft - Local;78e95057-d429-4e66-8f82-0f060c1ac96f;False;6
+credential-access;T1552.004;['windows'];ADFS token signing and encryption certificates theft - Local;78e95057-d429-4e66-8f82-0f060c1ac96f;True;6
 credential-access;T1552.004;['windows'];ADFS token signing and encryption certificates theft - Remote;cab413d8-9e4a-4b8d-9b84-c985bd73a442;True;7
 credential-access;T1003.007;['linux'];Dump individual process memory with sh (Local);7e91138a-8e74-456d-a007-973d67a0bb80;False;1
 credential-access;T1003.007;['linux'];Dump individual process memory with Python (Local);437b2003-a20d-4ed8-834c-4964f24eec63;False;2
@@ -376,11 +376,11 @@ defense-evasion;T1562.001;['windows'];Tamper with Windows Defender Command Promp
 defense-evasion;T1562.001;['windows'];Tamper with Windows Defender Registry;1b3e0146-a1e5-4c5c-89fb-1bb2ffe8fc45;True;17
 defense-evasion;T1562.001;['windows'];Disable Microsoft Office Security Features;6f5fb61b-4e56-4a3d-a8c3-82e13686c6d7;False;18
 defense-evasion;T1562.001;['windows'];Remove Windows Defender Definition Files;3d47daaa-2f56-43e0-94cc-caf5d8d52a68;True;19
-defense-evasion;T1562.001;['windows'];Stop and Remove Arbitrary Security Windows Service;ae753dda-0f15-4af6-a168-b9ba16143143;False;20
-defense-evasion;T1562.001;['windows'];Uninstall Crowdstrike Falcon on Windows;b32b1ccf-f7c1-49bc-9ddd-7d7466a7b297;False;21
-defense-evasion;T1562.001;['windows'];Tamper with Windows Defender Evade Scanning -Folder;0b19f4ee-de90-4059-88cb-63c800c683ed;False;22
-defense-evasion;T1562.001;['windows'];Tamper with Windows Defender Evade Scanning -Extension;315f4be6-2240-4552-b3e1-d1047f5eecea;False;23
-defense-evasion;T1562.001;['windows'];Tamper with Windows Defender Evade Scanning -Process;a123ce6a-3916-45d6-ba9c-7d4081315c27;False;24
+defense-evasion;T1562.001;['windows'];Stop and Remove Arbitrary Security Windows Service;ae753dda-0f15-4af6-a168-b9ba16143143;True;20
+defense-evasion;T1562.001;['windows'];Uninstall Crowdstrike Falcon on Windows;b32b1ccf-f7c1-49bc-9ddd-7d7466a7b297;True;21
+defense-evasion;T1562.001;['windows'];Tamper with Windows Defender Evade Scanning -Folder;0b19f4ee-de90-4059-88cb-63c800c683ed;True;22
+defense-evasion;T1562.001;['windows'];Tamper with Windows Defender Evade Scanning -Extension;315f4be6-2240-4552-b3e1-d1047f5eecea;True;23
+defense-evasion;T1562.001;['windows'];Tamper with Windows Defender Evade Scanning -Process;a123ce6a-3916-45d6-ba9c-7d4081315c27;True;24
 defense-evasion;T1562.001;['office-365'];office-365-Disable-AntiPhishRule;b9bbae2c-2ba6-4cf3-b452-8e8f908696f3;False;25
 defense-evasion;T1562.001;['windows'];Disable Windows Defender with DISM;871438ac-7d6e-432a-b27d-3e7db69faf58;False;26
 defense-evasion;T1484.002;['azure-ad'];Add Federation to Azure AD;8906c5d0-3ee5-4f63-897a-f6cafd3fdbb7;False;1
@@ -390,13 +390,13 @@ defense-evasion;T1055.001;['windows'];Process Injection via mavinject.exe;744964
 defense-evasion;T1070.004;['linux', 'macos'];Delete a single file - Linux/macOS;562d737f-2fc6-4b09-8c2a-7f8ff0828480;False;1
 defense-evasion;T1070.004;['linux', 'macos'];Delete an entire folder - Linux/macOS;a415f17e-ce8d-4ce2-a8b4-83b674e7017e;False;2
 defense-evasion;T1070.004;['linux'];Overwrite and delete a file with shred;039b4b10-2900-404b-b67f-4b6d49aa6499;False;3
-defense-evasion;T1070.004;['windows'];Delete a single file - Windows cmd;861ea0b4-708a-4d17-848d-186c9c7f17e3;False;4
-defense-evasion;T1070.004;['windows'];Delete an entire folder - Windows cmd;ded937c4-2add-42f7-9c2c-c742b7a98698;False;5
-defense-evasion;T1070.004;['windows'];Delete a single file - Windows PowerShell;9dee89bd-9a98-4c4f-9e2d-4256690b0e72;False;6
-defense-evasion;T1070.004;['windows'];Delete an entire folder - Windows PowerShell;edd779e4-a509-4cba-8dfa-a112543dbfb1;False;7
+defense-evasion;T1070.004;['windows'];Delete a single file - Windows cmd;861ea0b4-708a-4d17-848d-186c9c7f17e3;True;4
+defense-evasion;T1070.004;['windows'];Delete an entire folder - Windows cmd;ded937c4-2add-42f7-9c2c-c742b7a98698;True;5
+defense-evasion;T1070.004;['windows'];Delete a single file - Windows PowerShell;9dee89bd-9a98-4c4f-9e2d-4256690b0e72;True;6
+defense-evasion;T1070.004;['windows'];Delete an entire folder - Windows PowerShell;edd779e4-a509-4cba-8dfa-a112543dbfb1;True;7
 defense-evasion;T1070.004;['linux'];Delete Filesystem - Linux;f3aa95fe-4f10-4485-ad26-abf22a764c52;False;8
-defense-evasion;T1070.004;['windows'];Delete Prefetch File;36f96049-0ad7-4a5f-8418-460acaeb92fb;False;9
-defense-evasion;T1070.004;['windows'];Delete TeamViewer Log Files;69f50a5f-967c-4327-a5bb-e1a9a9983785;False;10
+defense-evasion;T1070.004;['windows'];Delete Prefetch File;36f96049-0ad7-4a5f-8418-460acaeb92fb;True;9
+defense-evasion;T1070.004;['windows'];Delete TeamViewer Log Files;69f50a5f-967c-4327-a5bb-e1a9a9983785;True;10
 defense-evasion;T1553.001;['macos'];Gatekeeper Bypass;fb3d46c6-9480-4803-8d7d-ce676e1f1a9b;False;1
 defense-evasion;T1564.001;['linux', 'macos'];Create a hidden file in a hidden directory;61a782e5-9a19-40b5-8ba4-69a4b9f3d7be;False;1
 defense-evasion;T1564.001;['macos'];Mac Hidden file;cddb9098-3b47-4e01-9d3b-6f5f323288a9;False;2
@@ -474,20 +474,20 @@ defense-evasion;T1564.004;['windows'];Alternate Data Streams (ADS);8822c3b0-d9f9
 defense-evasion;T1564.004;['windows'];Store file in Alternate Data Stream (ADS);2ab75061-f5d5-4c1a-b666-ba2a50df5b02;False;2
 defense-evasion;T1564.004;['windows'];Create ADS command prompt;17e7637a-ddaf-4a82-8622-377e20de8fdb;False;3
 defense-evasion;T1564.004;['windows'];Create ADS PowerShell;0045ea16-ed3c-4d4c-a9ee-15e44d1560d1;False;4
-defense-evasion;T1070.005;['windows'];Add Network Share;14c38f32-6509-46d8-ab43-d53e32d2b131;False;1
-defense-evasion;T1070.005;['windows'];Remove Network Share;09210ad5-1ef2-4077-9ad3-7351e13e9222;False;2
-defense-evasion;T1070.005;['windows'];Remove Network Share PowerShell;0512d214-9512-4d22-bde7-f37e058259b3;False;3
+defense-evasion;T1070.005;['windows'];Add Network Share;14c38f32-6509-46d8-ab43-d53e32d2b131;True;1
+defense-evasion;T1070.005;['windows'];Remove Network Share;09210ad5-1ef2-4077-9ad3-7351e13e9222;True;2
+defense-evasion;T1070.005;['windows'];Remove Network Share PowerShell;0512d214-9512-4d22-bde7-f37e058259b3;True;3
 defense-evasion;T1070.005;['windows'];Disable Administrative Share Creation at Startup;99c657aa-ebeb-4179-a665-69288fdd12b8;False;4
-defense-evasion;T1070.005;['windows'];Remove Administrative Shares;4299eff5-90f1-4446-b2f3-7f4f5cfd5d62;False;5
+defense-evasion;T1070.005;['windows'];Remove Administrative Shares;4299eff5-90f1-4446-b2f3-7f4f5cfd5d62;True;5
 defense-evasion;T1027;['macos', 'linux'];Decode base64 Data into Script;f45df6be-2e1e-4136-a384-8f18ab3826fb;False;1
-defense-evasion;T1027;['windows'];Execute base64-encoded PowerShell;a50d5a97-2531-499e-a1de-5544c74432c6;False;2
-defense-evasion;T1027;['windows'];Execute base64-encoded PowerShell from Windows Registry;450e7218-7915-4be4-8b9b-464a49eafcec;False;3
+defense-evasion;T1027;['windows'];Execute base64-encoded PowerShell;a50d5a97-2531-499e-a1de-5544c74432c6;True;2
+defense-evasion;T1027;['windows'];Execute base64-encoded PowerShell from Windows Registry;450e7218-7915-4be4-8b9b-464a49eafcec;True;3
 defense-evasion;T1027;['windows'];Execution from Compressed File;f8c8a909-5f29-49ac-9244-413936ce6d1f;False;4
-defense-evasion;T1027;['windows'];DLP Evasion via Sensitive Data in VBA Macro over email;129edb75-d7b8-42cd-a8ba-1f3db64ec4ad;False;5
-defense-evasion;T1027;['windows'];DLP Evasion via Sensitive Data in VBA Macro over HTTP;e2d85e66-cb66-4ed7-93b1-833fc56c9319;False;6
-defense-evasion;T1027;['windows'];Obfuscated Command in PowerShell;8b3f4ed6-077b-4bdd-891c-2d237f19410f;False;7
-defense-evasion;T1027;['windows'];Obfuscated Command Line using special Unicode characters;e68b945c-52d0-4dd9-a5e8-d173d70c448f;False;8
-defense-evasion;T1218.008;['windows'];Odbcconf.exe - Execute Arbitrary DLL;2430498b-06c0-4b92-a448-8ad263c388e2;False;1
+defense-evasion;T1027;['windows'];DLP Evasion via Sensitive Data in VBA Macro over email;129edb75-d7b8-42cd-a8ba-1f3db64ec4ad;True;5
+defense-evasion;T1027;['windows'];DLP Evasion via Sensitive Data in VBA Macro over HTTP;e2d85e66-cb66-4ed7-93b1-833fc56c9319;True;6
+defense-evasion;T1027;['windows'];Obfuscated Command in PowerShell;8b3f4ed6-077b-4bdd-891c-2d237f19410f;True;7
+defense-evasion;T1027;['windows'];Obfuscated Command Line using special Unicode characters;e68b945c-52d0-4dd9-a5e8-d173d70c448f;True;8
+defense-evasion;T1218.008;['windows'];Odbcconf.exe - Execute Arbitrary DLL;2430498b-06c0-4b92-a448-8ad263c388e2;True;1
 defense-evasion;T1134.004;['windows'];Parent PID Spoofing using PowerShell;069258f4-2162-46e9-9a25-c9c6c56150d2;True;1
 defense-evasion;T1134.004;['windows'];Parent PID Spoofing - Spawn from Current Process;14920ebd-1d61-491a-85e0-fe98efe37f25;True;2
 defense-evasion;T1134.004;['windows'];Parent PID Spoofing - Spawn from Specified Process;cbbff285-9051-444a-9d17-c07cd2d230eb;True;3
@@ -505,27 +505,26 @@ defense-evasion;T1055.012;['windows'];Process Hollowing using PowerShell;562427b
 defense-evasion;T1055.012;['windows'];RunPE via VBA;3ad4a037-1598-4136-837c-4027e4fa319b;True;2
 defense-evasion;T1055;['windows'];Shellcode execution via VBA;1c91e740-1729-4329-b779-feba6e71d048;True;1
 defense-evasion;T1055;['windows'];Remote Process Injection in LSASS via mimikatz;3203ad24-168e-4bec-be36-f79b13ef8a83;True;2
-defense-evasion;T1216.001;['windows'];PubPrn.vbs Signed Script Bypass;9dd29a1f-1e16-4862-be83-913b10a88f6c;False;1
-defense-evasion;T1218.009;['windows'];Regasm Uninstall Method Call Test;71bfbfac-60b1-4fc0-ac8b-2cedbbdcb112;False;1
-defense-evasion;T1218.009;['windows'];Regsvcs Uninstall Method Call Test;fd3c1c6a-02d2-4b72-82d9-71c527abb126;False;2
-defense-evasion;T1218.010;['windows'];Regsvr32 local COM scriptlet execution;449aa403-6aba-47ce-8a37-247d21ef0306;False;1
-defense-evasion;T1218.010;['windows'];Regsvr32 remote COM scriptlet execution;c9d0c4ef-8a96-4794-a75b-3d3a5e6f2a36;False;2
-defense-evasion;T1218.010;['windows'];Regsvr32 local DLL execution;08ffca73-9a3d-471a-aeb0-68b4aa3ab37b;False;3
-defense-evasion;T1218.010;['windows'];Regsvr32 Registering Non DLL;1ae5ea1f-0a4e-4e54-b2f5-4ac328a7f421;False;4
-defense-evasion;T1218.010;['windows'];Regsvr32 Silent DLL Install Call DllRegisterServer;9d71c492-ea2e-4c08-af16-c6994cdf029f;False;5
-defense-evasion;T1036.003;['windows'];Masquerading as Windows LSASS process;5ba5a3d1-cf3c-4499-968a-a93155d1f717;False;1
+defense-evasion;T1216.001;['windows'];PubPrn.vbs Signed Script Bypass;9dd29a1f-1e16-4862-be83-913b10a88f6c;True;1
+defense-evasion;T1218.009;['windows'];Regasm Uninstall Method Call Test;71bfbfac-60b1-4fc0-ac8b-2cedbbdcb112;True;1
+defense-evasion;T1218.009;['windows'];Regsvcs Uninstall Method Call Test;fd3c1c6a-02d2-4b72-82d9-71c527abb126;True;2
+defense-evasion;T1218.010;['windows'];Regsvr32 local COM scriptlet execution;449aa403-6aba-47ce-8a37-247d21ef0306;True;1
+defense-evasion;T1218.010;['windows'];Regsvr32 remote COM scriptlet execution;c9d0c4ef-8a96-4794-a75b-3d3a5e6f2a36;True;2
+defense-evasion;T1218.010;['windows'];Regsvr32 local DLL execution;08ffca73-9a3d-471a-aeb0-68b4aa3ab37b;True;3
+defense-evasion;T1218.010;['windows'];Regsvr32 Registering Non DLL;1ae5ea1f-0a4e-4e54-b2f5-4ac328a7f421;True;4
+defense-evasion;T1218.010;['windows'];Regsvr32 Silent DLL Install Call DllRegisterServer;9d71c492-ea2e-4c08-af16-c6994cdf029f;True;5
+defense-evasion;T1036.003;['windows'];Masquerading as Windows LSASS process;5ba5a3d1-cf3c-4499-968a-a93155d1f717;True;1
 defense-evasion;T1036.003;['linux'];Masquerading as Linux crond process.;a315bfff-7a98-403b-b442-2ea1b255e556;False;2
-defense-evasion;T1036.003;['windows'];Masquerading - cscript.exe running as notepad.exe;3a2a578b-0a01-46e4-92e3-62e2859b42f0;False;3
-defense-evasion;T1036.003;['windows'];Masquerading - wscript.exe running as svchost.exe;24136435-c91a-4ede-9da1-8b284a1c1a23;False;4
-defense-evasion;T1036.003;['windows'];Masquerading - powershell.exe running as taskhostw.exe;ac9d0fc3-8aa8-4ab5-b11f-682cd63b40aa;False;5
-defense-evasion;T1036.003;['windows'];Masquerading - non-windows exe running as windows exe;bc15c13f-d121-4b1f-8c7d-28d95854d086;False;6
-defense-evasion;T1036.003;['windows'];Masquerading - windows exe running as different windows exe;c3d24a39-2bfe-4c6a-b064-90cd73896cb0;False;7
-defense-evasion;T1036.003;['windows'];Malicious process Masquerading as LSM.exe;83810c46-f45e-4485-9ab6-8ed0e9e6ed7f;False;8
-defense-evasion;T1036.003;['windows'];File Extension Masquerading;c7fa0c3b-b57f-4cba-9118-863bf4e653fc;False;9
-defense-evasion;T1207;['windows'];DCShadow (Active Directory);0f4c5eb0-98a0-4496-9c3d-656b4f2bc8f6;False;1
+defense-evasion;T1036.003;['windows'];Masquerading - cscript.exe running as notepad.exe;3a2a578b-0a01-46e4-92e3-62e2859b42f0;True;3
+defense-evasion;T1036.003;['windows'];Masquerading - wscript.exe running as svchost.exe;24136435-c91a-4ede-9da1-8b284a1c1a23;True;4
+defense-evasion;T1036.003;['windows'];Masquerading - powershell.exe running as taskhostw.exe;ac9d0fc3-8aa8-4ab5-b11f-682cd63b40aa;True;5
+defense-evasion;T1036.003;['windows'];Masquerading - non-windows exe running as windows exe;bc15c13f-d121-4b1f-8c7d-28d95854d086;True;6
+defense-evasion;T1036.003;['windows'];Masquerading - windows exe running as different windows exe;c3d24a39-2bfe-4c6a-b064-90cd73896cb0;True;7
+defense-evasion;T1036.003;['windows'];Malicious process Masquerading as LSM.exe;83810c46-f45e-4485-9ab6-8ed0e9e6ed7f;True;8
+defense-evasion;T1036.003;['windows'];File Extension Masquerading;c7fa0c3b-b57f-4cba-9118-863bf4e653fc;True;9
+defense-evasion;T1207;['windows'];DCShadow (Active Directory);0f4c5eb0-98a0-4496-9c3d-656b4f2bc8f6;True;1
 defense-evasion;T1014;['linux'];Loadable Kernel Module based Rootkit;dfb50072-e45a-4c75-a17e-a484809c8553;False;1
 defense-evasion;T1014;['linux'];Loadable Kernel Module based Rootkit;75483ef8-f10f-444a-bf02-62eb0e48db6f;False;2
-defense-evasion;T1014;['windows'];Windows Signed Driver Rootkit Test;8e4e1985-9a19-4529-b4b8-b7a49ff87fae;False;3
 defense-evasion;T1218.011;['windows'];Rundll32 execute JavaScript Remote Payload With GetObject;cf3bdb9a-dd11-4b6c-b0d0-9e22b68a71be;False;1
 defense-evasion;T1218.011;['windows'];Rundll32 execute VBscript command;638730e7-7aed-43dc-bf8c-8117f805f5bb;False;2
 defense-evasion;T1218.011;['windows'];Rundll32 advpack.dll Execution;d91cae26-7fc1-457b-a854-34c8aad48c89;False;3
@@ -550,7 +549,7 @@ defense-evasion;T1218;['windows'];Microsoft.Workflow.Compiler.exe Payload Execut
 defense-evasion;T1218;['windows'];Renamed Microsoft.Workflow.Compiler.exe Payload Executions;4cc40fd7-87b8-4b16-b2d7-57534b86b911;False;7
 defense-evasion;T1218;['windows'];Invoke-ATHRemoteFXvGPUDisablementCommand base test;9ebe7901-7edf-45c0-b5c7-8366300919db;False;8
 defense-evasion;T1216;['windows'];SyncAppvPublishingServer Signed Script PowerShell Command Execution;275d963d-3f36-476c-8bef-a2a3960ee6eb;False;1
-defense-evasion;T1216;['windows'];manage-bde.wsf Signed Script Command Execution;2a8f2d3c-3dec-4262-99dd-150cb2a4d63a;False;2
+defense-evasion;T1216;['windows'];manage-bde.wsf Signed Script Command Execution;2a8f2d3c-3dec-4262-99dd-150cb2a4d63a;True;2
 defense-evasion;T1027.002;['linux'];Binary simply packed by UPX (linux);11c46cd8-e471-450e-acb8-52a1216ae6a4;False;1
 defense-evasion;T1027.002;['linux'];Binary packed by UPX, with modified headers (linux);f06197f8-ff46-48c2-a0c6-afc1b50665e1;False;2
 defense-evasion;T1027.002;['macos'];Binary simply packed by UPX;b16ef901-00bb-4dda-b4fc-a04db5067e20;False;3
@@ -569,9 +568,9 @@ defense-evasion;T1070.006;['linux', 'macos'];Set a file's access timestamp;5f911
 defense-evasion;T1070.006;['linux', 'macos'];Set a file's modification timestamp;20ef1523-8758-4898-b5a2-d026cc3d2c52;False;2
 defense-evasion;T1070.006;['linux', 'macos'];Set a file's creation timestamp;8164a4a6-f99c-4661-ac4f-80f5e4e78d2b;False;3
 defense-evasion;T1070.006;['linux', 'macos'];Modify file timestamps using reference file;631ea661-d661-44b0-abdb-7a7f3fc08e50;False;4
-defense-evasion;T1070.006;['windows'];Windows - Modify file creation timestamp with PowerShell;b3b2c408-2ff0-4a33-b89b-1cb46a9e6a9c;False;5
-defense-evasion;T1070.006;['windows'];Windows - Modify file last modified timestamp with PowerShell;f8f6634d-93e1-4238-8510-f8a90a20dcf2;False;6
-defense-evasion;T1070.006;['windows'];Windows - Modify file last access timestamp with PowerShell;da627f63-b9bd-4431-b6f8-c5b44d061a62;False;7
+defense-evasion;T1070.006;['windows'];Windows - Modify file creation timestamp with PowerShell;b3b2c408-2ff0-4a33-b89b-1cb46a9e6a9c;True;5
+defense-evasion;T1070.006;['windows'];Windows - Modify file last modified timestamp with PowerShell;f8f6634d-93e1-4238-8510-f8a90a20dcf2;True;6
+defense-evasion;T1070.006;['windows'];Windows - Modify file last access timestamp with PowerShell;da627f63-b9bd-4431-b6f8-c5b44d061a62;True;7
 defense-evasion;T1070.006;['windows'];Windows - Timestomp a File;d7512c33-3a75-4806-9893-69abc3ccdd43;False;8
 defense-evasion;T1134.001;['windows'];Named pipe client impersonation;90db9e27-8e7c-4c04-b602-a45927884966;True;1
 defense-evasion;T1134.001;['windows'];`SeDebugPrivilege` token duplication;34f0a430-9d04-4d98-bcb5-1989f14719f0;True;2
@@ -1029,5 +1028,5 @@ initial-access;T1078.001;['windows'];Activate Guest Account;aa6cb8c4-b582-4f8e-b
 initial-access;T1133;['windows'];Running Chrome VPN Extensions via the Registry 2 vpn extension;4c8db261-a58b-42a6-a866-0a294deedde4;True;1
 initial-access;T1078.003;['windows'];Create local account with admin privileges;a524ce99-86de-4db6-b4f9-e08f35a47a15;True;1
 initial-access;T1091;['windows'];USB Malware Spread Simulation;d44b7297-622c-4be8-ad88-ec40d7563c75;False;1
-initial-access;T1566.001;['windows'];Download Phishing Attachment - VBScript;114ccff9-ae6d-4547-9ead-4cd69f687306;False;1
+initial-access;T1566.001;['windows'];Download Macro-Enabled Phishing Attachment;114ccff9-ae6d-4547-9ead-4cd69f687306;False;1
 initial-access;T1566.001;['windows'];Word spawned a command shell and used an IP address in the command line;cbb6799a-425c-4f83-9194-5447a909d67f;True;2

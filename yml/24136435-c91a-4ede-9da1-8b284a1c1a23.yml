@@ -15,5 +15,17 @@ description: |
   Copies wscript.exe, renames it, and launches it to masquerade as an instance of svchost.exe.
 
   Upon execution, no windows will remain open but wscript will have been renamed to svchost and ran out of the temp folder
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: fff9d2b7-e11c-4a69-93d3-40ef66189767
+    name: win_susp_copy_system32.yml
+  - id: d5866ddf-ce8f-4aea-b28e-d96485a20d3d
+    name: sysmon_creation_system_file.yml
+  - id: 01d2e2a1-5f09-44f7-9fc1-24faa7479b6d
+    name: win_susp_svchost.yml
+  - id: e4a6b256-3e47-40fc-89d2-7a477edd6915
+    name: win_system_exe_anomaly.yml
+  - id: 0ba1da6d-b6ce-4366-828c-18826c9de23e
+    name: win_renamed_binary_highly_relevant.yml
+  - id: 36480ae1-a1cb-4eaa-a0d6-29801d7e9142
+    name: win_renamed_binary.yml

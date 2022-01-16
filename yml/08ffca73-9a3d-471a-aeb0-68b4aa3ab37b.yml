@@ -16,5 +16,9 @@ os:
 description: 'Regsvr32.exe is a command-line program used to register and unregister OLE controls. Upon execution, calc.exe will be launched.
 
   '
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 8e2b24c9-4add-46a0-b4bb-0057b4e6187d
+    name: win_susp_regsvr32_anomalies.yml
+  - id: e4b63079-6198-405c-abd7-3fe8b0ce3263
+    name: sysmon_susp_clr_logs.yml

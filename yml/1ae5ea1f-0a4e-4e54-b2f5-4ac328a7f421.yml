@@ -16,5 +16,12 @@ os:
 description: 'Replicating observed Gozi maldoc behavior registering a dll with an altered extension
 
   '
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: bd70d3f8-e60e-4d25-89f0-0b5a9cff20e0
+    name: win_apt_bluemashroom.yml
+  - id: 50919691-7302-437f-8e10-1fe088afa145
+    name: win_susp_regsvr32_no_dll.yml
+  - id: 8e2b24c9-4add-46a0-b4bb-0057b4e6187d
+    name: win_susp_regsvr32_anomalies.yml
+

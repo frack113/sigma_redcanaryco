@@ -13,5 +13,11 @@ os:
 description: 'Removes a Network Share utilizing PowerShell
 
   '
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 66a4d409-451b-4151-94f4-a55d559c49b0
+    name: powershell_suspicious_mounted_share_deletion.yml
+  - id: 95f0643a-ed40-467c-806b-aac9542ec5ab
+    name: powershell_ps_suspicious_smb_share_reco.yml
+  - id: 6942bd25-5970-40ab-af49-944247103358
+    name: powershell_pm_suspicious_smb_share_reco.yml

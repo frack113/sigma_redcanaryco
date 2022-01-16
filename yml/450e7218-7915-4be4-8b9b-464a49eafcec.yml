@@ -20,5 +20,7 @@ description: |
   Stores base64-encoded PowerShell code in the Windows Registry and deobfuscates it for execution. This is used by numerous adversaries and malicious tools.
 
   Upon successful execution, powershell will execute encoded command and read/write from the registry.
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: e32d4572-9826-4738-b651-95fa63747e8a
+    name: win_powershell_frombase64string.yml

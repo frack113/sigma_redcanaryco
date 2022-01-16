@@ -14,5 +14,7 @@ os:
 description: |
   Modifies the file last modified timestamp of a specified file. This technique was seen in use by the Stitch RAT.
   To verify execution, use File Explorer to view the Properties of the file and observe that the Modified time is the year 1970.
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: c6438007-e081-42ce-9483-b067fbef33c3
+    name: powershell_timestomp.yml

@@ -8,7 +8,7 @@ Attack_description: "Adversaries may send spearphishing emails with a malicious 
   \ instructions on how to decrypt an attachment, such as a zip file password, in order to evade email boundary defenses. Adversaries frequently manipulate file extensions and icons in order to make attached\
   \ executables appear to be document files, or files exploiting one application appear to be a file for a different one. "
 guid: 114ccff9-ae6d-4547-9ead-4cd69f687306
-name: Download Phishing Attachment - VBScript
+name: Download Macro-Enabled Phishing Attachment
 tactic:
   - initial-access
 technique:
@@ -16,8 +16,7 @@ technique:
 os:
   - windows
 description: |
-  The macro-enabled Excel file contains VBScript which opens your default web browser and opens it to [google.com](http://google.com).
-  The below will successfully download the macro-enabled Excel file to the current location.
-  File is downloaded to the %temp% folder.
+  This atomic test downloads a macro enabled document from the Atomic Red Team GitHub repository, simulating an end user clicking a phishing link to download the file.
+  The file "PhishingAttachment.xlsm" is downloaded to the %temp% directory.
 sigma: false
 sigma_rule: []

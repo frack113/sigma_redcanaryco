@@ -12,5 +12,9 @@ os:
   - windows
 description: "Administrative shares are hidden network shares created by Microsoft’s Windows NT operating systems that grant system administrators \nremote access to every disk volume on a network-connected\
   \ system. As Microsoft puts it, “Missing administrative shares typically \nindicate that the computer in question has been compromised by malicious software.\nhttps://threatpost.com/conti-ransomware-gang-has-full-log4shell-attack-chain/177173/\n"
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 183e7ea8-ac4b-4c23-9aec-b3dac4e401ac
+    name: win_susp_net_execution.yml
+  - id: cb7c4a03-2871-43c0-9bbb-18bbdb079896
+    name: win_susp_mounted_share_deletion.yml

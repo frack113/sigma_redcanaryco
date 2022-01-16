@@ -20,5 +20,7 @@ description: |
   This is an obfuscated certutil command that when executed downloads a file from the web. Adapted from T1105. Obfuscation includes special options chars (unicode hyphens), character substitution (e.g. ᶠ) and character insertion (including the usage of the right-to-left 0x202E and left-to-right 0x202D override characters).
   Reference:
   https://wietze.github.io/blog/windows-command-line-obfuscation
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: e0552b19-5a83-4222-b141-b36184bb8d79
+    name: win_pc_susp_char_in_cmd.yml

@@ -14,5 +14,7 @@ os:
 description: |
   Recursively delete a folder in the temporary directory using cmd.exe.
   Upon execution, no output will be displayed. Use File Explorer to verify the folder was deleted.
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 379fa130-190e-4c3f-b7bc-6c8e834485f3
+    name: win_pc_cmd_delete.yml

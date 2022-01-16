@@ -13,5 +13,11 @@ description: 'Uninstall Crowdstrike Falcon. If the WindowsSensor.exe path is not
   need to identify it before invoking the uninstaller.
 
   '
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: f0f7be61-9cf5-43be-9836-99d6ef448a18
+    name: sysmon_uninstall_crowdstrike_falcon.yml
+  - id: d7bcd677-645d-4691-a8d4-7a5602b780d1
+    name: win_powershell_cmdline_special_characters.yml
+  - id: d23f2ba5-9da0-4463-8908-8ee47f614bb9
+    name: powershell_ps_file_and_directory_discovery.yml
