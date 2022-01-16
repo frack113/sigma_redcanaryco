@@ -1,7 +1,7 @@
 
 [back](../index.md)
 
-Find sigma rule :x: 
+Find sigma rule :heavy_check_mark: 
 
 # Attack: Obfuscated Files or Information 
 
@@ -33,6 +33,8 @@ Sensitive data includes about around 20 odd simulated credit card numbers that p
 
 
 # Sigma Rule
+ - powershell_ps_send_mailmessage.yml (id: 9a7afa56-4762-43eb-807d-c3dc9ffe211b)
+
 
 
 [back](../index.md)
