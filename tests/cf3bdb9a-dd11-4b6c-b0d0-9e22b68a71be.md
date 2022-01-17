@@ -1,7 +1,7 @@
 
 [back](../index.md)
 
-Find sigma rule :x: 
+Find sigma rule :heavy_check_mark: 
 
 # Attack: Rundll32 
 
@@ -30,6 +30,14 @@ Test execution of a remote script using rundll32.exe. Upon execution notepad.exe
 
 
 # Sigma Rule
+ - win_pc_susp_rundll32_script_run.yml (id: 73fcad2e-ff14-4c38-b11d-4172c8ac86c7)
+
+ - win_run_executable_invalid_extension.yml (id: c3a99af4-35a9-4668-879e-c09aeb4f2bdf)
+
+ - sysmon_rundll32_net_connections.yml (id: cdc8da7d-c303-42f8-b08c-b4ab47230263)
+
+ - sysmon_win_binary_github_com.yml (id: 635dbb88-67b3-4b41-9ea5-a3af2dd88153)
+
 
 
 [back](../index.md)

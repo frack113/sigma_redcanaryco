@@ -211,11 +211,11 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1564
-[Create an "Administrator " user (with a space on the end)](tests/5bb20389-39a5-4e99-9264-aeb92a55a85c.md) ['windows'] (sigma rule :x:)
+[Create an "Administrator " user (with a space on the end)](tests/5bb20389-39a5-4e99-9264-aeb92a55a85c.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Extract binary files via VBA](tests/6afe288a-8a8b-4d33-a629-8d03ba9dad3a.md) ['windows'] (sigma rule :x:)
+[Extract binary files via VBA](tests/6afe288a-8a8b-4d33-a629-8d03ba9dad3a.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Create a Hidden User Called "$"](tests/2ec63cc2-4975-41a6-bf09-dffdfb610778.md) ['windows'] (sigma rule :x:)
+[Create a Hidden User Called "$"](tests/2ec63cc2-4975-41a6-bf09-dffdfb610778.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1070.004
@@ -535,21 +535,21 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1218.011
-[Launches an executable using Rundll32 and pcwutl.dll](tests/9f5d081a-ee5a-42f9-a04e-b7bdc487e676.md) ['windows'] (sigma rule :x:)
+[Launches an executable using Rundll32 and pcwutl.dll](tests/9f5d081a-ee5a-42f9-a04e-b7bdc487e676.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Rundll32 syssetup.dll Execution](tests/41fa324a-3946-401e-bbdd-d7991c628125.md) ['windows'] (sigma rule :x:)
+[Rundll32 syssetup.dll Execution](tests/41fa324a-3946-401e-bbdd-d7991c628125.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Rundll32 execute JavaScript Remote Payload With GetObject](tests/cf3bdb9a-dd11-4b6c-b0d0-9e22b68a71be.md) ['windows'] (sigma rule :x:)
+[Rundll32 execute JavaScript Remote Payload With GetObject](tests/cf3bdb9a-dd11-4b6c-b0d0-9e22b68a71be.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Rundll32 advpack.dll Execution](tests/d91cae26-7fc1-457b-a854-34c8aad48c89.md) ['windows'] (sigma rule :x:)
+[Rundll32 advpack.dll Execution](tests/d91cae26-7fc1-457b-a854-34c8aad48c89.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Rundll32 setupapi.dll Execution](tests/71d771cd-d6b3-4f34-bc76-a63d47a10b19.md) ['windows'] (sigma rule :x:)
+[Rundll32 setupapi.dll Execution](tests/71d771cd-d6b3-4f34-bc76-a63d47a10b19.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Rundll32 ieadvpack.dll Execution](tests/5e46a58e-cbf6-45ef-a289-ed7754603df9.md) ['windows'] (sigma rule :x:)
+[Rundll32 ieadvpack.dll Execution](tests/5e46a58e-cbf6-45ef-a289-ed7754603df9.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Execution of HTA and VBS Files using Rundll32 and URL.dll](tests/22cfde89-befe-4e15-9753-47306b37a6e3.md) ['windows'] (sigma rule :x:)
+[Execution of HTA and VBS Files using Rundll32 and URL.dll](tests/22cfde89-befe-4e15-9753-47306b37a6e3.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Rundll32 execute VBscript command](tests/638730e7-7aed-43dc-bf8c-8117f805f5bb.md) ['windows'] (sigma rule :x:)
+[Rundll32 execute VBscript command](tests/638730e7-7aed-43dc-bf8c-8117f805f5bb.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1055
@@ -649,9 +649,9 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1562.001
-[Disable Windows Defender with DISM](tests/871438ac-7d6e-432a-b27d-3e7db69faf58.md) ['windows'] (sigma rule :x:)
+[Disable Windows Defender with DISM](tests/871438ac-7d6e-432a-b27d-3e7db69faf58.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[AMSI Bypass - Remove AMSI Provider Reg Key](tests/13f09b91-c953-438e-845b-b585e51cac9b.md) ['windows'] (sigma rule :x:)
+[AMSI Bypass - Remove AMSI Provider Reg Key](tests/13f09b91-c953-438e-845b-b585e51cac9b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Unload Sysmon Filter Driver](tests/811b3e76-c41b-430c-ac0d-e2380bfaa164.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -663,7 +663,7 @@ Caution: a test can generate a lot of noise...
 
 [Tamper with Windows Defender Evade Scanning -Extension](tests/315f4be6-2240-4552-b3e1-d1047f5eecea.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Disable Microsoft Office Security Features](tests/6f5fb61b-4e56-4a3d-a8c3-82e13686c6d7.md) ['windows'] (sigma rule :x:)
+[Disable Microsoft Office Security Features](tests/6f5fb61b-4e56-4a3d-a8c3-82e13686c6d7.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Disable macOS Gatekeeper](tests/2a821573-fb3f-4e71-92c3-daac7432f053.md) ['macos'] (sigma rule :x:)
 
@@ -679,7 +679,7 @@ Caution: a test can generate a lot of noise...
 
 [Disable Arbitrary Security Windows Service](tests/a1230893-56ac-4c81-b644-2108e982f8f5.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Tamper with Windows Defender ATP PowerShell](tests/6b8df440-51ec-4d53-bf83-899591c9b5d7.md) ['windows'] (sigma rule :x:)
+[Tamper with Windows Defender ATP PowerShell](tests/6b8df440-51ec-4d53-bf83-899591c9b5d7.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Tamper with Windows Defender Registry](tests/1b3e0146-a1e5-4c5c-89fb-1bb2ffe8fc45.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1061,21 +1061,21 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1218
-[Renamed Microsoft.Workflow.Compiler.exe Payload Executions](tests/4cc40fd7-87b8-4b16-b2d7-57534b86b911.md) ['windows'] (sigma rule :x:)
+[Renamed Microsoft.Workflow.Compiler.exe Payload Executions](tests/4cc40fd7-87b8-4b16-b2d7-57534b86b911.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[mavinject - Inject DLL into running process](tests/c426dacf-575d-4937-8611-a148a86a5e61.md) ['windows'] (sigma rule :x:)
+[mavinject - Inject DLL into running process](tests/c426dacf-575d-4937-8611-a148a86a5e61.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[InfDefaultInstall.exe .inf Execution](tests/54ad7d5a-a1b5-472c-b6c4-f8090fb2daef.md) ['windows'] (sigma rule :x:)
+[InfDefaultInstall.exe .inf Execution](tests/54ad7d5a-a1b5-472c-b6c4-f8090fb2daef.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Microsoft.Workflow.Compiler.exe Payload Execution](tests/7cbb0f26-a4c1-4f77-b180-a009aa05637e.md) ['windows'] (sigma rule :x:)
+[Microsoft.Workflow.Compiler.exe Payload Execution](tests/7cbb0f26-a4c1-4f77-b180-a009aa05637e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Invoke-ATHRemoteFXvGPUDisablementCommand base test](tests/9ebe7901-7edf-45c0-b5c7-8366300919db.md) ['windows'] (sigma rule :x:)
+[Invoke-ATHRemoteFXvGPUDisablementCommand base test](tests/9ebe7901-7edf-45c0-b5c7-8366300919db.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[SyncAppvPublishingServer - Execute arbitrary PowerShell code](tests/d590097e-d402-44e2-ad72-2c6aa1ce78b1.md) ['windows'] (sigma rule :x:)
+[SyncAppvPublishingServer - Execute arbitrary PowerShell code](tests/d590097e-d402-44e2-ad72-2c6aa1ce78b1.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Register-CimProvider - Execute evil dll](tests/ad2c17ed-f626-4061-b21e-b9804a6f3655.md) ['windows'] (sigma rule :x:)
+[Register-CimProvider - Execute evil dll](tests/ad2c17ed-f626-4061-b21e-b9804a6f3655.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[ProtocolHandler.exe Downloaded a Suspicious File](tests/db020456-125b-4c8b-a4a7-487df8afb5a2.md) ['windows'] (sigma rule :x:)
+[ProtocolHandler.exe Downloaded a Suspicious File](tests/db020456-125b-4c8b-a4a7-487df8afb5a2.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1218.009
@@ -1179,7 +1179,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1564.003
-[Hidden Window](tests/f151ee37-9e2b-47e6-80e4-550b9f999b7a.md) ['windows'] (sigma rule :x:)
+[Hidden Window](tests/f151ee37-9e2b-47e6-80e4-550b9f999b7a.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1571
@@ -1273,7 +1273,7 @@ Caution: a test can generate a lot of noise...
 ### T1550.002
 [crackmapexec Pass the Hash](tests/eb05b028-16c8-4ad8-adea-6f5b219da9a9.md) ['windows'] (sigma rule :x:)
 
-[Mimikatz Pass the Hash](tests/ec23cef9-27d9-46e4-a68d-6f75f7b86908.md) ['windows'] (sigma rule :x:)
+[Mimikatz Pass the Hash](tests/ec23cef9-27d9-46e4-a68d-6f75f7b86908.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1098.001
@@ -1357,7 +1357,7 @@ Caution: a test can generate a lot of noise...
 
 [Hidden files](tests/3b7015f2-3144-4205-b799-b05580621379.md) ['macos'] (sigma rule :x:)
 
-[Create Windows Hidden File with Attrib](tests/dadb792e-4358-4d8d-9207-b771faa0daa5.md) ['windows'] (sigma rule :x:)
+[Create Windows Hidden File with Attrib](tests/dadb792e-4358-4d8d-9207-b771faa0daa5.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Create Windows System File with Attrib](tests/f70974c8-c094-4574-b542-2c545af95a32.md) ['windows'] (sigma rule :x:)
 
@@ -1595,7 +1595,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1007
-[System Service Discovery](tests/89676ba1-b1f8-47ee-b940-2e1a113ebc71.md) ['windows'] (sigma rule :heavy_check_mark:)
+[System Service Discovery](tests/89676ba1-b1f8-47ee-b940-2e1a113ebc71.md) ['windows'] (sigma rule :x:)
 
 [System Service Discovery - net.exe](tests/5f864a3f-8ce9-45c0-812c-bdf7d8aeacc3.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1709,13 +1709,13 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1564.004
-[Store file in Alternate Data Stream (ADS)](tests/2ab75061-f5d5-4c1a-b666-ba2a50df5b02.md) ['windows'] (sigma rule :x:)
+[Store file in Alternate Data Stream (ADS)](tests/2ab75061-f5d5-4c1a-b666-ba2a50df5b02.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Create ADS command prompt](tests/17e7637a-ddaf-4a82-8622-377e20de8fdb.md) ['windows'] (sigma rule :x:)
 
-[Create ADS PowerShell](tests/0045ea16-ed3c-4d4c-a9ee-15e44d1560d1.md) ['windows'] (sigma rule :x:)
+[Create ADS PowerShell](tests/0045ea16-ed3c-4d4c-a9ee-15e44d1560d1.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Alternate Data Streams (ADS)](tests/8822c3b0-d9f9-4daf-a043-49f4602364f4.md) ['windows'] (sigma rule :x:)
+[Alternate Data Streams (ADS)](tests/8822c3b0-d9f9-4daf-a043-49f4602364f4.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1218.002
@@ -1805,7 +1805,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1553.004
-[Install root CA on Windows with certutil](tests/5fdb1a7a-a93c-4fbe-aa29-ddd9ef94ed1f.md) ['windows'] (sigma rule :x:)
+[Install root CA on Windows with certutil](tests/5fdb1a7a-a93c-4fbe-aa29-ddd9ef94ed1f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Install root CA on CentOS/RHEL](tests/9c096ec4-fd42-419d-a762-d64cc950627e.md) ['linux'] (sigma rule :x:)
 
@@ -1813,7 +1813,7 @@ Caution: a test can generate a lot of noise...
 
 [Install root CA on macOS](tests/cc4a0b8c-426f-40ff-9426-4e10e5bf4c49.md) ['macos'] (sigma rule :x:)
 
-[Install root CA on Windows](tests/76f49d86-5eb1-461a-a032-a480f86652f1.md) ['windows'] (sigma rule :x:)
+[Install root CA on Windows](tests/76f49d86-5eb1-461a-a032-a480f86652f1.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1036.004
@@ -1827,9 +1827,9 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1550.003
-[Mimikatz Kerberos Ticket Attack](tests/dbf38128-7ba7-4776-bedf-cc2eed432098.md) ['windows'] (sigma rule :x:)
+[Mimikatz Kerberos Ticket Attack](tests/dbf38128-7ba7-4776-bedf-cc2eed432098.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Rubeus Kerberos Pass The Ticket](tests/a2fc4ec5-12c6-4fb4-b661-961f23f359cb.md) ['windows'] (sigma rule :x:)
+[Rubeus Kerberos Pass The Ticket](tests/a2fc4ec5-12c6-4fb4-b661-961f23f359cb.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1070.002
@@ -1889,7 +1889,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1497.001
-[Detect Virtualization Environment via WMI Manufacturer/Model Listing (Windows)](tests/4a41089a-48e0-47aa-82cb-5b81a463bc78.md) ['windows'] (sigma rule :x:)
+[Detect Virtualization Environment via WMI Manufacturer/Model Listing (Windows)](tests/4a41089a-48e0-47aa-82cb-5b81a463bc78.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Detect Virtualization Environment (MacOS)](tests/a960185f-aef6-4547-8350-d1ce16680d09.md) ['macos'] (sigma rule :x:)
 
@@ -2019,7 +2019,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1221
-[WINWORD Remote Template Injection](tests/1489e08a-82c7-44ee-b769-51b72d03521d.md) ['windows'] (sigma rule :x:)
+[WINWORD Remote Template Injection](tests/1489e08a-82c7-44ee-b769-51b72d03521d.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1611
