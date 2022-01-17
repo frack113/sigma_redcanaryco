@@ -12,5 +12,7 @@ os:
 description: 'Execute arbitrary dll. Requires at least Windows 8/2012. Also note this dll can be served up via SMB
 
   '
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: a2910908-e86f-4687-aeba-76a5f996e652
+    name: win_susp_register_cimprovider.yml

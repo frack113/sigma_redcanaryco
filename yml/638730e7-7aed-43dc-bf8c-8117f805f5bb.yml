@@ -17,5 +17,9 @@ description: |
   Test execution of a command using rundll32.exe and VBscript in a similar manner to the JavaScript test.
   Technique documented by Hexacorn- http://www.hexacorn.com/blog/2019/10/29/rundll32-with-a-vbscript-protocol/
   Upon execution calc.exe will be launched
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 73fcad2e-ff14-4c38-b11d-4172c8ac86c7
+    name: win_pc_susp_rundll32_script_run.yml
+  - id: c3a99af4-35a9-4668-879e-c09aeb4f2bdf
+    name: win_run_executable_invalid_extension.yml

@@ -15,5 +15,5 @@ description: |
   Identify system services.
 
   Upon successful execution, cmd.exe will execute service commands with expected result to stdout.
-sigma: true
+sigma: false
 sigma_rule: []

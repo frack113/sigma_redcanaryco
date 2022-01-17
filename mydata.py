@@ -45,6 +45,7 @@ class my_data:
         for technique in head_info["technique"]:
             if not technique in self.data["technique"]:
                 self.data["technique"].append(technique)
+        self.data["sigma"] = True if len(self.data["sigma_rule"])>0 else False
 
     def order(self):
         old_yml = copy.deepcopy(self.data)

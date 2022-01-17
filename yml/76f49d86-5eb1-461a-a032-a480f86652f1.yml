@@ -20,5 +20,7 @@ os:
 description: 'Creates a root CA with Powershell
 
   '
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 42821614-9264-4761-acfc-5772c3286f76
+    name: win_root_certificate_installed.yml

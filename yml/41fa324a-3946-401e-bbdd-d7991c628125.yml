@@ -17,5 +17,7 @@ description: |
   Test execution of a command using rundll32.exe with syssetup.dll. Upon execution, a window saying "installation failed" will be opened
 
   Reference: https://github.com/LOLBAS-Project/LOLBAS/blob/master/yml/OSLibraries/Syssetup.yml
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: e593cf51-88db-4ee1-b920-37e89012a3c9
+    name: win_susp_rundll32_activity.yml

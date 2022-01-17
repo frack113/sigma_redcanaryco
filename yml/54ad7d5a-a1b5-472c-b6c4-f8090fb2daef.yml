@@ -13,5 +13,9 @@ description: |
   Test execution of a .inf using InfDefaultInstall.exe
 
   Reference: https://github.com/LOLBAS-Project/LOLBAS/blob/master/yml/OSBinaries/Infdefaultinstall.yml
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: ce7cf472-6fcc-490a-9481-3786840b5d9b
+    name: process_creation_infdefaultinstall.yml
+  - id: 20f0ee37-5942-4e45-b7d5-c5b5db9df5cd
+    name: sysmon_asep_reg_keys_modification_currentversion.yml

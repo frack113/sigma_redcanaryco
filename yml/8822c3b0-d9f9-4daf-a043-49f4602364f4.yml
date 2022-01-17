@@ -17,5 +17,19 @@ description: |
   [Reference - 1](https://gist.github.com/api0cradle/cdd2d0d0ec9abb686f0e89306e277b8f)
 
   [Reference - 2](https://oddvar.moe/2018/01/14/putting-data-in-alternate-data-streams-and-how-to-execute-it/)
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: e011a729-98a6-4139-b5c4-bf6f6dd8239a
+    name: win_susp_certutil_command.yml
+  - id: 7f43c430-5001-4f8b-aaa9-c3b88f18fa5c
+    name: process_creation_alternate_data_streams.yml
+  - id: bf6c39fc-e203-45b9-9538-05397c1b4f3f
+    name: win_susp_findstr.yml
+  - id: 1277f594-a7d1-4f28-a2d3-73af5cbeab43
+    name: file_event_win_shell_write_susp_directory.yml
+  - id: bafac3d6-7de9-4dd9-8874-4a1194b493ed
+    name: win_susp_print.yml
+  - id: f0e53e89-8d22-46ea-9db5-9d4796ee2f8a
+    name: win_regedit_export_keys.yml
+  - id: e7be6119-fc37-43f0-ad4f-1f3f99be2f9f
+    name: win_copying_sensitive_files_with_credential_data.yml
