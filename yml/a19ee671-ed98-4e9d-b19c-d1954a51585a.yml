@@ -20,11 +20,11 @@ description: |
 sigma: true
 sigma_rule:
   - id: e6ce8457-68b1-485b-9bdd-3c2b5d679aa9
-    name: image_load\sysmon_susp_winword_vbadll_load.yml
+    name: sysmon_susp_winword_vbadll_load.yml
   - id: 438025f9-5856-4663-83f7-52f878a70a50
-    name: process_creation\win_office_shell.yml
+    name: win_office_shell.yml
   - id: e32f92d1-523e-49c3-9374-bdb13b46a3ba
-    name: process_creation\win_susp_mshta_pattern.yml
+    name: win_susp_mshta_pattern.yml
   - id: cc7abbd0-762b-41e3-8a26-57ad50d2eea3
-    name: process_creation\win_susp_mshta_execution.yml
+    name: win_susp_mshta_execution.yml
 

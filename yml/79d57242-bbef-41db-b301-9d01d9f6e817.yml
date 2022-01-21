@@ -22,5 +22,5 @@ description: |
 sigma: true
 sigma_rule:
   - id: 23590215-4702-4a70-8805-8dc9e58314a2
-    name: powershell_ps_cor_profiler.yml
+    name: posh_ps_cor_profiler.yml
 

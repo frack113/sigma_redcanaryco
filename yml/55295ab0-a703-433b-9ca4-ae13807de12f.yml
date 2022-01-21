@@ -22,7 +22,7 @@ sigma_rule:
     name: process_creation_sysinternals_eula_accepted.yml
   - id: aae1243f-d8af-40d8-ab20-33fc6d0c55bc
     name: win_susp_psloglist.yml
-  - id: 73ede524d-21cc-472d-a3ce-d21b568d8db
+  - id: 3ede524d-21cc-472d-a3ce-d21b568d8db7
     name: win_psexesvc_start.yml
   - id: 730fc21b-eaff-474b-ad23-90fd265d4988
     name: win_susp_psexec_eula.yml

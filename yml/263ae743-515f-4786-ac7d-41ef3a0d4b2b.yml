@@ -35,6 +35,6 @@ description: |
 sigma: true
 sigma_rule:
   - id: dcd74b95-3f36-4ed9-9598-0490951643aa
-    name: powershell_powerview_malicious_commandlets.yml
+    name: posh_ps_powerview_malicious_commandlets.yml
   - id: 183e7ea8-ac4b-4c23-9aec-b3dac4e401ac
     name: win_susp_net_execution.yml

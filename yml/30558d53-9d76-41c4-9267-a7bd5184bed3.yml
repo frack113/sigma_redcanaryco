@@ -17,9 +17,9 @@ description: 'Downloads an image from a URL and sets it as the desktop wallpaper
 sigma: true
 sigma_rule:
   - id: c5ac6a1e-9407-45f5-a0ce-ca9a0806a287
-    name: powershell_ps_susp_wallpaper.yml
+    name: posh_ps_susp_wallpaper.yml
   - id: 03d83090-8cba-44a0-b02f-0b756a050306
-    name: powershell_accessing_win_api.yml
+    name: posh_ps_accessing_win_api.yml
   - id: 1139d2e2-84b1-4226-b445-354492eba8ba
-    name: powershell_web_request.yml
+    name: posh_ps_web_request.yml
 

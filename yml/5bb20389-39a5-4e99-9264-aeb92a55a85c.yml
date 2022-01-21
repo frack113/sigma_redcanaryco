@@ -15,6 +15,6 @@ description: Creating a user with a username containing with a space on the end
 sigma: true
 sigma_rule:
   - id: 243de76f-4725-4f2e-8225-a8a69b15ad61
-    name: powershell_create_local_user.yml
+    name: posh_ps_create_local_user.yml
   - id: 4fdc44df-bfe9-4fcc-b041-68f5a2d3031c
-    name: powershell_ps_localuser.yml
+    name: posh_ps_localuser.yml

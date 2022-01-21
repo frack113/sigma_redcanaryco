@@ -16,4 +16,4 @@ description: "An adversary may compress data (e.g., sensitive documents) that is
 sigma: true
 sigma_rule:
   - id: 6dc5d284-69ea-42cf-9311-fb1c3932a69a
-    name: powershell_data_compressed.yml
+    name: posh_ps_data_compressed.yml

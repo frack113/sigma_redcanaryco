@@ -21,4 +21,4 @@ description: "Simulates an adversary accessing encrypted credentials from Google
 sigma: true
 sigma_rule:
   - id: 98f4c75c-3089-44f3-b733-b327b9cd9c9d
-    name: powershell_ps_access_to_chrome_login_data.yml
+    name: posh_ps_access_to_chrome_login_data.yml

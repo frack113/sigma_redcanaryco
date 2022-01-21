@@ -17,4 +17,4 @@ description: |
 sigma: true
 sigma_rule:
   - id: 4c4af3cd-2115-479c-8193-6b8bfce9001c
-    name: powershell_icmp_exfiltration.yml
+    name: posh_ps_icmp_exfiltration.yml

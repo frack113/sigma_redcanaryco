@@ -37,6 +37,6 @@ sigma: true
 sigma_rule:
   - id: 1c67a717-32ba-409b-a45d-0fb704a73a81
     name: win_pc_susp_network_listing_connections.yml
-  - id: 02b42de-4306-40b4-9596-6f590c81f073
+  - id: 502b42de-4306-40b4-9596-6f590c81f073
     name: win_local_system_owner_account_discovery.yml
 

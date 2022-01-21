@@ -17,4 +17,4 @@ description: |
 sigma: true
 sigma_rule:
   - id: 8c521530-5169-495d-a199-0a3a881ad24e
-    name: powershell_ntfs_ads_access.yml
+    name: posh_ps_ntfs_ads_access.yml

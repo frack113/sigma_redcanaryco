@@ -18,5 +18,16 @@ os:
 description: |
   Connect to a remote powershell session and interact with the host.
   Upon execution, network test info and 'T1086 PowerShell Session Creation and Use' will be displayed.
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: a0edd39f-a0c6-4c17-8141-261f958e8d8f
+    name: posh_ps_remote_session_creation.yml
+  - id: b8af5f36-1361-4ebe-9e76-e36128d947bf
+    name: posh_ps_remove_item_path.yml
+  - id: c539afac-c12a-46ed-b1bd-5a5567c9f045
+    name: sysmon_remote_powershell_session_network.yml
+  - id: 734f8d9b-42b8-41b2-bcf5-abaf49d5a3c8
+    name: win_remote_powershell_session_process.yml
+  - id: ad1f4bb9-8dfb-4765-adb6-2a7cfb6c0f94
+    name: image_load_wsman_provider_image_load.yml
+

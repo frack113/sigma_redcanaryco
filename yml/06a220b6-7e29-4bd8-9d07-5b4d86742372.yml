@@ -19,5 +19,29 @@ description: |
   Note: Windows 10 only. Upon execution windows backup and restore window will be opened.
 
   Bypass is based on: https://enigma0x3.net/2017/03/14/bypassing-uac-using-app-paths/
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 9fc51a3c-81b3-4fa7-b35f-7c02cf10fd2d
+    name: process_creation_susp_web_request_cmd.yml
+  - id: f4bbd493-b796-416e-bbf2-121235348529
+    name: win_non_interactive_powershell.yml
+  - id: 3b6ab547-8ec2-4991-b9d2-2b06702a48d7
+    name: win_powershell_download.yml
+  - id: 8ff28fdd-e2fa-4dfa-aeda-ef3d61c62090
+    name: posh_pm_suspicious_invocation_specific.yml
+  - id: 1139d2e2-84b1-4226-b445-354492eba8ba
+    name: posh_ps_web_request.yml
+  - id: ae7fbf8e-f3cb-49fd-8db4-5f3bed522c71
+    name: posh_ps_suspicious_invocation_specific.yml
+  - id: d23f2ba5-9da0-4463-8908-8ee47f614bb9
+    name: posh_ps_file_and_directory_discovery.yml
+  - id: b8af5f36-1361-4ebe-9e76-e36128d947bf
+    name: posh_ps_remove_item_path.yml
+  - id: 40f9af16-589d-4984-b78d-8c2aec023197
+    name: sysmon_high_integrity_sdclt.yml
+  - id: da2738f2-fadb-4394-afa7-0a0674885afa
+    name: sysmon_sdclt_child_process.yml
+  - id: 1f21ec3f-810d-4b0e-8045-322202e22b4b
+    name: sysmon_powershell_network_connection.yml
+  - id: 635dbb88-67b3-4b41-9ea5-a3af2dd88153
+    name: sysmon_win_binary_github_com.yml

@@ -15,5 +15,9 @@ description: |
   Identify system services.
 
   Upon successful execution, cmd.exe will execute service commands with expected result to stdout.
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 57712d7a-679c-4a41-a913-87e7175ae429
+    name: win_pc_susp_sc_query.yml
+  - id: 63332011-f057-496c-ad8d-d2b6afb27f96
+    name: win_pc_susp_tasklist_command.yml

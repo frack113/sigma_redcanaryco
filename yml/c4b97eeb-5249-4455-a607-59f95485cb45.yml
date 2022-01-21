@@ -22,7 +22,7 @@ sigma_rule:
   - id: 9fc51a3c-81b3-4fa7-b35f-7c02cf10fd2d
     name: process_creation_susp_web_request_cmd.yml
   - id: 1139d2e2-84b1-4226-b445-354492eba8ba
-    name: powershell_web_request.yml
+    name: posh_ps_web_request.yml
   - id: cc7abbd0-762b-41e3-8a26-57ad50d2eea3
     name: win_susp_mshta_execution.yml
   - id: e32f92d1-523e-49c3-9374-bdb13b46a3ba

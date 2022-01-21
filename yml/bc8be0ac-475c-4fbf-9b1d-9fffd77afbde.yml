@@ -17,5 +17,5 @@ description: |
 sigma: true
 sigma_rule:
   - id: 243de76f-4725-4f2e-8225-a8a69b15ad61
-    name: powershell_create_local_user.yml
+    name: posh_ps_create_local_user.yml
 

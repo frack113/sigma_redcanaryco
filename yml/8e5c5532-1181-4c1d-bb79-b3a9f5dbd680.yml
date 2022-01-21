@@ -23,4 +23,4 @@ sigma_rule:
   - id: 45a594aa-1fbd-4972-a809-ff5a99dd81b8
     name: win_run_powershell_script_from_ads.yml
   - id: 8c521530-5169-495d-a199-0a3a881ad24e
-    name: powershell_ntfs_ads_access.yml
+    name: posh_ps_ntfs_ads_access.yml

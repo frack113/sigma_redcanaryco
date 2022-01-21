@@ -27,6 +27,6 @@ sigma_rule:
   - id: a642964e-bead-4bed-8910-1bb4d63e3b4d
     name: win_mimikatz_command_line.yml
   - id: 89819aa4-bbd6-46bc-88ec-c7f7fe30efa6
-    name: powershell_malicious_commandlets.yml
+    name: posh_ps_malicious_commandlets.yml
   - id: f62176f3-8128-4faa-bf6c-83261322e5eb
-    name: powershell_malicious_keywords.yml
+    name: posh_ps_malicious_keywords.yml

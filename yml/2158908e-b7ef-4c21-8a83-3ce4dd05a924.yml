@@ -17,4 +17,4 @@ description: 'Find or discover files on the file system. Upon execution, file an
 sigma: true
 sigma_rule:
   - id: d23f2ba5-9da0-4463-8908-8ee47f614bb9
-    name: powershell_ps_file_and_directory_discovery.yml
+    name: posh_ps_file_and_directory_discovery.yml

@@ -18,6 +18,6 @@ description: 'Use Psr.exe binary to collect screenshots of user display. Test wi
 sigma: true
 sigma_rule:
   - id: 03d83090-8cba-44a0-b02f-0b756a050306
-    name: powershell_accessing_win_api.yml
+    name: posh_ps_accessing_win_api.yml
   - id: 2158f96f-43c2-43cb-952a-ab4580f32382
     name: win_susp_psr_capture_screenshots.yml

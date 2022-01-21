@@ -14,4 +14,4 @@ description: This module will extract the credentials from Windows Credential Ma
 sigma: true
 sigma_rule:
   - id: 99c49d9c-34ea-45f7-84a7-4751ae6b2cbc
-    name: powershell_ps_dump_password_windows_credential_manager.yml
+    name: posh_ps_dump_password_windows_credential_manager.yml

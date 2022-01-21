@@ -22,5 +22,5 @@ description: 'Appends a start process cmdlet to the current user''s powershell p
 sigma: true
 sigma_rule:
   - id: 05b3e303-faf0-4f4a-9b30-46cc13e69152
-    name: powershell_trigger_profiles.yml
+    name: posh_ps_trigger_profiles.yml
 

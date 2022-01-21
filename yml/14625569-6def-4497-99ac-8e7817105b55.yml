@@ -23,6 +23,6 @@ description: |
 sigma: true
 sigma_rule:
   - id: 8d31a8ce-46b5-4dd6-bdc3-680931f1db86
-    name: powershell_bad_opsec_artifacts.yml
+    name: posh_pm_bad_opsec_artifacts.yml
   - id: 8d31a8ce-46b5-4dd6-bdc3-680931f1db86
-    name: powershell_bad_opsec_artifacts.yml
+    name: posh_pm_bad_opsec_artifacts.yml

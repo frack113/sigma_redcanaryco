@@ -4,9 +4,9 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 Project: redcannary_id.py
-Date: 2022/01/09
+Date: 2022/01/21
 Author: frack113
-Version: 1.3
+Version: 1.4.0
 Description: 
     generate file for redcannary index.yaml
 Requirements:
@@ -28,6 +28,17 @@ yaml.width = 200
 yaml.indent(sequence=4, offset=2)
 
 redcannary_info = my_data(yaml)
+
+print ('Build sigmahq dictionary')
+sigmahq_uuid = {}
+sigmahq_name = {}
+sigmahq_files = pathlib.Path('../sigma/rules').glob('**/*.yml')
+for sigmahq_yml in sigmahq_files:
+    with sigmahq_yml.open('r',encoding="UTF-8") as file:
+        yml_sigma = yaml.load(file)
+        sigmahq_uuid[yml_sigma['id']] = sigmahq_yml.name
+        sigmahq_name[sigmahq_yml.name] = yml_sigma['id']
+
 
 need_to_download = False
 
@@ -107,6 +118,18 @@ with pathlib.Path("index.yaml").open("r", encoding="UTF-8") as file:
                         redcannary_info.load(yml_file)
 
                     redcannary_info.add(head_info, test)
+                    
+                    if len(redcannary_info.data['sigma_rule'])>0:
+                        for rule in redcannary_info.data['sigma_rule']:
+                            if rule['id'] in sigmahq_uuid:
+                                rule['name'] = sigmahq_uuid[rule['id']]
+                            else:
+                                if rule["name"] in sigmahq_name:
+                                    rule["id"] = sigmahq_name[rule["name"]]
+                                    print(f'Fix found in {guid} file for Unidentified sigma id : {rule["id"]} / {rule["name"]}')
+                                else:
+                                    print(f'No fix found in {guid} file for Unidentified sigma id : {rule["id"]} / {rule["name"]}')
+                    
                     redcannary_info.order()
                     redcannary_info.save(yml_file)
 

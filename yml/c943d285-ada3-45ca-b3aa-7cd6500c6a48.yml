@@ -16,8 +16,8 @@ description: "DNSExfiltrator allows for transfering (exfiltrate) a file over a D
 sigma: true
 sigma_rule:
   - id: d59d7842-9a21-4bc6-ba98-64bfe0091355
-    name: powershell_ps_invoke_dnsexfiltration.yml
+    name: posh_ps_invoke_dnsexfiltration.yml
   - id: 1f49f2ab-26bc-48b3-96cc-dcffbc93eadf
-    name: powershell_suspicious_keywords.yml
+    name: posh_ps_suspicious_keywords.yml
   - id: 1f21ec3f-810d-4b0e-8045-322202e22b4b
     name: sysmon_powershell_network_connection.yml

@@ -17,8 +17,8 @@ description: |-
 sigma: true
 sigma_rule:
   - id: d2e3f2f6-7e09-4bf2-bc5d-90186809e7fb
-    name: powershell_ps_upload.yml
+    name: posh_ps_upload.yml
   - id: 1139d2e2-84b1-4226-b445-354492eba8ba
-    name: powershell_web_request.yml
+    name: posh_ps_web_request.yml
   - id: 1f21ec3f-810d-4b0e-8045-322202e22b4b
     name: sysmon_powershell_network_connection.yml

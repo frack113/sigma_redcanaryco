@@ -15,6 +15,6 @@ description: PowerView is a PowerShell tool to gain network situational awarenes
 sigma: true
 sigma_rule:
   - id: dcd74b95-3f36-4ed9-9598-0490951643aa
-    name: powershell_powerview_malicious_commandlets.yml
+    name: posh_ps_powerview_malicious_commandlets.yml
   - id: 89819aa4-bbd6-46bc-88ec-c7f7fe30efa6
-    name: powershell_malicious_commandlets.yml
+    name: posh_ps_malicious_commandlets.yml

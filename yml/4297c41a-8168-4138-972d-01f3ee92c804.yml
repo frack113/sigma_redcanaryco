@@ -33,14 +33,14 @@ sigma_rule:
   - id: bb780e0c-16cf-4383-8383-1e5471db6cf9
     name: win_powershell_xor_commandline.yml
   - id: 8ff28fdd-e2fa-4dfa-aeda-ef3d61c62090
-    name: powershell_suspicious_invocation_specific_in_contextinfo.yml
+    name: posh_pm_suspicious_invocation_specific.yml
   - id: ae7fbf8e-f3cb-49fd-8db4-5f3bed522c71
-    name: powershell_suspicious_invocation_specific_in_scripblocktext.yml
+    name: posh_ps_suspicious_invocation_specific.yml
   - id: 1139d2e2-84b1-4226-b445-354492eba8ba
-    name: powershell_web_request.yml
+    name: posh_ps_web_request.yml
   - id: f62176f3-8128-4faa-bf6c-83261322e5eb
-    name: powershell_malicious_keywords.yml
+    name: posh_ps_malicious_keywords.yml
   - id: f772cee9-b7c2-4cb2-8f07-49870adc02e0
-    name: powershell_nishang_malicious_commandlets.yml
+    name: posh_ps_nishang_malicious_commandlets.yml
   - id: 89819aa4-bbd6-46bc-88ec-c7f7fe30efa6
-    name: powershell_malicious_commandlets.yml
+    name: posh_ps_malicious_commandlets.yml

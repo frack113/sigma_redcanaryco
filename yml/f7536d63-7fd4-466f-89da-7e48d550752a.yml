@@ -24,5 +24,5 @@ description: |
 sigma: true
 sigma_rule:
   - id: 95afc12e-3cbb-40c3-9340-84a032e596a3
-    name: powershell_ps_get_acl_service.yml
+    name: posh_ps_get_acl_service.yml
 

@@ -21,8 +21,8 @@ description: 'The Potentially Unwanted Applications (PUA) protection feature in 
 sigma: true
 sigma_rule:
   - id: 9fc51a3c-81b3-4fa7-b35f-7c02cf10fd2d
-    name: process_creation\process_creation_susp_web_request_cmd.yml
+    name: process_creation_susp_web_request_cmd.yml
   - id: 1139d2e2-84b1-4226-b445-354492eba8ba
-    name: powershell\powershell_script\powershell_web_request.yml
+    name: posh_ps_web_request.yml
   - id: 1f21ec3f-810d-4b0e-8045-322202e22b4b
-    name: network_connection\sysmon_powershell_network_connection.yml
+    name: sysmon_powershell_network_connection.yml

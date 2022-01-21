@@ -21,4 +21,4 @@ description: |
 sigma: true
 sigma_rule:
   - id: ca8b77a9-d499-4095-b793-5d5f330d450e
-    name: powershell_prompt_credentials.yml
+    name: posh_ps_prompt_credentials.yml

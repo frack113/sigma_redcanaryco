@@ -21,4 +21,4 @@ description: |
 sigma: true
 sigma_rule:
   - id: aff815cc-e400-4bf0-a47a-5d8a2407d4e1
-    name: powershell_pm_susp_get_nettcpconnection.yml
+    name: posh_pm_susp_get_nettcpconnection.yml

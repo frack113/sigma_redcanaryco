@@ -17,4 +17,4 @@ description: |
 sigma: true
 sigma_rule:
   - id: c1dda054-d638-4c16-afc8-53e007f3fbc5
-    name: powershell_automated_collection.yml
+    name: posh_ps_automated_collection.yml

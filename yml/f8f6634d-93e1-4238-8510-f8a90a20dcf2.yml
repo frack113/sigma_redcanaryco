@@ -17,4 +17,4 @@ description: |
 sigma: true
 sigma_rule:
   - id: c6438007-e081-42ce-9483-b067fbef33c3
-    name: powershell_timestomp.yml
+    name: posh_ps_timestomp.yml

@@ -28,4 +28,4 @@ description: |
 sigma: true
 sigma_rule:
   - id: 89819aa4-bbd6-46bc-88ec-c7f7fe30efa6
-    name: powershell_malicious_commandlets.yml
+    name: posh_ps_malicious_commandlets.yml

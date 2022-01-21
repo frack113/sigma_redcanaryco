@@ -16,9 +16,9 @@ description: 'Manipulate Admin Account Name
 sigma: true
 sigma_rule:
   - id: cef24b90-dddc-4ae1-a09a-8764872f69fc
-    name: powershell_pm_suspicious_local_group_reco.yml
+    name: posh_pm_suspicious_local_group_reco.yml
   - id: fa6a5a45-3ee2-4529-aa14-ee5edc9e29cb
-    name: powershell_ps_suspicious_local_group_reco.yml
+    name: posh_ps_suspicious_local_group_reco.yml
   - id: 4fdc44df-bfe9-4fcc-b041-68f5a2d3031c
-    name: powershell_ps_localuser.yml
+    name: posh_ps_localuser.yml
 

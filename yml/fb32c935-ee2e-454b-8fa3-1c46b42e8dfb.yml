@@ -22,4 +22,4 @@ description: |
 sigma: true
 sigma_rule:
   - id: 851c506b-6b7c-4ce2-8802-c703009d03c0
-    name: powershell_winlogon_helper_dll.yml
+    name: posh_ps_winlogon_helper_dll.yml
