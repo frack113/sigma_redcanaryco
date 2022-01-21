@@ -32,7 +32,7 @@ Upon successful execution, powershell.exe will execute `get-NetTCPConnection`. R
 
 
 # Sigma Rule
- - powershell_pm_susp_get_nettcpconnection.yml (id: aff815cc-e400-4bf0-a47a-5d8a2407d4e1)
+ - posh_pm_susp_get_nettcpconnection.yml (id: aff815cc-e400-4bf0-a47a-5d8a2407d4e1)
 
 
 

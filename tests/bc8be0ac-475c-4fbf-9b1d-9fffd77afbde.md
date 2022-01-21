@@ -29,7 +29,7 @@ new account, run "net user" in powershell or CMD and observe that there is a new
 
 
 # Sigma Rule
- - powershell_create_local_user.yml (id: 243de76f-4725-4f2e-8225-a8a69b15ad61)
+ - posh_ps_create_local_user.yml (id: 243de76f-4725-4f2e-8225-a8a69b15ad61)
 
 
 

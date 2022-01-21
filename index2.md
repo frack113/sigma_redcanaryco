@@ -32,54 +32,58 @@
   * T1003.002 [dump volume shadow copy hives with certutil](tests/eeb9751a-d598-42d3-b11c-c122d9c3f6c7.md)
   * T1140 [Deobfuscate/Decode Files Or Information](tests/dc6fe391-69e6-4506-bd06-ea5eeb4082f8.md)
   * T1218.005 [Mshta executes JavaScript Scheme Fetch Remote Payload With GetObject](tests/1483fab9-4f52-4217-a9ce-daa9d7747cae.md)
-* image_load\sysmon_susp_winword_vbadll_load.yml
-  * T1204.002 [Headless Chrome code execution via VBA](tests/a19ee671-ed98-4e9d-b19c-d1954a51585a.md)
-* network_connection\sysmon_powershell_network_connection.yml
-  * T1204.002 [Potentially Unwanted Applications (PUA)](tests/02f35d62-9fdc-4a97-b899-a5d9a876d295.md)
-* network_connection\sysmon_win_binary_github_com.yml
-  * T1218.005 [Invoke HTML Application - Direct download from URI](tests/39ceed55-f653-48ac-bd19-aceceaf525db.md)
+* image_load_wsman_provider_image_load.yml
+  * T1059.001 [PowerShell Session Creation and Use](tests/7c1acec2-78fa-4305-a3e0-db2a54cddecd.md)
 * pipe_created_tool_psexec.yml
   * T1021.002 [Copy and Execute File with PsExec](tests/0eb03d41-79e4-4393-8e57-6344856be1cf.md)
   * T1207 [DCShadow (Active Directory)](tests/0f4c5eb0-98a0-4496-9c3d-656b4f2bc8f6.md)
-* posh_ps_gwmi_create_volume_shadow_copy.yml
-  * T1003.003 [Create Volume Shadow Copy with Powershell](tests/542bb97e-da53-436b-8e43-e0a7d31a6c24.md)
-* posh_ps_remove_item_path.yml
-  * T1562.001 [AMSI Bypass - Remove AMSI Provider Reg Key](tests/13f09b91-c953-438e-845b-b585e51cac9b.md)
-  * T1070.004 [Delete Prefetch File](tests/36f96049-0ad7-4a5f-8418-460acaeb92fb.md)
-  * T1552.004 [ADFS token signing and encryption certificates theft - Local](tests/78e95057-d429-4e66-8f82-0f060c1ac96f.md)
-  * T1070.004 [Delete an entire folder - Windows PowerShell](tests/edd779e4-a509-4cba-8dfa-a112543dbfb1.md)
-  * T1218 [Invoke-ATHRemoteFXvGPUDisablementCommand base test](tests/9ebe7901-7edf-45c0-b5c7-8366300919db.md)
-  * T1070.004 [Delete a single file - Windows PowerShell](tests/9dee89bd-9a98-4c4f-9e2d-4256690b0e72.md)
-* posh_ps_suspicious_gwmi.yml
-  * T1218.005 [Invoke HTML Application - Simulate Lateral Movement over UNC Path](tests/b8a8bdb2-7eae-490d-8251-d5e0295b2362.md)
-  * T1134.004 [Parent PID Spoofing - Spawn from Specified Process](tests/cbbff285-9051-444a-9d17-c07cd2d230eb.md)
-  * T1218.005 [Invoke HTML Application - JScript Engine with Rundll32 and Inline Protocol Handler](tests/e7e3a525-7612-4d68-a5d3-c4649181b8af.md)
-  * T1218.005 [Invoke HTML Application - Jscript Engine Simulating Double Click](tests/58a193ec-131b-404e-b1ca-b35cf0b18c33.md)
-  * T1552.004 [ADFS token signing and encryption certificates theft - Local](tests/78e95057-d429-4e66-8f82-0f060c1ac96f.md)
-  * T1134.004 [Parent PID Spoofing - Spawn from Current Process](tests/14920ebd-1d61-491a-85e0-fe98efe37f25.md)
-  * T1134.004 [Parent PID Spoofing - Spawn from svchost.exe](tests/e9f2b777-3123-430b-805d-5cedc66ab591.md)
-  * T1497.001 [Detect Virtualization Environment via WMI Manufacturer/Model Listing (Windows)](tests/4a41089a-48e0-47aa-82cb-5b81a463bc78.md)
-  * T1218.005 [Invoke HTML Application - Direct download from URI](tests/39ceed55-f653-48ac-bd19-aceceaf525db.md)
+* posh_pm_alternate_powershell_hosts.yml
+  * T1036.003 [Masquerading - powershell.exe running as taskhostw.exe](tests/ac9d0fc3-8aa8-4ab5-b11f-682cd63b40aa.md)
+  * T1055.012 [RunPE via VBA](tests/3ad4a037-1598-4136-837c-4027e4fa319b.md)
+* posh_pm_bad_opsec_artifacts.yml
+  * T1562.002 [Kill Event Log Service Threads](tests/41ac52ba-5d5e-40c0-b267-573ed90489bd.md)
+  * T1033 [Find computers where user has session - Stealth mode (PowerView)](tests/29857f27-a36f-4f7e-8084-4557cd6207ca.md)
+  * T1558.003 [Request for service tickets](tests/3f987809-3681-43c8-bcd8-b3ff3a28533a.md)
   * T1134.001 [`SeDebugPrivilege` token duplication](tests/34f0a430-9d04-4d98-bcb5-1989f14719f0.md)
-  * T1218 [Invoke-ATHRemoteFXvGPUDisablementCommand base test](tests/9ebe7901-7edf-45c0-b5c7-8366300919db.md)
-  * T1134.004 [Parent PID Spoofing - Spawn from New Process](tests/2988133e-561c-4e42-a15f-6281e6a9b2db.md)
-  * T1218.005 [Invoke HTML Application - Jscript Engine over Local UNC Simulating Lateral Movement](tests/007e5672-2088-4853-a562-7490ddc19447.md)
   * T1134.001 [Named pipe client impersonation](tests/90db9e27-8e7c-4c04-b602-a45927884966.md)
-  * T1003.003 [Create Volume Shadow Copy with Powershell](tests/542bb97e-da53-436b-8e43-e0a7d31a6c24.md)
-  * T1218.005 [Invoke HTML Application - JScript Engine with Inline Protocol Handler](tests/d3eaaf6a-cdb1-44a9-9ede-b6c337d0d840.md)
-* posh_ps_suspicious_iofilestream.yml
-  * T1006 [Read volume boot sector via DOS device path (PowerShell)](tests/88f6327e-51ec-4bbf-b2e8-3fea534eab8b.md)
-* posh_ps_suspicious_start_process.yml
-  * T1036.003 [Masquerading - non-windows exe running as windows exe](tests/bc15c13f-d121-4b1f-8c7d-28d95854d086.md)
-  * T1036.003 [Masquerading - windows exe running as different windows exe](tests/c3d24a39-2bfe-4c6a-b064-90cd73896cb0.md)
+  * T1558.003 [Rubeus kerberoast](tests/14625569-6def-4497-99ac-8e7817105b55.md)
+  * T1558.003 [Rubeus kerberoast](tests/14625569-6def-4497-99ac-8e7817105b55.md)
+* posh_pm_clear_powershell_history.yml
+  * T1070.003 [Prevent Powershell History Logging](tests/2f898b81-3e97-4abb-bc3f-a95138988370.md)
+* posh_pm_get_clipboard.yml
+  * T1115 [Execute Commands from Clipboard using PowerShell](tests/d6dc21af-bec9-4152-be86-326b6babd416.md)
+* posh_pm_susp_athremotefxvgpudisablementcommand.yml
   * T1218 [Invoke-ATHRemoteFXvGPUDisablementCommand base test](tests/9ebe7901-7edf-45c0-b5c7-8366300919db.md)
-* posh_ps_tamper_defender.yml
-  * T1562.001 [Tamper with Windows Defender ATP PowerShell](tests/6b8df440-51ec-4d53-bf83-899591c9b5d7.md)
-* powershell\powershell_module\powershell_suspicious_invocation_specific_in_contextinfo.yml
+* posh_pm_susp_get_nettcpconnection.yml
+  * T1049 [System Network Connections Discovery with PowerShell](tests/f069f0f1-baad-4831-aa2b-eddac4baac4a.md)
+  * T1003 [Dump svchost.exe to gather RDP credentials](tests/d400090a-d8ca-4be0-982e-c70598a23de9.md)
+* posh_pm_susp_zip_compress.yml
+  * T1074.001 [Zip a Folder with PowerShell for Staging in Temp](tests/a57fbe4b-3440-452a-88a7-943531ac872a.md)
+* posh_pm_suspicious_ad_group_reco.yml
+  * T1069.002 [Enumerate Users Not Requiring Pre Auth (ASRepRoast)](tests/870ba71e-6858-4f6d-895c-bb6237f6121b.md)
+  * T1069.002 [Permission Groups Discovery PowerShell (Domain)](tests/6d5d8c96-3d2a-4da9-9d6d-9a9d341899a7.md)
+* posh_pm_suspicious_invocation_specific.yml
+  * T1059.001 [Invoke-AppPathBypass](tests/06a220b6-7e29-4bd8-9d07-5b4d86742372.md)
+  * T1547.001 [PowerShell Registry RunOnce](tests/eb44f842-0457-4ddc-9b92-c4caa144ac42.md)
+  * T1059.001 [Run Bloodhound from Memory using Download Cradle](tests/bf8c1441-4674-4dab-8e4e-39d93d08f9b7.md)
   * T1059.001 [Mimikatz](tests/f3132740-55bc-48c4-bcc0-758a459cd027.md)
-* powershell\powershell_script\powershell_web_request.yml
-  * T1204.002 [Potentially Unwanted Applications (PUA)](tests/02f35d62-9fdc-4a97-b899-a5d9a876d295.md)
-* powershell_accessing_win_api.yml
+  * T1059.001 [Obfuscation Tests](tests/4297c41a-8168-4138-972d-01f3ee92c804.md)
+  * T1003.001 [Dump LSASS.exe Memory using Out-Minidump.ps1](tests/6502c8f0-b775-4dbd-9193-1298f56b6781.md)
+  * T1003.001 [Powershell Mimikatz](tests/66fb0bc1-3c3f-47e9-a298-550ecfefacbc.md)
+* posh_pm_suspicious_local_group_reco.yml
+  * T1069.001 [Permission Groups Discovery PowerShell (Local)](tests/a580462d-2c19-4bc7-8b9a-57a41b7d3ba4.md)
+  * T1098 [Admin Account Manipulate](tests/5598f7cb-cf43-455e-883a-f6008c5d46af.md)
+  * T1087.002 [Enumerate all accounts via PowerShell (Domain)](tests/8b8a6449-be98-4f42-afd2-dedddc7453b2.md)
+  * T1098 [Domain Account and Group Manipulate](tests/a55a22e9-a3d3-42ce-bd48-2653adb8f7a9.md)
+  * T1069.001 [WMIObject Group Discovery](tests/69119e58-96db-4110-ad27-954e48f3bb13.md)
+  * T1218.005 [Mshta executes VBScript to execute malicious command](tests/906865c3-e05f-4acc-85c4-fbc185455095.md)
+  * T1087.001 [Enumerate all accounts via PowerShell (Local)](tests/ae4b6361-b5f8-46cb-a3f9-9cf108ccfe7b.md)
+* posh_pm_suspicious_smb_share_reco.yml
+  * T1070.005 [Remove Network Share PowerShell](tests/0512d214-9512-4d22-bde7-f37e058259b3.md)
+  * T1135 [Network Share Discovery PowerShell](tests/1b0814d1-bb24-402d-9615-1b20c50733fb.md)
+* posh_ps_access_to_chrome_login_data.yml
+  * T1555.003 [Simulating access to Chrome Login Data](tests/3d111226-d09a-4911-8715-fe11664f960d.md)
+* posh_ps_accessing_win_api.yml
   * T1218.005 [Invoke HTML Application - Simulate Lateral Movement over UNC Path](tests/b8a8bdb2-7eae-490d-8251-d5e0295b2362.md)
   * T1562.002 [Kill Event Log Service Threads](tests/41ac52ba-5d5e-40c0-b267-573ed90489bd.md)
   * T1218.004 [InstallUtil Install method call](tests/9f9968a6-601a-46ca-b7b7-6d4fe0f98f0b.md)
@@ -126,42 +130,97 @@
   * T1218.005 [Invoke HTML Application - JScript Engine with Inline Protocol Handler](tests/d3eaaf6a-cdb1-44a9-9ede-b6c337d0d840.md)
   * T1552.004 [ADFS token signing and encryption certificates theft - Remote](tests/cab413d8-9e4a-4b8d-9b84-c985bd73a442.md)
   * T1069.002 [Find Local Admins via Group Policy (PowerView)](tests/64fdb43b-5259-467a-b000-1b02c00e510a.md)
-* powershell_adrecon_execution.yml
+* posh_ps_adrecon_execution.yml
   * T1087.002 [Automated AD Recon (ADRecon)](tests/95018438-454a-468c-a0fa-59c800149b59.md)
-* powershell_alternate_powershell_hosts.yml
-  * T1036.003 [Masquerading - powershell.exe running as taskhostw.exe](tests/ac9d0fc3-8aa8-4ab5-b11f-682cd63b40aa.md)
-  * T1055.012 [RunPE via VBA](tests/3ad4a037-1598-4136-837c-4027e4fa319b.md)
-* powershell_automated_collection.yml
+* posh_ps_automated_collection.yml
   * T1119 [Automated Collection PowerShell](tests/634bd9b9-dc83-4229-b19f-7f83ba9ad313.md)
   * T1059.001 [PowerUp Invoke-AllChecks](tests/1289f78d-22d2-4590-ac76-166737e1811b.md)
-* powershell_bad_opsec_artifacts.yml
-  * T1562.002 [Kill Event Log Service Threads](tests/41ac52ba-5d5e-40c0-b267-573ed90489bd.md)
-  * T1033 [Find computers where user has session - Stealth mode (PowerView)](tests/29857f27-a36f-4f7e-8084-4557cd6207ca.md)
-  * T1558.003 [Request for service tickets](tests/3f987809-3681-43c8-bcd8-b3ff3a28533a.md)
-  * T1134.001 [`SeDebugPrivilege` token duplication](tests/34f0a430-9d04-4d98-bcb5-1989f14719f0.md)
-  * T1134.001 [Named pipe client impersonation](tests/90db9e27-8e7c-4c04-b602-a45927884966.md)
-  * T1558.003 [Rubeus kerberoast](tests/14625569-6def-4497-99ac-8e7817105b55.md)
-  * T1558.003 [Rubeus kerberoast](tests/14625569-6def-4497-99ac-8e7817105b55.md)
-* powershell_clear_powershell_history.yml
-  * T1070.003 [Prevent Powershell History Logging](tests/2f898b81-3e97-4abb-bc3f-a95138988370.md)
-* powershell_clearing_windows_console_history.yml
+* posh_ps_capture_screenshots.yml
+  * T1113 [Windows Screen Capture (CopyFromScreen)](tests/e9313014-985a-48ef-80d9-cde604ffc187.md)
+* posh_ps_clearing_windows_console_history.yml
   * T1070.003 [Clear Powershell History by Deleting History File](tests/da75ae8d-26d6-4483-b0fe-700e4df4f037.md)
-* powershell_create_local_user.yml
+* posh_ps_cmdlet_scheduled_task.yml
+  * T1053.005 [Powershell Cmdlet Scheduled Task](tests/af9fd58f-c4ac-4bf2-a9ba-224b71ff25fd.md)
+  * T1053.005 [WMI Invoke-CimMethod Scheduled Task](tests/e16b3b75-dc9e-4cde-a23d-dfa2d0507b3b.md)
+* posh_ps_copy_item_system32.yml
+  * T1218.005 [Invoke HTML Application - Simulate Lateral Movement over UNC Path](tests/b8a8bdb2-7eae-490d-8251-d5e0295b2362.md)
+  * T1134.004 [Parent PID Spoofing - Spawn from Specified Process](tests/cbbff285-9051-444a-9d17-c07cd2d230eb.md)
+  * T1218.005 [Invoke HTML Application - JScript Engine with Rundll32 and Inline Protocol Handler](tests/e7e3a525-7612-4d68-a5d3-c4649181b8af.md)
+  * T1059.001 [ATHPowerShellCommandLineParameter -Command parameter variations with encoded arguments](tests/1c0a870f-dc74-49cf-9afc-eccc45e58790.md)
+  * T1059.001 [ATHPowerShellCommandLineParameter -EncodedCommand parameter variations with encoded arguments](tests/0d181431-ddf3-4826-8055-2dbf63ae848b.md)
+  * T1218.005 [Invoke HTML Application - Jscript Engine Simulating Double Click](tests/58a193ec-131b-404e-b1ca-b35cf0b18c33.md)
+  * T1059.001 [ATHPowerShellCommandLineParameter -Command parameter variations](tests/686a9785-f99b-41d4-90df-66ed515f81d7.md)
+  * T1134.004 [Parent PID Spoofing - Spawn from Current Process](tests/14920ebd-1d61-491a-85e0-fe98efe37f25.md)
+  * T1134.004 [Parent PID Spoofing - Spawn from svchost.exe](tests/e9f2b777-3123-430b-805d-5cedc66ab591.md)
+  * T1218.005 [Invoke HTML Application - Direct download from URI](tests/39ceed55-f653-48ac-bd19-aceceaf525db.md)
+  * T1556.002 [Install and Register Password Filter DLL](tests/a7961770-beb5-4134-9674-83d7e1fa865c.md)
+  * T1218 [Invoke-ATHRemoteFXvGPUDisablementCommand base test](tests/9ebe7901-7edf-45c0-b5c7-8366300919db.md)
+  * T1134.004 [Parent PID Spoofing - Spawn from New Process](tests/2988133e-561c-4e42-a15f-6281e6a9b2db.md)
+  * T1218.005 [Invoke HTML Application - Jscript Engine over Local UNC Simulating Lateral Movement](tests/007e5672-2088-4853-a562-7490ddc19447.md)
+  * T1059.001 [ATHPowerShellCommandLineParameter -EncodedCommand parameter variations](tests/86a43bad-12e3-4e85-b97c-4d5cf25b95c3.md)
+  * T1218.005 [Invoke HTML Application - JScript Engine with Inline Protocol Handler](tests/d3eaaf6a-cdb1-44a9-9ede-b6c337d0d840.md)
+* posh_ps_cor_profiler.yml
+  * T1574.012 [Registry-free process scope COR_PROFILER](tests/79d57242-bbef-41db-b301-9d01d9f6e817.md)
+* posh_ps_create_local_user.yml
   * T1564 [Create an "Administrator " user (with a space on the end)](tests/5bb20389-39a5-4e99-9264-aeb92a55a85c.md)
   * T1136.001 [Create a new user in PowerShell](tests/bc8be0ac-475c-4fbf-9b1d-9fffd77afbde.md)
-* powershell_data_compressed.yml
+* posh_ps_create_volume_shadow_copy.yml
+  * T1003.003 [Create Volume Shadow Copy with Powershell](tests/542bb97e-da53-436b-8e43-e0a7d31a6c24.md)
+* posh_ps_data_compressed.yml
   * T1560 [Compress Data for Exfiltration With PowerShell](tests/41410c60-614d-4b9d-b66e-b0192dd9c597.md)
-* powershell_detect_vm_env.yml
+* posh_ps_detect_vm_env.yml
   * T1497.001 [Detect Virtualization Environment via WMI Manufacturer/Model Listing (Windows)](tests/4a41089a-48e0-47aa-82cb-5b81a463bc78.md)
   * T1497.001 [Detect Virtualization Environment (Windows)](tests/502a7dc4-9d6f-4d28-abf2-f0e84692562d.md)
-* powershell_get_clipboard.yml
-  * T1115 [Execute Commands from Clipboard using PowerShell](tests/d6dc21af-bec9-4152-be86-326b6babd416.md)
-* powershell_icmp_exfiltration.yml
+* posh_ps_directoryservices_accountmanagement.yml
+  * T1033 [Find computers where user has session - Stealth mode (PowerView)](tests/29857f27-a36f-4f7e-8084-4557cd6207ca.md)
+  * T1136.002 [Create a new Domain Account using PowerShell](tests/5a3497a4-1568-4663-b12a-d4a5ed70c7d7.md)
+* posh_ps_dump_password_windows_credential_manager.yml
+  * T1555 [Dump credentials from Windows Credential Manager With PowerShell [windows Credentials]](tests/c89becbe-1758-4e7d-a0f4-97d2188a23e3.md)
+  * T1555 [Dump credentials from Windows Credential Manager With PowerShell [web Credentials]](tests/8fd5a296-6772-4766-9991-ff4e92af7240.md)
+* posh_ps_enumerate_password_windows_credential_manager.yml
+  * T1555 [Enumerate credentials from Windows Credential Manager using vaultcmd.exe [Windows Credentials]](tests/36753ded-e5c4-4eb5-bc3c-e8fba236878d.md)
+  * T1555 [Enumerate credentials from Windows Credential Manager using vaultcmd.exe [Web Credentials]](tests/bc071188-459f-44d5-901a-f8f2625b2d2e.md)
+* posh_ps_file_and_directory_discovery.yml
+  * T1059.001 [Invoke-AppPathBypass](tests/06a220b6-7e29-4bd8-9d07-5b4d86742372.md)
+  * T1218.005 [Invoke HTML Application - Simulate Lateral Movement over UNC Path](tests/b8a8bdb2-7eae-490d-8251-d5e0295b2362.md)
+  * T1134.004 [Parent PID Spoofing - Spawn from Specified Process](tests/cbbff285-9051-444a-9d17-c07cd2d230eb.md)
+  * T1218.005 [Invoke HTML Application - JScript Engine with Rundll32 and Inline Protocol Handler](tests/e7e3a525-7612-4d68-a5d3-c4649181b8af.md)
+  * T1059.001 [ATHPowerShellCommandLineParameter -Command parameter variations with encoded arguments](tests/1c0a870f-dc74-49cf-9afc-eccc45e58790.md)
+  * T1083 [File and Directory Discovery (PowerShell)](tests/2158908e-b7ef-4c21-8a83-3ce4dd05a924.md)
+  * T1059.001 [ATHPowerShellCommandLineParameter -EncodedCommand parameter variations with encoded arguments](tests/0d181431-ddf3-4826-8055-2dbf63ae848b.md)
+  * T1033 [Find computers where user has session - Stealth mode (PowerView)](tests/29857f27-a36f-4f7e-8084-4557cd6207ca.md)
+  * T1218.005 [Invoke HTML Application - Jscript Engine Simulating Double Click](tests/58a193ec-131b-404e-b1ca-b35cf0b18c33.md)
+  * T1059.001 [ATHPowerShellCommandLineParameter -Command parameter variations](tests/686a9785-f99b-41d4-90df-66ed515f81d7.md)
+  * T1134.004 [Parent PID Spoofing - Spawn from Current Process](tests/14920ebd-1d61-491a-85e0-fe98efe37f25.md)
+  * T1134.004 [Parent PID Spoofing - Spawn from svchost.exe](tests/e9f2b777-3123-430b-805d-5cedc66ab591.md)
+  * T1218.005 [Invoke HTML Application - Direct download from URI](tests/39ceed55-f653-48ac-bd19-aceceaf525db.md)
+  * T1059.001 [PowerUp Invoke-AllChecks](tests/1289f78d-22d2-4590-ac76-166737e1811b.md)
+  * T1218 [Invoke-ATHRemoteFXvGPUDisablementCommand base test](tests/9ebe7901-7edf-45c0-b5c7-8366300919db.md)
+  * T1134.004 [Parent PID Spoofing - Spawn from New Process](tests/2988133e-561c-4e42-a15f-6281e6a9b2db.md)
+  * T1218.005 [Invoke HTML Application - Jscript Engine over Local UNC Simulating Lateral Movement](tests/007e5672-2088-4853-a562-7490ddc19447.md)
+  * T1059.001 [ATHPowerShellCommandLineParameter -EncodedCommand parameter variations](tests/86a43bad-12e3-4e85-b97c-4d5cf25b95c3.md)
+  * T1218.005 [Invoke HTML Application - JScript Engine with Inline Protocol Handler](tests/d3eaaf6a-cdb1-44a9-9ede-b6c337d0d840.md)
+  * T1562.001 [Uninstall Crowdstrike Falcon on Windows](tests/b32b1ccf-f7c1-49bc-9ddd-7d7466a7b297.md)
+* posh_ps_get_acl_service.yml
+  * T1574.011 [Service Registry Permissions Weakness](tests/f7536d63-7fd4-466f-89da-7e48d550752a.md)
+* posh_ps_get_childitem_bookmarks.yml
+  * T1217 [List Google Chrome / Opera Bookmarks on Windows with powershell](tests/faab755e-4299-48ec-8202-fc7885eb6545.md)
+* posh_ps_icmp_exfiltration.yml
   * T1048.003 [Exfiltration Over Alternative Protocol - ICMP](tests/dd4b4421-2e25-4593-90ae-7021947ad12e.md)
-* powershell_keylogging.yml
+* posh_ps_invoke_command_remote.yml
+  * T1562.002 [Kill Event Log Service Threads](tests/41ac52ba-5d5e-40c0-b267-573ed90489bd.md)
+* posh_ps_invoke_dnsexfiltration.yml
+  * T1048 [DNSExfiltration (doh)](tests/c943d285-ada3-45ca-b3aa-7cd6500c6a48.md)
+* posh_ps_keylogging.yml
   * T1059.001 [PowerShell Invoke Known Malicious Cmdlets](tests/49eb9404-5e0f-4031-a179-b40f7be385e3.md)
   * T1056.001 [Input Capture](tests/d9b633ca-8efb-45e6-b838-70f595c6ae26.md)
-* powershell_malicious_commandlets.yml
+* posh_ps_localuser.yml
+  * T1564 [Create an "Administrator " user (with a space on the end)](tests/5bb20389-39a5-4e99-9264-aeb92a55a85c.md)
+  * T1098 [Admin Account Manipulate](tests/5598f7cb-cf43-455e-883a-f6008c5d46af.md)
+  * T1552.004 [ADFS token signing and encryption certificates theft - Local](tests/78e95057-d429-4e66-8f82-0f060c1ac96f.md)
+  * T1218.005 [Mshta executes VBScript to execute malicious command](tests/906865c3-e05f-4acc-85c4-fbc185455095.md)
+  * T1552.004 [ADFS token signing and encryption certificates theft - Remote](tests/cab413d8-9e4a-4b8d-9b84-c985bd73a442.md)
+* posh_ps_malicious_commandlets.yml
   * T1562.002 [Kill Event Log Service Threads](tests/41ac52ba-5d5e-40c0-b267-573ed90489bd.md)
   * T1059.001 [Mimikatz - Cradlecraft PsSendKeys](tests/af1800cf-9f9d-4fd1-a709-14b1e6de020d.md)
   * T1003.002 [PowerDump Registry dump of SAM for hashes and usernames](tests/804f28fc-68fc-40da-b5a2-e9d0bce5c193.md)
@@ -179,7 +238,7 @@
   * T1134.001 [`SeDebugPrivilege` token duplication](tests/34f0a430-9d04-4d98-bcb5-1989f14719f0.md)
   * T1134.001 [Named pipe client impersonation](tests/90db9e27-8e7c-4c04-b602-a45927884966.md)
   * T1552.004 [ADFS token signing and encryption certificates theft - Remote](tests/cab413d8-9e4a-4b8d-9b84-c985bd73a442.md)
-* powershell_malicious_keywords.yml
+* posh_ps_malicious_keywords.yml
   * T1218.005 [Invoke HTML Application - Simulate Lateral Movement over UNC Path](tests/b8a8bdb2-7eae-490d-8251-d5e0295b2362.md)
   * T1134.004 [Parent PID Spoofing - Spawn from Specified Process](tests/cbbff285-9051-444a-9d17-c07cd2d230eb.md)
   * T1055.012 [Process Hollowing using PowerShell](tests/562427b4-39ef-4e8c-af88-463a78e70b9c.md)
@@ -216,34 +275,19 @@
   * T1059.001 [ATHPowerShellCommandLineParameter -EncodedCommand parameter variations](tests/86a43bad-12e3-4e85-b97c-4d5cf25b95c3.md)
   * T1218.005 [Invoke HTML Application - JScript Engine with Inline Protocol Handler](tests/d3eaaf6a-cdb1-44a9-9ede-b6c337d0d840.md)
   * T1069.002 [Find Local Admins via Group Policy (PowerView)](tests/64fdb43b-5259-467a-b000-1b02c00e510a.md)
-* powershell_nishang_malicious_commandlets.yml
+* posh_ps_nishang_malicious_commandlets.yml
   * T1059.001 [Mimikatz](tests/f3132740-55bc-48c4-bcc0-758a459cd027.md)
   * T1552.004 [ADFS token signing and encryption certificates theft - Local](tests/78e95057-d429-4e66-8f82-0f060c1ac96f.md)
   * T1059.001 [Obfuscation Tests](tests/4297c41a-8168-4138-972d-01f3ee92c804.md)
   * T1056.001 [Input Capture](tests/d9b633ca-8efb-45e6-b838-70f595c6ae26.md)
   * T1003.001 [Powershell Mimikatz](tests/66fb0bc1-3c3f-47e9-a298-550ecfefacbc.md)
   * T1552.004 [ADFS token signing and encryption certificates theft - Remote](tests/cab413d8-9e4a-4b8d-9b84-c985bd73a442.md)
-* powershell_ntfs_ads_access.yml
+* posh_ps_ntfs_ads_access.yml
   * T1564.004 [Create ADS PowerShell](tests/0045ea16-ed3c-4d4c-a9ee-15e44d1560d1.md)
   * T1059.001 [NTFS Alternate Data Stream Access](tests/8e5c5532-1181-4c1d-bb79-b3a9f5dbd680.md)
-* powershell_pm_susp_get_nettcpconnection.yml
-  * T1049 [System Network Connections Discovery with PowerShell](tests/f069f0f1-baad-4831-aa2b-eddac4baac4a.md)
-  * T1003 [Dump svchost.exe to gather RDP credentials](tests/d400090a-d8ca-4be0-982e-c70598a23de9.md)
-* powershell_pm_suspicious_ad_group_reco.yml
-  * T1069.002 [Enumerate Users Not Requiring Pre Auth (ASRepRoast)](tests/870ba71e-6858-4f6d-895c-bb6237f6121b.md)
-  * T1069.002 [Permission Groups Discovery PowerShell (Domain)](tests/6d5d8c96-3d2a-4da9-9d6d-9a9d341899a7.md)
-* powershell_pm_suspicious_local_group_reco.yml
-  * T1069.001 [Permission Groups Discovery PowerShell (Local)](tests/a580462d-2c19-4bc7-8b9a-57a41b7d3ba4.md)
-  * T1098 [Admin Account Manipulate](tests/5598f7cb-cf43-455e-883a-f6008c5d46af.md)
-  * T1087.002 [Enumerate all accounts via PowerShell (Domain)](tests/8b8a6449-be98-4f42-afd2-dedddc7453b2.md)
-  * T1098 [Domain Account and Group Manipulate](tests/a55a22e9-a3d3-42ce-bd48-2653adb8f7a9.md)
-  * T1069.001 [WMIObject Group Discovery](tests/69119e58-96db-4110-ad27-954e48f3bb13.md)
-  * T1218.005 [Mshta executes VBScript to execute malicious command](tests/906865c3-e05f-4acc-85c4-fbc185455095.md)
-  * T1087.001 [Enumerate all accounts via PowerShell (Local)](tests/ae4b6361-b5f8-46cb-a3f9-9cf108ccfe7b.md)
-* powershell_pm_suspicious_smb_share_reco.yml
-  * T1070.005 [Remove Network Share PowerShell](tests/0512d214-9512-4d22-bde7-f37e058259b3.md)
-  * T1135 [Network Share Discovery PowerShell](tests/1b0814d1-bb24-402d-9615-1b20c50733fb.md)
-* powershell_powerview_malicious_commandlets.yml
+* posh_ps_office_comobject_registerxll.yml
+  * T1137.006 [Code Executed Via Excel Add-in File (Xll)](tests/441b1a0f-a771-428a-8af0-e99e4698cda3.md)
+* posh_ps_powerview_malicious_commandlets.yml
   * T1482 [Powershell enumerate domains and forests](tests/c58fbc62-8a62-489e-8f2d-3565d7d96f30.md)
   * T1135 [PowerView ShareFinder](tests/d07e4cc1-98ae-447e-9d31-36cb430d28c4.md)
   * T1033 [Find computers where user has session - Stealth mode (PowerView)](tests/29857f27-a36f-4f7e-8084-4557cd6207ca.md)
@@ -251,178 +295,89 @@
   * T1110.003 [Password Spray (DomainPasswordSpray)](tests/263ae743-515f-4786-ac7d-41ef3a0d4b2b.md)
   * T1087.002 [Enumerate Active Directory for Unconstrained Delegation](tests/46f8dbe9-22a5-4770-8513-66119c5be63b.md)
   * T1558.003 [Request for service tickets](tests/3f987809-3681-43c8-bcd8-b3ff3a28533a.md)
-* powershell_prompt_credentials.yml
-  * T1056.002 [PowerShell - Prompt User for Password](tests/2b162bfd-0928-4d4c-9ec3-4d9f88374b52.md)
-* powershell_ps_access_to_chrome_login_data.yml
-  * T1555.003 [Simulating access to Chrome Login Data](tests/3d111226-d09a-4911-8715-fe11664f960d.md)
-* powershell_ps_capture_screenshots.yml
-  * T1113 [Windows Screen Capture (CopyFromScreen)](tests/e9313014-985a-48ef-80d9-cde604ffc187.md)
-* powershell_ps_cmdlet_scheduled_task.yml
-  * T1053.005 [Powershell Cmdlet Scheduled Task](tests/af9fd58f-c4ac-4bf2-a9ba-224b71ff25fd.md)
-  * T1053.005 [WMI Invoke-CimMethod Scheduled Task](tests/e16b3b75-dc9e-4cde-a23d-dfa2d0507b3b.md)
-* powershell_ps_copy_item_system32.yml
-  * T1218.005 [Invoke HTML Application - Simulate Lateral Movement over UNC Path](tests/b8a8bdb2-7eae-490d-8251-d5e0295b2362.md)
-  * T1134.004 [Parent PID Spoofing - Spawn from Specified Process](tests/cbbff285-9051-444a-9d17-c07cd2d230eb.md)
-  * T1218.005 [Invoke HTML Application - JScript Engine with Rundll32 and Inline Protocol Handler](tests/e7e3a525-7612-4d68-a5d3-c4649181b8af.md)
-  * T1059.001 [ATHPowerShellCommandLineParameter -Command parameter variations with encoded arguments](tests/1c0a870f-dc74-49cf-9afc-eccc45e58790.md)
-  * T1059.001 [ATHPowerShellCommandLineParameter -EncodedCommand parameter variations with encoded arguments](tests/0d181431-ddf3-4826-8055-2dbf63ae848b.md)
-  * T1218.005 [Invoke HTML Application - Jscript Engine Simulating Double Click](tests/58a193ec-131b-404e-b1ca-b35cf0b18c33.md)
-  * T1059.001 [ATHPowerShellCommandLineParameter -Command parameter variations](tests/686a9785-f99b-41d4-90df-66ed515f81d7.md)
-  * T1134.004 [Parent PID Spoofing - Spawn from Current Process](tests/14920ebd-1d61-491a-85e0-fe98efe37f25.md)
-  * T1134.004 [Parent PID Spoofing - Spawn from svchost.exe](tests/e9f2b777-3123-430b-805d-5cedc66ab591.md)
-  * T1218.005 [Invoke HTML Application - Direct download from URI](tests/39ceed55-f653-48ac-bd19-aceceaf525db.md)
-  * T1556.002 [Install and Register Password Filter DLL](tests/a7961770-beb5-4134-9674-83d7e1fa865c.md)
-  * T1218 [Invoke-ATHRemoteFXvGPUDisablementCommand base test](tests/9ebe7901-7edf-45c0-b5c7-8366300919db.md)
-  * T1134.004 [Parent PID Spoofing - Spawn from New Process](tests/2988133e-561c-4e42-a15f-6281e6a9b2db.md)
-  * T1218.005 [Invoke HTML Application - Jscript Engine over Local UNC Simulating Lateral Movement](tests/007e5672-2088-4853-a562-7490ddc19447.md)
-  * T1059.001 [ATHPowerShellCommandLineParameter -EncodedCommand parameter variations](tests/86a43bad-12e3-4e85-b97c-4d5cf25b95c3.md)
-  * T1218.005 [Invoke HTML Application - JScript Engine with Inline Protocol Handler](tests/d3eaaf6a-cdb1-44a9-9ede-b6c337d0d840.md)
-* powershell_ps_cor_profiler.yml
-  * T1574.012 [Registry-free process scope COR_PROFILER](tests/79d57242-bbef-41db-b301-9d01d9f6e817.md)
-* powershell_ps_directoryservices_accountmanagement.yml
-  * T1033 [Find computers where user has session - Stealth mode (PowerView)](tests/29857f27-a36f-4f7e-8084-4557cd6207ca.md)
-  * T1136.002 [Create a new Domain Account using PowerShell](tests/5a3497a4-1568-4663-b12a-d4a5ed70c7d7.md)
-* powershell_ps_dump_password_windows_credential_manager.yml
-  * T1555 [Dump credentials from Windows Credential Manager With PowerShell [windows Credentials]](tests/c89becbe-1758-4e7d-a0f4-97d2188a23e3.md)
-  * T1555 [Dump credentials from Windows Credential Manager With PowerShell [web Credentials]](tests/8fd5a296-6772-4766-9991-ff4e92af7240.md)
-* powershell_ps_enumerate_password_windows_credential_manager.yml
-  * T1555 [Enumerate credentials from Windows Credential Manager using vaultcmd.exe [Windows Credentials]](tests/36753ded-e5c4-4eb5-bc3c-e8fba236878d.md)
-  * T1555 [Enumerate credentials from Windows Credential Manager using vaultcmd.exe [Web Credentials]](tests/bc071188-459f-44d5-901a-f8f2625b2d2e.md)
-* powershell_ps_file_and_directory_discovery.yml
-  * T1218.005 [Invoke HTML Application - Simulate Lateral Movement over UNC Path](tests/b8a8bdb2-7eae-490d-8251-d5e0295b2362.md)
-  * T1134.004 [Parent PID Spoofing - Spawn from Specified Process](tests/cbbff285-9051-444a-9d17-c07cd2d230eb.md)
-  * T1218.005 [Invoke HTML Application - JScript Engine with Rundll32 and Inline Protocol Handler](tests/e7e3a525-7612-4d68-a5d3-c4649181b8af.md)
-  * T1059.001 [ATHPowerShellCommandLineParameter -Command parameter variations with encoded arguments](tests/1c0a870f-dc74-49cf-9afc-eccc45e58790.md)
-  * T1083 [File and Directory Discovery (PowerShell)](tests/2158908e-b7ef-4c21-8a83-3ce4dd05a924.md)
-  * T1059.001 [ATHPowerShellCommandLineParameter -EncodedCommand parameter variations with encoded arguments](tests/0d181431-ddf3-4826-8055-2dbf63ae848b.md)
-  * T1033 [Find computers where user has session - Stealth mode (PowerView)](tests/29857f27-a36f-4f7e-8084-4557cd6207ca.md)
-  * T1218.005 [Invoke HTML Application - Jscript Engine Simulating Double Click](tests/58a193ec-131b-404e-b1ca-b35cf0b18c33.md)
-  * T1059.001 [ATHPowerShellCommandLineParameter -Command parameter variations](tests/686a9785-f99b-41d4-90df-66ed515f81d7.md)
-  * T1134.004 [Parent PID Spoofing - Spawn from Current Process](tests/14920ebd-1d61-491a-85e0-fe98efe37f25.md)
-  * T1134.004 [Parent PID Spoofing - Spawn from svchost.exe](tests/e9f2b777-3123-430b-805d-5cedc66ab591.md)
-  * T1218.005 [Invoke HTML Application - Direct download from URI](tests/39ceed55-f653-48ac-bd19-aceceaf525db.md)
-  * T1059.001 [PowerUp Invoke-AllChecks](tests/1289f78d-22d2-4590-ac76-166737e1811b.md)
-  * T1218 [Invoke-ATHRemoteFXvGPUDisablementCommand base test](tests/9ebe7901-7edf-45c0-b5c7-8366300919db.md)
-  * T1134.004 [Parent PID Spoofing - Spawn from New Process](tests/2988133e-561c-4e42-a15f-6281e6a9b2db.md)
-  * T1218.005 [Invoke HTML Application - Jscript Engine over Local UNC Simulating Lateral Movement](tests/007e5672-2088-4853-a562-7490ddc19447.md)
-  * T1059.001 [ATHPowerShellCommandLineParameter -EncodedCommand parameter variations](tests/86a43bad-12e3-4e85-b97c-4d5cf25b95c3.md)
-  * T1218.005 [Invoke HTML Application - JScript Engine with Inline Protocol Handler](tests/d3eaaf6a-cdb1-44a9-9ede-b6c337d0d840.md)
-  * T1562.001 [Uninstall Crowdstrike Falcon on Windows](tests/b32b1ccf-f7c1-49bc-9ddd-7d7466a7b297.md)
-* powershell_ps_get-childItem_bookmarks.yml
-  * T1217 [List Google Chrome / Opera Bookmarks on Windows with powershell](tests/faab755e-4299-48ec-8202-fc7885eb6545.md)
-* powershell_ps_get_acl_service.yml
-  * T1574.011 [Service Registry Permissions Weakness](tests/f7536d63-7fd4-466f-89da-7e48d550752a.md)
-* powershell_ps_invoke_command_remote.yml
-  * T1562.002 [Kill Event Log Service Threads](tests/41ac52ba-5d5e-40c0-b267-573ed90489bd.md)
-* powershell_ps_invoke_dnsexfiltration.yml
-  * T1048 [DNSExfiltration (doh)](tests/c943d285-ada3-45ca-b3aa-7cd6500c6a48.md)
-* powershell_ps_localuser.yml
-  * T1564 [Create an "Administrator " user (with a space on the end)](tests/5bb20389-39a5-4e99-9264-aeb92a55a85c.md)
-  * T1098 [Admin Account Manipulate](tests/5598f7cb-cf43-455e-883a-f6008c5d46af.md)
-  * T1552.004 [ADFS token signing and encryption certificates theft - Local](tests/78e95057-d429-4e66-8f82-0f060c1ac96f.md)
-  * T1218.005 [Mshta executes VBScript to execute malicious command](tests/906865c3-e05f-4acc-85c4-fbc185455095.md)
   * T1552.004 [ADFS token signing and encryption certificates theft - Remote](tests/cab413d8-9e4a-4b8d-9b84-c985bd73a442.md)
-* powershell_ps_office_comobject_registerxll.yml
-  * T1137.006 [Code Executed Via Excel Add-in File (Xll)](tests/441b1a0f-a771-428a-8af0-e99e4698cda3.md)
-* powershell_ps_request_kerberos_ticket.yml
+* posh_ps_prompt_credentials.yml
+  * T1056.002 [PowerShell - Prompt User for Password](tests/2b162bfd-0928-4d4c-9ec3-4d9f88374b52.md)
+* posh_ps_remote_session_creation.yml
+  * T1059.001 [PowerShell Session Creation and Use](tests/7c1acec2-78fa-4305-a3e0-db2a54cddecd.md)
+* posh_ps_remove_item_path.yml
+  * T1059.001 [Invoke-AppPathBypass](tests/06a220b6-7e29-4bd8-9d07-5b4d86742372.md)
+  * T1562.001 [AMSI Bypass - Remove AMSI Provider Reg Key](tests/13f09b91-c953-438e-845b-b585e51cac9b.md)
+  * T1070.004 [Delete Prefetch File](tests/36f96049-0ad7-4a5f-8418-460acaeb92fb.md)
+  * T1552.004 [ADFS token signing and encryption certificates theft - Local](tests/78e95057-d429-4e66-8f82-0f060c1ac96f.md)
+  * T1070.004 [Delete an entire folder - Windows PowerShell](tests/edd779e4-a509-4cba-8dfa-a112543dbfb1.md)
+  * T1218 [Invoke-ATHRemoteFXvGPUDisablementCommand base test](tests/9ebe7901-7edf-45c0-b5c7-8366300919db.md)
+  * T1059.001 [PowerShell Session Creation and Use](tests/7c1acec2-78fa-4305-a3e0-db2a54cddecd.md)
+  * T1070.004 [Delete a single file - Windows PowerShell](tests/9dee89bd-9a98-4c4f-9e2d-4256690b0e72.md)
+* posh_ps_request_kerberos_ticket.yml
   * T1033 [Find computers where user has session - Stealth mode (PowerView)](tests/29857f27-a36f-4f7e-8084-4557cd6207ca.md)
   * T1558.003 [Request A Single Ticket via PowerShell](tests/988539bc-2ed7-4e62-aec6-7c5cf6680863.md)
-* powershell_ps_security_software_discovery.yml
+* posh_ps_root_certificate_installed.yml
+  * T1553.004 [Install root CA on Windows](tests/76f49d86-5eb1-461a-a032-a480f86652f1.md)
+* posh_ps_security_software_discovery.yml
   * T1518.001 [Security Software Discovery - powershell](tests/7f566051-f033-49fb-89de-b6bacab730f0.md)
-* powershell_ps_send_mailmessage.yml
+* posh_ps_send_mailmessage.yml
   * T1552.004 [ADFS token signing and encryption certificates theft - Local](tests/78e95057-d429-4e66-8f82-0f060c1ac96f.md)
   * T1048.003 [Exfiltration Over Alternative Protocol - SMTP](tests/ec3a835e-adca-4c7c-88d2-853b69c11bb9.md)
   * T1027 [DLP Evasion via Sensitive Data in VBA Macro over email](tests/129edb75-d7b8-42cd-a8ba-1f3db64ec4ad.md)
-* powershell_ps_susp_remove_adgroupmember.yml
-  * T1531 [Remove Account From Domain Admin Group](tests/43f71395-6c37-498e-ab17-897d814a0947.md)
-* powershell_ps_susp_wallpaper.yml
-  * T1491.001 [Replace Desktop Wallpaper](tests/30558d53-9d76-41c4-9267-a7bd5184bed3.md)
-* powershell_ps_susp_win32_shadowcopy.yml
-  * T1490 [Windows - Delete Volume Shadow Copies via WMI with PowerShell](tests/39a295ca-7059-4a88-86f6-09556c1211e7.md)
-  * T1489 [Windows - Stop service by killing process](tests/f3191b84-c38b-400b-867e-3a217a27795f.md)
-* powershell_ps_suspicious_ad_group_reco.yml
-  * T1069.002 [Enumerate Users Not Requiring Pre Auth (ASRepRoast)](tests/870ba71e-6858-4f6d-895c-bb6237f6121b.md)
-  * T1069.002 [Permission Groups Discovery PowerShell (Domain)](tests/6d5d8c96-3d2a-4da9-9d6d-9a9d341899a7.md)
-* powershell_ps_suspicious_local_group_reco.yml
-  * T1069.001 [Permission Groups Discovery PowerShell (Local)](tests/a580462d-2c19-4bc7-8b9a-57a41b7d3ba4.md)
-  * T1098 [Admin Account Manipulate](tests/5598f7cb-cf43-455e-883a-f6008c5d46af.md)
-  * T1087.002 [Enumerate all accounts via PowerShell (Domain)](tests/8b8a6449-be98-4f42-afd2-dedddc7453b2.md)
-  * T1069.001 [WMIObject Group Discovery](tests/69119e58-96db-4110-ad27-954e48f3bb13.md)
-  * T1218.005 [Mshta executes VBScript to execute malicious command](tests/906865c3-e05f-4acc-85c4-fbc185455095.md)
-  * T1087.001 [Enumerate all accounts via PowerShell (Local)](tests/ae4b6361-b5f8-46cb-a3f9-9cf108ccfe7b.md)
-* powershell_ps_suspicious_networkcredential.yml
-  * T1218.005 [Invoke HTML Application - Simulate Lateral Movement over UNC Path](tests/b8a8bdb2-7eae-490d-8251-d5e0295b2362.md)
-  * T1134.004 [Parent PID Spoofing - Spawn from Specified Process](tests/cbbff285-9051-444a-9d17-c07cd2d230eb.md)
-  * T1110.001 [Brute Force Credentials of single Active Directory domain user via LDAP against domain controller (NTLM or Kerberos)](tests/c2969434-672b-4ec8-8df0-bbb91f40e250.md)
-  * T1218.005 [Invoke HTML Application - JScript Engine with Rundll32 and Inline Protocol Handler](tests/e7e3a525-7612-4d68-a5d3-c4649181b8af.md)
-  * T1059.001 [ATHPowerShellCommandLineParameter -Command parameter variations with encoded arguments](tests/1c0a870f-dc74-49cf-9afc-eccc45e58790.md)
-  * T1059.001 [ATHPowerShellCommandLineParameter -EncodedCommand parameter variations with encoded arguments](tests/0d181431-ddf3-4826-8055-2dbf63ae848b.md)
-  * T1218.005 [Invoke HTML Application - Jscript Engine Simulating Double Click](tests/58a193ec-131b-404e-b1ca-b35cf0b18c33.md)
-  * T1059.001 [ATHPowerShellCommandLineParameter -Command parameter variations](tests/686a9785-f99b-41d4-90df-66ed515f81d7.md)
-  * T1134.004 [Parent PID Spoofing - Spawn from Current Process](tests/14920ebd-1d61-491a-85e0-fe98efe37f25.md)
-  * T1134.004 [Parent PID Spoofing - Spawn from svchost.exe](tests/e9f2b777-3123-430b-805d-5cedc66ab591.md)
-  * T1218.005 [Invoke HTML Application - Direct download from URI](tests/39ceed55-f653-48ac-bd19-aceceaf525db.md)
-  * T1218 [Invoke-ATHRemoteFXvGPUDisablementCommand base test](tests/9ebe7901-7edf-45c0-b5c7-8366300919db.md)
-  * T1134.004 [Parent PID Spoofing - Spawn from New Process](tests/2988133e-561c-4e42-a15f-6281e6a9b2db.md)
-  * T1110.003 [Password spray all Active Directory domain users with a single password via LDAP against domain controller (NTLM or Kerberos)](tests/f14d956a-5b6e-4a93-847f-0c415142f07d.md)
-  * T1218.005 [Invoke HTML Application - Jscript Engine over Local UNC Simulating Lateral Movement](tests/007e5672-2088-4853-a562-7490ddc19447.md)
-  * T1059.001 [ATHPowerShellCommandLineParameter -EncodedCommand parameter variations](tests/86a43bad-12e3-4e85-b97c-4d5cf25b95c3.md)
-  * T1218.005 [Invoke HTML Application - JScript Engine with Inline Protocol Handler](tests/d3eaaf6a-cdb1-44a9-9ede-b6c337d0d840.md)
-* powershell_ps_suspicious_new_psdrive.yml
-  * T1021.002 [Map Admin Share PowerShell](tests/514e9cd7-9207-4882-98b1-c8f791bae3c5.md)
-* powershell_ps_suspicious_smb_share_reco.yml
-  * T1070.005 [Remove Network Share PowerShell](tests/0512d214-9512-4d22-bde7-f37e058259b3.md)
-  * T1135 [Network Share Discovery PowerShell](tests/1b0814d1-bb24-402d-9615-1b20c50733fb.md)
-* powershell_ps_upload.yml
-  * T1552.004 [ADFS token signing and encryption certificates theft - Local](tests/78e95057-d429-4e66-8f82-0f060c1ac96f.md)
-  * T1027 [DLP Evasion via Sensitive Data in VBA Macro over HTTP](tests/e2d85e66-cb66-4ed7-93b1-833fc56c9319.md)
-  * T1048.003 [Exfiltration Over Alternative Protocol - HTTP](tests/6aa58451-1121-4490-a8e9-1dada3f1c68c.md)
-  * T1020 [IcedID Botnet HTTP PUT](tests/9c780d3d-3a14-4278-8ee5-faaeb2ccfbe0.md)
-  * T1041 [C2 Data Exfiltration](tests/d1253f6e-c29b-49dc-b466-2147a6191932.md)
-* powershell_script\powershell_powerview_malicious_commandlets.yml
-  * T1552.004 [ADFS token signing and encryption certificates theft - Remote](tests/cab413d8-9e4a-4b8d-9b84-c985bd73a442.md)
-* powershell_script\powershell_suspicious_keywords.yml
-  * T1056.001 [Input Capture](tests/d9b633ca-8efb-45e6-b838-70f595c6ae26.md)
-* powershell_script\powershell_suspicious_recon.yml
-  * T1119 [Recon information for export with PowerShell](tests/c3f6d794-50dd-482f-b640-0384fbb7db26.md)
-* powershell_set_policies_to_unsecure_level.yml
+* posh_ps_set_policies_to_unsecure_level.yml
   * T1003.002 [PowerDump Registry dump of SAM for hashes and usernames](tests/804f28fc-68fc-40da-b5a2-e9d0bce5c193.md)
   * T1134.002 [Access Token Manipulation](tests/dbf4f5a9-b8e0-46a3-9841-9ad71247239e.md)
   * T1112 [Change Powershell Execution Policy to Bypass](tests/f3a6cceb-06c9-48e5-8df8-8867a6814245.md)
-* powershell_shellintel_malicious_commandlets.yml
+* posh_ps_shellintel_malicious_commandlets.yml
   * T1059.001 [PowerShell Invoke Known Malicious Cmdlets](tests/49eb9404-5e0f-4031-a179-b40f7be385e3.md)
   * T1003.001 [Dump LSASS.exe Memory using Out-Minidump.ps1](tests/6502c8f0-b775-4dbd-9193-1298f56b6781.md)
-* powershell_software_discovery.yml
+* posh_ps_software_discovery.yml
   * T1518 [Applications Installed](tests/c49978f6-bd6e-4221-ad2c-9e3e30cc1e3b.md)
-* powershell_store_file_in_alternate_data_stream.yml
+* posh_ps_store_file_in_alternate_data_stream.yml
   * T1564.004 [Store file in Alternate Data Stream (ADS)](tests/2ab75061-f5d5-4c1a-b666-ba2a50df5b02.md)
-* powershell_susp_athremotefxvgpudisablementcommand.yml
-  * T1218 [Invoke-ATHRemoteFXvGPUDisablementCommand base test](tests/9ebe7901-7edf-45c0-b5c7-8366300919db.md)
-* powershell_susp_zip_compress.yml
+* posh_ps_susp_remove_adgroupmember.yml
+  * T1531 [Remove Account From Domain Admin Group](tests/43f71395-6c37-498e-ab17-897d814a0947.md)
+* posh_ps_susp_wallpaper.yml
+  * T1491.001 [Replace Desktop Wallpaper](tests/30558d53-9d76-41c4-9267-a7bd5184bed3.md)
+* posh_ps_susp_win32_shadowcopy.yml
+  * T1490 [Windows - Delete Volume Shadow Copies via WMI with PowerShell](tests/39a295ca-7059-4a88-86f6-09556c1211e7.md)
+  * T1489 [Windows - Stop service by killing process](tests/f3191b84-c38b-400b-867e-3a217a27795f.md)
+* posh_ps_susp_zip_compress.yml
   * T1074.001 [Zip a Folder with PowerShell for Staging in Temp](tests/a57fbe4b-3440-452a-88a7-943531ac872a.md)
-* powershell_susp_zip_compress_in_scriptblocktext.yml
-  * T1074.001 [Zip a Folder with PowerShell for Staging in Temp](tests/a57fbe4b-3440-452a-88a7-943531ac872a.md)
-* powershell_suspicious_export_pfxcertificate.yml
+* posh_ps_suspicious_ad_group_reco.yml
+  * T1069.002 [Enumerate Users Not Requiring Pre Auth (ASRepRoast)](tests/870ba71e-6858-4f6d-895c-bb6237f6121b.md)
+  * T1069.002 [Permission Groups Discovery PowerShell (Domain)](tests/6d5d8c96-3d2a-4da9-9d6d-9a9d341899a7.md)
+* posh_ps_suspicious_export_pfxcertificate.yml
   * T1552.004 [ADFS token signing and encryption certificates theft - Local](tests/78e95057-d429-4e66-8f82-0f060c1ac96f.md)
-* powershell_suspicious_extracting.yml
+* posh_ps_suspicious_extracting.yml
   * T1552.001 [Extracting passwords with findstr](tests/0e56bf29-ff49-4ea5-9af4-3b81283fd513.md)
-* powershell_suspicious_getprocess_lsass.yml
+* posh_ps_suspicious_getprocess_lsass.yml
   * T1134.002 [Access Token Manipulation](tests/dbf4f5a9-b8e0-46a3-9841-9ad71247239e.md)
   * T1003.001 [Dump LSASS.exe Memory using Out-Minidump.ps1](tests/6502c8f0-b775-4dbd-9193-1298f56b6781.md)
   * T1003.001 [Dump LSASS.exe Memory using comsvcs.dll](tests/2536dee2-12fb-459a-8c37-971844fa73be.md)
-* powershell_suspicious_invocation_specific_in_contextinfo.yml
-  * T1547.001 [PowerShell Registry RunOnce](tests/eb44f842-0457-4ddc-9b92-c4caa144ac42.md)
-  * T1059.001 [Run Bloodhound from Memory using Download Cradle](tests/bf8c1441-4674-4dab-8e4e-39d93d08f9b7.md)
-  * T1059.001 [Obfuscation Tests](tests/4297c41a-8168-4138-972d-01f3ee92c804.md)
-  * T1003.001 [Dump LSASS.exe Memory using Out-Minidump.ps1](tests/6502c8f0-b775-4dbd-9193-1298f56b6781.md)
-  * T1003.001 [Powershell Mimikatz](tests/66fb0bc1-3c3f-47e9-a298-550ecfefacbc.md)
-* powershell_suspicious_invocation_specific_in_scripblocktext.yml
+* posh_ps_suspicious_gwmi.yml
+  * T1218.005 [Invoke HTML Application - Simulate Lateral Movement over UNC Path](tests/b8a8bdb2-7eae-490d-8251-d5e0295b2362.md)
+  * T1134.004 [Parent PID Spoofing - Spawn from Specified Process](tests/cbbff285-9051-444a-9d17-c07cd2d230eb.md)
+  * T1218.005 [Invoke HTML Application - JScript Engine with Rundll32 and Inline Protocol Handler](tests/e7e3a525-7612-4d68-a5d3-c4649181b8af.md)
+  * T1218.005 [Invoke HTML Application - Jscript Engine Simulating Double Click](tests/58a193ec-131b-404e-b1ca-b35cf0b18c33.md)
+  * T1552.004 [ADFS token signing and encryption certificates theft - Local](tests/78e95057-d429-4e66-8f82-0f060c1ac96f.md)
+  * T1134.004 [Parent PID Spoofing - Spawn from Current Process](tests/14920ebd-1d61-491a-85e0-fe98efe37f25.md)
+  * T1134.004 [Parent PID Spoofing - Spawn from svchost.exe](tests/e9f2b777-3123-430b-805d-5cedc66ab591.md)
+  * T1497.001 [Detect Virtualization Environment via WMI Manufacturer/Model Listing (Windows)](tests/4a41089a-48e0-47aa-82cb-5b81a463bc78.md)
+  * T1218.005 [Invoke HTML Application - Direct download from URI](tests/39ceed55-f653-48ac-bd19-aceceaf525db.md)
+  * T1134.001 [`SeDebugPrivilege` token duplication](tests/34f0a430-9d04-4d98-bcb5-1989f14719f0.md)
+  * T1218 [Invoke-ATHRemoteFXvGPUDisablementCommand base test](tests/9ebe7901-7edf-45c0-b5c7-8366300919db.md)
+  * T1134.004 [Parent PID Spoofing - Spawn from New Process](tests/2988133e-561c-4e42-a15f-6281e6a9b2db.md)
+  * T1218.005 [Invoke HTML Application - Jscript Engine over Local UNC Simulating Lateral Movement](tests/007e5672-2088-4853-a562-7490ddc19447.md)
+  * T1134.001 [Named pipe client impersonation](tests/90db9e27-8e7c-4c04-b602-a45927884966.md)
+  * T1003.003 [Create Volume Shadow Copy with Powershell](tests/542bb97e-da53-436b-8e43-e0a7d31a6c24.md)
+  * T1218.005 [Invoke HTML Application - JScript Engine with Inline Protocol Handler](tests/d3eaaf6a-cdb1-44a9-9ede-b6c337d0d840.md)
+* posh_ps_suspicious_invocation_specific.yml
+  * T1059.001 [Invoke-AppPathBypass](tests/06a220b6-7e29-4bd8-9d07-5b4d86742372.md)
   * T1547.001 [PowerShell Registry RunOnce](tests/eb44f842-0457-4ddc-9b92-c4caa144ac42.md)
   * T1059.001 [Run Bloodhound from Memory using Download Cradle](tests/bf8c1441-4674-4dab-8e4e-39d93d08f9b7.md)
   * T1059.001 [Mimikatz](tests/f3132740-55bc-48c4-bcc0-758a459cd027.md)
   * T1059.001 [Obfuscation Tests](tests/4297c41a-8168-4138-972d-01f3ee92c804.md)
   * T1003.001 [Dump LSASS.exe Memory using Out-Minidump.ps1](tests/6502c8f0-b775-4dbd-9193-1298f56b6781.md)
-* powershell_suspicious_keywords.yml
+* posh_ps_suspicious_iofilestream.yml
+  * T1006 [Read volume boot sector via DOS device path (PowerShell)](tests/88f6327e-51ec-4bbf-b2e8-3fea534eab8b.md)
+* posh_ps_suspicious_keywords.yml
   * T1218.005 [Invoke HTML Application - Simulate Lateral Movement over UNC Path](tests/b8a8bdb2-7eae-490d-8251-d5e0295b2362.md)
   * T1562.002 [Kill Event Log Service Threads](tests/41ac52ba-5d5e-40c0-b267-573ed90489bd.md)
   * T1134.004 [Parent PID Spoofing - Spawn from Specified Process](tests/cbbff285-9051-444a-9d17-c07cd2d230eb.md)
@@ -441,6 +396,7 @@
   * T1003.001 [Dump LSASS.exe Memory using comsvcs.dll](tests/2536dee2-12fb-459a-8c37-971844fa73be.md)
   * T1134.004 [Parent PID Spoofing - Spawn from svchost.exe](tests/e9f2b777-3123-430b-805d-5cedc66ab591.md)
   * T1218.005 [Invoke HTML Application - Direct download from URI](tests/39ceed55-f653-48ac-bd19-aceceaf525db.md)
+  * T1056.001 [Input Capture](tests/d9b633ca-8efb-45e6-b838-70f595c6ae26.md)
   * T1003.001 [Powershell Mimikatz](tests/66fb0bc1-3c3f-47e9-a298-550ecfefacbc.md)
   * T1059.001 [PowerUp Invoke-AllChecks](tests/1289f78d-22d2-4590-ac76-166737e1811b.md)
   * T1134.001 [`SeDebugPrivilege` token duplication](tests/34f0a430-9d04-4d98-bcb5-1989f14719f0.md)
@@ -453,13 +409,49 @@
   * T1134.001 [Named pipe client impersonation](tests/90db9e27-8e7c-4c04-b602-a45927884966.md)
   * T1059.001 [ATHPowerShellCommandLineParameter -EncodedCommand parameter variations](tests/86a43bad-12e3-4e85-b97c-4d5cf25b95c3.md)
   * T1218.005 [Invoke HTML Application - JScript Engine with Inline Protocol Handler](tests/d3eaaf6a-cdb1-44a9-9ede-b6c337d0d840.md)
-* powershell_suspicious_mail_acces.yml
+* posh_ps_suspicious_local_group_reco.yml
+  * T1069.001 [Permission Groups Discovery PowerShell (Local)](tests/a580462d-2c19-4bc7-8b9a-57a41b7d3ba4.md)
+  * T1098 [Admin Account Manipulate](tests/5598f7cb-cf43-455e-883a-f6008c5d46af.md)
+  * T1087.002 [Enumerate all accounts via PowerShell (Domain)](tests/8b8a6449-be98-4f42-afd2-dedddc7453b2.md)
+  * T1069.001 [WMIObject Group Discovery](tests/69119e58-96db-4110-ad27-954e48f3bb13.md)
+  * T1218.005 [Mshta executes VBScript to execute malicious command](tests/906865c3-e05f-4acc-85c4-fbc185455095.md)
+  * T1087.001 [Enumerate all accounts via PowerShell (Local)](tests/ae4b6361-b5f8-46cb-a3f9-9cf108ccfe7b.md)
+* posh_ps_suspicious_mail_acces.yml
   * T1114.001 [Email Collection with PowerShell Get-Inbox](tests/3f1b5096-0139-4736-9b78-19bcb02bb1cb.md)
-* powershell_suspicious_mounted_share_deletion.yml
+* posh_ps_suspicious_mounted_share_deletion.yml
   * T1070.005 [Remove Network Share PowerShell](tests/0512d214-9512-4d22-bde7-f37e058259b3.md)
-* powershell_suspicious_win32_pnpentity.yml
+* posh_ps_suspicious_networkcredential.yml
+  * T1218.005 [Invoke HTML Application - Simulate Lateral Movement over UNC Path](tests/b8a8bdb2-7eae-490d-8251-d5e0295b2362.md)
+  * T1134.004 [Parent PID Spoofing - Spawn from Specified Process](tests/cbbff285-9051-444a-9d17-c07cd2d230eb.md)
+  * T1110.001 [Brute Force Credentials of single Active Directory domain user via LDAP against domain controller (NTLM or Kerberos)](tests/c2969434-672b-4ec8-8df0-bbb91f40e250.md)
+  * T1218.005 [Invoke HTML Application - JScript Engine with Rundll32 and Inline Protocol Handler](tests/e7e3a525-7612-4d68-a5d3-c4649181b8af.md)
+  * T1059.001 [ATHPowerShellCommandLineParameter -Command parameter variations with encoded arguments](tests/1c0a870f-dc74-49cf-9afc-eccc45e58790.md)
+  * T1059.001 [ATHPowerShellCommandLineParameter -EncodedCommand parameter variations with encoded arguments](tests/0d181431-ddf3-4826-8055-2dbf63ae848b.md)
+  * T1218.005 [Invoke HTML Application - Jscript Engine Simulating Double Click](tests/58a193ec-131b-404e-b1ca-b35cf0b18c33.md)
+  * T1059.001 [ATHPowerShellCommandLineParameter -Command parameter variations](tests/686a9785-f99b-41d4-90df-66ed515f81d7.md)
+  * T1134.004 [Parent PID Spoofing - Spawn from Current Process](tests/14920ebd-1d61-491a-85e0-fe98efe37f25.md)
+  * T1134.004 [Parent PID Spoofing - Spawn from svchost.exe](tests/e9f2b777-3123-430b-805d-5cedc66ab591.md)
+  * T1218.005 [Invoke HTML Application - Direct download from URI](tests/39ceed55-f653-48ac-bd19-aceceaf525db.md)
+  * T1218 [Invoke-ATHRemoteFXvGPUDisablementCommand base test](tests/9ebe7901-7edf-45c0-b5c7-8366300919db.md)
+  * T1134.004 [Parent PID Spoofing - Spawn from New Process](tests/2988133e-561c-4e42-a15f-6281e6a9b2db.md)
+  * T1110.003 [Password spray all Active Directory domain users with a single password via LDAP against domain controller (NTLM or Kerberos)](tests/f14d956a-5b6e-4a93-847f-0c415142f07d.md)
+  * T1218.005 [Invoke HTML Application - Jscript Engine over Local UNC Simulating Lateral Movement](tests/007e5672-2088-4853-a562-7490ddc19447.md)
+  * T1059.001 [ATHPowerShellCommandLineParameter -EncodedCommand parameter variations](tests/86a43bad-12e3-4e85-b97c-4d5cf25b95c3.md)
+  * T1218.005 [Invoke HTML Application - JScript Engine with Inline Protocol Handler](tests/d3eaaf6a-cdb1-44a9-9ede-b6c337d0d840.md)
+* posh_ps_suspicious_new_psdrive.yml
+  * T1021.002 [Map Admin Share PowerShell](tests/514e9cd7-9207-4882-98b1-c8f791bae3c5.md)
+* posh_ps_suspicious_recon.yml
+  * T1119 [Recon information for export with PowerShell](tests/c3f6d794-50dd-482f-b640-0384fbb7db26.md)
+* posh_ps_suspicious_smb_share_reco.yml
+  * T1070.005 [Remove Network Share PowerShell](tests/0512d214-9512-4d22-bde7-f37e058259b3.md)
+  * T1135 [Network Share Discovery PowerShell](tests/1b0814d1-bb24-402d-9615-1b20c50733fb.md)
+* posh_ps_suspicious_start_process.yml
+  * T1036.003 [Masquerading - non-windows exe running as windows exe](tests/bc15c13f-d121-4b1f-8c7d-28d95854d086.md)
+  * T1036.003 [Masquerading - windows exe running as different windows exe](tests/c3d24a39-2bfe-4c6a-b064-90cd73896cb0.md)
+  * T1218 [Invoke-ATHRemoteFXvGPUDisablementCommand base test](tests/9ebe7901-7edf-45c0-b5c7-8366300919db.md)
+* posh_ps_suspicious_win32_pnpentity.yml
   * T1120 [Win32_PnPEntity Hardware Inventory](tests/2cb4dbf2-2dca-4597-8678-4d39d207a3a5.md)
-* powershell_suspicious_windowstyle.yml
+* posh_ps_suspicious_windowstyle.yml
   * T1218.005 [Invoke HTML Application - Simulate Lateral Movement over UNC Path](tests/b8a8bdb2-7eae-490d-8251-d5e0295b2362.md)
   * T1134.004 [Parent PID Spoofing - Spawn from Specified Process](tests/cbbff285-9051-444a-9d17-c07cd2d230eb.md)
   * T1218.005 [Invoke HTML Application - JScript Engine with Rundll32 and Inline Protocol Handler](tests/e7e3a525-7612-4d68-a5d3-c4649181b8af.md)
@@ -482,13 +474,22 @@
   * T1218.005 [Invoke HTML Application - Jscript Engine over Local UNC Simulating Lateral Movement](tests/007e5672-2088-4853-a562-7490ddc19447.md)
   * T1059.001 [ATHPowerShellCommandLineParameter -EncodedCommand parameter variations](tests/86a43bad-12e3-4e85-b97c-4d5cf25b95c3.md)
   * T1218.005 [Invoke HTML Application - JScript Engine with Inline Protocol Handler](tests/d3eaaf6a-cdb1-44a9-9ede-b6c337d0d840.md)
-* powershell_timestomp.yml
+* posh_ps_tamper_defender.yml
+  * T1562.001 [Tamper with Windows Defender ATP PowerShell](tests/6b8df440-51ec-4d53-bf83-899591c9b5d7.md)
+* posh_ps_timestomp.yml
   * T1070.006 [Windows - Modify file last access timestamp with PowerShell](tests/da627f63-b9bd-4431-b6f8-c5b44d061a62.md)
   * T1070.006 [Windows - Modify file creation timestamp with PowerShell](tests/b3b2c408-2ff0-4a33-b89b-1cb46a9e6a9c.md)
   * T1070.006 [Windows - Modify file last modified timestamp with PowerShell](tests/f8f6634d-93e1-4238-8510-f8a90a20dcf2.md)
-* powershell_trigger_profiles.yml
+* posh_ps_trigger_profiles.yml
   * T1546.013 [Append malicious start-process cmdlet](tests/090e5aa5-32b6-473b-a49b-21e843a56896.md)
-* powershell_web_request.yml
+* posh_ps_upload.yml
+  * T1552.004 [ADFS token signing and encryption certificates theft - Local](tests/78e95057-d429-4e66-8f82-0f060c1ac96f.md)
+  * T1027 [DLP Evasion via Sensitive Data in VBA Macro over HTTP](tests/e2d85e66-cb66-4ed7-93b1-833fc56c9319.md)
+  * T1048.003 [Exfiltration Over Alternative Protocol - HTTP](tests/6aa58451-1121-4490-a8e9-1dada3f1c68c.md)
+  * T1020 [IcedID Botnet HTTP PUT](tests/9c780d3d-3a14-4278-8ee5-faaeb2ccfbe0.md)
+  * T1041 [C2 Data Exfiltration](tests/d1253f6e-c29b-49dc-b466-2147a6191932.md)
+* posh_ps_web_request.yml
+  * T1059.001 [Invoke-AppPathBypass](tests/06a220b6-7e29-4bd8-9d07-5b4d86742372.md)
   * T1491.001 [Replace Desktop Wallpaper](tests/30558d53-9d76-41c4-9267-a7bd5184bed3.md)
   * T1059.001 [Run Bloodhound from Memory using Download Cradle](tests/bf8c1441-4674-4dab-8e4e-39d93d08f9b7.md)
   * T1003.002 [PowerDump Registry dump of SAM for hashes and usernames](tests/804f28fc-68fc-40da-b5a2-e9d0bce5c193.md)
@@ -501,26 +502,17 @@
   * T1218.005 [Mshta Executes Remote HTML Application (HTA)](tests/c4b97eeb-5249-4455-a607-59f95485cb45.md)
   * T1027 [DLP Evasion via Sensitive Data in VBA Macro over HTTP](tests/e2d85e66-cb66-4ed7-93b1-833fc56c9319.md)
   * T1059.001 [PowerUp Invoke-AllChecks](tests/1289f78d-22d2-4590-ac76-166737e1811b.md)
+  * T1204.002 [Potentially Unwanted Applications (PUA)](tests/02f35d62-9fdc-4a97-b899-a5d9a876d295.md)
   * T1048.003 [Exfiltration Over Alternative Protocol - HTTP](tests/6aa58451-1121-4490-a8e9-1dada3f1c68c.md)
   * T1020 [IcedID Botnet HTTP PUT](tests/9c780d3d-3a14-4278-8ee5-faaeb2ccfbe0.md)
   * T1041 [C2 Data Exfiltration](tests/d1253f6e-c29b-49dc-b466-2147a6191932.md)
   * T1552.004 [ADFS token signing and encryption certificates theft - Remote](tests/cab413d8-9e4a-4b8d-9b84-c985bd73a442.md)
-* powershell_winlogon_helper_dll.yml
+* posh_ps_winlogon_helper_dll.yml
   * T1547.004 [Winlogon Userinit Key Persistence - PowerShell](tests/fb32c935-ee2e-454b-8fa3-1c46b42e8dfb.md)
   * T1547.004 [Winlogon Shell Key Persistence - PowerShell](tests/bf9f9d65-ee4d-4c3e-a843-777d04f19c38.md)
   * T1547.004 [Winlogon Notify Key Logon Persistence - PowerShell](tests/d40da266-e073-4e5a-bb8b-2b385023e5f9.md)
-* powershell_wmi_persistence.yml
+* posh_ps_wmi_persistence.yml
   * T1546.003 [Persistence via WMI Event Subscription](tests/3c64f177-28e2-49eb-a799-d767b24dd1e0.md)
-* process_creation\process_creation_susp_web_request_cmd.yml
-  * T1204.002 [Potentially Unwanted Applications (PUA)](tests/02f35d62-9fdc-4a97-b899-a5d9a876d295.md)
-* process_creation\win_office_shell.yml
-  * T1204.002 [Headless Chrome code execution via VBA](tests/a19ee671-ed98-4e9d-b19c-d1954a51585a.md)
-* process_creation\win_shadow_copies_creation.yml
-  * T1003.003 [Create Volume Shadow Copy remotely with WMI](tests/d893459f-71f0-484d-9808-ec83b2b64226.md)
-* process_creation\win_susp_mshta_execution.yml
-  * T1204.002 [Headless Chrome code execution via VBA](tests/a19ee671-ed98-4e9d-b19c-d1954a51585a.md)
-* process_creation\win_susp_mshta_pattern.yml
-  * T1204.002 [Headless Chrome code execution via VBA](tests/a19ee671-ed98-4e9d-b19c-d1954a51585a.md)
 * process_creation_alternate_data_streams.yml
   * T1564.004 [Alternate Data Streams (ADS)](tests/8822c3b0-d9f9-4daf-a043-49f4602364f4.md)
 * process_creation_apt_wocao.yml
@@ -556,12 +548,14 @@
 * process_creation_susp_recon.yml
   * T1119 [Recon information for export with Command Prompt](tests/aa1180e2-f329-4e1e-8625-2472ec0bfaf3.md)
 * process_creation_susp_web_request_cmd.yml
+  * T1059.001 [Invoke-AppPathBypass](tests/06a220b6-7e29-4bd8-9d07-5b4d86742372.md)
   * T1059.001 [Run Bloodhound from Memory using Download Cradle](tests/bf8c1441-4674-4dab-8e4e-39d93d08f9b7.md)
   * T1056.004 [Hook PowerShell TLS Encrypt/Decrypt Messages](tests/de1934ea-1fbf-425b-8795-65fb27dd7e33.md)
   * T1059.001 [Obfuscation Tests](tests/4297c41a-8168-4138-972d-01f3ee92c804.md)
   * T1197 [Bitsadmin Download (PowerShell)](tests/f63b8bc4-07e5-4112-acba-56f646f3f0bc.md)
   * T1218.005 [Mshta Executes Remote HTML Application (HTA)](tests/c4b97eeb-5249-4455-a607-59f95485cb45.md)
   * T1027 [DLP Evasion via Sensitive Data in VBA Macro over HTTP](tests/e2d85e66-cb66-4ed7-93b1-833fc56c9319.md)
+  * T1204.002 [Potentially Unwanted Applications (PUA)](tests/02f35d62-9fdc-4a97-b899-a5d9a876d295.md)
 * process_creation_susp_winzip.yml
   * T1560.001 [Compress Data and lock with password for Exfiltration with winzip](tests/01df0353-d531-408d-a0c5-3161bf822134.md)
 * process_creation_susp_zip_compress.yml
@@ -612,6 +606,7 @@
 * sysmon_asep_reg_keys_modification_currentversion.yml
   * T1036.003 [Masquerading - non-windows exe running as windows exe](tests/bc15c13f-d121-4b1f-8c7d-28d95854d086.md)
   * T1547.001 [Reg Key Run](tests/e55be3fd-3521-4610-9d1a-e210e42dcf05.md)
+  * T1547.001 [PowerShell Registry RunOnce](tests/eb44f842-0457-4ddc-9b92-c4caa144ac42.md)
   * T1218 [InfDefaultInstall.exe .inf Execution](tests/54ad7d5a-a1b5-472c-b6c4-f8090fb2daef.md)
   * T1112 [Modify Registry of Local Machine - cmd](tests/282f929a-6bc5-42b8-bd93-960c3ba35afe.md)
   * T1547.001 [Reg Key RunOnce](tests/554cbd88-cde1-4b56-8168-0be552eed9eb.md)
@@ -645,6 +640,8 @@
   * T1003.001 [Dump LSASS.exe using imported Microsoft DLLs](tests/86fc3f40-237f-4701-b155-81c01c48d697.md)
 * sysmon_cred_dump_tools_named_pipes.yml
   * T1003.001 [Windows Credential Editor](tests/0f7c5301-6859-45ba-8b4d-1fac30fc31ed.md)
+* sysmon_delete_prefetch.yml
+  * T1070.004 [Delete Prefetch File](tests/36f96049-0ad7-4a5f-8418-460acaeb92fb.md)
 * sysmon_detect_powerup_dllhijacking.yml
   * T1558.001 [Crafting Active Directory golden tickets with mimikatz](tests/9726592a-dabc-4d4d-81cd-44070008b3af.md)
   * T1547.001 [Suspicious bat file run from startup Folder](tests/5b6768e4-44d2-44f0-89da-a01d1430fd5e.md)
@@ -652,9 +649,8 @@
   * T1558.001 [Crafting Active Directory golden tickets with Rubeus](tests/e42d33cd-205c-4acf-ab59-a9f38f6bad9c.md)
 * sysmon_disable_microsoft_office_security_features.yml
   * T1562.001 [Disable Microsoft Office Security Features](tests/6f5fb61b-4e56-4a3d-a8c3-82e13686c6d7.md)
-* sysmon_enabling_cor_profiler_env_variables.ym
-  * T1574.012 [User scope COR_PROFILER](tests/9d5f89dc-c3a5-4f8a-a4fc-a6ed02e7cb5a.md)
 * sysmon_enabling_cor_profiler_env_variables.yml
+  * T1574.012 [User scope COR_PROFILER](tests/9d5f89dc-c3a5-4f8a-a4fc-a6ed02e7cb5a.md)
   * T1574.012 [System Scope COR_PROFILER](tests/f373b482-48c8-4ce4-85ed-d40c8b3f7310.md)
 * sysmon_excel_outbound_network_connection.yml
   * T1204.002 [Excel 4 Macro](tests/4ea1fc97-8a46-4b4e-ba48-af43d2a98052.md)
@@ -663,6 +659,7 @@
 * sysmon_hack_wce_reg.yml
   * T1003.001 [Windows Credential Editor](tests/0f7c5301-6859-45ba-8b4d-1fac30fc31ed.md)
 * sysmon_high_integrity_sdclt.yml
+  * T1059.001 [Invoke-AppPathBypass](tests/06a220b6-7e29-4bd8-9d07-5b4d86742372.md)
   * T1548.002 [Bypass UAC using sdclt DelegateExecute](tests/3be891eb-4608-4173-87e8-78b494c029b7.md)
 * sysmon_in_memory_assembly_execution.yml
   * T1055 [Shellcode execution via VBA](tests/1c91e740-1729-4329-b779-feba6e71d048.md)
@@ -695,6 +692,7 @@
 * sysmon_powershell_code_injection.yml
   * T1134.004 [Parent PID Spoofing using PowerShell](tests/069258f4-2162-46e9-9a25-c9c6c56150d2.md)
 * sysmon_powershell_network_connection.yml
+  * T1059.001 [Invoke-AppPathBypass](tests/06a220b6-7e29-4bd8-9d07-5b4d86742372.md)
   * T1016 [List Open Egress Ports](tests/4b467538-f102-491d-ace7-ed487b853bf5.md)
   * T1055 [Shellcode execution via VBA](tests/1c91e740-1729-4329-b779-feba6e71d048.md)
   * T1110.001 [Brute Force Credentials of single Active Directory domain user via LDAP against domain controller (NTLM or Kerberos)](tests/c2969434-672b-4ec8-8df0-bbb91f40e250.md)
@@ -707,6 +705,7 @@
   * T1218.005 [Mshta Executes Remote HTML Application (HTA)](tests/c4b97eeb-5249-4455-a607-59f95485cb45.md)
   * T1558.003 [Request for service tickets](tests/3f987809-3681-43c8-bcd8-b3ff3a28533a.md)
   * T1059.001 [PowerUp Invoke-AllChecks](tests/1289f78d-22d2-4590-ac76-166737e1811b.md)
+  * T1204.002 [Potentially Unwanted Applications (PUA)](tests/02f35d62-9fdc-4a97-b899-a5d9a876d295.md)
   * T1134.001 [`SeDebugPrivilege` token duplication](tests/34f0a430-9d04-4d98-bcb5-1989f14719f0.md)
   * T1020 [IcedID Botnet HTTP PUT](tests/9c780d3d-3a14-4278-8ee5-faaeb2ccfbe0.md)
   * T1110.003 [Password spray all Active Directory domain users with a single password via LDAP against domain controller (NTLM or Kerberos)](tests/f14d956a-5b6e-4a93-847f-0c415142f07d.md)
@@ -730,6 +729,8 @@
   * T1218 [ProtocolHandler.exe Downloaded a Suspicious File](tests/db020456-125b-4c8b-a4a7-487df8afb5a2.md)
 * sysmon_regsvr32_network_activity.yml
   * T1218.010 [Regsvr32 remote COM scriptlet execution](tests/c9d0c4ef-8a96-4794-a75b-3d3a5e6f2a36.md)
+* sysmon_remote_powershell_session_network.yml
+  * T1059.001 [PowerShell Session Creation and Use](tests/7c1acec2-78fa-4305-a3e0-db2a54cddecd.md)
 * sysmon_removal_amsi_registry_key.yml
   * T1562.001 [AMSI Bypass - Remove AMSI Provider Reg Key](tests/13f09b91-c953-438e-845b-b585e51cac9b.md)
 * sysmon_remove_windows_defender_definition_files.yml
@@ -739,6 +740,7 @@
   * T1218.011 [Rundll32 advpack.dll Execution](tests/d91cae26-7fc1-457b-a854-34c8aad48c89.md)
   * T1218.011 [Rundll32 ieadvpack.dll Execution](tests/5e46a58e-cbf6-45ef-a289-ed7754603df9.md)
 * sysmon_sdclt_child_process.yml
+  * T1059.001 [Invoke-AppPathBypass](tests/06a220b6-7e29-4bd8-9d07-5b4d86742372.md)
   * T1548.002 [Bypass UAC using sdclt DelegateExecute](tests/3be891eb-4608-4173-87e8-78b494c029b7.md)
 * sysmon_ssp_added_lsa_config.yml
   * T1547.005 [Modify SSP configuration in registry](tests/afdfd7e3-8a0b-409f-85f7-886fdf249c9e.md)
@@ -779,6 +781,7 @@
   * T1204.002 [Excel 4 Macro](tests/4ea1fc97-8a46-4b4e-ba48-af43d2a98052.md)
   * T1053.005 [Task Scheduler via VBA](tests/ecd3fa21-7792-41a2-8726-2c5c673414d3.md)
   * T1555 [Extract Windows Credential Manager via VBA](tests/234f9b7c-b53d-4f32-897b-b880a6c9ea7b.md)
+  * T1204.002 [Headless Chrome code execution via VBA](tests/a19ee671-ed98-4e9d-b19c-d1954a51585a.md)
   * T1564 [Extract binary files via VBA](tests/6afe288a-8a8b-4d33-a629-8d03ba9dad3a.md)
   * T1204.002 [Office launching .bat file from AppData](tests/9215ea92-1ded-41b7-9cd6-79f9a78397aa.md)
   * T1221 [WINWORD Remote Template Injection](tests/1489e08a-82c7-44ee-b769-51b72d03521d.md)
@@ -815,11 +818,13 @@
 * sysmon_webshell_creation_detect.yml
   * T1505.003 [Web Shell Written to Disk](tests/0a2ce662-1efa-496f-a472-2fe7b080db16.md)
 * sysmon_win_binary_github_com.yml
+  * T1059.001 [Invoke-AppPathBypass](tests/06a220b6-7e29-4bd8-9d07-5b4d86742372.md)
   * T1055 [Shellcode execution via VBA](tests/1c91e740-1729-4329-b779-feba6e71d048.md)
   * T1059.001 [Run Bloodhound from Memory using Download Cradle](tests/bf8c1441-4674-4dab-8e4e-39d93d08f9b7.md)
   * T1218.011 [Rundll32 execute JavaScript Remote Payload With GetObject](tests/cf3bdb9a-dd11-4b6c-b0d0-9e22b68a71be.md)
   * T1564 [Extract binary files via VBA](tests/6afe288a-8a8b-4d33-a629-8d03ba9dad3a.md)
   * T1218.005 [Mshta Executes Remote HTML Application (HTA)](tests/c4b97eeb-5249-4455-a607-59f95485cb45.md)
+  * T1218.005 [Invoke HTML Application - Direct download from URI](tests/39ceed55-f653-48ac-bd19-aceceaf525db.md)
   * T1059.001 [PowerUp Invoke-AllChecks](tests/1289f78d-22d2-4590-ac76-166737e1811b.md)
   * T1134.001 [`SeDebugPrivilege` token duplication](tests/34f0a430-9d04-4d98-bcb5-1989f14719f0.md)
   * T1134.001 [Named pipe client impersonation](tests/90db9e27-8e7c-4c04-b602-a45927884966.md)
@@ -898,8 +903,8 @@
   * T1070.004 [Delete TeamViewer Log Files](tests/69f50a5f-967c-4327-a5bb-e1a9a9983785.md)
 * win_fd_delete_backup_file.yml
   * T1490 [Windows - Delete Backup Files](tests/6b1dbaf6-cc8a-4ea6-891f-6058569653bf.md)
-* win_fd_delete_prefetch_file.yml
-  * T1070.004 [Delete Prefetch File](tests/36f96049-0ad7-4a5f-8418-460acaeb92fb.md)
+* win_fe_access_susp_unattend_xml.yml
+  * T1552.001 [Access unattend.xml](tests/367d4004-5fc0-446d-823f-960c74ae52c3.md)
 * win_fe_creation_new_shim_database.yml
   * T1546.011 [New shim database files created in the default shim database directory](tests/aefd6866-d753-431f-a7a4-215ca7e3f13d.md)
 * win_fe_creation_scr_binary_file.yml
@@ -935,8 +940,6 @@
   * T1218.005 [Invoke HTML Application - JScript Engine with Inline Protocol Handler](tests/d3eaaf6a-cdb1-44a9-9ede-b6c337d0d840.md)
 * win_fe_susp_desktop_txt.yml
   * T1486 [PureLocker Ransom Note](tests/649349c7-9abf-493b-a7a2-b1aa4d141528.md)
-* win_fe_susp_unattend_xml.yml
-  * T1552.001 [Access unattend.xml](tests/367d4004-5fc0-446d-823f-960c74ae52c3.md)
 * win_fe_writing_local_admin_share.yml
   * T1021.002 [Execute command writing output to local Admin Share](tests/d41aaab5-bdfe-431d-a3d5-c29e9136ff46.md)
 * win_file_permission_modifications.yml
@@ -1025,6 +1028,7 @@
   * T1003.001 [Offline Credential Theft With Mimikatz](tests/453acf13-1dbd-47d7-b28a-172ce9228023.md)
   * T1110.001 [Brute Force Credentials of single Active Directory domain user via LDAP against domain controller (NTLM or Kerberos)](tests/c2969434-672b-4ec8-8df0-bbb91f40e250.md)
   * T1059.001 [Mimikatz - Cradlecraft PsSendKeys](tests/af1800cf-9f9d-4fd1-a709-14b1e6de020d.md)
+  * T1558.001 [Crafting Active Directory golden tickets with mimikatz](tests/9726592a-dabc-4d4d-81cd-44070008b3af.md)
   * T1059.001 [PowerShell Invoke Known Malicious Cmdlets](tests/49eb9404-5e0f-4031-a179-b40f7be385e3.md)
   * T1003.001 [Dump LSASS.exe Memory using Out-Minidump.ps1](tests/6502c8f0-b775-4dbd-9193-1298f56b6781.md)
   * T1550.003 [Mimikatz Kerberos Ticket Attack](tests/dbf38128-7ba7-4776-bedf-cc2eed432098.md)
@@ -1033,8 +1037,6 @@
   * T1110.003 [Password spray all Active Directory domain users with a single password via LDAP against domain controller (NTLM or Kerberos)](tests/f14d956a-5b6e-4a93-847f-0c415142f07d.md)
   * T1003.006 [DCSync (Active Directory)](tests/129efd28-8497-4c87-a1b0-73b9a870ca3e.md)
   * T1552.004 [ADFS token signing and encryption certificates theft - Remote](tests/cab413d8-9e4a-4b8d-9b84-c985bd73a442.md)
-* win_mimikatz_command_line.yms
-  * T1558.001 [Crafting Active Directory golden tickets with mimikatz](tests/9726592a-dabc-4d4d-81cd-44070008b3af.md)
 * win_mmc20_lateral_movement.yml
   * T1021.003 [PowerShell Lateral Movement using MMC20](tests/6dc74eb1-c9d6-4c53-b3b5-6f50ae339673.md)
 * win_modif_of_services_for_via_commandline.yml
@@ -1088,6 +1090,7 @@
   * T1018 [Remote System Discovery - nltest](tests/52ab5108-3f6f-42fb-8ba3-73bc054f22c8.md)
   * T1016 [System Network Configuration Discovery (TrickBot Style)](tests/dafaf052-5508-402d-bf77-51e0700c02e2.md)
 * win_non_interactive_powershell.yml
+  * T1059.001 [Invoke-AppPathBypass](tests/06a220b6-7e29-4bd8-9d07-5b4d86742372.md)
   * T1027 [Obfuscated Command in PowerShell](tests/8b3f4ed6-077b-4bdd-891c-2d237f19410f.md)
   * T1218.005 [Mshta used to Execute PowerShell](tests/8707a805-2b76-4f32-b1c0-14e558205772.md)
   * T1003.001 [Dump LSASS.exe Memory using comsvcs.dll](tests/2536dee2-12fb-459a-8c37-971844fa73be.md)
@@ -1099,6 +1102,7 @@
   * T1204.002 [OSTAP JS version](tests/add560ef-20d6-4011-a937-2c340f930911.md)
   * T1055 [Shellcode execution via VBA](tests/1c91e740-1729-4329-b779-feba6e71d048.md)
   * T1059.005 [Encoded VBS code execution](tests/e8209d5f-e42d-45e6-9c2f-633ac4f1eefa.md)
+  * T1204.002 [Headless Chrome code execution via VBA](tests/a19ee671-ed98-4e9d-b19c-d1954a51585a.md)
   * T1204.002 [Office launching .bat file from AppData](tests/9215ea92-1ded-41b7-9cd6-79f9a78397aa.md)
   * T1204.002 [Maldoc choice flags command execution](tests/0330a5d2-a45a-4272-a9ee-e364411c4b18.md)
   * T1204.002 [OSTap Style Macro Execution](tests/8bebc690-18c7-4549-bc98-210f7019efff.md)
@@ -1144,6 +1148,10 @@
   * T1574.011 [Service ImagePath Change with reg.exe](tests/f38e9eea-e1d7-4ba6-b716-584791963827.md)
 * win_pc_set_policies_to_unsecure_level.yml
   * T1112 [Change Powershell Execution Policy to Bypass](tests/f3a6cceb-06c9-48e5-8df8-8867a6814245.md)
+* win_pc_susp_adfind_enumerate.yml
+  * T1087.002 [Adfind - Enumerate Active Directory Admins](tests/b95fd967-4e62-4109-b48d-265edfd28c3a.md)
+  * T1087.002 [Adfind - Enumerate Active Directory Exchange AD Objects](tests/5e2938fb-f919-47b6-8b29-2f6a1f718e99.md)
+  * T1087.002 [Adfind -Listing password policy](tests/736b4f53-f400-4c22-855d-1a6b5a551600.md)
 * win_pc_susp_adidnsdump.yml
   * T1018 [Remote System Discovery - adidnsdump](tests/95e19466-469e-4316-86d2-1dc401b5a959.md)
 * win_pc_susp_char_in_cmd.yml
@@ -1193,6 +1201,7 @@
   * T1218.011 [Rundll32 execute VBscript command](tests/638730e7-7aed-43dc-bf8c-8117f805f5bb.md)
 * win_pc_susp_sc_query.yml
   * T1562.001 [Tamper with Windows Defender Command Prompt](tests/aa875ed4-8935-47e2-b2c5-6ec00ab220d2.md)
+  * T1007 [System Service Discovery](tests/89676ba1-b1f8-47ee-b940-2e1a113ebc71.md)
   * T1119 [Recon information for export with Command Prompt](tests/aa1180e2-f329-4e1e-8625-2472ec0bfaf3.md)
 * win_pc_susp_schtasks_disable.yml
   * T1490 [Windows - Disable the SR scheduled task](tests/1c68c68d-83a4-4981-974e-8993055fa034.md)
@@ -1204,6 +1213,7 @@
 * win_pc_susp_systeminfo.yml
   * T1082 [System Information Discovery](tests/66703791-c902-4560-8770-42b8a91f7667.md)
 * win_pc_susp_tasklist_command.yml
+  * T1007 [System Service Discovery](tests/89676ba1-b1f8-47ee-b940-2e1a113ebc71.md)
   * T1518.001 [Security Software Discovery](tests/f92a380f-ced9-491f-b338-95a991418ce2.md)
   * T1003.001 [Dump LSASS with .Net 5 createdump.exe](tests/9d0072c8-7cca-45c4-bd14-f852cfa35cf0.md)
   * T1057 [Process Discovery - tasklist](tests/c5806a4f-62b8-4900-980b-c7ec004e9908.md)
@@ -1256,6 +1266,7 @@
 * win_powershell_downgrade_attack.yml
   * T1059.001 [PowerShell Downgrade Attack](tests/9148e7c4-9356-420e-a416-e896e9c0f73e.md)
 * win_powershell_download.yml
+  * T1059.001 [Invoke-AppPathBypass](tests/06a220b6-7e29-4bd8-9d07-5b4d86742372.md)
   * T1547.001 [PowerShell Registry RunOnce](tests/eb44f842-0457-4ddc-9b92-c4caa144ac42.md)
   * T1059.001 [Run Bloodhound from Memory using Download Cradle](tests/bf8c1441-4674-4dab-8e4e-39d93d08f9b7.md)
   * T1059.001 [Obfuscation Tests](tests/4297c41a-8168-4138-972d-01f3ee92c804.md)
@@ -1293,7 +1304,7 @@
 * win_re_bypass_uac_using_eventviewer.yml
   * T1548.002 [Bypass UAC using Event Viewer (PowerShell)](tests/a6ce9acf-842a-4af6-8f79-539be7608e2b.md)
   * T1548.002 [Bypass UAC using Event Viewer (cmd)](tests/5073adf8-9a50-4bd9-b298-a9bd2ead8af9.md)
-* win_re_bypass_uac_using_silentcleanup_task
+* win_re_bypass_uac_using_silentcleanup_task.yml
   * T1548.002 [Bypass UAC using SilentCleanup task](tests/28104f8a-4ff1-4582-bcf6-699dce156608.md)
 * win_re_change_rdp_port.yml
   * T1021.001 [Changing RDP Port to Non Standard Port via Powershell](tests/2f840dd4-8a2e-4f44-beb3-6b2399ea3771.md)
@@ -1321,10 +1332,11 @@
   * T1548.002 [Bypass UAC using ComputerDefaults (PowerShell)](tests/3c51abf2-44bf-42d8-9111-dc96ff66750f.md)
   * T1548.002 [Bypass UAC using Fodhelper](tests/58f641ea-12e3-499a-b684-44dee46bd182.md)
   * T1548.002 [Bypass UAC using Fodhelper - PowerShell](tests/3f627297-6c38-4e7d-a278-fc2563eaaeaa.md)
+* win_remote_powershell_session_process.yml
+  * T1059.001 [PowerShell Session Creation and Use](tests/7c1acec2-78fa-4305-a3e0-db2a54cddecd.md)
 * win_remote_time_discovery.yml
   * T1059.001 [Powershell invoke mshta.exe download](tests/8a2ad40b-12c7-4b25-8521-2737b0a415af.md)
   * T1124 [System Time Discovery](tests/20aba24b-e61f-4b26-b4ce-4784f763ca20.md)
-* win_remote_time_discovery.yml]
   * T1124 [System Time Discovery - PowerShell](tests/1d5711d6-655c-4a47-ae9c-6503c74fa877.md)
 * win_renamed_binary.yml
   * T1036.003 [Masquerading as Windows LSASS process](tests/5ba5a3d1-cf3c-4499-968a-a93155d1f717.md)
@@ -1343,8 +1355,6 @@
   * T1036.003 [Masquerading - powershell.exe running as taskhostw.exe](tests/ac9d0fc3-8aa8-4ab5-b11f-682cd63b40aa.md)
 * win_renamed_procdump.yml
   * T1003.001 [Dump LSASS.exe Memory using ProcDump](tests/0be2230c-9ab3-4ac2-8826-3199b9a0ebf8.md)
-* win_root_certificate_installed.yml
-  * T1553.004 [Install root CA on Windows](tests/76f49d86-5eb1-461a-a032-a480f86652f1.md)
 * win_run_executable_invalid_extension.yml
   * T1218.011 [Rundll32 execute JavaScript Remote Payload With GetObject](tests/cf3bdb9a-dd11-4b6c-b0d0-9e22b68a71be.md)
   * T1218.011 [Rundll32 execute VBscript command](tests/638730e7-7aed-43dc-bf8c-8117f805f5bb.md)
@@ -1365,6 +1375,7 @@
   * T1003.003 [Create Volume Shadow Copy with vssadmin](tests/dcebead7-6c28-4b4b-bf3c-79deb1b1fc7f.md)
   * T1003.003 [Create Symlink to Volume Shadow Copy](tests/21748c28-2793-4284-9e07-d6d028b66702.md)
   * T1003.003 [Create Volume Shadow Copy with WMI](tests/224f7de0-8f0a-4a94-b5d8-989b036c86da.md)
+  * T1003.003 [Create Volume Shadow Copy remotely with WMI](tests/d893459f-71f0-484d-9808-ec83b2b64226.md)
 * win_shadow_copies_deletion.yml
   * T1490 [Windows - wbadmin Delete Windows Backup Catalog](tests/263ba6cb-ea2b-41c9-9d4e-b652dadd002c.md)
   * T1490 [Windows - Delete Volume Shadow Copies](tests/43819286-91a9-4369-90ed-d31fb4da2c01.md)
@@ -1401,10 +1412,6 @@
   * T1069.002 [Adfind - Query Active Directory Groups](tests/48ddc687-82af-40b7-8472-ff1e742e8274.md)
   * T1482 [Adfind - Enumerate Active Directory Trusts](tests/15fe436d-e771-4ff3-b655-2dca9ba52834.md)
   * T1087.002 [Adfind - Enumerate Active Directory User Objects](tests/e1ec8d20-509a-4b9a-b820-06c9b2da8eb7.md)
-* win_susp_adfind_enumerate.yml
-  * T1087.002 [Adfind - Enumerate Active Directory Admins](tests/b95fd967-4e62-4109-b48d-265edfd28c3a.md)
-  * T1087.002 [Adfind - Enumerate Active Directory Exchange AD Objects](tests/5e2938fb-f919-47b6-8b29-2f6a1f718e99.md)
-  * T1087.002 [Adfind -Listing password policy](tests/736b4f53-f400-4c22-855d-1a6b5a551600.md)
 * win_susp_calc.yml
   * T1216 [manage-bde.wsf Signed Script Command Execution](tests/2a8f2d3c-3dec-4262-99dd-150cb2a4d63a.md)
   * T1547.005 [Modify SSP configuration in registry](tests/afdfd7e3-8a0b-409f-85f7-886fdf249c9e.md)
@@ -1423,9 +1430,8 @@
   * T1003.003 [Copy NTDS.dit from Volume Shadow Copy](tests/c6237146-9ea6-4711-85c9-c56d263a6b03.md)
 * win_susp_compression_params.yml
   * T1560.001 [Compress Data and lock with password for Exfiltration with 7zip](tests/d1334303-59cb-4a03-8313-b3e24d02c198.md)
-* win_susp_comsvcs_procdump.ym
-  * T1003.001 [Dump LSASS.exe Memory using comsvcs.dll](tests/2536dee2-12fb-459a-8c37-971844fa73be.md)
 * win_susp_comsvcs_procdump.yml
+  * T1003.001 [Dump LSASS.exe Memory using comsvcs.dll](tests/2536dee2-12fb-459a-8c37-971844fa73be.md)
   * T1003 [Dump svchost.exe to gather RDP credentials](tests/d400090a-d8ca-4be0-982e-c70598a23de9.md)
 * win_susp_conhost.yml
   * T1202 [Indirect Command Execution - conhost.exe](tests/cf3391e0-b482-4b02-87fc-ca8362269b29.md)
@@ -1514,6 +1520,7 @@
 * win_susp_mshta_execution.yml
   * T1218.005 [Invoke HTML Application - Simulate Lateral Movement over UNC Path](tests/b8a8bdb2-7eae-490d-8251-d5e0295b2362.md)
   * T1059.005 [Encoded VBS code execution](tests/e8209d5f-e42d-45e6-9c2f-633ac4f1eefa.md)
+  * T1204.002 [Headless Chrome code execution via VBA](tests/a19ee671-ed98-4e9d-b19c-d1954a51585a.md)
   * T1218.005 [Mshta used to Execute PowerShell](tests/8707a805-2b76-4f32-b1c0-14e558205772.md)
   * T1059.001 [Powershell invoke mshta.exe download](tests/8a2ad40b-12c7-4b25-8521-2737b0a415af.md)
   * T1218.005 [Mshta Executes Remote HTML Application (HTA)](tests/c4b97eeb-5249-4455-a607-59f95485cb45.md)
@@ -1525,6 +1532,7 @@
 * win_susp_mshta_pattern.yml
   * T1218.005 [Invoke HTML Application - Simulate Lateral Movement over UNC Path](tests/b8a8bdb2-7eae-490d-8251-d5e0295b2362.md)
   * T1059.005 [Encoded VBS code execution](tests/e8209d5f-e42d-45e6-9c2f-633ac4f1eefa.md)
+  * T1204.002 [Headless Chrome code execution via VBA](tests/a19ee671-ed98-4e9d-b19c-d1954a51585a.md)
   * T1218.005 [Mshta used to Execute PowerShell](tests/8707a805-2b76-4f32-b1c0-14e558205772.md)
   * T1059.001 [Powershell invoke mshta.exe download](tests/8a2ad40b-12c7-4b25-8521-2737b0a415af.md)
   * T1218.005 [Mshta Executes Remote HTML Application (HTA)](tests/c4b97eeb-5249-4455-a607-59f95485cb45.md)
@@ -1681,11 +1689,10 @@
   * T1047 [WMI Execute Remote Process](tests/9c8ef159-c666-472f-9874-90c8d60d136b.md)
   * T1518.001 [Security Software Discovery - AV Discovery via WMI](tests/1553252f-14ea-4d3b-8a08-d7a4211aa945.md)
   * T1047 [WMI Execute rundll32](tests/00738d2a-4651-4d76-adf2-c43a41dfb243.md)
-* win_suspicious_vss_ps_load.ym
-  * T1003.003 [Create Volume Shadow Copy with WMI](tests/224f7de0-8f0a-4a94-b5d8-989b036c86da.md)
 * win_suspicious_vss_ps_load.yml
   * T1003.002 [esentutl.exe SAM copy](tests/a90c2f4d-6726-444e-99d2-a00cd7c20480.md)
   * T1003.002 [dump volume shadow copy hives with certutil](tests/eeb9751a-d598-42d3-b11c-c122d9c3f6c7.md)
+  * T1003.003 [Create Volume Shadow Copy with WMI](tests/224f7de0-8f0a-4a94-b5d8-989b036c86da.md)
 * win_sysmon_driver_unload.yml
   * T1562.001 [Unload Sysmon Filter Driver](tests/811b3e76-c41b-430c-ac0d-e2380bfaa164.md)
 * win_system_exe_anomaly.yml
@@ -1743,5 +1750,3 @@
 * win_workflow_compiler.yml
   * T1218 [Renamed Microsoft.Workflow.Compiler.exe Payload Executions](tests/4cc40fd7-87b8-4b16-b2d7-57534b86b911.md)
   * T1218 [Microsoft.Workflow.Compiler.exe Payload Execution](tests/7cbb0f26-a4c1-4f77-b180-a009aa05637e.md)
-* ysmon_asep_reg_keys_modification_currentversion.yml
-  * T1547.001 [PowerShell Registry RunOnce](tests/eb44f842-0457-4ddc-9b92-c4caa144ac42.md)

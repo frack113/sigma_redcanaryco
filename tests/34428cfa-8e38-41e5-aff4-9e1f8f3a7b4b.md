@@ -30,7 +30,7 @@ Executes the Uninstall Method. Upon execution, version information will be displ
 # Sigma Rule
  - win_possible_applocker_bypass.yml (id: 82a19e3a-2bfe-4a91-8c0d-5d4c98fbb719)
 
- - powershell_accessing_win_api.yml (id: 03d83090-8cba-44a0-b02f-0b756a050306)
+ - posh_ps_accessing_win_api.yml (id: 03d83090-8cba-44a0-b02f-0b756a050306)
 
  - win_fe_csharp_compile_artefact.yml (id: e4a74e34-ecde-4aab-b2fb-9112dd01aed0)
 

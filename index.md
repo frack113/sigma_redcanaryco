@@ -131,7 +131,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1059.001
-[Invoke-AppPathBypass](tests/06a220b6-7e29-4bd8-9d07-5b4d86742372.md) ['windows'] (sigma rule :x:)
+[Invoke-AppPathBypass](tests/06a220b6-7e29-4bd8-9d07-5b4d86742372.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Mimikatz - Cradlecraft PsSendKeys](tests/af1800cf-9f9d-4fd1-a709-14b1e6de020d.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -157,7 +157,7 @@ Caution: a test can generate a lot of noise...
 
 [PowerUp Invoke-AllChecks](tests/1289f78d-22d2-4590-ac76-166737e1811b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[PowerShell Session Creation and Use](tests/7c1acec2-78fa-4305-a3e0-db2a54cddecd.md) ['windows'] (sigma rule :x:)
+[PowerShell Session Creation and Use](tests/7c1acec2-78fa-4305-a3e0-db2a54cddecd.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [PowerShell Command Execution](tests/a538de64-1c74-46ed-aa60-b995ed302598.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1595,7 +1595,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1007
-[System Service Discovery](tests/89676ba1-b1f8-47ee-b940-2e1a113ebc71.md) ['windows'] (sigma rule :x:)
+[System Service Discovery](tests/89676ba1-b1f8-47ee-b940-2e1a113ebc71.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [System Service Discovery - net.exe](tests/5f864a3f-8ce9-45c0-812c-bdf7d8aeacc3.md) ['windows'] (sigma rule :heavy_check_mark:)
 

@@ -52,7 +52,7 @@ Upon successful execution, you should find the nanondump.dmp file in the temp di
 
 
 # Sigma Rule
- - win_susp_proc_access_lsass_susp_source.yml (id: 5fa34b441-961a-42fa-a100-ecc28c88672)
+ - win_susp_proc_access_lsass_susp_source.yml (id: fa34b441-961a-42fa-a100-ecc28c886725)
 
  - win_susp_proc_access_lsass.yml (id: a18dd26b-6450-46de-8c91-9659150cf088)
 

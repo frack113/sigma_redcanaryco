@@ -33,25 +33,25 @@ Mshta.exe can be used to bypass application control solutions that do not accoun
 Executes an HTA Application by directly downloading from remote URI.
 
 # Sigma Rule
- - powershell_accessing_win_api.yml (id: 03d83090-8cba-44a0-b02f-0b756a050306)
+ - posh_ps_accessing_win_api.yml (id: 03d83090-8cba-44a0-b02f-0b756a050306)
 
- - powershell_malicious_keywords.yml (id: f62176f3-8128-4faa-bf6c-83261322e5eb)
+ - posh_ps_malicious_keywords.yml (id: f62176f3-8128-4faa-bf6c-83261322e5eb)
 
  - win_fe_csharp_compile_artefact.yml (id: e4a74e34-ecde-4aab-b2fb-9112dd01aed0)
 
  - win_susp_csc_folder.yml (id: dcaa3f04-70c3-427a-80b4-b870d73c94c4)
 
- - powershell_suspicious_windowstyle.yml (id: 313fbb0a-a341-4682-848d-6d6f8c4fab7c)
+ - posh_ps_suspicious_windowstyle.yml (id: 313fbb0a-a341-4682-848d-6d6f8c4fab7c)
 
- - powershell_ps_suspicious_networkcredential.yml (id: 1883444f-084b-419b-ac62-e0d0c5b3693f)
+ - posh_ps_suspicious_networkcredential.yml (id: 1883444f-084b-419b-ac62-e0d0c5b3693f)
 
  - posh_ps_suspicious_gwmi.yml (id: 0332a266-b584-47b4-933d-a00b103e1b37)
 
- - powershell_suspicious_keywords.yml (id: 1f49f2ab-26bc-48b3-96cc-dcffbc93eadf)
+ - posh_ps_suspicious_keywords.yml (id: 1f49f2ab-26bc-48b3-96cc-dcffbc93eadf)
 
- - powershell_ps_copy_item_system32.yml (id: 63bf8794-9917-45bc-88dd-e1b5abc0ecfd)
+ - posh_ps_copy_item_system32.yml (id: 63bf8794-9917-45bc-88dd-e1b5abc0ecfd)
 
- - powershell_ps_file_and_directory_discovery.yml (id: d23f2ba5-9da0-4463-8908-8ee47f614bb9)
+ - posh_ps_file_and_directory_discovery.yml (id: d23f2ba5-9da0-4463-8908-8ee47f614bb9)
 
  - win_susp_mshta_pattern.yml (id: e32f92d1-523e-49c3-9374-bdb13b46a3ba)
 
@@ -67,7 +67,7 @@ Executes an HTA Application by directly downloading from remote URI.
 
  - file_event_win_shell_write_susp_directory.yml (id: 1277f594-a7d1-4f28-a2d3-73af5cbeab43)
 
- - network_connection\sysmon_win_binary_github_com.yml (id: 635dbb88-67b3-4b41-9ea5-a3af2dd88153)
+ - sysmon_win_binary_github_com.yml (id: 635dbb88-67b3-4b41-9ea5-a3af2dd88153)
 
 
 

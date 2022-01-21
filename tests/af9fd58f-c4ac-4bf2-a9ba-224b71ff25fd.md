@@ -34,7 +34,7 @@ Upon successful execution, powershell.exe will create a scheduled task to spawn 
 
 
 # Sigma Rule
- - powershell_ps_cmdlet_scheduled_task.yml (id: 363eccc0-279a-4ccf-a3ab-24c2e63b11fb)
+ - posh_ps_cmdlet_scheduled_task.yml (id: 363eccc0-279a-4ccf-a3ab-24c2e63b11fb)
 
 
 

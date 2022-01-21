@@ -38,7 +38,7 @@ Reference: https://redcanary.com/blog/cor_profiler-for-persistence/
 
 
 # Sigma Rule
- - sysmon_enabling_cor_profiler_env_variables.ym (id: ad89044a-8f49-4673-9a55-cbd88a1b374f)
+ - sysmon_enabling_cor_profiler_env_variables.yml (id: ad89044a-8f49-4673-9a55-cbd88a1b374f)
 
 
 
