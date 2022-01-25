@@ -17,5 +17,7 @@ os:
 description: 'An adversary may use Radmin Viewer Utility to remotely control Windows device, this will start the radmin console.
 
   '
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 5817e76f-4804-41e6-8f1d-5fa0b3ecae2d
+    name: win_pc_susp_radmin.yml

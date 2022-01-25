@@ -17,5 +17,7 @@ description: |-
   Visual Basic execution test, execute vbscript via PowerShell.
 
   When successful, system information will be written to $env:TEMP\T1059.005.out.txt.
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 23250293-eed5-4c39-b57a-841c8933a57d
+    name: win_pc_susp_cscript_vbs.yml

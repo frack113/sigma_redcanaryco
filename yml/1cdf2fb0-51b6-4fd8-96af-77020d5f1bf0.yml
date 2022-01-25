@@ -15,5 +15,7 @@ os:
 description: 'Exfiltrate data HTTPS using curl to file share site file.io
 
   '
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 00bca14a-df4e-4649-9054-3f2aa676bc04
+    name: win_susp_curl_fileupload.yml

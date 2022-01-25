@@ -33,5 +33,13 @@ os:
 description: |
   The memory of lsass.exe is often dumped for offline credential theft attacks. This can be achieved with the Windows Task
   Manager and administrative permissions.
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 5f113a8f-8b61-41ca-b90f-d374fa7e4a39
+    name: sysmon_in_memory_assembly_execution.yml
+  - id: 5e3d3601-0662-4af0-b1d2-36a05e90c40a
+    name: sysmon_lsass_memory_dump_file_creation.yml
+  - id: a5a2d357-1ab8-4675-a967-ef9990a59391
+    name: file_event_lsass_dump.yml
+  - id: 5ef9853e-4d0e-4a70-846f-a9ca37d876da
+    name: sysmon_lsass_memdump.yml

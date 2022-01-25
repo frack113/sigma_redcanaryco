@@ -13,5 +13,7 @@ os:
 description: |
   The following Atomic utilizes native curl.exe, or downloads it if not installed, to upload a txt file to simulate data exfiltration
   Expected output will include whether the file uploaded successfully or not.
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 00bca14a-df4e-4649-9054-3f2aa676bc04
+    name: win_susp_curl_fileupload.yml

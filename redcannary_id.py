@@ -66,6 +66,8 @@ if need_to_download:
 
 all_csv = [["tactic", "technique", "os", "name", "guid", "sigma", "nmr_test"]]
 
+warning_log = []
+
 with pathlib.Path("index.yaml").open("r", encoding="UTF-8") as file:
     print("Load index.yaml...")
     yml_index = yaml.load(file)
@@ -128,7 +130,9 @@ with pathlib.Path("index.yaml").open("r", encoding="UTF-8") as file:
                                     rule["id"] = sigmahq_name[rule["name"]]
                                     print(f'Fix found in {guid} file for Unidentified sigma id : {rule["id"]} / {rule["name"]}')
                                 else:
-                                    print(f'No fix found in {guid} file for Unidentified sigma id : {rule["id"]} / {rule["name"]}')
+                                    warn_str = f'No fix found in {guid} file for Unidentified sigma id : {rule["id"]} / {rule["name"]}'
+                                    print(warn_str)
+                                    warning_log.append(warn_str)
                     
                     redcannary_info.order()
                     redcannary_info.save(yml_file)
@@ -150,3 +154,8 @@ csv_file = pathlib.Path("Full_tests.csv")
 with csv_file.open("w", encoding="UTF-8", newline="\n") as csvfile:
     writer = csv.writer(csvfile, delimiter=";", quoting=csv.QUOTE_MINIMAL)
     writer.writerows(all_csv)
+
+if len(warning_log) > 0:
+    print('--------- Warning Found ---------')
+    for warn_srt in warning_log:
+        print(warn_srt)

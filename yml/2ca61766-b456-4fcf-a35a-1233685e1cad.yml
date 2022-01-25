@@ -13,5 +13,7 @@ os:
 description: 'OSTap copies itself in a specfic way to shares and secondary drives. This emulates the activity.
 
   '
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 1e33157c-53b1-41ad-bbcc-780b80b58288
+    name: win_susp_script_execution.yml

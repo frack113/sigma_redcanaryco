@@ -17,5 +17,7 @@ description: |
   Modifies the filesystem permissions of the specified folder and contents to allow the specified user or group Full Control. If "Access is denied"
   is displayed it may be because the file or folder doesn't exit. Run the prereq command to create it. Upon successfull execution, "Successfully processed 3 files"
   will be displayed.
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 37ae075c-271b-459b-8d7b-55ad5f993dd8
+    name: win_file_permission_modifications.yml

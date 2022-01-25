@@ -16,5 +16,8 @@ os:
 description: |
   Attackers leverage an existing Windows binary, attrib.exe, to mark specific files or folder as hidden by using specific flags so that
   the victim does not see the file.
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 4281cb20-2994-4580-aa63-c8b86d019934
+    name: win_attrib_hiding_files.yml
+

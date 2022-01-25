@@ -13,5 +13,7 @@ os:
 description: |
   The following Atomic utilizes native curl.exe, or downloads it if not installed, to download a remote DLL and output to a number of directories to simulate malicious behavior.
   Expected output will include whether the file downloaded successfully or not.
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: e218595b-bbe7-4ee5-8a96-f32a24ad3468
+    name: win_susp_curl_download.yml

@@ -15,5 +15,13 @@ description: |
   Powershell Enable WinRM
 
   Upon successful execution, powershell will "Enable-PSRemoting" allowing for remote PS access.
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 991a9744-f2f0-44f2-bd33-9092eba17dc3
+    name: posh_ps_enable_psremoting.yml
+  - id: b8af5f36-1361-4ebe-9e76-e36128d947bf
+    name: posh_ps_remove_item_path.yml
+  - id: ad1f4bb9-8dfb-4765-adb6-2a7cfb6c0f94
+    name: image_load_wsman_provider_image_load.yml
+  - id: d23f2ba5-9da0-4463-8908-8ee47f614bb9
+    name: posh_ps_file_and_directory_discovery.yml

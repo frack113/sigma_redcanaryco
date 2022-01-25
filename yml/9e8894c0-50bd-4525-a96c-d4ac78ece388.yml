@@ -15,5 +15,7 @@ os:
 description: 'Creates and executes a simple batch script. Upon execution, CMD will briefly launch to run the batch script then close again.
 
   '
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: b5522a23-82da-44e5-9c8b-e10ed8955f88
+    name: posh_ps_suspicious_execute_batch_script.yml

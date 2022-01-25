@@ -19,5 +19,11 @@ description: |
   Powershell xml download request. Upon execution, "Download Cradle test success!" will be dispalyed.
 
   Provided by https://github.com/mgreen27/mgreen27.github.io
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 6c6c6282-7671-4fe9-a0ce-a2dcebdc342b
+    name: posh_ps_xml_iex.yml
+  - id: 1f21ec3f-810d-4b0e-8045-322202e22b4b
+    name: sysmon_powershell_network_connection.yml
+  - id: 635dbb88-67b3-4b41-9ea5-a3af2dd88153
+    name: sysmon_win_binary_github_com.yml

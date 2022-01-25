@@ -15,5 +15,7 @@ description: |
   Because this is being tested on the localhost, you should not be expecting a successful connection
   https://www.exploit-db.com/exploits/48815
   https://www.bleepingcomputer.com/news/security/windows-10-finger-command-can-be-abused-to-download-or-steal-files/
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: af491bca-e752-4b44-9c86-df5680533dbc
+    name: win_susp_finger_usage.yml

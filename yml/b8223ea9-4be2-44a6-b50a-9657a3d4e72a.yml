@@ -15,5 +15,7 @@ description: |
   Adds a registry key to set up a proxy on the endpoint at HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PortProxy\v4tov4
   Upon execution there will be a new proxy entry in netsh
   netsh interface portproxy show all
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 322ed9ec-fcab-4f67-9a34-e7c6aef43614
+    name: win_netsh_port_fwd.yml

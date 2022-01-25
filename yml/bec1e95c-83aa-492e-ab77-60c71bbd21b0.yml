@@ -16,5 +16,7 @@ os:
 description: |
   Removes the read-only attribute from a file or folder using the attrib.exe command. Upon execution, no output will be displayed.
   Open the file in File Explorer > Right Click - Prperties and observe that the Read Only checkbox is empty.
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 37ae075c-271b-459b-8d7b-55ad5f993dd8
+    name: win_file_permission_modifications.yml
