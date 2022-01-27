@@ -1091,6 +1091,8 @@ Caution: a test can generate a lot of noise...
 
 [WMI Reconnaissance Processes](tests/5750aa16-0e59-4410-8b9a-8a47ca2788e2.md) ['windows'] (sigma rule :heavy_check_mark:)
 
+[Application uninstall using WMIC](tests/c510d25b-1667-467d-8331-a56d3e9bc4ff.md) ['windows'] (sigma rule :x:)
+
 
 ### T1220
 [MSXSL Bypass using remote files](tests/a7c3ab07-52fb-49c8-ab6d-e9c6d4a0a985.md) ['windows'] (sigma rule :x:)
@@ -1406,6 +1408,10 @@ Caution: a test can generate a lot of noise...
 [Create and Execute Batch Script](tests/9e8894c0-50bd-4525-a96c-d4ac78ece388.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
+### T1557.001
+[LLMNR Poisoning with Inveigh (PowerShell)](tests/deecd55f-afe0-4a62-9fba-4d1ba2deb321.md) ['windows'] (sigma rule :x:)
+
+
 ### T1113
 [Windows Screen Capture (CopyFromScreen)](tests/e9313014-985a-48ef-80d9-cde604ffc187.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1493,7 +1499,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1083
-[Nix File and Diectory Discovery](tests/ffc8b249-372a-4b74-adcd-e4c0430842de.md) ['macos', 'linux'] (sigma rule :x:)
+[Nix File and Directory Discovery](tests/ffc8b249-372a-4b74-adcd-e4c0430842de.md) ['macos', 'linux'] (sigma rule :x:)
 
 [File and Directory Discovery (PowerShell)](tests/2158908e-b7ef-4c21-8a83-3ce4dd05a924.md) ['windows'] (sigma rule :heavy_check_mark:)
 
