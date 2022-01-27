@@ -1,0 +1,16 @@
+Attack_name: Windows Management Instrumentation
+Attack_description: |-
+  Adversaries may abuse Windows Management Instrumentation (WMI) to achieve execution. WMI is a Windows administration feature that provides a uniform environment for local and remote access to Windows system components. It relies on the WMI service for local and remote access and the server message block (SMB) (Citation: Wikipedia SMB) and Remote Procedure Call Service (RPCS) (Citation: TechNet RPC) for remote access. RPCS operates over port 135. (Citation: MSDN WMI)
+
+  An adversary can use WMI to interact with local and remote systems and use it as a means to perform many tactic functions, such as gathering information for Discovery and remote Execution of files as part of Lateral Movement. (Citation: FireEye WMI SANS 2015) (Citation: FireEye WMI 2015)
+guid: c510d25b-1667-467d-8331-a56d3e9bc4ff
+name: Application uninstall using WMIC
+tactic:
+  - execution
+technique:
+  - T1047
+os:
+  - windows
+description: Emulates uninstalling  applications using WMIC.  This method only works if the product was installed with an msi file.  APTs have been seen using this to uninstall security products.
+sigma: false
+sigma_rule: []

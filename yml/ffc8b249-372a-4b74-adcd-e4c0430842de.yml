@@ -4,7 +4,7 @@ Attack_description: |-
 
   Many command shell utilities can be used to obtain this information. Examples include <code>dir</code>, <code>tree</code>, <code>ls</code>, <code>find</code>, and <code>locate</code>. (Citation: Windows Commands JPCERT) Custom tools may also be used to gather file and directory information and interact with the [Native API](https://attack.mitre.org/techniques/T1106).
 guid: ffc8b249-372a-4b74-adcd-e4c0430842de
-name: Nix File and Diectory Discovery
+name: Nix File and Directory Discovery
 tactic:
   - discovery
 technique:
