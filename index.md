@@ -1487,7 +1487,7 @@ Caution: a test can generate a lot of noise...
 ### T1216
 [manage-bde.wsf Signed Script Command Execution](tests/2a8f2d3c-3dec-4262-99dd-150cb2a4d63a.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[SyncAppvPublishingServer Signed Script PowerShell Command Execution](tests/275d963d-3f36-476c-8bef-a2a3960ee6eb.md) ['windows'] (sigma rule :x:)
+[SyncAppvPublishingServer Signed Script PowerShell Command Execution](tests/275d963d-3f36-476c-8bef-a2a3960ee6eb.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1041
@@ -1813,9 +1813,9 @@ Caution: a test can generate a lot of noise...
 ### T1071.001
 [Malicious User Agents - Nix](tests/2d7c471a-e887-4b78-b0dc-b0df1f2e0658.md) ['linux', 'macos'] (sigma rule :x:)
 
-[Malicious User Agents - Powershell](tests/81c13829-f6c9-45b8-85a6-053366d55297.md) ['windows'] (sigma rule :x:)
+[Malicious User Agents - Powershell](tests/81c13829-f6c9-45b8-85a6-053366d55297.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Malicious User Agents - CMD](tests/dc3488b0-08c7-4fea-b585-905c83b48180.md) ['windows'] (sigma rule :x:)
+[Malicious User Agents - CMD](tests/dc3488b0-08c7-4fea-b585-905c83b48180.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1552.002
