@@ -13,5 +13,9 @@ os:
   - windows
 description: "This test simulates an infected host beaconing to command and control. Upon execution, no out put will be displayed. \nUse an application such as Wireshark to record the session and observe\
   \ user agent strings and responses.\n\nInspired by APTSimulator - https://github.com/NextronSystems/APTSimulator/blob/master/test-sets/command-and-control/malicious-user-agents.bat\n"
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 4f4eaa9f-5ad4-410c-a4be-bc6132b0175a
+    name: win_pc_cmd_redirect.yml
+  - id: 3286d37a-00fd-41c2-a624-a672dcd34e60
+    name: win_pc_susp_curl_useragent.yml

@@ -551,7 +551,7 @@ defense-evasion;T1218;['windows'];ProtocolHandler.exe Downloaded a Suspicious Fi
 defense-evasion;T1218;['windows'];Microsoft.Workflow.Compiler.exe Payload Execution;7cbb0f26-a4c1-4f77-b180-a009aa05637e;True;6
 defense-evasion;T1218;['windows'];Renamed Microsoft.Workflow.Compiler.exe Payload Executions;4cc40fd7-87b8-4b16-b2d7-57534b86b911;True;7
 defense-evasion;T1218;['windows'];Invoke-ATHRemoteFXvGPUDisablementCommand base test;9ebe7901-7edf-45c0-b5c7-8366300919db;True;8
-defense-evasion;T1216;['windows'];SyncAppvPublishingServer Signed Script PowerShell Command Execution;275d963d-3f36-476c-8bef-a2a3960ee6eb;False;1
+defense-evasion;T1216;['windows'];SyncAppvPublishingServer Signed Script PowerShell Command Execution;275d963d-3f36-476c-8bef-a2a3960ee6eb;True;1
 defense-evasion;T1216;['windows'];manage-bde.wsf Signed Script Command Execution;2a8f2d3c-3dec-4262-99dd-150cb2a4d63a;True;2
 defense-evasion;T1027.002;['linux'];Binary simply packed by UPX (linux);11c46cd8-e471-450e-acb8-52a1216ae6a4;False;1
 defense-evasion;T1027.002;['linux'];Binary packed by UPX, with modified headers (linux);f06197f8-ff46-48c2-a0c6-afc1b50665e1;False;2
@@ -1011,8 +1011,8 @@ command-and-control;T1219;['windows'];GoToAssist Files Detected Test on Windows;
 command-and-control;T1219;['windows'];ScreenConnect Application Download and Install on Windows;4a18cc4e-416f-4966-9a9d-75731c4684c0;False;5
 command-and-control;T1132.001;['macos', 'linux'];Base64 Encoded data.;1164f70f-9a88-4dff-b9ff-dc70e7bf0c25;False;1
 command-and-control;T1132.001;['windows'];XOR Encoded data.;c3ed6d2a-e3ad-400d-ad78-bbfdbfeacc08;True;2
-command-and-control;T1071.001;['windows'];Malicious User Agents - Powershell;81c13829-f6c9-45b8-85a6-053366d55297;False;1
-command-and-control;T1071.001;['windows'];Malicious User Agents - CMD;dc3488b0-08c7-4fea-b585-905c83b48180;False;2
+command-and-control;T1071.001;['windows'];Malicious User Agents - Powershell;81c13829-f6c9-45b8-85a6-053366d55297;True;1
+command-and-control;T1071.001;['windows'];Malicious User Agents - CMD;dc3488b0-08c7-4fea-b585-905c83b48180;True;2
 command-and-control;T1071.001;['linux', 'macos'];Malicious User Agents - Nix;2d7c471a-e887-4b78-b0dc-b0df1f2e0658;False;3
 exfiltration;T1020;['windows'];IcedID Botnet HTTP PUT;9c780d3d-3a14-4278-8ee5-faaeb2ccfbe0;True;1
 exfiltration;T1030;['macos', 'linux'];Data Transfer Size Limits;ab936c51-10f4-46ce-9144-e02137b2016a;False;1

@@ -13,5 +13,15 @@ os:
 description: |
   Executes the signed SyncAppvPublishingServer script with options to execute an arbitrary PowerShell command.
   Upon execution, calc.exe will be launched.
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 36475a7d-0f6d-4dce-9b01-6aeb473bbaf1
+    name: process_creation_syncappvpublishingserver_vbs_execute_powershell.yml
+  - id: a642964e-bead-4bed-8910-1bb4d63e3b4d
+    name: win_mimikatz_command_line.yml
+  - id: 87e3c4e8-a6a8-4ad9-bb4f-46e7ff99a180
+    name: win_pc_set_policies_to_unsecure_level.yml
+  - id: 95eadcb2-92e4-4ed1-9031-92547773a6db
+    name: win_susp_powershell_parent_combo.yml
+  - id: f4bbd493-b796-416e-bbf2-121235348529
+    name: win_non_interactive_powershell.yml
