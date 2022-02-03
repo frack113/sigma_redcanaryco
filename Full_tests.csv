@@ -499,7 +499,7 @@ defense-evasion;T1134.004;['windows'];Parent PID Spoofing - Spawn from Specified
 defense-evasion;T1134.004;['windows'];Parent PID Spoofing - Spawn from svchost.exe;e9f2b777-3123-430b-805d-5cedc66ab591;True;4
 defense-evasion;T1134.004;['windows'];Parent PID Spoofing - Spawn from New Process;2988133e-561c-4e42-a15f-6281e6a9b2db;True;5
 defense-evasion;T1550.002;['windows'];Mimikatz Pass the Hash;ec23cef9-27d9-46e4-a68d-6f75f7b86908;True;1
-defense-evasion;T1550.002;['windows'];crackmapexec Pass the Hash;eb05b028-16c8-4ad8-adea-6f5b219da9a9;False;2
+defense-evasion;T1550.002;['windows'];crackmapexec Pass the Hash;eb05b028-16c8-4ad8-adea-6f5b219da9a9;True;2
 defense-evasion;T1550.003;['windows'];Mimikatz Kerberos Ticket Attack;dbf38128-7ba7-4776-bedf-cc2eed432098;True;1
 defense-evasion;T1550.003;['windows'];Rubeus Kerberos Pass The Ticket;a2fc4ec5-12c6-4fb4-b661-961f23f359cb;True;2
 defense-evasion;T1556.002;['windows'];Install and Register Password Filter DLL;a7961770-beb5-4134-9674-83d7e1fa865c;True;1
@@ -579,7 +579,7 @@ defense-evasion;T1070.006;['windows'];Windows - Modify file last access timestam
 defense-evasion;T1070.006;['windows'];Windows - Timestomp a File;d7512c33-3a75-4806-9893-69abc3ccdd43;True;8
 defense-evasion;T1134.001;['windows'];Named pipe client impersonation;90db9e27-8e7c-4c04-b602-a45927884966;True;1
 defense-evasion;T1134.001;['windows'];`SeDebugPrivilege` token duplication;34f0a430-9d04-4d98-bcb5-1989f14719f0;True;2
-defense-evasion;T1222.001;['windows'];Take ownership using takeown utility;98d34bb4-6e75-42ad-9c41-1dae7dc6a001;False;1
+defense-evasion;T1222.001;['windows'];Take ownership using takeown utility;98d34bb4-6e75-42ad-9c41-1dae7dc6a001;True;1
 defense-evasion;T1222.001;['windows'];cacls - Grant permission to specified user or group recursively;a8206bcc-f282-40a9-a389-05d9c0263485;True;2
 defense-evasion;T1222.001;['windows'];attrib - Remove read-only attribute;bec1e95c-83aa-492e-ab77-60c71bbd21b0;True;3
 defense-evasion;T1222.001;['windows'];attrib - hide file;32b979da-7b68-42c9-9a99-0e39900fc36c;True;4
@@ -955,7 +955,7 @@ execution;T1047;['windows'];WMI Execute rundll32;00738d2a-4651-4d76-adf2-c43a41d
 execution;T1047;['windows'];Application uninstall using WMIC;c510d25b-1667-467d-8331-a56d3e9bc4ff;True;10
 lateral-movement;T1021.003;['windows'];PowerShell Lateral Movement using MMC20;6dc74eb1-c9d6-4c53-b3b5-6f50ae339673;True;1
 lateral-movement;T1550.002;['windows'];Mimikatz Pass the Hash;ec23cef9-27d9-46e4-a68d-6f75f7b86908;True;1
-lateral-movement;T1550.002;['windows'];crackmapexec Pass the Hash;eb05b028-16c8-4ad8-adea-6f5b219da9a9;False;2
+lateral-movement;T1550.002;['windows'];crackmapexec Pass the Hash;eb05b028-16c8-4ad8-adea-6f5b219da9a9;True;2
 lateral-movement;T1550.003;['windows'];Mimikatz Kerberos Ticket Attack;dbf38128-7ba7-4776-bedf-cc2eed432098;True;1
 lateral-movement;T1550.003;['windows'];Rubeus Kerberos Pass The Ticket;a2fc4ec5-12c6-4fb4-b661-961f23f359cb;True;2
 lateral-movement;T1563.002;['windows'];RDP hijacking;a37ac520-b911-458e-8aed-c5f1576d9f46;True;1
@@ -996,7 +996,7 @@ command-and-control;T1105;['windows'];File download with finger.exe on Windows;5
 command-and-control;T1105;['windows'];Download a file with IMEWDBLD.exe;1a02df58-09af-4064-a765-0babe1a0d1e2;True;17
 command-and-control;T1105;['windows'];Curl Download File;2b080b99-0deb-4d51-af0f-833d37c4ca6a;True;18
 command-and-control;T1105;['windows'];Curl Upload File;635c9a38-6cbf-47dc-8615-3810bc1167cf;True;19
-command-and-control;T1105;['windows'];Download a file with Microsoft Connection Manager Auto-Download;d239772b-88e2-4a2e-8473-897503401bcc;False;20
+command-and-control;T1105;['windows'];Download a file with Microsoft Connection Manager Auto-Download;d239772b-88e2-4a2e-8473-897503401bcc;True;20
 command-and-control;T1090.001;['macos', 'linux'];Connection Proxy;0ac21132-4485-4212-a681-349e8a6637cd;False;1
 command-and-control;T1090.001;['macos'];Connection Proxy for macOS UI;648d68c1-8bcd-4486-9abe-71c6655b6a2c;False;2
 command-and-control;T1090.001;['windows'];portproxy reg key;b8223ea9-4be2-44a6-b50a-9657a3d4e72a;True;3

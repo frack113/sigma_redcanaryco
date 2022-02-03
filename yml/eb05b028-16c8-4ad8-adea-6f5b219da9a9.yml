@@ -17,5 +17,13 @@ os:
 description: 'command execute with crackmapexec
 
   '
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 06d71506-7beb-4f22-8888-e2e5e2ca7fd8
+    name: win_alert_mimikatz_keywords.yml
+  - id: 04d9079e-3905-4b70-ad37-6bdf11304965
+    name: win_apt_dragonfly.yml
+  - id: 78bc5783-81d9-4d73-ac97-59f6db4f72a8
+    name: win_av_relevant_match.yml
+  - id: cbb56d62-4060-40f7-9466-d8aaf3123f83
+    name: sysmon_susp_python_image_load.yml
