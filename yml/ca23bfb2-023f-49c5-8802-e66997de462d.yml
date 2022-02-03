@@ -26,5 +26,9 @@ os:
   - windows
 description: "Executes the code specified within a XSL script tag during XSL transformation using a local payload. \nRequires download of MSXSL. No longer available from Microsoft.\n(Available via Internet\
   \ Archive https://web.archive.org/web/20200825011623/https://www.microsoft.com/en-us/download/details.aspx?id=21714 ) \nOpen Calculator.exe when test successfully executed, while AV turned off.\n"
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 05c36dd6-79d6-4a9a-97da-3db20298ab2d
+    name: win_xsl_script_processing.yml
+  - id: d88d0ab2-e696-4d40-a2ed-9790064e66b3
+    name: win_re_ie_persistence.yml
