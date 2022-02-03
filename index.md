@@ -525,7 +525,7 @@ Caution: a test can generate a lot of noise...
 ### T1550.002
 [Mimikatz Pass the Hash](tests/ec23cef9-27d9-46e4-a68d-6f75f7b86908.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[crackmapexec Pass the Hash](tests/eb05b028-16c8-4ad8-adea-6f5b219da9a9.md) ['windows'] (sigma rule :x:)
+[crackmapexec Pass the Hash](tests/eb05b028-16c8-4ad8-adea-6f5b219da9a9.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1555
@@ -1071,6 +1071,8 @@ Caution: a test can generate a lot of noise...
 
 [Download a File with Windows Defender MpCmdRun.exe](tests/815bef8b-bf91-4b67-be4c-abe4c2a94ccc.md) ['windows'] (sigma rule :heavy_check_mark:)
 
+[Download a file with Microsoft Connection Manager Auto-Download](tests/d239772b-88e2-4a2e-8473-897503401bcc.md) ['windows'] (sigma rule :heavy_check_mark:)
+
 [scp remote file copy (pull)](tests/b9d22b9a-9778-4426-abf0-568ea64e9c33.md) ['linux', 'macos'] (sigma rule :x:)
 
 [OSTAP Worming Activity](tests/2ca61766-b456-4fcf-a35a-1233685e1cad.md) ['windows'] (sigma rule :heavy_check_mark:)
@@ -1204,6 +1206,16 @@ Caution: a test can generate a lot of noise...
 [Create ADS command prompt](tests/17e7637a-ddaf-4a82-8622-377e20de8fdb.md) ['windows'] (sigma rule :x:)
 
 [Store file in Alternate Data Stream (ADS)](tests/2ab75061-f5d5-4c1a-b666-ba2a50df5b02.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+
+### T1543.003
+[TinyTurla backdoor service w64time](tests/ef0581fd-528e-4662-87bc-4c2affb86940.md) ['windows'] (sigma rule :x:)
+
+[Service Installation CMD](tests/981e2942-e433-44e9-afc1-8c957a1496b6.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Service Installation PowerShell](tests/491a4af6-a521-4b74-b23b-f7b3f1ee9e77.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Modify Fax service to run PowerShell](tests/ed366cde-7d12-49df-a833-671904770b9f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1216.001
@@ -1413,7 +1425,7 @@ Caution: a test can generate a lot of noise...
 
 [cacls - Grant permission to specified user or group recursively](tests/a8206bcc-f282-40a9-a389-05d9c0263485.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Take ownership using takeown utility](tests/98d34bb4-6e75-42ad-9c41-1dae7dc6a001.md) ['windows'] (sigma rule :x:)
+[Take ownership using takeown utility](tests/98d34bb4-6e75-42ad-9c41-1dae7dc6a001.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [attrib - hide file](tests/32b979da-7b68-42c9-9a99-0e39900fc36c.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1750,14 +1762,6 @@ Caution: a test can generate a lot of noise...
 [AppleScript](tests/3600d97d-81b9-4171-ab96-e4386506e2c2.md) ['macos'] (sigma rule :x:)
 
 
-### T1543.003
-[Service Installation CMD](tests/981e2942-e433-44e9-afc1-8c957a1496b6.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[Service Installation PowerShell](tests/491a4af6-a521-4b74-b23b-f7b3f1ee9e77.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[Modify Fax service to run PowerShell](tests/ed366cde-7d12-49df-a833-671904770b9f.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-
 ### T1574.002
 [DLL Side-Loading using the Notepad++ GUP.exe binary](tests/65526037-7079-44a9-bda1-2cb624838040.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1850,6 +1854,8 @@ Caution: a test can generate a lot of noise...
 [Search macOS Safari Cookies](tests/c1402f7b-67ca-43a8-b5f3-3143abedc01b.md) ['macos'] (sigma rule :x:)
 
 [LaZagne - Credentials from Browser](tests/9a2915b3-3954-4cce-8c76-00fbf4dbd014.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Simulating access to Windows Firefox Login Data](tests/eb8da98a-2e16-4551-b3dd-83de49baa14c.md) ['windows'] (sigma rule :x:)
 
 [Run Chrome-password Collector](tests/8c05b133-d438-47ca-a630-19cc464c4622.md) ['windows'] (sigma rule :heavy_check_mark:)
 
