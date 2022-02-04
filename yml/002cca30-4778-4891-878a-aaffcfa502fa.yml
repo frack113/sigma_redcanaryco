@@ -15,5 +15,9 @@ description: 'Mounts ISO image downloaded from internet to evade Mark-of-the-Web
   sample ISO simply has a Reports shortcut file in it. Reference: https://www.microsoft.com/security/blog/2021/05/27/new-sophisticated-email-based-attack-from-nobelium/
 
   '
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 29e1c216-6408-489d-8a06-ee9d151ef819
+    name: posh_ps_suspicious_mount_diskimage.yml
+  - id: 66a4d409-451b-4151-94f4-a55d559c49b0
+    name: posh_ps_suspicious_mounted_share_deletion.yml

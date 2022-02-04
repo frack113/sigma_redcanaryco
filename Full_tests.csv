@@ -48,7 +48,7 @@ credential-access;T1056.001;['linux'];Logging bash history to syslog;0e59d59d-32
 credential-access;T1056.001;['linux'];Bash session based keylogger;7f85a946-a0ea-48aa-b6ac-8ff539278258;False;4
 credential-access;T1056.001;['linux'];SSHD PAM keylogger;81d7d2ad-d644-4b6a-bea7-28ffe43becca;False;5
 credential-access;T1056.001;['linux'];Auditd keylogger;a668edb9-334e-48eb-8c2e-5413a40867af;False;6
-credential-access;T1557.001;['windows'];LLMNR Poisoning with Inveigh (PowerShell);deecd55f-afe0-4a62-9fba-4d1ba2deb321;False;1
+credential-access;T1557.001;['windows'];LLMNR Poisoning with Inveigh (PowerShell);deecd55f-afe0-4a62-9fba-4d1ba2deb321;True;1
 credential-access;T1003.004;['windows'];Dumping LSA Secrets;55295ab0-a703-433b-9ca4-ae13807de12f;True;1
 credential-access;T1003.001;['windows'];Windows Credential Editor;0f7c5301-6859-45ba-8b4d-1fac30fc31ed;True;1
 credential-access;T1003.001;['windows'];Dump LSASS.exe Memory using ProcDump;0be2230c-9ab3-4ac2-8826-3199b9a0ebf8;True;2
@@ -137,7 +137,7 @@ collection;T1056.001;['linux'];Logging bash history to syslog;0e59d59d-3265-4d35
 collection;T1056.001;['linux'];Bash session based keylogger;7f85a946-a0ea-48aa-b6ac-8ff539278258;False;4
 collection;T1056.001;['linux'];SSHD PAM keylogger;81d7d2ad-d644-4b6a-bea7-28ffe43becca;False;5
 collection;T1056.001;['linux'];Auditd keylogger;a668edb9-334e-48eb-8c2e-5413a40867af;False;6
-collection;T1557.001;['windows'];LLMNR Poisoning with Inveigh (PowerShell);deecd55f-afe0-4a62-9fba-4d1ba2deb321;False;1
+collection;T1557.001;['windows'];LLMNR Poisoning with Inveigh (PowerShell);deecd55f-afe0-4a62-9fba-4d1ba2deb321;True;1
 collection;T1074.001;['windows'];Stage data from Discovery.bat;107706a5-6f9f-451a-adae-bab8c667829f;True;1
 collection;T1074.001;['linux', 'macos'];Stage data from Discovery.sh;39ce0303-ae16-4b9e-bb5b-4f53e8262066;False;2
 collection;T1074.001;['windows'];Zip a Folder with PowerShell for Staging in Temp;a57fbe4b-3440-452a-88a7-943531ac872a;True;3
@@ -449,9 +449,9 @@ defense-evasion;T1222.002;['macos', 'linux'];chattr - Remove immutable file attr
 defense-evasion;T1078.003;['windows'];Create local account with admin privileges;a524ce99-86de-4db6-b4f9-e08f35a47a15;True;1
 defense-evasion;T1127.001;['windows'];MSBuild Bypass Using Inline Tasks (C#);58742c0f-cb01-44cd-a60b-fb26e8871c93;True;1
 defense-evasion;T1127.001;['windows'];MSBuild Bypass Using Inline Tasks (VB);ab042179-c0c5-402f-9bc8-42741f5ce359;True;2
-defense-evasion;T1553.005;['windows'];Mount ISO image;002cca30-4778-4891-878a-aaffcfa502fa;False;1
-defense-evasion;T1553.005;['windows'];Mount an ISO image and run executable from the ISO;42f22b00-0242-4afc-a61b-0da05041f9cc;False;2
-defense-evasion;T1553.005;['windows'];Remove the Zone.Identifier alternate data stream;64b12afc-18b8-4d3f-9eab-7f6cae7c73f9;False;3
+defense-evasion;T1553.005;['windows'];Mount ISO image;002cca30-4778-4891-878a-aaffcfa502fa;True;1
+defense-evasion;T1553.005;['windows'];Mount an ISO image and run executable from the ISO;42f22b00-0242-4afc-a61b-0da05041f9cc;True;2
+defense-evasion;T1553.005;['windows'];Remove the Zone.Identifier alternate data stream;64b12afc-18b8-4d3f-9eab-7f6cae7c73f9;True;3
 defense-evasion;T1036.004;['windows'];Creating W32Time similar named service using schtasks;f9f2fe59-96f7-4a7d-ba9f-a9783200d4c9;True;1
 defense-evasion;T1036.004;['windows'];Creating W32Time similar named service using sc;b721c6ef-472c-4263-a0d9-37f1f4ecff66;True;2
 defense-evasion;T1036;['windows'];System File Copied to Unusual Location;51005ac7-52e2-45e0-bdab-d17c6d4916cd;True;1
@@ -593,6 +593,10 @@ persistence;T1546.008;['windows'];Replace binary of sticky keys;934e90cf-29ca-48
 persistence;T1098;['windows'];Admin Account Manipulate;5598f7cb-cf43-455e-883a-f6008c5d46af;True;1
 persistence;T1098;['windows'];Domain Account and Group Manipulate;a55a22e9-a3d3-42ce-bd48-2653adb8f7a9;True;2
 persistence;T1098;['iaas:aws'];AWS - Create a group and add a user to that group;8822c3b0-d9f9-4daf-a043-49f110a31122;False;3
+persistence;T1098;['azure-ad'];Azure - adding user to Azure AD role;0e65ae27-5385-46b4-98ac-607a8ee82261;False;4
+persistence;T1098;['azure-ad'];Azure - adding service principal to Azure AD role;92c40b3f-c406-4d1f-8d2b-c039bf5009e4;False;5
+persistence;T1098;['iaas:azure'];Azure - adding user to Azure role in subscription;1a94b3fc-b080-450a-b3d8-6d9b57b472ea;False;6
+persistence;T1098;['iaas:azure'];Azure - adding service principal to Azure role in subscription;c8f4bc29-a151-48da-b3be-4680af56f404;False;7
 persistence;T1137.006;['windows'];Code Executed Via Excel Add-in File (Xll);441b1a0f-a771-428a-8af0-e99e4698cda3;True;1
 persistence;T1098.001;['azure-ad'];Azure AD Application Hijacking - Service Principal;b8e747c3-bdf7-4d71-bce2-f1df2a057406;False;1
 persistence;T1098.001;['azure-ad'];Azure AD Application Hijacking - App Registration;a12b5531-acab-4618-a470-0dafb294a87a;False;2

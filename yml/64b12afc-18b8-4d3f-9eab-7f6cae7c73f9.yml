@@ -14,5 +14,7 @@ os:
 description: |
   Remove the Zone.Identifier alternate data stream which identifies the file as downloaded from the internet.
   Removing this allows more freedom in executing scripts in PowerShell and avoids opening files in protected view.
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 5947497f-1aa4-41dd-9693-c9848d58727d
+    name: posh_ps_suspicious_unblock_file.yml
