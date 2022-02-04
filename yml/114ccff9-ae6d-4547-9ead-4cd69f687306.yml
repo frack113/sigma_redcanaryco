@@ -18,15 +18,15 @@ os:
 description: |
   This atomic test downloads a macro enabled document from the Atomic Red Team GitHub repository, simulating an end user clicking a phishing link to download the file.
   The file "PhishingAttachment.xlsm" is downloaded to the %temp% directory.
-sigma: false
-sigma_rule
-- id: 9fc51a3c-81b3-4fa7-b35f-7c02cf10fd2d
-  name: process_creation\process_creation_susp_web_request_cmd.yml
-- id: 1139d2e2-84b1-4226-b445-354492eba8ba
-  name: powershell\powershell_script\posh_ps_web_request.yml
-- id: b1c50487-1967-4315-a026-6491686d860e
-  name: file_event\win_fe_macro_file.yml
-- id: 635dbb88-67b3-4b41-9ea5-a3af2dd88153
-  name: network_connection\sysmon_win_binary_github_com.yml
-- id: 1f21ec3f-810d-4b0e-8045-322202e22b4b
-  name: network_connection\sysmon_powershell_network_connection.yml
+sigma: true
+sigma_rule:
+  - id: 9fc51a3c-81b3-4fa7-b35f-7c02cf10fd2d
+    name: process_creation_susp_web_request_cmd.yml
+  - id: 1139d2e2-84b1-4226-b445-354492eba8ba
+    name: posh_ps_web_request.yml
+  - id: b1c50487-1967-4315-a026-6491686d860e
+    name: win_fe_macro_file.yml
+  - id: 635dbb88-67b3-4b41-9ea5-a3af2dd88153
+    name: sysmon_win_binary_github_com.yml
+  - id: 1f21ec3f-810d-4b0e-8045-322202e22b4b
+    name: sysmon_powershell_network_connection.yml
