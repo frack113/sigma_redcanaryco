@@ -1,7 +1,7 @@
 
 [back](../index.md)
 
-Find sigma rule :x: 
+Find sigma rule :heavy_check_mark: 
 
 # Attack: LLMNR/NBT-NS Poisoning and SMB Relay 
 
@@ -32,6 +32,24 @@ Several tools exist that can be used to poison name services within local networ
 Inveigh conducts spoofing attacks and hash/credential captures through both packet sniffing and protocol specific listeners/sockets. This Atomic will run continuously until you cancel it or it times out.
 
 # Sigma Rule
+ - process_creation_susp_web_request_cmd.yml (id: 9fc51a3c-81b3-4fa7-b35f-7c02cf10fd2d)
+
+ - posh_ps_malicious_commandlets.yml (id: 89819aa4-bbd6-46bc-88ec-c7f7fe30efa6)
+
+ - posh_ps_web_request.yml (id: 1139d2e2-84b1-4226-b445-354492eba8ba)
+
+ - posh_ps_malicious_keywords.yml (id: f62176f3-8128-4faa-bf6c-83261322e5eb)
+
+ - posh_ps_suspicious_networkcredential.yml (id: 1883444f-084b-419b-ac62-e0d0c5b3693f)
+
+ - posh_ps_accessing_win_api.yml (id: 03d83090-8cba-44a0-b02f-0b756a050306)
+
+ - sysmon_raw_disk_access_using_illegitimate_tools.yml (id: db809f10-56ce-4420-8c86-d6a7d793c79c)
+
+ - sysmon_win_binary_github_com.yml (id: 635dbb88-67b3-4b41-9ea5-a3af2dd88153)
+
+ - sysmon_powershell_network_connection.yml (id: 1f21ec3f-810d-4b0e-8045-322202e22b4b)
+
 
 
 [back](../index.md)

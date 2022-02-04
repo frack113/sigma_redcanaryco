@@ -109,6 +109,14 @@ Caution: a test can generate a lot of noise...
 ### T1098
 [Admin Account Manipulate](tests/5598f7cb-cf43-455e-883a-f6008c5d46af.md) ['windows'] (sigma rule :heavy_check_mark:)
 
+[Azure - adding service principal to Azure AD role](tests/92c40b3f-c406-4d1f-8d2b-c039bf5009e4.md) ['azure-ad'] (sigma rule :x:)
+
+[Azure - adding user to Azure AD role](tests/0e65ae27-5385-46b4-98ac-607a8ee82261.md) ['azure-ad'] (sigma rule :x:)
+
+[Azure - adding service principal to Azure role in subscription](tests/c8f4bc29-a151-48da-b3be-4680af56f404.md) ['iaas:azure'] (sigma rule :x:)
+
+[Azure - adding user to Azure role in subscription](tests/1a94b3fc-b080-450a-b3d8-6d9b57b472ea.md) ['iaas:azure'] (sigma rule :x:)
+
 [AWS - Create a group and add a user to that group](tests/8822c3b0-d9f9-4daf-a043-49f110a31122.md) ['iaas:aws'] (sigma rule :x:)
 
 [Domain Account and Group Manipulate](tests/a55a22e9-a3d3-42ce-bd48-2653adb8f7a9.md) ['windows'] (sigma rule :heavy_check_mark:)
@@ -941,11 +949,11 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1553.005
-[Remove the Zone.Identifier alternate data stream](tests/64b12afc-18b8-4d3f-9eab-7f6cae7c73f9.md) ['windows'] (sigma rule :x:)
+[Remove the Zone.Identifier alternate data stream](tests/64b12afc-18b8-4d3f-9eab-7f6cae7c73f9.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Mount an ISO image and run executable from the ISO](tests/42f22b00-0242-4afc-a61b-0da05041f9cc.md) ['windows'] (sigma rule :x:)
+[Mount an ISO image and run executable from the ISO](tests/42f22b00-0242-4afc-a61b-0da05041f9cc.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Mount ISO image](tests/002cca30-4778-4891-878a-aaffcfa502fa.md) ['windows'] (sigma rule :x:)
+[Mount ISO image](tests/002cca30-4778-4891-878a-aaffcfa502fa.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1547.009
@@ -1657,7 +1665,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1566.001
-[Download Macro-Enabled Phishing Attachment](tests/114ccff9-ae6d-4547-9ead-4cd69f687306.md) ['windows'] (sigma rule :x:)
+[Download Macro-Enabled Phishing Attachment](tests/114ccff9-ae6d-4547-9ead-4cd69f687306.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Word spawned a command shell and used an IP address in the command line](tests/cbb6799a-425c-4f83-9194-5447a909d67f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -2197,7 +2205,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1557.001
-[LLMNR Poisoning with Inveigh (PowerShell)](tests/deecd55f-afe0-4a62-9fba-4d1ba2deb321.md) ['windows'] (sigma rule :x:)
+[LLMNR Poisoning with Inveigh (PowerShell)](tests/deecd55f-afe0-4a62-9fba-4d1ba2deb321.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1020
