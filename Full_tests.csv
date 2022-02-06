@@ -1046,5 +1046,5 @@ initial-access;T1078.001;['windows'];Activate Guest Account;aa6cb8c4-b582-4f8e-b
 initial-access;T1133;['windows'];Running Chrome VPN Extensions via the Registry 2 vpn extension;4c8db261-a58b-42a6-a866-0a294deedde4;True;1
 initial-access;T1078.003;['windows'];Create local account with admin privileges;a524ce99-86de-4db6-b4f9-e08f35a47a15;True;1
 initial-access;T1091;['windows'];USB Malware Spread Simulation;d44b7297-622c-4be8-ad88-ec40d7563c75;True;1
-initial-access;T1566.001;['windows'];Download Macro-Enabled Phishing Attachment;114ccff9-ae6d-4547-9ead-4cd69f687306;False;1
+initial-access;T1566.001;['windows'];Download Macro-Enabled Phishing Attachment;114ccff9-ae6d-4547-9ead-4cd69f687306;True;1
 initial-access;T1566.001;['windows'];Word spawned a command shell and used an IP address in the command line;cbb6799a-425c-4f83-9194-5447a909d67f;True;2
