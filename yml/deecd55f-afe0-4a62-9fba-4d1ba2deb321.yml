@@ -22,5 +22,23 @@ os:
   - windows
 description: Inveigh conducts spoofing attacks and hash/credential captures through both packet sniffing and protocol specific listeners/sockets. This Atomic will run continuously until you cancel it or
   it times out.
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: f4bbd493-b796-416e-bbf2-121235348529
+    name: win_non_interactive_powershell.yml
+  - id: 9fc51a3c-81b3-4fa7-b35f-7c02cf10fd2d
+    name: process_creation_susp_web_request_cmd.yml
+  - id: 1139d2e2-84b1-4226-b445-354492eba8ba
+    name: posh_ps_web_request.yml
+  - id: 89819aa4-bbd6-46bc-88ec-c7f7fe30efa6
+    name: posh_ps_malicious_commandlets.yml
+  - id: f62176f3-8128-4faa-bf6c-83261322e5eb
+    name: posh_ps_malicious_keywords.yml
+  - id: 1883444f-084b-419b-ac62-e0d0c5b3693f
+    name: posh_ps_suspicious_networkcredential.yml
+  - id: 03d83090-8cba-44a0-b02f-0b756a050306
+    name: posh_ps_accessing_win_api.yml
+  - id: 1f21ec3f-810d-4b0e-8045-322202e22b4b
+    name: sysmon_powershell_network_connection.yml
+  - id: 635dbb88-67b3-4b41-9ea5-a3af2dd88153
+    name: sysmon_win_binary_github_com.yml

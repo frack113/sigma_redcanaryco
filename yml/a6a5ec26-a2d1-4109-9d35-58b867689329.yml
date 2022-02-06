@@ -9,15 +9,17 @@ Attack_description: "Adversaries may acquire credentials from web browsers by re
   \nAdversaries may also acquire credentials by searching web browser process memory for patterns that commonly match credentials.(Citation: GitHub Mimikittenz July 2016)\n\nAfter acquiring credentials\
   \ from web browsers, adversaries may attempt to recycle the credentials across different systems and/or accounts in order to expand access. This can result in significantly furthering an adversary's objective\
   \ in cases where credentials gained from web browsers overlap with privileged accounts (e.g. domain administrator)."
-guid: 28498c17-57e4-495a-b0be-cc1e36de408b
-name: Simulating access to Opera Login Data
+guid: a6a5ec26-a2d1-4109-9d35-58b867689329
+name: Simulating access to Windows Edge Login Data
 tactic:
   - credential-access
 technique:
   - T1555.003
 os:
   - windows
-description: "Simulates an adversary accessing encrypted credentials from Opera web browser's login database. \n"
+description: |
+  Simulates an adversary accessing encrypted credentials from Edge web browser's login database.
+  more info in https://www.forensicfocus.com/articles/chromium-based-microsoft-edge-from-a-forensic-point-of-view/
 sigma: true
 sigma_rule:
   - id: fc028194-969d-4122-8abe-0470d5b8f12f
