@@ -317,6 +317,8 @@ Caution: a test can generate a lot of noise...
 
 [Rundll32 syssetup.dll Execution](tests/41fa324a-3946-401e-bbdd-d7991c628125.md) ['windows'] (sigma rule :heavy_check_mark:)
 
+[Execution of non-dll using rundll32.exe](tests/ae3a8605-b26e-457c-b6b3-2702fd335bac.md) ['windows'] (sigma rule :heavy_check_mark:)
+
 [Rundll32 execute JavaScript Remote Payload With GetObject](tests/cf3bdb9a-dd11-4b6c-b0d0-9e22b68a71be.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Execution of HTA and VBS Files using Rundll32 and URL.dll](tests/22cfde89-befe-4e15-9753-47306b37a6e3.md) ['windows'] (sigma rule :heavy_check_mark:)
@@ -713,6 +715,8 @@ Caution: a test can generate a lot of noise...
 
 [Disable Event Logging with wevtutil](tests/b26a3340-dad7-4360-9176-706269c74103.md) ['windows'] (sigma rule :heavy_check_mark:)
 
+[Makes Eventlog blind with Phant0m](tests/3ddf3d03-f5d6-462a-ad76-2c5ff7b6d741.md) ['windows'] (sigma rule :heavy_check_mark:)
+
 [Clear Windows Audit Policy Config](tests/913c0e4e-4b37-4b78-ad0b-90e7b25010f6.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Disable Windows IIS HTTP Logging](tests/69435dcf-c66f-4ec0-a8b1-82beb76b34db.md) ['windows'] (sigma rule :heavy_check_mark:)
@@ -841,7 +845,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1564.001
-[Create Windows System File with Attrib](tests/f70974c8-c094-4574-b542-2c545af95a32.md) ['windows'] (sigma rule :x:)
+[Create Windows System File with Attrib](tests/f70974c8-c094-4574-b542-2c545af95a32.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Mac Hidden file](tests/cddb9098-3b47-4e01-9d3b-6f5f323288a9.md) ['macos'] (sigma rule :x:)
 
@@ -1211,13 +1215,13 @@ Caution: a test can generate a lot of noise...
 
 [Alternate Data Streams (ADS)](tests/8822c3b0-d9f9-4daf-a043-49f4602364f4.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Create ADS command prompt](tests/17e7637a-ddaf-4a82-8622-377e20de8fdb.md) ['windows'] (sigma rule :x:)
+[Create ADS command prompt](tests/17e7637a-ddaf-4a82-8622-377e20de8fdb.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Store file in Alternate Data Stream (ADS)](tests/2ab75061-f5d5-4c1a-b666-ba2a50df5b02.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1543.003
-[TinyTurla backdoor service w64time](tests/ef0581fd-528e-4662-87bc-4c2affb86940.md) ['windows'] (sigma rule :x:)
+[TinyTurla backdoor service w64time](tests/ef0581fd-528e-4662-87bc-4c2affb86940.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Service Installation CMD](tests/981e2942-e433-44e9-afc1-8c957a1496b6.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1748,6 +1752,12 @@ Caution: a test can generate a lot of noise...
 [Re-Opened Applications](tests/5fefd767-ef54-4ac6-84d3-751ab85e8aba.md) ['macos'] (sigma rule :x:)
 
 
+### T1003.006
+[Run DSInternals Get-ADReplAccount](tests/a0bced08-3fc5-4d8b-93b7-e8344739376e.md) ['windows'] (sigma rule :x:)
+
+[DCSync (Active Directory)](tests/129efd28-8497-4c87-a1b0-73b9a870ca3e.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+
 ### T1546.010
 [Install AppInit Shim](tests/a58d9386-3080-4242-ab5f-454c16503d18.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1863,13 +1873,15 @@ Caution: a test can generate a lot of noise...
 
 [LaZagne - Credentials from Browser](tests/9a2915b3-3954-4cce-8c76-00fbf4dbd014.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Simulating access to Windows Firefox Login Data](tests/eb8da98a-2e16-4551-b3dd-83de49baa14c.md) ['windows'] (sigma rule :x:)
+[Simulating access to Windows Firefox Login Data](tests/eb8da98a-2e16-4551-b3dd-83de49baa14c.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Run Chrome-password Collector](tests/8c05b133-d438-47ca-a630-19cc464c4622.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Simulating access to Chrome Login Data](tests/3d111226-d09a-4911-8715-fe11664f960d.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Simulating access to Opera Login Data](tests/28498c17-57e4-495a-b0be-cc1e36de408b.md) ['windows'] (sigma rule :x:)
+[Simulating access to Windows Edge Login Data](tests/a6a5ec26-a2d1-4109-9d35-58b867689329.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Simulating access to Opera Login Data](tests/28498c17-57e4-495a-b0be-cc1e36de408b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1562.006
@@ -1968,10 +1980,6 @@ Caution: a test can generate a lot of noise...
 
 ### T1056.004
 [Hook PowerShell TLS Encrypt/Decrypt Messages](tests/de1934ea-1fbf-425b-8795-65fb27dd7e33.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-
-### T1003.006
-[DCSync (Active Directory)](tests/129efd28-8497-4c87-a1b0-73b9a870ca3e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1547.011

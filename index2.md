@@ -36,6 +36,8 @@
   * T1564.004 [Store file in Alternate Data Stream (ADS)](tests/2ab75061-f5d5-4c1a-b666-ba2a50df5b02.md)
   * T1140 [Deobfuscate/Decode Files Or Information](tests/dc6fe391-69e6-4506-bd06-ea5eeb4082f8.md)
   * T1105 [certutil download (verifyctl)](tests/ffd492e3-0455-4518-9fb1-46527c9f241b.md)
+* image_load_susp_advapi32_dll.yml
+  * T1562.002 [Makes Eventlog blind with Phant0m](tests/3ddf3d03-f5d6-462a-ad76-2c5ff7b6d741.md)
 * image_load_wsman_provider_image_load.yml
   * T1021.006 [Enable Windows Remote Management](tests/9059e8de-3d7d-4954-a322-46161880b9cf.md)
   * T1021.006 [Invoke-Command](tests/5295bd61-bd7e-4744-9d52-85962a4cf2d6.md)
@@ -101,6 +103,10 @@
 * posh_pm_suspicious_smb_share_reco.yml
   * T1070.005 [Remove Network Share PowerShell](tests/0512d214-9512-4d22-bde7-f37e058259b3.md)
   * T1135 [Network Share Discovery PowerShell](tests/1b0814d1-bb24-402d-9615-1b20c50733fb.md)
+* posh_ps_access_to_browser_login_data.yml
+  * T1555.003 [Simulating access to Windows Firefox Login Data](tests/eb8da98a-2e16-4551-b3dd-83de49baa14c.md)
+  * T1555.003 [Simulating access to Windows Edge Login Data](tests/a6a5ec26-a2d1-4109-9d35-58b867689329.md)
+  * T1555.003 [Simulating access to Opera Login Data](tests/28498c17-57e4-495a-b0be-cc1e36de408b.md)
 * posh_ps_access_to_chrome_login_data.yml
   * T1555.003 [Simulating access to Chrome Login Data](tests/3d111226-d09a-4911-8715-fe11664f960d.md)
 * posh_ps_accessing_win_api.yml
@@ -439,6 +445,7 @@
   * T1134.004 [Parent PID Spoofing - Spawn from Specified Process](tests/cbbff285-9051-444a-9d17-c07cd2d230eb.md)
   * T1134.004 [Parent PID Spoofing - Spawn from New Process](tests/2988133e-561c-4e42-a15f-6281e6a9b2db.md)
   * T1218.005 [Invoke HTML Application - Jscript Engine over Local UNC Simulating Lateral Movement](tests/007e5672-2088-4853-a562-7490ddc19447.md)
+  * T1218.011 [Execution of non-dll using rundll32.exe](tests/ae3a8605-b26e-457c-b6b3-2702fd335bac.md)
   * T1059.001 [ATHPowerShellCommandLineParameter -EncodedCommand parameter variations](tests/86a43bad-12e3-4e85-b97c-4d5cf25b95c3.md)
   * T1056.001 [Input Capture](tests/d9b633ca-8efb-45e6-b838-70f595c6ae26.md)
   * T1048.003 [Exfiltration Over Alternative Protocol - HTTP](tests/6aa58451-1121-4490-a8e9-1dada3f1c68c.md)
@@ -841,8 +848,6 @@
   * T1547.001 [Add Executable Shortcut Link to User Startup Folder](tests/24e55612-85f6-4bd6-ae74-a73d02e3441d.md)
 * sysmon_pypykatz_cred_dump_lsass_access.yml
   * T1003.001 [LSASS read with pypykatz](tests/c37bc535-5c62-4195-9cc3-0517673171d8.md)
-* sysmon_raw_disk_access_using_illegitimate_tools.yml
-  * T1557.001 [LLMNR Poisoning with Inveigh (PowerShell)](tests/deecd55f-afe0-4a62-9fba-4d1ba2deb321.md)
 * sysmon_rdp_registry_modification.yml
   * T1078.001 [Enable Guest account with RDP capability and admin privileges](tests/99747561-ed8d-47f2-9c91-1e5fde1ed6e0.md)
 * sysmon_rdp_settings_hijack.yml
@@ -1258,6 +1263,7 @@
   * T1040 [Packet Capture Windows Command Prompt](tests/a5b2f6a0-24b4-493e-9590-c699f75723ca.md)
 * win_new_service_creation.yml
   * T1563.002 [RDP hijacking](tests/a37ac520-b911-458e-8aed-c5f1576d9f46.md)
+  * T1543.003 [TinyTurla backdoor service w64time](tests/ef0581fd-528e-4662-87bc-4c2affb86940.md)
   * T1543.003 [Service Installation CMD](tests/981e2942-e433-44e9-afc1-8c957a1496b6.md)
   * T1543.003 [Service Installation PowerShell](tests/491a4af6-a521-4b74-b23b-f7b3f1ee9e77.md)
   * T1569.002 [Execute a Command as a Service](tests/2382dee2-a75f-49aa-9378-f52df6ed3fb1.md)
@@ -1278,6 +1284,7 @@
   * T1003.001 [Dump LSASS.exe Memory using comsvcs.dll](tests/2536dee2-12fb-459a-8c37-971844fa73be.md)
   * T1204.002 [Office Generic Payload Download](tests/5202ee05-c420-4148-bf5e-fd7f7d24850c.md)
   * T1059.001 [Invoke-AppPathBypass](tests/06a220b6-7e29-4bd8-9d07-5b4d86742372.md)
+  * T1557.001 [LLMNR Poisoning with Inveigh (PowerShell)](tests/deecd55f-afe0-4a62-9fba-4d1ba2deb321.md)
 * win_office_shell.yml
   * T1059.005 [Encoded VBS code execution](tests/e8209d5f-e42d-45e6-9c2f-633ac4f1eefa.md)
   * T1204.002 [Headless Chrome code execution via VBA](tests/a19ee671-ed98-4e9d-b19c-d1954a51585a.md)
@@ -1299,6 +1306,8 @@
 * win_pass_the_hash_2.yml
   * T1558.001 [Crafting Active Directory golden tickets with Rubeus](tests/e42d33cd-205c-4acf-ab59-a9f38f6bad9c.md)
   * T1558.001 [Crafting Active Directory golden tickets with mimikatz](tests/9726592a-dabc-4d4d-81cd-44070008b3af.md)
+* win_pc_attrib_system.yml
+  * T1564.001 [Create Windows System File with Attrib](tests/f70974c8-c094-4574-b542-2c545af95a32.md)
 * win_pc_cmd_delete.yml
   * T1070.004 [Delete an entire folder - Windows cmd](tests/ded937c4-2add-42f7-9c2c-c742b7a98698.md)
   * T1070.004 [Delete a single file - Windows cmd](tests/861ea0b4-708a-4d17-848d-186c9c7f17e3.md)
@@ -1307,6 +1316,7 @@
   * T1071.001 [Malicious User Agents - CMD](tests/dc3488b0-08c7-4fea-b585-905c83b48180.md)
   * T1059.003 [Writes text to a file and displays it.](tests/127b4afe-2346-4192-815c-69042bec570e.md)
   * T1105 [Download a file with Microsoft Connection Manager Auto-Download](tests/d239772b-88e2-4a2e-8473-897503401bcc.md)
+  * T1564.004 [Create ADS command prompt](tests/17e7637a-ddaf-4a82-8622-377e20de8fdb.md)
 * win_pc_delete_systemstatebackup.yml
   * T1490 [Windows - wbadmin Delete systemstatebackup](tests/584331dd-75bc-4c02-9e0b-17f5fd81c748.md)
 * win_pc_dsim_remove.yml
@@ -1338,6 +1348,8 @@
   * T1562.004 [Allow SMB and RDP on Microsoft Defender Firewall](tests/d9841bf8-f161-4c73-81e9-fd773a5ff8c1.md)
 * win_pc_pypykatz.yml
   * T1003.002 [Registry parse with pypykatz](tests/a96872b2-cbf3-46cf-8eb4-27e8c0e85263.md)
+* win_pc_redirect_to_stream.yml
+  * T1564.004 [Create ADS command prompt](tests/17e7637a-ddaf-4a82-8622-377e20de8fdb.md)
 * win_pc_reg_dump_sam.yml
   * T1003.002 [Registry dump of SAM, creds, and secrets](tests/5c2571d0-1572-416d-9676-812e64ca9f44.md)
 * win_pc_reg_service_imagepath_change.yml
@@ -1556,6 +1568,8 @@
   * T1112 [Javascript in registry](tests/15f44ea9-4571-4837-be9e-802431a7bfae.md)
 * win_re_outlook_security.yml
   * T1137 [Office Application Startup - Outlook as a C2](tests/bfe6ac15-c50b-4c4f-a186-0fc6b8ba936c.md)
+* win_re_set_servicedll.yml
+  * T1543.003 [TinyTurla backdoor service w64time](tests/ef0581fd-528e-4662-87bc-4c2affb86940.md)
 * win_re_shim_databases_persistence.yml
   * T1546.011 [Registry key creation and/or modification events for SDB](tests/9b6a06f9-ab5e-4e8d-8289-1df4289db02f.md)
 * win_re_winlogon_notify_key.yml
@@ -1598,6 +1612,7 @@
   * T1003.001 [Dump LSASS.exe Memory using ProcDump](tests/0be2230c-9ab3-4ac2-8826-3199b9a0ebf8.md)
 * win_run_executable_invalid_extension.yml
   * T1218.011 [Rundll32 execute VBscript command](tests/638730e7-7aed-43dc-bf8c-8117f805f5bb.md)
+  * T1218.011 [Execution of non-dll using rundll32.exe](tests/ae3a8605-b26e-457c-b6b3-2702fd335bac.md)
   * T1218.011 [Rundll32 execute JavaScript Remote Payload With GetObject](tests/cf3bdb9a-dd11-4b6c-b0d0-9e22b68a71be.md)
 * win_run_powershell_script_from_ads.yml
   * T1059.001 [NTFS Alternate Data Stream Access](tests/8e5c5532-1181-4c1d-bb79-b3a9f5dbd680.md)
@@ -1691,6 +1706,7 @@
 * win_susp_copy_system32.yml
   * T1140 [Certutil Rename and Decode](tests/71abc534-3c05-4d0c-80f7-cbe93cb2aa94.md)
   * T1036 [System File Copied to Unusual Location](tests/51005ac7-52e2-45e0-bdab-d17c6d4916cd.md)
+  * T1543.003 [TinyTurla backdoor service w64time](tests/ef0581fd-528e-4662-87bc-4c2affb86940.md)
   * T1036.003 [Malicious process Masquerading as LSM.exe](tests/83810c46-f45e-4485-9ab6-8ed0e9e6ed7f.md)
   * T1574.001 [DLL Search Order Hijacking - amsi.dll](tests/8549ad4b-b5df-4a2d-a3d7-2aee9e7052a3.md)
   * T1036.003 [Masquerading - cscript.exe running as notepad.exe](tests/3a2a578b-0a01-46e4-92e3-62e2859b42f0.md)
