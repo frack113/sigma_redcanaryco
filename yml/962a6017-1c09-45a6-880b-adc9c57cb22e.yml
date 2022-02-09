@@ -1,0 +1,19 @@
+Attack_name: Remote System Discovery
+Attack_description: "Adversaries may attempt to get a listing of other systems by IP address, hostname, or other logical identifier on a network that may be used for Lateral Movement from the current system.\
+  \ Functionality could exist within remote access tools to enable this, but utilities available on the operating system could also be used such as  [Ping](https://attack.mitre.org/software/S0097) or <code>net\
+  \ view</code> using [Net](https://attack.mitre.org/software/S0039). Adversaries may also use local host files (ex: <code>C:\\Windows\\System32\\Drivers\\etc\\hosts</code> or <code>/etc/hosts</code>) in\
+  \ order to discover the hostname to IP address mappings of remote systems. \n\nSpecific to macOS, the <code>bonjour</code> protocol exists to discover additional Mac-based systems within the same broadcast\
+  \ domain."
+guid: 962a6017-1c09-45a6-880b-adc9c57cb22e
+name: Enumerate domain computers within Active Directory using DirectorySearcher
+tactic:
+  - discovery
+technique:
+  - T1018
+os:
+  - windows
+description: "This test is a Powershell script that enumerates Active Directory to determine computers that are joined to the domain. \nThis test is designed to mimic how SessionGopher can determine the\
+  \ additional systems within a domain, which has been used before by threat actors to aid in lateral movement. \nReference: [Head Fake: Tackling Disruptive Ransomware Attacks](https://www.mandiant.com/resources/head-fake-tackling-disruptive-ransomware-attacks).\
+  \ \nUpon successful execution, this test will output the names of the computers that reside on the domain to the console window. \n"
+sigma: false
+sigma_rule: []

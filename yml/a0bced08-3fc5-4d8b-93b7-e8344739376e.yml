@@ -15,5 +15,15 @@ os:
   - windows
 description: "The following Atomic will run Get-ADReplAccount from DSInternals.\nUpon successful execution, domain and credentials will appear in stdout. \n[Reference](https://www.crowdstrike.com/blog/observations-from-the-stellarparticle-campaign/)\
   \ CrowdStrike StellerParticle.\nhttps://www.dsinternals.com/en/retrieving-active-directory-passwords-remotely/\n"
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 06d71506-7beb-4f22-8888-e2e5e2ca7fd8
+    name: win_alert_mimikatz_keywords.yml
+  - id: f4bbd493-b796-416e-bbf2-121235348529
+    name: win_non_interactive_powershell.yml
+  - id: 060c3ef1-fd0a-4091-bf46-e7d625f60b73
+    name: posh_ps_get_adreplaccount.yml
+  - id: 89819aa4-bbd6-46bc-88ec-c7f7fe30efa6
+    name: posh_ps_malicious_commandlets.yml
+  - id: 5947497f-1aa4-41dd-9693-c9848d58727d
+    name: posh_ps_suspicious_unblock_file.yml

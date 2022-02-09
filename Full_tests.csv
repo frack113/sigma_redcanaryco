@@ -30,7 +30,7 @@ credential-access;T1555.003;['windows'];Simulating access to Windows Edge Login 
 credential-access;T1552.002;['windows'];Enumeration for Credentials in Registry;b6ec082c-7384-46b3-a111-9a9b8b14e5e7;True;1
 credential-access;T1552.002;['windows'];Enumeration for PuTTY Credentials in Registry;af197fd7-e868-448e-9bd5-05d1bcd9d9e5;True;2
 credential-access;T1003.006;['windows'];DCSync (Active Directory);129efd28-8497-4c87-a1b0-73b9a870ca3e;True;1
-credential-access;T1003.006;['windows'];Run DSInternals Get-ADReplAccount;a0bced08-3fc5-4d8b-93b7-e8344739376e;False;2
+credential-access;T1003.006;['windows'];Run DSInternals Get-ADReplAccount;a0bced08-3fc5-4d8b-93b7-e8344739376e;True;2
 credential-access;T1187;['windows'];PetitPotam;485ce873-2e65-4706-9c7e-ae3ab9e14213;True;1
 credential-access;T1056.002;['macos'];AppleScript - Prompt User for Password;76628574-0bc1-4646-8fe2-8f4427b47d15;False;1
 credential-access;T1056.002;['windows'];PowerShell - Prompt User for Password;2b162bfd-0928-4d4c-9ec3-4d9f88374b52;True;2
@@ -70,8 +70,9 @@ credential-access;T1003.003;['windows'];Copy NTDS.dit from Volume Shadow Copy;c6
 credential-access;T1003.003;['windows'];Dump Active Directory Database with NTDSUtil;2364e33d-ceab-4641-8468-bfb1d7cc2723;True;3
 credential-access;T1003.003;['windows'];Create Volume Shadow Copy with WMI;224f7de0-8f0a-4a94-b5d8-989b036c86da;True;4
 credential-access;T1003.003;['windows'];Create Volume Shadow Copy remotely with WMI;d893459f-71f0-484d-9808-ec83b2b64226;True;5
-credential-access;T1003.003;['windows'];Create Volume Shadow Copy with Powershell;542bb97e-da53-436b-8e43-e0a7d31a6c24;True;6
-credential-access;T1003.003;['windows'];Create Symlink to Volume Shadow Copy;21748c28-2793-4284-9e07-d6d028b66702;True;7
+credential-access;T1003.003;['windows'];Create Volume Shadow Copy remotely (WMI) with esentutl;21c7bf80-3e8b-40fa-8f9d-f5b194ff2865;True;6
+credential-access;T1003.003;['windows'];Create Volume Shadow Copy with Powershell;542bb97e-da53-436b-8e43-e0a7d31a6c24;True;7
+credential-access;T1003.003;['windows'];Create Symlink to Volume Shadow Copy;21748c28-2793-4284-9e07-d6d028b66702;True;8
 credential-access;T1040;['linux'];Packet Capture Linux;7fe741f7-b265-4951-a7c7-320889083b3e;False;1
 credential-access;T1040;['macos'];Packet Capture macOS;9d04efee-eff5-4240-b8d2-07792b873608;False;2
 credential-access;T1040;['windows'];Packet Capture Windows Command Prompt;a5b2f6a0-24b4-493e-9590-c699f75723ca;True;3
@@ -182,6 +183,7 @@ privilege-escalation;T1574.012;['windows'];System Scope COR_PROFILER;f373b482-48
 privilege-escalation;T1574.012;['windows'];Registry-free process scope COR_PROFILER;79d57242-bbef-41db-b301-9d01d9f6e817;True;3
 privilege-escalation;T1546.001;['windows'];Change Default File Association;10a08978-2045-4d62-8c42-1957bbbea102;True;1
 privilege-escalation;T1078.004;['google-workspace', 'windows', 'linux', 'macos'];Creating GCP Service Account and Service Account Key;9fdd83fd-bd53-46e5-a716-9dec89c8ae8e;False;1
+privilege-escalation;T1546.015;['windows'];COM Hijacking - InprocServer32;48117158-d7be-441b-bc6a-d9e36e47b52b;False;1
 privilege-escalation;T1053.007;['containers'];ListCronjobs;ddfb0bc1-3c3f-47e9-a298-550ecfefacbd;False;1
 privilege-escalation;T1053.007;['containers'];CreateCronjob;f2fa019e-fb2a-4d28-9dc6-fd1a9b7f68c3;False;2
 privilege-escalation;T1134.002;['windows'];Access Token Manipulation;dbf4f5a9-b8e0-46a3-9841-9ad71247239e;True;1
@@ -391,6 +393,7 @@ defense-evasion;T1562.001;['windows'];Tamper with Windows Defender Evade Scannin
 defense-evasion;T1562.001;['windows'];Tamper with Windows Defender Evade Scanning -Process;a123ce6a-3916-45d6-ba9c-7d4081315c27;True;24
 defense-evasion;T1562.001;['office-365'];office-365-Disable-AntiPhishRule;b9bbae2c-2ba6-4cf3-b452-8e8f908696f3;False;25
 defense-evasion;T1562.001;['windows'];Disable Windows Defender with DISM;871438ac-7d6e-432a-b27d-3e7db69faf58;True;26
+defense-evasion;T1562.001;['windows'];Disable Defender with Defender Control;178136d8-2778-4d7a-81f3-d517053a4fd6;False;27
 defense-evasion;T1484.002;['azure-ad'];Add Federation to Azure AD;8906c5d0-3ee5-4f63-897a-f6cafd3fdbb7;False;1
 defense-evasion;T1574.006;['linux'];Shared Library Injection via /etc/ld.so.preload;39cb0e67-dd0d-4b74-a74b-c072db7ae991;False;1
 defense-evasion;T1574.006;['linux'];Shared Library Injection via LD_PRELOAD;bc219ff7-789f-4d51-9142-ecae3397deae;False;2
@@ -458,6 +461,7 @@ defense-evasion;T1553.005;['windows'];Remove the Zone.Identifier alternate data 
 defense-evasion;T1036.004;['windows'];Creating W32Time similar named service using schtasks;f9f2fe59-96f7-4a7d-ba9f-a9783200d4c9;True;1
 defense-evasion;T1036.004;['windows'];Creating W32Time similar named service using sc;b721c6ef-472c-4263-a0d9-37f1f4ecff66;True;2
 defense-evasion;T1036;['windows'];System File Copied to Unusual Location;51005ac7-52e2-45e0-bdab-d17c6d4916cd;True;1
+defense-evasion;T1036;['windows'];Malware Masquerading and Execution from Zip File;4449c89b-ec82-43a4-89c1-91e2f1abeecc;False;2
 defense-evasion;T1036.005;['macos', 'linux'];Execute a process from a directory masquerading as the current parent directory.;812c3ab8-94b0-4698-a9bf-9420af23ce24;False;1
 defense-evasion;T1112;['windows'];Modify Registry of Current User Profile - cmd;1324796b-d0f6-455a-b4ae-21ffee6aa6b9;True;1
 defense-evasion;T1112;['windows'];Modify Registry of Local Machine - cmd;282f929a-6bc5-42b8-bd93-960c3ba35afe;True;2
@@ -542,6 +546,8 @@ defense-evasion;T1218.011;['windows'];Rundll32 setupapi.dll Execution;71d771cd-d
 defense-evasion;T1218.011;['windows'];Execution of HTA and VBS Files using Rundll32 and URL.dll;22cfde89-befe-4e15-9753-47306b37a6e3;True;7
 defense-evasion;T1218.011;['windows'];Launches an executable using Rundll32 and pcwutl.dll;9f5d081a-ee5a-42f9-a04e-b7bdc487e676;True;8
 defense-evasion;T1218.011;['windows'];Execution of non-dll using rundll32.exe;ae3a8605-b26e-457c-b6b3-2702fd335bac;True;9
+defense-evasion;T1218.011;['windows'];Rundll32 with Ordinal Value;9fd5a74b-ba89-482a-8a3e-a5feaa3697b0;True;10
+defense-evasion;T1218.011;['windows'];Rundll32 with Control_RunDLL;e4c04b6f-c492-4782-82c7-3bf75eb8077e;True;11
 defense-evasion;T1574.011;['windows'];Service Registry Permissions Weakness;f7536d63-7fd4-466f-89da-7e48d550752a;True;1
 defense-evasion;T1574.011;['windows'];Service ImagePath Change with reg.exe;f38e9eea-e1d7-4ba6-b716-584791963827;True;2
 defense-evasion;T1548.001;['macos', 'linux'];Make and modify binary from C source;896dfe97-ae43-4101-8e96-9a7996555d80;False;1
@@ -626,6 +632,7 @@ persistence;T1574.012;['windows'];Registry-free process scope COR_PROFILER;79d57
 persistence;T1546.001;['windows'];Change Default File Association;10a08978-2045-4d62-8c42-1957bbbea102;True;1
 persistence;T1136.003;['iaas:aws'];AWS - Create a new IAM user;8d1c2368-b503-40c9-9057-8e42f21c58ad;False;1
 persistence;T1078.004;['google-workspace', 'windows', 'linux', 'macos'];Creating GCP Service Account and Service Account Key;9fdd83fd-bd53-46e5-a716-9dec89c8ae8e;False;1
+persistence;T1546.015;['windows'];COM Hijacking - InprocServer32;48117158-d7be-441b-bc6a-d9e36e47b52b;False;1
 persistence;T1053.007;['containers'];ListCronjobs;ddfb0bc1-3c3f-47e9-a298-550ecfefacbd;False;1
 persistence;T1053.007;['containers'];CreateCronjob;f2fa019e-fb2a-4d28-9dc6-fd1a9b7f68c3;False;2
 persistence;T1053.003;['macos', 'linux'];Cron - Replace crontab with referenced file;435057fb-74b1-410e-9403-d81baf194f75;False;1
@@ -838,6 +845,7 @@ discovery;T1018;['windows'];Adfind - Enumerate Active Directory Domain Controlle
 discovery;T1018;['linux'];Remote System Discovery - ip neighbour;158bd4dd-6359-40ab-b13c-285b9ef6fa25;False;12
 discovery;T1018;['linux'];Remote System Discovery - ip route;1a4ebe70-31d0-417b-ade2-ef4cb3e7d0e1;False;13
 discovery;T1018;['linux'];Remote System Discovery - ip tcp_metrics;6c2da894-0b57-43cb-87af-46ea3b501388;False;14
+discovery;T1018;['windows'];Enumerate domain computers within Active Directory using DirectorySearcher;962a6017-1c09-45a6-880b-adc9c57cb22e;False;15
 discovery;T1518.001;['windows'];Security Software Discovery;f92a380f-ced9-491f-b338-95a991418ce2;True;1
 discovery;T1518.001;['windows'];Security Software Discovery - powershell;7f566051-f033-49fb-89de-b6bacab730f0;True;2
 discovery;T1518.001;['macos'];Security Software Discovery - ps (macOS);ba62ce11-e820-485f-9c17-6f3c857cd840;False;3
@@ -945,6 +953,8 @@ execution;T1053.006;['linux'];Create a user level transient systemd service and 
 execution;T1053.006;['linux'];Create a system level transient systemd service and timer;d3eda496-1fc0-49e9-aff5-3bec5da9fa22;False;3
 execution;T1059.004;['macos', 'linux'];Create and Execute Bash Shell Script;7e7ac3ed-f795-4fa5-b711-09d6fbe9b873;False;1
 execution;T1059.004;['macos', 'linux'];Command-Line Interface;d0c88567-803d-4dca-99b4-7ce65e7b257c;False;2
+execution;T1059.004;['linux'];Harvest SUID executable files;46274fc6-08a7-4956-861b-24cbbaa0503c;False;3
+execution;T1059.004;['linux'];LinEnum tool execution;a2b35a63-9df1-4806-9a4d-5fe0500845f2;False;4
 execution;T1059.005;['windows'];Visual Basic script execution to gather local computer information;1620de42-160a-4fe5-bbaf-d3fef0181ce9;True;1
 execution;T1059.005;['windows'];Encoded VBS code execution;e8209d5f-e42d-45e6-9c2f-633ac4f1eefa;True;2
 execution;T1059.005;['windows'];Extract Memory via VBA;8faff437-a114-4547-9a60-749652a03df6;True;3

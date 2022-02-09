@@ -1,0 +1,16 @@
+Attack_name: Masquerading
+Attack_description: |-
+  Adversaries may attempt to manipulate features of their artifacts to make them appear legitimate or benign to users and/or security tools. Masquerading occurs when the name or location of an object, legitimate or malicious, is manipulated or abused for the sake of evading defenses and observation. This may include manipulating file metadata, tricking users into misidentifying the file type, and giving legitimate task or service names.
+
+  Renaming abusable system utilities to evade security monitoring is also a form of [Masquerading](https://attack.mitre.org/techniques/T1036).(Citation: LOLBAS Main Site)
+guid: 4449c89b-ec82-43a4-89c1-91e2f1abeecc
+name: Malware Masquerading and Execution from Zip File
+tactic:
+  - defense-evasion
+technique:
+  - T1036
+os:
+  - windows
+description: When the file is unzipped and the README.cmd file opened, it executes and changes the .pdf to .dll and executes the dll. This is a BazaLoader technique [as reported here](https://twitter.com/ffforward/status/1481672378639912960)
+sigma: false
+sigma_rule: []
