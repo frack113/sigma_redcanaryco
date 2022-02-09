@@ -19,6 +19,8 @@ Caution: a test can generate a lot of noise...
 ### T1562.001
 [office-365-Disable-AntiPhishRule](tests/b9bbae2c-2ba6-4cf3-b452-8e8f908696f3.md) ['office-365'] (sigma rule :x:)
 
+[Disable Defender with Defender Control](tests/178136d8-2778-4d7a-81f3-d517053a4fd6.md) ['windows'] (sigma rule :x:)
+
 [Stop and Remove Arbitrary Security Windows Service](tests/ae753dda-0f15-4af6-a168-b9ba16143143.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [AMSI Bypass - AMSI InitFailed](tests/695eed40-e949-40e5-b306-b4031e4154bd.md) ['windows'] (sigma rule :heavy_check_mark:)
@@ -204,6 +206,12 @@ Caution: a test can generate a lot of noise...
 [Binary packed by UPX, with modified headers (linux)](tests/f06197f8-ff46-48c2-a0c6-afc1b50665e1.md) ['linux'] (sigma rule :x:)
 
 
+### T1036
+[Malware Masquerading and Execution from Zip File](tests/4449c89b-ec82-43a4-89c1-91e2f1abeecc.md) ['windows'] (sigma rule :x:)
+
+[System File Copied to Unusual Location](tests/51005ac7-52e2-45e0-bdab-d17c6d4916cd.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+
 ### T1053.006
 [Create a user level transient systemd service and timer](tests/3de33f5b-62e5-4e63-a2a0-6fd8808c80ec.md) ['linux'] (sigma rule :x:)
 
@@ -309,11 +317,15 @@ Caution: a test can generate a lot of noise...
 ### T1218.011
 [Rundll32 ieadvpack.dll Execution](tests/5e46a58e-cbf6-45ef-a289-ed7754603df9.md) ['windows'] (sigma rule :heavy_check_mark:)
 
+[Rundll32 with Ordinal Value](tests/9fd5a74b-ba89-482a-8a3e-a5feaa3697b0.md) ['windows'] (sigma rule :heavy_check_mark:)
+
 [Rundll32 advpack.dll Execution](tests/d91cae26-7fc1-457b-a854-34c8aad48c89.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Rundll32 execute VBscript command](tests/638730e7-7aed-43dc-bf8c-8117f805f5bb.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Launches an executable using Rundll32 and pcwutl.dll](tests/9f5d081a-ee5a-42f9-a04e-b7bdc487e676.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Rundll32 with Control_RunDLL](tests/e4c04b6f-c492-4782-82c7-3bf75eb8077e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Rundll32 syssetup.dll Execution](tests/41fa324a-3946-401e-bbdd-d7991c628125.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -414,6 +426,10 @@ Caution: a test can generate a lot of noise...
 [Create and Execute Bash Shell Script](tests/7e7ac3ed-f795-4fa5-b711-09d6fbe9b873.md) ['macos', 'linux'] (sigma rule :x:)
 
 [Command-Line Interface](tests/d0c88567-803d-4dca-99b4-7ce65e7b257c.md) ['macos', 'linux'] (sigma rule :x:)
+
+[Harvest SUID executable files](tests/46274fc6-08a7-4956-861b-24cbbaa0503c.md) ['linux'] (sigma rule :x:)
+
+[LinEnum tool execution](tests/a2b35a63-9df1-4806-9a4d-5fe0500845f2.md) ['linux'] (sigma rule :x:)
 
 
 ### T1003.001
@@ -575,6 +591,8 @@ Caution: a test can generate a lot of noise...
 
 [Adfind - Enumerate Active Directory Computer Objects](tests/a889f5be-2d54-4050-bd05-884578748bb4.md) ['windows'] (sigma rule :heavy_check_mark:)
 
+[Enumerate domain computers within Active Directory using DirectorySearcher](tests/962a6017-1c09-45a6-880b-adc9c57cb22e.md) ['windows'] (sigma rule :x:)
+
 [Remote System Discovery - ip tcp_metrics](tests/6c2da894-0b57-43cb-87af-46ea3b501388.md) ['linux'] (sigma rule :x:)
 
 [Remote System Discovery - ip neighbour](tests/158bd4dd-6359-40ab-b13c-285b9ef6fa25.md) ['linux'] (sigma rule :x:)
@@ -690,6 +708,8 @@ Caution: a test can generate a lot of noise...
 [Create Volume Shadow Copy with vssadmin](tests/dcebead7-6c28-4b4b-bf3c-79deb1b1fc7f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Create Volume Shadow Copy with WMI](tests/224f7de0-8f0a-4a94-b5d8-989b036c86da.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Create Volume Shadow Copy remotely (WMI) with esentutl](tests/21c7bf80-3e8b-40fa-8f9d-f5b194ff2865.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1069.002
@@ -894,10 +914,6 @@ Caution: a test can generate a lot of noise...
 [UACME Bypass Method 39](tests/56163687-081f-47da-bb9c-7b231c5585cf.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Bypass UAC using Event Viewer (PowerShell)](tests/a6ce9acf-842a-4af6-8f79-539be7608e2b.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-
-### T1036
-[System File Copied to Unusual Location](tests/51005ac7-52e2-45e0-bdab-d17c6d4916cd.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1547.004
@@ -1753,7 +1769,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1003.006
-[Run DSInternals Get-ADReplAccount](tests/a0bced08-3fc5-4d8b-93b7-e8344739376e.md) ['windows'] (sigma rule :x:)
+[Run DSInternals Get-ADReplAccount](tests/a0bced08-3fc5-4d8b-93b7-e8344739376e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [DCSync (Active Directory)](tests/129efd28-8497-4c87-a1b0-73b9a870ca3e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1856,6 +1872,10 @@ Caution: a test can generate a lot of noise...
 
 ### T1546.003
 [Persistence via WMI Event Subscription](tests/3c64f177-28e2-49eb-a799-d767b24dd1e0.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+
+### T1546.015
+[COM Hijacking - InprocServer32](tests/48117158-d7be-441b-bc6a-d9e36e47b52b.md) ['windows'] (sigma rule :x:)
 
 
 ### T1030
