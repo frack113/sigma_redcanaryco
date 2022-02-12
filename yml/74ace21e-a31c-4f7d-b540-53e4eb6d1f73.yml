@@ -15,6 +15,7 @@ os:
 description: 'Changing RDP Port to Non Standard Port via Command_Prompt
 
   '
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 509e84b9-a71a-40e0-834f-05470369bd1e

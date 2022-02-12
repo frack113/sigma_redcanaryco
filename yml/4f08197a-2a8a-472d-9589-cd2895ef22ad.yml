@@ -31,5 +31,6 @@ os:
 description: 'Using username,password combination from a password dump to login over SSH.
 
   '
+executor: bash
 sigma: false
 sigma_rule: []

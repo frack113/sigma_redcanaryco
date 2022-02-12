@@ -14,5 +14,6 @@ description: "The adversarie want to add user to some Azure AD role. Threat acto
   \ authentication administrator (this role can reset Global Administrator password!).\nBy default, the role Global Reader is assigned to service principal in this test.\n\nThe account you use to run the\
   \ PowerShell command should have Privileged Role Administrator or Global Administrator role in your Azure AD.\n\nDetection hint - check Activity \"Add member to role\" in Azure AD Audit Logs. In targer\
   \ you will also see User as a type.\n"
+executor: powershell
 sigma: false
 sigma_rule: []

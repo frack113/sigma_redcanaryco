@@ -13,6 +13,7 @@ os:
 description: 'Manipulate Admin Account Name
 
   '
+executor: powershell
 sigma: true
 sigma_rule:
   - id: cef24b90-dddc-4ae1-a09a-8764872f69fc

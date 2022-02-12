@@ -19,5 +19,6 @@ os:
 description: 'Modify rc.common
 
   '
+executor: bash
 sigma: false
 sigma_rule: []

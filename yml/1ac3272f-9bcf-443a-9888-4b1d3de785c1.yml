@@ -17,5 +17,6 @@ os:
 description: 'This test gives a file the capability to set UID without using flags.
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

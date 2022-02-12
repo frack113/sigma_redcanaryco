@@ -15,6 +15,7 @@ os:
 description: 'Attempt an RDP session via Remote Desktop Application to a DomainController.
 
   '
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 954f0af7-62dd-418f-b3df-a84bc2c7a774

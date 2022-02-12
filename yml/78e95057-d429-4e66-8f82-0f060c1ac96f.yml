@@ -17,6 +17,7 @@ os:
 description: |
   Retrieve ADFS token signing and encrypting certificates. This is a precursor to the Golden SAML attack (T1606.002). You must be signed in as Administrator on an ADFS server.
   Based on https://o365blog.com/post/adfs/ and https://github.com/fireeye/ADFSDump.
+executor: powershell
 sigma: true
 sigma_rule:
   - id: dcd74b95-3f36-4ed9-9598-0490951643aa

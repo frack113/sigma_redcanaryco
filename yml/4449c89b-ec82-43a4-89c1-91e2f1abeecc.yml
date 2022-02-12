@@ -12,5 +12,6 @@ technique:
 os:
   - windows
 description: When the file is unzipped and the README.cmd file opened, it executes and changes the .pdf to .dll and executes the dll. This is a BazaLoader technique [as reported here](https://twitter.com/ffforward/status/1481672378639912960)
+executor: powershell
 sigma: false
 sigma_rule: []

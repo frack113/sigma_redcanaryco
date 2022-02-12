@@ -11,5 +11,6 @@ technique:
 os:
   - linux
 description: "Print  the last 10 lines of the Uncomplicated Firewall (UFW) log file \n/var/log/ufw.log.\n"
+executor: sh
 sigma: false
 sigma_rule: []

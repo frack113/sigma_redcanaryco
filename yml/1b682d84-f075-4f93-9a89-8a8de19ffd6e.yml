@@ -19,6 +19,7 @@ os:
   - windows
 description: "This module utilizes WMI via VBA to clear the Security and Backup eventlogs from the system. \n\nElevation is required for this module to execute properly, otherwise WINWORD will throw an\
   \ \"Access Denied\" error\n"
+executor: powershell
 sigma: true
 sigma_rule:
   - id: e6ce8457-68b1-485b-9bdd-3c2b5d679aa9

@@ -15,5 +15,6 @@ os:
 description: 'Encrypt data for exiltration
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

@@ -14,6 +14,7 @@ os:
 description: 'Execute arbitrary DLL file stored locally.
 
   '
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 65d2be45-8600-4042-b4c0-577a1ff8a60e

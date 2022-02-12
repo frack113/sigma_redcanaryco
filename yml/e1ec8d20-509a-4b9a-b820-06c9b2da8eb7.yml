@@ -14,6 +14,7 @@ os:
 description: |
   Adfind tool can be used for reconnaissance in an Active directory environment. This example has been documented by ransomware actors enumerating Active Directory User Objects
   reference- http://www.joeware.net/freetools/tools/adfind/, https://www.fireeye.com/blog/threat-research/2019/04/pick-six-intercepting-a-fin6-intrusion.html
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 9a132afa-654e-11eb-ae93-0242ac130002

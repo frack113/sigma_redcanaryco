@@ -34,6 +34,7 @@ description: |
   The memory of lsass.exe is often dumped for offline credential theft attacks. This can be achieved with a built-in dll.
 
   Upon successful execution, you should see the following file created $env:TEMP\lsass-comsvcs.dmp.
+executor: powershell
 sigma: true
 sigma_rule:
   - id: b2815d0d-7481-4bf0-9b6c-a4c48a94b349

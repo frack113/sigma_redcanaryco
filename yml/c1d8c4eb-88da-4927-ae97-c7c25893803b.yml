@@ -11,5 +11,6 @@ technique:
 os:
   - linux
 description: "Edit the Uncomplicated Firewall (UFW) configuration file /etc/ufw/ufw.conf \nwhich controls if the firewall starts on boot and its logging level.\n"
+executor: sh
 sigma: false
 sigma_rule: []

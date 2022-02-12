@@ -14,5 +14,6 @@ os:
 description: 'Utilizing a common technique for posting base64 encoded data.
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

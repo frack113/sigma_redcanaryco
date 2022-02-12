@@ -16,5 +16,6 @@ os:
 description: 'Identify System Info
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

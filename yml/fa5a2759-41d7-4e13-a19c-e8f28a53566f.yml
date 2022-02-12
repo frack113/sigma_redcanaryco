@@ -13,6 +13,7 @@ os:
 description: |
   svchost.exe writing a non-Microsoft Office file to a file with a UNC path.
   Upon successful execution, this will rename cmd.exe as svchost.exe and move it to `c:\`, then execute svchost.exe with output to a txt file.
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: fff9d2b7-e11c-4a69-93d3-40ef66189767

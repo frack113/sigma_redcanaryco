@@ -14,6 +14,7 @@ os:
 description: 'Executes the Uninstall Method. Upon execution, help information will be displayed for InstallUtil.
 
   '
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 82a19e3a-2bfe-4a91-8c0d-5d4c98fbb719

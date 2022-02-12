@@ -14,6 +14,7 @@ os:
 description: 'Enumerates members of the local Administrators groups across all machines in the domain. Upon execution, information about each machine will be displayed.
 
   '
+executor: powershell
 sigma: true
 sigma_rule:
   - id: f62176f3-8128-4faa-bf6c-83261322e5eb

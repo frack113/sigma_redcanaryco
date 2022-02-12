@@ -12,6 +12,7 @@ technique:
 os:
   - windows
 description: An adversary may attempt to use Evil-WinRM with a valid account to interact with remote systems that have WinRM enabled
+executor: powershell
 sigma: true
 sigma_rule:
   - id: a197e378-d31b-41c0-9635-cfdf1c1bb423

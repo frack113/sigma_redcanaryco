@@ -16,6 +16,7 @@ description: |
   This tool enables enumeration and exporting of all DNS records in the zone for recon purposes of internal networks
   Python 3 and adidnsdump must be installed, use the get_prereq_command's to meet the prerequisites for this test.
   Successful execution of this test will list dns zones in the terminal.
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 26d3f0a2-f514-4a3f-a8a7-e7e48a8d9160

@@ -33,6 +33,7 @@ os:
 description: |
   The memory of lsass.exe is often dumped for offline credential theft attacks. Adversaries commonly perform this offline analysis with
   Mimikatz. This tool is available at https://github.com/gentilkiwi/mimikatz and can be obtained using the get-prereq_commands.
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: ffa6861c-4461-4f59-8a41-578c39f3f23e

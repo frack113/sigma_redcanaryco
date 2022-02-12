@@ -15,6 +15,7 @@ technique:
 os:
   - windows
 description: After execution the new account will be active and added to the Administrators group
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 0eb2107b-a596-422e-b123-b389d5594ed7

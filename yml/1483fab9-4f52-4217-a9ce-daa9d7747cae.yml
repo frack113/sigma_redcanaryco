@@ -17,6 +17,7 @@ os:
 description: 'Test execution of a remote script using mshta.exe. Upon execution calc.exe will be launched.
 
   '
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: e32f92d1-523e-49c3-9374-bdb13b46a3ba

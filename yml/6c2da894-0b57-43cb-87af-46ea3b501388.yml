@@ -13,5 +13,6 @@ technique:
 os:
   - linux
 description: "Use the ip tcp_metrics command to display the recent cached entries for IPv4 and IPv6 source and destination addresses. \n"
+executor: sh
 sigma: false
 sigma_rule: []

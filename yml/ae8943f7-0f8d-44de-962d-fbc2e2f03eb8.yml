@@ -12,5 +12,6 @@ os:
 description: 'Disable the Cb Response service
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

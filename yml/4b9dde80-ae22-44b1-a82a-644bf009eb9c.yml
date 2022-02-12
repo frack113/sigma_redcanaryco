@@ -19,5 +19,6 @@ description: |
   Inserts a rule into a PAM config and then tests it.
 
   Upon successful execution, this test will insert a rule that allows every user to su to root without a password.
+executor: sh
 sigma: false
 sigma_rule: []

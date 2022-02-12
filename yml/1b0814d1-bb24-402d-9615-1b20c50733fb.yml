@@ -14,6 +14,7 @@ os:
 description: |
   Network Share Discovery utilizing PowerShell. The computer name variable may need to be modified to point to a different host
   Upon execution, avalaible network shares will be displayed in the powershell session
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 6942bd25-5970-40ab-af49-944247103358

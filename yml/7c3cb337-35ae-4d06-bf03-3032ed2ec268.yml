@@ -18,5 +18,6 @@ description: |
   Local to Remote
 
   Upon successful execution, tar will compress /Users/* directory and password protect the file modification of `Users.tar.gz.enc` as output.
+executor: sh
 sigma: false
 sigma_rule: []

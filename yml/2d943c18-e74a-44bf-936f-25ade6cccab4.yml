@@ -16,5 +16,6 @@ os:
 description: 'This test adds a script to a /var/spool/cron/crontabs folder configured to execute on a schedule. This technique was used by the threat actor Rocke during the exploitation of Linux web servers.
 
   '
+executor: bash
 sigma: false
 sigma_rule: []

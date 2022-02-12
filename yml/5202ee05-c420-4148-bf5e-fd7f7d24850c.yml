@@ -19,6 +19,7 @@ description: |
   Execution is handled by [Invoke-MalDoc](https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1204.002/src/Invoke-MalDoc.ps1) to load and execute VBA code into Excel or Word documents.
   Example for c2 server located at 127.0.0.1 for the file test.txt which is nested below the parent directory in the tests/my-test folder
   Example input args for file in root directory c2-domain = 127.0.0.1, file-name = test.txt
+executor: powershell
 sigma: true
 sigma_rule:
   - id: f4bbd493-b796-416e-bbf2-121235348529

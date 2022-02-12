@@ -16,6 +16,7 @@ os:
 description: |
   Searches for Mozilla Firefox bookmarks file (on Windows distributions) that contains bookmarks in a SQLITE database.
   Upon execution, paths that contain bookmark files will be displayed.
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 725a9768-0f5e-4cb3-aec2-bc5719c6831a

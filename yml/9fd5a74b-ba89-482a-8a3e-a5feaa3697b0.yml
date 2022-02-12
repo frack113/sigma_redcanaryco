@@ -14,6 +14,7 @@ technique:
 os:
   - windows
 description: "Rundll32.exe loading dll using ordinal value #2 to DLLRegisterServer. \nUpon successful execution, Calc.exe will spawn.\n"
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: e79a9e79-eb72-4e78-a628-0e7e8f59e89c

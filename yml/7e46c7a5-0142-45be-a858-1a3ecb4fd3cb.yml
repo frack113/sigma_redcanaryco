@@ -15,5 +15,6 @@ os:
 description: 'List opened files by user
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

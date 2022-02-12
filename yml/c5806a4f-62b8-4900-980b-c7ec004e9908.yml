@@ -12,6 +12,7 @@ technique:
 os:
   - windows
 description: "Utilize tasklist to identify processes.\n\nUpon successful execution, cmd.exe will execute tasklist.exe to list processes. Output will be via stdout. \n"
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 63332011-f057-496c-ad8d-d2b6afb27f96

@@ -18,6 +18,7 @@ description: |
 
   when sucessfully executed, the test is going to display running processes, firewall configuration on network profiles
   and specific security software.
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 63332011-f057-496c-ad8d-d2b6afb27f96

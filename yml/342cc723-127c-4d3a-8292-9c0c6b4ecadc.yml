@@ -14,5 +14,6 @@ os:
   - linux
 description: "Modify contents of <user-home>/.ssh/authorized_keys to maintain persistence on victim host. \nIf the user is able to save the same contents in the authorized_keys file, it shows user can modify\
   \ the file.\n"
+executor: bash
 sigma: false
 sigma_rule: []

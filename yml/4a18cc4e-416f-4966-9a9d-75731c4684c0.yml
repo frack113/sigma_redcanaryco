@@ -16,5 +16,6 @@ os:
 description: |
   An adversary may attempt to trick the user into downloading ScreenConnect for use as a C2 channel. Download of ScreenConnect installer will be in the Downloads directory.
   Msiexec will be used to quietly insall ScreenConnect.
+executor: powershell
 sigma: false
 sigma_rule: []

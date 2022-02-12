@@ -22,5 +22,6 @@ os:
 description: 'Clears bash history via truncate
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

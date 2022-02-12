@@ -21,5 +21,6 @@ os:
 description: 'Adversaries may use VPN extensions in an attempt to hide traffic sent from a compromised host. This will install one (of many) available VPNS in the Edge add-on store.
 
   '
+executor: manual
 sigma: false
 sigma_rule: []

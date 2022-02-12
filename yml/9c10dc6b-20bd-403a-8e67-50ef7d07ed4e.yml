@@ -14,5 +14,6 @@ os:
 description: 'Creates a new cloudTrail in AWS, Upon successful creation it will Update,Stop and Delete the cloudTrail
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

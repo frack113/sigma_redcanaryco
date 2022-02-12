@@ -13,6 +13,7 @@ technique:
 os:
   - windows
 description: "Identify remote systems via arp. \n\nUpon successful execution, cmd.exe will execute arp to list out the arp cache. Output will be via stdout.\n"
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: a29c1813-ab1f-4dde-b489-330b952e91ae

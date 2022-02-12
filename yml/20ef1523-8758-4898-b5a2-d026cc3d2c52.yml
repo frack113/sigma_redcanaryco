@@ -15,5 +15,6 @@ os:
 description: 'Stomps on the modification timestamp of a file
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

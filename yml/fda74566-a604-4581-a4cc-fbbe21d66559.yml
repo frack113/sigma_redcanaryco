@@ -14,6 +14,7 @@ os:
 description: 'Creates a new admin user in a command prompt.
 
   '
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 0eb2107b-a596-422e-b123-b389d5594ed7

@@ -19,6 +19,7 @@ os:
 description: |
   Office Test Registry location exists that allows a user to specify an arbitrary DLL that will be executed every time an Office
   application is started. Key is used for debugging purposes. Not created by default & exist in HKCU & HKLM hives.
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: baecf8fb-edbf-429f-9ade-31fc3f22b970

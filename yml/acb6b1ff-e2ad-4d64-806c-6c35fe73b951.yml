@@ -17,5 +17,6 @@ description: |
   Identify remote systems via arp.
 
   Upon successful execution, sh will execute arp to list out the arp cache. Output will be via stdout.
+executor: sh
 sigma: false
 sigma_rule: []

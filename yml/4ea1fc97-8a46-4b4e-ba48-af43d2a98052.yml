@@ -20,6 +20,7 @@ description: |
   A note regarding this module. By default, this module will pull the current username from the system and places it into the macro. If
   you'd like to utilize the "=GET.WORKSPACE(26)" method, that many maldoc authors use, you will need to ensure that the User Name associated
   with Excel matches that of the local system. This username can be found under Files -> Options -> Username
+executor: powershell
 sigma: true
 sigma_rule:
   - id: d7bcd677-645d-4691-a8d4-7a5602b780d1

@@ -14,5 +14,6 @@ os:
 description: 'Network Share Discovery
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

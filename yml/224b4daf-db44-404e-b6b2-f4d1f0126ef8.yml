@@ -16,6 +16,7 @@ os:
 description: 'Identify the Windows MachineGUID value for a system. Upon execution, the machine GUID will be displayed from registry.
 
   '
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: f5240972-3938-4e56-8e4b-e33893176c1f

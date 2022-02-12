@@ -15,6 +15,7 @@ os:
 description: |
   This will attempt to  start C2 Session Using ICMP. For information on how to set up the listener
   refer to the following blog: https://www.blackhillsinfosec.com/how-to-c2-over-icmp/
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 3b6ab547-8ec2-4991-b9d2-2b06702a48d7

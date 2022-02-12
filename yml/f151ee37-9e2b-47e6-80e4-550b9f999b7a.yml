@@ -17,6 +17,7 @@ os:
 description: |
   Launch PowerShell with the "-WindowStyle Hidden" argument to conceal PowerShell windows by setting the WindowStyle parameter to hidden.
   Upon execution a hidden PowerShell window will launch calc.exe
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 313fbb0a-a341-4682-848d-6d6f8c4fab7c

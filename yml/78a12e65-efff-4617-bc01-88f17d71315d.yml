@@ -14,5 +14,6 @@ os:
 description: 'Lists the password complexity policy to console on CentOS/RHEL 7.x Linux.
 
   '
+executor: bash
 sigma: false
 sigma_rule: []

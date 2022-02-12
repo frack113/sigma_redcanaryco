@@ -15,5 +15,6 @@ os:
 description: |
   Copies and then runs a simple binary (just outputting "the cake is a lie"), that was packed by UPX.
   No other protection/compression were applied.
+executor: sh
 sigma: false
 sigma_rule: []

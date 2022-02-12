@@ -16,6 +16,7 @@ os:
 description: 'Adversaries may supply CMSTP.exe with INF files infected with malicious commands
 
   '
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: e66779cc-383e-4224-a3a4-267eeb585c40

@@ -18,6 +18,7 @@ os:
 description: 'Uses PowerShell to install and register a password filter DLL. Requires a reboot and administrative privileges.
 
   '
+executor: powershell
 sigma: true
 sigma_rule:
   - id: f674e36a-4b91-431e-8aef-f8a96c2aca35

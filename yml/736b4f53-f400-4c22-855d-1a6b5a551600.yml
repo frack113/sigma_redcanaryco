@@ -14,6 +14,7 @@ os:
 description: |
   Adfind tool can be used for reconnaissance in an Active directory environment. The example chosen illustrates adfind used to query the local password policy.
   reference- http://www.joeware.net/freetools/tools/adfind/, https://social.technet.microsoft.com/wiki/contents/articles/7535.adfind-command-examples.aspx
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 455b9d50-15a1-4b99-853f-8d37655a4c1b

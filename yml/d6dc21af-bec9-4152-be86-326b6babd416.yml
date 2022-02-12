@@ -12,6 +12,7 @@ os:
 description: 'Utilize PowerShell to echo a command to clipboard and execute it
 
   '
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 4cbd4f12-2e22-43e3-882f-bff3247ffb78

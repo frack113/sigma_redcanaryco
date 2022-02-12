@@ -22,6 +22,7 @@ os:
 description: |
   Information on the Rubeus tool and it's creators found here: https://github.com/GhostPack/Rubeus#asreproast
   This build targets .NET 4.5.  If targeting a different version you will need to compile Rubeus
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 7ec2c172-dceb-4c10-92c9-87c1881b7e18

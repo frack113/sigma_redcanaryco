@@ -26,6 +26,7 @@ description: |
   subsequent domain controllers without the need of network-based replication.
 
   Upon successful completion, you will find a copy of the ntds.dit file in the C:\Windows\Temp directory.
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 2afafd61-6aae-4df4-baed-139fa1f4c345

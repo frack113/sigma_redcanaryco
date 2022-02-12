@@ -19,6 +19,7 @@ description: |
   Upon execution SharpHound will load into memory and execute against a domain. It will set up collection methods, run and then compress and store the data to the temp directory. If system is unable to contact a domain, proper execution will not occur.
 
   Successful execution will produce stdout message stating "SharpHound Enumeration Completed". Upon completion, final output will be a *BloodHound.zip file.
+executor: powershell
 sigma: true
 sigma_rule:
   - id: f376c8a7-a2d0-4ddc-aa0c-16c17236d962

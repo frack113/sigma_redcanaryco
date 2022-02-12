@@ -12,5 +12,6 @@ technique:
 os:
   - linux
 description: Download and execute shell script and write to file then execute locally using Python -c (command mode)
+executor: sh
 sigma: false
 sigma_rule: []

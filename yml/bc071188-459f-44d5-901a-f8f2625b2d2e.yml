@@ -11,6 +11,7 @@ technique:
 os:
   - windows
 description: This module will enumerate credentials stored in Web Credentials vault of Windows Credential Manager using builtin utility vaultcmd.exe
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 603c6630-5225-49c1-8047-26c964553e0e

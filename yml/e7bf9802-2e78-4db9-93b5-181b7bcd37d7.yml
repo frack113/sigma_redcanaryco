@@ -19,6 +19,7 @@ description: |
   https://github.com/iagox86/dnscat2
 
   https://github.com/lukebaggett/dnscat2-powershell
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 3b6ab547-8ec2-4991-b9d2-2b06702a48d7

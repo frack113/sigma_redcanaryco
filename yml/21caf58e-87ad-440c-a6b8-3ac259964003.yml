@@ -16,6 +16,7 @@ description: |
   https://medium.com/walmartlabs/openssl-server-reverse-shell-from-windows-client-aee2dbfa0926
 
   Upon successful execution, powershell will make a network connection to 127.0.0.1 over 443.
+executor: powershell
 sigma: true
 sigma_rule:
   - id: adf876b3-f1f8-4aa9-a4e4-a64106feec06

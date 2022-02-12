@@ -19,5 +19,6 @@ os:
 description: 'Creates a hidden file inside a hidden directory
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

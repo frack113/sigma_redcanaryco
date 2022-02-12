@@ -18,5 +18,6 @@ os:
 description: 'Requires Apple Dev Tools
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

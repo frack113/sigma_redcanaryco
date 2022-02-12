@@ -23,5 +23,6 @@ os:
 description: 'Clears the history and disable bash history logging of the current shell and future shell sessions
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

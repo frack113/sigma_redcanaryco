@@ -15,5 +15,6 @@ os:
 description: 'Delete a single file from the temporary directory
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

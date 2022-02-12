@@ -14,6 +14,7 @@ os:
 description: |
   collect information for exfiltration. Upon execution, check the users temp directory (%temp%) for files T1119_*.txt
   to see what was collected.
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 57712d7a-679c-4a41-a913-87e7175ae429

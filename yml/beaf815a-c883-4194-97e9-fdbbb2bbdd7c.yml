@@ -13,5 +13,6 @@ os:
 description: 'Edit the Uncomplicated Firewall (UFW) rules file /etc/ufw/user.rules.
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

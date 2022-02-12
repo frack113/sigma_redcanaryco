@@ -17,5 +17,6 @@ os:
 description: 'Extracting credentials from files
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

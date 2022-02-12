@@ -19,5 +19,6 @@ os:
 description: 'Utilize LaunchDaemon to launch `Hello World`
 
   '
+executor: bash
 sigma: false
 sigma_rule: []

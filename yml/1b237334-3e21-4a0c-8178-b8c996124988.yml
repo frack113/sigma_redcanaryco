@@ -27,6 +27,7 @@ os:
 description: 'Executes the code specified within a XSL script using a local payload.
 
   '
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 05c36dd6-79d6-4a9a-97da-3db20298ab2d

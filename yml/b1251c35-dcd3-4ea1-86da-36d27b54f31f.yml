@@ -23,5 +23,6 @@ os:
 description: 'Clears bash history via cat /dev/null
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

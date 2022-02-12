@@ -23,6 +23,7 @@ description: |
   Upon execution, check the "C:\Windows\apppatch\Custom\" folder for the new shim database
 
   https://www.fireeye.com/blog/threat-research/2017/05/fin7-shim-databases-persistence.html
+executor: powershell
 sigma: true
 sigma_rule:
   - id: ee63c85c-6d51-4d12-ad09-04e25877a947

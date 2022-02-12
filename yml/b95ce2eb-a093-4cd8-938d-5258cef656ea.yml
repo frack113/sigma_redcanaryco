@@ -17,5 +17,6 @@ os:
 description: 'Space after filename.
 
   '
+executor: bash
 sigma: false
 sigma_rule: []

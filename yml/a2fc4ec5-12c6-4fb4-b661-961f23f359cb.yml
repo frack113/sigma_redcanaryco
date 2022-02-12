@@ -21,6 +21,7 @@ os:
 description: |
   Requesting a TGT on a remote system and retrieving it locally before requesting a service ticket with it. This is a Pass-The-Ticket attack because the TGT is obtained on the remote system, then used from a different machine (local).
   PsExec is used to execute commands on the remote system, and the "C$" admin share is used to retrieve the TGT, so the current user must have admin rights remotely and other PsExec prerequisites must be met.
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 06d71506-7beb-4f22-8888-e2e5e2ca7fd8

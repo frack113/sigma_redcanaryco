@@ -13,6 +13,7 @@ os:
 description: 'Executes the signed manage-bde.wsf script with options to execute an arbitrary command.
 
   '
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: c363385c-f75d-4753-a108-c1a8e28bdbda

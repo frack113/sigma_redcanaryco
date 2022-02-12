@@ -14,6 +14,7 @@ os:
 description: "Mounts an ISO image downloaded from internet to evade Mark-of-the-Web and run hello.exe executable from the ISO. \nUpon successful execution, powershell will download the .iso from the Atomic\
   \ Red Team repo, mount the image, and run the executable from the ISO image that will open command prompt echoing \"Hello, World!\". \nISO provided by:https://twitter.com/mattifestation/status/1398323532988399620\
   \ Reference:https://www.microsoft.com/security/blog/2021/05/27/new-sophisticated-email-based-attack-from-nobelium/,  "
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 29e1c216-6408-489d-8a06-ee9d151ef819

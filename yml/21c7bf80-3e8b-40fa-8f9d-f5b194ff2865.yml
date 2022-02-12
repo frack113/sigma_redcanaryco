@@ -21,6 +21,7 @@ os:
 description: |
   This test is intended to be run from a remote workstation with domain admin context.
   The Active Directory database NTDS.dit may be dumped by copying it from a Volume Shadow Copy created with esentutl.
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: e7be6119-fc37-43f0-ad4f-1f3f99be2f9f

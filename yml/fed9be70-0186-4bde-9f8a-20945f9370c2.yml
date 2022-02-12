@@ -13,5 +13,6 @@ os:
   - linux
   - macos
 description: "(requires root)\n"
+executor: sh
 sigma: false
 sigma_rule: []

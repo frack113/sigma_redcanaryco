@@ -15,5 +15,6 @@ os:
 description: 'Use screencapture command to collect a full desktop screenshot
 
   '
+executor: bash
 sigma: false
 sigma_rule: []

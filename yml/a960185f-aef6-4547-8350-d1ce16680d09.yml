@@ -23,5 +23,6 @@ os:
 description: 'ioreg contains registry entries for all the device drivers in the system. If it''s a virtual machine, one of the device manufacturer will be a Virtualization Software.
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

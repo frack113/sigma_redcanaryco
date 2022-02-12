@@ -16,5 +16,6 @@ description: |
   Identify network configuration information.
 
   Upon successful execution, sh will spawn multiple commands and output will be via stdout.
+executor: sh
 sigma: false
 sigma_rule: []

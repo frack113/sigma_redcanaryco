@@ -17,5 +17,6 @@ description: 'An adversary may attempt to trick the user into downloading GoToAs
   executed.
 
   '
+executor: powershell
 sigma: false
 sigma_rule: []

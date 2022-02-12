@@ -17,5 +17,6 @@ os:
 description: 'Changes a file or folder''s ownership and group information recursively using chown.
 
   '
+executor: bash
 sigma: false
 sigma_rule: []

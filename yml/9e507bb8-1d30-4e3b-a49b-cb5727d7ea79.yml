@@ -14,5 +14,6 @@ technique:
 os:
   - macos
 description: "[LaZagne Source](https://github.com/AlessandroZ/LaZagne)\n"
+executor: bash
 sigma: false
 sigma_rule: []

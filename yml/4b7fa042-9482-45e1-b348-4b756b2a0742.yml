@@ -14,5 +14,6 @@ os:
 description: 'Lists the password policy to console on macOS.
 
   '
+executor: bash
 sigma: false
 sigma_rule: []

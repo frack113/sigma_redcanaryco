@@ -15,5 +15,6 @@ os:
 description: 'Find or discover files on the file system
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

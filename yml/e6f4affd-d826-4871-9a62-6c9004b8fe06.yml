@@ -19,6 +19,7 @@ os:
   - windows
 description: "The following test will utilize setspn to extract the Service Principal Names. This behavior is typically used during a kerberos or silver ticket attack. \nA successful execution will output\
   \ all the SPNs for the related domain. \n"
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 1eeed653-dbc8-4187-ad0c-eeebb20e6599

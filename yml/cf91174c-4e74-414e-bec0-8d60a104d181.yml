@@ -22,5 +22,6 @@ description: |-
   Word VBA Macro
 
   [Dragon's Tail](https://github.com/redcanaryco/atomic-red-team/tree/master/ARTifacts/Adversary/Dragons_Tail)
+executor: manual
 sigma: false
 sigma_rule: []

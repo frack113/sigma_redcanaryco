@@ -14,5 +14,6 @@ os:
 description: 'Download a remote file using the whois utility
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

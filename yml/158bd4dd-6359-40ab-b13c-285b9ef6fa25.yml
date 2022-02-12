@@ -13,5 +13,6 @@ technique:
 os:
   - linux
 description: "Use the ip neighbour command to display the known link layer (ARP table) addresses for hosts sharing the same network segment. \n"
+executor: sh
 sigma: false
 sigma_rule: []

@@ -17,5 +17,6 @@ os:
 description: 'This test replaces the current user''s crontab file with the contents of the referenced file. This technique was used by numerous IoT automated exploitation attacks.
 
   '
+executor: bash
 sigma: false
 sigma_rule: []

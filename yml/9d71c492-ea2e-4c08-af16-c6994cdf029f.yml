@@ -14,6 +14,7 @@ technique:
 os:
   - windows
 description: Regsvr32.exe is a command-line program used to register and unregister OLE controls. Normally, an install is executed with /n to prevent calling DllRegisterServer.
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 8e2b24c9-4add-46a0-b4bb-0057b4e6187d

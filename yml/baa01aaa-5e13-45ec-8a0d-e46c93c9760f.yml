@@ -16,5 +16,6 @@ description: |
   Powershell script that runs nslookup on cmd.exe against the local /24 network of the first network adaptor listed in ipconfig.
 
   Upon successful execution, powershell will identify the ip range (via ipconfig) and perform a for loop and execute nslookup against that IP range. Output will be via stdout.
+executor: powershell
 sigma: false
 sigma_rule: []

@@ -13,6 +13,7 @@ technique:
 os:
   - windows
 description: Add a value to a Windows registry SSP key, simulating an adversarial modification of those keys.
+executor: powershell
 sigma: true
 sigma_rule:
   - id: eeb30123-9fbd-4ee8-aaa0-2e545bbed6dc

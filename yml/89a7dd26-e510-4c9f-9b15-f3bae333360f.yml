@@ -16,5 +16,6 @@ os:
 description: 'Space After Filename
 
   '
+executor: manual
 sigma: false
 sigma_rule: []

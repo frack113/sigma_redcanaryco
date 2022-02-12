@@ -18,6 +18,7 @@ description: |
   Upon execution calc.exe will be launched
 
   Reference: https://github.com/LOLBAS-Project/LOLBAS/blob/master/yml/OSLibraries/Ieadvpack.yml
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: e593cf51-88db-4ee1-b920-37e89012a3c9

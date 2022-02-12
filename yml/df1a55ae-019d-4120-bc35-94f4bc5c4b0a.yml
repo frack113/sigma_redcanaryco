@@ -14,5 +14,6 @@ os:
 description: 'Dump /etc/passwd and /etc/shadow using ed
 
   '
+executor: bash
 sigma: false
 sigma_rule: []

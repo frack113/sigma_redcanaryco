@@ -14,6 +14,7 @@ os:
 description: |
   Basic Permission Groups Discovery for Windows. This test will display some errors if run on a computer not connected to a domain. Upon execution, domain
   information will be displayed.
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 183e7ea8-ac4b-4c23-9aec-b3dac4e401ac

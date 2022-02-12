@@ -18,5 +18,6 @@ os:
 description: 'Hide a directory on MacOS
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

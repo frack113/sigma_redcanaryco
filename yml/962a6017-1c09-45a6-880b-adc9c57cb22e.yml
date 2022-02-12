@@ -15,5 +15,6 @@ os:
 description: "This test is a Powershell script that enumerates Active Directory to determine computers that are joined to the domain. \nThis test is designed to mimic how SessionGopher can determine the\
   \ additional systems within a domain, which has been used before by threat actors to aid in lateral movement. \nReference: [Head Fake: Tackling Disruptive Ransomware Attacks](https://www.mandiant.com/resources/head-fake-tackling-disruptive-ransomware-attacks).\
   \ \nUpon successful execution, this test will output the names of the computers that reside on the domain to the console window. \n"
+executor: powershell
 sigma: false
 sigma_rule: []

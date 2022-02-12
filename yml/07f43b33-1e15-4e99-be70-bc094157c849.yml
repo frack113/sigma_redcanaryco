@@ -12,5 +12,6 @@ os:
 description: 'Disables OpenDNS Umbrella
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

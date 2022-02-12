@@ -19,5 +19,6 @@ os:
 description: |
   Overwrites and deletes a file using DD.
   To stop the test, break the command with CTRL/CMD+C.
+executor: bash
 sigma: false
 sigma_rule: []

@@ -14,5 +14,6 @@ os:
 description: 'Creates a new user in Linux and adds the user to the `root` group. This technique was used by adversaries during the Butter attack campaign.
 
   '
+executor: bash
 sigma: false
 sigma_rule: []

@@ -18,5 +18,6 @@ os:
 description: 'Discover private SSH keys on a macOS or Linux system.
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

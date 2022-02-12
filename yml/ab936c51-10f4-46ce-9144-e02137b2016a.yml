@@ -13,5 +13,6 @@ os:
 description: 'Take a file/directory, split it into 5Mb chunks
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

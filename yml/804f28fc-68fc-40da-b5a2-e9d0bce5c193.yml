@@ -14,6 +14,7 @@ technique:
 os:
   - windows
 description: Executes a hashdump by reading the hasshes from the registry.
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 61d0475c-173f-4844-86f7-f3eebae1c66b

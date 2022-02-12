@@ -15,6 +15,7 @@ description: |
   This test simulates an adversary leveraging Web Shells by simulating the file modification to disk.
   Idea from APTSimulator.
   cmd.aspx source - https://github.com/tennc/webshell/blob/master/fuzzdb-webshell/asp/cmd.aspx
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 39f1f9f2-9636-45de-98f6-a4046aa8e4b9

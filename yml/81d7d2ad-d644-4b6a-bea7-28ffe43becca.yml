@@ -18,5 +18,6 @@ description: 'Linux PAM (Pluggable Authentication Modules) is used in sshd authe
   in a ssh session and place them in the /var/log/audit/audit.log file after the session closes.
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

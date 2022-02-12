@@ -19,6 +19,7 @@ os:
 description: 'Mimic execution of compressed executable. When successfully executed, calculator.exe will open.
 
   '
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 1a70042a-6622-4a2b-8958-267625349abf

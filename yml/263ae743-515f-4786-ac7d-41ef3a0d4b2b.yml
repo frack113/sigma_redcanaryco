@@ -32,6 +32,7 @@ description: |
   Perform a domain password spray using the DomainPasswordSpray tool. It will try a single password against all users in the domain
 
   https://github.com/dafthack/DomainPasswordSpray
+executor: powershell
 sigma: true
 sigma_rule:
   - id: dcd74b95-3f36-4ed9-9598-0490951643aa

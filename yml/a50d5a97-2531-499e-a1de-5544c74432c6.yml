@@ -20,6 +20,7 @@ description: |
   Creates base64-encoded PowerShell code and executes it. This is used by numerous adversaries and malicious tools.
 
   Upon successful execution, powershell will execute an encoded command and stdout default is "Write-Host "Hey, Atomic!"
+executor: powershell
 sigma: true
 sigma_rule:
   - id: fb843269-508c-4b76-8b8d-88679db22ce7

@@ -25,5 +25,6 @@ os:
   - linux
 description: "This test adds a shared library to the `ld.so.preload` list to execute and intercept API calls. This technique was used by threat actor Rocke during the exploitation of Linux web servers.\
   \ This requires the `glibc` package.\n\nUpon successful execution, bash will echo `../bin/T1574.006.so` to /etc/ld.so.preload. \n"
+executor: bash
 sigma: false
 sigma_rule: []

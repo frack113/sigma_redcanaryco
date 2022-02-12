@@ -14,5 +14,6 @@ technique:
 os:
   - macos
 description: "This test adds persistence via a plist to execute via the macOS Event Monitor Daemon. \n"
+executor: bash
 sigma: false
 sigma_rule: []

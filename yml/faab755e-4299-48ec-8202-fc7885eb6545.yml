@@ -16,6 +16,7 @@ os:
 description: |
   Searches for Google Chrome's and Opera's Bookmarks file (on Windows distributions) that contains bookmarks.
   Upon execution, paths that contain bookmark files will be displayed.
+executor: powershell
 sigma: true
 sigma_rule:
   - id: e0565f5d-d420-4e02-8a68-ac00d864f9cf

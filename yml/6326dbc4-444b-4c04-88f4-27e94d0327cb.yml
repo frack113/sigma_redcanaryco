@@ -15,5 +15,6 @@ os:
 description: 'This test restarts a macOS/Linux system.
 
   '
+executor: bash
 sigma: false
 sigma_rule: []

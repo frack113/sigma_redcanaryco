@@ -21,6 +21,7 @@ os:
 description: |
   PowerShell code to bypass User Account Control using ComputerDefaults.exe on Windows 10
   Upon execution administrative command prompt should open
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 152f3630-77c1-4284-bcc0-4cc68ab2f6e7

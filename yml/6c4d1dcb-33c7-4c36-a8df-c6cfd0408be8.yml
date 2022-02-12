@@ -12,5 +12,6 @@ technique:
 os:
   - linux
 description: Create Python file (.py) that downloads and executes shell script via executor arguments
+executor: sh
 sigma: false
 sigma_rule: []

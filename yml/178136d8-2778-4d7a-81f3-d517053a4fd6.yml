@@ -10,5 +10,6 @@ technique:
 os:
   - windows
 description: "Attempting to use Defender Control software to disable Windows Defender. Upon successful execution, Windows Defender will be turned off. \n"
+executor: powershell
 sigma: false
 sigma_rule: []

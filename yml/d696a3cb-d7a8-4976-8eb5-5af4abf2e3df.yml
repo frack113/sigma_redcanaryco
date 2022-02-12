@@ -11,6 +11,7 @@ technique:
 os:
   - windows
 description: Scan ports to check for listening ports for the local host 127.0.0.1
+executor: powershell
 sigma: true
 sigma_rule:
   - id: f6ecd1cf-19b8-4488-97f6-00f0924991a3

@@ -11,5 +11,6 @@ technique:
 os:
   - linux
 description: "Edit the Uncomplicated Firewall (UFW) main configuration file for setting \ndefault policies /etc/default/ufw.\n"
+executor: sh
 sigma: false
 sigma_rule: []

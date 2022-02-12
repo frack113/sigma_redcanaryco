@@ -12,5 +12,6 @@ os:
 description: 'Using the Disable-AntiPhishRule cmdlet to disable antiphish rules in your office-365 organization.
 
   '
+executor: powershell
 sigma: false
 sigma_rule: []

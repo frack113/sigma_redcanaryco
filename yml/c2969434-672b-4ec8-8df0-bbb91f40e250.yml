@@ -33,6 +33,7 @@ os:
 description: 'Attempt to brute force Active Directory domain user on a domain controller, via LDAP, with NTLM or Kerberos
 
   '
+executor: powershell
 sigma: true
 sigma_rule:
   - id: a642964e-bead-4bed-8910-1bb4d63e3b4d

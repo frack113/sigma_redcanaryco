@@ -14,6 +14,7 @@ os:
 description: |
   Note: Requires winrar installation
   rar a -p"blue" hello.rar (VARIANT)
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 6f3e2987-db24-4c78-a860-b4f4095a7095

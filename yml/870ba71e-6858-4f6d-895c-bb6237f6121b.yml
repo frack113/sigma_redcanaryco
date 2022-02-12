@@ -14,6 +14,7 @@ os:
 description: 'When successful, accounts that do not require kerberos pre-auth will be returned
 
   '
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 815bfc17-7fc6-4908-a55e-2f37b98cedb4

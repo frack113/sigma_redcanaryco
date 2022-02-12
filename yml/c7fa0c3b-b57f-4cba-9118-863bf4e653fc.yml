@@ -15,6 +15,7 @@ description: |
   download and execute a file masquerading as images or Office files. Upon execution 3 calc instances and 3 vbs windows will be launched.
 
   e.g SOME_LEGIT_NAME.[doc,docx,xls,xlsx,pdf,rtf,png,jpg,etc.].[exe,vbs,js,ps1,etc] (Quartelyreport.docx.exe)
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: fff9d2b7-e11c-4a69-93d3-40ef66189767

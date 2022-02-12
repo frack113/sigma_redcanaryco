@@ -72,7 +72,7 @@ if need_to_download:
     with pathlib.Path("index.yaml").open("w", encoding="UTF-8", newline="\n") as file:
         file.write(my_file.content.decode())
 
-all_csv = [["tactic", "technique", "os", "name", "guid", "sigma", "nmr_test"]]
+all_csv = [["tactic", "technique", "executor","os", "name", "guid", "sigma", "nmr_test"]]
 test_csv  = []
 warning_log = []
 
@@ -149,6 +149,7 @@ with pathlib.Path("index.yaml").open("r", encoding="UTF-8") as file:
                         [
                             tactic,
                             technique,
+                            redcannary_info.data["executor"],
                             redcannary_info.data["os"],
                             redcannary_info.data["name"],
                             redcannary_info.data["guid"],

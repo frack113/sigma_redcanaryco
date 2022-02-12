@@ -13,6 +13,7 @@ os:
 description: |
   Executes the signed SyncAppvPublishingServer script with options to execute an arbitrary PowerShell command.
   Upon execution, calc.exe will be launched.
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 36475a7d-0f6d-4dce-9b01-6aeb473bbaf1

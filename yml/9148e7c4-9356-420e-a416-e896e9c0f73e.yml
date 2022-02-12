@@ -19,6 +19,7 @@ description: |
   This test requires the manual installation of PowerShell V2.
 
   Attempts to run powershell commands in version 2.0 https://www.leeholmes.com/blog/2017/03/17/detecting-and-preventing-powershell-downgrade-attacks/
+executor: powershell
 sigma: true
 sigma_rule:
   - id: b3512211-c67e-4707-bedc-66efc7848863

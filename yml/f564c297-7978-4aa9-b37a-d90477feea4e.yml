@@ -14,5 +14,6 @@ os:
 description: 'Utilize sftp to perform a remote file copy (push)
 
   '
+executor: bash
 sigma: false
 sigma_rule: []

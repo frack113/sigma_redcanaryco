@@ -12,5 +12,6 @@ technique:
 os:
   - linux
 description: "/etc/shadow file is accessed in Linux environments\n"
+executor: bash
 sigma: false
 sigma_rule: []

@@ -14,6 +14,7 @@ os:
 description: 'This module runs the Windows executable of SharpHound in order to remotely list members of the local Administrators group (SAMR)
 
   '
+executor: powershell
 sigma: true
 sigma_rule:
   - id: f376c8a7-a2d0-4ddc-aa0c-16c17236d962

@@ -14,6 +14,7 @@ os:
 description: |
   Automated Collection. Upon execution, check the users temp directory (%temp%) for the folder T1119_powershell_collection
   to see what was collected.
+executor: powershell
 sigma: true
 sigma_rule:
   - id: c1dda054-d638-4c16-afc8-53e007f3fbc5

@@ -15,5 +15,6 @@ os:
 description: 'Permission Groups Discovery
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

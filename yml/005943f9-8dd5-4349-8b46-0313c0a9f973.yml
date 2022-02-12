@@ -17,5 +17,6 @@ os:
 description: 'Use common shell utilities to decode a hex-encoded text string and echo it to the console
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

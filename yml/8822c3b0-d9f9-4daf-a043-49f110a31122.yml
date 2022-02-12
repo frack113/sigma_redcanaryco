@@ -13,5 +13,6 @@ os:
 description: 'Adversaries create AWS group, add users to specific to that group to elevate their privilieges to gain more accesss
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

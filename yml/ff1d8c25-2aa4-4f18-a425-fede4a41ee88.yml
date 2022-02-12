@@ -15,5 +15,6 @@ description: "\"This will test if the macOS firewall is enabled and/or show what
   \ information about the firewall configuration, including status and specific port/protocol blocks or allows. \n\nUsing `defaults`, additional arguments can be added to see filtered details, such as `globalstate`\
   \ for global configuration (\\\"Is it on or off?\\\"), `firewall` for common application allow rules, and `explicitauths` for specific rules configured by the user. \n\nUsing `socketfilterfw`, flags such\
   \ as --getglobalstate or --listapps can be used for similar filtering. At least one flag is required to send parseable output to standard out. \n"
+executor: bash
 sigma: false
 sigma_rule: []

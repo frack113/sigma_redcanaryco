@@ -16,6 +16,7 @@ os:
 description: 'Adversaries may invoke cmd.exe (or other malicious commands) by embedding them in the RunPreSetupCommandsSection of an INF file
 
   '
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: e66779cc-383e-4224-a3a4-267eeb585c40

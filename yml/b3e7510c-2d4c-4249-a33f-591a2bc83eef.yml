@@ -12,5 +12,6 @@ os:
 description: 'Stop and unload Crowdstrike Falcon daemons falcond and userdaemon on macOS
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

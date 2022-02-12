@@ -14,5 +14,6 @@ os:
 description: 'Utilize local utilities to enumerate users and groups
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

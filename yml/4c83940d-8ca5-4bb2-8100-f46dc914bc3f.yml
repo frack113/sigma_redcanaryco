@@ -20,5 +20,6 @@ os:
   - windows
   - macos
 description: Install the "Minimum Viable Malicious Extension" Chrome extension
+executor: manual
 sigma: false
 sigma_rule: []

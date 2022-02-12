@@ -15,5 +15,6 @@ os:
 description: 'Compile a c file with either gcc or clang on Linux or Macos.
 
   '
+executor: bash
 sigma: false
 sigma_rule: []

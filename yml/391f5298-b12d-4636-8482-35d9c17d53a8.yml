@@ -14,5 +14,6 @@ os:
 description: 'Uses GZip from Python to compress files
 
   '
+executor: bash
 sigma: false
 sigma_rule: []

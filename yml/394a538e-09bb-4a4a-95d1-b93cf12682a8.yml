@@ -22,5 +22,6 @@ os:
 description: 'Modify MacOS plist file in one of two directories
 
   '
+executor: manual
 sigma: false
 sigma_rule: []

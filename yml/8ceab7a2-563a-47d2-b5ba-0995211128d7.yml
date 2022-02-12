@@ -21,6 +21,7 @@ os:
 description: "Executes User Account Control Bypass according to the methods listed below. Upon successful execution you should see event viewer load and two administrative command prompts.\nNote: The cleanup_command's\
   \ which kill the spawned cmd and event viewer processes only work if run as admin.\n\nAuthor: Leo Davidson derivative\n\nType:\tDll Hijack\n\nMethod: IFileOperation\n\nTarget:\t\\system32\\pkgmgr.exe\n\
   \nComponent: DismCore.dll\n\nImplementation:\tucmDismMethod\n\nUCM Method:\tUacMethodDISM\n\nhttps://github.com/hfiref0x/UACME\n"
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: d38d2fa4-98e6-4a24-aff1-410b0c9ad177

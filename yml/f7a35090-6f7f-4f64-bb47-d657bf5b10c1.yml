@@ -21,6 +21,7 @@ os:
 description: |
   Creates a fake "trusted directory" and copies a binary to bypass UAC. The UAC bypass may not work on fully patched systems
   Upon execution the directory structure should exist if the system is patched, if unpatched Microsoft Management Console should launch
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: fff9d2b7-e11c-4a69-93d3-40ef66189767

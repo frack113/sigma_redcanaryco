@@ -17,6 +17,7 @@ os:
 description: |
   Note: must dump hashes first
   [Reference](https://github.com/gentilkiwi/mimikatz/wiki/module-~-sekurlsa#pth)
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 06d71506-7beb-4f22-8888-e2e5e2ca7fd8

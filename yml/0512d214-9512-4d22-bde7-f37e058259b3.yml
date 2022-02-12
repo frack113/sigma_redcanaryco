@@ -13,6 +13,7 @@ os:
 description: 'Removes a Network Share utilizing PowerShell
 
   '
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 66a4d409-451b-4151-94f4-a55d559c49b0

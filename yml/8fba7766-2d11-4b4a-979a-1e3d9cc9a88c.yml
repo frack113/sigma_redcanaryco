@@ -12,5 +12,6 @@ os:
 description: 'Disables Carbon Black Response
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

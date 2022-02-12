@@ -19,6 +19,7 @@ os:
 description: |
   Upon successful execution, an excel containing VBA Macro containing sensitive data will be sent outside the network using email.
   Sensitive data includes about around 20 odd simulated credit card numbers that passes the LUHN check.
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 9a7afa56-4762-43eb-807d-c3dc9ffe211b

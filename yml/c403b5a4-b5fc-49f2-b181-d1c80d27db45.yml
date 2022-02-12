@@ -13,5 +13,6 @@ os:
 description: 'Exfiltration of specified file over DNS protocol.
 
   '
+executor: manual
 sigma: false
 sigma_rule: []

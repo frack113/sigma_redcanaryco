@@ -15,6 +15,7 @@ description: |
   Identify network configuration information
 
   Upon successful execution, cmd.exe will spawn multiple commands to list network configuration settings. Output will be via stdout.
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: a29c1813-ab1f-4dde-b489-330b952e91ae

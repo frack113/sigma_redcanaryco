@@ -21,6 +21,7 @@ description: |
 
   Upon successful execution, powershell.exe will download T1055.dll to disk. Powershell will then spawn mavinject.exe to perform process injection in T1055.dll.
   With default arguments, expect to see a MessageBox, with notepad's icon in taskbar.
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 17eb8e57-9983-420d-ad8a-2c4976c22eb8

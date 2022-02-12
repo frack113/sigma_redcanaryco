@@ -26,6 +26,7 @@ description: |
   4. IatInjection
   5. ThreadHijack
   Upon successful execution, cmd.exe will execute T1055.exe, which exercises 5 techniques. Output will be via stdout.
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 5f113a8f-8b61-41ca-b90f-d374fa7e4a39

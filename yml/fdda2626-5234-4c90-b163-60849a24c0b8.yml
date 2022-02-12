@@ -23,6 +23,7 @@ os:
 description: 'Leverage Global Flags Settings
 
   '
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: cbf93e5d-ca6c-4722-8bea-e9119007c248

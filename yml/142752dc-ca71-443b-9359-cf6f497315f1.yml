@@ -16,5 +16,6 @@ os:
 description: 'Uses openssl to encrypt a file
 
   '
+executor: bash
 sigma: false
 sigma_rule: []

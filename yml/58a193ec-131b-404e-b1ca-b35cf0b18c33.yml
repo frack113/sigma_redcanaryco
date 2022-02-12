@@ -15,6 +15,7 @@ technique:
 os:
   - windows
 description: Executes an HTA Application using JScript script engine simulating double click.
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 03d83090-8cba-44a0-b02f-0b756a050306

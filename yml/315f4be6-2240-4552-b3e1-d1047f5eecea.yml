@@ -11,6 +11,7 @@ os:
   - windows
 description: "Malware can exclude specific extensions from being scanned and evading detection. \nUpon successful execution, the extension(s) should be on the list of excluded extensions.\nTo check the\
   \ exclusion list using poweshell  (Get-MpPreference).ExclusionExtension.\n"
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 17769c90-230e-488b-a463-e05c08e9d48f

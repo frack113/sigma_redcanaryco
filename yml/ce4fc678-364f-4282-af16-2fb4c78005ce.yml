@@ -16,6 +16,7 @@ description: |
   This test to simulate shortcut modification and then execute. example shortcut (*.lnk , .url) strings check with powershell;
   gci -path "C:\Users" -recurse -include *.url -ea SilentlyContinue | Select-String -Pattern "exe" | FL.
   Upon execution, calc.exe will be launched.
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 2aa0a6b4-a865-495b-ab51-c28249537b75

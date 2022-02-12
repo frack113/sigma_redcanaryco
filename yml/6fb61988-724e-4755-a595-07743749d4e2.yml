@@ -16,5 +16,6 @@ os:
 description: 'Utilize launchctl
 
   '
+executor: bash
 sigma: false
 sigma_rule: []

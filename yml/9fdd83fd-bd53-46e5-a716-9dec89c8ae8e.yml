@@ -20,5 +20,6 @@ os:
 description: 'GCP Service Accounts can be used to gain intial access as well as maintain persistence inside Google Cloud.
 
   '
+executor: gcloud
 sigma: false
 sigma_rule: []

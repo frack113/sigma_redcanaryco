@@ -17,6 +17,7 @@ description: |
   Methods to identify Security Software on an endpoint
 
   when sucessfully executed, powershell is going to processes related AV products if they are running.
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 904e8e61-8edf-4350-b59c-b905fc8e810c

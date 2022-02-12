@@ -13,6 +13,7 @@ os:
 description: |
   This test uses PowerShell to download a payload.
   This technique is used by multiple adversaries and malware families.
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 8f70ac5f-1f6f-4f8e-b454-db19561216c5

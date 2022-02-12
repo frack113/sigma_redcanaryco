@@ -14,6 +14,7 @@ os:
 description: 'takes a computer and determines who has admin rights over it through GPO enumeration. Upon execution, information about the machine will be displayed.
 
   '
+executor: powershell
 sigma: true
 sigma_rule:
   - id: f62176f3-8128-4faa-bf6c-83261322e5eb

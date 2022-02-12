@@ -16,6 +16,7 @@ technique:
 os:
   - windows
 description: Executes powershell.exe with variations of the -EncodedCommand parameter with encoded arguments supplied
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 754ed792-634f-40ae-b3bc-e0448d33f695

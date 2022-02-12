@@ -15,6 +15,7 @@ description: |
   Scan ports to check for listening ports with Nmap.
 
   Upon successful execution, sh will utilize nmap, telnet, and nc to contact a single or range of adresseses on port 80 to determine if listening. Results will be via stdout.
+executor: sh
 sigma: true
 sigma_rule:
   - id: f6ecd1cf-19b8-4488-97f6-00f0924991a3

@@ -16,6 +16,7 @@ os:
 description: |
   Regsvr32.exe is a command-line program used to register and unregister OLE controls. This test may be blocked by windows defender; disable
   windows defender real-time protection to fix it. Upon execution, calc.exe will be launched.
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 8e2b24c9-4add-46a0-b4bb-0057b4e6187d

@@ -12,5 +12,6 @@ os:
 description: 'Stop and disable Crowdstrike Falcon on Linux
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

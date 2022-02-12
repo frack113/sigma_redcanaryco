@@ -22,5 +22,6 @@ os:
 description: 'Keeps history clear and stays out of lastlog,wtmp,btmp ssh -T keeps the ssh client from catching a proper TTY, which is what usually gets logged on lastlog
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

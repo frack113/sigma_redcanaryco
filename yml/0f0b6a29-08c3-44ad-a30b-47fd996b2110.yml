@@ -14,5 +14,6 @@ os:
 description: 'Show if a user account has ever logged in remotely
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

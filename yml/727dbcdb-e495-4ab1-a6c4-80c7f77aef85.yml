@@ -14,6 +14,7 @@ technique:
 os:
   - windows
 description: This test will list the bookmarks for Internet Explorer that are found in the Favorites folder
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 7c9340a9-e2ee-4e43-94c5-c54ebbea1006

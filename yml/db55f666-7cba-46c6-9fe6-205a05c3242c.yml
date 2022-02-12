@@ -18,5 +18,6 @@ os:
 description: 'This test sets the SetGID flag on a file in Linux and macOS.
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

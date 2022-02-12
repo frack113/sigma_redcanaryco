@@ -13,6 +13,7 @@ os:
 description: 'OSTap copies itself in a specfic way to shares and secondary drives. This emulates the activity.
 
   '
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 1e33157c-53b1-41ad-bbcc-780b80b58288

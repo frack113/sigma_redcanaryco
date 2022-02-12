@@ -14,5 +14,6 @@ os:
 description: 'Loadable Kernel Module based Rootkit
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

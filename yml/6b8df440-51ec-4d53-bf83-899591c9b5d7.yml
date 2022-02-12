@@ -12,6 +12,7 @@ os:
 description: |
   Attempting to disable scheduled scanning and other parts of windows defender atp. Upon execution Virus and Threat Protection will show as disabled
   in Windows settings.
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 14c71865-6cd3-44ae-adaa-1db923fae5f2

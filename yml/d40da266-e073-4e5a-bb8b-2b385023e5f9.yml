@@ -19,6 +19,7 @@ description: |
   PowerShell code to set Winlogon Notify key to execute a notification package DLL at logon.
 
   Upon successful execution, PowerShell will modify a registry value to execute atomicNotificationPackage.dll upon logon/logoff.
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 851c506b-6b7c-4ce2-8802-c703009d03c0

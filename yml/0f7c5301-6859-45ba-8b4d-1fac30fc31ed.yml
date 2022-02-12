@@ -33,6 +33,7 @@ os:
 description: "Dump user credentials using Windows Credential Editor (supports Windows XP, 2003, Vista, 7, 2008 and Windows 8 only)\n\nUpon successful execution, you should see a file with user passwords/hashes\
   \ at %temp%/wce-output.file.\n\nIf you see no output it is likely that execution was blocked by Anti-Virus. \n\nIf you see a message saying \\\"wce.exe is not recognized as an internal or external command\\\
   \", try using the  get-prereq_commands to download and install Windows Credential Editor first.\n"
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: a6b33c02-8305-488f-8585-03cb2a7763f2

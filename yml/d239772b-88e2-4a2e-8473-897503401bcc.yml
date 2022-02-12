@@ -14,6 +14,7 @@ description: "Uses the cmdl32 to download arbitrary file from the internet. The 
   \ the arbitary file. \nThe issue of cmdl32.exe detecting and deleting the payload by identifying it as not a VPN Servers profile is avoided by setting a temporary TMP folder and denying the delete permission\
   \ to all files for the user.\nUpon successful execution the test will open calculator and Notepad executable for 10 seconds.\nreference:\nhttps://twitter.com/ElliotKillick/status/1455897435063074824\n\
   https://github.com/LOLBAS-Project/LOLBAS/pull/151\nhttps://lolbas-project.github.io/lolbas/Binaries/Cmdl32/\nhttps://strontic.github.io/xcyclopedia/library/cmdl32.exe-FA1D5B8802FFF4A85B6F52A52C871BBB.html\n"
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 4f4eaa9f-5ad4-410c-a4be-bc6132b0175a

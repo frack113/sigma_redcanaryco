@@ -22,6 +22,7 @@ os:
 description: 'Prevents Powershell history
 
   '
+executor: powershell
 sigma: true
 sigma_rule:
   - id: f99276ad-d122-4989-a09a-d00904a5f9d2

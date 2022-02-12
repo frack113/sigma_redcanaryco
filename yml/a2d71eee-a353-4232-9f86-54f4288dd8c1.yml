@@ -14,6 +14,7 @@ os:
 description: 'Find machines where user has local admin access (PowerView). Upon execution, progress and info about each host in the domain being scanned will be displayed.
 
   '
+executor: powershell
 sigma: true
 sigma_rule:
   - id: f62176f3-8128-4faa-bf6c-83261322e5eb

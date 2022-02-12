@@ -14,6 +14,7 @@ os:
 description: |
   Find or discover files on the file system.  Upon execution, the file "download" will be placed in the temporary folder and contain the output of
   all of the data discovery commands.
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 502b42de-4306-40b4-9596-6f590c81f073

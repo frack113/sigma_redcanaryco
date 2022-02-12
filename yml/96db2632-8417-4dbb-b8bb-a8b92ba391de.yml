@@ -17,5 +17,6 @@ description: |
   Identify remote systems via ping sweep.
 
   Upon successful execution, sh will perform a ping sweep on the 192.168.1.1/24 and echo via stdout if an IP is active.
+executor: sh
 sigma: false
 sigma_rule: []

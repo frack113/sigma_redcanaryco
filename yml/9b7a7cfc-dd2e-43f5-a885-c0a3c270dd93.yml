@@ -14,6 +14,7 @@ os:
 description: 'Executes the installer assembly class constructor. Upon execution, version information will be displayed the .NET framework install utility.
 
   '
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 82a19e3a-2bfe-4a91-8c0d-5d4c98fbb719

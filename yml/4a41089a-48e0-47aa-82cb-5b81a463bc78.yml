@@ -22,6 +22,7 @@ os:
   - windows
 description: "Windows Management Instrumentation(WMI) objects contain system information which helps to detect virtualization. This test will get the model and manufacturer of the machine to determine if\
   \ it is a virtual machine, such as through VMware or VirtualBox. \n"
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 0332a266-b584-47b4-933d-a00b103e1b37

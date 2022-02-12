@@ -19,6 +19,7 @@ os:
 description: 'Use schtasks.exe to disable the System Restore (SR) scheduled task
 
   '
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 9ac94dc8-9042-493c-ba45-3b5e7c86b980

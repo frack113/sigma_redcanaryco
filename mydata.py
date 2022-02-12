@@ -14,6 +14,7 @@ class my_data:
             "technique": [],
             "os": "",
             "description": "",
+            "executor": "",
             "sigma": False,
             "sigma_rule": [],
         }
@@ -28,6 +29,7 @@ class my_data:
             "technique": [],
             "os": "",
             "description": "",
+            "executor": "",
             "sigma": False,
             "sigma_rule": [],
         }
@@ -39,6 +41,7 @@ class my_data:
         self.data["name"] = test["name"]
         self.data["os"] = test["supported_platforms"]
         self.data["description"] = test["description"]
+        self.data["executor"] = test["executor"]["name"]
         for tactic in head_info["tactic"]:  # better way to do?
             if not tactic in self.data["tactic"]:
                 self.data["tactic"].append(tactic)
@@ -58,6 +61,7 @@ class my_data:
         self.data["technique"] = old_yml["technique"]
         self.data["os"] = old_yml["os"]
         self.data["description"] = old_yml["description"]
+        self.data["executor"] = old_yml["executor"]
         self.data["sigma"] = old_yml["sigma"]
         self.data["sigma_rule"] = old_yml["sigma_rule"]
 
@@ -99,6 +103,9 @@ Find sigma rule %%state%%
 ## Description:
 %%description%%
 
+## Executor
+%%executor%%
+
 # Sigma Rule
 %%sigma_rule%%
 
@@ -127,6 +134,7 @@ Find sigma rule %%state%%
         test_str = test_str.replace("%%test_name%%", self.data["name"])
         test_str = test_str.replace("%%os%%", str_os)
         test_str = test_str.replace("%%description%%", self.data["description"])
+        test_str = test_str.replace("%%executor%%", self.data["executor"])
         test_str = test_str.replace("%%sigma_rule%%", str_sigma)
         filepath.parent.mkdir(parents=True, exist_ok=True)
         with filepath.open("w", encoding="UTF-8", newline="\n") as file:

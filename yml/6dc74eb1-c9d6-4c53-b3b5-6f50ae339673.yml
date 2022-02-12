@@ -23,6 +23,7 @@ description: |
   https://blog.cobaltstrike.com/2017/01/24/scripting-matt-nelsons-mmc20-application-lateral-movement-technique/
 
   Upon successful execution, cmd will spawn calc.exe on a remote computer.
+executor: powershell
 sigma: true
 sigma_rule:
   - id: f1f3bf22-deb2-418d-8cce-e1a45e46a5bd

@@ -18,6 +18,7 @@ description: |
   Get a listing of network connections.
 
   Upon successful execution, cmd.exe will execute `netstat`, `net use` and `net sessions`. Results will output via stdout.
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 1c67a717-32ba-409b-a45d-0fb704a73a81

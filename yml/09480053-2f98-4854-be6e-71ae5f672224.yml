@@ -33,6 +33,7 @@ os:
 description: 'Attempts to brute force a single Active Directory account by testing connectivity to the IPC$ share on a domain controller
 
   '
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 1c67a717-32ba-409b-a45d-0fb704a73a81

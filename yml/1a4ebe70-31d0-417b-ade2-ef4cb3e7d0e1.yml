@@ -13,5 +13,6 @@ technique:
 os:
   - linux
 description: "Use the ip route command to display the kernels routing tables. \n"
+executor: sh
 sigma: false
 sigma_rule: []

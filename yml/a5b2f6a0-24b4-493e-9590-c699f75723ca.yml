@@ -19,6 +19,7 @@ description: |
   installed.
 
   Upon successful execution, tshark will execute and capture 5 packets on interface "Ethernet".
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: ba1f7802-adc7-48b4-9ecb-81e227fddfd5

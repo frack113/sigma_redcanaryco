@@ -17,5 +17,6 @@ os:
 description: |
   Remove's a file's `immutable` attribute using `chattr`.
   This technique was used by the threat actor Rocke during the compromise of Linux web servers.
+executor: sh
 sigma: false
 sigma_rule: []

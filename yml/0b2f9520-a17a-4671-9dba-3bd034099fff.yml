@@ -17,5 +17,6 @@ description: |
   Additional Details:
   - https://twitter.com/mauilion/status/1129468485480751104
   - https://securekubernetes.com/scenario_2_attack/
+executor: sh
 sigma: false
 sigma_rule: []

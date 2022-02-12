@@ -20,5 +20,6 @@ os:
   - windows
   - macos
 description: Turn on Chrome developer mode and Load Extension found in the src directory
+executor: manual
 sigma: false
 sigma_rule: []

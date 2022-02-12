@@ -13,5 +13,6 @@ os:
 description: 'Stop the Uncomplicated Firewall (UFW) if installed.
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

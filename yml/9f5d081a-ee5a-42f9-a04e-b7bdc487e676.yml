@@ -16,6 +16,7 @@ os:
 description: 'Executes the LaunchApplication function in pcwutl.dll to proxy execution of an executable.
 
   '
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: e593cf51-88db-4ee1-b920-37e89012a3c9

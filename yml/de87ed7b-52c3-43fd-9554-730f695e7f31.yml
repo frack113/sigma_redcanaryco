@@ -14,5 +14,6 @@ os:
 description: 'Add a hidden user on macOS using IsHidden optoin
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

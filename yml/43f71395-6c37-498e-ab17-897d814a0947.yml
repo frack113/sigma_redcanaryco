@@ -14,6 +14,7 @@ os:
 description: 'This test will remove an account from the domain admins group
 
   '
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 48a45d45-8112-416b-8a67-46e03a4b2107

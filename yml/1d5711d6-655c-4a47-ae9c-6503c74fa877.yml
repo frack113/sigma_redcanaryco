@@ -16,6 +16,7 @@ os:
 description: 'Identify the system time via PowerShell. Upon execution, the system time will be displayed.
 
   '
+executor: powershell
 sigma: true
 sigma_rule:
   - id: b243b280-65fe-48df-ba07-6ddea7646427

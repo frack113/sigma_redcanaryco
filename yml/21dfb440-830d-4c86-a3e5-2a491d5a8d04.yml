@@ -17,6 +17,7 @@ description: |
   Stops a specified service using the sc.exe command. Upon execution, if the spooler service was running infomration will be displayed saying
   it has changed to a state of STOP_PENDING. If the spooler service was not running "The service has not been started." will be displayed and it can be
   started by running the cleanup command.
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: eb87818d-db5d-49cc-a987-d5da331fbd90

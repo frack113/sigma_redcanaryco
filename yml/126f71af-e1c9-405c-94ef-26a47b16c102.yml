@@ -19,5 +19,6 @@ os:
 description: 'Modify rc.local
 
   '
+executor: bash
 sigma: false
 sigma_rule: []

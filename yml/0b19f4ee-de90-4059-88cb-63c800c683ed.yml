@@ -11,6 +11,7 @@ os:
   - windows
 description: "Malware can exclude a specific path from being scanned and evading detection. \nUpon successul execution, the file provided should be on the list of excluded path. \nTo check the exclusion\
   \ list using poweshell (Get-MpPreference).ExclusionPath \n"
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 17769c90-230e-488b-a463-e05c08e9d48f

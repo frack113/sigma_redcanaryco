@@ -15,5 +15,6 @@ os:
 description: 'This test shuts down a macOS/Linux system using a halt.
 
   '
+executor: bash
 sigma: false
 sigma_rule: []

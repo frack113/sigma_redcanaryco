@@ -22,5 +22,6 @@ os:
 description: 'Common Sudo enumeration methods.
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

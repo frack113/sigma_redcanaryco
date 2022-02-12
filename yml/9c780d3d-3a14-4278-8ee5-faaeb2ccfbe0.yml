@@ -14,6 +14,7 @@ description: |-
   Creates a text file
   Tries to upload to a server via HTTP PUT method with ContentType Header
   Deletes a created file
+executor: powershell
 sigma: true
 sigma_rule:
   - id: d2e3f2f6-7e09-4bf2-bc5d-90186809e7fb

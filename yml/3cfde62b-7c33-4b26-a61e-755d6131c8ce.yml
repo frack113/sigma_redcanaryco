@@ -15,5 +15,6 @@ os:
 description: 'Search through bash history for specifice commands we want to capture
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

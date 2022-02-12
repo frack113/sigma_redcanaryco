@@ -11,6 +11,7 @@ technique:
 os:
   - windows
 description: This test will attempt to allow an executable through the system firewall located in the Users directory
+executor: powershell
 sigma: true
 sigma_rule:
   - id: cd5cfd80-aa5f-44c0-9c20-108c4ae12e3c

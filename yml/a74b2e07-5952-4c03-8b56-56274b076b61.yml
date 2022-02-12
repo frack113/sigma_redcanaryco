@@ -16,5 +16,6 @@ os:
 description: |
   After exiting the shell, the script will download and execute.
   After sending a keyboard interrupt (CTRL+C) the script will download and execute.
+executor: sh
 sigma: false
 sigma_rule: []

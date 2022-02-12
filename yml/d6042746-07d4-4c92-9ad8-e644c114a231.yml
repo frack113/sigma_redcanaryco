@@ -15,6 +15,7 @@ os:
 description: |
   Adds a registry value to run batch script created in the %temp% directory. Upon execution, there will be a new environment variable in the HKCU\Environment key
   that can be viewed in the Registry Editor.
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 0a98a10c-685d-4ab0-bddc-b6bdd1d48458

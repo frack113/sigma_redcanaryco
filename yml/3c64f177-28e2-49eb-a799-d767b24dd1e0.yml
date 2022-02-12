@@ -23,6 +23,7 @@ description: |
   https://gist.github.com/mattifestation/7fe1df7ca2f08cbfa3d067def00c01af
 
   https://github.com/EmpireProject/Empire/blob/master/data/module_source/persistence/Persistence.psm1#L545
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 9e07f6e7-83aa-45c6-998e-0af26efd0a85

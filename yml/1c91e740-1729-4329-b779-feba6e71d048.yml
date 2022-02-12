@@ -19,6 +19,7 @@ description: |
 
   Note: Due to the way the VBA code handles memory/pointers/injection, a 64bit installation of Microsoft Office
   is required.
+executor: powershell
 sigma: true
 sigma_rule:
   - id: e6ce8457-68b1-485b-9bdd-3c2b5d679aa9

@@ -16,6 +16,7 @@ description: |
   This works by copying cmd.exe to a file, naming it lsm.exe, then copying a file to the C:\ folder.
 
   Upon successful execution, cmd.exe will be renamed as lsm.exe and executed from non-standard path.
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: fff9d2b7-e11c-4a69-93d3-40ef66189767

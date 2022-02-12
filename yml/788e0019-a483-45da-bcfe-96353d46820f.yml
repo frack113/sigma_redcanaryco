@@ -14,5 +14,6 @@ os:
 description: 'Access the Kubernetes service account access token stored within a container in a cluster.
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

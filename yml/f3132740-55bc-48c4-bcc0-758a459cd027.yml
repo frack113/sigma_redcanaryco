@@ -18,6 +18,7 @@ os:
 description: 'Download Mimikatz and dump credentials. Upon execution, mimikatz dump details and password hashes will be displayed.
 
   '
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: f772cee9-b7c2-4cb2-8f07-49870adc02e0

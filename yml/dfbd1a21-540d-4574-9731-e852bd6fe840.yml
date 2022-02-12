@@ -23,5 +23,6 @@ os:
 description: |
   systemd-detect-virt detects execution in a virtualized environment.
   At boot, dmesg stores a log if a hypervisor is detected.
+executor: sh
 sigma: false
 sigma_rule: []

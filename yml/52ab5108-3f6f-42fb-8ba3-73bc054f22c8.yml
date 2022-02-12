@@ -16,6 +16,7 @@ description: |
   Identify domain controllers for specified domain.
 
   Upon successful execution, cmd.exe will execute nltest.exe against a target domain to retrieve a list of domain controllers. Output will be via stdout.
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 3bad990e-4848-4a78-9530-b427d854aac0

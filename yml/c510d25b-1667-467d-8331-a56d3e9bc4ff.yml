@@ -12,6 +12,7 @@ technique:
 os:
   - windows
 description: Emulates uninstalling  applications using WMIC.  This method only works if the product was installed with an msi file.  APTs have been seen using this to uninstall security products.
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: b53317a0-8acf-4fd1-8de8-a5401e776b96

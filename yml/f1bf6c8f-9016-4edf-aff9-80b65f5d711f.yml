@@ -16,6 +16,7 @@ description: |
   Identify remote systems with net.exe querying the Active Directory Domain Computers group.
 
   Upon successful execution, cmd.exe will execute cmd.exe against Active Directory to list the "Domain Computers" group. Output will be via stdout.
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 183e7ea8-ac4b-4c23-9aec-b3dac4e401ac

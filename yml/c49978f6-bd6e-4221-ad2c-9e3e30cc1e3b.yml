@@ -14,6 +14,7 @@ os:
 description: |
   Query the registry to determine software and versions installed on the system. Upon execution a table of
   software name and version information will be displayed.
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 2650dd1a-eb2a-412d-ac36-83f06c4f2282

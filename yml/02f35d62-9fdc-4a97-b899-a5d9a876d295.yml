@@ -18,6 +18,7 @@ description: 'The Potentially Unwanted Applications (PUA) protection feature in 
   is considered a Potentially Unwanted Application (PUA) instead of a VIRUS (i.e. not actually malicious, but is flagged as it to verify anti-pua protection).
 
   '
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 9fc51a3c-81b3-4fa7-b35f-7c02cf10fd2d

@@ -12,6 +12,7 @@ os:
 description: 'Emulates attack with Microsoft.Workflow.Compiler.exe running a .Net assembly that launches calc.exe
 
   '
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 419dbf2b-8a9b-4bea-bf99-7544b050ec8d

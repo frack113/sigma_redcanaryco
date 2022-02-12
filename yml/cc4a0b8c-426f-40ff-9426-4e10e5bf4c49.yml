@@ -20,5 +20,6 @@ os:
 description: 'Creates a root CA with openssl
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

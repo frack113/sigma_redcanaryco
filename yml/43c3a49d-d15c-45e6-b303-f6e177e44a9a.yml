@@ -16,5 +16,6 @@ description: 'A Kubernetes secret is an object that lets users store and manage 
   to various services.
 
   '
+executor: bash
 sigma: false
 sigma_rule: []

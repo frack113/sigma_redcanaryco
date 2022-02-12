@@ -16,5 +16,6 @@ os:
 description: 'Adversaries create their own new access and secret keys to programatically interact with AWS environment, which is already compromised
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

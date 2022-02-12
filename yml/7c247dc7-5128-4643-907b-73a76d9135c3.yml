@@ -17,5 +17,6 @@ os:
 description: 'Copy private SSH keys on a Linux system to a staging folder using the `cp` command.
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

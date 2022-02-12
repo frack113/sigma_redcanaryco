@@ -16,6 +16,7 @@ os:
 description: |
   Executes a command, writing the output to a local Admin Share.
   This technique is used by post-exploitation frameworks.
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 4aafb0fa-bff5-4b9d-b99e-8093e659c65f

@@ -19,6 +19,7 @@ description: |
   https://blog.cylance.com/windows-registry-persistence-part-1-introduction-attack-phases-and-windows-services
   http://www.handgrep.se/repository/cheatsheets/postexploitation/WindowsPost-Exploitation.pdf
   https://www.offensive-security.com/wp-content/uploads/2015/04/wp.Registry_Quick_Find_Chart.en_us.pdf
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 970007b7-ce32-49d0-a4a4-fbef016950bd

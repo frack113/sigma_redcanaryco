@@ -16,5 +16,6 @@ os:
 description: 'Mac logon script
 
   '
+executor: manual
 sigma: false
 sigma_rule: []

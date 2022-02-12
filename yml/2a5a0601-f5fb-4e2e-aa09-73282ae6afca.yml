@@ -18,5 +18,6 @@ os:
 description: 'Copy the users GnuPG (.gnupg) directory on a Mac or Linux system to a staging folder using the `rsync` command.
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

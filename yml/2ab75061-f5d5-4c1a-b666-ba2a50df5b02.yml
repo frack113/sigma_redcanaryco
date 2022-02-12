@@ -14,6 +14,7 @@ os:
 description: |
   Storing files in Alternate Data Stream (ADS) similar to Astaroth malware.
   Upon execution cmd will run and attempt to launch desktop.ini. No windows remain open after the test
+executor: powershell
 sigma: true
 sigma_rule:
   - id: a699b30e-d010-46c8-bbd1-ee2e26765fe9

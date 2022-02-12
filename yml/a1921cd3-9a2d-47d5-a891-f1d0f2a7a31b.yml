@@ -13,6 +13,7 @@ os:
 description: |
   This test uses BITSAdmin.exe to schedule a BITS job for the download of a file.
   This technique is used by Qbot malware to download payloads.
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: d059842b-6b9d-4ed1-b5c3-5b89143c6ede

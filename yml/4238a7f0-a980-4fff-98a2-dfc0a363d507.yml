@@ -14,5 +14,6 @@ os:
 description: 'Add a hidden user on macOS using Unique ID < 500 (users with that ID are hidden by default)
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

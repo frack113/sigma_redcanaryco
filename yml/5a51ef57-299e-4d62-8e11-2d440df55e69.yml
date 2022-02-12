@@ -33,5 +33,6 @@ os:
 description: 'Attempt to brute force Azure AD user via AzureAD powershell module.
 
   '
+executor: powershell
 sigma: false
 sigma_rule: []

@@ -19,5 +19,6 @@ os:
 description: 'Gatekeeper Bypass via command line
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

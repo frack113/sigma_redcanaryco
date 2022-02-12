@@ -17,5 +17,6 @@ os:
 description: "When a command is executed in bash, the BASH_COMMAND variable contains that command. For example :~$ echo $BASH_COMMAND = \"echo $BASH_COMMAND\". The trap command is not a external command,\
   \ but a built-in function of bash and can be used in a script to run a bash function when some event occurs. trap will detect when the BASH_COMMAND variable value changes and then pipe that value into\
   \ a file, creating a bash session based keylogger. \n\nTo gain persistence the command could be added to the users .bashrc or .bash_aliases or the systems default .bashrc in /etc/skel/ \n"
+executor: sh
 sigma: false
 sigma_rule: []

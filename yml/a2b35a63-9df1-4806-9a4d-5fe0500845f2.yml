@@ -17,5 +17,6 @@ description: 'LinEnum is a bash script that performs discovery commands for acco
   ways of escalating privileges or further exploitation of targeted host.
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

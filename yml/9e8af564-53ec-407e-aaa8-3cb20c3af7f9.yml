@@ -21,6 +21,7 @@ os:
 description: |
   Disable User Account Conrol (UAC) using the builtin tool reg.exe by changing its registry key
   HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\EnableLUA from 1 to 0
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 48437c39-9e5f-47fb-af95-3d663c3f2919

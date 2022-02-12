@@ -15,6 +15,7 @@ technique:
 os:
   - windows
 description: Executes an HTA Application with Simulate lateral movement over UNC Path.
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 754ed792-634f-40ae-b3bc-e0448d33f695

@@ -17,6 +17,7 @@ description: |
   Test execution of a command using rundll32.exe with setupapi.dll. Upon execution, a windows saying "installation failed" will be opened
 
   Reference: https://github.com/LOLBAS-Project/LOLBAS/blob/master/yml/OSLibraries/Setupapi.yml
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: e593cf51-88db-4ee1-b920-37e89012a3c9

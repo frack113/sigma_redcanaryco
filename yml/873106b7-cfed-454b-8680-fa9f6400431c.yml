@@ -18,6 +18,7 @@ description: |
   Will start a process on a remote host.
 
   Upon successful execution, cmd will utilize psexec.exe to spawn calc.exe on a remote endpoint (default:localhost).
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 7cccd811-7ae9-4ebe-9afd-cb5c406b824b

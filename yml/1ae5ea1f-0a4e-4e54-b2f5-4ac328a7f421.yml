@@ -16,6 +16,7 @@ os:
 description: 'Replicating observed Gozi maldoc behavior registering a dll with an altered extension
 
   '
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: bd70d3f8-e60e-4d25-89f0-0b5a9cff20e0

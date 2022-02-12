@@ -20,6 +20,7 @@ os:
 description: 'Upon execution this test will clear Windows Event Logs. Open the System.evtx logs at C:\Windows\System32\winevt\Logs and verify that it is now empty.
 
   '
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: cc36992a-4671-4f21-a91d-6c2b72a2edf5

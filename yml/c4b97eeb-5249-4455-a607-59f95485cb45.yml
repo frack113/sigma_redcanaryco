@@ -17,6 +17,7 @@ os:
 description: 'Execute an arbitrary remote HTA. Upon execution calc.exe will be launched.
 
   '
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 9fc51a3c-81b3-4fa7-b35f-7c02cf10fd2d

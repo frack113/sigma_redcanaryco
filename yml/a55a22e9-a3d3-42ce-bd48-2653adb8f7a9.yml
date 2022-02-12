@@ -15,6 +15,7 @@ description: "Create a random atr-nnnnnnnn account and add it to a domain group 
   \ requires an elevated session, \nand is unlikely to work with Powershell Core (untested).\n\nIf you consider running this test against a production Active Directory, the good practise is to create a\
   \ dedicated\nservice account whose delegation is given onto a dedicated OU for user creation and deletion, as well as delegated\nas group manager of the target group.\n\nExample: `Invoke-AtomicTest -Session\
   \ $session 'T1098' -TestNames \"Domain Account and Group Manipulate\" -InputArgs @{\"group\" = \"DNSAdmins\" }`\n"
+executor: powershell
 sigma: true
 sigma_rule:
   - id: cef24b90-dddc-4ae1-a09a-8764872f69fc

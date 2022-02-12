@@ -14,6 +14,7 @@ os:
 description: 'Executes the code in a project file using msbuild.exe. The default Visual Basic example file (vb.xml) will simply print "Hello from a Visual Basic inline task!" to the screen.
 
   '
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 82a19e3a-2bfe-4a91-8c0d-5d4c98fbb719

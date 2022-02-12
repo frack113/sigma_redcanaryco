@@ -14,6 +14,7 @@ os:
 description: |
   Modifies the last access timestamp of a specified file. This technique was seen in use by the Stitch RAT.
   To verify execution, use File Explorer to view the Properties of the file and observe that the Accessed time is the year 1970.
+executor: powershell
 sigma: true
 sigma_rule:
   - id: c6438007-e081-42ce-9483-b067fbef33c3

@@ -14,6 +14,7 @@ os:
 description: |
   Uses hh.exe to execute a local compiled HTML Help payload.
   Upon execution calc.exe will open
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 68c8acb4-1b60-4890-8e82-3ddf7a6dba84

@@ -18,6 +18,7 @@ os:
 description: |
   Attackers need to change the powershell execution policy in order to run their malicious powershell scripts.
   They can either specify it during the execution of the powershell script or change the registry value for it.
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 87e3c4e8-a6a8-4ad9-bb4f-46e7ff99a180

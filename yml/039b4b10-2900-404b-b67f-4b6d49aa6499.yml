@@ -14,5 +14,6 @@ os:
 description: 'Use the `shred` command to overwrite the temporary file and then delete it
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

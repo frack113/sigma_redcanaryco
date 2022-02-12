@@ -12,5 +12,6 @@ technique:
 os:
   - linux
 description: "/etc/passwd file is accessed in Linux environments\n"
+executor: sh
 sigma: false
 sigma_rule: []

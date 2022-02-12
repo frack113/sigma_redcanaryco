@@ -16,5 +16,6 @@ technique:
 os:
   - linux
 description: "This test creates Systemd service and timer then starts and enables the Systemd timer \n"
+executor: bash
 sigma: false
 sigma_rule: []

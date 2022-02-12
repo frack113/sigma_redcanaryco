@@ -17,5 +17,6 @@ os:
 description: 'Use Perl to decode a base64-encoded text string and echo it to the console
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

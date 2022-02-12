@@ -16,6 +16,7 @@ description: |
   Source: https://www.n00py.io/2021/05/dumping-plaintext-rdp-credentials-from-svchost-exe/
 
   Upon successful execution, you should see the following file created $env:TEMP\svchost-exe.dmp.
+executor: powershell
 sigma: true
 sigma_rule:
   - id: aff815cc-e400-4bf0-a47a-5d8a2407d4e1

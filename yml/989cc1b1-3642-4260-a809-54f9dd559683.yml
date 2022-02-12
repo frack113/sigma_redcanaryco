@@ -21,5 +21,6 @@ os:
 description: 'Delete system and audit logs
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

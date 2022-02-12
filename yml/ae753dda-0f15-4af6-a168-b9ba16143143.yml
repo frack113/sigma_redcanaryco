@@ -13,6 +13,7 @@ description: 'Beginning with Powershell 6.0, the Stop-Service cmdlet sends a sto
   service in the registry and in the service database.
 
   '
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 6783aa9e-0dc3-49d4-a94a-8b39c5fd700b

@@ -12,6 +12,7 @@ technique:
 os:
   - windows
 description: Find existing user session on other computers. Upon execution, information about any sessions discovered will be displayed.
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 1f21ec3f-810d-4b0e-8045-322202e22b4b

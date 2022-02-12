@@ -15,5 +15,6 @@ technique:
 os:
   - linux
 description: "The linux audit tool auditd can be used to capture 32 and 64 bit command execution and place the command in the /var/log/audit/audit.log audit log. \n"
+executor: sh
 sigma: false
 sigma_rule: []

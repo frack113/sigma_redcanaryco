@@ -18,5 +18,6 @@ description: |
   Remote to Local
 
   Upon successful execution, sh will spawn ssh contacting a remote domain (default: target.example.com) writing a tar.gz file.
+executor: sh
 sigma: false
 sigma_rule: []

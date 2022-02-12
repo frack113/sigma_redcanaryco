@@ -14,6 +14,7 @@ os:
 description: 'Copies a windows exe, renames it as another windows exe, and launches it to masquerade as second windows exe
 
   '
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 0718cd72-f316-4aa2-988f-838ea8533277

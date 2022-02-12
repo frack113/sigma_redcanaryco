@@ -12,6 +12,7 @@ technique:
 os:
   - windows
 description: Executes a CHM file with the default Shortcut Command method.
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 68c8acb4-1b60-4890-8e82-3ddf7a6dba84

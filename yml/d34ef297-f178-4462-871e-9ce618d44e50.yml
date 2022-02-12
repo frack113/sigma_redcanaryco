@@ -14,6 +14,7 @@ technique:
 os:
   - windows
 description: Add key-value pair to a Windows Port Monitor registry. On the subsequent reboot dll will be execute under spoolsv with NT AUTHORITY/SYSTEM privilege.
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 944e8941-f6f6-4ee8-ac05-1c224e923c0e

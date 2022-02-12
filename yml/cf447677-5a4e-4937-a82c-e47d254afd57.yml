@@ -21,6 +21,7 @@ description: |
   Additionally, open Registry Editor to view the modified entry in HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\.
 
   https://www.blackhat.com/docs/us-17/wednesday/us-17-Dods-Infecting-The-Enterprise-Abusing-Office365-Powershell-For-Covert-C2.pdf
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 45e112d0-7759-4c2a-aa36-9f8fb79d3393

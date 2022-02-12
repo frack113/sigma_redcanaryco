@@ -15,5 +15,6 @@ os:
 description: 'Create and execute a process from a directory masquerading as the current parent directory (`...` instead of normal `..`)
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

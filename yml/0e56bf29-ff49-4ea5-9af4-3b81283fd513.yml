@@ -16,6 +16,7 @@ os:
 description: 'Extracting Credentials from Files. Upon execution, the contents of files that contain the word "password" will be displayed.
 
   '
+executor: powershell
 sigma: true
 sigma_rule:
   - id: f576a613-2392-4067-9d1a-9345fb58d8d1

@@ -21,5 +21,6 @@ description: |
   Creates a base64-encoded data file and decodes it into an executable shell script
 
   Upon successful execution, sh will execute art.sh, which is a base64 encoded command, that stdouts `echo Hello from the Atomic Red Team`.
+executor: sh
 sigma: false
 sigma_rule: []

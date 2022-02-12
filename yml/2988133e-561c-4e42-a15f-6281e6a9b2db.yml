@@ -15,6 +15,7 @@ technique:
 os:
   - windows
 description: Creates a notepad.exe process and then spawns a powershell.exe process as a child of it.
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 03d83090-8cba-44a0-b02f-0b756a050306

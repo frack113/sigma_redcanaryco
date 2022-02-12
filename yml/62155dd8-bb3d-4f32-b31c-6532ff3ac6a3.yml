@@ -12,5 +12,6 @@ os:
 description: 'Disables LittleSnitch
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

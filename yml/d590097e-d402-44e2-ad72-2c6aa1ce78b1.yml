@@ -12,6 +12,7 @@ os:
 description: 'Executes arbitrary PowerShell code using SyncAppvPublishingServer.exe. Requires Windows 10.
 
   '
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: fbd7c32d-db2a-4418-b92c-566eb8911133

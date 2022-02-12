@@ -14,6 +14,7 @@ technique:
 os:
   - windows
 description: "Rundll32.exe loading dll with 'control_rundll' within the command-line, loading a .cpl or another file type related to CVE-2021-40444. \n"
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: e593cf51-88db-4ee1-b920-37e89012a3c9

@@ -14,6 +14,7 @@ os:
 description: |
   Note: Requires winzip installation
   wzzip sample.zip -s"blueblue" *.txt (VARIANT)
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: e2e80da2-8c66-4e00-ae3c-2eebd29f6b6d

@@ -11,6 +11,7 @@ technique:
 os:
   - windows
 description: Perform peripheral device discovery using Get-WMIObject Win32_PnPEntity
+executor: powershell
 sigma: true
 sigma_rule:
   - id: b26647de-4feb-4283-af6b-6117661283c5

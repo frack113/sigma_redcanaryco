@@ -17,6 +17,7 @@ os:
 description: 'Use Mshta to execute arbitrary PowerShell. Example is from the 2021 Threat Detection Report by Red Canary.
 
   '
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: e32f92d1-523e-49c3-9374-bdb13b46a3ba

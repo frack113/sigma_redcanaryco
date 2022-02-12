@@ -16,5 +16,6 @@ technique:
 os:
   - linux
 description: "Schedule a system level transient task (will not survive a reboot) without having to create the .timer or .service files by using the systemd-run command. \n"
+executor: sh
 sigma: false
 sigma_rule: []

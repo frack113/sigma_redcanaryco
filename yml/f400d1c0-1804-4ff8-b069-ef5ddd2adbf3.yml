@@ -16,5 +16,6 @@ os:
 description: 'Identify all environment variables. Upon execution, environments variables and your path info will be displayed.
 
   '
+executor: command_prompt
 sigma: false
 sigma_rule: []

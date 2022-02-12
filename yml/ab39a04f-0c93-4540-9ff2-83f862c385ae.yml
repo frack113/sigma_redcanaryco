@@ -12,6 +12,7 @@ technique:
 os:
   - windows
 description: View information about all of the resources that are shared on the local computer Upon execution, avalaible share drives will be displayed in the powershell session
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 183e7ea8-ac4b-4c23-9aec-b3dac4e401ac

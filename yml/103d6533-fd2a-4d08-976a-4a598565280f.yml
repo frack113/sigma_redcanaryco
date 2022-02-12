@@ -15,5 +15,6 @@ description: 'Adversaries may attempt to get a listing of non-security related s
   to shape follow-on behaviors
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

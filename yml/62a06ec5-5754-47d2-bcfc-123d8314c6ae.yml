@@ -21,6 +21,7 @@ description: |
   Note that in this test, the file executed is not the one downloaded. The downloading of a random file is simply the trigger for getting bitsdamin to run an executable.
   This has the interesting side effect of causing the executable (e.g. notepad) to run with an Initiating Process of "svchost.exe" and an Initiating Process Command Line of "svchost.exe -k netsvcs -p -s BITS"
   This job will remain in the BITS queue until complete or for up to 90 days by default if not removed.
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: b9cbbc17-d00d-4e3d-a827-b06d03d2380d

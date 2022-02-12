@@ -21,6 +21,7 @@ os:
 description: 'Change Service registry ImagePath of a bengin service to a malicious file
 
   '
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 9b0b7ac3-6223-47aa-a3fd-e8f211e637db

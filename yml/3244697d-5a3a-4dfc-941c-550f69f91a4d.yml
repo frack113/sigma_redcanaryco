@@ -15,6 +15,7 @@ os:
 description: 'Netsh interacts with other operating system components using dynamic-link library (DLL) files
 
   '
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 56321594-9087-49d9-bf10-524fe8479452

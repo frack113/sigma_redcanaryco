@@ -19,6 +19,7 @@ os:
 description: 'This module executes notepad.exe from within the WINWORD.EXE process
 
   '
+executor: powershell
 sigma: true
 sigma_rule:
   - id: e6ce8457-68b1-485b-9bdd-3c2b5d679aa9

@@ -17,5 +17,6 @@ description: 'Attempts to encrypt data on target systems as root to simulate an 
   home directory.
 
   '
+executor: bash
 sigma: false
 sigma_rule: []

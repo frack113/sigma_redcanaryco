@@ -18,5 +18,6 @@ description: |
   Modify or create an file in /Library/StartupItems
 
   [Reference](https://www.alienvault.com/blogs/labs-research/diversity-in-recent-mac-malware)
+executor: sh
 sigma: false
 sigma_rule: []

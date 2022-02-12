@@ -18,5 +18,6 @@ description: |
   Uses dd to add a zero to the binary to change the hash.
 
   Upon successful execution, dd will modify `/tmp/evil-binary`, therefore the expected hash will change.
+executor: sh
 sigma: false
 sigma_rule: []

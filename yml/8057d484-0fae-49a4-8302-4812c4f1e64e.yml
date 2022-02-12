@@ -16,5 +16,6 @@ os:
 description: 'Identify virtual machine guest kernel modules. This technique is used by the Pupy RAT and other malware.
 
   '
+executor: bash
 sigma: false
 sigma_rule: []

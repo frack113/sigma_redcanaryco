@@ -15,6 +15,7 @@ description: |
   Copies powershell.exe, renames it, and launches it to masquerade as an instance of taskhostw.exe.
 
   Upon successful execution, powershell.exe is renamed as taskhostw.exe and executed from non-standard path.
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: fff9d2b7-e11c-4a69-93d3-40ef66189767

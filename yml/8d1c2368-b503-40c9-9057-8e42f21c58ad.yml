@@ -15,5 +15,6 @@ description: 'Creates a new IAM user in AWS. Upon successful creation, a new use
   of the compromised users and can remain undetected for a long time
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

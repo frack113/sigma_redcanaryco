@@ -18,5 +18,6 @@ description: |-
   This test uses PowerShell to hijack a reference to a Component Object Model by creating registry values under InprocServer32 key in the HKCU hive then calling the Class ID to be executed via rundll32.exe.
 
   Reference: https://bohops.com/2018/06/28/abusing-com-registry-structure-clsid-localserver32-inprocserver32/
+executor: powershell
 sigma: false
 sigma_rule: []

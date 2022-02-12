@@ -12,6 +12,7 @@ os:
 description: 'Injects arbitrary DLL into running process specified by process ID. Requires Windows 10.
 
   '
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 17eb8e57-9983-420d-ad8a-2c4976c22eb8

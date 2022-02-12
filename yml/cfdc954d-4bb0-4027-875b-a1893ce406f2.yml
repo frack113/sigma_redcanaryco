@@ -15,6 +15,7 @@ os:
 description: |
   LNK file to launch CMD placed in startup folder. Upon execution, open File Explorer and browse to "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\"
   to view the new shortcut.
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 92fa78e7-4d39-45f1-91a3-8b23f3f1088d

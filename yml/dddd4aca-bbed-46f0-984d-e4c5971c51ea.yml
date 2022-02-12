@@ -36,6 +36,7 @@ description: |
   https://github.com/helpsystems/nanodump
 
   Upon successful execution, you should find the nanondump.dmp file in the temp directory
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: fa34b441-961a-42fa-a100-ecc28c886725

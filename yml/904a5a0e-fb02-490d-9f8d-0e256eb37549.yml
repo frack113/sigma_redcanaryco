@@ -18,5 +18,6 @@ os:
 description: |
   This test simulates a high CPU load as you might observe during cryptojacking attacks.
   End the test by using CTRL/CMD+C to break.
+executor: bash
 sigma: false
 sigma_rule: []

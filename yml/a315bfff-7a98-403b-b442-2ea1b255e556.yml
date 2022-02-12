@@ -15,5 +15,6 @@ description: |
   Copies sh process, renames it as crond, and executes it to masquerade as the cron daemon.
 
   Upon successful execution, sh is renamed to `crond` and executed.
+executor: sh
 sigma: false
 sigma_rule: []

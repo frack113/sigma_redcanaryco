@@ -21,5 +21,6 @@ os:
   - linux
 description: "This test creates a systemd service unit file and enables it to autostart on boot. Once service is created and enabled, it also modifies this same service file showcasing both Creation and\
   \ Modification of system process. \n"
+executor: bash
 sigma: false
 sigma_rule: []

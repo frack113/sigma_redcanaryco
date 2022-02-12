@@ -14,5 +14,6 @@ os:
 description: 'Enumerate all accounts by copying /etc/passwd to another file
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

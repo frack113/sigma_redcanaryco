@@ -20,6 +20,7 @@ description: |
   This test will temporarily modify the service Fax by changing the binPath to PowerShell
   and will then revert the binPath change, restoring Fax to its original state.
   Upon successful execution, cmd will modify the binpath for `Fax` to spawn powershell. Powershell will then spawn.
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 38879043-7e1e-47a9-8d46-6bec88e201df

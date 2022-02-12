@@ -13,6 +13,7 @@ description: |
   With administrative rights, an adversary can remove the AMSI Provider registry key in HKLM\Software\Microsoft\AMSI to disable AMSI inspection.
   This test removes the Windows Defender provider registry key. Upon execution, no output is displayed.
   Open Registry Editor and navigate to "HKLM:\SOFTWARE\Microsoft\AMSI\Providers\" to verify that it is gone.
+executor: powershell
 sigma: true
 sigma_rule:
   - id: b8af5f36-1361-4ebe-9e76-e36128d947bf

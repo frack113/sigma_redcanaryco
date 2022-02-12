@@ -24,6 +24,7 @@ description: |
   the registry keys that were created. These keys can also be viewed using the Registry Editor.
 
   https://www.fireeye.com/blog/threat-research/2017/05/fin7-shim-databases-persistence.html
+executor: powershell
 sigma: true
 sigma_rule:
   - id: dfb5b4e8-91d0-4291-b40a-e3b0d3942c45

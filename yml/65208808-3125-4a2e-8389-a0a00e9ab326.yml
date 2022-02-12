@@ -19,5 +19,6 @@ description: |
   Creates a PAM module, inserts a rule to use it, and then tests it.
 
   Upon successful execution, this test will create a PAM module that allows every user to su to root without a password.
+executor: sh
 sigma: false
 sigma_rule: []

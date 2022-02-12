@@ -13,6 +13,7 @@ os:
 description: 'Use certutil -urlcache argument to download a file from the web. Note - /urlcache also works!
 
   '
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 1277f594-a7d1-4f28-a2d3-73af5cbeab43

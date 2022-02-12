@@ -19,6 +19,7 @@ description: |
   Note: Windows 10 only. Upon execution windows backup and restore window will be opened.
 
   Bypass is based on: https://enigma0x3.net/2017/03/14/bypassing-uac-using-app-paths/
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 9fc51a3c-81b3-4fa7-b35f-7c02cf10fd2d

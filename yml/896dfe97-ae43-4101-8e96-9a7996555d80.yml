@@ -18,5 +18,6 @@ os:
 description: 'Make, change owner, and change file attributes on a C source code file
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

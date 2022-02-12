@@ -20,5 +20,6 @@ description: |
   http://osxdaily.com/2013/01/29/list-all-files-subdirectory-contents-recursively/
 
   https://perishablepress.com/list-files-folders-recursively-terminal/
+executor: sh
 sigma: false
 sigma_rule: []

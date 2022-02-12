@@ -13,6 +13,7 @@ os:
 description: |
   This module will extract the credentials found within the Windows credential manager and dump
   them to $env:TEMP\windows-credentials.txt
+executor: powershell
 sigma: true
 sigma_rule:
   - id: e6ce8457-68b1-485b-9bdd-3c2b5d679aa9

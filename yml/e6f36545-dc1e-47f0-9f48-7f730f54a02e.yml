@@ -15,5 +15,6 @@ os:
 description: 'Utilize groups and id to enumerate users and groups
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

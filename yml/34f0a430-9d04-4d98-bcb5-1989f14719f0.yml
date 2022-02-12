@@ -15,6 +15,7 @@ os:
 description: |-
   Uses PowerShell and Empire's [GetSystem module](https://github.com/BC-SECURITY/Empire/blob/v3.4.0/data/module_source/privesc/Get-System.ps1). The script uses `SeDebugPrivilege` to obtain, duplicate and impersonate the token of a another process.
   When executed successfully, the test displays the domain and name of the account it's impersonating (local SYSTEM).
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 89819aa4-bbd6-46bc-88ec-c7f7fe30efa6

@@ -18,5 +18,6 @@ os:
 description: 'Copy private SSH keys on a Linux or macOS system to a staging folder using the `rsync` command.
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

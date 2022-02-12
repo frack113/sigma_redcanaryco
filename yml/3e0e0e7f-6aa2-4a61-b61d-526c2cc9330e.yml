@@ -13,6 +13,7 @@ technique:
 os:
   - windows
 description: "Start C2 Session Using Powercat\nTo start the listener on a Linux device, type the following: \nnc -l -p <port>\n"
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 3b6ab547-8ec2-4991-b9d2-2b06702a48d7

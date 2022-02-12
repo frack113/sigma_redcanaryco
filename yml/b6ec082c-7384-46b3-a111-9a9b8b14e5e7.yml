@@ -17,6 +17,7 @@ os:
 description: 'Queries to enumerate for credentials in the Registry. Upon execution, any registry key containing the word "password" will be displayed.
 
   '
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: e0b0c2ab-3d52-46d9-8cb7-049dc775fbd1

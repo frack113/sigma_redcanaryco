@@ -49,6 +49,7 @@ technique:
 os:
   - windows
 description: "Run Key Persistence\n\nUpon successful execution, cmd.exe will modify the registry by adding \\\"Atomic Red Team\\\" to the Run key. Output will be via stdout. \n"
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: de587dce-915e-4218-aac4-835ca6af6f70

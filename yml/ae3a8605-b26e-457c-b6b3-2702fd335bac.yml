@@ -14,6 +14,7 @@ technique:
 os:
   - windows
 description: "Rundll32.exe running non-dll \n"
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 1f49f2ab-26bc-48b3-96cc-dcffbc93eadf

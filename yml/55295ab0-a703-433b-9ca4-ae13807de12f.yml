@@ -16,6 +16,7 @@ description: |
   When successful, the dumped file will be written to $env:Temp\secrets.
   Attackers may use the secrets key to assist with extracting passwords and enumerating other sensitive system information.
   https://pentestlab.blog/2018/04/04/dumping-clear-text-credentials/#:~:text=LSA%20Secrets%20is%20a%20registry,host%2C%20local%20security%20policy%20etc.
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 7cccd811-7ae9-4ebe-9afd-cb5c406b824b

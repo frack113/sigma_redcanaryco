@@ -51,6 +51,7 @@ os:
 description: |
   RunOnce Key Persistence via PowerShell
   Upon successful execution, a new entry will be added to the runonce item in the registry.
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 3b6ab547-8ec2-4991-b9d2-2b06702a48d7

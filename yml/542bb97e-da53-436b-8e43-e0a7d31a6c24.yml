@@ -22,6 +22,7 @@ description: |
   This test is intended to be run on a domain Controller.
 
   The Active Directory database NTDS.dit may be dumped by copying it from a Volume Shadow Copy.
+executor: powershell
 sigma: true
 sigma_rule:
   - id: afd12fed-b0ec-45c9-a13d-aa86625dac81

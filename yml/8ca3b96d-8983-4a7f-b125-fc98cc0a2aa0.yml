@@ -17,6 +17,7 @@ description: 'An adversary may attempt to trick the user into downloading teamvi
   when sucessfully executed.
 
   '
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 9fc51a3c-81b3-4fa7-b35f-7c02cf10fd2d

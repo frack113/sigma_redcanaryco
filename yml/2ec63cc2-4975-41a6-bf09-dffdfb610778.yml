@@ -12,6 +12,7 @@ technique:
 os:
   - windows
 description: Creating a user with a username containing "$"
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: cd219ff3-fa99-45d4-8380-a7d15116c6dc

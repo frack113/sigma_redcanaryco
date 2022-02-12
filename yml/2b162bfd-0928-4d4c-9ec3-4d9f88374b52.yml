@@ -18,6 +18,7 @@ description: |
   Prompt User for Password (Local Phishing) as seen in Stitch RAT. Upon execution, a window will appear for the user to enter their credentials.
 
   Reference: https://github.com/nathanlopez/Stitch/blob/master/PyLib/askpass.py
+executor: powershell
 sigma: true
 sigma_rule:
   - id: ca8b77a9-d499-4095-b793-5d5f330d450e

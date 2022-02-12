@@ -23,6 +23,7 @@ os:
 description: 'This module runs the Windows executable of PetitPotam in order to coerce authentication for a remote system.
 
   '
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 5589ab4f-a767-433c-961d-c91f3f704db1

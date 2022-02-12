@@ -11,5 +11,6 @@ technique:
 os:
   - linux
 description: "Stop the Uncomplicated Firewall (UFW) if installed, using systemctl. \n"
+executor: sh
 sigma: false
 sigma_rule: []

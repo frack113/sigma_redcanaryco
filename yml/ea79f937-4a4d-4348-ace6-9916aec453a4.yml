@@ -17,5 +17,6 @@ os:
 description: 'Changes a file or folder''s permissions recursively using chmod and a specified numeric mode.
 
   '
+executor: bash
 sigma: false
 sigma_rule: []

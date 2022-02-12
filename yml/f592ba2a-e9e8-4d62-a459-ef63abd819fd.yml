@@ -16,5 +16,6 @@ os:
 description: 'Executes commands via DDE using Microsfot Word
 
   '
+executor: manual
 sigma: false
 sigma_rule: []

@@ -18,6 +18,7 @@ os:
 description: |
   Upon execution, a javascript block will be placed in the registry for persistence.
   Additionally, open Registry Editor to view the modified entry in HKCU:\Software\Microsoft\Windows\CurrentVersion\Internet Settings.
+executor: powershell
 sigma: true
 sigma_rule:
   - id: d88d0ab2-e696-4d40-a2ed-9790064e66b3

@@ -22,6 +22,7 @@ os:
 description: 'Clears Powershell history
 
   '
+executor: powershell
 sigma: true
 sigma_rule:
   - id: bde47d4b-9987-405c-94c7-b080410e8ea7

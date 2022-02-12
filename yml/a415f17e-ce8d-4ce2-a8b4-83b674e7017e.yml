@@ -15,5 +15,6 @@ os:
 description: 'Recursively delete the temporary directory and all files contained within it
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

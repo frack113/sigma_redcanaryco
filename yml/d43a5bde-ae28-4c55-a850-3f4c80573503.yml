@@ -14,6 +14,7 @@ os:
 description: |
   Executes the InstallHelper class constructor runner instead of executing InstallUtil. Upon execution, no output will be displayed if the test
   executed successfuly.
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 03d83090-8cba-44a0-b02f-0b756a050306

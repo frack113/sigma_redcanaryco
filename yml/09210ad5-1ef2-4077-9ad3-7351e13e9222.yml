@@ -13,6 +13,7 @@ os:
 description: 'Removes a Network Share utilizing the command_prompt
 
   '
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 183e7ea8-ac4b-4c23-9aec-b3dac4e401ac

@@ -14,6 +14,7 @@ os:
 description: |
   ADRecon extracts and combines information about an AD environement into a report. Upon execution, an Excel file with all of the data will be generated and its
   path will be displayed.
+executor: powershell
 sigma: true
 sigma_rule:
   - id: bf72941a-cba0-41ea-b18c-9aca3925690d

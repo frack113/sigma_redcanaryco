@@ -37,6 +37,7 @@ description: |
   Upon successful execution, you should see the following file created c:\windows\temp\lsass_dump.dmp.
 
   If you see a message saying "procdump.exe is not recognized as an internal or external command", try using the  get-prereq_commands to download and install the ProcDump tool first.
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 2e65275c-8288-4ab4-aeb7-6274f58b6b20

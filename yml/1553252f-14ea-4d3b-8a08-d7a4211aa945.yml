@@ -17,6 +17,7 @@ description: |
   Discovery of installed antivirus products via a WMI query.
 
   when sucessfully executed, the test is going to display installed AV software.
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 526be59f-a573-4eea-b5f7-f0973207634d

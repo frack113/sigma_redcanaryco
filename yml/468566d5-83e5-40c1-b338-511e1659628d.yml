@@ -22,5 +22,6 @@ os:
   - linux
 description: "The HISTCONTROL variable is set to ignore (not write to the history file) command that are a duplicate of something already in the history \nand commands that start with a space. This atomic\
   \ sets this variable in the current session and also writes it to the current user's ~/.bash_profile \nso that it will apply to all future settings as well.\nhttps://www.linuxjournal.com/content/using-bash-history-more-efficiently-histcontrol\n"
+executor: manual
 sigma: false
 sigma_rule: []

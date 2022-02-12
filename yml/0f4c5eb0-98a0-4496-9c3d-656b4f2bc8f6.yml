@@ -24,6 +24,7 @@ description: |
 
   Need SYSTEM privileges locally (automatically obtained via PsExec, so running as admin is sufficient), and Domain Admin remotely.
   The easiest is to run elevated and as a Domain Admin user.
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 06d71506-7beb-4f22-8888-e2e5e2ca7fd8

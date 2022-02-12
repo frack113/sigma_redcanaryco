@@ -14,6 +14,7 @@ os:
 description: |
   Delete a single prefetch file.  Deletion of prefetch files is a known anti-forensic technique. To verify execution, Run "(Get-ChildItem -Path "$Env:SystemRoot\prefetch\*.pf" | Measure-Object).Count"
   before and after the test to verify that the number of prefetch files decreases by 1.
+executor: powershell
 sigma: true
 sigma_rule:
   - id: b8af5f36-1361-4ebe-9e76-e36128d947bf

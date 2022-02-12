@@ -23,5 +23,6 @@ os:
 description: 'Clears bash history via rm
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

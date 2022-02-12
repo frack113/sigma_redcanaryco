@@ -22,5 +22,6 @@ os:
 description: 'Sets sudo caching timestamp_timeout to a value for unlimited. This is dangerous to modify without using ''visudo'', do not do this on a production system.
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

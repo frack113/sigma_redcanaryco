@@ -14,6 +14,7 @@ os:
 description: |
   Create an Alternate Data Stream with PowerShell. Write access is required. To verify execution, the the command "ls -Recurse | %{ gi $_.Fullname -stream *} | where stream -ne ':$Data' | Select-Object pschildname"
   in the %temp% direcotry to view all files with hidden data streams. To view the data in the alternate data stream, run "notepad.exe T1564.004_has_ads_powershell.txt:adstest.txt" in the %temp% folder.
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 8c521530-5169-495d-a199-0a3a881ad24e

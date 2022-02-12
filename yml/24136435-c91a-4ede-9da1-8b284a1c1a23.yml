@@ -15,6 +15,7 @@ description: |
   Copies wscript.exe, renames it, and launches it to masquerade as an instance of svchost.exe.
 
   Upon execution, no windows will remain open but wscript will have been renamed to svchost and ran out of the temp folder
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: fff9d2b7-e11c-4a69-93d3-40ef66189767

@@ -16,6 +16,7 @@ description: |
   [Reference](https://github.com/LOLBAS-Project/LOLBAS/blob/master/yml/OSBinaries/Forfiles.yml)
   "This is basically saying for each occurrence of notepad.exe in c:\windows\system32 run calc.exe"
   Upon execution calc.exe will be opened.
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: fa47597e-90e9-41cd-ab72-c3b74cfb0d02

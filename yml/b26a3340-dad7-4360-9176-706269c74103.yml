@@ -12,6 +12,7 @@ technique:
 os:
   - windows
 description: "Wevtutil can be used to disable logs. \nNOTE: RansomEXX ransomware uses this to disable Security logs post-encryption.\n"
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: a238b5d0-ce2d-4414-a676-7a531b3d13d6

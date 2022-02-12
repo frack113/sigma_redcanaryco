@@ -12,5 +12,6 @@ os:
 description: 'Disables SELinux enforcement
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

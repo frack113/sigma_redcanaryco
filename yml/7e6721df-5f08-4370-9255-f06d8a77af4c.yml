@@ -23,5 +23,6 @@ os:
 description: 'Clears the history of a bunch of different shell types by setting the history size to zero
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

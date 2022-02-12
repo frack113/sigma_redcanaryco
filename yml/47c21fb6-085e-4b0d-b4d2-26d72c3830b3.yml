@@ -16,5 +16,6 @@ os:
 description: 'When the word document opens it will prompt the user to click ok on a dialogue box, then attempt to run PowerShell with DDEAUTO to download and execute a powershell script
 
   '
+executor: command_prompt
 sigma: false
 sigma_rule: []

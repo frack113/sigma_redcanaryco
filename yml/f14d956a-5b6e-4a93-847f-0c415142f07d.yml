@@ -32,6 +32,7 @@ description: |
   Attempt to brute force all Active Directory domain users with a single password (called "password spraying") on a domain controller, via LDAP, with NTLM or Kerberos
 
   Prerequisite: AD RSAT PowerShell module is needed and it must run under a domain user (to fetch the list of all domain users)
+executor: powershell
 sigma: true
 sigma_rule:
   - id: a642964e-bead-4bed-8910-1bb4d63e3b4d

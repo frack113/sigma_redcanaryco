@@ -17,5 +17,6 @@ os:
 description: 'Creates and executes a simple bash script.
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

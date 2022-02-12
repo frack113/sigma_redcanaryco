@@ -14,6 +14,7 @@ os:
 description: 'Utilizing PowerShell cmdlet - get-wmiobject, to enumerate local groups on the endpoint. Upon execution, Upon execution, information will be displayed of local groups on system.
 
   '
+executor: powershell
 sigma: true
 sigma_rule:
   - id: cef24b90-dddc-4ae1-a09a-8764872f69fc

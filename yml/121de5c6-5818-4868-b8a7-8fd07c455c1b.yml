@@ -12,6 +12,7 @@ technique:
 os:
   - windows
 description: A list of commands known to be performed by Qakbot for recon purposes
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 62510e69-616b-4078-b371-847da438cc03

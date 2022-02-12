@@ -19,6 +19,7 @@ description: |
   This is a known execution chain observed by the OSTap downloader commonly used in TrickBot campaigns.
   References:
     https://www.computerweekly.com/news/252470091/TrickBot-Trojan-switches-to-stealthy-Ostap-downloader
+executor: powershell
 sigma: true
 sigma_rule:
   - id: e6ce8457-68b1-485b-9bdd-3c2b5d679aa9

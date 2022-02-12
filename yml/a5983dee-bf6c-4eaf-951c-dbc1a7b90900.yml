@@ -18,5 +18,6 @@ os:
 description: 'Create a plist and execute it
 
   '
+executor: bash
 sigma: false
 sigma_rule: []

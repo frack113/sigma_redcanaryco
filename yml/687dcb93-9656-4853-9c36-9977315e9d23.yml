@@ -19,5 +19,6 @@ os:
 description: 'This test uses the insmod command to load a kernel module for Linux.
 
   '
+executor: bash
 sigma: false
 sigma_rule: []

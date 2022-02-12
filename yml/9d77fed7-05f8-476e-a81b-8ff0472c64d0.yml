@@ -16,6 +16,7 @@ os:
 description: 'Dump hives from volume shadow copies with System.IO.File
 
   '
+executor: powershell
 sigma: true
 sigma_rule:
   - id: f57f8d16-1f39-4dcb-a604-6c73d9b54b3d

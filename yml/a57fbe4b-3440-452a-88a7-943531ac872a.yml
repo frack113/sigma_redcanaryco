@@ -13,6 +13,7 @@ os:
 description: |
   Use living off the land tools to zip a file and stage it in the Windows temporary folder for later exfiltration. Upon execution, Verify that a zipped folder named Folder_to_zip.zip
   was placed in the temp directory.
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 85a8e5ba-bd03-4bfb-bbfa-a4409a8f8b98

@@ -16,6 +16,7 @@ os:
 description: 'Parses registry hives to obtain stored credentials
 
   '
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: a29808fd-ef50-49ff-9c7a-59a9b040b404

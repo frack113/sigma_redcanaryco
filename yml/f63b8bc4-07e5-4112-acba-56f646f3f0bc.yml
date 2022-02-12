@@ -21,6 +21,7 @@ description: |
   and execute a payload leveraging PowerShell
 
   Upon execution you will find a github markdown file downloaded to the Temp directory
+executor: powershell
 sigma: true
 sigma_rule:
   - id: f67dbfce-93bc-440d-86ad-a95ae8858c90

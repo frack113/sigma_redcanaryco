@@ -15,6 +15,7 @@ description: |
   This test uses wmic.exe to execute a process on a remote host. Specify a valid value for remote IP using the node parameter.
   To clean up, provide the same node input as the one provided to run the test
   A common error message is "Node - (provided IP or default)  ERROR Description =The RPC server is unavailable" if the default or provided IP is unreachable
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 526be59f-a573-4eea-b5f7-f0973207634d

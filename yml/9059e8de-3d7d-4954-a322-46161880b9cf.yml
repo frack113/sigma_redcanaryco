@@ -15,6 +15,7 @@ description: |
   Powershell Enable WinRM
 
   Upon successful execution, powershell will "Enable-PSRemoting" allowing for remote PS access.
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 991a9744-f2f0-44f2-bd33-9092eba17dc3

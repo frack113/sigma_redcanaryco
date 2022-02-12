@@ -11,5 +11,6 @@ technique:
 os:
   - linux
 description: "Turn off the Uncomplicated Firewall (UFW) logging. \n"
+executor: sh
 sigma: false
 sigma_rule: []

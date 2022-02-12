@@ -13,6 +13,7 @@ os:
 description: |
   Exfiltration of specified file over SMTP.
   Upon successful execution, powershell will send an email with attached file to exfiltrateto a remote address. Results will be via stdout.
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 9a7afa56-4762-43eb-807d-c3dc9ffe211b

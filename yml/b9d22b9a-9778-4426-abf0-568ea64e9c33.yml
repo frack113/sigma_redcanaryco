@@ -14,5 +14,6 @@ os:
 description: 'Utilize scp to perform a remote file copy (pull)
 
   '
+executor: bash
 sigma: false
 sigma_rule: []

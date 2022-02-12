@@ -16,6 +16,7 @@ os:
 description: 'Uses cscript //E:jscript to download a file
 
   '
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: a6a39bdb-935c-4f0a-ab77-35f4bbf44d33

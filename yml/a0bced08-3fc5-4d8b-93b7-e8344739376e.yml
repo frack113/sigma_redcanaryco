@@ -15,6 +15,7 @@ os:
   - windows
 description: "The following Atomic will run Get-ADReplAccount from DSInternals.\nUpon successful execution, domain and credentials will appear in stdout. \n[Reference](https://www.crowdstrike.com/blog/observations-from-the-stellarparticle-campaign/)\
   \ CrowdStrike StellerParticle.\nhttps://www.dsinternals.com/en/retrieving-active-directory-passwords-remotely/\n"
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 06d71506-7beb-4f22-8888-e2e5e2ca7fd8

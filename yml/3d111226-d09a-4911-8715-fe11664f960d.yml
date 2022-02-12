@@ -18,6 +18,7 @@ technique:
 os:
   - windows
 description: "Simulates an adversary accessing encrypted credentials from Google Chrome Login database. \n"
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 98f4c75c-3089-44f3-b733-b327b9cd9c9d

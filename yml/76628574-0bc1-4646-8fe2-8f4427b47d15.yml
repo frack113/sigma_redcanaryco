@@ -17,5 +17,6 @@ os:
 description: |
   Prompt User for Password (Local Phishing)
   Reference: http://fuzzynop.blogspot.com/2014/10/osascript-for-local-phishing.html
+executor: bash
 sigma: false
 sigma_rule: []

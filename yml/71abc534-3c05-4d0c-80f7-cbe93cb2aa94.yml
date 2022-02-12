@@ -16,6 +16,7 @@ os:
 description: 'Rename certutil and decode a file. This is in reference to latest research by FireEye [here](https://www.fireeye.com/blog/threat-research/2018/09/apt10-targeting-japanese-corporations-using-updated-ttps.html)
 
   '
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 737e618a-a410-49b5-bec3-9e55ff7fbc15

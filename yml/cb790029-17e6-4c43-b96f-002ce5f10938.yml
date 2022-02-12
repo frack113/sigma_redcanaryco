@@ -22,5 +22,6 @@ os:
 description: 'Create a file called test.wma, with the duration of 30 seconds
 
   '
+executor: manual
 sigma: false
 sigma_rule: []

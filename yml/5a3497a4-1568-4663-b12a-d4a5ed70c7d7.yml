@@ -14,6 +14,7 @@ os:
 description: 'Creates a new Domain User using the credentials of the Current User
 
   '
+executor: powershell
 sigma: true
 sigma_rule:
   - id: cdf05894-89e7-4ead-b2b0-0a5f97a90f2f

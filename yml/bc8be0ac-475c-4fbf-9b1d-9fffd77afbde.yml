@@ -14,6 +14,7 @@ os:
 description: |
   Creates a new user in PowerShell. Upon execution, details about the new account will be displayed in the powershell session. To verify the
   new account, run "net user" in powershell or CMD and observe that there is a new user named "T1136.001_PowerShell"
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 243de76f-4725-4f2e-8225-a8a69b15ad61

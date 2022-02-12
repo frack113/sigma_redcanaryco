@@ -14,6 +14,7 @@ technique:
 os:
   - windows
 description: "building the IOC (YOUR_FILES.txt) for the PureLocker ransomware \nhttps://www.bleepingcomputer.com/news/security/purelocker-ransomware-can-lock-files-on-windows-linux-and-macos/\n"
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: caf02a0a-1e1c-4552-9b48-5e070bd88d11

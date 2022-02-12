@@ -13,6 +13,7 @@ technique:
 os:
   - windows
 description: "Simulates an adversary copying malware to all connected removable drives. \n"
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 0332a266-b584-47b4-933d-a00b103e1b37

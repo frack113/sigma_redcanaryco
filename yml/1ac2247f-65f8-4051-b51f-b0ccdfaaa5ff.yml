@@ -10,5 +10,6 @@ technique:
 os:
   - macos
 description: Echo a command to clipboard and execute it
+executor: bash
 sigma: false
 sigma_rule: []

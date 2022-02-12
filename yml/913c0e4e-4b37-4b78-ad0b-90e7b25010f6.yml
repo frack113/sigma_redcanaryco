@@ -12,6 +12,7 @@ technique:
 os:
   - windows
 description: Clear the Windows audit policy using auditpol utility. This action would stop certain audit events from being recorded in the security log.
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 0a13e132-651d-11eb-ae93-0242ac130002

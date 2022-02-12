@@ -15,6 +15,7 @@ os:
 description: 'Writes text to a file and display the results. This test is intended to emulate the dropping of a malicious file to disk.
 
   '
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 4f4eaa9f-5ad4-410c-a4be-bc6132b0175a

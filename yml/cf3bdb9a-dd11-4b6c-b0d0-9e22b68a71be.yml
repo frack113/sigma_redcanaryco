@@ -16,6 +16,7 @@ os:
 description: 'Test execution of a remote script using rundll32.exe. Upon execution notepad.exe will be opened.
 
   '
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 73fcad2e-ff14-4c38-b11d-4172c8ac86c7

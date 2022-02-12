@@ -17,5 +17,6 @@ description: |
   Add a certificate to an Application through its App Registration.
   The certificate can then be used to authenticate as the application and benefit from its rights.
   An account with high-enough Azure AD privileges is needed, such as Global Administrator or Application Administrator. The account authentication must be without MFA.
+executor: powershell
 sigma: false
 sigma_rule: []

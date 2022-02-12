@@ -17,5 +17,6 @@ os:
 description: 'Identify system hostname for Linux and macOS systems.
 
   '
+executor: bash
 sigma: false
 sigma_rule: []

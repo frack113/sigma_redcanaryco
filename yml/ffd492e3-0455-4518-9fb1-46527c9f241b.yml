@@ -13,6 +13,7 @@ os:
 description: 'Use certutil -verifyctl argument to download a file from the web. Note - /verifyctl also works!
 
   '
+executor: powershell
 sigma: true
 sigma_rule:
   - id: b243b280-65fe-48df-ba07-6ddea7646427

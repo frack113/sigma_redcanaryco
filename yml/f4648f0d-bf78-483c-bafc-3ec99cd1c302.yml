@@ -14,6 +14,7 @@ os:
 description: 'This test restarts a Windows system.
 
   '
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 34ebb878-1b15-4895-b352-ca2eeb99b274

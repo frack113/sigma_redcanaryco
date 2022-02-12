@@ -28,5 +28,6 @@ os:
 description: 'Adds a command to the .bashrc file of the current user
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

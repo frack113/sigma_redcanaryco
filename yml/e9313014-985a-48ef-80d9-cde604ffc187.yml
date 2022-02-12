@@ -16,6 +16,7 @@ description: |
   Take a screen capture of the desktop through a call to the [Graphics.CopyFromScreen] .NET API.
 
   [Graphics.CopyFromScreen]: https://docs.microsoft.com/en-us/dotnet/api/system.drawing.graphics.copyfromscreen
+executor: powershell
 sigma: true
 sigma_rule:
   - id: d4a11f63-2390-411c-9adf-d791fd152830

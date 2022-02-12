@@ -12,6 +12,7 @@ technique:
 os:
   - windows
 description: PowerView is a PowerShell tool to gain network situational awareness on Windows domains. ShareFinder finds (non-standard) shares on machines in the domain.
+executor: powershell
 sigma: true
 sigma_rule:
   - id: dcd74b95-3f36-4ed9-9598-0490951643aa

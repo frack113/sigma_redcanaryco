@@ -14,5 +14,6 @@ os:
 description: 'Testing uncommonly used port utilizing telnet.
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

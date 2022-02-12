@@ -16,6 +16,7 @@ os:
 description: |
   Encode/Decode executable
   Upon execution a file named T1140_calc_decoded.exe will be placed in the temp folder
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: e011a729-98a6-4139-b5c4-bf6f6dd8239a

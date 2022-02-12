@@ -23,5 +23,6 @@ os:
 description: 'Disables history collection in shells
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

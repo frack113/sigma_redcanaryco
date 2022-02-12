@@ -13,6 +13,7 @@ os:
 description: |
   Disables the Microsoft Defender Firewall for the current profile.
   Caution if you access remotely the host where the test runs! Especially with the cleanup command which will re-enable firewall for the current profile...
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 57c4bf16-227f-4394-8ec7-1b745ee061c3

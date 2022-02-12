@@ -19,5 +19,6 @@ description: |
   Get a listing of network connections.
 
   Upon successful execution, sh will execute `netstat` and `who -a`. Results will output via stdout.
+executor: sh
 sigma: false
 sigma_rule: []

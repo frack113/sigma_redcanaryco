@@ -16,5 +16,6 @@ description: |
   Enable traffic redirection.
 
   Note that this test may conflict with pre-existing system configuration.
+executor: sh
 sigma: false
 sigma_rule: []

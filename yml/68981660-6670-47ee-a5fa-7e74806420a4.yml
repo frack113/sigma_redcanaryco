@@ -14,6 +14,7 @@ os:
 description: |
   Query the registry to determine the version of internet explorer installed on the system.
   Upon execution, version information about internet explorer will be displayed.
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: e13f668e-7f95-443d-98d2-1816a7648a7b

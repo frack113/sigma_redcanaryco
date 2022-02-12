@@ -14,5 +14,6 @@ os:
 description: |
   Using `/proc/$PID/mem`, where $PID is the target process ID, use a Python script to
   copy a process's heap memory to an external file so it can be searched or exfiltrated later.
+executor: sh
 sigma: false
 sigma_rule: []

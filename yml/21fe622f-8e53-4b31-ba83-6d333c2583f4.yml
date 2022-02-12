@@ -13,6 +13,7 @@ os:
 description: |
   Testing uncommonly used port utilizing PowerShell. APT33 has been known to attempt telnet over port 8081. Upon execution, details about the successful
   port check will be displayed.
+executor: powershell
 sigma: true
 sigma_rule:
   - id: adf876b3-f1f8-4aa9-a4e4-a64106feec06

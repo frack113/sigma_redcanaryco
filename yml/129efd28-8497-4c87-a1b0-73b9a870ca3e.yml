@@ -18,6 +18,7 @@ description: |
   Works against a remote Windows Domain Controller using the replication protocol.
   Privileges required: domain admin or domain controller account (by default), or any other account with required rights.
   [Reference](https://adsecurity.org/?p=1729)
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: a642964e-bead-4bed-8910-1bb4d63e3b4d

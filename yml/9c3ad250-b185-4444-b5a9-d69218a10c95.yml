@@ -12,6 +12,7 @@ technique:
 os:
   - windows
 description: "[AudioDeviceCmdlets](https://github.com/cdhunt/WindowsAudioDevice-Powershell-Cmdlet)\n"
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 932fb0d8-692b-4b0f-a26e-5643a50fe7d6

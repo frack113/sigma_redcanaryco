@@ -16,5 +16,6 @@ os:
 description: 'An adversary may attempt to trick the user into downloading LogMeIn and use to establish C2. Download of LogMeIn installer will be at the destination location and ran when sucessfully executed.
 
   '
+executor: powershell
 sigma: false
 sigma_rule: []

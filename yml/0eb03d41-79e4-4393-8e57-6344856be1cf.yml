@@ -16,6 +16,7 @@ os:
 description: 'Copies a file to a remote host and executes it using PsExec. Requires the download of PsExec from [https://docs.microsoft.com/en-us/sysinternals/downloads/psexec](https://docs.microsoft.com/en-us/sysinternals/downloads/psexec).
 
   '
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 7cccd811-7ae9-4ebe-9afd-cb5c406b824b

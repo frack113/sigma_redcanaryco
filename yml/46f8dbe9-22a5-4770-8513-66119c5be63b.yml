@@ -16,6 +16,7 @@ description: |
   'TRUSTED_FOR_DELEGATION' (0x80000;524288) set
   More Information - https://shenaniganslabs.io/2019/01/28/Wagging-the-Dog.html#when-the-stars-align-unconstrained-delegation-leads-to-rce
   Prerequisite: AD RSAT PowerShell module is needed and it must run under a domain user
+executor: powershell
 sigma: true
 sigma_rule:
   - id: dcd74b95-3f36-4ed9-9598-0490951643aa

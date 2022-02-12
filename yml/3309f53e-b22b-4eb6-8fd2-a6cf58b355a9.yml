@@ -28,6 +28,7 @@ description: |
   Attaches cmd.exe to a list of processes. Configure your own Input arguments to a different executable or list of executables.
 
   Upon successful execution, powershell will modify the registry and swap osk.exe with cmd.exe.
+executor: powershell
 sigma: true
 sigma_rule:
   - id: ae215552-081e-44c7-805f-be16f975c8a2

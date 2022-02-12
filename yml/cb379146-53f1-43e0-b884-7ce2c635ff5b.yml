@@ -14,6 +14,7 @@ os:
 description: |
   Automated Collection. Upon execution, check the users temp directory (%temp%) for the folder T1119_command_prompt_collection
   to see what was collected.
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: f576a613-2392-4067-9d1a-9345fb58d8d1

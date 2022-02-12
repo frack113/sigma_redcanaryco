@@ -17,6 +17,7 @@ description: |-
   When executed successfully, the test displays the domain and name of the account it's impersonating (local SYSTEM).
 
   Reference: https://blog.cobaltstrike.com/2014/04/02/what-happens-when-i-type-getsystem/
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 1f49f2ab-26bc-48b3-96cc-dcffbc93eadf

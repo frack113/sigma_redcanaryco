@@ -18,6 +18,7 @@ technique:
 os:
   - windows
 description: "Simulates an adversary accessing encrypted credentials from Opera web browser's login database. \n"
+executor: powershell
 sigma: true
 sigma_rule:
   - id: fc028194-969d-4122-8abe-0470d5b8f12f

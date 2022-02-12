@@ -12,6 +12,7 @@ technique:
 os:
   - windows
 description: Creating a user with a username containing with a space on the end
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 243de76f-4725-4f2e-8225-a8a69b15ad61

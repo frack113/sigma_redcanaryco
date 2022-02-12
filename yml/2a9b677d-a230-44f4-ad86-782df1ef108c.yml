@@ -16,5 +16,6 @@ description: |
   Identify System owner or users on an endpoint
 
   Upon successful execution, sh will stdout list of usernames.
+executor: sh
 sigma: false
 sigma_rule: []

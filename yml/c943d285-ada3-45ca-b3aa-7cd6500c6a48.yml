@@ -13,6 +13,7 @@ os:
   - windows
 description: "DNSExfiltrator allows for transfering (exfiltrate) a file over a DNS request covert channel. This is basically a data leak testing tool allowing to exfiltrate data over a covert channel.\n\
   !!! Test will fail without a domain under your control with A record and NS record !!! \nSee this github page for more details - https://github.com/Arno0x/DNSExfiltrator\n"
+executor: powershell
 sigma: true
 sigma_rule:
   - id: d59d7842-9a21-4bc6-ba98-64bfe0091355

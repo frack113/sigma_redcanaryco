@@ -14,6 +14,7 @@ os:
 description: 'Enumerate all accounts via PowerShell. Upon execution, lots of user account and group information will be displayed.
 
   '
+executor: powershell
 sigma: true
 sigma_rule:
   - id: cef24b90-dddc-4ae1-a09a-8764872f69fc

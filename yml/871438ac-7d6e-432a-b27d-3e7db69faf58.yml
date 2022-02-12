@@ -12,6 +12,7 @@ os:
 description: "The following Atomic will attempt to disable Windows-Defender using the built in DISM.exe, Deployment Image Servicing and Management tool. \nDISM is used to enumerate, install, uninstall,\
   \ configure, and update features and packages in Windows images.\nA successful execution will not standard-out any details. Remove the quiet switch if verbosity is needed.\nThis method will remove Defender\
   \ and it's package.\n"
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 43e32da2-fdd0-4156-90de-50dfd62636f9

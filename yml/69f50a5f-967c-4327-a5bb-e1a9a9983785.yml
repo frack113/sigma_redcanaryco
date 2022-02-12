@@ -17,6 +17,7 @@ description: |
   log file format of TeamViewer_##.log. Upon execution, no output will be displayed. Use File Explorer to verify the folder was deleted.
 
   https://twitter.com/SBousseaden/status/1197524463304290305?s=20
+executor: powershell
 sigma: true
 sigma_rule:
   - id: b1decb61-ed83-4339-8e95-53ea51901720

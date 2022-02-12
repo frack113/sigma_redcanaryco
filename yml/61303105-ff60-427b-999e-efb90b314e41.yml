@@ -14,5 +14,6 @@ os:
 description: 'This test restarts a Linux system using `poweroff`.
 
   '
+executor: bash
 sigma: false
 sigma_rule: []

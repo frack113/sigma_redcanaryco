@@ -22,5 +22,6 @@ os:
 description: 'This test creates a Systemd service unit file and enables it as a service.
 
   '
+executor: bash
 sigma: false
 sigma_rule: []

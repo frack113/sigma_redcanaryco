@@ -19,6 +19,7 @@ os:
   - windows
 description: "The following test will utilize native PowerShell Identity modules to query the domain to extract allthe Service Principal Names. This behavior is typically used during a kerberos or silver\
   \ ticket attack. \nA successful execution will output the SPNs for the domain in question.\n"
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 1eeed653-dbc8-4187-ad0c-eeebb20e6599

@@ -23,5 +23,6 @@ os:
 description: 'Clears bash history via a symlink to /dev/null
 
   '
+executor: sh
 sigma: false
 sigma_rule: []

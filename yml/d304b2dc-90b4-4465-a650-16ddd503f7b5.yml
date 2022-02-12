@@ -20,5 +20,6 @@ os:
 description: 'This test overwrites the specified log. This technique was used by threat actor Rocke during the exploitation of Linux web servers.
 
   '
+executor: bash
 sigma: false
 sigma_rule: []

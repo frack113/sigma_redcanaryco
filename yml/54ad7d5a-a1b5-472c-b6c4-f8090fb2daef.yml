@@ -13,6 +13,7 @@ description: |
   Test execution of a .inf using InfDefaultInstall.exe
 
   Reference: https://github.com/LOLBAS-Project/LOLBAS/blob/master/yml/OSBinaries/Infdefaultinstall.yml
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: ce7cf472-6fcc-490a-9481-3786840b5d9b

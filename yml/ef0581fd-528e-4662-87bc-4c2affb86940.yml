@@ -20,6 +20,7 @@ description: |
   It's running Dll as service to emulate the tine turla backdoor
 
   [Related Talos Blog](https://blog.talosintelligence.com/2021/09/tinyturla.html)
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: fff9d2b7-e11c-4a69-93d3-40ef66189767

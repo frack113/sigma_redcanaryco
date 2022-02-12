@@ -22,6 +22,7 @@ description: |
   This test is intended to be run on a domain Controller.
 
   The Active Directory database NTDS.dit may be dumped by creating a symlink to Volume Shadow Copy.
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 40b19fa6-d835-400c-b301-41f3a2baacaf

@@ -15,6 +15,7 @@ technique:
 os:
   - windows
 description: Spawns a powershell.exe process as a child of the current process.
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 03d83090-8cba-44a0-b02f-0b756a050306

@@ -21,6 +21,7 @@ os:
 description: 'Similar to PTH, but attacking Kerberos
 
   '
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 06d71506-7beb-4f22-8888-e2e5e2ca7fd8

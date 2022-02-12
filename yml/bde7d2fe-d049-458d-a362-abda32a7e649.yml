@@ -14,6 +14,7 @@ os:
 description: 'Execute arbitrary MSI file retrieved remotely. Less commonly seen in application installation, commonly seen in malware execution. The MSI opens notepad.exe when sucessfully executed.
 
   '
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 79a87aa6-e4bd-42fc-a5bb-5e6fbdcd62f5

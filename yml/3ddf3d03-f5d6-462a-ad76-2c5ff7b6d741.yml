@@ -14,6 +14,7 @@ os:
 description: 'Use [Phant0m](https://github.com/hlldz/Phant0m) to disable Eventlog
 
   '
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: d813d662-785b-42ca-8b4a-f7457d78d5a9

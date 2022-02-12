@@ -15,6 +15,7 @@ description: 'Mounts ISO image downloaded from internet to evade Mark-of-the-Web
   sample ISO simply has a Reports shortcut file in it. Reference: https://www.microsoft.com/security/blog/2021/05/27/new-sophisticated-email-based-attack-from-nobelium/
 
   '
+executor: powershell
 sigma: true
 sigma_rule:
   - id: 29e1c216-6408-489d-8a06-ee9d151ef819

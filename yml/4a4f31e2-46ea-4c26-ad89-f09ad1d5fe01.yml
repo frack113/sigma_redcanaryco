@@ -16,5 +16,6 @@ os:
 description: 'Exfiltrate data HTTPS using curl to file share site file.io
 
   '
+executor: bash
 sigma: false
 sigma_rule: []

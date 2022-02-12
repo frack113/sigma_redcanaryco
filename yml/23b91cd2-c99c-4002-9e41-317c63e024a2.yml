@@ -16,5 +16,6 @@ os:
 description: |
   Methods to identify Security Software on an endpoint
   when sucessfully executed, command shell  is going to display AV/Security software it is running.
+executor: sh
 sigma: false
 sigma_rule: []

@@ -15,5 +15,6 @@ os:
 description: 'Use xwd command to collect a full desktop screenshot and review file with xwud
 
   '
+executor: bash
 sigma: false
 sigma_rule: []

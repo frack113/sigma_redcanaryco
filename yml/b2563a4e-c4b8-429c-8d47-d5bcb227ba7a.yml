@@ -11,5 +11,6 @@ technique:
 os:
   - linux
 description: "Add and delete a rule on the Uncomplicated Firewall (UFW) if installed and enabled. \n"
+executor: sh
 sigma: false
 sigma_rule: []

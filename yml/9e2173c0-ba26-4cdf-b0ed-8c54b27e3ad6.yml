@@ -16,6 +16,7 @@ description: |-
   After user's logging in cleartext password is saved in C:\NPPSpy.txt.
   Clean up deletes the files and reverses Registry changes.
   NPPSpy Source: https://github.com/gtworek/PSBits/tree/master/PasswordStealing/NPPSpy
+executor: powershell
 sigma: true
 sigma_rule:
   - id: cad1fe90-2406-44dc-bd03-59d0b58fe722

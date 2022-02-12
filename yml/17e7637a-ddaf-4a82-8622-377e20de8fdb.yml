@@ -14,6 +14,7 @@ os:
 description: |
   Create an Alternate Data Stream with the command prompt. Write access is required. Upon execution, run "dir /a-d /s /r | find ":$DATA"" in the %temp%
   folder to view that the alternate data stream exists. To view the data in the alternate data stream, run "notepad T1564.004_has_ads.txt:adstest.txt"
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 70e68156-6571-427b-a6e9-4476a173a9b6

@@ -18,6 +18,7 @@ os:
 description: |
   Word spawning a command prompt then running a command with an IP address in the command line is an indiciator of malicious activity.
   Upon execution, CMD will be lauchned and ping 8.8.8.8
+executor: powershell
 sigma: true
 sigma_rule:
   - id: e6ce8457-68b1-485b-9bdd-3c2b5d679aa9
