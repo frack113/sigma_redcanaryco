@@ -28,6 +28,9 @@ Creates a new user in PowerShell. Upon execution, details about the new account 
 new account, run "net user" in powershell or CMD and observe that there is a new user named "T1136.001_PowerShell"
 
 
+## Executor
+powershell
+
 # Sigma Rule
  - posh_ps_create_local_user.yml (id: 243de76f-4725-4f2e-8225-a8a69b15ad61)
 

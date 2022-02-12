@@ -33,6 +33,9 @@ Create an atomic scheduled task that leverages native powershell cmdlets.
 Upon successful execution, powershell.exe will create a scheduled task to spawn cmd.exe at 20:10.
 
 
+## Executor
+powershell
+
 # Sigma Rule
  - posh_ps_cmdlet_scheduled_task.yml (id: 363eccc0-279a-4ccf-a3ab-24c2e63b11fb)
 

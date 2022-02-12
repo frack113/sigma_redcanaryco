@@ -26,6 +26,9 @@ XOR encodes the data with a XOR key.
 Reference - https://gist.github.com/loadenmb/8254cee0f0287b896a05dcdc8a30042f
 
 
+## Executor
+powershell
+
 # Sigma Rule
  - process_creation_susp_web_request_cmd.yml (id: 9fc51a3c-81b3-4fa7-b35f-7c02cf10fd2d)
 

@@ -51,6 +51,9 @@ https://github.com/helpsystems/nanodump
 Upon successful execution, you should find the nanondump.dmp file in the temp directory
 
 
+## Executor
+command_prompt
+
 # Sigma Rule
  - win_susp_proc_access_lsass_susp_source.yml (id: fa34b441-961a-42fa-a100-ecc28c886725)
 

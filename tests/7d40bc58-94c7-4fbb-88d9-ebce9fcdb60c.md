@@ -29,6 +29,9 @@ In the case of network-based reporting of indicators, an adversary may block tra
 Emulates modification of syslog configuration.
 
 
+## Executor
+bash
+
 # Sigma Rule
 
 

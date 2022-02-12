@@ -31,6 +31,9 @@ This test crafts a Golden Ticket and then performs an SMB request with it for th
 The generated ticket is injected in a new empty Windows session and discarded after, so it does not pollute the current Windows session.
 
 
+## Executor
+powershell
+
 # Sigma Rule
  - win_alert_mimikatz_keywords.yml (id: 06d71506-7beb-4f22-8888-e2e5e2ca7fd8)
 

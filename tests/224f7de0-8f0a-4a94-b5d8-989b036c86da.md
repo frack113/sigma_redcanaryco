@@ -37,6 +37,9 @@ This test is intended to be run on a domain Controller.
 The Active Directory database NTDS.dit may be dumped by copying it from a Volume Shadow Copy.
 
 
+## Executor
+command_prompt
+
 # Sigma Rule
  - win_shadow_copies_creation.yml (id: b17ea6f7-6e90-447e-a799-e6c0a493d6ce)
 

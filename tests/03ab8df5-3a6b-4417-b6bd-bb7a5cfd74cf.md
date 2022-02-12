@@ -30,6 +30,9 @@ The plist file permissions must be root:wheel, but the script or program that it
 Utilize LaunchDaemon to launch `Hello World`
 
 
+## Executor
+bash
+
 # Sigma Rule
 
 

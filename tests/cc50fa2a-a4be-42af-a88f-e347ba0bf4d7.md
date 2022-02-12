@@ -32,6 +32,9 @@ Provided by https://github.com/mgreen27/mgreen27.github.io
 Invoke-DownloadCradle is used to generate Network and Endpoint artifacts.
 
 
+## Executor
+manual
+
 # Sigma Rule
 
 

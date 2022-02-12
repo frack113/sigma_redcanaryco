@@ -37,6 +37,9 @@ the notepad process will not execute with high integrity.
 Reference: https://redcanary.com/blog/cor_profiler-for-persistence/
 
 
+## Executor
+powershell
+
 # Sigma Rule
  - sysmon_enabling_cor_profiler_env_variables.yml (id: ad89044a-8f49-4673-9a55-cbd88a1b374f)
 

@@ -30,6 +30,9 @@ A firewall rule (iptables or firewalld) will be needed to allow exfiltration on 
 Upon successful execution, sh will be used to make a directory (/tmp/victim-staging-area), write a txt file, and host the directory with Python on port 1337, to be later downloaded.
 
 
+## Executor
+manual
+
 # Sigma Rule
 
 

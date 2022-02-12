@@ -31,6 +31,9 @@ Several tools exist that can be used to poison name services within local networ
 ## Description:
 Inveigh conducts spoofing attacks and hash/credential captures through both packet sniffing and protocol specific listeners/sockets. This Atomic will run continuously until you cancel it or it times out.
 
+## Executor
+powershell
+
 # Sigma Rule
  - win_non_interactive_powershell.yml (id: f4bbd493-b796-416e-bbf2-121235348529)
 

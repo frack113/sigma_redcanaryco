@@ -50,6 +50,9 @@ Common failures include seeing an \"access denied\" error which results when Ant
 Or, if you try to run the test without the required administrative privleges you will see this error near the bottom of the output to the screen "ERROR kuhl_m_sekurlsa_acquireLSA"
 
 
+## Executor
+powershell
+
 # Sigma Rule
  - posh_ps_nishang_malicious_commandlets.yml (id: f772cee9-b7c2-4cb2-8f07-49870adc02e0)
 

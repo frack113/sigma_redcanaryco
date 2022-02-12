@@ -32,6 +32,9 @@ Upon successful execution, an excel containing VBA Macro containing sensitive da
 Sensitive data includes about around 20 odd simulated credit card numbers that passes the LUHN check.
 
 
+## Executor
+powershell
+
 # Sigma Rule
  - posh_ps_send_mailmessage.yml (id: 9a7afa56-4762-43eb-807d-c3dc9ffe211b)
 

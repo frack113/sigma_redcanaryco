@@ -31,6 +31,9 @@ An adversary may use Windows Task Scheduler to execute programs at system startu
 Create an scheduled task that executes notepad.exe after user login from XML by leveraging WMI class PS_ScheduledTask. Does the same thing as Register-ScheduledTask cmdlet behind the scenes.
 
 
+## Executor
+powershell
+
 # Sigma Rule
  - posh_ps_cmdlet_scheduled_task.yml (id: 363eccc0-279a-4ccf-a3ab-24c2e63b11fb)
 

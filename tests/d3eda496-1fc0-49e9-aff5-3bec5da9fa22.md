@@ -31,6 +31,9 @@ An adversary may use systemd timers to execute malicious code at system startup 
 Schedule a system level transient task (will not survive a reboot) without having to create the .timer or .service files by using the systemd-run command. 
 
 
+## Executor
+sh
+
 # Sigma Rule
 
 

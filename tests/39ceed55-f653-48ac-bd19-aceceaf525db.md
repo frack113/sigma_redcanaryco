@@ -32,6 +32,9 @@ Mshta.exe can be used to bypass application control solutions that do not accoun
 ## Description:
 Executes an HTA Application by directly downloading from remote URI.
 
+## Executor
+powershell
+
 # Sigma Rule
  - posh_ps_accessing_win_api.yml (id: 03d83090-8cba-44a0-b02f-0b756a050306)
 

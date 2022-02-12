@@ -33,6 +33,9 @@ In macOS, the Ay MaMi malware uses <code>/usr/bin/security add-trusted-cert -d -
 Creates a root CA with certutil
 
 
+## Executor
+powershell
+
 # Sigma Rule
  - process_creation_root_certificate_installed.yml (id: 46591fae-7a4c-46ea-aec3-dff5e6d785dc)
 

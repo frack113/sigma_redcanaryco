@@ -26,6 +26,9 @@ Adversaries may attempt to take screen captures of the desktop to gather informa
 Use screencapture command to collect a full desktop screenshot
 
 
+## Executor
+bash
+
 # Sigma Rule
 
 

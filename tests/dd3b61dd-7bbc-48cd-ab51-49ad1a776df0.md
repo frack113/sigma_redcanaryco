@@ -25,6 +25,9 @@ Adversaries may transfer tools or other files from an external system into a com
 Use certutil -urlcache argument to download a file from the web. Note - /urlcache also works!
 
 
+## Executor
+command_prompt
+
 # Sigma Rule
  - file_event_win_shell_write_susp_directory.yml (id: 1277f594-a7d1-4f28-a2d3-73af5cbeab43)
 

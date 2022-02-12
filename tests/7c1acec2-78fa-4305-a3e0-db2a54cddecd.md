@@ -32,6 +32,9 @@ Connect to a remote powershell session and interact with the host.
 Upon execution, network test info and 'T1086 PowerShell Session Creation and Use' will be displayed.
 
 
+## Executor
+powershell
+
 # Sigma Rule
  - posh_ps_remote_session_creation.yml (id: a0edd39f-a0c6-4c17-8141-261f958e8d8f)
 
