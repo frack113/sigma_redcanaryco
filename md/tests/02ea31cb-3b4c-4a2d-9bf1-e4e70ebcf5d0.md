@@ -28,6 +28,9 @@ An adversary may compress data (e.g., sensitive documents) that is collected pri
 When the test completes you should find the txt files from the %USERPROFILE% directory compressed in a file called T1560.001-data.rar in the %USERPROFILE% directory 
 
 
+## Executor
+command_prompt
+
 # Sigma Rule
  - win_data_compressed_with_rar.yml (id: 6f3e2987-db24-4c78-a860-b4f4095a7095)
 

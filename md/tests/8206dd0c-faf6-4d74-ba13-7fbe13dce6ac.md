@@ -26,6 +26,9 @@ Adversaries may attempt to take screen captures of the desktop to gather informa
 Use xwd command to collect a full desktop screenshot and review file with xwud
 
 
+## Executor
+bash
+
 # Sigma Rule
 
 

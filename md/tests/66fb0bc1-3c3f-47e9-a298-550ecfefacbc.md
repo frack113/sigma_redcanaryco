@@ -50,18 +50,21 @@ Common failures include seeing an \"access denied\" error which results when Ant
 Or, if you try to run the test without the required administrative privleges you will see this error near the bottom of the output to the screen "ERROR kuhl_m_sekurlsa_acquireLSA"
 
 
+## Executor
+powershell
+
 # Sigma Rule
- - powershell_nishang_malicious_commandlets.yml (id: f772cee9-b7c2-4cb2-8f07-49870adc02e0)
+ - posh_ps_nishang_malicious_commandlets.yml (id: f772cee9-b7c2-4cb2-8f07-49870adc02e0)
 
- - powershell_malicious_keywords.yml (id: f62176f3-8128-4faa-bf6c-83261322e5eb)
+ - posh_ps_malicious_keywords.yml (id: f62176f3-8128-4faa-bf6c-83261322e5eb)
 
- - powershell_malicious_commandlets.yml (id: 89819aa4-bbd6-46bc-88ec-c7f7fe30efa6)
+ - posh_ps_malicious_commandlets.yml (id: 89819aa4-bbd6-46bc-88ec-c7f7fe30efa6)
 
- - powershell_suspicious_invocation_specific_in_contextinfo.yml (id: 8ff28fdd-e2fa-4dfa-aeda-ef3d61c62090)
+ - posh_pm_suspicious_invocation_specific.yml (id: 8ff28fdd-e2fa-4dfa-aeda-ef3d61c62090)
 
- - powershell_suspicious_keywords.yml (id: 1f49f2ab-26bc-48b3-96cc-dcffbc93eadf)
+ - posh_ps_suspicious_keywords.yml (id: 1f49f2ab-26bc-48b3-96cc-dcffbc93eadf)
 
- - powershell_accessing_win_api.yml (id: 03d83090-8cba-44a0-b02f-0b756a050306)
+ - posh_ps_accessing_win_api.yml (id: 03d83090-8cba-44a0-b02f-0b756a050306)
 
  - sysmon_accessing_winapi_in_powershell_credentials_dumping.yml (id: 3f07b9d1-2082-4c56-9277-613a621983cc)
 

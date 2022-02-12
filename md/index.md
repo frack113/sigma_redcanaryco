@@ -27,21 +27,21 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1553.005
-[Mount ISO image](tests/002cca30-4778-4891-878a-aaffcfa502fa.md) ['windows'] (sigma rule :x:)
+[Mount ISO image](tests/002cca30-4778-4891-878a-aaffcfa502fa.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Mount an ISO image and run executable from the ISO](tests/42f22b00-0242-4afc-a61b-0da05041f9cc.md) ['windows'] (sigma rule :x:)
+[Mount an ISO image and run executable from the ISO](tests/42f22b00-0242-4afc-a61b-0da05041f9cc.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Remove the Zone.Identifier alternate data stream](tests/64b12afc-18b8-4d3f-9eab-7f6cae7c73f9.md) ['windows'] (sigma rule :x:)
+[Remove the Zone.Identifier alternate data stream](tests/64b12afc-18b8-4d3f-9eab-7f6cae7c73f9.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1564.004
-[Create ADS PowerShell](tests/0045ea16-ed3c-4d4c-a9ee-15e44d1560d1.md) ['windows'] (sigma rule :x:)
+[Create ADS PowerShell](tests/0045ea16-ed3c-4d4c-a9ee-15e44d1560d1.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Create ADS command prompt](tests/17e7637a-ddaf-4a82-8622-377e20de8fdb.md) ['windows'] (sigma rule :x:)
+[Create ADS command prompt](tests/17e7637a-ddaf-4a82-8622-377e20de8fdb.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Store file in Alternate Data Stream (ADS)](tests/2ab75061-f5d5-4c1a-b666-ba2a50df5b02.md) ['windows'] (sigma rule :x:)
+[Store file in Alternate Data Stream (ADS)](tests/2ab75061-f5d5-4c1a-b666-ba2a50df5b02.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Alternate Data Streams (ADS)](tests/8822c3b0-d9f9-4daf-a043-49f4602364f4.md) ['windows'] (sigma rule :x:)
+[Alternate Data Streams (ADS)](tests/8822c3b0-d9f9-4daf-a043-49f4602364f4.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1140
@@ -51,23 +51,23 @@ Caution: a test can generate a lot of noise...
 
 [Base64 decoding with Perl](tests/6604d964-b9f6-4d4b-8ce8-499829a14d0a.md) ['linux', 'macos'] (sigma rule :x:)
 
-[Certutil Rename and Decode](tests/71abc534-3c05-4d0c-80f7-cbe93cb2aa94.md) ['windows'] (sigma rule :x:)
+[Certutil Rename and Decode](tests/71abc534-3c05-4d0c-80f7-cbe93cb2aa94.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Base64 decoding with shell utilities](tests/b4f6a567-a27a-41e5-b8ef-ac4b4008bb7e.md) ['linux', 'macos'] (sigma rule :x:)
 
-[Deobfuscate/Decode Files Or Information](tests/dc6fe391-69e6-4506-bd06-ea5eeb4082f8.md) ['windows'] (sigma rule :x:)
+[Deobfuscate/Decode Files Or Information](tests/dc6fe391-69e6-4506-bd06-ea5eeb4082f8.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1047
 [WMI Execute rundll32](tests/00738d2a-4651-4d76-adf2-c43a41dfb243.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[WMI Reconnaissance List Remote Services](tests/0fd48ef7-d890-4e93-a533-f7dedd5191d3.md) ['windows'] (sigma rule :x:)
+[WMI Reconnaissance List Remote Services](tests/0fd48ef7-d890-4e93-a533-f7dedd5191d3.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Create a Process using obfuscated Win32_Process](tests/10447c83-fc38-462a-a936-5102363b1c43.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[WMI Reconnaissance Processes](tests/5750aa16-0e59-4410-8b9a-8a47ca2788e2.md) ['windows'] (sigma rule :x:)
+[WMI Reconnaissance Processes](tests/5750aa16-0e59-4410-8b9a-8a47ca2788e2.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[WMI Reconnaissance Software](tests/718aebaa-d0e0-471a-8241-c5afa69c7414.md) ['windows'] (sigma rule :x:)
+[WMI Reconnaissance Software](tests/718aebaa-d0e0-471a-8241-c5afa69c7414.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Create a Process using WMI Query and an Encoded Command](tests/7db7a7f9-9531-4840-9b30-46220135441c.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -77,27 +77,29 @@ Caution: a test can generate a lot of noise...
 
 [WMI Reconnaissance Users](tests/c107778c-dcf5-47c5-af2e-1d058a3df3ea.md) ['windows'] (sigma rule :heavy_check_mark:)
 
+[Application uninstall using WMIC](tests/c510d25b-1667-467d-8331-a56d3e9bc4ff.md) ['windows'] (sigma rule :heavy_check_mark:)
+
 
 ### T1218.005
-[Invoke HTML Application - Jscript Engine over Local UNC Simulating Lateral Movement](tests/007e5672-2088-4853-a562-7490ddc19447.md) ['windows'] (sigma rule :x:)
+[Invoke HTML Application - Jscript Engine over Local UNC Simulating Lateral Movement](tests/007e5672-2088-4853-a562-7490ddc19447.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Mshta executes JavaScript Scheme Fetch Remote Payload With GetObject](tests/1483fab9-4f52-4217-a9ce-daa9d7747cae.md) ['windows'] (sigma rule :x:)
+[Mshta executes JavaScript Scheme Fetch Remote Payload With GetObject](tests/1483fab9-4f52-4217-a9ce-daa9d7747cae.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Invoke HTML Application - Direct download from URI](tests/39ceed55-f653-48ac-bd19-aceceaf525db.md) ['windows'] (sigma rule :x:)
+[Invoke HTML Application - Direct download from URI](tests/39ceed55-f653-48ac-bd19-aceceaf525db.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Invoke HTML Application - Jscript Engine Simulating Double Click](tests/58a193ec-131b-404e-b1ca-b35cf0b18c33.md) ['windows'] (sigma rule :x:)
+[Invoke HTML Application - Jscript Engine Simulating Double Click](tests/58a193ec-131b-404e-b1ca-b35cf0b18c33.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Mshta used to Execute PowerShell](tests/8707a805-2b76-4f32-b1c0-14e558205772.md) ['windows'] (sigma rule :x:)
+[Mshta used to Execute PowerShell](tests/8707a805-2b76-4f32-b1c0-14e558205772.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Mshta executes VBScript to execute malicious command](tests/906865c3-e05f-4acc-85c4-fbc185455095.md) ['windows'] (sigma rule :x:)
+[Mshta executes VBScript to execute malicious command](tests/906865c3-e05f-4acc-85c4-fbc185455095.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Invoke HTML Application - Simulate Lateral Movement over UNC Path](tests/b8a8bdb2-7eae-490d-8251-d5e0295b2362.md) ['windows'] (sigma rule :x:)
+[Invoke HTML Application - Simulate Lateral Movement over UNC Path](tests/b8a8bdb2-7eae-490d-8251-d5e0295b2362.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Mshta Executes Remote HTML Application (HTA)](tests/c4b97eeb-5249-4455-a607-59f95485cb45.md) ['windows'] (sigma rule :x:)
+[Mshta Executes Remote HTML Application (HTA)](tests/c4b97eeb-5249-4455-a607-59f95485cb45.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Invoke HTML Application - JScript Engine with Inline Protocol Handler](tests/d3eaaf6a-cdb1-44a9-9ede-b6c337d0d840.md) ['windows'] (sigma rule :x:)
+[Invoke HTML Application - JScript Engine with Inline Protocol Handler](tests/d3eaaf6a-cdb1-44a9-9ede-b6c337d0d840.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Invoke HTML Application - JScript Engine with Rundll32 and Inline Protocol Handler](tests/e7e3a525-7612-4d68-a5d3-c4649181b8af.md) ['windows'] (sigma rule :x:)
+[Invoke HTML Application - JScript Engine with Rundll32 and Inline Protocol Handler](tests/e7e3a525-7612-4d68-a5d3-c4649181b8af.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1105
@@ -105,39 +107,41 @@ Caution: a test can generate a lot of noise...
 
 [rsync remote file copy (push)](tests/0fc6e977-cb12-44f6-b263-2824ba917409.md) ['linux', 'macos'] (sigma rule :x:)
 
-[Download a file with IMEWDBLD.exe](tests/1a02df58-09af-4064-a765-0babe1a0d1e2.md) ['windows'] (sigma rule :x:)
+[Download a file with IMEWDBLD.exe](tests/1a02df58-09af-4064-a765-0babe1a0d1e2.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Curl Download File](tests/2b080b99-0deb-4d51-af0f-833d37c4ca6a.md) ['windows'] (sigma rule :x:)
+[Curl Download File](tests/2b080b99-0deb-4d51-af0f-833d37c4ca6a.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[OSTAP Worming Activity](tests/2ca61766-b456-4fcf-a35a-1233685e1cad.md) ['windows'] (sigma rule :x:)
+[OSTAP Worming Activity](tests/2ca61766-b456-4fcf-a35a-1233685e1cad.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [rsync remote file copy (pull)](tests/3180f7d5-52c0-4493-9ea0-e3431a84773f.md) ['linux', 'macos'] (sigma rule :x:)
 
-[Windows - PowerShell Download](tests/42dc4460-9aa6-45d3-b1a6-3955d34e1fe8.md) ['windows'] (sigma rule :x:)
+[Windows - PowerShell Download](tests/42dc4460-9aa6-45d3-b1a6-3955d34e1fe8.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[File Download via PowerShell](tests/54a4daf1-71df-4383-9ba7-f1a295d8b6d2.md) ['windows'] (sigma rule :x:)
+[File Download via PowerShell](tests/54a4daf1-71df-4383-9ba7-f1a295d8b6d2.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[File download with finger.exe on Windows](tests/5f507e45-8411-4f99-84e7-e38530c45d01.md) ['windows'] (sigma rule :x:)
+[File download with finger.exe on Windows](tests/5f507e45-8411-4f99-84e7-e38530c45d01.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Curl Upload File](tests/635c9a38-6cbf-47dc-8615-3810bc1167cf.md) ['windows'] (sigma rule :x:)
+[Curl Upload File](tests/635c9a38-6cbf-47dc-8615-3810bc1167cf.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Download a File with Windows Defender MpCmdRun.exe](tests/815bef8b-bf91-4b67-be4c-abe4c2a94ccc.md) ['windows'] (sigma rule :x:)
+[Download a File with Windows Defender MpCmdRun.exe](tests/815bef8b-bf91-4b67-be4c-abe4c2a94ccc.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [scp remote file copy (push)](tests/83a49600-222b-4866-80a0-37736ad29344.md) ['linux', 'macos'] (sigma rule :x:)
 
-[Windows - BITSAdmin BITS Download](tests/a1921cd3-9a2d-47d5-a891-f1d0f2a7a31b.md) ['windows'] (sigma rule :x:)
+[Windows - BITSAdmin BITS Download](tests/a1921cd3-9a2d-47d5-a891-f1d0f2a7a31b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [scp remote file copy (pull)](tests/b9d22b9a-9778-4426-abf0-568ea64e9c33.md) ['linux', 'macos'] (sigma rule :x:)
 
 [whois file download](tests/c99a829f-0bb8-4187-b2c6-d47d1df74cab.md) ['linux', 'macos'] (sigma rule :x:)
 
+[Download a file with Microsoft Connection Manager Auto-Download](tests/d239772b-88e2-4a2e-8473-897503401bcc.md) ['windows'] (sigma rule :heavy_check_mark:)
+
 [certutil download (urlcache)](tests/dd3b61dd-7bbc-48cd-ab51-49ad1a776df0.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [sftp remote file copy (push)](tests/f564c297-7978-4aa9-b37a-d90477feea4e.md) ['linux', 'macos'] (sigma rule :x:)
 
-[svchost writing a file to a UNC path](tests/fa5a2759-41d7-4e13-a19c-e8f28a53566f.md) ['windows'] (sigma rule :x:)
+[svchost writing a file to a UNC path](tests/fa5a2759-41d7-4e13-a19c-e8f28a53566f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[certutil download (verifyctl)](tests/ffd492e3-0455-4518-9fb1-46527c9f241b.md) ['windows'] (sigma rule :x:)
+[certutil download (verifyctl)](tests/ffd492e3-0455-4518-9fb1-46527c9f241b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1136.001
@@ -173,11 +177,11 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1095
-[ICMP C2](tests/0268e63c-e244-42db-bef7-72a9e59fc1fc.md) ['windows'] (sigma rule :x:)
+[ICMP C2](tests/0268e63c-e244-42db-bef7-72a9e59fc1fc.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Powercat C2](tests/3e0e0e7f-6aa2-4a61-b61d-526c2cc9330e.md) ['windows'] (sigma rule :x:)
+[Powercat C2](tests/3e0e0e7f-6aa2-4a61-b61d-526c2cc9330e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Netcat C2](tests/bcf0d1c1-3f6a-4847-b1c9-7ed4ea321f37.md) ['windows'] (sigma rule :x:)
+[Netcat C2](tests/bcf0d1c1-3f6a-4847-b1c9-7ed4ea321f37.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1204.002
@@ -189,7 +193,7 @@ Caution: a test can generate a lot of noise...
 
 [Excel 4 Macro](tests/4ea1fc97-8a46-4b4e-ba48-af43d2a98052.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Office Generic Payload Download](tests/5202ee05-c420-4148-bf5e-fd7f7d24850c.md) ['windows'] (sigma rule :x:)
+[Office Generic Payload Download](tests/5202ee05-c420-4148-bf5e-fd7f7d24850c.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [OSTap Style Macro Execution](tests/8bebc690-18c7-4549-bc98-210f7019efff.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -201,7 +205,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1218.002
-[Control Panel Items](tests/037e9d8a-9e46-4255-8b33-2ae3b545ca6f.md) ['windows'] (sigma rule :x:)
+[Control Panel Items](tests/037e9d8a-9e46-4255-8b33-2ae3b545ca6f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1016
@@ -225,21 +229,21 @@ Caution: a test can generate a lot of noise...
 ### T1070.004
 [Overwrite and delete a file with shred](tests/039b4b10-2900-404b-b67f-4b6d49aa6499.md) ['linux'] (sigma rule :x:)
 
-[Delete Prefetch File](tests/36f96049-0ad7-4a5f-8418-460acaeb92fb.md) ['windows'] (sigma rule :x:)
+[Delete Prefetch File](tests/36f96049-0ad7-4a5f-8418-460acaeb92fb.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Delete a single file - Linux/macOS](tests/562d737f-2fc6-4b09-8c2a-7f8ff0828480.md) ['linux', 'macos'] (sigma rule :x:)
 
-[Delete TeamViewer Log Files](tests/69f50a5f-967c-4327-a5bb-e1a9a9983785.md) ['windows'] (sigma rule :x:)
+[Delete TeamViewer Log Files](tests/69f50a5f-967c-4327-a5bb-e1a9a9983785.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Delete a single file - Windows cmd](tests/861ea0b4-708a-4d17-848d-186c9c7f17e3.md) ['windows'] (sigma rule :x:)
+[Delete a single file - Windows cmd](tests/861ea0b4-708a-4d17-848d-186c9c7f17e3.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Delete a single file - Windows PowerShell](tests/9dee89bd-9a98-4c4f-9e2d-4256690b0e72.md) ['windows'] (sigma rule :x:)
+[Delete a single file - Windows PowerShell](tests/9dee89bd-9a98-4c4f-9e2d-4256690b0e72.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Delete an entire folder - Linux/macOS](tests/a415f17e-ce8d-4ce2-a8b4-83b674e7017e.md) ['linux', 'macos'] (sigma rule :x:)
 
-[Delete an entire folder - Windows cmd](tests/ded937c4-2add-42f7-9c2c-c742b7a98698.md) ['windows'] (sigma rule :x:)
+[Delete an entire folder - Windows cmd](tests/ded937c4-2add-42f7-9c2c-c742b7a98698.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Delete an entire folder - Windows PowerShell](tests/edd779e4-a509-4cba-8dfa-a112543dbfb1.md) ['windows'] (sigma rule :x:)
+[Delete an entire folder - Windows PowerShell](tests/edd779e4-a509-4cba-8dfa-a112543dbfb1.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Delete Filesystem - Linux](tests/f3aa95fe-4f10-4485-ad26-abf22a764c52.md) ['linux'] (sigma rule :x:)
 
@@ -269,39 +273,39 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1070.005
-[Remove Network Share PowerShell](tests/0512d214-9512-4d22-bde7-f37e058259b3.md) ['windows'] (sigma rule :x:)
+[Remove Network Share PowerShell](tests/0512d214-9512-4d22-bde7-f37e058259b3.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Remove Network Share](tests/09210ad5-1ef2-4077-9ad3-7351e13e9222.md) ['windows'] (sigma rule :x:)
+[Remove Network Share](tests/09210ad5-1ef2-4077-9ad3-7351e13e9222.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Add Network Share](tests/14c38f32-6509-46d8-ab43-d53e32d2b131.md) ['windows'] (sigma rule :x:)
+[Add Network Share](tests/14c38f32-6509-46d8-ab43-d53e32d2b131.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Remove Administrative Shares](tests/4299eff5-90f1-4446-b2f3-7f4f5cfd5d62.md) ['windows'] (sigma rule :x:)
+[Remove Administrative Shares](tests/4299eff5-90f1-4446-b2f3-7f4f5cfd5d62.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Disable Administrative Share Creation at Startup](tests/99c657aa-ebeb-4179-a665-69288fdd12b8.md) ['windows'] (sigma rule :x:)
+[Disable Administrative Share Creation at Startup](tests/99c657aa-ebeb-4179-a665-69288fdd12b8.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1218.007
-[Msiexec.exe - Execute Local MSI file](tests/0683e8f7-a27b-4b62-b7ab-dc7d4fed1df8.md) ['windows'] (sigma rule :x:)
+[Msiexec.exe - Execute Local MSI file](tests/0683e8f7-a27b-4b62-b7ab-dc7d4fed1df8.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Msiexec.exe - Execute Arbitrary DLL](tests/66f64bd5-7c35-4c24-953a-04ca30a0a0ec.md) ['windows'] (sigma rule :x:)
+[Msiexec.exe - Execute Arbitrary DLL](tests/66f64bd5-7c35-4c24-953a-04ca30a0a0ec.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Msiexec.exe - Execute Remote MSI file](tests/bde7d2fe-d049-458d-a362-abda32a7e649.md) ['windows'] (sigma rule :x:)
+[Msiexec.exe - Execute Remote MSI file](tests/bde7d2fe-d049-458d-a362-abda32a7e649.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1134.004
-[Parent PID Spoofing using PowerShell](tests/069258f4-2162-46e9-9a25-c9c6c56150d2.md) ['windows'] (sigma rule :x:)
+[Parent PID Spoofing using PowerShell](tests/069258f4-2162-46e9-9a25-c9c6c56150d2.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Parent PID Spoofing - Spawn from Current Process](tests/14920ebd-1d61-491a-85e0-fe98efe37f25.md) ['windows'] (sigma rule :x:)
+[Parent PID Spoofing - Spawn from Current Process](tests/14920ebd-1d61-491a-85e0-fe98efe37f25.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Parent PID Spoofing - Spawn from New Process](tests/2988133e-561c-4e42-a15f-6281e6a9b2db.md) ['windows'] (sigma rule :x:)
+[Parent PID Spoofing - Spawn from New Process](tests/2988133e-561c-4e42-a15f-6281e6a9b2db.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Parent PID Spoofing - Spawn from Specified Process](tests/cbbff285-9051-444a-9d17-c07cd2d230eb.md) ['windows'] (sigma rule :x:)
+[Parent PID Spoofing - Spawn from Specified Process](tests/cbbff285-9051-444a-9d17-c07cd2d230eb.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Parent PID Spoofing - Spawn from svchost.exe](tests/e9f2b777-3123-430b-805d-5cedc66ab591.md) ['windows'] (sigma rule :x:)
+[Parent PID Spoofing - Spawn from svchost.exe](tests/e9f2b777-3123-430b-805d-5cedc66ab591.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1059.001
-[Invoke-AppPathBypass](tests/06a220b6-7e29-4bd8-9d07-5b4d86742372.md) ['windows'] (sigma rule :x:)
+[Invoke-AppPathBypass](tests/06a220b6-7e29-4bd8-9d07-5b4d86742372.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [ATHPowerShellCommandLineParameter -EncodedCommand parameter variations with encoded arguments](tests/0d181431-ddf3-4826-8055-2dbf63ae848b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -309,17 +313,17 @@ Caution: a test can generate a lot of noise...
 
 [ATHPowerShellCommandLineParameter -Command parameter variations with encoded arguments](tests/1c0a870f-dc74-49cf-9afc-eccc45e58790.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Powershell MsXml COM object - with prompt](tests/388a7340-dbc1-4c9d-8e59-b75ad8c6d5da.md) ['windows'] (sigma rule :x:)
+[Powershell MsXml COM object - with prompt](tests/388a7340-dbc1-4c9d-8e59-b75ad8c6d5da.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Obfuscation Tests](tests/4297c41a-8168-4138-972d-01f3ee92c804.md) ['windows'] (sigma rule :x:)
+[Obfuscation Tests](tests/4297c41a-8168-4138-972d-01f3ee92c804.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Powershell XML requests](tests/4396927f-e503-427b-b023-31049b9b09a6.md) ['windows'] (sigma rule :x:)
+[Powershell XML requests](tests/4396927f-e503-427b-b023-31049b9b09a6.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [PowerShell Invoke Known Malicious Cmdlets](tests/49eb9404-5e0f-4031-a179-b40f7be385e3.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [ATHPowerShellCommandLineParameter -Command parameter variations](tests/686a9785-f99b-41d4-90df-66ed515f81d7.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[PowerShell Session Creation and Use](tests/7c1acec2-78fa-4305-a3e0-db2a54cddecd.md) ['windows'] (sigma rule :x:)
+[PowerShell Session Creation and Use](tests/7c1acec2-78fa-4305-a3e0-db2a54cddecd.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [ATHPowerShellCommandLineParameter -EncodedCommand parameter variations](tests/86a43bad-12e3-4e85-b97c-4d5cf25b95c3.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -329,85 +333,87 @@ Caution: a test can generate a lot of noise...
 
 [PowerShell Downgrade Attack](tests/9148e7c4-9356-420e-a416-e896e9c0f73e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Run BloodHound from local disk](tests/a21bb23e-e677-4ee7-af90-6931b57b6350.md) ['windows'] (sigma rule :x:)
+[Run BloodHound from local disk](tests/a21bb23e-e677-4ee7-af90-6931b57b6350.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[PowerShell Command Execution](tests/a538de64-1c74-46ed-aa60-b995ed302598.md) ['windows'] (sigma rule :x:)
+[PowerShell Command Execution](tests/a538de64-1c74-46ed-aa60-b995ed302598.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Mimikatz - Cradlecraft PsSendKeys](tests/af1800cf-9f9d-4fd1-a709-14b1e6de020d.md) ['windows'] (sigma rule :x:)
+[Mimikatz - Cradlecraft PsSendKeys](tests/af1800cf-9f9d-4fd1-a709-14b1e6de020d.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Run Bloodhound from Memory using Download Cradle](tests/bf8c1441-4674-4dab-8e4e-39d93d08f9b7.md) ['windows'] (sigma rule :x:)
+[Run Bloodhound from Memory using Download Cradle](tests/bf8c1441-4674-4dab-8e4e-39d93d08f9b7.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Powershell Invoke-DownloadCradle](tests/cc50fa2a-a4be-42af-a88f-e347ba0bf4d7.md) ['windows'] (sigma rule :x:)
 
-[Mimikatz](tests/f3132740-55bc-48c4-bcc0-758a459cd027.md) ['windows'] (sigma rule :x:)
+[Mimikatz](tests/f3132740-55bc-48c4-bcc0-758a459cd027.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [PowerShell Fileless Script Execution](tests/fa050f5e-bc75-4230-af73-b6fd7852cd73.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1218.004
-[InstallUtil Uninstall method call - '/installtype=notransaction /action=uninstall' variant](tests/06d9deba-f732-48a8-af8e-bdd6e4d98c1d.md) ['windows'] (sigma rule :x:)
+[InstallUtil Uninstall method call - '/installtype=notransaction /action=uninstall' variant](tests/06d9deba-f732-48a8-af8e-bdd6e4d98c1d.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[InstallUtil Uninstall method call - /U variant](tests/34428cfa-8e38-41e5-aff4-9e1f8f3a7b4b.md) ['windows'] (sigma rule :x:)
+[InstallUtil Uninstall method call - /U variant](tests/34428cfa-8e38-41e5-aff4-9e1f8f3a7b4b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[InstallUtil evasive invocation](tests/559e6d06-bb42-4307-bff7-3b95a8254bad.md) ['windows'] (sigma rule :x:)
+[InstallUtil evasive invocation](tests/559e6d06-bb42-4307-bff7-3b95a8254bad.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[InstallUtil HelpText method call](tests/5a683850-1145-4326-a0e5-e91ced3c6022.md) ['windows'] (sigma rule :x:)
+[InstallUtil HelpText method call](tests/5a683850-1145-4326-a0e5-e91ced3c6022.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[InstallUtil class constructor method call](tests/9b7a7cfc-dd2e-43f5-a885-c0a3c270dd93.md) ['windows'] (sigma rule :x:)
+[InstallUtil class constructor method call](tests/9b7a7cfc-dd2e-43f5-a885-c0a3c270dd93.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[InstallUtil Install method call](tests/9f9968a6-601a-46ca-b7b7-6d4fe0f98f0b.md) ['windows'] (sigma rule :x:)
+[InstallUtil Install method call](tests/9f9968a6-601a-46ca-b7b7-6d4fe0f98f0b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[InstallHelper method call](tests/d43a5bde-ae28-4c55-a850-3f4c80573503.md) ['windows'] (sigma rule :x:)
+[InstallHelper method call](tests/d43a5bde-ae28-4c55-a850-3f4c80573503.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[CheckIfInstallable method call](tests/ffd9c807-d402-47d2-879d-f915cf2a3a94.md) ['windows'] (sigma rule :x:)
+[CheckIfInstallable method call](tests/ffd9c807-d402-47d2-879d-f915cf2a3a94.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1562.001
 [Disable OpenDNS Umbrella](tests/07f43b33-1e15-4e99-be70-bc094157c849.md) ['macos'] (sigma rule :x:)
 
-[Tamper with Windows Defender Evade Scanning -Folder](tests/0b19f4ee-de90-4059-88cb-63c800c683ed.md) ['windows'] (sigma rule :x:)
+[Tamper with Windows Defender Evade Scanning -Folder](tests/0b19f4ee-de90-4059-88cb-63c800c683ed.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[AMSI Bypass - Remove AMSI Provider Reg Key](tests/13f09b91-c953-438e-845b-b585e51cac9b.md) ['windows'] (sigma rule :x:)
+[AMSI Bypass - Remove AMSI Provider Reg Key](tests/13f09b91-c953-438e-845b-b585e51cac9b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Tamper with Windows Defender Registry](tests/1b3e0146-a1e5-4c5c-89fb-1bb2ffe8fc45.md) ['windows'] (sigma rule :x:)
+[Disable Defender with Defender Control](tests/178136d8-2778-4d7a-81f3-d517053a4fd6.md) ['windows'] (sigma rule :x:)
+
+[Tamper with Windows Defender Registry](tests/1b3e0146-a1e5-4c5c-89fb-1bb2ffe8fc45.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Disable macOS Gatekeeper](tests/2a821573-fb3f-4e71-92c3-daac7432f053.md) ['macos'] (sigma rule :x:)
 
-[Tamper with Windows Defender Evade Scanning -Extension](tests/315f4be6-2240-4552-b3e1-d1047f5eecea.md) ['windows'] (sigma rule :x:)
+[Tamper with Windows Defender Evade Scanning -Extension](tests/315f4be6-2240-4552-b3e1-d1047f5eecea.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Remove Windows Defender Definition Files](tests/3d47daaa-2f56-43e0-94cc-caf5d8d52a68.md) ['windows'] (sigma rule :x:)
+[Remove Windows Defender Definition Files](tests/3d47daaa-2f56-43e0-94cc-caf5d8d52a68.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Disable syslog](tests/4ce786f8-e601-44b5-bfae-9ebb15a7d1c8.md) ['linux'] (sigma rule :x:)
 
 [Disable LittleSnitch](tests/62155dd8-bb3d-4f32-b31c-6532ff3ac6a3.md) ['macos'] (sigma rule :x:)
 
-[AMSI Bypass - AMSI InitFailed](tests/695eed40-e949-40e5-b306-b4031e4154bd.md) ['windows'] (sigma rule :x:)
+[AMSI Bypass - AMSI InitFailed](tests/695eed40-e949-40e5-b306-b4031e4154bd.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Tamper with Windows Defender ATP PowerShell](tests/6b8df440-51ec-4d53-bf83-899591c9b5d7.md) ['windows'] (sigma rule :x:)
+[Tamper with Windows Defender ATP PowerShell](tests/6b8df440-51ec-4d53-bf83-899591c9b5d7.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Disable Microsoft Office Security Features](tests/6f5fb61b-4e56-4a3d-a8c3-82e13686c6d7.md) ['windows'] (sigma rule :x:)
+[Disable Microsoft Office Security Features](tests/6f5fb61b-4e56-4a3d-a8c3-82e13686c6d7.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Unload Sysmon Filter Driver](tests/811b3e76-c41b-430c-ac0d-e2380bfaa164.md) ['windows'] (sigma rule :x:)
+[Unload Sysmon Filter Driver](tests/811b3e76-c41b-430c-ac0d-e2380bfaa164.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Stop Crowdstrike Falcon on Linux](tests/828a1278-81cc-4802-96ab-188bf29ca77d.md) ['linux'] (sigma rule :x:)
 
-[Disable Windows Defender with DISM](tests/871438ac-7d6e-432a-b27d-3e7db69faf58.md) ['windows'] (sigma rule :x:)
+[Disable Windows Defender with DISM](tests/871438ac-7d6e-432a-b27d-3e7db69faf58.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Disable Carbon Black Response](tests/8fba7766-2d11-4b4a-979a-1e3d9cc9a88c.md) ['macos'] (sigma rule :x:)
 
-[Disable Arbitrary Security Windows Service](tests/a1230893-56ac-4c81-b644-2108e982f8f5.md) ['windows'] (sigma rule :x:)
+[Disable Arbitrary Security Windows Service](tests/a1230893-56ac-4c81-b644-2108e982f8f5.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Tamper with Windows Defender Evade Scanning -Process](tests/a123ce6a-3916-45d6-ba9c-7d4081315c27.md) ['windows'] (sigma rule :x:)
+[Tamper with Windows Defender Evade Scanning -Process](tests/a123ce6a-3916-45d6-ba9c-7d4081315c27.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Uninstall Sysmon](tests/a316fb2e-5344-470d-91c1-23e15c374edc.md) ['windows'] (sigma rule :x:)
+[Uninstall Sysmon](tests/a316fb2e-5344-470d-91c1-23e15c374edc.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Tamper with Windows Defender Command Prompt](tests/aa875ed4-8935-47e2-b2c5-6ec00ab220d2.md) ['windows'] (sigma rule :x:)
+[Tamper with Windows Defender Command Prompt](tests/aa875ed4-8935-47e2-b2c5-6ec00ab220d2.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Stop and Remove Arbitrary Security Windows Service](tests/ae753dda-0f15-4af6-a168-b9ba16143143.md) ['windows'] (sigma rule :x:)
+[Stop and Remove Arbitrary Security Windows Service](tests/ae753dda-0f15-4af6-a168-b9ba16143143.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Disable Cb Response](tests/ae8943f7-0f8d-44de-962d-fbc2e2f03eb8.md) ['linux'] (sigma rule :x:)
 
-[Uninstall Crowdstrike Falcon on Windows](tests/b32b1ccf-f7c1-49bc-9ddd-7d7466a7b297.md) ['windows'] (sigma rule :x:)
+[Uninstall Crowdstrike Falcon on Windows](tests/b32b1ccf-f7c1-49bc-9ddd-7d7466a7b297.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Stop and unload Crowdstrike Falcon on macOS](tests/b3e7510c-2d4c-4249-a33f-591a2bc83eef.md) ['macos'] (sigma rule :x:)
 
@@ -445,15 +451,15 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1218.010
-[Regsvr32 local DLL execution](tests/08ffca73-9a3d-471a-aeb0-68b4aa3ab37b.md) ['windows'] (sigma rule :x:)
+[Regsvr32 local DLL execution](tests/08ffca73-9a3d-471a-aeb0-68b4aa3ab37b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Regsvr32 Registering Non DLL](tests/1ae5ea1f-0a4e-4e54-b2f5-4ac328a7f421.md) ['windows'] (sigma rule :x:)
+[Regsvr32 Registering Non DLL](tests/1ae5ea1f-0a4e-4e54-b2f5-4ac328a7f421.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Regsvr32 local COM scriptlet execution](tests/449aa403-6aba-47ce-8a37-247d21ef0306.md) ['windows'] (sigma rule :x:)
+[Regsvr32 local COM scriptlet execution](tests/449aa403-6aba-47ce-8a37-247d21ef0306.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Regsvr32 Silent DLL Install Call DllRegisterServer](tests/9d71c492-ea2e-4c08-af16-c6994cdf029f.md) ['windows'] (sigma rule :x:)
+[Regsvr32 Silent DLL Install Call DllRegisterServer](tests/9d71c492-ea2e-4c08-af16-c6994cdf029f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Regsvr32 remote COM scriptlet execution](tests/c9d0c4ef-8a96-4794-a75b-3d3a5e6f2a36.md) ['windows'] (sigma rule :x:)
+[Regsvr32 remote COM scriptlet execution](tests/c9d0c4ef-8a96-4794-a75b-3d3a5e6f2a36.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1546.013
@@ -473,7 +479,11 @@ Caution: a test can generate a lot of noise...
 ### T1110.001
 [Brute Force Credentials of single Active Directory domain users via SMB](tests/09480053-2f98-4854-be6e-71ae5f672224.md) ['windows'] (sigma rule :heavy_check_mark:)
 
+[SUDO brute force Debian](tests/464b63e8-bf1f-422e-9e2c-2aa5080b6f9a.md) ['linux'] (sigma rule :x:)
+
 [Brute Force Credentials of single Azure AD user](tests/5a51ef57-299e-4d62-8e11-2d440df55e69.md) ['azure-ad'] (sigma rule :x:)
+
+[SUDO brute force Redhat](tests/b72958a7-53e3-4809-9ee1-58f6ecd99ade.md) ['linux'] (sigma rule :x:)
 
 [Brute Force Credentials of single Active Directory domain user via LDAP against domain controller (NTLM or Kerberos)](tests/c2969434-672b-4ec8-8df0-bbb91f40e250.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -493,7 +503,7 @@ Caution: a test can generate a lot of noise...
 
 [Connection Proxy for macOS UI](tests/648d68c1-8bcd-4486-9abe-71c6655b6a2c.md) ['macos'] (sigma rule :x:)
 
-[portproxy reg key](tests/b8223ea9-4be2-44a6-b50a-9657a3d4e72a.md) ['windows'] (sigma rule :x:)
+[portproxy reg key](tests/b8223ea9-4be2-44a6-b50a-9657a3d4e72a.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1069.002
@@ -551,7 +561,7 @@ Caution: a test can generate a lot of noise...
 
 [Dump LSASS.exe Memory using NanoDump](tests/dddd4aca-bbed-46f0-984d-e4c5971c51ea.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Dump LSASS.exe Memory using Windows Task Manager](tests/dea6c349-f1c6-44f3-87a1-1ed33a59a607.md) ['windows'] (sigma rule :x:)
+[Dump LSASS.exe Memory using Windows Task Manager](tests/dea6c349-f1c6-44f3-87a1-1ed33a59a607.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1572
@@ -579,7 +589,7 @@ Caution: a test can generate a lot of noise...
 
 [File and Directory Discovery (PowerShell)](tests/2158908e-b7ef-4c21-8a83-3ce4dd05a924.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Nix File and Diectory Discovery](tests/ffc8b249-372a-4b74-adcd-e4c0430842de.md) ['macos', 'linux'] (sigma rule :x:)
+[Nix File and Directory Discovery](tests/ffc8b249-372a-4b74-adcd-e4c0430842de.md) ['macos', 'linux'] (sigma rule :x:)
 
 
 ### T1552.001
@@ -608,14 +618,30 @@ Caution: a test can generate a lot of noise...
 [Input Capture](tests/d9b633ca-8efb-45e6-b838-70f595c6ae26.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
+### T1098
+[Azure - adding user to Azure AD role](tests/0e65ae27-5385-46b4-98ac-607a8ee82261.md) ['azure-ad'] (sigma rule :x:)
+
+[Azure - adding user to Azure role in subscription](tests/1a94b3fc-b080-450a-b3d8-6d9b57b472ea.md) ['iaas:azure'] (sigma rule :x:)
+
+[Admin Account Manipulate](tests/5598f7cb-cf43-455e-883a-f6008c5d46af.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[AWS - Create a group and add a user to that group](tests/8822c3b0-d9f9-4daf-a043-49f110a31122.md) ['iaas:aws'] (sigma rule :x:)
+
+[Azure - adding service principal to Azure AD role](tests/92c40b3f-c406-4d1f-8d2b-c039bf5009e4.md) ['azure-ad'] (sigma rule :x:)
+
+[Domain Account and Group Manipulate](tests/a55a22e9-a3d3-42ce-bd48-2653adb8f7a9.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Azure - adding service principal to Azure role in subscription](tests/c8f4bc29-a151-48da-b3be-4680af56f404.md) ['iaas:azure'] (sigma rule :x:)
+
+
 ### T1021.002
 [Copy and Execute File with PsExec](tests/0eb03d41-79e4-4393-8e57-6344856be1cf.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Map admin share](tests/3386975b-367a-4fbb-9d77-4dcf3639ffd3.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Map Admin Share PowerShell](tests/514e9cd7-9207-4882-98b1-c8f791bae3c5.md) ['windows'] (sigma rule :x:)
+[Map Admin Share PowerShell](tests/514e9cd7-9207-4882-98b1-c8f791bae3c5.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Execute command writing output to local Admin Share](tests/d41aaab5-bdfe-431d-a3d5-c29e9136ff46.md) ['windows'] (sigma rule :x:)
+[Execute command writing output to local Admin Share](tests/d41aaab5-bdfe-431d-a3d5-c29e9136ff46.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1087.001
@@ -655,23 +681,23 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1207
-[DCShadow (Active Directory)](tests/0f4c5eb0-98a0-4496-9c3d-656b4f2bc8f6.md) ['windows'] (sigma rule :x:)
+[DCShadow (Active Directory)](tests/0f4c5eb0-98a0-4496-9c3d-656b4f2bc8f6.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1218.001
-[Compiled HTML Help Remote Payload](tests/0f8af516-9818-4172-922b-42986ef1e81d.md) ['windows'] (sigma rule :x:)
+[Compiled HTML Help Remote Payload](tests/0f8af516-9818-4172-922b-42986ef1e81d.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Invoke CHM Shortcut Command with ITS and Help Topic](tests/15756147-7470-4a83-87fb-bb5662526247.md) ['windows'] (sigma rule :x:)
+[Invoke CHM Shortcut Command with ITS and Help Topic](tests/15756147-7470-4a83-87fb-bb5662526247.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Invoke CHM with default Shortcut Command Execution](tests/29d6f0d7-be63-4482-8827-ea77126c1ef7.md) ['windows'] (sigma rule :x:)
+[Invoke CHM with default Shortcut Command Execution](tests/29d6f0d7-be63-4482-8827-ea77126c1ef7.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Invoke CHM with Script Engine and Help Topic](tests/4f83adda-f5ec-406d-b318-9773c9ca92e5.md) ['windows'] (sigma rule :x:)
+[Invoke CHM with Script Engine and Help Topic](tests/4f83adda-f5ec-406d-b318-9773c9ca92e5.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Compiled HTML Help Local Payload](tests/5cb87818-0d7c-4469-b7ef-9224107aebe8.md) ['windows'] (sigma rule :x:)
+[Compiled HTML Help Local Payload](tests/5cb87818-0d7c-4469-b7ef-9224107aebe8.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Invoke CHM Simulate Double click](tests/5decef42-92b8-4a93-9eb2-877ddcb9401a.md) ['windows'] (sigma rule :x:)
+[Invoke CHM Simulate Double click](tests/5decef42-92b8-4a93-9eb2-877ddcb9401a.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Invoke CHM with InfoTech Storage Protocol Handler](tests/b4094750-5fc7-4e8e-af12-b4e36bf5e7f6.md) ['windows'] (sigma rule :x:)
+[Invoke CHM with InfoTech Storage Protocol Handler](tests/b4094750-5fc7-4e8e-af12-b4e36bf5e7f6.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1518
@@ -695,15 +721,15 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1566.001
-[Download Phishing Attachment - VBScript](tests/114ccff9-ae6d-4547-9ead-4cd69f687306.md) ['windows'] (sigma rule :x:)
+[Download Macro-Enabled Phishing Attachment](tests/114ccff9-ae6d-4547-9ead-4cd69f687306.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Word spawned a command shell and used an IP address in the command line](tests/cbb6799a-425c-4f83-9194-5447a909d67f.md) ['windows'] (sigma rule :x:)
+[Word spawned a command shell and used an IP address in the command line](tests/cbb6799a-425c-4f83-9194-5447a909d67f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1132.001
 [Base64 Encoded data.](tests/1164f70f-9a88-4dff-b9ff-dc70e7bf0c25.md) ['macos', 'linux'] (sigma rule :x:)
 
-[XOR Encoded data.](tests/c3ed6d2a-e3ad-400d-ad78-bbfdbfeacc08.md) ['windows'] (sigma rule :x:)
+[XOR Encoded data.](tests/c3ed6d2a-e3ad-400d-ad78-bbfdbfeacc08.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1053.004
@@ -729,47 +755,49 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1059.003
-[Writes text to a file and displays it.](tests/127b4afe-2346-4192-815c-69042bec570e.md) ['windows'] (sigma rule :x:)
+[Writes text to a file and displays it.](tests/127b4afe-2346-4192-815c-69042bec570e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Create and Execute Batch Script](tests/9e8894c0-50bd-4525-a96c-d4ac78ece388.md) ['windows'] (sigma rule :x:)
+[Create and Execute Batch Script](tests/9e8894c0-50bd-4525-a96c-d4ac78ece388.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Suspicious Execution via Windows Command Shell](tests/d0eb3597-a1b3-4d65-b33b-2cda8d397f20.md) ['windows'] (sigma rule :x:)
+[Suspicious Execution via Windows Command Shell](tests/d0eb3597-a1b3-4d65-b33b-2cda8d397f20.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1027
-[DLP Evasion via Sensitive Data in VBA Macro over email](tests/129edb75-d7b8-42cd-a8ba-1f3db64ec4ad.md) ['windows'] (sigma rule :x:)
+[DLP Evasion via Sensitive Data in VBA Macro over email](tests/129edb75-d7b8-42cd-a8ba-1f3db64ec4ad.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Execute base64-encoded PowerShell from Windows Registry](tests/450e7218-7915-4be4-8b9b-464a49eafcec.md) ['windows'] (sigma rule :x:)
+[Execute base64-encoded PowerShell from Windows Registry](tests/450e7218-7915-4be4-8b9b-464a49eafcec.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Obfuscated Command in PowerShell](tests/8b3f4ed6-077b-4bdd-891c-2d237f19410f.md) ['windows'] (sigma rule :x:)
+[Obfuscated Command in PowerShell](tests/8b3f4ed6-077b-4bdd-891c-2d237f19410f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Execute base64-encoded PowerShell](tests/a50d5a97-2531-499e-a1de-5544c74432c6.md) ['windows'] (sigma rule :x:)
+[Execute base64-encoded PowerShell](tests/a50d5a97-2531-499e-a1de-5544c74432c6.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[DLP Evasion via Sensitive Data in VBA Macro over HTTP](tests/e2d85e66-cb66-4ed7-93b1-833fc56c9319.md) ['windows'] (sigma rule :x:)
+[DLP Evasion via Sensitive Data in VBA Macro over HTTP](tests/e2d85e66-cb66-4ed7-93b1-833fc56c9319.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Obfuscated Command Line using special Unicode characters](tests/e68b945c-52d0-4dd9-a5e8-d173d70c448f.md) ['windows'] (sigma rule :x:)
+[Obfuscated Command Line using special Unicode characters](tests/e68b945c-52d0-4dd9-a5e8-d173d70c448f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Decode base64 Data into Script](tests/f45df6be-2e1e-4136-a384-8f18ab3826fb.md) ['macos', 'linux'] (sigma rule :x:)
 
-[Execution from Compressed File](tests/f8c8a909-5f29-49ac-9244-413936ce6d1f.md) ['windows'] (sigma rule :x:)
+[Execution from Compressed File](tests/f8c8a909-5f29-49ac-9244-413936ce6d1f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1003.006
 [DCSync (Active Directory)](tests/129efd28-8497-4c87-a1b0-73b9a870ca3e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
+[Run DSInternals Get-ADReplAccount](tests/a0bced08-3fc5-4d8b-93b7-e8344739376e.md) ['windows'] (sigma rule :heavy_check_mark:)
+
 
 ### T1112
-[Modify Registry of Current User Profile - cmd](tests/1324796b-d0f6-455a-b4ae-21ffee6aa6b9.md) ['windows'] (sigma rule :x:)
+[Modify Registry of Current User Profile - cmd](tests/1324796b-d0f6-455a-b4ae-21ffee6aa6b9.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Javascript in registry](tests/15f44ea9-4571-4837-be9e-802431a7bfae.md) ['windows'] (sigma rule :x:)
+[Javascript in registry](tests/15f44ea9-4571-4837-be9e-802431a7bfae.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Modify Registry of Local Machine - cmd](tests/282f929a-6bc5-42b8-bd93-960c3ba35afe.md) ['windows'] (sigma rule :x:)
+[Modify Registry of Local Machine - cmd](tests/282f929a-6bc5-42b8-bd93-960c3ba35afe.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Modify registry to store logon credentials](tests/c0413fb5-33e2-40b7-9b6f-60b29f4a7a18.md) ['windows'] (sigma rule :x:)
+[Modify registry to store logon credentials](tests/c0413fb5-33e2-40b7-9b6f-60b29f4a7a18.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Add domain to Trusted sites Zone](tests/cf447677-5a4e-4937-a82c-e47d254afd57.md) ['windows'] (sigma rule :x:)
+[Add domain to Trusted sites Zone](tests/cf447677-5a4e-4937-a82c-e47d254afd57.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Change Powershell Execution Policy to Bypass](tests/f3a6cceb-06c9-48e5-8df8-8867a6814245.md) ['windows'] (sigma rule :x:)
+[Change Powershell Execution Policy to Bypass](tests/f3a6cceb-06c9-48e5-8df8-8867a6814245.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1037.005
@@ -789,7 +817,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1221
-[WINWORD Remote Template Injection](tests/1489e08a-82c7-44ee-b769-51b72d03521d.md) ['windows'] (sigma rule :x:)
+[WINWORD Remote Template Injection](tests/1489e08a-82c7-44ee-b769-51b72d03521d.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1548.003
@@ -814,24 +842,56 @@ Caution: a test can generate a lot of noise...
 [Security Software Discovery - Sysmon Service](tests/fe613cf3-8009-4446-9a0f-bc78a15b66c9.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
+### T1018
+[Remote System Discovery - ip neighbour](tests/158bd4dd-6359-40ab-b13c-285b9ef6fa25.md) ['linux'] (sigma rule :x:)
+
+[Remote System Discovery - ip route](tests/1a4ebe70-31d0-417b-ade2-ef4cb3e7d0e1.md) ['linux'] (sigma rule :x:)
+
+[Remote System Discovery - arp](tests/2d5a61f5-0447-4be4-944a-1f8530ed6574.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Remote System Discovery - nltest](tests/52ab5108-3f6f-42fb-8ba3-73bc054f22c8.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Adfind - Enumerate Active Directory Domain Controller Objects](tests/5838c31e-a0e2-4b9f-b60a-d79d2cb7995e.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Remote System Discovery - ip tcp_metrics](tests/6c2da894-0b57-43cb-87af-46ea3b501388.md) ['linux'] (sigma rule :x:)
+
+[Remote System Discovery - ping sweep](tests/6db1f57f-d1d5-4223-8a66-55c9c65a9592.md) ['windows'] (sigma rule :x:)
+
+[Remote System Discovery - net](tests/85321a9c-897f-4a60-9f20-29788e50bccd.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Remote System Discovery - adidnsdump](tests/95e19466-469e-4316-86d2-1dc401b5a959.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Enumerate domain computers within Active Directory using DirectorySearcher](tests/962a6017-1c09-45a6-880b-adc9c57cb22e.md) ['windows'] (sigma rule :x:)
+
+[Remote System Discovery - sweep](tests/96db2632-8417-4dbb-b8bb-a8b92ba391de.md) ['linux', 'macos'] (sigma rule :x:)
+
+[Adfind - Enumerate Active Directory Computer Objects](tests/a889f5be-2d54-4050-bd05-884578748bb4.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Remote System Discovery - arp nix](tests/acb6b1ff-e2ad-4d64-806c-6c35fe73b951.md) ['linux', 'macos'] (sigma rule :x:)
+
+[Remote System Discovery - nslookup](tests/baa01aaa-5e13-45ec-8a0d-e46c93c9760f.md) ['windows'] (sigma rule :x:)
+
+[Remote System Discovery - net group Domain Computers](tests/f1bf6c8f-9016-4edf-aff9-80b65f5d711f.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+
 ### T1562.004
-[Opening ports for proxy - HARDRAIN](tests/15e57006-79dd-46df-9bf9-31bc24fb5a80.md) ['windows'] (sigma rule :x:)
+[Opening ports for proxy - HARDRAIN](tests/15e57006-79dd-46df-9bf9-31bc24fb5a80.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Tail the UFW firewall log file](tests/419cca0c-fa52-4572-b0d7-bc7c6f388a27.md) ['linux'] (sigma rule :x:)
 
-[Allow Executable Through Firewall Located in Non-Standard Location](tests/6f5822d2-d38d-4f48-9bfc-916607ff6b8c.md) ['windows'] (sigma rule :x:)
+[Allow Executable Through Firewall Located in Non-Standard Location](tests/6f5822d2-d38d-4f48-9bfc-916607ff6b8c.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Edit UFW firewall main configuration file](tests/7b697ece-8270-46b5-bbc7-6b9e27081831.md) ['linux'] (sigma rule :x:)
 
-[Disable Microsoft Defender Firewall](tests/88d05800-a5e4-407e-9b53-ece4174f197f.md) ['windows'] (sigma rule :x:)
+[Disable Microsoft Defender Firewall](tests/88d05800-a5e4-407e-9b53-ece4174f197f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Turn off UFW logging](tests/8a95b832-2c2a-494d-9cb0-dc9dd97c8bad.md) ['linux'] (sigma rule :x:)
 
-[Open a local port through Windows Firewall to any profile](tests/9636dd6e-7599-40d2-8eee-ac16434f35ed.md) ['windows'] (sigma rule :x:)
+[Open a local port through Windows Firewall to any profile](tests/9636dd6e-7599-40d2-8eee-ac16434f35ed.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Stop/Start UFW firewall systemctl](tests/9fd99609-1854-4f3c-b47b-97d9a5972bd1.md) ['linux'] (sigma rule :x:)
 
-[Disable Microsoft Defender Firewall via Registry](tests/afedc8c4-038c-4d82-b3e5-623a95f8a612.md) ['windows'] (sigma rule :x:)
+[Disable Microsoft Defender Firewall via Registry](tests/afedc8c4-038c-4d82-b3e5-623a95f8a612.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Add and delete UFW firewall rules](tests/b2563a4e-c4b8-429c-8d47-d5bcb227ba7a.md) ['linux'] (sigma rule :x:)
 
@@ -841,7 +901,7 @@ Caution: a test can generate a lot of noise...
 
 [Edit UFW firewall sysctl.conf file](tests/c4ae0701-88d3-4cd8-8bce-4801ed9f97e4.md) ['linux'] (sigma rule :x:)
 
-[Allow SMB and RDP on Microsoft Defender Firewall](tests/d9841bf8-f161-4c73-81e9-fd773a5ff8c1.md) ['windows'] (sigma rule :x:)
+[Allow SMB and RDP on Microsoft Defender Firewall](tests/d9841bf8-f161-4c73-81e9-fd773a5ff8c1.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Stop/Start UFW firewall](tests/fe135572-edcd-49a2-afe6-1d39521c5a9a.md) ['linux'] (sigma rule :x:)
 
@@ -893,7 +953,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1059.005
-[Visual Basic script execution to gather local computer information](tests/1620de42-160a-4fe5-bbaf-d3fef0181ce9.md) ['windows'] (sigma rule :x:)
+[Visual Basic script execution to gather local computer information](tests/1620de42-160a-4fe5-bbaf-d3fef0181ce9.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Extract Memory via VBA](tests/8faff437-a114-4547-9a60-749652a03df6.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -905,7 +965,7 @@ Caution: a test can generate a lot of noise...
 
 [DNS Regular Beaconing](tests/3efc144e-1af8-46bb-8ca2-1376bb6db8b6.md) ['windows'] (sigma rule :x:)
 
-[DNS C2](tests/e7bf9802-2e78-4db9-93b5-181b7bcd37d7.md) ['windows'] (sigma rule :x:)
+[DNS C2](tests/e7bf9802-2e78-4db9-93b5-181b7bcd37d7.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [DNS Long Domain Query](tests/fef31710-223a-40ee-8462-a396d6b66978.md) ['windows'] (sigma rule :x:)
 
@@ -943,21 +1003,21 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1220
-[WMIC bypass using local XSL file](tests/1b237334-3e21-4a0c-8178-b8c996124988.md) ['windows'] (sigma rule :x:)
+[WMIC bypass using local XSL file](tests/1b237334-3e21-4a0c-8178-b8c996124988.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[WMIC bypass using remote XSL file](tests/7f5be499-33be-4129-a560-66021f379b9b.md) ['windows'] (sigma rule :x:)
+[WMIC bypass using remote XSL file](tests/7f5be499-33be-4129-a560-66021f379b9b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[MSXSL Bypass using remote files](tests/a7c3ab07-52fb-49c8-ab6d-e9c6d4a0a985.md) ['windows'] (sigma rule :x:)
+[MSXSL Bypass using remote files](tests/a7c3ab07-52fb-49c8-ab6d-e9c6d4a0a985.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[MSXSL Bypass using local files](tests/ca23bfb2-023f-49c5-8802-e66997de462d.md) ['windows'] (sigma rule :x:)
+[MSXSL Bypass using local files](tests/ca23bfb2-023f-49c5-8802-e66997de462d.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1070.001
-[Clear Event Logs via VBA](tests/1b682d84-f075-4f93-9a89-8a8de19ffd6e.md) ['windows'] (sigma rule :x:)
+[Clear Event Logs via VBA](tests/1b682d84-f075-4f93-9a89-8a8de19ffd6e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Delete System Logs Using Clear-EventLog](tests/b13e9306-3351-4b4b-a6e8-477358b0b498.md) ['windows'] (sigma rule :x:)
+[Delete System Logs Using Clear-EventLog](tests/b13e9306-3351-4b4b-a6e8-477358b0b498.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Clear Logs](tests/e6abb60e-26b8-41da-8aae-0c35174b0967.md) ['windows'] (sigma rule :x:)
+[Clear Logs](tests/e6abb60e-26b8-41da-8aae-0c35174b0967.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1219
@@ -967,7 +1027,7 @@ Caution: a test can generate a lot of noise...
 
 [AnyDesk Files Detected Test on Windows](tests/6b8b7391-5c0a-4f8c-baee-78d8ce0ce330.md) ['windows'] (sigma rule :x:)
 
-[TeamViewer Files Detected Test on Windows](tests/8ca3b96d-8983-4a7f-b125-fc98cc0a2aa0.md) ['windows'] (sigma rule :x:)
+[TeamViewer Files Detected Test on Windows](tests/8ca3b96d-8983-4a7f-b125-fc98cc0a2aa0.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [LogMeIn Files Detected Test on Windows](tests/d03683ec-aae0-42f9-9b4c-534780e0f8e1.md) ['windows'] (sigma rule :x:)
 
@@ -993,15 +1053,15 @@ Caution: a test can generate a lot of noise...
 
 [Windows - Delete Volume Shadow Copies via WMI](tests/6a3ff8dd-f49c-4272-a658-11c2fe58bd88.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Windows - Delete Backup Files](tests/6b1dbaf6-cc8a-4ea6-891f-6058569653bf.md) ['windows'] (sigma rule :x:)
+[Windows - Delete Backup Files](tests/6b1dbaf6-cc8a-4ea6-891f-6058569653bf.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Windows - Disable Windows Recovery Console Repair](tests/cf21060a-80b3-4238-a595-22525de4ab81.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1055
-[Shellcode execution via VBA](tests/1c91e740-1729-4329-b779-feba6e71d048.md) ['windows'] (sigma rule :x:)
+[Shellcode execution via VBA](tests/1c91e740-1729-4329-b779-feba6e71d048.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Remote Process Injection in LSASS via mimikatz](tests/3203ad24-168e-4bec-be36-f79b13ef8a83.md) ['windows'] (sigma rule :x:)
+[Remote Process Injection in LSASS via mimikatz](tests/3203ad24-168e-4bec-be36-f79b13ef8a83.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1217
@@ -1017,19 +1077,25 @@ Caution: a test can generate a lot of noise...
 
 [List Google Chrome Bookmark JSON Files on macOS](tests/b789d341-154b-4a42-a071-9111588be9bc.md) ['macos'] (sigma rule :x:)
 
-[List Google Chrome Bookmarks on Windows with powershell](tests/faab755e-4299-48ec-8202-fc7885eb6545.md) ['windows'] (sigma rule :heavy_check_mark:)
+[List Google Chrome / Opera Bookmarks on Windows with powershell](tests/faab755e-4299-48ec-8202-fc7885eb6545.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+
+### T1048.002
+[Exfiltrate data HTTPS using curl windows](tests/1cdf2fb0-51b6-4fd8-96af-77020d5f1bf0.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Exfiltrate data HTTPS using curl linux](tests/4a4f31e2-46ea-4c26-ad89-f09ad1d5fe01.md) ['macos', 'linux'] (sigma rule :x:)
 
 
 ### T1048.003
 [Exfiltration Over Alternative Protocol - HTTP](tests/1d1abbd6-a3d3-4b2e-bef5-c59293f46eff.md) ['macos', 'linux'] (sigma rule :x:)
 
-[Exfiltration Over Alternative Protocol - HTTP](tests/6aa58451-1121-4490-a8e9-1dada3f1c68c.md) ['windows'] (sigma rule :x:)
+[Exfiltration Over Alternative Protocol - HTTP](tests/6aa58451-1121-4490-a8e9-1dada3f1c68c.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Exfiltration Over Alternative Protocol - DNS](tests/c403b5a4-b5fc-49f2-b181-d1c80d27db45.md) ['linux'] (sigma rule :x:)
 
-[Exfiltration Over Alternative Protocol - ICMP](tests/dd4b4421-2e25-4593-90ae-7021947ad12e.md) ['windows'] (sigma rule :x:)
+[Exfiltration Over Alternative Protocol - ICMP](tests/dd4b4421-2e25-4593-90ae-7021947ad12e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Exfiltration Over Alternative Protocol - SMTP](tests/ec3a835e-adca-4c7c-88d2-853b69c11bb9.md) ['windows'] (sigma rule :x:)
+[Exfiltration Over Alternative Protocol - SMTP](tests/ec3a835e-adca-4c7c-88d2-853b69c11bb9.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1124
@@ -1063,13 +1129,13 @@ Caution: a test can generate a lot of noise...
 
 [Set a file's creation timestamp](tests/8164a4a6-f99c-4661-ac4f-80f5e4e78d2b.md) ['linux', 'macos'] (sigma rule :x:)
 
-[Windows - Modify file creation timestamp with PowerShell](tests/b3b2c408-2ff0-4a33-b89b-1cb46a9e6a9c.md) ['windows'] (sigma rule :x:)
+[Windows - Modify file creation timestamp with PowerShell](tests/b3b2c408-2ff0-4a33-b89b-1cb46a9e6a9c.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Windows - Timestomp a File](tests/d7512c33-3a75-4806-9893-69abc3ccdd43.md) ['windows'] (sigma rule :x:)
+[Windows - Timestomp a File](tests/d7512c33-3a75-4806-9893-69abc3ccdd43.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Windows - Modify file last access timestamp with PowerShell](tests/da627f63-b9bd-4431-b6f8-c5b44d061a62.md) ['windows'] (sigma rule :x:)
+[Windows - Modify file last access timestamp with PowerShell](tests/da627f63-b9bd-4431-b6f8-c5b44d061a62.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Windows - Modify file last modified timestamp with PowerShell](tests/f8f6634d-93e1-4238-8510-f8a90a20dcf2.md) ['windows'] (sigma rule :x:)
+[Windows - Modify file last modified timestamp with PowerShell](tests/f8f6634d-93e1-4238-8510-f8a90a20dcf2.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1562.006
@@ -1081,11 +1147,13 @@ Caution: a test can generate a lot of noise...
 ### T1003.003
 [Create Symlink to Volume Shadow Copy](tests/21748c28-2793-4284-9e07-d6d028b66702.md) ['windows'] (sigma rule :heavy_check_mark:)
 
+[Create Volume Shadow Copy remotely (WMI) with esentutl](tests/21c7bf80-3e8b-40fa-8f9d-f5b194ff2865.md) ['windows'] (sigma rule :heavy_check_mark:)
+
 [Create Volume Shadow Copy with WMI](tests/224f7de0-8f0a-4a94-b5d8-989b036c86da.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Dump Active Directory Database with NTDSUtil](tests/2364e33d-ceab-4641-8468-bfb1d7cc2723.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Create Volume Shadow Copy with Powershell](tests/542bb97e-da53-436b-8e43-e0a7d31a6c24.md) ['windows'] (sigma rule :x:)
+[Create Volume Shadow Copy with Powershell](tests/542bb97e-da53-436b-8e43-e0a7d31a6c24.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Copy NTDS.dit from Volume Shadow Copy](tests/c6237146-9ea6-4711-85c9-c56d263a6b03.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1095,7 +1163,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1573
-[OpenSSL C2](tests/21caf58e-87ad-440c-a6b8-3ac259964003.md) ['windows'] (sigma rule :x:)
+[OpenSSL C2](tests/21caf58e-87ad-440c-a6b8-3ac259964003.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1489
@@ -1107,13 +1175,13 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1571
-[Testing usage of uncommonly used port with PowerShell](tests/21fe622f-8e53-4b31-ba83-6d333c2583f4.md) ['windows'] (sigma rule :x:)
+[Testing usage of uncommonly used port with PowerShell](tests/21fe622f-8e53-4b31-ba83-6d333c2583f4.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Testing usage of uncommonly used port](tests/5db21e1d-dd9c-4a50-b885-b1e748912767.md) ['linux', 'macos'] (sigma rule :x:)
 
 
 ### T1082
-[Windows MachineGUID Discovery](tests/224b4daf-db44-404e-b6b2-f4d1f0126ef8.md) ['windows'] (sigma rule :x:)
+[Windows MachineGUID Discovery](tests/224b4daf-db44-404e-b6b2-f4d1f0126ef8.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Linux VM Check via Hardware](tests/31dad7ad-2286-4c02-ae92-274418c85fec.md) ['linux'] (sigma rule :x:)
 
@@ -1137,21 +1205,27 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1218.011
-[Execution of HTA and VBS Files using Rundll32 and URL.dll](tests/22cfde89-befe-4e15-9753-47306b37a6e3.md) ['windows'] (sigma rule :x:)
+[Execution of HTA and VBS Files using Rundll32 and URL.dll](tests/22cfde89-befe-4e15-9753-47306b37a6e3.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Rundll32 syssetup.dll Execution](tests/41fa324a-3946-401e-bbdd-d7991c628125.md) ['windows'] (sigma rule :x:)
+[Rundll32 syssetup.dll Execution](tests/41fa324a-3946-401e-bbdd-d7991c628125.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Rundll32 ieadvpack.dll Execution](tests/5e46a58e-cbf6-45ef-a289-ed7754603df9.md) ['windows'] (sigma rule :x:)
+[Rundll32 ieadvpack.dll Execution](tests/5e46a58e-cbf6-45ef-a289-ed7754603df9.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Rundll32 execute VBscript command](tests/638730e7-7aed-43dc-bf8c-8117f805f5bb.md) ['windows'] (sigma rule :x:)
+[Rundll32 execute VBscript command](tests/638730e7-7aed-43dc-bf8c-8117f805f5bb.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Rundll32 setupapi.dll Execution](tests/71d771cd-d6b3-4f34-bc76-a63d47a10b19.md) ['windows'] (sigma rule :x:)
+[Rundll32 setupapi.dll Execution](tests/71d771cd-d6b3-4f34-bc76-a63d47a10b19.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Launches an executable using Rundll32 and pcwutl.dll](tests/9f5d081a-ee5a-42f9-a04e-b7bdc487e676.md) ['windows'] (sigma rule :x:)
+[Launches an executable using Rundll32 and pcwutl.dll](tests/9f5d081a-ee5a-42f9-a04e-b7bdc487e676.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Rundll32 execute JavaScript Remote Payload With GetObject](tests/cf3bdb9a-dd11-4b6c-b0d0-9e22b68a71be.md) ['windows'] (sigma rule :x:)
+[Rundll32 with Ordinal Value](tests/9fd5a74b-ba89-482a-8a3e-a5feaa3697b0.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Rundll32 advpack.dll Execution](tests/d91cae26-7fc1-457b-a854-34c8aad48c89.md) ['windows'] (sigma rule :x:)
+[Execution of non-dll using rundll32.exe](tests/ae3a8605-b26e-457c-b6b3-2702fd335bac.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Rundll32 execute JavaScript Remote Payload With GetObject](tests/cf3bdb9a-dd11-4b6c-b0d0-9e22b68a71be.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Rundll32 advpack.dll Execution](tests/d91cae26-7fc1-457b-a854-34c8aad48c89.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Rundll32 with Control_RunDLL](tests/e4c04b6f-c492-4782-82c7-3bf75eb8077e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1555
@@ -1167,45 +1241,45 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1548.002
-[UACME Bypass Method 56](tests/235ec031-cd2d-465d-a7ae-68bab281e80e.md) ['windows'] (sigma rule :x:)
+[UACME Bypass Method 56](tests/235ec031-cd2d-465d-a7ae-68bab281e80e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Bypass UAC using SilentCleanup task](tests/28104f8a-4ff1-4582-bcf6-699dce156608.md) ['windows'] (sigma rule :x:)
+[Bypass UAC using SilentCleanup task](tests/28104f8a-4ff1-4582-bcf6-699dce156608.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Bypass UAC using sdclt DelegateExecute](tests/3be891eb-4608-4173-87e8-78b494c029b7.md) ['windows'] (sigma rule :x:)
+[Bypass UAC using sdclt DelegateExecute](tests/3be891eb-4608-4173-87e8-78b494c029b7.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Bypass UAC using ComputerDefaults (PowerShell)](tests/3c51abf2-44bf-42d8-9111-dc96ff66750f.md) ['windows'] (sigma rule :x:)
+[Bypass UAC using ComputerDefaults (PowerShell)](tests/3c51abf2-44bf-42d8-9111-dc96ff66750f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Bypass UAC using Fodhelper - PowerShell](tests/3f627297-6c38-4e7d-a278-fc2563eaaeaa.md) ['windows'] (sigma rule :x:)
+[Bypass UAC using Fodhelper - PowerShell](tests/3f627297-6c38-4e7d-a278-fc2563eaaeaa.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Bypass UAC using Event Viewer (cmd)](tests/5073adf8-9a50-4bd9-b298-a9bd2ead8af9.md) ['windows'] (sigma rule :x:)
+[Bypass UAC using Event Viewer (cmd)](tests/5073adf8-9a50-4bd9-b298-a9bd2ead8af9.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[UACME Bypass Method 39](tests/56163687-081f-47da-bb9c-7b231c5585cf.md) ['windows'] (sigma rule :x:)
+[UACME Bypass Method 39](tests/56163687-081f-47da-bb9c-7b231c5585cf.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Bypass UAC using Fodhelper](tests/58f641ea-12e3-499a-b684-44dee46bd182.md) ['windows'] (sigma rule :x:)
+[Bypass UAC using Fodhelper](tests/58f641ea-12e3-499a-b684-44dee46bd182.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[UACME Bypass Method 34](tests/695b2dac-423e-448e-b6ef-5b88e93011d6.md) ['windows'] (sigma rule :x:)
+[UACME Bypass Method 34](tests/695b2dac-423e-448e-b6ef-5b88e93011d6.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[UACME Bypass Method 61](tests/7825b576-744c-4555-856d-caf3460dc236.md) ['windows'] (sigma rule :x:)
+[UACME Bypass Method 61](tests/7825b576-744c-4555-856d-caf3460dc236.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[UACME Bypass Method 23](tests/8ceab7a2-563a-47d2-b5ba-0995211128d7.md) ['windows'] (sigma rule :x:)
+[UACME Bypass Method 23](tests/8ceab7a2-563a-47d2-b5ba-0995211128d7.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Disable UAC using reg.exe](tests/9e8af564-53ec-407e-aaa8-3cb20c3af7f9.md) ['windows'] (sigma rule :x:)
+[Disable UAC using reg.exe](tests/9e8af564-53ec-407e-aaa8-3cb20c3af7f9.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Bypass UAC using Event Viewer (PowerShell)](tests/a6ce9acf-842a-4af6-8f79-539be7608e2b.md) ['windows'] (sigma rule :x:)
+[Bypass UAC using Event Viewer (PowerShell)](tests/a6ce9acf-842a-4af6-8f79-539be7608e2b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[UACME Bypass Method 31](tests/b0f76240-9f33-4d34-90e8-3a7d501beb15.md) ['windows'] (sigma rule :x:)
+[UACME Bypass Method 31](tests/b0f76240-9f33-4d34-90e8-3a7d501beb15.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[UACME Bypass Method 59](tests/dfb1b667-4bb8-4a63-a85e-29936ea75f29.md) ['windows'] (sigma rule :x:)
+[UACME Bypass Method 59](tests/dfb1b667-4bb8-4a63-a85e-29936ea75f29.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[UACME Bypass Method 33](tests/e514bb03-f71c-4b22-9092-9f961ec6fb03.md) ['windows'] (sigma rule :x:)
+[UACME Bypass Method 33](tests/e514bb03-f71c-4b22-9092-9f961ec6fb03.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Bypass UAC by Mocking Trusted Directories](tests/f7a35090-6f7f-4f64-bb47-d657bf5b10c1.md) ['windows'] (sigma rule :x:)
+[Bypass UAC by Mocking Trusted Directories](tests/f7a35090-6f7f-4f64-bb47-d657bf5b10c1.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1569.002
-[Execute a Command as a Service](tests/2382dee2-a75f-49aa-9378-f52df6ed3fb1.md) ['windows'] (sigma rule :x:)
+[Execute a Command as a Service](tests/2382dee2-a75f-49aa-9378-f52df6ed3fb1.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Use PsExec to execute a command on a remote host](tests/873106b7-cfed-454b-8680-fa9f6400431c.md) ['windows'] (sigma rule :x:)
+[Use PsExec to execute a command on a remote host](tests/873106b7-cfed-454b-8680-fa9f6400431c.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1546.014
@@ -1215,7 +1289,7 @@ Caution: a test can generate a lot of noise...
 ### T1070.003
 [Clear Bash history (ln dev/null)](tests/23d348f3-cc5c-4ba9-bd0a-ae09069f0914.md) ['linux', 'macos'] (sigma rule :x:)
 
-[Prevent Powershell History Logging](tests/2f898b81-3e97-4abb-bc3f-a95138988370.md) ['windows'] (sigma rule :x:)
+[Prevent Powershell History Logging](tests/2f898b81-3e97-4abb-bc3f-a95138988370.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Clear Bash history (truncate)](tests/47966a1d-df4f-4078-af65-db6d9aa20739.md) ['linux'] (sigma rule :x:)
 
@@ -1233,31 +1307,31 @@ Caution: a test can generate a lot of noise...
 
 [Clear Bash history (echo)](tests/cbf506a5-dd78-43e5-be7e-a46b7c7a0a11.md) ['linux'] (sigma rule :x:)
 
-[Clear Powershell History by Deleting History File](tests/da75ae8d-26d6-4483-b0fe-700e4df4f037.md) ['windows'] (sigma rule :x:)
+[Clear Powershell History by Deleting History File](tests/da75ae8d-26d6-4483-b0fe-700e4df4f037.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1036.003
-[Masquerading - wscript.exe running as svchost.exe](tests/24136435-c91a-4ede-9da1-8b284a1c1a23.md) ['windows'] (sigma rule :x:)
+[Masquerading - wscript.exe running as svchost.exe](tests/24136435-c91a-4ede-9da1-8b284a1c1a23.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Masquerading - cscript.exe running as notepad.exe](tests/3a2a578b-0a01-46e4-92e3-62e2859b42f0.md) ['windows'] (sigma rule :x:)
+[Masquerading - cscript.exe running as notepad.exe](tests/3a2a578b-0a01-46e4-92e3-62e2859b42f0.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Masquerading as Windows LSASS process](tests/5ba5a3d1-cf3c-4499-968a-a93155d1f717.md) ['windows'] (sigma rule :x:)
+[Masquerading as Windows LSASS process](tests/5ba5a3d1-cf3c-4499-968a-a93155d1f717.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Malicious process Masquerading as LSM.exe](tests/83810c46-f45e-4485-9ab6-8ed0e9e6ed7f.md) ['windows'] (sigma rule :x:)
+[Malicious process Masquerading as LSM.exe](tests/83810c46-f45e-4485-9ab6-8ed0e9e6ed7f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Masquerading as Linux crond process.](tests/a315bfff-7a98-403b-b442-2ea1b255e556.md) ['linux'] (sigma rule :x:)
 
-[Masquerading - powershell.exe running as taskhostw.exe](tests/ac9d0fc3-8aa8-4ab5-b11f-682cd63b40aa.md) ['windows'] (sigma rule :x:)
+[Masquerading - powershell.exe running as taskhostw.exe](tests/ac9d0fc3-8aa8-4ab5-b11f-682cd63b40aa.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Masquerading - non-windows exe running as windows exe](tests/bc15c13f-d121-4b1f-8c7d-28d95854d086.md) ['windows'] (sigma rule :x:)
+[Masquerading - non-windows exe running as windows exe](tests/bc15c13f-d121-4b1f-8c7d-28d95854d086.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Masquerading - windows exe running as different windows exe](tests/c3d24a39-2bfe-4c6a-b064-90cd73896cb0.md) ['windows'] (sigma rule :x:)
+[Masquerading - windows exe running as different windows exe](tests/c3d24a39-2bfe-4c6a-b064-90cd73896cb0.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[File Extension Masquerading](tests/c7fa0c3b-b57f-4cba-9118-863bf4e653fc.md) ['windows'] (sigma rule :x:)
+[File Extension Masquerading](tests/c7fa0c3b-b57f-4cba-9118-863bf4e653fc.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1218.008
-[Odbcconf.exe - Execute Arbitrary DLL](tests/2430498b-06c0-4b92-a448-8ad263c388e2.md) ['windows'] (sigma rule :x:)
+[Odbcconf.exe - Execute Arbitrary DLL](tests/2430498b-06c0-4b92-a448-8ad263c388e2.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1547.001
@@ -1287,9 +1361,9 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1216
-[SyncAppvPublishingServer Signed Script PowerShell Command Execution](tests/275d963d-3f36-476c-8bef-a2a3960ee6eb.md) ['windows'] (sigma rule :x:)
+[SyncAppvPublishingServer Signed Script PowerShell Command Execution](tests/275d963d-3f36-476c-8bef-a2a3960ee6eb.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[manage-bde.wsf Signed Script Command Execution](tests/2a8f2d3c-3dec-4262-99dd-150cb2a4d63a.md) ['windows'] (sigma rule :x:)
+[manage-bde.wsf Signed Script Command Execution](tests/2a8f2d3c-3dec-4262-99dd-150cb2a4d63a.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1574.009
@@ -1301,7 +1375,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1555.003
-[Simulating access to Opera Login Data](tests/28498c17-57e4-495a-b0be-cc1e36de408b.md) ['windows'] (sigma rule :x:)
+[Simulating access to Opera Login Data](tests/28498c17-57e4-495a-b0be-cc1e36de408b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Simulating access to Chrome Login Data](tests/3d111226-d09a-4911-8715-fe11664f960d.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1309,7 +1383,11 @@ Caution: a test can generate a lot of noise...
 
 [LaZagne - Credentials from Browser](tests/9a2915b3-3954-4cce-8c76-00fbf4dbd014.md) ['windows'] (sigma rule :heavy_check_mark:)
 
+[Simulating access to Windows Edge Login Data](tests/a6a5ec26-a2d1-4109-9d35-58b867689329.md) ['windows'] (sigma rule :heavy_check_mark:)
+
 [Search macOS Safari Cookies](tests/c1402f7b-67ca-43a8-b5f3-3143abedc01b.md) ['macos'] (sigma rule :x:)
+
+[Simulating access to Windows Firefox Login Data](tests/eb8da98a-2e16-4551-b3dd-83de49baa14c.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1033
@@ -1327,7 +1405,7 @@ Caution: a test can generate a lot of noise...
 
 [Private Keys](tests/520ce462-7ca7-441e-b5a5-f8347f632696.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[ADFS token signing and encryption certificates theft - Local](tests/78e95057-d429-4e66-8f82-0f060c1ac96f.md) ['windows'] (sigma rule :x:)
+[ADFS token signing and encryption certificates theft - Local](tests/78e95057-d429-4e66-8f82-0f060c1ac96f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Copy Private SSH Keys with CP](tests/7c247dc7-5128-4643-907b-73a76d9135c3.md) ['linux'] (sigma rule :x:)
 
@@ -1346,36 +1424,12 @@ Caution: a test can generate a lot of noise...
 [Win32_PnPEntity Hardware Inventory](tests/2cb4dbf2-2dca-4597-8678-4d39d207a3a5.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
-### T1018
-[Remote System Discovery - arp](tests/2d5a61f5-0447-4be4-944a-1f8530ed6574.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[Remote System Discovery - nltest](tests/52ab5108-3f6f-42fb-8ba3-73bc054f22c8.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[Adfind - Enumerate Active Directory Domain Controller Objects](tests/5838c31e-a0e2-4b9f-b60a-d79d2cb7995e.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[Remote System Discovery - ping sweep](tests/6db1f57f-d1d5-4223-8a66-55c9c65a9592.md) ['windows'] (sigma rule :x:)
-
-[Remote System Discovery - net](tests/85321a9c-897f-4a60-9f20-29788e50bccd.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[Remote System Discovery - adidnsdump](tests/95e19466-469e-4316-86d2-1dc401b5a959.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[Remote System Discovery - sweep](tests/96db2632-8417-4dbb-b8bb-a8b92ba391de.md) ['linux', 'macos'] (sigma rule :x:)
-
-[Adfind - Enumerate Active Directory Computer Objects](tests/a889f5be-2d54-4050-bd05-884578748bb4.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[Remote System Discovery - arp nix](tests/acb6b1ff-e2ad-4d64-806c-6c35fe73b951.md) ['linux', 'macos'] (sigma rule :x:)
-
-[Remote System Discovery - nslookup](tests/baa01aaa-5e13-45ec-8a0d-e46c93c9760f.md) ['windows'] (sigma rule :x:)
-
-[Remote System Discovery - net group Domain Computers](tests/f1bf6c8f-9016-4edf-aff9-80b65f5d711f.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-
 ### T1071.001
 [Malicious User Agents - Nix](tests/2d7c471a-e887-4b78-b0dc-b0df1f2e0658.md) ['linux', 'macos'] (sigma rule :x:)
 
-[Malicious User Agents - Powershell](tests/81c13829-f6c9-45b8-85a6-053366d55297.md) ['windows'] (sigma rule :x:)
+[Malicious User Agents - Powershell](tests/81c13829-f6c9-45b8-85a6-053366d55297.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Malicious User Agents - CMD](tests/dc3488b0-08c7-4fea-b585-905c83b48180.md) ['windows'] (sigma rule :x:)
+[Malicious User Agents - CMD](tests/dc3488b0-08c7-4fea-b585-905c83b48180.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1053.003
@@ -1401,21 +1455,21 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1564
-[Create a Hidden User Called "$"](tests/2ec63cc2-4975-41a6-bf09-dffdfb610778.md) ['windows'] (sigma rule :x:)
+[Create a Hidden User Called "$"](tests/2ec63cc2-4975-41a6-bf09-dffdfb610778.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Create an "Administrator " user (with a space on the end)](tests/5bb20389-39a5-4e99-9264-aeb92a55a85c.md) ['windows'] (sigma rule :x:)
+[Create an "Administrator " user (with a space on the end)](tests/5bb20389-39a5-4e99-9264-aeb92a55a85c.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Extract binary files via VBA](tests/6afe288a-8a8b-4d33-a629-8d03ba9dad3a.md) ['windows'] (sigma rule :x:)
+[Extract binary files via VBA](tests/6afe288a-8a8b-4d33-a629-8d03ba9dad3a.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1021.001
-[Changing RDP Port to Non Standard Port via Powershell](tests/2f840dd4-8a2e-4f44-beb3-6b2399ea3771.md) ['windows'] (sigma rule :x:)
+[Changing RDP Port to Non Standard Port via Powershell](tests/2f840dd4-8a2e-4f44-beb3-6b2399ea3771.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[RDP to DomainController](tests/355d4632-8cb9-449d-91ce-b566d0253d3e.md) ['windows'] (sigma rule :x:)
+[RDP to DomainController](tests/355d4632-8cb9-449d-91ce-b566d0253d3e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[RDP to Server](tests/7382a43e-f19c-46be-8f09-5c63af7d3e2b.md) ['windows'] (sigma rule :x:)
+[RDP to Server](tests/7382a43e-f19c-46be-8f09-5c63af7d3e2b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Changing RDP Port to Non Standard Port via Command_Prompt](tests/74ace21e-a31c-4f7d-b540-53e4eb6d1f73.md) ['windows'] (sigma rule :x:)
+[Changing RDP Port to Non Standard Port via Command_Prompt](tests/74ace21e-a31c-4f7d-b540-53e4eb6d1f73.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1491.001
@@ -1435,15 +1489,15 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1222.001
-[attrib - hide file](tests/32b979da-7b68-42c9-9a99-0e39900fc36c.md) ['windows'] (sigma rule :x:)
+[attrib - hide file](tests/32b979da-7b68-42c9-9a99-0e39900fc36c.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Take ownership using takeown utility](tests/98d34bb4-6e75-42ad-9c41-1dae7dc6a001.md) ['windows'] (sigma rule :x:)
+[Take ownership using takeown utility](tests/98d34bb4-6e75-42ad-9c41-1dae7dc6a001.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[cacls - Grant permission to specified user or group recursively](tests/a8206bcc-f282-40a9-a389-05d9c0263485.md) ['windows'] (sigma rule :x:)
+[cacls - Grant permission to specified user or group recursively](tests/a8206bcc-f282-40a9-a389-05d9c0263485.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Grant Full Access to folder for Everyone - Ryuk Ransomware Style](tests/ac7e6118-473d-41ec-9ac0-ef4f1d1ed2f6.md) ['windows'] (sigma rule :x:)
+[Grant Full Access to folder for Everyone - Ryuk Ransomware Style](tests/ac7e6118-473d-41ec-9ac0-ef4f1d1ed2f6.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[attrib - Remove read-only attribute](tests/bec1e95c-83aa-492e-ab77-60c71bbd21b0.md) ['windows'] (sigma rule :x:)
+[attrib - Remove read-only attribute](tests/bec1e95c-83aa-492e-ab77-60c71bbd21b0.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1546.008
@@ -1457,15 +1511,15 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1218.003
-[CMSTP Executing Remote Scriptlet](tests/34e63321-9683-496b-bbc1-7566bc55e624.md) ['windows'] (sigma rule :x:)
+[CMSTP Executing Remote Scriptlet](tests/34e63321-9683-496b-bbc1-7566bc55e624.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[CMSTP Executing UAC Bypass](tests/748cb4f6-2fb3-4e97-b7ad-b22635a09ab0.md) ['windows'] (sigma rule :x:)
+[CMSTP Executing UAC Bypass](tests/748cb4f6-2fb3-4e97-b7ad-b22635a09ab0.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1134.001
-[`SeDebugPrivilege` token duplication](tests/34f0a430-9d04-4d98-bcb5-1989f14719f0.md) ['windows'] (sigma rule :x:)
+[`SeDebugPrivilege` token duplication](tests/34f0a430-9d04-4d98-bcb5-1989f14719f0.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Named pipe client impersonation](tests/90db9e27-8e7c-4c04-b602-a45927884966.md) ['windows'] (sigma rule :x:)
+[Named pipe client impersonation](tests/90db9e27-8e7c-4c04-b602-a45927884966.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1059.002
@@ -1493,9 +1547,9 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1055.012
-[RunPE via VBA](tests/3ad4a037-1598-4136-837c-4027e4fa319b.md) ['windows'] (sigma rule :x:)
+[RunPE via VBA](tests/3ad4a037-1598-4136-837c-4027e4fa319b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Process Hollowing using PowerShell](tests/562427b4-39ef-4e8c-af88-463a78e70b9c.md) ['windows'] (sigma rule :x:)
+[Process Hollowing using PowerShell](tests/562427b4-39ef-4e8c-af88-463a78e70b9c.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1564.001
@@ -1509,9 +1563,9 @@ Caution: a test can generate a lot of noise...
 
 [Mac Hidden file](tests/cddb9098-3b47-4e01-9d3b-6f5f323288a9.md) ['macos'] (sigma rule :x:)
 
-[Create Windows Hidden File with Attrib](tests/dadb792e-4358-4d8d-9207-b771faa0daa5.md) ['windows'] (sigma rule :x:)
+[Create Windows Hidden File with Attrib](tests/dadb792e-4358-4d8d-9207-b771faa0daa5.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Create Windows System File with Attrib](tests/f70974c8-c094-4574-b542-2c545af95a32.md) ['windows'] (sigma rule :x:)
+[Create Windows System File with Attrib](tests/f70974c8-c094-4574-b542-2c545af95a32.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1546.003
@@ -1542,6 +1596,20 @@ Caution: a test can generate a lot of noise...
 [Firefox](tests/cb790029-17e6-4c43-b96f-002ce5f10938.md) ['linux', 'windows', 'macos'] (sigma rule :x:)
 
 
+### T1562.002
+[Makes Eventlog blind with Phant0m](tests/3ddf3d03-f5d6-462a-ad76-2c5ff7b6d741.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Kill Event Log Service Threads](tests/41ac52ba-5d5e-40c0-b267-573ed90489bd.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Impair Windows Audit Log Policy](tests/5102a3a7-e2d7-4129-9e45-f483f2e0eea8.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Disable Windows IIS HTTP Logging](tests/69435dcf-c66f-4ec0-a8b1-82beb76b34db.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Clear Windows Audit Policy Config](tests/913c0e4e-4b37-4b78-ad0b-90e7b25010f6.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Disable Event Logging with wevtutil](tests/b26a3340-dad7-4360-9176-706269c74103.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+
 ### T1053.006
 [Create a user level transient systemd service and timer](tests/3de33f5b-62e5-4e63-a2a0-6fd8808c80ec.md) ['linux'] (sigma rule :x:)
 
@@ -1556,18 +1624,6 @@ Caution: a test can generate a lot of noise...
 
 ### T1560
 [Compress Data for Exfiltration With PowerShell](tests/41410c60-614d-4b9d-b66e-b0192dd9c597.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-
-### T1562.002
-[Kill Event Log Service Threads](tests/41ac52ba-5d5e-40c0-b267-573ed90489bd.md) ['windows'] (sigma rule :x:)
-
-[Impair Windows Audit Log Policy](tests/5102a3a7-e2d7-4129-9e45-f483f2e0eea8.md) ['windows'] (sigma rule :x:)
-
-[Disable Windows IIS HTTP Logging](tests/69435dcf-c66f-4ec0-a8b1-82beb76b34db.md) ['windows'] (sigma rule :x:)
-
-[Clear Windows Audit Policy Config](tests/913c0e4e-4b37-4b78-ad0b-90e7b25010f6.md) ['windows'] (sigma rule :x:)
-
-[Disable Event Logging with wevtutil](tests/b26a3340-dad7-4360-9176-706269c74103.md) ['windows'] (sigma rule :x:)
 
 
 ### T1564.002
@@ -1596,8 +1652,14 @@ Caution: a test can generate a lot of noise...
 [Code Executed Via Excel Add-in File (Xll)](tests/441b1a0f-a771-428a-8af0-e99e4698cda3.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
+### T1036
+[Malware Masquerading and Execution from Zip File](tests/4449c89b-ec82-43a4-89c1-91e2f1abeecc.md) ['windows'] (sigma rule :x:)
+
+[System File Copied to Unusual Location](tests/51005ac7-52e2-45e0-bdab-d17c6d4916cd.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+
 ### T1027.004
-[Dynamic C# Compile](tests/453614d8-3ba6-4147-acc0-7ec4b3e1faef.md) ['windows'] (sigma rule :x:)
+[Dynamic C# Compile](tests/453614d8-3ba6-4147-acc0-7ec4b3e1faef.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Go compile](tests/78bd3fa7-773c-449e-a978-dc1f1500bc52.md) ['linux', 'macos'] (sigma rule :x:)
 
@@ -1605,7 +1667,17 @@ Caution: a test can generate a lot of noise...
 
 [CC compile](tests/da97bb11-d6d0-4fc1-b445-e443d1346efe.md) ['linux', 'macos'] (sigma rule :x:)
 
-[Compile After Delivery using csc.exe](tests/ffcdbd6a-b0e8-487d-927a-09127fe9a206.md) ['windows'] (sigma rule :x:)
+[Compile After Delivery using csc.exe](tests/ffcdbd6a-b0e8-487d-927a-09127fe9a206.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+
+### T1059.004
+[Harvest SUID executable files](tests/46274fc6-08a7-4956-861b-24cbbaa0503c.md) ['linux'] (sigma rule :x:)
+
+[Create and Execute Bash Shell Script](tests/7e7ac3ed-f795-4fa5-b711-09d6fbe9b873.md) ['macos', 'linux'] (sigma rule :x:)
+
+[LinEnum tool execution](tests/a2b35a63-9df1-4806-9a4d-5fe0500845f2.md) ['linux'] (sigma rule :x:)
+
+[Command-Line Interface](tests/d0c88567-803d-4dca-99b4-7ce65e7b257c.md) ['macos', 'linux'] (sigma rule :x:)
 
 
 ### T1562.003
@@ -1648,6 +1720,10 @@ Caution: a test can generate a lot of noise...
 [Restart System - Windows](tests/f4648f0d-bf78-483c-bafc-3ec99cd1c302.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
+### T1546.015
+[COM Hijacking - InprocServer32](tests/48117158-d7be-441b-bc6a-d9e36e47b52b.md) ['windows'] (sigma rule :x:)
+
+
 ### T1187
 [PetitPotam](tests/485ce873-2e65-4706-9c7e-ae3ab9e14213.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1659,9 +1735,17 @@ Caution: a test can generate a lot of noise...
 
 [Modify Fax service to run PowerShell](tests/ed366cde-7d12-49df-a833-671904770b9f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
+[TinyTurla backdoor service w64time](tests/ef0581fd-528e-4662-87bc-4c2affb86940.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-### T1048.002
-[Exfiltrate data HTTPS using curl](tests/4a4f31e2-46ea-4c26-ad89-f09ad1d5fe01.md) ['windows', 'macos', 'linux'] (sigma rule :x:)
+
+### T1497.001
+[Detect Virtualization Environment via WMI Manufacturer/Model Listing (Windows)](tests/4a41089a-48e0-47aa-82cb-5b81a463bc78.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Detect Virtualization Environment (Windows)](tests/502a7dc4-9d6f-4d28-abf2-f0e84692562d.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Detect Virtualization Environment (MacOS)](tests/a960185f-aef6-4547-8350-d1ce16680d09.md) ['macos'] (sigma rule :x:)
+
+[Detect Virtualization Environment (Linux)](tests/dfbd1a21-540d-4574-9731-e852bd6fe840.md) ['linux'] (sigma rule :x:)
 
 
 ### T1053.002
@@ -1679,21 +1763,21 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1218
-[Renamed Microsoft.Workflow.Compiler.exe Payload Executions](tests/4cc40fd7-87b8-4b16-b2d7-57534b86b911.md) ['windows'] (sigma rule :x:)
+[Renamed Microsoft.Workflow.Compiler.exe Payload Executions](tests/4cc40fd7-87b8-4b16-b2d7-57534b86b911.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[InfDefaultInstall.exe .inf Execution](tests/54ad7d5a-a1b5-472c-b6c4-f8090fb2daef.md) ['windows'] (sigma rule :x:)
+[InfDefaultInstall.exe .inf Execution](tests/54ad7d5a-a1b5-472c-b6c4-f8090fb2daef.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Microsoft.Workflow.Compiler.exe Payload Execution](tests/7cbb0f26-a4c1-4f77-b180-a009aa05637e.md) ['windows'] (sigma rule :x:)
+[Microsoft.Workflow.Compiler.exe Payload Execution](tests/7cbb0f26-a4c1-4f77-b180-a009aa05637e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Invoke-ATHRemoteFXvGPUDisablementCommand base test](tests/9ebe7901-7edf-45c0-b5c7-8366300919db.md) ['windows'] (sigma rule :x:)
+[Invoke-ATHRemoteFXvGPUDisablementCommand base test](tests/9ebe7901-7edf-45c0-b5c7-8366300919db.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Register-CimProvider - Execute evil dll](tests/ad2c17ed-f626-4061-b21e-b9804a6f3655.md) ['windows'] (sigma rule :x:)
+[Register-CimProvider - Execute evil dll](tests/ad2c17ed-f626-4061-b21e-b9804a6f3655.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[mavinject - Inject DLL into running process](tests/c426dacf-575d-4937-8611-a148a86a5e61.md) ['windows'] (sigma rule :x:)
+[mavinject - Inject DLL into running process](tests/c426dacf-575d-4937-8611-a148a86a5e61.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[SyncAppvPublishingServer - Execute arbitrary PowerShell code](tests/d590097e-d402-44e2-ad72-2c6aa1ce78b1.md) ['windows'] (sigma rule :x:)
+[SyncAppvPublishingServer - Execute arbitrary PowerShell code](tests/d590097e-d402-44e2-ad72-2c6aa1ce78b1.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[ProtocolHandler.exe Downloaded a Suspicious File](tests/db020456-125b-4c8b-a4a7-487df8afb5a2.md) ['windows'] (sigma rule :x:)
+[ProtocolHandler.exe Downloaded a Suspicious File](tests/db020456-125b-4c8b-a4a7-487df8afb5a2.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1110.004
@@ -1708,18 +1792,6 @@ Caution: a test can generate a lot of noise...
 [Process Discovery - tasklist](tests/c5806a4f-62b8-4900-980b-c7ec004e9908.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
-### T1497.001
-[Detect Virtualization Environment (Windows)](tests/502a7dc4-9d6f-4d28-abf2-f0e84692562d.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[Detect Virtualization Environment (MacOS)](tests/a960185f-aef6-4547-8350-d1ce16680d09.md) ['macos'] (sigma rule :x:)
-
-[Detect Virtualization Environment (Linux)](tests/dfbd1a21-540d-4574-9731-e852bd6fe840.md) ['linux'] (sigma rule :x:)
-
-
-### T1036
-[System File Copied to Unusual Location](tests/51005ac7-52e2-45e0-bdab-d17c6d4916cd.md) ['windows'] (sigma rule :x:)
-
-
 ### T1046
 [Port Scan Nmap](tests/515942b0-a09f-4163-a7bb-22fefb6f185f.md) ['linux', 'macos'] (sigma rule :heavy_check_mark:)
 
@@ -1731,19 +1803,19 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1021.006
-[Invoke-Command](tests/5295bd61-bd7e-4744-9d52-85962a4cf2d6.md) ['windows'] (sigma rule :x:)
+[Invoke-Command](tests/5295bd61-bd7e-4744-9d52-85962a4cf2d6.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Enable Windows Remote Management](tests/9059e8de-3d7d-4954-a322-46161880b9cf.md) ['windows'] (sigma rule :x:)
+[Enable Windows Remote Management](tests/9059e8de-3d7d-4954-a322-46161880b9cf.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[WinRM Access with Evil-WinRM](tests/efe86d95-44c4-4509-ae42-7bfd9d1f5b3d.md) ['windows'] (sigma rule :x:)
+[WinRM Access with Evil-WinRM](tests/efe86d95-44c4-4509-ae42-7bfd9d1f5b3d.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1553.004
 [Install root CA on Debian/Ubuntu](tests/53bcf8a0-1549-4b85-b919-010c56d724ff.md) ['linux'] (sigma rule :x:)
 
-[Install root CA on Windows with certutil](tests/5fdb1a7a-a93c-4fbe-aa29-ddd9ef94ed1f.md) ['windows'] (sigma rule :x:)
+[Install root CA on Windows with certutil](tests/5fdb1a7a-a93c-4fbe-aa29-ddd9ef94ed1f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Install root CA on Windows](tests/76f49d86-5eb1-461a-a032-a480f86652f1.md) ['windows'] (sigma rule :x:)
+[Install root CA on Windows](tests/76f49d86-5eb1-461a-a032-a480f86652f1.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Install root CA on CentOS/RHEL](tests/9c096ec4-fd42-419d-a762-d64cc950627e.md) ['linux'] (sigma rule :x:)
 
@@ -1755,15 +1827,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1567
-[Data Exfiltration with ConfigSecurityPolicy](tests/5568a8f4-a8b1-4c40-9399-4969b642f122.md) ['windows'] (sigma rule :x:)
-
-
-### T1098
-[Admin Account Manipulate](tests/5598f7cb-cf43-455e-883a-f6008c5d46af.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[AWS - Create a group and add a user to that group](tests/8822c3b0-d9f9-4daf-a043-49f110a31122.md) ['iaas:aws'] (sigma rule :x:)
-
-[Domain Account and Group Manipulate](tests/a55a22e9-a3d3-42ce-bd48-2653adb8f7a9.md) ['windows'] (sigma rule :heavy_check_mark:)
+[Data Exfiltration with ConfigSecurityPolicy](tests/5568a8f4-a8b1-4c40-9399-4969b642f122.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1610
@@ -1771,9 +1835,9 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1127.001
-[MSBuild Bypass Using Inline Tasks (C#)](tests/58742c0f-cb01-44cd-a60b-fb26e8871c93.md) ['windows'] (sigma rule :x:)
+[MSBuild Bypass Using Inline Tasks (C#)](tests/58742c0f-cb01-44cd-a60b-fb26e8871c93.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[MSBuild Bypass Using Inline Tasks (VB)](tests/ab042179-c0c5-402f-9bc8-42741f5ce359.md) ['windows'] (sigma rule :x:)
+[MSBuild Bypass Using Inline Tasks (VB)](tests/ab042179-c0c5-402f-9bc8-42741f5ce359.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1136.002
@@ -1785,7 +1849,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1003.002
-[Registry dump of SAM, creds, and secrets](tests/5c2571d0-1572-416d-9676-812e64ca9f44.md) ['windows'] (sigma rule :x:)
+[Registry dump of SAM, creds, and secrets](tests/5c2571d0-1572-416d-9676-812e64ca9f44.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [PowerDump Registry dump of SAM for hashes and usernames](tests/804f28fc-68fc-40da-b5a2-e9d0bce5c193.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1793,7 +1857,7 @@ Caution: a test can generate a lot of noise...
 
 [esentutl.exe SAM copy](tests/a90c2f4d-6726-444e-99d2-a00cd7c20480.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Registry parse with pypykatz](tests/a96872b2-cbf3-46cf-8eb4-27e8c0e85263.md) ['windows'] (sigma rule :x:)
+[Registry parse with pypykatz](tests/a96872b2-cbf3-46cf-8eb4-27e8c0e85263.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [dump volume shadow copy hives with certutil](tests/eeb9751a-d598-42d3-b11c-c122d9c3f6c7.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1811,7 +1875,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1055.004
-[Process Injection via C#](tests/611b39b7-e243-4c81-87a4-7145a90358b1.md) ['windows'] (sigma rule :x:)
+[Process Injection via C#](tests/611b39b7-e243-4c81-87a4-7145a90358b1.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1558.004
@@ -1849,9 +1913,9 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1218.009
-[Regasm Uninstall Method Call Test](tests/71bfbfac-60b1-4fc0-ac8b-2cedbbdcb112.md) ['windows'] (sigma rule :x:)
+[Regasm Uninstall Method Call Test](tests/71bfbfac-60b1-4fc0-ac8b-2cedbbdcb112.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Regsvcs Uninstall Method Call Test](tests/fd3c1c6a-02d2-4b72-82d9-71c527abb126.md) ['windows'] (sigma rule :x:)
+[Regsvcs Uninstall Method Call Test](tests/fd3c1c6a-02d2-4b72-82d9-71c527abb126.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1053.001
@@ -1859,7 +1923,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1055.001
-[Process Injection via mavinject.exe](tests/74496461-11a1-4982-b439-4d87a550d254.md) ['windows'] (sigma rule :x:)
+[Process Injection via mavinject.exe](tests/74496461-11a1-4982-b439-4d87a550d254.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1014
@@ -1885,15 +1949,9 @@ Caution: a test can generate a lot of noise...
 ### T1048
 [Exfiltration Over Alternative Protocol - SSH](tests/7c3cb337-35ae-4d06-bf03-3032ed2ec268.md) ['macos', 'linux'] (sigma rule :x:)
 
-[DNSExfiltration (doh)](tests/c943d285-ada3-45ca-b3aa-7cd6500c6a48.md) ['windows'] (sigma rule :x:)
+[DNSExfiltration (doh)](tests/c943d285-ada3-45ca-b3aa-7cd6500c6a48.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Exfiltration Over Alternative Protocol - SSH](tests/f6786cc8-beda-4915-a4d6-ac2f193bb988.md) ['macos', 'linux'] (sigma rule :x:)
-
-
-### T1059.004
-[Create and Execute Bash Shell Script](tests/7e7ac3ed-f795-4fa5-b711-09d6fbe9b873.md) ['macos', 'linux'] (sigma rule :x:)
-
-[Command-Line Interface](tests/d0c88567-803d-4dca-99b4-7ce65e7b257c.md) ['macos', 'linux'] (sigma rule :x:)
 
 
 ### T1040
@@ -1929,7 +1987,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1006
-[Read volume boot sector via DOS device path (PowerShell)](tests/88f6327e-51ec-4bbf-b2e8-3fea534eab8b.md) ['windows'] (sigma rule :x:)
+[Read volume boot sector via DOS device path (PowerShell)](tests/88f6327e-51ec-4bbf-b2e8-3fea534eab8b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1484.002
@@ -1943,11 +2001,11 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1202
-[Indirect Command Execution - forfiles.exe](tests/8b34a448-40d9-4fc3-a8c8-4bb286faf7dc.md) ['windows'] (sigma rule :x:)
+[Indirect Command Execution - forfiles.exe](tests/8b34a448-40d9-4fc3-a8c8-4bb286faf7dc.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Indirect Command Execution - pcalua.exe](tests/cecfea7a-5f03-4cdd-8bc8-6f7c22862440.md) ['windows'] (sigma rule :x:)
+[Indirect Command Execution - pcalua.exe](tests/cecfea7a-5f03-4cdd-8bc8-6f7c22862440.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Indirect Command Execution - conhost.exe](tests/cf3391e0-b482-4b02-87fc-ca8362269b29.md) ['windows'] (sigma rule :x:)
+[Indirect Command Execution - conhost.exe](tests/cf3391e0-b482-4b02-87fc-ca8362269b29.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1136.003
@@ -1983,7 +2041,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1106
-[Execution through API - CreateProcess](tests/99be2089-c52d-4a4a-b5c3-261ee42c8b62.md) ['windows'] (sigma rule :x:)
+[Execution through API - CreateProcess](tests/99be2089-c52d-4a4a-b5c3-261ee42c8b62.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1546.011
@@ -2003,15 +2061,25 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1020
-[IcedID Botnet HTTP PUT](tests/9c780d3d-3a14-4278-8ee5-faaeb2ccfbe0.md) ['windows'] (sigma rule :x:)
+[IcedID Botnet HTTP PUT](tests/9c780d3d-3a14-4278-8ee5-faaeb2ccfbe0.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1216.001
-[PubPrn.vbs Signed Script Bypass](tests/9dd29a1f-1e16-4862-be83-913b10a88f6c.md) ['windows'] (sigma rule :x:)
+[PubPrn.vbs Signed Script Bypass](tests/9dd29a1f-1e16-4862-be83-913b10a88f6c.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+
+### T1078.004
+[Creating GCP Service Account and Service Account Key](tests/9fdd83fd-bd53-46e5-a716-9dec89c8ae8e.md) ['google-workspace', 'windows', 'linux', 'macos'] (sigma rule :x:)
+
+
+### T1550.003
+[Rubeus Kerberos Pass The Ticket](tests/a2fc4ec5-12c6-4fb4-b661-961f23f359cb.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Mimikatz Kerberos Ticket Attack](tests/dbf38128-7ba7-4776-bedf-cc2eed432098.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1563.002
-[RDP hijacking](tests/a37ac520-b911-458e-8aed-c5f1576d9f46.md) ['windows'] (sigma rule :x:)
+[RDP hijacking](tests/a37ac520-b911-458e-8aed-c5f1576d9f46.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1078.003
@@ -2053,17 +2121,21 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1070
-[Indicator Removal using FSUtil](tests/b4115c7a-0e92-47f0-a61e-17e7218b2435.md) ['windows'] (sigma rule :x:)
+[Indicator Removal using FSUtil](tests/b4115c7a-0e92-47f0-a61e-17e7218b2435.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1072
-[Radmin Viewer Utility](tests/b4988cad-6ed2-434d-ace5-ea2670782129.md) ['windows'] (sigma rule :x:)
+[Radmin Viewer Utility](tests/b4988cad-6ed2-434d-ace5-ea2670782129.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1036.004
-[Creating W32Time similar named service using sc](tests/b721c6ef-472c-4263-a0d9-37f1f4ecff66.md) ['windows'] (sigma rule :x:)
+[Creating W32Time similar named service using sc](tests/b721c6ef-472c-4263-a0d9-37f1f4ecff66.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Creating W32Time similar named service using schtasks](tests/f9f2fe59-96f7-4a7d-ba9f-a9783200d4c9.md) ['windows'] (sigma rule :x:)
+[Creating W32Time similar named service using schtasks](tests/f9f2fe59-96f7-4a7d-ba9f-a9783200d4c9.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+
+### T1547.002
+[Authentication Package](tests/be2590e8-4ac3-47ac-b4b5-945820f2fbe9.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1547.004
@@ -2099,23 +2171,23 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1041
-[C2 Data Exfiltration](tests/d1253f6e-c29b-49dc-b466-2147a6191932.md) ['windows'] (sigma rule :x:)
+[C2 Data Exfiltration](tests/d1253f6e-c29b-49dc-b466-2147a6191932.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1547.010
 [Add Port Monitor persistence in Registry](tests/d34ef297-f178-4462-871e-9ce618d44e50.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
+### T1091
+[USB Malware Spread Simulation](tests/d44b7297-622c-4be8-ad88-ec40d7563c75.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+
 ### T1037.001
 [Logon Scripts](tests/d6042746-07d4-4c92-9ad8-e644c114a231.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
-### T1550.003
-[Mimikatz Kerberos Ticket Attack](tests/dbf38128-7ba7-4776-bedf-cc2eed432098.md) ['windows'] (sigma rule :x:)
-
-
 ### T1134.002
-[Access Token Manipulation](tests/dbf4f5a9-b8e0-46a3-9841-9ad71247239e.md) ['windows'] (sigma rule :x:)
+[Access Token Manipulation](tests/dbf4f5a9-b8e0-46a3-9841-9ad71247239e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1053.007
@@ -2128,10 +2200,14 @@ Caution: a test can generate a lot of noise...
 [Hook PowerShell TLS Encrypt/Decrypt Messages](tests/de1934ea-1fbf-425b-8795-65fb27dd7e33.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
-### T1550.002
-[crackmapexec Pass the Hash](tests/eb05b028-16c8-4ad8-adea-6f5b219da9a9.md) ['windows'] (sigma rule :x:)
+### T1557.001
+[LLMNR Poisoning with Inveigh (PowerShell)](tests/deecd55f-afe0-4a62-9fba-4d1ba2deb321.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Mimikatz Pass the Hash](tests/ec23cef9-27d9-46e4-a68d-6f75f7b86908.md) ['windows'] (sigma rule :x:)
+
+### T1550.002
+[crackmapexec Pass the Hash](tests/eb05b028-16c8-4ad8-adea-6f5b219da9a9.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Mimikatz Pass the Hash](tests/ec23cef9-27d9-46e4-a68d-6f75f7b86908.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1037.002
@@ -2139,13 +2215,17 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1564.003
-[Hidden Window](tests/f151ee37-9e2b-47e6-80e4-550b9f999b7a.md) ['windows'] (sigma rule :x:)
+[Hidden Window](tests/f151ee37-9e2b-47e6-80e4-550b9f999b7a.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1574.011
 [Service ImagePath Change with reg.exe](tests/f38e9eea-e1d7-4ba6-b716-584791963827.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Service Registry Permissions Weakness](tests/f7536d63-7fd4-466f-89da-7e48d550752a.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+
+### T1588.002
+[Run NirSoft AdvancedRun](tests/f7d43d35-d628-4582-bb03-01b1c5e10d11.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1553.001

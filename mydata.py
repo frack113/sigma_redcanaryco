@@ -34,6 +34,12 @@ class my_data:
             "sigma_rule": [],
         }
 
+    # Use to add missing field when update class
+    def check(self):
+        # pass
+        if not "executor" in self.data.keys():
+            self.data["executor"]= ""
+
     def add(self, head_info, test):
         self.data["Attack_name"] = head_info["name"]
         self.data["Attack_description"] = head_info["description"]
@@ -68,6 +74,7 @@ class my_data:
     def load(self, filepath):
         with filepath.open("r", encoding="UTF-8") as file:
             self.data = self.yaml.load(file)
+        self.check()
 
     def save(self, filepath):  # very bad because of scolar -> |2
         filepath.parent.mkdir(parents=True, exist_ok=True)

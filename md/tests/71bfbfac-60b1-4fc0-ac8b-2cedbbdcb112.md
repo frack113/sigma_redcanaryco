@@ -1,7 +1,7 @@
 
 [back](../index.md)
 
-Find sigma rule :x: 
+Find sigma rule :heavy_check_mark: 
 
 # Attack: Regsvcs/Regasm 
 
@@ -27,7 +27,14 @@ Both utilities may be used to bypass application control through use of attribut
 Executes the Uninstall Method, No Admin Rights Required. Upon execution, "I shouldn't really execute either." will be displayed.
 
 
+## Executor
+command_prompt
+
 # Sigma Rule
+ - win_possible_applocker_bypass.yml (id: 82a19e3a-2bfe-4a91-8c0d-5d4c98fbb719)
+
+ - win_susp_csc_folder.yml (id: dcaa3f04-70c3-427a-80b4-b870d73c94c4)
+
 
 
 [back](../index.md)

@@ -4,7 +4,11 @@ Knowing which rule should sound according to the redcannary test
 https://frack113.github.io/sigma_redcanaryco/
 
 
-## Yaml file
+All information data comes from the Atomic Red Team yaml.
+
+[Atomic Red Team Yaml Spec](https://github.com/redcanaryco/atomic-red-team/blob/master/atomic_red_team/spec.yaml)
+
+## My Yaml file
 ```yaml
 Attack_name: The master technique name
 Attack_description: The master technique description
@@ -16,6 +20,7 @@ name: Name of the test
 guid: redcanary test guid
 os:
   - list of os for the test
+executor: name of the executor ()
 sigma: true or false if a one rule must trigger
 sigma_rule:
     - id: id of the sigma rule
@@ -23,10 +28,3 @@ sigma_rule:
     - id: can be x rules
       name: can be x rules
 ```
-
-## Works in progress
-
-- [X] better MITRE extract
-- [X] add github action
-- [ ] update readme
-- [X] fix `expected <block end>, but found '<scalar>'`

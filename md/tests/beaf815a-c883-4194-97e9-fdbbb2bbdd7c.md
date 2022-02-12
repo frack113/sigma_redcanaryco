@@ -27,6 +27,9 @@ Modifying or disabling a system firewall may enable adversary C2 communications,
 Edit the Uncomplicated Firewall (UFW) rules file /etc/ufw/user.rules.
 
 
+## Executor
+sh
+
 # Sigma Rule
 
 

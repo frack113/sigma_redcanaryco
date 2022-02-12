@@ -31,6 +31,9 @@ Adversaries can use this to their advantage to hide files and folders anywhere o
 Hide a directory on MacOS
 
 
+## Executor
+sh
+
 # Sigma Rule
 
 

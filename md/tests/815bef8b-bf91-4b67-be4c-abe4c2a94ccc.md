@@ -1,7 +1,7 @@
 
 [back](../index.md)
 
-Find sigma rule :x: 
+Find sigma rule :heavy_check_mark: 
 
 # Attack: Ingress Tool Transfer 
 
@@ -29,7 +29,12 @@ By default, the test downloads the Atomic Red Team license file to the temp dire
 More info and how to find your version can be found here https://lolbas-project.github.io/lolbas/Binaries/MpCmdRun/
 
 
+## Executor
+command_prompt
+
 # Sigma Rule
+ - win_susp_mpcmdrun_download.yml (id: 46123129-1024-423e-9fae-43af4a0fa9a5)
+
 
 
 [back](../index.md)

@@ -1,7 +1,7 @@
 
 [back](../index.md)
 
-Find sigma rule :x: 
+Find sigma rule :heavy_check_mark: 
 
 # Attack: PowerShell 
 
@@ -32,7 +32,20 @@ Connect to a remote powershell session and interact with the host.
 Upon execution, network test info and 'T1086 PowerShell Session Creation and Use' will be displayed.
 
 
+## Executor
+powershell
+
 # Sigma Rule
+ - posh_ps_remote_session_creation.yml (id: a0edd39f-a0c6-4c17-8141-261f958e8d8f)
+
+ - posh_ps_remove_item_path.yml (id: b8af5f36-1361-4ebe-9e76-e36128d947bf)
+
+ - sysmon_remote_powershell_session_network.yml (id: c539afac-c12a-46ed-b1bd-5a5567c9f045)
+
+ - win_remote_powershell_session_process.yml (id: 734f8d9b-42b8-41b2-bcf5-abaf49d5a3c8)
+
+ - image_load_wsman_provider_image_load.yml (id: ad1f4bb9-8dfb-4765-adb6-2a7cfb6c0f94)
+
 
 
 [back](../index.md)
