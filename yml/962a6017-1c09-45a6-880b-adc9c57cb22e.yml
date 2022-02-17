@@ -16,5 +16,9 @@ description: "This test is a Powershell script that enumerates Active Directory 
   \ additional systems within a domain, which has been used before by threat actors to aid in lateral movement. \nReference: [Head Fake: Tackling Disruptive Ransomware Attacks](https://www.mandiant.com/resources/head-fake-tackling-disruptive-ransomware-attacks).\
   \ \nUpon successful execution, this test will output the names of the computers that reside on the domain to the console window. \n"
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 9a132afa-654e-11eb-ae93-0242ac130002
+    name: win_ad_find_discovery.yml
+  - id: 1f6399cf-2c80-4924-ace1-6fcff3393480
+    name: posh_ps_directorysearcher.yml

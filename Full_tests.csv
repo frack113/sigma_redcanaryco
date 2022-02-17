@@ -183,7 +183,7 @@ privilege-escalation;T1574.012;powershell;['windows'];System Scope COR_PROFILER;
 privilege-escalation;T1574.012;powershell;['windows'];Registry-free process scope COR_PROFILER;79d57242-bbef-41db-b301-9d01d9f6e817;True;3
 privilege-escalation;T1546.001;command_prompt;['windows'];Change Default File Association;10a08978-2045-4d62-8c42-1957bbbea102;True;1
 privilege-escalation;T1078.004;gcloud;['google-workspace', 'windows', 'linux', 'macos'];Creating GCP Service Account and Service Account Key;9fdd83fd-bd53-46e5-a716-9dec89c8ae8e;False;1
-privilege-escalation;T1546.015;powershell;['windows'];COM Hijacking - InprocServer32;48117158-d7be-441b-bc6a-d9e36e47b52b;False;1
+privilege-escalation;T1546.015;powershell;['windows'];COM Hijacking - InprocServer32;48117158-d7be-441b-bc6a-d9e36e47b52b;True;1
 privilege-escalation;T1053.007;bash;['containers'];ListCronjobs;ddfb0bc1-3c3f-47e9-a298-550ecfefacbd;False;1
 privilege-escalation;T1053.007;bash;['containers'];CreateCronjob;f2fa019e-fb2a-4d28-9dc6-fd1a9b7f68c3;False;2
 privilege-escalation;T1134.002;powershell;['windows'];Access Token Manipulation;dbf4f5a9-b8e0-46a3-9841-9ad71247239e;True;1
@@ -537,6 +537,7 @@ defense-evasion;T1036.003;command_prompt;['windows'];File Extension Masquerading
 defense-evasion;T1207;powershell;['windows'];DCShadow (Active Directory);0f4c5eb0-98a0-4496-9c3d-656b4f2bc8f6;True;1
 defense-evasion;T1014;sh;['linux'];Loadable Kernel Module based Rootkit;dfb50072-e45a-4c75-a17e-a484809c8553;False;1
 defense-evasion;T1014;sh;['linux'];Loadable Kernel Module based Rootkit;75483ef8-f10f-444a-bf02-62eb0e48db6f;False;2
+defense-evasion;T1564.006;command_prompt;['windows'];Register Portable Virtualbox;c59f246a-34f8-4e4d-9276-c295ef9ba0dd;True;1
 defense-evasion;T1218.011;command_prompt;['windows'];Rundll32 execute JavaScript Remote Payload With GetObject;cf3bdb9a-dd11-4b6c-b0d0-9e22b68a71be;True;1
 defense-evasion;T1218.011;command_prompt;['windows'];Rundll32 execute VBscript command;638730e7-7aed-43dc-bf8c-8117f805f5bb;True;2
 defense-evasion;T1218.011;command_prompt;['windows'];Rundll32 advpack.dll Execution;d91cae26-7fc1-457b-a854-34c8aad48c89;True;3
@@ -563,6 +564,7 @@ defense-evasion;T1218;command_prompt;['windows'];ProtocolHandler.exe Downloaded 
 defense-evasion;T1218;powershell;['windows'];Microsoft.Workflow.Compiler.exe Payload Execution;7cbb0f26-a4c1-4f77-b180-a009aa05637e;True;6
 defense-evasion;T1218;powershell;['windows'];Renamed Microsoft.Workflow.Compiler.exe Payload Executions;4cc40fd7-87b8-4b16-b2d7-57534b86b911;True;7
 defense-evasion;T1218;powershell;['windows'];Invoke-ATHRemoteFXvGPUDisablementCommand base test;9ebe7901-7edf-45c0-b5c7-8366300919db;True;8
+defense-evasion;T1218;powershell;['windows'];DiskShadow Command Execution;0e1483ba-8f0c-425d-b8c6-42736e058eaa;True;9
 defense-evasion;T1216;command_prompt;['windows'];SyncAppvPublishingServer Signed Script PowerShell Command Execution;275d963d-3f36-476c-8bef-a2a3960ee6eb;True;1
 defense-evasion;T1216;command_prompt;['windows'];manage-bde.wsf Signed Script Command Execution;2a8f2d3c-3dec-4262-99dd-150cb2a4d63a;True;2
 defense-evasion;T1027.002;sh;['linux'];Binary simply packed by UPX (linux);11c46cd8-e471-450e-acb8-52a1216ae6a4;False;1
@@ -632,7 +634,7 @@ persistence;T1574.012;powershell;['windows'];Registry-free process scope COR_PRO
 persistence;T1546.001;command_prompt;['windows'];Change Default File Association;10a08978-2045-4d62-8c42-1957bbbea102;True;1
 persistence;T1136.003;sh;['iaas:aws'];AWS - Create a new IAM user;8d1c2368-b503-40c9-9057-8e42f21c58ad;False;1
 persistence;T1078.004;gcloud;['google-workspace', 'windows', 'linux', 'macos'];Creating GCP Service Account and Service Account Key;9fdd83fd-bd53-46e5-a716-9dec89c8ae8e;False;1
-persistence;T1546.015;powershell;['windows'];COM Hijacking - InprocServer32;48117158-d7be-441b-bc6a-d9e36e47b52b;False;1
+persistence;T1546.015;powershell;['windows'];COM Hijacking - InprocServer32;48117158-d7be-441b-bc6a-d9e36e47b52b;True;1
 persistence;T1053.007;bash;['containers'];ListCronjobs;ddfb0bc1-3c3f-47e9-a298-550ecfefacbd;False;1
 persistence;T1053.007;bash;['containers'];CreateCronjob;f2fa019e-fb2a-4d28-9dc6-fd1a9b7f68c3;False;2
 persistence;T1053.003;bash;['macos', 'linux'];Cron - Replace crontab with referenced file;435057fb-74b1-410e-9403-d81baf194f75;False;1
@@ -845,7 +847,7 @@ discovery;T1018;command_prompt;['windows'];Adfind - Enumerate Active Directory D
 discovery;T1018;sh;['linux'];Remote System Discovery - ip neighbour;158bd4dd-6359-40ab-b13c-285b9ef6fa25;False;12
 discovery;T1018;sh;['linux'];Remote System Discovery - ip route;1a4ebe70-31d0-417b-ade2-ef4cb3e7d0e1;False;13
 discovery;T1018;sh;['linux'];Remote System Discovery - ip tcp_metrics;6c2da894-0b57-43cb-87af-46ea3b501388;False;14
-discovery;T1018;powershell;['windows'];Enumerate domain computers within Active Directory using DirectorySearcher;962a6017-1c09-45a6-880b-adc9c57cb22e;False;15
+discovery;T1018;powershell;['windows'];Enumerate domain computers within Active Directory using DirectorySearcher;962a6017-1c09-45a6-880b-adc9c57cb22e;True;15
 discovery;T1518.001;command_prompt;['windows'];Security Software Discovery;f92a380f-ced9-491f-b338-95a991418ce2;True;1
 discovery;T1518.001;powershell;['windows'];Security Software Discovery - powershell;7f566051-f033-49fb-89de-b6bacab730f0;True;2
 discovery;T1518.001;sh;['macos'];Security Software Discovery - ps (macOS);ba62ce11-e820-485f-9c17-6f3c857cd840;False;3
@@ -1018,16 +1020,18 @@ command-and-control;T1105;command_prompt;['windows'];Download a file with Micros
 command-and-control;T1090.001;sh;['macos', 'linux'];Connection Proxy;0ac21132-4485-4212-a681-349e8a6637cd;False;1
 command-and-control;T1090.001;sh;['macos'];Connection Proxy for macOS UI;648d68c1-8bcd-4486-9abe-71c6655b6a2c;False;2
 command-and-control;T1090.001;powershell;['windows'];portproxy reg key;b8223ea9-4be2-44a6-b50a-9657a3d4e72a;True;3
+command-and-control;T1090.003;powershell;['windows'];Psiphon;14d55ca0-920e-4b44-8425-37eedd72b173;True;1
+command-and-control;T1090.003;powershell;['windows'];Tor Proxy Usage - Windows;7b9d85e5-c4ce-4434-8060-d3de83595e69;False;2
 command-and-control;T1095;powershell;['windows'];ICMP C2;0268e63c-e244-42db-bef7-72a9e59fc1fc;True;1
 command-and-control;T1095;powershell;['windows'];Netcat C2;bcf0d1c1-3f6a-4847-b1c9-7ed4ea321f37;True;2
 command-and-control;T1095;powershell;['windows'];Powercat C2;3e0e0e7f-6aa2-4a61-b61d-526c2cc9330e;True;3
 command-and-control;T1571;powershell;['windows'];Testing usage of uncommonly used port with PowerShell;21fe622f-8e53-4b31-ba83-6d333c2583f4;True;1
 command-and-control;T1571;sh;['linux', 'macos'];Testing usage of uncommonly used port;5db21e1d-dd9c-4a50-b885-b1e748912767;False;2
 command-and-control;T1572;powershell;['windows'];DNS over HTTPS Large Query Volume;ae9ef4b0-d8c1-49d4-8758-06206f19af0a;False;1
-command-and-control;T1572;powershell;['windows'];DNS over HTTPS Regular Beaconing;0c5f9705-c575-42a6-9609-cbbff4b2fc9b;False;2
+command-and-control;T1572;powershell;['windows'];DNS over HTTPS Regular Beaconing;0c5f9705-c575-42a6-9609-cbbff4b2fc9b;True;2
 command-and-control;T1572;powershell;['windows'];DNS over HTTPS Long Domain Query;748a73d5-cea4-4f34-84d8-839da5baa99c;False;3
 command-and-control;T1219;powershell;['windows'];TeamViewer Files Detected Test on Windows;8ca3b96d-8983-4a7f-b125-fc98cc0a2aa0;True;1
-command-and-control;T1219;powershell;['windows'];AnyDesk Files Detected Test on Windows;6b8b7391-5c0a-4f8c-baee-78d8ce0ce330;False;2
+command-and-control;T1219;powershell;['windows'];AnyDesk Files Detected Test on Windows;6b8b7391-5c0a-4f8c-baee-78d8ce0ce330;True;2
 command-and-control;T1219;powershell;['windows'];LogMeIn Files Detected Test on Windows;d03683ec-aae0-42f9-9b4c-534780e0f8e1;False;3
 command-and-control;T1219;powershell;['windows'];GoToAssist Files Detected Test on Windows;1b72b3bd-72f8-4b63-a30b-84e91b9c3578;False;4
 command-and-control;T1219;powershell;['windows'];ScreenConnect Application Download and Install on Windows;4a18cc4e-416f-4966-9a9d-75731c4684c0;False;5
