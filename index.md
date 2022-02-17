@@ -591,7 +591,7 @@ Caution: a test can generate a lot of noise...
 
 [Adfind - Enumerate Active Directory Computer Objects](tests/a889f5be-2d54-4050-bd05-884578748bb4.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Enumerate domain computers within Active Directory using DirectorySearcher](tests/962a6017-1c09-45a6-880b-adc9c57cb22e.md) ['windows'] (sigma rule :x:)
+[Enumerate domain computers within Active Directory using DirectorySearcher](tests/962a6017-1c09-45a6-880b-adc9c57cb22e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Remote System Discovery - ip tcp_metrics](tests/6c2da894-0b57-43cb-87af-46ea3b501388.md) ['linux'] (sigma rule :x:)
 
@@ -607,7 +607,7 @@ Caution: a test can generate a lot of noise...
 
 [DNS over HTTPS Long Domain Query](tests/748a73d5-cea4-4f34-84d8-839da5baa99c.md) ['windows'] (sigma rule :x:)
 
-[DNS over HTTPS Regular Beaconing](tests/0c5f9705-c575-42a6-9609-cbbff4b2fc9b.md) ['windows'] (sigma rule :x:)
+[DNS over HTTPS Regular Beaconing](tests/0c5f9705-c575-42a6-9609-cbbff4b2fc9b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1059.003
@@ -634,6 +634,8 @@ Caution: a test can generate a lot of noise...
 [Microsoft.Workflow.Compiler.exe Payload Execution](tests/7cbb0f26-a4c1-4f77-b180-a009aa05637e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Renamed Microsoft.Workflow.Compiler.exe Payload Executions](tests/4cc40fd7-87b8-4b16-b2d7-57534b86b911.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[DiskShadow Command Execution](tests/0e1483ba-8f0c-425d-b8c6-42736e058eaa.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1027.001
@@ -1526,6 +1528,10 @@ Caution: a test can generate a lot of noise...
 [Creating W32Time similar named service using sc](tests/b721c6ef-472c-4263-a0d9-37f1f4ecff66.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
+### T1564.006
+[Register Portable Virtualbox](tests/c59f246a-34f8-4e4d-9276-c295ef9ba0dd.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+
 ### T1110.004
 [SSH Credential Stuffing From Linux](tests/4f08197a-2a8a-472d-9589-cd2895ef22ad.md) ['linux'] (sigma rule :x:)
 
@@ -1739,9 +1745,15 @@ Caution: a test can generate a lot of noise...
 
 [TeamViewer Files Detected Test on Windows](tests/8ca3b96d-8983-4a7f-b125-fc98cc0a2aa0.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[AnyDesk Files Detected Test on Windows](tests/6b8b7391-5c0a-4f8c-baee-78d8ce0ce330.md) ['windows'] (sigma rule :x:)
+[AnyDesk Files Detected Test on Windows](tests/6b8b7391-5c0a-4f8c-baee-78d8ce0ce330.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [GoToAssist Files Detected Test on Windows](tests/1b72b3bd-72f8-4b63-a30b-84e91b9c3578.md) ['windows'] (sigma rule :x:)
+
+
+### T1090.003
+[Psiphon](tests/14d55ca0-920e-4b44-8425-37eedd72b173.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Tor Proxy Usage - Windows](tests/7b9d85e5-c4ce-4434-8060-d3de83595e69.md) ['windows'] (sigma rule :x:)
 
 
 ### T1218.008
@@ -1875,7 +1887,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1546.015
-[COM Hijacking - InprocServer32](tests/48117158-d7be-441b-bc6a-d9e36e47b52b.md) ['windows'] (sigma rule :x:)
+[COM Hijacking - InprocServer32](tests/48117158-d7be-441b-bc6a-d9e36e47b52b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1030
