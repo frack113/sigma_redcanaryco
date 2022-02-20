@@ -645,6 +645,8 @@
   * T1132.001 [XOR Encoded data.](tests/c3ed6d2a-e3ad-400d-ad78-bbfdbfeacc08.md)
   * T1218.005 [Mshta Executes Remote HTML Application (HTA)](tests/c4b97eeb-5249-4455-a607-59f95485cb45.md)
   * T1566.001 [Download Macro-Enabled Phishing Attachment](tests/114ccff9-ae6d-4547-9ead-4cd69f687306.md)
+  * T1219 [ScreenConnect Application Download and Install on Windows](tests/4a18cc4e-416f-4966-9a9d-75731c4684c0.md)
+  * T1219 [LogMeIn Files Detected Test on Windows](tests/d03683ec-aae0-42f9-9b4c-534780e0f8e1.md)
   * T1105 [Windows - PowerShell Download](tests/42dc4460-9aa6-45d3-b1a6-3955d34e1fe8.md)
   * T1071.001 [Malicious User Agents - Powershell](tests/81c13829-f6c9-45b8-85a6-053366d55297.md)
   * T1056.004 [Hook PowerShell TLS Encrypt/Decrypt Messages](tests/de1934ea-1fbf-425b-8795-65fb27dd7e33.md)
@@ -654,6 +656,7 @@
   * T1059.001 [Run Bloodhound from Memory using Download Cradle](tests/bf8c1441-4674-4dab-8e4e-39d93d08f9b7.md)
   * T1105 [File Download via PowerShell](tests/54a4daf1-71df-4383-9ba7-f1a295d8b6d2.md)
   * T1095 [Powercat C2](tests/3e0e0e7f-6aa2-4a61-b61d-526c2cc9330e.md)
+  * T1219 [GoToAssist Files Detected Test on Windows](tests/1b72b3bd-72f8-4b63-a30b-84e91b9c3578.md)
   * T1197 [Bitsadmin Download (PowerShell)](tests/f63b8bc4-07e5-4112-acba-56f646f3f0bc.md)
   * T1204.002 [Office Generic Payload Download](tests/5202ee05-c420-4148-bf5e-fd7f7d24850c.md)
   * T1027 [DLP Evasion via Sensitive Data in VBA Macro over HTTP](tests/e2d85e66-cb66-4ed7-93b1-833fc56c9319.md)
@@ -677,6 +680,7 @@
 * process_creation_win_exchange_transportagent.yml
   * T1505.002 [Install MS Exchange Transport Agent Persistence](tests/43e92449-ff60-46e9-83a3-1a38089df94d.md)
 * registry_event_defender_disabled.yml
+  * T1562.001 [Disable Defender with Defender Control](tests/178136d8-2778-4d7a-81f3-d517053a4fd6.md)
   * T1562.001 [Tamper with Windows Defender Registry](tests/1b3e0146-a1e5-4c5c-89fb-1bb2ffe8fc45.md)
 * registry_event_defender_exclusions.yml
   * T1562.001 [Tamper with Windows Defender Evade Scanning -Extension](tests/315f4be6-2240-4552-b3e1-d1047f5eecea.md)
@@ -709,6 +713,7 @@
   * T1036.003 [Masquerading - powershell.exe running as taskhostw.exe](tests/ac9d0fc3-8aa8-4ab5-b11f-682cd63b40aa.md)
   * T1055.012 [RunPE via VBA](tests/3ad4a037-1598-4136-837c-4027e4fa319b.md)
 * sysmon_always_install_elevated_windows_installer.yml
+  * T1219 [LogMeIn Files Detected Test on Windows](tests/d03683ec-aae0-42f9-9b4c-534780e0f8e1.md)
   * T1218.007 [Msiexec.exe - Execute Local MSI file](tests/0683e8f7-a27b-4b62-b7ab-dc7d4fed1df8.md)
 * sysmon_asep_reg_keys_modification_currentcontrolset.yml
   * T1547.002 [Authentication Package](tests/be2590e8-4ac3-47ac-b4b5-945820f2fbe9.md)
@@ -829,6 +834,8 @@
   * T1558.003 [Request for service tickets](tests/3f987809-3681-43c8-bcd8-b3ff3a28533a.md)
   * T1566.001 [Download Macro-Enabled Phishing Attachment](tests/114ccff9-ae6d-4547-9ead-4cd69f687306.md)
   * T1033 [Find computers where user has session - Stealth mode (PowerView)](tests/29857f27-a36f-4f7e-8084-4557cd6207ca.md)
+  * T1219 [ScreenConnect Application Download and Install on Windows](tests/4a18cc4e-416f-4966-9a9d-75731c4684c0.md)
+  * T1219 [LogMeIn Files Detected Test on Windows](tests/d03683ec-aae0-42f9-9b4c-534780e0f8e1.md)
   * T1059.001 [Powershell XML requests](tests/4396927f-e503-427b-b023-31049b9b09a6.md)
   * T1055 [Shellcode execution via VBA](tests/1c91e740-1729-4329-b779-feba6e71d048.md)
   * T1059.001 [Powershell MsXml COM object - with prompt](tests/388a7340-dbc1-4c9d-8e59-b75ad8c6d5da.md)
@@ -844,6 +851,7 @@
   * T1105 [File Download via PowerShell](tests/54a4daf1-71df-4383-9ba7-f1a295d8b6d2.md)
   * T1095 [Powercat C2](tests/3e0e0e7f-6aa2-4a61-b61d-526c2cc9330e.md)
   * T1134.001 [Named pipe client impersonation](tests/90db9e27-8e7c-4c04-b602-a45927884966.md)
+  * T1219 [GoToAssist Files Detected Test on Windows](tests/1b72b3bd-72f8-4b63-a30b-84e91b9c3578.md)
   * T1055.012 [RunPE via VBA](tests/3ad4a037-1598-4136-837c-4027e4fa319b.md)
   * T1204.002 [Office Generic Payload Download](tests/5202ee05-c420-4148-bf5e-fd7f7d24850c.md)
   * T1059.001 [Run BloodHound from local disk](tests/a21bb23e-e677-4ee7-af90-6931b57b6350.md)
@@ -895,6 +903,7 @@
   * T1547.001 [Suspicious vbs file run from startup Folder](tests/2cb98256-625e-4da9-9d44-f2e5f90b8bd5.md)
 * sysmon_susp_clr_logs.yml
   * T1218.010 [Regsvr32 local DLL execution](tests/08ffca73-9a3d-471a-aeb0-68b4aa3ab37b.md)
+  * T1219 [ScreenConnect Application Download and Install on Windows](tests/4a18cc4e-416f-4966-9a9d-75731c4684c0.md)
   * T1218 [Renamed Microsoft.Workflow.Compiler.exe Payload Executions](tests/4cc40fd7-87b8-4b16-b2d7-57534b86b911.md)
 * sysmon_susp_office_dotnet_assembly_dll_load.yml
   * T1055.012 [RunPE via VBA](tests/3ad4a037-1598-4136-837c-4027e4fa319b.md)
@@ -913,6 +922,7 @@
   * T1562.001 [Stop and Remove Arbitrary Security Windows Service](tests/ae753dda-0f15-4af6-a168-b9ba16143143.md)
 * sysmon_susp_system_drawing_load.yml
   * T1218.010 [Regsvr32 Silent DLL Install Call DllRegisterServer](tests/9d71c492-ea2e-4c08-af16-c6994cdf029f.md)
+  * T1219 [ScreenConnect Application Download and Install on Windows](tests/4a18cc4e-416f-4966-9a9d-75731c4684c0.md)
   * T1218 [Renamed Microsoft.Workflow.Compiler.exe Payload Executions](tests/4cc40fd7-87b8-4b16-b2d7-57534b86b911.md)
 * sysmon_susp_webdav_client_execution.yml
   * T1110.003 [Password Spray all Domain Users](tests/90bc2e54-6c84-47a5-9439-0a2a92b4b175.md)
@@ -1066,8 +1076,16 @@
 * win_data_compressed_with_rar.yml
   * T1560.001 [Compress Data and lock with password for Exfiltration with winrar](tests/8dd61a55-44c6-43cc-af0c-8bdda276860c.md)
   * T1560.001 [Compress Data for Exfiltration With Rar](tests/02ea31cb-3b4c-4a2d-9bf1-e4e70ebcf5d0.md)
+* win_defender_tamper_protection_trigger.yml
+  * T1562.001 [Disable Defender with Defender Control](tests/178136d8-2778-4d7a-81f3-d517053a4fd6.md)
+* win_defender_threat.yml
+  * T1562.001 [Disable Defender with Defender Control](tests/178136d8-2778-4d7a-81f3-d517053a4fd6.md)
 * win_disable_event_logging.yml
   * T1562.002 [Clear Windows Audit Policy Config](tests/913c0e4e-4b37-4b78-ad0b-90e7b25010f6.md)
+* win_dq_gotoopener.yml
+  * T1219 [GoToAssist Files Detected Test on Windows](tests/1b72b3bd-72f8-4b63-a30b-84e91b9c3578.md)
+* win_dq_logmein.yml
+  * T1219 [LogMeIn Files Detected Test on Windows](tests/d03683ec-aae0-42f9-9b4c-534780e0f8e1.md)
 * win_etw_trace_evasion.yml
   * T1562.002 [Disable Event Logging with wevtutil](tests/b26a3340-dad7-4360-9176-706269c74103.md)
 * win_event_log_cleared.yml
@@ -1099,6 +1117,7 @@
   * T1218.004 [InstallUtil HelpText method call](tests/5a683850-1145-4326-a0e5-e91ced3c6022.md)
   * T1218.005 [Invoke HTML Application - Jscript Engine Simulating Double Click](tests/58a193ec-131b-404e-b1ca-b35cf0b18c33.md)
   * T1134.004 [Parent PID Spoofing - Spawn from Specified Process](tests/cbbff285-9051-444a-9d17-c07cd2d230eb.md)
+  * T1219 [ScreenConnect Application Download and Install on Windows](tests/4a18cc4e-416f-4966-9a9d-75731c4684c0.md)
   * T1218.004 [InstallUtil Uninstall method call - '/installtype=notransaction /action=uninstall' variant](tests/06d9deba-f732-48a8-af8e-bdd6e4d98c1d.md)
   * T1134.004 [Parent PID Spoofing - Spawn from New Process](tests/2988133e-561c-4e42-a15f-6281e6a9b2db.md)
   * T1127.001 [MSBuild Bypass Using Inline Tasks (VB)](tests/ab042179-c0c5-402f-9bc8-42741f5ce359.md)
@@ -1115,10 +1134,14 @@
   * T1218.005 [Invoke HTML Application - Simulate Lateral Movement over UNC Path](tests/b8a8bdb2-7eae-490d-8251-d5e0295b2362.md)
   * T1218.005 [Invoke HTML Application - JScript Engine with Rundll32 and Inline Protocol Handler](tests/e7e3a525-7612-4d68-a5d3-c4649181b8af.md)
   * T1552.004 [ADFS token signing and encryption certificates theft - Local](tests/78e95057-d429-4e66-8f82-0f060c1ac96f.md)
+* win_fe_gotoopener_artefact.yml
+  * T1219 [GoToAssist Files Detected Test on Windows](tests/1b72b3bd-72f8-4b63-a30b-84e91b9c3578.md)
 * win_fe_install_teamviewer_desktop.yml
   * T1219 [TeamViewer Files Detected Test on Windows](tests/8ca3b96d-8983-4a7f-b125-fc98cc0a2aa0.md)
 * win_fe_macro_file.yml
   * T1566.001 [Download Macro-Enabled Phishing Attachment](tests/114ccff9-ae6d-4547-9ead-4cd69f687306.md)
+* win_fe_screenconnect_artefact.yml
+  * T1219 [ScreenConnect Application Download and Install on Windows](tests/4a18cc4e-416f-4966-9a9d-75731c4684c0.md)
 * win_fe_susp_desktop_txt.yml
   * T1486 [PureLocker Ransom Note](tests/649349c7-9abf-493b-a7a2-b1aa4d141528.md)
 * win_fe_writing_local_admin_share.yml
@@ -1244,6 +1267,8 @@
 * win_nc_imewdbld.yml
   * T1105 [Download a file with IMEWDBLD.exe](tests/1a02df58-09af-4064-a765-0babe1a0d1e2.md)
 * win_nc_msiexec.yml
+  * T1219 [ScreenConnect Application Download and Install on Windows](tests/4a18cc4e-416f-4966-9a9d-75731c4684c0.md)
+  * T1219 [LogMeIn Files Detected Test on Windows](tests/d03683ec-aae0-42f9-9b4c-534780e0f8e1.md)
   * T1218.007 [Msiexec.exe - Execute Remote MSI file](tests/bde7d2fe-d049-458d-a362-abda32a7e649.md)
 * win_nc_susp_outbound_smtp_connections.yml
   * T1048.003 [Exfiltration Over Alternative Protocol - SMTP](tests/ec3a835e-adca-4c7c-88d2-853b69c11bb9.md)
@@ -1347,15 +1372,23 @@
   * T1555.003 [Run Chrome-password Collector](tests/8c05b133-d438-47ca-a630-19cc464c4622.md)
 * win_pc_findstr_gpp_passwords.yml
   * T1552.006 [GPP Passwords (findstr)](tests/870fe8fb-5e23-4f5f-b89d-dd7fe26f3b5f.md)
+* win_pc_gotoopener.yml
+  * T1219 [LogMeIn Files Detected Test on Windows](tests/d03683ec-aae0-42f9-9b4c-534780e0f8e1.md)
+  * T1219 [GoToAssist Files Detected Test on Windows](tests/1b72b3bd-72f8-4b63-a30b-84e91b9c3578.md)
 * win_pc_hashcat.yml
   * T1110.002 [Password Cracking with Hashcat](tests/6d27df5d-69d4-4c91-bc33-5983ffe91692.md)
 * win_pc_iis_http_logging.yml
   * T1562.002 [Disable Windows IIS HTTP Logging](tests/69435dcf-c66f-4ec0-a8b1-82beb76b34db.md)
+* win_pc_logmein.yml
+  * T1219 [LogMeIn Files Detected Test on Windows](tests/d03683ec-aae0-42f9-9b4c-534780e0f8e1.md)
+  * T1219 [GoToAssist Files Detected Test on Windows](tests/1b72b3bd-72f8-4b63-a30b-84e91b9c3578.md)
 * win_pc_lolbas_configsecuritypolicy.yml
   * T1567 [Data Exfiltration with ConfigSecurityPolicy](tests/5568a8f4-a8b1-4c40-9399-4969b642f122.md)
 * win_pc_msiexec_execute_dll.yml
   * T1218.007 [Msiexec.exe - Execute Arbitrary DLL](tests/66f64bd5-7c35-4c24-953a-04ca30a0a0ec.md)
 * win_pc_msiexec_install_quiet.yml
+  * T1219 [ScreenConnect Application Download and Install on Windows](tests/4a18cc4e-416f-4966-9a9d-75731c4684c0.md)
+  * T1219 [LogMeIn Files Detected Test on Windows](tests/d03683ec-aae0-42f9-9b4c-534780e0f8e1.md)
   * T1218.007 [Msiexec.exe - Execute Remote MSI file](tests/bde7d2fe-d049-458d-a362-abda32a7e649.md)
   * T1218.007 [Msiexec.exe - Execute Local MSI file](tests/0683e8f7-a27b-4b62-b7ab-dc7d4fed1df8.md)
 * win_pc_mstsc.yml
@@ -1436,8 +1469,11 @@
 * win_pc_susp_reg_open_command.yml
   * T1548.002 [Bypass UAC using Fodhelper](tests/58f641ea-12e3-499a-b684-44dee46bd182.md)
 * win_pc_susp_run_folder.yml
+  * T1562.001 [Disable Defender with Defender Control](tests/178136d8-2778-4d7a-81f3-d517053a4fd6.md)
+  * T1219 [ScreenConnect Application Download and Install on Windows](tests/4a18cc4e-416f-4966-9a9d-75731c4684c0.md)
   * T1090.003 [Psiphon](tests/14d55ca0-920e-4b44-8425-37eedd72b173.md)
   * T1219 [AnyDesk Files Detected Test on Windows](tests/6b8b7391-5c0a-4f8c-baee-78d8ce0ce330.md)
+  * T1219 [GoToAssist Files Detected Test on Windows](tests/1b72b3bd-72f8-4b63-a30b-84e91b9c3578.md)
 * win_pc_susp_rundll32_script_run.yml
   * T1218.011 [Rundll32 execute VBscript command](tests/638730e7-7aed-43dc-bf8c-8117f805f5bb.md)
   * T1218.011 [Rundll32 execute JavaScript Remote Payload With GetObject](tests/cf3bdb9a-dd11-4b6c-b0d0-9e22b68a71be.md)
@@ -1636,6 +1672,7 @@
   * T1003.001 [Dump LSASS.exe Memory using ProcDump](tests/0be2230c-9ab3-4ac2-8826-3199b9a0ebf8.md)
 * win_run_executable_invalid_extension.yml
   * T1218.011 [Rundll32 execute VBscript command](tests/638730e7-7aed-43dc-bf8c-8117f805f5bb.md)
+  * T1219 [ScreenConnect Application Download and Install on Windows](tests/4a18cc4e-416f-4966-9a9d-75731c4684c0.md)
   * T1546.015 [COM Hijacking - InprocServer32](tests/48117158-d7be-441b-bc6a-d9e36e47b52b.md)
   * T1218.011 [Execution of non-dll using rundll32.exe](tests/ae3a8605-b26e-457c-b6b3-2702fd335bac.md)
   * T1218.011 [Rundll32 execute JavaScript Remote Payload With GetObject](tests/cf3bdb9a-dd11-4b6c-b0d0-9e22b68a71be.md)
@@ -1763,6 +1800,7 @@
   * T1218.009 [Regasm Uninstall Method Call Test](tests/71bfbfac-60b1-4fc0-ac8b-2cedbbdcb112.md)
   * T1218.005 [Invoke HTML Application - Jscript Engine Simulating Double Click](tests/58a193ec-131b-404e-b1ca-b35cf0b18c33.md)
   * T1134.004 [Parent PID Spoofing - Spawn from Specified Process](tests/cbbff285-9051-444a-9d17-c07cd2d230eb.md)
+  * T1219 [ScreenConnect Application Download and Install on Windows](tests/4a18cc4e-416f-4966-9a9d-75731c4684c0.md)
   * T1218.004 [InstallUtil Uninstall method call - '/installtype=notransaction /action=uninstall' variant](tests/06d9deba-f732-48a8-af8e-bdd6e4d98c1d.md)
   * T1134.004 [Parent PID Spoofing - Spawn from New Process](tests/2988133e-561c-4e42-a15f-6281e6a9b2db.md)
   * T1218.005 [Invoke HTML Application - Jscript Engine over Local UNC Simulating Lateral Movement](tests/007e5672-2088-4853-a562-7490ddc19447.md)

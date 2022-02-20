@@ -19,7 +19,7 @@ Caution: a test can generate a lot of noise...
 ### T1562.001
 [office-365-Disable-AntiPhishRule](tests/b9bbae2c-2ba6-4cf3-b452-8e8f908696f3.md) ['office-365'] (sigma rule :x:)
 
-[Disable Defender with Defender Control](tests/178136d8-2778-4d7a-81f3-d517053a4fd6.md) ['windows'] (sigma rule :x:)
+[Disable Defender with Defender Control](tests/178136d8-2778-4d7a-81f3-d517053a4fd6.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Stop and Remove Arbitrary Security Windows Service](tests/ae753dda-0f15-4af6-a168-b9ba16143143.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1739,15 +1739,15 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1219
-[ScreenConnect Application Download and Install on Windows](tests/4a18cc4e-416f-4966-9a9d-75731c4684c0.md) ['windows'] (sigma rule :x:)
+[ScreenConnect Application Download and Install on Windows](tests/4a18cc4e-416f-4966-9a9d-75731c4684c0.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[LogMeIn Files Detected Test on Windows](tests/d03683ec-aae0-42f9-9b4c-534780e0f8e1.md) ['windows'] (sigma rule :x:)
+[LogMeIn Files Detected Test on Windows](tests/d03683ec-aae0-42f9-9b4c-534780e0f8e1.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [TeamViewer Files Detected Test on Windows](tests/8ca3b96d-8983-4a7f-b125-fc98cc0a2aa0.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [AnyDesk Files Detected Test on Windows](tests/6b8b7391-5c0a-4f8c-baee-78d8ce0ce330.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[GoToAssist Files Detected Test on Windows](tests/1b72b3bd-72f8-4b63-a30b-84e91b9c3578.md) ['windows'] (sigma rule :x:)
+[GoToAssist Files Detected Test on Windows](tests/1b72b3bd-72f8-4b63-a30b-84e91b9c3578.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1090.003
