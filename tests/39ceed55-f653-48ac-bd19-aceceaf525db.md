@@ -42,7 +42,7 @@ powershell
 
  - win_fe_csharp_compile_artefact.yml (id: e4a74e34-ecde-4aab-b2fb-9112dd01aed0)
 
- - win_susp_csc_folder.yml (id: dcaa3f04-70c3-427a-80b4-b870d73c94c4)
+ - proc_creation_win_susp_csc_folder.yml (id: dcaa3f04-70c3-427a-80b4-b870d73c94c4)
 
  - posh_ps_suspicious_windowstyle.yml (id: 313fbb0a-a341-4682-848d-6d6f8c4fab7c)
 
@@ -56,17 +56,17 @@ powershell
 
  - posh_ps_file_and_directory_discovery.yml (id: d23f2ba5-9da0-4463-8908-8ee47f614bb9)
 
- - win_susp_mshta_pattern.yml (id: e32f92d1-523e-49c3-9374-bdb13b46a3ba)
+ - proc_creation_win_susp_mshta_pattern.yml (id: e32f92d1-523e-49c3-9374-bdb13b46a3ba)
 
- - win_apt_lazarus_activity_apr21.yml (id: 4a12fa47-c735-4032-a214-6fab5b120670)
+ - proc_creation_win_apt_lazarus_activity_apr21.yml (id: 4a12fa47-c735-4032-a214-6fab5b120670)
 
- - win_shell_spawn_susp_program.yml (id: 3a6586ad-127a-4d3b-a677-1e6eacdf8fde)
+ - proc_creation_win_shell_spawn_susp_program.yml (id: 3a6586ad-127a-4d3b-a677-1e6eacdf8fde)
 
- - win_susp_mshta_execution.yml (id: cc7abbd0-762b-41e3-8a26-57ad50d2eea3)
+ - proc_creation_win_susp_mshta_execution.yml (id: cc7abbd0-762b-41e3-8a26-57ad50d2eea3)
 
- - win_apt_ta505_dropper.yml (id: 18cf6cf0-39b0-4c22-9593-e244bdc9a2d4)
+ - proc_creation_win_apt_ta505_dropper.yml (id: 18cf6cf0-39b0-4c22-9593-e244bdc9a2d4)
 
- - win_wmiprvse_spawning_process.yml (id: d21374ff-f574-44a7-9998-4a8c8bf33d7d)
+ - proc_creation_win_wmiprvse_spawning_process.yml (id: d21374ff-f574-44a7-9998-4a8c8bf33d7d)
 
  - file_event_win_shell_write_susp_directory.yml (id: 1277f594-a7d1-4f28-a2d3-73af5cbeab43)
 

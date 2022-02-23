@@ -33,7 +33,7 @@ More info and how to find your version can be found here https://lolbas-project.
 command_prompt
 
 # Sigma Rule
- - win_susp_mpcmdrun_download.yml (id: 46123129-1024-423e-9fae-43af4a0fa9a5)
+ - proc_creation_win_susp_mpcmdrun_download.yml (id: 46123129-1024-423e-9fae-43af4a0fa9a5)
 
 
 

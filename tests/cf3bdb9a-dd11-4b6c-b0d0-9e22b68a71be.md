@@ -33,9 +33,9 @@ Test execution of a remote script using rundll32.exe. Upon execution notepad.exe
 command_prompt
 
 # Sigma Rule
- - win_pc_susp_rundll32_script_run.yml (id: 73fcad2e-ff14-4c38-b11d-4172c8ac86c7)
+ - proc_creation_win_susp_rundll32_script_run.yml (id: 73fcad2e-ff14-4c38-b11d-4172c8ac86c7)
 
- - win_run_executable_invalid_extension.yml (id: c3a99af4-35a9-4668-879e-c09aeb4f2bdf)
+ - proc_creation_win_run_executable_invalid_extension.yml (id: c3a99af4-35a9-4668-879e-c09aeb4f2bdf)
 
  - sysmon_rundll32_net_connections.yml (id: cdc8da7d-c303-42f8-b08c-b4ab47230263)
 

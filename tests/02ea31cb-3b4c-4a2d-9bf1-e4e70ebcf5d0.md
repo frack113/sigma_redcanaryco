@@ -32,7 +32,7 @@ When the test completes you should find the txt files from the %USERPROFILE% dir
 command_prompt
 
 # Sigma Rule
- - win_data_compressed_with_rar.yml (id: 6f3e2987-db24-4c78-a860-b4f4095a7095)
+ - proc_creation_win_data_compressed_with_rar.yml (id: 6f3e2987-db24-4c78-a860-b4f4095a7095)
 
 
 

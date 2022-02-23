@@ -1011,6 +1011,8 @@ Caution: a test can generate a lot of noise...
 ### T1123
 [using device audio capture commandlet](tests/9c3ad250-b185-4444-b5a9-d69218a10c95.md) ['windows'] (sigma rule :heavy_check_mark:)
 
+[Registry artefact when application use microphone](tests/7a21cce2-6ada-4f7c-afd9-e1e9c481e44a.md) ['windows'] (sigma rule :x:)
+
 
 ### T1563.002
 [RDP hijacking](tests/a37ac520-b911-458e-8aed-c5f1576d9f46.md) ['windows'] (sigma rule :heavy_check_mark:)
@@ -1563,6 +1565,8 @@ Caution: a test can generate a lot of noise...
 ### T1112
 [Change Powershell Execution Policy to Bypass](tests/f3a6cceb-06c9-48e5-8df8-8867a6814245.md) ['windows'] (sigma rule :heavy_check_mark:)
 
+[BlackByte Ransomware Registry Changes - CMD](tests/4f4e2f9f-6209-4fcf-9b15-3b7455706f5b.md) ['windows'] (sigma rule :x:)
+
 [Add domain to Trusted sites Zone](tests/cf447677-5a4e-4937-a82c-e47d254afd57.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Modify registry to store logon credentials](tests/c0413fb5-33e2-40b7-9b6f-60b29f4a7a18.md) ['windows'] (sigma rule :heavy_check_mark:)
@@ -1754,6 +1758,8 @@ Caution: a test can generate a lot of noise...
 [Psiphon](tests/14d55ca0-920e-4b44-8425-37eedd72b173.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Tor Proxy Usage - Windows](tests/7b9d85e5-c4ce-4434-8060-d3de83595e69.md) ['windows'] (sigma rule :x:)
+
+[Tor Proxy Usage - Debian/Ubuntu](tests/5ff9d047-6e9c-4357-b39b-5cf89d9b59c7.md) ['linux'] (sigma rule :x:)
 
 
 ### T1218.008
@@ -2238,6 +2244,10 @@ Caution: a test can generate a lot of noise...
 
 ### T1491.001
 [Replace Desktop Wallpaper](tests/30558d53-9d76-41c4-9267-a7bd5184bed3.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+
+### T1125
+[Registry artefact when application use webcam](tests/6581e4a7-42e3-43c5-a0d2-5a0d62f9702a.md) ['windows'] (sigma rule :x:)
 
 
 ### T1564.003

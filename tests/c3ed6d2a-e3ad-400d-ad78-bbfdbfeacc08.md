@@ -30,9 +30,9 @@ Reference - https://gist.github.com/loadenmb/8254cee0f0287b896a05dcdc8a30042f
 powershell
 
 # Sigma Rule
- - process_creation_susp_web_request_cmd.yml (id: 9fc51a3c-81b3-4fa7-b35f-7c02cf10fd2d)
+ - proc_creation_win_susp_web_request_cmd.yml (id: 9fc51a3c-81b3-4fa7-b35f-7c02cf10fd2d)
 
- - win_powershell_xor_commandline.yml (id: bb780e0c-16cf-4383-8383-1e5471db6cf9)
+ - proc_creation_win_powershell_xor_commandline.yml (id: bb780e0c-16cf-4383-8383-1e5471db6cf9)
 
  - posh_ps_web_request.yml (id: 1139d2e2-84b1-4226-b445-354492eba8ba)
 
