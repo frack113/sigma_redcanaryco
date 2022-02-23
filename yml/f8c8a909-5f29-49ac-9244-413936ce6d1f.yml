@@ -23,4 +23,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 1a70042a-6622-4a2b-8958-267625349abf
-    name: win_pc_run_from_zip.yml
+    name: proc_creation_win_run_from_zip.yml

@@ -18,4 +18,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: add64136-62e5-48ea-807e-88638d02df1e
-    name: win_susp_fsutil_usage.yml
+    name: proc_creation_win_susp_fsutil_usage.yml

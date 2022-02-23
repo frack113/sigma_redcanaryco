@@ -21,4 +21,4 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: 23250293-eed5-4c39-b57a-841c8933a57d
-    name: win_pc_susp_cscript_vbs.yml
+    name: proc_creation_win_susp_cscript_vbs.yml

@@ -20,7 +20,7 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: a642964e-bead-4bed-8910-1bb4d63e3b4d
-    name: win_mimikatz_command_line.yml
+    name: proc_creation_win_mimikatz_command_line.yml
   - id: 89819aa4-bbd6-46bc-88ec-c7f7fe30efa6
     name: posh_ps_malicious_commandlets.yml
   - id: 34f90d3c-c297-49e9-b26d-911b05a4866c

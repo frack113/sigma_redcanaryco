@@ -16,6 +16,6 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 1cfac73c-be78-4f9a-9b08-5bde0c3953ab
-    name: process_creation_apt_wocao.yml
+    name: proc_creation_win_apt_wocao.yml
   - id: 92626ddd-662c-49e3-ac59-f6535f12d189
-    name: win_susp_schtask_creation.yml
+    name: proc_creation_win_susp_schtask_creation.yml

@@ -24,9 +24,9 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: d7bcd677-645d-4691-a8d4-7a5602b780d1
-    name: win_powershell_cmdline_special_characters.yml
+    name: proc_creation_win_powershell_cmdline_special_characters.yml
   - id: a6a39bdb-935c-4f0a-ab77-35f4bbf44d33
-    name: win_susp_script_exec_from_temp.yml
+    name: proc_creation_win_susp_script_exec_from_temp.yml
   - id: e6ce8457-68b1-485b-9bdd-3c2b5d679aa9
     name: sysmon_susp_winword_vbadll_load.yml
   - id: c7a74c80-ba5a-486e-9974-ab9e682bc5e4
@@ -34,7 +34,7 @@ sigma_rule:
   - id: 75e33ce3-ae32-4dcc-9aa8-a2a3029d6f84
     name: sysmon_excel_outbound_network_connection.yml
   - id: cea72823-df4d-4567-950c-0b579eaf0846
-    name: win_malware_script_dropper.yml
+    name: proc_creation_win_malware_script_dropper.yml
   - id: 9ae01559-cf7e-4f8e-8e14-4c290a1b4784
     name: sysmon_uipromptforcreds_dlls.yml
   - id: 25ffa65d-76d8-4da5-a832-3f2b0136e133

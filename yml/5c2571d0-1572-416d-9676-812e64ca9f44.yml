@@ -22,4 +22,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 038cd51c-3ad8-41c5-ba8f-5d1c92f3cc1e
-    name: win_pc_reg_dump_sam.yml
+    name: proc_creation_win_reg_dump_sam.yml

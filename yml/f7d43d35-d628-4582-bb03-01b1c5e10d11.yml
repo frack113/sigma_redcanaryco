@@ -17,11 +17,11 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: d2b749ee-4225-417e-b20e-a8d2193cbb84
-    name: win_susp_advancedrun.yml
+    name: proc_creation_win_susp_advancedrun.yml
   - id: a7ee1722-c3c5-aeff-3212-c777e4733217
-    name: win_powershell_disable_windef_av.yml
+    name: proc_creation_win_powershell_disable_windef_av.yml
   - id: fa00b701-44c6-4679-994d-5a18afa8a707
-    name: win_susp_advancedrun_priv_user.yml
+    name: proc_creation_win_susp_advancedrun_priv_user.yml
   - id: a18dd26b-6450-46de-8c91-9659150cf088
     name: win_susp_proc_access_lsass.yml
   - id: 32d0d3e2-e58d-4d41-926b-18b520b2b32d

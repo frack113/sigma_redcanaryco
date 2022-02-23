@@ -123,6 +123,7 @@ collection;T1560.001;sh;['linux', 'macos'];Data Compressed - nix - gzip Single F
 collection;T1560.001;sh;['linux', 'macos'];Data Compressed - nix - tar Folder or File;7af2b51e-ad1c-498c-aca8-d3290c19535a;False;7
 collection;T1560.001;sh;['macos', 'linux'];Data Encrypted with zip and gpg symmetric;0286eb44-e7ce-41a0-b109-3da516e05a5f;False;8
 collection;T1123;powershell;['windows'];using device audio capture commandlet;9c3ad250-b185-4444-b5a9-d69218a10c95;True;1
+collection;T1123;command_prompt;['windows'];Registry artefact when application use microphone;7a21cce2-6ada-4f7c-afd9-e1e9c481e44a;False;2
 collection;T1119;command_prompt;['windows'];Automated Collection Command Prompt;cb379146-53f1-43e0-b884-7ce2c635ff5b;True;1
 collection;T1119;powershell;['windows'];Automated Collection PowerShell;634bd9b9-dc83-4229-b19f-7f83ba9ad313;True;2
 collection;T1119;powershell;['windows'];Recon information for export with PowerShell;c3f6d794-50dd-482f-b640-0384fbb7db26;True;3
@@ -151,6 +152,7 @@ collection;T1113;bash;['linux'];X Windows Capture;8206dd0c-faf6-4d74-ba13-7fbe13
 collection;T1113;bash;['linux'];Capture Linux Desktop using Import Tool;9cd1cccb-91e4-4550-9139-e20a586fcea1;False;4
 collection;T1113;powershell;['windows'];Windows Screencapture;3c898f62-626c-47d5-aad2-6de873d69153;True;5
 collection;T1113;powershell;['windows'];Windows Screen Capture (CopyFromScreen);e9313014-985a-48ef-80d9-cde604ffc187;True;6
+collection;T1125;command_prompt;['windows'];Registry artefact when application use webcam;6581e4a7-42e3-43c5-a0d2-5a0d62f9702a;False;1
 privilege-escalation;T1546.008;powershell;['windows'];Attaches Command Prompt as a Debugger to a List of Target Processes;3309f53e-b22b-4eb6-8fd2-a6cf58b355a9;True;1
 privilege-escalation;T1546.008;command_prompt;['windows'];Replace binary of sticky keys;934e90cf-29ca-48b3-863c-411737ad44e3;True;2
 privilege-escalation;T1546.010;command_prompt;['windows'];Install AppInit Shim;a58d9386-3080-4242-ab5f-454c16503d18;True;1
@@ -469,6 +471,7 @@ defense-evasion;T1112;command_prompt;['windows'];Modify registry to store logon 
 defense-evasion;T1112;powershell;['windows'];Add domain to Trusted sites Zone;cf447677-5a4e-4937-a82c-e47d254afd57;True;4
 defense-evasion;T1112;powershell;['windows'];Javascript in registry;15f44ea9-4571-4837-be9e-802431a7bfae;True;5
 defense-evasion;T1112;powershell;['windows'];Change Powershell Execution Policy to Bypass;f3a6cceb-06c9-48e5-8df8-8867a6814245;True;6
+defense-evasion;T1112;command_prompt;['windows'];BlackByte Ransomware Registry Changes - CMD;4f4e2f9f-6209-4fcf-9b15-3b7455706f5b;False;7
 defense-evasion;T1218.005;command_prompt;['windows'];Mshta executes JavaScript Scheme Fetch Remote Payload With GetObject;1483fab9-4f52-4217-a9ce-daa9d7747cae;True;1
 defense-evasion;T1218.005;command_prompt;['windows'];Mshta executes VBScript to execute malicious command;906865c3-e05f-4acc-85c4-fbc185455095;True;2
 defense-evasion;T1218.005;powershell;['windows'];Mshta Executes Remote HTML Application (HTA);c4b97eeb-5249-4455-a607-59f95485cb45;True;3
@@ -1022,6 +1025,7 @@ command-and-control;T1090.001;sh;['macos'];Connection Proxy for macOS UI;648d68c
 command-and-control;T1090.001;powershell;['windows'];portproxy reg key;b8223ea9-4be2-44a6-b50a-9657a3d4e72a;True;3
 command-and-control;T1090.003;powershell;['windows'];Psiphon;14d55ca0-920e-4b44-8425-37eedd72b173;True;1
 command-and-control;T1090.003;powershell;['windows'];Tor Proxy Usage - Windows;7b9d85e5-c4ce-4434-8060-d3de83595e69;False;2
+command-and-control;T1090.003;sh;['linux'];Tor Proxy Usage - Debian/Ubuntu;5ff9d047-6e9c-4357-b39b-5cf89d9b59c7;False;3
 command-and-control;T1095;powershell;['windows'];ICMP C2;0268e63c-e244-42db-bef7-72a9e59fc1fc;True;1
 command-and-control;T1095;powershell;['windows'];Netcat C2;bcf0d1c1-3f6a-4847-b1c9-7ed4ea321f37;True;2
 command-and-control;T1095;powershell;['windows'];Powercat C2;3e0e0e7f-6aa2-4a61-b61d-526c2cc9330e;True;3

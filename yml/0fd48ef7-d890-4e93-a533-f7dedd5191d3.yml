@@ -18,6 +18,6 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 09af397b-c5eb-4811-b2bb-08b3de464ebf
-    name: win_pc_wmic_remote_service.yml
+    name: proc_creation_win_wmic_remote_service.yml
   - id: 06ce37c2-61ab-4f05-9ff5-b1a96d18ae32
     name: sysmon_wmic_remote_xsl_scripting_dlls.yml

@@ -16,4 +16,4 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: 0c2f8629-7129-4a8a-9897-7e0768f13ff2
-    name: win_susp_diskshadow.yml
+    name: proc_creation_win_susp_diskshadow.yml

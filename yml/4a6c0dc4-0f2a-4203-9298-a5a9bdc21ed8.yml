@@ -23,5 +23,5 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 60fc936d-2eb0-4543-8a13-911c750a1dfc
-    name: win_interactive_at.yml
+    name: proc_creation_win_interactive_at.yml
 

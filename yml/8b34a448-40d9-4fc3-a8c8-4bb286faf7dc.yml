@@ -20,4 +20,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: fa47597e-90e9-41cd-ab72-c3b74cfb0d02
-    name: win_indirect_cmd.yml
+    name: proc_creation_win_indirect_cmd.yml

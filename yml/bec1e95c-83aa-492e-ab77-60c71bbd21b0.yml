@@ -20,4 +20,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 37ae075c-271b-459b-8d7b-55ad5f993dd8
-    name: win_file_permission_modifications.yml
+    name: proc_creation_win_file_permission_modifications.yml

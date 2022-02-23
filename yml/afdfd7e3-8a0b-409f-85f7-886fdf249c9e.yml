@@ -19,4 +19,4 @@ sigma_rule:
   - id: eeb30123-9fbd-4ee8-aaa0-2e545bbed6dc
     name: sysmon_ssp_added_lsa_config.yml
   - id: 737e618a-a410-49b5-bec3-9e55ff7fbc15
-    name: win_susp_calc.yml
+    name: proc_creation_win_susp_calc.yml

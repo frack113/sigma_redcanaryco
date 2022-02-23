@@ -23,4 +23,4 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: efdd8dd5-cee8-4e59-9390-7d4d5e4dd6f6
-    name: process_creation_susp_progname.yml
+    name: proc_creation_win_susp_progname.yml

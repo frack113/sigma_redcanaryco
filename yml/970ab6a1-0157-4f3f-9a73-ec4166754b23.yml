@@ -19,4 +19,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: a29c1813-ab1f-4dde-b489-330b952e91ae
-    name: win_pc_susp_network_command.yml
+    name: proc_creation_win_susp_network_command.yml

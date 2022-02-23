@@ -22,8 +22,8 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: dca91cfd-d7ab-4c66-8da7-ee57d487b35b
-    name: win_pc_susp_run_folder.yml
+    name: proc_creation_win_susp_run_folder.yml
   - id: d88d0ab2-e696-4d40-a2ed-9790064e66b3
     name: win_re_ie_persistence.yml
   - id: 86085955-ea48-42a2-9dd3-85d4c36b167d
-    name: win_pc_susp_taskkill.yml
+    name: proc_creation_win_susp_taskkill.yml

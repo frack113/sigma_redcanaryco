@@ -25,9 +25,9 @@ sigma_rule:
   - id: e6ce8457-68b1-485b-9bdd-3c2b5d679aa9
     name: sysmon_susp_winword_vbadll_load.yml
   - id: a7c3d773-caef-227e-a7e7-c2f13c622329
-    name: win_bad_opsec_sacrificial_processes.yml
+    name: proc_creation_win_bad_opsec_sacrificial_processes.yml
   - id: 438025f9-5856-4663-83f7-52f878a70a50
-    name: win_office_shell.yml
+    name: proc_creation_win_office_shell.yml
   - id: 5f113a8f-8b61-41ca-b90f-d374fa7e4a39
     name: sysmon_in_memory_assembly_execution.yml
   - id: 635dbb88-67b3-4b41-9ea5-a3af2dd88153

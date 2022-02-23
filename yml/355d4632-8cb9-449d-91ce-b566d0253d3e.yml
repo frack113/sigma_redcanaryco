@@ -19,4 +19,4 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: 954f0af7-62dd-418f-b3df-a84bc2c7a774
-    name: win_pc_mstsc.yml
+    name: proc_creation_win_mstsc.yml

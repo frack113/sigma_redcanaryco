@@ -20,6 +20,6 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: dcaa3f04-70c3-427a-80b4-b870d73c94c4
-    name: win_susp_csc_folder.yml
+    name: proc_creation_win_susp_csc_folder.yml
   - id: 5f113a8f-8b61-41ca-b90f-d374fa7e4a39
     name: sysmon_in_memory_assembly_execution.yml

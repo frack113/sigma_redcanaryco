@@ -30,19 +30,19 @@ sigma_rule:
   - id: 06d71506-7beb-4f22-8888-e2e5e2ca7fd8
     name: win_alert_mimikatz_keywords.yml
   - id: a642964e-bead-4bed-8910-1bb4d63e3b4d
-    name: win_mimikatz_command_line.yml
+    name: proc_creation_win_mimikatz_command_line.yml
   - id: f4bbd493-b796-416e-bbf2-121235348529
-    name: win_non_interactive_powershell.yml
+    name: proc_creation_win_non_interactive_powershell.yml
   - id: d7bcd677-645d-4691-a8d4-7a5602b780d1
-    name: win_powershell_cmdline_special_characters.yml
+    name: proc_creation_win_powershell_cmdline_special_characters.yml
   - id: c947b146-0abc-4c87-9c64-b17e9d7274a2
-    name: win_shadow_copies_deletion.yml
+    name: proc_creation_win_shadow_copies_deletion.yml
   - id: 3ede524d-21cc-472d-a3ce-d21b568d8db7
-    name: win_psexesvc_start.yml
+    name: proc_creation_win_psexesvc_start.yml
   - id: f62176f3-8128-4faa-bf6c-83261322e5eb
     name: posh_ps_malicious_keywords.yml
   - id: 730fc21b-eaff-474b-ad23-90fd265d4988
-    name: win_susp_psexec_eula.yml
+    name: proc_creation_win_susp_psexec_eula.yml
   - id: 25ffa65d-76d8-4da5-a832-3f2b0136e133
     name: registry_event_sysinternals_eula_accepted.yml
   - id: 259e5a6a-b8d2-4c38-86e2-26c5e651361d

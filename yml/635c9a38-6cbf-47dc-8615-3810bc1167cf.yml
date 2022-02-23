@@ -17,4 +17,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 00bca14a-df4e-4649-9054-3f2aa676bc04
-    name: win_susp_curl_fileupload.yml
+    name: proc_creation_win_susp_curl_fileupload.yml

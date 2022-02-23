@@ -20,4 +20,4 @@ sigma_rule:
   - id: 1f49f2ab-26bc-48b3-96cc-dcffbc93eadf
     name: posh_ps_suspicious_keywords.yml
   - id: c3a99af4-35a9-4668-879e-c09aeb4f2bdf
-    name: win_run_executable_invalid_extension.yml
+    name: proc_creation_win_run_executable_invalid_extension.yml

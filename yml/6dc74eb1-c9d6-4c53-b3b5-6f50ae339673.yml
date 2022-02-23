@@ -27,5 +27,5 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: f1f3bf22-deb2-418d-8cce-e1a45e46a5bd
-    name: win_mmc20_lateral_movement.yml
+    name: proc_creation_win_mmc20_lateral_movement.yml
 

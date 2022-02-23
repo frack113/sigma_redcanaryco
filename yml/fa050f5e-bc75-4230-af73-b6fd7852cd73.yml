@@ -22,5 +22,5 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: e32d4572-9826-4738-b651-95fa63747e8a
-    name: win_powershell_frombase64string.yml
+    name: proc_creation_win_powershell_frombase64string.yml
 

@@ -23,5 +23,5 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 7fe71fc9-de3b-432a-8d57-8c809efc10ab
-    name: win_new_service_creation.yml
+    name: proc_creation_win_new_service_creation.yml
 

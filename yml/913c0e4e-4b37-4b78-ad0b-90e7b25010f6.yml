@@ -16,6 +16,6 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 0a13e132-651d-11eb-ae93-0242ac130002
-    name: win_sus_auditpol_usage.yml
+    name: proc_creation_win_sus_auditpol_usage.yml
   - id: 69aeb277-f15f-4d2d-b32a-55e883609563
     name: win_disable_event_logging.yml

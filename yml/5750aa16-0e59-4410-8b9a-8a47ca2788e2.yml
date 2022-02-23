@@ -18,4 +18,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 221b251a-357a-49a9-920a-271802777cc0
-    name: win_pc_wmic_reconnaissance.yml
+    name: proc_creation_win_wmic_reconnaissance.yml

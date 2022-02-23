@@ -19,6 +19,6 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 2a072a96-a086-49fa-bcb5-15cc5a619093
-    name: win_service_execution.yml
+    name: proc_creation_win_service_execution.yml
   - id: 183e7ea8-ac4b-4c23-9aec-b3dac4e401ac
-    name: win_susp_net_execution.yml
+    name: proc_creation_win_susp_net_execution.yml

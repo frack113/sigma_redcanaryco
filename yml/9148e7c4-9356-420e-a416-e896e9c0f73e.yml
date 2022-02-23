@@ -23,5 +23,5 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: b3512211-c67e-4707-bedc-66efc7848863
-    name: win_powershell_downgrade_attack.yml
+    name: proc_creation_win_powershell_downgrade_attack.yml
 

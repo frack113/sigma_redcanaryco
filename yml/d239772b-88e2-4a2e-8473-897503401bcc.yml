@@ -18,8 +18,8 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 4f4eaa9f-5ad4-410c-a4be-bc6132b0175a
-    name: win_pc_cmd_redirect.yml
+    name: proc_creation_win_cmd_redirect.yml
   - id: f37aba28-a9e6-4045-882c-d5004043b337
-    name: win_pc_susp_cmdl32_lolbas.yml
+    name: proc_creation_win_susp_cmdl32_lolbas.yml
   - id: 86085955-ea48-42a2-9dd3-85d4c36b167d
-    name: win_pc_susp_taskkill.yml
+    name: proc_creation_win_susp_taskkill.yml

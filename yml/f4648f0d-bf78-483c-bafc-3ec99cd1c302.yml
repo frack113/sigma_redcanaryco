@@ -18,4 +18,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 34ebb878-1b15-4895-b352-ca2eeb99b274
-    name: win_pc_susp_shutdown.yml
+    name: proc_creation_win_susp_shutdown.yml

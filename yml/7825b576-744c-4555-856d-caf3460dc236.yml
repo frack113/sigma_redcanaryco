@@ -25,5 +25,5 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: d38d2fa4-98e6-4a24-aff1-410b0c9ad177
-    name: win_hktl_uacme_uac_bypass.yml
+    name: proc_creation_win_hktl_uacme_uac_bypass.yml
 

@@ -1,0 +1,17 @@
+Attack_name: Audio Capture
+Attack_description: |-
+  An adversary can leverage a computer's peripheral devices (e.g., microphones and webcams) or applications (e.g., voice and video call services) to capture audio recordings for the purpose of listening into sensitive conversations to gather information.
+
+  Malware or scripts may be used to interact with the devices through an available API provided by the operating system or an application to capture audio. Audio files may be written to disk and exfiltrated later.
+guid: 7a21cce2-6ada-4f7c-afd9-e1e9c481e44a
+name: Registry artefact when application use microphone
+tactic:
+  - collection
+technique:
+  - T1123
+os:
+  - windows
+description: "[can-you-track-processes-accessing-the-camera-and-microphone](https://svch0st.medium.com/can-you-track-processes-accessing-the-camera-and-microphone-7e6885b37072)\n"
+executor: command_prompt
+sigma: false
+sigma_rule: []

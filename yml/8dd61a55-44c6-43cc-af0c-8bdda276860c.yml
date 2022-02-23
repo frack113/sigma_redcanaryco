@@ -18,4 +18,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 6f3e2987-db24-4c78-a860-b4f4095a7095
-    name: win_data_compressed_with_rar.yml
+    name: proc_creation_win_data_compressed_with_rar.yml

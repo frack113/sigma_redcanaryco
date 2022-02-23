@@ -16,6 +16,6 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 183e7ea8-ac4b-4c23-9aec-b3dac4e401ac
-    name: win_susp_net_execution.yml
+    name: proc_creation_win_susp_net_execution.yml
   - id: cb7c4a03-2871-43c0-9bbb-18bbdb079896
-    name: win_susp_mounted_share_deletion.yml
+    name: proc_creation_win_susp_mounted_share_deletion.yml

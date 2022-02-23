@@ -20,7 +20,7 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: edc2f8ae-2412-4dfd-b9d5-0c57727e70be
-    name: win_powershell_reverse_shell_connection.yml
+    name: proc_creation_win_powershell_reverse_shell_connection.yml
   - id: 1f21ec3f-810d-4b0e-8045-322202e22b4b
     name: sysmon_powershell_network_connection.yml
   - id: e54979bd-c5f9-4d6c-967b-a04b19ac4c74

@@ -17,4 +17,4 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: e31033fc-33f0-4020-9a16-faf9b31cbf08
-    name: sysmon_netcat_execution.yml
+    name: proc_creation_win_netcat_execution.yml

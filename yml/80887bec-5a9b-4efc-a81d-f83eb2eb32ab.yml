@@ -18,6 +18,6 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 183e7ea8-ac4b-4c23-9aec-b3dac4e401ac
-    name: win_susp_net_execution.yml
+    name: proc_creation_win_susp_net_execution.yml
   - id: 07f8bdc2-c9b3-472a-9817-5a670b872f53
-    name: win_cmdkey_recon.yml
+    name: proc_creation_win_cmdkey_recon.yml

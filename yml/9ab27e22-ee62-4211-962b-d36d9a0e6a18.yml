@@ -26,5 +26,5 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 517490a7-115a-48c6-8862-1a481504d5a8
-    name: win_sdbinst_shim_persistence.yml
+    name: proc_creation_win_sdbinst_shim_persistence.yml
 

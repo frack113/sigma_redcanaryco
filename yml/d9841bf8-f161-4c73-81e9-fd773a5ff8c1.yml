@@ -17,4 +17,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 347906f3-e207-4d18-ae5b-a9403d6bcdef
-    name: win_pc_netsh_fw_enable_group_rule.yml
+    name: proc_creation_win_netsh_fw_enable_group_rule.yml

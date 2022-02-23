@@ -17,4 +17,4 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: 6783aa9e-0dc3-49d4-a94a-8b39c5fd700b
-    name: sysmon_susp_service_modification.yml
+    name: proc_creation_win_susp_service_modification.yml

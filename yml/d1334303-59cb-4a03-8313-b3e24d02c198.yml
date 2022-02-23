@@ -18,6 +18,6 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 27a72a60-7e5e-47b1-9d17-909c9abafdcd
-    name: win_susp_compression_params.yml
+    name: proc_creation_win_susp_compression_params.yml
   - id: 9fbf5927-5261-4284-a71d-f681029ea574
-    name: process_creation_susp_7z.yml
+    name: proc_creation_win_susp_7z.yml

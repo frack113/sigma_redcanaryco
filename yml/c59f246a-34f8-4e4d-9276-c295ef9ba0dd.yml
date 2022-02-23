@@ -16,8 +16,8 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: bab049ca-7471-4828-9024-38279a4c04da
-    name: win_run_virtualbox.yml
+    name: proc_creation_win_run_virtualbox.yml
   - id: 8e2b24c9-4add-46a0-b4bb-0057b4e6187d
-    name: win_susp_regsvr32_anomalies.yml
+    name: proc_creation_win_susp_regsvr32_anomalies.yml
   - id: 7fe71fc9-de3b-432a-8d57-8c809efc10ab
-    name: win_new_service_creation.yml
+    name: proc_creation_win_new_service_creation.yml

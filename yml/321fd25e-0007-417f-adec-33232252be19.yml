@@ -21,5 +21,5 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 4b046706-5789-4673-b111-66f25fe99534
-    name: win_pc_susp_cipher.yml
+    name: proc_creation_win_susp_cipher.yml
 

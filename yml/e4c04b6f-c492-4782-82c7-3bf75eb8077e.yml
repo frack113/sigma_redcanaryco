@@ -18,4 +18,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: e593cf51-88db-4ee1-b920-37e89012a3c9
-    name: win_susp_rundll32_activity.yml
+    name: proc_creation_win_susp_rundll32_activity.yml

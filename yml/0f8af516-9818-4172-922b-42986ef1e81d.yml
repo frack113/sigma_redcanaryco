@@ -18,4 +18,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 68c8acb4-1b60-4890-8e82-3ddf7a6dba84
-    name: win_hh_chm.yml
+    name: proc_creation_win_hh_chm.yml

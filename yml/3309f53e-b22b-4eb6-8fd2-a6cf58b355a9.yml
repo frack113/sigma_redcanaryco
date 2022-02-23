@@ -32,7 +32,7 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: ae215552-081e-44c7-805f-be16f975c8a2
-    name: win_install_reg_debugger_backdoor.yml
+    name: proc_creation_win_install_reg_debugger_backdoor.yml
   - id: baca5663-583c-45f9-b5dc-ea96a22ce542
     name: registry_event_stickykey_like_backdoor.yml
   - id: cbf93e5d-ca6c-4722-8bea-e9119007c248

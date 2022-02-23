@@ -26,4 +26,4 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: 7ec2c172-dceb-4c10-92c9-87c1881b7e18
-    name: win_hack_rubeus.yml
+    name: proc_creation_win_hack_rubeus.yml

@@ -18,4 +18,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 7c9340a9-e2ee-4e43-94c5-c54ebbea1006
-    name: win_pc_susp_dir.yml
+    name: proc_creation_win_susp_dir.yml

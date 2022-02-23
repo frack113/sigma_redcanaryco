@@ -25,8 +25,8 @@ sigma_rule:
   - id: e6ce8457-68b1-485b-9bdd-3c2b5d679aa9
     name: sysmon_susp_winword_vbadll_load.yml
   - id: 438025f9-5856-4663-83f7-52f878a70a50
-    name: win_office_shell.yml
+    name: proc_creation_win_office_shell.yml
   - id: 1e33157c-53b1-41ad-bbcc-780b80b58288
-    name: win_susp_script_execution.yml
+    name: proc_creation_win_susp_script_execution.yml
   - id: cea72823-df4d-4567-950c-0b579eaf0846
-    name: win_malware_script_dropper.yml
+    name: proc_creation_win_malware_script_dropper.yml

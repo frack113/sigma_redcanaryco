@@ -38,17 +38,17 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: b2815d0d-7481-4bf0-9b6c-a4c48a94b349
-    name: win_susp_powershell_getprocess_lsass.yml
+    name: proc_creation_win_susp_powershell_getprocess_lsass.yml
   - id: ffa6861c-4461-4f59-8a41-578c39f3f23e
-    name: win_lsass_dump.yml
+    name: proc_creation_win_lsass_dump.yml
   - id: f4bbd493-b796-416e-bbf2-121235348529
-    name: win_non_interactive_powershell.yml
+    name: proc_creation_win_non_interactive_powershell.yml
   - id: 84c174ab-d3ef-481f-9c86-a50d0b8e3edb
     name: posh_ps_suspicious_getprocess_lsass.yml
   - id: 1f49f2ab-26bc-48b3-96cc-dcffbc93eadf
     name: posh_ps_suspicious_keywords.yml
   - id: 09e6d5c0-05b8-4ff8-9eeb-043046ec774c
-    name: win_susp_comsvcs_procdump.yml
+    name: proc_creation_win_susp_comsvcs_procdump.yml
   - id: a49fa4d5-11db-418c-8473-1e014a8dd462
     name: sysmon_lsass_dump_comsvcs_dll.yml
   - id: 32d0d3e2-e58d-4d41-926b-18b520b2b32d

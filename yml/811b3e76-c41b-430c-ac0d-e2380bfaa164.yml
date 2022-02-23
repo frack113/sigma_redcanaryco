@@ -16,4 +16,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 4d7cda18-1b12-4e52-b45c-d28653210df8
-    name: win_sysmon_driver_unload.yml
+    name: proc_creation_win_sysmon_driver_unload.yml

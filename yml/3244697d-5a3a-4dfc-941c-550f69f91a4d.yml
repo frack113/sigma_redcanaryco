@@ -19,5 +19,5 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 56321594-9087-49d9-bf10-524fe8479452
-    name: win_susp_netsh_dll_persistence.yml
+    name: proc_creation_win_susp_netsh_dll_persistence.yml
 

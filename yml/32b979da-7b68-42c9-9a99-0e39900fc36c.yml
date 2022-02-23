@@ -20,5 +20,5 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 4281cb20-2994-4580-aa63-c8b86d019934
-    name: win_attrib_hiding_files.yml
+    name: proc_creation_win_attrib_hiding_files.yml
 

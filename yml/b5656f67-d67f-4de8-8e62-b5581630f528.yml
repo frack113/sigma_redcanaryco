@@ -21,4 +21,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: d3c3861d-c504-4c77-ba55-224ba82d0118
-    name: win_netsh_packet_capture.yml
+    name: proc_creation_win_netsh_packet_capture.yml

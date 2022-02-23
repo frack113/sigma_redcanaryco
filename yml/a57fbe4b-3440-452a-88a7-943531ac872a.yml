@@ -17,7 +17,7 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: 85a8e5ba-bd03-4bfb-bbfa-a4409a8f8b98
-    name: process_creation_susp_zip_compress.yml
+    name: proc_creation_win_susp_zip_compress.yml
   - id: daf7eb81-35fd-410d-9d7a-657837e602bb
     name: posh_pm_susp_zip_compress.yml
   - id: b7a3c9a3-09ea-4934-8864-6a32cacd98d9

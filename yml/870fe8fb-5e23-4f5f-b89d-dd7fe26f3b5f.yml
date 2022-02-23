@@ -26,5 +26,5 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 91a2c315-9ee6-4052-a853-6f6a8238f90d
-    name: win_pc_findstr_gpp_passwords.yml
+    name: proc_creation_win_findstr_gpp_passwords.yml
 

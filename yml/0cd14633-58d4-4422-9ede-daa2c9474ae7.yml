@@ -16,4 +16,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: ddeff553-5233-4ae9-bbab-d64d2bd634be
-    name: process_creation_clip.yml
+    name: proc_creation_win_clip.yml

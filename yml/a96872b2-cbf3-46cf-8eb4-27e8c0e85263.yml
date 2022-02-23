@@ -20,4 +20,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: a29808fd-ef50-49ff-9c7a-59a9b040b404
-    name: win_pc_pypykatz.yml
+    name: proc_creation_win_pypykatz.yml

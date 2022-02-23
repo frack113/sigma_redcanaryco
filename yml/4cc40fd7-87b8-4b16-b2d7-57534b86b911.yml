@@ -16,11 +16,11 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: 01d2e2a1-5f09-44f7-9fc1-24faa7479b6d
-    name: win_susp_svchost.yml
+    name: proc_creation_win_susp_svchost.yml
   - id: e4a6b256-3e47-40fc-89d2-7a477edd6915
-    name: win_system_exe_anomaly.yml
+    name: proc_creation_win_system_exe_anomaly.yml
   - id: 419dbf2b-8a9b-4bea-bf99-7544b050ec8d
-    name: win_workflow_compiler.yml
+    name: proc_creation_win_workflow_compiler.yml
   - id: 666ecfc7-229d-42b8-821e-1a8f8cb7057c
     name: sysmon_susp_system_drawing_load.yml
   - id: e4b63079-6198-405c-abd7-3fe8b0ce3263

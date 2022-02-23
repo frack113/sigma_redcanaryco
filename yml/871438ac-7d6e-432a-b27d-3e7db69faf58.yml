@@ -16,4 +16,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 43e32da2-fdd0-4156-90de-50dfd62636f9
-    name: win_pc_dsim_remove.yml
+    name: proc_creation_win_dsim_remove.yml

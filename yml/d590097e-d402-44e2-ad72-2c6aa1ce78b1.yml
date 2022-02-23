@@ -16,4 +16,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: fbd7c32d-db2a-4418-b92c-566eb8911133
-    name: process_creation_syncappvpublishingserver_execute_arbitrary_powershell.yml
+    name: proc_creation_win_syncappvpublishingserver_execute_powershell.yml

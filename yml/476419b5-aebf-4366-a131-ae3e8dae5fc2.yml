@@ -22,7 +22,7 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: a4824fca-976f-4964-b334-0621379e84c4
-    name: process_creation_sdelete.yml
+    name: proc_creation_win_sdelete.yml
   - id: 9841b233-8df8-4ad7-9133-b0b4402a9014
     name: sysmon_sysinternals_sdelete_registry_keys.yml
   - id: 25ffa65d-76d8-4da5-a832-3f2b0136e133

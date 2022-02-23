@@ -20,4 +20,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: f5240972-3938-4e56-8e4b-e33893176c1f
-    name: win_pc_susp_machineguid.yml
+    name: proc_creation_win_susp_machineguid.yml

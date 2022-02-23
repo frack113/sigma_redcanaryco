@@ -38,9 +38,9 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: b2815d0d-7481-4bf0-9b6c-a4c48a94b349
-    name: win_susp_powershell_getprocess_lsass.yml
+    name: proc_creation_win_susp_powershell_getprocess_lsass.yml
   - id: a642964e-bead-4bed-8910-1bb4d63e3b4d
-    name: win_mimikatz_command_line.yml
+    name: proc_creation_win_mimikatz_command_line.yml
   - id: 8ff28fdd-e2fa-4dfa-aeda-ef3d61c62090
     name: posh_pm_suspicious_invocation_specific.yml
   - id: ae7fbf8e-f3cb-49fd-8db4-5f3bed522c71

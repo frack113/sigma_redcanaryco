@@ -24,7 +24,7 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 38879043-7e1e-47a9-8d46-6bec88e201df
-    name: win_modif_of_services_for_via_commandline.yml
+    name: proc_creation_win_modif_of_services_for_via_commandline.yml
   - id: 138d3531-8793-4f50-a2cd-f291b2863d78
-    name: win_susp_service_path_modification.yml
+    name: proc_creation_win_susp_service_path_modification.yml
 

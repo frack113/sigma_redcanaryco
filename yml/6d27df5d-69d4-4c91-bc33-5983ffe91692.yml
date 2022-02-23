@@ -17,5 +17,5 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 39b31e81-5f5f-4898-9c0e-2160cfc0f9bf
-    name: win_pc_hashcat.yml
+    name: proc_creation_win_hashcat.yml
 

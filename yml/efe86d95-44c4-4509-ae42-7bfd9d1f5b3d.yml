@@ -16,4 +16,4 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: a197e378-d31b-41c0-9635-cfdf1c1bb423
-    name: win_pc_evil_winrm.yml
+    name: proc_creation_win_evil_winrm.yml

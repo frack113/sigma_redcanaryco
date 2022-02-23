@@ -17,6 +17,6 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 1c67a717-32ba-409b-a45d-0fb704a73a81
-    name: win_pc_susp_network_listing_connections.yml
+    name: proc_creation_win_susp_network_listing_connections.yml
   - id: 183e7ea8-ac4b-4c23-9aec-b3dac4e401ac
-    name: win_susp_net_execution.yml
+    name: proc_creation_win_susp_net_execution.yml

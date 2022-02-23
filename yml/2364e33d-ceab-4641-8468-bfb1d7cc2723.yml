@@ -30,4 +30,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 2afafd61-6aae-4df4-baed-139fa1f4c345
-    name: win_susp_ntdsutil.yml
+    name: proc_creation_win_susp_ntdsutil.yml

@@ -37,7 +37,7 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 2704ab9e-afe2-4854-a3b1-0c0706d03578
-    name: process_creation_hack_dumpert.yml
+    name: proc_creation_win_hack_dumpert.yml
   - id: a5a2d357-1ab8-4675-a967-ef9990a59391
     name: file_event_lsass_dump.yml
   - id: 93d94efc-d7ad-4161-ad7d-1638c4f908d8

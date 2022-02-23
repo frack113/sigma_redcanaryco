@@ -20,4 +20,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: e66779cc-383e-4224-a3a4-267eeb585c40
-    name: win_uac_cmstp.yml
+    name: proc_creation_win_uac_cmstp.yml

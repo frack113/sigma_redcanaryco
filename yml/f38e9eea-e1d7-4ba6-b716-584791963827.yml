@@ -25,5 +25,5 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 9b0b7ac3-6223-47aa-a3fd-e8f211e637db
-    name: win_pc_reg_service_imagepath_change.yml
+    name: proc_creation_win_reg_service_imagepath_change.yml
 

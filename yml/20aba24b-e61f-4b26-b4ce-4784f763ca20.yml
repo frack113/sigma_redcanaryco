@@ -20,5 +20,5 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: b243b280-65fe-48df-ba07-6ddea7646427
-    name: win_remote_time_discovery.yml
+    name: proc_creation_win_remote_time_discovery.yml
 

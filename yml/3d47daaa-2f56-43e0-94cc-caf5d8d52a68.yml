@@ -19,4 +19,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 9719a8aa-401c-41af-8108-ced7ec9cd75c
-    name: sysmon_remove_windows_defender_definition_files.yml
+    name: proc_creation_win_remove_windows_defender_definition_files.yml

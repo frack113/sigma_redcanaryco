@@ -17,6 +17,6 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: c363385c-f75d-4753-a108-c1a8e28bdbda
-    name: win_manage_bde_lolbas.yml
+    name: proc_creation_win_manage_bde_lolbas.yml
   - id: 737e618a-a410-49b5-bec3-9e55ff7fbc15
-    name: win_susp_calc.yml
+    name: proc_creation_win_susp_calc.yml

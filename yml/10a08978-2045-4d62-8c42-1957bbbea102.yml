@@ -21,5 +21,5 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 3d3aa6cd-6272-44d6-8afc-7e88dfef7061
-    name: win_change_default_file_association.yml
+    name: proc_creation_win_change_default_file_association.yml
 

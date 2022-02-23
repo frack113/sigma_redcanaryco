@@ -21,16 +21,16 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: 9fc51a3c-81b3-4fa7-b35f-7c02cf10fd2d
-    name: process_creation_susp_web_request_cmd.yml
+    name: proc_creation_win_susp_web_request_cmd.yml
   - id: 7c4cf8e0-1362-48b2-a512-b606d2065d7d
     name: win_dq_gotoopener.yml
   - id: 1f21ec3f-810d-4b0e-8045-322202e22b4b
     name: sysmon_powershell_network_connection.yml
   - id: b6d98a4f-cef0-4abf-bbf6-24132854a83d
-    name: win_pc_gotoopener.yml
+    name: proc_creation_win_gotoopener.yml
   - id: d85873ef-a0f8-4c48-a53a-6b621f11729d
-    name: win_pc_logmein.yml
+    name: proc_creation_win_logmein.yml
   - id: 5d756aee-ad3e-4306-ad95-cb1abec48de2
     name: win_fe_gotoopener_artefact.yml
   - id: dca91cfd-d7ab-4c66-8da7-ee57d487b35b
-    name: win_pc_susp_run_folder.yml
+    name: proc_creation_win_susp_run_folder.yml
