@@ -471,7 +471,7 @@ defense-evasion;T1112;command_prompt;['windows'];Modify registry to store logon 
 defense-evasion;T1112;powershell;['windows'];Add domain to Trusted sites Zone;cf447677-5a4e-4937-a82c-e47d254afd57;True;4
 defense-evasion;T1112;powershell;['windows'];Javascript in registry;15f44ea9-4571-4837-be9e-802431a7bfae;True;5
 defense-evasion;T1112;powershell;['windows'];Change Powershell Execution Policy to Bypass;f3a6cceb-06c9-48e5-8df8-8867a6814245;True;6
-defense-evasion;T1112;command_prompt;['windows'];BlackByte Ransomware Registry Changes - CMD;4f4e2f9f-6209-4fcf-9b15-3b7455706f5b;False;7
+defense-evasion;T1112;command_prompt;['windows'];BlackByte Ransomware Registry Changes - CMD;4f4e2f9f-6209-4fcf-9b15-3b7455706f5b;True;7
 defense-evasion;T1218.005;command_prompt;['windows'];Mshta executes JavaScript Scheme Fetch Remote Payload With GetObject;1483fab9-4f52-4217-a9ce-daa9d7747cae;True;1
 defense-evasion;T1218.005;command_prompt;['windows'];Mshta executes VBScript to execute malicious command;906865c3-e05f-4acc-85c4-fbc185455095;True;2
 defense-evasion;T1218.005;powershell;['windows'];Mshta Executes Remote HTML Application (HTA);c4b97eeb-5249-4455-a607-59f95485cb45;True;3
@@ -906,7 +906,7 @@ execution;T1053.003;bash;['macos', 'linux'];Cron - Replace crontab with referenc
 execution;T1053.003;bash;['macos', 'linux'];Cron - Add script to all cron subfolders;b7d42afa-9086-4c8a-b7b0-8ea3faa6ebb0;False;2
 execution;T1053.003;bash;['linux'];Cron - Add script to /var/spool/cron/crontabs/ folder;2d943c18-e74a-44bf-936f-25ade6cccab4;False;3
 execution;T1559.002;manual;['windows'];Execute Commands;f592ba2a-e9e8-4d62-a459-ef63abd819fd;False;1
-execution;T1559.002;command_prompt;['windows'];Execute PowerShell script via Word DDE;47c21fb6-085e-4b0d-b4d2-26d72c3830b3;False;2
+execution;T1559.002;command_prompt;['windows'];Execute PowerShell script via Word DDE;47c21fb6-085e-4b0d-b4d2-26d72c3830b3;True;2
 execution;T1559.002;manual;['windows'];DDEAUTO;cf91174c-4e74-414e-bec0-8d60a104d181;False;3
 execution;T1569.001;bash;['macos'];Launchctl;6fb61988-724e-4755-a595-07743749d4e2;False;1
 execution;T1053.004;bash;['macos'];Event Monitor Daemon Persistence;11979f23-9b9d-482a-9935-6fc9cd022c3e;False;1
@@ -1025,7 +1025,8 @@ command-and-control;T1090.001;sh;['macos'];Connection Proxy for macOS UI;648d68c
 command-and-control;T1090.001;powershell;['windows'];portproxy reg key;b8223ea9-4be2-44a6-b50a-9657a3d4e72a;True;3
 command-and-control;T1090.003;powershell;['windows'];Psiphon;14d55ca0-920e-4b44-8425-37eedd72b173;True;1
 command-and-control;T1090.003;powershell;['windows'];Tor Proxy Usage - Windows;7b9d85e5-c4ce-4434-8060-d3de83595e69;False;2
-command-and-control;T1090.003;sh;['linux'];Tor Proxy Usage - Debian/Ubuntu;5ff9d047-6e9c-4357-b39b-5cf89d9b59c7;False;3
+command-and-control;T1090.003;sh;['linux'];Tor Proxy Usage - Debian/Ubuntu;5ff9d047-6e9c-4357-b39b-5cf89d9b59c7;True;3
+command-and-control;T1090.003;sh;['macos'];Tor Proxy Usage - MacOS;12631354-fdbc-4164-92be-402527e748da;False;4
 command-and-control;T1095;powershell;['windows'];ICMP C2;0268e63c-e244-42db-bef7-72a9e59fc1fc;True;1
 command-and-control;T1095;powershell;['windows'];Netcat C2;bcf0d1c1-3f6a-4847-b1c9-7ed4ea321f37;True;2
 command-and-control;T1095;powershell;['windows'];Powercat C2;3e0e0e7f-6aa2-4a61-b61d-526c2cc9330e;True;3

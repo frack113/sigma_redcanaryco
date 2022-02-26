@@ -25,5 +25,7 @@ description: |
   </ol>
   The registry keys and their respective values will be created upon successful execution.
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 83314318-052a-4c90-a1ad-660ece38d276
+    name: win_re_blackbyte_ransomware.yml

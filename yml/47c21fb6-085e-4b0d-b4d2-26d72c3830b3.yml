@@ -17,5 +17,13 @@ description: 'When the word document opens it will prompt the user to click ok o
 
   '
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 754ed792-634f-40ae-b3bc-e0448d33f695
+    name: proc_creation_win_susp_powershell_parent_process.yml
+  - id: 9fc51a3c-81b3-4fa7-b35f-7c02cf10fd2d
+    name: proc_creation_win_susp_web_request_cmd.yml
+  - id: 438025f9-5856-4663-83f7-52f878a70a50
+    name: proc_creation_win_office_shell.yml
+  - id: f4bbd493-b796-416e-bbf2-121235348529
+    name: proc_creation_win_non_interactive_powershell.yml

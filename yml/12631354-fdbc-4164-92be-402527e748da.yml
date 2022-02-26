@@ -3,20 +3,16 @@ Attack_description: |-
   To disguise the source of malicious traffic, adversaries may chain together multiple proxies. Typically, a defender will be able to identify the last proxy traffic traversed before it enters their network; the defender may or may not be able to identify any previous proxies before the last-hop proxy. This technique makes identifying the original source of the malicious traffic even more difficult by requiring the defender to trace malicious traffic through several proxies to identify its source. A particular variant of this behavior is to use onion routing networks, such as the publicly available TOR network. (Citation: Onion Routing)
 
   In the case of network infrastructure, particularly routers, it is possible for an adversary to leverage multiple compromised devices to create a multi-hop proxy chain within the Wide-Area Network (WAN) of the enterprise.  By leveraging [Patch System Image](https://attack.mitre.org/techniques/T1601/001), adversaries can add custom code to the affected network devices that will implement onion routing between those nodes.  This custom onion routing network will transport the encrypted C2 traffic through the compromised population, allowing adversaries to communicate with any device within the onion routing network.  This method is dependent upon the [Network Boundary Bridging](https://attack.mitre.org/techniques/T1599) method in order to allow the adversaries to cross the protected network boundary of the Internet perimeter and into the organization’s WAN. Protocols such as ICMP may be used as a transport.
-guid: 5ff9d047-6e9c-4357-b39b-5cf89d9b59c7
-name: Tor Proxy Usage - Debian/Ubuntu
+guid: 12631354-fdbc-4164-92be-402527e748da
+name: Tor Proxy Usage - MacOS
 tactic:
   - command-and-control
 technique:
   - T1090.003
 os:
-  - linux
+  - macos
 description: "This test is designed to launch the tor proxy service, which is what is utilized in the background by the Tor Browser and other applications with add-ons in order to provide onion routing\
   \ functionality.\nUpon successful execution, the tor proxy service will be launched. \n"
 executor: sh
-sigma: true
-sigma_rule:
-  - id: dca91cfd-d7ab-4c66-8da7-ee57d487b35b
-    name: proc_creation_win_susp_run_folder.yml
-  - id: 62f7c9bf-9135-49b2-8aeb-1e54a6ecc13c
-    name: proc_creation_win_tor_browser.yml
+sigma: false
+sigma_rule: []
