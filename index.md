@@ -1565,7 +1565,7 @@ Caution: a test can generate a lot of noise...
 ### T1112
 [Change Powershell Execution Policy to Bypass](tests/f3a6cceb-06c9-48e5-8df8-8867a6814245.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[BlackByte Ransomware Registry Changes - CMD](tests/4f4e2f9f-6209-4fcf-9b15-3b7455706f5b.md) ['windows'] (sigma rule :x:)
+[BlackByte Ransomware Registry Changes - CMD](tests/4f4e2f9f-6209-4fcf-9b15-3b7455706f5b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Add domain to Trusted sites Zone](tests/cf447677-5a4e-4937-a82c-e47d254afd57.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1757,9 +1757,11 @@ Caution: a test can generate a lot of noise...
 ### T1090.003
 [Psiphon](tests/14d55ca0-920e-4b44-8425-37eedd72b173.md) ['windows'] (sigma rule :heavy_check_mark:)
 
+[Tor Proxy Usage - MacOS](tests/12631354-fdbc-4164-92be-402527e748da.md) ['macos'] (sigma rule :x:)
+
 [Tor Proxy Usage - Windows](tests/7b9d85e5-c4ce-4434-8060-d3de83595e69.md) ['windows'] (sigma rule :x:)
 
-[Tor Proxy Usage - Debian/Ubuntu](tests/5ff9d047-6e9c-4357-b39b-5cf89d9b59c7.md) ['linux'] (sigma rule :x:)
+[Tor Proxy Usage - Debian/Ubuntu](tests/5ff9d047-6e9c-4357-b39b-5cf89d9b59c7.md) ['linux'] (sigma rule :heavy_check_mark:)
 
 
 ### T1218.008
@@ -1957,7 +1959,7 @@ Caution: a test can generate a lot of noise...
 
 [Execute Commands](tests/f592ba2a-e9e8-4d62-a459-ef63abd819fd.md) ['windows'] (sigma rule :x:)
 
-[Execute PowerShell script via Word DDE](tests/47c21fb6-085e-4b0d-b4d2-26d72c3830b3.md) ['windows'] (sigma rule :x:)
+[Execute PowerShell script via Word DDE](tests/47c21fb6-085e-4b0d-b4d2-26d72c3830b3.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1553.001
