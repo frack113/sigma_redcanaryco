@@ -793,6 +793,8 @@ Caution: a test can generate a lot of noise...
 
 [Scheduled task Remote](tests/2e5eac3e-327b-4a88-a0c0-c4057039a8dd.md) ['windows'] (sigma rule :heavy_check_mark:)
 
+[Scheduled Task Executing Base64 Encoded Commands From Registry](tests/e895677d-4f06-49ab-91b6-ae3742d0a2ba.md) ['windows'] (sigma rule :x:)
+
 [Scheduled task Local](tests/42f53695-ad4a-4546-abb6-7d837f644a71.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [WMI Invoke-CimMethod Scheduled Task](tests/e16b3b75-dc9e-4cde-a23d-dfa2d0507b3b.md) ['windows'] (sigma rule :heavy_check_mark:)
@@ -822,6 +824,8 @@ Caution: a test can generate a lot of noise...
 
 ### T1036.005
 [Execute a process from a directory masquerading as the current parent directory.](tests/812c3ab8-94b0-4698-a9bf-9420af23ce24.md) ['macos', 'linux'] (sigma rule :x:)
+
+[Masquerade as a built-in system executable](tests/35eb8d16-9820-4423-a2a1-90c4f5edd9ca.md) ['windows'] (sigma rule :x:)
 
 
 ### T1124
@@ -1496,6 +1500,8 @@ Caution: a test can generate a lot of noise...
 [List Google Chrome / Opera Bookmarks on Windows with powershell](tests/faab755e-4299-48ec-8202-fc7885eb6545.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [List Google Chrome / Edge Chromium Bookmarks on Windows with command prompt](tests/76f71e2f-480e-4bed-b61e-398fe17499d5.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[List Safari Bookmarks on MacOS](tests/5fc528dd-79de-47f5-8188-25572b7fafe0.md) ['macos'] (sigma rule :x:)
 
 [List Mozilla Firefox bookmarks on Windows with command prompt](tests/4312cdbc-79fc-4a9c-becc-53d49c734bc5.md) ['windows'] (sigma rule :heavy_check_mark:)
 

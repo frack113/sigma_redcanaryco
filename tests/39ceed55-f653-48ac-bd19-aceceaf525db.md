@@ -40,7 +40,7 @@ powershell
 
  - posh_ps_malicious_keywords.yml (id: f62176f3-8128-4faa-bf6c-83261322e5eb)
 
- - win_fe_csharp_compile_artefact.yml (id: e4a74e34-ecde-4aab-b2fb-9112dd01aed0)
+ - file_event_win_csharp_compile_artefact.yml (id: e4a74e34-ecde-4aab-b2fb-9112dd01aed0)
 
  - proc_creation_win_susp_csc_folder.yml (id: dcaa3f04-70c3-427a-80b4-b870d73c94c4)
 
@@ -68,9 +68,9 @@ powershell
 
  - proc_creation_win_wmiprvse_spawning_process.yml (id: d21374ff-f574-44a7-9998-4a8c8bf33d7d)
 
- - file_event_win_shell_write_susp_directory.yml (id: 1277f594-a7d1-4f28-a2d3-73af5cbeab43)
+ - file_event_win_win_shell_write_susp_directory.yml (id: 1277f594-a7d1-4f28-a2d3-73af5cbeab43)
 
- - sysmon_win_binary_github_com.yml (id: 635dbb88-67b3-4b41-9ea5-a3af2dd88153)
+ - net_connection_win_binary_github_com.yml (id: 635dbb88-67b3-4b41-9ea5-a3af2dd88153)
 
 
 

@@ -39,7 +39,7 @@ powershell
 
  - proc_creation_win_hack_rubeus.yml (id: 7ec2c172-dceb-4c10-92c9-87c1881b7e18)
 
- - sysmon_detect_powerup_dllhijacking.yml (id: 602a1f13-c640-4d73-b053-be9a2fa58b96)
+ - file_event_win_detect_powerup_dllhijacking.yml (id: 602a1f13-c640-4d73-b053-be9a2fa58b96)
 
  - win_overpass_the_hash.yml (id: 192a0330-c20b-4356-90b6-7b7049ae0b87)
 

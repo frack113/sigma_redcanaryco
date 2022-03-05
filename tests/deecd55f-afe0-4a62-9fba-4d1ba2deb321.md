@@ -49,9 +49,9 @@ powershell
 
  - posh_ps_accessing_win_api.yml (id: 03d83090-8cba-44a0-b02f-0b756a050306)
 
- - sysmon_powershell_network_connection.yml (id: 1f21ec3f-810d-4b0e-8045-322202e22b4b)
+ - net_connection_win_powershell_network_connection.yml (id: 1f21ec3f-810d-4b0e-8045-322202e22b4b)
 
- - sysmon_win_binary_github_com.yml (id: 635dbb88-67b3-4b41-9ea5-a3af2dd88153)
+ - net_connection_win_binary_github_com.yml (id: 635dbb88-67b3-4b41-9ea5-a3af2dd88153)
 
 
 

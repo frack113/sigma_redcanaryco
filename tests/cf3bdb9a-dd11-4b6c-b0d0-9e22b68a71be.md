@@ -37,9 +37,9 @@ command_prompt
 
  - proc_creation_win_run_executable_invalid_extension.yml (id: c3a99af4-35a9-4668-879e-c09aeb4f2bdf)
 
- - sysmon_rundll32_net_connections.yml (id: cdc8da7d-c303-42f8-b08c-b4ab47230263)
+ - net_connection_win_rundll32_net_connections.yml (id: cdc8da7d-c303-42f8-b08c-b4ab47230263)
 
- - sysmon_win_binary_github_com.yml (id: 635dbb88-67b3-4b41-9ea5-a3af2dd88153)
+ - net_connection_win_binary_github_com.yml (id: 635dbb88-67b3-4b41-9ea5-a3af2dd88153)
 
 
 
