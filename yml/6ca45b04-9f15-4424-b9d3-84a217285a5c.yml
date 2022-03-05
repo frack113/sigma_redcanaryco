@@ -17,4 +17,4 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: bef0bc5a-b9ae-425d-85c6-7b2d705980c6
-    name: win_net_python.yml
+    name: net_connection_win_python.yml

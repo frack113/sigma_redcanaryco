@@ -35,6 +35,6 @@ sigma_rule:
   - id: 03cc0c25-389f-4bf8-b48d-11878079f1ca
     name: proc_creation_win_mshta_spawn_shell.yml
   - id: 1f21ec3f-810d-4b0e-8045-322202e22b4b
-    name: sysmon_powershell_network_connection.yml
+    name: net_connection_win_powershell_network_connection.yml
   - id: 635dbb88-67b3-4b41-9ea5-a3af2dd88153
-    name: sysmon_win_binary_github_com.yml
+    name: net_connection_win_binary_github_com.yml

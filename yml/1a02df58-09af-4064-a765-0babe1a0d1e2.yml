@@ -18,4 +18,4 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: 8d7e392e-9b28-49e1-831d-5949c6281228
-    name: win_nc_imewdbld.yml
+    name: net_connection_win_imewdbld.yml

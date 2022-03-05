@@ -17,4 +17,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 974515da-6cc5-4c95-ae65-f97f9150ec7f
-    name: win_re_disable_defender_firewall.yml
+    name: registry_event_disable_defender_firewall.yml

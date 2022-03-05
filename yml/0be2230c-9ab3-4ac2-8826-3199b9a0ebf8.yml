@@ -55,11 +55,11 @@ sigma_rule:
   - id: 25ffa65d-76d8-4da5-a832-3f2b0136e133
     name: registry_event_sysinternals_eula_accepted.yml
   - id: 32d0d3e2-e58d-4d41-926b-18b520b2b32d
-    name: sysmon_cred_dump_lsass_access.yml
+    name: proc_access_win_cred_dump_lsass_access.yml
   - id: a18dd26b-6450-46de-8c91-9659150cf088
-    name: win_susp_proc_access_lsass.yml
+    name: proc_access_win_susp_proc_access_lsass.yml
   - id: 5e3d3601-0662-4af0-b1d2-36a05e90c40a
-    name: sysmon_lsass_memory_dump_file_creation.yml
+    name: file_event_win_lsass_memory_dump_file_creation.yml
   - id: 5ef9853e-4d0e-4a70-846f-a9ca37d876da
-    name: sysmon_lsass_memdump.yml
+    name: proc_access_win_lsass_memdump.yml
 

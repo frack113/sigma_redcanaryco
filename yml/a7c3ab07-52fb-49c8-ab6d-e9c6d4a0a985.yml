@@ -35,4 +35,4 @@ sigma_rule:
   - id: 05c36dd6-79d6-4a9a-97da-3db20298ab2d
     name: proc_creation_win_xsl_script_processing.yml
   - id: d88d0ab2-e696-4d40-a2ed-9790064e66b3
-    name: win_re_ie_persistence.yml
+    name: registry_event_ie_persistence.yml

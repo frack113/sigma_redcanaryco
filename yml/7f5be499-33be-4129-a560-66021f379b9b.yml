@@ -37,8 +37,8 @@ sigma_rule:
   - id: 221b251a-357a-49a9-920a-271802777cc0
     name: proc_creation_win_wmic_reconnaissance.yml
   - id: 1277f594-a7d1-4f28-a2d3-73af5cbeab43
-    name: file_event_win_shell_write_susp_directory.yml
+    name: file_event_win_win_shell_write_susp_directory.yml
   - id: 06ce37c2-61ab-4f05-9ff5-b1a96d18ae32
-    name: sysmon_wmic_remote_xsl_scripting_dlls.yml
+    name: image_load_wmic_remote_xsl_scripting_dlls.yml
   - id: 635dbb88-67b3-4b41-9ea5-a3af2dd88153
-    name: sysmon_win_binary_github_com.yml
+    name: net_connection_win_binary_github_com.yml

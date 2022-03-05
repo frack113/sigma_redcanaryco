@@ -50,12 +50,12 @@ sigma_rule:
   - id: 09e6d5c0-05b8-4ff8-9eeb-043046ec774c
     name: proc_creation_win_susp_comsvcs_procdump.yml
   - id: a49fa4d5-11db-418c-8473-1e014a8dd462
-    name: sysmon_lsass_dump_comsvcs_dll.yml
+    name: proc_access_win_lsass_dump_comsvcs_dll.yml
   - id: 32d0d3e2-e58d-4d41-926b-18b520b2b32d
-    name: sysmon_cred_dump_lsass_access.yml
+    name: proc_access_win_cred_dump_lsass_access.yml
   - id: 5e3d3601-0662-4af0-b1d2-36a05e90c40a
-    name: sysmon_lsass_memory_dump_file_creation.yml
+    name: file_event_win_lsass_memory_dump_file_creation.yml
   - id: 0e277796-5f23-4e49-a490-483131d4f6e1
-    name: sysmon_suspicious_dbghelp_dbgcore_load.yml
+    name: image_load_suspicious_dbghelp_dbgcore_load.yml
   - id: 5ef9853e-4d0e-4a70-846f-a9ca37d876da
-    name: sysmon_lsass_memdump.yml
+    name: proc_access_win_lsass_memdump.yml

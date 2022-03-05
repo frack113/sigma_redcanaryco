@@ -43,6 +43,6 @@ sigma_rule:
   - id: da2738f2-fadb-4394-afa7-0a0674885afa
     name: proc_creation_win_sdclt_child_process.yml
   - id: 1f21ec3f-810d-4b0e-8045-322202e22b4b
-    name: sysmon_powershell_network_connection.yml
+    name: net_connection_win_powershell_network_connection.yml
   - id: 635dbb88-67b3-4b41-9ea5-a3af2dd88153
-    name: sysmon_win_binary_github_com.yml
+    name: net_connection_win_binary_github_com.yml

@@ -20,5 +20,5 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 2aa0a6b4-a865-495b-ab51-c28249537b75
-    name: sysmon_startup_folder_file_write.yml
+    name: file_event_win_startup_folder_file_write.yml
 

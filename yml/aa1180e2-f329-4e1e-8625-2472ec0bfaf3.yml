@@ -22,4 +22,4 @@ sigma_rule:
   - id: aa2efee7-34dd-446e-8a37-40790a66efd7
     name: proc_creation_win_susp_recon.yml
   - id: 06ce37c2-61ab-4f05-9ff5-b1a96d18ae32
-    name: sysmon_wmic_remote_xsl_scripting_dlls.yml
+    name: image_load_wmic_remote_xsl_scripting_dlls.yml

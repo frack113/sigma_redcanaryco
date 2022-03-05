@@ -16,7 +16,7 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: 1f21ec3f-810d-4b0e-8045-322202e22b4b
-    name: sysmon_powershell_network_connection.yml
+    name: net_connection_win_powershell_network_connection.yml
   - id: 89819aa4-bbd6-46bc-88ec-c7f7fe30efa6
     name: posh_ps_malicious_commandlets.yml
   - id: 1f49f2ab-26bc-48b3-96cc-dcffbc93eadf

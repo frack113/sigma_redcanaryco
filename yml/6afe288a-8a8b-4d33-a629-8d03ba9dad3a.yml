@@ -19,16 +19,16 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: a166f74e-bf44-409d-b9ba-ea4b2dd8b3cd
-    name: sysmon_reg_office_security.yml
+    name: registry_event_office_security.yml
   - id: e6ce8457-68b1-485b-9bdd-3c2b5d679aa9
-    name: sysmon_susp_winword_vbadll_load.yml
+    name: image_load_susp_winword_vbadll_load.yml
   - id: 635dbb88-67b3-4b41-9ea5-a3af2dd88153
-    name: sysmon_win_binary_github_com.yml
+    name: net_connection_win_binary_github_com.yml
   - id: 1f21ec3f-810d-4b0e-8045-322202e22b4b
-    name: sysmon_powershell_network_connection.yml
+    name: net_connection_win_powershell_network_connection.yml
   - id: c7a74c80-ba5a-486e-9974-ab9e682bc5e4
-    name: file_event_script_creation_by_office_using_file_ext.yml
+    name: file_event_win_script_creation_by_office_using_file_ext.yml
   - id: aa3a6f94-890e-4e22-b634-ffdfd54792cc
     name: proc_creation_win_office_spawn_exe_from_users_directory.yml
   - id: 0e277796-5f23-4e49-a490-483131d4f6e1
-    name: sysmon_suspicious_dbghelp_dbgcore_load.yml
+    name: image_load_suspicious_dbghelp_dbgcore_load.yml

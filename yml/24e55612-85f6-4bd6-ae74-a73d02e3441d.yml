@@ -53,5 +53,5 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: 92fa78e7-4d39-45f1-91a3-8b23f3f1088d
-    name: sysmon_powershell_startup_shortcuts.yml
+    name: file_event_win_powershell_startup_shortcuts.yml
 

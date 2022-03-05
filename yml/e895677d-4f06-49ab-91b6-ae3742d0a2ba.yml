@@ -5,22 +5,18 @@ Attack_description: |-
   The deprecated [at](https://attack.mitre.org/software/S0110) utility could also be abused by adversaries (ex: [At (Windows)](https://attack.mitre.org/techniques/T1053/002)), though <code>at.exe</code> can not access tasks created with <code>schtasks</code> or the Control Panel.
 
   An adversary may use Windows Task Scheduler to execute programs at system startup or on a scheduled basis for persistence. The Windows Task Scheduler can also be abused to conduct remote Execution as part of Lateral Movement and or to run a process under the context of a specified account (such as SYSTEM).
-guid: ecd3fa21-7792-41a2-8726-2c5c673414d3
-name: Task Scheduler via VBA
+guid: e895677d-4f06-49ab-91b6-ae3742d0a2ba
+name: Scheduled Task Executing Base64 Encoded Commands From Registry
 tactic:
-  - privilege-escalation
-  - persistence
   - execution
+  - persistence
+  - privilege-escalation
 technique:
   - T1053.005
 os:
   - windows
-description: |
-  This module utilizes the Windows API to schedule a task for code execution (notepad.exe). The task scheduler will execute "notepad.exe" within
-  30 - 40 seconds after this module has run
-executor: powershell
-sigma: true
-sigma_rule:
-  - id: e6ce8457-68b1-485b-9bdd-3c2b5d679aa9
-    name: image_load_susp_winword_vbadll_load.yml
-
+description: "A Base64 Encoded command will be stored in the registry (ping 127.0.0.1) and then a scheduled task will be created.\nThe scheduled task will launch powershell to decode and run the command\
+  \ in the rgistry daily.\nThis is a persistence mechanism recently seen in use by Qakbot.  \n\n[Additiona Information](https://thedfirreport.com/2022/02/07/qbot-likes-to-move-it-move-it/)\n"
+executor: command_prompt
+sigma: false
+sigma_rule: []

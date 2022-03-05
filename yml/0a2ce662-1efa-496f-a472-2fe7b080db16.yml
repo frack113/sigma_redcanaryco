@@ -19,5 +19,5 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 39f1f9f2-9636-45de-98f6-a4046aa8e4b9
-    name: sysmon_webshell_creation_detect.yml
+    name: file_event_win_webshell_creation_detect.yml
 

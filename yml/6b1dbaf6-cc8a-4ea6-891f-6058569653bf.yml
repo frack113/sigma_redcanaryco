@@ -23,4 +23,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 06125661-3814-4e03-bfa2-1e4411c60ac3
-    name: win_fd_delete_backup_file.yml
+    name: file_delete_win_delete_backup_file.yml

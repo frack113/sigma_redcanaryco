@@ -21,4 +21,4 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: b1decb61-ed83-4339-8e95-53ea51901720
-    name: win_fd_delete_appli_log.yml
+    name: file_delete_win_delete_appli_log.yml

@@ -20,5 +20,5 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 4aafb0fa-bff5-4b9d-b99e-8093e659c65f
-    name: win_fe_writing_local_admin_share.yml
+    name: file_event_win_writing_local_admin_share.yml
 

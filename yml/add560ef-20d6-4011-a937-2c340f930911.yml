@@ -22,7 +22,7 @@ sigma_rule:
   - id: d7bcd677-645d-4691-a8d4-7a5602b780d1
     name: proc_creation_win_powershell_cmdline_special_characters.yml
   - id: e6ce8457-68b1-485b-9bdd-3c2b5d679aa9
-    name: sysmon_susp_winword_vbadll_load.yml
+    name: image_load_susp_winword_vbadll_load.yml
   - id: 438025f9-5856-4663-83f7-52f878a70a50
     name: proc_creation_win_office_shell.yml
   - id: 1e33157c-53b1-41ad-bbcc-780b80b58288

@@ -23,4 +23,4 @@ sigma_rule:
   - id: 1139d2e2-84b1-4226-b445-354492eba8ba
     name: posh_ps_web_request.yml
   - id: 1f21ec3f-810d-4b0e-8045-322202e22b4b
-    name: sysmon_powershell_network_connection.yml
+    name: net_connection_win_powershell_network_connection.yml

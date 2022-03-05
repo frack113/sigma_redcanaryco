@@ -23,5 +23,5 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: baecf8fb-edbf-429f-9ade-31fc3f22b970
-    name: sysmon_asep_reg_keys_modification_office.yml
+    name: registry_event_asep_reg_keys_modification_office.yml
 

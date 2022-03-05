@@ -21,12 +21,12 @@ sigma_rule:
   - id: 0718cd72-f316-4aa2-988f-838ea8533277
     name: posh_ps_suspicious_start_process.yml
   - id: d5866ddf-ce8f-4aea-b28e-d96485a20d3d
-    name: sysmon_creation_system_file.yml
+    name: file_event_win_creation_system_file.yml
   - id: 01d2e2a1-5f09-44f7-9fc1-24faa7479b6d
     name: proc_creation_win_susp_svchost.yml
   - id: e4a6b256-3e47-40fc-89d2-7a477edd6915
     name: proc_creation_win_system_exe_anomaly.yml
   - id: 20f0ee37-5942-4e45-b7d5-c5b5db9df5cd
-    name: sysmon_asep_reg_keys_modification_currentversion.yml
+    name: registry_event_asep_reg_keys_modification_currentversion.yml
   - id: 02ee49e2-e294-4d0f-9278-f5b3212fc588
-    name: sysmon_susp_run_key_img_folder.yml
+    name: registry_event_susp_run_key_img_folder.yml

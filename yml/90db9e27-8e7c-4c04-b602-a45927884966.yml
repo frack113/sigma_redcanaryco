@@ -33,7 +33,7 @@ sigma_rule:
   - id: 8d31a8ce-46b5-4dd6-bdc3-680931f1db86
     name: posh_pm_bad_opsec_artifacts.yml
   - id: 635dbb88-67b3-4b41-9ea5-a3af2dd88153
-    name: sysmon_win_binary_github_com.yml
+    name: net_connection_win_binary_github_com.yml
   - id: 1f21ec3f-810d-4b0e-8045-322202e22b4b
-    name: sysmon_powershell_network_connection.yml
+    name: net_connection_win_powershell_network_connection.yml
 

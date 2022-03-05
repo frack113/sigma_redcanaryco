@@ -25,6 +25,6 @@ sigma_rule:
   - id: a642964e-bead-4bed-8910-1bb4d63e3b4d
     name: proc_creation_win_mimikatz_command_line.yml
   - id: fa34b441-961a-42fa-a100-ecc28c886725
-    name: win_susp_proc_access_lsass_susp_source.yml
+    name: proc_access_win_susp_proc_access_lsass_susp_source.yml
   - id: a18dd26b-6450-46de-8c91-9659150cf088
-    name: win_susp_proc_access_lsass.yml
+    name: proc_access_win_susp_proc_access_lsass.yml

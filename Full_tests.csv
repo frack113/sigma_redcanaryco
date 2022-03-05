@@ -243,6 +243,7 @@ privilege-escalation;T1053.005;command_prompt;['windows'];Scheduled task Remote;
 privilege-escalation;T1053.005;powershell;['windows'];Powershell Cmdlet Scheduled Task;af9fd58f-c4ac-4bf2-a9ba-224b71ff25fd;True;4
 privilege-escalation;T1053.005;powershell;['windows'];Task Scheduler via VBA;ecd3fa21-7792-41a2-8726-2c5c673414d3;True;5
 privilege-escalation;T1053.005;powershell;['windows'];WMI Invoke-CimMethod Scheduled Task;e16b3b75-dc9e-4cde-a23d-dfa2d0507b3b;True;6
+privilege-escalation;T1053.005;command_prompt;['windows'];Scheduled Task Executing Base64 Encoded Commands From Registry;e895677d-4f06-49ab-91b6-ae3742d0a2ba;False;7
 privilege-escalation;T1546.002;command_prompt;['windows'];Set Arbitrary Binary as Screensaver;281201e7-de41-4dc9-b73d-f288938cbb64;True;1
 privilege-escalation;T1547.005;powershell;['windows'];Modify SSP configuration in registry;afdfd7e3-8a0b-409f-85f7-886fdf249c9e;True;1
 privilege-escalation;T1574.011;powershell;['windows'];Service Registry Permissions Weakness;f7536d63-7fd4-466f-89da-7e48d550752a;True;1
@@ -465,6 +466,7 @@ defense-evasion;T1036.004;command_prompt;['windows'];Creating W32Time similar na
 defense-evasion;T1036;command_prompt;['windows'];System File Copied to Unusual Location;51005ac7-52e2-45e0-bdab-d17c6d4916cd;True;1
 defense-evasion;T1036;powershell;['windows'];Malware Masquerading and Execution from Zip File;4449c89b-ec82-43a4-89c1-91e2f1abeecc;False;2
 defense-evasion;T1036.005;sh;['macos', 'linux'];Execute a process from a directory masquerading as the current parent directory.;812c3ab8-94b0-4698-a9bf-9420af23ce24;False;1
+defense-evasion;T1036.005;powershell;['windows'];Masquerade as a built-in system executable;35eb8d16-9820-4423-a2a1-90c4f5edd9ca;False;2
 defense-evasion;T1112;command_prompt;['windows'];Modify Registry of Current User Profile - cmd;1324796b-d0f6-455a-b4ae-21ffee6aa6b9;True;1
 defense-evasion;T1112;command_prompt;['windows'];Modify Registry of Local Machine - cmd;282f929a-6bc5-42b8-bd93-960c3ba35afe;True;2
 defense-evasion;T1112;command_prompt;['windows'];Modify registry to store logon credentials;c0413fb5-33e2-40b7-9b6f-60b29f4a7a18;True;3
@@ -699,6 +701,7 @@ persistence;T1053.005;command_prompt;['windows'];Scheduled task Remote;2e5eac3e-
 persistence;T1053.005;powershell;['windows'];Powershell Cmdlet Scheduled Task;af9fd58f-c4ac-4bf2-a9ba-224b71ff25fd;True;4
 persistence;T1053.005;powershell;['windows'];Task Scheduler via VBA;ecd3fa21-7792-41a2-8726-2c5c673414d3;True;5
 persistence;T1053.005;powershell;['windows'];WMI Invoke-CimMethod Scheduled Task;e16b3b75-dc9e-4cde-a23d-dfa2d0507b3b;True;6
+persistence;T1053.005;command_prompt;['windows'];Scheduled Task Executing Base64 Encoded Commands From Registry;e895677d-4f06-49ab-91b6-ae3742d0a2ba;False;7
 persistence;T1546.002;command_prompt;['windows'];Set Arbitrary Binary as Screensaver;281201e7-de41-4dc9-b73d-f288938cbb64;True;1
 persistence;T1547.005;powershell;['windows'];Modify SSP configuration in registry;afdfd7e3-8a0b-409f-85f7-886fdf249c9e;True;1
 persistence;T1574.011;powershell;['windows'];Service Registry Permissions Weakness;f7536d63-7fd4-466f-89da-7e48d550752a;True;1
@@ -765,6 +768,7 @@ discovery;T1217;powershell;['windows'];List Google Chrome / Opera Bookmarks on W
 discovery;T1217;command_prompt;['windows'];List Google Chrome / Edge Chromium Bookmarks on Windows with command prompt;76f71e2f-480e-4bed-b61e-398fe17499d5;True;5
 discovery;T1217;command_prompt;['windows'];List Mozilla Firefox bookmarks on Windows with command prompt;4312cdbc-79fc-4a9c-becc-53d49c734bc5;True;6
 discovery;T1217;command_prompt;['windows'];List Internet Explorer Bookmarks using the command prompt;727dbcdb-e495-4ab1-a6c4-80c7f77aef85;True;7
+discovery;T1217;sh;['macos'];List Safari Bookmarks on MacOS;5fc528dd-79de-47f5-8188-25572b7fafe0;False;8
 discovery;T1087.002;command_prompt;['windows'];Enumerate all accounts (Domain);6fbc9e68-5ad7-444a-bd11-8bf3136c477e;True;1
 discovery;T1087.002;powershell;['windows'];Enumerate all accounts via PowerShell (Domain);8b8a6449-be98-4f42-afd2-dedddc7453b2;True;2
 discovery;T1087.002;command_prompt;['windows'];Enumerate logged on users via CMD (Domain);161dcd85-d014-4f5e-900c-d3eaae82a0f7;True;3
@@ -950,6 +954,7 @@ execution;T1053.005;command_prompt;['windows'];Scheduled task Remote;2e5eac3e-32
 execution;T1053.005;powershell;['windows'];Powershell Cmdlet Scheduled Task;af9fd58f-c4ac-4bf2-a9ba-224b71ff25fd;True;4
 execution;T1053.005;powershell;['windows'];Task Scheduler via VBA;ecd3fa21-7792-41a2-8726-2c5c673414d3;True;5
 execution;T1053.005;powershell;['windows'];WMI Invoke-CimMethod Scheduled Task;e16b3b75-dc9e-4cde-a23d-dfa2d0507b3b;True;6
+execution;T1053.005;command_prompt;['windows'];Scheduled Task Executing Base64 Encoded Commands From Registry;e895677d-4f06-49ab-91b6-ae3742d0a2ba;False;7
 execution;T1569.002;command_prompt;['windows'];Execute a Command as a Service;2382dee2-a75f-49aa-9378-f52df6ed3fb1;True;1
 execution;T1569.002;command_prompt;['windows'];Use PsExec to execute a command on a remote host;873106b7-cfed-454b-8680-fa9f6400431c;True;2
 execution;T1072;command_prompt;['windows'];Radmin Viewer Utility;b4988cad-6ed2-434d-ace5-ea2670782129;True;1

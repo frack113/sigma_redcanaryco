@@ -23,5 +23,5 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: d6a9b252-c666-4de6-8806-5561bbbd3bdc
-    name: sysmon_wdigest_enable_uselogoncredential.yml
+    name: registry_event_wdigest_enable_uselogoncredential.yml
 

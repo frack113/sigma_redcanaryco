@@ -19,4 +19,4 @@ sigma_rule:
   - id: 9a7afa56-4762-43eb-807d-c3dc9ffe211b
     name: posh_ps_send_mailmessage.yml
   - id: 9976fa64-2804-423c-8a5b-646ade840773
-    name: win_nc_susp_outbound_smtp_connections.yml
+    name: net_connection_win_susp_outbound_smtp_connections.yml

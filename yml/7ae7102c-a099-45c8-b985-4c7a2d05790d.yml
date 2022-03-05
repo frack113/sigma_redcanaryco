@@ -39,9 +39,9 @@ sigma_rule:
   - id: 2704ab9e-afe2-4854-a3b1-0c0706d03578
     name: proc_creation_win_hack_dumpert.yml
   - id: a5a2d357-1ab8-4675-a967-ef9990a59391
-    name: file_event_lsass_dump.yml
+    name: file_event_win_lsass_dump.yml
   - id: 93d94efc-d7ad-4161-ad7d-1638c4f908d8
-    name: file_event_hack_dumpert.yml
+    name: file_event_win_hack_dumpert.yml
   - id: 5ef9853e-4d0e-4a70-846f-a9ca37d876da
-    name: sysmon_lsass_memdump.yml
+    name: proc_access_win_lsass_memdump.yml
 

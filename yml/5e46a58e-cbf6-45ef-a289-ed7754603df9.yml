@@ -24,4 +24,4 @@ sigma_rule:
   - id: e593cf51-88db-4ee1-b920-37e89012a3c9
     name: proc_creation_win_susp_rundll32_activity.yml
   - id: cdc8da7d-c303-42f8-b08c-b4ab47230263
-    name: sysmon_rundll32_net_connections.yml
+    name: net_connection_win_rundll32_net_connections.yml

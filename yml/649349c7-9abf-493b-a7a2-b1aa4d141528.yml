@@ -18,5 +18,5 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: caf02a0a-1e1c-4552-9b48-5e070bd88d11
-    name: win_fe_susp_desktop_txt.yml
+    name: file_event_win_susp_desktop_txt.yml
 

@@ -20,4 +20,4 @@ sigma_rule:
   - id: b8af5f36-1361-4ebe-9e76-e36128d947bf
     name: posh_ps_remove_item_path.yml
   - id: 0a1f9d29-6465-4776-b091-7f43b26e4c89
-    name: sysmon_delete_prefetch.yml
+    name: file_delete_win_delete_prefetch.yml

@@ -28,6 +28,6 @@ sigma_rule:
   - id: fff9d2b7-e11c-4a69-93d3-40ef66189767
     name: proc_creation_win_susp_copy_system32.yml
   - id: 97aa2e88-555c-450d-85a6-229bcd87efb8
-    name: win_fe_creation_scr_binary_file.yml
+    name: file_event_win_creation_scr_binary_file.yml
   - id: 0fc35fc3-efe6-4898-8a37-0b233339524f
     name: proc_creation_win_susp_screensaver_reg.yml

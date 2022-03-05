@@ -19,4 +19,4 @@ sigma_rule:
   - id: d059842b-6b9d-4ed1-b5c3-5b89143c6ede
     name: proc_creation_win_bitsadmin_download.yml
   - id: c539afac-c12a-46ed-b1bd-5a5567c9f045
-    name: sysmon_remote_powershell_session_network.yml
+    name: net_connection_win_remote_powershell_session_network.yml

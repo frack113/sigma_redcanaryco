@@ -27,4 +27,4 @@ sigma_rule:
   - id: 78bc5783-81d9-4d73-ac97-59f6db4f72a8
     name: win_av_relevant_match.yml
   - id: cbb56d62-4060-40f7-9466-d8aaf3123f83
-    name: sysmon_susp_python_image_load.yml
+    name: image_load_susp_python_image_load.yml

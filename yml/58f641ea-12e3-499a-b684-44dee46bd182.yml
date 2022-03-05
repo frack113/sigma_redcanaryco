@@ -27,6 +27,6 @@ sigma_rule:
   - id: dd3ee8cc-f751-41c9-ba53-5a32ed47e563
     name: proc_creation_win_susp_reg_open_command.yml
   - id: 152f3630-77c1-4284-bcc0-4cc68ab2f6e7
-    name: win_registry_shell_open_keys_manipulation.yml
+    name: registry_event_shell_open_keys_manipulation.yml
   - id: 7f741dcf-fc22-4759-87b4-9ae8376676a2
     name: proc_creation_win_uac_fodhelper.yml

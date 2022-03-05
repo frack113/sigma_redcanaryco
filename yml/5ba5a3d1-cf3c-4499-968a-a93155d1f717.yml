@@ -21,12 +21,12 @@ sigma_rule:
   - id: fff9d2b7-e11c-4a69-93d3-40ef66189767
     name: proc_creation_win_susp_copy_system32.yml
   - id: d5866ddf-ce8f-4aea-b28e-d96485a20d3d
-    name: sysmon_creation_system_file.yml
+    name: file_event_win_creation_system_file.yml
   - id: 36480ae1-a1cb-4eaa-a0d6-29801d7e9142
     name: proc_creation_win_renamed_binary.yml
   - id: e4a6b256-3e47-40fc-89d2-7a477edd6915
     name: proc_creation_win_system_exe_anomaly.yml
   - id: 32d0d3e2-e58d-4d41-926b-18b520b2b32d
-    name: sysmon_cred_dump_lsass_access.yml
+    name: proc_access_win_cred_dump_lsass_access.yml
   - id: 3f07b9d1-2082-4c56-9277-613a621983cc
     name: sysmon_accessing_winapi_in_powershell_credentials_dumping.yml

@@ -31,7 +31,7 @@ sigma_rule:
   - id: cd219ff3-fa99-45d4-8380-a7d15116c6dc
     name: proc_creation_win_net_user_add.yml
   - id: 41904ebe-d56c-4904-b9ad-7a77bdf154b3
-    name: sysmon_rdp_registry_modification.yml
+    name: registry_event_rdp_registry_modification.yml
   - id: 171b67e1-74b4-460e-8d55-b331f3e32d67
-    name: sysmon_rdp_settings_hijack.yml
+    name: registry_event_rdp_settings_hijack.yml
 

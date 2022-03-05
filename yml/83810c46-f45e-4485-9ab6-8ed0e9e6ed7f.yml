@@ -22,7 +22,7 @@ sigma_rule:
   - id: fff9d2b7-e11c-4a69-93d3-40ef66189767
     name: proc_creation_win_susp_copy_system32.yml
   - id: d5866ddf-ce8f-4aea-b28e-d96485a20d3d
-    name: sysmon_creation_system_file.yml
+    name: file_event_win_creation_system_file.yml
   - id: e4a6b256-3e47-40fc-89d2-7a477edd6915
     name: proc_creation_win_system_exe_anomaly.yml
   - id: 36480ae1-a1cb-4eaa-a0d6-29801d7e9142
