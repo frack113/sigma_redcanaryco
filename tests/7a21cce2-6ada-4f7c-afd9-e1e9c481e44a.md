@@ -1,7 +1,7 @@
 
 [back](../index.md)
 
-Find sigma rule :x: 
+Find sigma rule :heavy_check_mark: 
 
 # Attack: Audio Capture 
 
@@ -31,6 +31,8 @@ Malware or scripts may be used to interact with the devices through an available
 command_prompt
 
 # Sigma Rule
+ - registry_event_susp_mic_cam_access.yml (id: 62120148-6b7a-42be-8b91-271c04e281a3)
+
 
 
 [back](../index.md)

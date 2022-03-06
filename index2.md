@@ -30,6 +30,7 @@
 * file_event_win_creation_system_file.yml
   * T1036.003 [Malicious process Masquerading as LSM.exe](tests/83810c46-f45e-4485-9ab6-8ed0e9e6ed7f.md)
   * T1036.003 [Masquerading - non-windows exe running as windows exe](tests/bc15c13f-d121-4b1f-8c7d-28d95854d086.md)
+  * T1036.005 [Masquerade as a built-in system executable](tests/35eb8d16-9820-4423-a2a1-90c4f5edd9ca.md)
   * T1105 [svchost writing a file to a UNC path](tests/fa5a2759-41d7-4e13-a19c-e8f28a53566f.md)
   * T1036.003 [Masquerading as Windows LSASS process](tests/5ba5a3d1-cf3c-4499-968a-a93155d1f717.md)
   * T1036.003 [Masquerading - wscript.exe running as svchost.exe](tests/24136435-c91a-4ede-9da1-8b284a1c1a23.md)
@@ -51,6 +52,7 @@
   * T1219 [ScreenConnect Application Download and Install on Windows](tests/4a18cc4e-416f-4966-9a9d-75731c4684c0.md)
   * T1218.004 [InstallUtil Uninstall method call - '/installtype=notransaction /action=uninstall' variant](tests/06d9deba-f732-48a8-af8e-bdd6e4d98c1d.md)
   * T1134.004 [Parent PID Spoofing - Spawn from New Process](tests/2988133e-561c-4e42-a15f-6281e6a9b2db.md)
+  * T1036.005 [Masquerade as a built-in system executable](tests/35eb8d16-9820-4423-a2a1-90c4f5edd9ca.md)
   * T1127.001 [MSBuild Bypass Using Inline Tasks (VB)](tests/ab042179-c0c5-402f-9bc8-42741f5ce359.md)
   * T1218.005 [Invoke HTML Application - Jscript Engine over Local UNC Simulating Lateral Movement](tests/007e5672-2088-4853-a562-7490ddc19447.md)
   * T1055.012 [Process Hollowing using PowerShell](tests/562427b4-39ef-4e8c-af88-463a78e70b9c.md)
@@ -111,6 +113,7 @@
 * file_event_win_susp_clr_logs.yml
   * T1218.010 [Regsvr32 local DLL execution](tests/08ffca73-9a3d-471a-aeb0-68b4aa3ab37b.md)
   * T1219 [ScreenConnect Application Download and Install on Windows](tests/4a18cc4e-416f-4966-9a9d-75731c4684c0.md)
+  * T1036.005 [Masquerade as a built-in system executable](tests/35eb8d16-9820-4423-a2a1-90c4f5edd9ca.md)
   * T1218 [Renamed Microsoft.Workflow.Compiler.exe Payload Executions](tests/4cc40fd7-87b8-4b16-b2d7-57534b86b911.md)
 * file_event_win_susp_desktop_txt.yml
   * T1486 [PureLocker Ransom Note](tests/649349c7-9abf-493b-a7a2-b1aa4d141528.md)
@@ -1280,6 +1283,7 @@
 * proc_creation_win_powershell_frombase64string.yml
   * T1059.001 [PowerShell Fileless Script Execution](tests/fa050f5e-bc75-4230-af73-b6fd7852cd73.md)
   * T1218.009 [Regsvcs Uninstall Method Call Test](tests/fd3c1c6a-02d2-4b72-82d9-71c527abb126.md)
+  * T1053.005 [Scheduled Task Executing Base64 Encoded Commands From Registry](tests/e895677d-4f06-49ab-91b6-ae3742d0a2ba.md)
   * T1027 [Execute base64-encoded PowerShell from Windows Registry](tests/450e7218-7915-4be4-8b9b-464a49eafcec.md)
 * proc_creation_win_powershell_reverse_shell_connection.yml
   * T1016 [List Open Egress Ports](tests/4b467538-f102-491d-ace7-ed487b853bf5.md)
@@ -1512,6 +1516,7 @@
   * T1219 [ScreenConnect Application Download and Install on Windows](tests/4a18cc4e-416f-4966-9a9d-75731c4684c0.md)
   * T1218.004 [InstallUtil Uninstall method call - '/installtype=notransaction /action=uninstall' variant](tests/06d9deba-f732-48a8-af8e-bdd6e4d98c1d.md)
   * T1134.004 [Parent PID Spoofing - Spawn from New Process](tests/2988133e-561c-4e42-a15f-6281e6a9b2db.md)
+  * T1036.005 [Masquerade as a built-in system executable](tests/35eb8d16-9820-4423-a2a1-90c4f5edd9ca.md)
   * T1218.005 [Invoke HTML Application - Jscript Engine over Local UNC Simulating Lateral Movement](tests/007e5672-2088-4853-a562-7490ddc19447.md)
   * T1059.001 [ATHPowerShellCommandLineParameter -EncodedCommand parameter variations](tests/86a43bad-12e3-4e85-b97c-4d5cf25b95c3.md)
   * T1055.012 [Process Hollowing using PowerShell](tests/562427b4-39ef-4e8c-af88-463a78e70b9c.md)
@@ -1744,8 +1749,10 @@
   * T1562.001 [Disable Defender with Defender Control](tests/178136d8-2778-4d7a-81f3-d517053a4fd6.md)
   * T1219 [ScreenConnect Application Download and Install on Windows](tests/4a18cc4e-416f-4966-9a9d-75731c4684c0.md)
   * T1090.003 [Psiphon](tests/14d55ca0-920e-4b44-8425-37eedd72b173.md)
+  * T1036.005 [Masquerade as a built-in system executable](tests/35eb8d16-9820-4423-a2a1-90c4f5edd9ca.md)
   * T1219 [AnyDesk Files Detected Test on Windows](tests/6b8b7391-5c0a-4f8c-baee-78d8ce0ce330.md)
   * T1219 [GoToAssist Files Detected Test on Windows](tests/1b72b3bd-72f8-4b63-a30b-84e91b9c3578.md)
+  * T1090.003 [Tor Proxy Usage - Windows](tests/7b9d85e5-c4ce-4434-8060-d3de83595e69.md)
   * T1090.003 [Tor Proxy Usage - Debian/Ubuntu](tests/5ff9d047-6e9c-4357-b39b-5cf89d9b59c7.md)
 * proc_creation_win_susp_run_locations.yml
   * T1218.004 [InstallUtil evasive invocation](tests/559e6d06-bb42-4307-bff7-3b95a8254bad.md)
@@ -1770,6 +1777,7 @@
   * T1007 [System Service Discovery](tests/89676ba1-b1f8-47ee-b940-2e1a113ebc71.md)
 * proc_creation_win_susp_schtask_creation.yml
   * T1053.005 [Scheduled task Remote](tests/2e5eac3e-327b-4a88-a0c0-c4057039a8dd.md)
+  * T1053.005 [Scheduled Task Executing Base64 Encoded Commands From Registry](tests/e895677d-4f06-49ab-91b6-ae3742d0a2ba.md)
   * T1053.005 [Scheduled task Local](tests/42f53695-ad4a-4546-abb6-7d837f644a71.md)
   * T1036.004 [Creating W32Time similar named service using schtasks](tests/f9f2fe59-96f7-4a7d-ba9f-a9783200d4c9.md)
   * T1053.005 [Scheduled Task Startup Script](tests/fec27f65-db86-4c2d-b66c-61945aee87c2.md)
@@ -1805,6 +1813,7 @@
   * T1529 [Restart System - Windows](tests/f4648f0d-bf78-483c-bafc-3ec99cd1c302.md)
 * proc_creation_win_susp_svchost.yml
   * T1036.003 [Masquerading - non-windows exe running as windows exe](tests/bc15c13f-d121-4b1f-8c7d-28d95854d086.md)
+  * T1036.005 [Masquerade as a built-in system executable](tests/35eb8d16-9820-4423-a2a1-90c4f5edd9ca.md)
   * T1105 [svchost writing a file to a UNC path](tests/fa5a2759-41d7-4e13-a19c-e8f28a53566f.md)
   * T1036.003 [Masquerading - wscript.exe running as svchost.exe](tests/24136435-c91a-4ede-9da1-8b284a1c1a23.md)
   * T1036.003 [Masquerading - windows exe running as different windows exe](tests/c3d24a39-2bfe-4c6a-b064-90cd73896cb0.md)
@@ -1882,6 +1891,7 @@
 * proc_creation_win_system_exe_anomaly.yml
   * T1036.003 [Malicious process Masquerading as LSM.exe](tests/83810c46-f45e-4485-9ab6-8ed0e9e6ed7f.md)
   * T1036.003 [Masquerading - non-windows exe running as windows exe](tests/bc15c13f-d121-4b1f-8c7d-28d95854d086.md)
+  * T1036.005 [Masquerade as a built-in system executable](tests/35eb8d16-9820-4423-a2a1-90c4f5edd9ca.md)
   * T1105 [svchost writing a file to a UNC path](tests/fa5a2759-41d7-4e13-a19c-e8f28a53566f.md)
   * T1036.003 [Masquerading as Windows LSASS process](tests/5ba5a3d1-cf3c-4499-968a-a93155d1f717.md)
   * T1036.003 [Masquerading - wscript.exe running as svchost.exe](tests/24136435-c91a-4ede-9da1-8b284a1c1a23.md)
@@ -1890,6 +1900,7 @@
 * proc_creation_win_tools_relay_attacks.yml
   * T1187 [PetitPotam](tests/485ce873-2e65-4706-9c7e-ae3ab9e14213.md)
 * proc_creation_win_tor_browser.yml
+  * T1090.003 [Tor Proxy Usage - Windows](tests/7b9d85e5-c4ce-4434-8060-d3de83595e69.md)
   * T1090.003 [Tor Proxy Usage - Debian/Ubuntu](tests/5ff9d047-6e9c-4357-b39b-5cf89d9b59c7.md)
 * proc_creation_win_trust_discovery.yml
   * T1482 [Windows - Discover domain trusts with dsquery](tests/4700a710-c821-4e17-a3ec-9e4c81d6845f.md)
@@ -2056,6 +2067,8 @@
   * T1547.005 [Modify SSP configuration in registry](tests/afdfd7e3-8a0b-409f-85f7-886fdf249c9e.md)
 * registry_event_stickykey_like_backdoor.yml
   * T1546.008 [Attaches Command Prompt as a Debugger to a List of Target Processes](tests/3309f53e-b22b-4eb6-8fd2-a6cf58b355a9.md)
+* registry_event_susp_mic_cam_access.yml
+  * T1123 [Registry artefact when application use microphone](tests/7a21cce2-6ada-4f7c-afd9-e1e9c481e44a.md)
 * registry_event_susp_run_key_img_folder.yml
   * T1036.003 [Masquerading - non-windows exe running as windows exe](tests/bc15c13f-d121-4b1f-8c7d-28d95854d086.md)
 * registry_event_sysinternals_eula_accepted.yml

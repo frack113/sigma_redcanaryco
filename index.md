@@ -793,7 +793,7 @@ Caution: a test can generate a lot of noise...
 
 [Scheduled task Remote](tests/2e5eac3e-327b-4a88-a0c0-c4057039a8dd.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Scheduled Task Executing Base64 Encoded Commands From Registry](tests/e895677d-4f06-49ab-91b6-ae3742d0a2ba.md) ['windows'] (sigma rule :x:)
+[Scheduled Task Executing Base64 Encoded Commands From Registry](tests/e895677d-4f06-49ab-91b6-ae3742d0a2ba.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Scheduled task Local](tests/42f53695-ad4a-4546-abb6-7d837f644a71.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -825,7 +825,7 @@ Caution: a test can generate a lot of noise...
 ### T1036.005
 [Execute a process from a directory masquerading as the current parent directory.](tests/812c3ab8-94b0-4698-a9bf-9420af23ce24.md) ['macos', 'linux'] (sigma rule :x:)
 
-[Masquerade as a built-in system executable](tests/35eb8d16-9820-4423-a2a1-90c4f5edd9ca.md) ['windows'] (sigma rule :x:)
+[Masquerade as a built-in system executable](tests/35eb8d16-9820-4423-a2a1-90c4f5edd9ca.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1124
@@ -1015,7 +1015,7 @@ Caution: a test can generate a lot of noise...
 ### T1123
 [using device audio capture commandlet](tests/9c3ad250-b185-4444-b5a9-d69218a10c95.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Registry artefact when application use microphone](tests/7a21cce2-6ada-4f7c-afd9-e1e9c481e44a.md) ['windows'] (sigma rule :x:)
+[Registry artefact when application use microphone](tests/7a21cce2-6ada-4f7c-afd9-e1e9c481e44a.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1563.002
@@ -1765,7 +1765,7 @@ Caution: a test can generate a lot of noise...
 
 [Tor Proxy Usage - MacOS](tests/12631354-fdbc-4164-92be-402527e748da.md) ['macos'] (sigma rule :x:)
 
-[Tor Proxy Usage - Windows](tests/7b9d85e5-c4ce-4434-8060-d3de83595e69.md) ['windows'] (sigma rule :x:)
+[Tor Proxy Usage - Windows](tests/7b9d85e5-c4ce-4434-8060-d3de83595e69.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Tor Proxy Usage - Debian/Ubuntu](tests/5ff9d047-6e9c-4357-b39b-5cf89d9b59c7.md) ['linux'] (sigma rule :heavy_check_mark:)
 
