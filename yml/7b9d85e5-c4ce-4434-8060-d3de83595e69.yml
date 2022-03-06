@@ -14,5 +14,9 @@ os:
 description: "This test is designed to launch the tor proxy service, which is what is utilized in the background by the Tor Browser and other applications with add-ons in order to provide onion routing\
   \ functionality.\nUpon successful execution, the tor proxy will be launched, run for 60 seconds, and then exit. \n"
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 62f7c9bf-9135-49b2-8aeb-1e54a6ecc13c
+    name: proc_creation_win_tor_browser.yml
+  - id: dca91cfd-d7ab-4c66-8da7-ee57d487b35b
+    name: proc_creation_win_susp_run_folder.yml

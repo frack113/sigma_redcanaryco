@@ -123,7 +123,7 @@ collection;T1560.001;sh;['linux', 'macos'];Data Compressed - nix - gzip Single F
 collection;T1560.001;sh;['linux', 'macos'];Data Compressed - nix - tar Folder or File;7af2b51e-ad1c-498c-aca8-d3290c19535a;False;7
 collection;T1560.001;sh;['macos', 'linux'];Data Encrypted with zip and gpg symmetric;0286eb44-e7ce-41a0-b109-3da516e05a5f;False;8
 collection;T1123;powershell;['windows'];using device audio capture commandlet;9c3ad250-b185-4444-b5a9-d69218a10c95;True;1
-collection;T1123;command_prompt;['windows'];Registry artefact when application use microphone;7a21cce2-6ada-4f7c-afd9-e1e9c481e44a;False;2
+collection;T1123;command_prompt;['windows'];Registry artefact when application use microphone;7a21cce2-6ada-4f7c-afd9-e1e9c481e44a;True;2
 collection;T1119;command_prompt;['windows'];Automated Collection Command Prompt;cb379146-53f1-43e0-b884-7ce2c635ff5b;True;1
 collection;T1119;powershell;['windows'];Automated Collection PowerShell;634bd9b9-dc83-4229-b19f-7f83ba9ad313;True;2
 collection;T1119;powershell;['windows'];Recon information for export with PowerShell;c3f6d794-50dd-482f-b640-0384fbb7db26;True;3
@@ -243,7 +243,7 @@ privilege-escalation;T1053.005;command_prompt;['windows'];Scheduled task Remote;
 privilege-escalation;T1053.005;powershell;['windows'];Powershell Cmdlet Scheduled Task;af9fd58f-c4ac-4bf2-a9ba-224b71ff25fd;True;4
 privilege-escalation;T1053.005;powershell;['windows'];Task Scheduler via VBA;ecd3fa21-7792-41a2-8726-2c5c673414d3;True;5
 privilege-escalation;T1053.005;powershell;['windows'];WMI Invoke-CimMethod Scheduled Task;e16b3b75-dc9e-4cde-a23d-dfa2d0507b3b;True;6
-privilege-escalation;T1053.005;command_prompt;['windows'];Scheduled Task Executing Base64 Encoded Commands From Registry;e895677d-4f06-49ab-91b6-ae3742d0a2ba;False;7
+privilege-escalation;T1053.005;command_prompt;['windows'];Scheduled Task Executing Base64 Encoded Commands From Registry;e895677d-4f06-49ab-91b6-ae3742d0a2ba;True;7
 privilege-escalation;T1546.002;command_prompt;['windows'];Set Arbitrary Binary as Screensaver;281201e7-de41-4dc9-b73d-f288938cbb64;True;1
 privilege-escalation;T1547.005;powershell;['windows'];Modify SSP configuration in registry;afdfd7e3-8a0b-409f-85f7-886fdf249c9e;True;1
 privilege-escalation;T1574.011;powershell;['windows'];Service Registry Permissions Weakness;f7536d63-7fd4-466f-89da-7e48d550752a;True;1
@@ -466,7 +466,7 @@ defense-evasion;T1036.004;command_prompt;['windows'];Creating W32Time similar na
 defense-evasion;T1036;command_prompt;['windows'];System File Copied to Unusual Location;51005ac7-52e2-45e0-bdab-d17c6d4916cd;True;1
 defense-evasion;T1036;powershell;['windows'];Malware Masquerading and Execution from Zip File;4449c89b-ec82-43a4-89c1-91e2f1abeecc;False;2
 defense-evasion;T1036.005;sh;['macos', 'linux'];Execute a process from a directory masquerading as the current parent directory.;812c3ab8-94b0-4698-a9bf-9420af23ce24;False;1
-defense-evasion;T1036.005;powershell;['windows'];Masquerade as a built-in system executable;35eb8d16-9820-4423-a2a1-90c4f5edd9ca;False;2
+defense-evasion;T1036.005;powershell;['windows'];Masquerade as a built-in system executable;35eb8d16-9820-4423-a2a1-90c4f5edd9ca;True;2
 defense-evasion;T1112;command_prompt;['windows'];Modify Registry of Current User Profile - cmd;1324796b-d0f6-455a-b4ae-21ffee6aa6b9;True;1
 defense-evasion;T1112;command_prompt;['windows'];Modify Registry of Local Machine - cmd;282f929a-6bc5-42b8-bd93-960c3ba35afe;True;2
 defense-evasion;T1112;command_prompt;['windows'];Modify registry to store logon credentials;c0413fb5-33e2-40b7-9b6f-60b29f4a7a18;True;3
@@ -701,7 +701,7 @@ persistence;T1053.005;command_prompt;['windows'];Scheduled task Remote;2e5eac3e-
 persistence;T1053.005;powershell;['windows'];Powershell Cmdlet Scheduled Task;af9fd58f-c4ac-4bf2-a9ba-224b71ff25fd;True;4
 persistence;T1053.005;powershell;['windows'];Task Scheduler via VBA;ecd3fa21-7792-41a2-8726-2c5c673414d3;True;5
 persistence;T1053.005;powershell;['windows'];WMI Invoke-CimMethod Scheduled Task;e16b3b75-dc9e-4cde-a23d-dfa2d0507b3b;True;6
-persistence;T1053.005;command_prompt;['windows'];Scheduled Task Executing Base64 Encoded Commands From Registry;e895677d-4f06-49ab-91b6-ae3742d0a2ba;False;7
+persistence;T1053.005;command_prompt;['windows'];Scheduled Task Executing Base64 Encoded Commands From Registry;e895677d-4f06-49ab-91b6-ae3742d0a2ba;True;7
 persistence;T1546.002;command_prompt;['windows'];Set Arbitrary Binary as Screensaver;281201e7-de41-4dc9-b73d-f288938cbb64;True;1
 persistence;T1547.005;powershell;['windows'];Modify SSP configuration in registry;afdfd7e3-8a0b-409f-85f7-886fdf249c9e;True;1
 persistence;T1574.011;powershell;['windows'];Service Registry Permissions Weakness;f7536d63-7fd4-466f-89da-7e48d550752a;True;1
@@ -954,7 +954,7 @@ execution;T1053.005;command_prompt;['windows'];Scheduled task Remote;2e5eac3e-32
 execution;T1053.005;powershell;['windows'];Powershell Cmdlet Scheduled Task;af9fd58f-c4ac-4bf2-a9ba-224b71ff25fd;True;4
 execution;T1053.005;powershell;['windows'];Task Scheduler via VBA;ecd3fa21-7792-41a2-8726-2c5c673414d3;True;5
 execution;T1053.005;powershell;['windows'];WMI Invoke-CimMethod Scheduled Task;e16b3b75-dc9e-4cde-a23d-dfa2d0507b3b;True;6
-execution;T1053.005;command_prompt;['windows'];Scheduled Task Executing Base64 Encoded Commands From Registry;e895677d-4f06-49ab-91b6-ae3742d0a2ba;False;7
+execution;T1053.005;command_prompt;['windows'];Scheduled Task Executing Base64 Encoded Commands From Registry;e895677d-4f06-49ab-91b6-ae3742d0a2ba;True;7
 execution;T1569.002;command_prompt;['windows'];Execute a Command as a Service;2382dee2-a75f-49aa-9378-f52df6ed3fb1;True;1
 execution;T1569.002;command_prompt;['windows'];Use PsExec to execute a command on a remote host;873106b7-cfed-454b-8680-fa9f6400431c;True;2
 execution;T1072;command_prompt;['windows'];Radmin Viewer Utility;b4988cad-6ed2-434d-ace5-ea2670782129;True;1
@@ -1029,7 +1029,7 @@ command-and-control;T1090.001;sh;['macos', 'linux'];Connection Proxy;0ac21132-44
 command-and-control;T1090.001;sh;['macos'];Connection Proxy for macOS UI;648d68c1-8bcd-4486-9abe-71c6655b6a2c;False;2
 command-and-control;T1090.001;powershell;['windows'];portproxy reg key;b8223ea9-4be2-44a6-b50a-9657a3d4e72a;True;3
 command-and-control;T1090.003;powershell;['windows'];Psiphon;14d55ca0-920e-4b44-8425-37eedd72b173;True;1
-command-and-control;T1090.003;powershell;['windows'];Tor Proxy Usage - Windows;7b9d85e5-c4ce-4434-8060-d3de83595e69;False;2
+command-and-control;T1090.003;powershell;['windows'];Tor Proxy Usage - Windows;7b9d85e5-c4ce-4434-8060-d3de83595e69;True;2
 command-and-control;T1090.003;sh;['linux'];Tor Proxy Usage - Debian/Ubuntu;5ff9d047-6e9c-4357-b39b-5cf89d9b59c7;True;3
 command-and-control;T1090.003;sh;['macos'];Tor Proxy Usage - MacOS;12631354-fdbc-4164-92be-402527e748da;False;4
 command-and-control;T1095;powershell;['windows'];ICMP C2;0268e63c-e244-42db-bef7-72a9e59fc1fc;True;1

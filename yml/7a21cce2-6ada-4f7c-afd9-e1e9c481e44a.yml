@@ -13,5 +13,7 @@ os:
   - windows
 description: "[can-you-track-processes-accessing-the-camera-and-microphone](https://svch0st.medium.com/can-you-track-processes-accessing-the-camera-and-microphone-7e6885b37072)\n"
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 62120148-6b7a-42be-8b91-271c04e281a3
+    name: registry_event_susp_mic_cam_access.yml
