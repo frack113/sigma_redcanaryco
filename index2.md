@@ -138,6 +138,8 @@
   * T1105 [certutil download (verifyctl)](tests/ffd492e3-0455-4518-9fb1-46527c9f241b.md)
 * file_event_win_writing_local_admin_share.yml
   * T1021.002 [Execute command writing output to local Admin Share](tests/d41aaab5-bdfe-431d-a3d5-c29e9136ff46.md)
+* file_rename_win_not_dll_to_dll.yml
+  * T1036 [Malware Masquerading and Execution from Zip File](tests/4449c89b-ec82-43a4-89c1-91e2f1abeecc.md)
 * image_load_alternate_powershell_hosts_moduleload.yml
   * T1574.001 [DLL Search Order Hijacking - amsi.dll](tests/8549ad4b-b5df-4a2d-a3d7-2aee9e7052a3.md)
   * T1036.003 [Masquerading - powershell.exe running as taskhostw.exe](tests/ac9d0fc3-8aa8-4ab5-b11f-682cd63b40aa.md)
@@ -1311,6 +1313,8 @@
 * proc_creation_win_query_registry.yml
   * T1012 [Query Registry](tests/8f7578c4-9863-4d83-875c-a565573bbdf0.md)
   * T1082 [System Information Discovery](tests/66703791-c902-4560-8770-42b8a91f7667.md)
+* proc_creation_win_ransom_blackbyte.yml
+  * T1059.003 [Simulate BlackByte Ransomware Print Bombing](tests/6b2903ac-8f36-450d-9ad5-b220e8a2dcb9.md)
 * proc_creation_win_redirect_to_stream.yml
   * T1564.004 [Create ADS command prompt](tests/17e7637a-ddaf-4a82-8622-377e20de8fdb.md)
 * proc_creation_win_reg_add_run_key.yml
@@ -1987,6 +1991,7 @@
   * T1137.002 [Office Application Startup Test Persistence](tests/c3e35b58-fe1c-480b-b540-7600fb612563.md)
   * T1219 [TeamViewer Files Detected Test on Windows](tests/8ca3b96d-8983-4a7f-b125-fc98cc0a2aa0.md)
 * registry_event_blackbyte_ransomware.yml
+  * T1112 [BlackByte Ransomware Registry Changes - Powershell](tests/0b79c06f-c788-44a2-8630-d69051f1123d.md)
   * T1112 [BlackByte Ransomware Registry Changes - CMD](tests/4f4e2f9f-6209-4fcf-9b15-3b7455706f5b.md)
 * registry_event_bypass_uac_using_delegateexecute.yml
   * T1548.002 [Bypass UAC using sdclt DelegateExecute](tests/3be891eb-4608-4173-87e8-78b494c029b7.md)
@@ -2069,6 +2074,7 @@
   * T1546.008 [Attaches Command Prompt as a Debugger to a List of Target Processes](tests/3309f53e-b22b-4eb6-8fd2-a6cf58b355a9.md)
 * registry_event_susp_mic_cam_access.yml
   * T1123 [Registry artefact when application use microphone](tests/7a21cce2-6ada-4f7c-afd9-e1e9c481e44a.md)
+  * T1125 [Registry artefact when application use webcam](tests/6581e4a7-42e3-43c5-a0d2-5a0d62f9702a.md)
 * registry_event_susp_run_key_img_folder.yml
   * T1036.003 [Masquerading - non-windows exe running as windows exe](tests/bc15c13f-d121-4b1f-8c7d-28d95854d086.md)
 * registry_event_sysinternals_eula_accepted.yml

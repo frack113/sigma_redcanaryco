@@ -100,6 +100,24 @@ Caution: a test can generate a lot of noise...
 [Powercat C2](tests/3e0e0e7f-6aa2-4a61-b61d-526c2cc9330e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
+### T1112
+[BlackByte Ransomware Registry Changes - Powershell](tests/0b79c06f-c788-44a2-8630-d69051f1123d.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Change Powershell Execution Policy to Bypass](tests/f3a6cceb-06c9-48e5-8df8-8867a6814245.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[BlackByte Ransomware Registry Changes - CMD](tests/4f4e2f9f-6209-4fcf-9b15-3b7455706f5b.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Add domain to Trusted sites Zone](tests/cf447677-5a4e-4937-a82c-e47d254afd57.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Modify registry to store logon credentials](tests/c0413fb5-33e2-40b7-9b6f-60b29f4a7a18.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Javascript in registry](tests/15f44ea9-4571-4837-be9e-802431a7bfae.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Modify Registry of Current User Profile - cmd](tests/1324796b-d0f6-455a-b4ae-21ffee6aa6b9.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Modify Registry of Local Machine - cmd](tests/282f929a-6bc5-42b8-bd93-960c3ba35afe.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+
 ### T1090.001
 [Connection Proxy for macOS UI](tests/648d68c1-8bcd-4486-9abe-71c6655b6a2c.md) ['macos'] (sigma rule :x:)
 
@@ -207,7 +225,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1036
-[Malware Masquerading and Execution from Zip File](tests/4449c89b-ec82-43a4-89c1-91e2f1abeecc.md) ['windows'] (sigma rule :x:)
+[Malware Masquerading and Execution from Zip File](tests/4449c89b-ec82-43a4-89c1-91e2f1abeecc.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [System File Copied to Unusual Location](tests/51005ac7-52e2-45e0-bdab-d17c6d4916cd.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -614,6 +632,8 @@ Caution: a test can generate a lot of noise...
 [Suspicious Execution via Windows Command Shell](tests/d0eb3597-a1b3-4d65-b33b-2cda8d397f20.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Writes text to a file and displays it.](tests/127b4afe-2346-4192-815c-69042bec570e.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Simulate BlackByte Ransomware Print Bombing](tests/6b2903ac-8f36-450d-9ad5-b220e8a2dcb9.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Create and Execute Batch Script](tests/9e8894c0-50bd-4525-a96c-d4ac78ece388.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1568,22 +1588,6 @@ Caution: a test can generate a lot of noise...
 [Request All Tickets via PowerShell](tests/902f4ed2-1aba-4133-90f2-cff6d299d6da.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
-### T1112
-[Change Powershell Execution Policy to Bypass](tests/f3a6cceb-06c9-48e5-8df8-8867a6814245.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[BlackByte Ransomware Registry Changes - CMD](tests/4f4e2f9f-6209-4fcf-9b15-3b7455706f5b.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[Add domain to Trusted sites Zone](tests/cf447677-5a4e-4937-a82c-e47d254afd57.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[Modify registry to store logon credentials](tests/c0413fb5-33e2-40b7-9b6f-60b29f4a7a18.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[Javascript in registry](tests/15f44ea9-4571-4837-be9e-802431a7bfae.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[Modify Registry of Current User Profile - cmd](tests/1324796b-d0f6-455a-b4ae-21ffee6aa6b9.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[Modify Registry of Local Machine - cmd](tests/282f929a-6bc5-42b8-bd93-960c3ba35afe.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-
 ### T1041
 [C2 Data Exfiltration](tests/d1253f6e-c29b-49dc-b466-2147a6191932.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1814,6 +1818,8 @@ Caution: a test can generate a lot of noise...
 
 ### T1003.007
 [Dump individual process memory with Python (Local)](tests/437b2003-a20d-4ed8-834c-4964f24eec63.md) ['linux'] (sigma rule :x:)
+
+[Capture Passwords with MimiPenguin](tests/a27418de-bdce-4ebd-b655-38f04842bf0c.md) ['linux'] (sigma rule :x:)
 
 [Dump individual process memory with sh (Local)](tests/7e91138a-8e74-456d-a007-973d67a0bb80.md) ['linux'] (sigma rule :x:)
 
@@ -2255,7 +2261,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1125
-[Registry artefact when application use webcam](tests/6581e4a7-42e3-43c5-a0d2-5a0d62f9702a.md) ['windows'] (sigma rule :x:)
+[Registry artefact when application use webcam](tests/6581e4a7-42e3-43c5-a0d2-5a0d62f9702a.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1564.003
