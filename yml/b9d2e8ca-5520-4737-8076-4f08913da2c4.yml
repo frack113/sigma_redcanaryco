@@ -4,22 +4,27 @@ Attack_description: "Adversaries may attempt to get a listing of other systems b
   \ view</code> using [Net](https://attack.mitre.org/software/S0039). Adversaries may also use local host files (ex: <code>C:\\Windows\\System32\\Drivers\\etc\\hosts</code> or <code>/etc/hosts</code>) in\
   \ order to discover the hostname to IP address mappings of remote systems. \n\nSpecific to macOS, the <code>bonjour</code> protocol exists to discover additional Mac-based systems within the same broadcast\
   \ domain."
-guid: baa01aaa-5e13-45ec-8a0d-e46c93c9760f
-name: Remote System Discovery - nslookup
+guid: b9d2e8ca-5520-4737-8076-4f08913da2c4
+name: Get-DomainController with PowerView
 tactic:
   - discovery
 technique:
   - T1018
 os:
   - windows
-description: |
-  Powershell script that runs nslookup on cmd.exe against the local /24 network of the first network adaptor listed in ipconfig.
+description: 'Utilizing PowerView, run Get-DomainController to identify the Domain Controller. Upon execution, information about the domain controller within the domain will be displayed.
 
-  Upon successful execution, powershell will identify the ip range (via ipconfig) and perform a for loop and execute nslookup against that IP range. Output will be via stdout.
+  '
 executor: powershell
 sigma: true
 sigma_rule:
-  - id: f8ad2e2c-40b6-4117-84d7-20b89896ab23
-    name: proc_creation_win_network_scan_loop.yml
-  - id: 1f21ec3f-810d-4b0e-8045-322202e22b4b
-    name: net_connection_win_powershell_network_connection.yml
+  - id: efdd8dd5-cee8-4e59-9390-7d4d5e4dd6f6
+    name: proc_creation_win_susp_progname.yml
+  - id: 9fc51a3c-81b3-4fa7-b35f-7c02cf10fd2d
+    name: proc_creation_win_susp_web_request_cmd.yml
+  - id: f4bbd493-b796-416e-bbf2-121235348529
+    name: proc_creation_win_non_interactive_powershell.yml
+  - id: eeb2e3dc-c1f4-40dd-9bd5-149ee465ad50
+    name: sysmon_powershell_code_injection.yml
+  - id: 66d31e5f-52d6-40a4-9615-002d3789a119
+    name: sysmon_suspicious_remote_thread.yml

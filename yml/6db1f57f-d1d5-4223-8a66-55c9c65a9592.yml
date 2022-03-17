@@ -17,5 +17,7 @@ description: |
 
   Upon successful execution, cmd.exe will perform a for loop against the 192.168.1.1/24 network. Output will be via stdout.
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: f8ad2e2c-40b6-4117-84d7-20b89896ab23
+    name: proc_creation_win_network_scan_loop.yml

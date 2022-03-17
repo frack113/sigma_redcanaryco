@@ -1,0 +1,19 @@
+Attack_name: Domain Account
+Attack_description: |-
+  Adversaries may attempt to get a listing of domain accounts. This information can help adversaries determine which domain accounts exist to aid in follow-on behavior.
+
+  Commands such as <code>net user /domain</code> and <code>net group /domain</code> of the [Net](https://attack.mitre.org/software/S0039) utility, <code>dscacheutil -q group</code>on macOS, and <code>ldapsearch</code> on Linux can list domain users and groups.
+guid: 93662494-5ed7-4454-a04c-8c8372808ac2
+name: Get-DomainUser with PowerView
+tactic:
+  - discovery
+technique:
+  - T1087.002
+os:
+  - windows
+description: 'Utilizing PowerView, run Get-DomainUser to identify the domain users. Upon execution, Users within the domain will be listed.
+
+  '
+executor: powershell
+sigma: false
+sigma_rule: []
