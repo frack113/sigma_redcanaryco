@@ -248,6 +248,7 @@
 * net_connection_win_powershell_network_connection.yml
   * T1110.001 [Brute Force Credentials of single Active Directory domain user via LDAP against domain controller (NTLM or Kerberos)](tests/c2969434-672b-4ec8-8df0-bbb91f40e250.md)
   * T1016 [List Open Egress Ports](tests/4b467538-f102-491d-ace7-ed487b853bf5.md)
+  * T1018 [Remote System Discovery - nslookup](tests/baa01aaa-5e13-45ec-8a0d-e46c93c9760f.md)
   * T1552.004 [ADFS token signing and encryption certificates theft - Remote](tests/cab413d8-9e4a-4b8d-9b84-c985bd73a442.md)
   * T1071.004 [DNS C2](tests/e7bf9802-2e78-4db9-93b5-181b7bcd37d7.md)
   * T1048 [DNSExfiltration (doh)](tests/c943d285-ada3-45ca-b3aa-7cd6500c6a48.md)
@@ -673,6 +674,8 @@
   * T1134.004 [Parent PID Spoofing - Spawn from Current Process](tests/14920ebd-1d61-491a-85e0-fe98efe37f25.md)
   * T1218.005 [Invoke HTML Application - JScript Engine with Inline Protocol Handler](tests/d3eaaf6a-cdb1-44a9-9ede-b6c337d0d840.md)
   * T1218 [Invoke-ATHRemoteFXvGPUDisablementCommand base test](tests/9ebe7901-7edf-45c0-b5c7-8366300919db.md)
+  * T1057 [Process Discovery - get-wmiObject](tests/b51239b4-0129-474f-a2b4-70f855b9f2c2.md)
+  * T1018 [Get-wmiobject to Enumerate Domain Controllers](tests/e3cf5123-f6c9-4375-bdf2-1bb3ba43a1ad.md)
   * T1003.003 [Create Volume Shadow Copy with Powershell](tests/542bb97e-da53-436b-8e43-e0a7d31a6c24.md)
   * T1218.005 [Invoke HTML Application - Jscript Engine Simulating Double Click](tests/58a193ec-131b-404e-b1ca-b35cf0b18c33.md)
   * T1134.004 [Parent PID Spoofing - Spawn from Specified Process](tests/cbbff285-9051-444a-9d17-c07cd2d230eb.md)
@@ -912,7 +915,9 @@
   * T1482 [Adfind - Enumerate Active Directory OUs](tests/d1c73b96-ab87-4031-bad8-0e1b3b8bf3ec.md)
   * T1087.002 [Adfind - Enumerate Active Directory User Objects](tests/e1ec8d20-509a-4b9a-b820-06c9b2da8eb7.md)
   * T1016 [Adfind - Enumerate Active Directory Subnet Objects](tests/9bb45dd7-c466-4f93-83a1-be30e56033ee.md)
+  * T1069.002 [Enumerate Active Directory Groups with ADSISearcher](tests/9f4e344b-8434-41b3-85b1-d38f29d148d0.md)
   * T1069.002 [Adfind - Query Active Directory Groups](tests/48ddc687-82af-40b7-8472-ff1e742e8274.md)
+  * T1018 [Enumerate Active Directory Computers with ADSISearcher](tests/64ede6ac-b57a-41c2-a7d1-32c6cd35397d.md)
   * T1018 [Adfind - Enumerate Active Directory Computer Objects](tests/a889f5be-2d54-4050-bd05-884578748bb4.md)
   * T1018 [Enumerate domain computers within Active Directory using DirectorySearcher](tests/962a6017-1c09-45a6-880b-adc9c57cb22e.md)
   * T1482 [Adfind - Enumerate Active Directory Trusts](tests/15fe436d-e771-4ff3-b655-2dca9ba52834.md)
@@ -1094,6 +1099,8 @@
   * T1037.001 [Logon Scripts](tests/d6042746-07d4-4c92-9ad8-e644c114a231.md)
 * proc_creation_win_lolbas_configsecuritypolicy.yml
   * T1567 [Data Exfiltration with ConfigSecurityPolicy](tests/5568a8f4-a8b1-4c40-9399-4969b642f122.md)
+* proc_creation_win_lolbins_suspicious_driver_installed_by_pnputil.yml
+  * T1547 [Add a driver](tests/cb01b3da-b0e7-4e24-bf6d-de5223526785.md)
 * proc_creation_win_long_powershell_commandline.yml
   * T1059.001 [Mimikatz - Cradlecraft PsSendKeys](tests/af1800cf-9f9d-4fd1-a709-14b1e6de020d.md)
   * T1036.003 [File Extension Masquerading](tests/c7fa0c3b-b57f-4cba-9118-863bf4e653fc.md)
@@ -1194,6 +1201,9 @@
   * T1040 [Windows Internal Packet Capture](tests/b5656f67-d67f-4de8-8e62-b5581630f528.md)
 * proc_creation_win_netsh_port_fwd.yml
   * T1090.001 [portproxy reg key](tests/b8223ea9-4be2-44a6-b50a-9657a3d4e72a.md)
+* proc_creation_win_network_scan_loop.yml
+  * T1018 [Remote System Discovery - ping sweep](tests/6db1f57f-d1d5-4223-8a66-55c9c65a9592.md)
+  * T1018 [Remote System Discovery - nslookup](tests/baa01aaa-5e13-45ec-8a0d-e46c93c9760f.md)
 * proc_creation_win_network_sniffing.yml
   * T1040 [Packet Capture Windows Command Prompt](tests/a5b2f6a0-24b4-493e-9590-c699f75723ca.md)
 * proc_creation_win_new_service_creation.yml
@@ -1209,6 +1219,7 @@
   * T1018 [Remote System Discovery - nltest](tests/52ab5108-3f6f-42fb-8ba3-73bc054f22c8.md)
   * T1016 [System Network Configuration Discovery (TrickBot Style)](tests/dafaf052-5508-402d-bf77-51e0700c02e2.md)
 * proc_creation_win_non_interactive_powershell.yml
+  * T1018 [Get-DomainController with PowerView](tests/b9d2e8ca-5520-4737-8076-4f08913da2c4.md)
   * T1218.005 [Mshta used to Execute PowerShell](tests/8707a805-2b76-4f32-b1c0-14e558205772.md)
   * T1027 [Obfuscated Command in PowerShell](tests/8b3f4ed6-077b-4bdd-891c-2d237f19410f.md)
   * T1216 [SyncAppvPublishingServer Signed Script PowerShell Command Execution](tests/275d963d-3f36-476c-8bef-a2a3960ee6eb.md)
@@ -1715,6 +1726,7 @@
 * proc_creation_win_susp_procdump_lsass.yml
   * T1003.001 [Dump LSASS.exe Memory using ProcDump](tests/0be2230c-9ab3-4ac2-8826-3199b9a0ebf8.md)
 * proc_creation_win_susp_progname.yml
+  * T1018 [Get-DomainController with PowerView](tests/b9d2e8ca-5520-4737-8076-4f08913da2c4.md)
   * T1572 [DNS over HTTPS Regular Beaconing](tests/0c5f9705-c575-42a6-9609-cbbff4b2fc9b.md)
 * proc_creation_win_susp_ps_downloadfile.yml
   * T1105 [Windows - PowerShell Download](tests/42dc4460-9aa6-45d3-b1a6-3955d34e1fe8.md)
@@ -1838,6 +1850,7 @@
   * T1563.002 [RDP hijacking](tests/a37ac520-b911-458e-8aed-c5f1576d9f46.md)
 * proc_creation_win_susp_web_request_cmd.yml
   * T1071.004 [DNS C2](tests/e7bf9802-2e78-4db9-93b5-181b7bcd37d7.md)
+  * T1018 [Get-DomainController with PowerView](tests/b9d2e8ca-5520-4737-8076-4f08913da2c4.md)
   * T1204.002 [Potentially Unwanted Applications (PUA)](tests/02f35d62-9fdc-4a97-b899-a5d9a876d295.md)
   * T1132.001 [XOR Encoded data.](tests/c3ed6d2a-e3ad-400d-ad78-bbfdbfeacc08.md)
   * T1218.005 [Mshta Executes Remote HTML Application (HTA)](tests/c4b97eeb-5249-4455-a607-59f95485cb45.md)
@@ -1931,6 +1944,7 @@
   * T1059.001 [ATHPowerShellCommandLineParameter -Command parameter variations](tests/686a9785-f99b-41d4-90df-66ed515f81d7.md)
   * T1059.001 [ATHPowerShellCommandLineParameter -EncodedCommand parameter variations with encoded arguments](tests/0d181431-ddf3-4826-8055-2dbf63ae848b.md)
 * proc_creation_win_wmic_reconnaissance.yml
+  * T1057 [Process Discovery - wmic process](tests/640cbf6d-659b-498b-ba53-f6dd1a1cc02c.md)
   * T1220 [WMIC bypass using local XSL file](tests/1b237334-3e21-4a0c-8178-b8c996124988.md)
   * T1220 [WMIC bypass using remote XSL file](tests/7f5be499-33be-4129-a560-66021f379b9b.md)
   * T1047 [WMI Reconnaissance Processes](tests/5750aa16-0e59-4410-8b9a-8a47ca2788e2.md)
@@ -2050,6 +2064,8 @@
   * T1137 [Office Application Startup - Outlook as a C2](tests/bfe6ac15-c50b-4c4f-a186-0fc6b8ba936c.md)
 * registry_event_persistence.yml
   * T1546.012 [IFEO Global Flags](tests/46b1f278-c8ee-4aa5-acce-65e77b11f3c1.md)
+* registry_event_persistence_recycle_bin.yml
+  * T1547.001 [Add persistance via Recycle bin](tests/bda6a3d6-7aa7-4e89-908b-306772e9662f.md)
 * registry_event_persistence_search_order.yml
   * T1219 [TeamViewer Files Detected Test on Windows](tests/8ca3b96d-8983-4a7f-b125-fc98cc0a2aa0.md)
 * registry_event_powershell_as_service.yml
@@ -2104,8 +2120,10 @@
   * T1003.001 [Powershell Mimikatz](tests/66fb0bc1-3c3f-47e9-a298-550ecfefacbc.md)
 * sysmon_powershell_code_injection.yml
   * T1134.004 [Parent PID Spoofing using PowerShell](tests/069258f4-2162-46e9-9a25-c9c6c56150d2.md)
+  * T1018 [Get-DomainController with PowerView](tests/b9d2e8ca-5520-4737-8076-4f08913da2c4.md)
 * sysmon_suspicious_remote_thread.yml
   * T1134.004 [Parent PID Spoofing using PowerShell](tests/069258f4-2162-46e9-9a25-c9c6c56150d2.md)
+  * T1018 [Get-DomainController with PowerView](tests/b9d2e8ca-5520-4737-8076-4f08913da2c4.md)
 * sysmon_wmi_event_subscription.yml
   * T1546.003 [Persistence via WMI Event Subscription](tests/3c64f177-28e2-49eb-a799-d767b24dd1e0.md)
 * win_alert_mimikatz_keywords.yml

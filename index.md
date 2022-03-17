@@ -103,19 +103,63 @@ Caution: a test can generate a lot of noise...
 ### T1112
 [BlackByte Ransomware Registry Changes - Powershell](tests/0b79c06f-c788-44a2-8630-d69051f1123d.md) ['windows'] (sigma rule :heavy_check_mark:)
 
+[Activate Windows NoClose Group Policy Feature](tests/12f50e15-dbc6-478b-a801-a746e8ba1723.md) ['windows'] (sigma rule :x:)
+
+[Disable Windows Task Manager application](tests/af254e70-dd0e-4de6-9afe-a994d9ea8b62.md) ['windows'] (sigma rule :x:)
+
+[Activate Windows NoDesktop Group Policy Feature](tests/93386d41-525c-4a1b-8235-134a628dee17.md) ['windows'] (sigma rule :x:)
+
+[Windows HideSCANetwork Group Policy Feature](tests/3e757ce7-eca0-411a-9583-1c33b8508d52.md) ['windows'] (sigma rule :x:)
+
+[Activate Windows NoTrayContextMenu Group Policy Feature](tests/4d72d4b1-fa7b-4374-b423-0fe326da49d2.md) ['windows'] (sigma rule :x:)
+
 [Change Powershell Execution Policy to Bypass](tests/f3a6cceb-06c9-48e5-8df8-8867a6814245.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Disable Windows Lock Workstation Feature](tests/3dacb0d2-46ee-4c27-ac1b-f9886bf91a56.md) ['windows'] (sigma rule :x:)
+
+[Activate Windows NoFind Group Policy Feature](tests/ffbb407e-7f1d-4c95-b22e-548169db1fbd.md) ['windows'] (sigma rule :x:)
+
+[Disable Windows Shutdown Button](tests/6e0d1131-2d7e-4905-8ca5-d6172f05d03d.md) ['windows'] (sigma rule :x:)
+
+[Disable Windows LogOff Button](tests/e246578a-c24d-46a7-9237-0213ff86fb0c.md) ['windows'] (sigma rule :x:)
+
+[Activate Windows NoSetTaskbar Group Policy Feature](tests/d29b7faf-7355-4036-9ed3-719bd17951ed.md) ['windows'] (sigma rule :x:)
 
 [BlackByte Ransomware Registry Changes - CMD](tests/4f4e2f9f-6209-4fcf-9b15-3b7455706f5b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
+[Disable Windows Notification Center](tests/c0d6d67f-1f63-42cc-95c0-5fd6b20082ad.md) ['windows'] (sigma rule :x:)
+
 [Add domain to Trusted sites Zone](tests/cf447677-5a4e-4937-a82c-e47d254afd57.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Disable Windows Change Password Feature](tests/d4a6da40-618f-454d-9a9e-26af552aaeb0.md) ['windows'] (sigma rule :x:)
+
+[Activate Windows NoRun Group Policy Feature](tests/d49ff3cc-8168-4123-b5b3-f057d9abbd55.md) ['windows'] (sigma rule :x:)
+
+[Hide Windows Clock Group Policy Feature](tests/8023db1e-ad06-4966-934b-b6a0ae52689e.md) ['windows'] (sigma rule :x:)
 
 [Modify registry to store logon credentials](tests/c0413fb5-33e2-40b7-9b6f-60b29f4a7a18.md) ['windows'] (sigma rule :heavy_check_mark:)
 
+[Activate Windows NoControlPanel Group Policy Feature](tests/a450e469-ba54-4de1-9deb-9023a6111690.md) ['windows'] (sigma rule :x:)
+
 [Javascript in registry](tests/15f44ea9-4571-4837-be9e-802431a7bfae.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Activate Windows NoFileMenu Group Policy Feature](tests/5e27bdb4-7fd9-455d-a2b5-4b4b22c9dea4.md) ['windows'] (sigma rule :x:)
+
+[Windows HideSCAPower Group Policy Feature](tests/8d85a5d8-702f-436f-bc78-fcd9119496fc.md) ['windows'] (sigma rule :x:)
 
 [Modify Registry of Current User Profile - cmd](tests/1324796b-d0f6-455a-b4ae-21ffee6aa6b9.md) ['windows'] (sigma rule :heavy_check_mark:)
 
+[Windows HideSCAVolume Group Policy Feature](tests/7f037590-b4c6-4f13-b3cc-e424c5ab8ade.md) ['windows'] (sigma rule :x:)
+
+[Activate Windows NoPropertiesMyDocuments Group Policy Feature](tests/20fc9daa-bd48-4325-9aff-81b967a84b1d.md) ['windows'] (sigma rule :x:)
+
+[Disable Windows Registry Tool](tests/ac34b0f7-0f85-4ac0-b93e-3ced2bc69bb8.md) ['windows'] (sigma rule :x:)
+
 [Modify Registry of Local Machine - cmd](tests/282f929a-6bc5-42b8-bd93-960c3ba35afe.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Windows HideSCAHealth Group Policy Feature](tests/a4637291-40b1-4a96-8c82-b28f1d73e54e.md) ['windows'] (sigma rule :x:)
+
+[Disable Windows CMD application](tests/d2561a6d-72bd-408c-b150-13efe1801c2a.md) ['windows'] (sigma rule :x:)
 
 
 ### T1090.001
@@ -450,6 +494,12 @@ Caution: a test can generate a lot of noise...
 [LinEnum tool execution](tests/a2b35a63-9df1-4806-9a4d-5fe0500845f2.md) ['linux'] (sigma rule :x:)
 
 
+### T1562.008
+[Azure - Eventhub Deletion](tests/5e09bed0-7d33-453b-9bf3-caea32bff719.md) ['iaas:azure'] (sigma rule :x:)
+
+[AWS CloudTrail Changes](tests/9c10dc6b-20bd-403a-8e67-50ef7d07ed4e.md) ['iaas:aws'] (sigma rule :x:)
+
+
 ### T1003.001
 [Offline Credential Theft With Mimikatz](tests/453acf13-1dbd-47d7-b28a-172ce9228023.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -589,15 +639,23 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1018
-[Remote System Discovery - ping sweep](tests/6db1f57f-d1d5-4223-8a66-55c9c65a9592.md) ['windows'] (sigma rule :x:)
+[Remote System Discovery - ping sweep](tests/6db1f57f-d1d5-4223-8a66-55c9c65a9592.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Remote System Discovery - adidnsdump](tests/95e19466-469e-4316-86d2-1dc401b5a959.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Remote System Discovery - nslookup](tests/baa01aaa-5e13-45ec-8a0d-e46c93c9760f.md) ['windows'] (sigma rule :x:)
+[Remote System Discovery - nslookup](tests/baa01aaa-5e13-45ec-8a0d-e46c93c9760f.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Get-DomainController with PowerView](tests/b9d2e8ca-5520-4737-8076-4f08913da2c4.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Remote System Discovery - arp](tests/2d5a61f5-0447-4be4-944a-1f8530ed6574.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Remote System Discovery - arp nix](tests/acb6b1ff-e2ad-4d64-806c-6c35fe73b951.md) ['linux', 'macos'] (sigma rule :x:)
+
+[Get-wmiobject to Enumerate Domain Controllers](tests/e3cf5123-f6c9-4375-bdf2-1bb3ba43a1ad.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Enumerate Active Directory Computers with Get-AdComputer](tests/97e89d9e-e3f5-41b5-a90f-1e0825df0fdf.md) ['windows'] (sigma rule :x:)
+
+[Enumerate Active Directory Computers with ADSISearcher](tests/64ede6ac-b57a-41c2-a7d1-32c6cd35397d.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Remote System Discovery - net group Domain Computers](tests/f1bf6c8f-9016-4edf-aff9-80b65f5d711f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -705,7 +763,13 @@ Caution: a test can generate a lot of noise...
 ### T1057
 [Process Discovery - tasklist](tests/c5806a4f-62b8-4900-980b-c7ec004e9908.md) ['windows'] (sigma rule :heavy_check_mark:)
 
+[Process Discovery - get-wmiObject](tests/b51239b4-0129-474f-a2b4-70f855b9f2c2.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Process Discovery - wmic process](tests/640cbf6d-659b-498b-ba53-f6dd1a1cc02c.md) ['windows'] (sigma rule :heavy_check_mark:)
+
 [Process Discovery - ps](tests/4ff64f0b-aaf2-4866-b39d-38d9791407cc.md) ['macos', 'linux'] (sigma rule :x:)
+
+[Process Discovery - Get-Process](tests/3b3809b6-a54b-4f5b-8aff-cb51f2e97b34.md) ['windows'] (sigma rule :x:)
 
 
 ### T1218.007
@@ -741,15 +805,25 @@ Caution: a test can generate a lot of noise...
 
 [Elevated group enumeration using net group (Domain)](tests/0afb5163-8181-432e-9405-4322710c0c37.md) ['windows'] (sigma rule :heavy_check_mark:)
 
+[Get-ADUser Enumeration using UserAccountControl flags (AS-REP Roasting)](tests/43fa81fb-34bb-4b5f-867b-03c7dbe0e3d8.md) ['windows'] (sigma rule :x:)
+
+[Enumerate Active Directory Groups with ADSISearcher](tests/9f4e344b-8434-41b3-85b1-d38f29d148d0.md) ['windows'] (sigma rule :heavy_check_mark:)
+
 [Adfind - Query Active Directory Groups](tests/48ddc687-82af-40b7-8472-ff1e742e8274.md) ['windows'] (sigma rule :heavy_check_mark:)
 
+[Enumerate Active Directory Groups with Get-AdGroup](tests/3d1fcd2a-e51c-4cbe-8d84-9a843bad8dc8.md) ['windows'] (sigma rule :x:)
+
 [Find Local Admins via Group Policy (PowerView)](tests/64fdb43b-5259-467a-b000-1b02c00e510a.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Get-DomainGroup with PowerView](tests/5a8a181c-2c8e-478d-a943-549305a01230.md) ['windows'] (sigma rule :x:)
 
 [Enumerate Users Not Requiring Pre Auth (ASRepRoast)](tests/870ba71e-6858-4f6d-895c-bb6237f6121b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Find machines where user has local admin access (PowerView)](tests/a2d71eee-a353-4232-9f86-54f4288dd8c1.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Permission Groups Discovery PowerShell (Domain)](tests/6d5d8c96-3d2a-4da9-9d6d-9a9d341899a7.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Get-DomainGroupMember with PowerView](tests/46352f40-f283-4fe5-b56d-d9a71750e145.md) ['windows'] (sigma rule :x:)
 
 
 ### T1562.002
@@ -1029,6 +1103,8 @@ Caution: a test can generate a lot of noise...
 
 [File and Directory Discovery (PowerShell)](tests/2158908e-b7ef-4c21-8a83-3ce4dd05a924.md) ['windows'] (sigma rule :heavy_check_mark:)
 
+[Simulating MAZE Directory Enumeration](tests/c6c34f61-1c3e-40fb-8a58-d017d88286d8.md) ['windows'] (sigma rule :x:)
+
 [Nix File and Directory Discovery](tests/ffc8b249-372a-4b74-adcd-e4c0430842de.md) ['macos', 'linux'] (sigma rule :x:)
 
 
@@ -1086,6 +1162,10 @@ Caution: a test can generate a lot of noise...
 [MSBuild Bypass Using Inline Tasks (C#)](tests/58742c0f-cb01-44cd-a60b-fb26e8871c93.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [MSBuild Bypass Using Inline Tasks (VB)](tests/ab042179-c0c5-402f-9bc8-42741f5ce359.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+
+### T1547
+[Add a driver](tests/cb01b3da-b0e7-4e24-bf6d-de5223526785.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1546.005
@@ -1174,6 +1254,10 @@ Caution: a test can generate a lot of noise...
 [Adfind -Listing password policy](tests/736b4f53-f400-4c22-855d-1a6b5a551600.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Enumerate logged on users via CMD (Domain)](tests/161dcd85-d014-4f5e-900c-d3eaae82a0f7.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Get-DomainUser with PowerView](tests/93662494-5ed7-4454-a04c-8c8372808ac2.md) ['windows'] (sigma rule :x:)
+
+[Enumerate Active Directory Users with ADSISearcher](tests/02e8be5a-3065-4e54-8cc8-a14d138834d3.md) ['windows'] (sigma rule :x:)
 
 [Enumerate Active Directory for Unconstrained Delegation](tests/46f8dbe9-22a5-4770-8513-66119c5be63b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1317,7 +1401,11 @@ Caution: a test can generate a lot of noise...
 
 [Examine password complexity policy - CentOS/RHEL 6.x](tests/6ce12552-0adb-4f56-89ff-95ce268f6358.md) ['linux'] (sigma rule :x:)
 
+[Get-DomainPolicy with PowerView](tests/3177f4da-3d4b-4592-8bdc-aa23d0b2e843.md) ['windows'] (sigma rule :x:)
+
 [Examine password complexity policy - CentOS/RHEL 7.x](tests/78a12e65-efff-4617-bc01-88f17d71315d.md) ['linux'] (sigma rule :x:)
+
+[Enumerate Active Directory Password Policy with get-addefaultdomainpasswordpolicy](tests/b2698b33-984c-4a1c-93bb-e4ba72a0babb.md) ['windows'] (sigma rule :x:)
 
 [Examine password complexity policy - Ubuntu](tests/085fe567-ac84-47c7-ac4c-2688ce28265b.md) ['linux'] (sigma rule :x:)
 
@@ -1503,7 +1591,11 @@ Caution: a test can generate a lot of noise...
 
 [Suspicious jse file run from startup Folder](tests/dade9447-791e-4c8f-b04b-3a35855dfa06.md) ['windows'] (sigma rule :heavy_check_mark:)
 
+[SystemBC Malware-as-a-Service Registry](tests/9dc7767b-30c1-4cc4-b999-50cab5e27891.md) ['windows'] (sigma rule :x:)
+
 [Suspicious bat file run from startup Folder](tests/5b6768e4-44d2-44f0-89da-a01d1430fd5e.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Add persistance via Recycle bin](tests/bda6a3d6-7aa7-4e89-908b-306772e9662f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Suspicious vbs file run from startup Folder](tests/2cb98256-625e-4da9-9d44-f2e5f90b8bd5.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -2062,6 +2154,12 @@ Caution: a test can generate a lot of noise...
 [Edge Chromium Addon - VPN](tests/3d456e2b-a7db-4af8-b5b3-720e7c4d9da5.md) ['windows', 'macos'] (sigma rule :x:)
 
 
+### T1558.004
+[Get-DomainUser with PowerView](tests/d6139549-7b72-4e48-9ea1-324fc9bdf88a.md) ['windows'] (sigma rule :x:)
+
+[Rubeus asreproast](tests/615bd568-2859-41b5-9aed-61f6a88e48dd.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+
 ### T1556.002
 [Install and Register Password Filter DLL](tests/a7961770-beb5-4134-9674-83d7e1fa865c.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -2070,16 +2168,8 @@ Caution: a test can generate a lot of noise...
 [Creating GCP Service Account and Service Account Key](tests/9fdd83fd-bd53-46e5-a716-9dec89c8ae8e.md) ['google-workspace', 'windows', 'linux', 'macos'] (sigma rule :x:)
 
 
-### T1558.004
-[Rubeus asreproast](tests/615bd568-2859-41b5-9aed-61f6a88e48dd.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-
 ### T1037.005
 [Add file to Local Library StartupItems](tests/134627c3-75db-410e-bff8-7a920075f198.md) ['macos'] (sigma rule :x:)
-
-
-### T1562.008
-[AWS CloudTrail Changes](tests/9c10dc6b-20bd-403a-8e67-50ef7d07ed4e.md) ['iaas:aws'] (sigma rule :x:)
 
 
 ### T1134.002
