@@ -41,7 +41,7 @@ Reference: https://redcanary.com/blog/cor_profiler-for-persistence/
 powershell
 
 # Sigma Rule
- - registry_event_enabling_cor_profiler_env_variables.yml (id: ad89044a-8f49-4673-9a55-cbd88a1b374f)
+ - registry_set_enabling_cor_profiler_env_variables.yml (id: ad89044a-8f49-4673-9a55-cbd88a1b374f)
 
 
 

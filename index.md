@@ -107,6 +107,8 @@ Caution: a test can generate a lot of noise...
 
 [Disable Windows Task Manager application](tests/af254e70-dd0e-4de6-9afe-a994d9ea8b62.md) ['windows'] (sigma rule :x:)
 
+[Windows Modify Show Compress Color And Info Tip Registry](tests/795d3248-0394-4d4d-8e86-4e8df2a2693f.md) ['windows'] (sigma rule :x:)
+
 [Activate Windows NoDesktop Group Policy Feature](tests/93386d41-525c-4a1b-8235-134a628dee17.md) ['windows'] (sigma rule :x:)
 
 [Windows HideSCANetwork Group Policy Feature](tests/3e757ce7-eca0-411a-9583-1c33b8508d52.md) ['windows'] (sigma rule :x:)
@@ -138,6 +140,8 @@ Caution: a test can generate a lot of noise...
 [Hide Windows Clock Group Policy Feature](tests/8023db1e-ad06-4966-934b-b6a0ae52689e.md) ['windows'] (sigma rule :x:)
 
 [Modify registry to store logon credentials](tests/c0413fb5-33e2-40b7-9b6f-60b29f4a7a18.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Windows Powershell Logging Disabled](tests/95b25212-91a7-42ff-9613-124aca6845a8.md) ['windows'] (sigma rule :x:)
 
 [Activate Windows NoControlPanel Group Policy Feature](tests/a450e469-ba54-4de1-9deb-9023a6111690.md) ['windows'] (sigma rule :x:)
 
@@ -178,6 +182,8 @@ Caution: a test can generate a lot of noise...
 [Azure - adding user to Azure AD role](tests/0e65ae27-5385-46b4-98ac-607a8ee82261.md) ['azure-ad'] (sigma rule :x:)
 
 [Azure - adding service principal to Azure role in subscription](tests/c8f4bc29-a151-48da-b3be-4680af56f404.md) ['iaas:azure'] (sigma rule :x:)
+
+[AzureAD - adding permission to application](tests/94ea9cc3-81f9-4111-8dde-3fb54f36af4b.md) ['azure-ad'] (sigma rule :x:)
 
 [Azure - adding user to Azure role in subscription](tests/1a94b3fc-b080-450a-b3d8-6d9b57b472ea.md) ['iaas:azure'] (sigma rule :x:)
 
@@ -497,6 +503,8 @@ Caution: a test can generate a lot of noise...
 ### T1562.008
 [Azure - Eventhub Deletion](tests/5e09bed0-7d33-453b-9bf3-caea32bff719.md) ['iaas:azure'] (sigma rule :x:)
 
+[Office 365 - Exchange Audit Log Disabled](tests/1ee572f3-056c-4632-a7fc-7e7c42b1543c.md) ['office-365'] (sigma rule :x:)
+
 [AWS CloudTrail Changes](tests/9c10dc6b-20bd-403a-8e67-50ef7d07ed4e.md) ['iaas:aws'] (sigma rule :x:)
 
 
@@ -550,6 +558,8 @@ Caution: a test can generate a lot of noise...
 
 ### T1490
 [Windows - Disable Windows Recovery Console Repair](tests/cf21060a-80b3-4238-a595-22525de4ab81.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Disable System Restore Through Registry](tests/66e647d1-8741-4e43-b7c1-334760c2047f.md) ['windows'] (sigma rule :x:)
 
 [Windows - Delete Volume Shadow Copies](tests/43819286-91a9-4369-90ed-d31fb4da2c01.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -715,6 +725,8 @@ Caution: a test can generate a lot of noise...
 
 [DiskShadow Command Execution](tests/0e1483ba-8f0c-425d-b8c6-42736e058eaa.md) ['windows'] (sigma rule :heavy_check_mark:)
 
+[Load Arbitrary DLL via Wuauclt (Windows Update Client)](tests/49fbd548-49e9-4bb7-94a6-3769613912b8.md) ['windows'] (sigma rule :x:)
+
 
 ### T1027.001
 [Pad Binary to Change Hash - Linux/macOS dd](tests/ffe2346c-abd5-4b45-a713-bf5f1ebd573a.md) ['macos', 'linux'] (sigma rule :x:)
@@ -769,7 +781,7 @@ Caution: a test can generate a lot of noise...
 
 [Process Discovery - ps](tests/4ff64f0b-aaf2-4866-b39d-38d9791407cc.md) ['macos', 'linux'] (sigma rule :x:)
 
-[Process Discovery - Get-Process](tests/3b3809b6-a54b-4f5b-8aff-cb51f2e97b34.md) ['windows'] (sigma rule :x:)
+[Process Discovery - Get-Process](tests/3b3809b6-a54b-4f5b-8aff-cb51f2e97b34.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1218.007
@@ -815,7 +827,7 @@ Caution: a test can generate a lot of noise...
 
 [Find Local Admins via Group Policy (PowerView)](tests/64fdb43b-5259-467a-b000-1b02c00e510a.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Get-DomainGroup with PowerView](tests/5a8a181c-2c8e-478d-a943-549305a01230.md) ['windows'] (sigma rule :x:)
+[Get-DomainGroup with PowerView](tests/5a8a181c-2c8e-478d-a943-549305a01230.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Enumerate Users Not Requiring Pre Auth (ASRepRoast)](tests/870ba71e-6858-4f6d-895c-bb6237f6121b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -823,7 +835,7 @@ Caution: a test can generate a lot of noise...
 
 [Permission Groups Discovery PowerShell (Domain)](tests/6d5d8c96-3d2a-4da9-9d6d-9a9d341899a7.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Get-DomainGroupMember with PowerView](tests/46352f40-f283-4fe5-b56d-d9a71750e145.md) ['windows'] (sigma rule :x:)
+[Get-DomainGroupMember with PowerView](tests/46352f40-f283-4fe5-b56d-d9a71750e145.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1562.002
@@ -970,6 +982,8 @@ Caution: a test can generate a lot of noise...
 [Mac Hidden file](tests/cddb9098-3b47-4e01-9d3b-6f5f323288a9.md) ['macos'] (sigma rule :x:)
 
 [Show all hidden files](tests/9a1ec7da-b892-449f-ad68-67066d04380c.md) ['macos'] (sigma rule :x:)
+
+[Hide Files Through Registry](tests/f650456b-bd49-4bc1-ae9d-271b5b9581e7.md) ['windows'] (sigma rule :x:)
 
 [Hidden files](tests/3b7015f2-3144-4205-b799-b05580621379.md) ['macos'] (sigma rule :x:)
 
@@ -1255,9 +1269,9 @@ Caution: a test can generate a lot of noise...
 
 [Enumerate logged on users via CMD (Domain)](tests/161dcd85-d014-4f5e-900c-d3eaae82a0f7.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Get-DomainUser with PowerView](tests/93662494-5ed7-4454-a04c-8c8372808ac2.md) ['windows'] (sigma rule :x:)
+[Get-DomainUser with PowerView](tests/93662494-5ed7-4454-a04c-8c8372808ac2.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Enumerate Active Directory Users with ADSISearcher](tests/02e8be5a-3065-4e54-8cc8-a14d138834d3.md) ['windows'] (sigma rule :x:)
+[Enumerate Active Directory Users with ADSISearcher](tests/02e8be5a-3065-4e54-8cc8-a14d138834d3.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Enumerate Active Directory for Unconstrained Delegation](tests/46f8dbe9-22a5-4770-8513-66119c5be63b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1401,7 +1415,7 @@ Caution: a test can generate a lot of noise...
 
 [Examine password complexity policy - CentOS/RHEL 6.x](tests/6ce12552-0adb-4f56-89ff-95ce268f6358.md) ['linux'] (sigma rule :x:)
 
-[Get-DomainPolicy with PowerView](tests/3177f4da-3d4b-4592-8bdc-aa23d0b2e843.md) ['windows'] (sigma rule :x:)
+[Get-DomainPolicy with PowerView](tests/3177f4da-3d4b-4592-8bdc-aa23d0b2e843.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Examine password complexity policy - CentOS/RHEL 7.x](tests/78a12e65-efff-4617-bc01-88f17d71315d.md) ['linux'] (sigma rule :x:)
 
@@ -1576,6 +1590,12 @@ Caution: a test can generate a lot of noise...
 [Grant Full Access to folder for Everyone - Ryuk Ransomware Style](tests/ac7e6118-473d-41ec-9ac0-ef4f1d1ed2f6.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
+### T1546.015
+[Powershell Execute COM Object](tests/752191b1-7c71-445c-9dbe-21bb031b18eb.md) ['windows'] (sigma rule :x:)
+
+[COM Hijacking - InprocServer32](tests/48117158-d7be-441b-bc6a-d9e36e47b52b.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+
 ### T1078.001
 [Enable Guest account with RDP capability and admin privileges](tests/99747561-ed8d-47f2-9c91-1e5fde1ed6e0.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1650,6 +1670,10 @@ Caution: a test can generate a lot of noise...
 
 ### T1564.006
 [Register Portable Virtualbox](tests/c59f246a-34f8-4e4d-9276-c295ef9ba0dd.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Create and start VirtualBox virtual machine](tests/88b81702-a1c0-49a9-95b2-2dd53d755767.md) ['windows'] (sigma rule :x:)
+
+[Create and start Hyper-V virtual machine](tests/fb8d4d7e-f5a4-481c-8867-febf13f8b6d3.md) ['windows'] (sigma rule :x:)
 
 
 ### T1110.004
@@ -1804,6 +1828,10 @@ Caution: a test can generate a lot of noise...
 
 ### T1033
 [Find computers where user has session - Stealth mode (PowerView)](tests/29857f27-a36f-4f7e-8084-4557cd6207ca.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[GetCurrent User with PowerShell Script](tests/1392bd0f-5d5a-429e-81d9-eb9d4d4d5b3b.md) ['windows'] (sigma rule :x:)
+
+[User Discovery With Env Vars PowerShell Script](tests/dcb6cdee-1fb0-4087-8bf8-88cfd136ba51.md) ['windows'] (sigma rule :x:)
 
 [System Owner/User Discovery](tests/4c4959bf-addf-4b4a-be86-8d09cc1857aa.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1998,10 +2026,6 @@ Caution: a test can generate a lot of noise...
 [Persistence via WMI Event Subscription](tests/3c64f177-28e2-49eb-a799-d767b24dd1e0.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
-### T1546.015
-[COM Hijacking - InprocServer32](tests/48117158-d7be-441b-bc6a-d9e36e47b52b.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-
 ### T1030
 [Data Transfer Size Limits](tests/ab936c51-10f4-46ce-9144-e02137b2016a.md) ['macos', 'linux'] (sigma rule :x:)
 
@@ -2128,6 +2152,10 @@ Caution: a test can generate a lot of noise...
 
 ### T1547.011
 [Plist Modification](tests/394a538e-09bb-4a4a-95d1-b93cf12682a8.md) ['macos'] (sigma rule :x:)
+
+
+### T1003.005
+[Cached Credential Dump via Cmdkey](tests/56506854-89d6-46a3-9804-b7fde90791f9.md) ['windows'] (sigma rule :x:)
 
 
 ### T1543.001
