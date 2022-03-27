@@ -7,24 +7,15 @@ Attack_description: |-
   Registry modifications may also include actions to hide keys, such as prepending key names with a null character, which will cause an error and/or be ignored when read via [Reg](https://attack.mitre.org/software/S0075) or other utilities using the Win32 API. (Citation: Microsoft Reghide NOV 2006) Adversaries may abuse these pseudo-hidden keys to conceal payloads/commands used to maintain persistence. (Citation: TrendMicro POWELIKS AUG 2014) (Citation: SpectorOps Hiding Reg Jul 2017)
 
   The Registry of a remote system may be modified to aid in execution of files as part of lateral movement. It requires the remote Registry service to be running on the target system. (Citation: Microsoft Remote) Often [Valid Accounts](https://attack.mitre.org/techniques/T1078) are required, along with access to the remote system's [SMB/Windows Admin Shares](https://attack.mitre.org/techniques/T1021/002) for RPC communication.
-guid: 282f929a-6bc5-42b8-bd93-960c3ba35afe
-name: Modify Registry of Local Machine - cmd
+guid: 795d3248-0394-4d4d-8e86-4e8df2a2693f
+name: Windows Modify Show Compress Color And Info Tip Registry
 tactic:
   - defense-evasion
 technique:
   - T1112
 os:
   - windows
-description: |
-  Modify the Local Machine registry RUN key to change Windows Defender executable that should be ran on startup.  This should only be possible when
-  CMD is ran as Administrative rights. Upon execution, the message "The operation completed successfully."
-  will be displayed. Additionally, open Registry Editor to view the modified entry in HKCU\Software\Microsoft\Windows\CurrentVersion\Run.
+description: "Modify the registry of the currently logged in user using reg.exe via cmd console to show compress color and show tips feature. \nSee how hermeticwiper uses this technique - https://www.splunk.com/en_us/blog/security/detecting-hermeticwiper.html\n"
 executor: command_prompt
-sigma: true
-sigma_rule:
-  - id: de587dce-915e-4218-aac4-835ca6af6f70
-    name: proc_creation_win_reg_add_run_key.yml
-  - id: 24357373-078f-44ed-9ac4-6d334a668a11
-    name: proc_creation_win_susp_direct_asep_reg_keys_modification.yml
-  - id: 20f0ee37-5942-4e45-b7d5-c5b5db9df5cd
-    name: registry_set_asep_reg_keys_modification_currentversion.yml
+sigma: false
+sigma_rule: []

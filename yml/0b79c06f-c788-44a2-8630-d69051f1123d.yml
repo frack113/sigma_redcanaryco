@@ -28,4 +28,4 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: 83314318-052a-4c90-a1ad-660ece38d276
-    name: registry_event_blackbyte_ransomware.yml
+    name: registry_set_blackbyte_ransomware.yml

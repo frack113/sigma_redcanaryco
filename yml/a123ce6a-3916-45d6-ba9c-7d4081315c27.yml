@@ -17,4 +17,4 @@ sigma_rule:
   - id: 17769c90-230e-488b-a463-e05c08e9d48f
     name: proc_creation_win_powershell_defender_exclusion.yml
   - id: a982fc9c-6333-4ffb-a51d-addb04e8b529
-    name: registry_event_defender_exclusions.yml
+    name: registry_set_defender_exclusions.yml

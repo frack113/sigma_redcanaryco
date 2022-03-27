@@ -1,0 +1,20 @@
+Attack_name: Disable Cloud Logs
+Attack_description: "An adversary may disable cloud logging capabilities and integrations to limit what data is collected on their activities and avoid detection. \n\nCloud environments allow for collection\
+  \ and analysis of audit and application logs that provide insight into what activities a user does within the environment. If an attacker has sufficient permissions, they can disable logging to avoid\
+  \ detection of their activities. For example, in AWS an adversary may disable CloudWatch/CloudTrail integrations prior to conducting further malicious activity.(Citation: Following the CloudTrail: Generating\
+  \ strong AWS security signals with Sumo Logic)"
+guid: 1ee572f3-056c-4632-a7fc-7e7c42b1543c
+name: Office 365 - Exchange Audit Log Disabled
+tactic:
+  - defense-evasion
+technique:
+  - T1562.008
+os:
+  - office-365
+description: |
+  You can use the Exchange Management Shell to enable or disable mailbox audit logging for a mailbox.
+  Unified or Admin Audit logs are disabled via the Exchange Powershell cmdline.
+  https://github.com/Azure/Azure-Sentinel/blob/master/Detections/OfficeActivity/exchange_auditlogdisabled.yaml
+executor: powershell
+sigma: false
+sigma_rule: []

@@ -28,5 +28,5 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: dfb5b4e8-91d0-4291-b40a-e3b0d3942c45
-    name: registry_event_shim_databases_persistence.yml
+    name: registry_set_shim_databases_persistence.yml
 

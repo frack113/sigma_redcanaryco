@@ -34,4 +34,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 724ea201-6514-4f38-9739-e5973c34f49a
-    name: registry_event_bypass_uac_using_silentcleanup_task.yml
+    name: registry_set_bypass_uac_using_silentcleanup_task.yml

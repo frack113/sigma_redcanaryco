@@ -25,5 +25,5 @@ sigma_rule:
   - id: 851c506b-6b7c-4ce2-8802-c703009d03c0
     name: posh_ps_winlogon_helper_dll.yml
   - id: cbf93e5d-ca6c-4722-8bea-e9119007c248
-    name: registry_event_asep_reg_keys_modification_currentversion_nt.yml
+    name: registry_set_asep_reg_keys_modification_currentversion_nt.yml
 

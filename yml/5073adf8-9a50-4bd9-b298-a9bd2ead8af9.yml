@@ -25,4 +25,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 674202d0-b22a-4af4-ae5f-2eda1f3da1af
-    name: registry_event_bypass_uac_using_eventviewer.yml
+    name: registry_set_bypass_uac_using_eventviewer.yml

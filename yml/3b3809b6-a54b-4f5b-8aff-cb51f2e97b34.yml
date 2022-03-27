@@ -13,5 +13,9 @@ os:
   - windows
 description: "Utilize Get-Process PowerShell cmdlet to identify processes.\n\nUpon successful execution, powershell.exe will execute Get-Process to list processes. Output will be via stdout. \n"
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 0332a266-b584-47b4-933d-a00b103e1b37
+    name: posh_ps_suspicious_gwmi.yml
+  - id: 3f07b9d1-2082-4c56-9277-613a621983cc
+    name: sysmon_accessing_winapi_in_powershell_credentials_dumping.yml

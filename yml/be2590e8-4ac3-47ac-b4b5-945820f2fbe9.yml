@@ -21,4 +21,4 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: f674e36a-4b91-431e-8aef-f8a96c2aca35
-    name: registry_event_asep_reg_keys_modification_currentcontrolset.yml
+    name: registry_set_asep_reg_keys_modification_currentcontrolset.yml

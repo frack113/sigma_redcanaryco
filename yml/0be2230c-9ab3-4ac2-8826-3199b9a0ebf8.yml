@@ -53,7 +53,7 @@ sigma_rule:
   - id: 7cccd811-7ae9-4ebe-9afd-cb5c406b824b
     name: proc_creation_win_sysinternals_eula_accepted.yml
   - id: 25ffa65d-76d8-4da5-a832-3f2b0136e133
-    name: registry_event_sysinternals_eula_accepted.yml
+    name: registry_add_sysinternals_eula_accepted.yml
   - id: 32d0d3e2-e58d-4d41-926b-18b520b2b32d
     name: proc_access_win_cred_dump_lsass_access.yml
   - id: a18dd26b-6450-46de-8c91-9659150cf088

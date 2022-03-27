@@ -17,4 +17,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: c7dcacd0-cc59-4004-b0a4-1d6cdebe6f3e
-    name: registry_event_disable_administrative_share.yml
+    name: registry_set_disable_administrative_share.yml

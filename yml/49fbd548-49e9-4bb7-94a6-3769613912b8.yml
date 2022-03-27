@@ -1,22 +1,15 @@
 Attack_name: Signed Binary Proxy Execution
 Attack_description: Adversaries may bypass process and/or signature-based defenses by proxying execution of malicious content with signed binaries. Binaries signed with trusted digital certificates can
   execute on Windows systems protected by digital signature validation. Several Microsoft signed binaries that are default on Windows installations can be used to proxy execution of other files.
-guid: 54ad7d5a-a1b5-472c-b6c4-f8090fb2daef
-name: InfDefaultInstall.exe .inf Execution
+guid: 49fbd548-49e9-4bb7-94a6-3769613912b8
+name: Load Arbitrary DLL via Wuauclt (Windows Update Client)
 tactic:
   - defense-evasion
 technique:
   - T1218
 os:
   - windows
-description: |
-  Test execution of a .inf using InfDefaultInstall.exe
-
-  Reference: https://github.com/LOLBAS-Project/LOLBAS/blob/master/yml/OSBinaries/Infdefaultinstall.yml
+description: "This test uses Wuauclt to load an arbitrary DLL. Upon execution with the default inputs, calculator.exe will be launched. \nSee https://dtm.uk/wuauclt/\n"
 executor: command_prompt
-sigma: true
-sigma_rule:
-  - id: ce7cf472-6fcc-490a-9481-3786840b5d9b
-    name: proc_creation_win_infdefaultinstall.yml
-  - id: 20f0ee37-5942-4e45-b7d5-c5b5db9df5cd
-    name: registry_set_asep_reg_keys_modification_currentversion.yml
+sigma: false
+sigma_rule: []

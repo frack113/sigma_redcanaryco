@@ -16,5 +16,5 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: a64e4198-c1c8-46a5-bc9c-324c86455fd4
-    name: registry_event_defender_disabled.yml
+    name: registry_set_defender_disabled.yml
 

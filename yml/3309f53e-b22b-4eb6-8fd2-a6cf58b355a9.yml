@@ -36,4 +36,4 @@ sigma_rule:
   - id: baca5663-583c-45f9-b5dc-ea96a22ce542
     name: registry_event_stickykey_like_backdoor.yml
   - id: cbf93e5d-ca6c-4722-8bea-e9119007c248
-    name: registry_event_asep_reg_keys_modification_currentversion_nt.yml
+    name: registry_set_asep_reg_keys_modification_currentversion_nt.yml

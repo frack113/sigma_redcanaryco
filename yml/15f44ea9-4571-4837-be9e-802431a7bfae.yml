@@ -22,4 +22,4 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: d88d0ab2-e696-4d40-a2ed-9790064e66b3
-    name: registry_event_ie_persistence.yml
+    name: registry_set_ie_persistence.yml

@@ -27,7 +27,7 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: 46dd5308-4572-4d12-aa43-8938f0184d4f
-    name: registry_event_bypass_uac_using_delegateexecute.yml
+    name: registry_set_bypass_uac_using_delegateexecute.yml
   - id: 40f9af16-589d-4984-b78d-8c2aec023197
     name: proc_creation_win_high_integrity_sdclt.yml
   - id: da2738f2-fadb-4394-afa7-0a0674885afa

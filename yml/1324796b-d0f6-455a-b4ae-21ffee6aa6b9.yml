@@ -22,4 +22,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 5df86130-4e95-4a54-90f7-26541b40aec2
-    name: registry_event_hidden_extention.yml
+    name: registry_set_hidden_extention.yml

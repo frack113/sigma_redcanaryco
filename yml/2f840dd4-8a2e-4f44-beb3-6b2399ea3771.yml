@@ -19,4 +19,4 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: 509e84b9-a71a-40e0-834f-05470369bd1e
-    name: registry_event_change_rdp_port.yml
+    name: registry_set_change_rdp_port.yml
