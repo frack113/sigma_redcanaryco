@@ -225,6 +225,7 @@
   * T1095 [ICMP C2](tests/0268e63c-e244-42db-bef7-72a9e59fc1fc.md)
   * T1218.005 [Invoke HTML Application - Direct download from URI](tests/39ceed55-f653-48ac-bd19-aceceaf525db.md)
   * T1218.011 [Rundll32 execute JavaScript Remote Payload With GetObject](tests/cf3bdb9a-dd11-4b6c-b0d0-9e22b68a71be.md)
+  * T1558.004 [Get-DomainUser with PowerView](tests/d6139549-7b72-4e48-9ea1-324fc9bdf88a.md)
   * T1059.001 [PowerUp Invoke-AllChecks](tests/1289f78d-22d2-4590-ac76-166737e1811b.md)
   * T1134.001 [`SeDebugPrivilege` token duplication](tests/34f0a430-9d04-4d98-bcb5-1989f14719f0.md)
   * T1059.001 [Run Bloodhound from Memory using Download Cradle](tests/bf8c1441-4674-4dab-8e4e-39d93d08f9b7.md)
@@ -273,6 +274,7 @@
   * T1564 [Extract binary files via VBA](tests/6afe288a-8a8b-4d33-a629-8d03ba9dad3a.md)
   * T1074.001 [Stage data from Discovery.bat](tests/107706a5-6f9f-451a-adae-bab8c667829f.md)
   * T1095 [ICMP C2](tests/0268e63c-e244-42db-bef7-72a9e59fc1fc.md)
+  * T1558.004 [Get-DomainUser with PowerView](tests/d6139549-7b72-4e48-9ea1-324fc9bdf88a.md)
   * T1219 [TeamViewer Files Detected Test on Windows](tests/8ca3b96d-8983-4a7f-b125-fc98cc0a2aa0.md)
   * T1059.001 [PowerUp Invoke-AllChecks](tests/1289f78d-22d2-4590-ac76-166737e1811b.md)
   * T1134.001 [`SeDebugPrivilege` token duplication](tests/34f0a430-9d04-4d98-bcb5-1989f14719f0.md)
@@ -328,6 +330,7 @@
   * T1558.003 [Rubeus kerberoast](tests/14625569-6def-4497-99ac-8e7817105b55.md)
   * T1558.003 [Request for service tickets](tests/3f987809-3681-43c8-bcd8-b3ff3a28533a.md)
   * T1033 [Find computers where user has session - Stealth mode (PowerView)](tests/29857f27-a36f-4f7e-8084-4557cd6207ca.md)
+  * T1558.004 [Get-DomainUser with PowerView](tests/d6139549-7b72-4e48-9ea1-324fc9bdf88a.md)
   * T1134.001 [`SeDebugPrivilege` token duplication](tests/34f0a430-9d04-4d98-bcb5-1989f14719f0.md)
   * T1134.001 [Named pipe client impersonation](tests/90db9e27-8e7c-4c04-b602-a45927884966.md)
 * posh_pm_clear_powershell_history.yml
@@ -407,6 +410,7 @@
   * T1059.001 [ATHPowerShellCommandLineParameter -EncodedCommand parameter variations](tests/86a43bad-12e3-4e85-b97c-4d5cf25b95c3.md)
   * T1055.012 [Process Hollowing using PowerShell](tests/562427b4-39ef-4e8c-af88-463a78e70b9c.md)
   * T1218.005 [Invoke HTML Application - Direct download from URI](tests/39ceed55-f653-48ac-bd19-aceceaf525db.md)
+  * T1558.004 [Get-DomainUser with PowerView](tests/d6139549-7b72-4e48-9ea1-324fc9bdf88a.md)
   * T1059.001 [ATHPowerShellCommandLineParameter -Command parameter variations with encoded arguments](tests/1c0a870f-dc74-49cf-9afc-eccc45e58790.md)
   * T1059.001 [PowerUp Invoke-AllChecks](tests/1289f78d-22d2-4590-ac76-166737e1811b.md)
   * T1059.001 [Mimikatz](tests/f3132740-55bc-48c4-bcc0-758a459cd027.md)
@@ -478,6 +482,7 @@
   * T1201 [Get-DomainPolicy with PowerView](tests/3177f4da-3d4b-4592-8bdc-aa23d0b2e843.md)
   * T1136.002 [Create a new Domain Account using PowerShell](tests/5a3497a4-1568-4663-b12a-d4a5ed70c7d7.md)
   * T1033 [Find computers where user has session - Stealth mode (PowerView)](tests/29857f27-a36f-4f7e-8084-4557cd6207ca.md)
+  * T1558.004 [Get-DomainUser with PowerView](tests/d6139549-7b72-4e48-9ea1-324fc9bdf88a.md)
   * T1069.002 [Get-DomainGroup with PowerView](tests/5a8a181c-2c8e-478d-a943-549305a01230.md)
   * T1087.002 [Get-DomainUser with PowerView](tests/93662494-5ed7-4454-a04c-8c8372808ac2.md)
   * T1069.002 [Get-DomainGroupMember with PowerView](tests/46352f40-f283-4fe5-b56d-d9a71750e145.md)
@@ -506,6 +511,7 @@
   * T1218.005 [Invoke HTML Application - Jscript Engine over Local UNC Simulating Lateral Movement](tests/007e5672-2088-4853-a562-7490ddc19447.md)
   * T1059.001 [ATHPowerShellCommandLineParameter -EncodedCommand parameter variations](tests/86a43bad-12e3-4e85-b97c-4d5cf25b95c3.md)
   * T1218.005 [Invoke HTML Application - Direct download from URI](tests/39ceed55-f653-48ac-bd19-aceceaf525db.md)
+  * T1558.004 [Get-DomainUser with PowerView](tests/d6139549-7b72-4e48-9ea1-324fc9bdf88a.md)
   * T1059.001 [ATHPowerShellCommandLineParameter -Command parameter variations with encoded arguments](tests/1c0a870f-dc74-49cf-9afc-eccc45e58790.md)
   * T1059.001 [PowerUp Invoke-AllChecks](tests/1289f78d-22d2-4590-ac76-166737e1811b.md)
   * T1069.002 [Get-DomainGroup with PowerView](tests/5a8a181c-2c8e-478d-a943-549305a01230.md)
@@ -530,6 +536,7 @@
   * T1562.002 [Kill Event Log Service Threads](tests/41ac52ba-5d5e-40c0-b267-573ed90489bd.md)
   * T1201 [Get-DomainPolicy with PowerView](tests/3177f4da-3d4b-4592-8bdc-aa23d0b2e843.md)
   * T1021.006 [Invoke-Command](tests/5295bd61-bd7e-4744-9d52-85962a4cf2d6.md)
+  * T1558.004 [Get-DomainUser with PowerView](tests/d6139549-7b72-4e48-9ea1-324fc9bdf88a.md)
   * T1069.002 [Get-DomainGroup with PowerView](tests/5a8a181c-2c8e-478d-a943-549305a01230.md)
   * T1087.002 [Get-DomainUser with PowerView](tests/93662494-5ed7-4454-a04c-8c8372808ac2.md)
   * T1069.002 [Get-DomainGroupMember with PowerView](tests/46352f40-f283-4fe5-b56d-d9a71750e145.md)
@@ -555,6 +562,7 @@
   * T1033 [Find computers where user has session - Stealth mode (PowerView)](tests/29857f27-a36f-4f7e-8084-4557cd6207ca.md)
   * T1003.006 [Run DSInternals Get-ADReplAccount](tests/a0bced08-3fc5-4d8b-93b7-e8344739376e.md)
   * T1003.002 [PowerDump Registry dump of SAM for hashes and usernames](tests/804f28fc-68fc-40da-b5a2-e9d0bce5c193.md)
+  * T1558.004 [Get-DomainUser with PowerView](tests/d6139549-7b72-4e48-9ea1-324fc9bdf88a.md)
   * T1059.001 [Obfuscation Tests](tests/4297c41a-8168-4138-972d-01f3ee92c804.md)
   * T1059.001 [PowerUp Invoke-AllChecks](tests/1289f78d-22d2-4590-ac76-166737e1811b.md)
   * T1059.001 [Mimikatz](tests/f3132740-55bc-48c4-bcc0-758a459cd027.md)
@@ -590,6 +598,7 @@
   * T1059.001 [ATHPowerShellCommandLineParameter -EncodedCommand parameter variations](tests/86a43bad-12e3-4e85-b97c-4d5cf25b95c3.md)
   * T1055.012 [Process Hollowing using PowerShell](tests/562427b4-39ef-4e8c-af88-463a78e70b9c.md)
   * T1218.005 [Invoke HTML Application - Direct download from URI](tests/39ceed55-f653-48ac-bd19-aceceaf525db.md)
+  * T1558.004 [Get-DomainUser with PowerView](tests/d6139549-7b72-4e48-9ea1-324fc9bdf88a.md)
   * T1059.001 [Obfuscation Tests](tests/4297c41a-8168-4138-972d-01f3ee92c804.md)
   * T1059.001 [ATHPowerShellCommandLineParameter -Command parameter variations with encoded arguments](tests/1c0a870f-dc74-49cf-9afc-eccc45e58790.md)
   * T1059.001 [PowerUp Invoke-AllChecks](tests/1289f78d-22d2-4590-ac76-166737e1811b.md)
@@ -631,6 +640,7 @@
   * T1201 [Get-DomainPolicy with PowerView](tests/3177f4da-3d4b-4592-8bdc-aa23d0b2e843.md)
   * T1558.003 [Request for service tickets](tests/3f987809-3681-43c8-bcd8-b3ff3a28533a.md)
   * T1033 [Find computers where user has session - Stealth mode (PowerView)](tests/29857f27-a36f-4f7e-8084-4557cd6207ca.md)
+  * T1558.004 [Get-DomainUser with PowerView](tests/d6139549-7b72-4e48-9ea1-324fc9bdf88a.md)
   * T1069.002 [Get-DomainGroup with PowerView](tests/5a8a181c-2c8e-478d-a943-549305a01230.md)
   * T1110.003 [Password Spray (DomainPasswordSpray)](tests/263ae743-515f-4786-ac7d-41ef3a0d4b2b.md)
   * T1087.002 [Get-DomainUser with PowerView](tests/93662494-5ed7-4454-a04c-8c8372808ac2.md)
@@ -657,6 +667,7 @@
   * T1558.003 [Request A Single Ticket via PowerShell](tests/988539bc-2ed7-4e62-aec6-7c5cf6680863.md)
   * T1201 [Get-DomainPolicy with PowerView](tests/3177f4da-3d4b-4592-8bdc-aa23d0b2e843.md)
   * T1033 [Find computers where user has session - Stealth mode (PowerView)](tests/29857f27-a36f-4f7e-8084-4557cd6207ca.md)
+  * T1558.004 [Get-DomainUser with PowerView](tests/d6139549-7b72-4e48-9ea1-324fc9bdf88a.md)
   * T1069.002 [Get-DomainGroup with PowerView](tests/5a8a181c-2c8e-478d-a943-549305a01230.md)
   * T1087.002 [Get-DomainUser with PowerView](tests/93662494-5ed7-4454-a04c-8c8372808ac2.md)
   * T1069.002 [Get-DomainGroupMember with PowerView](tests/46352f40-f283-4fe5-b56d-d9a71750e145.md)
@@ -681,6 +692,8 @@
   * T1518 [Applications Installed](tests/c49978f6-bd6e-4221-ad2c-9e3e30cc1e3b.md)
 * posh_ps_store_file_in_alternate_data_stream.yml
   * T1564.004 [Store file in Alternate Data Stream (ADS)](tests/2ab75061-f5d5-4c1a-b666-ba2a50df5b02.md)
+* posh_ps_susp_get_adcomputer.yml
+  * T1018 [Enumerate Active Directory Computers with Get-AdComputer](tests/97e89d9e-e3f5-41b5-a90f-1e0825df0fdf.md)
 * posh_ps_susp_invoke_webrequest_useragent.yml
   * T1071.001 [Malicious User Agents - Powershell](tests/81c13829-f6c9-45b8-85a6-053366d55297.md)
 * posh_ps_susp_remove_adgroupmember.yml
@@ -724,6 +737,7 @@
   * T1134.004 [Parent PID Spoofing - Spawn from New Process](tests/2988133e-561c-4e42-a15f-6281e6a9b2db.md)
   * T1218.005 [Invoke HTML Application - Jscript Engine over Local UNC Simulating Lateral Movement](tests/007e5672-2088-4853-a562-7490ddc19447.md)
   * T1218.005 [Invoke HTML Application - Direct download from URI](tests/39ceed55-f653-48ac-bd19-aceceaf525db.md)
+  * T1558.004 [Get-DomainUser with PowerView](tests/d6139549-7b72-4e48-9ea1-324fc9bdf88a.md)
   * T1497.001 [Detect Virtualization Environment via WMI Manufacturer/Model Listing (Windows)](tests/4a41089a-48e0-47aa-82cb-5b81a463bc78.md)
   * T1134.001 [`SeDebugPrivilege` token duplication](tests/34f0a430-9d04-4d98-bcb5-1989f14719f0.md)
   * T1091 [USB Malware Spread Simulation](tests/d44b7297-622c-4be8-ad88-ec40d7563c75.md)
@@ -766,6 +780,7 @@
   * T1056.001 [Input Capture](tests/d9b633ca-8efb-45e6-b838-70f595c6ae26.md)
   * T1048.003 [Exfiltration Over Alternative Protocol - HTTP](tests/6aa58451-1121-4490-a8e9-1dada3f1c68c.md)
   * T1218.005 [Invoke HTML Application - Direct download from URI](tests/39ceed55-f653-48ac-bd19-aceceaf525db.md)
+  * T1558.004 [Get-DomainUser with PowerView](tests/d6139549-7b72-4e48-9ea1-324fc9bdf88a.md)
   * T1059.001 [ATHPowerShellCommandLineParameter -Command parameter variations with encoded arguments](tests/1c0a870f-dc74-49cf-9afc-eccc45e58790.md)
   * T1059.001 [PowerUp Invoke-AllChecks](tests/1289f78d-22d2-4590-ac76-166737e1811b.md)
   * T1059.001 [Mimikatz](tests/f3132740-55bc-48c4-bcc0-758a459cd027.md)
@@ -848,6 +863,7 @@
   * T1218.005 [Invoke HTML Application - Jscript Engine Simulating Double Click](tests/58a193ec-131b-404e-b1ca-b35cf0b18c33.md)
   * T1134.004 [Parent PID Spoofing - Spawn from Specified Process](tests/cbbff285-9051-444a-9d17-c07cd2d230eb.md)
   * T1134.004 [Parent PID Spoofing - Spawn from New Process](tests/2988133e-561c-4e42-a15f-6281e6a9b2db.md)
+  * T1547.001 [SystemBC Malware-as-a-Service Registry](tests/9dc7767b-30c1-4cc4-b999-50cab5e27891.md)
   * T1218.005 [Invoke HTML Application - Jscript Engine over Local UNC Simulating Lateral Movement](tests/007e5672-2088-4853-a562-7490ddc19447.md)
   * T1059.001 [ATHPowerShellCommandLineParameter -EncodedCommand parameter variations](tests/86a43bad-12e3-4e85-b97c-4d5cf25b95c3.md)
   * T1218.005 [Invoke HTML Application - Direct download from URI](tests/39ceed55-f653-48ac-bd19-aceceaf525db.md)
@@ -895,6 +911,7 @@
   * T1074.001 [Stage data from Discovery.bat](tests/107706a5-6f9f-451a-adae-bab8c667829f.md)
   * T1095 [ICMP C2](tests/0268e63c-e244-42db-bef7-72a9e59fc1fc.md)
   * T1048.003 [Exfiltration Over Alternative Protocol - HTTP](tests/6aa58451-1121-4490-a8e9-1dada3f1c68c.md)
+  * T1558.004 [Get-DomainUser with PowerView](tests/d6139549-7b72-4e48-9ea1-324fc9bdf88a.md)
   * T1059.001 [Obfuscation Tests](tests/4297c41a-8168-4138-972d-01f3ee92c804.md)
   * T1219 [TeamViewer Files Detected Test on Windows](tests/8ca3b96d-8983-4a7f-b125-fc98cc0a2aa0.md)
   * T1059.001 [PowerUp Invoke-AllChecks](tests/1289f78d-22d2-4590-ac76-166737e1811b.md)
@@ -1038,6 +1055,7 @@
 * proc_creation_win_cmdkey_recon.yml
   * T1087.001 [Enumerate all accounts via PowerShell (Local)](tests/ae4b6361-b5f8-46cb-a3f9-9cf108ccfe7b.md)
   * T1087.001 [Enumerate all accounts on Windows (Local)](tests/80887bec-5a9b-4efc-a81d-f83eb2eb32ab.md)
+  * T1003.005 [Cached Credential Dump via Cmdkey](tests/56506854-89d6-46a3-9804-b7fde90791f9.md)
 * proc_creation_win_control_panel_item.yml
   * T1218.002 [Control Panel Items](tests/037e9d8a-9e46-4255-8b33-2ae3b545ca6f.md)
 * proc_creation_win_copying_sensitive_files_with_credential_data.yml
@@ -1142,7 +1160,9 @@
   * T1047 [WMI Reconnaissance Users](tests/c107778c-dcf5-47c5-af2e-1d058a3df3ea.md)
   * T1110.003 [Password Spray all Domain Users](tests/90bc2e54-6c84-47a5-9439-0a2a92b4b175.md)
   * T1110.001 [Brute Force Credentials of single Active Directory domain users via SMB](tests/09480053-2f98-4854-be6e-71ae5f672224.md)
+  * T1003.005 [Cached Credential Dump via Cmdkey](tests/56506854-89d6-46a3-9804-b7fde90791f9.md)
   * T1087.001 [Enumerate logged on users via CMD (Local)](tests/a138085e-bfe5-46ba-a242-74a6fb884af3.md)
+  * T1558.004 [Get-DomainUser with PowerView](tests/d6139549-7b72-4e48-9ea1-324fc9bdf88a.md)
   * T1087.002 [Enumerate logged on users via CMD (Domain)](tests/161dcd85-d014-4f5e-900c-d3eaae82a0f7.md)
   * T1036.003 [File Extension Masquerading](tests/c7fa0c3b-b57f-4cba-9118-863bf4e653fc.md)
   * T1033 [System Owner/User Discovery](tests/4c4959bf-addf-4b4a-be86-8d09cc1857aa.md)
@@ -1280,7 +1300,9 @@
   * T1216 [SyncAppvPublishingServer Signed Script PowerShell Command Execution](tests/275d963d-3f36-476c-8bef-a2a3960ee6eb.md)
   * T1003.006 [Run DSInternals Get-ADReplAccount](tests/a0bced08-3fc5-4d8b-93b7-e8344739376e.md)
   * T1207 [DCShadow (Active Directory)](tests/0f4c5eb0-98a0-4496-9c3d-656b4f2bc8f6.md)
+  * T1547.001 [SystemBC Malware-as-a-Service Registry](tests/9dc7767b-30c1-4cc4-b999-50cab5e27891.md)
   * T1105 [Windows - PowerShell Download](tests/42dc4460-9aa6-45d3-b1a6-3955d34e1fe8.md)
+  * T1558.004 [Get-DomainUser with PowerView](tests/d6139549-7b72-4e48-9ea1-324fc9bdf88a.md)
   * T1036.003 [File Extension Masquerading](tests/c7fa0c3b-b57f-4cba-9118-863bf4e653fc.md)
   * T1069.002 [Get-DomainGroup with PowerView](tests/5a8a181c-2c8e-478d-a943-549305a01230.md)
   * T1218.005 [Mshta executes VBScript to execute malicious command](tests/906865c3-e05f-4acc-85c4-fbc185455095.md)
@@ -1457,6 +1479,7 @@
 * proc_creation_win_set_policies_to_unsecure_level.yml
   * T1112 [Change Powershell Execution Policy to Bypass](tests/f3a6cceb-06c9-48e5-8df8-8867a6814245.md)
   * T1216 [SyncAppvPublishingServer Signed Script PowerShell Command Execution](tests/275d963d-3f36-476c-8bef-a2a3960ee6eb.md)
+  * T1547.001 [SystemBC Malware-as-a-Service Registry](tests/9dc7767b-30c1-4cc4-b999-50cab5e27891.md)
 * proc_creation_win_shadow_copies_access_symlink.yml
   * T1003.003 [Create Symlink to Volume Shadow Copy](tests/21748c28-2793-4284-9e07-d6d028b66702.md)
 * proc_creation_win_shadow_copies_creation.yml
@@ -1650,6 +1673,7 @@
 * proc_creation_win_susp_gup.yml
   * T1574.002 [DLL Side-Loading using the Notepad++ GUP.exe binary](tests/65526037-7079-44a9-bda1-2cb624838040.md)
 * proc_creation_win_susp_hostname.yml
+  * T1558.004 [Get-DomainUser with PowerView](tests/d6139549-7b72-4e48-9ea1-324fc9bdf88a.md)
   * T1082 [Hostname Discovery (Windows)](tests/85cfbf23-4a1e-4342-8792-007e004b975f.md)
   * T1036.003 [File Extension Masquerading](tests/c7fa0c3b-b57f-4cba-9118-863bf4e653fc.md)
 * proc_creation_win_susp_machineguid.yml
@@ -1786,6 +1810,7 @@
   * T1018 [Get-DomainController with PowerView](tests/b9d2e8ca-5520-4737-8076-4f08913da2c4.md)
   * T1201 [Get-DomainPolicy with PowerView](tests/3177f4da-3d4b-4592-8bdc-aa23d0b2e843.md)
   * T1572 [DNS over HTTPS Regular Beaconing](tests/0c5f9705-c575-42a6-9609-cbbff4b2fc9b.md)
+  * T1558.004 [Get-DomainUser with PowerView](tests/d6139549-7b72-4e48-9ea1-324fc9bdf88a.md)
   * T1069.002 [Get-DomainGroup with PowerView](tests/5a8a181c-2c8e-478d-a943-549305a01230.md)
   * T1087.002 [Get-DomainUser with PowerView](tests/93662494-5ed7-4454-a04c-8c8372808ac2.md)
   * T1069.002 [Get-DomainGroupMember with PowerView](tests/46352f40-f283-4fe5-b56d-d9a71750e145.md)
@@ -1923,6 +1948,7 @@
   * T1071.001 [Malicious User Agents - Powershell](tests/81c13829-f6c9-45b8-85a6-053366d55297.md)
   * T1056.004 [Hook PowerShell TLS Encrypt/Decrypt Messages](tests/de1934ea-1fbf-425b-8795-65fb27dd7e33.md)
   * T1095 [ICMP C2](tests/0268e63c-e244-42db-bef7-72a9e59fc1fc.md)
+  * T1558.004 [Get-DomainUser with PowerView](tests/d6139549-7b72-4e48-9ea1-324fc9bdf88a.md)
   * T1059.001 [Obfuscation Tests](tests/4297c41a-8168-4138-972d-01f3ee92c804.md)
   * T1219 [TeamViewer Files Detected Test on Windows](tests/8ca3b96d-8983-4a7f-b125-fc98cc0a2aa0.md)
   * T1059.001 [Run Bloodhound from Memory using Download Cradle](tests/bf8c1441-4674-4dab-8e4e-39d93d08f9b7.md)
@@ -1944,6 +1970,7 @@
   * T1217 [List Google Chrome / Edge Chromium Bookmarks on Windows with command prompt](tests/76f71e2f-480e-4bed-b61e-398fe17499d5.md)
   * T1217 [List Mozilla Firefox bookmarks on Windows with command prompt](tests/4312cdbc-79fc-4a9c-becc-53d49c734bc5.md)
 * proc_creation_win_susp_whoami.yml
+  * T1558.004 [Get-DomainUser with PowerView](tests/d6139549-7b72-4e48-9ea1-324fc9bdf88a.md)
   * T1036.003 [File Extension Masquerading](tests/c7fa0c3b-b57f-4cba-9118-863bf4e653fc.md)
 * proc_creation_win_susp_winzip.yml
   * T1560.001 [Compress Data and lock with password for Exfiltration with winzip](tests/01df0353-d531-408d-a0c5-3161bf822134.md)
@@ -2092,6 +2119,7 @@
   * T1547.001 [Reg Key RunOnce](tests/554cbd88-cde1-4b56-8168-0be552eed9eb.md)
   * T1547.001 [PowerShell Registry RunOnce](tests/eb44f842-0457-4ddc-9b92-c4caa144ac42.md)
   * T1036.003 [Masquerading - non-windows exe running as windows exe](tests/bc15c13f-d121-4b1f-8c7d-28d95854d086.md)
+  * T1547.001 [SystemBC Malware-as-a-Service Registry](tests/9dc7767b-30c1-4cc4-b999-50cab5e27891.md)
   * T1218 [InfDefaultInstall.exe .inf Execution](tests/54ad7d5a-a1b5-472c-b6c4-f8090fb2daef.md)
   * T1112 [Modify Registry of Local Machine - cmd](tests/282f929a-6bc5-42b8-bd93-960c3ba35afe.md)
 * registry_set_asep_reg_keys_modification_currentversion_nt.yml
@@ -2132,6 +2160,15 @@
 * registry_set_disable_defender_firewall.yml
   * T1562.004 [Disable Microsoft Defender Firewall via Registry](tests/afedc8c4-038c-4d82-b3e5-623a95f8a612.md)
   * T1562.004 [Disable Microsoft Defender Firewall](tests/88d05800-a5e4-407e-9b53-ece4174f197f.md)
+* registry_set_disable_fonction_user.yml
+  * T1112 [Disable Windows Task Manager application](tests/af254e70-dd0e-4de6-9afe-a994d9ea8b62.md)
+  * T1112 [Disable Windows Lock Workstation Feature](tests/3dacb0d2-46ee-4c27-ac1b-f9886bf91a56.md)
+  * T1112 [Disable Windows Shutdown Button](tests/6e0d1131-2d7e-4905-8ca5-d6172f05d03d.md)
+  * T1112 [Disable Windows LogOff Button](tests/e246578a-c24d-46a7-9237-0213ff86fb0c.md)
+  * T1112 [Disable Windows Notification Center](tests/c0d6d67f-1f63-42cc-95c0-5fd6b20082ad.md)
+  * T1112 [Disable Windows Change Password Feature](tests/d4a6da40-618f-454d-9a9e-26af552aaeb0.md)
+  * T1112 [Disable Windows Registry Tool](tests/ac34b0f7-0f85-4ac0-b93e-3ced2bc69bb8.md)
+  * T1112 [Disable Windows CMD application](tests/d2561a6d-72bd-408c-b150-13efe1801c2a.md)
 * registry_set_disable_microsoft_office_security_features.yml
   * T1562.001 [Disable Microsoft Office Security Features](tests/6f5fb61b-4e56-4a3d-a8c3-82e13686c6d7.md)
 * registry_set_disable_uac_registry.yml
@@ -2143,6 +2180,13 @@
   * T1546.012 [IFEO Global Flags](tests/46b1f278-c8ee-4aa5-acce-65e77b11f3c1.md)
 * registry_set_hidden_extention.yml
   * T1112 [Modify Registry of Current User Profile - cmd](tests/1324796b-d0f6-455a-b4ae-21ffee6aa6b9.md)
+* registry_set_hide_fonction_user.yml
+  * T1112 [Windows Modify Show Compress Color And Info Tip Registry](tests/795d3248-0394-4d4d-8e86-4e8df2a2693f.md)
+  * T1112 [Windows HideSCANetwork Group Policy Feature](tests/3e757ce7-eca0-411a-9583-1c33b8508d52.md)
+  * T1112 [Hide Windows Clock Group Policy Feature](tests/8023db1e-ad06-4966-934b-b6a0ae52689e.md)
+  * T1112 [Windows HideSCAPower Group Policy Feature](tests/8d85a5d8-702f-436f-bc78-fcd9119496fc.md)
+  * T1112 [Windows HideSCAVolume Group Policy Feature](tests/7f037590-b4c6-4f13-b3cc-e424c5ab8ade.md)
+  * T1112 [Windows HideSCAHealth Group Policy Feature](tests/a4637291-40b1-4a96-8c82-b28f1d73e54e.md)
 * registry_set_ie_persistence.yml
   * T1220 [MSXSL Bypass using local files](tests/ca23bfb2-023f-49c5-8802-e66997de462d.md)
   * T1090.003 [Psiphon](tests/14d55ca0-920e-4b44-8425-37eedd72b173.md)
@@ -2163,10 +2207,23 @@
   * T1219 [TeamViewer Files Detected Test on Windows](tests/8ca3b96d-8983-4a7f-b125-fc98cc0a2aa0.md)
 * registry_set_powershell_as_service.yml
   * T1569.002 [Execute a Command as a Service](tests/2382dee2-a75f-49aa-9378-f52df6ed3fb1.md)
+* registry_set_powershell_in_run_keys.yml
+  * T1547.001 [SystemBC Malware-as-a-Service Registry](tests/9dc7767b-30c1-4cc4-b999-50cab5e27891.md)
 * registry_set_rdp_registry_modification.yml
   * T1078.001 [Enable Guest account with RDP capability and admin privileges](tests/99747561-ed8d-47f2-9c91-1e5fde1ed6e0.md)
 * registry_set_rdp_settings_hijack.yml
   * T1078.001 [Enable Guest account with RDP capability and admin privileges](tests/99747561-ed8d-47f2-9c91-1e5fde1ed6e0.md)
+* registry_set_set_nopolicies_user.yml
+  * T1112 [Activate Windows NoClose Group Policy Feature](tests/12f50e15-dbc6-478b-a801-a746e8ba1723.md)
+  * T1112 [Activate Windows NoDesktop Group Policy Feature](tests/93386d41-525c-4a1b-8235-134a628dee17.md)
+  * T1112 [Activate Windows NoTrayContextMenu Group Policy Feature](tests/4d72d4b1-fa7b-4374-b423-0fe326da49d2.md)
+  * T1112 [Activate Windows NoFind Group Policy Feature](tests/ffbb407e-7f1d-4c95-b22e-548169db1fbd.md)
+  * T1112 [Disable Windows LogOff Button](tests/e246578a-c24d-46a7-9237-0213ff86fb0c.md)
+  * T1112 [Activate Windows NoSetTaskbar Group Policy Feature](tests/d29b7faf-7355-4036-9ed3-719bd17951ed.md)
+  * T1112 [Activate Windows NoRun Group Policy Feature](tests/d49ff3cc-8168-4123-b5b3-f057d9abbd55.md)
+  * T1112 [Activate Windows NoControlPanel Group Policy Feature](tests/a450e469-ba54-4de1-9deb-9023a6111690.md)
+  * T1112 [Activate Windows NoFileMenu Group Policy Feature](tests/5e27bdb4-7fd9-455d-a2b5-4b4b22c9dea4.md)
+  * T1112 [Activate Windows NoPropertiesMyDocuments Group Policy Feature](tests/20fc9daa-bd48-4325-9aff-81b967a84b1d.md)
 * registry_set_set_servicedll.yml
   * T1543.003 [TinyTurla backdoor service w64time](tests/ef0581fd-528e-4662-87bc-4c2affb86940.md)
 * registry_set_shim_databases_persistence.yml

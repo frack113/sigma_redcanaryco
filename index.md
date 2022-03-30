@@ -103,67 +103,67 @@ Caution: a test can generate a lot of noise...
 ### T1112
 [BlackByte Ransomware Registry Changes - Powershell](tests/0b79c06f-c788-44a2-8630-d69051f1123d.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Activate Windows NoClose Group Policy Feature](tests/12f50e15-dbc6-478b-a801-a746e8ba1723.md) ['windows'] (sigma rule :x:)
+[Activate Windows NoClose Group Policy Feature](tests/12f50e15-dbc6-478b-a801-a746e8ba1723.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Disable Windows Task Manager application](tests/af254e70-dd0e-4de6-9afe-a994d9ea8b62.md) ['windows'] (sigma rule :x:)
+[Disable Windows Task Manager application](tests/af254e70-dd0e-4de6-9afe-a994d9ea8b62.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Windows Modify Show Compress Color And Info Tip Registry](tests/795d3248-0394-4d4d-8e86-4e8df2a2693f.md) ['windows'] (sigma rule :x:)
+[Windows Modify Show Compress Color And Info Tip Registry](tests/795d3248-0394-4d4d-8e86-4e8df2a2693f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Activate Windows NoDesktop Group Policy Feature](tests/93386d41-525c-4a1b-8235-134a628dee17.md) ['windows'] (sigma rule :x:)
+[Activate Windows NoDesktop Group Policy Feature](tests/93386d41-525c-4a1b-8235-134a628dee17.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Windows HideSCANetwork Group Policy Feature](tests/3e757ce7-eca0-411a-9583-1c33b8508d52.md) ['windows'] (sigma rule :x:)
+[Windows HideSCANetwork Group Policy Feature](tests/3e757ce7-eca0-411a-9583-1c33b8508d52.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Activate Windows NoTrayContextMenu Group Policy Feature](tests/4d72d4b1-fa7b-4374-b423-0fe326da49d2.md) ['windows'] (sigma rule :x:)
+[Activate Windows NoTrayContextMenu Group Policy Feature](tests/4d72d4b1-fa7b-4374-b423-0fe326da49d2.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Change Powershell Execution Policy to Bypass](tests/f3a6cceb-06c9-48e5-8df8-8867a6814245.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Disable Windows Lock Workstation Feature](tests/3dacb0d2-46ee-4c27-ac1b-f9886bf91a56.md) ['windows'] (sigma rule :x:)
+[Disable Windows Lock Workstation Feature](tests/3dacb0d2-46ee-4c27-ac1b-f9886bf91a56.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Activate Windows NoFind Group Policy Feature](tests/ffbb407e-7f1d-4c95-b22e-548169db1fbd.md) ['windows'] (sigma rule :x:)
+[Activate Windows NoFind Group Policy Feature](tests/ffbb407e-7f1d-4c95-b22e-548169db1fbd.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Disable Windows Shutdown Button](tests/6e0d1131-2d7e-4905-8ca5-d6172f05d03d.md) ['windows'] (sigma rule :x:)
+[Disable Windows Shutdown Button](tests/6e0d1131-2d7e-4905-8ca5-d6172f05d03d.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Disable Windows LogOff Button](tests/e246578a-c24d-46a7-9237-0213ff86fb0c.md) ['windows'] (sigma rule :x:)
+[Disable Windows LogOff Button](tests/e246578a-c24d-46a7-9237-0213ff86fb0c.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Activate Windows NoSetTaskbar Group Policy Feature](tests/d29b7faf-7355-4036-9ed3-719bd17951ed.md) ['windows'] (sigma rule :x:)
+[Activate Windows NoSetTaskbar Group Policy Feature](tests/d29b7faf-7355-4036-9ed3-719bd17951ed.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [BlackByte Ransomware Registry Changes - CMD](tests/4f4e2f9f-6209-4fcf-9b15-3b7455706f5b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Disable Windows Notification Center](tests/c0d6d67f-1f63-42cc-95c0-5fd6b20082ad.md) ['windows'] (sigma rule :x:)
+[Disable Windows Notification Center](tests/c0d6d67f-1f63-42cc-95c0-5fd6b20082ad.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Add domain to Trusted sites Zone](tests/cf447677-5a4e-4937-a82c-e47d254afd57.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Disable Windows Change Password Feature](tests/d4a6da40-618f-454d-9a9e-26af552aaeb0.md) ['windows'] (sigma rule :x:)
+[Disable Windows Change Password Feature](tests/d4a6da40-618f-454d-9a9e-26af552aaeb0.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Activate Windows NoRun Group Policy Feature](tests/d49ff3cc-8168-4123-b5b3-f057d9abbd55.md) ['windows'] (sigma rule :x:)
+[Activate Windows NoRun Group Policy Feature](tests/d49ff3cc-8168-4123-b5b3-f057d9abbd55.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Hide Windows Clock Group Policy Feature](tests/8023db1e-ad06-4966-934b-b6a0ae52689e.md) ['windows'] (sigma rule :x:)
+[Hide Windows Clock Group Policy Feature](tests/8023db1e-ad06-4966-934b-b6a0ae52689e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Modify registry to store logon credentials](tests/c0413fb5-33e2-40b7-9b6f-60b29f4a7a18.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Windows Powershell Logging Disabled](tests/95b25212-91a7-42ff-9613-124aca6845a8.md) ['windows'] (sigma rule :x:)
 
-[Activate Windows NoControlPanel Group Policy Feature](tests/a450e469-ba54-4de1-9deb-9023a6111690.md) ['windows'] (sigma rule :x:)
+[Activate Windows NoControlPanel Group Policy Feature](tests/a450e469-ba54-4de1-9deb-9023a6111690.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Javascript in registry](tests/15f44ea9-4571-4837-be9e-802431a7bfae.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Activate Windows NoFileMenu Group Policy Feature](tests/5e27bdb4-7fd9-455d-a2b5-4b4b22c9dea4.md) ['windows'] (sigma rule :x:)
+[Activate Windows NoFileMenu Group Policy Feature](tests/5e27bdb4-7fd9-455d-a2b5-4b4b22c9dea4.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Windows HideSCAPower Group Policy Feature](tests/8d85a5d8-702f-436f-bc78-fcd9119496fc.md) ['windows'] (sigma rule :x:)
+[Windows HideSCAPower Group Policy Feature](tests/8d85a5d8-702f-436f-bc78-fcd9119496fc.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Modify Registry of Current User Profile - cmd](tests/1324796b-d0f6-455a-b4ae-21ffee6aa6b9.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Windows HideSCAVolume Group Policy Feature](tests/7f037590-b4c6-4f13-b3cc-e424c5ab8ade.md) ['windows'] (sigma rule :x:)
+[Windows HideSCAVolume Group Policy Feature](tests/7f037590-b4c6-4f13-b3cc-e424c5ab8ade.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Activate Windows NoPropertiesMyDocuments Group Policy Feature](tests/20fc9daa-bd48-4325-9aff-81b967a84b1d.md) ['windows'] (sigma rule :x:)
+[Activate Windows NoPropertiesMyDocuments Group Policy Feature](tests/20fc9daa-bd48-4325-9aff-81b967a84b1d.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Disable Windows Registry Tool](tests/ac34b0f7-0f85-4ac0-b93e-3ced2bc69bb8.md) ['windows'] (sigma rule :x:)
+[Disable Windows Registry Tool](tests/ac34b0f7-0f85-4ac0-b93e-3ced2bc69bb8.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Modify Registry of Local Machine - cmd](tests/282f929a-6bc5-42b8-bd93-960c3ba35afe.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Windows HideSCAHealth Group Policy Feature](tests/a4637291-40b1-4a96-8c82-b28f1d73e54e.md) ['windows'] (sigma rule :x:)
+[Windows HideSCAHealth Group Policy Feature](tests/a4637291-40b1-4a96-8c82-b28f1d73e54e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Disable Windows CMD application](tests/d2561a6d-72bd-408c-b150-13efe1801c2a.md) ['windows'] (sigma rule :x:)
+[Disable Windows CMD application](tests/d2561a6d-72bd-408c-b150-13efe1801c2a.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1090.001
@@ -663,7 +663,7 @@ Caution: a test can generate a lot of noise...
 
 [Get-wmiobject to Enumerate Domain Controllers](tests/e3cf5123-f6c9-4375-bdf2-1bb3ba43a1ad.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Enumerate Active Directory Computers with Get-AdComputer](tests/97e89d9e-e3f5-41b5-a90f-1e0825df0fdf.md) ['windows'] (sigma rule :x:)
+[Enumerate Active Directory Computers with Get-AdComputer](tests/97e89d9e-e3f5-41b5-a90f-1e0825df0fdf.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Enumerate Active Directory Computers with ADSISearcher](tests/64ede6ac-b57a-41c2-a7d1-32c6cd35397d.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1611,7 +1611,7 @@ Caution: a test can generate a lot of noise...
 
 [Suspicious jse file run from startup Folder](tests/dade9447-791e-4c8f-b04b-3a35855dfa06.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[SystemBC Malware-as-a-Service Registry](tests/9dc7767b-30c1-4cc4-b999-50cab5e27891.md) ['windows'] (sigma rule :x:)
+[SystemBC Malware-as-a-Service Registry](tests/9dc7767b-30c1-4cc4-b999-50cab5e27891.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Suspicious bat file run from startup Folder](tests/5b6768e4-44d2-44f0-89da-a01d1430fd5e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -2155,7 +2155,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1003.005
-[Cached Credential Dump via Cmdkey](tests/56506854-89d6-46a3-9804-b7fde90791f9.md) ['windows'] (sigma rule :x:)
+[Cached Credential Dump via Cmdkey](tests/56506854-89d6-46a3-9804-b7fde90791f9.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1543.001
@@ -2183,7 +2183,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1558.004
-[Get-DomainUser with PowerView](tests/d6139549-7b72-4e48-9ea1-324fc9bdf88a.md) ['windows'] (sigma rule :x:)
+[Get-DomainUser with PowerView](tests/d6139549-7b72-4e48-9ea1-324fc9bdf88a.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Rubeus asreproast](tests/615bd568-2859-41b5-9aed-61f6a88e48dd.md) ['windows'] (sigma rule :heavy_check_mark:)
 
