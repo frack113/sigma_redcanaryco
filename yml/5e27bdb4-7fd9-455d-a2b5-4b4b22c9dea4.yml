@@ -18,5 +18,7 @@ os:
 description: "Modify the registry of the currently logged in user using reg.exe via cmd console to Remove File menu from Windows Explorer Group Policy. \nTake note that some Group Policy changes might require\
   \ a restart to take effect.\nSee how Trojan abuses this technique- https://www.sophos.com/de-de/threat-center/threat-analyses/viruses-and-spyware/Troj~Krotten-N/detailed-analysis\n"
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 1c3121ed-041b-4d97-a075-07f54f20fb4a
+    name: registry_set_set_nopolicies_user.yml

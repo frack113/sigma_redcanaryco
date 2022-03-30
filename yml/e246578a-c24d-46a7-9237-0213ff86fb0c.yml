@@ -19,5 +19,9 @@ description: |
   Modify the registry of the currently logged in user using reg.exe via cmd console to disable the windows logoff button.
   See how ransomware abuses this technique- https://www.trendmicro.com/vinfo/be/threat-encyclopedia/search/js_noclose.e/2
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 1c3121ed-041b-4d97-a075-07f54f20fb4a
+    name: registry_set_set_nopolicies_user.yml
+  - id: e2482f8d-3443-4237-b906-cc145d87a076
+    name: registry_set_disable_fonction_user.yml

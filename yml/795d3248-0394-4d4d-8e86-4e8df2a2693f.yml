@@ -17,5 +17,7 @@ os:
   - windows
 description: "Modify the registry of the currently logged in user using reg.exe via cmd console to show compress color and show tips feature. \nSee how hermeticwiper uses this technique - https://www.splunk.com/en_us/blog/security/detecting-hermeticwiper.html\n"
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 5a93eb65-dffa-4543-b761-94aa60098fb6
+    name: registry_set_hide_fonction_user.yml

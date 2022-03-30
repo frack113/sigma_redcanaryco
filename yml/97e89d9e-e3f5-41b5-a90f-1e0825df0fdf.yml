@@ -17,5 +17,7 @@ description: |
   Upon successful execution a listing of Computers will output with their paths in AD.
   Reference: https://github.com/MicrosoftDocs/windows-powershell-docs/blob/main/docset/winserver2022-ps/activedirectory/Get-ADComputer.md
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 36bed6b2-e9a0-4fff-beeb-413a92b86138
+    name: posh_ps_susp_get_adcomputer.yml

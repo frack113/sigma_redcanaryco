@@ -23,5 +23,45 @@ description: 'Utilizing PowerView, run Get-DomainUser to identify domain users. 
 
   '
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 9fc51a3c-81b3-4fa7-b35f-7c02cf10fd2d
+    name: proc_creation_win_susp_web_request_cmd.yml
+  - id: efdd8dd5-cee8-4e59-9390-7d4d5e4dd6f6
+    name: proc_creation_win_susp_progname.yml
+  - id: 7be5fb68-f9ef-476d-8b51-0256ebece19e
+    name: proc_creation_win_susp_hostname.yml
+  - id: e28a5a99-da44-436d-b7a0-2afc20a5f413
+    name: proc_creation_win_susp_whoami.yml
+  - id: 502b42de-4306-40b4-9596-6f590c81f073
+    name: proc_creation_win_local_system_owner_account_discovery.yml
+  - id: f4bbd493-b796-416e-bbf2-121235348529
+    name: proc_creation_win_non_interactive_powershell.yml
+  - id: dcd74b95-3f36-4ed9-9598-0490951643aa
+    name: posh_ps_powerview_malicious_commandlets.yml
+  - id: 1139d2e2-84b1-4226-b445-354492eba8ba
+    name: posh_ps_web_request.yml
+  - id: 89819aa4-bbd6-46bc-88ec-c7f7fe30efa6
+    name: posh_ps_malicious_commandlets.yml
+  - id: 1f21ec3f-810d-4b0e-8045-322202e22b4b
+    name: net_connection_win_powershell_network_connection.yml
+  - id: 635dbb88-67b3-4b41-9ea5-a3af2dd88153
+    name: net_connection_win_binary_github_com.yml
+  - id: 03d83090-8cba-44a0-b02f-0b756a050306
+    name: posh_ps_accessing_win_api.yml
+  - id: 1f49f2ab-26bc-48b3-96cc-dcffbc93eadf
+    name: posh_ps_suspicious_keywords.yml
+  - id: b29a93fb-087c-4b5b-a84d-ee3309e69d08
+    name: posh_ps_directoryservices_accountmanagement.yml
+  - id: a861d835-af37-4930-bcd6-5b178bfb54df
+    name: posh_ps_request_kerberos_ticket.yml
+  - id: d23f2ba5-9da0-4463-8908-8ee47f614bb9
+    name: posh_ps_file_and_directory_discovery.yml
+  - id: 0332a266-b584-47b4-933d-a00b103e1b37
+    name: posh_ps_suspicious_gwmi.yml
+  - id: f62176f3-8128-4faa-bf6c-83261322e5eb
+    name: posh_ps_malicious_keywords.yml
+  - id: 7b836d7f-179c-4ba4-90a7-a7e60afb48e6
+    name: posh_ps_invoke_command_remote.yml
+  - id: 8d31a8ce-46b5-4dd6-bdc3-680931f1db86
+    name: posh_pm_bad_opsec_artifacts.yml

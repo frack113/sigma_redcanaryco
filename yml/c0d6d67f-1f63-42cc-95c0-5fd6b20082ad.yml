@@ -19,5 +19,7 @@ description: |
   Modify the registry of the currently logged in user using reg.exe via cmd console to disable the windows notification center.
   See how remcos rat abuses this technique- https://tccontre.blogspot.com/2020/01/remcos-rat-evading-windows-defender-av.html
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: e2482f8d-3443-4237-b906-cc145d87a076
+    name: registry_set_disable_fonction_user.yml

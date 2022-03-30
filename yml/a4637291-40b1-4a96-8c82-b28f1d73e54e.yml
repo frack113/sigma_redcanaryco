@@ -18,5 +18,7 @@ os:
 description: "Modify the registry of the currently logged in user using reg.exe via cmd console to remove security and maintenance icon Group Policy. \nTake note that some Group Policy changes might require\
   \ a restart to take effect.\nSee how ransomware abuses this technique- https://www.virustotal.com/gui/file/2d7855bf6470aa323edf2949b54ce2a04d9e38770f1322c3d0420c2303178d91/details\n"
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 5a93eb65-dffa-4543-b761-94aa60098fb6
+    name: registry_set_hide_fonction_user.yml

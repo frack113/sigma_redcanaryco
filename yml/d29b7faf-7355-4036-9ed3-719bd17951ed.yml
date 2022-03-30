@@ -18,5 +18,7 @@ os:
 description: "Modify the registry of the currently logged in user using reg.exe via cmd console to Disable changes to Taskbar and Start Menu Settings Group Policy. \nTake note that some Group Policy changes\
   \ might require a restart to take effect.\nSee how ransomware abuses this technique- https://www.virustotal.com/gui/file/2d7855bf6470aa323edf2949b54ce2a04d9e38770f1322c3d0420c2303178d91/details\n"
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 1c3121ed-041b-4d97-a075-07f54f20fb4a
+    name: registry_set_set_nopolicies_user.yml
