@@ -260,12 +260,15 @@
   * T1132.001 [XOR Encoded data.](tests/c3ed6d2a-e3ad-400d-ad78-bbfdbfeacc08.md)
   * T1218.005 [Mshta Executes Remote HTML Application (HTA)](tests/c4b97eeb-5249-4455-a607-59f95485cb45.md)
   * T1041 [C2 Data Exfiltration](tests/d1253f6e-c29b-49dc-b466-2147a6191932.md)
+  * T1069.002 [Get-ADUser Enumeration using UserAccountControl flags (AS-REP Roasting)](tests/43fa81fb-34bb-4b5f-867b-03c7dbe0e3d8.md)
   * T1201 [Get-DomainPolicy with PowerView](tests/3177f4da-3d4b-4592-8bdc-aa23d0b2e843.md)
   * T1558.003 [Request for service tickets](tests/3f987809-3681-43c8-bcd8-b3ff3a28533a.md)
   * T1566.001 [Download Macro-Enabled Phishing Attachment](tests/114ccff9-ae6d-4547-9ead-4cd69f687306.md)
   * T1033 [Find computers where user has session - Stealth mode (PowerView)](tests/29857f27-a36f-4f7e-8084-4557cd6207ca.md)
+  * T1201 [Enumerate Active Directory Password Policy with get-addefaultdomainpasswordpolicy](tests/b2698b33-984c-4a1c-93bb-e4ba72a0babb.md)
   * T1219 [ScreenConnect Application Download and Install on Windows](tests/4a18cc4e-416f-4966-9a9d-75731c4684c0.md)
   * T1219 [LogMeIn Files Detected Test on Windows](tests/d03683ec-aae0-42f9-9b4c-534780e0f8e1.md)
+  * T1069.002 [Enumerate Active Directory Groups with Get-AdGroup](tests/3d1fcd2a-e51c-4cbe-8d84-9a843bad8dc8.md)
   * T1059.001 [Powershell XML requests](tests/4396927f-e503-427b-b023-31049b9b09a6.md)
   * T1055 [Shellcode execution via VBA](tests/1c91e740-1729-4329-b779-feba6e71d048.md)
   * T1059.001 [Powershell MsXml COM object - with prompt](tests/388a7340-dbc1-4c9d-8e59-b75ad8c6d5da.md)
@@ -347,6 +350,8 @@
 * posh_pm_susp_zip_compress.yml
   * T1074.001 [Zip a Folder with PowerShell for Staging in Temp](tests/a57fbe4b-3440-452a-88a7-943531ac872a.md)
 * posh_pm_suspicious_ad_group_reco.yml
+  * T1069.002 [Get-ADUser Enumeration using UserAccountControl flags (AS-REP Roasting)](tests/43fa81fb-34bb-4b5f-867b-03c7dbe0e3d8.md)
+  * T1069.002 [Enumerate Active Directory Groups with Get-AdGroup](tests/3d1fcd2a-e51c-4cbe-8d84-9a843bad8dc8.md)
   * T1069.002 [Enumerate Users Not Requiring Pre Auth (ASRepRoast)](tests/870ba71e-6858-4f6d-895c-bb6237f6121b.md)
   * T1069.002 [Permission Groups Discovery PowerShell (Domain)](tests/6d5d8c96-3d2a-4da9-9d6d-9a9d341899a7.md)
 * posh_pm_suspicious_download.yml
@@ -437,6 +442,8 @@
   * T1557.001 [LLMNR Poisoning with Inveigh (PowerShell)](tests/deecd55f-afe0-4a62-9fba-4d1ba2deb321.md)
 * posh_ps_adrecon_execution.yml
   * T1087.002 [Automated AD Recon (ADRecon)](tests/95018438-454a-468c-a0fa-59c800149b59.md)
+* posh_ps_as_rep_roasting.yml
+  * T1069.002 [Get-ADUser Enumeration using UserAccountControl flags (AS-REP Roasting)](tests/43fa81fb-34bb-4b5f-867b-03c7dbe0e3d8.md)
 * posh_ps_automated_collection.yml
   * T1119 [Automated Collection PowerShell](tests/634bd9b9-dc83-4229-b19f-7f83ba9ad313.md)
   * T1059.001 [PowerUp Invoke-AllChecks](tests/1289f78d-22d2-4590-ac76-166737e1811b.md)
@@ -692,8 +699,14 @@
   * T1518 [Applications Installed](tests/c49978f6-bd6e-4221-ad2c-9e3e30cc1e3b.md)
 * posh_ps_store_file_in_alternate_data_stream.yml
   * T1564.004 [Store file in Alternate Data Stream (ADS)](tests/2ab75061-f5d5-4c1a-b666-ba2a50df5b02.md)
+* posh_ps_susp_directory_enum.yml
+  * T1083 [Simulating MAZE Directory Enumeration](tests/c6c34f61-1c3e-40fb-8a58-d017d88286d8.md)
 * posh_ps_susp_get_adcomputer.yml
   * T1018 [Enumerate Active Directory Computers with Get-AdComputer](tests/97e89d9e-e3f5-41b5-a90f-1e0825df0fdf.md)
+* posh_ps_susp_get_addefaultdomainpasswordpolicy.yml
+  * T1201 [Enumerate Active Directory Password Policy with get-addefaultdomainpasswordpolicy](tests/b2698b33-984c-4a1c-93bb-e4ba72a0babb.md)
+* posh_ps_susp_get_adgroup.yml
+  * T1069.002 [Enumerate Active Directory Groups with Get-AdGroup](tests/3d1fcd2a-e51c-4cbe-8d84-9a843bad8dc8.md)
 * posh_ps_susp_invoke_webrequest_useragent.yml
   * T1071.001 [Malicious User Agents - Powershell](tests/81c13829-f6c9-45b8-85a6-053366d55297.md)
 * posh_ps_susp_remove_adgroupmember.yml
@@ -724,6 +737,8 @@
   * T1003.001 [Dump LSASS.exe Memory using Out-Minidump.ps1](tests/6502c8f0-b775-4dbd-9193-1298f56b6781.md)
   * T1134.002 [Access Token Manipulation](tests/dbf4f5a9-b8e0-46a3-9841-9ad71247239e.md)
   * T1003.001 [Dump LSASS.exe Memory using comsvcs.dll](tests/2536dee2-12fb-459a-8c37-971844fa73be.md)
+* posh_ps_suspicious_gettypefromclsid.yml
+  * T1546.015 [Powershell Execute COM Object](tests/752191b1-7c71-445c-9dbe-21bb031b18eb.md)
 * posh_ps_suspicious_gwmi.yml
   * T1134.004 [Parent PID Spoofing - Spawn from Current Process](tests/14920ebd-1d61-491a-85e0-fe98efe37f25.md)
   * T1218.005 [Invoke HTML Application - JScript Engine with Inline Protocol Handler](tests/d3eaaf6a-cdb1-44a9-9ede-b6c337d0d840.md)
@@ -1174,6 +1189,8 @@
   * T1037.001 [Logon Scripts](tests/d6042746-07d4-4c92-9ad8-e644c114a231.md)
 * proc_creation_win_lolbas_configsecuritypolicy.yml
   * T1567 [Data Exfiltration with ConfigSecurityPolicy](tests/5568a8f4-a8b1-4c40-9399-4969b642f122.md)
+* proc_creation_win_lolbas_execution_of_wuauclt.yml
+  * T1218 [Load Arbitrary DLL via Wuauclt (Windows Update Client)](tests/49fbd548-49e9-4bb7-94a6-3769613912b8.md)
 * proc_creation_win_lolbins_suspicious_driver_installed_by_pnputil.yml
   * T1547 [Add a driver](tests/cb01b3da-b0e7-4e24-bf6d-de5223526785.md)
 * proc_creation_win_long_powershell_commandline.yml
@@ -1296,9 +1313,11 @@
 * proc_creation_win_non_interactive_powershell.yml
   * T1018 [Get-DomainController with PowerView](tests/b9d2e8ca-5520-4737-8076-4f08913da2c4.md)
   * T1218.005 [Mshta used to Execute PowerShell](tests/8707a805-2b76-4f32-b1c0-14e558205772.md)
+  * T1069.002 [Get-ADUser Enumeration using UserAccountControl flags (AS-REP Roasting)](tests/43fa81fb-34bb-4b5f-867b-03c7dbe0e3d8.md)
   * T1027 [Obfuscated Command in PowerShell](tests/8b3f4ed6-077b-4bdd-891c-2d237f19410f.md)
   * T1216 [SyncAppvPublishingServer Signed Script PowerShell Command Execution](tests/275d963d-3f36-476c-8bef-a2a3960ee6eb.md)
   * T1003.006 [Run DSInternals Get-ADReplAccount](tests/a0bced08-3fc5-4d8b-93b7-e8344739376e.md)
+  * T1069.002 [Enumerate Active Directory Groups with Get-AdGroup](tests/3d1fcd2a-e51c-4cbe-8d84-9a843bad8dc8.md)
   * T1207 [DCShadow (Active Directory)](tests/0f4c5eb0-98a0-4496-9c3d-656b4f2bc8f6.md)
   * T1547.001 [SystemBC Malware-as-a-Service Registry](tests/9dc7767b-30c1-4cc4-b999-50cab5e27891.md)
   * T1105 [Windows - PowerShell Download](tests/42dc4460-9aa6-45d3-b1a6-3955d34e1fe8.md)
@@ -1392,6 +1411,8 @@
   * T1003.001 [Create Mini Dump of LSASS.exe using ProcDump](tests/7cede33f-0acd-44ef-9774-15511300b24b.md)
 * proc_creation_win_protocolhandler_suspicious_file.yml
   * T1218 [ProtocolHandler.exe Downloaded a Suspicious File](tests/db020456-125b-4c8b-a4a7-487df8afb5a2.md)
+* proc_creation_win_proxy_execution_wuauclt.yml
+  * T1218 [Load Arbitrary DLL via Wuauclt (Windows Update Client)](tests/49fbd548-49e9-4bb7-94a6-3769613912b8.md)
 * proc_creation_win_psexesvc_start.yml
   * T1021.002 [Copy and Execute File with PsExec](tests/0eb03d41-79e4-4393-8e57-6344856be1cf.md)
   * T1003.004 [Dumping LSA Secrets](tests/55295ab0-a703-433b-9ca4-ae13807de12f.md)
@@ -1980,6 +2001,8 @@
   * T1047 [WMI Execute Local Process](tests/b3bdfc91-b33e-4c6d-a5c8-d64bee0276b3.md)
   * T1047 [WMI Execute Remote Process](tests/9c8ef159-c666-472f-9874-90c8d60d136b.md)
   * T1003.003 [Create Volume Shadow Copy remotely (WMI) with esentutl](tests/21c7bf80-3e8b-40fa-8f9d-f5b194ff2865.md)
+* proc_creation_win_susp_wuauclt.yml
+  * T1218 [Load Arbitrary DLL via Wuauclt (Windows Update Client)](tests/49fbd548-49e9-4bb7-94a6-3769613912b8.md)
 * proc_creation_win_susp_zip_compress.yml
   * T1074.001 [Zip a Folder with PowerShell for Staging in Temp](tests/a57fbe4b-3440-452a-88a7-943531ac872a.md)
 * proc_creation_win_suspicious_ad_reco.yml
@@ -2180,6 +2203,8 @@
   * T1546.012 [IFEO Global Flags](tests/46b1f278-c8ee-4aa5-acce-65e77b11f3c1.md)
 * registry_set_hidden_extention.yml
   * T1112 [Modify Registry of Current User Profile - cmd](tests/1324796b-d0f6-455a-b4ae-21ffee6aa6b9.md)
+* registry_set_hide_file.yml
+  * T1564.001 [Hide Files Through Registry](tests/f650456b-bd49-4bc1-ae9d-271b5b9581e7.md)
 * registry_set_hide_fonction_user.yml
   * T1112 [Windows Modify Show Compress Color And Info Tip Registry](tests/795d3248-0394-4d4d-8e86-4e8df2a2693f.md)
   * T1112 [Windows HideSCANetwork Group Policy Feature](tests/3e757ce7-eca0-411a-9583-1c33b8508d52.md)
@@ -2209,6 +2234,8 @@
   * T1569.002 [Execute a Command as a Service](tests/2382dee2-a75f-49aa-9378-f52df6ed3fb1.md)
 * registry_set_powershell_in_run_keys.yml
   * T1547.001 [SystemBC Malware-as-a-Service Registry](tests/9dc7767b-30c1-4cc4-b999-50cab5e27891.md)
+* registry_set_powershell_logging_disabled.yml
+  * T1112 [Windows Powershell Logging Disabled](tests/95b25212-91a7-42ff-9613-124aca6845a8.md)
 * registry_set_rdp_registry_modification.yml
   * T1078.001 [Enable Guest account with RDP capability and admin privileges](tests/99747561-ed8d-47f2-9c91-1e5fde1ed6e0.md)
 * registry_set_rdp_settings_hijack.yml

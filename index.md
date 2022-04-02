@@ -55,6 +55,8 @@ Caution: a test can generate a lot of noise...
 
 [Tamper with Windows Defender Registry](tests/1b3e0146-a1e5-4c5c-89fb-1bb2ffe8fc45.md) ['windows'] (sigma rule :heavy_check_mark:)
 
+[Disable Windows Defender Tamper Protection](tests/5fde6578-9419-46ef-9258-269dc8656c3e.md) ['windows'] (sigma rule :x:)
+
 [Stop and unload Crowdstrike Falcon on macOS](tests/b3e7510c-2d4c-4249-a33f-591a2bc83eef.md) ['macos'] (sigma rule :x:)
 
 [Tamper with Windows Defender Evade Scanning -Process](tests/a123ce6a-3916-45d6-ba9c-7d4081315c27.md) ['windows'] (sigma rule :heavy_check_mark:)
@@ -117,6 +119,8 @@ Caution: a test can generate a lot of noise...
 
 [Change Powershell Execution Policy to Bypass](tests/f3a6cceb-06c9-48e5-8df8-8867a6814245.md) ['windows'] (sigma rule :heavy_check_mark:)
 
+[Windows Add Registry Value to Load Service in Safe Mode without Network](tests/1dd59fb3-1cb3-4828-805d-cf80b4c3bbb5.md) ['windows'] (sigma rule :x:)
+
 [Disable Windows Lock Workstation Feature](tests/3dacb0d2-46ee-4c27-ac1b-f9886bf91a56.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Activate Windows NoFind Group Policy Feature](tests/ffbb407e-7f1d-4c95-b22e-548169db1fbd.md) ['windows'] (sigma rule :heavy_check_mark:)
@@ -131,6 +135,8 @@ Caution: a test can generate a lot of noise...
 
 [Disable Windows Notification Center](tests/c0d6d67f-1f63-42cc-95c0-5fd6b20082ad.md) ['windows'] (sigma rule :heavy_check_mark:)
 
+[Windows Add Registry Value to Load Service in Safe Mode with Network](tests/c173c948-65e5-499c-afbe-433722ed5bd4.md) ['windows'] (sigma rule :x:)
+
 [Add domain to Trusted sites Zone](tests/cf447677-5a4e-4937-a82c-e47d254afd57.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Disable Windows Change Password Feature](tests/d4a6da40-618f-454d-9a9e-26af552aaeb0.md) ['windows'] (sigma rule :heavy_check_mark:)
@@ -141,7 +147,7 @@ Caution: a test can generate a lot of noise...
 
 [Modify registry to store logon credentials](tests/c0413fb5-33e2-40b7-9b6f-60b29f4a7a18.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Windows Powershell Logging Disabled](tests/95b25212-91a7-42ff-9613-124aca6845a8.md) ['windows'] (sigma rule :x:)
+[Windows Powershell Logging Disabled](tests/95b25212-91a7-42ff-9613-124aca6845a8.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Activate Windows NoControlPanel Group Policy Feature](tests/a450e469-ba54-4de1-9deb-9023a6111690.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -725,7 +731,7 @@ Caution: a test can generate a lot of noise...
 
 [DiskShadow Command Execution](tests/0e1483ba-8f0c-425d-b8c6-42736e058eaa.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Load Arbitrary DLL via Wuauclt (Windows Update Client)](tests/49fbd548-49e9-4bb7-94a6-3769613912b8.md) ['windows'] (sigma rule :x:)
+[Load Arbitrary DLL via Wuauclt (Windows Update Client)](tests/49fbd548-49e9-4bb7-94a6-3769613912b8.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1027.001
@@ -817,13 +823,13 @@ Caution: a test can generate a lot of noise...
 
 [Elevated group enumeration using net group (Domain)](tests/0afb5163-8181-432e-9405-4322710c0c37.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Get-ADUser Enumeration using UserAccountControl flags (AS-REP Roasting)](tests/43fa81fb-34bb-4b5f-867b-03c7dbe0e3d8.md) ['windows'] (sigma rule :x:)
+[Get-ADUser Enumeration using UserAccountControl flags (AS-REP Roasting)](tests/43fa81fb-34bb-4b5f-867b-03c7dbe0e3d8.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Enumerate Active Directory Groups with ADSISearcher](tests/9f4e344b-8434-41b3-85b1-d38f29d148d0.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Adfind - Query Active Directory Groups](tests/48ddc687-82af-40b7-8472-ff1e742e8274.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Enumerate Active Directory Groups with Get-AdGroup](tests/3d1fcd2a-e51c-4cbe-8d84-9a843bad8dc8.md) ['windows'] (sigma rule :x:)
+[Enumerate Active Directory Groups with Get-AdGroup](tests/3d1fcd2a-e51c-4cbe-8d84-9a843bad8dc8.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Find Local Admins via Group Policy (PowerView)](tests/64fdb43b-5259-467a-b000-1b02c00e510a.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -983,7 +989,7 @@ Caution: a test can generate a lot of noise...
 
 [Show all hidden files](tests/9a1ec7da-b892-449f-ad68-67066d04380c.md) ['macos'] (sigma rule :x:)
 
-[Hide Files Through Registry](tests/f650456b-bd49-4bc1-ae9d-271b5b9581e7.md) ['windows'] (sigma rule :x:)
+[Hide Files Through Registry](tests/f650456b-bd49-4bc1-ae9d-271b5b9581e7.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Hidden files](tests/3b7015f2-3144-4205-b799-b05580621379.md) ['macos'] (sigma rule :x:)
 
@@ -1117,7 +1123,7 @@ Caution: a test can generate a lot of noise...
 
 [File and Directory Discovery (PowerShell)](tests/2158908e-b7ef-4c21-8a83-3ce4dd05a924.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Simulating MAZE Directory Enumeration](tests/c6c34f61-1c3e-40fb-8a58-d017d88286d8.md) ['windows'] (sigma rule :x:)
+[Simulating MAZE Directory Enumeration](tests/c6c34f61-1c3e-40fb-8a58-d017d88286d8.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Nix File and Directory Discovery](tests/ffc8b249-372a-4b74-adcd-e4c0430842de.md) ['macos', 'linux'] (sigma rule :x:)
 
@@ -1419,7 +1425,7 @@ Caution: a test can generate a lot of noise...
 
 [Examine password complexity policy - CentOS/RHEL 7.x](tests/78a12e65-efff-4617-bc01-88f17d71315d.md) ['linux'] (sigma rule :x:)
 
-[Enumerate Active Directory Password Policy with get-addefaultdomainpasswordpolicy](tests/b2698b33-984c-4a1c-93bb-e4ba72a0babb.md) ['windows'] (sigma rule :x:)
+[Enumerate Active Directory Password Policy with get-addefaultdomainpasswordpolicy](tests/b2698b33-984c-4a1c-93bb-e4ba72a0babb.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Examine password complexity policy - Ubuntu](tests/085fe567-ac84-47c7-ac4c-2688ce28265b.md) ['linux'] (sigma rule :x:)
 
@@ -1591,7 +1597,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1546.015
-[Powershell Execute COM Object](tests/752191b1-7c71-445c-9dbe-21bb031b18eb.md) ['windows'] (sigma rule :x:)
+[Powershell Execute COM Object](tests/752191b1-7c71-445c-9dbe-21bb031b18eb.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [COM Hijacking - InprocServer32](tests/48117158-d7be-441b-bc6a-d9e36e47b52b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1783,6 +1789,8 @@ Caution: a test can generate a lot of noise...
 
 [Install root CA on macOS](tests/cc4a0b8c-426f-40ff-9426-4e10e5bf4c49.md) ['macos'] (sigma rule :x:)
 
+[Add Root Certificate to CurrentUser Certificate Store](tests/ca20a3f1-42b5-4e21-ad3f-1049199ec2e0.md) ['windows'] (sigma rule :x:)
+
 [Install root CA on CentOS/RHEL](tests/9c096ec4-fd42-419d-a762-d64cc950627e.md) ['linux'] (sigma rule :x:)
 
 
@@ -1880,6 +1888,8 @@ Caution: a test can generate a lot of noise...
 [TeamViewer Files Detected Test on Windows](tests/8ca3b96d-8983-4a7f-b125-fc98cc0a2aa0.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [AnyDesk Files Detected Test on Windows](tests/6b8b7391-5c0a-4f8c-baee-78d8ce0ce330.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Ammyy Admin Software Execution](tests/0ae9e327-3251-465a-a53b-485d4e3f58fa.md) ['windows'] (sigma rule :x:)
 
 [GoToAssist Files Detected Test on Windows](tests/1b72b3bd-72f8-4b63-a30b-84e91b9c3578.md) ['windows'] (sigma rule :heavy_check_mark:)
 

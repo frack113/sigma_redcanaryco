@@ -1,7 +1,7 @@
 
 [back](../index.md)
 
-Find sigma rule :x: 
+Find sigma rule :heavy_check_mark: 
 
 # Attack: Domain Groups 
 
@@ -33,6 +33,14 @@ Reference: https://docs.microsoft.com/en-us/powershell/module/activedirectory/ge
 powershell
 
 # Sigma Rule
+ - posh_pm_suspicious_ad_group_reco.yml (id: 815bfc17-7fc6-4908-a55e-2f37b98cedb4)
+
+ - proc_creation_win_non_interactive_powershell.yml (id: f4bbd493-b796-416e-bbf2-121235348529)
+
+ - posh_ps_susp_get_adgroup.yml (id: 8c3a6607-b7dc-4f0d-a646-ef38c00b76ee)
+
+ - net_connection_win_powershell_network_connection.yml (id: 1f21ec3f-810d-4b0e-8045-322202e22b4b)
+
 
 
 [back](../index.md)
