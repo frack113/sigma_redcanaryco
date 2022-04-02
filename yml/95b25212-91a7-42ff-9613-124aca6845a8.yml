@@ -19,5 +19,7 @@ description: |
   Modify the registry of the currently logged in user using reg.exe via cmd console to disable Powershell Module Logging, Script Block Logging, Transcription and Script Execution
   see https://admx.help/?Category=Windows_10_2016&Policy=Microsoft.Policies.PowerShell::EnableModuleLogging
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: fecfd1a1-cc78-4313-a1ea-2ee2e8ec27a7
+    name: registry_set_powershell_logging_disabled.yml

@@ -18,5 +18,7 @@ os:
 description: "Disable Show Hidden files switch in registry. This technique was abused by several malware to hide their files from normal user.\nSee how this trojan abuses this technique - https://www.sophos.com/en-us/threat-center/threat-analyses/viruses-and-spyware/W32~Tiotua-P/detailed-analysis.aspx\
   \ \n"
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 5a5152f1-463f-436b-b2f5-8eceb3964b42
+    name: registry_set_hide_file.yml

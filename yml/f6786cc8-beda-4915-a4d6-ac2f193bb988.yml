@@ -2,7 +2,8 @@ Attack_name: Exfiltration Over Alternative Protocol
 Attack_description: "Adversaries may steal data by exfiltrating it over a different protocol than that of the existing command and control channel. The data may also be sent to an alternate network location\
   \ from the main command and control server.  \n\nAlternate protocols include FTP, SMTP, HTTP/S, DNS, SMB, or any other network protocol not being used as the main command and control channel. Different\
   \ protocol channels could also include Web services such as cloud storage. Adversaries may also opt to encrypt and/or obfuscate these alternate channels. \n\n[Exfiltration Over Alternative Protocol](https://attack.mitre.org/techniques/T1048)\
-  \ can be done using various common operating system utilities such as [Net](https://attack.mitre.org/software/S0039)/SMB or FTP.(Citation: Palo Alto OilRig Oct 2016) "
+  \ can be done using various common operating system utilities such as [Net](https://attack.mitre.org/software/S0039)/SMB or FTP.(Citation: Palo Alto OilRig Oct 2016) On macOS and Linux <code>curl</code>\
+  \ may be used to invoke protocols such as HTTP/S or FTP/S to exfiltrate data from a system.(Citation: 20 macOS Common Tools and Techniques) "
 guid: f6786cc8-beda-4915-a4d6-ac2f193bb988
 name: Exfiltration Over Alternative Protocol - SSH
 tactic:
