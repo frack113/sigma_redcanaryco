@@ -111,6 +111,8 @@ credential-access;T1003.002;command_prompt;['windows'];esentutl.exe SAM copy;a90
 credential-access;T1003.002;powershell;['windows'];PowerDump Registry dump of SAM for hashes and usernames;804f28fc-68fc-40da-b5a2-e9d0bce5c193;True;4
 credential-access;T1003.002;powershell;['windows'];dump volume shadow copy hives with certutil;eeb9751a-d598-42d3-b11c-c122d9c3f6c7;True;5
 credential-access;T1003.002;powershell;['windows'];dump volume shadow copy hives with System.IO.File;9d77fed7-05f8-476e-a81b-8ff0472c64d0;True;6
+credential-access;T1539;powershell;['windows'];Steal Firefox Cookies (Windows);4b437357-f4e9-4c84-9fa6-9bcee6f826aa;False;1
+credential-access;T1555.004;command_prompt;['windows'];Access Saved Credentials via VaultCmd;9c2dd36d-5c8b-4b29-8d72-a11b0d5d7439;False;1
 collection;T1560;powershell;['windows'];Compress Data for Exfiltration With PowerShell;41410c60-614d-4b9d-b66e-b0192dd9c597;True;1
 collection;T1560.002;bash;['linux'];Compressing data using GZip in Python (Linux);391f5298-b12d-4636-8482-35d9c17d53a8;False;1
 collection;T1560.002;bash;['linux'];Compressing data using bz2 in Python (Linux);c75612b2-9de0-4d7c-879c-10d7b077072d;False;2
@@ -448,7 +450,7 @@ defense-evasion;T1553.004;sh;['linux'];Install root CA on Debian/Ubuntu;53bcf8a0
 defense-evasion;T1553.004;sh;['macos'];Install root CA on macOS;cc4a0b8c-426f-40ff-9426-4e10e5bf4c49;False;3
 defense-evasion;T1553.004;powershell;['windows'];Install root CA on Windows;76f49d86-5eb1-461a-a032-a480f86652f1;True;4
 defense-evasion;T1553.004;powershell;['windows'];Install root CA on Windows with certutil;5fdb1a7a-a93c-4fbe-aa29-ddd9ef94ed1f;True;5
-defense-evasion;T1553.004;powershell;['windows'];Add Root Certificate to CurrentUser Certificate Store;ca20a3f1-42b5-4e21-ad3f-1049199ec2e0;False;6
+defense-evasion;T1553.004;powershell;['windows'];Add Root Certificate to CurrentUser Certificate Store;ca20a3f1-42b5-4e21-ad3f-1049199ec2e0;True;6
 defense-evasion;T1218.004;powershell;['windows'];CheckIfInstallable method call;ffd9c807-d402-47d2-879d-f915cf2a3a94;True;1
 defense-evasion;T1218.004;powershell;['windows'];InstallHelper method call;d43a5bde-ae28-4c55-a850-3f4c80573503;True;2
 defense-evasion;T1218.004;powershell;['windows'];InstallUtil class constructor method call;9b7a7cfc-dd2e-43f5-a885-c0a3c270dd93;True;3
@@ -510,8 +512,8 @@ defense-evasion;T1112;command_prompt;['windows'];Windows HideSCAPower Group Poli
 defense-evasion;T1112;command_prompt;['windows'];Windows HideSCAVolume Group Policy Feature;7f037590-b4c6-4f13-b3cc-e424c5ab8ade;True;30
 defense-evasion;T1112;command_prompt;['windows'];Windows Modify Show Compress Color And Info Tip Registry;795d3248-0394-4d4d-8e86-4e8df2a2693f;True;31
 defense-evasion;T1112;command_prompt;['windows'];Windows Powershell Logging Disabled;95b25212-91a7-42ff-9613-124aca6845a8;True;32
-defense-evasion;T1112;command_prompt;['windows'];Windows Add Registry Value to Load Service in Safe Mode without Network;1dd59fb3-1cb3-4828-805d-cf80b4c3bbb5;False;33
-defense-evasion;T1112;command_prompt;['windows'];Windows Add Registry Value to Load Service in Safe Mode with Network;c173c948-65e5-499c-afbe-433722ed5bd4;False;34
+defense-evasion;T1112;command_prompt;['windows'];Windows Add Registry Value to Load Service in Safe Mode without Network;1dd59fb3-1cb3-4828-805d-cf80b4c3bbb5;True;33
+defense-evasion;T1112;command_prompt;['windows'];Windows Add Registry Value to Load Service in Safe Mode with Network;c173c948-65e5-499c-afbe-433722ed5bd4;True;34
 defense-evasion;T1218.005;command_prompt;['windows'];Mshta executes JavaScript Scheme Fetch Remote Payload With GetObject;1483fab9-4f52-4217-a9ce-daa9d7747cae;True;1
 defense-evasion;T1218.005;command_prompt;['windows'];Mshta executes VBScript to execute malicious command;906865c3-e05f-4acc-85c4-fbc185455095;True;2
 defense-evasion;T1218.005;powershell;['windows'];Mshta Executes Remote HTML Application (HTA);c4b97eeb-5249-4455-a607-59f95485cb45;True;3
@@ -792,7 +794,7 @@ impact;T1490;powershell;['windows'];Windows - Delete Volume Shadow Copies via WM
 impact;T1490;command_prompt;['windows'];Windows - Delete Backup Files;6b1dbaf6-cc8a-4ea6-891f-6058569653bf;True;6
 impact;T1490;command_prompt;['windows'];Windows - wbadmin Delete systemstatebackup;584331dd-75bc-4c02-9e0b-17f5fd81c748;True;7
 impact;T1490;command_prompt;['windows'];Windows - Disable the SR scheduled task;1c68c68d-83a4-4981-974e-8993055fa034;True;8
-impact;T1490;command_prompt;['windows'];Disable System Restore Through Registry;66e647d1-8741-4e43-b7c1-334760c2047f;False;9
+impact;T1490;command_prompt;['windows'];Disable System Restore Through Registry;66e647d1-8741-4e43-b7c1-334760c2047f;True;9
 impact;T1491.001;powershell;['windows'];Replace Desktop Wallpaper;30558d53-9d76-41c4-9267-a7bd5184bed3;True;1
 impact;T1496;bash;['macos', 'linux'];macOS/Linux - Simulate CPU Load with Yes;904a5a0e-fb02-490d-9f8d-0e256eb37549;False;1
 impact;T1489;command_prompt;['windows'];Windows - Stop service using Service Controller;21dfb440-830d-4c86-a3e5-2a491d5a8d04;True;1
@@ -958,8 +960,8 @@ discovery;T1049;powershell;['windows'];System Discovery using SharpView;96f974bb
 discovery;T1033;command_prompt;['windows'];System Owner/User Discovery;4c4959bf-addf-4b4a-be86-8d09cc1857aa;True;1
 discovery;T1033;sh;['linux', 'macos'];System Owner/User Discovery;2a9b677d-a230-44f4-ad86-782df1ef108c;False;2
 discovery;T1033;powershell;['windows'];Find computers where user has session - Stealth mode (PowerView);29857f27-a36f-4f7e-8084-4557cd6207ca;True;3
-discovery;T1033;powershell;['windows'];User Discovery With Env Vars PowerShell Script;dcb6cdee-1fb0-4087-8bf8-88cfd136ba51;False;4
-discovery;T1033;powershell;['windows'];GetCurrent User with PowerShell Script;1392bd0f-5d5a-429e-81d9-eb9d4d4d5b3b;False;5
+discovery;T1033;powershell;['windows'];User Discovery With Env Vars PowerShell Script;dcb6cdee-1fb0-4087-8bf8-88cfd136ba51;True;4
+discovery;T1033;powershell;['windows'];GetCurrent User with PowerShell Script;1392bd0f-5d5a-429e-81d9-eb9d4d4d5b3b;True;5
 discovery;T1007;command_prompt;['windows'];System Service Discovery;89676ba1-b1f8-47ee-b940-2e1a113ebc71;True;1
 discovery;T1007;command_prompt;['windows'];System Service Discovery - net.exe;5f864a3f-8ce9-45c0-812c-bdf7d8aeacc3;True;2
 discovery;T1124;command_prompt;['windows'];System Time Discovery;20aba24b-e61f-4b26-b4ce-4784f763ca20;True;1
@@ -1111,7 +1113,7 @@ command-and-control;T1219;powershell;['windows'];AnyDesk Files Detected Test on 
 command-and-control;T1219;powershell;['windows'];LogMeIn Files Detected Test on Windows;d03683ec-aae0-42f9-9b4c-534780e0f8e1;True;3
 command-and-control;T1219;powershell;['windows'];GoToAssist Files Detected Test on Windows;1b72b3bd-72f8-4b63-a30b-84e91b9c3578;True;4
 command-and-control;T1219;powershell;['windows'];ScreenConnect Application Download and Install on Windows;4a18cc4e-416f-4966-9a9d-75731c4684c0;True;5
-command-and-control;T1219;powershell;['windows'];Ammyy Admin Software Execution;0ae9e327-3251-465a-a53b-485d4e3f58fa;False;6
+command-and-control;T1219;powershell;['windows'];Ammyy Admin Software Execution;0ae9e327-3251-465a-a53b-485d4e3f58fa;True;6
 command-and-control;T1132.001;sh;['macos', 'linux'];Base64 Encoded data.;1164f70f-9a88-4dff-b9ff-dc70e7bf0c25;False;1
 command-and-control;T1132.001;powershell;['windows'];XOR Encoded data.;c3ed6d2a-e3ad-400d-ad78-bbfdbfeacc08;True;2
 command-and-control;T1071.001;powershell;['windows'];Malicious User Agents - Powershell;81c13829-f6c9-45b8-85a6-053366d55297;True;1
