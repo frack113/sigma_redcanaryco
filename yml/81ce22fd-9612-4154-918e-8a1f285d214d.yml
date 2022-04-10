@@ -1,0 +1,33 @@
+Attack_name: Disable or Modify Tools
+Attack_description: |-
+  Adversaries may modify and/or disable security tools to avoid possible detection of their malware/tools and activities. This may take the many forms, such as killing security software processes or services, modifying / deleting Registry keys or configuration files so that tools do not operate properly, or other methods to interfere with security tools scanning or reporting information.
+
+  Adversaries may also tamper with artifacts deployed and utilized by security tools. Security tools may make dynamic changes to system components in order to maintain visibility into specific events. For example, security products may load their own modules and/or modify those loaded by processes to facilitate data collection. Similar to [Indicator Blocking](https://attack.mitre.org/techniques/T1562/006), adversaries may unhook or otherwise modify these features added by tools (especially those that exist in userland or are otherwise potentially accessible to adversaries) to avoid detection.(Citation: OutFlank System Calls)(Citation: MDSec System Calls)
+guid: 81ce22fd-9612-4154-918e-8a1f285d214d
+name: Disable Defender Using NirSoft AdvancedRun
+tactic:
+  - defense-evasion
+technique:
+  - T1562.001
+os:
+  - windows
+description: "Information on NirSoft AdvancedRun and its creators found here: http://www.nirsoft.net/utils/advanced_run.html\nThis Atomic will run AdvancedRun.exe with similar behavior identified during\
+  \ the WhisperGate campaign.\nSee https://medium.com/s2wblog/analysis-of-destructive-malware-whispergate-targeting-ukraine-9d5d158f19f3\nUpon successful execution, AdvancedRun.exe will attempt to run and\
+  \ stop Defender, and optionally attempt to delete the Defender folder on disk. \n"
+executor: powershell
+sigma: true
+sigma_rule:
+  - id: fa00b701-44c6-4679-994d-5a18afa8a707
+    name: proc_creation_win_susp_advancedrun_priv_user.yml
+  - id: a7ee1722-c3c5-aeff-3212-c777e4733217
+    name: proc_creation_win_powershell_disable_windef_av.yml
+  - id: d2b749ee-4225-417e-b20e-a8d2193cbb84
+    name: proc_creation_win_susp_advancedrun.yml
+  - id: dca91cfd-d7ab-4c66-8da7-ee57d487b35b
+    name: proc_creation_win_susp_run_folder.yml
+  - id: fa34b441-961a-42fa-a100-ecc28c886725
+    name: proc_access_win_susp_proc_access_lsass_susp_source.yml
+  - id: 678dfc63-fefb-47a5-a04c-26bcf8cc9f65
+    name: proc_access_win_rare_proc_access_lsass.yml
+  - id: 32d0d3e2-e58d-4d41-926b-18b520b2b32d
+    name: proc_access_win_cred_dump_lsass_access.yml

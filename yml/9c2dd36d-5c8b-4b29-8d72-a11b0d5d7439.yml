@@ -23,5 +23,7 @@ description: |
   https://blog.malwarebytes.com/101/2016/01/the-windows-vaults/
   https://medium.com/threatpunter/detecting-adversary-tradecraft-with-image-load-event-logging-and-eql-8de93338c16
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 58f50261-c53b-4c88-bd12-1d71f12eda4c
+    name: proc_creation_win_susp_vaultcmd.yml

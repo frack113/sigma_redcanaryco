@@ -108,11 +108,11 @@ credential-access;T1606.002;powershell;['azure-ad'];Golden SAML;b16a03bc-1089-4d
 credential-access;T1003.002;command_prompt;['windows'];Registry dump of SAM, creds, and secrets;5c2571d0-1572-416d-9676-812e64ca9f44;True;1
 credential-access;T1003.002;command_prompt;['windows'];Registry parse with pypykatz;a96872b2-cbf3-46cf-8eb4-27e8c0e85263;True;2
 credential-access;T1003.002;command_prompt;['windows'];esentutl.exe SAM copy;a90c2f4d-6726-444e-99d2-a00cd7c20480;True;3
-credential-access;T1003.002;powershell;['windows'];PowerDump Registry dump of SAM for hashes and usernames;804f28fc-68fc-40da-b5a2-e9d0bce5c193;True;4
+credential-access;T1003.002;powershell;['windows'];PowerDump Hashes and Usernames from Registry;804f28fc-68fc-40da-b5a2-e9d0bce5c193;True;4
 credential-access;T1003.002;powershell;['windows'];dump volume shadow copy hives with certutil;eeb9751a-d598-42d3-b11c-c122d9c3f6c7;True;5
 credential-access;T1003.002;powershell;['windows'];dump volume shadow copy hives with System.IO.File;9d77fed7-05f8-476e-a81b-8ff0472c64d0;True;6
-credential-access;T1539;powershell;['windows'];Steal Firefox Cookies (Windows);4b437357-f4e9-4c84-9fa6-9bcee6f826aa;False;1
-credential-access;T1555.004;command_prompt;['windows'];Access Saved Credentials via VaultCmd;9c2dd36d-5c8b-4b29-8d72-a11b0d5d7439;False;1
+credential-access;T1539;powershell;['windows'];Steal Firefox Cookies (Windows);4b437357-f4e9-4c84-9fa6-9bcee6f826aa;True;1
+credential-access;T1555.004;command_prompt;['windows'];Access Saved Credentials via VaultCmd;9c2dd36d-5c8b-4b29-8d72-a11b0d5d7439;True;1
 collection;T1560;powershell;['windows'];Compress Data for Exfiltration With PowerShell;41410c60-614d-4b9d-b66e-b0192dd9c597;True;1
 collection;T1560.002;bash;['linux'];Compressing data using GZip in Python (Linux);391f5298-b12d-4636-8482-35d9c17d53a8;False;1
 collection;T1560.002;bash;['linux'];Compressing data using bz2 in Python (Linux);c75612b2-9de0-4d7c-879c-10d7b077072d;False;2
@@ -215,6 +215,7 @@ privilege-escalation;T1543.001;bash;['macos'];Launch Agent;a5983dee-bf6c-4eaf-95
 privilege-escalation;T1543.004;bash;['macos'];Launch Daemon;03ab8df5-3a6b-4417-b6bd-bb7a5cfd74cf;False;1
 privilege-escalation;T1053.004;bash;['macos'];Event Monitor Daemon Persistence;11979f23-9b9d-482a-9935-6fc9cd022c3e;False;1
 privilege-escalation;T1078.003;command_prompt;['windows'];Create local account with admin privileges;a524ce99-86de-4db6-b4f9-e08f35a47a15;True;1
+privilege-escalation;T1078.003;bash;['macos'];Create local account with admin privileges - MacOS;f1275566-1c26-4b66-83e3-7f9f7f964daa;False;2
 privilege-escalation;T1037.002;manual;['macos'];Logon Scripts - Mac;f047c7de-a2d9-406e-a62b-12a09d9516f4;False;1
 privilege-escalation;T1037.001;command_prompt;['windows'];Logon Scripts;d6042746-07d4-4c92-9ad8-e644c114a231;True;1
 privilege-escalation;T1546.007;command_prompt;['windows'];Netsh Helper DLL Registration;3244697d-5a3a-4dfc-941c-550f69f91a4d;True;1
@@ -408,6 +409,7 @@ defense-evasion;T1562.001;powershell;['office-365'];office-365-Disable-AntiPhish
 defense-evasion;T1562.001;command_prompt;['windows'];Disable Windows Defender with DISM;871438ac-7d6e-432a-b27d-3e7db69faf58;True;26
 defense-evasion;T1562.001;powershell;['windows'];Disable Defender with Defender Control;178136d8-2778-4d7a-81f3-d517053a4fd6;True;27
 defense-evasion;T1562.001;powershell;['windows'];Disable Windows Defender Tamper Protection;5fde6578-9419-46ef-9258-269dc8656c3e;False;28
+defense-evasion;T1562.001;powershell;['windows'];Disable Defender Using NirSoft AdvancedRun;81ce22fd-9612-4154-918e-8a1f285d214d;True;29
 defense-evasion;T1484.002;powershell;['azure-ad'];Add Federation to Azure AD;8906c5d0-3ee5-4f63-897a-f6cafd3fdbb7;False;1
 defense-evasion;T1574.006;bash;['linux'];Shared Library Injection via /etc/ld.so.preload;39cb0e67-dd0d-4b74-a74b-c072db7ae991;False;1
 defense-evasion;T1574.006;bash;['linux'];Shared Library Injection via LD_PRELOAD;bc219ff7-789f-4d51-9142-ecae3397deae;False;2
@@ -469,6 +471,7 @@ defense-evasion;T1222.002;bash;['macos', 'linux'];chown - Change file or folder 
 defense-evasion;T1222.002;bash;['macos', 'linux'];chown - Change file or folder ownership recursively;3b015515-b3d8-44e9-b8cd-6fa84faf30b2;False;8
 defense-evasion;T1222.002;sh;['macos', 'linux'];chattr - Remove immutable file attribute;e7469fe2-ad41-4382-8965-99b94dd3c13f;False;9
 defense-evasion;T1078.003;command_prompt;['windows'];Create local account with admin privileges;a524ce99-86de-4db6-b4f9-e08f35a47a15;True;1
+defense-evasion;T1078.003;bash;['macos'];Create local account with admin privileges - MacOS;f1275566-1c26-4b66-83e3-7f9f7f964daa;False;2
 defense-evasion;T1127.001;command_prompt;['windows'];MSBuild Bypass Using Inline Tasks (C#);58742c0f-cb01-44cd-a60b-fb26e8871c93;True;1
 defense-evasion;T1127.001;command_prompt;['windows'];MSBuild Bypass Using Inline Tasks (VB);ab042179-c0c5-402f-9bc8-42741f5ce359;True;2
 defense-evasion;T1553.005;powershell;['windows'];Mount ISO image;002cca30-4778-4891-878a-aaffcfa502fa;True;1
@@ -583,8 +586,8 @@ defense-evasion;T1207;powershell;['windows'];DCShadow (Active Directory);0f4c5eb
 defense-evasion;T1014;sh;['linux'];Loadable Kernel Module based Rootkit;dfb50072-e45a-4c75-a17e-a484809c8553;False;1
 defense-evasion;T1014;sh;['linux'];Loadable Kernel Module based Rootkit;75483ef8-f10f-444a-bf02-62eb0e48db6f;False;2
 defense-evasion;T1564.006;command_prompt;['windows'];Register Portable Virtualbox;c59f246a-34f8-4e4d-9276-c295ef9ba0dd;True;1
-defense-evasion;T1564.006;command_prompt;['windows'];Create and start VirtualBox virtual machine;88b81702-a1c0-49a9-95b2-2dd53d755767;False;2
-defense-evasion;T1564.006;powershell;['windows'];Create and start Hyper-V virtual machine;fb8d4d7e-f5a4-481c-8867-febf13f8b6d3;False;3
+defense-evasion;T1564.006;command_prompt;['windows'];Create and start VirtualBox virtual machine;88b81702-a1c0-49a9-95b2-2dd53d755767;True;2
+defense-evasion;T1564.006;powershell;['windows'];Create and start Hyper-V virtual machine;fb8d4d7e-f5a4-481c-8867-febf13f8b6d3;True;3
 defense-evasion;T1218.011;command_prompt;['windows'];Rundll32 execute JavaScript Remote Payload With GetObject;cf3bdb9a-dd11-4b6c-b0d0-9e22b68a71be;True;1
 defense-evasion;T1218.011;command_prompt;['windows'];Rundll32 execute VBscript command;638730e7-7aed-43dc-bf8c-8117f805f5bb;True;2
 defense-evasion;T1218.011;command_prompt;['windows'];Rundll32 advpack.dll Execution;d91cae26-7fc1-457b-a854-34c8aad48c89;True;3
@@ -715,6 +718,7 @@ persistence;T1136.001;powershell;['windows'];Create a new user in PowerShell;bc8
 persistence;T1136.001;bash;['linux'];Create a new user in Linux with `root` UID and GID.;a1040a30-d28b-4eda-bd99-bb2861a4616c;False;5
 persistence;T1136.001;command_prompt;['windows'];Create a new Windows admin user;fda74566-a604-4581-a4cc-fbbe21d66559;True;6
 persistence;T1078.003;command_prompt;['windows'];Create local account with admin privileges;a524ce99-86de-4db6-b4f9-e08f35a47a15;True;1
+persistence;T1078.003;bash;['macos'];Create local account with admin privileges - MacOS;f1275566-1c26-4b66-83e3-7f9f7f964daa;False;2
 persistence;T1037.002;manual;['macos'];Logon Scripts - Mac;f047c7de-a2d9-406e-a62b-12a09d9516f4;False;1
 persistence;T1037.001;command_prompt;['windows'];Logon Scripts;d6042746-07d4-4c92-9ad8-e644c114a231;True;1
 persistence;T1546.007;command_prompt;['windows'];Netsh Helper DLL Registration;3244697d-5a3a-4dfc-941c-550f69f91a4d;True;1
@@ -945,6 +949,7 @@ discovery;T1082;command_prompt;['windows'];Windows MachineGUID Discovery;224b4da
 discovery;T1082;powershell;['windows'];Griffon Recon;69bd4abe-8759-49a6-8d21-0f15822d6370;True;9
 discovery;T1082;command_prompt;['windows'];Environment variables discovery on windows;f400d1c0-1804-4ff8-b069-ef5ddd2adbf3;False;10
 discovery;T1082;sh;['macos', 'linux'];Environment variables discovery on macos and linux;fcbdd43f-f4ad-42d5-98f3-0218097e2720;False;11
+discovery;T1082;sh;['macos'];Show System Integrity Protection status (MacOS);327cc050-9e99-4c8e-99b5-1d15f2fb6b96;False;12
 discovery;T1016;command_prompt;['windows'];System Network Configuration Discovery on Windows;970ab6a1-0157-4f3f-9a73-ec4166754b23;True;1
 discovery;T1016;command_prompt;['windows'];List Windows Firewall Rules;038263cb-00f4-4b0a-98ae-0696c67e1752;True;2
 discovery;T1016;sh;['macos', 'linux'];System Network Configuration Discovery;c141bbdb-7fca-4254-9fd6-f47e79447e17;False;3
@@ -1138,6 +1143,7 @@ initial-access;T1078.001;command_prompt;['windows'];Enable Guest account with RD
 initial-access;T1078.001;command_prompt;['windows'];Activate Guest Account;aa6cb8c4-b582-4f8e-b677-37733914abda;True;2
 initial-access;T1133;powershell;['windows'];Running Chrome VPN Extensions via the Registry 2 vpn extension;4c8db261-a58b-42a6-a866-0a294deedde4;True;1
 initial-access;T1078.003;command_prompt;['windows'];Create local account with admin privileges;a524ce99-86de-4db6-b4f9-e08f35a47a15;True;1
+initial-access;T1078.003;bash;['macos'];Create local account with admin privileges - MacOS;f1275566-1c26-4b66-83e3-7f9f7f964daa;False;2
 initial-access;T1091;powershell;['windows'];USB Malware Spread Simulation;d44b7297-622c-4be8-ad88-ec40d7563c75;True;1
 initial-access;T1566.001;powershell;['windows'];Download Macro-Enabled Phishing Attachment;114ccff9-ae6d-4547-9ead-4cd69f687306;True;1
 initial-access;T1566.001;powershell;['windows'];Word spawned a command shell and used an IP address in the command line;cbb6799a-425c-4f83-9194-5447a909d67f;True;2

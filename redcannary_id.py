@@ -33,6 +33,7 @@ redcannary_info = my_data(yaml)
 print ('Build sigmahq dictionary')
 sigmahq_uuid = {}
 sigmahq_name = {}
+sigmahq_url ={}
 sigmahq_tag = {}
 sigmahq_files = pathlib.Path('../sigma/rules').glob('**/*.yml')
 for sigmahq_yml in sigmahq_files:
@@ -40,6 +41,7 @@ for sigmahq_yml in sigmahq_files:
         yml_sigma = yaml.load(file)
         sigmahq_uuid[yml_sigma['id']] = sigmahq_yml.name
         sigmahq_name[sigmahq_yml.name] = yml_sigma['id']
+        sigmahq_url[sigmahq_yml.name] = str(pathlib.PurePosixPath(sigmahq_yml)).replace('../sigma','https://github.com/SigmaHQ/sigma/tree/master')
         if 'tags' in yml_sigma:
             for tag in yml_sigma['tags']:
                 if re.match('attack.t\d+.*',tag):

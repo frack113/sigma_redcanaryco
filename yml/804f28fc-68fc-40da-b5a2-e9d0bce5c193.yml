@@ -6,14 +6,14 @@ Attack_description: "Adversaries may attempt to extract credential material from
   \ to process the SAM database locally to retrieve hashes.(Citation: GitHub Creddump7)\n\nNotes: \n* RID 500 account is the local, built-in administrator.\n* RID 501 is the guest account.\n* User accounts\
   \ start with a RID of 1,000+.\n"
 guid: 804f28fc-68fc-40da-b5a2-e9d0bce5c193
-name: PowerDump Registry dump of SAM for hashes and usernames
+name: PowerDump Hashes and Usernames from Registry
 tactic:
   - credential-access
 technique:
   - T1003.002
 os:
   - windows
-description: Executes a hashdump by reading the hasshes from the registry.
+description: Executes a hashdump by reading the hashes from the registry.
 executor: powershell
 sigma: true
 sigma_rule:
