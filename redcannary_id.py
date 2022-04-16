@@ -77,6 +77,7 @@ if need_to_download:
 all_csv = [["tactic", "technique", "executor","os", "name", "guid", "sigma", "nmr_test"]]
 test_csv  = []
 warning_log = []
+valid_guid = []
 
 with pathlib.Path("index.yaml").open("r", encoding="UTF-8") as file:
     print("Load index.yaml...")
@@ -124,6 +125,7 @@ with pathlib.Path("index.yaml").open("r", encoding="UTF-8") as file:
                     redcannary_info.clean()
 
                     guid = test["auto_generated_guid"]
+                    valid_guid.append(guid)
                     yml_file = pathlib.Path(f"yml/{guid}.yml")
 
                     if yml_file.exists():
@@ -181,3 +183,10 @@ if len(warning_log) > 0:
     print('--------- Warning Found ---------')
     for warn_srt in warning_log:
         print(warn_srt)
+
+print('--------- Check remove Test ---------')
+guid_files = pathlib.Path('yml/').glob('**/*.yml')
+for guid_file in guid_files:
+    if guid_file.stem not in valid_guid:
+        print(f"{guid_file.name} remove")
+        guid_file.unlink()

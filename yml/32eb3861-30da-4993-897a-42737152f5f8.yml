@@ -3,23 +3,17 @@ Attack_description: |-
   Adversaries may abuse msiexec.exe to proxy execution of malicious payloads. Msiexec.exe is the command-line utility for the Windows Installer and is thus commonly associated with executing installation packages (.msi).(Citation: Microsoft msiexec) Msiexec.exe is digitally signed by Microsoft.
 
   Adversaries may abuse msiexec.exe to launch local or network accessible MSI files. Msiexec.exe can also execute DLLs.(Citation: LOLBAS Msiexec)(Citation: TrendMicro Msiexec Feb 2018) Since it is signed and native on Windows systems, msiexec.exe can be used to bypass application control solutions that do not account for its potential abuse. Msiexec.exe execution may also be elevated to SYSTEM privileges if the <code>AlwaysInstallElevated</code> policy is enabled.(Citation: Microsoft AlwaysInstallElevated 2018)
-guid: bde7d2fe-d049-458d-a362-abda32a7e649
-name: Msiexec.exe - Execute Remote MSI file
+guid: 32eb3861-30da-4993-897a-42737152f5f8
+name: WMI Win32_Product Class - Execute Local MSI file with an embedded DLL
 tactic:
   - defense-evasion
 technique:
   - T1218.007
 os:
   - windows
-description: 'Execute arbitrary MSI file retrieved remotely. Less commonly seen in application installation, commonly seen in malware execution. The MSI opens notepad.exe when sucessfully executed.
+description: 'Executes an MSI containing an embedded DLL using the WMI Win32_Product class
 
   '
-executor: command_prompt
-sigma: true
-sigma_rule:
-  - id: 79a87aa6-e4bd-42fc-a5bb-5e6fbdcd62f5
-    name: proc_creation_win_msiexec_install_quiet.yml
-  - id: 635dbb88-67b3-4b41-9ea5-a3af2dd88153
-    name: net_connection_win_binary_github_com.yml
-  - id: 8e5e38e4-5350-4c0b-895a-e872ce0dd54f
-    name: net_connection_win_msiexec.yml
+executor: powershell
+sigma: false
+sigma_rule: []
