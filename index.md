@@ -180,6 +180,30 @@ Caution: a test can generate a lot of noise...
 [DLP Evasion via Sensitive Data in VBA Macro over HTTP](tests/e2d85e66-cb66-4ed7-93b1-833fc56c9319.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
+### T1218.007
+[Msiexec.exe - Execute the DllUnregisterServer function of a DLL](tests/ab09ec85-4955-4f9c-b8e0-6851baf4d47f.md) ['windows'] (sigma rule :x:)
+
+[Msiexec.exe - Execute the DllRegisterServer function of a DLL](tests/0106ffa5-fab6-4c7d-82e3-e6b8867d5e5d.md) ['windows'] (sigma rule :x:)
+
+[Msiexec.exe - Execute Local MSI file with an embedded DLL](tests/628fa796-76c5-44c3-93aa-b9d8214fd568.md) ['windows'] (sigma rule :x:)
+
+[WMI Win32_Product Class - Execute Local MSI file with an embedded EXE](tests/55080eb0-49ae-4f55-a440-4167b7974f79.md) ['windows'] (sigma rule :x:)
+
+[Msiexec.exe - Execute Local MSI file with an embedded EXE](tests/ed3fa08a-ca18-4009-973e-03d13014d0e8.md) ['windows'] (sigma rule :x:)
+
+[Msiexec.exe - Execute Remote MSI file](tests/44a4bedf-ffe3-452e-bee4-6925ab125662.md) ['windows'] (sigma rule :x:)
+
+[Msiexec.exe - Execute Local MSI file with embedded VBScript](tests/8d73c7b0-c2b1-4ac1-881a-4aa644f76064.md) ['windows'] (sigma rule :x:)
+
+[WMI Win32_Product Class - Execute Local MSI file with embedded JScript](tests/882082f0-27c6-4eec-a43c-9aa80bccdb30.md) ['windows'] (sigma rule :x:)
+
+[WMI Win32_Product Class - Execute Local MSI file with an embedded DLL](tests/32eb3861-30da-4993-897a-42737152f5f8.md) ['windows'] (sigma rule :x:)
+
+[Msiexec.exe - Execute Local MSI file with embedded JScript](tests/a059b6c4-e7d6-4b2e-bcd7-9b2b33191a04.md) ['windows'] (sigma rule :x:)
+
+[WMI Win32_Product Class - Execute Local MSI file with embedded VBScript](tests/cf470d9a-58e7-43e5-b0d2-805dffc05576.md) ['windows'] (sigma rule :x:)
+
+
 ### T1562.008
 [Office 365 - Exchange Audit Log Disabled](tests/1ee572f3-056c-4632-a7fc-7e7c42b1543c.md) ['office-365'] (sigma rule :x:)
 
@@ -294,8 +318,6 @@ Caution: a test can generate a lot of noise...
 [Powershell Mimikatz](tests/66fb0bc1-3c3f-47e9-a298-550ecfefacbc.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Dump LSASS.exe Memory using Windows Task Manager](tests/dea6c349-f1c6-44f3-87a1-1ed33a59a607.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[Windows Credential Editor](tests/0f7c5301-6859-45ba-8b4d-1fac30fc31ed.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Offline Credential Theft With Mimikatz](tests/453acf13-1dbd-47d7-b28a-172ce9228023.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -783,8 +805,6 @@ Caution: a test can generate a lot of noise...
 
 [Uninstall Sysmon](tests/a316fb2e-5344-470d-91c1-23e15c374edc.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Disable Windows Defender Tamper Protection](tests/5fde6578-9419-46ef-9258-269dc8656c3e.md) ['windows'] (sigma rule :x:)
-
 [Disable Cb Response](tests/ae8943f7-0f8d-44de-962d-fbc2e2f03eb8.md) ['linux'] (sigma rule :x:)
 
 [Tamper with Windows Defender Evade Scanning -Process](tests/a123ce6a-3916-45d6-ba9c-7d4081315c27.md) ['windows'] (sigma rule :heavy_check_mark:)
@@ -1130,6 +1150,8 @@ Caution: a test can generate a lot of noise...
 
 ### T1569.002
 [Use PsExec to execute a command on a remote host](tests/873106b7-cfed-454b-8680-fa9f6400431c.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[psexec.py (Impacket)](tests/edbcd8c9-3639-4844-afad-455c91e95a35.md) ['linux'] (sigma rule :x:)
 
 [Execute a Command as a Service](tests/2382dee2-a75f-49aa-9378-f52df6ed3fb1.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1855,8 +1877,6 @@ Caution: a test can generate a lot of noise...
 ### T1014
 [Loadable Kernel Module based Rootkit](tests/75483ef8-f10f-444a-bf02-62eb0e48db6f.md) ['linux'] (sigma rule :x:)
 
-[Windows Signed Driver Rootkit Test](tests/8e4e1985-9a19-4529-b4b8-b7a49ff87fae.md) ['windows'] (sigma rule :x:)
-
 [Loadable Kernel Module based Rootkit](tests/dfb50072-e45a-4c75-a17e-a484809c8553.md) ['linux'] (sigma rule :x:)
 
 
@@ -1964,10 +1984,6 @@ Caution: a test can generate a lot of noise...
 [Utilize Clipboard to store or execute commands from](tests/0cd14633-58d4-4422-9ede-daa2c9474ae7.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
-### T1588.002
-[Run NirSoft AdvancedRun](tests/f7d43d35-d628-4582-bb03-01b1c5e10d11.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-
 ### T1030
 [Data Transfer Size Limits](tests/ab936c51-10f4-46ce-9144-e02137b2016a.md) ['macos', 'linux'] (sigma rule :x:)
 
@@ -2028,12 +2044,12 @@ Caution: a test can generate a lot of noise...
 [LLMNR Poisoning with Inveigh (PowerShell)](tests/deecd55f-afe0-4a62-9fba-4d1ba2deb321.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
+### T1615
+[Display group policy information via gpresult](tests/0976990f-53b1-4d3f-a185-6df5be429d3b.md) ['windows'] (sigma rule :x:)
+
+
 ### T1125
 [Registry artefact when application use webcam](tests/6581e4a7-42e3-43c5-a0d2-5a0d62f9702a.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-
-### T1610
-[Deploy container using nsenter container escape](tests/58004e22-022c-4c51-b4a8-2b85ac5c596b.md) ['linux'] (sigma rule :x:)
 
 
 ### T1003.006
@@ -2184,14 +2200,6 @@ Caution: a test can generate a lot of noise...
 [Attaches Command Prompt as a Debugger to a List of Target Processes](tests/3309f53e-b22b-4eb6-8fd2-a6cf58b355a9.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Replace binary of sticky keys](tests/934e90cf-29ca-48b3-863c-411737ad44e3.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-
-### T1218.007
-[Msiexec.exe - Execute Arbitrary DLL](tests/66f64bd5-7c35-4c24-953a-04ca30a0a0ec.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[Msiexec.exe - Execute Remote MSI file](tests/bde7d2fe-d049-458d-a362-abda32a7e649.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[Msiexec.exe - Execute Local MSI file](tests/0683e8f7-a27b-4b62-b7ab-dc7d4fed1df8.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1202

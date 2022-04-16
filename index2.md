@@ -238,7 +238,6 @@
   * T1105 [Windows - PowerShell Download](tests/42dc4460-9aa6-45d3-b1a6-3955d34e1fe8.md)
   * T1059.001 [Powershell MsXml COM object - with prompt](tests/388a7340-dbc1-4c9d-8e59-b75ad8c6d5da.md)
   * T1134.001 [Named pipe client impersonation](tests/90db9e27-8e7c-4c04-b602-a45927884966.md)
-  * T1218.007 [Msiexec.exe - Execute Remote MSI file](tests/bde7d2fe-d049-458d-a362-abda32a7e649.md)
   * T1087.002 [Get-DomainUser with PowerView](tests/93662494-5ed7-4454-a04c-8c8372808ac2.md)
   * T1059.001 [Invoke-AppPathBypass](tests/06a220b6-7e29-4bd8-9d07-5b4d86742372.md)
   * T1105 [File Download via PowerShell](tests/54a4daf1-71df-4383-9ba7-f1a295d8b6d2.md)
@@ -251,7 +250,6 @@
 * net_connection_win_imewdbld.yml
   * T1105 [Download a file with IMEWDBLD.exe](tests/1a02df58-09af-4064-a765-0babe1a0d1e2.md)
 * net_connection_win_msiexec.yml
-  * T1218.007 [Msiexec.exe - Execute Remote MSI file](tests/bde7d2fe-d049-458d-a362-abda32a7e649.md)
   * T1219 [ScreenConnect Application Download and Install on Windows](tests/4a18cc4e-416f-4966-9a9d-75731c4684c0.md)
   * T1219 [LogMeIn Files Detected Test on Windows](tests/d03683ec-aae0-42f9-9b4c-534780e0f8e1.md)
 * net_connection_win_powershell_network_connection.yml
@@ -321,8 +319,6 @@
   * T1016 [List Open Egress Ports](tests/4b467538-f102-491d-ace7-ed487b853bf5.md)
 * net_connection_win_suspicious_outbound_kerberos_connection.yml
   * T1016 [List Open Egress Ports](tests/4b467538-f102-491d-ace7-ed487b853bf5.md)
-* pipe_created_cred_dump_tools_named_pipes.yml
-  * T1003.001 [Windows Credential Editor](tests/0f7c5301-6859-45ba-8b4d-1fac30fc31ed.md)
 * pipe_created_tool_psexec.yml
   * T1569.002 [Use PsExec to execute a command on a remote host](tests/873106b7-cfed-454b-8680-fa9f6400431c.md)
   * T1207 [DCShadow (Active Directory)](tests/0f4c5eb0-98a0-4496-9c3d-656b4f2bc8f6.md)
@@ -972,7 +968,6 @@
   * T1562.001 [Disable Defender Using NirSoft AdvancedRun](tests/81ce22fd-9612-4154-918e-8a1f285d214d.md)
   * T1003.001 [Dump LSASS.exe using imported Microsoft DLLs](tests/86fc3f40-237f-4701-b155-81c01c48d697.md)
   * T1003.001 [Create Mini Dump of LSASS.exe using ProcDump](tests/7cede33f-0acd-44ef-9774-15511300b24b.md)
-  * T1588.002 [Run NirSoft AdvancedRun](tests/f7d43d35-d628-4582-bb03-01b1c5e10d11.md)
   * T1003.001 [Dump LSASS.exe Memory using comsvcs.dll](tests/2536dee2-12fb-459a-8c37-971844fa73be.md)
   * T1036.003 [Masquerading as Windows LSASS process](tests/5ba5a3d1-cf3c-4499-968a-a93155d1f717.md)
   * T1003.001 [Dump LSASS.exe Memory using ProcDump](tests/0be2230c-9ab3-4ac2-8826-3199b9a0ebf8.md)
@@ -1001,7 +996,6 @@
   * T1550.002 [Mimikatz Pass the Hash](tests/ec23cef9-27d9-46e4-a68d-6f75f7b86908.md)
   * T1003 [Gsecdump](tests/96345bfc-8ae7-4b6a-80b7-223200f24ef9.md)
   * T1003.001 [Create Mini Dump of LSASS.exe using ProcDump](tests/7cede33f-0acd-44ef-9774-15511300b24b.md)
-  * T1588.002 [Run NirSoft AdvancedRun](tests/f7d43d35-d628-4582-bb03-01b1c5e10d11.md)
   * T1003.001 [Dump LSASS.exe Memory using ProcDump](tests/0be2230c-9ab3-4ac2-8826-3199b9a0ebf8.md)
 * proc_access_win_susp_proc_access_lsass_susp_source.yml
   * T1204.002 [Excel 4 Macro](tests/4ea1fc97-8a46-4b4e-ba48-af43d2a98052.md)
@@ -1010,7 +1004,6 @@
   * T1003 [Gsecdump](tests/96345bfc-8ae7-4b6a-80b7-223200f24ef9.md)
   * T1562.001 [Disable Defender Using NirSoft AdvancedRun](tests/81ce22fd-9612-4154-918e-8a1f285d214d.md)
   * T1003.001 [Dump LSASS.exe using imported Microsoft DLLs](tests/86fc3f40-237f-4701-b155-81c01c48d697.md)
-  * T1003.001 [Windows Credential Editor](tests/0f7c5301-6859-45ba-8b4d-1fac30fc31ed.md)
 * proc_creation_win_abusing_debug_privilege.yml
   * T1563.002 [RDP hijacking](tests/a37ac520-b911-458e-8aed-c5f1576d9f46.md)
   * T1569.002 [Execute a Command as a Service](tests/2382dee2-a75f-49aa-9378-f52df6ed3fb1.md)
@@ -1028,7 +1021,6 @@
 * proc_creation_win_alternate_data_streams.yml
   * T1564.004 [Alternate Data Streams (ADS)](tests/8822c3b0-d9f9-4daf-a043-49f4602364f4.md)
 * proc_creation_win_always_install_elevated_windows_installer.yml
-  * T1218.007 [Msiexec.exe - Execute Local MSI file](tests/0683e8f7-a27b-4b62-b7ab-dc7d4fed1df8.md)
   * T1219 [LogMeIn Files Detected Test on Windows](tests/d03683ec-aae0-42f9-9b4c-534780e0f8e1.md)
 * proc_creation_win_anydesk.yml
   * T1219 [AnyDesk Files Detected Test on Windows](tests/6b8b7391-5c0a-4f8c-baee-78d8ce0ce330.md)
@@ -1141,8 +1133,6 @@
   * T1550.003 [Rubeus Kerberos Pass The Ticket](tests/a2fc4ec5-12c6-4fb4-b661-961f23f359cb.md)
   * T1558.004 [Rubeus asreproast](tests/615bd568-2859-41b5-9aed-61f6a88e48dd.md)
   * T1558.001 [Crafting Active Directory golden tickets with Rubeus](tests/e42d33cd-205c-4acf-ab59-a9f38f6bad9c.md)
-* proc_creation_win_hack_wce.yml
-  * T1003.001 [Windows Credential Editor](tests/0f7c5301-6859-45ba-8b4d-1fac30fc31ed.md)
 * proc_creation_win_hashcat.yml
   * T1110.002 [Password Cracking with Hashcat](tests/6d27df5d-69d4-4c91-bc33-5983ffe91692.md)
 * proc_creation_win_hh_chm.yml
@@ -1273,11 +1263,7 @@
   * T1059.001 [Powershell invoke mshta.exe download](tests/8a2ad40b-12c7-4b25-8521-2737b0a415af.md)
   * T1218.005 [Mshta executes VBScript to execute malicious command](tests/906865c3-e05f-4acc-85c4-fbc185455095.md)
   * T1218.005 [Invoke HTML Application - JScript Engine with Inline Protocol Handler](tests/d3eaaf6a-cdb1-44a9-9ede-b6c337d0d840.md)
-* proc_creation_win_msiexec_execute_dll.yml
-  * T1218.007 [Msiexec.exe - Execute Arbitrary DLL](tests/66f64bd5-7c35-4c24-953a-04ca30a0a0ec.md)
 * proc_creation_win_msiexec_install_quiet.yml
-  * T1218.007 [Msiexec.exe - Execute Remote MSI file](tests/bde7d2fe-d049-458d-a362-abda32a7e649.md)
-  * T1218.007 [Msiexec.exe - Execute Local MSI file](tests/0683e8f7-a27b-4b62-b7ab-dc7d4fed1df8.md)
   * T1219 [ScreenConnect Application Download and Install on Windows](tests/4a18cc4e-416f-4966-9a9d-75731c4684c0.md)
   * T1219 [LogMeIn Files Detected Test on Windows](tests/d03683ec-aae0-42f9-9b4c-534780e0f8e1.md)
 * proc_creation_win_mstsc.yml
@@ -1395,7 +1381,6 @@
   * T1562.001 [Tamper with Windows Defender Evade Scanning -Folder](tests/0b19f4ee-de90-4059-88cb-63c800c683ed.md)
 * proc_creation_win_powershell_disable_windef_av.yml
   * T1562.001 [Disable Defender Using NirSoft AdvancedRun](tests/81ce22fd-9612-4154-918e-8a1f285d214d.md)
-  * T1588.002 [Run NirSoft AdvancedRun](tests/f7d43d35-d628-4582-bb03-01b1c5e10d11.md)
   * T1562.001 [Tamper with Windows Defender Command Prompt](tests/aa875ed4-8935-47e2-b2c5-6ec00ab220d2.md)
 * proc_creation_win_powershell_downgrade_attack.yml
   * T1059.001 [PowerShell Downgrade Attack](tests/9148e7c4-9356-420e-a416-e896e9c0f73e.md)
@@ -1579,10 +1564,8 @@
   * T1018 [Remote System Discovery - adidnsdump](tests/95e19466-469e-4316-86d2-1dc401b5a959.md)
 * proc_creation_win_susp_advancedrun.yml
   * T1562.001 [Disable Defender Using NirSoft AdvancedRun](tests/81ce22fd-9612-4154-918e-8a1f285d214d.md)
-  * T1588.002 [Run NirSoft AdvancedRun](tests/f7d43d35-d628-4582-bb03-01b1c5e10d11.md)
 * proc_creation_win_susp_advancedrun_priv_user.yml
   * T1562.001 [Disable Defender Using NirSoft AdvancedRun](tests/81ce22fd-9612-4154-918e-8a1f285d214d.md)
-  * T1588.002 [Run NirSoft AdvancedRun](tests/f7d43d35-d628-4582-bb03-01b1c5e10d11.md)
 * proc_creation_win_susp_athremotefxvgpudisablementcommand.yml
   * T1218 [Invoke-ATHRemoteFXvGPUDisablementCommand base test](tests/9ebe7901-7edf-45c0-b5c7-8366300919db.md)
 * proc_creation_win_susp_calc.yml
@@ -2142,8 +2125,6 @@
   * T1485 [Windows - Overwrite file with Sysinternals SDelete](tests/476419b5-aebf-4366-a131-ae3e8dae5fc2.md)
 * registry_delete_removal_amsi_registry_key.yml
   * T1562.001 [AMSI Bypass - Remove AMSI Provider Reg Key](tests/13f09b91-c953-438e-845b-b585e51cac9b.md)
-* registry_event_hack_wce_reg.yml
-  * T1003.001 [Windows Credential Editor](tests/0f7c5301-6859-45ba-8b4d-1fac30fc31ed.md)
 * registry_event_persistence_recycle_bin.yml
   * T1547.001 [Add persistance via Recycle bin](tests/bda6a3d6-7aa7-4e89-908b-306772e9662f.md)
 * registry_event_shell_open_keys_manipulation.yml
