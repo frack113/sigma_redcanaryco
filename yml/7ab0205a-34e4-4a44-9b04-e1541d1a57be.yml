@@ -1,0 +1,20 @@
+Attack_name: Domain Account
+Attack_description: |-
+  Adversaries may attempt to get a listing of domain accounts. This information can help adversaries determine which domain accounts exist to aid in follow-on behavior.
+
+  Commands such as <code>net user /domain</code> and <code>net group /domain</code> of the [Net](https://attack.mitre.org/software/S0039) utility, <code>dscacheutil -q group</code>on macOS, and <code>ldapsearch</code> on Linux can list domain users and groups.
+guid: 7ab0205a-34e4-4a44-9b04-e1541d1a57be
+name: Enumerate Linked Policies In ADSISearcher Discovery
+tactic:
+  - discovery
+technique:
+  - T1087.002
+os:
+  - windows
+description: |
+  The following Atomic test will utilize ADSISearcher to enumerate organizational unit within Active Directory.
+  Upon successful execution a listing of users will output with their paths in AD.
+  Reference: https://medium.com/@pentesttas/discover-hidden-gpo-s-on-active-directory-using-ps-adsi-a284b6814c81
+executor: powershell
+sigma: false
+sigma_rule: []

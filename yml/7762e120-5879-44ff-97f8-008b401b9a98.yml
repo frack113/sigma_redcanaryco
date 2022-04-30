@@ -1,0 +1,23 @@
+Attack_name: Data from Network Shared Drive
+Attack_description: Adversaries may search network shares on computers they have compromised to find files of interest. Sensitive data can be collected from remote systems via shared network drives (host
+  shared directory, network file server, etc.) that are accessible from the current system prior to Exfiltration. Interactive command shells may be in use, and common functionality within [cmd](https://attack.mitre.org/software/S0106)
+  may be used to gather information.
+guid: 7762e120-5879-44ff-97f8-008b401b9a98
+name: Copy a sensitive File over Administive share with Powershell
+tactic:
+  - collection
+technique:
+  - T1039
+os:
+  - windows
+description: |-
+  Copy from sensitive File from the c$ of another LAN computer with powershell
+  https://twitter.com/SBousseaden/status/1211636381086339073
+executor: powershell
+sigma: true
+sigma_rule:
+  - id: 855bc8b5-2ae8-402e-a9ed-b889e6df1900
+    name: proc_creation_win_susp_copy_lateral_movement.yml
+  - id: a6a39bdb-935c-4f0a-ab77-35f4bbf44d33
+    name: proc_creation_win_susp_script_exec_from_temp.yml
+

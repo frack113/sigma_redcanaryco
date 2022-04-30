@@ -1,0 +1,21 @@
+Attack_name: Silver Ticket
+Attack_description: |-
+  Adversaries who have the password hash of a target service account (e.g. SharePoint, MSSQL) may forge Kerberos ticket granting service (TGS) tickets, also known as silver tickets. Kerberos TGS tickets are also known as service tickets.(Citation: ADSecurity Silver Tickets)
+
+  Silver tickets are more limited in scope in than golden tickets in that they only enable adversaries to access a particular resource (e.g. MSSQL) and the system that hosts the resource; however, unlike golden tickets, adversaries with the ability to forge silver tickets are able to create TGS tickets without interacting with the Key Distribution Center (KDC), potentially making detection more difficult.(Citation: ADSecurity Detecting Forged Tickets)
+
+  Password hashes for target services may be obtained using [OS Credential Dumping](https://attack.mitre.org/techniques/T1003) or [Kerberoasting](https://attack.mitre.org/techniques/T1558/003).
+guid: 385e59aa-113e-4711-84d9-f637aef01f2c
+name: Crafting Active Directory silver tickets with mimikatz
+tactic:
+  - credential-access
+technique:
+  - T1558.002
+os:
+  - windows
+description: |
+  Once the hash of service account is retrieved it is possible to forge Kerberos ticket granting service (TGS) tickets, also known as silver tickets.
+  The generated ticket is injected in a new empty Windows session and discarded after, so it does not pollute the current Windows session.
+executor: powershell
+sigma: false
+sigma_rule: []

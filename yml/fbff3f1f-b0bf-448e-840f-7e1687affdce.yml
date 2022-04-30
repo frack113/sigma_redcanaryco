@@ -1,0 +1,33 @@
+Attack_name: Remote Access Software
+Attack_description: |-
+  An adversary may use legitimate desktop support and remote access software, such as Team Viewer, Go2Assist, LogMein, AmmyyAdmin, etc, to establish an interactive command and control channel to target systems within networks. These services are commonly used as legitimate technical support software, and may be allowed by application control within a target environment. Remote access tools like VNC, Ammyy, and Teamviewer are used frequently when compared with other legitimate software commonly used by adversaries. (Citation: Symantec Living off the Land)
+
+  Remote access tools may be established and used post-compromise as alternate communications channel for redundant access or as a way to establish an interactive remote desktop session with the target system. They may also be used as a component of malware to establish a reverse connection or back-connect to a service or adversary controlled system.
+
+  Admin tools such as TeamViewer have been used by several groups targeting institutions in countries of interest to the Russian state and criminal campaigns. (Citation: CrowdStrike 2015 Global Threat Report) (Citation: CrySyS Blog TeamSpy)
+guid: fbff3f1f-b0bf-448e-840f-7e1687affdce
+name: RemotePC Software Execution
+tactic:
+  - command-and-control
+technique:
+  - T1219
+os:
+  - windows
+description: "An adversary may attempt to trick the user into downloading RemotePC Software for use as a C2 channel. \nUpon successful execution, RemotePC will be executed. \n"
+executor: powershell
+sigma: true
+sigma_rule:
+  - id: dca91cfd-d7ab-4c66-8da7-ee57d487b35b
+    name: proc_creation_win_susp_run_folder.yml
+  - id: 86085955-ea48-42a2-9dd3-85d4c36b167d
+    name: proc_creation_win_susp_taskkill.yml
+  - id: 7fe71fc9-de3b-432a-8d57-8c809efc10ab
+    name: proc_creation_win_new_service_creation.yml
+  - id: 82a19e3a-2bfe-4a91-8c0d-5d4c98fbb719
+    name: proc_creation_win_possible_applocker_bypass.yml
+  - id: 73bba97f-a82d-42ce-b315-9182e76c57b1
+    name: proc_creation_win_regedit_import_keys.yml
+  - id: 20f0ee37-5942-4e45-b7d5-c5b5db9df5cd
+    name: registry_set_asep_reg_keys_modification_currentversion.yml
+  - id: cd951fdc-4b2f-47f5-ba99-a33bf61e3770
+    name: proc_creation_win_always_install_elevated_windows_installer.yml

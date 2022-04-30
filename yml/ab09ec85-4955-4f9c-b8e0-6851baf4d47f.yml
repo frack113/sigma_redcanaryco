@@ -15,5 +15,7 @@ description: 'Loads a DLL into msiexec.exe and calls its DllUnregisterServer fun
 
   '
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 84f52741-8834-4a8c-a413-2eb2269aa6c8
+    name: proc_creation_win_msiexec_dll.yml

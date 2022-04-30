@@ -15,5 +15,7 @@ description: 'Executes an MSI containing an embedded DLL using the WMI Win32_Pro
 
   '
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 91109523-17f0-4248-a800-f81d9e7c081d
+    name: posh_ps_win32_product_install_msi.yml

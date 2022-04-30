@@ -15,5 +15,7 @@ description: 'Loads a DLL into msiexec.exe and calls its DllRegisterServer funct
 
   '
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 6f4191bb-912b-48a8-9ce7-682769541e6d
+    name: proc_creation_win_msiexec_execute_dll.yml
