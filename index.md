@@ -1131,6 +1131,8 @@ Caution: a test can generate a lot of noise...
 ### T1555.003
 [LaZagne - Credentials from Browser](tests/9a2915b3-3954-4cce-8c76-00fbf4dbd014.md) ['windows'] (sigma rule :heavy_check_mark:)
 
+[LaZagne.py - Dump Credentials from Firefox Browser](tests/87e88698-621b-4c45-8a89-4eaebdeaabb1.md) ['linux'] (sigma rule :x:)
+
 [Simulating access to Windows Firefox Login Data](tests/eb8da98a-2e16-4551-b3dd-83de49baa14c.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Simulating access to Opera Login Data](tests/28498c17-57e4-495a-b0be-cc1e36de408b.md) ['windows'] (sigma rule :heavy_check_mark:)
@@ -1425,7 +1427,7 @@ Caution: a test can generate a lot of noise...
 ### T1562.006
 [Disable .NET Event Tracing for Windows Via Registry (powershell)](tests/19c07a45-452d-4620-90ed-4c34fffbe758.md) ['windows'] (sigma rule :x:)
 
-[Disable Powershell ETW Provider - Windows](tests/6f118276-121d-4c09-bb58-a8fb4a72ee84.md) ['windows'] (sigma rule :x:)
+[Disable Powershell ETW Provider - Windows](tests/6f118276-121d-4c09-bb58-a8fb4a72ee84.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Disable .NET Event Tracing for Windows Via Registry (cmd)](tests/8a4c33be-a0d3-434a-bee6-315405edbd5b.md) ['windows'] (sigma rule :x:)
 
@@ -1589,7 +1591,7 @@ Caution: a test can generate a lot of noise...
 ### T1539
 [Steal Firefox Cookies (Windows)](tests/4b437357-f4e9-4c84-9fa6-9bcee6f826aa.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Steal Chrome Cookies (Windows)](tests/26a6b840-4943-4965-8df5-ef1f9a282440.md) ['windows'] (sigma rule :x:)
+[Steal Chrome Cookies (Windows)](tests/26a6b840-4943-4965-8df5-ef1f9a282440.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1218.003
@@ -1637,7 +1639,7 @@ Caution: a test can generate a lot of noise...
 
 [Adfind - Enumerate Active Directory Admins](tests/b95fd967-4e62-4109-b48d-265edfd28c3a.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Enumerate Linked Policies In ADSISearcher Discovery](tests/7ab0205a-34e4-4a44-9b04-e1541d1a57be.md) ['windows'] (sigma rule :x:)
+[Enumerate Linked Policies In ADSISearcher Discovery](tests/7ab0205a-34e4-4a44-9b04-e1541d1a57be.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Adfind - Enumerate Active Directory Exchange AD Objects](tests/5e2938fb-f919-47b6-8b29-2f6a1f718e99.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1655,7 +1657,7 @@ Caution: a test can generate a lot of noise...
 
 [Automated AD Recon (ADRecon)](tests/95018438-454a-468c-a0fa-59c800149b59.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Enumerate Root Domain linked policies Discovery](tests/00c652e2-0750-4ca6-82ff-0204684a6fe4.md) ['windows'] (sigma rule :x:)
+[Enumerate Root Domain linked policies Discovery](tests/00c652e2-0750-4ca6-82ff-0204684a6fe4.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Get-DomainUser with PowerView](tests/93662494-5ed7-4454-a04c-8c8372808ac2.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1943,7 +1945,7 @@ Caution: a test can generate a lot of noise...
 
 [crackmapexec Pass the Hash](tests/eb05b028-16c8-4ad8-adea-6f5b219da9a9.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Invoke-WMIExec Pass the Hash](tests/f8757545-b00a-4e4e-8cfb-8cfb961ee713.md) ['windows'] (sigma rule :x:)
+[Invoke-WMIExec Pass the Hash](tests/f8757545-b00a-4e4e-8cfb-8cfb961ee713.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1552.002
@@ -2175,7 +2177,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1558.002
-[Crafting Active Directory silver tickets with mimikatz](tests/385e59aa-113e-4711-84d9-f637aef01f2c.md) ['windows'] (sigma rule :x:)
+[Crafting Active Directory silver tickets with mimikatz](tests/385e59aa-113e-4711-84d9-f637aef01f2c.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1556.003
