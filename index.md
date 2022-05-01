@@ -777,7 +777,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1614.001
-[Discover System Language by Registry Query](tests/631d4cf1-42c9-4209-8fe9-6bd4de9421be.md) ['windows'] (sigma rule :x:)
+[Discover System Language by Registry Query](tests/631d4cf1-42c9-4209-8fe9-6bd4de9421be.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Discover System Language with chcp](tests/d91473ca-944e-477a-b484-0e80217cd789.md) ['windows'] (sigma rule :x:)
 
@@ -1425,11 +1425,11 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1562.006
-[Disable .NET Event Tracing for Windows Via Registry (powershell)](tests/19c07a45-452d-4620-90ed-4c34fffbe758.md) ['windows'] (sigma rule :x:)
+[Disable .NET Event Tracing for Windows Via Registry (powershell)](tests/19c07a45-452d-4620-90ed-4c34fffbe758.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Disable Powershell ETW Provider - Windows](tests/6f118276-121d-4c09-bb58-a8fb4a72ee84.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Disable .NET Event Tracing for Windows Via Registry (cmd)](tests/8a4c33be-a0d3-434a-bee6-315405edbd5b.md) ['windows'] (sigma rule :x:)
+[Disable .NET Event Tracing for Windows Via Registry (cmd)](tests/8a4c33be-a0d3-434a-bee6-315405edbd5b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Logging Configuration Changes on Linux Host](tests/7d40bc58-94c7-4fbb-88d9-ebce9fcdb60c.md) ['linux'] (sigma rule :x:)
 
@@ -2295,7 +2295,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1615
-[Get-DomainGPO to display group policy information via PowerView](tests/4e524c4e-0e02-49aa-8df5-93f3f7959b9f.md) ['windows'] (sigma rule :x:)
+[Get-DomainGPO to display group policy information via PowerView](tests/4e524c4e-0e02-49aa-8df5-93f3f7959b9f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Display group policy information via gpresult](tests/0976990f-53b1-4d3f-a185-6df5be429d3b.md) ['windows'] (sigma rule :x:)
 
