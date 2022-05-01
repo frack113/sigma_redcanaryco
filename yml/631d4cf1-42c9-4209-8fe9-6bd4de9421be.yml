@@ -17,5 +17,7 @@ os:
   - windows
 description: "Identify System language by querying the registry on an endpoint. \n\nUpon successful execution, result in number format can be looked up to correlate the language.\n"
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 7090adee-82e2-4269-bd59-80691e7c6338
+    name: proc_creation_win_susp_codepage_lookup.yml

@@ -17,5 +17,7 @@ os:
   - windows
 description: Disables ETW for the .NET Framework using the reg.exe utility to update the Windows registry
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: bf4fc428-dcc3-4bbd-99fe-2422aeee2544
+    name: registry_set_etw_disabled.yml

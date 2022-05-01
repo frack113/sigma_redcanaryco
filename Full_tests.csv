@@ -451,8 +451,8 @@ defense-evasion;T1562.003;manual;['macos', 'linux'];Mac HISTCONTROL;468566d5-83e
 defense-evasion;T1562.006;bash;['linux'];Auditing Configuration Changes on Linux Host;212cfbcf-4770-4980-bc21-303e37abd0e3;False;1
 defense-evasion;T1562.006;bash;['linux'];Logging Configuration Changes on Linux Host;7d40bc58-94c7-4fbb-88d9-ebce9fcdb60c;False;2
 defense-evasion;T1562.006;powershell;['windows'];Disable Powershell ETW Provider - Windows;6f118276-121d-4c09-bb58-a8fb4a72ee84;True;3
-defense-evasion;T1562.006;command_prompt;['windows'];Disable .NET Event Tracing for Windows Via Registry (cmd);8a4c33be-a0d3-434a-bee6-315405edbd5b;False;4
-defense-evasion;T1562.006;powershell;['windows'];Disable .NET Event Tracing for Windows Via Registry (powershell);19c07a45-452d-4620-90ed-4c34fffbe758;False;5
+defense-evasion;T1562.006;command_prompt;['windows'];Disable .NET Event Tracing for Windows Via Registry (cmd);8a4c33be-a0d3-434a-bee6-315405edbd5b;True;4
+defense-evasion;T1562.006;powershell;['windows'];Disable .NET Event Tracing for Windows Via Registry (powershell);19c07a45-452d-4620-90ed-4c34fffbe758;True;5
 defense-evasion;T1070;command_prompt;['windows'];Indicator Removal using FSUtil;b4115c7a-0e92-47f0-a61e-17e7218b2435;True;1
 defense-evasion;T1202;command_prompt;['windows'];Indirect Command Execution - pcalua.exe;cecfea7a-5f03-4cdd-8bc8-6f7c22862440;True;1
 defense-evasion;T1202;command_prompt;['windows'];Indirect Command Execution - forfiles.exe;8b34a448-40d9-4fc3-a8c8-4bb286faf7dc;True;2
@@ -884,7 +884,7 @@ discovery;T1083;sh;['macos', 'linux'];Nix File and Directory Discovery;ffc8b249-
 discovery;T1083;sh;['macos', 'linux'];Nix File and Directory Discovery 2;13c5e1ae-605b-46c4-a79f-db28c77ff24e;False;4
 discovery;T1083;powershell;['windows'];Simulating MAZE Directory Enumeration;c6c34f61-1c3e-40fb-8a58-d017d88286d8;True;5
 discovery;T1615;command_prompt;['windows'];Display group policy information via gpresult;0976990f-53b1-4d3f-a185-6df5be429d3b;False;1
-discovery;T1615;powershell;['windows'];Get-DomainGPO to display group policy information via PowerView;4e524c4e-0e02-49aa-8df5-93f3f7959b9f;False;2
+discovery;T1615;powershell;['windows'];Get-DomainGPO to display group policy information via PowerView;4e524c4e-0e02-49aa-8df5-93f3f7959b9f;True;2
 discovery;T1087.001;sh;['linux'];Enumerate all accounts (Local);f8aab3dd-5990-4bf8-b8ab-2226c951696f;False;1
 discovery;T1087.001;sh;['linux', 'macos'];View sudoers access;fed9be70-0186-4bde-9f8a-20945f9370c2;False;2
 discovery;T1087.001;sh;['linux', 'macos'];View accounts with UID 0;c955a599-3653-4fe5-b631-f11c00eb0397;False;3
@@ -976,7 +976,7 @@ discovery;T1082;powershell;['windows'];Griffon Recon;69bd4abe-8759-49a6-8d21-0f1
 discovery;T1082;command_prompt;['windows'];Environment variables discovery on windows;f400d1c0-1804-4ff8-b069-ef5ddd2adbf3;False;10
 discovery;T1082;sh;['macos', 'linux'];Environment variables discovery on macos and linux;fcbdd43f-f4ad-42d5-98f3-0218097e2720;False;11
 discovery;T1082;sh;['macos'];Show System Integrity Protection status (MacOS);327cc050-9e99-4c8e-99b5-1d15f2fb6b96;False;12
-discovery;T1614.001;command_prompt;['windows'];Discover System Language by Registry Query;631d4cf1-42c9-4209-8fe9-6bd4de9421be;False;1
+discovery;T1614.001;command_prompt;['windows'];Discover System Language by Registry Query;631d4cf1-42c9-4209-8fe9-6bd4de9421be;True;1
 discovery;T1614.001;command_prompt;['windows'];Discover System Language with chcp;d91473ca-944e-477a-b484-0e80217cd789;False;2
 discovery;T1016;command_prompt;['windows'];System Network Configuration Discovery on Windows;970ab6a1-0157-4f3f-9a73-ec4166754b23;True;1
 discovery;T1016;command_prompt;['windows'];List Windows Firewall Rules;038263cb-00f4-4b0a-98ae-0696c67e1752;True;2
