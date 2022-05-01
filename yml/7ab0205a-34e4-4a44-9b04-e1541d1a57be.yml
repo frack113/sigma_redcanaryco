@@ -16,5 +16,13 @@ description: |
   Upon successful execution a listing of users will output with their paths in AD.
   Reference: https://medium.com/@pentesttas/discover-hidden-gpo-s-on-active-directory-using-ps-adsi-a284b6814c81
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: cef24b90-dddc-4ae1-a09a-8764872f69fc
+    name: posh_pm_suspicious_local_group_reco.yml
+  - id: d7bcd677-645d-4691-a8d4-7a5602b780d1
+    name: proc_creation_win_powershell_cmdline_special_characters.yml
+  - id: 9a132afa-654e-11eb-ae93-0242ac130002
+    name: proc_creation_win_ad_find_discovery.yml
+  - id: 1f21ec3f-810d-4b0e-8045-322202e22b4b
+    name: net_connection_win_powershell_network_connection.yml

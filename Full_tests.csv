@@ -30,6 +30,7 @@ credential-access;T1555.003;powershell;['windows'];Simulating access to Opera Lo
 credential-access;T1555.003;powershell;['windows'];Simulating access to Windows Firefox Login Data;eb8da98a-2e16-4551-b3dd-83de49baa14c;True;6
 credential-access;T1555.003;powershell;['windows'];Simulating access to Windows Edge Login Data;a6a5ec26-a2d1-4109-9d35-58b867689329;True;7
 credential-access;T1555.003;powershell;['windows'];Decrypt Mozilla Passwords with Firepwd.py;dc9cd677-c70f-4df5-bd1c-f114af3c2381;False;8
+credential-access;T1555.003;sh;['linux'];LaZagne.py - Dump Credentials from Firefox Browser;87e88698-621b-4c45-8a89-4eaebdeaabb1;False;9
 credential-access;T1552.002;command_prompt;['windows'];Enumeration for Credentials in Registry;b6ec082c-7384-46b3-a111-9a9b8b14e5e7;True;1
 credential-access;T1552.002;command_prompt;['windows'];Enumeration for PuTTY Credentials in Registry;af197fd7-e868-448e-9bd5-05d1bcd9d9e5;True;2
 credential-access;T1003.006;command_prompt;['windows'];DCSync (Active Directory);129efd28-8497-4c87-a1b0-73b9a870ca3e;True;1
@@ -112,9 +113,9 @@ credential-access;T1003.002;command_prompt;['windows'];esentutl.exe SAM copy;a90
 credential-access;T1003.002;powershell;['windows'];PowerDump Hashes and Usernames from Registry;804f28fc-68fc-40da-b5a2-e9d0bce5c193;True;4
 credential-access;T1003.002;powershell;['windows'];dump volume shadow copy hives with certutil;eeb9751a-d598-42d3-b11c-c122d9c3f6c7;True;5
 credential-access;T1003.002;powershell;['windows'];dump volume shadow copy hives with System.IO.File;9d77fed7-05f8-476e-a81b-8ff0472c64d0;True;6
-credential-access;T1558.002;powershell;['windows'];Crafting Active Directory silver tickets with mimikatz;385e59aa-113e-4711-84d9-f637aef01f2c;False;1
+credential-access;T1558.002;powershell;['windows'];Crafting Active Directory silver tickets with mimikatz;385e59aa-113e-4711-84d9-f637aef01f2c;True;1
 credential-access;T1539;powershell;['windows'];Steal Firefox Cookies (Windows);4b437357-f4e9-4c84-9fa6-9bcee6f826aa;True;1
-credential-access;T1539;powershell;['windows'];Steal Chrome Cookies (Windows);26a6b840-4943-4965-8df5-ef1f9a282440;False;2
+credential-access;T1539;powershell;['windows'];Steal Chrome Cookies (Windows);26a6b840-4943-4965-8df5-ef1f9a282440;True;2
 credential-access;T1555.004;command_prompt;['windows'];Access Saved Credentials via VaultCmd;9c2dd36d-5c8b-4b29-8d72-a11b0d5d7439;True;1
 collection;T1560;powershell;['windows'];Compress Data for Exfiltration With PowerShell;41410c60-614d-4b9d-b66e-b0192dd9c597;True;1
 collection;T1560.002;bash;['linux'];Compressing data using GZip in Python (Linux);391f5298-b12d-4636-8482-35d9c17d53a8;False;1
@@ -449,7 +450,7 @@ defense-evasion;T1562.003;sh;['linux', 'macos'];Disable history collection;4eafd
 defense-evasion;T1562.003;manual;['macos', 'linux'];Mac HISTCONTROL;468566d5-83e5-40c1-b338-511e1659628d;False;2
 defense-evasion;T1562.006;bash;['linux'];Auditing Configuration Changes on Linux Host;212cfbcf-4770-4980-bc21-303e37abd0e3;False;1
 defense-evasion;T1562.006;bash;['linux'];Logging Configuration Changes on Linux Host;7d40bc58-94c7-4fbb-88d9-ebce9fcdb60c;False;2
-defense-evasion;T1562.006;powershell;['windows'];Disable Powershell ETW Provider - Windows;6f118276-121d-4c09-bb58-a8fb4a72ee84;False;3
+defense-evasion;T1562.006;powershell;['windows'];Disable Powershell ETW Provider - Windows;6f118276-121d-4c09-bb58-a8fb4a72ee84;True;3
 defense-evasion;T1562.006;command_prompt;['windows'];Disable .NET Event Tracing for Windows Via Registry (cmd);8a4c33be-a0d3-434a-bee6-315405edbd5b;False;4
 defense-evasion;T1562.006;powershell;['windows'];Disable .NET Event Tracing for Windows Via Registry (powershell);19c07a45-452d-4620-90ed-4c34fffbe758;False;5
 defense-evasion;T1070;command_prompt;['windows'];Indicator Removal using FSUtil;b4115c7a-0e92-47f0-a61e-17e7218b2435;True;1
@@ -572,7 +573,7 @@ defense-evasion;T1134.004;powershell;['windows'];Parent PID Spoofing - Spawn fro
 defense-evasion;T1134.004;powershell;['windows'];Parent PID Spoofing - Spawn from New Process;2988133e-561c-4e42-a15f-6281e6a9b2db;True;5
 defense-evasion;T1550.002;command_prompt;['windows'];Mimikatz Pass the Hash;ec23cef9-27d9-46e4-a68d-6f75f7b86908;True;1
 defense-evasion;T1550.002;command_prompt;['windows'];crackmapexec Pass the Hash;eb05b028-16c8-4ad8-adea-6f5b219da9a9;True;2
-defense-evasion;T1550.002;powershell;['windows'];Invoke-WMIExec Pass the Hash;f8757545-b00a-4e4e-8cfb-8cfb961ee713;False;3
+defense-evasion;T1550.002;powershell;['windows'];Invoke-WMIExec Pass the Hash;f8757545-b00a-4e4e-8cfb-8cfb961ee713;True;3
 defense-evasion;T1550.003;command_prompt;['windows'];Mimikatz Kerberos Ticket Attack;dbf38128-7ba7-4776-bedf-cc2eed432098;True;1
 defense-evasion;T1550.003;powershell;['windows'];Rubeus Kerberos Pass The Ticket;a2fc4ec5-12c6-4fb4-b661-961f23f359cb;True;2
 defense-evasion;T1556.002;powershell;['windows'];Install and Register Password Filter DLL;a7961770-beb5-4134-9674-83d7e1fa865c;True;1
@@ -855,8 +856,8 @@ discovery;T1087.002;command_prompt;['windows'];Enumerate Default Domain Admin De
 discovery;T1087.002;powershell;['windows'];Enumerate Active Directory for Unconstrained Delegation;46f8dbe9-22a5-4770-8513-66119c5be63b;True;10
 discovery;T1087.002;powershell;['windows'];Get-DomainUser with PowerView;93662494-5ed7-4454-a04c-8c8372808ac2;True;11
 discovery;T1087.002;powershell;['windows'];Enumerate Active Directory Users with ADSISearcher;02e8be5a-3065-4e54-8cc8-a14d138834d3;True;12
-discovery;T1087.002;powershell;['windows'];Enumerate Linked Policies In ADSISearcher Discovery;7ab0205a-34e4-4a44-9b04-e1541d1a57be;False;13
-discovery;T1087.002;powershell;['windows'];Enumerate Root Domain linked policies Discovery;00c652e2-0750-4ca6-82ff-0204684a6fe4;False;14
+discovery;T1087.002;powershell;['windows'];Enumerate Linked Policies In ADSISearcher Discovery;7ab0205a-34e4-4a44-9b04-e1541d1a57be;True;13
+discovery;T1087.002;powershell;['windows'];Enumerate Root Domain linked policies Discovery;00c652e2-0750-4ca6-82ff-0204684a6fe4;True;14
 discovery;T1069.002;command_prompt;['windows'];Basic Permission Groups Discovery Windows (Domain);dd66d77d-8998-48c0-8024-df263dc2ce5d;True;1
 discovery;T1069.002;powershell;['windows'];Permission Groups Discovery PowerShell (Domain);6d5d8c96-3d2a-4da9-9d6d-9a9d341899a7;True;2
 discovery;T1069.002;command_prompt;['windows'];Elevated group enumeration using net group (Domain);0afb5163-8181-432e-9405-4322710c0c37;True;3
@@ -1086,7 +1087,7 @@ execution;T1047;command_prompt;['windows'];Application uninstall using WMIC;c510
 lateral-movement;T1021.003;powershell;['windows'];PowerShell Lateral Movement using MMC20;6dc74eb1-c9d6-4c53-b3b5-6f50ae339673;True;1
 lateral-movement;T1550.002;command_prompt;['windows'];Mimikatz Pass the Hash;ec23cef9-27d9-46e4-a68d-6f75f7b86908;True;1
 lateral-movement;T1550.002;command_prompt;['windows'];crackmapexec Pass the Hash;eb05b028-16c8-4ad8-adea-6f5b219da9a9;True;2
-lateral-movement;T1550.002;powershell;['windows'];Invoke-WMIExec Pass the Hash;f8757545-b00a-4e4e-8cfb-8cfb961ee713;False;3
+lateral-movement;T1550.002;powershell;['windows'];Invoke-WMIExec Pass the Hash;f8757545-b00a-4e4e-8cfb-8cfb961ee713;True;3
 lateral-movement;T1550.003;command_prompt;['windows'];Mimikatz Kerberos Ticket Attack;dbf38128-7ba7-4776-bedf-cc2eed432098;True;1
 lateral-movement;T1550.003;powershell;['windows'];Rubeus Kerberos Pass The Ticket;a2fc4ec5-12c6-4fb4-b661-961f23f359cb;True;2
 lateral-movement;T1563.002;command_prompt;['windows'];RDP hijacking;a37ac520-b911-458e-8aed-c5f1576d9f46;True;1

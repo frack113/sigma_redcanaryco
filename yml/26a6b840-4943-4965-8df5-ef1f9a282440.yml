@@ -19,5 +19,9 @@ description: "This test queries Chrome's SQLite database to steal the encrypted 
   \ cookie info, they could go on to decrypt the encrypted value, potentially allowing for session theft. \nNote: If Chrome is running, the process will be killed to ensure that the DB file isn't locked.\
   \ \nSee https://www.malwarebytes.com/resources/files/2020/05/the-silent-night-zloader-zbot_final.pdf. \n"
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: dca91cfd-d7ab-4c66-8da7-ee57d487b35b
+    name: proc_creation_win_susp_run_folder.yml
+  - id: 91cb43db-302a-47e3-b3c8-7ede481e27bf
+    name: file_access_win_browser_credential_stealing.yml

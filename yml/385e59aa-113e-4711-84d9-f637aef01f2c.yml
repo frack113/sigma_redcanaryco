@@ -17,5 +17,28 @@ description: |
   Once the hash of service account is retrieved it is possible to forge Kerberos ticket granting service (TGS) tickets, also known as silver tickets.
   The generated ticket is injected in a new empty Windows session and discarded after, so it does not pollute the current Windows session.
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 06d71506-7beb-4f22-8888-e2e5e2ca7fd8
+    name: win_alert_mimikatz_keywords.yml
+  - id: f4bbd493-b796-416e-bbf2-121235348529
+    name: proc_creation_win_non_interactive_powershell.yml
+  - id: a642964e-bead-4bed-8910-1bb4d63e3b4d
+    name: proc_creation_win_mimikatz_command_line.yml
+  - id: 9292293b-8496-4715-9db6-37028dcda4b3
+    name: proc_creation_win_lolbas_replace.yml
+  - id: b8af5f36-1361-4ebe-9e76-e36128d947bf
+    name: posh_ps_remove_item_path.yml
+  - id: f62176f3-8128-4faa-bf6c-83261322e5eb
+    name: posh_ps_malicious_keywords.yml
+  - id: d93129cd-1ee0-479f-bc03-ca6f129882e3
+    name: posh_ps_detect_vm_env.yml
+  - id: 0332a266-b584-47b4-933d-a00b103e1b37
+    name: posh_ps_suspicious_gwmi.yml
+  - id: 602a1f13-c640-4d73-b053-be9a2fa58b96
+    name: file_event_win_detect_powerup_dllhijacking.yml
+  - id: dca91cfd-d7ab-4c66-8da7-ee57d487b35b
+    name: proc_creation_win_susp_run_folder.yml
+  - id: 24e3e58a-646b-4b50-adef-02ef935b9fc8
+    name: proc_creation_win_hacktool_imphashes.yml
+

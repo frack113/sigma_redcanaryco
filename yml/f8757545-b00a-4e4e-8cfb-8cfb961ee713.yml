@@ -19,5 +19,19 @@ description: |-
   Note: must dump hashes first
   [Reference](https://github.com/gentilkiwi/mimikatz/wiki/module-~-sekurlsa#pth)
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 06d71506-7beb-4f22-8888-e2e5e2ca7fd8
+    name: win_alert_mimikatz_keywords.yml
+  - id: f4bbd493-b796-416e-bbf2-121235348529
+    name: proc_creation_win_non_interactive_powershell.yml
+  - id: 9fc51a3c-81b3-4fa7-b35f-7c02cf10fd2d
+    name: proc_creation_win_susp_web_request_cmd.yml
+  - id: 1139d2e2-84b1-4226-b445-354492eba8ba
+    name: posh_ps_web_request.yml
+  - id: 1f21ec3f-810d-4b0e-8045-322202e22b4b
+    name: net_connection_win_powershell_network_connection.yml
+  - id: 635dbb88-67b3-4b41-9ea5-a3af2dd88153
+    name: net_connection_win_binary_github_com.yml
+  - id: 8d31a8ce-46b5-4dd6-bdc3-680931f1db86
+    name: posh_pm_bad_opsec_artifacts.yml
