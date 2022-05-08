@@ -1,0 +1,91 @@
+Attack_name: Credentials In Files
+Attack_description: |-
+  Adversaries may search local file systems and remote file shares for files containing insecurely stored credentials. These can be files created by users to store their own credentials, shared credential stores for a group of individuals, configuration files containing passwords for a system or service, or source code/binary files containing embedded passwords.
+
+  It is possible to extract passwords from backups or saved virtual machines through [OS Credential Dumping](https://attack.mitre.org/techniques/T1003). (Citation: CG 2014) Passwords may also be obtained from Group Policy Preferences stored on the Windows Domain Controller. (Citation: SRD GPP)
+
+  In cloud and/or containerized environments, authenticated user and service account credentials are often stored in local configuration and credential files.(Citation: Unit 42 Hildegard Malware) They may also be found as parameters to deployment commands in container logs.(Citation: Unit 42 Unsecured Docker Daemons) In some cases, these files can be copied and reused on another machine or the contents can be read and then used to authenticate without needing to copy any files.(Citation: Specter Ops - Cloud Credential Storage)
+guid: 114dd4e3-8d1c-4ea7-bb8d-8d8f6aca21f0
+name: WinPwn - sensitivefiles
+tactic:
+  - credential-access
+technique:
+  - T1552.001
+os:
+  - windows
+description: Search for sensitive files on this local system using the SensitiveFiles function of WinPwn
+executor: powershell
+sigma: true
+sigma_rule:
+  - id: 9fc51a3c-81b3-4fa7-b35f-7c02cf10fd2d
+    name: proc_creation_win_susp_web_request_cmd.yml
+  - id: e6c54d94-498c-4562-a37c-b469d8e9a275
+    name: proc_creation_win_powershell_download_patterns.yml
+  - id: 6e897651-f157-4d8f-aaeb-df8151488385
+    name: proc_creation_win_susp_powershell_download_cradles.yml
+  - id: 85b0b087-eddf-4a2b-b033-d771fa2b9775
+    name: proc_creation_win_susp_powershell_download_iex.yml
+  - id: e28a5a99-da44-436d-b7a0-2afc20a5f413
+    name: proc_creation_win_susp_whoami.yml
+  - id: 502b42de-4306-40b4-9596-6f590c81f073
+    name: proc_creation_win_local_system_owner_account_discovery.yml
+  - id: f4bbd493-b796-416e-bbf2-121235348529
+    name: proc_creation_win_non_interactive_powershell.yml
+  - id: 3b6ab547-8ec2-4991-b9d2-2b06702a48d7
+    name: proc_creation_win_powershell_download.yml
+  - id: 1139d2e2-84b1-4226-b445-354492eba8ba
+    name: posh_ps_web_request.yml
+  - id: ae7fbf8e-f3cb-49fd-8db4-5f3bed522c71
+    name: posh_ps_suspicious_invocation_specific.yml
+  - id: 8ff28fdd-e2fa-4dfa-aeda-ef3d61c62090
+    name: posh_pm_suspicious_invocation_specific.yml
+  - id: d23f2ba5-9da0-4463-8908-8ee47f614bb9
+    name: posh_ps_file_and_directory_discovery.yml
+  - id: 0332a266-b584-47b4-933d-a00b103e1b37
+    name: posh_ps_suspicious_gwmi.yml
+  - id: d93129cd-1ee0-479f-bc03-ca6f129882e3
+    name: posh_ps_detect_vm_env.yml
+  - id: 03d83090-8cba-44a0-b02f-0b756a050306
+    name: posh_ps_accessing_win_api.yml
+  - id: 403c2cc0-7f6b-4925-9423-bfa573bed7eb
+    name: posh_ps_suspicious_download.yml
+  - id: 4096a49c-7de4-4da0-a230-c66ccd56ea5a
+    name: posh_ps_suspicious_get_current_user.yml
+  - id: 89819aa4-bbd6-46bc-88ec-c7f7fe30efa6
+    name: posh_ps_malicious_commandlets.yml
+  - id: 1f49f2ab-26bc-48b3-96cc-dcffbc93eadf
+    name: posh_ps_suspicious_keywords.yml
+  - id: 84c174ab-d3ef-481f-9c86-a50d0b8e3edb
+    name: posh_ps_suspicious_getprocess_lsass.yml
+  - id: f62176f3-8128-4faa-bf6c-83261322e5eb
+    name: posh_ps_malicious_keywords.yml
+  - id: af4c87ce-bdda-4215-b998-15220772e993
+    name: posh_ps_susp_get_process.yml
+  - id: 6d3f1399-a81c-4409-aff3-1ecfe9330baf
+    name: posh_ps_invoke_nightmare.yml
+  - id: f772cee9-b7c2-4cb2-8f07-49870adc02e0
+    name: posh_ps_nishang_malicious_commandlets.yml
+  - id: 4fdc44df-bfe9-4fcc-b041-68f5a2d3031c
+    name: posh_ps_localuser.yml
+  - id: fa6a5a45-3ee2-4529-aa14-ee5edc9e29cb
+    name: posh_ps_suspicious_local_group_reco.yml
+  - id: c1dda054-d638-4c16-afc8-53e007f3fbc5
+    name: posh_ps_automated_collection.yml
+  - id: dcd74b95-3f36-4ed9-9598-0490951643aa
+    name: posh_ps_powerview_malicious_commandlets.yml
+  - id: bd5971a7-626d-46ab-8176-ed643f694f68
+    name: posh_ps_suspicious_extracting.yml
+  - id: 99c49d9c-34ea-45f7-84a7-4751ae6b2cbc
+    name: posh_ps_dump_password_windows_credential_manager.yml
+  - id: c6438007-e081-42ce-9483-b067fbef33c3
+    name: posh_ps_timestomp.yml
+  - id: 635dbb88-67b3-4b41-9ea5-a3af2dd88153
+    name: net_connection_win_binary_github_com.yml
+  - id: 1f21ec3f-810d-4b0e-8045-322202e22b4b
+    name: net_connection_win_powershell_network_connection.yml
+  - id: 1c563233-030e-4a07-af8c-ee0490a66d3a
+    name: posh_ps_suspicious_new_psdrive.yml
+  - id: 8d31a8ce-46b5-4dd6-bdc3-680931f1db86
+    name: posh_pm_bad_opsec_artifacts.yml
+  - id: cef24b90-dddc-4ae1-a09a-8764872f69fc
+    name: posh_pm_suspicious_local_group_reco.yml

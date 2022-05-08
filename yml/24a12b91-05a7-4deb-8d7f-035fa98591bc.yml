@@ -15,5 +15,12 @@ description: |-
   Backstab loads Process Explorer driver which is signed by Microsoft and use it to terminate running processes protected by antimalware software such as MsSense.exe or MsMpEng.exe, which is otherwise not possible to kill.
   https://github.com/Yaxser/Backstab
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: dca91cfd-d7ab-4c66-8da7-ee57d487b35b
+    name: proc_creation_win_susp_run_folder.yml
+  - id: c0abc838-36b0-47c9-b3b3-a90c39455382
+    name: registry_set_creation_service_temp_folder.yml
+  - id: 277dc340-0540-42e7-8efb-5ff460045e07
+    name: registry_set_creation_service_uncommon_folder.yml
+
