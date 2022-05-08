@@ -779,7 +779,7 @@ Caution: a test can generate a lot of noise...
 ### T1614.001
 [Discover System Language by Registry Query](tests/631d4cf1-42c9-4209-8fe9-6bd4de9421be.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Discover System Language with chcp](tests/d91473ca-944e-477a-b484-0e80217cd789.md) ['windows'] (sigma rule :x:)
+[Discover System Language with chcp](tests/d91473ca-944e-477a-b484-0e80217cd789.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1550.003
@@ -828,6 +828,8 @@ Caution: a test can generate a lot of noise...
 [Excel 4 Macro](tests/4ea1fc97-8a46-4b4e-ba48-af43d2a98052.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [OSTap Style Macro Execution](tests/8bebc690-18c7-4549-bc98-210f7019efff.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[LNK Payload Download](tests/581d7521-9c4b-420e-9695-2aec5241167f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Potentially Unwanted Applications (PUA)](tests/02f35d62-9fdc-4a97-b899-a5d9a876d295.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -982,6 +984,46 @@ Caution: a test can generate a lot of noise...
 [Rubeus kerberoast](tests/14625569-6def-4497-99ac-8e7817105b55.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
+### T1082
+[WinPwn - GeneralRecon](tests/7804659b-fdbf-4cf6-b06a-c03e758590e8.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Environment variables discovery on windows](tests/f400d1c0-1804-4ff8-b069-ef5ddd2adbf3.md) ['windows'] (sigma rule :x:)
+
+[WinPwn - winPEAS](tests/eea1d918-825e-47dd-acc2-814d6c58c0e1.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[List OS Information](tests/cccb070c-df86-4216-a5bc-9fb60c74e27c.md) ['linux', 'macos'] (sigma rule :x:)
+
+[WinPwn - General privesc checks](tests/5b6f39a2-6ec7-4783-a5fd-2c54a55409ed.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[System Information Discovery](tests/edff98ec-0f73-4f63-9890-6b117092aff6.md) ['macos'] (sigma rule :x:)
+
+[Show System Integrity Protection status (MacOS)](tests/327cc050-9e99-4c8e-99b5-1d15f2fb6b96.md) ['macos'] (sigma rule :x:)
+
+[WinPwn - RBCD-Check](tests/dec6a0d8-bcaf-4c22-9d48-2aee59fb692b.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Hostname Discovery (Windows)](tests/85cfbf23-4a1e-4342-8792-007e004b975f.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Hostname Discovery](tests/486e88ea-4f56-470f-9b57-3f4d73f39133.md) ['linux', 'macos'] (sigma rule :x:)
+
+[WinPwn - Powersploits privesc checks](tests/345cb8e4-d2de-4011-a580-619cf5a9e2d7.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Griffon Recon](tests/69bd4abe-8759-49a6-8d21-0f15822d6370.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[System Information Discovery](tests/66703791-c902-4560-8770-42b8a91f7667.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[WinPwn - itm4nprivesc](tests/3d256a2f-5e57-4003-8eb6-64d91b1da7ce.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Windows MachineGUID Discovery](tests/224b4daf-db44-404e-b6b2-f4d1f0126ef8.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Environment variables discovery on macos and linux](tests/fcbdd43f-f4ad-42d5-98f3-0218097e2720.md) ['macos', 'linux'] (sigma rule :x:)
+
+[WinPwn - Morerecon](tests/3278b2f6-f733-4875-9ef4-bfed34244f0a.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Linux VM Check via Hardware](tests/31dad7ad-2286-4c02-ae92-274418c85fec.md) ['linux'] (sigma rule :x:)
+
+[Linux VM Check via Kernel Modules](tests/8057d484-0fae-49a4-8302-4812c4f1e64e.md) ['linux'] (sigma rule :x:)
+
+
 ### T1218.007
 [Msiexec.exe - Execute Local MSI file with embedded JScript](tests/a059b6c4-e7d6-4b2e-bcd7-9b2b33191a04.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1015,7 +1057,7 @@ Caution: a test can generate a lot of noise...
 
 [Stop Crowdstrike Falcon on Linux](tests/828a1278-81cc-4802-96ab-188bf29ca77d.md) ['linux'] (sigma rule :x:)
 
-[Kill antimalware protected processes using Backstab](tests/24a12b91-05a7-4deb-8d7f-035fa98591bc.md) ['windows'] (sigma rule :x:)
+[Kill antimalware protected processes using Backstab](tests/24a12b91-05a7-4deb-8d7f-035fa98591bc.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Unload Sysmon Filter Driver](tests/811b3e76-c41b-430c-ac0d-e2380bfaa164.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1143,7 +1185,7 @@ Caution: a test can generate a lot of noise...
 
 [Simulating access to Windows Edge Login Data](tests/a6a5ec26-a2d1-4109-9d35-58b867689329.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Decrypt Mozilla Passwords with Firepwd.py](tests/dc9cd677-c70f-4df5-bd1c-f114af3c2381.md) ['windows'] (sigma rule :x:)
+[Decrypt Mozilla Passwords with Firepwd.py](tests/dc9cd677-c70f-4df5-bd1c-f114af3c2381.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Simulating access to Chrome Login Data](tests/3d111226-d09a-4911-8715-fe11664f960d.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1562,36 +1604,32 @@ Caution: a test can generate a lot of noise...
 [Exfiltration Over Alternative Protocol - DNS](tests/c403b5a4-b5fc-49f2-b181-d1c80d27db45.md) ['linux'] (sigma rule :x:)
 
 
-### T1082
-[Environment variables discovery on windows](tests/f400d1c0-1804-4ff8-b069-ef5ddd2adbf3.md) ['windows'] (sigma rule :x:)
-
-[List OS Information](tests/cccb070c-df86-4216-a5bc-9fb60c74e27c.md) ['linux', 'macos'] (sigma rule :x:)
-
-[System Information Discovery](tests/edff98ec-0f73-4f63-9890-6b117092aff6.md) ['macos'] (sigma rule :x:)
-
-[Show System Integrity Protection status (MacOS)](tests/327cc050-9e99-4c8e-99b5-1d15f2fb6b96.md) ['macos'] (sigma rule :x:)
-
-[Hostname Discovery (Windows)](tests/85cfbf23-4a1e-4342-8792-007e004b975f.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[Hostname Discovery](tests/486e88ea-4f56-470f-9b57-3f4d73f39133.md) ['linux', 'macos'] (sigma rule :x:)
-
-[Griffon Recon](tests/69bd4abe-8759-49a6-8d21-0f15822d6370.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[System Information Discovery](tests/66703791-c902-4560-8770-42b8a91f7667.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[Windows MachineGUID Discovery](tests/224b4daf-db44-404e-b6b2-f4d1f0126ef8.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[Environment variables discovery on macos and linux](tests/fcbdd43f-f4ad-42d5-98f3-0218097e2720.md) ['macos', 'linux'] (sigma rule :x:)
-
-[Linux VM Check via Hardware](tests/31dad7ad-2286-4c02-ae92-274418c85fec.md) ['linux'] (sigma rule :x:)
-
-[Linux VM Check via Kernel Modules](tests/8057d484-0fae-49a4-8302-4812c4f1e64e.md) ['linux'] (sigma rule :x:)
-
-
 ### T1539
 [Steal Firefox Cookies (Windows)](tests/4b437357-f4e9-4c84-9fa6-9bcee6f826aa.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Steal Chrome Cookies (Windows)](tests/26a6b840-4943-4965-8df5-ef1f9a282440.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+
+### T1552.001
+[WinPwn - Snaffler](tests/fdd0c913-714b-4c13-b40f-1824d6c015f2.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Extract passwords with grep](tests/bd4cf0d1-7646-474e-8610-78ccf5a097c4.md) ['macos', 'linux'] (sigma rule :x:)
+
+[Find and Access Github Credentials](tests/da4f751a-020b-40d7-b9ff-d433b7799803.md) ['macos', 'linux'] (sigma rule :x:)
+
+[WinPwn - sensitivefiles](tests/114dd4e3-8d1c-4ea7-bb8d-8d8f6aca21f0.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[WinPwn - passhunt](tests/00e3e3c7-6c3c-455e-bd4b-461c7f0e7797.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Access unattend.xml](tests/367d4004-5fc0-446d-823f-960c74ae52c3.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[WinPwn - SessionGopher](tests/c9dc9de3-f961-4284-bd2d-f959c9f9fda5.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[WinPwn - powershellsensitive](tests/75f66e03-37d3-4704-9520-3210efbe33ce.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Extracting passwords with findstr](tests/0e56bf29-ff49-4ea5-9af4-3b81283fd513.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Extract Browser and System credentials with LaZagne](tests/9e507bb8-1d30-4e3b-a49b-cb5727d7ea79.md) ['macos'] (sigma rule :x:)
 
 
 ### T1218.003
@@ -1846,18 +1884,6 @@ Caution: a test can generate a lot of noise...
 [Execute Python via scripts (Linux)](tests/6c4d1dcb-33c7-4c36-a8df-c6cfd0408be8.md) ['linux'] (sigma rule :x:)
 
 [Execute shell script via python's command mode arguement](tests/3a95cdb2-c6ea-4761-b24e-02b71889b8bb.md) ['linux'] (sigma rule :x:)
-
-
-### T1552.001
-[Extract passwords with grep](tests/bd4cf0d1-7646-474e-8610-78ccf5a097c4.md) ['macos', 'linux'] (sigma rule :x:)
-
-[Find and Access Github Credentials](tests/da4f751a-020b-40d7-b9ff-d433b7799803.md) ['macos', 'linux'] (sigma rule :x:)
-
-[Access unattend.xml](tests/367d4004-5fc0-446d-823f-960c74ae52c3.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[Extracting passwords with findstr](tests/0e56bf29-ff49-4ea5-9af4-3b81283fd513.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[Extract Browser and System credentials with LaZagne](tests/9e507bb8-1d30-4e3b-a49b-cb5727d7ea79.md) ['macos'] (sigma rule :x:)
 
 
 ### T1497.001
@@ -2297,7 +2323,7 @@ Caution: a test can generate a lot of noise...
 ### T1615
 [Get-DomainGPO to display group policy information via PowerView](tests/4e524c4e-0e02-49aa-8df5-93f3f7959b9f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Display group policy information via gpresult](tests/0976990f-53b1-4d3f-a185-6df5be429d3b.md) ['windows'] (sigma rule :x:)
+[Display group policy information via gpresult](tests/0976990f-53b1-4d3f-a185-6df5be429d3b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1053.007
