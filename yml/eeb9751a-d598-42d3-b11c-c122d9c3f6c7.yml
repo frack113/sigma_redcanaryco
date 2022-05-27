@@ -26,7 +26,7 @@ sigma_rule:
   - id: e7be6119-fc37-43f0-ad4f-1f3f99be2f9f
     name: proc_creation_win_copying_sensitive_files_with_credential_data.yml
   - id: 333cdbe8-27bb-4246-bf82-b41a0dca4b70
-    name: image_load_suspicious_vss_ps_load.yml
+    name: image_load_susp_vss_ps_load.yml
   - id: e62a9f0c-ca1e-46b2-85d5-a6da77f86d1a
     name: proc_creation_win_susp_certutil_encode.yml
   - id: 3a6586ad-127a-4d3b-a677-1e6eacdf8fde

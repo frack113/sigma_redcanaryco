@@ -17,6 +17,6 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: cef24b90-dddc-4ae1-a09a-8764872f69fc
-    name: posh_pm_suspicious_local_group_reco.yml
+    name: posh_pm_susp_local_group_reco.yml
   - id: 2afafd61-6aae-4df4-baed-139fa1f4c345
     name: proc_creation_win_susp_ntdsutil.yml

@@ -39,7 +39,7 @@ sigma_rule:
   - id: a642964e-bead-4bed-8910-1bb4d63e3b4d
     name: proc_creation_win_mimikatz_command_line.yml
   - id: 1883444f-084b-419b-ac62-e0d0c5b3693f
-    name: posh_ps_suspicious_networkcredential.yml
+    name: posh_ps_susp_networkcredential.yml
   - id: 1f21ec3f-810d-4b0e-8045-322202e22b4b
     name: net_connection_win_powershell_network_connection.yml
   - id: 941e5c45-cda7-4864-8cea-bbb7458d194a

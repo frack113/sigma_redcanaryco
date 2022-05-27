@@ -25,5 +25,5 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: 70ad982f-67c8-40e0-a955-b920c2fa05cb
-    name: posh_ps_suspicious_iofilestream.yml
+    name: posh_ps_susp_iofilestream.yml
 

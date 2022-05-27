@@ -20,7 +20,7 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: 1f49f2ab-26bc-48b3-96cc-dcffbc93eadf
-    name: posh_ps_suspicious_keywords.yml
+    name: posh_ps_susp_keywords.yml
   - id: 03d83090-8cba-44a0-b02f-0b756a050306
     name: posh_ps_accessing_win_api.yml
   - id: 7b836d7f-179c-4ba4-90a7-a7e60afb48e6
@@ -28,6 +28,6 @@ sigma_rule:
   - id: 89819aa4-bbd6-46bc-88ec-c7f7fe30efa6
     name: posh_ps_malicious_commandlets.yml
   - id: 0e277796-5f23-4e49-a490-483131d4f6e1
-    name: image_load_suspicious_dbghelp_dbgcore_load.yml
+    name: image_load_susp_dbghelp_dbgcore_load.yml
   - id: 8d31a8ce-46b5-4dd6-bdc3-680931f1db86
     name: posh_pm_bad_opsec_artifacts.yml

@@ -1,0 +1,16 @@
+Attack_name: Network Service Scanning
+Attack_description: "Adversaries may attempt to get a listing of services running on remote hosts, including those that may be vulnerable to remote software exploitation. Methods to acquire this information\
+  \ include port scans and vulnerability scans using tools that are brought onto a system. \n\nWithin cloud environments, adversaries may attempt to discover services running on other cloud hosts. Additionally,\
+  \ if the cloud environment is connected to a on-premises environment, adversaries may be able to identify services running on non-cloud systems as well."
+guid: 1cca5640-32a9-46e6-b8e0-fabbe2384a73
+name: WinPwn - bluekeep
+tactic:
+  - discovery
+technique:
+  - T1046
+os:
+  - windows
+description: Search for bluekeep vulnerable Windows Systems in the domain using bluekeep function of WinPwn. Can take many minutes to complete (~600 seconds in testing on a small domain).
+executor: powershell
+sigma: false
+sigma_rule: []

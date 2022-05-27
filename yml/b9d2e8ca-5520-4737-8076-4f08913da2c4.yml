@@ -26,4 +26,4 @@ sigma_rule:
   - id: eeb2e3dc-c1f4-40dd-9bd5-149ee465ad50
     name: sysmon_powershell_code_injection.yml
   - id: 66d31e5f-52d6-40a4-9615-002d3789a119
-    name: sysmon_suspicious_remote_thread.yml
+    name: sysmon_susp_remote_thread.yml

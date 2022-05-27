@@ -21,4 +21,4 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: 8bc063d5-3a3a-4f01-a140-bc15e55e8437
-    name: posh_ps_suspicious_gettypefromclsid.yml
+    name: posh_ps_susp_gettypefromclsid.yml

@@ -31,4 +31,4 @@ sigma_rule:
   - id: d99b79d2-0a6f-4f46-ad8b-260b6e17f982
     name: win_susp_eventlog_cleared.yml
   - id: a62b37e0-45d3-48d9-a517-90c1a1b0186b
-    name: win_system_susp_eventlog_cleared.yml
+    name: win_eventlog_cleared.yml

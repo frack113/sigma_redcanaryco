@@ -18,6 +18,6 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: 815bfc17-7fc6-4908-a55e-2f37b98cedb4
-    name: posh_pm_suspicious_ad_group_reco.yml
+    name: posh_pm_susp_ad_group_reco.yml
   - id: 88f0884b-331d-403d-a3a1-b668cf035603
-    name: posh_ps_suspicious_ad_group_reco.yml
+    name: posh_ps_susp_ad_group_reco.yml

@@ -27,4 +27,4 @@ sigma_rule:
   - id: 89819aa4-bbd6-46bc-88ec-c7f7fe30efa6
     name: posh_ps_malicious_commandlets.yml
   - id: 5947497f-1aa4-41dd-9693-c9848d58727d
-    name: posh_ps_suspicious_unblock_file.yml
+    name: posh_ps_susp_unblock_file.yml

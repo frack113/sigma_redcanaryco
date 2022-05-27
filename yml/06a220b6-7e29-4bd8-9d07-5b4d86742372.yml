@@ -29,11 +29,11 @@ sigma_rule:
   - id: 3b6ab547-8ec2-4991-b9d2-2b06702a48d7
     name: proc_creation_win_powershell_download.yml
   - id: 8ff28fdd-e2fa-4dfa-aeda-ef3d61c62090
-    name: posh_pm_suspicious_invocation_specific.yml
+    name: posh_pm_susp_invocation_specific.yml
   - id: 1139d2e2-84b1-4226-b445-354492eba8ba
     name: posh_ps_web_request.yml
   - id: ae7fbf8e-f3cb-49fd-8db4-5f3bed522c71
-    name: posh_ps_suspicious_invocation_specific.yml
+    name: posh_ps_susp_invocation_specific.yml
   - id: d23f2ba5-9da0-4463-8908-8ee47f614bb9
     name: posh_ps_file_and_directory_discovery.yml
   - id: b8af5f36-1361-4ebe-9e76-e36128d947bf

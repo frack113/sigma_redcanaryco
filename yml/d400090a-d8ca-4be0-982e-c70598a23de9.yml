@@ -22,8 +22,8 @@ sigma_rule:
   - id: aff815cc-e400-4bf0-a47a-5d8a2407d4e1
     name: posh_pm_susp_get_nettcpconnection.yml
   - id: 1f49f2ab-26bc-48b3-96cc-dcffbc93eadf
-    name: posh_ps_suspicious_keywords.yml
+    name: posh_ps_susp_keywords.yml
   - id: 09e6d5c0-05b8-4ff8-9eeb-043046ec774c
     name: proc_creation_win_susp_comsvcs_procdump.yml
   - id: 0e277796-5f23-4e49-a490-483131d4f6e1
-    name: image_load_suspicious_dbghelp_dbgcore_load.yml
+    name: image_load_susp_dbghelp_dbgcore_load.yml

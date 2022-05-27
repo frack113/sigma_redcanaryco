@@ -1,0 +1,18 @@
+Attack_name: Ingress Tool Transfer
+Attack_description: Adversaries may transfer tools or other files from an external system into a compromised environment. Files may be copied from an external adversary controlled system through the command
+  and control channel to bring tools into the victim network or through alternate protocols with another tool such as FTP. Files can also be copied over on Mac and Linux with native tools like scp, rsync,
+  and sftp.
+guid: 70f4d07c-5c3e-4d53-bb0a-cdf3ada14baf
+name: MAZE Propagation Script
+tactic:
+  - command-and-control
+technique:
+  - T1105
+os:
+  - windows
+description: "This test simulates MAZE ransomware's propogation script that searches through a list of computers, tests connectivity to them, and copies a binary file to the Windows\\Temp directory of each\
+  \ one. \nUpon successful execution, a specified binary file will attempt to be copied to each online machine, a list of the online machines, as well as a list of offline machines will be output to a specified\
+  \ location.\nReference: https://www.fireeye.com/blog/threat-research/2020/05/tactics-techniques-procedures-associated-with-maze-ransomware-incidents.html \n"
+executor: powershell
+sigma: false
+sigma_rule: []

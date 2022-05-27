@@ -1,0 +1,20 @@
+Attack_name: Trusted Developer Utilities Proxy Execution
+Attack_description: 'Adversaries may take advantage of trusted developer utilities to proxy execution of malicious payloads. There are many utilities used for software development related tasks that can
+  be used to execute code in various forms to assist in development, debugging, and reverse engineering.(Citation: engima0x3 DNX Bypass)(Citation: engima0x3 RCSI Bypass)(Citation: Exploit Monday WinDbg)(Citation:
+  LOLBAS Tracker) These utilities may often be signed with legitimate certificates that allow them to execute on a system and proxy execution of malicious code through a trusted process that effectively
+  bypasses application control solutions.'
+guid: 3fc9fea2-871d-414d-8ef6-02e85e322b80
+name: Lolbin Jsc.exe compile javascript to dll
+tactic:
+  - defense-evasion
+technique:
+  - T1127
+os:
+  - windows
+description: |
+  Use jsc.exe to compile javascript code stored in Library.js and output Library.dll.
+  https://lolbas-project.github.io/lolbas/Binaries/Jsc/
+  https://www.phpied.com/make-your-javascript-a-windows-exe/
+executor: command_prompt
+sigma: false
+sigma_rule: []

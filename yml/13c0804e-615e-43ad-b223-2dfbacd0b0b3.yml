@@ -1,0 +1,18 @@
+Attack_name: Signed Binary Proxy Execution
+Attack_description: Adversaries may bypass process and/or signature-based defenses by proxying execution of malicious content with signed binaries. Binaries signed with trusted digital certificates can
+  execute on Windows systems protected by digital signature validation. Several Microsoft signed binaries that are default on Windows installations can be used to proxy execution of other files.
+guid: 13c0804e-615e-43ad-b223-2dfbacd0b0b3
+name: Lolbas ie4uinit.exe use as proxy
+tactic:
+  - defense-evasion
+technique:
+  - T1218
+os:
+  - windows
+description: |
+  Executes commands from a specially prepared ie4uinit.inf file.
+  Poc from : https://bohops.com/2018/03/10/leveraging-inf-sct-fetch-execute-techniques-for-bypass-evasion-persistence-part-2/
+  Reference: https://lolbas-project.github.io/lolbas/Binaries/Ie4uinit/
+executor: command_prompt
+sigma: false
+sigma_rule: []

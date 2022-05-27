@@ -27,7 +27,7 @@ sigma_rule:
   - id: 4fdc44df-bfe9-4fcc-b041-68f5a2d3031c
     name: posh_ps_localuser.yml
   - id: 0332a266-b584-47b4-933d-a00b103e1b37
-    name: posh_ps_suspicious_gwmi.yml
+    name: posh_ps_susp_gwmi.yml
   - id: f772cee9-b7c2-4cb2-8f07-49870adc02e0
     name: posh_ps_nishang_malicious_commandlets.yml
   - id: 03d83090-8cba-44a0-b02f-0b756a050306
@@ -41,7 +41,7 @@ sigma_rule:
   - id: 1139d2e2-84b1-4226-b445-354492eba8ba
     name: posh_ps_web_request.yml
   - id: aa7a3fce-bef5-4311-9cc1-5f04bb8c308c
-    name: posh_ps_suspicious_export_pfxcertificate.yml
+    name: posh_ps_susp_export_pfxcertificate.yml
   - id: b8af5f36-1361-4ebe-9e76-e36128d947bf
     name: posh_ps_remove_item_path.yml
   - id: 9a7afa56-4762-43eb-807d-c3dc9ffe211b
@@ -49,4 +49,4 @@ sigma_rule:
   - id: f62176f3-8128-4faa-bf6c-83261322e5eb
     name: posh_ps_malicious_keywords.yml
   - id: 313fbb0a-a341-4682-848d-6d6f8c4fab7c
-    name: posh_ps_suspicious_windowstyle.yml
+    name: posh_ps_susp_windowstyle.yml

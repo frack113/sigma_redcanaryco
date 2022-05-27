@@ -16,4 +16,4 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: 4096a49c-7de4-4da0-a230-c66ccd56ea5a
-    name: posh_ps_suspicious_get_current_user.yml
+    name: posh_ps_susp_get_current_user.yml

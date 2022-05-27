@@ -32,7 +32,7 @@ sigma_rule:
   - id: 03d83090-8cba-44a0-b02f-0b756a050306
     name: posh_ps_accessing_win_api.yml
   - id: 1f49f2ab-26bc-48b3-96cc-dcffbc93eadf
-    name: posh_ps_suspicious_keywords.yml
+    name: posh_ps_susp_keywords.yml
   - id: b29a93fb-087c-4b5b-a84d-ee3309e69d08
     name: posh_ps_directoryservices_accountmanagement.yml
   - id: a861d835-af37-4930-bcd6-5b178bfb54df
@@ -40,11 +40,11 @@ sigma_rule:
   - id: d23f2ba5-9da0-4463-8908-8ee47f614bb9
     name: posh_ps_file_and_directory_discovery.yml
   - id: bd5971a7-626d-46ab-8176-ed643f694f68
-    name: posh_ps_suspicious_extracting.yml
+    name: posh_ps_susp_extracting.yml
   - id: f62176f3-8128-4faa-bf6c-83261322e5eb
     name: posh_ps_malicious_keywords.yml
   - id: 0332a266-b584-47b4-933d-a00b103e1b37
-    name: posh_ps_suspicious_gwmi.yml
+    name: posh_ps_susp_gwmi.yml
   - id: 7b836d7f-179c-4ba4-90a7-a7e60afb48e6
     name: posh_ps_invoke_command_remote.yml
   - id: 635dbb88-67b3-4b41-9ea5-a3af2dd88153

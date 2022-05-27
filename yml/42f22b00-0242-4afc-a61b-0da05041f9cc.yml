@@ -18,8 +18,8 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: 29e1c216-6408-489d-8a06-ee9d151ef819
-    name: posh_ps_suspicious_mount_diskimage.yml
+    name: posh_ps_susp_mount_diskimage.yml
   - id: 902cedee-0398-4e3a-8183-6f3a89773a96
     name: posh_ps_run_from_mount_diskimage.yml
   - id: 66a4d409-451b-4151-94f4-a55d559c49b0
-    name: posh_ps_suspicious_mounted_share_deletion.yml
+    name: posh_ps_susp_mounted_share_deletion.yml

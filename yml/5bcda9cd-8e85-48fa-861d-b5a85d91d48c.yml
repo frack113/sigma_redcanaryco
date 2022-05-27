@@ -1,0 +1,18 @@
+Attack_name: Signed Binary Proxy Execution
+Attack_description: Adversaries may bypass process and/or signature-based defenses by proxying execution of malicious content with signed binaries. Binaries signed with trusted digital certificates can
+  execute on Windows systems protected by digital signature validation. Several Microsoft signed binaries that are default on Windows installations can be used to proxy execution of other files.
+guid: 5bcda9cd-8e85-48fa-861d-b5a85d91d48c
+name: Lolbin Gpscript logon option
+tactic:
+  - defense-evasion
+technique:
+  - T1218
+os:
+  - windows
+description: |
+  Executes logon scripts configured in Group Policy.
+  https://lolbas-project.github.io/lolbas/Binaries/Gpscript/
+  https://oddvar.moe/2018/04/27/gpscript-exe-another-lolbin-to-the-list/
+executor: command_prompt
+sigma: false
+sigma_rule: []

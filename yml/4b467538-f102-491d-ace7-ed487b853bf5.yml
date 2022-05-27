@@ -24,7 +24,7 @@ sigma_rule:
   - id: 1f21ec3f-810d-4b0e-8045-322202e22b4b
     name: net_connection_win_powershell_network_connection.yml
   - id: e54979bd-c5f9-4d6c-967b-a04b19ac4c74
-    name: net_connection_win_suspicious_outbound_kerberos_connection.yml
+    name: net_connection_win_susp_outbound_kerberos_connection.yml
   - id: ed74fe75-7594-4b4b-ae38-e38e3fd2eb23
     name: net_connection_win_susp_rdp.yml
 

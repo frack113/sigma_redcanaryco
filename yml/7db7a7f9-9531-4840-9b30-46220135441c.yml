@@ -23,7 +23,7 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 1f49f2ab-26bc-48b3-96cc-dcffbc93eadf
-    name: posh_ps_suspicious_keywords.yml
+    name: posh_ps_susp_keywords.yml
   - id: d21374ff-f574-44a7-9998-4a8c8bf33d7d
     name: proc_creation_win_wmiprvse_spawning_process.yml
 

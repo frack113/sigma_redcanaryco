@@ -18,4 +18,4 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: a9723fcc-881c-424c-8709-fd61442ab3c3
-    name: posh_ps_suspicious_recon.yml
+    name: posh_ps_susp_recon.yml

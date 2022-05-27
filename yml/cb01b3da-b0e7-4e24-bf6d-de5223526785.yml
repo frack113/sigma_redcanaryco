@@ -19,4 +19,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: a2ea3ae7-d3d0-40a0-a55c-25a45c87cac1
-    name: proc_creation_win_lolbins_suspicious_driver_installed_by_pnputil.yml
+    name: proc_creation_win_lolbins_susp_driver_installed_by_pnputil.yml

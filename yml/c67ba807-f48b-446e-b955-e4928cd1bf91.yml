@@ -1,0 +1,22 @@
+Attack_name: Network Sniffing
+Attack_description: |-
+  Adversaries may sniff network traffic to capture information about an environment, including authentication material passed over the network. Network sniffing refers to using the network interface on a system to monitor or capture information sent over a wired or wireless connection. An adversary may place a network interface into promiscuous mode to passively access data in transit over the network, or use span ports to capture a larger amount of data.
+
+  Data captured via this technique may include user credentials, especially those sent over an insecure, unencrypted protocol. Techniques for name service resolution poisoning, such as [LLMNR/NBT-NS Poisoning and SMB Relay](https://attack.mitre.org/techniques/T1557/001), can also be used to capture credentials to websites, proxies, and internal systems by redirecting traffic to an adversary.
+
+  Network sniffing may also reveal configuration details, such as running services, version numbers, and other network characteristics (e.g. IP addresses, hostnames, VLAN IDs) necessary for subsequent Lateral Movement and/or Defense Evasion activities.
+guid: c67ba807-f48b-446e-b955-e4928cd1bf91
+name: Windows Internal pktmon capture
+tactic:
+  - credential-access
+  - discovery
+technique:
+  - T1040
+os:
+  - windows
+description: |-
+  Will start a packet capture and store log file as t1040.etl.
+  https://lolbas-project.github.io/lolbas/Binaries/Pktmon/
+executor: command_prompt
+sigma: false
+sigma_rule: []

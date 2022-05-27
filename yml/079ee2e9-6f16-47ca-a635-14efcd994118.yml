@@ -1,0 +1,17 @@
+Attack_name: Credentials from Password Stores
+Attack_description: Adversaries may search for common password storage locations to obtain user credentials. Passwords are stored in several places on a system, depending on the operating system or application
+  holding the credentials. There are also specific applications that store passwords to make it easier for users manage and maintain. Once credentials are obtained, they can be used to perform lateral movement
+  and access restricted information.
+guid: '079ee2e9-6f16-47ca-a635-14efcd994118'
+name: WinPwn - Loot local Credentials - lazagne
+tactic:
+  - credential-access
+technique:
+  - T1555
+os:
+  - windows
+description: "The [LaZagne project](https://github.com/AlessandroZ/LaZagne) is an open source application used to retrieve lots of passwords stored on a local computer. \nEach software stores its passwords\
+  \ using different techniques (plaintext, APIs, custom algorithms, databases, etc.). \nThis tool has been developed for the purpose of finding these passwords for the most commonly-used software"
+executor: powershell
+sigma: false
+sigma_rule: []

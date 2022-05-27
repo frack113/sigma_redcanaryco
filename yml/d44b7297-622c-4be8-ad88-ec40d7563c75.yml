@@ -17,4 +17,4 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: 0332a266-b584-47b4-933d-a00b103e1b37
-    name: posh_ps_suspicious_gwmi.yml
+    name: posh_ps_susp_gwmi.yml

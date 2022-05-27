@@ -27,8 +27,6 @@ sigma_rule:
     name: proc_creation_win_susp_mshta_execution.yml
   - id: 754ed792-634f-40ae-b3bc-e0448d33f695
     name: proc_creation_win_susp_powershell_parent_process.yml
-  - id: 772bb24c-8df2-4be0-9157-ae4dfa794037
-    name: proc_creation_win_shell_spawn_mshta.yml
   - id: 03cc0c25-389f-4bf8-b48d-11878079f1ca
     name: proc_creation_win_mshta_spawn_shell.yml
   - id: f4bbd493-b796-416e-bbf2-121235348529
@@ -36,6 +34,6 @@ sigma_rule:
   - id: 4fdc44df-bfe9-4fcc-b041-68f5a2d3031c
     name: posh_ps_localuser.yml
   - id: fa6a5a45-3ee2-4529-aa14-ee5edc9e29cb
-    name: posh_ps_suspicious_local_group_reco.yml
+    name: posh_ps_susp_local_group_reco.yml
   - id: cef24b90-dddc-4ae1-a09a-8764872f69fc
-    name: posh_pm_suspicious_local_group_reco.yml
+    name: posh_pm_susp_local_group_reco.yml

@@ -1,0 +1,17 @@
+Attack_name: Software Discovery
+Attack_description: |-
+  Adversaries may attempt to get a listing of software and software versions that are installed on a system or in a cloud environment. Adversaries may use the information from [Software Discovery](https://attack.mitre.org/techniques/T1518) during automated discovery to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or attempts specific actions.
+
+  Adversaries may attempt to enumerate software for a variety of reasons, such as figuring out what security measures are present or if the compromised system has a version of software that is vulnerable to [Exploitation for Privilege Escalation](https://attack.mitre.org/techniques/T1068).
+guid: 0bb64470-582a-4155-bde2-d6003a95ed34
+name: WinPwn - powerSQL
+tactic:
+  - discovery
+technique:
+  - T1518
+os:
+  - windows
+description: Start PowerUpSQL Checks using powerSQL function of WinPwn
+executor: powershell
+sigma: false
+sigma_rule: []

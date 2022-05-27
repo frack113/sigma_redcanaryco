@@ -23,6 +23,6 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: a9723fcc-881c-424c-8709-fd61442ab3c3
-    name: posh_ps_suspicious_recon.yml
+    name: posh_ps_susp_recon.yml
   - id: 91cb43db-302a-47e3-b3c8-7ede481e27bf
     name: file_access_win_browser_credential_stealing.yml

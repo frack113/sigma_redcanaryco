@@ -32,8 +32,6 @@ sigma_rule:
     name: proc_creation_win_susp_powershell_parent_process.yml
   - id: 1277f594-a7d1-4f28-a2d3-73af5cbeab43
     name: file_event_win_win_shell_write_susp_directory.yml
-  - id: 772bb24c-8df2-4be0-9157-ae4dfa794037
-    name: proc_creation_win_shell_spawn_mshta.yml
   - id: 03cc0c25-389f-4bf8-b48d-11878079f1ca
     name: proc_creation_win_mshta_spawn_shell.yml
   - id: b243b280-65fe-48df-ba07-6ddea7646427

@@ -1,0 +1,17 @@
+Attack_name: Domain Account
+Attack_description: |-
+  Adversaries may attempt to get a listing of domain accounts. This information can help adversaries determine which domain accounts exist to aid in follow-on behavior.
+
+  Commands such as <code>net user /domain</code> and <code>net group /domain</code> of the [Net](https://attack.mitre.org/software/S0039) utility, <code>dscacheutil -q group</code>on macOS, and <code>ldapsearch</code> on Linux can list domain users and groups.
+guid: ce483c35-c74b-45a7-a670-631d1e69db3d
+name: WinPwn - generaldomaininfo
+tactic:
+  - discovery
+technique:
+  - T1087.002
+os:
+  - windows
+description: Gathers general domain information using the generaldomaininfo function of WinPwn
+executor: powershell
+sigma: false
+sigma_rule: []

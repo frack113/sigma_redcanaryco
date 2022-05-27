@@ -1,0 +1,22 @@
+Attack_name: Dynamic-link Library Injection
+Attack_description: "Adversaries may inject dynamic-link libraries (DLLs) into processes in order to evade process-based defenses as well as possibly elevate privileges. DLL injection is a method of executing\
+  \ arbitrary code in the address space of a separate live process.  \n\nDLL injection is commonly performed by writing the path to a DLL in the virtual address space of the target process before loading\
+  \ the DLL by invoking a new thread. The write can be performed with native Windows API calls such as <code>VirtualAllocEx</code> and <code>WriteProcessMemory</code>, then invoked with <code>CreateRemoteThread</code>\
+  \ (which calls the <code>LoadLibrary</code> API responsible for loading the DLL). (Citation: Elastic Process Injection July 2017) \n\nVariations of this method such as reflective DLL injection (writing\
+  \ a self-mapping DLL into a process) and memory module (map DLL when writing into process) overcome the address relocation issue as well as the additional APIs to invoke execution (since these methods\
+  \ load and execute the files in memory by manually preforming the function of <code>LoadLibrary</code>).(Citation: Elastic HuntingNMemory June 2017)(Citation: Elastic Process Injection July 2017) \n\n\
+  Running code in the context of another process may allow access to the process's memory, system/network resources, and possibly elevated privileges. Execution via DLL injection may also evade detection\
+  \ from security products since the execution is masked under a legitimate process. "
+guid: 8b56f787-73d9-4f1d-87e8-d07e89cbc7f5
+name: WinPwn - Get SYSTEM shell - Bind System Shell using UsoClient DLL load technique
+tactic:
+  - defense-evasion
+  - privilege-escalation
+technique:
+  - T1055.001
+os:
+  - windows
+description: Get SYSTEM shell - Bind System Shell using UsoClient DLL load technique via function of WinPwn
+executor: powershell
+sigma: false
+sigma_rule: []

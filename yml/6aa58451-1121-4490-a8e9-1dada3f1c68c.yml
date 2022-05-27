@@ -17,7 +17,7 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: 1f49f2ab-26bc-48b3-96cc-dcffbc93eadf
-    name: posh_ps_suspicious_keywords.yml
+    name: posh_ps_susp_keywords.yml
   - id: d2e3f2f6-7e09-4bf2-bc5d-90186809e7fb
     name: posh_ps_upload.yml
   - id: 1139d2e2-84b1-4226-b445-354492eba8ba

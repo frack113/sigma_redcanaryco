@@ -26,6 +26,6 @@ sigma_rule:
   - id: 34f90d3c-c297-49e9-b26d-911b05a4866c
     name: posh_ps_keylogging.yml
   - id: 1f49f2ab-26bc-48b3-96cc-dcffbc93eadf
-    name: posh_ps_suspicious_keywords.yml
+    name: posh_ps_susp_keywords.yml
   - id: f772cee9-b7c2-4cb2-8f07-49870adc02e0
     name: posh_ps_nishang_malicious_commandlets.yml

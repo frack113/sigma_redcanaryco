@@ -20,4 +20,4 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: b5522a23-82da-44e5-9c8b-e10ed8955f88
-    name: posh_ps_suspicious_execute_batch_script.yml
+    name: posh_ps_susp_execute_batch_script.yml

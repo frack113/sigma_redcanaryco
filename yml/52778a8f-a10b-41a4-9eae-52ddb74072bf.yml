@@ -1,0 +1,17 @@
+Attack_name: Group Policy Discovery
+Attack_description: |-
+  Adversaries may gather information on Group Policy settings to identify paths for privilege escalation, security measures applied within a domain, and to discover patterns in domain objects that can be manipulated or used to blend in the environment. Group Policy allows for centralized management of user and computer settings in Active Directory (AD). Group policy objects (GPOs) are containers for group policy settings made up of files stored within a predicable network path <code>\<DOMAIN>\SYSVOL\<DOMAIN>\Policies\</code>.(Citation: TechNet Group Policy Basics)(Citation: ADSecurity GPO Persistence 2016)
+
+  Adversaries may use commands such as <code>gpresult</code> or various publicly available PowerShell functions, such as <code>Get-DomainGPO</code> and <code>Get-DomainGPOLocalGroup</code>, to gather information on Group Policy settings.(Citation: Microsoft gpresult)(Citation: Github PowerShell Empire) Adversaries may use this information to shape follow-on behaviors, including determining potential attack paths within the target network as well as opportunities to manipulate Group Policy settings (i.e. [Domain Policy Modification](https://attack.mitre.org/techniques/T1484)) for their benefit.
+guid: 52778a8f-a10b-41a4-9eae-52ddb74072bf
+name: MSFT Get-GPO Cmdlet
+tactic:
+  - discovery
+technique:
+  - T1615
+os:
+  - windows
+description: 'The Get-GPO cmdlet gets one Group Policy Object (GPO) or all the GPOs in a domain. Tested on Windows Server 2019 as a domain user with computer joined to domain. Reference: https://docs.microsoft.com/en-us/powershell/module/grouppolicy/get-gpo?view=windowsserver2022-ps'
+executor: powershell
+sigma: false
+sigma_rule: []

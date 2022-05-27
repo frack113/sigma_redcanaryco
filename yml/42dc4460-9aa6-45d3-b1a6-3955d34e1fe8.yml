@@ -25,9 +25,9 @@ sigma_rule:
   - id: f4bbd493-b796-416e-bbf2-121235348529
     name: proc_creation_win_non_interactive_powershell.yml
   - id: de41232e-12e8-49fa-86bc-c05c7e722df9
-    name: posh_pm_suspicious_download.yml
+    name: posh_pm_susp_download.yml
   - id: 403c2cc0-7f6b-4925-9423-bfa573bed7eb
-    name: posh_ps_suspicious_download.yml
+    name: posh_ps_susp_download.yml
   - id: 1139d2e2-84b1-4226-b445-354492eba8ba
     name: posh_ps_web_request.yml
   - id: 635dbb88-67b3-4b41-9ea5-a3af2dd88153

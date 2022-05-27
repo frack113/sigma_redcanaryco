@@ -32,11 +32,11 @@ sigma_rule:
   - id: 9fc51a3c-81b3-4fa7-b35f-7c02cf10fd2d
     name: proc_creation_win_susp_web_request_cmd.yml
   - id: 36210e0d-5b19-485d-a087-c096088885f0
-    name: proc_creation_win_powershell_suspicious_parameter_variation.yml
+    name: proc_creation_win_powershell_susp_parameter_variation.yml
   - id: 8ff28fdd-e2fa-4dfa-aeda-ef3d61c62090
-    name: posh_pm_suspicious_invocation_specific.yml
+    name: posh_pm_susp_invocation_specific.yml
   - id: ae7fbf8e-f3cb-49fd-8db4-5f3bed522c71
-    name: posh_ps_suspicious_invocation_specific.yml
+    name: posh_ps_susp_invocation_specific.yml
   - id: 1139d2e2-84b1-4226-b445-354492eba8ba
     name: posh_ps_web_request.yml
   - id: 89819aa4-bbd6-46bc-88ec-c7f7fe30efa6

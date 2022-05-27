@@ -1,0 +1,18 @@
+Attack_name: Network Share Discovery
+Attack_description: "Adversaries may look for folders and drives shared on remote systems as a means of identifying sources of information to gather as a precursor for Collection and to identify potential\
+  \ systems of interest for Lateral Movement. Networks often contain shared network drives and folders that enable users to access file directories on various systems across a network. \n\nFile sharing\
+  \ over a Windows network occurs over the SMB protocol. (Citation: Wikipedia Shared Resource) (Citation: TechNet Shared Folder) [Net](https://attack.mitre.org/software/S0039) can be used to query a remote\
+  \ system for available shared drives using the <code>net view \\\\\\\\remotesystem</code> command. It can also be used to query shared drives on the local system using <code>net share</code>. For macOS,\
+  \ the <code>sharing -l</code> command lists all shared points used for smb services."
+guid: 987901d1-5b87-4558-a6d9-cffcabc638b8
+name: WinPwn - shareenumeration
+tactic:
+  - discovery
+technique:
+  - T1135
+os:
+  - windows
+description: Network share enumeration using the shareenumeration function of WinPwn
+executor: powershell
+sigma: false
+sigma_rule: []
