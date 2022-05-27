@@ -45,7 +45,7 @@ powershell
 
  - posh_ps_malicious_keywords.yml (id: f62176f3-8128-4faa-bf6c-83261322e5eb)
 
- - posh_ps_suspicious_networkcredential.yml (id: 1883444f-084b-419b-ac62-e0d0c5b3693f)
+ - posh_ps_susp_networkcredential.yml (id: 1883444f-084b-419b-ac62-e0d0c5b3693f)
 
  - posh_ps_accessing_win_api.yml (id: 03d83090-8cba-44a0-b02f-0b756a050306)
 

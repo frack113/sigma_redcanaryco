@@ -42,15 +42,15 @@ powershell
 
  - proc_creation_win_powershell_download.yml (id: 3b6ab547-8ec2-4991-b9d2-2b06702a48d7)
 
- - posh_ps_suspicious_invocation_specific.yml (id: ae7fbf8e-f3cb-49fd-8db4-5f3bed522c71)
+ - posh_ps_susp_invocation_specific.yml (id: ae7fbf8e-f3cb-49fd-8db4-5f3bed522c71)
 
  - posh_ps_web_request.yml (id: 1139d2e2-84b1-4226-b445-354492eba8ba)
 
- - posh_pm_suspicious_invocation_specific.yml (id: 8ff28fdd-e2fa-4dfa-aeda-ef3d61c62090)
+ - posh_pm_susp_invocation_specific.yml (id: 8ff28fdd-e2fa-4dfa-aeda-ef3d61c62090)
 
  - posh_ps_file_and_directory_discovery.yml (id: d23f2ba5-9da0-4463-8908-8ee47f614bb9)
 
- - posh_ps_suspicious_download.yml (id: 403c2cc0-7f6b-4925-9423-bfa573bed7eb)
+ - posh_ps_susp_download.yml (id: 403c2cc0-7f6b-4925-9423-bfa573bed7eb)
 
  - posh_ps_accessing_win_api.yml (id: 03d83090-8cba-44a0-b02f-0b756a050306)
 
@@ -58,13 +58,13 @@ powershell
 
  - posh_ps_malicious_commandlets.yml (id: 89819aa4-bbd6-46bc-88ec-c7f7fe30efa6)
 
- - posh_ps_suspicious_gwmi.yml (id: 0332a266-b584-47b4-933d-a00b103e1b37)
+ - posh_ps_susp_gwmi.yml (id: 0332a266-b584-47b4-933d-a00b103e1b37)
 
- - posh_ps_suspicious_get_current_user.yml (id: 4096a49c-7de4-4da0-a230-c66ccd56ea5a)
+ - posh_ps_susp_get_current_user.yml (id: 4096a49c-7de4-4da0-a230-c66ccd56ea5a)
 
- - posh_ps_suspicious_keywords.yml (id: 1f49f2ab-26bc-48b3-96cc-dcffbc93eadf)
+ - posh_ps_susp_keywords.yml (id: 1f49f2ab-26bc-48b3-96cc-dcffbc93eadf)
 
- - posh_ps_suspicious_getprocess_lsass.yml (id: 84c174ab-d3ef-481f-9c86-a50d0b8e3edb)
+ - posh_ps_susp_getprocess_lsass.yml (id: 84c174ab-d3ef-481f-9c86-a50d0b8e3edb)
 
  - posh_ps_invoke_nightmare.yml (id: 6d3f1399-a81c-4409-aff3-1ecfe9330baf)
 
@@ -76,13 +76,13 @@ powershell
 
  - posh_ps_software_discovery.yml (id: 2650dd1a-eb2a-412d-ac36-83f06c4f2282)
 
- - posh_ps_suspicious_local_group_reco.yml (id: fa6a5a45-3ee2-4529-aa14-ee5edc9e29cb)
+ - posh_ps_susp_local_group_reco.yml (id: fa6a5a45-3ee2-4529-aa14-ee5edc9e29cb)
 
  - posh_ps_localuser.yml (id: 4fdc44df-bfe9-4fcc-b041-68f5a2d3031c)
 
  - posh_ps_automated_collection.yml (id: c1dda054-d638-4c16-afc8-53e007f3fbc5)
 
- - posh_ps_suspicious_extracting.yml (id: bd5971a7-626d-46ab-8176-ed643f694f68)
+ - posh_ps_susp_extracting.yml (id: bd5971a7-626d-46ab-8176-ed643f694f68)
 
  - posh_ps_powerview_malicious_commandlets.yml (id: dcd74b95-3f36-4ed9-9598-0490951643aa)
 

@@ -64,9 +64,9 @@ powershell
 
  - posh_ps_malicious_commandlets.yml (id: 89819aa4-bbd6-46bc-88ec-c7f7fe30efa6)
 
- - posh_pm_suspicious_invocation_specific.yml (id: 8ff28fdd-e2fa-4dfa-aeda-ef3d61c62090)
+ - posh_pm_susp_invocation_specific.yml (id: 8ff28fdd-e2fa-4dfa-aeda-ef3d61c62090)
 
- - posh_ps_suspicious_keywords.yml (id: 1f49f2ab-26bc-48b3-96cc-dcffbc93eadf)
+ - posh_ps_susp_keywords.yml (id: 1f49f2ab-26bc-48b3-96cc-dcffbc93eadf)
 
  - posh_ps_accessing_win_api.yml (id: 03d83090-8cba-44a0-b02f-0b756a050306)
 

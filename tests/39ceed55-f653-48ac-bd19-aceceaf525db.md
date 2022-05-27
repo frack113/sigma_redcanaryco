@@ -44,13 +44,13 @@ powershell
 
  - proc_creation_win_susp_csc_folder.yml (id: dcaa3f04-70c3-427a-80b4-b870d73c94c4)
 
- - posh_ps_suspicious_windowstyle.yml (id: 313fbb0a-a341-4682-848d-6d6f8c4fab7c)
+ - posh_ps_susp_windowstyle.yml (id: 313fbb0a-a341-4682-848d-6d6f8c4fab7c)
 
- - posh_ps_suspicious_networkcredential.yml (id: 1883444f-084b-419b-ac62-e0d0c5b3693f)
+ - posh_ps_susp_networkcredential.yml (id: 1883444f-084b-419b-ac62-e0d0c5b3693f)
 
- - posh_ps_suspicious_gwmi.yml (id: 0332a266-b584-47b4-933d-a00b103e1b37)
+ - posh_ps_susp_gwmi.yml (id: 0332a266-b584-47b4-933d-a00b103e1b37)
 
- - posh_ps_suspicious_keywords.yml (id: 1f49f2ab-26bc-48b3-96cc-dcffbc93eadf)
+ - posh_ps_susp_keywords.yml (id: 1f49f2ab-26bc-48b3-96cc-dcffbc93eadf)
 
  - posh_ps_copy_item_system32.yml (id: 63bf8794-9917-45bc-88dd-e1b5abc0ecfd)
 

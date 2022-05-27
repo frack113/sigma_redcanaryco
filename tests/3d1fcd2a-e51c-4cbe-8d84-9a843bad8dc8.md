@@ -33,7 +33,7 @@ Reference: https://docs.microsoft.com/en-us/powershell/module/activedirectory/ge
 powershell
 
 # Sigma Rule
- - posh_pm_suspicious_ad_group_reco.yml (id: 815bfc17-7fc6-4908-a55e-2f37b98cedb4)
+ - posh_pm_susp_ad_group_reco.yml (id: 815bfc17-7fc6-4908-a55e-2f37b98cedb4)
 
  - proc_creation_win_non_interactive_powershell.yml (id: f4bbd493-b796-416e-bbf2-121235348529)
 
