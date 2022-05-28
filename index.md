@@ -221,7 +221,7 @@ Caution: a test can generate a lot of noise...
 
 [Extract Browser and System credentials with LaZagne](tests/9e507bb8-1d30-4e3b-a49b-cb5727d7ea79.md) ['macos'] (sigma rule :x:)
 
-[WinPwn - Loot local Credentials - AWS, Microsoft Azure, and Google Compute credentials](tests/aaa87b0e-5232-4649-ae5c-f1724a4b2798.md) ['windows'] (sigma rule :x:)
+[WinPwn - Loot local Credentials - AWS, Microsoft Azure, and Google Compute credentials](tests/aaa87b0e-5232-4649-ae5c-f1724a4b2798.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Extract passwords with grep](tests/bd4cf0d1-7646-474e-8610-78ccf5a097c4.md) ['macos', 'linux'] (sigma rule :x:)
 
@@ -295,7 +295,7 @@ Caution: a test can generate a lot of noise...
 
 [Tamper with Windows Defender Registry](tests/1b3e0146-a1e5-4c5c-89fb-1bb2ffe8fc45.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[WinPwn - Kill the event log services for stealth](tests/7869d7a3-3a30-4d2c-a5d2-f1cd9c34ce66.md) ['windows'] (sigma rule :x:)
+[WinPwn - Kill the event log services for stealth](tests/7869d7a3-3a30-4d2c-a5d2-f1cd9c34ce66.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [AMSI Bypass - Remove AMSI Provider Reg Key](tests/13f09b91-c953-438e-845b-b585e51cac9b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -523,19 +523,19 @@ Caution: a test can generate a lot of noise...
 
 [UACME Bypass Method 56](tests/235ec031-cd2d-465d-a7ae-68bab281e80e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[WinPwn - UAC Bypass ccmstp technique](tests/f3c145f9-3c8d-422c-bd99-296a17a8f567.md) ['windows'] (sigma rule :x:)
+[WinPwn - UAC Bypass ccmstp technique](tests/f3c145f9-3c8d-422c-bd99-296a17a8f567.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [UACME Bypass Method 23](tests/8ceab7a2-563a-47d2-b5ba-0995211128d7.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[WinPwn - UAC Bypass DiskCleanup technique](tests/1ed67900-66cd-4b09-b546-2a0ef4431a0c.md) ['windows'] (sigma rule :x:)
+[WinPwn - UAC Bypass DiskCleanup technique](tests/1ed67900-66cd-4b09-b546-2a0ef4431a0c.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[WinPwn - UAC Bypass DccwBypassUAC technique](tests/2b61977b-ae2d-4ae4-89cb-5c36c89586be.md) ['windows'] (sigma rule :x:)
+[WinPwn - UAC Bypass DccwBypassUAC technique](tests/2b61977b-ae2d-4ae4-89cb-5c36c89586be.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Bypass UAC using Fodhelper](tests/58f641ea-12e3-499a-b684-44dee46bd182.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [UACME Bypass Method 61](tests/7825b576-744c-4555-856d-caf3460dc236.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[WinPwn - UAC Magic](tests/964d8bf8-37bc-4fd3-ba36-ad13761ebbcc.md) ['windows'] (sigma rule :x:)
+[WinPwn - UAC Magic](tests/964d8bf8-37bc-4fd3-ba36-ad13761ebbcc.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Disable UAC using reg.exe](tests/9e8af564-53ec-407e-aaa8-3cb20c3af7f9.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -709,11 +709,11 @@ Caution: a test can generate a lot of noise...
 
 [Environment variables discovery on macos and linux](tests/fcbdd43f-f4ad-42d5-98f3-0218097e2720.md) ['macos', 'linux'] (sigma rule :x:)
 
-[WinPwn - PowerSharpPack - Sharpup checking common Privesc vectors](tests/efb79454-1101-4224-a4d0-30c9c8b29ffc.md) ['windows'] (sigma rule :x:)
+[WinPwn - PowerSharpPack - Sharpup checking common Privesc vectors](tests/efb79454-1101-4224-a4d0-30c9c8b29ffc.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [System Information Discovery](tests/edff98ec-0f73-4f63-9890-6b117092aff6.md) ['macos'] (sigma rule :x:)
 
-[WinPwn - PowerSharpPack - Watson searching for missing windows patches](tests/07b18a66-6304-47d2-bad0-ef421eb2e107.md) ['windows'] (sigma rule :x:)
+[WinPwn - PowerSharpPack - Watson searching for missing windows patches](tests/07b18a66-6304-47d2-bad0-ef421eb2e107.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [WinPwn - winPEAS](tests/eea1d918-825e-47dd-acc2-814d6c58c0e1.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -725,7 +725,7 @@ Caution: a test can generate a lot of noise...
 
 [Hostname Discovery (Windows)](tests/85cfbf23-4a1e-4342-8792-007e004b975f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[WinPwn - PowerSharpPack - Seatbelt](tests/5c16ceb4-ba3a-43d7-b848-a13c1f216d95.md) ['windows'] (sigma rule :x:)
+[WinPwn - PowerSharpPack - Seatbelt](tests/5c16ceb4-ba3a-43d7-b848-a13c1f216d95.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [WinPwn - Powersploits privesc checks](tests/345cb8e4-d2de-4011-a580-619cf5a9e2d7.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -753,13 +753,13 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1106
-[WinPwn - Get SYSTEM shell - Pop System Shell using NamedPipe Impersonation technique](tests/e1f93a06-1649-4f07-89a8-f57279a7d60e.md) ['windows'] (sigma rule :x:)
+[WinPwn - Get SYSTEM shell - Pop System Shell using NamedPipe Impersonation technique](tests/e1f93a06-1649-4f07-89a8-f57279a7d60e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Execution through API - CreateProcess](tests/99be2089-c52d-4a4a-b5c3-261ee42c8b62.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[WinPwn - Get SYSTEM shell - Pop System Shell using CreateProcess technique](tests/ce4e76e6-de70-4392-9efe-b281fc2b4087.md) ['windows'] (sigma rule :x:)
+[WinPwn - Get SYSTEM shell - Pop System Shell using CreateProcess technique](tests/ce4e76e6-de70-4392-9efe-b281fc2b4087.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[WinPwn - Get SYSTEM shell - Bind System Shell using CreateProcess technique](tests/7ec5b74e-8289-4ff2-a162-b6f286a33abd.md) ['windows'] (sigma rule :x:)
+[WinPwn - Get SYSTEM shell - Bind System Shell using CreateProcess technique](tests/7ec5b74e-8289-4ff2-a162-b6f286a33abd.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1087.002
@@ -773,7 +773,7 @@ Caution: a test can generate a lot of noise...
 
 [Get-DomainUser with PowerView](tests/93662494-5ed7-4454-a04c-8c8372808ac2.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[WinPwn - generaldomaininfo](tests/ce483c35-c74b-45a7-a670-631d1e69db3d.md) ['windows'] (sigma rule :x:)
+[WinPwn - generaldomaininfo](tests/ce483c35-c74b-45a7-a670-631d1e69db3d.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Adfind - Enumerate Active Directory Admins](tests/b95fd967-4e62-4109-b48d-265edfd28c3a.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -847,21 +847,21 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1046
-[WinPwn - bluekeep](tests/1cca5640-32a9-46e6-b8e0-fabbe2384a73.md) ['windows'] (sigma rule :x:)
+[WinPwn - bluekeep](tests/1cca5640-32a9-46e6-b8e0-fabbe2384a73.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[WinPwn - MS17-10](tests/97585b04-5be2-40e9-8c31-82157b8af2d6.md) ['windows'] (sigma rule :x:)
+[WinPwn - MS17-10](tests/97585b04-5be2-40e9-8c31-82157b8af2d6.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Port Scan](tests/68e907da-2539-48f6-9fc9-257a78c05540.md) ['linux', 'macos'] (sigma rule :x:)
 
 [Port Scan using python](tests/6ca45b04-9f15-4424-b9d3-84a217285a5c.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[WinPwn - fruit](tests/bb037826-cbe8-4a41-93ea-b94059d6bb98.md) ['windows'] (sigma rule :x:)
+[WinPwn - fruit](tests/bb037826-cbe8-4a41-93ea-b94059d6bb98.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Port Scan Nmap](tests/515942b0-a09f-4163-a7bb-22fefb6f185f.md) ['linux', 'macos'] (sigma rule :heavy_check_mark:)
 
 [Port Scan NMap for Windows](tests/d696a3cb-d7a8-4976-8eb5-5af4abf2e3df.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[WinPwn - spoolvulnscan](tests/54574908-f1de-4356-9021-8053dd57439a.md) ['windows'] (sigma rule :x:)
+[WinPwn - spoolvulnscan](tests/54574908-f1de-4356-9021-8053dd57439a.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1036
@@ -887,7 +887,7 @@ Caution: a test can generate a lot of noise...
 
 [esentutl.exe SAM copy](tests/a90c2f4d-6726-444e-99d2-a00cd7c20480.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[WinPwn - Loot local Credentials - Dump SAM-File for NTLM Hashes](tests/0c0f5f06-166a-4f4d-bb4a-719df9a01dbb.md) ['windows'] (sigma rule :x:)
+[WinPwn - Loot local Credentials - Dump SAM-File for NTLM Hashes](tests/0c0f5f06-166a-4f4d-bb4a-719df9a01dbb.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Registry parse with pypykatz](tests/a96872b2-cbf3-46cf-8eb4-27e8c0e85263.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -931,9 +931,9 @@ Caution: a test can generate a lot of noise...
 
 [Curl Download File](tests/2b080b99-0deb-4d51-af0f-833d37c4ca6a.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Lolbas replace.exe use to copy UNC file](tests/ed0335ac-0354-400c-8148-f6151d20035a.md) ['windows'] (sigma rule :x:)
+[Lolbas replace.exe use to copy UNC file](tests/ed0335ac-0354-400c-8148-f6151d20035a.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Printer Migration Command-Line Tool UNC share folder into a zip file](tests/49845fc1-7961-4590-a0f0-3dbcf065ae7e.md) ['windows'] (sigma rule :x:)
+[Printer Migration Command-Line Tool UNC share folder into a zip file](tests/49845fc1-7961-4590-a0f0-3dbcf065ae7e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [File download with finger.exe on Windows](tests/5f507e45-8411-4f99-84e7-e38530c45d01.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -957,7 +957,7 @@ Caution: a test can generate a lot of noise...
 
 [certutil download (verifyctl)](tests/ffd492e3-0455-4518-9fb1-46527c9f241b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Lolbas replace.exe use to copy file](tests/54782d65-12f0-47a5-b4c1-b70ee23de6df.md) ['windows'] (sigma rule :x:)
+[Lolbas replace.exe use to copy file](tests/54782d65-12f0-47a5-b4c1-b70ee23de6df.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [svchost writing a file to a UNC path](tests/fa5a2759-41d7-4e13-a19c-e8f28a53566f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1121,7 +1121,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1218
-[Lolbin Gpscript logon option](tests/5bcda9cd-8e85-48fa-861d-b5a85d91d48c.md) ['windows'] (sigma rule :x:)
+[Lolbin Gpscript logon option](tests/5bcda9cd-8e85-48fa-861d-b5a85d91d48c.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Microsoft.Workflow.Compiler.exe Payload Execution](tests/7cbb0f26-a4c1-4f77-b180-a009aa05637e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1131,7 +1131,7 @@ Caution: a test can generate a lot of noise...
 
 [ProtocolHandler.exe Downloaded a Suspicious File](tests/db020456-125b-4c8b-a4a7-487df8afb5a2.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Lolbin Gpscript startup option](tests/f8da74bb-21b8-4af9-8d84-f2c8e4a220e3.md) ['windows'] (sigma rule :x:)
+[Lolbin Gpscript startup option](tests/f8da74bb-21b8-4af9-8d84-f2c8e4a220e3.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [mavinject - Inject DLL into running process](tests/c426dacf-575d-4937-8611-a148a86a5e61.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1141,7 +1141,7 @@ Caution: a test can generate a lot of noise...
 
 [Register-CimProvider - Execute evil dll](tests/ad2c17ed-f626-4061-b21e-b9804a6f3655.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Lolbas ie4uinit.exe use as proxy](tests/13c0804e-615e-43ad-b223-2dfbacd0b0b3.md) ['windows'] (sigma rule :x:)
+[Lolbas ie4uinit.exe use as proxy](tests/13c0804e-615e-43ad-b223-2dfbacd0b0b3.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Load Arbitrary DLL via Wuauclt (Windows Update Client)](tests/49fbd548-49e9-4bb7-94a6-3769613912b8.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1167,9 +1167,9 @@ Caution: a test can generate a lot of noise...
 ### T1078.003
 [Create local account with admin privileges](tests/a524ce99-86de-4db6-b4f9-e08f35a47a15.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[WinPwn - Loot local Credentials - powerhell kittie](tests/9e9fd066-453d-442f-88c1-ad7911d32912.md) ['windows'] (sigma rule :x:)
+[WinPwn - Loot local Credentials - powerhell kittie](tests/9e9fd066-453d-442f-88c1-ad7911d32912.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[WinPwn - Loot local Credentials - Safetykatz](tests/e9fdb899-a980-4ba4-934b-486ad22e22f4.md) ['windows'] (sigma rule :x:)
+[WinPwn - Loot local Credentials - Safetykatz](tests/e9fdb899-a980-4ba4-934b-486ad22e22f4.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Create local account with admin privileges - MacOS](tests/f1275566-1c26-4b66-83e3-7f9f7f964daa.md) ['macos'] (sigma rule :x:)
 
@@ -1179,9 +1179,9 @@ Caution: a test can generate a lot of noise...
 
 [Request for service tickets](tests/3f987809-3681-43c8-bcd8-b3ff3a28533a.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[WinPwn - PowerSharpPack - Kerberoasting Using Rubeus](tests/29094950-2c96-4cbd-b5e4-f7c65079678f.md) ['windows'] (sigma rule :x:)
+[WinPwn - PowerSharpPack - Kerberoasting Using Rubeus](tests/29094950-2c96-4cbd-b5e4-f7c65079678f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[WinPwn - Kerberoasting](tests/78d10e20-c874-45f2-a9df-6fea0120ec27.md) ['windows'] (sigma rule :x:)
+[WinPwn - Kerberoasting](tests/78d10e20-c874-45f2-a9df-6fea0120ec27.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Rubeus kerberoast](tests/14625569-6def-4497-99ac-8e7817105b55.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1285,7 +1285,7 @@ Caution: a test can generate a lot of noise...
 ### T1555
 [Enumerate credentials from Windows Credential Manager using vaultcmd.exe [Windows Credentials]](tests/36753ded-e5c4-4eb5-bc3c-e8fba236878d.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[WinPwn - Loot local Credentials - Wifi Credentials](tests/afe369c2-b42e-447f-98a3-fb1f4e2b8552.md) ['windows'] (sigma rule :x:)
+[WinPwn - Loot local Credentials - Wifi Credentials](tests/afe369c2-b42e-447f-98a3-fb1f4e2b8552.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Dump credentials from Windows Credential Manager With PowerShell [windows Credentials]](tests/c89becbe-1758-4e7d-a0f4-97d2188a23e3.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1293,9 +1293,9 @@ Caution: a test can generate a lot of noise...
 
 [Dump credentials from Windows Credential Manager With PowerShell [web Credentials]](tests/8fd5a296-6772-4766-9991-ff4e92af7240.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[WinPwn - Loot local Credentials - lazagne](tests/079ee2e9-6f16-47ca-a635-14efcd994118.md) ['windows'] (sigma rule :x:)
+[WinPwn - Loot local Credentials - lazagne](tests/079ee2e9-6f16-47ca-a635-14efcd994118.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[WinPwn - Loot local Credentials - Decrypt Teamviewer Passwords](tests/db965264-3117-4bad-b7b7-2523b7856b92.md) ['windows'] (sigma rule :x:)
+[WinPwn - Loot local Credentials - Decrypt Teamviewer Passwords](tests/db965264-3117-4bad-b7b7-2523b7856b92.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Extract Windows Credential Manager via VBA](tests/234f9b7c-b53d-4f32-897b-b880a6c9ea7b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1553,11 +1553,11 @@ Caution: a test can generate a lot of noise...
 
 [Password spray all Active Directory domain users with a single password via LDAP against domain controller (NTLM or Kerberos)](tests/f14d956a-5b6e-4a93-847f-0c415142f07d.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Password Spray Invoke-DomainPasswordSpray Light](tests/b15bc9a5-a4f3-4879-9304-ea0011ace63a.md) ['windows'] (sigma rule :x:)
+[Password Spray Invoke-DomainPasswordSpray Light](tests/b15bc9a5-a4f3-4879-9304-ea0011ace63a.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Password Spray all Domain Users](tests/90bc2e54-6c84-47a5-9439-0a2a92b4b175.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[WinPwn - DomainPasswordSpray Attacks](tests/5ccf4bbd-7bf6-43fc-83ac-d9e38aff1d82.md) ['windows'] (sigma rule :x:)
+[WinPwn - DomainPasswordSpray Attacks](tests/5ccf4bbd-7bf6-43fc-83ac-d9e38aff1d82.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1555.003
@@ -1573,11 +1573,11 @@ Caution: a test can generate a lot of noise...
 
 [LaZagne - Credentials from Browser](tests/9a2915b3-3954-4cce-8c76-00fbf4dbd014.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Stage Popular Credential Files for Exfiltration](tests/f543635c-1705-42c3-b180-efd6dc6e7ee7.md) ['windows'] (sigma rule :x:)
+[Stage Popular Credential Files for Exfiltration](tests/f543635c-1705-42c3-b180-efd6dc6e7ee7.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[WinPwn - PowerSharpPack - Sharpweb for Browser Credentials](tests/e5e3d639-6ea8-4408-9ecd-d5a286268ca0.md) ['windows'] (sigma rule :x:)
+[WinPwn - PowerSharpPack - Sharpweb for Browser Credentials](tests/e5e3d639-6ea8-4408-9ecd-d5a286268ca0.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[WinPwn - BrowserPwn](tests/764ea176-fb71-494c-90ea-72e9d85dce76.md) ['windows'] (sigma rule :x:)
+[WinPwn - BrowserPwn](tests/764ea176-fb71-494c-90ea-72e9d85dce76.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Simulating Access to Chrome Login Data - MacOS](tests/124e13e5-d8a1-4378-a6ee-a53cd0c7e369.md) ['macos'] (sigma rule :x:)
 
@@ -1587,7 +1587,7 @@ Caution: a test can generate a lot of noise...
 
 [Search macOS Safari Cookies](tests/c1402f7b-67ca-43a8-b5f3-3143abedc01b.md) ['macos'] (sigma rule :x:)
 
-[WinPwn - Loot local Credentials - mimi-kittenz](tests/ec1d0b37-f659-4186-869f-31a554891611.md) ['windows'] (sigma rule :x:)
+[WinPwn - Loot local Credentials - mimi-kittenz](tests/ec1d0b37-f659-4186-869f-31a554891611.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1546.004
@@ -1629,7 +1629,7 @@ Caution: a test can generate a lot of noise...
 ### T1040
 [Windows Internal Packet Capture](tests/b5656f67-d67f-4de8-8e62-b5581630f528.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Windows Internal pktmon capture](tests/c67ba807-f48b-446e-b955-e4928cd1bf91.md) ['windows'] (sigma rule :x:)
+[Windows Internal pktmon capture](tests/c67ba807-f48b-446e-b955-e4928cd1bf91.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Packet Capture Linux](tests/7fe741f7-b265-4951-a7c7-320889083b3e.md) ['linux'] (sigma rule :x:)
 
@@ -1637,7 +1637,7 @@ Caution: a test can generate a lot of noise...
 
 [Packet Capture Windows Command Prompt](tests/a5b2f6a0-24b4-493e-9590-c699f75723ca.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Windows Internal pktmon set filter](tests/855fb8b4-b8ab-4785-ae77-09f5df7bff55.md) ['windows'] (sigma rule :x:)
+[Windows Internal pktmon set filter](tests/855fb8b4-b8ab-4785-ae77-09f5df7bff55.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1003
@@ -1689,7 +1689,7 @@ Caution: a test can generate a lot of noise...
 
 [PowerView ShareFinder](tests/d07e4cc1-98ae-447e-9d31-36cb430d28c4.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[WinPwn - shareenumeration](tests/987901d1-5b87-4558-a6d9-cffcabc638b8.md) ['windows'] (sigma rule :x:)
+[WinPwn - shareenumeration](tests/987901d1-5b87-4558-a6d9-cffcabc638b8.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1071.004
@@ -2017,9 +2017,9 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1615
-[WinPwn - GPOAudit](tests/bc25c04b-841e-4965-855f-d1f645d7ab73.md) ['windows'] (sigma rule :x:)
+[WinPwn - GPOAudit](tests/bc25c04b-841e-4965-855f-d1f645d7ab73.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[WinPwn - GPORemoteAccessPolicy](tests/7230d01a-0a72-4bd5-9d7f-c6d472bc6a59.md) ['windows'] (sigma rule :x:)
+[WinPwn - GPORemoteAccessPolicy](tests/7230d01a-0a72-4bd5-9d7f-c6d472bc6a59.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [MSFT Get-GPO Cmdlet](tests/52778a8f-a10b-41a4-9eae-52ddb74072bf.md) ['windows'] (sigma rule :x:)
 
@@ -2079,13 +2079,13 @@ Caution: a test can generate a lot of noise...
 ### T1518
 [Find and Display Internet Explorer Browser Version](tests/68981660-6670-47ee-a5fa-7e74806420a4.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[WinPwn - DotNet](tests/10ba02d0-ab76-4f80-940d-451633f24c5b.md) ['windows'] (sigma rule :x:)
+[WinPwn - DotNet](tests/10ba02d0-ab76-4f80-940d-451633f24c5b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[WinPwn - powerSQL](tests/0bb64470-582a-4155-bde2-d6003a95ed34.md) ['windows'] (sigma rule :x:)
+[WinPwn - powerSQL](tests/0bb64470-582a-4155-bde2-d6003a95ed34.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Applications Installed](tests/c49978f6-bd6e-4221-ad2c-9e3e30cc1e3b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[WinPwn - Dotnetsearch](tests/7e79a1b6-519e-433c-ad55-3ff293667101.md) ['windows'] (sigma rule :x:)
+[WinPwn - Dotnetsearch](tests/7e79a1b6-519e-433c-ad55-3ff293667101.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Find and Display Safari Browser Version](tests/103d6533-fd2a-4d08-976a-4a598565280f.md) ['macos'] (sigma rule :x:)
 
@@ -2191,7 +2191,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1558.004
-[WinPwn - PowerSharpPack - Kerberoasting Using Rubeus](tests/8c385f88-4d47-4c9a-814d-93d9deec8c71.md) ['windows'] (sigma rule :x:)
+[WinPwn - PowerSharpPack - Kerberoasting Using Rubeus](tests/8c385f88-4d47-4c9a-814d-93d9deec8c71.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Get-DomainUser with PowerView](tests/d6139549-7b72-4e48-9ea1-324fc9bdf88a.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -2209,7 +2209,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1620
-[WinPwn - Reflectively load Mimik@tz into memory](tests/56b9589c-9170-4682-8c3d-33b86ecb5119.md) ['windows'] (sigma rule :x:)
+[WinPwn - Reflectively load Mimik@tz into memory](tests/56b9589c-9170-4682-8c3d-33b86ecb5119.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1136.001
@@ -2243,7 +2243,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1555.004
-[WinPwn - Loot local Credentials - Invoke-WCMDump](tests/fa714db1-63dd-479e-a58e-7b2b52ca5997.md) ['windows'] (sigma rule :x:)
+[WinPwn - Loot local Credentials - Invoke-WCMDump](tests/fa714db1-63dd-479e-a58e-7b2b52ca5997.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Access Saved Credentials via VaultCmd](tests/9c2dd36d-5c8b-4b29-8d72-a11b0d5d7439.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -2301,7 +2301,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1195
-[Octopus Scanner Malware Open Source Supply Chain](tests/82a9f001-94c5-495e-9ed5-f530dbded5e2.md) ['windows'] (sigma rule :x:)
+[Octopus Scanner Malware Open Source Supply Chain](tests/82a9f001-94c5-495e-9ed5-f530dbded5e2.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1547.007
@@ -2359,7 +2359,7 @@ Caution: a test can generate a lot of noise...
 ### T1187
 [PetitPotam](tests/485ce873-2e65-4706-9c7e-ae3ab9e14213.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[WinPwn - PowerSharpPack - Retrieving NTLM Hashes without Touching LSASS](tests/7f06b25c-799e-40f1-89db-999c9cc84317.md) ['windows'] (sigma rule :x:)
+[WinPwn - PowerSharpPack - Retrieving NTLM Hashes without Touching LSASS](tests/7f06b25c-799e-40f1-89db-999c9cc84317.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1069.001
@@ -2387,13 +2387,13 @@ Caution: a test can generate a lot of noise...
 ### T1120
 [Win32_PnPEntity Hardware Inventory](tests/2cb4dbf2-2dca-4597-8678-4d39d207a3a5.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[WinPwn - printercheck](tests/cb6e76ca-861e-4a7f-be08-564caa3e6f75.md) ['windows'] (sigma rule :x:)
+[WinPwn - printercheck](tests/cb6e76ca-861e-4a7f-be08-564caa3e6f75.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1127
-[Lolbin Jsc.exe compile javascript to dll](tests/3fc9fea2-871d-414d-8ef6-02e85e322b80.md) ['windows'] (sigma rule :x:)
+[Lolbin Jsc.exe compile javascript to dll](tests/3fc9fea2-871d-414d-8ef6-02e85e322b80.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Lolbin Jsc.exe compile javascript to exe](tests/1ec1c269-d6bd-49e7-b71b-a461f7fa7bc8.md) ['windows'] (sigma rule :x:)
+[Lolbin Jsc.exe compile javascript to exe](tests/1ec1c269-d6bd-49e7-b71b-a461f7fa7bc8.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1564.002
@@ -2417,7 +2417,7 @@ Caution: a test can generate a lot of noise...
 ### T1134.002
 [Access Token Manipulation](tests/dbf4f5a9-b8e0-46a3-9841-9ad71247239e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[WinPwn - Get SYSTEM shell - Pop System Shell using Token Manipulation technique](tests/ccf4ac39-ec93-42be-9035-90e2f26bcd92.md) ['windows'] (sigma rule :x:)
+[WinPwn - Get SYSTEM shell - Pop System Shell using Token Manipulation technique](tests/ccf4ac39-ec93-42be-9035-90e2f26bcd92.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1037.002
@@ -2453,7 +2453,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1055.001
-[WinPwn - Get SYSTEM shell - Bind System Shell using UsoClient DLL load technique](tests/8b56f787-73d9-4f1d-87e8-d07e89cbc7f5.md) ['windows'] (sigma rule :x:)
+[WinPwn - Get SYSTEM shell - Bind System Shell using UsoClient DLL load technique](tests/8b56f787-73d9-4f1d-87e8-d07e89cbc7f5.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Process Injection via mavinject.exe](tests/74496461-11a1-4982-b439-4d87a550d254.md) ['windows'] (sigma rule :heavy_check_mark:)
 
