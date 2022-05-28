@@ -16,5 +16,7 @@ description: |
   https://lolbas-project.github.io/lolbas/Binaries/Jsc/
   https://www.phpied.com/make-your-javascript-a-windows-exe/
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 52788a70-f1da-40dd-8fbd-73b5865d6568
+    name: proc_creation_win_lolbin_jsc.yml

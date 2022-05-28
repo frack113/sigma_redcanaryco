@@ -18,5 +18,7 @@ description: |-
   Will start a packet capture and store log file as t1040.etl.
   https://lolbas-project.github.io/lolbas/Binaries/Pktmon/
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: f956c7c1-0f60-4bc5-b7d7-b39ab3c08908
+    name: proc_creation_win_lolbin_pktmon.yml

@@ -19,5 +19,29 @@ os:
   - windows
 description: PowerSharpPack - Sharpweb searching for Browser Credentials technique via function of WinPwn
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 6e897651-f157-4d8f-aaeb-df8151488385
+    name: proc_creation_win_susp_powershell_download_cradles.yml
+  - id: 85b0b087-eddf-4a2b-b033-d771fa2b9775
+    name: proc_creation_win_susp_powershell_download_iex.yml
+  - id: e6c54d94-498c-4562-a37c-b469d8e9a275
+    name: proc_creation_win_powershell_download_patterns.yml
+  - id: 3b6ab547-8ec2-4991-b9d2-2b06702a48d7
+    name: proc_creation_win_powershell_download.yml
+  - id: 9fc51a3c-81b3-4fa7-b35f-7c02cf10fd2d
+    name: proc_creation_win_susp_web_request_cmd.yml
+  - id: ae7fbf8e-f3cb-49fd-8db4-5f3bed522c71
+    name: posh_ps_susp_invocation_specific.yml
+  - id: 89819aa4-bbd6-46bc-88ec-c7f7fe30efa6
+    name: posh_ps_malicious_commandlets.yml
+  - id: 1139d2e2-84b1-4226-b445-354492eba8ba
+    name: posh_ps_web_request.yml
+  - id: 8ff28fdd-e2fa-4dfa-aeda-ef3d61c62090
+    name: posh_pm_susp_invocation_specific.yml
+  - id: 1f49f2ab-26bc-48b3-96cc-dcffbc93eadf
+    name: posh_ps_susp_keywords.yml
+  - id: 91cb43db-302a-47e3-b3c8-7ede481e27bf
+    name: file_access_win_browser_credential_stealing.yml
+  - id: 8d31a8ce-46b5-4dd6-bdc3-680931f1db86
+    name: posh_pm_bad_opsec_artifacts.yml

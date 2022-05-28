@@ -21,5 +21,18 @@ description: "This test is designed to search a drive for credential files used 
   \ it,\nsimulating how an adversary might stage sensitive credential files for exfiltration in order to conduct offline password extraction with tools like [firepwd.py](https://github.com/lclevy/firepwd)\
   \ or [HackBrowserData](https://github.com/moonD4rk/HackBrowserData). \n"
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 85a8e5ba-bd03-4bfb-bbfa-a4409a8f8b98
+    name: proc_creation_win_susp_zip_compress.yml
+  - id: 855bc8b5-2ae8-402e-a9ed-b889e6df1900
+    name: proc_creation_win_susp_copy_lateral_movement.yml
+  - id: fc028194-969d-4122-8abe-0470d5b8f12f
+    name: posh_ps_access_to_browser_login_data.yml
+  - id: b7a3c9a3-09ea-4934-8864-6a32cacd98d9
+    name: posh_ps_susp_zip_compress.yml
+  - id: daf7eb81-35fd-410d-9d7a-657837e602bb
+    name: posh_pm_susp_zip_compress.yml
+  - id: 91cb43db-302a-47e3-b3c8-7ede481e27bf
+    name: file_access_win_browser_credential_stealing.yml
+

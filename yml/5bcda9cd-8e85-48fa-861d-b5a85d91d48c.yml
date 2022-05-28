@@ -14,5 +14,7 @@ description: |
   https://lolbas-project.github.io/lolbas/Binaries/Gpscript/
   https://oddvar.moe/2018/04/27/gpscript-exe-another-lolbin-to-the-list/
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 1e59c230-6670-45bf-83b0-98903780607e
+    name: proc_creation_win_lolbin_gpscript.yml

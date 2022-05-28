@@ -14,5 +14,11 @@ description: |
   Copy file.cab to destination
   Reference: https://lolbas-project.github.io/lolbas/Binaries/Replace/
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 4f4eaa9f-5ad4-410c-a4be-bc6132b0175a
+    name: proc_creation_win_cmd_redirect.yml
+  - id: 70e68156-6571-427b-a6e9-4476a173a9b6
+    name: proc_creation_win_redirect_to_stream.yml
+  - id: 9292293b-8496-4715-9db6-37028dcda4b3
+    name: proc_creation_win_lolbas_replace.yml

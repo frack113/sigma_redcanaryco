@@ -21,5 +21,13 @@ description: |
   [octopus-scanner-malware-open-source-supply-chain](https://securitylab.github.com/research/octopus-scanner-malware-open-source-supply-chain/)
   [the-supreme-backdoor-factory](https://www.dfir.it/blog/2019/02/26/the-supreme-backdoor-factory/)
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 805c55d9-31e6-4846-9878-c34c75054fe9
+    name: file_event_win_mal_octopus_scanner.yml
+  - id: 81325ce1-be01-4250-944f-b4789644556f
+    name: proc_creation_win_susp_schtasks_env_folder.yml
+  - id: 43f487f0-755f-4c2a-bce7-d6d2eec2fcf8
+    name: proc_creation_win_susp_schtasks_user_temp.yml
+  - id: 92626ddd-662c-49e3-ac59-f6535f12d189
+    name: proc_creation_win_susp_schtask_creation.yml
