@@ -13,5 +13,13 @@ os:
 description: "This test simulates MAZE's ransomware's ability to exfiltrate data via FTP.\nUpon successful execution, all 7z files within the %windir%\\temp directory will be uploaded to a remote FTP server.\
   \ \nReference: https://www.mandiant.com/resources/tactics-techniques-procedures-associated-with-maze-ransomware-incidents\n"
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 9fc51a3c-81b3-4fa7-b35f-7c02cf10fd2d
+    name: proc_creation_win_susp_web_request_cmd.yml
+  - id: f4bbd493-b796-416e-bbf2-121235348529
+    name: proc_creation_win_non_interactive_powershell.yml
+  - id: 1883444f-084b-419b-ac62-e0d0c5b3693f
+    name: posh_ps_susp_networkcredential.yml
+  - id: 1139d2e2-84b1-4226-b445-354492eba8ba
+    name: posh_ps_web_request.yml

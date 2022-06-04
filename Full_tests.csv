@@ -116,6 +116,7 @@ credential-access;T1110.003;powershell;['windows'];Password spray all Active Dir
 credential-access;T1110.003;powershell;['azure-ad'];Password spray all Azure AD users with a single password;a8aa2d3e-1c52-4016-bc73-0f8854cfa80a;False;4
 credential-access;T1110.003;powershell;['windows'];WinPwn - DomainPasswordSpray Attacks;5ccf4bbd-7bf6-43fc-83ac-d9e38aff1d82;True;5
 credential-access;T1110.003;powershell;['windows'];Password Spray Invoke-DomainPasswordSpray Light;b15bc9a5-a4f3-4879-9304-ea0011ace63a;True;6
+credential-access;T1110.003;powershell;['azure-ad'];Password Spray Microsoft Online Accounts with MSOLSpray (Azure/O365);f3a10056-0160-4785-8744-d9bd7c12dc39;False;7
 credential-access;T1556.003;sh;['linux'];Malicious PAM rule;4b9dde80-ae22-44b1-a82a-644bf009eb9c;False;1
 credential-access;T1556.003;sh;['linux'];Malicious PAM module;65208808-3125-4a2e-8389-a0a00e9ab326;False;2
 credential-access;T1552.004;command_prompt;['windows'];Private Keys;520ce462-7ca7-441e-b5a5-f8347f632696;True;1
@@ -1207,7 +1208,7 @@ command-and-control;T1105;powershell;['windows'];Download a file with IMEWDBLD.e
 command-and-control;T1105;command_prompt;['windows'];Curl Download File;2b080b99-0deb-4d51-af0f-833d37c4ca6a;True;18
 command-and-control;T1105;command_prompt;['windows'];Curl Upload File;635c9a38-6cbf-47dc-8615-3810bc1167cf;True;19
 command-and-control;T1105;command_prompt;['windows'];Download a file with Microsoft Connection Manager Auto-Download;d239772b-88e2-4a2e-8473-897503401bcc;True;20
-command-and-control;T1105;powershell;['windows'];MAZE Propagation Script;70f4d07c-5c3e-4d53-bb0a-cdf3ada14baf;False;21
+command-and-control;T1105;powershell;['windows'];MAZE Propagation Script;70f4d07c-5c3e-4d53-bb0a-cdf3ada14baf;True;21
 command-and-control;T1105;command_prompt;['windows'];Printer Migration Command-Line Tool UNC share folder into a zip file;49845fc1-7961-4590-a0f0-3dbcf065ae7e;True;22
 command-and-control;T1105;command_prompt;['windows'];Lolbas replace.exe use to copy file;54782d65-12f0-47a5-b4c1-b70ee23de6df;True;23
 command-and-control;T1105;command_prompt;['windows'];Lolbas replace.exe use to copy UNC file;ed0335ac-0354-400c-8148-f6151d20035a;True;24
@@ -1251,7 +1252,7 @@ exfiltration;T1048.003;powershell;['windows'];Exfiltration Over Alternative Prot
 exfiltration;T1048.003;manual;['linux'];Exfiltration Over Alternative Protocol - DNS;c403b5a4-b5fc-49f2-b181-d1c80d27db45;False;3
 exfiltration;T1048.003;powershell;['windows'];Exfiltration Over Alternative Protocol - HTTP;6aa58451-1121-4490-a8e9-1dada3f1c68c;True;4
 exfiltration;T1048.003;powershell;['windows'];Exfiltration Over Alternative Protocol - SMTP;ec3a835e-adca-4c7c-88d2-853b69c11bb9;True;5
-exfiltration;T1048.003;powershell;['windows'];MAZE FTP Upload;57799bc2-ad1e-4130-a793-fb0c385130ba;False;6
+exfiltration;T1048.003;powershell;['windows'];MAZE FTP Upload;57799bc2-ad1e-4130-a793-fb0c385130ba;True;6
 exfiltration;T1567;powershell;['windows'];Data Exfiltration with ConfigSecurityPolicy;5568a8f4-a8b1-4c40-9399-4969b642f122;True;1
 initial-access;T1078.004;gcloud;['google-workspace', 'windows', 'linux', 'macos'];Creating GCP Service Account and Service Account Key;9fdd83fd-bd53-46e5-a716-9dec89c8ae8e;False;1
 initial-access;T1078.001;command_prompt;['windows'];Enable Guest account with RDP capability and admin privileges;99747561-ed8d-47f2-9c91-1e5fde1ed6e0;True;1
