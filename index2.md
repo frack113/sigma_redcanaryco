@@ -424,6 +424,7 @@
   * T1564 [Extract binary files via VBA](tests/6afe288a-8a8b-4d33-a629-8d03ba9dad3a.md)
   * T1082 [WinPwn - PowerSharpPack - Watson searching for missing windows patches](tests/07b18a66-6304-47d2-bad0-ef421eb2e107.md)
   * T1071.001 [Malicious User Agents - Powershell](tests/81c13829-f6c9-45b8-85a6-053366d55297.md)
+  * T1615 [MSFT Get-GPO Cmdlet](tests/52778a8f-a10b-41a4-9eae-52ddb74072bf.md)
   * T1069.002 [Get-DomainGroup with PowerView](tests/5a8a181c-2c8e-478d-a943-549305a01230.md)
   * T1059.001 [Powershell XML requests](tests/4396927f-e503-427b-b023-31049b9b09a6.md)
   * T1048 [DNSExfiltration (doh)](tests/c943d285-ada3-45ca-b3aa-7cd6500c6a48.md)
@@ -836,6 +837,7 @@
   * T1070.003 [Clear Powershell History by Deleting History File](tests/da75ae8d-26d6-4483-b0fe-700e4df4f037.md)
 * posh_ps_cmdlet_scheduled_task.yml
   * T1053.005 [WMI Invoke-CimMethod Scheduled Task](tests/e16b3b75-dc9e-4cde-a23d-dfa2d0507b3b.md)
+  * T1053.005 [Import XML Schedule Task with Hidden Attribute](tests/cd925593-fbb4-486d-8def-16cbdf944bf4.md)
   * T1053.005 [Powershell Cmdlet Scheduled Task](tests/af9fd58f-c4ac-4bf2-a9ba-224b71ff25fd.md)
 * posh_ps_copy_item_system32.yml
   * T1134.004 [Parent PID Spoofing - Spawn from Current Process](tests/14920ebd-1d61-491a-85e0-fe98efe37f25.md)
@@ -1653,6 +1655,8 @@
   * T1620 [WinPwn - Reflectively load Mimik@tz into memory](tests/56b9589c-9170-4682-8c3d-33b86ecb5119.md)
   * T1552.001 [WinPwn - SessionGopher](tests/c9dc9de3-f961-4284-bd2d-f959c9f9fda5.md)
   * T1518 [WinPwn - powerSQL](tests/0bb64470-582a-4155-bde2-d6003a95ed34.md)
+* posh_ps_susp_get_gpo.yml
+  * T1615 [MSFT Get-GPO Cmdlet](tests/52778a8f-a10b-41a4-9eae-52ddb74072bf.md)
 * posh_ps_susp_get_process.yml
   * T1120 [WinPwn - printercheck](tests/cb6e76ca-861e-4a7f-be08-564caa3e6f75.md)
   * T1548.002 [WinPwn - UAC Bypass ccmstp technique](tests/f3c145f9-3c8d-422c-bd99-296a17a8f567.md)
@@ -1892,6 +1896,7 @@
   * T1082 [WinPwn - RBCD-Check](tests/dec6a0d8-bcaf-4c22-9d48-2aee59fb692b.md)
   * T1082 [WinPwn - Morerecon](tests/3278b2f6-f733-4875-9ef4-bfed34244f0a.md)
   * T1046 [WinPwn - spoolvulnscan](tests/54574908-f1de-4356-9021-8053dd57439a.md)
+  * T1546.015 [COM Hijacking with RunDLL32 (Local Server Switch)](tests/123520cc-e998-471b-a920-bd28e3feafa0.md)
   * T1087.002 [WinPwn - generaldomaininfo](tests/ce483c35-c74b-45a7-a670-631d1e69db3d.md)
   * T1135 [WinPwn - shareenumeration](tests/987901d1-5b87-4558-a6d9-cffcabc638b8.md)
   * T1218 [Invoke-ATHRemoteFXvGPUDisablementCommand base test](tests/9ebe7901-7edf-45c0-b5c7-8366300919db.md)
@@ -2986,6 +2991,7 @@
   * T1553.004 [Install root CA on Windows with certutil](tests/5fdb1a7a-a93c-4fbe-aa29-ddd9ef94ed1f.md)
 * proc_creation_win_run_executable_invalid_extension.yml
   * T1546.015 [COM Hijacking - InprocServer32](tests/48117158-d7be-441b-bc6a-d9e36e47b52b.md)
+  * T1546.015 [COM Hijacking with RunDLL32 (Local Server Switch)](tests/123520cc-e998-471b-a920-bd28e3feafa0.md)
   * T1218.011 [Rundll32 execute JavaScript Remote Payload With GetObject](tests/cf3bdb9a-dd11-4b6c-b0d0-9e22b68a71be.md)
   * T1218.011 [Rundll32 with desk.cpl](tests/83a95136-a496-423c-81d3-1c6750133917.md)
   * T1218.011 [Rundll32 execute VBscript command](tests/638730e7-7aed-43dc-bf8c-8117f805f5bb.md)
@@ -3481,6 +3487,7 @@
 * proc_creation_win_susp_powershell_sam_access.yml
   * T1003.002 [dump volume shadow copy hives with System.IO.File](tests/9d77fed7-05f8-476e-a81b-8ff0472c64d0.md)
 * proc_creation_win_susp_powershell_sub_processes.yml
+  * T1546.015 [COM Hijacking with RunDLL32 (Local Server Switch)](tests/123520cc-e998-471b-a920-bd28e3feafa0.md)
   * T1548.002 [WinPwn - UAC Bypass DiskCleanup technique](tests/1ed67900-66cd-4b09-b546-2a0ef4431a0c.md)
   * T1082 [WinPwn - General privesc checks](tests/5b6f39a2-6ec7-4783-a5fd-2c54a55409ed.md)
   * T1082 [WinPwn - GeneralRecon](tests/7804659b-fdbf-4cf6-b06a-c03e758590e8.md)
@@ -4064,6 +4071,10 @@
   * T1018 [Get-DomainController with PowerView](tests/b9d2e8ca-5520-4737-8076-4f08913da2c4.md)
 * sysmon_wmi_event_subscription.yml
   * T1546.003 [Persistence via WMI Event Subscription - CommandLineEventConsumer](tests/3c64f177-28e2-49eb-a799-d767b24dd1e0.md)
+  * T1546.003 [Persistence via WMI Event Subscription - ActiveScriptEventConsumer](tests/fecd0dfd-fb55-45fa-a10b-6250272d0832.md)
+  * T1546.003 [Persistence via WMI Event Subscription - ActiveScriptEventConsumer](tests/fecd0dfd-fb55-45fa-a10b-6250272d0832.md)
+* sysmon_wmi_susp_scripting.yml
+  * T1546.003 [Persistence via WMI Event Subscription - ActiveScriptEventConsumer](tests/fecd0dfd-fb55-45fa-a10b-6250272d0832.md)
 * win_alert_mimikatz_keywords.yml
   * T1550.002 [Mimikatz Pass the Hash](tests/ec23cef9-27d9-46e4-a68d-6f75f7b86908.md)
   * T1003.001 [Offline Credential Theft With Mimikatz](tests/453acf13-1dbd-47d7-b28a-172ce9228023.md)
@@ -4118,3 +4129,4 @@
   * T1562.006 [Disable Powershell ETW Provider - Windows](tests/6f118276-121d-4c09-bb58-a8fb4a72ee84.md)
 * win_wmi_persistence.yml
   * T1546.003 [Persistence via WMI Event Subscription - CommandLineEventConsumer](tests/3c64f177-28e2-49eb-a799-d767b24dd1e0.md)
+  * T1546.003 [Persistence via WMI Event Subscription - ActiveScriptEventConsumer](tests/fecd0dfd-fb55-45fa-a10b-6250272d0832.md)

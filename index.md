@@ -387,7 +387,7 @@ Caution: a test can generate a lot of noise...
 
 [Scheduled Task Executing Base64 Encoded Commands From Registry](tests/e895677d-4f06-49ab-91b6-ae3742d0a2ba.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Import XML Schedule Task with Hidden Attribute](tests/cd925593-fbb4-486d-8def-16cbdf944bf4.md) ['windows'] (sigma rule :x:)
+[Import XML Schedule Task with Hidden Attribute](tests/cd925593-fbb4-486d-8def-16cbdf944bf4.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Scheduled task Remote](tests/2e5eac3e-327b-4a88-a0c0-c4057039a8dd.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -611,7 +611,7 @@ Caution: a test can generate a lot of noise...
 
 [WinPwn - GPORemoteAccessPolicy](tests/7230d01a-0a72-4bd5-9d7f-c6d472bc6a59.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[MSFT Get-GPO Cmdlet](tests/52778a8f-a10b-41a4-9eae-52ddb74072bf.md) ['windows'] (sigma rule :x:)
+[MSFT Get-GPO Cmdlet](tests/52778a8f-a10b-41a4-9eae-52ddb74072bf.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1555.004
@@ -963,7 +963,7 @@ Caution: a test can generate a lot of noise...
 ### T1546.015
 [COM Hijacking - InprocServer32](tests/48117158-d7be-441b-bc6a-d9e36e47b52b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[COM Hijacking with RunDLL32 (Local Server Switch)](tests/123520cc-e998-471b-a920-bd28e3feafa0.md) ['windows'] (sigma rule :x:)
+[COM Hijacking with RunDLL32 (Local Server Switch)](tests/123520cc-e998-471b-a920-bd28e3feafa0.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Powershell Execute COM Object](tests/752191b1-7c71-445c-9dbe-21bb031b18eb.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -2453,7 +2453,7 @@ Caution: a test can generate a lot of noise...
 ### T1546.003
 [Persistence via WMI Event Subscription - CommandLineEventConsumer](tests/3c64f177-28e2-49eb-a799-d767b24dd1e0.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Persistence via WMI Event Subscription - ActiveScriptEventConsumer](tests/fecd0dfd-fb55-45fa-a10b-6250272d0832.md) ['windows'] (sigma rule :x:)
+[Persistence via WMI Event Subscription - ActiveScriptEventConsumer](tests/fecd0dfd-fb55-45fa-a10b-6250272d0832.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1041
