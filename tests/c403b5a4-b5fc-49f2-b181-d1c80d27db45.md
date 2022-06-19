@@ -3,7 +3,7 @@
 
 Find sigma rule :x: 
 
-# Attack: Exfiltration Over Unencrypted/Obfuscated Non-C2 Protocol 
+# Attack: Exfiltration Over Unencrypted Non-C2 Protocol 
 
 Adversaries may steal data by exfiltrating it over an un-encrypted network protocol other than that of the existing command and control channel. The data may also be sent to an alternate network location from the main command and control server. 
 

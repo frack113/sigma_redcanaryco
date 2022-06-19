@@ -5,7 +5,7 @@ Find sigma rule :heavy_check_mark:
 
 # Attack: Application Window Discovery 
 
-Adversaries may attempt to get a listing of open application windows. Window listings could convey information about how the system is used or give context to information collected by a keylogger.
+Adversaries may attempt to get a listing of open application windows. Window listings could convey information about how the system is used or give context to information collected by a keylogger.(Citation: Prevailion DarkWatchman 2021)
 
 # MITRE
 ## Tactic
