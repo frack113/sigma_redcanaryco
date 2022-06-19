@@ -26,7 +26,7 @@ sigma_rule:
   - id: a642964e-bead-4bed-8910-1bb4d63e3b4d
     name: proc_creation_win_mimikatz_command_line.yml
   - id: 9292293b-8496-4715-9db6-37028dcda4b3
-    name: proc_creation_win_lolbas_replace.yml
+    name: proc_creation_win_lolbin_replace.yml
   - id: b8af5f36-1361-4ebe-9e76-e36128d947bf
     name: posh_ps_remove_item_path.yml
   - id: f62176f3-8128-4faa-bf6c-83261322e5eb

@@ -9,7 +9,7 @@ Attack_description: |-
   * <code>ScreenSaverIsSecure</code> - set to '0' to not require a password to unlock
   * <code>ScreenSaveTimeout</code> - sets user inactivity timeout before screensaver is executed
 
-  Adversaries can use screensaver settings to maintain persistence by setting the screensaver to run malware after a certain timeframe of user inactivity. (Citation: ESET Gazer Aug 2017)
+  Adversaries can use screensaver settings to maintain persistence by setting the screensaver to run malware after a certain timeframe of user inactivity.(Citation: ESET Gazer Aug 2017)
 guid: 281201e7-de41-4dc9-b73d-f288938cbb64
 name: Set Arbitrary Binary as Screensaver
 tactic:

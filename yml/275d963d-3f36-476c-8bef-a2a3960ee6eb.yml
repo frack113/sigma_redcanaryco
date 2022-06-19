@@ -1,7 +1,7 @@
-Attack_name: Signed Script Proxy Execution
-Attack_description: 'Adversaries may use scripts signed with trusted certificates to proxy execution of malicious files. Several Microsoft signed scripts that are default on Windows installations can be
-  used to proxy execution of other files. This behavior may be abused by adversaries to execute malicious files that could bypass application control and signature validation on systems.(Citation: GitHub
-  Ultimate AppLocker Bypass List)'
+Attack_name: System Script Proxy Execution
+Attack_description: 'Adversaries may use trusted scripts, often signed with certificates, to proxy the execution of malicious files. Several Microsoft signed scripts that have been downloaded from Microsoft
+  or are default on Windows installations can be used to proxy execution of other files.(Citation: LOLBAS Project) This behavior may be abused by adversaries to execute malicious files that could bypass
+  application control and signature validation on systems.(Citation: GitHub Ultimate AppLocker Bypass List)'
 guid: 275d963d-3f36-476c-8bef-a2a3960ee6eb
 name: SyncAppvPublishingServer Signed Script PowerShell Command Execution
 tactic:
@@ -17,7 +17,7 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 36475a7d-0f6d-4dce-9b01-6aeb473bbaf1
-    name: proc_creation_win_syncappvpublishingserver_vbs_execute_powershell.yml
+    name: proc_creation_win_lolbin_syncappvpublishingserver_vbs_execute_psh.yml
   - id: a642964e-bead-4bed-8910-1bb4d63e3b4d
     name: proc_creation_win_mimikatz_command_line.yml
   - id: 87e3c4e8-a6a8-4ad9-bb4f-46e7ff99a180

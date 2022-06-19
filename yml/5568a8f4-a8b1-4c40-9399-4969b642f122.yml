@@ -18,4 +18,4 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: 1f0f6176-6482-4027-b151-00071af39d7e
-    name: proc_creation_win_lolbas_configsecuritypolicy.yml
+    name: proc_creation_win_lolbin_configsecuritypolicy.yml

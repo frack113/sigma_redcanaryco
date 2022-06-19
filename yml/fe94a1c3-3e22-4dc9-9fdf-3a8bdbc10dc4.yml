@@ -1,6 +1,6 @@
 Attack_name: Application Window Discovery
-Attack_description: Adversaries may attempt to get a listing of open application windows. Window listings could convey information about how the system is used or give context to information collected by
-  a keylogger.
+Attack_description: 'Adversaries may attempt to get a listing of open application windows. Window listings could convey information about how the system is used or give context to information collected
+  by a keylogger.(Citation: Prevailion DarkWatchman 2021)'
 guid: fe94a1c3-3e22-4dc9-9fdf-3a8bdbc10dc4
 name: List Process Main Windows - C# .NET
 tactic:

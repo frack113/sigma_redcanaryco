@@ -1,12 +1,12 @@
-Attack_name: Launchd
-Attack_description: "This technique is deprecated due to the inaccurate usage. The report cited did not provide technical detail as to how the malware interacted directly with launchd rather than going\
-  \ through known services. Other system services are used to interact with launchd rather than launchd being used by itself. \n\nAdversaries may abuse the <code>Launchd</code> daemon to perform task scheduling\
-  \ for initial or recurring execution of malicious code. The <code>launchd</code> daemon, native to macOS, is responsible for loading and maintaining services within the operating system. This process\
-  \ loads the parameters for each launch-on-demand system-level daemon from the property list (plist) files found in <code>/System/Library/LaunchDaemons</code> and <code>/Library/LaunchDaemons</code> (Citation:\
-  \ AppleDocs Launch Agent Daemons). These LaunchDaemons have property list files which point to the executables that will be launched (Citation: Methods of Mac Malware Persistence).\n\nAn adversary may\
-  \ use the <code>launchd</code> daemon in macOS environments to schedule new executables to run at system startup or on a scheduled basis for persistence. <code>launchd</code> can also be abused to run\
-  \ a process under the context of a specified account. Daemons, such as <code>launchd</code>, run with the permissions of the root user account, and will operate regardless of which user account is logged\
-  \ in."
+Attack_name: Launch Agent
+Attack_description: "Adversaries may create or modify launch agents to repeatedly execute malicious payloads as part of persistence. When a user logs in, a per-user launchd process is started which loads\
+  \ the parameters for each launch-on-demand user agent from the property list (.plist) file found in <code>/System/Library/LaunchAgents</code>, <code>/Library/LaunchAgents</code>, and <code>~/Library/LaunchAgents</code>.(Citation:\
+  \ AppleDocs Launch Agent Daemons)(Citation: OSX Keydnap malware) (Citation: Antiquated Mac Malware) Property list files use the <code>Label</code>, <code>ProgramArguments </code>, and <code>RunAtLoad</code>\
+  \ keys to identify the Launch Agent's name, executable location, and execution time.(Citation: OSX.Dok Malware) Launch Agents are often installed to perform updates to programs, launch user specified\
+  \ programs at login, or to conduct other developer tasks.\n\n Launch Agents can also be executed using the [Launchctl](https://attack.mitre.org/techniques/T1569/001) command.\n \nAdversaries may install\
+  \ a new Launch Agent that executes at login by placing a .plist file into the appropriate folders with the <code>RunAtLoad</code> or <code>KeepAlive</code> keys set to <code>true</code>.(Citation: Sofacy\
+  \ Komplex Trojan)(Citation: Methods of Mac Malware Persistence) The Launch Agent name may be disguised by using a name from the related operating system or benign software. Launch Agents are created with\
+  \ user level privileges and execute with user level permissions.(Citation: OSX Malware Detection)(Citation: OceanLotus for OS X) "
 guid: 11979f23-9b9d-482a-9935-6fc9cd022c3e
 name: Event Monitor Daemon Persistence
 tactic:
@@ -15,6 +15,7 @@ tactic:
   - execution
 technique:
   - T1053.004
+  - T1543.001
 os:
   - macos
 description: "This test adds persistence via a plist to execute via the macOS Event Monitor Daemon. \n"

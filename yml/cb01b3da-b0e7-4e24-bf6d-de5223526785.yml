@@ -1,6 +1,6 @@
 Attack_name: Boot or Logon Autostart Execution
 Attack_description: |-
-  Adversaries may configure system settings to automatically execute a program during system boot or logon to maintain persistence or gain higher-level privileges on compromised systems. Operating systems may have mechanisms for automatically running a program on system boot or account logon.(Citation: Microsoft Run Key)(Citation: MSDN Authentication Packages)(Citation: Microsoft TimeProvider)(Citation: Cylance Reg Persistence Sept 2013)(Citation: Linux Kernel Programming)  These mechanisms may include automatically executing programs that are placed in specially designated directories or are referenced by repositories that store configuration information, such as the Windows Registry. An adversary may achieve the same goal by modifying or extending features of the kernel.
+  Adversaries may configure system settings to automatically execute a program during system boot or logon to maintain persistence or gain higher-level privileges on compromised systems. Operating systems may have mechanisms for automatically running a program on system boot or account logon.(Citation: Microsoft Run Key)(Citation: MSDN Authentication Packages)(Citation: Microsoft TimeProvider)(Citation: Cylance Reg Persistence Sept 2013)(Citation: Linux Kernel Programming) These mechanisms may include automatically executing programs that are placed in specially designated directories or are referenced by repositories that store configuration information, such as the Windows Registry. An adversary may achieve the same goal by modifying or extending features of the kernel.
 
   Since some boot or logon autostart programs run with higher privileges, an adversary may leverage these to elevate privileges.
 guid: cb01b3da-b0e7-4e24-bf6d-de5223526785
@@ -19,4 +19,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: a2ea3ae7-d3d0-40a0-a55c-25a45c87cac1
-    name: proc_creation_win_lolbins_susp_driver_installed_by_pnputil.yml
+    name: proc_creation_win_lolbin_susp_driver_installed_by_pnputil.yml
