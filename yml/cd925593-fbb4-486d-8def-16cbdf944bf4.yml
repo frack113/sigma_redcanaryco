@@ -18,5 +18,7 @@ os:
 description: "Create an scheduled task that executes calc.exe after user login from XML that contains hidden setting attribute. \nThis technique was seen several times in tricbot malware and also with the\
   \ targetted attack campaigne the industroyer2.\n"
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 363eccc0-279a-4ccf-a3ab-24c2e63b11fb
+    name: posh_ps_cmdlet_scheduled_task.yml

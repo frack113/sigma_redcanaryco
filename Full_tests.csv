@@ -401,7 +401,7 @@ privilege-escalation;T1053.005;powershell;['windows'];Powershell Cmdlet Schedule
 privilege-escalation;T1053.005;powershell;['windows'];Task Scheduler via VBA;ecd3fa21-7792-41a2-8726-2c5c673414d3;True;5
 privilege-escalation;T1053.005;powershell;['windows'];WMI Invoke-CimMethod Scheduled Task;e16b3b75-dc9e-4cde-a23d-dfa2d0507b3b;True;6
 privilege-escalation;T1053.005;command_prompt;['windows'];Scheduled Task Executing Base64 Encoded Commands From Registry;e895677d-4f06-49ab-91b6-ae3742d0a2ba;True;7
-privilege-escalation;T1053.005;powershell;['windows'];Import XML Schedule Task with Hidden Attribute;cd925593-fbb4-486d-8def-16cbdf944bf4;False;8
+privilege-escalation;T1053.005;powershell;['windows'];Import XML Schedule Task with Hidden Attribute;cd925593-fbb4-486d-8def-16cbdf944bf4;True;8
 privilege-escalation;T1546.013;powershell;['windows'];Append malicious start-process cmdlet;090e5aa5-32b6-473b-a49b-21e843a56896;True;1
 privilege-escalation;T1053.007;bash;['containers'];ListCronjobs;ddfb0bc1-3c3f-47e9-a298-550ecfefacbd;False;1
 privilege-escalation;T1053.007;bash;['containers'];CreateCronjob;f2fa019e-fb2a-4d28-9dc6-fd1a9b7f68c3;False;2
@@ -480,7 +480,7 @@ privilege-escalation;T1055.004;command_prompt;['windows'];Process Injection via 
 privilege-escalation;T1134.001;powershell;['windows'];Named pipe client impersonation;90db9e27-8e7c-4c04-b602-a45927884966;True;1
 privilege-escalation;T1134.001;powershell;['windows'];`SeDebugPrivilege` token duplication;34f0a430-9d04-4d98-bcb5-1989f14719f0;True;2
 privilege-escalation;T1546.003;powershell;['windows'];Persistence via WMI Event Subscription - CommandLineEventConsumer;3c64f177-28e2-49eb-a799-d767b24dd1e0;True;1
-privilege-escalation;T1546.003;powershell;['windows'];Persistence via WMI Event Subscription - ActiveScriptEventConsumer;fecd0dfd-fb55-45fa-a10b-6250272d0832;False;2
+privilege-escalation;T1546.003;powershell;['windows'];Persistence via WMI Event Subscription - ActiveScriptEventConsumer;fecd0dfd-fb55-45fa-a10b-6250272d0832;True;2
 privilege-escalation;T1134.004;powershell;['windows'];Parent PID Spoofing using PowerShell;069258f4-2162-46e9-9a25-c9c6c56150d2;True;1
 privilege-escalation;T1134.004;powershell;['windows'];Parent PID Spoofing - Spawn from Current Process;14920ebd-1d61-491a-85e0-fe98efe37f25;True;2
 privilege-escalation;T1134.004;powershell;['windows'];Parent PID Spoofing - Spawn from Specified Process;cbbff285-9051-444a-9d17-c07cd2d230eb;True;3
@@ -509,7 +509,7 @@ privilege-escalation;T1134.005;command_prompt;['windows'];Injection SID-History 
 privilege-escalation;T1547.002;powershell;['windows'];Authentication Package;be2590e8-4ac3-47ac-b4b5-945820f2fbe9;True;1
 privilege-escalation;T1546.015;powershell;['windows'];COM Hijacking - InprocServer32;48117158-d7be-441b-bc6a-d9e36e47b52b;True;1
 privilege-escalation;T1546.015;powershell;['windows'];Powershell Execute COM Object;752191b1-7c71-445c-9dbe-21bb031b18eb;True;2
-privilege-escalation;T1546.015;powershell;['windows'];COM Hijacking with RunDLL32 (Local Server Switch);123520cc-e998-471b-a920-bd28e3feafa0;False;3
+privilege-escalation;T1546.015;powershell;['windows'];COM Hijacking with RunDLL32 (Local Server Switch);123520cc-e998-471b-a920-bd28e3feafa0;True;3
 privilege-escalation;T1574.009;command_prompt;['windows'];Execution of program.exe as service with unquoted service path;2770dea7-c50f-457b-84c4-c40a47460d9f;True;1
 privilege-escalation;T1037.005;sh;['macos'];Add file to Local Library StartupItems;134627c3-75db-410e-bff8-7a920075f198;False;1
 privilege-escalation;T1546.010;command_prompt;['windows'];Install AppInit Shim;a58d9386-3080-4242-ab5f-454c16503d18;True;1
@@ -545,7 +545,7 @@ execution;T1053.005;powershell;['windows'];Powershell Cmdlet Scheduled Task;af9f
 execution;T1053.005;powershell;['windows'];Task Scheduler via VBA;ecd3fa21-7792-41a2-8726-2c5c673414d3;True;5
 execution;T1053.005;powershell;['windows'];WMI Invoke-CimMethod Scheduled Task;e16b3b75-dc9e-4cde-a23d-dfa2d0507b3b;True;6
 execution;T1053.005;command_prompt;['windows'];Scheduled Task Executing Base64 Encoded Commands From Registry;e895677d-4f06-49ab-91b6-ae3742d0a2ba;True;7
-execution;T1053.005;powershell;['windows'];Import XML Schedule Task with Hidden Attribute;cd925593-fbb4-486d-8def-16cbdf944bf4;False;8
+execution;T1053.005;powershell;['windows'];Import XML Schedule Task with Hidden Attribute;cd925593-fbb4-486d-8def-16cbdf944bf4;True;8
 execution;T1047;command_prompt;['windows'];WMI Reconnaissance Users;c107778c-dcf5-47c5-af2e-1d058a3df3ea;True;1
 execution;T1047;command_prompt;['windows'];WMI Reconnaissance Processes;5750aa16-0e59-4410-8b9a-8a47ca2788e2;True;2
 execution;T1047;command_prompt;['windows'];WMI Reconnaissance Software;718aebaa-d0e0-471a-8241-c5afa69c7414;True;3
@@ -632,7 +632,7 @@ persistence;T1053.005;powershell;['windows'];Powershell Cmdlet Scheduled Task;af
 persistence;T1053.005;powershell;['windows'];Task Scheduler via VBA;ecd3fa21-7792-41a2-8726-2c5c673414d3;True;5
 persistence;T1053.005;powershell;['windows'];WMI Invoke-CimMethod Scheduled Task;e16b3b75-dc9e-4cde-a23d-dfa2d0507b3b;True;6
 persistence;T1053.005;command_prompt;['windows'];Scheduled Task Executing Base64 Encoded Commands From Registry;e895677d-4f06-49ab-91b6-ae3742d0a2ba;True;7
-persistence;T1053.005;powershell;['windows'];Import XML Schedule Task with Hidden Attribute;cd925593-fbb4-486d-8def-16cbdf944bf4;False;8
+persistence;T1053.005;powershell;['windows'];Import XML Schedule Task with Hidden Attribute;cd925593-fbb4-486d-8def-16cbdf944bf4;True;8
 persistence;T1556.003;sh;['linux'];Malicious PAM rule;4b9dde80-ae22-44b1-a82a-644bf009eb9c;False;1
 persistence;T1556.003;sh;['linux'];Malicious PAM module;65208808-3125-4a2e-8389-a0a00e9ab326;False;2
 persistence;T1546.013;powershell;['windows'];Append malicious start-process cmdlet;090e5aa5-32b6-473b-a49b-21e843a56896;True;1
@@ -697,7 +697,7 @@ persistence;T1098.001;powershell;['azure-ad'];Azure AD Application Hijacking - S
 persistence;T1098.001;powershell;['azure-ad'];Azure AD Application Hijacking - App Registration;a12b5531-acab-4618-a470-0dafb294a87a;False;2
 persistence;T1098.001;sh;['iaas:aws'];AWS - Create Access Key and Secret Key;8822c3b0-d9f9-4daf-a043-491160a31122;False;3
 persistence;T1546.003;powershell;['windows'];Persistence via WMI Event Subscription - CommandLineEventConsumer;3c64f177-28e2-49eb-a799-d767b24dd1e0;True;1
-persistence;T1546.003;powershell;['windows'];Persistence via WMI Event Subscription - ActiveScriptEventConsumer;fecd0dfd-fb55-45fa-a10b-6250272d0832;False;2
+persistence;T1546.003;powershell;['windows'];Persistence via WMI Event Subscription - ActiveScriptEventConsumer;fecd0dfd-fb55-45fa-a10b-6250272d0832;True;2
 persistence;T1546.001;command_prompt;['windows'];Change Default File Association;10a08978-2045-4d62-8c42-1957bbbea102;True;1
 persistence;T1546.014;sh;['macos'];Persistance with Event Monitor - emond;23c9c127-322b-4c75-95ca-eff464906114;False;1
 persistence;T1547.001;command_prompt;['windows'];Reg Key Run;e55be3fd-3521-4610-9d1a-e210e42dcf05;True;1
@@ -728,7 +728,7 @@ persistence;T1546.004;sh;['macos', 'linux'];Add command to .bashrc;0a898315-4cfa
 persistence;T1547.002;powershell;['windows'];Authentication Package;be2590e8-4ac3-47ac-b4b5-945820f2fbe9;True;1
 persistence;T1546.015;powershell;['windows'];COM Hijacking - InprocServer32;48117158-d7be-441b-bc6a-d9e36e47b52b;True;1
 persistence;T1546.015;powershell;['windows'];Powershell Execute COM Object;752191b1-7c71-445c-9dbe-21bb031b18eb;True;2
-persistence;T1546.015;powershell;['windows'];COM Hijacking with RunDLL32 (Local Server Switch);123520cc-e998-471b-a920-bd28e3feafa0;False;3
+persistence;T1546.015;powershell;['windows'];COM Hijacking with RunDLL32 (Local Server Switch);123520cc-e998-471b-a920-bd28e3feafa0;True;3
 persistence;T1137.004;command_prompt;['windows'];Install Outlook Home Page Persistence;7a91ad51-e6d2-4d43-9471-f26362f5738e;True;1
 persistence;T1574.009;command_prompt;['windows'];Execution of program.exe as service with unquoted service path;2770dea7-c50f-457b-84c4-c40a47460d9f;True;1
 persistence;T1037.005;sh;['macos'];Add file to Local Library StartupItems;134627c3-75db-410e-bff8-7a920075f198;False;1
@@ -979,7 +979,7 @@ discovery;T1615;command_prompt;['windows'];Display group policy information via 
 discovery;T1615;powershell;['windows'];Get-DomainGPO to display group policy information via PowerView;4e524c4e-0e02-49aa-8df5-93f3f7959b9f;True;2
 discovery;T1615;powershell;['windows'];WinPwn - GPOAudit;bc25c04b-841e-4965-855f-d1f645d7ab73;True;3
 discovery;T1615;powershell;['windows'];WinPwn - GPORemoteAccessPolicy;7230d01a-0a72-4bd5-9d7f-c6d472bc6a59;True;4
-discovery;T1615;powershell;['windows'];MSFT Get-GPO Cmdlet;52778a8f-a10b-41a4-9eae-52ddb74072bf;False;5
+discovery;T1615;powershell;['windows'];MSFT Get-GPO Cmdlet;52778a8f-a10b-41a4-9eae-52ddb74072bf;True;5
 discovery;T1087.002;command_prompt;['windows'];Enumerate all accounts (Domain);6fbc9e68-5ad7-444a-bd11-8bf3136c477e;True;1
 discovery;T1087.002;powershell;['windows'];Enumerate all accounts via PowerShell (Domain);8b8a6449-be98-4f42-afd2-dedddc7453b2;True;2
 discovery;T1087.002;command_prompt;['windows'];Enumerate logged on users via CMD (Domain);161dcd85-d014-4f5e-900c-d3eaae82a0f7;True;3

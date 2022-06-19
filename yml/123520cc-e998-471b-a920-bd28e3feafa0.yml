@@ -18,5 +18,11 @@ description: "This test uses PowerShell to hijack a reference to a Component Obj
   \ \"rundll32.exe -localserver [clsid]\". \nThis method is generally used as an alternative to 'rundll32.exe -sta [clsid]' to execute dll's while evading detection. \nReference: https://www.hexacorn.com/blog/2020/02/13/run-lola-bin-run/\n\
   Upon successful execution of this test with the default options, whenever certain apps are opened (for example, Notepad), a calculator window will also be opened. "
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 1f49f2ab-26bc-48b3-96cc-dcffbc93eadf
+    name: posh_ps_susp_keywords.yml
+  - id: c3a99af4-35a9-4668-879e-c09aeb4f2bdf
+    name: proc_creation_win_run_executable_invalid_extension.yml
+  - id: e4b6d2a7-d8a4-4f19-acbd-943c16d90647
+    name: proc_creation_win_susp_powershell_sub_processes.yml
