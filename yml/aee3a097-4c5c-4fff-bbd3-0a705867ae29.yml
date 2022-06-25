@@ -1,0 +1,23 @@
+Attack_name: Keylogging
+Attack_description: "Adversaries may log user keystrokes to intercept credentials as the user types them. Keylogging is likely to be used to acquire credentials for new access opportunities when [OS Credential\
+  \ Dumping](https://attack.mitre.org/techniques/T1003) efforts are not effective, and may require an adversary to intercept keystrokes on a system for a substantial period of time before credentials can\
+  \ be successfully captured.\n\nKeylogging is the most prevalent type of input capture, with many different ways of intercepting keystrokes.(Citation: Adventures of a Keystroke) Some methods include:\n\
+  \n* Hooking API callbacks used for processing keystrokes. Unlike [Credential API Hooking](https://attack.mitre.org/techniques/T1056/004), this focuses solely on API functions intended for processing keystroke\
+  \ data.\n* Reading raw keystroke data from the hardware buffer.\n* Windows Registry modifications.\n* Custom drivers.\n* [Modify System Image](https://attack.mitre.org/techniques/T1601) may provide adversaries\
+  \ with hooks into the operating system of network devices to read raw keystrokes for login sessions.(Citation: Cisco Blog Legacy Device Attacks) "
+guid: aee3a097-4c5c-4fff-bbd3-0a705867ae29
+name: MacOS Swift Keylogger
+tactic:
+  - collection
+  - credential-access
+technique:
+  - T1056.001
+os:
+  - macos
+description: |
+  Utilizes a swift script to log keys to sout. It runs for 5 seconds then dumps the output to standard. Input Monitoring is required.
+  Input Monitoring can be enabled in System Preferences > Security & Privacy > Privacy > Input Monitoring.
+  Referece: https://cedowens.medium.com/taking-esf-for-a-nother-spin-6e1e6acd1b74
+executor: bash
+sigma: false
+sigma_rule: []

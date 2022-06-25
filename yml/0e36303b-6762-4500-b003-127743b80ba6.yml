@@ -11,9 +11,9 @@ technique:
   - T1083
 os:
   - windows
-description: |
-  Find or discover files on the file system.  Upon execution, the file "download" will be placed in the temporary folder and contain the output of
-  all of the data discovery commands.
+description: 'Find or discover files on the file system.  Upon successful execution, this test will output the results of all the data discovery commands to a specified file.
+
+  '
 executor: command_prompt
 sigma: true
 sigma_rule:
