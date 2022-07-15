@@ -9,20 +9,16 @@ Attack_description: "Adversaries may acquire credentials from web browsers by re
   \nAdversaries may also acquire credentials by searching web browser process memory for patterns that commonly match credentials.(Citation: GitHub Mimikittenz July 2016)\n\nAfter acquiring credentials\
   \ from web browsers, adversaries may attempt to recycle the credentials across different systems and/or accounts in order to expand access. This can result in significantly furthering an adversary's objective\
   \ in cases where credentials gained from web browsers overlap with privileged accounts (e.g. domain administrator)."
-guid: dc9cd677-c70f-4df5-bd1c-f114af3c2381
-name: Decrypt Mozilla Passwords with Firepwd.py
+guid: e359627f-2d90-4320-ba5e-b0f878155bbe
+name: WebBrowserPassView - Credentials from Browser
 tactic:
   - credential-access
 technique:
   - T1555.003
 os:
   - windows
-description: "Firepwd.py is a script that can decrypt Mozilla (Thunderbird, Firefox) passwords.\nUpon successful execution, the decrypted credentials will be output to a text file, as well as displayed\
-  \ on screen. \n"
+description: The following Atomic test utilizes WebBrowserPassView to extract passwords from browsers on a Window system. WebBrowserPassView is an open source application used to retrieve passwords stored
+  on a local computer. Recently noticed as a tool used in the BlackCat Ransomware.
 executor: powershell
-sigma: true
-sigma_rule:
-  - id: a9723fcc-881c-424c-8709-fd61442ab3c3
-    name: posh_ps_susp_recon_export.yml
-  - id: 91cb43db-302a-47e3-b3c8-7ede481e27bf
-    name: file_access_win_browser_credential_stealing.yml
+sigma: false
+sigma_rule: []

@@ -5,23 +5,16 @@ Attack_description: |-
   Remote access tools may be installed and used post-compromise as alternate communications channel for redundant access or as a way to establish an interactive remote desktop session with the target system. They may also be used as a component of malware to establish a reverse connection or back-connect to a service or adversary controlled system. Installation of many remote access tools may also include persistence (ex: the tool's installation routine creates a [Windows Service](https://attack.mitre.org/techniques/T1543/003)).
 
   Admin tools such as TeamViewer have been used by several groups targeting institutions in countries of interest to the Russian state and criminal campaigns.(Citation: CrowdStrike 2015 Global Threat Report)(Citation: CrySyS Blog TeamSpy)
-guid: 0ae9e327-3251-465a-a53b-485d4e3f58fa
-name: Ammyy Admin Software Execution
+guid: ecca999b-e0c8-40e8-8416-ad320b146a75
+name: NetSupport - RAT Execution
 tactic:
   - command-and-control
 technique:
   - T1219
 os:
   - windows
-description: "An adversary may attempt to trick the user into downloading Ammyy Admin Remote Desktop Software for use as a C2 channel. \nUpon successful execution, Ammyy Admin will be executed. \n"
+description: "A recent trend by threat actors, once a foothold is established, maintain long term persistence using third party remote services such as NetSupport to provide the operator with access to\
+  \ the network using legitimate services. \n"
 executor: powershell
-sigma: true
-sigma_rule:
-  - id: dca91cfd-d7ab-4c66-8da7-ee57d487b35b
-    name: proc_creation_win_susp_run_folder.yml
-  - id: 1547e27c-3974-43e2-a7d7-7f484fb928ec
-    name: registry_set_add_load_service_in_safe_mode.yml
-  - id: 4d07b1f4-cb00-4470-b9f8-b0191d48ff52
-    name: dns_query_remote_access_software_domains.yml
-  - id: 5e993621-67d4-488a-b9ae-b420d08b96cb
-    name: win_susp_service_installation_folder.yml
+sigma: false
+sigma_rule: []
