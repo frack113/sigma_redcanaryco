@@ -1,0 +1,21 @@
+Attack_name: Disable Cloud Logs
+Attack_description: "An adversary may disable cloud logging capabilities and integrations to limit what data is collected on their activities and avoid detection. \n\nCloud environments allow for collection\
+  \ and analysis of audit and application logs that provide insight into what activities a user does within the environment. If an adversary has sufficient permissions, they can disable logging to avoid\
+  \ detection of their activities. For example, in AWS an adversary may disable CloudWatch/CloudTrail integrations prior to conducting further malicious activity.(Citation: Following the CloudTrail: Generating\
+  \ strong AWS security signals with Sumo Logic)"
+guid: 93c150f5-ad7b-4ee3-8992-df06dec2ac79
+name: AWS - Remove VPC Flow Logs using Stratus
+tactic:
+  - defense-evasion
+technique:
+  - T1562.008
+os:
+  - linux
+  - macos
+description: 'This Atomic will attempt to remove AWS VPC Flow Logs configuration. Stratus Red Team is a self-contained binary. You can use it to easily detonate offensive attack techniques against a live
+  cloud environment. Ref: https://stratus-red-team.cloud/attack-techniques/AWS/aws.defense-evasion.vpc-remove-flow-logs/
+
+  '
+executor: sh
+sigma: false
+sigma_rule: []

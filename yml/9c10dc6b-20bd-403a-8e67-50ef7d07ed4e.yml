@@ -4,7 +4,7 @@ Attack_description: "An adversary may disable cloud logging capabilities and int
   \ detection of their activities. For example, in AWS an adversary may disable CloudWatch/CloudTrail integrations prior to conducting further malicious activity.(Citation: Following the CloudTrail: Generating\
   \ strong AWS security signals with Sumo Logic)"
 guid: 9c10dc6b-20bd-403a-8e67-50ef7d07ed4e
-name: AWS CloudTrail Changes
+name: AWS - CloudTrail Changes
 tactic:
   - defense-evasion
 technique:

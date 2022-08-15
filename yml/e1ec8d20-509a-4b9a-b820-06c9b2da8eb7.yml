@@ -18,6 +18,5 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 9a132afa-654e-11eb-ae93-0242ac130002
-    name: proc_creation_win_ad_find_discovery.yml
-  - id: 75df3b17-8bcc-4565-b89b-c9898acef911
-    name: proc_creation_win_susp_adfind.yml
+    name: proc_creation_win_susp_adfind_usage.yml
+

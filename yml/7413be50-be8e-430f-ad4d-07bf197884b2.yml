@@ -18,4 +18,4 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: 164eda96-11b2-430b-85ff-6a265c15bf32
-    name: proc_creation_win_susp_ad_reco.yml
+    name: proc_creation_win_wmic_group_recon.yml

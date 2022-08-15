@@ -17,8 +17,8 @@ sigma: true
 sigma_rule:
   - id: dca91cfd-d7ab-4c66-8da7-ee57d487b35b
     name: proc_creation_win_susp_run_folder.yml
-  - id: a64e4198-c1c8-46a5-bc9c-324c86455fd4
-    name: registry_set_defender_disabled.yml
+  - id: 0eb46774-f1ab-4a74-8238-1155855f2263
+    name: registry_set_windows_defender_tamper.yml
   - id: 49e5bc24-8b86-49f1-b743-535f332c2856
     name: win_defender_tamper_protection_trigger.yml
   - id: 57b649ef-ff42-4fb0-8bf6-62da243a1708

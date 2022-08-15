@@ -1,0 +1,18 @@
+Attack_name: Disable Cloud Logs
+Attack_description: "An adversary may disable cloud logging capabilities and integrations to limit what data is collected on their activities and avoid detection. \n\nCloud environments allow for collection\
+  \ and analysis of audit and application logs that provide insight into what activities a user does within the environment. If an adversary has sufficient permissions, they can disable logging to avoid\
+  \ detection of their activities. For example, in AWS an adversary may disable CloudWatch/CloudTrail integrations prior to conducting further malicious activity.(Citation: Following the CloudTrail: Generating\
+  \ strong AWS security signals with Sumo Logic)"
+guid: 89422c87-b57b-4a04-a8ca-802bb9d06121
+name: AWS - CloudWatch Log Group Deletes
+tactic:
+  - defense-evasion
+technique:
+  - T1562.008
+os:
+  - iaas:aws
+description: "Creates a new cloudWatch log group in AWS, Upon successful creation it will Delete the group. Attackers can use this technique to evade defenses by \ndeleting the log stream. Once it is deleted,\
+  \ the logs created by the attackers will not be logged. https://www.elastic.co/guide/en/security/current/aws-cloudwatch-log-group-deletion.html#aws-cloudwatch-log-group-deletion\n"
+executor: sh
+sigma: false
+sigma_rule: []

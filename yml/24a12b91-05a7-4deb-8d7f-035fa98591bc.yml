@@ -19,8 +19,8 @@ sigma: true
 sigma_rule:
   - id: dca91cfd-d7ab-4c66-8da7-ee57d487b35b
     name: proc_creation_win_susp_run_folder.yml
-  - id: c0abc838-36b0-47c9-b3b3-a90c39455382
-    name: registry_set_creation_service_temp_folder.yml
+  - id: a07f0359-4c90-4dc4-a681-8ffea40b4f47
+    name: registry_set_creation_service_susp_folder.yml
   - id: 277dc340-0540-42e7-8efb-5ff460045e07
     name: registry_set_creation_service_uncommon_folder.yml
 

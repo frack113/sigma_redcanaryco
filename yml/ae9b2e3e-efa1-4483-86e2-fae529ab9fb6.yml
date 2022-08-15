@@ -1,0 +1,23 @@
+Attack_name: Cloud Instance Metadata API
+Attack_description: |
+  Adversaries may attempt to access the Cloud Instance Metadata API to collect credentials and other sensitive data.
+
+  Most cloud service providers support a Cloud Instance Metadata API which is a service provided to running virtual instances that allows applications to access information about the running virtual instance. Available information generally includes name, security group, and additional metadata including sensitive data such as credentials and UserData scripts that may contain additional secrets. The Instance Metadata API is provided as a convenience to assist in managing applications and is accessible by anyone who can access the instance.(Citation: AWS Instance Metadata API) A cloud metadata API has been used in at least one high profile compromise.(Citation: Krebs Capital One August 2019)
+
+  If adversaries have a presence on the running virtual instance, they may query the Instance Metadata API directly to identify credentials that grant access to additional resources. Additionally, adversaries may exploit a Server-Side Request Forgery (SSRF) vulnerability in a public facing web proxy that allows them to gain access to the sensitive information via a request to the Instance Metadata API.(Citation: RedLock Instance Metadata API 2018)
+
+  The de facto standard across cloud service providers is to host the Instance Metadata API at <code>http[:]//169.254.169.254</code>.
+guid: ae9b2e3e-efa1-4483-86e2-fae529ab9fb6
+name: Azure - Search Azure AD User Attributes for Passwords
+tactic:
+  - credential-access
+technique:
+  - T1552.005
+os:
+  - azure-ad
+description: "This test uses the MSOnline Powershell module to retrieve all user attributes for a specified account, which can sometimes contain unsecured credentials. \nUpon successful execution, this\
+  \ test will scan all user attributes for any strings containing \"password\".\nThose unsecured credentials will be output to a text file, as well as the account that they are associated with and the user\
+  \ attribute in which they were found. \nSee: https://github.com/dafthack/CloudPentestCheatsheets/blob/master/cheatsheets/Azure.md\n"
+executor: powershell
+sigma: false
+sigma_rule: []

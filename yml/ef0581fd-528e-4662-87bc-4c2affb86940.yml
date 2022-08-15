@@ -32,4 +32,4 @@ sigma_rule:
   - id: 7fe71fc9-de3b-432a-8d57-8c809efc10ab
     name: proc_creation_win_new_service_creation.yml
   - id: 612e47e9-8a59-43a6-b404-f48683f45bd6
-    name: registry_set_set_servicedll.yml
+    name: registry_set_servicedll_hijack.yml

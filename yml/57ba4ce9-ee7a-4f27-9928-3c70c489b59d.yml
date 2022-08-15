@@ -11,7 +11,7 @@ Attack_description: "Adversaries may abuse rundll32.exe to proxy execution of ma
   \ code by creating multiple identical exported function names and appending <code>W</code> and/or <code>A</code> to harmless ones.(Citation: Attackify Rundll32.exe Obscurity)(Citation: Github NoRunDll)\
   \ DLL functions can also be exported and executed by an ordinal number (ex: <code>rundll32.exe file.dll,#1</code>).\n\nAdditionally, adversaries may use [Masquerading](https://attack.mitre.org/techniques/T1036)\
   \ techniques (such as changing DLL file names, file extensions, or function names) to further conceal execution of a malicious payload.(Citation: rundll32.exe defense evasion) "
-guid: cf3bdb9a-dd11-4b6c-b0d0-9e22b68a71be
+guid: 57ba4ce9-ee7a-4f27-9928-3c70c489b59d
 name: Rundll32 execute JavaScript Remote Payload With GetObject
 tactic:
   - defense-evasion
@@ -23,13 +23,5 @@ description: 'Test execution of a remote script using rundll32.exe. Upon executi
 
   '
 executor: command_prompt
-sigma: true
-sigma_rule:
-  - id: 73fcad2e-ff14-4c38-b11d-4172c8ac86c7
-    name: proc_creation_win_susp_rundll32_script_run.yml
-  - id: c3a99af4-35a9-4668-879e-c09aeb4f2bdf
-    name: proc_creation_win_run_executable_invalid_extension.yml
-  - id: cdc8da7d-c303-42f8-b08c-b4ab47230263
-    name: net_connection_win_rundll32_net_connections.yml
-  - id: 635dbb88-67b3-4b41-9ea5-a3af2dd88153
-    name: net_connection_win_binary_github_com.yml
+sigma: false
+sigma_rule: []

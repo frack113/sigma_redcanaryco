@@ -17,6 +17,6 @@ description: |
 executor: powershell
 sigma: true
 sigma_rule:
-  - id: a64e4198-c1c8-46a5-bc9c-324c86455fd4
-    name: registry_set_defender_disabled.yml
+  - id: 0eb46774-f1ab-4a74-8238-1155855f2263
+    name: registry_set_windows_defender_tamper.yml
 

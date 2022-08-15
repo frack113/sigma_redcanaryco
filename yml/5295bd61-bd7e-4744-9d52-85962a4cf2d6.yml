@@ -4,7 +4,7 @@ Attack_description: |-
 
   WinRM is the name of both a Windows service and a protocol that allows a user to interact with a remote system (e.g., run an executable, modify the Registry, modify services).(Citation: Microsoft WinRM) It may be called with the `winrm` command or by any number of programs such as PowerShell.(Citation: Jacobsen 2014) WinRM  can be used as a method of remotely interacting with [Windows Management Instrumentation](https://attack.mitre.org/techniques/T1047).(Citation: MSDN WMI)
 guid: 5295bd61-bd7e-4744-9d52-85962a4cf2d6
-name: Invoke-Command
+name: Remote Code Execution with PS Credentials Using Invoke-Command
 tactic:
   - lateral-movement
 technique:
@@ -14,7 +14,7 @@ os:
 description: |
   Execute Invoke-command on remote host.
 
-  Upon successful execution, powershell will execute ipconfig on localhost using `invoke-command`.
+  Upon successful execution, powershell will execute whoami on specified remote host using `invoke-command`.
 executor: powershell
 sigma: true
 sigma_rule:

@@ -19,6 +19,6 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: 9a132afa-654e-11eb-ae93-0242ac130002
-    name: proc_creation_win_ad_find_discovery.yml
+    name: proc_creation_win_susp_adfind_usage.yml
   - id: 1f21ec3f-810d-4b0e-8045-322202e22b4b
     name: net_connection_win_powershell_network_connection.yml

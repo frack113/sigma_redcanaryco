@@ -51,8 +51,8 @@ sigma_rule:
     name: posh_ps_susp_getprocess_lsass.yml
   - id: 1f49f2ab-26bc-48b3-96cc-dcffbc93eadf
     name: posh_ps_susp_keywords.yml
-  - id: 09e6d5c0-05b8-4ff8-9eeb-043046ec774c
-    name: proc_creation_win_susp_comsvcs_procdump.yml
+  - id: 646ea171-dded-4578-8a4d-65e9822892e3
+    name: proc_creation_win_process_dump_rundll32_comsvcs.yml
   - id: a49fa4d5-11db-418c-8473-1e014a8dd462
     name: proc_access_win_lsass_dump_comsvcs_dll.yml
   - id: 32d0d3e2-e58d-4d41-926b-18b520b2b32d

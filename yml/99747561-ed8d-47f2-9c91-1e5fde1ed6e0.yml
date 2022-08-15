@@ -30,8 +30,6 @@ sigma_rule:
     name: proc_creation_win_local_system_owner_account_discovery.yml
   - id: cd219ff3-fa99-45d4-8380-a7d15116c6dc
     name: proc_creation_win_net_user_add.yml
-  - id: 41904ebe-d56c-4904-b9ad-7a77bdf154b3
-    name: registry_set_rdp_registry_modification.yml
-  - id: 171b67e1-74b4-460e-8d55-b331f3e32d67
-    name: registry_set_rdp_settings_hijack.yml
+  - id: 3f6b7b62-61aa-45db-96bd-9c31b36b653c
+    name: registry_set_terminal_server_tampering.yml
 

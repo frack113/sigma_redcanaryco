@@ -1,0 +1,21 @@
+Attack_name: Disable Cloud Logs
+Attack_description: "An adversary may disable cloud logging capabilities and integrations to limit what data is collected on their activities and avoid detection. \n\nCloud environments allow for collection\
+  \ and analysis of audit and application logs that provide insight into what activities a user does within the environment. If an adversary has sufficient permissions, they can disable logging to avoid\
+  \ detection of their activities. For example, in AWS an adversary may disable CloudWatch/CloudTrail integrations prior to conducting further malicious activity.(Citation: Following the CloudTrail: Generating\
+  \ strong AWS security signals with Sumo Logic)"
+guid: a27418de-bdce-4ebd-b655-38f11142bf0c
+name: AWS - Disable CloudTrail Logging Through Event Selectors using Stratus
+tactic:
+  - defense-evasion
+technique:
+  - T1562.008
+os:
+  - linux
+  - macos
+description: 'Update event selectors in AWS CloudTrail to disable the logging of certain management events to evade defense. This Atomic test leverages a tool called Stratus-Red-Team built by DataDog (https://github.com/DataDog/stratus-red-team).
+  Stratus Red Team is a self-contained binary. You can use it to easily detonate offensive attack techniques against a live cloud environment. Ref: https://stratus-red-team.cloud/attack-techniques/AWS/aws.defense-evasion.cloudtrail-event-selectors/
+
+  '
+executor: sh
+sigma: false
+sigma_rule: []

@@ -50,8 +50,8 @@ sigma_rule:
     name: proc_creation_win_susp_procdump_lsass.yml
   - id: ffa6861c-4461-4f59-8a41-578c39f3f23e
     name: proc_creation_win_lsass_dump.yml
-  - id: 03795938-1387-481b-9f4c-3f6241e604fe
-    name: proc_creation_win_susp_procdump.yml
+  - id: 4a0b2c7e-7cb2-495d-8b63-5f268e7bfd67
+    name: proc_creation_win_renamed_procdump.yml
   - id: 4a0b2c7e-7cb2-495d-8b63-5f268e7bfd67
     name: proc_creation_win_renamed_procdump.yml
   - id: 7cccd811-7ae9-4ebe-9afd-cb5c406b824b
