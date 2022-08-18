@@ -16,5 +16,11 @@ os:
 description: "Creates a new 'AtomicTest' value pointing to an AppCert DLL in the AppCertDlls registry key. \nOnce the computer restarted, the DLL will be loaded in multiple processes and write an \n'AtomicTest.txt'\
   \ file in C:\\Users\\Public\\ to validate that the DLL executed succesfully.\n\nReference: https://skanthak.homepage.t-online.de/appcert.html\n"
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: f4bbd493-b796-416e-bbf2-121235348529
+    name: proc_creation_win_non_interactive_powershell.yml
+  - id: 1277f594-a7d1-4f28-a2d3-73af5cbeab43
+    name: file_event_win_win_shell_write_susp_directory.yml
+  - id: 046218bd-e0d8-4113-a3c3-895a12b2b298
+    name: registry_set_asep_reg_keys_modification_session_manager.yml

@@ -1,0 +1,17 @@
+Attack_name: Cloud Storage Object Discovery
+Attack_description: |-
+  Adversaries may enumerate objects in cloud storage infrastructure. Adversaries may use this information during automated discovery to shape follow-on behaviors, including requesting all or specific objects from cloud storage.  Similar to [File and Directory Discovery](https://attack.mitre.org/techniques/T1083) on a local host, after identifying available storage services (i.e. [Cloud Infrastructure Discovery](https://attack.mitre.org/techniques/T1580)) adversaries may access the contents/objects stored in cloud infrastructure.
+
+  Cloud service providers offer APIs allowing users to enumerate objects stored within cloud storage. Examples include ListObjectsV2 in AWS (Citation: ListObjectsV2) and List Blobs in Azure(Citation: List Blobs) .
+guid: 3c7094f8-71ec-4917-aeb8-a633d7ec4ef5
+name: AWS S3 Enumeration
+tactic:
+  - discovery
+technique:
+  - T1619
+os:
+  - iaas:azure
+description: "This test will enumerate all the S3 buckets in the user account and lists all the files in each bucket. \n"
+executor: sh
+sigma: false
+sigma_rule: []

@@ -515,6 +515,8 @@ win_susp_logon_newcredentials.yml;False
 win_audit_cve.yml;False
 win_av_relevant_match.yml;True
 win_builtin_remove_application.yml;True
+win_esent_ntdsutil_abuse.yml;False
+win_esent_ntdsutil_abuse_susp_location.yml;False
 win_mssql_add_sysadmin_account.yml;False
 win_mssql_disable_audit_settings.yml;False
 win_mssql_sp_procoption_set.yml;False
@@ -533,6 +535,7 @@ win_bits_client_susp_powershell_job.yml;False
 win_bits_client_susp_use_bitsadmin.yml;False
 win_bits_client_uncommon_domain.yml;False
 win_codeintegrity_failed_driver_load.yml;False
+win_diagnosis_scripted_load_remote_diagcab.yml;False
 win_apt_gallium.yml;False
 win_susp_dns_config.yml;False
 win_usb_device_plugged.yml;False
@@ -616,12 +619,10 @@ win_net_share_obj_susp_desktop_ini.yml;False
 win_new_or_renamed_user_account_with_dollar_sign.yml;False
 win_not_allowed_rdp_access.yml;False
 win_overpass_the_hash.yml;True
-win_pass_the_hash.yml;False
 win_pass_the_hash_2.yml;True
 win_petitpotam_network_share.yml;False
 win_petitpotam_susp_tgt_request.yml;False
 win_possible_dc_shadow.yml;False
-win_privesc_cve_2020_1472.yml;False
 win_protected_storage_service_access.yml;False
 win_rare_schtasks_creations.yml;False
 win_rdp_bluekeep_poc_scanner.yml;False
@@ -629,7 +630,6 @@ win_rdp_localhost_login.yml;False
 win_rdp_reverse_tunnel.yml;False
 win_register_new_logon_process_by_rubeus.yml;False
 win_remote_powershell_session.yml;False
-win_remote_registry_management_using_reg_utility.yml;False
 win_samaccountname_spoofing_cve_2021_42287.yml;False
 win_sam_registry_hive_handle_request.yml;False
 win_scheduled_task_deletion.yml;False
@@ -663,7 +663,6 @@ win_susp_failed_logons_single_source_ntlm2.yml;False
 win_susp_failed_logon_reasons.yml;False
 win_susp_failed_logon_source.yml;False
 win_susp_failed_remote_logons_single_source.yml;False
-win_susp_interactive_logons.yml;False
 win_susp_kerberos_manipulation.yml;False
 win_susp_krbrelayup.yml;False
 win_susp_ldap_dataexchange.yml;False
@@ -698,6 +697,7 @@ win_wmiprvse_wbemcomn_dll_hijack.yml;False
 win_security_mitigations_defender_load_unsigned_dll.yml;False
 win_security_mitigations_unsigned_dll_from_susp_location.yml;False
 win_hybridconnectionmgr_svc_running.yml;False
+win_shell_core_susp_packages_installed.yml;False
 win_susp_failed_guest_logon.yml;False
 win_anydesk_service_installation.yml;False
 win_apt_carbonpaper_turla.yml;False
@@ -921,7 +921,9 @@ image_load_mimikatz_inmemory_detection.yml;False
 image_load_msdt_sdiageng.yml;False
 image_load_pcre_net_load.yml;False
 image_load_pingback_backdoor.yml;False
+image_load_rundll32_loading_renamed_comsvcs.yml;False
 image_load_scrcons_imageload_wmi_scripteventconsumer.yml;False
+image_load_side_load_from_non_system_location.yml;False
 image_load_silenttrinity_stage_use.yml;False
 image_load_spoolsv_dll_load.yml;False
 image_load_susp_advapi32_dll.yml;True
@@ -1348,6 +1350,7 @@ proc_creation_win_exploit_systemnightmare.yml;False
 proc_creation_win_false_sysinternalsuite.yml;True
 proc_creation_win_file_permission_modifications.yml;True
 proc_creation_win_findstr_gpp_passwords.yml;True
+proc_creation_win_findstr_lsass.yml;False
 proc_creation_win_fsutil_drive_enumeration.yml;False
 proc_creation_win_fsutil_symlinkevaluation.yml;False
 proc_creation_win_gotoopener.yml;True
@@ -1517,6 +1520,7 @@ proc_creation_win_netcat_execution.yml;True
 proc_creation_win_netsh_allow_port_rdp.yml;True
 proc_creation_win_netsh_fw_add.yml;True
 proc_creation_win_netsh_fw_add_susp_image.yml;False
+proc_creation_win_netsh_fw_delete.yml;False
 proc_creation_win_netsh_fw_enable_group_rule.yml;True
 proc_creation_win_netsh_packet_capture.yml;True
 proc_creation_win_netsh_port_fwd.yml;True
@@ -1677,6 +1681,7 @@ proc_creation_win_suspicious_psexesvc_as_system.yml;False
 proc_creation_win_suspicious_psexesvc_renamed.yml;False
 proc_creation_win_susp_16bit_application.yml;False
 proc_creation_win_susp_7z.yml;True
+proc_creation_win_susp_add_local_admin.yml;False
 proc_creation_win_susp_add_user_remote_desktop.yml;True
 proc_creation_win_susp_adfind_enumeration.yml;True
 proc_creation_win_susp_adfind_usage.yml;True
@@ -1773,6 +1778,7 @@ proc_creation_win_susp_mounted_share_deletion.yml;True
 proc_creation_win_susp_mpiexec_lolbin.yml;False
 proc_creation_win_susp_mshta_execution.yml;True
 proc_creation_win_susp_mshta_pattern.yml;True
+proc_creation_win_susp_mshtml_runhtmlapplication.yml;False
 proc_creation_win_susp_msiexec_cwd.yml;False
 proc_creation_win_susp_msiexec_web_install.yml;False
 proc_creation_win_susp_msoffice.yml;True
@@ -1849,7 +1855,7 @@ proc_creation_win_susp_regsvr32_image.yml;False
 proc_creation_win_susp_regsvr32_no_dll.yml;True
 proc_creation_win_susp_regsvr32_spawn_explorer.yml;False
 proc_creation_win_susp_reg_bitlocker.yml;False
-proc_creation_win_susp_reg_disable_sec_services.yml;False
+proc_creation_win_susp_reg_disable_sec_services.yml;True
 proc_creation_win_susp_reg_open_command.yml;True
 proc_creation_win_susp_renamed_dctask64.yml;False
 proc_creation_win_susp_renamed_debugview.yml;False
@@ -1858,7 +1864,7 @@ proc_creation_win_susp_rpcping.yml;False
 proc_creation_win_susp_rundll32_activity.yml;True
 proc_creation_win_susp_rundll32_by_ordinal.yml;True
 proc_creation_win_susp_rundll32_inline_vbs.yml;False
-proc_creation_win_susp_rundll32_js_runhtmlapplication.yml;False
+proc_creation_win_susp_rundll32_js_runhtmlapplication.yml;True
 proc_creation_win_susp_rundll32_keymgr.yml;False
 proc_creation_win_susp_rundll32_no_params.yml;False
 proc_creation_win_susp_rundll32_script_run.yml;True
@@ -2031,7 +2037,7 @@ registry_add_sysinternals_eula_accepted.yml;True
 registry_add_sysinternals_sdelete_registry_keys.yml;True
 registry_set_disk_cleanup_handler_new_entry_persistence.yml;False
 registry_delete_exploit_guard_protected_folders.yml;False
-registry_delete_mstsc_history_cleared.yml;False
+registry_delete_mstsc_history_cleared.yml;True
 registry_delete_removal_amsi_registry_key.yml;True
 registry_delete_removal_com_hijacking_registry_key.yml;False
 registry_delete_removal_sd_value_scheduled_task_hide.yml;False
@@ -2084,7 +2090,7 @@ registry_set_asep_reg_keys_modification_currentversion.yml;True
 registry_set_asep_reg_keys_modification_currentversion_nt.yml;True
 registry_set_asep_reg_keys_modification_internet_explorer.yml;False
 registry_set_asep_reg_keys_modification_office.yml;True
-registry_set_asep_reg_keys_modification_session_manager.yml;False
+registry_set_asep_reg_keys_modification_session_manager.yml;True
 registry_set_asep_reg_keys_modification_system_scripts.yml;False
 registry_set_asep_reg_keys_modification_winsock2.yml;False
 registry_set_asep_reg_keys_modification_wow6432node.yml;False
@@ -2195,6 +2201,7 @@ sysmon_config_modification.yml;False
 sysmon_config_modification_error.yml;False
 sysmon_config_modification_status.yml;False
 sysmon_dcom_iertutil_dll_hijack.yml;False
+sysmon_file_block_exe.yml;False
 sysmon_process_hollowing.yml;False
 sysmon_wmi_event_subscription.yml;True
 sysmon_wmi_susp_encoded_scripts.yml;False

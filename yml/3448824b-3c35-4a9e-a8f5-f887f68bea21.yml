@@ -20,5 +20,7 @@ description: 'The built-in Windows Remote Desktop Connection (RDP) client (mstsc
 
   '
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 07bdd2f5-9c58-4f38-aec8-e101bb79ef8d
+    name: registry_delete_mstsc_history_cleared.yml

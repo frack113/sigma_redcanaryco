@@ -18,5 +18,7 @@ os:
 description: "Modify the registry of the currently logged in user using reg.exe via cmd console to disable windows error reporting settings. This Windows feature allow the use to report bug, errors, failure\
   \ or problems \nencounter in specific application or process.\nSee how azorult malware abuses this technique- https://app.any.run/tasks/a6f2ffe2-e6e2-4396-ae2e-04ea0143f2d8/\n"
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 5e95028c-5229-4214-afae-d653d573d0ec
+    name: proc_creation_win_susp_reg_disable_sec_services.yml
