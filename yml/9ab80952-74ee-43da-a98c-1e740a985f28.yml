@@ -25,5 +25,7 @@ description: 'An adversary can modify the group policy settings.
 
   '
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: ada4b0c4-758b-46ac-9033-9004613a150d
+    name: proc_creation_modify_group_policy_settings.yml

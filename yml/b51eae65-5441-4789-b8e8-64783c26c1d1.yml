@@ -25,5 +25,7 @@ description: 'An adversary modifies group policy settings
 
   '
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: b7216a7d-687e-4c8d-82b1-3080b2ad961f
+    name: posh_ps_modify_group_policy_settings.yml

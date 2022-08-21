@@ -15,5 +15,11 @@ description: |
   Attempting to disable scheduled scanning and other parts of Windows Defender ATP using set-MpPreference aliases. Upon execution Virus and Threat Protection will show as disabled
   in Windows settings.
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 14c71865-6cd3-44ae-adaa-1db923fae5f2
+    name: posh_ps_tamper_defender.yml
+  - id: 0eb46774-f1ab-4a74-8238-1155855f2263
+    name: registry_set_windows_defender_tamper.yml
+  - id: fe34868f-6e0e-4882-81f6-c43aa8f15b62
+    name: win_defender_disabled.yml

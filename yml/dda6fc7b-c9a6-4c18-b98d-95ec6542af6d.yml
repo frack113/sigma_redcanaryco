@@ -19,5 +19,7 @@ description: "Create a scheduled task with an action and modify the action to do
   \ on a Task already registered. \nIt will first be created to spawn cmd.exe, but modified to run notepad.exe.\n\nUpon successful execution, powershell.exe will create a scheduled task and modify the action.\
   \ \n"
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 363eccc0-279a-4ccf-a3ab-24c2e63b11fb
+    name: posh_ps_cmdlet_scheduled_task.yml
