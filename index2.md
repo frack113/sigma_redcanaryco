@@ -155,6 +155,8 @@
   * T1218 [Lolbas ie4uinit.exe use as proxy](tests/13c0804e-615e-43ad-b223-2dfbacd0b0b3.md)
   * T1562.006 [Disable Powershell ETW Provider - Windows](tests/6f118276-121d-4c09-bb58-a8fb4a72ee84.md)
   * T1555 [WinPwn - Loot local Credentials - lazagne](tests/079ee2e9-6f16-47ca-a635-14efcd994118.md)
+* file_event_win_susp_get_variable.yml
+  * T1574.008 [powerShell Persistence via hijacking default modules - Get-Variable.exe](tests/1561de08-0b4b-498e-8261-e922f3494aae.md)
 * file_event_win_tool_psexec.yml
   * T1569.002 [Use PsExec to execute a command on a remote host](tests/873106b7-cfed-454b-8680-fa9f6400431c.md)
   * T1207 [DCShadow (Active Directory)](tests/0f4c5eb0-98a0-4496-9c3d-656b4f2bc8f6.md)
@@ -165,6 +167,7 @@
 * file_event_win_webshell_creation_detect.yml
   * T1505.003 [Web Shell Written to Disk](tests/0a2ce662-1efa-496f-a472-2fe7b080db16.md)
 * file_event_win_win_shell_write_susp_directory.yml
+  * T1547.003 [Create a new time provider](tests/df1efab7-bc6d-4b88-8be9-91f55ae017aa.md)
   * T1546.009 [Create registry persistence via AppCert DLL](tests/a5ad6104-5bab-4c43-b295-b4c44c7c6b05.md)
   * T1140 [Deobfuscate/Decode Files Or Information](tests/dc6fe391-69e6-4506-bd06-ea5eeb4082f8.md)
   * T1003.002 [dump volume shadow copy hives with certutil](tests/eeb9751a-d598-42d3-b11c-c122d9c3f6c7.md)
@@ -174,6 +177,7 @@
   * T1105 [certutil download (urlcache)](tests/dd3b61dd-7bbc-48cd-ab51-49ad1a776df0.md)
   * T1105 [certutil download (verifyctl)](tests/ffd492e3-0455-4518-9fb1-46527c9f241b.md)
   * T1218.005 [Invoke HTML Application - Direct download from URI](tests/39ceed55-f653-48ac-bd19-aceceaf525db.md)
+  * T1547.003 [Edit an existing time provider](tests/29e0afca-8d1d-471a-8d34-25512fc48315.md)
   * T1564.004 [Store file in Alternate Data Stream (ADS)](tests/2ab75061-f5d5-4c1a-b666-ba2a50df5b02.md)
   * T1059.001 [Powershell invoke mshta.exe download](tests/8a2ad40b-12c7-4b25-8521-2737b0a415af.md)
 * file_event_win_writing_local_admin_share.yml
@@ -203,6 +207,9 @@
   * T1055.004 [Process Injection via C#](tests/611b39b7-e243-4c81-87a4-7145a90358b1.md)
   * T1566.001 [Word spawned a command shell and used an IP address in the command line](tests/cbb6799a-425c-4f83-9194-5447a909d67f.md)
   * T1574.002 [DLL Side-Loading using the Notepad++ GUP.exe binary](tests/65526037-7079-44a9-bda1-2cb624838040.md)
+* image_load_susp_dll_load_system_process.yml
+  * T1547.003 [Create a new time provider](tests/df1efab7-bc6d-4b88-8be9-91f55ae017aa.md)
+  * T1547.003 [Edit an existing time provider](tests/29e0afca-8d1d-471a-8d34-25512fc48315.md)
 * image_load_susp_office_dotnet_assembly_dll_load.yml
   * T1055.012 [RunPE via VBA](tests/3ad4a037-1598-4136-837c-4027e4fa319b.md)
 * image_load_susp_office_dotnet_clr_dll_load.yml
@@ -841,6 +848,7 @@
   * T1053.005 [WMI Invoke-CimMethod Scheduled Task](tests/e16b3b75-dc9e-4cde-a23d-dfa2d0507b3b.md)
   * T1053.005 [Import XML Schedule Task with Hidden Attribute](tests/cd925593-fbb4-486d-8def-16cbdf944bf4.md)
   * T1053.005 [Powershell Cmdlet Scheduled Task](tests/af9fd58f-c4ac-4bf2-a9ba-224b71ff25fd.md)
+  * T1053.005 [PowerShell Modify A Scheduled Task](tests/dda6fc7b-c9a6-4c18-b98d-95ec6542af6d.md)
 * posh_ps_copy_item_system32.yml
   * T1218.005 [Invoke HTML Application - Jscript Engine Simulating Double Click](tests/58a193ec-131b-404e-b1ca-b35cf0b18c33.md)
   * T1059.001 [ATHPowerShellCommandLineParameter -EncodedCommand parameter variations](tests/86a43bad-12e3-4e85-b97c-4d5cf25b95c3.md)
@@ -1323,6 +1331,8 @@
   * T1518 [WinPwn - Dotnetsearch](tests/7e79a1b6-519e-433c-ad55-3ff293667101.md)
   * T1555 [WinPwn - Loot local Credentials - lazagne](tests/079ee2e9-6f16-47ca-a635-14efcd994118.md)
   * T1046 [WinPwn - bluekeep](tests/1cca5640-32a9-46e6-b8e0-fabbe2384a73.md)
+* posh_ps_modify_group_policy_settings.yml
+  * T1484.001 [LockBit Black - Modify Group policy settings -Powershell](tests/b51eae65-5441-4789-b8e8-64783c26c1d1.md)
 * posh_ps_msxml_com.yml
   * T1059.001 [Powershell MsXml COM object - with prompt](tests/388a7340-dbc1-4c9d-8e59-b75ad8c6d5da.md)
 * posh_ps_nishang_malicious_commandlets.yml
@@ -2106,6 +2116,7 @@
   * T1555.003 [Stage Popular Credential Files for Exfiltration](tests/f543635c-1705-42c3-b180-efd6dc6e7ee7.md)
 * posh_ps_tamper_defender.yml
   * T1562.001 [Tamper with Windows Defender ATP PowerShell](tests/6b8df440-51ec-4d53-bf83-899591c9b5d7.md)
+  * T1562.001 [Tamper with Windows Defender ATP using Aliases - PowerShell](tests/c531aa6e-9c97-4b29-afee-9b7be6fc8a64.md)
 * posh_ps_test_netconnection.yml
   * T1571 [Testing usage of uncommonly used port with PowerShell](tests/21fe622f-8e53-4b31-ba83-6d333c2583f4.md)
   * T1573 [OpenSSL C2](tests/21caf58e-87ad-440c-a6b8-3ac259964003.md)
@@ -2322,6 +2333,8 @@
   * T1204.002 [Excel 4 Macro](tests/4ea1fc97-8a46-4b4e-ba48-af43d2a98052.md)
   * T1003.001 [Dump LSASS.exe Memory using NanoDump](tests/dddd4aca-bbed-46f0-984d-e4c5971c51ea.md)
   * T1555 [WinPwn - Loot local Credentials - lazagne](tests/079ee2e9-6f16-47ca-a635-14efcd994118.md)
+* proc_creation_modify_group_policy_settings.yml
+  * T1484.001 [LockBit Black - Modify Group policy settings -cmd](tests/9ab80952-74ee-43da-a98c-1e740a985f28.md)
 * proc_creation_win_abusing_debug_privilege.yml
   * T1106 [WinPwn - Get SYSTEM shell - Bind System Shell using CreateProcess technique](tests/7ec5b74e-8289-4ff2-a162-b6f286a33abd.md)
   * T1563.002 [RDP hijacking](tests/a37ac520-b911-458e-8aed-c5f1576d9f46.md)
@@ -2944,6 +2957,7 @@
 * proc_creation_win_reg_add_run_key.yml
   * T1112 [Modify Registry of Local Machine - cmd](tests/282f929a-6bc5-42b8-bd93-960c3ba35afe.md)
   * T1547.001 [Reg Key Run](tests/e55be3fd-3521-4610-9d1a-e210e42dcf05.md)
+  * T1112 [NetWire RAT Registry Key Creation](tests/65704cd4-6e36-4b90-b6c1-dc29a82c8e56.md)
   * T1547.001 [Reg Key RunOnce](tests/554cbd88-cde1-4b56-8168-0be552eed9eb.md)
 * proc_creation_win_reg_dump_sam.yml
   * T1003.002 [Registry dump of SAM, creds, and secrets](tests/5c2571d0-1572-416d-9676-812e64ca9f44.md)
@@ -2958,8 +2972,10 @@
   * T1021.006 [Remote Code Execution with PS Credentials Using Invoke-Command](tests/5295bd61-bd7e-4744-9d52-85962a4cf2d6.md)
   * T1059.001 [PowerShell Session Creation and Use](tests/7c1acec2-78fa-4305-a3e0-db2a54cddecd.md)
 * proc_creation_win_remote_time_discovery.yml
+  * T1547.003 [Create a new time provider](tests/df1efab7-bc6d-4b88-8be9-91f55ae017aa.md)
   * T1105 [certutil download (verifyctl)](tests/ffd492e3-0455-4518-9fb1-46527c9f241b.md)
   * T1124 [System Time Discovery - PowerShell](tests/1d5711d6-655c-4a47-ae9c-6503c74fa877.md)
+  * T1547.003 [Edit an existing time provider](tests/29e0afca-8d1d-471a-8d34-25512fc48315.md)
   * T1124 [System Time Discovery](tests/20aba24b-e61f-4b26-b4ce-4784f763ca20.md)
   * T1059.001 [Powershell invoke mshta.exe download](tests/8a2ad40b-12c7-4b25-8521-2737b0a415af.md)
 * proc_creation_win_remove_windows_defender_definition_files.yml
@@ -3010,12 +3026,16 @@
 * proc_creation_win_sdelete.yml
   * T1485 [Windows - Overwrite file with Sysinternals SDelete](tests/476419b5-aebf-4366-a131-ae3e8dae5fc2.md)
 * proc_creation_win_service_execution.yml
+  * T1547.003 [Create a new time provider](tests/df1efab7-bc6d-4b88-8be9-91f55ae017aa.md)
   * T1563.002 [RDP hijacking](tests/a37ac520-b911-458e-8aed-c5f1576d9f46.md)
   * T1007 [System Service Discovery - net.exe](tests/5f864a3f-8ce9-45c0-812c-bdf7d8aeacc3.md)
+  * T1547.003 [Edit an existing time provider](tests/29e0afca-8d1d-471a-8d34-25512fc48315.md)
 * proc_creation_win_service_stop.yml
   * T1489 [Windows - Stop service using net.exe](tests/41274289-ec9c-4213-bea4-e43c4aa57954.md)
+  * T1547.003 [Create a new time provider](tests/df1efab7-bc6d-4b88-8be9-91f55ae017aa.md)
   * T1562.001 [Tamper with Windows Defender Command Prompt](tests/aa875ed4-8935-47e2-b2c5-6ec00ab220d2.md)
   * T1489 [Windows - Stop service using Service Controller](tests/21dfb440-830d-4c86-a3e5-2a491d5a8d04.md)
+  * T1547.003 [Edit an existing time provider](tests/29e0afca-8d1d-471a-8d34-25512fc48315.md)
   * T1562.001 [Disable Arbitrary Security Windows Service](tests/a1230893-56ac-4c81-b644-2108e982f8f5.md)
 * proc_creation_win_set_policies_to_unsecure_level.yml
   * T1615 [Get-DomainGPO to display group policy information via PowerView](tests/4e524c4e-0e02-49aa-8df5-93f3f7959b9f.md)
@@ -3175,6 +3195,7 @@
   * T1218 [Invoke-ATHRemoteFXvGPUDisablementCommand base test](tests/9ebe7901-7edf-45c0-b5c7-8366300919db.md)
   * T1218.004 [InstallUtil class constructor method call](tests/9b7a7cfc-dd2e-43f5-a885-c0a3c270dd93.md)
   * T1106 [Execution through API - CreateProcess](tests/99be2089-c52d-4a4a-b5c3-261ee42c8b62.md)
+  * T1574.008 [powerShell Persistence via hijacking default modules - Get-Variable.exe](tests/1561de08-0b4b-498e-8261-e922f3494aae.md)
   * T1218.005 [Invoke HTML Application - Direct download from URI](tests/39ceed55-f653-48ac-bd19-aceceaf525db.md)
   * T1027.004 [Dynamic C# Compile](tests/453614d8-3ba6-4147-acc0-7ec4b3e1faef.md)
   * T1134.004 [Parent PID Spoofing - Spawn from Current Process](tests/14920ebd-1d61-491a-85e0-fe98efe37f25.md)
@@ -3211,6 +3232,7 @@
 * proc_creation_win_susp_direct_asep_reg_keys_modification.yml
   * T1112 [Modify Registry of Local Machine - cmd](tests/282f929a-6bc5-42b8-bd93-960c3ba35afe.md)
   * T1547.001 [Reg Key Run](tests/e55be3fd-3521-4610-9d1a-e210e42dcf05.md)
+  * T1112 [NetWire RAT Registry Key Creation](tests/65704cd4-6e36-4b90-b6c1-dc29a82c8e56.md)
   * T1547.001 [Reg Key RunOnce](tests/554cbd88-cde1-4b56-8168-0be552eed9eb.md)
 * proc_creation_win_susp_diskshadow.yml
   * T1218 [DiskShadow Command Execution](tests/0e1483ba-8f0c-425d-b8c6-42736e058eaa.md)
@@ -3240,6 +3262,8 @@
   * T1036.003 [File Extension Masquerading](tests/c7fa0c3b-b57f-4cba-9118-863bf4e653fc.md)
 * proc_creation_win_susp_machineguid.yml
   * T1082 [Windows MachineGUID Discovery](tests/224b4daf-db44-404e-b6b2-f4d1f0126ef8.md)
+* proc_creation_win_susp_mofcomp_execution.yml
+  * T1546.003 [Windows MOFComp.exe Load MOF File](tests/29786d7e-8916-4de6-9c55-be7b093b2706.md)
 * proc_creation_win_susp_mounted_share_deletion.yml
   * T1070.005 [Remove Administrative Shares](tests/4299eff5-90f1-4446-b2f3-7f4f5cfd5d62.md)
   * T1070.005 [Remove Network Share](tests/09210ad5-1ef2-4077-9ad3-7351e13e9222.md)
@@ -3273,6 +3297,7 @@
   * T1489 [Windows - Stop service using net.exe](tests/41274289-ec9c-4213-bea4-e43c4aa57954.md)
   * T1201 [Examine domain password policy - Windows](tests/46c2c362-2679-4ef5-aec9-0e958e135be4.md)
   * T1201 [Examine local password policy - Windows](tests/4588d243-f24e-4549-b2e3-e627acc089f6.md)
+  * T1547.003 [Create a new time provider](tests/df1efab7-bc6d-4b88-8be9-91f55ae017aa.md)
   * T1135 [Network Share Discovery command prompt](tests/20f1097d-81c1-405c-8380-32174d493bbb.md)
   * T1070.005 [Remove Administrative Shares](tests/4299eff5-90f1-4446-b2f3-7f4f5cfd5d62.md)
   * T1069.002 [Basic Permission Groups Discovery Windows (Domain)](tests/dd66d77d-8998-48c0-8024-df263dc2ce5d.md)
@@ -3298,6 +3323,7 @@
   * T1078.001 [Activate Guest Account](tests/aa6cb8c4-b582-4f8e-b677-37733914abda.md)
   * T1136.002 [Create a new account similar to ANONYMOUS LOGON](tests/dc7726d2-8ccb-4cc6-af22-0d5afb53a548.md)
   * T1018 [Remote System Discovery - net](tests/85321a9c-897f-4a60-9f20-29788e50bccd.md)
+  * T1547.003 [Edit an existing time provider](tests/29e0afca-8d1d-471a-8d34-25512fc48315.md)
   * T1078.001 [Enable Guest account with RDP capability and admin privileges](tests/99747561-ed8d-47f2-9c91-1e5fde1ed6e0.md)
   * T1082 [WinPwn - GeneralRecon](tests/7804659b-fdbf-4cf6-b06a-c03e758590e8.md)
   * T1087.002 [Enumerate Default Domain Admin Details (Domain)](tests/c70ab9fd-19e2-4e02-a83c-9cfa8eaa8fef.md)
@@ -3919,6 +3945,7 @@
   * T1218 [InfDefaultInstall.exe .inf Execution](tests/54ad7d5a-a1b5-472c-b6c4-f8090fb2daef.md)
   * T1547.001 [Reg Key Run](tests/e55be3fd-3521-4610-9d1a-e210e42dcf05.md)
   * T1036.003 [Masquerading - non-windows exe running as windows exe](tests/bc15c13f-d121-4b1f-8c7d-28d95854d086.md)
+  * T1112 [NetWire RAT Registry Key Creation](tests/65704cd4-6e36-4b90-b6c1-dc29a82c8e56.md)
   * T1547.001 [SystemBC Malware-as-a-Service Registry](tests/9dc7767b-30c1-4cc4-b999-50cab5e27891.md)
   * T1547.001 [Reg Key RunOnce](tests/554cbd88-cde1-4b56-8168-0be552eed9eb.md)
   * T1219 [RemotePC Software Execution](tests/fbff3f1f-b0bf-448e-840f-7e1687affdce.md)
@@ -4043,9 +4070,13 @@
   * T1036.003 [Masquerading - non-windows exe running as windows exe](tests/bc15c13f-d121-4b1f-8c7d-28d95854d086.md)
 * registry_set_terminal_server_tampering.yml
   * T1078.001 [Enable Guest account with RDP capability and admin privileges](tests/99747561-ed8d-47f2-9c91-1e5fde1ed6e0.md)
+* registry_set_timeproviders_dllname.yml
+  * T1547.003 [Create a new time provider](tests/df1efab7-bc6d-4b88-8be9-91f55ae017aa.md)
+  * T1547.003 [Edit an existing time provider](tests/29e0afca-8d1d-471a-8d34-25512fc48315.md)
 * registry_set_wdigest_enable_uselogoncredential.yml
   * T1112 [Modify registry to store logon credentials](tests/c0413fb5-33e2-40b7-9b6f-60b29f4a7a18.md)
 * registry_set_windows_defender_tamper.yml
+  * T1562.001 [Tamper with Windows Defender ATP using Aliases - PowerShell](tests/c531aa6e-9c97-4b29-afee-9b7be6fc8a64.md)
   * T1562.001 [Tamper with Windows Defender Registry](tests/1b3e0146-a1e5-4c5c-89fb-1bb2ffe8fc45.md)
   * T1562.001 [Disable Defender with Defender Control](tests/178136d8-2778-4d7a-81f3-d517053a4fd6.md)
 * registry_set_winlogon_notify_key.yml
@@ -4096,6 +4127,8 @@
   * T1550.002 [crackmapexec Pass the Hash](tests/eb05b028-16c8-4ad8-adea-6f5b219da9a9.md)
 * win_builtin_remove_application.yml
   * T1047 [Application uninstall using WMIC](tests/c510d25b-1667-467d-8331-a56d3e9bc4ff.md)
+* win_defender_disabled.yml
+  * T1562.001 [Tamper with Windows Defender ATP using Aliases - PowerShell](tests/c531aa6e-9c97-4b29-afee-9b7be6fc8a64.md)
 * win_defender_tamper_protection_trigger.yml
   * T1562.001 [Disable Defender with Defender Control](tests/178136d8-2778-4d7a-81f3-d517053a4fd6.md)
 * win_defender_threat.yml

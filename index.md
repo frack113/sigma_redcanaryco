@@ -365,7 +365,7 @@ Caution: a test can generate a lot of noise...
 
 [Disable Defender Using NirSoft AdvancedRun](tests/81ce22fd-9612-4154-918e-8a1f285d214d.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Tamper with Windows Defender ATP using Aliases - PowerShell](tests/c531aa6e-9c97-4b29-afee-9b7be6fc8a64.md) ['windows'] (sigma rule :x:)
+[Tamper with Windows Defender ATP using Aliases - PowerShell](tests/c531aa6e-9c97-4b29-afee-9b7be6fc8a64.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Disable syslog](tests/4ce786f8-e601-44b5-bfae-9ebb15a7d1c8.md) ['linux'] (sigma rule :x:)
 
@@ -517,7 +517,7 @@ Caution: a test can generate a lot of noise...
 
 [Windows Powershell Logging Disabled](tests/95b25212-91a7-42ff-9613-124aca6845a8.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[NetWire RAT Registry Key Creation](tests/65704cd4-6e36-4b90-b6c1-dc29a82c8e56.md) ['windows'] (sigma rule :x:)
+[NetWire RAT Registry Key Creation](tests/65704cd4-6e36-4b90-b6c1-dc29a82c8e56.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Activate Windows NoFileMenu Group Policy Feature](tests/5e27bdb4-7fd9-455d-a2b5-4b4b22c9dea4.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -845,7 +845,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1546.003
-[Windows MOFComp.exe Load MOF File](tests/29786d7e-8916-4de6-9c55-be7b093b2706.md) ['windows'] (sigma rule :x:)
+[Windows MOFComp.exe Load MOF File](tests/29786d7e-8916-4de6-9c55-be7b093b2706.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Persistence via WMI Event Subscription - CommandLineEventConsumer](tests/3c64f177-28e2-49eb-a799-d767b24dd1e0.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -953,7 +953,7 @@ Caution: a test can generate a lot of noise...
 
 [Scheduled Task Startup Script](tests/fec27f65-db86-4c2d-b66c-61945aee87c2.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[PowerShell Modify A Scheduled Task](tests/dda6fc7b-c9a6-4c18-b98d-95ec6542af6d.md) ['windows'] (sigma rule :x:)
+[PowerShell Modify A Scheduled Task](tests/dda6fc7b-c9a6-4c18-b98d-95ec6542af6d.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1069.002
@@ -1535,9 +1535,9 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1547.003
-[Create a new time provider](tests/df1efab7-bc6d-4b88-8be9-91f55ae017aa.md) ['windows'] (sigma rule :x:)
+[Create a new time provider](tests/df1efab7-bc6d-4b88-8be9-91f55ae017aa.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Edit an existing time provider](tests/29e0afca-8d1d-471a-8d34-25512fc48315.md) ['windows'] (sigma rule :x:)
+[Edit an existing time provider](tests/29e0afca-8d1d-471a-8d34-25512fc48315.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1543.003
@@ -2212,6 +2212,10 @@ Caution: a test can generate a lot of noise...
 [Exfiltration Over Alternative Protocol - SSH](tests/7c3cb337-35ae-4d06-bf03-3032ed2ec268.md) ['macos', 'linux'] (sigma rule :x:)
 
 
+### T1547.015
+[Persistence by modifying Windows Terminal profile](tests/ec5d76ef-82fe-48da-b931-bdb25a62bc65.md) ['windows'] (sigma rule :x:)
+
+
 ### T1547.005
 [Modify SSP configuration in registry](tests/afdfd7e3-8a0b-409f-85f7-886fdf249c9e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -2523,9 +2527,9 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1484.001
-[LockBit Black - Modify Group policy settings -Powershell](tests/b51eae65-5441-4789-b8e8-64783c26c1d1.md) ['windows'] (sigma rule :x:)
+[LockBit Black - Modify Group policy settings -Powershell](tests/b51eae65-5441-4789-b8e8-64783c26c1d1.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[LockBit Black - Modify Group policy settings -cmd](tests/9ab80952-74ee-43da-a98c-1e740a985f28.md) ['windows'] (sigma rule :x:)
+[LockBit Black - Modify Group policy settings -cmd](tests/9ab80952-74ee-43da-a98c-1e740a985f28.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1546.007
@@ -2617,7 +2621,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1574.008
-[powerShell Persistence via hijacking default modules - Get-Variable.exe](tests/1561de08-0b4b-498e-8261-e922f3494aae.md) ['windows'] (sigma rule :x:)
+[powerShell Persistence via hijacking default modules - Get-Variable.exe](tests/1561de08-0b4b-498e-8261-e922f3494aae.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1110.004
