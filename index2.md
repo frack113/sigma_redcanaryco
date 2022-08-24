@@ -2275,6 +2275,7 @@
   * T1218.007 [WMI Win32_Product Class - Execute Local MSI file with an embedded DLL](tests/32eb3861-30da-4993-897a-42737152f5f8.md)
 * posh_ps_winlogon_helper_dll.yml
   * T1547.004 [Winlogon Userinit Key Persistence - PowerShell](tests/fb32c935-ee2e-454b-8fa3-1c46b42e8dfb.md)
+  * T1562.001 [Lockbit Black - Use Registry Editor to turn on automatic logon -Powershell](tests/5e27f36d-5132-4537-b43b-413b0d5eec9a.md)
   * T1547.004 [Winlogon Notify Key Logon Persistence - PowerShell](tests/d40da266-e073-4e5a-bb8b-2b385023e5f9.md)
   * T1547.004 [Winlogon Shell Key Persistence - PowerShell](tests/bf9f9d65-ee4d-4c3e-a843-777d04f19c38.md)
 * posh_ps_wmi_persistence.yml
@@ -2332,6 +2333,7 @@
   * T1562.001 [Disable Defender Using NirSoft AdvancedRun](tests/81ce22fd-9612-4154-918e-8a1f285d214d.md)
   * T1204.002 [Excel 4 Macro](tests/4ea1fc97-8a46-4b4e-ba48-af43d2a98052.md)
   * T1003.001 [Dump LSASS.exe Memory using NanoDump](tests/dddd4aca-bbed-46f0-984d-e4c5971c51ea.md)
+  * T1134.001 [Launch NSudo Executable](tests/7be1bc0f-d8e5-4345-9333-f5f67d742cb9.md)
   * T1555 [WinPwn - Loot local Credentials - lazagne](tests/079ee2e9-6f16-47ca-a635-14efcd994118.md)
 * proc_creation_modify_group_policy_settings.yml
   * T1484.001 [LockBit Black - Modify Group policy settings -cmd](tests/9ab80952-74ee-43da-a98c-1e740a985f28.md)
@@ -2657,6 +2659,7 @@
   * T1018 [Remote System Discovery - net](tests/85321a9c-897f-4a60-9f20-29788e50bccd.md)
   * T1016 [Qakbot Recon](tests/121de5c6-5818-4868-b8a7-8fd07c455c1b.md)
 * proc_creation_win_net_user_add.yml
+  * T1564.002 [Create Hidden User in Registry](tests/173126b7-afe4-45eb-8680-fa9f6400431c.md)
   * T1564 [Create a Hidden User Called "$"](tests/2ec63cc2-4975-41a6-bf09-dffdfb610778.md)
   * T1136.001 [Create a new user in a command prompt](tests/6657864e-0323-4206-9344-ac9cd7265a4f.md)
   * T1136.001 [Create a new Windows admin user](tests/fda74566-a604-4581-a4cc-fbbe21d66559.md)
@@ -2664,6 +2667,8 @@
   * T1136.002 [Create a new account similar to ANONYMOUS LOGON](tests/dc7726d2-8ccb-4cc6-af22-0d5afb53a548.md)
   * T1078.001 [Enable Guest account with RDP capability and admin privileges](tests/99747561-ed8d-47f2-9c91-1e5fde1ed6e0.md)
   * T1136.002 [Create a new Windows domain admin user](tests/fcec2963-9951-4173-9bfa-98d8b7834e62.md)
+* proc_creation_win_net_user_add_never_expire.yml
+  * T1564.002 [Create Hidden User in Registry](tests/173126b7-afe4-45eb-8680-fa9f6400431c.md)
 * proc_creation_win_netcat_execution.yml
   * T1095 [Netcat C2](tests/bcf0d1c1-3f6a-4847-b1c9-7ed4ea321f37.md)
 * proc_creation_win_netsh_allow_port_rdp.yml
@@ -2735,6 +2740,7 @@
   * T1069.002 [Get-ADUser Enumeration using UserAccountControl flags (AS-REP Roasting)](tests/43fa81fb-34bb-4b5f-867b-03c7dbe0e3d8.md)
   * T1557.001 [LLMNR Poisoning with Inveigh (PowerShell)](tests/deecd55f-afe0-4a62-9fba-4d1ba2deb321.md)
   * T1547.001 [SystemBC Malware-as-a-Service Registry](tests/9dc7767b-30c1-4cc4-b999-50cab5e27891.md)
+  * T1134.001 [Launch NSudo Executable](tests/7be1bc0f-d8e5-4345-9333-f5f67d742cb9.md)
   * T1018 [Get-DomainController with PowerView](tests/b9d2e8ca-5520-4737-8076-4f08913da2c4.md)
 * proc_creation_win_office_shell.yml
   * T1204.002 [Office Generic Payload Download](tests/5202ee05-c420-4148-bf5e-fd7f7d24850c.md)
@@ -3296,6 +3302,7 @@
 * proc_creation_win_susp_net_execution.yml
   * T1489 [Windows - Stop service using net.exe](tests/41274289-ec9c-4213-bea4-e43c4aa57954.md)
   * T1201 [Examine domain password policy - Windows](tests/46c2c362-2679-4ef5-aec9-0e958e135be4.md)
+  * T1564.002 [Create Hidden User in Registry](tests/173126b7-afe4-45eb-8680-fa9f6400431c.md)
   * T1201 [Examine local password policy - Windows](tests/4588d243-f24e-4549-b2e3-e627acc089f6.md)
   * T1547.003 [Create a new time provider](tests/df1efab7-bc6d-4b88-8be9-91f55ae017aa.md)
   * T1135 [Network Share Discovery command prompt](tests/20f1097d-81c1-405c-8380-32174d493bbb.md)
@@ -3544,6 +3551,10 @@
   * T1072 [Radmin Viewer Utility](tests/b4988cad-6ed2-434d-ace5-ea2670782129.md)
 * proc_creation_win_susp_recon.yml
   * T1119 [Recon information for export with Command Prompt](tests/aa1180e2-f329-4e1e-8625-2472ec0bfaf3.md)
+* proc_creation_win_susp_reg_add.yml
+  * T1562.001 [LockBit Black - Use Registry Editor to turn on automatic logon -cmd](tests/9719d0e1-4fe0-4b2e-9a72-7ad3ee8ddc70.md)
+  * T1112 [Ursnif Malware Registry Key Creation](tests/c375558d-7c25-45e9-bd64-7b23a97c1db0.md)
+  * T1562.001 [LockBit Black - Disable Privacy Settings Experience Using Registry -cmd](tests/d6d22332-d07d-498f-aea0-6139ecb7850e.md)
 * proc_creation_win_susp_reg_disable_sec_services.yml
   * T1112 [Disable Windows Error Reporting Settings](tests/d2c9e41e-cd86-473d-980d-b6403562e3e1.md)
 * proc_creation_win_susp_reg_open_command.yml
@@ -3579,6 +3590,7 @@
   * T1562.001 [Disable Defender with Defender Control](tests/178136d8-2778-4d7a-81f3-d517053a4fd6.md)
   * T1562.001 [Kill antimalware protected processes using Backstab](tests/24a12b91-05a7-4deb-8d7f-035fa98591bc.md)
   * T1090.003 [Tor Proxy Usage - Windows](tests/7b9d85e5-c4ce-4434-8060-d3de83595e69.md)
+  * T1134.001 [Launch NSudo Executable](tests/7be1bc0f-d8e5-4345-9333-f5f67d742cb9.md)
   * T1218.011 [Rundll32 with desk.cpl](tests/83a95136-a496-423c-81d3-1c6750133917.md)
   * T1219 [RemotePC Software Execution](tests/fbff3f1f-b0bf-448e-840f-7e1687affdce.md)
   * T1219 [Ammyy Admin Software Execution](tests/0ae9e327-3251-465a-a53b-485d4e3f58fa.md)
@@ -3808,6 +3820,8 @@
   * T1036.003 [Masquerading - non-windows exe running as windows exe](tests/bc15c13f-d121-4b1f-8c7d-28d95854d086.md)
   * T1036.003 [Malicious process Masquerading as LSM.exe](tests/83810c46-f45e-4485-9ab6-8ed0e9e6ed7f.md)
   * T1105 [svchost writing a file to a UNC path](tests/fa5a2759-41d7-4e13-a19c-e8f28a53566f.md)
+* proc_creation_win_tool_nsudo_execution.yml
+  * T1134.001 [Launch NSudo Executable](tests/7be1bc0f-d8e5-4345-9333-f5f67d742cb9.md)
 * proc_creation_win_tools_relay_attacks.yml
   * T1187 [PetitPotam](tests/485ce873-2e65-4706-9c7e-ae3ab9e14213.md)
 * proc_creation_win_tor_browser.yml
@@ -3928,12 +3942,16 @@
   * T1125 [Registry artefact when application use webcam](tests/6581e4a7-42e3-43c5-a0d2-5a0d62f9702a.md)
 * registry_event_trust_record_modification.yml
   * T1218 [ProtocolHandler.exe Downloaded a Suspicious File](tests/db020456-125b-4c8b-a4a7-487df8afb5a2.md)
+* registry_set_add_hidden_user.yml
+  * T1564.002 [Create Hidden User in Registry](tests/173126b7-afe4-45eb-8680-fa9f6400431c.md)
 * registry_set_add_load_service_in_safe_mode.yml
   * T1112 [Windows Add Registry Value to Load Service in Safe Mode without Network](tests/1dd59fb3-1cb3-4828-805d-cf80b4c3bbb5.md)
   * T1112 [Windows Add Registry Value to Load Service in Safe Mode with Network](tests/c173c948-65e5-499c-afbe-433722ed5bd4.md)
   * T1219 [Ammyy Admin Software Execution](tests/0ae9e327-3251-465a-a53b-485d4e3f58fa.md)
 * registry_set_add_port_monitor.yml
   * T1547.010 [Add Port Monitor persistence in Registry](tests/d34ef297-f178-4462-871e-9ce618d44e50.md)
+* registry_set_allow_rdp_remote_assistance_feature.yml
+  * T1112 [Allow RDP Remote Assistance Feature](tests/86677d0e-0b5e-4a2b-b302-454175f9aa9e.md)
 * registry_set_asep_reg_keys_modification_currentcontrolset.yml
   * T1547.010 [Add Port Monitor persistence in Registry](tests/d34ef297-f178-4462-871e-9ce618d44e50.md)
   * T1003 [Credential Dumping with NPPSpy](tests/9e2173c0-ba26-4cdf-b0ed-8c54b27e3ad6.md)
@@ -4002,10 +4020,17 @@
   * T1112 [Disable Windows Lock Workstation Feature](tests/3dacb0d2-46ee-4c27-ac1b-f9886bf91a56.md)
 * registry_set_disable_microsoft_office_security_features.yml
   * T1562.001 [Disable Microsoft Office Security Features](tests/6f5fb61b-4e56-4a3d-a8c3-82e13686c6d7.md)
+* registry_set_disable_security_center_notifications.yml
+  * T1112 [Disable Windows Security Center Notifications](tests/45914594-8df6-4ea9-b3cc-7eb9321a807e.md)
 * registry_set_disable_system_restore.yml
   * T1490 [Disable System Restore Through Registry](tests/66e647d1-8741-4e43-b7c1-334760c2047f.md)
 * registry_set_disable_uac_registry.yml
   * T1548.002 [Disable UAC using reg.exe](tests/9e8af564-53ec-407e-aaa8-3cb20c3af7f9.md)
+* registry_set_disable_windows_firewall.yml
+  * T1562.004 [LockBit Black - Unusual Windows firewall registry modification -cmd](tests/a4651931-ebbb-4cde-9363-ddf3d66214cb.md)
+  * T1562.004 [LockBit Black - Unusual Windows firewall registry modification -Powershell](tests/80b453d1-eec5-4144-bf08-613a6c3ffe12.md)
+* registry_set_disallowrun_execution.yml
+  * T1112 [DisallowRun Execution Of Certain Application](tests/71db768a-5a9c-4047-b5e7-59e01f188e84.md)
 * registry_set_enabling_cor_profiler_env_variables.yml
   * T1574.012 [System Scope COR_PROFILER](tests/f373b482-48c8-4ce4-85ed-d40c8b3f7310.md)
   * T1574.012 [User scope COR_PROFILER](tests/9d5f89dc-c3a5-4f8a-a4fc-a6ed02e7cb5a.md)
@@ -4066,6 +4091,10 @@
   * T1112 [Activate Windows NoPropertiesMyDocuments Group Policy Feature](tests/20fc9daa-bd48-4325-9aff-81b967a84b1d.md)
 * registry_set_shim_databases_persistence.yml
   * T1546.011 [Registry key creation and/or modification events for SDB](tests/9b6a06f9-ab5e-4e8d-8289-1df4289db02f.md)
+* registry_set_special_accounts.yml
+  * T1564.002 [Create Hidden User in Registry](tests/173126b7-afe4-45eb-8680-fa9f6400431c.md)
+* registry_set_suppress_defender_notifications.yml
+  * T1112 [Suppress Win Defender Notifications](tests/c30dada3-7777-4590-b970-dc890b8cf113.md)
 * registry_set_susp_run_key_img_folder.yml
   * T1036.003 [Masquerading - non-windows exe running as windows exe](tests/bc15c13f-d121-4b1f-8c7d-28d95854d086.md)
 * registry_set_terminal_server_tampering.yml

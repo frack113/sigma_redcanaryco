@@ -209,6 +209,8 @@ Caution: a test can generate a lot of noise...
 
 [rsync remote file copy (push)](tests/0fc6e977-cb12-44f6-b263-2824ba917409.md) ['linux', 'macos'] (sigma rule :x:)
 
+[Nimgrab - Transfer Files](tests/b1729c57-9384-4d1c-9b99-9b220afb384e.md) ['windows'] (sigma rule :x:)
+
 [Linux Download File and Run](tests/bdc373c5-e9cf-4563-8a7b-a9ba720a90f3.md) ['linux'] (sigma rule :x:)
 
 [Lolbas replace.exe use to copy UNC file](tests/ed0335ac-0354-400c-8148-f6151d20035a.md) ['windows'] (sigma rule :heavy_check_mark:)
@@ -331,7 +333,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1562.001
-[LockBit Black - Use Registry Editor to turn on automatic logon -cmd](tests/9719d0e1-4fe0-4b2e-9a72-7ad3ee8ddc70.md) ['windows'] (sigma rule :x:)
+[LockBit Black - Use Registry Editor to turn on automatic logon -cmd](tests/9719d0e1-4fe0-4b2e-9a72-7ad3ee8ddc70.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Disable macOS Gatekeeper](tests/2a821573-fb3f-4e71-92c3-daac7432f053.md) ['macos'] (sigma rule :x:)
 
@@ -361,7 +363,7 @@ Caution: a test can generate a lot of noise...
 
 [Stop and Remove Arbitrary Security Windows Service](tests/ae753dda-0f15-4af6-a168-b9ba16143143.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Lockbit Black - Use Registry Editor to turn on automatic logon -Powershell](tests/5e27f36d-5132-4537-b43b-413b0d5eec9a.md) ['windows'] (sigma rule :x:)
+[Lockbit Black - Use Registry Editor to turn on automatic logon -Powershell](tests/5e27f36d-5132-4537-b43b-413b0d5eec9a.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Disable Defender Using NirSoft AdvancedRun](tests/81ce22fd-9612-4154-918e-8a1f285d214d.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -393,7 +395,7 @@ Caution: a test can generate a lot of noise...
 
 [Disable Cb Response](tests/ae8943f7-0f8d-44de-962d-fbc2e2f03eb8.md) ['linux'] (sigma rule :x:)
 
-[LockBit Black - Disable Privacy Settings Experience Using Registry -cmd](tests/d6d22332-d07d-498f-aea0-6139ecb7850e.md) ['windows'] (sigma rule :x:)
+[LockBit Black - Disable Privacy Settings Experience Using Registry -cmd](tests/d6d22332-d07d-498f-aea0-6139ecb7850e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Disable SELinux](tests/fc225f36-9279-4c39-b3f9-5141ab74f8d8.md) ['linux'] (sigma rule :x:)
 
@@ -493,7 +495,7 @@ Caution: a test can generate a lot of noise...
 
 [Modify Registry of Local Machine - cmd](tests/282f929a-6bc5-42b8-bd93-960c3ba35afe.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Suppress Win Defender Notifications](tests/c30dada3-7777-4590-b970-dc890b8cf113.md) ['windows'] (sigma rule :x:)
+[Suppress Win Defender Notifications](tests/c30dada3-7777-4590-b970-dc890b8cf113.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Windows Add Registry Value to Load Service in Safe Mode with Network](tests/c173c948-65e5-499c-afbe-433722ed5bd4.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -505,7 +507,7 @@ Caution: a test can generate a lot of noise...
 
 [Activate Windows NoControlPanel Group Policy Feature](tests/a450e469-ba54-4de1-9deb-9023a6111690.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Disable Windows Security Center Notifications](tests/45914594-8df6-4ea9-b3cc-7eb9321a807e.md) ['windows'] (sigma rule :x:)
+[Disable Windows Security Center Notifications](tests/45914594-8df6-4ea9-b3cc-7eb9321a807e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Disable Windows CMD application](tests/d2561a6d-72bd-408c-b150-13efe1801c2a.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -521,7 +523,7 @@ Caution: a test can generate a lot of noise...
 
 [Activate Windows NoFileMenu Group Policy Feature](tests/5e27bdb4-7fd9-455d-a2b5-4b4b22c9dea4.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Allow RDP Remote Assistance Feature](tests/86677d0e-0b5e-4a2b-b302-454175f9aa9e.md) ['windows'] (sigma rule :x:)
+[Allow RDP Remote Assistance Feature](tests/86677d0e-0b5e-4a2b-b302-454175f9aa9e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Disable Windows Error Reporting Settings](tests/d2c9e41e-cd86-473d-980d-b6403562e3e1.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -547,7 +549,7 @@ Caution: a test can generate a lot of noise...
 
 [Modify Registry of Current User Profile - cmd](tests/1324796b-d0f6-455a-b4ae-21ffee6aa6b9.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[DisallowRun Execution Of Certain Application](tests/71db768a-5a9c-4047-b5e7-59e01f188e84.md) ['windows'] (sigma rule :x:)
+[DisallowRun Execution Of Certain Application](tests/71db768a-5a9c-4047-b5e7-59e01f188e84.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Windows HideSCAVolume Group Policy Feature](tests/7f037590-b4c6-4f13-b3cc-e424c5ab8ade.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -555,7 +557,7 @@ Caution: a test can generate a lot of noise...
 
 [Activate Windows NoPropertiesMyDocuments Group Policy Feature](tests/20fc9daa-bd48-4325-9aff-81b967a84b1d.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Ursnif Malware Registry Key Creation](tests/c375558d-7c25-45e9-bd64-7b23a97c1db0.md) ['windows'] (sigma rule :x:)
+[Ursnif Malware Registry Key Creation](tests/c375558d-7c25-45e9-bd64-7b23a97c1db0.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Windows HideSCAHealth Group Policy Feature](tests/a4637291-40b1-4a96-8c82-b28f1d73e54e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -664,6 +666,10 @@ Caution: a test can generate a lot of noise...
 [Prevent Powershell History Logging](tests/2f898b81-3e97-4abb-bc3f-a95138988370.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
+### T1547.008
+[Modify Registry to load Arbitrary DLL into LSASS - LsaDbExtPt](tests/8ecef16d-d289-46b4-917b-0dba6dc81cf1.md) ['windows'] (sigma rule :x:)
+
+
 ### T1553.004
 [Install root CA on CentOS/RHEL](tests/9c096ec4-fd42-419d-a762-d64cc950627e.md) ['linux'] (sigma rule :x:)
 
@@ -769,7 +775,7 @@ Caution: a test can generate a lot of noise...
 
 [Stop/Start UFW firewall systemctl](tests/9fd99609-1854-4f3c-b47b-97d9a5972bd1.md) ['linux'] (sigma rule :x:)
 
-[LockBit Black - Unusual Windows firewall registry modification -cmd](tests/a4651931-ebbb-4cde-9363-ddf3d66214cb.md) ['windows'] (sigma rule :x:)
+[LockBit Black - Unusual Windows firewall registry modification -cmd](tests/a4651931-ebbb-4cde-9363-ddf3d66214cb.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Allow Executable Through Firewall Located in Non-Standard Location](tests/6f5822d2-d38d-4f48-9bfc-916607ff6b8c.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -779,7 +785,7 @@ Caution: a test can generate a lot of noise...
 
 [Edit UFW firewall user.rules file](tests/beaf815a-c883-4194-97e9-fdbbb2bbdd7c.md) ['linux'] (sigma rule :x:)
 
-[LockBit Black - Unusual Windows firewall registry modification -Powershell](tests/80b453d1-eec5-4144-bf08-613a6c3ffe12.md) ['windows'] (sigma rule :x:)
+[LockBit Black - Unusual Windows firewall registry modification -Powershell](tests/80b453d1-eec5-4144-bf08-613a6c3ffe12.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Disable Microsoft Defender Firewall via Registry](tests/afedc8c4-038c-4d82-b3e5-623a95f8a612.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -865,7 +871,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1564.002
-[Create Hidden User in Registry](tests/173126b7-afe4-45eb-8680-fa9f6400431c.md) ['windows'] (sigma rule :x:)
+[Create Hidden User in Registry](tests/173126b7-afe4-45eb-8680-fa9f6400431c.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Create Hidden User using UniqueID < 500](tests/4238a7f0-a980-4fff-98a2-dfc0a363d507.md) ['macos'] (sigma rule :x:)
 
@@ -1010,6 +1016,8 @@ Caution: a test can generate a lot of noise...
 [Named pipe client impersonation](tests/90db9e27-8e7c-4c04-b602-a45927884966.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [`SeDebugPrivilege` token duplication](tests/34f0a430-9d04-4d98-bcb5-1989f14719f0.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Launch NSudo Executable](tests/7be1bc0f-d8e5-4345-9333-f5f67d742cb9.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1083
@@ -1926,6 +1934,10 @@ Caution: a test can generate a lot of noise...
 [ListCronjobs](tests/ddfb0bc1-3c3f-47e9-a298-550ecfefacbd.md) ['containers'] (sigma rule :x:)
 
 
+### T1592.002
+[Enumerate COM Objects with Powershell](tests/0d80d088-a84c-4353-af1a-fc8b439f1564.md) ['windows'] (sigma rule :x:)
+
+
 ### T1137
 [Office Application Startup - Outlook as a C2](tests/bfe6ac15-c50b-4c4f-a186-0fc6b8ba936c.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -2652,6 +2664,10 @@ Caution: a test can generate a lot of noise...
 [Code Executed Via Excel Add-in File (Xll)](tests/441b1a0f-a771-428a-8af0-e99e4698cda3.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
+### T1528
+[Azure - Dump All Azure Key Vaults with Microburst](tests/1b83cddb-eaa7-45aa-98a5-85fb0a8807ea.md) ['iaas:azure'] (sigma rule :x:)
+
+
 ### T1547
 [Add a driver](tests/cb01b3da-b0e7-4e24-bf6d-de5223526785.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -2734,6 +2750,10 @@ Caution: a test can generate a lot of noise...
 
 ### T1027.001
 [Pad Binary to Change Hash - Linux/macOS dd](tests/ffe2346c-abd5-4b45-a713-bf5f1ebd573a.md) ['macos', 'linux'] (sigma rule :x:)
+
+
+### T1552
+[AWS - Retrieve EC2 Password Data using stratus](tests/a21118de-b11e-4ebd-b655-42f11142df0c.md) ['linux', 'macos'] (sigma rule :x:)
 
 
 ### T1003.004
