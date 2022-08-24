@@ -1,0 +1,28 @@
+Attack_name: Token Impersonation/Theft
+Attack_description: |-
+  Adversaries may duplicate then impersonate another user's token to escalate privileges and bypass access controls. An adversary can create a new access token that duplicates an existing token using <code>DuplicateToken(Ex)</code>. The token can then be used with <code>ImpersonateLoggedOnUser</code> to allow the calling thread to impersonate a logged on user's security context, or with <code>SetThreadToken</code> to assign the impersonated token to a thread.
+
+  An adversary may do this when they have a specific, existing process they want to assign the new token to. For example, this may be useful for when the target user has a non-network logon session on the system.
+guid: 7be1bc0f-d8e5-4345-9333-f5f67d742cb9
+name: Launch NSudo Executable
+tactic:
+  - defense-evasion
+  - privilege-escalation
+technique:
+  - T1134.001
+os:
+  - windows
+description: |-
+  Launches the NSudo executable for a short period of time and then exits.
+  NSudo download observed after maldoc execution. NSudo is a system management tool for advanced users to launch programs with full privileges.
+executor: powershell
+sigma: true
+sigma_rule:
+  - id: f4bbd493-b796-416e-bbf2-121235348529
+    name: proc_creation_win_non_interactive_powershell.yml
+  - id: 771d1eb5-9587-4568-95fb-9ec44153a012
+    name: proc_creation_win_tool_nsudo_execution.yml
+  - id: dca91cfd-d7ab-4c66-8da7-ee57d487b35b
+    name: proc_creation_win_susp_run_folder.yml
+  - id: fa34b441-961a-42fa-a100-ecc28c886725
+    name: proc_access_win_susp_proc_access_lsass_susp_source.yml

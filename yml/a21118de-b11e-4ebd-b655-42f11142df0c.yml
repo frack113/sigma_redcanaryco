@@ -1,0 +1,21 @@
+Attack_name: Unsecured Credentials
+Attack_description: Adversaries may search compromised systems to find and obtain insecurely stored credentials. These credentials can be stored and/or misplaced in many locations on a system, including
+  plaintext files (e.g. [Bash History](https://attack.mitre.org/techniques/T1552/003)), operating system or application-specific repositories (e.g. [Credentials in Registry](https://attack.mitre.org/techniques/T1552/002)),
+  or other specialized files/artifacts (e.g. [Private Keys](https://attack.mitre.org/techniques/T1552/004)).
+guid: a21118de-b11e-4ebd-b655-42f11142df0c
+name: AWS - Retrieve EC2 Password Data using stratus
+tactic:
+  - credential-access
+technique:
+  - T1552
+os:
+  - linux
+  - macos
+description: 'This atomic runs an API call GetPasswordData from a role that does not have permission to do so. This simulates an attacker attempting to retrieve RDP passwords on a high number of Windows
+  EC2 instances. This atomic test leverages a tool called stratus-red-team built by DataDog (https://github.com/DataDog/stratus-red-team). Stratus Red Team is a self-contained binary. You can use it to
+  easily detonate offensive attack techniques against a live cloud environment. Ref: https://stratus-red-team.cloud/attack-techniques/AWS/aws.credential-access.ec2-get-password-data/
+
+  '
+executor: sh
+sigma: false
+sigma_rule: []

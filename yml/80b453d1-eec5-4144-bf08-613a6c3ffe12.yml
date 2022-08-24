@@ -14,5 +14,7 @@ description: 'An adversary tries to modify the windows firewall registry.
 
   '
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: e78c408a-e2ea-43cd-b5ea-51975cf358c0
+    name: registry_set_disable_windows_firewall.yml

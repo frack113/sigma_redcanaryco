@@ -18,5 +18,7 @@ os:
 description: "Modify the registry of the currently logged in user using reg.exe via cmd console to prevent user running specific computer programs that could aid them in manually removing malware or detecting\
   \ it \nusing security product.\nSee how azorult malware abuses this technique- https://app.any.run/tasks/a6f2ffe2-e6e2-4396-ae2e-04ea0143f2d8/\n"
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 275641a5-a492-45e2-a817-7c81e9d9d3e9
+    name: registry_set_disallowrun_execution.yml

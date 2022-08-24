@@ -19,5 +19,7 @@ description: |
   Modify the registry of the currently logged in user using reg.exe via cmd console to disable the windows security center notification.
   See how azorult malware abuses this technique- https://app.any.run/tasks/a6f2ffe2-e6e2-4396-ae2e-04ea0143f2d8/
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 3ae1a046-f7db-439d-b7ce-b8b366b81fa6
+    name: registry_set_disable_security_center_notifications.yml

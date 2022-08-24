@@ -20,5 +20,7 @@ description: |
   user to rdp connect on the targeted machine.
   See how azorult malware abuses this technique- https://app.any.run/tasks/a6f2ffe2-e6e2-4396-ae2e-04ea0143f2d8/
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 37b437cf-3fc5-4c8e-9c94-1d7c9aff842b
+    name: registry_set_allow_rdp_remote_assistance_feature.yml

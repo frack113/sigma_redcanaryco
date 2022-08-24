@@ -22,5 +22,15 @@ description: |
   Adversaries may similarly hide user accounts in Windows. Adversaries can set the HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\SpecialAccounts\UserList Registry key value to 0 for a specific user to prevent that user from being listed on the logon screen.
   Reference https://attack.mitre.org/techniques/T1564/002/ and https://thedfirreport.com/2022/07/11/select-xmrig-from-sqlserver/
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: b9f0e6f5-09b4-4358-bae4-08408705bd5c
+    name: proc_creation_win_net_user_add_never_expire.yml
+  - id: 183e7ea8-ac4b-4c23-9aec-b3dac4e401ac
+    name: proc_creation_win_susp_net_execution.yml
+  - id: cd219ff3-fa99-45d4-8380-a7d15116c6dc
+    name: proc_creation_win_net_user_add.yml
+  - id: 8a58209c-7ae6-4027-afb0-307a78e4589a
+    name: registry_set_add_hidden_user.yml
+  - id: f8aebc67-a56d-4ec9-9fbe-7b0e8b7b4efd
+    name: registry_set_special_accounts.yml
