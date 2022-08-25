@@ -14,5 +14,23 @@ os:
 description: "This test is designed to enumerate the COM objects listed in HKCR, then output their methods and CLSIDs to a text file.\nAn adversary could then use this information to identify COM objects\
   \ that might be vulnerable to abuse, such as using them to spawn arbitrary processes. \nSee: https://www.mandiant.com/resources/hunting-com-objects"
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: a9723fcc-881c-424c-8709-fd61442ab3c3
+    name: posh_ps_susp_recon_export.yml
+  - id: 162e69a7-7981-4344-84a9-0f1c9a217a52
+    name: posh_ps_susp_directory_enum.yml
+  - id: 9d15044a-7cfe-4d23-8085-6ebc11df7685
+    name: registry_set_office_vsto_persistence.yml
+  - id: baecf8fb-edbf-429f-9ade-31fc3f22b970
+    name: registry_set_asep_reg_keys_modification_office.yml
+  - id: 75e33ce3-ae32-4dcc-9aa8-a2a3029d6f84
+    name: net_connection_win_excel_outbound_network_connection.yml
+  - id: e6ce8457-68b1-485b-9bdd-3c2b5d679aa9
+    name: image_load_susp_winword_vbadll_load.yml
+  - id: 349d891d-fef0-4fe4-bc53-eee623a15969
+    name: proc_creation_win_ntfs_short_name_path_use_cli.yml
+  - id: a96970af-f126-420d-90e1-d37bf25e50e1
+    name: proc_creation_win_ntfs_short_name_path_use_image.yml
+  - id: c3edc6a5-d9d4-48d8-930e-aab518390917
+    name: file_event_win_outlook_newform.yml

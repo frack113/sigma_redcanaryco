@@ -17,5 +17,7 @@ description: 'Iterative AD discovery toolkit for offensive operators. Situationa
 
   '
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 69ca006d-b9a9-47f5-80ff-ecd4d25d481a
+    name: proc_creation_win_trufflesnout.yml

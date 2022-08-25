@@ -15,5 +15,7 @@ os:
   - windows
 description: "Simulate Raspberry Robin using the \"standard-in\" command prompt feature cmd `/R <` to read and execute a file via cmd.exe\nSee https://redcanary.com/blog/raspberry-robin/. \n"
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 00a4bacd-6db4-46d5-9258-a7d5ebff4003
+    name: proc_creation_win_cmd_read_contents.yml

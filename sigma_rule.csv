@@ -862,7 +862,7 @@ file_event_win_ntds_dit.yml;False
 file_event_win_ntds_exfil_tools.yml;False
 file_event_win_office_persistence.yml;False
 file_event_win_outlook_c2_macro_creation.yml;True
-file_event_win_outlook_newform.yml;False
+file_event_win_outlook_newform.yml;True
 file_event_win_pcre_net_temp_file.yml;False
 file_event_win_pingback_backdoor.yml;False
 file_event_win_powershell_exploit_scripts.yml;False
@@ -1301,7 +1301,7 @@ proc_creation_win_clip.yml;True
 proc_creation_win_cmdkey_recon.yml;True
 proc_creation_win_cmd_delete.yml;True
 proc_creation_win_cmd_dosfuscation.yml;False
-proc_creation_win_cmd_read_contents.yml;False
+proc_creation_win_cmd_read_contents.yml;True
 proc_creation_win_cmd_redirect.yml;True
 proc_creation_win_cmd_redirection_susp_folder.yml;False
 proc_creation_win_cmstp_com_object_access.yml;True
@@ -1331,7 +1331,7 @@ proc_creation_win_data_compressed_with_rar.yml;True
 proc_creation_win_delete_systemstatebackup.yml;True
 proc_creation_win_detecting_fake_instances_of_hxtsr.yml;False
 proc_creation_win_dinjector.yml;True
-proc_creation_win_dirlister.yml;False
+proc_creation_win_dirlister.yml;True
 proc_creation_win_disable_service.yml;False
 proc_creation_win_discover_private_keys.yml;True
 proc_creation_win_dll_sideload_defender.yml;False
@@ -1373,7 +1373,7 @@ proc_creation_win_file_permission_modifications.yml;True
 proc_creation_win_findstr_gpp_passwords.yml;True
 proc_creation_win_findstr_lsass.yml;False
 proc_creation_win_fsutil_drive_enumeration.yml;False
-proc_creation_win_fsutil_symlinkevaluation.yml;False
+proc_creation_win_fsutil_symlinkevaluation.yml;True
 proc_creation_win_gotoopener.yml;True
 proc_creation_win_grabbing_sensitive_hives_via_reg.yml;False
 proc_creation_win_hacktool_imphashes.yml;True
@@ -1482,7 +1482,7 @@ proc_creation_win_lolbin_sigverif.yml;False
 proc_creation_win_lolbin_squirrel.yml;False
 proc_creation_win_lolbin_susp_acccheckconsole.yml;False
 proc_creation_win_lolbin_susp_atbroker.yml;False
-proc_creation_win_lolbin_susp_certreq_download.yml;False
+proc_creation_win_lolbin_susp_certreq_download.yml;True
 proc_creation_win_lolbin_susp_driver_installed_by_pnputil.yml;True
 proc_creation_win_lolbin_susp_dxcap.yml;False
 proc_creation_win_lolbin_susp_grpconv.yml;False
@@ -1569,8 +1569,8 @@ proc_creation_win_new_service_creation.yml;True
 proc_creation_win_nltest_recon.yml;True
 proc_creation_win_non_interactive_powershell.yml;True
 proc_creation_win_non_priv_reg_or_ps.yml;False
-proc_creation_win_ntfs_short_name_path_use_cli.yml;False
-proc_creation_win_ntfs_short_name_path_use_image.yml;False
+proc_creation_win_ntfs_short_name_path_use_cli.yml;True
+proc_creation_win_ntfs_short_name_path_use_image.yml;True
 proc_creation_win_ntfs_short_name_use_cli.yml;False
 proc_creation_win_ntfs_short_name_use_image.yml;False
 proc_creation_win_obfuscated_ip_download.yml;False
@@ -2014,7 +2014,7 @@ proc_creation_win_tool_nsudo_execution.yml;True
 proc_creation_win_tool_psexec.yml;False
 proc_creation_win_tool_runx_as_system.yml;False
 proc_creation_win_tor_browser.yml;True
-proc_creation_win_trufflesnout.yml;False
+proc_creation_win_trufflesnout.yml;True
 proc_creation_win_trust_discovery.yml;True
 proc_creation_win_uac_bypass_changepk_slui.yml;False
 proc_creation_win_uac_bypass_cleanmgr.yml;False
@@ -2041,7 +2041,7 @@ proc_creation_win_vmtoolsd_susp_child_process.yml;False
 proc_creation_win_vul_java_remote_debugging.yml;False
 proc_creation_win_wab_execution_from_non_default_location.yml;False
 proc_creation_win_wab_unusual_parents.yml;False
-proc_creation_win_webbrowserpassview.yml;False
+proc_creation_win_webbrowserpassview.yml;True
 proc_creation_win_webshell_detection.yml;False
 proc_creation_win_webshell_hacking.yml;False
 proc_creation_win_webshell_recon_detection.yml;False
