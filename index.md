@@ -195,7 +195,7 @@ Caution: a test can generate a lot of noise...
 
 [Download a file with Microsoft Connection Manager Auto-Download](tests/d239772b-88e2-4a2e-8473-897503401bcc.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[certreq download](tests/6fdaae87-c05b-42f8-842e-991a74e8376b.md) ['windows'] (sigma rule :x:)
+[certreq download](tests/6fdaae87-c05b-42f8-842e-991a74e8376b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [svchost writing a file to a UNC path](tests/fa5a2759-41d7-4e13-a19c-e8f28a53566f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -469,7 +469,7 @@ Caution: a test can generate a lot of noise...
 
 [psexec.py (Impacket)](tests/edbcd8c9-3639-4844-afad-455c91e95a35.md) ['linux'] (sigma rule :x:)
 
-[BlackCat pre-encryption cmds with Lateral Movement](tests/31eb7828-97d7-4067-9c1e-c6feb85edc4b.md) ['windows'] (sigma rule :x:)
+[BlackCat pre-encryption cmds with Lateral Movement](tests/31eb7828-97d7-4067-9c1e-c6feb85edc4b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Execute a Command as a Service](tests/2382dee2-a75f-49aa-9378-f52df6ed3fb1.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -609,7 +609,7 @@ Caution: a test can generate a lot of noise...
 
 [Powershell enumerate domains and forests](tests/c58fbc62-8a62-489e-8f2d-3565d7d96f30.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[TruffleSnout - Listing AD Infrastructure](tests/ea1b4f2d-5b82-4006-b64f-f2845608a3bf.md) ['windows'] (sigma rule :x:)
+[TruffleSnout - Listing AD Infrastructure](tests/ea1b4f2d-5b82-4006-b64f-f2845608a3bf.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1552.006
@@ -1025,7 +1025,7 @@ Caution: a test can generate a lot of noise...
 
 [Nix File and Directory Discovery](tests/ffc8b249-372a-4b74-adcd-e4c0430842de.md) ['macos', 'linux'] (sigma rule :x:)
 
-[Launch DirLister Executable](tests/c5bec457-43c9-4a18-9a24-fe151d8971b7.md) ['windows'] (sigma rule :x:)
+[Launch DirLister Executable](tests/c5bec457-43c9-4a18-9a24-fe151d8971b7.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [File and Directory Discovery (cmd.exe)](tests/0e36303b-6762-4500-b003-127743b80ba6.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1383,7 +1383,7 @@ Caution: a test can generate a lot of noise...
 
 [LaZagne - Credentials from Browser](tests/9a2915b3-3954-4cce-8c76-00fbf4dbd014.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[WebBrowserPassView - Credentials from Browser](tests/e359627f-2d90-4320-ba5e-b0f878155bbe.md) ['windows'] (sigma rule :x:)
+[WebBrowserPassView - Credentials from Browser](tests/e359627f-2d90-4320-ba5e-b0f878155bbe.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Simulating access to Windows Edge Login Data](tests/a6a5ec26-a2d1-4109-9d35-58b867689329.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1687,6 +1687,8 @@ Caution: a test can generate a lot of noise...
 
 [AnyDesk Files Detected Test on Windows](tests/6b8b7391-5c0a-4f8c-baee-78d8ce0ce330.md) ['windows'] (sigma rule :heavy_check_mark:)
 
+[UltraViewer - RAT Execution](tests/19acf63b-55c4-4b6a-8552-00a8865105c8.md) ['windows'] (sigma rule :x:)
+
 [RemotePC Software Execution](tests/fbff3f1f-b0bf-448e-840f-7e1687affdce.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Ammyy Admin Software Execution](tests/0ae9e327-3251-465a-a53b-485d4e3f58fa.md) ['windows'] (sigma rule :heavy_check_mark:)
@@ -1935,7 +1937,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1592.002
-[Enumerate COM Objects with Powershell](tests/0d80d088-a84c-4353-af1a-fc8b439f1564.md) ['windows'] (sigma rule :x:)
+[Enumerate COM Objects with Powershell](tests/0d80d088-a84c-4353-af1a-fc8b439f1564.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1137
@@ -2059,7 +2061,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1059.003
-[Command Prompt read contents from CMD file and execute](tests/df81db1b-066c-4802-9bc8-b6d030c3ba8e.md) ['windows'] (sigma rule :x:)
+[Command Prompt read contents from CMD file and execute](tests/df81db1b-066c-4802-9bc8-b6d030c3ba8e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Writes text to a file and displays it.](tests/127b4afe-2346-4192-815c-69042bec570e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
