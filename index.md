@@ -587,7 +587,7 @@ Caution: a test can generate a lot of noise...
 
 [Powershell Execute COM Object](tests/752191b1-7c71-445c-9dbe-21bb031b18eb.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[COM hijacking via TreatAs](tests/33eacead-f117-4863-8eb0-5c6304fbfaa9.md) ['windows'] (sigma rule :x:)
+[COM hijacking via TreatAs](tests/33eacead-f117-4863-8eb0-5c6304fbfaa9.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1114.001
@@ -1388,6 +1388,8 @@ Caution: a test can generate a lot of noise...
 [Simulating access to Windows Edge Login Data](tests/a6a5ec26-a2d1-4109-9d35-58b867689329.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Search macOS Safari Cookies](tests/c1402f7b-67ca-43a8-b5f3-3143abedc01b.md) ['macos'] (sigma rule :x:)
+
+[BrowserStealer (Chrome / Firefox / Microsoft Edge)](tests/6f2c5c87-a4d5-4898-9bd1-47a55ecaf1dd.md) ['windows'] (sigma rule :x:)
 
 [Simulating access to Windows Firefox Login Data](tests/eb8da98a-2e16-4551-b3dd-83de49baa14c.md) ['windows'] (sigma rule :heavy_check_mark:)
 

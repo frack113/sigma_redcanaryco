@@ -337,6 +337,7 @@
   * T1518 [WinPwn - powerSQL](tests/0bb64470-582a-4155-bde2-d6003a95ed34.md)
   * T1082 [WinPwn - GeneralRecon](tests/7804659b-fdbf-4cf6-b06a-c03e758590e8.md)
   * T1518 [WinPwn - DotNet](tests/10ba02d0-ab76-4f80-940d-451633f24c5b.md)
+  * T1546.015 [COM hijacking via TreatAs](tests/33eacead-f117-4863-8eb0-5c6304fbfaa9.md)
   * T1557.001 [LLMNR Poisoning with Inveigh (PowerShell)](tests/deecd55f-afe0-4a62-9fba-4d1ba2deb321.md)
   * T1078.003 [WinPwn - Loot local Credentials - Safetykatz](tests/e9fdb899-a980-4ba4-934b-486ad22e22f4.md)
   * T1134.001 [`SeDebugPrivilege` token duplication](tests/34f0a430-9d04-4d98-bcb5-1989f14719f0.md)
@@ -467,6 +468,7 @@
   * T1218.011 [Rundll32 advpack.dll Execution](tests/d91cae26-7fc1-457b-a854-34c8aad48c89.md)
   * T1218.011 [Rundll32 execute JavaScript Remote Payload With GetObject](tests/57ba4ce9-ee7a-4f27-9928-3c70c489b59d.md)
   * T1218.011 [Rundll32 ieadvpack.dll Execution](tests/5e46a58e-cbf6-45ef-a289-ed7754603df9.md)
+  * T1546.015 [COM hijacking via TreatAs](tests/33eacead-f117-4863-8eb0-5c6304fbfaa9.md)
 * net_connection_win_susp_outbound_kerberos_connection.yml
   * T1016 [List Open Egress Ports](tests/4b467538-f102-491d-ace7-ed487b853bf5.md)
 * net_connection_win_susp_outbound_smtp_connections.yml
@@ -1980,6 +1982,7 @@
   * T1082 [WinPwn - GeneralRecon](tests/7804659b-fdbf-4cf6-b06a-c03e758590e8.md)
   * T1059.001 [ATHPowerShellCommandLineParameter -EncodedCommand parameter variations with encoded arguments](tests/0d181431-ddf3-4826-8055-2dbf63ae848b.md)
   * T1518 [WinPwn - DotNet](tests/10ba02d0-ab76-4f80-940d-451633f24c5b.md)
+  * T1546.015 [COM hijacking via TreatAs](tests/33eacead-f117-4863-8eb0-5c6304fbfaa9.md)
   * T1078.003 [WinPwn - Loot local Credentials - Safetykatz](tests/e9fdb899-a980-4ba4-934b-486ad22e22f4.md)
   * T1134.001 [`SeDebugPrivilege` token duplication](tests/34f0a430-9d04-4d98-bcb5-1989f14719f0.md)
   * T1555.003 [WinPwn - PowerSharpPack - Sharpweb for Browser Credentials](tests/e5e3d639-6ea8-4408-9ecd-d5a286268ca0.md)
@@ -2346,8 +2349,6 @@
   * T1003.001 [Dump LSASS.exe Memory using NanoDump](tests/dddd4aca-bbed-46f0-984d-e4c5971c51ea.md)
   * T1134.001 [Launch NSudo Executable](tests/7be1bc0f-d8e5-4345-9333-f5f67d742cb9.md)
   * T1555 [WinPwn - Loot local Credentials - lazagne](tests/079ee2e9-6f16-47ca-a635-14efcd994118.md)
-* proc_creation_modify_group_policy_settings.yml
-  * T1484.001 [LockBit Black - Modify Group policy settings -cmd](tests/9ab80952-74ee-43da-a98c-1e740a985f28.md)
 * proc_creation_win_abusing_debug_privilege.yml
   * T1106 [WinPwn - Get SYSTEM shell - Bind System Shell using CreateProcess technique](tests/7ec5b74e-8289-4ff2-a162-b6f286a33abd.md)
   * T1563.002 [RDP hijacking](tests/a37ac520-b911-458e-8aed-c5f1576d9f46.md)
@@ -2641,6 +2642,8 @@
   * T1021.003 [PowerShell Lateral Movement using MMC20](tests/6dc74eb1-c9d6-4c53-b3b5-6f50ae339673.md)
 * proc_creation_win_modif_of_services_for_via_commandline.yml
   * T1543.003 [Modify Fax service to run PowerShell](tests/ed366cde-7d12-49df-a833-671904770b9f.md)
+* proc_creation_win_modify_group_policy_settings.yml
+  * T1484.001 [LockBit Black - Modify Group policy settings -cmd](tests/9ab80952-74ee-43da-a98c-1e740a985f28.md)
 * proc_creation_win_monitoring_for_persistence_via_bits.yml
   * T1197 [Persist, Download, & Execute](tests/62a06ec5-5754-47d2-bcfc-123d8314c6ae.md)
 * proc_creation_win_mshta_javascript.yml
@@ -3039,6 +3042,7 @@
   * T1219 [ScreenConnect Application Download and Install on Windows](tests/4a18cc4e-416f-4966-9a9d-75731c4684c0.md)
   * T1218.011 [Rundll32 execute VBscript command](tests/638730e7-7aed-43dc-bf8c-8117f805f5bb.md)
   * T1218.011 [Execution of non-dll using rundll32.exe](tests/ae3a8605-b26e-457c-b6b3-2702fd335bac.md)
+  * T1546.015 [COM hijacking via TreatAs](tests/33eacead-f117-4863-8eb0-5c6304fbfaa9.md)
   * T1218.011 [Rundll32 with desk.cpl](tests/83a95136-a496-423c-81d3-1c6750133917.md)
 * proc_creation_win_run_from_zip.yml
   * T1027 [Execution from Compressed File](tests/f8c8a909-5f29-49ac-9244-413936ce6d1f.md)
@@ -3546,6 +3550,7 @@
   * T1105 [MAZE Propagation Script](tests/70f4d07c-5c3e-4d53-bb0a-cdf3ada14baf.md)
   * T1082 [WinPwn - General privesc checks](tests/5b6f39a2-6ec7-4783-a5fd-2c54a55409ed.md)
   * T1082 [WinPwn - GeneralRecon](tests/7804659b-fdbf-4cf6-b06a-c03e758590e8.md)
+  * T1546.015 [COM hijacking via TreatAs](tests/33eacead-f117-4863-8eb0-5c6304fbfaa9.md)
 * proc_creation_win_susp_print.yml
   * T1564.004 [Alternate Data Streams (ADS)](tests/8822c3b0-d9f9-4daf-a043-49f4602364f4.md)
 * proc_creation_win_susp_procdump_lsass.yml
@@ -4042,7 +4047,7 @@
 * registry_set_disable_defender_firewall.yml
   * T1562.004 [Disable Microsoft Defender Firewall](tests/88d05800-a5e4-407e-9b53-ece4174f197f.md)
   * T1562.004 [Disable Microsoft Defender Firewall via Registry](tests/afedc8c4-038c-4d82-b3e5-623a95f8a612.md)
-* registry_set_disable_fonction_user.yml
+* registry_set_disable_function_user.yml
   * T1112 [Disable Windows Change Password Feature](tests/d4a6da40-618f-454d-9a9e-26af552aaeb0.md)
   * T1112 [Disable Windows Registry Tool](tests/ac34b0f7-0f85-4ac0-b93e-3ced2bc69bb8.md)
   * T1112 [Disable Windows LogOff Button](tests/e246578a-c24d-46a7-9237-0213ff86fb0c.md)
@@ -4077,7 +4082,7 @@
   * T1112 [Modify Registry of Current User Profile - cmd](tests/1324796b-d0f6-455a-b4ae-21ffee6aa6b9.md)
 * registry_set_hide_file.yml
   * T1564.001 [Hide Files Through Registry](tests/f650456b-bd49-4bc1-ae9d-271b5b9581e7.md)
-* registry_set_hide_fonction_user.yml
+* registry_set_hide_function_user.yml
   * T1112 [Hide Windows Clock Group Policy Feature](tests/8023db1e-ad06-4966-934b-b6a0ae52689e.md)
   * T1112 [Windows HideSCAPower Group Policy Feature](tests/8d85a5d8-702f-436f-bc78-fcd9119496fc.md)
   * T1112 [Windows HideSCANetwork Group Policy Feature](tests/3e757ce7-eca0-411a-9583-1c33b8508d52.md)
@@ -4111,6 +4116,8 @@
   * T1547.001 [SystemBC Malware-as-a-Service Registry](tests/9dc7767b-30c1-4cc4-b999-50cab5e27891.md)
 * registry_set_powershell_logging_disabled.yml
   * T1112 [Windows Powershell Logging Disabled](tests/95b25212-91a7-42ff-9613-124aca6845a8.md)
+* registry_set_scrobj_dll_persistence.yml
+  * T1546.015 [COM hijacking via TreatAs](tests/33eacead-f117-4863-8eb0-5c6304fbfaa9.md)
 * registry_set_servicedll_hijack.yml
   * T1543.003 [TinyTurla backdoor service w64time](tests/ef0581fd-528e-4662-87bc-4c2affb86940.md)
 * registry_set_set_nopolicies_user.yml
@@ -4137,6 +4144,9 @@
 * registry_set_timeproviders_dllname.yml
   * T1547.003 [Create a new time provider](tests/df1efab7-bc6d-4b88-8be9-91f55ae017aa.md)
   * T1547.003 [Edit an existing time provider](tests/29e0afca-8d1d-471a-8d34-25512fc48315.md)
+* registry_set_treatas_persistence.yml
+  * T1546.015 [COM hijacking via TreatAs](tests/33eacead-f117-4863-8eb0-5c6304fbfaa9.md)
+  * T1546.015 [COM hijacking via TreatAs](tests/33eacead-f117-4863-8eb0-5c6304fbfaa9.md)
 * registry_set_wdigest_enable_uselogoncredential.yml
   * T1112 [Modify registry to store logon credentials](tests/c0413fb5-33e2-40b7-9b6f-60b29f4a7a18.md)
 * registry_set_windows_defender_tamper.yml
@@ -4163,7 +4173,7 @@
 * sysmon_powershell_code_injection.yml
   * T1134.004 [Parent PID Spoofing using PowerShell](tests/069258f4-2162-46e9-9a25-c9c6c56150d2.md)
   * T1018 [Get-DomainController with PowerView](tests/b9d2e8ca-5520-4737-8076-4f08913da2c4.md)
-* sysmon_susp_remote_thread.yml
+* sysmon_susp_remote_thread_source.yml
   * T1134.004 [Parent PID Spoofing using PowerShell](tests/069258f4-2162-46e9-9a25-c9c6c56150d2.md)
   * T1018 [Get-DomainController with PowerView](tests/b9d2e8ca-5520-4737-8076-4f08913da2c4.md)
 * sysmon_wmi_event_subscription.yml
