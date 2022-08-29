@@ -20,4 +20,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 5a93eb65-dffa-4543-b761-94aa60098fb6
-    name: registry_set_hide_fonction_user.yml
+    name: registry_set_hide_function_user.yml

@@ -24,4 +24,4 @@ sigma_rule:
   - id: 1c3121ed-041b-4d97-a075-07f54f20fb4a
     name: registry_set_set_nopolicies_user.yml
   - id: e2482f8d-3443-4237-b906-cc145d87a076
-    name: registry_set_disable_fonction_user.yml
+    name: registry_set_disable_function_user.yml

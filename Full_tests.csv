@@ -554,7 +554,7 @@ privilege-escalation;T1547.002;powershell;['windows'];Authentication Package;be2
 privilege-escalation;T1546.015;powershell;['windows'];COM Hijacking - InprocServer32;48117158-d7be-441b-bc6a-d9e36e47b52b;True;1
 privilege-escalation;T1546.015;powershell;['windows'];Powershell Execute COM Object;752191b1-7c71-445c-9dbe-21bb031b18eb;True;2
 privilege-escalation;T1546.015;powershell;['windows'];COM Hijacking with RunDLL32 (Local Server Switch);123520cc-e998-471b-a920-bd28e3feafa0;True;3
-privilege-escalation;T1546.015;powershell;['windows'];COM hijacking via TreatAs;33eacead-f117-4863-8eb0-5c6304fbfaa9;False;4
+privilege-escalation;T1546.015;powershell;['windows'];COM hijacking via TreatAs;33eacead-f117-4863-8eb0-5c6304fbfaa9;True;4
 privilege-escalation;T1574.009;command_prompt;['windows'];Execution of program.exe as service with unquoted service path;2770dea7-c50f-457b-84c4-c40a47460d9f;True;1
 privilege-escalation;T1037.005;sh;['macos'];Add file to Local Library StartupItems;134627c3-75db-410e-bff8-7a920075f198;False;1
 privilege-escalation;T1546.010;command_prompt;['windows'];Install AppInit Shim;a58d9386-3080-4242-ab5f-454c16503d18;True;1
@@ -785,7 +785,7 @@ persistence;T1547.002;powershell;['windows'];Authentication Package;be2590e8-4ac
 persistence;T1546.015;powershell;['windows'];COM Hijacking - InprocServer32;48117158-d7be-441b-bc6a-d9e36e47b52b;True;1
 persistence;T1546.015;powershell;['windows'];Powershell Execute COM Object;752191b1-7c71-445c-9dbe-21bb031b18eb;True;2
 persistence;T1546.015;powershell;['windows'];COM Hijacking with RunDLL32 (Local Server Switch);123520cc-e998-471b-a920-bd28e3feafa0;True;3
-persistence;T1546.015;powershell;['windows'];COM hijacking via TreatAs;33eacead-f117-4863-8eb0-5c6304fbfaa9;False;4
+persistence;T1546.015;powershell;['windows'];COM hijacking via TreatAs;33eacead-f117-4863-8eb0-5c6304fbfaa9;True;4
 persistence;T1137.004;command_prompt;['windows'];Install Outlook Home Page Persistence;7a91ad51-e6d2-4d43-9471-f26362f5738e;True;1
 persistence;T1574.009;command_prompt;['windows'];Execution of program.exe as service with unquoted service path;2770dea7-c50f-457b-84c4-c40a47460d9f;True;1
 persistence;T1037.005;sh;['macos'];Add file to Local Library StartupItems;134627c3-75db-410e-bff8-7a920075f198;False;1
@@ -962,6 +962,7 @@ credential-access;T1555.003;powershell;['windows'];WinPwn - Loot local Credentia
 credential-access;T1555.003;powershell;['windows'];WinPwn - PowerSharpPack - Sharpweb for Browser Credentials;e5e3d639-6ea8-4408-9ecd-d5a286268ca0;True;13
 credential-access;T1555.003;sh;['macos'];Simulating Access to Chrome Login Data - MacOS;124e13e5-d8a1-4378-a6ee-a53cd0c7e369;False;14
 credential-access;T1555.003;powershell;['windows'];WebBrowserPassView - Credentials from Browser;e359627f-2d90-4320-ba5e-b0f878155bbe;True;15
+credential-access;T1555.003;powershell;['windows'];BrowserStealer (Chrome / Firefox / Microsoft Edge);6f2c5c87-a4d5-4898-9bd1-47a55ecaf1dd;False;16
 credential-access;T1552.004;command_prompt;['windows'];Private Keys;520ce462-7ca7-441e-b5a5-f8347f632696;True;1
 credential-access;T1552.004;sh;['macos', 'linux'];Discover Private SSH Keys;46959285-906d-40fa-9437-5a439accd878;False;2
 credential-access;T1552.004;sh;['linux'];Copy Private SSH Keys with CP;7c247dc7-5128-4643-907b-73a76d9135c3;False;3

@@ -28,4 +28,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: ada4b0c4-758b-46ac-9033-9004613a150d
-    name: proc_creation_modify_group_policy_settings.yml
+    name: proc_creation_win_modify_group_policy_settings.yml

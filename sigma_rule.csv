@@ -738,6 +738,7 @@ win_service_hacktools.yml;False
 win_service_install_pdqdeploy.yml;False
 win_service_install_pdqdeploy_runner.yml;False
 win_service_install_susp_double_ampersand.yml;False
+win_sliver_service_installs.yml;False
 win_susp_dhcp_config.yml;False
 win_susp_dhcp_config_failed.yml;False
 win_susp_proceshacker.yml;False
@@ -777,9 +778,13 @@ sysmon_password_dumper_keepass.yml;False
 sysmon_password_dumper_lsass.yml;False
 sysmon_powershell_code_injection.yml;True
 sysmon_susp_powershell_rundll32.yml;False
-sysmon_susp_remote_thread.yml;True
-sysmon_ads_executable.yml;False
-sysmon_regedit_export_to_ads.yml;False
+sysmon_susp_remote_thread_source.yml;True
+sysmon_susp_remote_thread_target.yml;False
+create_stream_hash_ads_executable.yml;False
+create_stream_hash_hacktool_download.yml;False
+create_stream_hash_regedit_export_to_ads.yml;False
+create_stream_hash_susp_domain_ext_combo.yml;False
+create_stream_hash_susp_domain_ext_combo_med.yml;False
 dns_query_remote_access_software_domains.yml;True
 dns_query_win_anonymfiles_com.yml;False
 dns_query_win_hybridconnectionmgr_servicebus.yml;False
@@ -855,6 +860,7 @@ file_event_win_mal_vhd_download.yml;False
 file_event_win_mimikatz_kirbi_file_creation.yml;False
 file_event_win_mimimaktz_memssp_log_file.yml;False
 file_event_win_moriya_rootkit.yml;False
+file_event_win_msdt_autorun.yml;False
 file_event_win_new_files_in_uncommon_appdata_folder.yml;False
 file_event_win_new_src_file.yml;True
 file_event_win_notepad_plus_plus_persistence.yml;False
@@ -890,13 +896,14 @@ file_event_win_susp_exchange_aspx_write.yml;False
 file_event_win_susp_get_variable.yml;True
 file_event_win_susp_ntds_dit.yml;False
 file_event_win_susp_pfx_file_creation.yml;False
-file_event_win_susp_powershell_profile_create.yml;False
+file_event_win_susp_powershell_profile.yml;False
 file_event_win_susp_procexplorer_driver_created_in_tmp_folder.yml;False
 file_event_win_susp_spool_drivers_color_drop.yml;False
 file_event_win_susp_startup_folder_persistence.yml;False
 file_event_win_susp_system_interactive_powershell.yml;False
 file_event_win_susp_task_write.yml;False
 file_event_win_susp_teamviewer_remote_session.yml;False
+file_event_win_susp_vscode_powershell_profile.yml;False
 file_event_win_susp_winword_startup.yml;False
 file_event_win_tool_psexec.yml;True
 file_event_win_tsclient_filewrite_startup.yml;False
@@ -990,6 +997,8 @@ net_connection_win_rdp_to_http.yml;False
 net_connection_win_regsvr32_network_activity.yml;True
 net_connection_win_remote_powershell_session_network.yml;True
 net_connection_win_rundll32_net_connections.yml;True
+net_connection_win_script.yml;False
+net_connection_win_script_wan.yml;False
 net_connection_win_silenttrinity_stager_msbuild_activity.yml;False
 net_connection_win_susps_epmap.yml;False
 net_connection_win_susp_dropbox_api.yml;False
@@ -1081,6 +1090,7 @@ posh_ps_data_compressed.yml;True
 posh_ps_detect_vm_env.yml;True
 posh_ps_directorysearcher.yml;True
 posh_ps_directoryservices_accountmanagement.yml;True
+posh_ps_disable_psreadline_command_history.yml;False
 posh_ps_dnscat_execution.yml;True
 posh_ps_dump_password_windows_credential_manager.yml;True
 posh_ps_enable_psremoting.yml;True
@@ -1212,7 +1222,6 @@ proc_access_win_susp_proc_access_lsass.yml;True
 proc_access_win_susp_proc_access_lsass_susp_source.yml;True
 proc_access_win_svchost_cred_dump.yml;False
 proc_access_win_uac_bypass_wow64_logger.yml;False
-proc_creation_modify_group_policy_settings.yml;True
 proc_creation_win_7zip_cve_2022_29072.yml;False
 proc_creation_win_abusing_debug_privilege.yml;True
 proc_creation_win_abusing_windows_telemetry_for_persistence.yml;False
@@ -1250,6 +1259,7 @@ proc_creation_win_apt_lazarus_activity_apr21.yml;True
 proc_creation_win_apt_lazarus_activity_dec20.yml;False
 proc_creation_win_apt_lazarus_loader.yml;False
 proc_creation_win_apt_lazarus_session_highjack.yml;False
+proc_creation_win_apt_mercury.yml;False
 proc_creation_win_apt_muddywater_dnstunnel.yml;False
 proc_creation_win_apt_mustangpanda.yml;False
 proc_creation_win_apt_revil_kaseya.yml;False
@@ -1290,6 +1300,7 @@ proc_creation_win_bitsadmin_download_susp_targetfolder.yml;False
 proc_creation_win_bitsadmin_download_uncommon_targetfolder.yml;False
 proc_creation_win_bootconf_mod.yml;True
 proc_creation_win_bypass_squiblytwo.yml;True
+proc_creation_win_c2_sliver.yml;False
 proc_creation_win_c3_load_by_rundll32.yml;False
 proc_creation_win_certoc_execution.yml;False
 proc_creation_win_change_default_file_association.yml;True
@@ -1472,6 +1483,7 @@ proc_creation_win_lolbin_presentationhost_download.yml;False
 proc_creation_win_lolbin_printbrm.yml;True
 proc_creation_win_lolbin_pubprn.yml;False
 proc_creation_win_lolbin_rasautou_dll_execution.yml;False
+proc_creation_win_lolbin_regasm.yml;False
 proc_creation_win_lolbin_register_app.yml;False
 proc_creation_win_lolbin_remote.yml;False
 proc_creation_win_lolbin_replace.yml;True
@@ -1529,6 +1541,7 @@ proc_creation_win_meterpreter_or_cobaltstrike_getsystem_service_start.yml;True
 proc_creation_win_mimikatz_command_line.yml;True
 proc_creation_win_mmc20_lateral_movement.yml;True
 proc_creation_win_mmc_spawn_shell.yml;False
+proc_creation_win_modify_group_policy_settings.yml;True
 proc_creation_win_modif_of_services_for_via_commandline.yml;True
 proc_creation_win_monitoring_for_persistence_via_bits.yml;True
 proc_creation_win_mouse_lock.yml;False
@@ -1565,7 +1578,9 @@ proc_creation_win_net_recon.yml;False
 proc_creation_win_net_user_add.yml;True
 proc_creation_win_net_user_add_never_expire.yml;True
 proc_creation_win_net_use_admin_share.yml;False
+proc_creation_win_new_network_provider.yml;False
 proc_creation_win_new_service_creation.yml;True
+proc_creation_win_nimgrab.yml;False
 proc_creation_win_nltest_recon.yml;True
 proc_creation_win_non_interactive_powershell.yml;True
 proc_creation_win_non_priv_reg_or_ps.yml;False
@@ -1977,6 +1992,7 @@ proc_creation_win_susp_vbscript_unc2452.yml;False
 proc_creation_win_susp_volsnap_disable.yml;False
 proc_creation_win_susp_webdav_client_execution.yml;True
 proc_creation_win_susp_web_request_cmd.yml;True
+proc_creation_win_susp_web_sysaidserver.yml;False
 proc_creation_win_susp_where_execution.yml;True
 proc_creation_win_susp_whoami.yml;True
 proc_creation_win_susp_whoami_anomaly.yml;False
@@ -2077,6 +2093,8 @@ registry_add_logon_scripts_userinitmprlogonscript_reg.yml;True
 registry_add_mal_netwire.yml;False
 registry_add_mal_ursnif.yml;False
 registry_add_persistence_key_linking.yml;False
+registry_add_renamed_sysinternals_eula_accepted.yml;False
+registry_add_susp_sysinternals_eula_accepted.yml;False
 registry_add_sysinternals_eula_accepted.yml;True
 registry_add_sysinternals_sdelete_registry_keys.yml;True
 registry_set_disk_cleanup_handler_new_entry_persistence.yml;False
@@ -2084,6 +2102,7 @@ registry_delete_exploit_guard_protected_folders.yml;False
 registry_delete_mstsc_history_cleared.yml;True
 registry_delete_removal_amsi_registry_key.yml;True
 registry_delete_removal_com_hijacking_registry_key.yml;False
+registry_delete_removal_index_value_scheduled_task_hide.yml;False
 registry_delete_removal_sd_value_scheduled_task_hide.yml;False
 registry_event_add_local_hidden_user.yml;False
 registry_event_apt_chafer_mar18.yml;False
@@ -2092,11 +2111,8 @@ registry_event_apt_oceanlotus_registry.yml;False
 registry_event_apt_pandemic.yml;False
 registry_event_bypass_via_wsreset.yml;False
 registry_event_cmstp_execution_by_registry.yml;True
-registry_event_crashdump_disabled.yml;False
-registry_event_cve_2021_31979_cve_2021_33771_exploits.yml;False
 registry_event_disable_security_events_logging_adding_reg_key_minint.yml;False
 registry_event_disable_wdigest_credential_guard.yml;False
-registry_event_dns_serverlevelplugindll.yml;False
 registry_event_esentutl_volume_shadow_copy_service_keys.yml;False
 registry_event_hack_wce_reg.yml;False
 registry_event_hybridconnectionmgr_svc_installation.yml;False
@@ -2153,10 +2169,12 @@ registry_set_chm_persistence.yml;False
 registry_set_chrome_extension.yml;True
 registry_set_cobaltstrike_service_installs.yml;False
 registry_set_comhijack_sdclt.yml;False
+registry_set_crashdump_disabled.yml;False
 registry_set_creation_service_susp_folder.yml;True
 registry_set_creation_service_uncommon_folder.yml;True
 registry_set_custom_file_open_handler_powershell_execution.yml;False
 registry_set_cve_2020_1048_new_printer_port.yml;False
+registry_set_cve_2021_31979_cve_2021_33771_exploits.yml;False
 registry_set_cve_2022_30190_msdt_follina.yml;False
 registry_set_dbgmanageddebugger_persistence.yml;False
 registry_set_defender_exclusions.yml;True
@@ -2168,7 +2186,7 @@ registry_set_disabled_tamper_protection_on_microsoft_defender.yml;False
 registry_set_disable_administrative_share.yml;True
 registry_set_disable_autologger_sessions.yml;False
 registry_set_disable_defender_firewall.yml;True
-registry_set_disable_fonction_user.yml;True
+registry_set_disable_function_user.yml;True
 registry_set_disable_microsoft_office_security_features.yml;True
 registry_set_disable_security_center_notifications.yml;True
 registry_set_disable_system_restore.yml;True
@@ -2179,6 +2197,7 @@ registry_set_disable_winevt_logging.yml;False
 registry_set_disallowrun_execution.yml;True
 registry_set_disk_cleanup_handler_autorun_persistence.yml;False
 registry_set_dns_over_https_enabled.yml;False
+registry_set_dns_serverlevelplugindll.yml;False
 registry_set_enabling_cor_profiler_env_variables.yml;True
 registry_set_enabling_turnoffcheck.yml;False
 registry_set_etw_disabled.yml;True
@@ -2191,7 +2210,8 @@ registry_set_hangs_debugger_persistence.yml;False
 registry_set_hhctrl_persistence.yml;False
 registry_set_hidden_extention.yml;True
 registry_set_hide_file.yml;True
-registry_set_hide_fonction_user.yml;True
+registry_set_hide_function_user.yml;True
+registry_set_hide_scheduled_task_via_index_tamper.yml;False
 registry_set_ie_persistence.yml;True
 registry_set_ifilter_persistence.yml;False
 registry_set_install_root_or_ca_certificat.yml;True
@@ -2201,6 +2221,7 @@ registry_set_mal_adwind.yml;False
 registry_set_mal_blue_mockingbird.yml;False
 registry_set_mpnotify_persistence.yml;False
 registry_set_new_application_appcompat.yml;False
+registry_set_new_network_provider.yml;False
 registry_set_office_enable_dde.yml;False
 registry_set_office_security.yml;True
 registry_set_office_vsto_persistence.yml;True
@@ -2219,7 +2240,8 @@ registry_set_policies_attachments_tamper.yml;False
 registry_set_powershell_as_service.yml;True
 registry_set_powershell_in_run_keys.yml;True
 registry_set_powershell_logging_disabled.yml;True
-registry_set_scrobj_dll_persistence.yml;False
+registry_set_renamed_sysinternals_eula_accepted.yml;False
+registry_set_scrobj_dll_persistence.yml;True
 registry_set_scr_file_executed_by_rundll32.yml;False
 registry_set_servicedll_hijack.yml;True
 registry_set_set_nopolicies_user.yml;True
@@ -2238,6 +2260,7 @@ registry_set_taskcache_entry.yml;False
 registry_set_telemetry_persistence.yml;False
 registry_set_terminal_server_tampering.yml;True
 registry_set_timeproviders_dllname.yml;True
+registry_set_treatas_persistence.yml;True
 registry_set_uac_bypass_eventvwr.yml;False
 registry_set_uac_bypass_sdclt.yml;False
 registry_set_uac_bypass_winsat.yml;False

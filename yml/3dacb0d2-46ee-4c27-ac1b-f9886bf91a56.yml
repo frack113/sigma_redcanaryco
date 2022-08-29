@@ -22,4 +22,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: e2482f8d-3443-4237-b906-cc145d87a076
-    name: registry_set_disable_fonction_user.yml
+    name: registry_set_disable_function_user.yml

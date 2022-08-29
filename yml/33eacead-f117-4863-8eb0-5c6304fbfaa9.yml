@@ -25,5 +25,21 @@ description: |-
 
   https://github.com/enigma0x3/windows-operating-system-archaeology
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 1f49f2ab-26bc-48b3-96cc-dcffbc93eadf
+    name: posh_ps_susp_keywords.yml
+  - id: fe20dda1-6f37-4379-bbe0-a98d400cae90
+    name: registry_set_scrobj_dll_persistence.yml
+  - id: dc5c24af-6995-49b2-86eb-a9ff62199e82
+    name: registry_set_treatas_persistence.yml
+  - id: dc5c24af-6995-49b2-86eb-a9ff62199e82
+    name: registry_set_treatas_persistence.yml
+  - id: e4b6d2a7-d8a4-4f19-acbd-943c16d90647
+    name: proc_creation_win_susp_powershell_sub_processes.yml
+  - id: c3a99af4-35a9-4668-879e-c09aeb4f2bdf
+    name: proc_creation_win_run_executable_invalid_extension.yml
+  - id: cdc8da7d-c303-42f8-b08c-b4ab47230263
+    name: net_connection_win_rundll32_net_connections.yml
+  - id: 635dbb88-67b3-4b41-9ea5-a3af2dd88153
+    name: net_connection_win_binary_github_com.yml
