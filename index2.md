@@ -469,6 +469,10 @@
   * T1218.011 [Rundll32 execute JavaScript Remote Payload With GetObject](tests/57ba4ce9-ee7a-4f27-9928-3c70c489b59d.md)
   * T1218.011 [Rundll32 ieadvpack.dll Execution](tests/5e46a58e-cbf6-45ef-a289-ed7754603df9.md)
   * T1546.015 [COM hijacking via TreatAs](tests/33eacead-f117-4863-8eb0-5c6304fbfaa9.md)
+* net_connection_win_script.yml
+  * T1105 [Download a file using wscript](tests/97116a3f-efac-4b26-8336-b9cb18c45188.md)
+* net_connection_win_script_wan.yml
+  * T1105 [Download a file using wscript](tests/97116a3f-efac-4b26-8336-b9cb18c45188.md)
 * net_connection_win_susp_outbound_kerberos_connection.yml
   * T1016 [List Open Egress Ports](tests/4b467538-f102-491d-ace7-ed487b853bf5.md)
 * net_connection_win_susp_outbound_smtp_connections.yml
@@ -700,6 +704,7 @@
   * T1555.003 [Stage Popular Credential Files for Exfiltration](tests/f543635c-1705-42c3-b180-efd6dc6e7ee7.md)
   * T1555.003 [Simulating access to Opera Login Data](tests/28498c17-57e4-495a-b0be-cc1e36de408b.md)
   * T1555.003 [Simulating access to Windows Edge Login Data](tests/a6a5ec26-a2d1-4109-9d35-58b867689329.md)
+  * T1555.003 [BrowserStealer (Chrome / Firefox / Microsoft Edge)](tests/6f2c5c87-a4d5-4898-9bd1-47a55ecaf1dd.md)
   * T1555.003 [Simulating access to Windows Firefox Login Data](tests/eb8da98a-2e16-4551-b3dd-83de49baa14c.md)
 * posh_ps_accessing_win_api.yml
   * T1555 [WinPwn - Loot local Credentials - Decrypt Teamviewer Passwords](tests/db965264-3117-4bad-b7b7-2523b7856b92.md)
@@ -2722,6 +2727,8 @@
   * T1036.004 [Creating W32Time similar named service using sc](tests/b721c6ef-472c-4263-a0d9-37f1f4ecff66.md)
   * T1219 [RemotePC Software Execution](tests/fbff3f1f-b0bf-448e-840f-7e1687affdce.md)
   * T1106 [WinPwn - Get SYSTEM shell - Pop System Shell using NamedPipe Impersonation technique](tests/e1f93a06-1649-4f07-89a8-f57279a7d60e.md)
+* proc_creation_win_nimgrab.yml
+  * T1105 [Nimgrab - Transfer Files](tests/b1729c57-9384-4d1c-9b99-9b220afb384e.md)
 * proc_creation_win_nltest_recon.yml
   * T1018 [Remote System Discovery - nltest](tests/52ab5108-3f6f-42fb-8ba3-73bc054f22c8.md)
   * T1016 [System Network Configuration Discovery (TrickBot Style)](tests/dafaf052-5508-402d-bf77-51e0700c02e2.md)
@@ -2770,6 +2777,7 @@
 * proc_creation_win_ntfs_short_name_path_use_image.yml
   * T1569.002 [BlackCat pre-encryption cmds with Lateral Movement](tests/31eb7828-97d7-4067-9c1e-c6feb85edc4b.md)
   * T1592.002 [Enumerate COM Objects with Powershell](tests/0d80d088-a84c-4353-af1a-fc8b439f1564.md)
+  * T1105 [Nimgrab - Transfer Files](tests/b1729c57-9384-4d1c-9b99-9b220afb384e.md)
 * proc_creation_win_office_shell.yml
   * T1204.002 [Office Generic Payload Download](tests/5202ee05-c420-4148-bf5e-fd7f7d24850c.md)
   * T1559.002 [Execute PowerShell script via Word DDE](tests/47c21fb6-085e-4b0d-b4d2-26d72c3830b3.md)
@@ -3176,6 +3184,7 @@
   * T1003.002 [dump volume shadow copy hives with certutil](tests/eeb9751a-d598-42d3-b11c-c122d9c3f6c7.md)
   * T1105 [svchost writing a file to a UNC path](tests/fa5a2759-41d7-4e13-a19c-e8f28a53566f.md)
   * T1039 [Copy a sensitive File over Administive share with copy](tests/6ed67921-1774-44ba-bac6-adb51ed60660.md)
+  * T1555.003 [BrowserStealer (Chrome / Firefox / Microsoft Edge)](tests/6f2c5c87-a4d5-4898-9bd1-47a55ecaf1dd.md)
 * proc_creation_win_susp_copy_system32.yml
   * T1036.003 [Masquerading - cscript.exe running as notepad.exe](tests/3a2a578b-0a01-46e4-92e3-62e2859b42f0.md)
   * T1036.003 [Masquerading as Windows LSASS process](tests/5ba5a3d1-cf3c-4499-968a-a93155d1f717.md)
@@ -3620,6 +3629,7 @@
   * T1562.001 [Disable Defender Using NirSoft AdvancedRun](tests/81ce22fd-9612-4154-918e-8a1f285d214d.md)
   * T1218 [Lolbas ie4uinit.exe use as proxy](tests/13c0804e-615e-43ad-b223-2dfbacd0b0b3.md)
   * T1562.006 [Disable Powershell ETW Provider - Windows](tests/6f118276-121d-4c09-bb58-a8fb4a72ee84.md)
+  * T1105 [Nimgrab - Transfer Files](tests/b1729c57-9384-4d1c-9b99-9b220afb384e.md)
   * T1562.001 [Disable Defender with Defender Control](tests/178136d8-2778-4d7a-81f3-d517053a4fd6.md)
   * T1562.001 [Kill antimalware protected processes using Backstab](tests/24a12b91-05a7-4deb-8d7f-035fa98591bc.md)
   * T1090.003 [Tor Proxy Usage - Windows](tests/7b9d85e5-c4ce-4434-8060-d3de83595e69.md)

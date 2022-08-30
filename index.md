@@ -163,7 +163,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1105
-[Download a file using wscript](tests/97116a3f-efac-4b26-8336-b9cb18c45188.md) ['windows'] (sigma rule :x:)
+[Download a file using wscript](tests/97116a3f-efac-4b26-8336-b9cb18c45188.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [rsync remote file copy (pull)](tests/3180f7d5-52c0-4493-9ea0-e3431a84773f.md) ['linux', 'macos'] (sigma rule :x:)
 
@@ -209,7 +209,7 @@ Caution: a test can generate a lot of noise...
 
 [rsync remote file copy (push)](tests/0fc6e977-cb12-44f6-b263-2824ba917409.md) ['linux', 'macos'] (sigma rule :x:)
 
-[Nimgrab - Transfer Files](tests/b1729c57-9384-4d1c-9b99-9b220afb384e.md) ['windows'] (sigma rule :x:)
+[Nimgrab - Transfer Files](tests/b1729c57-9384-4d1c-9b99-9b220afb384e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Linux Download File and Run](tests/bdc373c5-e9cf-4563-8a7b-a9ba720a90f3.md) ['linux'] (sigma rule :x:)
 
@@ -1389,7 +1389,7 @@ Caution: a test can generate a lot of noise...
 
 [Search macOS Safari Cookies](tests/c1402f7b-67ca-43a8-b5f3-3143abedc01b.md) ['macos'] (sigma rule :x:)
 
-[BrowserStealer (Chrome / Firefox / Microsoft Edge)](tests/6f2c5c87-a4d5-4898-9bd1-47a55ecaf1dd.md) ['windows'] (sigma rule :x:)
+[BrowserStealer (Chrome / Firefox / Microsoft Edge)](tests/6f2c5c87-a4d5-4898-9bd1-47a55ecaf1dd.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Simulating access to Windows Firefox Login Data](tests/eb8da98a-2e16-4551-b3dd-83de49baa14c.md) ['windows'] (sigma rule :heavy_check_mark:)
 
