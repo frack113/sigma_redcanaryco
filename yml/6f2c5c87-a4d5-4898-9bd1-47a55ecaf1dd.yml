@@ -21,5 +21,9 @@ description: |
   [Github Repo](https://github.com/SaulBerrenson/BrowserStealer) Simple password/cookies stealer for chrome, edge, and gecko based browsers (30 listed working). This attack simulates stealing the data from the browser files and printing them to the command line.
   If using to test with Firefox, if the browser is x64 you need to use the x64 build
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 855bc8b5-2ae8-402e-a9ed-b889e6df1900
+    name: proc_creation_win_susp_copy_lateral_movement.yml
+  - id: fc028194-969d-4122-8abe-0470d5b8f12f
+    name: posh_ps_access_to_browser_login_data.yml

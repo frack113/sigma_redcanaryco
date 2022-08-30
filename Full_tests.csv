@@ -962,7 +962,7 @@ credential-access;T1555.003;powershell;['windows'];WinPwn - Loot local Credentia
 credential-access;T1555.003;powershell;['windows'];WinPwn - PowerSharpPack - Sharpweb for Browser Credentials;e5e3d639-6ea8-4408-9ecd-d5a286268ca0;True;13
 credential-access;T1555.003;sh;['macos'];Simulating Access to Chrome Login Data - MacOS;124e13e5-d8a1-4378-a6ee-a53cd0c7e369;False;14
 credential-access;T1555.003;powershell;['windows'];WebBrowserPassView - Credentials from Browser;e359627f-2d90-4320-ba5e-b0f878155bbe;True;15
-credential-access;T1555.003;powershell;['windows'];BrowserStealer (Chrome / Firefox / Microsoft Edge);6f2c5c87-a4d5-4898-9bd1-47a55ecaf1dd;False;16
+credential-access;T1555.003;powershell;['windows'];BrowserStealer (Chrome / Firefox / Microsoft Edge);6f2c5c87-a4d5-4898-9bd1-47a55ecaf1dd;True;16
 credential-access;T1552.004;command_prompt;['windows'];Private Keys;520ce462-7ca7-441e-b5a5-f8347f632696;True;1
 credential-access;T1552.004;sh;['macos', 'linux'];Discover Private SSH Keys;46959285-906d-40fa-9437-5a439accd878;False;2
 credential-access;T1552.004;sh;['linux'];Copy Private SSH Keys with CP;7c247dc7-5128-4643-907b-73a76d9135c3;False;3
@@ -1294,9 +1294,9 @@ command-and-control;T1105;command_prompt;['windows'];Printer Migration Command-L
 command-and-control;T1105;command_prompt;['windows'];Lolbas replace.exe use to copy file;54782d65-12f0-47a5-b4c1-b70ee23de6df;True;23
 command-and-control;T1105;command_prompt;['windows'];Lolbas replace.exe use to copy UNC file;ed0335ac-0354-400c-8148-f6151d20035a;True;24
 command-and-control;T1105;command_prompt;['windows'];certreq download;6fdaae87-c05b-42f8-842e-991a74e8376b;True;25
-command-and-control;T1105;command_prompt;['windows'];Download a file using wscript;97116a3f-efac-4b26-8336-b9cb18c45188;False;26
+command-and-control;T1105;command_prompt;['windows'];Download a file using wscript;97116a3f-efac-4b26-8336-b9cb18c45188;True;26
 command-and-control;T1105;sh;['linux'];Linux Download File and Run;bdc373c5-e9cf-4563-8a7b-a9ba720a90f3;False;27
-command-and-control;T1105;command_prompt;['windows'];Nimgrab - Transfer Files;b1729c57-9384-4d1c-9b99-9b220afb384e;False;28
+command-and-control;T1105;command_prompt;['windows'];Nimgrab - Transfer Files;b1729c57-9384-4d1c-9b99-9b220afb384e;True;28
 command-and-control;T1090.001;sh;['macos', 'linux'];Connection Proxy;0ac21132-4485-4212-a681-349e8a6637cd;False;1
 command-and-control;T1090.001;sh;['macos'];Connection Proxy for macOS UI;648d68c1-8bcd-4486-9abe-71c6655b6a2c;False;2
 command-and-control;T1090.001;powershell;['windows'];portproxy reg key;b8223ea9-4be2-44a6-b50a-9657a3d4e72a;True;3

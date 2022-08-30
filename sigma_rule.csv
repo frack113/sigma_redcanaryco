@@ -997,8 +997,8 @@ net_connection_win_rdp_to_http.yml;False
 net_connection_win_regsvr32_network_activity.yml;True
 net_connection_win_remote_powershell_session_network.yml;True
 net_connection_win_rundll32_net_connections.yml;True
-net_connection_win_script.yml;False
-net_connection_win_script_wan.yml;False
+net_connection_win_script.yml;True
+net_connection_win_script_wan.yml;True
 net_connection_win_silenttrinity_stager_msbuild_activity.yml;False
 net_connection_win_susps_epmap.yml;False
 net_connection_win_susp_dropbox_api.yml;False
@@ -1580,7 +1580,7 @@ proc_creation_win_net_user_add_never_expire.yml;True
 proc_creation_win_net_use_admin_share.yml;False
 proc_creation_win_new_network_provider.yml;False
 proc_creation_win_new_service_creation.yml;True
-proc_creation_win_nimgrab.yml;False
+proc_creation_win_nimgrab.yml;True
 proc_creation_win_nltest_recon.yml;True
 proc_creation_win_non_interactive_powershell.yml;True
 proc_creation_win_non_priv_reg_or_ps.yml;False
