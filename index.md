@@ -367,6 +367,8 @@ Caution: a test can generate a lot of noise...
 
 [Disable Defender Using NirSoft AdvancedRun](tests/81ce22fd-9612-4154-918e-8a1f285d214d.md) ['windows'] (sigma rule :heavy_check_mark:)
 
+[Disable Windows Defender with PwSh Disable-WindowsOptionalFeature](tests/f542ffd3-37b4-4528-837f-682874faa012.md) ['windows'] (sigma rule :x:)
+
 [Tamper with Windows Defender ATP using Aliases - PowerShell](tests/c531aa6e-9c97-4b29-afee-9b7be6fc8a64.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Disable syslog](tests/4ce786f8-e601-44b5-bfae-9ebb15a7d1c8.md) ['linux'] (sigma rule :x:)
@@ -413,6 +415,8 @@ Caution: a test can generate a lot of noise...
 
 [Password Spray Invoke-DomainPasswordSpray Light](tests/b15bc9a5-a4f3-4879-9304-ea0011ace63a.md) ['windows'] (sigma rule :heavy_check_mark:)
 
+[Password Spray using Kerbrute Tool](tests/c6f25ec3-6475-47a9-b75d-09ac593c5ecb.md) ['windows'] (sigma rule :heavy_check_mark:)
+
 [Password Spray (DomainPasswordSpray)](tests/263ae743-515f-4786-ac7d-41ef3a0d4b2b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Password spray all Azure AD users with a single password](tests/a8aa2d3e-1c52-4016-bc73-0f8854cfa80a.md) ['azure-ad'] (sigma rule :x:)
@@ -454,6 +458,8 @@ Caution: a test can generate a lot of noise...
 [Adfind - Enumerate Active Directory Exchange AD Objects](tests/5e2938fb-f919-47b6-8b29-2f6a1f718e99.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Adfind - Enumerate Active Directory User Objects](tests/e1ec8d20-509a-4b9a-b820-06c9b2da8eb7.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Kerbrute - userenum](tests/f450461c-18d1-4452-9f0d-2c42c3f08624.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Get-DomainUser with PowerView](tests/93662494-5ed7-4454-a04c-8c8372808ac2.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1015,6 +1021,8 @@ Caution: a test can generate a lot of noise...
 ### T1134.001
 [Named pipe client impersonation](tests/90db9e27-8e7c-4c04-b602-a45927884966.md) ['windows'] (sigma rule :heavy_check_mark:)
 
+[Bad Potato](tests/9c6d799b-c111-4749-a42f-ec2f8cb51448.md) ['windows'] (sigma rule :heavy_check_mark:)
+
 [`SeDebugPrivilege` token duplication](tests/34f0a430-9d04-4d98-bcb5-1989f14719f0.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Launch NSudo Executable](tests/7be1bc0f-d8e5-4345-9333-f5f67d742cb9.md) ['windows'] (sigma rule :heavy_check_mark:)
@@ -1076,34 +1084,6 @@ Caution: a test can generate a lot of noise...
 [Bypass UAC by Mocking Trusted Directories](tests/f7a35090-6f7f-4f64-bb47-d657bf5b10c1.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [UACME Bypass Method 33](tests/e514bb03-f71c-4b22-9092-9f961ec6fb03.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-
-### T1218
-[SyncAppvPublishingServer - Execute arbitrary PowerShell code](tests/d590097e-d402-44e2-ad72-2c6aa1ce78b1.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[ProtocolHandler.exe Downloaded a Suspicious File](tests/db020456-125b-4c8b-a4a7-487df8afb5a2.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[mavinject - Inject DLL into running process](tests/c426dacf-575d-4937-8611-a148a86a5e61.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[Load Arbitrary DLL via Wuauclt (Windows Update Client)](tests/49fbd548-49e9-4bb7-94a6-3769613912b8.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[DiskShadow Command Execution](tests/0e1483ba-8f0c-425d-b8c6-42736e058eaa.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[Microsoft.Workflow.Compiler.exe Payload Execution](tests/7cbb0f26-a4c1-4f77-b180-a009aa05637e.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[InfDefaultInstall.exe .inf Execution](tests/54ad7d5a-a1b5-472c-b6c4-f8090fb2daef.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[Lolbas ie4uinit.exe use as proxy](tests/13c0804e-615e-43ad-b223-2dfbacd0b0b3.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[Register-CimProvider - Execute evil dll](tests/ad2c17ed-f626-4061-b21e-b9804a6f3655.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[Invoke-ATHRemoteFXvGPUDisablementCommand base test](tests/9ebe7901-7edf-45c0-b5c7-8366300919db.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[Renamed Microsoft.Workflow.Compiler.exe Payload Executions](tests/4cc40fd7-87b8-4b16-b2d7-57534b86b911.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[Lolbin Gpscript startup option](tests/f8da74bb-21b8-4af9-8d84-f2c8e4a220e3.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[Lolbin Gpscript logon option](tests/5bcda9cd-8e85-48fa-861d-b5a85d91d48c.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1134.004
@@ -1348,6 +1328,32 @@ Caution: a test can generate a lot of noise...
 
 ### T1526
 [Azure - Dump Subscription Data with MicroBurst](tests/1e40bb1d-195e-401e-a86b-c192f55e005c.md) ['iaas:azure'] (sigma rule :x:)
+
+
+### T1218
+[ProtocolHandler.exe Downloaded a Suspicious File](tests/db020456-125b-4c8b-a4a7-487df8afb5a2.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[mavinject - Inject DLL into running process](tests/c426dacf-575d-4937-8611-a148a86a5e61.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Load Arbitrary DLL via Wuauclt (Windows Update Client)](tests/49fbd548-49e9-4bb7-94a6-3769613912b8.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[DiskShadow Command Execution](tests/0e1483ba-8f0c-425d-b8c6-42736e058eaa.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Microsoft.Workflow.Compiler.exe Payload Execution](tests/7cbb0f26-a4c1-4f77-b180-a009aa05637e.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[InfDefaultInstall.exe .inf Execution](tests/54ad7d5a-a1b5-472c-b6c4-f8090fb2daef.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Lolbas ie4uinit.exe use as proxy](tests/13c0804e-615e-43ad-b223-2dfbacd0b0b3.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Register-CimProvider - Execute evil dll](tests/ad2c17ed-f626-4061-b21e-b9804a6f3655.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Invoke-ATHRemoteFXvGPUDisablementCommand base test](tests/9ebe7901-7edf-45c0-b5c7-8366300919db.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Renamed Microsoft.Workflow.Compiler.exe Payload Executions](tests/4cc40fd7-87b8-4b16-b2d7-57534b86b911.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Lolbin Gpscript startup option](tests/f8da74bb-21b8-4af9-8d84-f2c8e4a220e3.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Lolbin Gpscript logon option](tests/5bcda9cd-8e85-48fa-861d-b5a85d91d48c.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1027.004
@@ -1879,6 +1885,8 @@ Caution: a test can generate a lot of noise...
 
 [Remove the Zone.Identifier alternate data stream](tests/64b12afc-18b8-4d3f-9eab-7f6cae7c73f9.md) ['windows'] (sigma rule :heavy_check_mark:)
 
+[Execute LNK file from ISO](tests/c2587b8d-743d-4985-aa50-c83394eaeb68.md) ['windows'] (sigma rule :heavy_check_mark:)
+
 [Mount an ISO image and run executable from the ISO](tests/42f22b00-0242-4afc-a61b-0da05041f9cc.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
@@ -1946,12 +1954,6 @@ Caution: a test can generate a lot of noise...
 [Office Application Startup - Outlook as a C2](tests/bfe6ac15-c50b-4c4f-a186-0fc6b8ba936c.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
-### T1546.008
-[Replace binary of sticky keys](tests/934e90cf-29ca-48b3-863c-411737ad44e3.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[Attaches Command Prompt as a Debugger to a List of Target Processes](tests/3309f53e-b22b-4eb6-8fd2-a6cf58b355a9.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-
 ### T1218.001
 [Invoke CHM with default Shortcut Command Execution](tests/29d6f0d7-be63-4482-8827-ea77126c1ef7.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1962,6 +1964,8 @@ Caution: a test can generate a lot of noise...
 [Compiled HTML Help Remote Payload](tests/0f8af516-9818-4172-922b-42986ef1e81d.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Invoke CHM Simulate Double click](tests/5decef42-92b8-4a93-9eb2-877ddcb9401a.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Decompile Local CHM File](tests/20cb05e0-1fa5-406d-92c1-84da4ba01813.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Invoke CHM Shortcut Command with ITS and Help Topic](tests/15756147-7470-4a83-87fb-bb5662526247.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -2018,6 +2022,16 @@ Caution: a test can generate a lot of noise...
 [chattr - Remove immutable file attribute](tests/e7469fe2-ad41-4382-8965-99b94dd3c13f.md) ['macos', 'linux'] (sigma rule :x:)
 
 [chown - Change file or folder ownership recursively](tests/3b015515-b3d8-44e9-b8cd-6fa84faf30b2.md) ['macos', 'linux'] (sigma rule :x:)
+
+
+### T1124
+[System Time Discovery W32tm as a Delay](tests/d5d5a6b0-0f92-42d8-985d-47aafa2dd4db.md) ['windows'] (sigma rule :x:)
+
+[System Time Discovery - PowerShell](tests/1d5711d6-655c-4a47-ae9c-6503c74fa877.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[System Time Discovery in macOS](tests/f449c933-0891-407f-821e-7916a21a1a6f.md) ['macos'] (sigma rule :x:)
+
+[System Time Discovery](tests/20aba24b-e61f-4b26-b4ce-4784f763ca20.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1574.006
@@ -2287,6 +2301,8 @@ Caution: a test can generate a lot of noise...
 
 [IFEO Global Flags](tests/46b1f278-c8ee-4aa5-acce-65e77b11f3c1.md) ['windows'] (sigma rule :heavy_check_mark:)
 
+[GlobalFlags in Image File Execution Options](tests/13117939-c9b2-4a43-999e-0a543df92f0d.md) ['windows'] (sigma rule :heavy_check_mark:)
+
 
 ### T1090.001
 [Connection Proxy](tests/0ac21132-4485-4212-a681-349e8a6637cd.md) ['macos', 'linux'] (sigma rule :x:)
@@ -2330,6 +2346,20 @@ Caution: a test can generate a lot of noise...
 [Indirect Command Execution - pcalua.exe](tests/cecfea7a-5f03-4cdd-8bc8-6f7c22862440.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Indirect Command Execution - conhost.exe](tests/cf3391e0-b482-4b02-87fc-ca8362269b29.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+
+### T1110.001
+[Password Brute User using Kerbrute Tool](tests/59dbeb1a-79a7-4c2a-baf4-46d0f4c761c4.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Brute Force Credentials of single Active Directory domain user via LDAP against domain controller (NTLM or Kerberos)](tests/c2969434-672b-4ec8-8df0-bbb91f40e250.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[SUDO brute force Redhat](tests/b72958a7-53e3-4809-9ee1-58f6ecd99ade.md) ['linux'] (sigma rule :x:)
+
+[Brute Force Credentials of single Azure AD user](tests/5a51ef57-299e-4d62-8e11-2d440df55e69.md) ['azure-ad'] (sigma rule :x:)
+
+[Brute Force Credentials of single Active Directory domain users via SMB](tests/09480053-2f98-4854-be6e-71ae5f672224.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[SUDO brute force Debian](tests/464b63e8-bf1f-422e-9e2c-2aa5080b6f9a.md) ['linux'] (sigma rule :x:)
 
 
 ### T1071.004
@@ -2494,18 +2524,6 @@ Caution: a test can generate a lot of noise...
 [Creating GCP Service Account and Service Account Key](tests/9fdd83fd-bd53-46e5-a716-9dec89c8ae8e.md) ['google-workspace', 'windows', 'linux', 'macos'] (sigma rule :x:)
 
 
-### T1110.001
-[Brute Force Credentials of single Active Directory domain user via LDAP against domain controller (NTLM or Kerberos)](tests/c2969434-672b-4ec8-8df0-bbb91f40e250.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[SUDO brute force Redhat](tests/b72958a7-53e3-4809-9ee1-58f6ecd99ade.md) ['linux'] (sigma rule :x:)
-
-[Brute Force Credentials of single Azure AD user](tests/5a51ef57-299e-4d62-8e11-2d440df55e69.md) ['azure-ad'] (sigma rule :x:)
-
-[Brute Force Credentials of single Active Directory domain users via SMB](tests/09480053-2f98-4854-be6e-71ae5f672224.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[SUDO brute force Debian](tests/464b63e8-bf1f-422e-9e2c-2aa5080b6f9a.md) ['linux'] (sigma rule :x:)
-
-
 ### T1134.005
 [Injection SID-History with mimikatz](tests/6bef32e5-9456-4072-8f14-35566fb85401.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -2602,14 +2620,6 @@ Caution: a test can generate a lot of noise...
 [Hidden Window](tests/f151ee37-9e2b-47e6-80e4-550b9f999b7a.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
-### T1124
-[System Time Discovery - PowerShell](tests/1d5711d6-655c-4a47-ae9c-6503c74fa877.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[System Time Discovery in macOS](tests/f449c933-0891-407f-821e-7916a21a1a6f.md) ['macos'] (sigma rule :x:)
-
-[System Time Discovery](tests/20aba24b-e61f-4b26-b4ce-4784f763ca20.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-
 ### T1556.002
 [Install and Register Password Filter DLL](tests/a7961770-beb5-4134-9674-83d7e1fa865c.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -2644,6 +2654,8 @@ Caution: a test can generate a lot of noise...
 [SSH Credential Stuffing From Linux](tests/4f08197a-2a8a-472d-9589-cd2895ef22ad.md) ['linux'] (sigma rule :x:)
 
 [SSH Credential Stuffing From MacOS](tests/d546a3d9-0be5-40c7-ad82-5a7d79e1b66b.md) ['macos'] (sigma rule :x:)
+
+[Brute Force:Credential Stuffing using Kerbrute Tool](tests/4852c630-87a9-409b-bb5e-5dc12c9ebcde.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1619

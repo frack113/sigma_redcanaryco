@@ -147,6 +147,7 @@
   * T1036.005 [Masquerade as a built-in system executable](tests/35eb8d16-9820-4423-a2a1-90c4f5edd9ca.md)
   * T1219 [ScreenConnect Application Download and Install on Windows](tests/4a18cc4e-416f-4966-9a9d-75731c4684c0.md)
   * T1218.010 [Regsvr32 local DLL execution](tests/08ffca73-9a3d-471a-aeb0-68b4aa3ab37b.md)
+  * T1553.005 [Execute LNK file from ISO](tests/c2587b8d-743d-4985-aa50-c83394eaeb68.md)
   * T1218 [Renamed Microsoft.Workflow.Compiler.exe Payload Executions](tests/4cc40fd7-87b8-4b16-b2d7-57534b86b911.md)
 * file_event_win_susp_desktop_txt.yml
   * T1486 [PureLocker Ransom Note](tests/649349c7-9abf-493b-a7a2-b1aa4d141528.md)
@@ -474,11 +475,22 @@
 * net_connection_win_script_wan.yml
   * T1105 [Download a file using wscript](tests/97116a3f-efac-4b26-8336-b9cb18c45188.md)
 * net_connection_win_susp_outbound_kerberos_connection.yml
+  * T1110.003 [Password Spray using Kerbrute Tool](tests/c6f25ec3-6475-47a9-b75d-09ac593c5ecb.md)
   * T1016 [List Open Egress Ports](tests/4b467538-f102-491d-ace7-ed487b853bf5.md)
+  * T1110.001 [Password Brute User using Kerbrute Tool](tests/59dbeb1a-79a7-4c2a-baf4-46d0f4c761c4.md)
+  * T1087.002 [Kerbrute - userenum](tests/f450461c-18d1-4452-9f0d-2c42c3f08624.md)
+  * T1110.004 [Brute Force:Credential Stuffing using Kerbrute Tool](tests/4852c630-87a9-409b-bb5e-5dc12c9ebcde.md)
 * net_connection_win_susp_outbound_smtp_connections.yml
   * T1048.003 [Exfiltration Over Alternative Protocol - SMTP](tests/ec3a835e-adca-4c7c-88d2-853b69c11bb9.md)
 * net_connection_win_susp_rdp.yml
   * T1016 [List Open Egress Ports](tests/4b467538-f102-491d-ace7-ed487b853bf5.md)
+* net_connection_win_susps_epmap.yml
+  * T1110.003 [Password Spray using Kerbrute Tool](tests/c6f25ec3-6475-47a9-b75d-09ac593c5ecb.md)
+  * T1110.001 [Password Brute User using Kerbrute Tool](tests/59dbeb1a-79a7-4c2a-baf4-46d0f4c761c4.md)
+  * T1087.002 [Kerbrute - userenum](tests/f450461c-18d1-4452-9f0d-2c42c3f08624.md)
+  * T1110.004 [Brute Force:Credential Stuffing using Kerbrute Tool](tests/4852c630-87a9-409b-bb5e-5dc12c9ebcde.md)
+* pipe_created_efspotato_namedpipe.yml
+  * T1134.001 [Bad Potato](tests/9c6d799b-c111-4749-a42f-ec2f8cb51448.md)
 * pipe_created_psexec_default_pipe.yml
   * T1569.002 [Use PsExec to execute a command on a remote host](tests/873106b7-cfed-454b-8680-fa9f6400431c.md)
   * T1207 [DCShadow (Active Directory)](tests/0f4c5eb0-98a0-4496-9c3d-656b4f2bc8f6.md)
@@ -528,6 +540,7 @@
   * T1055.001 [WinPwn - Get SYSTEM shell - Bind System Shell using UsoClient DLL load technique](tests/8b56f787-73d9-4f1d-87e8-d07e89cbc7f5.md)
   * T1558.003 [WinPwn - PowerSharpPack - Kerberoasting Using Rubeus](tests/29094950-2c96-4cbd-b5e4-f7c65079678f.md)
   * T1552.001 [WinPwn - SessionGopher](tests/c9dc9de3-f961-4284-bd2d-f959c9f9fda5.md)
+  * T1553.005 [Execute LNK file from ISO](tests/c2587b8d-743d-4985-aa50-c83394eaeb68.md)
   * T1046 [WinPwn - fruit](tests/bb037826-cbe8-4a41-93ea-b94059d6bb98.md)
   * T1620 [WinPwn - Reflectively load Mimik@tz into memory](tests/56b9589c-9170-4682-8c3d-33b86ecb5119.md)
   * T1555 [WinPwn - Loot local Credentials - Wifi Credentials](tests/afe369c2-b42e-447f-98a3-fb1f4e2b8552.md)
@@ -1770,6 +1783,7 @@
   * T1555 [WinPwn - Loot local Credentials - lazagne](tests/079ee2e9-6f16-47ca-a635-14efcd994118.md)
   * T1046 [WinPwn - bluekeep](tests/1cca5640-32a9-46e6-b8e0-fabbe2384a73.md)
 * posh_ps_susp_gettypefromclsid.yml
+  * T1553.005 [Execute LNK file from ISO](tests/c2587b8d-743d-4985-aa50-c83394eaeb68.md)
   * T1546.015 [Powershell Execute COM Object](tests/752191b1-7c71-445c-9dbe-21bb031b18eb.md)
 * posh_ps_susp_gwmi.yml
   * T1555 [WinPwn - Loot local Credentials - Decrypt Teamviewer Passwords](tests/db965264-3117-4bad-b7b7-2523b7856b92.md)
@@ -2050,10 +2064,12 @@
   * T1114.001 [Email Collection with PowerShell Get-Inbox](tests/3f1b5096-0139-4736-9b78-19bcb02bb1cb.md)
 * posh_ps_susp_mount_diskimage.yml
   * T1553.005 [Mount ISO image](tests/002cca30-4778-4891-878a-aaffcfa502fa.md)
+  * T1553.005 [Execute LNK file from ISO](tests/c2587b8d-743d-4985-aa50-c83394eaeb68.md)
   * T1553.005 [Mount an ISO image and run executable from the ISO](tests/42f22b00-0242-4afc-a61b-0da05041f9cc.md)
 * posh_ps_susp_mounted_share_deletion.yml
   * T1070.005 [Remove Network Share PowerShell](tests/0512d214-9512-4d22-bde7-f37e058259b3.md)
   * T1553.005 [Mount ISO image](tests/002cca30-4778-4891-878a-aaffcfa502fa.md)
+  * T1553.005 [Execute LNK file from ISO](tests/c2587b8d-743d-4985-aa50-c83394eaeb68.md)
   * T1553.005 [Mount an ISO image and run executable from the ISO](tests/42f22b00-0242-4afc-a61b-0da05041f9cc.md)
 * posh_ps_susp_networkcredential.yml
   * T1218.005 [Invoke HTML Application - Jscript Engine Simulating Double Click](tests/58a193ec-131b-404e-b1ca-b35cf0b18c33.md)
@@ -2442,7 +2458,7 @@
   * T1564.004 [Alternate Data Streams (ADS)](tests/8822c3b0-d9f9-4daf-a043-49f4602364f4.md)
   * T1003.002 [esentutl.exe SAM copy](tests/a90c2f4d-6726-444e-99d2-a00cd7c20480.md)
   * T1003.003 [Copy NTDS.dit from Volume Shadow Copy](tests/c6237146-9ea6-4711-85c9-c56d263a6b03.md)
-* proc_creation_win_creation_mavinject_dll.yml
+* proc_creation_win_creation_mavinject_process_injection.yml
   * T1218 [mavinject - Inject DLL into running process](tests/c426dacf-575d-4937-8611-a148a86a5e61.md)
   * T1056.004 [Hook PowerShell TLS Encrypt/Decrypt Messages](tests/de1934ea-1fbf-425b-8795-65fb27dd7e33.md)
   * T1055.001 [Process Injection via mavinject.exe](tests/74496461-11a1-4982-b439-4d87a550d254.md)
@@ -2471,7 +2487,6 @@
   * T1555.003 [Run Chrome-password Collector](tests/8c05b133-d438-47ca-a630-19cc464c4622.md)
 * proc_creation_win_file_permission_modifications.yml
   * T1222.001 [cacls - Grant permission to specified user or group recursively](tests/a8206bcc-f282-40a9-a389-05d9c0263485.md)
-  * T1546.008 [Replace binary of sticky keys](tests/934e90cf-29ca-48b3-863c-411737ad44e3.md)
   * T1222.001 [Grant Full Access to folder for Everyone - Ryuk Ransomware Style](tests/ac7e6118-473d-41ec-9ac0-ef4f1d1ed2f6.md)
   * T1222.001 [attrib - Remove read-only attribute](tests/bec1e95c-83aa-492e-ab77-60c71bbd21b0.md)
 * proc_creation_win_findstr_gpp_passwords.yml
@@ -2501,6 +2516,7 @@
   * T1218.001 [Compiled HTML Help Local Payload](tests/5cb87818-0d7c-4469-b7ef-9224107aebe8.md)
   * T1218.001 [Compiled HTML Help Remote Payload](tests/0f8af516-9818-4172-922b-42986ef1e81d.md)
   * T1218.001 [Invoke CHM Simulate Double click](tests/5decef42-92b8-4a93-9eb2-877ddcb9401a.md)
+  * T1218.001 [Decompile Local CHM File](tests/20cb05e0-1fa5-406d-92c1-84da4ba01813.md)
   * T1218.001 [Invoke CHM Shortcut Command with ITS and Help Topic](tests/15756147-7470-4a83-87fb-bb5662526247.md)
   * T1218.001 [Invoke CHM with Script Engine and Help Topic](tests/4f83adda-f5ec-406d-b318-9773c9ca92e5.md)
 * proc_creation_win_high_integrity_sdclt.yml
@@ -2529,8 +2545,6 @@
   * T1202 [Indirect Command Execution - pcalua.exe](tests/cecfea7a-5f03-4cdd-8bc8-6f7c22862440.md)
 * proc_creation_win_infdefaultinstall.yml
   * T1218 [InfDefaultInstall.exe .inf Execution](tests/54ad7d5a-a1b5-472c-b6c4-f8090fb2daef.md)
-* proc_creation_win_install_reg_debugger_backdoor.yml
-  * T1546.008 [Attaches Command Prompt as a Debugger to a List of Target Processes](tests/3309f53e-b22b-4eb6-8fd2-a6cf58b355a9.md)
 * proc_creation_win_interactive_at.yml
   * T1053.002 [At.exe Scheduled task](tests/4a6c0dc4-0f2a-4203-9298-a5a9bdc21ed8.md)
 * proc_creation_win_lethalhta.yml
@@ -2585,8 +2599,6 @@
   * T1547 [Add a driver](tests/cb01b3da-b0e7-4e24-bf6d-de5223526785.md)
 * proc_creation_win_lolbin_susp_mpcmdrun_download.yml
   * T1105 [Download a File with Windows Defender MpCmdRun.exe](tests/815bef8b-bf91-4b67-be4c-abe4c2a94ccc.md)
-* proc_creation_win_lolbin_syncappvpublishingserver_execute_psh.yml
-  * T1218 [SyncAppvPublishingServer - Execute arbitrary PowerShell code](tests/d590097e-d402-44e2-ad72-2c6aa1ce78b1.md)
 * proc_creation_win_lolbin_syncappvpublishingserver_vbs_execute_psh.yml
   * T1216 [SyncAppvPublishingServer Signed Script PowerShell Command Execution](tests/275d963d-3f36-476c-8bef-a2a3960ee6eb.md)
 * proc_creation_win_lolbin_visual_basic_compiler.yml
@@ -2621,9 +2633,6 @@
   * T1490 [Windows - wbadmin Delete Windows Backup Catalog](tests/263ba6cb-ea2b-41c9-9d4e-b652dadd002c.md)
 * proc_creation_win_manage_bde_lolbas.yml
   * T1216 [manage-bde.wsf Signed Script Command Execution](tests/2a8f2d3c-3dec-4262-99dd-150cb2a4d63a.md)
-* proc_creation_win_mavinject_proc_inj.yml
-  * T1218 [mavinject - Inject DLL into running process](tests/c426dacf-575d-4937-8611-a148a86a5e61.md)
-  * T1055.001 [Process Injection via mavinject.exe](tests/74496461-11a1-4982-b439-4d87a550d254.md)
 * proc_creation_win_meterpreter_or_cobaltstrike_getsystem_service_start.yml
   * T1106 [WinPwn - Get SYSTEM shell - Pop System Shell using NamedPipe Impersonation technique](tests/e1f93a06-1649-4f07-89a8-f57279a7d60e.md)
 * proc_creation_win_mimikatz_command_line.yml
@@ -2757,6 +2766,7 @@
   * T1558.003 [WinPwn - Kerberoasting](tests/78d10e20-c874-45f2-a9df-6fea0120ec27.md)
   * T1558.003 [WinPwn - PowerSharpPack - Kerberoasting Using Rubeus](tests/29094950-2c96-4cbd-b5e4-f7c65079678f.md)
   * T1562.006 [Disable Powershell ETW Provider - Windows](tests/6f118276-121d-4c09-bb58-a8fb4a72ee84.md)
+  * T1553.005 [Execute LNK file from ISO](tests/c2587b8d-743d-4985-aa50-c83394eaeb68.md)
   * T1069.002 [Get-DomainGroup with PowerView](tests/5a8a181c-2c8e-478d-a943-549305a01230.md)
   * T1003.001 [Dump LSASS.exe Memory using comsvcs.dll](tests/2536dee2-12fb-459a-8c37-971844fa73be.md)
   * T1069.002 [Enumerate Active Directory Groups with Get-AdGroup](tests/3d1fcd2a-e51c-4cbe-8d84-9a843bad8dc8.md)
@@ -3059,6 +3069,8 @@
 * proc_creation_win_run_virtualbox.yml
   * T1564.006 [Register Portable Virtualbox](tests/c59f246a-34f8-4e4d-9276-c295ef9ba0dd.md)
   * T1564.006 [Create and start VirtualBox virtual machine](tests/88b81702-a1c0-49a9-95b2-2dd53d755767.md)
+* proc_creation_win_rundll32_not_from_c_drive.yml
+  * T1553.005 [Execute LNK file from ISO](tests/c2587b8d-743d-4985-aa50-c83394eaeb68.md)
 * proc_creation_win_rundll32_registered_com_objects.yml
   * T1546.015 [COM Hijacking - InprocServer32](tests/48117158-d7be-441b-bc6a-d9e36e47b52b.md)
 * proc_creation_win_sdbinst_shim_persistence.yml
@@ -3189,7 +3201,6 @@
   * T1036.003 [Masquerading - cscript.exe running as notepad.exe](tests/3a2a578b-0a01-46e4-92e3-62e2859b42f0.md)
   * T1036.003 [Masquerading as Windows LSASS process](tests/5ba5a3d1-cf3c-4499-968a-a93155d1f717.md)
   * T1036.003 [Masquerading - wscript.exe running as svchost.exe](tests/24136435-c91a-4ede-9da1-8b284a1c1a23.md)
-  * T1546.008 [Replace binary of sticky keys](tests/934e90cf-29ca-48b3-863c-411737ad44e3.md)
   * T1105 [MAZE Propagation Script](tests/70f4d07c-5c3e-4d53-bb0a-cdf3ada14baf.md)
   * T1036 [System File Copied to Unusual Location](tests/51005ac7-52e2-45e0-bdab-d17c6d4916cd.md)
   * T1543.003 [TinyTurla backdoor service w64time](tests/ef0581fd-528e-4662-87bc-4c2affb86940.md)
@@ -3622,19 +3633,24 @@
   * T1552.001 [WinPwn - passhunt](tests/00e3e3c7-6c3c-455e-bd4b-461c7f0e7797.md)
   * T1539 [Steal Firefox Cookies (Windows)](tests/4b437357-f4e9-4c84-9fa6-9bcee6f826aa.md)
   * T1219 [ScreenConnect Application Download and Install on Windows](tests/4a18cc4e-416f-4966-9a9d-75731c4684c0.md)
+  * T1110.003 [Password Spray using Kerbrute Tool](tests/c6f25ec3-6475-47a9-b75d-09ac593c5ecb.md)
   * T1558.002 [Crafting Active Directory silver tickets with mimikatz](tests/385e59aa-113e-4711-84d9-f637aef01f2c.md)
   * T1090.003 [Tor Proxy Usage - Debian/Ubuntu](tests/5ff9d047-6e9c-4357-b39b-5cf89d9b59c7.md)
+  * T1110.001 [Password Brute User using Kerbrute Tool](tests/59dbeb1a-79a7-4c2a-baf4-46d0f4c761c4.md)
   * T1219 [GoToAssist Files Detected Test on Windows](tests/1b72b3bd-72f8-4b63-a30b-84e91b9c3578.md)
   * T1219 [AnyDesk Files Detected Test on Windows](tests/6b8b7391-5c0a-4f8c-baee-78d8ce0ce330.md)
   * T1562.001 [Disable Defender Using NirSoft AdvancedRun](tests/81ce22fd-9612-4154-918e-8a1f285d214d.md)
   * T1218 [Lolbas ie4uinit.exe use as proxy](tests/13c0804e-615e-43ad-b223-2dfbacd0b0b3.md)
   * T1562.006 [Disable Powershell ETW Provider - Windows](tests/6f118276-121d-4c09-bb58-a8fb4a72ee84.md)
+  * T1087.002 [Kerbrute - userenum](tests/f450461c-18d1-4452-9f0d-2c42c3f08624.md)
+  * T1134.001 [Bad Potato](tests/9c6d799b-c111-4749-a42f-ec2f8cb51448.md)
   * T1105 [Nimgrab - Transfer Files](tests/b1729c57-9384-4d1c-9b99-9b220afb384e.md)
   * T1562.001 [Disable Defender with Defender Control](tests/178136d8-2778-4d7a-81f3-d517053a4fd6.md)
   * T1562.001 [Kill antimalware protected processes using Backstab](tests/24a12b91-05a7-4deb-8d7f-035fa98591bc.md)
   * T1090.003 [Tor Proxy Usage - Windows](tests/7b9d85e5-c4ce-4434-8060-d3de83595e69.md)
   * T1134.001 [Launch NSudo Executable](tests/7be1bc0f-d8e5-4345-9333-f5f67d742cb9.md)
   * T1218.011 [Rundll32 with desk.cpl](tests/83a95136-a496-423c-81d3-1c6750133917.md)
+  * T1110.004 [Brute Force:Credential Stuffing using Kerbrute Tool](tests/4852c630-87a9-409b-bb5e-5dc12c9ebcde.md)
   * T1219 [RemotePC Software Execution](tests/fbff3f1f-b0bf-448e-840f-7e1687affdce.md)
   * T1219 [Ammyy Admin Software Execution](tests/0ae9e327-3251-465a-a53b-485d4e3f58fa.md)
   * T1555 [WinPwn - Loot local Credentials - lazagne](tests/079ee2e9-6f16-47ca-a635-14efcd994118.md)
@@ -3651,6 +3667,7 @@
   * T1218.011 [Launches an executable using Rundll32 and pcwutl.dll](tests/9f5d081a-ee5a-42f9-a04e-b7bdc487e676.md)
 * proc_creation_win_susp_rundll32_by_ordinal.yml
   * T1218.002 [Control Panel Items](tests/037e9d8a-9e46-4255-8b33-2ae3b545ca6f.md)
+  * T1553.005 [Execute LNK file from ISO](tests/c2587b8d-743d-4985-aa50-c83394eaeb68.md)
   * T1218.011 [Rundll32 with Ordinal Value](tests/9fd5a74b-ba89-482a-8a3e-a5feaa3697b0.md)
 * proc_creation_win_susp_rundll32_js_runhtmlapplication.yml
   * T1218.011 [Rundll32 execute JavaScript Remote Payload With GetObject](tests/57ba4ce9-ee7a-4f27-9928-3c70c489b59d.md)
@@ -3983,8 +4000,6 @@
   * T1548.002 [Bypass UAC using ComputerDefaults (PowerShell)](tests/3c51abf2-44bf-42d8-9111-dc96ff66750f.md)
 * registry_event_ssp_added_lsa_config.yml
   * T1547.005 [Modify SSP configuration in registry](tests/afdfd7e3-8a0b-409f-85f7-886fdf249c9e.md)
-* registry_event_stickykey_like_backdoor.yml
-  * T1546.008 [Attaches Command Prompt as a Debugger to a List of Target Processes](tests/3309f53e-b22b-4eb6-8fd2-a6cf58b355a9.md)
 * registry_event_susp_mic_cam_access.yml
   * T1123 [Registry artefact when application use microphone](tests/7a21cce2-6ada-4f7c-afd9-e1e9c481e44a.md)
   * T1125 [Registry artefact when application use webcam](tests/6581e4a7-42e3-43c5-a0d2-5a0d62f9702a.md)
@@ -4019,8 +4034,8 @@
   * T1546.010 [Install AppInit Shim](tests/a58d9386-3080-4242-ab5f-454c16503d18.md)
   * T1546.012 [IFEO Add Debugger](tests/fdda2626-5234-4c90-b163-60849a24c0b8.md)
   * T1546.012 [IFEO Global Flags](tests/46b1f278-c8ee-4aa5-acce-65e77b11f3c1.md)
-  * T1546.008 [Attaches Command Prompt as a Debugger to a List of Target Processes](tests/3309f53e-b22b-4eb6-8fd2-a6cf58b355a9.md)
   * T1547.004 [Winlogon Shell Key Persistence - PowerShell](tests/bf9f9d65-ee4d-4c3e-a843-777d04f19c38.md)
+  * T1546.012 [GlobalFlags in Image File Execution Options](tests/13117939-c9b2-4a43-999e-0a543df92f0d.md)
 * registry_set_asep_reg_keys_modification_office.yml
   * T1137.002 [Office Application Startup Test Persistence](tests/c3e35b58-fe1c-480b-b540-7600fb612563.md)
   * T1592.002 [Enumerate COM Objects with Powershell](tests/0d80d088-a84c-4353-af1a-fc8b439f1564.md)
@@ -4088,6 +4103,7 @@
   * T1562.006 [Disable .NET Event Tracing for Windows Via Registry (powershell)](tests/19c07a45-452d-4620-90ed-4c34fffbe758.md)
 * registry_set_globalflags_persistence.yml
   * T1546.012 [IFEO Global Flags](tests/46b1f278-c8ee-4aa5-acce-65e77b11f3c1.md)
+  * T1546.012 [GlobalFlags in Image File Execution Options](tests/13117939-c9b2-4a43-999e-0a543df92f0d.md)
 * registry_set_hidden_extention.yml
   * T1112 [Modify Registry of Current User Profile - cmd](tests/1324796b-d0f6-455a-b4ae-21ffee6aa6b9.md)
 * registry_set_hide_file.yml
