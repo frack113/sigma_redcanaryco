@@ -1,0 +1,19 @@
+Attack_name: Disable or Modify Tools
+Attack_description: |-
+  Adversaries may modify and/or disable security tools to avoid possible detection of their malware/tools and activities. This may take the many forms, such as killing security software processes or services, modifying / deleting Registry keys or configuration files so that tools do not operate properly, or other methods to interfere with security tools scanning or reporting information.
+
+  Adversaries may also tamper with artifacts deployed and utilized by security tools. Security tools may make dynamic changes to system components in order to maintain visibility into specific events. For example, security products may load their own modules and/or modify those loaded by processes to facilitate data collection. Similar to [Indicator Blocking](https://attack.mitre.org/techniques/T1562/006), adversaries may unhook or otherwise modify these features added by tools (especially those that exist in userland or are otherwise potentially accessible to adversaries) to avoid detection.(Citation: OutFlank System Calls)(Citation: MDSec System Calls)
+guid: f542ffd3-37b4-4528-837f-682874faa012
+name: Disable Windows Defender with PwSh Disable-WindowsOptionalFeature
+tactic:
+  - defense-evasion
+technique:
+  - T1562.001
+os:
+  - windows
+description: "The following Atomic will attempt to disable Windows-Defender using the built in PowerShell cmdlet Disable-WindowsOptionalFeature, Deployment Image Servicing and Management tool. \nSimilar\
+  \ to DISM.exe, this cmdlet is used to enumerate, install, uninstall, configure, and update features and packages in Windows images.\nA successful execution will not standard-out any details. Remove the\
+  \ quiet switch if verbosity is needed.\nThis method will remove Defender and it's packages.\nReference: https://docs.microsoft.com/en-us/powershell/module/dism/disable-windowsoptionalfeature?view=windowsserver2022-ps\n"
+executor: powershell
+sigma: false
+sigma_rule: []

@@ -19,9 +19,8 @@ technique:
   - T1218.011
 os:
   - windows
-description: 'Test execution of a remote script using rundll32.exe. Upon execution notepad.exe will be opened.
-
-  '
+description: "Test execution of a remote script using rundll32.exe. Upon execution notepad.exe will be opened. \nThis has been used by Win32/Poweliks malware and works as described [here](https://www.stormshield.com/news/poweliks-command-line-confusion/)\n\
+  \nNote: The GetObject function is no longer supported in Internet Explorer v9 (2011) and later so this technique would only work where very old versions of IE are installed. \n"
 executor: command_prompt
 sigma: true
 sigma_rule:

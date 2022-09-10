@@ -121,18 +121,17 @@ defense-evasion;T1036;powershell;['windows'];Malware Masquerading and Execution 
 defense-evasion;T1055;powershell;['windows'];Shellcode execution via VBA;1c91e740-1729-4329-b779-feba6e71d048;True;1
 defense-evasion;T1055;command_prompt;['windows'];Remote Process Injection in LSASS via mimikatz;3203ad24-168e-4bec-be36-f79b13ef8a83;True;2
 defense-evasion;T1218;command_prompt;['windows'];mavinject - Inject DLL into running process;c426dacf-575d-4937-8611-a148a86a5e61;True;1
-defense-evasion;T1218;command_prompt;['windows'];SyncAppvPublishingServer - Execute arbitrary PowerShell code;d590097e-d402-44e2-ad72-2c6aa1ce78b1;True;2
-defense-evasion;T1218;command_prompt;['windows'];Register-CimProvider - Execute evil dll;ad2c17ed-f626-4061-b21e-b9804a6f3655;True;3
-defense-evasion;T1218;command_prompt;['windows'];InfDefaultInstall.exe .inf Execution;54ad7d5a-a1b5-472c-b6c4-f8090fb2daef;True;4
-defense-evasion;T1218;command_prompt;['windows'];ProtocolHandler.exe Downloaded a Suspicious File;db020456-125b-4c8b-a4a7-487df8afb5a2;True;5
-defense-evasion;T1218;powershell;['windows'];Microsoft.Workflow.Compiler.exe Payload Execution;7cbb0f26-a4c1-4f77-b180-a009aa05637e;True;6
-defense-evasion;T1218;powershell;['windows'];Renamed Microsoft.Workflow.Compiler.exe Payload Executions;4cc40fd7-87b8-4b16-b2d7-57534b86b911;True;7
-defense-evasion;T1218;powershell;['windows'];Invoke-ATHRemoteFXvGPUDisablementCommand base test;9ebe7901-7edf-45c0-b5c7-8366300919db;True;8
-defense-evasion;T1218;powershell;['windows'];DiskShadow Command Execution;0e1483ba-8f0c-425d-b8c6-42736e058eaa;True;9
-defense-evasion;T1218;command_prompt;['windows'];Load Arbitrary DLL via Wuauclt (Windows Update Client);49fbd548-49e9-4bb7-94a6-3769613912b8;True;10
-defense-evasion;T1218;command_prompt;['windows'];Lolbin Gpscript logon option;5bcda9cd-8e85-48fa-861d-b5a85d91d48c;True;11
-defense-evasion;T1218;command_prompt;['windows'];Lolbin Gpscript startup option;f8da74bb-21b8-4af9-8d84-f2c8e4a220e3;True;12
-defense-evasion;T1218;command_prompt;['windows'];Lolbas ie4uinit.exe use as proxy;13c0804e-615e-43ad-b223-2dfbacd0b0b3;True;13
+defense-evasion;T1218;command_prompt;['windows'];Register-CimProvider - Execute evil dll;ad2c17ed-f626-4061-b21e-b9804a6f3655;True;2
+defense-evasion;T1218;command_prompt;['windows'];InfDefaultInstall.exe .inf Execution;54ad7d5a-a1b5-472c-b6c4-f8090fb2daef;True;3
+defense-evasion;T1218;command_prompt;['windows'];ProtocolHandler.exe Downloaded a Suspicious File;db020456-125b-4c8b-a4a7-487df8afb5a2;True;4
+defense-evasion;T1218;powershell;['windows'];Microsoft.Workflow.Compiler.exe Payload Execution;7cbb0f26-a4c1-4f77-b180-a009aa05637e;True;5
+defense-evasion;T1218;powershell;['windows'];Renamed Microsoft.Workflow.Compiler.exe Payload Executions;4cc40fd7-87b8-4b16-b2d7-57534b86b911;True;6
+defense-evasion;T1218;powershell;['windows'];Invoke-ATHRemoteFXvGPUDisablementCommand base test;9ebe7901-7edf-45c0-b5c7-8366300919db;True;7
+defense-evasion;T1218;powershell;['windows'];DiskShadow Command Execution;0e1483ba-8f0c-425d-b8c6-42736e058eaa;True;8
+defense-evasion;T1218;command_prompt;['windows'];Load Arbitrary DLL via Wuauclt (Windows Update Client);49fbd548-49e9-4bb7-94a6-3769613912b8;True;9
+defense-evasion;T1218;command_prompt;['windows'];Lolbin Gpscript logon option;5bcda9cd-8e85-48fa-861d-b5a85d91d48c;True;10
+defense-evasion;T1218;command_prompt;['windows'];Lolbin Gpscript startup option;f8da74bb-21b8-4af9-8d84-f2c8e4a220e3;True;11
+defense-evasion;T1218;command_prompt;['windows'];Lolbas ie4uinit.exe use as proxy;13c0804e-615e-43ad-b223-2dfbacd0b0b3;True;12
 defense-evasion;T1070.006;sh;['linux', 'macos'];Set a file's access timestamp;5f9113d5-ed75-47ed-ba23-ea3573d05810;False;1
 defense-evasion;T1070.006;sh;['linux', 'macos'];Set a file's modification timestamp;20ef1523-8758-4898-b5a2-d026cc3d2c52;False;2
 defense-evasion;T1070.006;sh;['linux', 'macos'];Set a file's creation timestamp;8164a4a6-f99c-4661-ac4f-80f5e4e78d2b;False;3
@@ -250,6 +249,7 @@ defense-evasion;T1647;manual;['macos'];Plist Modification;394a538e-09bb-4a4a-95d
 defense-evasion;T1553.005;powershell;['windows'];Mount ISO image;002cca30-4778-4891-878a-aaffcfa502fa;True;1
 defense-evasion;T1553.005;powershell;['windows'];Mount an ISO image and run executable from the ISO;42f22b00-0242-4afc-a61b-0da05041f9cc;True;2
 defense-evasion;T1553.005;powershell;['windows'];Remove the Zone.Identifier alternate data stream;64b12afc-18b8-4d3f-9eab-7f6cae7c73f9;True;3
+defense-evasion;T1553.005;powershell;['windows'];Execute LNK file from ISO;c2587b8d-743d-4985-aa50-c83394eaeb68;True;4
 defense-evasion;T1218.005;command_prompt;['windows'];Mshta executes JavaScript Scheme Fetch Remote Payload With GetObject;1483fab9-4f52-4217-a9ce-daa9d7747cae;True;1
 defense-evasion;T1218.005;command_prompt;['windows'];Mshta executes VBScript to execute malicious command;906865c3-e05f-4acc-85c4-fbc185455095;True;2
 defense-evasion;T1218.005;powershell;['windows'];Mshta Executes Remote HTML Application (HTA);c4b97eeb-5249-4455-a607-59f95485cb45;True;3
@@ -263,6 +263,7 @@ defense-evasion;T1218.005;command_prompt;['windows'];Mshta used to Execute Power
 defense-evasion;T1134.001;powershell;['windows'];Named pipe client impersonation;90db9e27-8e7c-4c04-b602-a45927884966;True;1
 defense-evasion;T1134.001;powershell;['windows'];`SeDebugPrivilege` token duplication;34f0a430-9d04-4d98-bcb5-1989f14719f0;True;2
 defense-evasion;T1134.001;powershell;['windows'];Launch NSudo Executable;7be1bc0f-d8e5-4345-9333-f5f67d742cb9;True;3
+defense-evasion;T1134.001;powershell;['windows'];Bad Potato;9c6d799b-c111-4749-a42f-ec2f8cb51448;True;4
 defense-evasion;T1564.002;sh;['macos'];Create Hidden User using UniqueID < 500;4238a7f0-a980-4fff-98a2-dfc0a363d507;False;1
 defense-evasion;T1564.002;sh;['macos'];Create Hidden User using IsHidden option;de87ed7b-52c3-43fd-9554-730f695e7f31;False;2
 defense-evasion;T1564.002;command_prompt;['windows'];Create Hidden User in Registry;173126b7-afe4-45eb-8680-fa9f6400431c;True;3
@@ -280,6 +281,7 @@ defense-evasion;T1218.001;powershell;['windows'];Invoke CHM with InfoTech Storag
 defense-evasion;T1218.001;powershell;['windows'];Invoke CHM Simulate Double click;5decef42-92b8-4a93-9eb2-877ddcb9401a;True;5
 defense-evasion;T1218.001;powershell;['windows'];Invoke CHM with Script Engine and Help Topic;4f83adda-f5ec-406d-b318-9773c9ca92e5;True;6
 defense-evasion;T1218.001;powershell;['windows'];Invoke CHM Shortcut Command with ITS and Help Topic;15756147-7470-4a83-87fb-bb5662526247;True;7
+defense-evasion;T1218.001;command_prompt;['windows'];Decompile Local CHM File;20cb05e0-1fa5-406d-92c1-84da4ba01813;True;8
 defense-evasion;T1070.005;command_prompt;['windows'];Add Network Share;14c38f32-6509-46d8-ab43-d53e32d2b131;True;1
 defense-evasion;T1070.005;command_prompt;['windows'];Remove Network Share;09210ad5-1ef2-4077-9ad3-7351e13e9222;True;2
 defense-evasion;T1070.005;powershell;['windows'];Remove Network Share PowerShell;0512d214-9512-4d22-bde7-f37e058259b3;True;3
@@ -320,6 +322,7 @@ defense-evasion;T1562.001;command_prompt;['windows'];LockBit Black - Disable Pri
 defense-evasion;T1562.001;command_prompt;['windows'];LockBit Black - Use Registry Editor to turn on automatic logon -cmd;9719d0e1-4fe0-4b2e-9a72-7ad3ee8ddc70;True;33
 defense-evasion;T1562.001;powershell;['windows'];LockBit Black - Disable Privacy Settings Experience Using Registry -Powershell;d8c57eaa-497a-4a08-961e-bd5efd7c9374;False;34
 defense-evasion;T1562.001;powershell;['windows'];Lockbit Black - Use Registry Editor to turn on automatic logon -Powershell;5e27f36d-5132-4537-b43b-413b0d5eec9a;True;35
+defense-evasion;T1562.001;powershell;['windows'];Disable Windows Defender with PwSh Disable-WindowsOptionalFeature;f542ffd3-37b4-4528-837f-682874faa012;False;36
 defense-evasion;T1055.012;powershell;['windows'];Process Hollowing using PowerShell;562427b4-39ef-4e8c-af88-463a78e70b9c;True;1
 defense-evasion;T1055.012;powershell;['windows'];RunPE via VBA;3ad4a037-1598-4136-837c-4027e4fa319b;True;2
 defense-evasion;T1027;sh;['macos', 'linux'];Decode base64 Data into Script;f45df6be-2e1e-4136-a384-8f18ab3826fb;False;1
@@ -514,14 +517,14 @@ privilege-escalation;T1547.004;powershell;['windows'];Winlogon Userinit Key Pers
 privilege-escalation;T1547.004;powershell;['windows'];Winlogon Notify Key Logon Persistence - PowerShell;d40da266-e073-4e5a-bb8b-2b385023e5f9;True;3
 privilege-escalation;T1546.012;command_prompt;['windows'];IFEO Add Debugger;fdda2626-5234-4c90-b163-60849a24c0b8;True;1
 privilege-escalation;T1546.012;command_prompt;['windows'];IFEO Global Flags;46b1f278-c8ee-4aa5-acce-65e77b11f3c1;True;2
-privilege-escalation;T1546.008;powershell;['windows'];Attaches Command Prompt as a Debugger to a List of Target Processes;3309f53e-b22b-4eb6-8fd2-a6cf58b355a9;True;1
-privilege-escalation;T1546.008;command_prompt;['windows'];Replace binary of sticky keys;934e90cf-29ca-48b3-863c-411737ad44e3;True;2
+privilege-escalation;T1546.012;powershell;['windows'];GlobalFlags in Image File Execution Options;13117939-c9b2-4a43-999e-0a543df92f0d;True;3
 privilege-escalation;T1055.004;command_prompt;['windows'];Process Injection via C#;611b39b7-e243-4c81-87a4-7145a90358b1;True;1
 privilege-escalation;T1546.009;powershell;['windows'];Create registry persistence via AppCert DLL;a5ad6104-5bab-4c43-b295-b4c44c7c6b05;True;1
 privilege-escalation;T1547.015;powershell;['windows'];Persistence by modifying Windows Terminal profile;ec5d76ef-82fe-48da-b931-bdb25a62bc65;False;1
 privilege-escalation;T1134.001;powershell;['windows'];Named pipe client impersonation;90db9e27-8e7c-4c04-b602-a45927884966;True;1
 privilege-escalation;T1134.001;powershell;['windows'];`SeDebugPrivilege` token duplication;34f0a430-9d04-4d98-bcb5-1989f14719f0;True;2
 privilege-escalation;T1134.001;powershell;['windows'];Launch NSudo Executable;7be1bc0f-d8e5-4345-9333-f5f67d742cb9;True;3
+privilege-escalation;T1134.001;powershell;['windows'];Bad Potato;9c6d799b-c111-4749-a42f-ec2f8cb51448;True;4
 privilege-escalation;T1546.003;powershell;['windows'];Persistence via WMI Event Subscription - CommandLineEventConsumer;3c64f177-28e2-49eb-a799-d767b24dd1e0;True;1
 privilege-escalation;T1546.003;powershell;['windows'];Persistence via WMI Event Subscription - ActiveScriptEventConsumer;fecd0dfd-fb55-45fa-a10b-6250272d0832;True;2
 privilege-escalation;T1546.003;powershell;['windows'];Windows MOFComp.exe Load MOF File;29786d7e-8916-4de6-9c55-be7b093b2706;True;3
@@ -741,8 +744,7 @@ persistence;T1547.004;powershell;['windows'];Winlogon Notify Key Logon Persisten
 persistence;T1098.004;bash;['macos', 'linux'];Modify SSH Authorized Keys;342cc723-127c-4d3a-8292-9c0c6b4ecadc;False;1
 persistence;T1546.012;command_prompt;['windows'];IFEO Add Debugger;fdda2626-5234-4c90-b163-60849a24c0b8;True;1
 persistence;T1546.012;command_prompt;['windows'];IFEO Global Flags;46b1f278-c8ee-4aa5-acce-65e77b11f3c1;True;2
-persistence;T1546.008;powershell;['windows'];Attaches Command Prompt as a Debugger to a List of Target Processes;3309f53e-b22b-4eb6-8fd2-a6cf58b355a9;True;1
-persistence;T1546.008;command_prompt;['windows'];Replace binary of sticky keys;934e90cf-29ca-48b3-863c-411737ad44e3;True;2
+persistence;T1546.012;powershell;['windows'];GlobalFlags in Image File Execution Options;13117939-c9b2-4a43-999e-0a543df92f0d;True;3
 persistence;T1136.002;command_prompt;['windows'];Create a new Windows domain admin user;fcec2963-9951-4173-9bfa-98d8b7834e62;True;1
 persistence;T1136.002;command_prompt;['windows'];Create a new account similar to ANONYMOUS LOGON;dc7726d2-8ccb-4cc6-af22-0d5afb53a548;True;2
 persistence;T1136.002;powershell;['windows'];Create a new Domain Account using PowerShell;5a3497a4-1568-4663-b12a-d4a5ed70c7d7;True;3
@@ -905,6 +907,7 @@ credential-access;T1110.001;powershell;['windows'];Brute Force Credentials of si
 credential-access;T1110.001;powershell;['azure-ad'];Brute Force Credentials of single Azure AD user;5a51ef57-299e-4d62-8e11-2d440df55e69;False;3
 credential-access;T1110.001;sh;['linux'];SUDO brute force Debian;464b63e8-bf1f-422e-9e2c-2aa5080b6f9a;False;4
 credential-access;T1110.001;sh;['linux'];SUDO brute force Redhat;b72958a7-53e3-4809-9ee1-58f6ecd99ade;False;5
+credential-access;T1110.001;powershell;['windows'];Password Brute User using Kerbrute Tool;59dbeb1a-79a7-4c2a-baf4-46d0f4c761c4;True;6
 credential-access;T1003;command_prompt;['windows'];Gsecdump;96345bfc-8ae7-4b6a-80b7-223200f24ef9;True;1
 credential-access;T1003;powershell;['windows'];Credential Dumping with NPPSpy;9e2173c0-ba26-4cdf-b0ed-8c54b27e3ad6;True;2
 credential-access;T1003;powershell;['windows'];Dump svchost.exe to gather RDP credentials;d400090a-d8ca-4be0-982e-c70598a23de9;True;3
@@ -990,6 +993,7 @@ credential-access;T1110.003;powershell;['azure-ad'];Password spray all Azure AD 
 credential-access;T1110.003;powershell;['windows'];WinPwn - DomainPasswordSpray Attacks;5ccf4bbd-7bf6-43fc-83ac-d9e38aff1d82;True;5
 credential-access;T1110.003;powershell;['windows'];Password Spray Invoke-DomainPasswordSpray Light;b15bc9a5-a4f3-4879-9304-ea0011ace63a;True;6
 credential-access;T1110.003;powershell;['azure-ad'];Password Spray Microsoft Online Accounts with MSOLSpray (Azure/O365);f3a10056-0160-4785-8744-d9bd7c12dc39;False;7
+credential-access;T1110.003;powershell;['windows'];Password Spray using Kerbrute Tool;c6f25ec3-6475-47a9-b75d-09ac593c5ecb;True;8
 credential-access;T1003.005;command_prompt;['windows'];Cached Credential Dump via Cmdkey;56506854-89d6-46a3-9804-b7fde90791f9;True;1
 credential-access;T1558.001;powershell;['windows'];Crafting Active Directory golden tickets with mimikatz;9726592a-dabc-4d4d-81cd-44070008b3af;True;1
 credential-access;T1558.001;powershell;['windows'];Crafting Active Directory golden tickets with Rubeus;e42d33cd-205c-4acf-ab59-a9f38f6bad9c;True;2
@@ -1012,6 +1016,7 @@ credential-access;T1056.002;bash;['macos'];AppleScript - Prompt User for Passwor
 credential-access;T1056.002;powershell;['windows'];PowerShell - Prompt User for Password;2b162bfd-0928-4d4c-9ec3-4d9f88374b52;True;2
 credential-access;T1110.004;bash;['linux'];SSH Credential Stuffing From Linux;4f08197a-2a8a-472d-9589-cd2895ef22ad;False;1
 credential-access;T1110.004;bash;['macos'];SSH Credential Stuffing From MacOS;d546a3d9-0be5-40c7-ad82-5a7d79e1b66b;False;2
+credential-access;T1110.004;powershell;['windows'];Brute Force:Credential Stuffing using Kerbrute Tool;4852c630-87a9-409b-bb5e-5dc12c9ebcde;True;3
 credential-access;T1187;powershell;['windows'];PetitPotam;485ce873-2e65-4706-9c7e-ae3ab9e14213;True;1
 credential-access;T1187;powershell;['windows'];WinPwn - PowerSharpPack - Retrieving NTLM Hashes without Touching LSASS;7f06b25c-799e-40f1-89db-999c9cc84317;True;2
 credential-access;T1003.008;bash;['linux'];Access /etc/shadow (Local);3723ab77-c546-403c-8fb4-bb577033b235;False;1
@@ -1066,6 +1071,7 @@ discovery;T1087.002;powershell;['windows'];Enumerate Active Directory Users with
 discovery;T1087.002;powershell;['windows'];Enumerate Linked Policies In ADSISearcher Discovery;7ab0205a-34e4-4a44-9b04-e1541d1a57be;True;13
 discovery;T1087.002;powershell;['windows'];Enumerate Root Domain linked policies Discovery;00c652e2-0750-4ca6-82ff-0204684a6fe4;True;14
 discovery;T1087.002;powershell;['windows'];WinPwn - generaldomaininfo;ce483c35-c74b-45a7-a670-631d1e69db3d;True;15
+discovery;T1087.002;powershell;['windows'];Kerbrute - userenum;f450461c-18d1-4452-9f0d-2c42c3f08624;True;16
 discovery;T1087.001;sh;['linux'];Enumerate all accounts (Local);f8aab3dd-5990-4bf8-b8ab-2226c951696f;False;1
 discovery;T1087.001;sh;['linux', 'macos'];View sudoers access;fed9be70-0186-4bde-9f8a-20945f9370c2;False;2
 discovery;T1087.001;sh;['linux', 'macos'];View accounts with UID 0;c955a599-3653-4fe5-b631-f11c00eb0397;False;3
@@ -1238,6 +1244,7 @@ discovery;T1518;powershell;['windows'];WinPwn - powerSQL;0bb64470-582a-4155-bde2
 discovery;T1124;command_prompt;['windows'];System Time Discovery;20aba24b-e61f-4b26-b4ce-4784f763ca20;True;1
 discovery;T1124;powershell;['windows'];System Time Discovery - PowerShell;1d5711d6-655c-4a47-ae9c-6503c74fa877;True;2
 discovery;T1124;sh;['macos'];System Time Discovery in macOS;f449c933-0891-407f-821e-7916a21a1a6f;False;3
+discovery;T1124;command_prompt;['windows'];System Time Discovery W32tm as a Delay;d5d5a6b0-0f92-42d8-985d-47aafa2dd4db;False;4
 command-and-control;T1132.001;sh;['macos', 'linux'];Base64 Encoded data.;1164f70f-9a88-4dff-b9ff-dc70e7bf0c25;False;1
 command-and-control;T1132.001;powershell;['windows'];XOR Encoded data.;c3ed6d2a-e3ad-400d-ad78-bbfdbfeacc08;True;2
 command-and-control;T1071.004;powershell;['windows'];DNS Large Query Volume;1700f5d6-5a44-487b-84de-bc66f507b0a6;False;1

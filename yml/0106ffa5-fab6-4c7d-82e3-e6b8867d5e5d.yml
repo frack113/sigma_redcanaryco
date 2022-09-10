@@ -11,7 +11,7 @@ technique:
   - T1218.007
 os:
   - windows
-description: 'Loads a DLL into msiexec.exe and calls its DllRegisterServer function. Note: the DLL included in the "src" folder is only built for 64-bit, so this won''t work on a 32-bit OS.
+description: 'Loads a DLL into msiexec.exe and calls its DllRegisterServer function. Note: the DLL included in the "bin" folder is only built for 64-bit, so this won''t work on a 32-bit OS.
 
   '
 executor: command_prompt
