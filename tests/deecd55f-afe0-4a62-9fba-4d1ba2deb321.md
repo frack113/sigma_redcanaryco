@@ -3,7 +3,7 @@
 
 Find sigma rule :heavy_check_mark: 
 
-# Attack: LLMNR/NBT-NS Poisoning and SMB Relay 
+# Attack: Adversary-in-the-Middle: LLMNR/NBT-NS Poisoning and SMB Relay 
 
 By responding to LLMNR/NBT-NS network traffic, adversaries may spoof an authoritative source for name resolution to force communication with an adversary controlled system. This activity may be used to collect or relay authentication materials. 
 

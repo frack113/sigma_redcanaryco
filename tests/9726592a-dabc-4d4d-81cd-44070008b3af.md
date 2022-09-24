@@ -3,7 +3,7 @@
 
 Find sigma rule :heavy_check_mark: 
 
-# Attack: Golden Ticket 
+# Attack: Steal or Forge Kerberos Tickets: Golden Ticket 
 
 Adversaries who have the KRBTGT account password hash may forge Kerberos ticket-granting tickets (TGT), also known as a golden ticket.(Citation: AdSecurity Kerberos GT Aug 2015) Golden tickets enable adversaries to generate authentication material for any account in Active Directory.(Citation: CERT-EU Golden Ticket Protection) 
 

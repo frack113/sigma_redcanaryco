@@ -3,7 +3,7 @@
 
 Find sigma rule :heavy_check_mark: 
 
-# Attack: LSASS Memory 
+# Attack: OS Credential Dumping: LSASS Memory 
 
 Adversaries may attempt to access credential material stored in the process memory of the Local Security Authority Subsystem Service (LSASS). After a user logs on, the system generates and stores a variety of credential materials in LSASS process memory. These credential materials can be harvested by an administrative user or SYSTEM and used to conduct [Lateral Movement](https://attack.mitre.org/tactics/TA0008) using [Use Alternate Authentication Material](https://attack.mitre.org/techniques/T1550).
 

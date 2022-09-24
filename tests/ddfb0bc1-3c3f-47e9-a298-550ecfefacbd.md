@@ -3,7 +3,7 @@
 
 Find sigma rule :x: 
 
-# Attack: Container Orchestration Job 
+# Attack: Kubernetes Cronjob 
 
 Adversaries may abuse task scheduling functionality provided by container orchestration tools such as Kubernetes to schedule deployment of containers configured to execute malicious code. Container orchestration jobs run these automated tasks at a specific date and time, similar to cron jobs on a Linux system. Deployments of this type can also be configured to maintain a quantity of containers over time, automating the process of maintaining persistence within a cluster.
 

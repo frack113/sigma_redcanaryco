@@ -3,7 +3,7 @@
 
 Find sigma rule :heavy_check_mark: 
 
-# Attack: Mshta 
+# Attack: Signed Binary Proxy Execution: Mshta 
 
 Adversaries may abuse mshta.exe to proxy execution of malicious .hta files and Javascript or VBScript through a trusted Windows utility. There are several examples of different types of threats leveraging mshta.exe during initial compromise and for execution of code (Citation: Cylance Dust Storm) (Citation: Red Canary HTA Abuse Part Deux) (Citation: FireEye Attacks Leveraging HTA) (Citation: Airbus Security Kovter Analysis) (Citation: FireEye FIN7 April 2017) 
 

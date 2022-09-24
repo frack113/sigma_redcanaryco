@@ -3,7 +3,7 @@
 
 Find sigma rule :heavy_check_mark: 
 
-# Attack: Regsvcs/Regasm 
+# Attack: Signed Binary Proxy Execution: Regsvcs/Regasm 
 
 Adversaries may abuse Regsvcs and Regasm to proxy execution of code through a trusted Windows utility. Regsvcs and Regasm are Windows command-line utilities that are used to register .NET [Component Object Model](https://attack.mitre.org/techniques/T1559/001) (COM) assemblies. Both are binaries that may be digitally signed by Microsoft. (Citation: MSDN Regsvcs) (Citation: MSDN Regasm)
 

@@ -126,7 +126,7 @@
 * file_event_win_outlook_c2_macro_creation.yml
   * T1137 [Office Application Startup - Outlook as a C2](tests/bfe6ac15-c50b-4c4f-a186-0fc6b8ba936c.md)
 * file_event_win_outlook_newform.yml
-  * T1592.002 [Enumerate COM Objects with Powershell](tests/0d80d088-a84c-4353-af1a-fc8b439f1564.md)
+  * T1592.002 [Enumerate COM Objects in Registry with Powershell](tests/0d80d088-a84c-4353-af1a-fc8b439f1564.md)
 * file_event_win_powershell_startup_shortcuts.yml
   * T1547.009 [Create shortcut to cmd in startup folders](tests/cfdc954d-4bb0-4027-875b-a1893ce406f2.md)
   * T1547.001 [Add Executable Shortcut Link to User Startup Folder](tests/24e55612-85f6-4bd6-ae74-a73d02e3441d.md)
@@ -239,7 +239,7 @@
   * T1204.002 [Office Generic Payload Download](tests/5202ee05-c420-4148-bf5e-fd7f7d24850c.md)
   * T1053.005 [Task Scheduler via VBA](tests/ecd3fa21-7792-41a2-8726-2c5c673414d3.md)
   * T1070.001 [Clear Event Logs via VBA](tests/1b682d84-f075-4f93-9a89-8a8de19ffd6e.md)
-  * T1592.002 [Enumerate COM Objects with Powershell](tests/0d80d088-a84c-4353-af1a-fc8b439f1564.md)
+  * T1592.002 [Enumerate COM Objects in Registry with Powershell](tests/0d80d088-a84c-4353-af1a-fc8b439f1564.md)
   * T1204.002 [Office launching .bat file from AppData](tests/9215ea92-1ded-41b7-9cd6-79f9a78397aa.md)
   * T1555 [Extract Windows Credential Manager via VBA](tests/234f9b7c-b53d-4f32-897b-b880a6c9ea7b.md)
   * T1204.002 [Headless Chrome code execution via VBA](tests/a19ee671-ed98-4e9d-b19c-d1954a51585a.md)
@@ -349,7 +349,7 @@
   * T1555 [WinPwn - Loot local Credentials - lazagne](tests/079ee2e9-6f16-47ca-a635-14efcd994118.md)
   * T1046 [WinPwn - bluekeep](tests/1cca5640-32a9-46e6-b8e0-fabbe2384a73.md)
 * net_connection_win_excel_outbound_network_connection.yml
-  * T1592.002 [Enumerate COM Objects with Powershell](tests/0d80d088-a84c-4353-af1a-fc8b439f1564.md)
+  * T1592.002 [Enumerate COM Objects in Registry with Powershell](tests/0d80d088-a84c-4353-af1a-fc8b439f1564.md)
   * T1204.002 [Excel 4 Macro](tests/4ea1fc97-8a46-4b4e-ba48-af43d2a98052.md)
 * net_connection_win_imewdbld.yml
   * T1105 [Download a file with IMEWDBLD.exe](tests/1a02df58-09af-4064-a765-0babe1a0d1e2.md)
@@ -1550,7 +1550,7 @@
   * T1069.002 [Permission Groups Discovery PowerShell (Domain)](tests/6d5d8c96-3d2a-4da9-9d6d-9a9d341899a7.md)
   * T1069.002 [Enumerate Users Not Requiring Pre Auth (ASRepRoast)](tests/870ba71e-6858-4f6d-895c-bb6237f6121b.md)
 * posh_ps_susp_directory_enum.yml
-  * T1592.002 [Enumerate COM Objects with Powershell](tests/0d80d088-a84c-4353-af1a-fc8b439f1564.md)
+  * T1592.002 [Enumerate COM Objects in Registry with Powershell](tests/0d80d088-a84c-4353-af1a-fc8b439f1564.md)
   * T1082 [WinPwn - Powersploits privesc checks](tests/345cb8e4-d2de-4011-a580-619cf5a9e2d7.md)
   * T1083 [Simulating MAZE Directory Enumeration](tests/c6c34f61-1c3e-40fb-8a58-d017d88286d8.md)
   * T1518 [WinPwn - powerSQL](tests/0bb64470-582a-4155-bde2-d6003a95ed34.md)
@@ -2097,7 +2097,7 @@
   * T1552.001 [WinPwn - sensitivefiles](tests/114dd4e3-8d1c-4ea7-bb8d-8d8f6aca21f0.md)
   * T1021.002 [Map Admin Share PowerShell](tests/514e9cd7-9207-4882-98b1-c8f791bae3c5.md)
 * posh_ps_susp_recon_export.yml
-  * T1592.002 [Enumerate COM Objects with Powershell](tests/0d80d088-a84c-4353-af1a-fc8b439f1564.md)
+  * T1592.002 [Enumerate COM Objects in Registry with Powershell](tests/0d80d088-a84c-4353-af1a-fc8b439f1564.md)
   * T1555.003 [Decrypt Mozilla Passwords with Firepwd.py](tests/dc9cd677-c70f-4df5-bd1c-f114af3c2381.md)
   * T1119 [Recon information for export with PowerShell](tests/c3f6d794-50dd-482f-b640-0384fbb7db26.md)
 * posh_ps_susp_remove_adgroupmember.yml
@@ -2781,12 +2781,15 @@
   * T1547.001 [SystemBC Malware-as-a-Service Registry](tests/9dc7767b-30c1-4cc4-b999-50cab5e27891.md)
   * T1134.001 [Launch NSudo Executable](tests/7be1bc0f-d8e5-4345-9333-f5f67d742cb9.md)
   * T1018 [Get-DomainController with PowerView](tests/b9d2e8ca-5520-4737-8076-4f08913da2c4.md)
+* proc_creation_win_ntdsutil_usage.yml
+  * T1003.003 [Dump Active Directory Database with NTDSUtil](tests/2364e33d-ceab-4641-8468-bfb1d7cc2723.md)
+  * T1098 [Password Change on Directory Service Restore Mode (DSRM) Account](tests/d5b886d9-d1c7-4b6e-a7b0-460041bf2823.md)
 * proc_creation_win_ntfs_short_name_path_use_cli.yml
   * T1569.002 [BlackCat pre-encryption cmds with Lateral Movement](tests/31eb7828-97d7-4067-9c1e-c6feb85edc4b.md)
-  * T1592.002 [Enumerate COM Objects with Powershell](tests/0d80d088-a84c-4353-af1a-fc8b439f1564.md)
+  * T1592.002 [Enumerate COM Objects in Registry with Powershell](tests/0d80d088-a84c-4353-af1a-fc8b439f1564.md)
 * proc_creation_win_ntfs_short_name_path_use_image.yml
   * T1569.002 [BlackCat pre-encryption cmds with Lateral Movement](tests/31eb7828-97d7-4067-9c1e-c6feb85edc4b.md)
-  * T1592.002 [Enumerate COM Objects with Powershell](tests/0d80d088-a84c-4353-af1a-fc8b439f1564.md)
+  * T1592.002 [Enumerate COM Objects in Registry with Powershell](tests/0d80d088-a84c-4353-af1a-fc8b439f1564.md)
   * T1105 [Nimgrab - Transfer Files](tests/b1729c57-9384-4d1c-9b99-9b220afb384e.md)
 * proc_creation_win_office_shell.yml
   * T1204.002 [Office Generic Payload Download](tests/5202ee05-c420-4148-bf5e-fd7f7d24850c.md)
@@ -3407,9 +3410,6 @@
   * T1046 [Port Scan Nmap](tests/515942b0-a09f-4163-a7bb-22fefb6f185f.md)
 * proc_creation_win_susp_non_exe_image.yml
   * T1140 [Certutil Rename and Decode](tests/71abc534-3c05-4d0c-80f7-cbe93cb2aa94.md)
-* proc_creation_win_susp_ntdsutil.yml
-  * T1003.003 [Dump Active Directory Database with NTDSUtil](tests/2364e33d-ceab-4641-8468-bfb1d7cc2723.md)
-  * T1098 [Password Change on Directory Service Restore Mode (DSRM) Account](tests/d5b886d9-d1c7-4b6e-a7b0-460041bf2823.md)
 * proc_creation_win_susp_odbcconf.yml
   * T1218.008 [Odbcconf.exe - Load Response File](tests/331ce274-f9c9-440b-9f8c-a1006e1fce0b.md)
   * T1218.008 [Odbcconf.exe - Execute Arbitrary DLL](tests/2430498b-06c0-4b92-a448-8ad263c388e2.md)
@@ -4038,7 +4038,7 @@
   * T1546.012 [GlobalFlags in Image File Execution Options](tests/13117939-c9b2-4a43-999e-0a543df92f0d.md)
 * registry_set_asep_reg_keys_modification_office.yml
   * T1137.002 [Office Application Startup Test Persistence](tests/c3e35b58-fe1c-480b-b540-7600fb612563.md)
-  * T1592.002 [Enumerate COM Objects with Powershell](tests/0d80d088-a84c-4353-af1a-fc8b439f1564.md)
+  * T1592.002 [Enumerate COM Objects in Registry with Powershell](tests/0d80d088-a84c-4353-af1a-fc8b439f1564.md)
   * T1219 [TeamViewer Files Detected Test on Windows](tests/8ca3b96d-8983-4a7f-b125-fc98cc0a2aa0.md)
 * registry_set_asep_reg_keys_modification_session_manager.yml
   * T1546.009 [Create registry persistence via AppCert DLL](tests/a5ad6104-5bab-4c43-b295-b4c44c7c6b05.md)
@@ -4128,7 +4128,7 @@
   * T1562.001 [Disable Microsoft Office Security Features](tests/6f5fb61b-4e56-4a3d-a8c3-82e13686c6d7.md)
   * T1564 [Extract binary files via VBA](tests/6afe288a-8a8b-4d33-a629-8d03ba9dad3a.md)
 * registry_set_office_vsto_persistence.yml
-  * T1592.002 [Enumerate COM Objects with Powershell](tests/0d80d088-a84c-4353-af1a-fc8b439f1564.md)
+  * T1592.002 [Enumerate COM Objects in Registry with Powershell](tests/0d80d088-a84c-4353-af1a-fc8b439f1564.md)
   * T1219 [TeamViewer Files Detected Test on Windows](tests/8ca3b96d-8983-4a7f-b125-fc98cc0a2aa0.md)
 * registry_set_outlook_registry_webview.yml
   * T1137.004 [Install Outlook Home Page Persistence](tests/7a91ad51-e6d2-4d43-9471-f26362f5738e.md)

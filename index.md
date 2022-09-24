@@ -1113,6 +1113,8 @@ Caution: a test can generate a lot of noise...
 
 [Rundll32 ieadvpack.dll Execution](tests/5e46a58e-cbf6-45ef-a289-ed7754603df9.md) ['windows'] (sigma rule :heavy_check_mark:)
 
+[Rundll32 execute VBscript command using Ordinal number](tests/32d1cf1b-cbc2-4c09-8d05-07ec5c83a821.md) ['windows'] (sigma rule :x:)
+
 [Launches an executable using Rundll32 and pcwutl.dll](tests/9f5d081a-ee5a-42f9-a04e-b7bdc487e676.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Rundll32 execute VBscript command](tests/638730e7-7aed-43dc-bf8c-8117f805f5bb.md) ['windows'] (sigma rule :heavy_check_mark:)
@@ -1947,11 +1949,17 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1592.002
-[Enumerate COM Objects with Powershell](tests/0d80d088-a84c-4353-af1a-fc8b439f1564.md) ['windows'] (sigma rule :heavy_check_mark:)
+[Enumerate COM Objects in Registry with Powershell](tests/0d80d088-a84c-4353-af1a-fc8b439f1564.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1137
 [Office Application Startup - Outlook as a C2](tests/bfe6ac15-c50b-4c4f-a186-0fc6b8ba936c.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+
+### T1546.008
+[Replace binary of sticky keys](tests/934e90cf-29ca-48b3-863c-411737ad44e3.md) ['windows'] (sigma rule :x:)
+
+[Attaches Command Prompt as a Debugger to a List of Target Processes](tests/3309f53e-b22b-4eb6-8fd2-a6cf58b355a9.md) ['windows'] (sigma rule :x:)
 
 
 ### T1218.001
@@ -2521,7 +2529,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1078.004
-[Creating GCP Service Account and Service Account Key](tests/9fdd83fd-bd53-46e5-a716-9dec89c8ae8e.md) ['google-workspace', 'windows', 'linux', 'macos'] (sigma rule :x:)
+[Creating GCP Service Account and Service Account Key](tests/9fdd83fd-bd53-46e5-a716-9dec89c8ae8e.md) ['google-workspace', 'iaas:gcp'] (sigma rule :x:)
 
 
 ### T1134.005
@@ -2578,16 +2586,18 @@ Caution: a test can generate a lot of noise...
 [User scope COR_PROFILER](tests/9d5f89dc-c3a5-4f8a-a4fc-a6ed02e7cb5a.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
+### T1072
+[PDQ Deploy RAT](tests/e447b83b-a698-4feb-bed1-a7aaf45c3443.md) ['windows'] (sigma rule :x:)
+
+[Radmin Viewer Utility](tests/b4988cad-6ed2-434d-ace5-ea2670782129.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+
 ### T1091
 [USB Malware Spread Simulation](tests/d44b7297-622c-4be8-ad88-ec40d7563c75.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1546.013
 [Append malicious start-process cmdlet](tests/090e5aa5-32b6-473b-a49b-21e843a56896.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-
-### T1072
-[Radmin Viewer Utility](tests/b4988cad-6ed2-434d-ace5-ea2670782129.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1620
@@ -2796,6 +2806,10 @@ Caution: a test can generate a lot of noise...
 
 ### T1133
 [Running Chrome VPN Extensions via the Registry 2 vpn extension](tests/4c8db261-a58b-42a6-a866-0a294deedde4.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+
+### T1592.001
+[Enumerate PlugNPlay Camera](tests/d430bf85-b656-40e7-b238-42db01df0183.md) ['windows'] (sigma rule :x:)
 
 
 ### T1053.003

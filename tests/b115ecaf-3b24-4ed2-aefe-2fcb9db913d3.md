@@ -3,7 +3,7 @@
 
 Find sigma rule :x: 
 
-# Attack: Hidden Files and Directories 
+# Attack: Hide Artifacts: Hidden Files and Directories 
 
 Adversaries may set files and directories to be hidden to evade detection mechanisms. To prevent normal users from accidentally changing special files on a system, most operating systems have the concept of a ‘hidden’ file. These files don’t show up when a user browses the file system with a GUI or when using normal commands on the command line. Users must explicitly ask to show the hidden files either via a series of Graphical User Interface (GUI) prompts or with command line switches (<code>dir /a</code> for Windows and <code>ls –a</code> for Linux and macOS).
 

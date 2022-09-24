@@ -3,7 +3,7 @@
 
 Find sigma rule :x: 
 
-# Attack: Keylogging 
+# Attack: Input Capture: Keylogging 
 
 Adversaries may log user keystrokes to intercept credentials as the user types them. Keylogging is likely to be used to acquire credentials for new access opportunities when [OS Credential Dumping](https://attack.mitre.org/techniques/T1003) efforts are not effective, and may require an adversary to intercept keystrokes on a system for a substantial period of time before credentials can be successfully captured.
 
