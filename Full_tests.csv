@@ -1,16 +1,17 @@
 tactic;technique;executor;os;name;guid;sigma;nmr_test
 defense-evasion;T1218.011;command_prompt;['windows'];Rundll32 execute JavaScript Remote Payload With GetObject;57ba4ce9-ee7a-4f27-9928-3c70c489b59d;True;1
 defense-evasion;T1218.011;command_prompt;['windows'];Rundll32 execute VBscript command;638730e7-7aed-43dc-bf8c-8117f805f5bb;True;2
-defense-evasion;T1218.011;command_prompt;['windows'];Rundll32 advpack.dll Execution;d91cae26-7fc1-457b-a854-34c8aad48c89;True;3
-defense-evasion;T1218.011;command_prompt;['windows'];Rundll32 ieadvpack.dll Execution;5e46a58e-cbf6-45ef-a289-ed7754603df9;True;4
-defense-evasion;T1218.011;command_prompt;['windows'];Rundll32 syssetup.dll Execution;41fa324a-3946-401e-bbdd-d7991c628125;True;5
-defense-evasion;T1218.011;command_prompt;['windows'];Rundll32 setupapi.dll Execution;71d771cd-d6b3-4f34-bc76-a63d47a10b19;True;6
-defense-evasion;T1218.011;command_prompt;['windows'];Execution of HTA and VBS Files using Rundll32 and URL.dll;22cfde89-befe-4e15-9753-47306b37a6e3;True;7
-defense-evasion;T1218.011;command_prompt;['windows'];Launches an executable using Rundll32 and pcwutl.dll;9f5d081a-ee5a-42f9-a04e-b7bdc487e676;True;8
-defense-evasion;T1218.011;powershell;['windows'];Execution of non-dll using rundll32.exe;ae3a8605-b26e-457c-b6b3-2702fd335bac;True;9
-defense-evasion;T1218.011;command_prompt;['windows'];Rundll32 with Ordinal Value;9fd5a74b-ba89-482a-8a3e-a5feaa3697b0;True;10
-defense-evasion;T1218.011;command_prompt;['windows'];Rundll32 with Control_RunDLL;e4c04b6f-c492-4782-82c7-3bf75eb8077e;True;11
-defense-evasion;T1218.011;command_prompt;['windows'];Rundll32 with desk.cpl;83a95136-a496-423c-81d3-1c6750133917;True;12
+defense-evasion;T1218.011;command_prompt;['windows'];Rundll32 execute VBscript command using Ordinal number;32d1cf1b-cbc2-4c09-8d05-07ec5c83a821;False;3
+defense-evasion;T1218.011;command_prompt;['windows'];Rundll32 advpack.dll Execution;d91cae26-7fc1-457b-a854-34c8aad48c89;True;4
+defense-evasion;T1218.011;command_prompt;['windows'];Rundll32 ieadvpack.dll Execution;5e46a58e-cbf6-45ef-a289-ed7754603df9;True;5
+defense-evasion;T1218.011;command_prompt;['windows'];Rundll32 syssetup.dll Execution;41fa324a-3946-401e-bbdd-d7991c628125;True;6
+defense-evasion;T1218.011;command_prompt;['windows'];Rundll32 setupapi.dll Execution;71d771cd-d6b3-4f34-bc76-a63d47a10b19;True;7
+defense-evasion;T1218.011;command_prompt;['windows'];Execution of HTA and VBS Files using Rundll32 and URL.dll;22cfde89-befe-4e15-9753-47306b37a6e3;True;8
+defense-evasion;T1218.011;command_prompt;['windows'];Launches an executable using Rundll32 and pcwutl.dll;9f5d081a-ee5a-42f9-a04e-b7bdc487e676;True;9
+defense-evasion;T1218.011;powershell;['windows'];Execution of non-dll using rundll32.exe;ae3a8605-b26e-457c-b6b3-2702fd335bac;True;10
+defense-evasion;T1218.011;command_prompt;['windows'];Rundll32 with Ordinal Value;9fd5a74b-ba89-482a-8a3e-a5feaa3697b0;True;11
+defense-evasion;T1218.011;command_prompt;['windows'];Rundll32 with Control_RunDLL;e4c04b6f-c492-4782-82c7-3bf75eb8077e;True;12
+defense-evasion;T1218.011;command_prompt;['windows'];Rundll32 with desk.cpl;83a95136-a496-423c-81d3-1c6750133917;True;13
 defense-evasion;T1556.003;sh;['linux'];Malicious PAM rule;4b9dde80-ae22-44b1-a82a-644bf009eb9c;False;1
 defense-evasion;T1556.003;sh;['linux'];Malicious PAM module;65208808-3125-4a2e-8389-a0a00e9ab326;False;2
 defense-evasion;T1222.002;bash;['macos', 'linux'];chmod - Change file or folder mode (numeric mode);34ca1464-de9d-40c6-8c77-690adf36a135;False;1
@@ -415,7 +416,7 @@ defense-evasion;T1564.001;sh;['macos'];Hidden files;3b7015f2-3144-4205-b799-b055
 defense-evasion;T1564.001;sh;['macos'];Hide a Directory;b115ecaf-3b24-4ed2-aefe-2fcb9db913d3;False;6
 defense-evasion;T1564.001;sh;['macos'];Show all hidden files;9a1ec7da-b892-449f-ad68-67066d04380c;False;7
 defense-evasion;T1564.001;command_prompt;['windows'];Hide Files Through Registry;f650456b-bd49-4bc1-ae9d-271b5b9581e7;True;8
-defense-evasion;T1078.004;gcloud;['google-workspace', 'windows', 'linux', 'macos'];Creating GCP Service Account and Service Account Key;9fdd83fd-bd53-46e5-a716-9dec89c8ae8e;False;1
+defense-evasion;T1078.004;sh;['google-workspace', 'iaas:gcp'];Creating GCP Service Account and Service Account Key;9fdd83fd-bd53-46e5-a716-9dec89c8ae8e;False;1
 defense-evasion;T1564.004;command_prompt;['windows'];Alternate Data Streams (ADS);8822c3b0-d9f9-4daf-a043-49f4602364f4;True;1
 defense-evasion;T1564.004;powershell;['windows'];Store file in Alternate Data Stream (ADS);2ab75061-f5d5-4c1a-b666-ba2a50df5b02;True;2
 defense-evasion;T1564.004;command_prompt;['windows'];Create ADS command prompt;17e7637a-ddaf-4a82-8622-377e20de8fdb;True;3
@@ -518,6 +519,8 @@ privilege-escalation;T1547.004;powershell;['windows'];Winlogon Notify Key Logon 
 privilege-escalation;T1546.012;command_prompt;['windows'];IFEO Add Debugger;fdda2626-5234-4c90-b163-60849a24c0b8;True;1
 privilege-escalation;T1546.012;command_prompt;['windows'];IFEO Global Flags;46b1f278-c8ee-4aa5-acce-65e77b11f3c1;True;2
 privilege-escalation;T1546.012;powershell;['windows'];GlobalFlags in Image File Execution Options;13117939-c9b2-4a43-999e-0a543df92f0d;True;3
+privilege-escalation;T1546.008;powershell;['windows'];Attaches Command Prompt as a Debugger to a List of Target Processes;3309f53e-b22b-4eb6-8fd2-a6cf58b355a9;False;1
+privilege-escalation;T1546.008;command_prompt;['windows'];Replace binary of sticky keys;934e90cf-29ca-48b3-863c-411737ad44e3;False;2
 privilege-escalation;T1055.004;command_prompt;['windows'];Process Injection via C#;611b39b7-e243-4c81-87a4-7145a90358b1;True;1
 privilege-escalation;T1546.009;powershell;['windows'];Create registry persistence via AppCert DLL;a5ad6104-5bab-4c43-b295-b4c44c7c6b05;True;1
 privilege-escalation;T1547.015;powershell;['windows'];Persistence by modifying Windows Terminal profile;ec5d76ef-82fe-48da-b931-bdb25a62bc65;False;1
@@ -575,7 +578,7 @@ privilege-escalation;T1574.002;command_prompt;['windows'];DLL Side-Loading using
 privilege-escalation;T1574.002;command_prompt;['windows'];DLL Side-Loading using the dotnet startup hook environment variable;d322cdd7-7d60-46e3-9111-648848da7c02;False;2
 privilege-escalation;T1037.001;command_prompt;['windows'];Logon Scripts;d6042746-07d4-4c92-9ad8-e644c114a231;True;1
 privilege-escalation;T1547.008;powershell;['windows'];Modify Registry to load Arbitrary DLL into LSASS - LsaDbExtPt;8ecef16d-d289-46b4-917b-0dba6dc81cf1;False;1
-privilege-escalation;T1078.004;gcloud;['google-workspace', 'windows', 'linux', 'macos'];Creating GCP Service Account and Service Account Key;9fdd83fd-bd53-46e5-a716-9dec89c8ae8e;False;1
+privilege-escalation;T1078.004;sh;['google-workspace', 'iaas:gcp'];Creating GCP Service Account and Service Account Key;9fdd83fd-bd53-46e5-a716-9dec89c8ae8e;False;1
 privilege-escalation;T1053.002;command_prompt;['windows'];At.exe Scheduled task;4a6c0dc4-0f2a-4203-9298-a5a9bdc21ed8;True;1
 privilege-escalation;T1053.002;sh;['linux'];At - Schedule a job;7266d898-ac82-4ec0-97c7-436075d0d08e;False;2
 privilege-escalation;T1055.001;powershell;['windows'];Process Injection via mavinject.exe;74496461-11a1-4982-b439-4d87a550d254;True;1
@@ -633,6 +636,7 @@ execution;T1106;powershell;['windows'];WinPwn - Get SYSTEM shell - Pop System Sh
 execution;T1609;bash;['containers'];ExecIntoContainer;d03bfcd3-ed87-49c8-8880-44bb772dea4b;False;1
 execution;T1569.001;bash;['macos'];Launchctl;6fb61988-724e-4755-a595-07743749d4e2;False;1
 execution;T1072;command_prompt;['windows'];Radmin Viewer Utility;b4988cad-6ed2-434d-ace5-ea2670782129;True;1
+execution;T1072;command_prompt;['windows'];PDQ Deploy RAT;e447b83b-a698-4feb-bed1-a7aaf45c3443;False;2
 execution;T1059.001;command_prompt;['windows'];Mimikatz;f3132740-55bc-48c4-bcc0-758a459cd027;True;1
 execution;T1059.001;powershell;['windows'];Run BloodHound from local disk;a21bb23e-e677-4ee7-af90-6931b57b6350;True;2
 execution;T1059.001;powershell;['windows'];Run Bloodhound from Memory using Download Cradle;bf8c1441-4674-4dab-8e4e-39d93d08f9b7;True;3
@@ -745,6 +749,8 @@ persistence;T1098.004;bash;['macos', 'linux'];Modify SSH Authorized Keys;342cc72
 persistence;T1546.012;command_prompt;['windows'];IFEO Add Debugger;fdda2626-5234-4c90-b163-60849a24c0b8;True;1
 persistence;T1546.012;command_prompt;['windows'];IFEO Global Flags;46b1f278-c8ee-4aa5-acce-65e77b11f3c1;True;2
 persistence;T1546.012;powershell;['windows'];GlobalFlags in Image File Execution Options;13117939-c9b2-4a43-999e-0a543df92f0d;True;3
+persistence;T1546.008;powershell;['windows'];Attaches Command Prompt as a Debugger to a List of Target Processes;3309f53e-b22b-4eb6-8fd2-a6cf58b355a9;False;1
+persistence;T1546.008;command_prompt;['windows'];Replace binary of sticky keys;934e90cf-29ca-48b3-863c-411737ad44e3;False;2
 persistence;T1136.002;command_prompt;['windows'];Create a new Windows domain admin user;fcec2963-9951-4173-9bfa-98d8b7834e62;True;1
 persistence;T1136.002;command_prompt;['windows'];Create a new account similar to ANONYMOUS LOGON;dc7726d2-8ccb-4cc6-af22-0d5afb53a548;True;2
 persistence;T1136.002;powershell;['windows'];Create a new Domain Account using PowerShell;5a3497a4-1568-4663-b12a-d4a5ed70c7d7;True;3
@@ -811,7 +817,7 @@ persistence;T1574.002;command_prompt;['windows'];DLL Side-Loading using the dotn
 persistence;T1037.001;command_prompt;['windows'];Logon Scripts;d6042746-07d4-4c92-9ad8-e644c114a231;True;1
 persistence;T1137.002;command_prompt;['windows'];Office Application Startup Test Persistence;c3e35b58-fe1c-480b-b540-7600fb612563;True;1
 persistence;T1547.008;powershell;['windows'];Modify Registry to load Arbitrary DLL into LSASS - LsaDbExtPt;8ecef16d-d289-46b4-917b-0dba6dc81cf1;False;1
-persistence;T1078.004;gcloud;['google-workspace', 'windows', 'linux', 'macos'];Creating GCP Service Account and Service Account Key;9fdd83fd-bd53-46e5-a716-9dec89c8ae8e;False;1
+persistence;T1078.004;sh;['google-workspace', 'iaas:gcp'];Creating GCP Service Account and Service Account Key;9fdd83fd-bd53-46e5-a716-9dec89c8ae8e;False;1
 persistence;T1053.002;command_prompt;['windows'];At.exe Scheduled task;4a6c0dc4-0f2a-4203-9298-a5a9bdc21ed8;True;1
 persistence;T1053.002;sh;['linux'];At - Schedule a job;7266d898-ac82-4ec0-97c7-436075d0d08e;False;2
 persistence;T1546.007;command_prompt;['windows'];Netsh Helper DLL Registration;3244697d-5a3a-4dfc-941c-550f69f91a4d;True;1
@@ -885,6 +891,7 @@ lateral-movement;T1021.003;powershell;['windows'];PowerShell Lateral Movement us
 lateral-movement;T1550.003;command_prompt;['windows'];Mimikatz Kerberos Ticket Attack;dbf38128-7ba7-4776-bedf-cc2eed432098;True;1
 lateral-movement;T1550.003;powershell;['windows'];Rubeus Kerberos Pass The Ticket;a2fc4ec5-12c6-4fb4-b661-961f23f359cb;True;2
 lateral-movement;T1072;command_prompt;['windows'];Radmin Viewer Utility;b4988cad-6ed2-434d-ace5-ea2670782129;True;1
+lateral-movement;T1072;command_prompt;['windows'];PDQ Deploy RAT;e447b83b-a698-4feb-bed1-a7aaf45c3443;False;2
 lateral-movement;T1563.002;command_prompt;['windows'];RDP hijacking;a37ac520-b911-458e-8aed-c5f1576d9f46;True;1
 lateral-movement;T1550.002;command_prompt;['windows'];Mimikatz Pass the Hash;ec23cef9-27d9-46e4-a68d-6f75f7b86908;True;1
 lateral-movement;T1550.002;command_prompt;['windows'];crackmapexec Pass the Hash;eb05b028-16c8-4ad8-adea-6f5b219da9a9;True;2
@@ -1201,6 +1208,7 @@ discovery;T1201;powershell;['windows'];Enumerate Active Directory Password Polic
 discovery;T1614.001;command_prompt;['windows'];Discover System Language by Registry Query;631d4cf1-42c9-4209-8fe9-6bd4de9421be;True;1
 discovery;T1614.001;command_prompt;['windows'];Discover System Language with chcp;d91473ca-944e-477a-b484-0e80217cd789;True;2
 discovery;T1012;command_prompt;['windows'];Query Registry;8f7578c4-9863-4d83-875c-a565573bbdf0;True;1
+discovery;T1012;powershell;['windows'];Enumerate COM Objects in Registry with Powershell;0d80d088-a84c-4353-af1a-fc8b439f1564;True;2
 discovery;T1518.001;command_prompt;['windows'];Security Software Discovery;f92a380f-ced9-491f-b338-95a991418ce2;True;1
 discovery;T1518.001;powershell;['windows'];Security Software Discovery - powershell;7f566051-f033-49fb-89de-b6bacab730f0;True;2
 discovery;T1518.001;sh;['macos'];Security Software Discovery - ps (macOS);ba62ce11-e820-485f-9c17-6f3c857cd840;False;3
@@ -1307,7 +1315,7 @@ command-and-control;T1105;command_prompt;['windows'];Nimgrab - Transfer Files;b1
 command-and-control;T1090.001;sh;['macos', 'linux'];Connection Proxy;0ac21132-4485-4212-a681-349e8a6637cd;False;1
 command-and-control;T1090.001;sh;['macos'];Connection Proxy for macOS UI;648d68c1-8bcd-4486-9abe-71c6655b6a2c;False;2
 command-and-control;T1090.001;powershell;['windows'];portproxy reg key;b8223ea9-4be2-44a6-b50a-9657a3d4e72a;True;3
-reconnaissance;T1592.002;powershell;['windows'];Enumerate COM Objects with Powershell;0d80d088-a84c-4353-af1a-fc8b439f1564;True;1
+reconnaissance;T1592.001;powershell;['windows'];Enumerate PlugNPlay Camera;d430bf85-b656-40e7-b238-42db01df0183;False;1
 impact;T1489;command_prompt;['windows'];Windows - Stop service using Service Controller;21dfb440-830d-4c86-a3e5-2a491d5a8d04;True;1
 impact;T1489;command_prompt;['windows'];Windows - Stop service using net.exe;41274289-ec9c-4213-bea4-e43c4aa57954;True;2
 impact;T1489;command_prompt;['windows'];Windows - Stop service by killing process;f3191b84-c38b-400b-867e-3a217a27795f;True;3
@@ -1350,7 +1358,7 @@ initial-access;T1091;powershell;['windows'];USB Malware Spread Simulation;d44b72
 initial-access;T1195;command_prompt;['windows'];Octopus Scanner Malware Open Source Supply Chain;82a9f001-94c5-495e-9ed5-f530dbded5e2;True;1
 initial-access;T1078.001;command_prompt;['windows'];Enable Guest account with RDP capability and admin privileges;99747561-ed8d-47f2-9c91-1e5fde1ed6e0;True;1
 initial-access;T1078.001;command_prompt;['windows'];Activate Guest Account;aa6cb8c4-b582-4f8e-b677-37733914abda;True;2
-initial-access;T1078.004;gcloud;['google-workspace', 'windows', 'linux', 'macos'];Creating GCP Service Account and Service Account Key;9fdd83fd-bd53-46e5-a716-9dec89c8ae8e;False;1
+initial-access;T1078.004;sh;['google-workspace', 'iaas:gcp'];Creating GCP Service Account and Service Account Key;9fdd83fd-bd53-46e5-a716-9dec89c8ae8e;False;1
 initial-access;T1078.003;command_prompt;['windows'];Create local account with admin privileges;a524ce99-86de-4db6-b4f9-e08f35a47a15;True;1
 initial-access;T1078.003;bash;['macos'];Create local account with admin privileges - MacOS;f1275566-1c26-4b66-83e3-7f9f7f964daa;False;2
 initial-access;T1078.003;powershell;['windows'];WinPwn - Loot local Credentials - powerhell kittie;9e9fd066-453d-442f-88c1-ad7911d32912;True;3

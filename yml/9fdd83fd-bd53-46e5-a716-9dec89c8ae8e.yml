@@ -1,4 +1,4 @@
-Attack_name: Cloud Accounts
+Attack_name: 'Valid Accounts: Cloud Accounts'
 Attack_description: |-
   Adversaries may obtain and abuse credentials of a cloud account as a means of gaining Initial Access, Persistence, Privilege Escalation, or Defense Evasion. Cloud accounts are those created and configured by an organization for use by users, remote support, services, or for administration of resources within a cloud service provider or SaaS application. In some cases, cloud accounts may be federated with traditional identity management system, such as Window Active Directory.(Citation: AWS Identity Federation)(Citation: Google Federating GC)(Citation: Microsoft Deploying AD Federation)
 
@@ -16,12 +16,10 @@ technique:
   - T1078.004
 os:
   - google-workspace
-  - windows
-  - linux
-  - macos
+  - iaas:gcp
 description: 'GCP Service Accounts can be used to gain intial access as well as maintain persistence inside Google Cloud.
 
   '
-executor: gcloud
+executor: sh
 sigma: false
 sigma_rule: []

@@ -1,4 +1,4 @@
-Attack_name: Asynchronous Procedure Call
+Attack_name: 'Process Injection: Asynchronous Procedure Call'
 Attack_description: "Adversaries may inject malicious code into processes via the asynchronous procedure call (APC) queue in order to evade process-based defenses as well as possibly elevate privileges.\
   \ APC injection is a method of executing arbitrary code in the address space of a separate live process. \n\nAPC injection is commonly performed by attaching malicious code to the APC Queue (Citation:\
   \ Microsoft APC) of a process's thread. Queued APC functions are executed when the thread enters an alterable state.(Citation: Microsoft APC) A handle to an existing victim process is first created with\

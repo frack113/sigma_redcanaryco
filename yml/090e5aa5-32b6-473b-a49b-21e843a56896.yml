@@ -1,4 +1,4 @@
-Attack_name: PowerShell Profile
+Attack_name: 'Event Triggered Execution: PowerShell Profile'
 Attack_description: "Adversaries may gain persistence and elevate privileges by executing malicious content triggered by PowerShell profiles. A PowerShell profile  (<code>profile.ps1</code>) is a script\
   \ that runs when [PowerShell](https://attack.mitre.org/techniques/T1059/001) starts and can be used as a logon script to customize user environments.\n\n[PowerShell](https://attack.mitre.org/techniques/T1059/001)\
   \ supports several profiles depending on the user or host program. For example, there can be different profiles for [PowerShell](https://attack.mitre.org/techniques/T1059/001) host programs such as the\

@@ -1,4 +1,4 @@
-Attack_name: Additional Cloud Credentials
+Attack_name: 'Account Manipulation: Additional Cloud Credentials'
 Attack_description: |-
   Adversaries may add adversary-controlled credentials to a cloud account to maintain persistent access to victim accounts and instances within the environment.
 

@@ -1,4 +1,4 @@
-Attack_name: Container Administration Command
+Attack_name: Kubernetes Exec Into Container
 Attack_description: |-
   Adversaries may abuse a container administration service to execute commands within a container. A container administration service such as the Docker daemon, the Kubernetes API server, or the kubelet may allow remote management of containers within an environment.(Citation: Docker Daemon CLI)(Citation: Kubernetes API)(Citation: Kubernetes Kubelet)
 

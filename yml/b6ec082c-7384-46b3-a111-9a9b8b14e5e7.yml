@@ -1,4 +1,4 @@
-Attack_name: Credentials in Registry
+Attack_name: 'Unsecured Credentials: Credentials in Registry'
 Attack_description: |-
   Adversaries may search the Registry on compromised systems for insecurely stored credentials. The Windows Registry stores configuration information that can be used by the system or other programs. Adversaries may query the Registry looking for credentials and passwords that have been stored for use by other programs or services. Sometimes these credentials are used for automatic logons.
 

@@ -1,4 +1,4 @@
-Attack_name: Cloud Instance Metadata API
+Attack_name: 'Unsecured Credentials: Cloud Instance Metadata API'
 Attack_description: |
   Adversaries may attempt to access the Cloud Instance Metadata API to collect credentials and other sensitive data.
 

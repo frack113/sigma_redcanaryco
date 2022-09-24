@@ -1,4 +1,4 @@
-Attack_name: Startup Items
+Attack_name: 'Boot or Logon Initialization Scripts: Startup Items'
 Attack_description: "Adversaries may use startup items automatically executed at boot initialization to establish persistence. Startup items execute during the final phase of the boot process and contain\
   \ shell scripts or other executable files along with configuration information used by the system to determine the execution order for all startup items.(Citation: Startup Items)\n\nThis is technically\
   \ a deprecated technology (superseded by [Launch Daemon](https://attack.mitre.org/techniques/T1543/004)), and thus the appropriate folder, <code>/Library/StartupItems</code> isn’t guaranteed to exist\

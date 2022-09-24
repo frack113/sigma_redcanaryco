@@ -1,4 +1,4 @@
-Attack_name: Disable Windows Event Logging
+Attack_name: 'Impair Defenses: Disable Windows Event Logging'
 Attack_description: |-
   Adversaries may disable Windows event logging to limit data that can be leveraged for detections and audits. Windows event logs record user and system activity such as login attempts, process creation, and much more.(Citation: Windows Log Events) This data is used by security tools and analysts to generate detections.
 

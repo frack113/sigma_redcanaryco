@@ -1,4 +1,4 @@
-Attack_name: Silver Ticket
+Attack_name: 'Steal or Forge Kerberos Tickets: Silver Ticket'
 Attack_description: |-
   Adversaries who have the password hash of a target service account (e.g. SharePoint, MSSQL) may forge Kerberos ticket granting service (TGS) tickets, also known as silver tickets. Kerberos TGS tickets are also known as service tickets.(Citation: ADSecurity Silver Tickets)
 

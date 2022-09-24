@@ -1,4 +1,4 @@
-Attack_name: Windows Service
+Attack_name: 'Create or Modify System Process: Windows Service'
 Attack_description: "Adversaries may create or modify Windows services to repeatedly execute malicious payloads as part of persistence. When Windows boots up, it starts programs or applications called services\
   \ that perform background system functions.(Citation: TechNet Services) Windows service configuration information, including the file path to the service's executable or recovery programs/commands, is\
   \ stored in the Windows Registry.\n\nAdversaries may install a new service or modify an existing service to execute at startup in order to persist on a system. Service configurations can be set or modified\

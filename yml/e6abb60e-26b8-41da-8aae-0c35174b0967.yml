@@ -1,4 +1,4 @@
-Attack_name: Clear Windows Event Logs
+Attack_name: 'Indicator Removal on Host: Clear Windows Event Logs'
 Attack_description: |-
   Adversaries may clear Windows Event Logs to hide the activity of an intrusion. Windows Event Logs are a record of a computer's alerts and notifications. There are three system-defined sources of events: System, Application, and Security, with five event types: Error, Warning, Information, Success Audit, and Failure Audit.
 

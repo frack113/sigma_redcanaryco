@@ -1,4 +1,4 @@
-Attack_name: Msiexec
+Attack_name: 'Signed Binary Proxy Execution: Msiexec'
 Attack_description: |-
   Adversaries may abuse msiexec.exe to proxy execution of malicious payloads. Msiexec.exe is the command-line utility for the Windows Installer and is thus commonly associated with executing installation packages (.msi).(Citation: Microsoft msiexec) The Msiexec.exe binary may also be digitally signed by Microsoft.
 

@@ -1,4 +1,4 @@
-Attack_name: Local Data Staging
+Attack_name: 'Data Staged: Local Data Staging'
 Attack_description: |-
   Adversaries may stage collected data in a central location or directory on the local system prior to Exfiltration. Data may be kept in separate files or combined into one file through techniques such as [Archive Collected Data](https://attack.mitre.org/techniques/T1560). Interactive command shells may be used, and common functionality within [cmd](https://attack.mitre.org/software/S0106) and bash may be used to copy data into a staging location.
 

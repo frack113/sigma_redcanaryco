@@ -1,4 +1,4 @@
-Attack_name: Unix Shell
+Attack_name: 'Command and Scripting Interpreter: Bash'
 Attack_description: |-
   Adversaries may abuse Unix shell commands and scripts for execution. Unix shells are the primary command prompt on Linux and macOS systems, though many variations of the Unix shell exist (e.g. sh, bash, zsh, etc.) depending on the specific OS or distribution.(Citation: DieNet Bash)(Citation: Apple ZShell) Unix shells can control every aspect of a system, with certain commands requiring elevated privileges.
 

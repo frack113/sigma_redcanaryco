@@ -1,4 +1,4 @@
-Attack_name: Security Software Discovery
+Attack_name: 'Software Discovery: Security Software Discovery'
 Attack_description: |-
   Adversaries may attempt to get a listing of security software, configurations, defensive tools, and sensors that are installed on a system or in a cloud environment. This may include things such as firewall rules and anti-virus. Adversaries may use the information from [Security Software Discovery](https://attack.mitre.org/techniques/T1518/001) during automated discovery to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or attempts specific actions.
 

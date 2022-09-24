@@ -1,4 +1,4 @@
-Attack_name: Credentials In Files
+Attack_name: 'Unsecured Credentials: Credentials In Files'
 Attack_description: |-
   Adversaries may search local file systems and remote file shares for files containing insecurely stored credentials. These can be files created by users to store their own credentials, shared credential stores for a group of individuals, configuration files containing passwords for a system or service, or source code/binary files containing embedded passwords.
 

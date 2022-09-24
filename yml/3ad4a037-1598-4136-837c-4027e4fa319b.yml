@@ -1,4 +1,4 @@
-Attack_name: Process Hollowing
+Attack_name: 'Process Injection: Process Hollowing'
 Attack_description: "Adversaries may inject malicious code into suspended and hollowed processes in order to evade process-based defenses. Process hollowing is a method of executing arbitrary code in the\
   \ address space of a separate live process.  \n\nProcess hollowing is commonly performed by creating a process in a suspended state then unmapping/hollowing its memory, which can then be replaced with\
   \ malicious code. A victim process can be created with native Windows API calls such as <code>CreateProcess</code>, which includes a flag to suspend the processes primary thread. At this point the process\

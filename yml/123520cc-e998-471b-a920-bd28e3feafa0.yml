@@ -1,4 +1,4 @@
-Attack_name: Component Object Model Hijacking
+Attack_name: 'Event Triggered Execution: Component Object Model Hijacking'
 Attack_description: "Adversaries may establish persistence by executing malicious content triggered by hijacked references to Component Object Model (COM) objects. COM is a system within Windows to enable\
   \ interaction between software components through the operating system.(Citation: Microsoft Component Object Model)  References to various COM objects are stored in the Registry. \n\nAdversaries can use\
   \ the COM system to insert malicious code that can be executed in place of legitimate software through hijacking the COM references and relationships as a means for persistence. Hijacking a COM object\

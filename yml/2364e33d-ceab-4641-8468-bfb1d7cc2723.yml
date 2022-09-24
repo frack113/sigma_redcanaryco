@@ -1,4 +1,4 @@
-Attack_name: NTDS
+Attack_name: 'OS Credential Dumping: NTDS'
 Attack_description: |
   Adversaries may attempt to access or create a copy of the Active Directory domain database in order to steal credential information, as well as obtain other information about domain members such as devices, users, and access rights. By default, the NTDS file (NTDS.dit) is located in <code>%SystemRoot%\NTDS\Ntds.dit</code> of a domain controller.(Citation: Wikipedia Active Directory)
 
@@ -30,4 +30,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 2afafd61-6aae-4df4-baed-139fa1f4c345
-    name: proc_creation_win_susp_ntdsutil.yml
+    name: proc_creation_win_ntdsutil_usage.yml

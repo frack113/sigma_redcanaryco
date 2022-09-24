@@ -1,4 +1,4 @@
-Attack_name: Credentials from Web Browsers
+Attack_name: 'Credentials from Password Stores: Credentials from Web Browsers'
 Attack_description: "Adversaries may acquire credentials from web browsers by reading files specific to the target browser.(Citation: Talos Olympic Destroyer 2018) Web browsers commonly save credentials\
   \ such as website usernames and passwords so that they do not need to be entered manually in the future. Web browsers typically store the credentials in an encrypted format within a credential store;\
   \ however, methods exist to extract plaintext credentials from web browsers.\n\nFor example, on Windows systems, encrypted credentials may be obtained from Google Chrome by reading a database file, <code>AppData\\\

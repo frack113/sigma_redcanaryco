@@ -1,4 +1,4 @@
-Attack_name: Container API
+Attack_name: Kubernetes List Secrets
 Attack_description: "Adversaries may gather credentials via APIs within a containers environment. APIs in these environments, such as the Docker API and Kubernetes APIs, allow a user to remotely manage\
   \ their container resources and cluster components.(Citation: Docker API)(Citation: Kubernetes API)\n\nAn adversary may access the Docker API to collect logs that contain credentials to cloud, container,\
   \ and various other resources in the environment.(Citation: Unit 42 Unsecured Docker Daemons) An adversary with sufficient permissions, such as via a pod's service account, may also use the Kubernetes\

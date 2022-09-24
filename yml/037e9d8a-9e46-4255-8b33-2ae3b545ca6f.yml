@@ -1,4 +1,4 @@
-Attack_name: Control Panel
+Attack_name: 'Signed Binary Proxy Execution: Control Panel'
 Attack_description: |-
   Adversaries may abuse control.exe to proxy execution of malicious payloads. The Windows Control Panel process binary (control.exe) handles execution of Control Panel items, which are utilities that allow users to view and adjust computer settings.
 

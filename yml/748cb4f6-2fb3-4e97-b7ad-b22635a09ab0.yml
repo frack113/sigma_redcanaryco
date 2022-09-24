@@ -1,4 +1,4 @@
-Attack_name: CMSTP
+Attack_name: 'Signed Binary Proxy Execution: CMSTP'
 Attack_description: |-
   Adversaries may abuse CMSTP to proxy execution of malicious code. The Microsoft Connection Manager Profile Installer (CMSTP.exe) is a command-line program used to install Connection Manager service profiles. (Citation: Microsoft Connection Manager Oct 2009) CMSTP.exe accepts an installation information file (INF) as a parameter and installs a service profile leveraged for remote access connections.
 

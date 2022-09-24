@@ -1,4 +1,4 @@
-Attack_name: Impair Command History Logging
+Attack_name: 'Impair Defenses: HISTCONTROL'
 Attack_description: "Adversaries may impair command history logging to hide commands they run on a compromised system. Various command interpreters keep track of the commands users type in their terminal\
   \ so that users can retrace what they've done. \n\nOn Linux and macOS, command history is tracked in a file pointed to by the environment variable <code>HISTFILE</code>. When a user logs off a system,\
   \ this information is flushed to a file in the user's home directory called <code>~/.bash_history</code>. The <code>HISTCONTROL</code> environment variable keeps track of what should be saved by the <code>history</code>\

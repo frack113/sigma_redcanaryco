@@ -1,4 +1,4 @@
-Attack_name: Trap
+Attack_name: 'Event Triggered Execution: Trap'
 Attack_description: |-
   Adversaries may establish persistence by executing malicious content triggered by an interrupt signal. The <code>trap</code> command allows programs and shells to specify commands that will be executed upon receiving interrupt signals. A common situation is a script allowing for graceful termination and handling of common keyboard interrupts like <code>ctrl+c</code> and <code>ctrl+d</code>.
 

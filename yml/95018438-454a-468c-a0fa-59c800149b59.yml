@@ -1,4 +1,4 @@
-Attack_name: Domain Account
+Attack_name: 'Account Discovery: Domain Account'
 Attack_description: |-
   Adversaries may attempt to get a listing of domain accounts. This information can help adversaries determine which domain accounts exist to aid in follow-on behavior.
 

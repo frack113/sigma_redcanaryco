@@ -1,4 +1,4 @@
-Attack_name: Pass the Ticket
+Attack_name: 'Use Alternate Authentication Material: Pass the Ticket'
 Attack_description: |-
   Adversaries may “pass the ticket” using stolen Kerberos tickets to move laterally within an environment, bypassing normal system access controls. Pass the ticket (PtT) is a method of authenticating to a system using Kerberos tickets without having access to an account's password. Kerberos authentication can be used as the first step to lateral movement to a remote system.
 

@@ -1,4 +1,4 @@
-Attack_name: Dynamic Linker Hijacking
+Attack_name: 'Hijack Execution Flow: LD_PRELOAD'
 Attack_description: "Adversaries may execute their own malicious payloads by hijacking environment variables the dynamic linker uses to load shared libraries. During the execution preparation phase of a\
   \ program, the dynamic linker loads specified absolute paths of shared libraries from environment variables and files, such as <code>LD_PRELOAD</code> on Linux or <code>DYLD_INSERT_LIBRARIES</code> on\
   \ macOS. Libraries specified in environment variables are loaded first, taking precedence over system libraries with the same function name.(Citation: Man LD.SO)(Citation: TLDP Shared Libraries)(Citation:\

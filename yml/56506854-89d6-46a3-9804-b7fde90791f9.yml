@@ -1,4 +1,4 @@
-Attack_name: Cached Domain Credentials
+Attack_name: 'OS Credential Dumping: Cached Domain Credentials'
 Attack_description: |-
   Adversaries may attempt to access cached domain credentials used to allow authentication to occur in the event a domain controller is unavailable.(Citation: Microsoft - Cached Creds)
 

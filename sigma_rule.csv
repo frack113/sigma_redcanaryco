@@ -303,12 +303,15 @@ lnx_susp_vsftp.yml;False
 proc_creation_lnx_at_command.yml;False
 proc_creation_lnx_base64_decode.yml;False
 proc_creation_lnx_base64_execution.yml;False
+proc_creation_lnx_base64_shebang_cli.yml;False
 proc_creation_lnx_bpftrace_unsafe_option_usage.yml;False
 proc_creation_lnx_cat_sudoers.yml;False
 proc_creation_lnx_clear_logs.yml;False
 proc_creation_lnx_clear_syslog.yml;False
 proc_creation_lnx_clipboard_collection.yml;False
+proc_creation_lnx_crontab_removal.yml;False
 proc_creation_lnx_crypto_mining.yml;False
+proc_creation_lnx_curl_usage.yml;False
 proc_creation_lnx_cve_2022_26134_atlassian_confluence.yml;False
 proc_creation_lnx_cve_2022_33891_spark_shell_command_injection.yml;False
 proc_creation_lnx_dd_file_overwrite.yml;False
@@ -328,7 +331,10 @@ proc_creation_lnx_remote_system_discovery.yml;False
 proc_creation_lnx_schedule_task_job_cron.yml;False
 proc_creation_lnx_security_software_discovery.yml;False
 proc_creation_lnx_security_tools_disabling.yml;False
+proc_creation_lnx_services_stop_and_disable.yml;False
 proc_creation_lnx_susp_chmod_directories.yml;False
+proc_creation_lnx_susp_curl_fileupload.yml;False
+proc_creation_lnx_susp_curl_useragent.yml;False
 proc_creation_lnx_susp_history_delete.yml;False
 proc_creation_lnx_susp_history_recon.yml;False
 proc_creation_lnx_susp_interactive_bash.yml;False
@@ -341,6 +347,7 @@ proc_creation_lnx_system_network_discovery.yml;False
 proc_creation_lnx_triple_cross_rootkit_execve_hijack.yml;False
 proc_creation_lnx_triple_cross_rootkit_install.yml;False
 proc_creation_lnx_webshell_detection.yml;False
+prox_creation_lnx_chattr_immutable_removal.yml;False
 file_event_macos_emond_launch_daemon.yml;False
 file_event_macos_startup_items.yml;False
 proc_creation_macos_applescript.yml;False
@@ -516,7 +523,6 @@ web_webshell_regeorg.yml;False
 web_win_webshells_in_access_logs.yml;False
 web_xss_in_access_logs.yml;False
 win_alert_mimikatz_keywords.yml;True
-win_susp_logon_newcredentials.yml;False
 win_audit_cve.yml;False
 win_av_relevant_match.yml;True
 win_builtin_remove_application.yml;True
@@ -674,6 +680,7 @@ win_susp_krbrelayup.yml;False
 win_susp_ldap_dataexchange.yml;False
 win_susp_local_anon_logon_created.yml;False
 win_susp_logon_explicit_credentials.yml;True
+win_susp_logon_newcredentials.yml;False
 win_susp_lsass_dump.yml;False
 win_susp_lsass_dump_generic.yml;False
 win_susp_multiple_files_renamed_or_deleted.yml;False
@@ -693,6 +700,7 @@ win_susp_wmi_login.yml;False
 win_svcctl_remote_service.yml;False
 win_syskey_registry_access.yml;False
 win_sysmon_channel_reference_deletion.yml;False
+win_teams_suspicious_objectaccess.yml;False
 win_transferring_files_with_credential_data_via_network_shares.yml;False
 win_user_added_to_local_administrators.yml;False
 win_user_couldnt_call_privileged_service_lsaregisterlogonprocess.yml;False
@@ -705,6 +713,7 @@ win_security_mitigations_unsigned_dll_from_susp_location.yml;False
 win_hybridconnectionmgr_svc_running.yml;False
 win_shell_core_susp_packages_installed.yml;False
 win_susp_failed_guest_logon.yml;False
+win_susp_failed_hidden_share_mount.yml;False
 win_anydesk_service_installation.yml;False
 win_apt_carbonpaper_turla.yml;False
 win_apt_chafer_mar18_system.yml;False
@@ -821,6 +830,7 @@ file_delete_win_delete_appli_log.yml;True
 file_delete_win_delete_backup_file.yml;True
 file_delete_win_delete_prefetch.yml;True
 file_delete_win_sysinternals_sdelete_file_deletion.yml;True
+file_event_win_access_susp_teams.yml;False
 file_event_win_access_susp_unattend_xml.yml;True
 file_event_win_advanced_ip_scanner.yml;False
 file_event_win_anydesk_artefact.yml;True
@@ -1080,6 +1090,7 @@ posh_pm_susp_zip_compress.yml;True
 posh_pm_syncappvpublishingserver_exe.yml;False
 posh_ps_accessing_win_api.yml;True
 posh_ps_access_to_browser_login_data.yml;True
+posh_ps_add_dnsclient_rule.yml;False
 posh_ps_adrecon_execution.yml;True
 posh_ps_as_rep_roasting.yml;True
 posh_ps_automated_collection.yml;True
@@ -1101,9 +1112,11 @@ posh_ps_detect_vm_env.yml;True
 posh_ps_directorysearcher.yml;True
 posh_ps_directoryservices_accountmanagement.yml;True
 posh_ps_disable_psreadline_command_history.yml;False
+posh_ps_disable_windowsoptionalfeature.yml;False
 posh_ps_dnscat_execution.yml;True
 posh_ps_dump_password_windows_credential_manager.yml;True
 posh_ps_enable_psremoting.yml;True
+posh_ps_enable_windowsoptionalfeature.yml;False
 posh_ps_enumerate_password_windows_credential_manager.yml;True
 posh_ps_etw_trace_evasion.yml;False
 posh_ps_file_and_directory_discovery.yml;True
@@ -1153,6 +1166,7 @@ posh_ps_shellintel_malicious_commandlets.yml;True
 posh_ps_software_discovery.yml;True
 posh_ps_store_file_in_alternate_data_stream.yml;True
 posh_ps_susp_ad_group_reco.yml;True
+posh_ps_susp_clear_eventlog.yml;False
 posh_ps_susp_directory_enum.yml;True
 posh_ps_susp_download.yml;True
 posh_ps_susp_execute_batch_script.yml;True
@@ -1606,6 +1620,7 @@ proc_creation_win_non_interactive_powershell.yml;True
 proc_creation_win_non_priv_reg_or_ps.yml;False
 proc_creation_win_nslookup_poweshell_download.yml;False
 proc_creation_win_nslookup_pwsh_download_cradle.yml;False
+proc_creation_win_ntdsutil_usage.yml;True
 proc_creation_win_ntfs_short_name_path_use_cli.yml;True
 proc_creation_win_ntfs_short_name_path_use_image.yml;True
 proc_creation_win_ntfs_short_name_use_cli.yml;False
@@ -1710,6 +1725,7 @@ proc_creation_win_renamed_psexec.yml;False
 proc_creation_win_renamed_rundll32.yml;False
 proc_creation_win_renamed_rundll32_dllregisterserver.yml;False
 proc_creation_win_renamed_sdelete.yml;False
+proc_creation_win_renamed_vmnat.yml;False
 proc_creation_win_renamed_whoami.yml;False
 proc_creation_win_root_certificate_installed.yml;True
 proc_creation_win_rpcss_anomalies.yml;False
@@ -1876,7 +1892,7 @@ proc_creation_win_susp_nmap.yml;True
 proc_creation_win_susp_non_exe_image.yml;True
 proc_creation_win_susp_ntdll_type_redirect.yml;False
 proc_creation_win_susp_ntds.yml;False
-proc_creation_win_susp_ntdsutil.yml;True
+proc_creation_win_susp_ntdsutil_usage.yml;False
 proc_creation_win_susp_ntlmrelay.yml;False
 proc_creation_win_susp_nt_resource_kit_auditpol_usage.yml;False
 proc_creation_win_susp_odbcconf.yml;True
@@ -2056,7 +2072,9 @@ proc_creation_win_sysnative.yml;False
 proc_creation_win_system_exe_anomaly.yml;True
 proc_creation_win_tamper_defender_remove_mppreference.yml;False
 proc_creation_win_tap_installer_execution.yml;False
+proc_creation_win_taskkill_sep.yml;False
 proc_creation_win_task_folder_evasion.yml;False
+proc_creation_win_teams_suspicious_command_line_cred_access.yml;False
 proc_creation_win_termserv_proc_spawn.yml;False
 proc_creation_win_tools_relay_attacks.yml;True
 proc_creation_win_tools_uac_bypass_computerdefaults.yml;False
@@ -2074,6 +2092,7 @@ proc_creation_win_uac_bypass_cmstp.yml;True
 proc_creation_win_uac_bypass_consent_comctl32.yml;False
 proc_creation_win_uac_bypass_dismhost.yml;False
 proc_creation_win_uac_bypass_fodhelper.yml;True
+proc_creation_win_uac_bypass_icmluautil.yml;False
 proc_creation_win_uac_bypass_idiagnostic_profile.yml;False
 proc_creation_win_uac_bypass_ieinstal.yml;False
 proc_creation_win_uac_bypass_msconfig_gui.yml;False
@@ -2094,6 +2113,7 @@ proc_creation_win_vmtoolsd_susp_child_process.yml;False
 proc_creation_win_vul_java_remote_debugging.yml;False
 proc_creation_win_wab_execution_from_non_default_location.yml;False
 proc_creation_win_wab_unusual_parents.yml;False
+proc_creation_win_weak_or_abused_passwords.yml;False
 proc_creation_win_webbrowserpassview.yml;True
 proc_creation_win_webshell_detection.yml;False
 proc_creation_win_webshell_hacking.yml;False

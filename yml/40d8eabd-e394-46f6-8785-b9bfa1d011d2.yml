@@ -1,4 +1,4 @@
-Attack_name: Local Account
+Attack_name: 'Create Account: Local Account'
 Attack_description: |-
   Adversaries may create a local account to maintain access to victim systems. Local accounts are those configured by an organization for use by users, remote support, services, or for administration on a single system or service. With a sufficient level of access, the <code>net user /add</code> command can be used to create a local account. On macOS systems the <code>dscl -create</code> command can be used to create a local account.
 
