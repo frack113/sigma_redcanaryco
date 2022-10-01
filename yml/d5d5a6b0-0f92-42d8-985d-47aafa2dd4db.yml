@@ -18,5 +18,7 @@ description: |
   https://research.splunk.com/endpoint/b2cc69e7-11ba-42dc-a269-59c069a48870/
   https://blogs.blackberry.com/en/2022/05/dirty-deeds-done-dirt-cheap-russian-rat-offers-backdoor-bargains
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 6da2c9f5-7c53-401b-aacb-92c040ce1215
+    name: proc_creation_win_w32tm.yml

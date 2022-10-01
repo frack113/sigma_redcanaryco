@@ -28,5 +28,12 @@ description: 'Replace sticky keys binary (sethc.exe) with cmd.exe
 
   '
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: fff9d2b7-e11c-4a69-93d3-40ef66189767
+    name: proc_creation_win_susp_copy_system32.yml
+  - id: 297afac9-5d02-4138-8c58-b977bac60556
+    name: file_event_win_susp_dropper.yml
+  - id: 37ae075c-271b-459b-8d7b-55ad5f993dd8
+    name: proc_creation_win_file_permission_modifications.yml
+

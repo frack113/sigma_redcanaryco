@@ -16,5 +16,11 @@ os:
 description: "A recent trend by threat actors, once a foothold is established, maintain long term persistence using third party remote services such as NetSupport to provide the operator with access to\
   \ the network using legitimate services. \n"
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 0afbd410-de03-4078-8491-f132303cb67d
+    name: proc_creation_win_renamed_netsupport_rat.yml
+  - id: 37e8d358-6408-4853-82f4-98333fca7014
+    name: proc_creation_win_susp_netsupport_rat_exec_location.yml
+  - id: 758ff488-18d5-4cbe-8ec4-02b6285a434f
+    name: proc_creation_win_netsupport.yml

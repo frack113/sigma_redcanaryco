@@ -5,18 +5,17 @@ Attack_description: |-
   Remote access tools may be installed and used post-compromise as alternate communications channel for redundant access or as a way to establish an interactive remote desktop session with the target system. They may also be used as a component of malware to establish a reverse connection or back-connect to a service or adversary controlled system. Installation of many remote access tools may also include persistence (ex: the tool's installation routine creates a [Windows Service](https://attack.mitre.org/techniques/T1543/003)).
 
   Admin tools such as TeamViewer have been used by several groups targeting institutions in countries of interest to the Russian state and criminal campaigns.(Citation: CrowdStrike 2015 Global Threat Report)(Citation: CrySyS Blog TeamSpy)
-guid: 19acf63b-55c4-4b6a-8552-00a8865105c8
-name: UltraViewer - RAT Execution
+guid: 42e51815-a6cc-4c75-b970-3f0ff54b610e
+name: UltraVNC Execution
 tactic:
   - command-and-control
 technique:
   - T1219
 os:
   - windows
-description: "A recent trend by threat actors, once a foothold is established, maintain long term persistence using third party remote services such as UltraViewer to provide the operator with access to\
-  \ the network using legitimate services. \n"
+description: |
+  An adversary may attempt to trick the user into downloading UltraVNC for use as a C2 channel.
+  Upon successful execution, UltraVNC will be executed.
 executor: powershell
-sigma: true
-sigma_rule:
-  - id: 88656cec-6c3b-487c-82c0-f73ebb805503
-    name: proc_creation_win_ultraviewer.yml
+sigma: false
+sigma_rule: []
