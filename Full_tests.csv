@@ -324,7 +324,7 @@ defense-evasion;T1562.001;command_prompt;['windows'];LockBit Black - Disable Pri
 defense-evasion;T1562.001;command_prompt;['windows'];LockBit Black - Use Registry Editor to turn on automatic logon -cmd;9719d0e1-4fe0-4b2e-9a72-7ad3ee8ddc70;True;33
 defense-evasion;T1562.001;powershell;['windows'];LockBit Black - Disable Privacy Settings Experience Using Registry -Powershell;d8c57eaa-497a-4a08-961e-bd5efd7c9374;False;34
 defense-evasion;T1562.001;powershell;['windows'];Lockbit Black - Use Registry Editor to turn on automatic logon -Powershell;5e27f36d-5132-4537-b43b-413b0d5eec9a;True;35
-defense-evasion;T1562.001;powershell;['windows'];Disable Windows Defender with PwSh Disable-WindowsOptionalFeature;f542ffd3-37b4-4528-837f-682874faa012;False;36
+defense-evasion;T1562.001;powershell;['windows'];Disable Windows Defender with PwSh Disable-WindowsOptionalFeature;f542ffd3-37b4-4528-837f-682874faa012;True;36
 defense-evasion;T1055.012;powershell;['windows'];Process Hollowing using PowerShell;562427b4-39ef-4e8c-af88-463a78e70b9c;True;1
 defense-evasion;T1055.012;powershell;['windows'];RunPE via VBA;3ad4a037-1598-4136-837c-4027e4fa319b;True;2
 defense-evasion;T1027;sh;['macos', 'linux'];Decode base64 Data into Script;f45df6be-2e1e-4136-a384-8f18ab3826fb;False;1
@@ -548,12 +548,12 @@ privilege-escalation;T1547.001;powershell;['windows'];Suspicious bat file run fr
 privilege-escalation;T1547.001;powershell;['windows'];Add Executable Shortcut Link to User Startup Folder;24e55612-85f6-4bd6-ae74-a73d02e3441d;True;7
 privilege-escalation;T1547.001;command_prompt;['windows'];Add persistance via Recycle bin;bda6a3d6-7aa7-4e89-908b-306772e9662f;True;8
 privilege-escalation;T1547.001;powershell;['windows'];SystemBC Malware-as-a-Service Registry;9dc7767b-30c1-4cc4-b999-50cab5e27891;True;9
-privilege-escalation;T1547.001;powershell;['windows'];Change Startup Folder - HKLM Modify User Shell Folders Common Startup Value;acfef903-7662-447e-a391-9c91c2f00f7b;False;10
-privilege-escalation;T1547.001;powershell;['windows'];Change Startup Folder - HKCU Modify User Shell Folders Startup Value;8834b65a-f808-4ece-ad7e-2acdf647aafa;False;11
-privilege-escalation;T1547.001;powershell;['windows'];HKCU - Policy Settings Explorer Run Key;a70faea1-e206-4f6f-8d9a-67379be8f6f1;False;12
-privilege-escalation;T1547.001;powershell;['windows'];HKLM - Policy Settings Explorer Run Key;b5c9a9bc-dda3-4ea0-b16a-add8e81ab75f;False;13
-privilege-escalation;T1547.001;powershell;['windows'];HKLM - Append Command to Winlogon Userinit KEY Value;f7fab6cc-8ece-4ca7-a0f1-30a22fccd374;False;14
-privilege-escalation;T1547.001;powershell;['windows'];HKLM - Modify default System Shell - Winlogon Shell KEY Value ;1d958c61-09c6-4d9e-b26b-4130314e520e;False;15
+privilege-escalation;T1547.001;powershell;['windows'];Change Startup Folder - HKLM Modify User Shell Folders Common Startup Value;acfef903-7662-447e-a391-9c91c2f00f7b;True;10
+privilege-escalation;T1547.001;powershell;['windows'];Change Startup Folder - HKCU Modify User Shell Folders Startup Value;8834b65a-f808-4ece-ad7e-2acdf647aafa;True;11
+privilege-escalation;T1547.001;powershell;['windows'];HKCU - Policy Settings Explorer Run Key;a70faea1-e206-4f6f-8d9a-67379be8f6f1;True;12
+privilege-escalation;T1547.001;powershell;['windows'];HKLM - Policy Settings Explorer Run Key;b5c9a9bc-dda3-4ea0-b16a-add8e81ab75f;True;13
+privilege-escalation;T1547.001;powershell;['windows'];HKLM - Append Command to Winlogon Userinit KEY Value;f7fab6cc-8ece-4ca7-a0f1-30a22fccd374;True;14
+privilege-escalation;T1547.001;powershell;['windows'];HKLM - Modify default System Shell - Winlogon Shell KEY Value ;1d958c61-09c6-4d9e-b26b-4130314e520e;True;15
 privilege-escalation;T1547.006;bash;['linux'];Linux - Load Kernel Module via insmod;687dcb93-9656-4853-9c36-9977315e9d23;False;1
 privilege-escalation;T1053.006;bash;['linux'];Create Systemd Service and Timer;f4983098-bb13-44fb-9b2c-46149961807b;False;1
 privilege-escalation;T1053.006;sh;['linux'];Create a user level transient systemd service and timer;3de33f5b-62e5-4e63-a2a0-6fd8808c80ec;False;2
@@ -584,7 +584,7 @@ privilege-escalation;T1547.007;sh;['macos'];Re-Opened Applications;5f5b71da-e03f
 privilege-escalation;T1574.002;command_prompt;['windows'];DLL Side-Loading using the Notepad++ GUP.exe binary;65526037-7079-44a9-bda1-2cb624838040;True;1
 privilege-escalation;T1574.002;command_prompt;['windows'];DLL Side-Loading using the dotnet startup hook environment variable;d322cdd7-7d60-46e3-9111-648848da7c02;False;2
 privilege-escalation;T1037.001;command_prompt;['windows'];Logon Scripts;d6042746-07d4-4c92-9ad8-e644c114a231;True;1
-privilege-escalation;T1547.008;powershell;['windows'];Modify Registry to load Arbitrary DLL into LSASS - LsaDbExtPt;8ecef16d-d289-46b4-917b-0dba6dc81cf1;False;1
+privilege-escalation;T1547.008;powershell;['windows'];Modify Registry to load Arbitrary DLL into LSASS - LsaDbExtPt;8ecef16d-d289-46b4-917b-0dba6dc81cf1;True;1
 privilege-escalation;T1078.004;sh;['google-workspace', 'iaas:gcp'];Creating GCP Service Account and Service Account Key;9fdd83fd-bd53-46e5-a716-9dec89c8ae8e;False;1
 privilege-escalation;T1053.002;command_prompt;['windows'];At.exe Scheduled task;4a6c0dc4-0f2a-4203-9298-a5a9bdc21ed8;True;1
 privilege-escalation;T1053.002;sh;['linux'];At - Schedule a job;7266d898-ac82-4ec0-97c7-436075d0d08e;False;2
@@ -780,12 +780,12 @@ persistence;T1547.001;powershell;['windows'];Suspicious bat file run from startu
 persistence;T1547.001;powershell;['windows'];Add Executable Shortcut Link to User Startup Folder;24e55612-85f6-4bd6-ae74-a73d02e3441d;True;7
 persistence;T1547.001;command_prompt;['windows'];Add persistance via Recycle bin;bda6a3d6-7aa7-4e89-908b-306772e9662f;True;8
 persistence;T1547.001;powershell;['windows'];SystemBC Malware-as-a-Service Registry;9dc7767b-30c1-4cc4-b999-50cab5e27891;True;9
-persistence;T1547.001;powershell;['windows'];Change Startup Folder - HKLM Modify User Shell Folders Common Startup Value;acfef903-7662-447e-a391-9c91c2f00f7b;False;10
-persistence;T1547.001;powershell;['windows'];Change Startup Folder - HKCU Modify User Shell Folders Startup Value;8834b65a-f808-4ece-ad7e-2acdf647aafa;False;11
-persistence;T1547.001;powershell;['windows'];HKCU - Policy Settings Explorer Run Key;a70faea1-e206-4f6f-8d9a-67379be8f6f1;False;12
-persistence;T1547.001;powershell;['windows'];HKLM - Policy Settings Explorer Run Key;b5c9a9bc-dda3-4ea0-b16a-add8e81ab75f;False;13
-persistence;T1547.001;powershell;['windows'];HKLM - Append Command to Winlogon Userinit KEY Value;f7fab6cc-8ece-4ca7-a0f1-30a22fccd374;False;14
-persistence;T1547.001;powershell;['windows'];HKLM - Modify default System Shell - Winlogon Shell KEY Value ;1d958c61-09c6-4d9e-b26b-4130314e520e;False;15
+persistence;T1547.001;powershell;['windows'];Change Startup Folder - HKLM Modify User Shell Folders Common Startup Value;acfef903-7662-447e-a391-9c91c2f00f7b;True;10
+persistence;T1547.001;powershell;['windows'];Change Startup Folder - HKCU Modify User Shell Folders Startup Value;8834b65a-f808-4ece-ad7e-2acdf647aafa;True;11
+persistence;T1547.001;powershell;['windows'];HKCU - Policy Settings Explorer Run Key;a70faea1-e206-4f6f-8d9a-67379be8f6f1;True;12
+persistence;T1547.001;powershell;['windows'];HKLM - Policy Settings Explorer Run Key;b5c9a9bc-dda3-4ea0-b16a-add8e81ab75f;True;13
+persistence;T1547.001;powershell;['windows'];HKLM - Append Command to Winlogon Userinit KEY Value;f7fab6cc-8ece-4ca7-a0f1-30a22fccd374;True;14
+persistence;T1547.001;powershell;['windows'];HKLM - Modify default System Shell - Winlogon Shell KEY Value ;1d958c61-09c6-4d9e-b26b-4130314e520e;True;15
 persistence;T1136.003;sh;['iaas:aws'];AWS - Create a new IAM user;8d1c2368-b503-40c9-9057-8e42f21c58ad;False;1
 persistence;T1098;powershell;['windows'];Admin Account Manipulate;5598f7cb-cf43-455e-883a-f6008c5d46af;True;1
 persistence;T1098;powershell;['windows'];Domain Account and Group Manipulate;a55a22e9-a3d3-42ce-bd48-2653adb8f7a9;True;2
@@ -829,7 +829,7 @@ persistence;T1574.002;command_prompt;['windows'];DLL Side-Loading using the Note
 persistence;T1574.002;command_prompt;['windows'];DLL Side-Loading using the dotnet startup hook environment variable;d322cdd7-7d60-46e3-9111-648848da7c02;False;2
 persistence;T1037.001;command_prompt;['windows'];Logon Scripts;d6042746-07d4-4c92-9ad8-e644c114a231;True;1
 persistence;T1137.002;command_prompt;['windows'];Office Application Startup Test Persistence;c3e35b58-fe1c-480b-b540-7600fb612563;True;1
-persistence;T1547.008;powershell;['windows'];Modify Registry to load Arbitrary DLL into LSASS - LsaDbExtPt;8ecef16d-d289-46b4-917b-0dba6dc81cf1;False;1
+persistence;T1547.008;powershell;['windows'];Modify Registry to load Arbitrary DLL into LSASS - LsaDbExtPt;8ecef16d-d289-46b4-917b-0dba6dc81cf1;True;1
 persistence;T1078.004;sh;['google-workspace', 'iaas:gcp'];Creating GCP Service Account and Service Account Key;9fdd83fd-bd53-46e5-a716-9dec89c8ae8e;False;1
 persistence;T1053.002;command_prompt;['windows'];At.exe Scheduled task;4a6c0dc4-0f2a-4203-9298-a5a9bdc21ed8;True;1
 persistence;T1053.002;sh;['linux'];At - Schedule a job;7266d898-ac82-4ec0-97c7-436075d0d08e;False;2
@@ -1364,7 +1364,7 @@ impact;T1529;bash;['linux'];Shutdown System via `halt` - Linux;918f70ab-e1ef-49f
 impact;T1529;bash;['linux'];Reboot System via `halt` - Linux;78f92e14-f1e9-4446-b3e9-f1b921f2459e;False;7
 impact;T1529;bash;['linux'];Shutdown System via `poweroff` - Linux;73a90cd2-48a2-4ac5-8594-2af35fa909fa;False;8
 impact;T1529;bash;['linux'];Reboot System via `poweroff` - Linux;61303105-ff60-427b-999e-efb90b314e41;False;9
-impact;T1529;command_prompt;['windows'];Logoff System - Windows;3d8c25b5-7ff5-4c9d-b21f-85ebd06654a4;False;10
+impact;T1529;command_prompt;['windows'];Logoff System - Windows;3d8c25b5-7ff5-4c9d-b21f-85ebd06654a4;True;10
 initial-access;T1133;powershell;['windows'];Running Chrome VPN Extensions via the Registry 2 vpn extension;4c8db261-a58b-42a6-a866-0a294deedde4;True;1
 initial-access;T1566.001;powershell;['windows'];Download Macro-Enabled Phishing Attachment;114ccff9-ae6d-4547-9ead-4cd69f687306;True;1
 initial-access;T1566.001;powershell;['windows'];Word spawned a command shell and used an IP address in the command line;cbb6799a-425c-4f83-9194-5447a909d67f;True;2

@@ -51,5 +51,10 @@ os:
 description: "This test change the default value of HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon\\Shell from \"explorer.exe\" to the full path of \"C:\\Windows\\explorer.exe\"\
   \ \nto log a change to the key's default value without breaking boot sequence. \nAn atacker will alternatively replace this with a custom shell. \n"
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 851c506b-6b7c-4ce2-8802-c703009d03c0
+    name: posh_ps_winlogon_helper_dll.yml
+  - id: cbf93e5d-ca6c-4722-8bea-e9119007c248
+    name: registry_set_asep_reg_keys_modification_currentversion_nt.yml
+

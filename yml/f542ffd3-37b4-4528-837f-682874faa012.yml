@@ -15,5 +15,7 @@ description: "The following Atomic will attempt to disable Windows-Defender usin
   \ to DISM.exe, this cmdlet is used to enumerate, install, uninstall, configure, and update features and packages in Windows images.\nA successful execution will not standard-out any details. Remove the\
   \ quiet switch if verbosity is needed.\nThis method will remove Defender and it's packages.\nReference: https://docs.microsoft.com/en-us/powershell/module/dism/disable-windowsoptionalfeature?view=windowsserver2022-ps\n"
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 99c4658d-2c5e-4d87-828d-7c066ca537c3
+    name: posh_ps_disable_windowsoptionalfeature.yml

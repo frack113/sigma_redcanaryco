@@ -855,6 +855,7 @@ file_event_win_cve_2022_24527_lpe.yml;False
 file_event_win_detect_powerup_dllhijacking.yml;True
 file_event_win_dll_sideloading_space_path.yml;False
 file_event_win_error_handler_cmd_persistence.yml;False
+file_event_win_exchange_webshell_drop.yml;False
 file_event_win_ghostpack_safetykatz.yml;False
 file_event_win_gotoopener_artefact.yml;True
 file_event_win_hack_dumpert.yml;True
@@ -1115,7 +1116,7 @@ posh_ps_detect_vm_env.yml;True
 posh_ps_directorysearcher.yml;True
 posh_ps_directoryservices_accountmanagement.yml;True
 posh_ps_disable_psreadline_command_history.yml;False
-posh_ps_disable_windowsoptionalfeature.yml;False
+posh_ps_disable_windowsoptionalfeature.yml;True
 posh_ps_dnscat_execution.yml;True
 posh_ps_dump_password_windows_credential_manager.yml;True
 posh_ps_enable_psremoting.yml;True
@@ -2134,6 +2135,7 @@ proc_creation_win_wab_execution_from_non_default_location.yml;False
 proc_creation_win_wab_unusual_parents.yml;False
 proc_creation_win_weak_or_abused_passwords.yml;False
 proc_creation_win_webbrowserpassview.yml;True
+proc_creation_win_webshell_chopper.yml;False
 proc_creation_win_webshell_detection.yml;False
 proc_creation_win_webshell_hacking.yml;False
 proc_creation_win_webshell_recon_detection.yml;False
@@ -2216,7 +2218,7 @@ registry_event_ssp_added_lsa_config.yml;True
 registry_event_stickykey_like_backdoor.yml;True
 registry_event_susp_atbroker_change.yml;False
 registry_event_susp_download_run_key.yml;False
-registry_event_susp_lsass_dll_load.yml;False
+registry_event_susp_lsass_dll_load.yml;True
 registry_event_susp_mic_cam_access.yml;True
 registry_event_trust_record_modification.yml;True
 registry_set_abusing_windows_telemetry_for_persistence.yml;False

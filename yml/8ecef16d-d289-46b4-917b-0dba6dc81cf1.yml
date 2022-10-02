@@ -16,5 +16,7 @@ description: "The following Atomic will modify an undocumented registry key that
   \ contain the path to the DLL. \nReference: https://blog.xpnsec.com/exploring-mimikatz-part-1/ and source https://github.com/oxfemale/LogonCredentialsSteal\nNote that if any LSA based protection is enabled,\
   \ this will most likely not be successful with LSASS.exe loading the DLL.\n"
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: b3503044-60ce-4bf4-bbcb-e3db98788823
+    name: registry_event_susp_lsass_dll_load.yml
