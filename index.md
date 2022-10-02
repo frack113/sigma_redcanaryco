@@ -59,7 +59,7 @@ Caution: a test can generate a lot of noise...
 
 [Disable Windows Defender with DISM](tests/871438ac-7d6e-432a-b27d-3e7db69faf58.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Disable Windows Defender with PwSh Disable-WindowsOptionalFeature](tests/f542ffd3-37b4-4528-837f-682874faa012.md) ['windows'] (sigma rule :x:)
+[Disable Windows Defender with PwSh Disable-WindowsOptionalFeature](tests/f542ffd3-37b4-4528-837f-682874faa012.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Stop and Remove Arbitrary Security Windows Service](tests/ae753dda-0f15-4af6-a168-b9ba16143143.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -527,7 +527,7 @@ Caution: a test can generate a lot of noise...
 
 [Restart System - Windows](tests/f4648f0d-bf78-483c-bafc-3ec99cd1c302.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Logoff System - Windows](tests/3d8c25b5-7ff5-4c9d-b21f-85ebd06654a4.md) ['windows'] (sigma rule :x:)
+[Logoff System - Windows](tests/3d8c25b5-7ff5-4c9d-b21f-85ebd06654a4.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Restart System via `shutdown` - macOS/Linux](tests/6326dbc4-444b-4c04-88f4-27e94d0327cb.md) ['macos', 'linux'] (sigma rule :x:)
 
@@ -1145,17 +1145,17 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1547.001
-[HKCU - Policy Settings Explorer Run Key](tests/a70faea1-e206-4f6f-8d9a-67379be8f6f1.md) ['windows'] (sigma rule :x:)
+[HKCU - Policy Settings Explorer Run Key](tests/a70faea1-e206-4f6f-8d9a-67379be8f6f1.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[HKLM - Modify default System Shell - Winlogon Shell KEY Value ](tests/1d958c61-09c6-4d9e-b26b-4130314e520e.md) ['windows'] (sigma rule :x:)
+[HKLM - Modify default System Shell - Winlogon Shell KEY Value ](tests/1d958c61-09c6-4d9e-b26b-4130314e520e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[HKLM - Append Command to Winlogon Userinit KEY Value](tests/f7fab6cc-8ece-4ca7-a0f1-30a22fccd374.md) ['windows'] (sigma rule :x:)
+[HKLM - Append Command to Winlogon Userinit KEY Value](tests/f7fab6cc-8ece-4ca7-a0f1-30a22fccd374.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Add persistance via Recycle bin](tests/bda6a3d6-7aa7-4e89-908b-306772e9662f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Change Startup Folder - HKCU Modify User Shell Folders Startup Value](tests/8834b65a-f808-4ece-ad7e-2acdf647aafa.md) ['windows'] (sigma rule :x:)
+[Change Startup Folder - HKCU Modify User Shell Folders Startup Value](tests/8834b65a-f808-4ece-ad7e-2acdf647aafa.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[HKLM - Policy Settings Explorer Run Key](tests/b5c9a9bc-dda3-4ea0-b16a-add8e81ab75f.md) ['windows'] (sigma rule :x:)
+[HKLM - Policy Settings Explorer Run Key](tests/b5c9a9bc-dda3-4ea0-b16a-add8e81ab75f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Suspicious bat file run from startup Folder](tests/5b6768e4-44d2-44f0-89da-a01d1430fd5e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1171,7 +1171,7 @@ Caution: a test can generate a lot of noise...
 
 [Reg Key RunOnce](tests/554cbd88-cde1-4b56-8168-0be552eed9eb.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Change Startup Folder - HKLM Modify User Shell Folders Common Startup Value](tests/acfef903-7662-447e-a391-9c91c2f00f7b.md) ['windows'] (sigma rule :x:)
+[Change Startup Folder - HKLM Modify User Shell Folders Common Startup Value](tests/acfef903-7662-447e-a391-9c91c2f00f7b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Suspicious vbs file run from startup Folder](tests/2cb98256-625e-4da9-9d44-f2e5f90b8bd5.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -2269,7 +2269,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1547.008
-[Modify Registry to load Arbitrary DLL into LSASS - LsaDbExtPt](tests/8ecef16d-d289-46b4-917b-0dba6dc81cf1.md) ['windows'] (sigma rule :x:)
+[Modify Registry to load Arbitrary DLL into LSASS - LsaDbExtPt](tests/8ecef16d-d289-46b4-917b-0dba6dc81cf1.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1546.015

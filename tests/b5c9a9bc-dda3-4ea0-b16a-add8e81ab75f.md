@@ -1,7 +1,7 @@
 
 [back](../index.md)
 
-Find sigma rule :x: 
+Find sigma rule :heavy_check_mark: 
 
 # Attack: Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder 
 
@@ -69,6 +69,8 @@ This test will create a HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVer
 powershell
 
 # Sigma Rule
+ - registry_set_asep_reg_keys_modification_currentversion.yml (id: 20f0ee37-5942-4e45-b7d5-c5b5db9df5cd)
+
 
 
 [back](../index.md)

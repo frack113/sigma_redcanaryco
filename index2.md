@@ -161,12 +161,14 @@
   * T1105 [MAZE Propagation Script](tests/70f4d07c-5c3e-4d53-bb0a-cdf3ada14baf.md)
   * T1569.002 [BlackCat pre-encryption cmds with Lateral Movement](tests/31eb7828-97d7-4067-9c1e-c6feb85edc4b.md)
   * T1546.008 [Replace binary of sticky keys](tests/934e90cf-29ca-48b3-863c-411737ad44e3.md)
+  * T1547.001 [Change Startup Folder - HKCU Modify User Shell Folders Startup Value](tests/8834b65a-f808-4ece-ad7e-2acdf647aafa.md)
   * T1562.006 [Disable Powershell ETW Provider - Windows](tests/6f118276-121d-4c09-bb58-a8fb4a72ee84.md)
   * T1204.002 [LNK Payload Download](tests/581d7521-9c4b-420e-9695-2aec5241167f.md)
   * T1552.001 [WinPwn - passhunt](tests/00e3e3c7-6c3c-455e-bd4b-461c7f0e7797.md)
   * T1127 [Lolbin Jsc.exe compile javascript to exe](tests/1ec1c269-d6bd-49e7-b71b-a461f7fa7bc8.md)
   * T1555 [WinPwn - Loot local Credentials - lazagne](tests/079ee2e9-6f16-47ca-a635-14efcd994118.md)
   * T1218 [Lolbas ie4uinit.exe use as proxy](tests/13c0804e-615e-43ad-b223-2dfbacd0b0b3.md)
+  * T1547.001 [Change Startup Folder - HKLM Modify User Shell Folders Common Startup Value](tests/acfef903-7662-447e-a391-9c91c2f00f7b.md)
 * file_event_win_susp_get_variable.yml
   * T1574.008 [powerShell Persistence via hijacking default modules - Get-Variable.exe](tests/1561de08-0b4b-498e-8261-e922f3494aae.md)
 * file_event_win_tool_psexec.yml
@@ -889,6 +891,7 @@
   * T1218.005 [Invoke HTML Application - Direct download from URI](tests/39ceed55-f653-48ac-bd19-aceceaf525db.md)
   * T1218.005 [Invoke HTML Application - Simulate Lateral Movement over UNC Path](tests/b8a8bdb2-7eae-490d-8251-d5e0295b2362.md)
   * T1134.004 [Parent PID Spoofing - Spawn from New Process](tests/2988133e-561c-4e42-a15f-6281e6a9b2db.md)
+  * T1547.001 [Change Startup Folder - HKCU Modify User Shell Folders Startup Value](tests/8834b65a-f808-4ece-ad7e-2acdf647aafa.md)
   * T1218.005 [Invoke HTML Application - Jscript Engine Simulating Double Click](tests/58a193ec-131b-404e-b1ca-b35cf0b18c33.md)
   * T1059.001 [ATHPowerShellCommandLineParameter -Command parameter variations](tests/686a9785-f99b-41d4-90df-66ed515f81d7.md)
   * T1218 [Invoke-ATHRemoteFXvGPUDisablementCommand base test](tests/9ebe7901-7edf-45c0-b5c7-8366300919db.md)
@@ -898,6 +901,7 @@
   * T1134.004 [Parent PID Spoofing - Spawn from Specified Process](tests/cbbff285-9051-444a-9d17-c07cd2d230eb.md)
   * T1059.001 [ATHPowerShellCommandLineParameter -Command parameter variations with encoded arguments](tests/1c0a870f-dc74-49cf-9afc-eccc45e58790.md)
   * T1059.001 [ATHPowerShellCommandLineParameter -EncodedCommand parameter variations](tests/86a43bad-12e3-4e85-b97c-4d5cf25b95c3.md)
+  * T1547.001 [Change Startup Folder - HKLM Modify User Shell Folders Common Startup Value](tests/acfef903-7662-447e-a391-9c91c2f00f7b.md)
   * T1134.004 [Parent PID Spoofing - Spawn from Current Process](tests/14920ebd-1d61-491a-85e0-fe98efe37f25.md)
   * T1134.004 [Parent PID Spoofing - Spawn from svchost.exe](tests/e9f2b777-3123-430b-805d-5cedc66ab591.md)
   * T1556.002 [Install and Register Password Filter DLL](tests/a7961770-beb5-4134-9674-83d7e1fa865c.md)
@@ -969,6 +973,8 @@
   * T1033 [Find computers where user has session - Stealth mode (PowerView)](tests/29857f27-a36f-4f7e-8084-4557cd6207ca.md)
   * T1087.002 [WinPwn - generaldomaininfo](tests/ce483c35-c74b-45a7-a670-631d1e69db3d.md)
   * T1135 [WinPwn - shareenumeration](tests/987901d1-5b87-4558-a6d9-cffcabc638b8.md)
+* posh_ps_disable_windowsoptionalfeature.yml
+  * T1562.001 [Disable Windows Defender with PwSh Disable-WindowsOptionalFeature](tests/f542ffd3-37b4-4528-837f-682874faa012.md)
 * posh_ps_dnscat_execution.yml
   * T1071.004 [DNS C2](tests/e7bf9802-2e78-4db9-93b5-181b7bcd37d7.md)
 * posh_ps_dump_password_windows_credential_manager.yml
@@ -2316,6 +2322,8 @@
   * T1218.007 [WMI Win32_Product Class - Execute Local MSI file with embedded JScript](tests/882082f0-27c6-4eec-a43c-9aa80bccdb30.md)
 * posh_ps_winlogon_helper_dll.yml
   * T1547.004 [Winlogon Userinit Key Persistence - PowerShell](tests/fb32c935-ee2e-454b-8fa3-1c46b42e8dfb.md)
+  * T1547.001 [HKLM - Modify default System Shell - Winlogon Shell KEY Value ](tests/1d958c61-09c6-4d9e-b26b-4130314e520e.md)
+  * T1547.001 [HKLM - Append Command to Winlogon Userinit KEY Value](tests/f7fab6cc-8ece-4ca7-a0f1-30a22fccd374.md)
   * T1547.004 [Winlogon Notify Key Logon Persistence - PowerShell](tests/d40da266-e073-4e5a-bb8b-2b385023e5f9.md)
   * T1547.004 [Winlogon Shell Key Persistence - PowerShell](tests/bf9f9d65-ee4d-4c3e-a843-777d04f19c38.md)
   * T1562.001 [Lockbit Black - Use Registry Editor to turn on automatic logon -Powershell](tests/5e27f36d-5132-4537-b43b-413b0d5eec9a.md)
@@ -3216,6 +3224,7 @@
   * T1039 [Copy a sensitive File over Administive share with Powershell](tests/7762e120-5879-44ff-97f8-008b401b9a98.md)
   * T1105 [svchost writing a file to a UNC path](tests/fa5a2759-41d7-4e13-a19c-e8f28a53566f.md)
   * T1003.002 [dump volume shadow copy hives with System.IO.File](tests/9d77fed7-05f8-476e-a81b-8ff0472c64d0.md)
+  * T1547.001 [Change Startup Folder - HKLM Modify User Shell Folders Common Startup Value](tests/acfef903-7662-447e-a391-9c91c2f00f7b.md)
 * proc_creation_win_susp_copy_system32.yml
   * T1003.003 [Copy NTDS.dit from Volume Shadow Copy](tests/c6237146-9ea6-4711-85c9-c56d263a6b03.md)
   * T1574.001 [DLL Search Order Hijacking - amsi.dll](tests/8549ad4b-b5df-4a2d-a3d7-2aee9e7052a3.md)
@@ -3223,6 +3232,7 @@
   * T1543.003 [TinyTurla backdoor service w64time](tests/ef0581fd-528e-4662-87bc-4c2affb86940.md)
   * T1218.011 [Rundll32 with desk.cpl](tests/83a95136-a496-423c-81d3-1c6750133917.md)
   * T1546.008 [Replace binary of sticky keys](tests/934e90cf-29ca-48b3-863c-411737ad44e3.md)
+  * T1547.001 [Change Startup Folder - HKCU Modify User Shell Folders Startup Value](tests/8834b65a-f808-4ece-ad7e-2acdf647aafa.md)
   * T1036.003 [Masquerading - powershell.exe running as taskhostw.exe](tests/ac9d0fc3-8aa8-4ab5-b11f-682cd63b40aa.md)
   * T1036.003 [Masquerading - cscript.exe running as notepad.exe](tests/3a2a578b-0a01-46e4-92e3-62e2859b42f0.md)
   * T1036.003 [Masquerading - wscript.exe running as svchost.exe](tests/24136435-c91a-4ede-9da1-8b284a1c1a23.md)
@@ -3235,6 +3245,7 @@
   * T1546.002 [Set Arbitrary Binary as Screensaver](tests/281201e7-de41-4dc9-b73d-f288938cbb64.md)
   * T1105 [svchost writing a file to a UNC path](tests/fa5a2759-41d7-4e13-a19c-e8f28a53566f.md)
   * T1036.003 [Masquerading as Windows LSASS process](tests/5ba5a3d1-cf3c-4499-968a-a93155d1f717.md)
+  * T1547.001 [Change Startup Folder - HKLM Modify User Shell Folders Common Startup Value](tests/acfef903-7662-447e-a391-9c91c2f00f7b.md)
 * proc_creation_win_susp_csc_folder.yml
   * T1218.005 [Invoke HTML Application - Jscript Engine over Local UNC Simulating Lateral Movement](tests/007e5672-2088-4853-a562-7490ddc19447.md)
   * T1219 [ScreenConnect Application Download and Install on Windows](tests/4a18cc4e-416f-4966-9a9d-75731c4684c0.md)
@@ -4028,6 +4039,8 @@
   * T1547.005 [Modify SSP configuration in registry](tests/afdfd7e3-8a0b-409f-85f7-886fdf249c9e.md)
 * registry_event_stickykey_like_backdoor.yml
   * T1546.008 [Attaches Command Prompt as a Debugger to a List of Target Processes](tests/3309f53e-b22b-4eb6-8fd2-a6cf58b355a9.md)
+* registry_event_susp_lsass_dll_load.yml
+  * T1547.008 [Modify Registry to load Arbitrary DLL into LSASS - LsaDbExtPt](tests/8ecef16d-d289-46b4-917b-0dba6dc81cf1.md)
 * registry_event_susp_mic_cam_access.yml
   * T1125 [Registry artefact when application use webcam](tests/6581e4a7-42e3-43c5-a0d2-5a0d62f9702a.md)
   * T1123 [Registry artefact when application use microphone](tests/7a21cce2-6ada-4f7c-afd9-e1e9c481e44a.md)
@@ -4051,6 +4064,8 @@
 * registry_set_asep_reg_keys_modification_currentversion.yml
   * T1219 [RemotePC Software Execution](tests/fbff3f1f-b0bf-448e-840f-7e1687affdce.md)
   * T1218 [InfDefaultInstall.exe .inf Execution](tests/54ad7d5a-a1b5-472c-b6c4-f8090fb2daef.md)
+  * T1547.001 [HKCU - Policy Settings Explorer Run Key](tests/a70faea1-e206-4f6f-8d9a-67379be8f6f1.md)
+  * T1547.001 [HKLM - Policy Settings Explorer Run Key](tests/b5c9a9bc-dda3-4ea0-b16a-add8e81ab75f.md)
   * T1547.001 [Reg Key Run](tests/e55be3fd-3521-4610-9d1a-e210e42dcf05.md)
   * T1547.001 [PowerShell Registry RunOnce](tests/eb44f842-0457-4ddc-9b92-c4caa144ac42.md)
   * T1036.003 [Masquerading - non-windows exe running as windows exe](tests/bc15c13f-d121-4b1f-8c7d-28d95854d086.md)
@@ -4059,6 +4074,8 @@
   * T1112 [NetWire RAT Registry Key Creation](tests/65704cd4-6e36-4b90-b6c1-dc29a82c8e56.md)
   * T1547.001 [Reg Key RunOnce](tests/554cbd88-cde1-4b56-8168-0be552eed9eb.md)
 * registry_set_asep_reg_keys_modification_currentversion_nt.yml
+  * T1547.001 [HKLM - Modify default System Shell - Winlogon Shell KEY Value ](tests/1d958c61-09c6-4d9e-b26b-4130314e520e.md)
+  * T1547.001 [HKLM - Append Command to Winlogon Userinit KEY Value](tests/f7fab6cc-8ece-4ca7-a0f1-30a22fccd374.md)
   * T1546.012 [GlobalFlags in Image File Execution Options](tests/13117939-c9b2-4a43-999e-0a543df92f0d.md)
   * T1546.012 [IFEO Global Flags](tests/46b1f278-c8ee-4aa5-acce-65e77b11f3c1.md)
   * T1546.008 [Attaches Command Prompt as a Debugger to a List of Target Processes](tests/3309f53e-b22b-4eb6-8fd2-a6cf58b355a9.md)
@@ -4210,8 +4227,13 @@
   * T1562.001 [Tamper with Windows Defender ATP using Aliases - PowerShell](tests/c531aa6e-9c97-4b29-afee-9b7be6fc8a64.md)
 * registry_set_winlogon_notify_key.yml
   * T1547.004 [Winlogon Notify Key Logon Persistence - PowerShell](tests/d40da266-e073-4e5a-bb8b-2b385023e5f9.md)
+* sigma-rules/proc_creation_win_susp_logoff.yml
+  * T1529 [Logoff System - Windows](tests/3d8c25b5-7ff5-4c9d-b21f-85ebd06654a4.md)
 * sigma-rules\proc_creation_win_pdq_deploy.yml
   * T1072 [PDQ Deploy RAT](tests/e447b83b-a698-4feb-bed1-a7aaf45c3443.md)
+* sigma-rules\registry_set_susp_user_shell_folders.yml
+  * T1547.001 [Change Startup Folder - HKCU Modify User Shell Folders Startup Value](tests/8834b65a-f808-4ece-ad7e-2acdf647aafa.md)
+  * T1547.001 [Change Startup Folder - HKLM Modify User Shell Folders Common Startup Value](tests/acfef903-7662-447e-a391-9c91c2f00f7b.md)
 * sysmon_accessing_winapi_in_powershell_credentials_dumping.yml
   * T1003.001 [Dump LSASS.exe Memory using Out-Minidump.ps1](tests/6502c8f0-b775-4dbd-9193-1298f56b6781.md)
   * T1187 [WinPwn - PowerSharpPack - Retrieving NTLM Hashes without Touching LSASS](tests/7f06b25c-799e-40f1-89db-999c9cc84317.md)
