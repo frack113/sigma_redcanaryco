@@ -95,7 +95,7 @@ Caution: a test can generate a lot of noise...
 
 [WinPwn - Kill the event log services for stealth](tests/7869d7a3-3a30-4d2c-a5d2-f1cd9c34ce66.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[LockBit Black - Disable Privacy Settings Experience Using Registry -Powershell](tests/d8c57eaa-497a-4a08-961e-bd5efd7c9374.md) ['windows'] (sigma rule :x:)
+[LockBit Black - Disable Privacy Settings Experience Using Registry -Powershell](tests/d8c57eaa-497a-4a08-961e-bd5efd7c9374.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Disable macOS Gatekeeper](tests/2a821573-fb3f-4e71-92c3-daac7432f053.md) ['macos'] (sigma rule :x:)
 
@@ -820,6 +820,8 @@ Caution: a test can generate a lot of noise...
 [Download a file with IMEWDBLD.exe](tests/1a02df58-09af-4064-a765-0babe1a0d1e2.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [certutil download (verifyctl)](tests/ffd492e3-0455-4518-9fb1-46527c9f241b.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[iwr or Invoke Web-Request download](tests/c01cad7f-7a4c-49df-985e-b190dcf6a279.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [File Download via PowerShell](tests/54a4daf1-71df-4383-9ba7-f1a295d8b6d2.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -2803,7 +2805,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1592.001
-[Enumerate PlugNPlay Camera](tests/d430bf85-b656-40e7-b238-42db01df0183.md) ['windows'] (sigma rule :x:)
+[Enumerate PlugNPlay Camera](tests/d430bf85-b656-40e7-b238-42db01df0183.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1526

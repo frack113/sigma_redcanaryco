@@ -483,6 +483,11 @@
   * T1105 [Download a file using wscript](tests/97116a3f-efac-4b26-8336-b9cb18c45188.md)
 * net_connection_win_script_wan.yml
   * T1105 [Download a file using wscript](tests/97116a3f-efac-4b26-8336-b9cb18c45188.md)
+* net_connection_win_susp_epmap.yml
+  * T1110.001 [Password Brute User using Kerbrute Tool](tests/59dbeb1a-79a7-4c2a-baf4-46d0f4c761c4.md)
+  * T1110.004 [Brute Force:Credential Stuffing using Kerbrute Tool](tests/4852c630-87a9-409b-bb5e-5dc12c9ebcde.md)
+  * T1087.002 [Kerbrute - userenum](tests/f450461c-18d1-4452-9f0d-2c42c3f08624.md)
+  * T1110.003 [Password Spray using Kerbrute Tool](tests/c6f25ec3-6475-47a9-b75d-09ac593c5ecb.md)
 * net_connection_win_susp_outbound_kerberos_connection.yml
   * T1016 [List Open Egress Ports](tests/4b467538-f102-491d-ace7-ed487b853bf5.md)
   * T1110.001 [Password Brute User using Kerbrute Tool](tests/59dbeb1a-79a7-4c2a-baf4-46d0f4c761c4.md)
@@ -493,11 +498,6 @@
   * T1048.003 [Exfiltration Over Alternative Protocol - SMTP](tests/ec3a835e-adca-4c7c-88d2-853b69c11bb9.md)
 * net_connection_win_susp_rdp.yml
   * T1016 [List Open Egress Ports](tests/4b467538-f102-491d-ace7-ed487b853bf5.md)
-* net_connection_win_susps_epmap.yml
-  * T1110.001 [Password Brute User using Kerbrute Tool](tests/59dbeb1a-79a7-4c2a-baf4-46d0f4c761c4.md)
-  * T1110.004 [Brute Force:Credential Stuffing using Kerbrute Tool](tests/4852c630-87a9-409b-bb5e-5dc12c9ebcde.md)
-  * T1087.002 [Kerbrute - userenum](tests/f450461c-18d1-4452-9f0d-2c42c3f08624.md)
-  * T1110.003 [Password Spray using Kerbrute Tool](tests/c6f25ec3-6475-47a9-b75d-09ac593c5ecb.md)
 * pipe_created_efspotato_namedpipe.yml
   * T1134.001 [Bad Potato](tests/9c6d799b-c111-4749-a42f-ec2f8cb51448.md)
 * pipe_created_psexec_default_pipe.yml
@@ -2130,6 +2130,7 @@
   * T1491.001 [Replace Desktop Wallpaper](tests/30558d53-9d76-41c4-9267-a7bd5184bed3.md)
 * posh_ps_susp_win32_pnpentity.yml
   * T1120 [Win32_PnPEntity Hardware Inventory](tests/2cb4dbf2-2dca-4597-8678-4d39d207a3a5.md)
+  * T1592.001 [Enumerate PlugNPlay Camera](tests/d430bf85-b656-40e7-b238-42db01df0183.md)
 * posh_ps_susp_win32_shadowcopy.yml
   * T1489 [Windows - Stop service by killing process](tests/f3191b84-c38b-400b-867e-3a217a27795f.md)
   * T1490 [Windows - Delete Volume Shadow Copies via WMI with PowerShell](tests/39a295ca-7059-4a88-86f6-09556c1211e7.md)
@@ -2303,6 +2304,7 @@
   * T1552.004 [ADFS token signing and encryption certificates theft - Remote](tests/cab413d8-9e4a-4b8d-9b84-c985bd73a442.md)
   * T1048.003 [MAZE FTP Upload](tests/57799bc2-ad1e-4130-a793-fb0c385130ba.md)
   * T1082 [WinPwn - itm4nprivesc](tests/3d256a2f-5e57-4003-8eb6-64d91b1da7ce.md)
+  * T1105 [iwr or Invoke Web-Request download](tests/c01cad7f-7a4c-49df-985e-b190dcf6a279.md)
   * T1219 [TeamViewer Files Detected Test on Windows](tests/8ca3b96d-8983-4a7f-b125-fc98cc0a2aa0.md)
   * T1105 [File Download via PowerShell](tests/54a4daf1-71df-4383-9ba7-f1a295d8b6d2.md)
   * T1620 [WinPwn - Reflectively load Mimik@tz into memory](tests/56b9589c-9170-4682-8c3d-33b86ecb5119.md)
@@ -2824,6 +2826,8 @@
   * T1055 [Shellcode execution via VBA](tests/1c91e740-1729-4329-b779-feba6e71d048.md)
 * proc_creation_win_office_spawn_exe_from_users_directory.yml
   * T1564 [Extract binary files via VBA](tests/6afe288a-8a8b-4d33-a629-8d03ba9dad3a.md)
+* proc_creation_win_pdq_deploy.yml
+  * T1072 [PDQ Deploy RAT](tests/e447b83b-a698-4feb-bed1-a7aaf45c3443.md)
 * proc_creation_win_possible_applocker_bypass.yml
   * T1219 [RemotePC Software Execution](tests/fbff3f1f-b0bf-448e-840f-7e1687affdce.md)
   * T1218.004 [InstallUtil Uninstall method call - '/installtype=notransaction /action=uninstall' variant](tests/06d9deba-f732-48a8-af8e-bdd6e4d98c1d.md)
@@ -3347,6 +3351,10 @@
   * T1082 [Hostname Discovery (Windows)](tests/85cfbf23-4a1e-4342-8792-007e004b975f.md)
   * T1558.004 [Get-DomainUser with PowerView](tests/d6139549-7b72-4e48-9ea1-324fc9bdf88a.md)
   * T1036.003 [File Extension Masquerading](tests/c7fa0c3b-b57f-4cba-9118-863bf4e653fc.md)
+* proc_creation_win_susp_invoke_webrequest_download.yml
+  * T1105 [iwr or Invoke Web-Request download](tests/c01cad7f-7a4c-49df-985e-b190dcf6a279.md)
+* proc_creation_win_susp_logoff.yml
+  * T1529 [Logoff System - Windows](tests/3d8c25b5-7ff5-4c9d-b21f-85ebd06654a4.md)
 * proc_creation_win_susp_machineguid.yml
   * T1082 [Windows MachineGUID Discovery](tests/224b4daf-db44-404e-b6b2-f4d1f0126ef8.md)
 * proc_creation_win_susp_mofcomp_execution.yml
@@ -3736,6 +3744,7 @@
   * T1039 [Copy a sensitive File over Administive share with Powershell](tests/7762e120-5879-44ff-97f8-008b401b9a98.md)
   * T1003.001 [Dump LSASS with .Net 5 createdump.exe](tests/9d0072c8-7cca-45c4-bd14-f852cfa35cf0.md)
   * T1552.001 [WinPwn - passhunt](tests/00e3e3c7-6c3c-455e-bd4b-461c7f0e7797.md)
+  * T1105 [iwr or Invoke Web-Request download](tests/c01cad7f-7a4c-49df-985e-b190dcf6a279.md)
 * proc_creation_win_susp_script_execution.yml
   * T1204.002 [OSTAP JS version](tests/add560ef-20d6-4011-a937-2c340f930911.md)
   * T1204.002 [OSTap Payload Download](tests/3f3af983-118a-4fa1-85d3-ba4daa739d80.md)
@@ -3859,6 +3868,7 @@
   * T1078.003 [WinPwn - Loot local Credentials - powerhell kittie](tests/9e9fd066-453d-442f-88c1-ad7911d32912.md)
   * T1048.003 [MAZE FTP Upload](tests/57799bc2-ad1e-4130-a793-fb0c385130ba.md)
   * T1082 [WinPwn - itm4nprivesc](tests/3d256a2f-5e57-4003-8eb6-64d91b1da7ce.md)
+  * T1105 [iwr or Invoke Web-Request download](tests/c01cad7f-7a4c-49df-985e-b190dcf6a279.md)
   * T1219 [TeamViewer Files Detected Test on Windows](tests/8ca3b96d-8983-4a7f-b125-fc98cc0a2aa0.md)
   * T1105 [File Download via PowerShell](tests/54a4daf1-71df-4383-9ba7-f1a295d8b6d2.md)
   * T1620 [WinPwn - Reflectively load Mimik@tz into memory](tests/56b9589c-9170-4682-8c3d-33b86ecb5119.md)
@@ -4130,6 +4140,8 @@
   * T1112 [Disable Windows Toast Notifications](tests/003f466a-6010-4b15-803a-cbb478a314d7.md)
 * registry_set_disable_microsoft_office_security_features.yml
   * T1562.001 [Disable Microsoft Office Security Features](tests/6f5fb61b-4e56-4a3d-a8c3-82e13686c6d7.md)
+* registry_set_disable_privacy_settings_experience.yml
+  * T1562.001 [LockBit Black - Disable Privacy Settings Experience Using Registry -Powershell](tests/d8c57eaa-497a-4a08-961e-bd5efd7c9374.md)
 * registry_set_disable_security_center_notifications.yml
   * T1112 [Disable Windows Security Center Notifications](tests/45914594-8df6-4ea9-b3cc-7eb9321a807e.md)
 * registry_set_disable_system_restore.yml
@@ -4211,6 +4223,9 @@
   * T1112 [Suppress Win Defender Notifications](tests/c30dada3-7777-4590-b970-dc890b8cf113.md)
 * registry_set_susp_run_key_img_folder.yml
   * T1036.003 [Masquerading - non-windows exe running as windows exe](tests/bc15c13f-d121-4b1f-8c7d-28d95854d086.md)
+* registry_set_susp_user_shell_folders.yml
+  * T1547.001 [Change Startup Folder - HKCU Modify User Shell Folders Startup Value](tests/8834b65a-f808-4ece-ad7e-2acdf647aafa.md)
+  * T1547.001 [Change Startup Folder - HKLM Modify User Shell Folders Common Startup Value](tests/acfef903-7662-447e-a391-9c91c2f00f7b.md)
 * registry_set_terminal_server_tampering.yml
   * T1078.001 [Enable Guest account with RDP capability and admin privileges](tests/99747561-ed8d-47f2-9c91-1e5fde1ed6e0.md)
 * registry_set_timeproviders_dllname.yml
@@ -4227,13 +4242,6 @@
   * T1562.001 [Tamper with Windows Defender ATP using Aliases - PowerShell](tests/c531aa6e-9c97-4b29-afee-9b7be6fc8a64.md)
 * registry_set_winlogon_notify_key.yml
   * T1547.004 [Winlogon Notify Key Logon Persistence - PowerShell](tests/d40da266-e073-4e5a-bb8b-2b385023e5f9.md)
-* sigma-rules/proc_creation_win_susp_logoff.yml
-  * T1529 [Logoff System - Windows](tests/3d8c25b5-7ff5-4c9d-b21f-85ebd06654a4.md)
-* sigma-rules\proc_creation_win_pdq_deploy.yml
-  * T1072 [PDQ Deploy RAT](tests/e447b83b-a698-4feb-bed1-a7aaf45c3443.md)
-* sigma-rules\registry_set_susp_user_shell_folders.yml
-  * T1547.001 [Change Startup Folder - HKCU Modify User Shell Folders Startup Value](tests/8834b65a-f808-4ece-ad7e-2acdf647aafa.md)
-  * T1547.001 [Change Startup Folder - HKLM Modify User Shell Folders Common Startup Value](tests/acfef903-7662-447e-a391-9c91c2f00f7b.md)
 * sysmon_accessing_winapi_in_powershell_credentials_dumping.yml
   * T1003.001 [Dump LSASS.exe Memory using Out-Minidump.ps1](tests/6502c8f0-b775-4dbd-9193-1298f56b6781.md)
   * T1187 [WinPwn - PowerSharpPack - Retrieving NTLM Hashes without Touching LSASS](tests/7f06b25c-799e-40f1-89db-999c9cc84317.md)

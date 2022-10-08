@@ -75,7 +75,7 @@ powershell
 
  - file_event_win_susp_dropper.yml (id: 297afac9-5d02-4138-8c58-b977bac60556)
 
- - sigma-rules\registry_set_susp_user_shell_folders.yml (id: 9c226817-8dc9-46c2-a58d-66655aafd7dc)
+ - registry_set_susp_user_shell_folders.yml (id: 9c226817-8dc9-46c2-a58d-66655aafd7dc)
 
 
 
