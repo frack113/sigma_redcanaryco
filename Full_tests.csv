@@ -322,7 +322,7 @@ defense-evasion;T1562.001;powershell;['windows'];WinPwn - Kill the event log ser
 defense-evasion;T1562.001;powershell;['windows'];Tamper with Windows Defender ATP using Aliases - PowerShell;c531aa6e-9c97-4b29-afee-9b7be6fc8a64;True;31
 defense-evasion;T1562.001;command_prompt;['windows'];LockBit Black - Disable Privacy Settings Experience Using Registry -cmd;d6d22332-d07d-498f-aea0-6139ecb7850e;True;32
 defense-evasion;T1562.001;command_prompt;['windows'];LockBit Black - Use Registry Editor to turn on automatic logon -cmd;9719d0e1-4fe0-4b2e-9a72-7ad3ee8ddc70;True;33
-defense-evasion;T1562.001;powershell;['windows'];LockBit Black - Disable Privacy Settings Experience Using Registry -Powershell;d8c57eaa-497a-4a08-961e-bd5efd7c9374;False;34
+defense-evasion;T1562.001;powershell;['windows'];LockBit Black - Disable Privacy Settings Experience Using Registry -Powershell;d8c57eaa-497a-4a08-961e-bd5efd7c9374;True;34
 defense-evasion;T1562.001;powershell;['windows'];Lockbit Black - Use Registry Editor to turn on automatic logon -Powershell;5e27f36d-5132-4537-b43b-413b0d5eec9a;True;35
 defense-evasion;T1562.001;powershell;['windows'];Disable Windows Defender with PwSh Disable-WindowsOptionalFeature;f542ffd3-37b4-4528-837f-682874faa012;True;36
 defense-evasion;T1055.012;powershell;['windows'];Process Hollowing using PowerShell;562427b4-39ef-4e8c-af88-463a78e70b9c;True;1
@@ -1326,10 +1326,11 @@ command-and-control;T1105;command_prompt;['windows'];certreq download;6fdaae87-c
 command-and-control;T1105;command_prompt;['windows'];Download a file using wscript;97116a3f-efac-4b26-8336-b9cb18c45188;True;26
 command-and-control;T1105;sh;['linux'];Linux Download File and Run;bdc373c5-e9cf-4563-8a7b-a9ba720a90f3;False;27
 command-and-control;T1105;command_prompt;['windows'];Nimgrab - Transfer Files;b1729c57-9384-4d1c-9b99-9b220afb384e;True;28
+command-and-control;T1105;command_prompt;['windows'];iwr or Invoke Web-Request download;c01cad7f-7a4c-49df-985e-b190dcf6a279;True;29
 command-and-control;T1090.001;sh;['macos', 'linux'];Connection Proxy;0ac21132-4485-4212-a681-349e8a6637cd;False;1
 command-and-control;T1090.001;sh;['macos'];Connection Proxy for macOS UI;648d68c1-8bcd-4486-9abe-71c6655b6a2c;False;2
 command-and-control;T1090.001;powershell;['windows'];portproxy reg key;b8223ea9-4be2-44a6-b50a-9657a3d4e72a;True;3
-reconnaissance;T1592.001;powershell;['windows'];Enumerate PlugNPlay Camera;d430bf85-b656-40e7-b238-42db01df0183;False;1
+reconnaissance;T1592.001;powershell;['windows'];Enumerate PlugNPlay Camera;d430bf85-b656-40e7-b238-42db01df0183;True;1
 impact;T1489;command_prompt;['windows'];Windows - Stop service using Service Controller;21dfb440-830d-4c86-a3e5-2a491d5a8d04;True;1
 impact;T1489;command_prompt;['windows'];Windows - Stop service using net.exe;41274289-ec9c-4213-bea4-e43c4aa57954;True;2
 impact;T1489;command_prompt;['windows'];Windows - Stop service by killing process;f3191b84-c38b-400b-867e-3a217a27795f;True;3

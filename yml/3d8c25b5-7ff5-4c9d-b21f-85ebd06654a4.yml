@@ -18,4 +18,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: ec290c06-9b6b-4338-8b6b-095c0f284f10
-    name: sigma-rules/proc_creation_win_susp_logoff.yml
+    name: proc_creation_win_susp_logoff.yml

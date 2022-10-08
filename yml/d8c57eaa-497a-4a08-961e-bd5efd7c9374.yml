@@ -15,5 +15,7 @@ description: 'LockBit Black - Disable Privacy Settings Experience Using Registry
 
   '
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 0372e1f9-0fd2-40f7-be1b-a7b2b848fa7b
+    name: registry_set_disable_privacy_settings_experience.yml

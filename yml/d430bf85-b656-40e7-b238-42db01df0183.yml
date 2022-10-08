@@ -16,5 +16,7 @@ description: 'Enumerate PlugNPlay Camera using powershell commandlet. this techn
 
   '
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: b26647de-4feb-4283-af6b-6117661283c5
+    name: posh_ps_susp_win32_pnpentity.yml
