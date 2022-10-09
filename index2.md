@@ -3945,6 +3945,8 @@
   * T1548.002 [Bypass UAC using Fodhelper - PowerShell](tests/3f627297-6c38-4e7d-a278-fc2563eaaeaa.md)
 * proc_creation_win_ultraviewer.yml
   * T1219 [UltraViewer - RAT Execution](tests/19acf63b-55c4-4b6a-8552-00a8865105c8.md)
+* proc_creation_win_ultravnc.yml
+  * T1219 [UltraVNC Execution](tests/42e51815-a6cc-4c75-b970-3f0ff54b610e.md)
 * proc_creation_win_uninstall_crowdstrike_falcon.yml
   * T1562.001 [Uninstall Crowdstrike Falcon on Windows](tests/b32b1ccf-f7c1-49bc-9ddd-7d7466a7b297.md)
 * proc_creation_win_uninstall_sysmon.yml

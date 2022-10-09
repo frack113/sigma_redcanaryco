@@ -241,7 +241,7 @@ Caution: a test can generate a lot of noise...
 
 [LogMeIn Files Detected Test on Windows](tests/d03683ec-aae0-42f9-9b4c-534780e0f8e1.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[UltraVNC Execution](tests/42e51815-a6cc-4c75-b970-3f0ff54b610e.md) ['windows'] (sigma rule :x:)
+[UltraVNC Execution](tests/42e51815-a6cc-4c75-b970-3f0ff54b610e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [AnyDesk Files Detected Test on Windows](tests/6b8b7391-5c0a-4f8c-baee-78d8ce0ce330.md) ['windows'] (sigma rule :heavy_check_mark:)
 
