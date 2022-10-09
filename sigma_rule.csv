@@ -2132,7 +2132,7 @@ proc_creation_win_uac_bypass_wmp.yml;False
 proc_creation_win_uac_bypass_wsreset.yml;False
 proc_creation_win_uac_bypass_wsreset_integrity_level.yml;False
 proc_creation_win_ultraviewer.yml;True
-proc_creation_win_ultravnc.yml;False
+proc_creation_win_ultravnc.yml;True
 proc_creation_win_uninstall_crowdstrike_falcon.yml;True
 proc_creation_win_uninstall_sysmon.yml;True
 proc_creation_win_user_discovery_get_aduser.yml;False

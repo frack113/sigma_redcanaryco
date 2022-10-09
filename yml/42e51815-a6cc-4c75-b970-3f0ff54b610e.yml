@@ -17,5 +17,7 @@ description: |
   An adversary may attempt to trick the user into downloading UltraVNC for use as a C2 channel.
   Upon successful execution, UltraVNC will be executed.
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 145322e4-0fd3-486b-81ca-9addc75736d8
+    name: proc_creation_win_ultravnc.yml
