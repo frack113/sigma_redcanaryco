@@ -532,6 +532,30 @@ Caution: a test can generate a lot of noise...
 [Restart System via `shutdown` - macOS/Linux](tests/6326dbc4-444b-4c04-88f4-27e94d0327cb.md) ['macos', 'linux'] (sigma rule :x:)
 
 
+### T1204.002
+[Mirror Blast Emulation](tests/24fd9719-7419-42dd-bce6-ab3463110b3c.md) ['windows'] (sigma rule :x:)
+
+[Maldoc choice flags command execution](tests/0330a5d2-a45a-4272-a9ee-e364411c4b18.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Excel 4 Macro](tests/4ea1fc97-8a46-4b4e-ba48-af43d2a98052.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[OSTAP JS version](tests/add560ef-20d6-4011-a937-2c340f930911.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[OSTap Payload Download](tests/3f3af983-118a-4fa1-85d3-ba4daa739d80.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Potentially Unwanted Applications (PUA)](tests/02f35d62-9fdc-4a97-b899-a5d9a876d295.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[LNK Payload Download](tests/581d7521-9c4b-420e-9695-2aec5241167f.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Office launching .bat file from AppData](tests/9215ea92-1ded-41b7-9cd6-79f9a78397aa.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Office Generic Payload Download](tests/5202ee05-c420-4148-bf5e-fd7f7d24850c.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[OSTap Style Macro Execution](tests/8bebc690-18c7-4549-bc98-210f7019efff.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Headless Chrome code execution via VBA](tests/a19ee671-ed98-4e9d-b19c-d1954a51585a.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+
 ### T1615
 [WinPwn - GPORemoteAccessPolicy](tests/7230d01a-0a72-4bd5-9d7f-c6d472bc6a59.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -630,6 +654,8 @@ Caution: a test can generate a lot of noise...
 [Bypass UAC using sdclt DelegateExecute](tests/3be891eb-4608-4173-87e8-78b494c029b7.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Bypass UAC using SilentCleanup task](tests/28104f8a-4ff1-4582-bcf6-699dce156608.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Disable UAC admin consent prompt via ConsentPromptBehaviorAdmin registry key](tests/251c5936-569f-42f4-9ac2-87a173b9e9b8.md) ['windows'] (sigma rule :x:)
 
 [Bypass UAC using Fodhelper - PowerShell](tests/3f627297-6c38-4e7d-a278-fc2563eaaeaa.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1250,28 +1276,6 @@ Caution: a test can generate a lot of noise...
 [Web Shell Written to Disk](tests/0a2ce662-1efa-496f-a472-2fe7b080db16.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
-### T1204.002
-[Maldoc choice flags command execution](tests/0330a5d2-a45a-4272-a9ee-e364411c4b18.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[Excel 4 Macro](tests/4ea1fc97-8a46-4b4e-ba48-af43d2a98052.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[OSTAP JS version](tests/add560ef-20d6-4011-a937-2c340f930911.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[OSTap Payload Download](tests/3f3af983-118a-4fa1-85d3-ba4daa739d80.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[Potentially Unwanted Applications (PUA)](tests/02f35d62-9fdc-4a97-b899-a5d9a876d295.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[LNK Payload Download](tests/581d7521-9c4b-420e-9695-2aec5241167f.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[Office launching .bat file from AppData](tests/9215ea92-1ded-41b7-9cd6-79f9a78397aa.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[Office Generic Payload Download](tests/5202ee05-c420-4148-bf5e-fd7f7d24850c.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[OSTap Style Macro Execution](tests/8bebc690-18c7-4549-bc98-210f7019efff.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[Headless Chrome code execution via VBA](tests/a19ee671-ed98-4e9d-b19c-d1954a51585a.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-
 ### T1070.003
 [Clear Bash history (truncate)](tests/47966a1d-df4f-4078-af65-db6d9aa20739.md) ['linux'] (sigma rule :x:)
 
@@ -1776,6 +1780,8 @@ Caution: a test can generate a lot of noise...
 [using device audio capture commandlet](tests/9c3ad250-b185-4444-b5a9-d69218a10c95.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Registry artefact when application use microphone](tests/7a21cce2-6ada-4f7c-afd9-e1e9c481e44a.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[using Quicktime Player](tests/c7a0bb71-70ce-4a53-b115-881f241b795b.md) ['macos'] (sigma rule :x:)
 
 
 ### T1176

@@ -41,9 +41,9 @@ powershell
 
  - file_event_win_detect_powerup_dllhijacking.yml (id: 602a1f13-c640-4d73-b053-be9a2fa58b96)
 
- - win_overpass_the_hash.yml (id: 192a0330-c20b-4356-90b6-7b7049ae0b87)
+ - win_security_overpass_the_hash.yml (id: 192a0330-c20b-4356-90b6-7b7049ae0b87)
 
- - win_pass_the_hash_2.yml (id: 8eef149c-bd26-49f2-9e5a-9b00e3af499b)
+ - win_security_pass_the_hash_2.yml (id: 8eef149c-bd26-49f2-9e5a-9b00e3af499b)
 
 
 
