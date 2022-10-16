@@ -9,8 +9,8 @@ Attack_description: |-
   * <code>eventvwr.exe</code> can auto-elevate and execute a specified binary or script.(Citation: enigma0x3 Fileless UAC Bypass)(Citation: Fortinet Fareit)
 
   Another bypass is possible through some lateral movement techniques if credentials for an account with administrator privileges are known, since UAC is a single system security mechanism, and the privilege or integrity of a process running on one system will be unknown on remote systems and default to high integrity.(Citation: SANS UAC Bypass)
-guid: a6ce9acf-842a-4af6-8f79-539be7608e2b
-name: Bypass UAC using Event Viewer (PowerShell)
+guid: 251c5936-569f-42f4-9ac2-87a173b9e9b8
+name: Disable UAC admin consent prompt via ConsentPromptBehaviorAdmin registry key
 tactic:
   - privilege-escalation
   - defense-evasion
@@ -18,12 +18,8 @@ technique:
   - T1548.002
 os:
   - windows
-description: |
-  PowerShell code to bypass User Account Control using Event Viewer and a relevant Windows Registry modification. More information here - https://enigma0x3.net/2016/08/15/fileless-uac-bypass-using-eventvwr-exe-and-registry-hijacking/
-  Upon execution command prompt should be launched with administrative privalages
+description: "Disable User Account Conrol (UAC) for admin by setting the registry key \nHKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\ConsentPromptBehaviorAdmin to 0.\n\n[MedusaLocker\
+  \ Ransomware](https://cloudsek.com/technical-analysis-of-medusalocker-ransomware/), \n[Purple Fox Rootkit](https://blogs.blackberry.com/en/2022/01/threat-thursday-purple-fox-rootkit), \n[Avaddon Ransomware](https://blogs.blackberry.com/en/2021/06/threat-thursday-avaddon-ransomware-uses-ddos-attacks-as-triple-threat)\n"
 executor: powershell
-sigma: true
-sigma_rule:
-  - id: 674202d0-b22a-4af4-ae5f-2eda1f3da1af
-    name: registry_set_bypass_uac_using_eventviewer.yml
-
+sigma: false
+sigma_rule: []

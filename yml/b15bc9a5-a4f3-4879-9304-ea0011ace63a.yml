@@ -39,4 +39,4 @@ sigma_rule:
   - id: 1f21ec3f-810d-4b0e-8045-322202e22b4b
     name: net_connection_win_powershell_network_connection.yml
   - id: 941e5c45-cda7-4864-8cea-bbb7458d194a
-    name: win_susp_logon_explicit_credentials.yml
+    name: win_security_susp_logon_explicit_credentials.yml

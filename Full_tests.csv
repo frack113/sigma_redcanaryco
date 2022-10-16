@@ -52,6 +52,7 @@ defense-evasion;T1548.002;powershell;['windows'];WinPwn - UAC Magic;964d8bf8-37b
 defense-evasion;T1548.002;powershell;['windows'];WinPwn - UAC Bypass ccmstp technique;f3c145f9-3c8d-422c-bd99-296a17a8f567;True;19
 defense-evasion;T1548.002;powershell;['windows'];WinPwn - UAC Bypass DiskCleanup technique;1ed67900-66cd-4b09-b546-2a0ef4431a0c;True;20
 defense-evasion;T1548.002;powershell;['windows'];WinPwn - UAC Bypass DccwBypassUAC technique;2b61977b-ae2d-4ae4-89cb-5c36c89586be;True;21
+defense-evasion;T1548.002;powershell;['windows'];Disable UAC admin consent prompt via ConsentPromptBehaviorAdmin registry key;251c5936-569f-42f4-9ac2-87a173b9e9b8;False;22
 defense-evasion;T1548.003;sh;['macos', 'linux'];Sudo usage;150c3a08-ee6e-48a6-aeaf-3659d24ceb4e;False;1
 defense-evasion;T1548.003;sh;['macos', 'linux'];Unlimited sudo cache timeout;a7b17659-dd5e-46f7-b7d1-e6792c91d0bc;False;2
 defense-evasion;T1548.003;sh;['macos', 'linux'];Disable tty_tickets for sudo caching;91a60b03-fb75-4d24-a42e-2eb8956e8de1;False;3
@@ -468,6 +469,7 @@ privilege-escalation;T1548.002;powershell;['windows'];WinPwn - UAC Magic;964d8bf
 privilege-escalation;T1548.002;powershell;['windows'];WinPwn - UAC Bypass ccmstp technique;f3c145f9-3c8d-422c-bd99-296a17a8f567;True;19
 privilege-escalation;T1548.002;powershell;['windows'];WinPwn - UAC Bypass DiskCleanup technique;1ed67900-66cd-4b09-b546-2a0ef4431a0c;True;20
 privilege-escalation;T1548.002;powershell;['windows'];WinPwn - UAC Bypass DccwBypassUAC technique;2b61977b-ae2d-4ae4-89cb-5c36c89586be;True;21
+privilege-escalation;T1548.002;powershell;['windows'];Disable UAC admin consent prompt via ConsentPromptBehaviorAdmin registry key;251c5936-569f-42f4-9ac2-87a173b9e9b8;False;22
 privilege-escalation;T1548.003;sh;['macos', 'linux'];Sudo usage;150c3a08-ee6e-48a6-aeaf-3659d24ceb4e;False;1
 privilege-escalation;T1548.003;sh;['macos', 'linux'];Unlimited sudo cache timeout;a7b17659-dd5e-46f7-b7d1-e6792c91d0bc;False;2
 privilege-escalation;T1548.003;sh;['macos', 'linux'];Disable tty_tickets for sudo caching;91a60b03-fb75-4d24-a42e-2eb8956e8de1;False;3
@@ -632,6 +634,7 @@ execution;T1204.002;powershell;['windows'];Headless Chrome code execution via VB
 execution;T1204.002;powershell;['windows'];Potentially Unwanted Applications (PUA);02f35d62-9fdc-4a97-b899-a5d9a876d295;True;8
 execution;T1204.002;powershell;['windows'];Office Generic Payload Download;5202ee05-c420-4148-bf5e-fd7f7d24850c;True;9
 execution;T1204.002;powershell;['windows'];LNK Payload Download;581d7521-9c4b-420e-9695-2aec5241167f;True;10
+execution;T1204.002;powershell;['windows'];Mirror Blast Emulation;24fd9719-7419-42dd-bce6-ab3463110b3c;False;11
 execution;T1053.003;bash;['macos', 'linux'];Cron - Replace crontab with referenced file;435057fb-74b1-410e-9403-d81baf194f75;False;1
 execution;T1053.003;bash;['macos', 'linux'];Cron - Add script to all cron subfolders;b7d42afa-9086-4c8a-b7b0-8ea3faa6ebb0;False;2
 execution;T1053.003;bash;['linux'];Cron - Add script to /var/spool/cron/crontabs/ folder;2d943c18-e74a-44bf-936f-25ade6cccab4;False;3
@@ -864,6 +867,7 @@ collection;T1056.001;sh;['linux'];Auditd keylogger;a668edb9-334e-48eb-8c2e-5413a
 collection;T1056.001;bash;['macos'];MacOS Swift Keylogger;aee3a097-4c5c-4fff-bbd3-0a705867ae29;False;7
 collection;T1123;powershell;['windows'];using device audio capture commandlet;9c3ad250-b185-4444-b5a9-d69218a10c95;True;1
 collection;T1123;command_prompt;['windows'];Registry artefact when application use microphone;7a21cce2-6ada-4f7c-afd9-e1e9c481e44a;True;2
+collection;T1123;sh;['macos'];using Quicktime Player;c7a0bb71-70ce-4a53-b115-881f241b795b;False;3
 collection;T1074.001;powershell;['windows'];Stage data from Discovery.bat;107706a5-6f9f-451a-adae-bab8c667829f;True;1
 collection;T1074.001;bash;['linux', 'macos'];Stage data from Discovery.sh;39ce0303-ae16-4b9e-bb5b-4f53e8262066;False;2
 collection;T1074.001;powershell;['windows'];Zip a Folder with PowerShell for Staging in Temp;a57fbe4b-3440-452a-88a7-943531ac872a;True;3

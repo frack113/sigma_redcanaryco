@@ -36,4 +36,4 @@ sigma_rule:
   - id: 297afac9-5d02-4138-8c58-b977bac60556
     name: file_event_win_susp_dropper.yml
   - id: 42c575ea-e41e-41f1-b248-8093c3e82a28
-    name: win_tool_psexec.yml
+    name: win_system_tool_psexec.yml

@@ -24,4 +24,4 @@ sigma_rule:
   - id: 4d07b1f4-cb00-4470-b9f8-b0191d48ff52
     name: dns_query_remote_access_software_domains.yml
   - id: 5e993621-67d4-488a-b9ae-b420d08b96cb
-    name: win_susp_service_installation_folder.yml
+    name: win_system_susp_service_installation_folder.yml
