@@ -34,13 +34,9 @@ Upon successful execution, RemotePC will be executed.
 powershell
 
 # Sigma Rule
- - proc_creation_win_susp_run_folder.yml (id: dca91cfd-d7ab-4c66-8da7-ee57d487b35b)
-
  - proc_creation_win_susp_taskkill.yml (id: 86085955-ea48-42a2-9dd3-85d4c36b167d)
 
  - proc_creation_win_new_service_creation.yml (id: 7fe71fc9-de3b-432a-8d57-8c809efc10ab)
-
- - proc_creation_win_possible_applocker_bypass.yml (id: 82a19e3a-2bfe-4a91-8c0d-5d4c98fbb719)
 
  - proc_creation_win_regedit_import_keys.yml (id: 73bba97f-a82d-42ce-b315-9182e76c57b1)
 

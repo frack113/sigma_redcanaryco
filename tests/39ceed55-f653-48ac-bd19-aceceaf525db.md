@@ -52,7 +52,7 @@ powershell
 
  - posh_ps_susp_keywords.yml (id: 1f49f2ab-26bc-48b3-96cc-dcffbc93eadf)
 
- - posh_ps_copy_item_system32.yml (id: 63bf8794-9917-45bc-88dd-e1b5abc0ecfd)
+ - posh_ps_copy_item_system_directory.yml (id: 63bf8794-9917-45bc-88dd-e1b5abc0ecfd)
 
  - posh_ps_file_and_directory_discovery.yml (id: d23f2ba5-9da0-4463-8908-8ee47f614bb9)
 
@@ -68,7 +68,7 @@ powershell
 
  - proc_creation_win_wmiprvse_spawning_process.yml (id: d21374ff-f574-44a7-9998-4a8c8bf33d7d)
 
- - file_event_win_win_shell_write_susp_directory.yml (id: 1277f594-a7d1-4f28-a2d3-73af5cbeab43)
+ - file_event_win_shell_write_susp_directory.yml (id: 1277f594-a7d1-4f28-a2d3-73af5cbeab43)
 
  - net_connection_win_binary_github_com.yml (id: 635dbb88-67b3-4b41-9ea5-a3af2dd88153)
 

@@ -37,9 +37,9 @@ powershell
 # Sigma Rule
  - proc_creation_win_non_interactive_powershell.yml (id: f4bbd493-b796-416e-bbf2-121235348529)
 
- - proc_creation_win_susp_web_request_cmd.yml (id: 9fc51a3c-81b3-4fa7-b35f-7c02cf10fd2d)
+ - proc_creation_win_web_request_cmd_and_cmdlets.yml (id: 9fc51a3c-81b3-4fa7-b35f-7c02cf10fd2d)
 
- - posh_ps_web_request.yml (id: 1139d2e2-84b1-4226-b445-354492eba8ba)
+ - posh_ps_web_request_cmd_and_cmdlets.yml (id: 1139d2e2-84b1-4226-b445-354492eba8ba)
 
  - posh_ps_malicious_commandlets.yml (id: 89819aa4-bbd6-46bc-88ec-c7f7fe30efa6)
 

@@ -37,7 +37,7 @@ powershell
 
  - proc_creation_win_non_interactive_powershell.yml (id: f4bbd493-b796-416e-bbf2-121235348529)
 
- - posh_ps_susp_get_adgroup.yml (id: 8c3a6607-b7dc-4f0d-a646-ef38c00b76ee)
+ - posh_ps_get_adgroup.yml (id: 8c3a6607-b7dc-4f0d-a646-ef38c00b76ee)
 
  - net_connection_win_powershell_network_connection.yml (id: 1f21ec3f-810d-4b0e-8045-322202e22b4b)
 

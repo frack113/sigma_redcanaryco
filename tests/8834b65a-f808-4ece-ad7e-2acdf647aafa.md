@@ -71,7 +71,7 @@ powershell
 # Sigma Rule
  - proc_creation_win_susp_copy_system32.yml (id: fff9d2b7-e11c-4a69-93d3-40ef66189767)
 
- - posh_ps_copy_item_system32.yml (id: 63bf8794-9917-45bc-88dd-e1b5abc0ecfd)
+ - posh_ps_copy_item_system_directory.yml (id: 63bf8794-9917-45bc-88dd-e1b5abc0ecfd)
 
  - file_event_win_susp_dropper.yml (id: 297afac9-5d02-4138-8c58-b977bac60556)
 

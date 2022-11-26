@@ -44,7 +44,7 @@ powershell
 
  - proc_creation_win_remote_time_discovery.yml (id: b243b280-65fe-48df-ba07-6ddea7646427)
 
- - file_event_win_win_shell_write_susp_directory.yml (id: 1277f594-a7d1-4f28-a2d3-73af5cbeab43)
+ - file_event_win_shell_write_susp_directory.yml (id: 1277f594-a7d1-4f28-a2d3-73af5cbeab43)
 
  - registry_set_timeproviders_dllname.yml (id: e88a6ddc-74f7-463b-9b26-f69fc0d2ce85)
 
