@@ -23,7 +23,7 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 9fc51a3c-81b3-4fa7-b35f-7c02cf10fd2d
-    name: proc_creation_win_susp_web_request_cmd.yml
+    name: proc_creation_win_web_request_cmd_and_cmdlets.yml
   - id: f4bbd493-b796-416e-bbf2-121235348529
     name: proc_creation_win_non_interactive_powershell.yml
   - id: 3b6ab547-8ec2-4991-b9d2-2b06702a48d7
@@ -31,7 +31,7 @@ sigma_rule:
   - id: 8ff28fdd-e2fa-4dfa-aeda-ef3d61c62090
     name: posh_pm_susp_invocation_specific.yml
   - id: 1139d2e2-84b1-4226-b445-354492eba8ba
-    name: posh_ps_web_request.yml
+    name: posh_ps_web_request_cmd_and_cmdlets.yml
   - id: ae7fbf8e-f3cb-49fd-8db4-5f3bed522c71
     name: posh_ps_susp_invocation_specific.yml
   - id: d23f2ba5-9da0-4463-8908-8ee47f614bb9

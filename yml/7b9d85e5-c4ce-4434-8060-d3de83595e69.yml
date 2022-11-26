@@ -18,5 +18,3 @@ sigma: true
 sigma_rule:
   - id: 62f7c9bf-9135-49b2-8aeb-1e54a6ecc13c
     name: proc_creation_win_tor_browser.yml
-  - id: dca91cfd-d7ab-4c66-8da7-ee57d487b35b
-    name: proc_creation_win_susp_run_folder.yml

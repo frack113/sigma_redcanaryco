@@ -36,5 +36,3 @@ sigma_rule:
     name: proc_creation_win_lolbin_rundll32_installscreensaver.yml
   - id: c3a99af4-35a9-4668-879e-c09aeb4f2bdf
     name: proc_creation_win_run_executable_invalid_extension.yml
-  - id: dca91cfd-d7ab-4c66-8da7-ee57d487b35b
-    name: proc_creation_win_susp_run_folder.yml

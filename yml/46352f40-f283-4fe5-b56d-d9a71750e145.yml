@@ -20,13 +20,13 @@ sigma_rule:
   - id: efdd8dd5-cee8-4e59-9390-7d4d5e4dd6f6
     name: proc_creation_win_susp_progname.yml
   - id: 9fc51a3c-81b3-4fa7-b35f-7c02cf10fd2d
-    name: proc_creation_win_susp_web_request_cmd.yml
+    name: proc_creation_win_web_request_cmd_and_cmdlets.yml
   - id: 89819aa4-bbd6-46bc-88ec-c7f7fe30efa6
     name: posh_ps_malicious_commandlets.yml
   - id: dcd74b95-3f36-4ed9-9598-0490951643aa
     name: posh_ps_powerview_malicious_commandlets.yml
   - id: 1139d2e2-84b1-4226-b445-354492eba8ba
-    name: posh_ps_web_request.yml
+    name: posh_ps_web_request_cmd_and_cmdlets.yml
   - id: 1f49f2ab-26bc-48b3-96cc-dcffbc93eadf
     name: posh_ps_susp_keywords.yml
   - id: 03d83090-8cba-44a0-b02f-0b756a050306

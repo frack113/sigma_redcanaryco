@@ -23,6 +23,6 @@ sigma_rule:
   - id: f4bbd493-b796-416e-bbf2-121235348529
     name: proc_creation_win_non_interactive_powershell.yml
   - id: 8c3a6607-b7dc-4f0d-a646-ef38c00b76ee
-    name: posh_ps_susp_get_adgroup.yml
+    name: posh_ps_get_adgroup.yml
   - id: 1f21ec3f-810d-4b0e-8045-322202e22b4b
     name: net_connection_win_powershell_network_connection.yml

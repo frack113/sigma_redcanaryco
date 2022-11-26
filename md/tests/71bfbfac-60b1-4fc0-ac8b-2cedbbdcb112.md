@@ -31,8 +31,6 @@ Executes the Uninstall Method, No Admin Rights Required. Upon execution, "I shou
 command_prompt
 
 # Sigma Rule
- - win_possible_applocker_bypass.yml (id: 82a19e3a-2bfe-4a91-8c0d-5d4c98fbb719)
-
  - win_susp_csc_folder.yml (id: dcaa3f04-70c3-427a-80b4-b870d73c94c4)
 
 

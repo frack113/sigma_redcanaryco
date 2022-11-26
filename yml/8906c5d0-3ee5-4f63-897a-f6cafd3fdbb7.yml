@@ -13,8 +13,11 @@ technique:
 os:
   - azure-ad
 description: |
-  Add a new federation to Azure AD using PowerShell. The malicious Identity Provider to be added must be configured beforehand.
-  If ADFS is used as IdP, the Uris parameters can be found at 'https://<federationservice>.<domainname>.com/federationmetadata/2007-06/federationmetadata.xml'
+  Add a new federated domain to Azure AD using PowerShell.
+  The malicious domain to be federated must be configured beforehand (outside of the scope of this test):
+      1. Open Azure Portal
+      2. Add a new "custom domain name"
+      3. Verify the domain by following instructions (i.e. create the requested DNS record)
 executor: powershell
 sigma: false
 sigma_rule: []

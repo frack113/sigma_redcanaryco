@@ -1,0 +1,18 @@
+Attack_name: 'Exfiltration Over Alternative Protocol: Exfiltration Over Unencrypted/Obfuscated Non-C2 Protocol'
+Attack_description: "Adversaries may steal data by exfiltrating it over an un-encrypted network protocol other than that of the existing command and control channel. The data may also be sent to an alternate\
+  \ network location from the main command and control server. \n\nAdversaries may opt to obfuscate this data, without the use of encryption, within network protocols that are natively unencrypted (such\
+  \ as HTTP, FTP, or DNS). This may include custom or publicly available encoding/compression algorithms (such as base64) as well as embedding data within protocol headers and fields. "
+guid: b854eb97-bf9b-45ab-a1b5-b94e4880c56b
+name: Exfiltration Over Alternative Protocol - FTP - Rclone
+tactic:
+  - exfiltration
+technique:
+  - T1048.003
+os:
+  - windows
+description: |-
+  Rclone may be used by an adversary to exfiltrate data to a publicly hosted FTP server.
+  [Reference](https://thedfirreport.com/2021/03/29/sodinokibi-aka-revil-ransomware/)
+executor: powershell
+sigma: false
+sigma_rule: []

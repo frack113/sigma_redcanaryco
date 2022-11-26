@@ -21,11 +21,11 @@ sigma_rule:
   - id: f4bbd493-b796-416e-bbf2-121235348529
     name: proc_creation_win_non_interactive_powershell.yml
   - id: 9fc51a3c-81b3-4fa7-b35f-7c02cf10fd2d
-    name: proc_creation_win_susp_web_request_cmd.yml
+    name: proc_creation_win_web_request_cmd_and_cmdlets.yml
   - id: a642964e-bead-4bed-8910-1bb4d63e3b4d
     name: proc_creation_win_mimikatz_command_line.yml
   - id: 1139d2e2-84b1-4226-b445-354492eba8ba
-    name: posh_ps_web_request.yml
+    name: posh_ps_web_request_cmd_and_cmdlets.yml
   - id: 635dbb88-67b3-4b41-9ea5-a3af2dd88153
     name: net_connection_win_binary_github_com.yml
   - id: 1f21ec3f-810d-4b0e-8045-322202e22b4b

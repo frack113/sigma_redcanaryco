@@ -30,7 +30,7 @@ sigma_rule:
   - id: 183e7ea8-ac4b-4c23-9aec-b3dac4e401ac
     name: proc_creation_win_susp_net_execution.yml
   - id: 1277f594-a7d1-4f28-a2d3-73af5cbeab43
-    name: file_event_win_win_shell_write_susp_directory.yml
+    name: file_event_win_shell_write_susp_directory.yml
   - id: e88a6ddc-74f7-463b-9b26-f69fc0d2ce85
     name: registry_set_timeproviders_dllname.yml
   - id: 2a072a96-a086-49fa-bcb5-15cc5a619093

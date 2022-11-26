@@ -21,4 +21,4 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: 36bed6b2-e9a0-4fff-beeb-413a92b86138
-    name: posh_ps_susp_get_adcomputer.yml
+    name: posh_ps_get_adcomputer.yml

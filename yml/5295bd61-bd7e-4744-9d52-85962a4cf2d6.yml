@@ -11,10 +11,8 @@ technique:
   - T1021.006
 os:
   - windows
-description: |
-  Execute Invoke-command on remote host.
-
-  Upon successful execution, powershell will execute whoami on specified remote host using `invoke-command`.
+description: "Simulate lateral movement with PowerShell Remoting on the local host. \nUpon successful execution, PowerShell will execute `whoami` using `Invoke-Command`, targeting the \nlocal machine as\
+  \ remote target.\n"
 executor: powershell
 sigma: true
 sigma_rule:

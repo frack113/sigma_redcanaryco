@@ -28,7 +28,7 @@ sigma_rule:
   - id: cdf05894-89e7-4ead-b2b0-0a5f97a90f2f
     name: proc_creation_win_powershell_cmdline_specific_comb_methods.yml
   - id: 9fc51a3c-81b3-4fa7-b35f-7c02cf10fd2d
-    name: proc_creation_win_susp_web_request_cmd.yml
+    name: proc_creation_win_web_request_cmd_and_cmdlets.yml
   - id: 36210e0d-5b19-485d-a087-c096088885f0
     name: proc_creation_win_powershell_susp_parameter_variation.yml
   - id: bb780e0c-16cf-4383-8383-1e5471db6cf9
@@ -38,7 +38,7 @@ sigma_rule:
   - id: ae7fbf8e-f3cb-49fd-8db4-5f3bed522c71
     name: posh_ps_susp_invocation_specific.yml
   - id: 1139d2e2-84b1-4226-b445-354492eba8ba
-    name: posh_ps_web_request.yml
+    name: posh_ps_web_request_cmd_and_cmdlets.yml
   - id: f62176f3-8128-4faa-bf6c-83261322e5eb
     name: posh_ps_malicious_keywords.yml
   - id: f772cee9-b7c2-4cb2-8f07-49870adc02e0

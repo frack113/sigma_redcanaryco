@@ -22,11 +22,11 @@ sigma_rule:
   - id: 85b0b087-eddf-4a2b-b033-d771fa2b9775
     name: proc_creation_win_susp_powershell_download_iex.yml
   - id: 9fc51a3c-81b3-4fa7-b35f-7c02cf10fd2d
-    name: proc_creation_win_susp_web_request_cmd.yml
+    name: proc_creation_win_web_request_cmd_and_cmdlets.yml
   - id: e6c54d94-498c-4562-a37c-b469d8e9a275
     name: proc_creation_win_powershell_download_patterns.yml
   - id: 1139d2e2-84b1-4226-b445-354492eba8ba
-    name: posh_ps_web_request.yml
+    name: posh_ps_web_request_cmd_and_cmdlets.yml
   - id: ae7fbf8e-f3cb-49fd-8db4-5f3bed522c71
     name: posh_ps_susp_invocation_specific.yml
   - id: 8ff28fdd-e2fa-4dfa-aeda-ef3d61c62090
@@ -79,8 +79,6 @@ sigma_rule:
     name: net_connection_win_binary_github_com.yml
   - id: 297afac9-5d02-4138-8c58-b977bac60556
     name: file_event_win_susp_dropper.yml
-  - id: dca91cfd-d7ab-4c66-8da7-ee57d487b35b
-    name: proc_creation_win_susp_run_folder.yml
   - id: cbb56d62-4060-40f7-9466-d8aaf3123f83
     name: image_load_susp_python_image_load.yml
   - id: 038cd51c-3ad8-41c5-ba8f-5d1c92f3cc1e

@@ -4,7 +4,7 @@ Attack_description: |-
 
   Adversaries can establish [Persistence](https://attack.mitre.org/tactics/TA0003) by adding a malicious application path to the <code>com.apple.loginwindow.[UUID].plist</code> file to execute payloads when a user logs in.
 guid: 5f5b71da-e03f-42e7-ac98-d63f9e0465cb
-name: Re-Opened Applications
+name: Re-Opened Applications using LoginHook
 tactic:
   - privilege-escalation
   - persistence

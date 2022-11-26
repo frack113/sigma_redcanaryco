@@ -4,7 +4,7 @@ Attack_description: |-
 
   Adversaries can establish [Persistence](https://attack.mitre.org/tactics/TA0003) by adding a malicious application path to the <code>com.apple.loginwindow.[UUID].plist</code> file to execute payloads when a user logs in.
 guid: 5fefd767-ef54-4ac6-84d3-751ab85e8aba
-name: Re-Opened Applications
+name: Copy in loginwindow.plist for Re-Opened Applications
 tactic:
   - privilege-escalation
   - persistence
@@ -12,10 +12,9 @@ technique:
   - T1547.007
 os:
   - macos
-description: |
-  Plist Method
+description: 'Copy in new loginwindow.plist to launch Calculator.
 
-  [Reference](https://developer.apple.com/library/content/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CustomLogin.html)
-executor: manual
+  '
+executor: sh
 sigma: false
 sigma_rule: []

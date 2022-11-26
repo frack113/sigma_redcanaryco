@@ -37,7 +37,7 @@ sigma_rule:
   - id: 0332a266-b584-47b4-933d-a00b103e1b37
     name: posh_ps_susp_gwmi.yml
   - id: 63bf8794-9917-45bc-88dd-e1b5abc0ecfd
-    name: posh_ps_copy_item_system32.yml
+    name: posh_ps_copy_item_system_directory.yml
   - id: d23f2ba5-9da0-4463-8908-8ee47f614bb9
     name: posh_ps_file_and_directory_discovery.yml
   - id: d21374ff-f574-44a7-9998-4a8c8bf33d7d

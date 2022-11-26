@@ -22,7 +22,5 @@ sigma_rule:
     name: proc_creation_win_susp_copy_system32.yml
   - id: 297afac9-5d02-4138-8c58-b977bac60556
     name: file_event_win_susp_dropper.yml
-  - id: dca91cfd-d7ab-4c66-8da7-ee57d487b35b
-    name: proc_creation_win_susp_run_folder.yml
   - id: d3bf399f-b0cf-4250-8bb4-dfc192ab81dc
     name: proc_creation_win_lolbin_ie4uinit.yml

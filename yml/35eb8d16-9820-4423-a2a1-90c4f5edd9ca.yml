@@ -27,7 +27,5 @@ sigma_rule:
     name: proc_creation_win_system_exe_anomaly.yml
   - id: 01d2e2a1-5f09-44f7-9fc1-24faa7479b6d
     name: proc_creation_win_susp_svchost.yml
-  - id: dca91cfd-d7ab-4c66-8da7-ee57d487b35b
-    name: proc_creation_win_susp_run_folder.yml
   - id: e4b63079-6198-405c-abd7-3fe8b0ce3263
     name: file_event_win_susp_clr_logs.yml

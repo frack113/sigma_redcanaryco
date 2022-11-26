@@ -1,0 +1,20 @@
+Attack_name: Event Triggered Execution
+Attack_description: "Adversaries may establish persistence and/or elevate privileges using system mechanisms that trigger execution based on specific events. Various operating systems have means to monitor\
+  \ and subscribe to events such as logons or other user activity such as running specific applications/binaries. \n\nAdversaries may abuse these mechanisms as a means of maintaining persistent access to\
+  \ a victim via repeatedly executing malicious code. After gaining access to a victim system, adversaries may create/modify event triggers to point to malicious content that will be executed whenever the\
+  \ event trigger is invoked.(Citation: FireEye WMI 2015)(Citation: Malware Persistence on OS X)(Citation: amnesia malware)\n\nSince the execution can be proxied by an account with higher permissions, such\
+  \ as SYSTEM or service accounts, an adversary may be able to abuse these triggered execution mechanisms to escalate their privileges. "
+guid: aca9ae16-7425-4b6d-8c30-cad306fdbd5b
+name: Persistence with Custom AutodialDLL
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1546
+os:
+  - windows
+description: "The DLL pointed to by the AutodialDLL registry key is loaded every time a process connects to the internet. Attackers can gain persistent code execution by setting this key to a DLL of their\
+  \ choice. \n\nThe sample dll provided, AltWinSock2DLL, will launch the notepad process. Starting and stopping a web browser such as MS Edge or Chrome should result in the dll executing.\n[Blog](https://www.mdsec.co.uk/2022/10/autodialdlling-your-way/)\n"
+executor: powershell
+sigma: false
+sigma_rule: []

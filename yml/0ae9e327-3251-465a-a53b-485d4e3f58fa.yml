@@ -17,8 +17,6 @@ description: "An adversary may attempt to trick the user into downloading Ammyy 
 executor: powershell
 sigma: true
 sigma_rule:
-  - id: dca91cfd-d7ab-4c66-8da7-ee57d487b35b
-    name: proc_creation_win_susp_run_folder.yml
   - id: 1547e27c-3974-43e2-a7d7-7f484fb928ec
     name: registry_set_add_load_service_in_safe_mode.yml
   - id: 4d07b1f4-cb00-4470-b9f8-b0191d48ff52

@@ -24,4 +24,4 @@ sigma_rule:
   - id: f674e36a-4b91-431e-8aef-f8a96c2aca35
     name: registry_set_asep_reg_keys_modification_currentcontrolset.yml
   - id: 63bf8794-9917-45bc-88dd-e1b5abc0ecfd
-    name: posh_ps_copy_item_system32.yml
+    name: posh_ps_copy_item_system_directory.yml

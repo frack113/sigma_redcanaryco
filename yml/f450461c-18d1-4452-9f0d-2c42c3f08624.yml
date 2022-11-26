@@ -15,8 +15,6 @@ description: Enumerates active directory usernames using the userenum function o
 executor: powershell
 sigma: true
 sigma_rule:
-  - id: dca91cfd-d7ab-4c66-8da7-ee57d487b35b
-    name: proc_creation_win_susp_run_folder.yml
   - id: 628d7a0b-7b84-4466-8552-e6138bc03b43
     name: net_connection_win_susp_epmap.yml
   - id: e54979bd-c5f9-4d6c-967b-a04b19ac4c74

@@ -21,4 +21,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 0e4164da-94bc-450d-a7be-a4b176179f1f
-    name: proc_creation_win_susp_netsh_command.yml
+    name: proc_creation_win_susp_netsh_discovery_command.yml

@@ -21,7 +21,7 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: 9fc51a3c-81b3-4fa7-b35f-7c02cf10fd2d
-    name: proc_creation_win_susp_web_request_cmd.yml
+    name: proc_creation_win_web_request_cmd_and_cmdlets.yml
   - id: 1f21ec3f-810d-4b0e-8045-322202e22b4b
     name: net_connection_win_powershell_network_connection.yml
   - id: b6d98a4f-cef0-4abf-bbf6-24132854a83d
@@ -30,5 +30,3 @@ sigma_rule:
     name: dns_query_remote_access_software_domains.yml
   - id: 5d756aee-ad3e-4306-ad95-cb1abec48de2
     name: file_event_win_gotoopener_artefact.yml
-  - id: dca91cfd-d7ab-4c66-8da7-ee57d487b35b
-    name: proc_creation_win_susp_run_folder.yml

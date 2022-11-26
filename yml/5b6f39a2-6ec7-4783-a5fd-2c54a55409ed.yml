@@ -20,7 +20,7 @@ sigma_rule:
   - id: e6c54d94-498c-4562-a37c-b469d8e9a275
     name: proc_creation_win_powershell_download_patterns.yml
   - id: 9fc51a3c-81b3-4fa7-b35f-7c02cf10fd2d
-    name: proc_creation_win_susp_web_request_cmd.yml
+    name: proc_creation_win_web_request_cmd_and_cmdlets.yml
   - id: 6e897651-f157-4d8f-aaeb-df8151488385
     name: proc_creation_win_susp_powershell_download_cradles.yml
   - id: 85b0b087-eddf-4a2b-b033-d771fa2b9775
@@ -30,7 +30,7 @@ sigma_rule:
   - id: ae7fbf8e-f3cb-49fd-8db4-5f3bed522c71
     name: posh_ps_susp_invocation_specific.yml
   - id: 1139d2e2-84b1-4226-b445-354492eba8ba
-    name: posh_ps_web_request.yml
+    name: posh_ps_web_request_cmd_and_cmdlets.yml
   - id: 8ff28fdd-e2fa-4dfa-aeda-ef3d61c62090
     name: posh_pm_susp_invocation_specific.yml
   - id: 03d83090-8cba-44a0-b02f-0b756a050306

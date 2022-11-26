@@ -34,6 +34,6 @@ sigma_rule:
   - id: f62176f3-8128-4faa-bf6c-83261322e5eb
     name: posh_ps_malicious_keywords.yml
   - id: 1139d2e2-84b1-4226-b445-354492eba8ba
-    name: posh_ps_web_request.yml
+    name: posh_ps_web_request_cmd_and_cmdlets.yml
   - id: 8d31a8ce-46b5-4dd6-bdc3-680931f1db86
     name: posh_pm_bad_opsec_artifacts.yml
