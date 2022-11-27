@@ -654,7 +654,7 @@ execution;T1204.002;powershell;['windows'];Headless Chrome code execution via VB
 execution;T1204.002;powershell;['windows'];Potentially Unwanted Applications (PUA);02f35d62-9fdc-4a97-b899-a5d9a876d295;True;8
 execution;T1204.002;powershell;['windows'];Office Generic Payload Download;5202ee05-c420-4148-bf5e-fd7f7d24850c;True;9
 execution;T1204.002;powershell;['windows'];LNK Payload Download;581d7521-9c4b-420e-9695-2aec5241167f;True;10
-execution;T1204.002;powershell;['windows'];Mirror Blast Emulation;24fd9719-7419-42dd-bce6-ab3463110b3c;False;11
+execution;T1204.002;powershell;['windows'];Mirror Blast Emulation;24fd9719-7419-42dd-bce6-ab3463110b3c;True;11
 execution;T1053.003;bash;['macos', 'linux'];Cron - Replace crontab with referenced file;435057fb-74b1-410e-9403-d81baf194f75;False;1
 execution;T1053.003;bash;['macos', 'linux'];Cron - Add script to all cron subfolders;b7d42afa-9086-4c8a-b7b0-8ea3faa6ebb0;False;2
 execution;T1053.003;bash;['linux'];Cron - Add script to /var/spool/cron/crontabs/ folder;2d943c18-e74a-44bf-936f-25ade6cccab4;False;3
@@ -1231,7 +1231,7 @@ discovery;T1016;powershell;['windows'];List Open Egress Ports;4b467538-f102-491d
 discovery;T1016;command_prompt;['windows'];Adfind - Enumerate Active Directory Subnet Objects;9bb45dd7-c466-4f93-83a1-be30e56033ee;True;6
 discovery;T1016;command_prompt;['windows'];Qakbot Recon;121de5c6-5818-4868-b8a7-8fd07c455c1b;True;7
 discovery;T1016;bash;['macos'];List macOS Firewall Rules;ff1d8c25-2aa4-4f18-a425-fede4a41ee88;False;8
-discovery;T1016;command_prompt;['windows'];DNS Server Discovery Using nslookup;34557863-344a-468f-808b-a1bfb89b4fa9;False;9
+discovery;T1016;command_prompt;['windows'];DNS Server Discovery Using nslookup;34557863-344a-468f-808b-a1bfb89b4fa9;True;9
 discovery;T1482;command_prompt;['windows'];Windows - Discover domain trusts with dsquery;4700a710-c821-4e17-a3ec-9e4c81d6845f;True;1
 discovery;T1482;command_prompt;['windows'];Windows - Discover domain trusts with nltest;2e22641d-0498-48d2-b9ff-c71e496ccdbe;True;2
 discovery;T1482;powershell;['windows'];Powershell enumerate domains and forests;c58fbc62-8a62-489e-8f2d-3565d7d96f30;True;3
@@ -1448,4 +1448,4 @@ exfiltration;T1048.003;manual;['linux'];Exfiltration Over Alternative Protocol -
 exfiltration;T1048.003;powershell;['windows'];Exfiltration Over Alternative Protocol - HTTP;6aa58451-1121-4490-a8e9-1dada3f1c68c;True;4
 exfiltration;T1048.003;powershell;['windows'];Exfiltration Over Alternative Protocol - SMTP;ec3a835e-adca-4c7c-88d2-853b69c11bb9;True;5
 exfiltration;T1048.003;powershell;['windows'];MAZE FTP Upload;57799bc2-ad1e-4130-a793-fb0c385130ba;True;6
-exfiltration;T1048.003;powershell;['windows'];Exfiltration Over Alternative Protocol - FTP - Rclone;b854eb97-bf9b-45ab-a1b5-b94e4880c56b;False;7
+exfiltration;T1048.003;powershell;['windows'];Exfiltration Over Alternative Protocol - FTP - Rclone;b854eb97-bf9b-45ab-a1b5-b94e4880c56b;True;7

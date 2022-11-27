@@ -14,5 +14,11 @@ description: |-
   Rclone may be used by an adversary to exfiltrate data to a publicly hosted FTP server.
   [Reference](https://thedfirreport.com/2021/03/29/sodinokibi-aka-revil-ransomware/)
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: d23f2ba5-9da0-4463-8908-8ee47f614bb9
+    name: posh_ps_file_and_directory_discovery.yml
+  - id: 3dfd06d2-eaf4-4532-9555-68aca59f57c4
+    name: proc_creation_win_susp_execution_path.yml
+  - id: e37db05d-d1f9-49c8-b464-cee1a4b11638
+    name: proc_creation_win_susp_rclone_execution.yml
