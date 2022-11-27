@@ -383,7 +383,7 @@ Caution: a test can generate a lot of noise...
 
 [List Windows Firewall Rules](tests/038263cb-00f4-4b0a-98ae-0696c67e1752.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[DNS Server Discovery Using nslookup](tests/34557863-344a-468f-808b-a1bfb89b4fa9.md) ['windows'] (sigma rule :x:)
+[DNS Server Discovery Using nslookup](tests/34557863-344a-468f-808b-a1bfb89b4fa9.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [System Network Configuration Discovery (TrickBot Style)](tests/dafaf052-5508-402d-bf77-51e0700c02e2.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1493,7 +1493,7 @@ Caution: a test can generate a lot of noise...
 
 [OSTap Payload Download](tests/3f3af983-118a-4fa1-85d3-ba4daa739d80.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Mirror Blast Emulation](tests/24fd9719-7419-42dd-bce6-ab3463110b3c.md) ['windows'] (sigma rule :x:)
+[Mirror Blast Emulation](tests/24fd9719-7419-42dd-bce6-ab3463110b3c.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [OSTAP JS version](tests/add560ef-20d6-4011-a937-2c340f930911.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1953,7 +1953,7 @@ Caution: a test can generate a lot of noise...
 
 [Exfiltration Over Alternative Protocol - DNS](tests/c403b5a4-b5fc-49f2-b181-d1c80d27db45.md) ['linux'] (sigma rule :x:)
 
-[Exfiltration Over Alternative Protocol - FTP - Rclone](tests/b854eb97-bf9b-45ab-a1b5-b94e4880c56b.md) ['windows'] (sigma rule :x:)
+[Exfiltration Over Alternative Protocol - FTP - Rclone](tests/b854eb97-bf9b-45ab-a1b5-b94e4880c56b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1120

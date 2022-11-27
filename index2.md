@@ -125,6 +125,7 @@
   * T1003.001 [Dump LSASS.exe Memory using comsvcs.dll](tests/2536dee2-12fb-459a-8c37-971844fa73be.md)
 * file_event_win_macro_file.yml
   * T1566.001 [Download Macro-Enabled Phishing Attachment](tests/114ccff9-ae6d-4547-9ead-4cd69f687306.md)
+  * T1204.002 [Mirror Blast Emulation](tests/24fd9719-7419-42dd-bce6-ab3463110b3c.md)
 * file_event_win_mal_octopus_scanner.yml
   * T1195 [Octopus Scanner Malware Open Source Supply Chain](tests/82a9f001-94c5-495e-9ed5-f530dbded5e2.md)
 * file_event_win_new_src_file.yml
@@ -257,6 +258,7 @@
   * T1564 [Extract binary files via VBA](tests/6afe288a-8a8b-4d33-a629-8d03ba9dad3a.md)
   * T1070.001 [Clear Event Logs via VBA](tests/1b682d84-f075-4f93-9a89-8a8de19ffd6e.md)
   * T1555 [Extract Windows Credential Manager via VBA](tests/234f9b7c-b53d-4f32-897b-b880a6c9ea7b.md)
+  * T1204.002 [Mirror Blast Emulation](tests/24fd9719-7419-42dd-bce6-ab3463110b3c.md)
   * T1055.012 [RunPE via VBA](tests/3ad4a037-1598-4136-837c-4027e4fa319b.md)
   * T1204.002 [OSTAP JS version](tests/add560ef-20d6-4011-a937-2c340f930911.md)
   * T1592.002 [Enumerate COM Objects in Registry with Powershell](tests/0d80d088-a84c-4353-af1a-fc8b439f1564.md)
@@ -359,6 +361,7 @@
   * T1069.002 [Get-DomainGroup with PowerView](tests/5a8a181c-2c8e-478d-a943-549305a01230.md)
 * net_connection_win_excel_outbound_network_connection.yml
   * T1204.002 [Excel 4 Macro](tests/4ea1fc97-8a46-4b4e-ba48-af43d2a98052.md)
+  * T1204.002 [Mirror Blast Emulation](tests/24fd9719-7419-42dd-bce6-ab3463110b3c.md)
   * T1592.002 [Enumerate COM Objects in Registry with Powershell](tests/0d80d088-a84c-4353-af1a-fc8b439f1564.md)
 * net_connection_win_imewdbld.yml
   * T1105 [Download a file with IMEWDBLD.exe](tests/1a02df58-09af-4064-a765-0babe1a0d1e2.md)
@@ -1089,6 +1092,7 @@
   * T1082 [WinPwn - Morerecon](tests/3278b2f6-f733-4875-9ef4-bfed34244f0a.md)
   * T1218 [Invoke-ATHRemoteFXvGPUDisablementCommand base test](tests/9ebe7901-7edf-45c0-b5c7-8366300919db.md)
   * T1069.002 [Get-DomainGroupMember with PowerView](tests/46352f40-f283-4fe5-b56d-d9a71750e145.md)
+  * T1048.003 [Exfiltration Over Alternative Protocol - FTP - Rclone](tests/b854eb97-bf9b-45ab-a1b5-b94e4880c56b.md)
   * T1218.005 [Invoke HTML Application - Direct download from URI](tests/39ceed55-f653-48ac-bd19-aceceaf525db.md)
   * T1218.005 [Invoke HTML Application - JScript Engine with Rundll32 and Inline Protocol Handler](tests/e7e3a525-7612-4d68-a5d3-c4649181b8af.md)
   * T1069.002 [Get-DomainGroup with PowerView](tests/5a8a181c-2c8e-478d-a943-549305a01230.md)
@@ -3321,6 +3325,7 @@
   * T1070.001 [Clear Logs](tests/e6abb60e-26b8-41da-8aae-0c35174b0967.md)
 * proc_creation_win_susp_execution_path.yml
   * T1218.004 [InstallUtil evasive invocation](tests/559e6d06-bb42-4307-bff7-3b95a8254bad.md)
+  * T1048.003 [Exfiltration Over Alternative Protocol - FTP - Rclone](tests/b854eb97-bf9b-45ab-a1b5-b94e4880c56b.md)
 * proc_creation_win_susp_findstr_385201.yml
   * T1518.001 [Security Software Discovery - Sysmon Service](tests/fe613cf3-8009-4446-9a0f-bc78a15b66c9.md)
 * proc_creation_win_susp_finger_usage.yml
@@ -3625,8 +3630,12 @@
   * T1113 [Windows Screencapture](tests/3c898f62-626c-47d5-aad2-6de873d69153.md)
 * proc_creation_win_susp_radmin.yml
   * T1072 [Radmin Viewer Utility](tests/b4988cad-6ed2-434d-ace5-ea2670782129.md)
+* proc_creation_win_susp_rclone_execution.yml
+  * T1048.003 [Exfiltration Over Alternative Protocol - FTP - Rclone](tests/b854eb97-bf9b-45ab-a1b5-b94e4880c56b.md)
 * proc_creation_win_susp_recon.yml
   * T1119 [Recon information for export with Command Prompt](tests/aa1180e2-f329-4e1e-8625-2472ec0bfaf3.md)
+* proc_creation_win_susp_recon_network_activity.yml
+  * T1016 [DNS Server Discovery Using nslookup](tests/34557863-344a-468f-808b-a1bfb89b4fa9.md)
 * proc_creation_win_susp_reg_add.yml
   * T1562.001 [LockBit Black - Use Registry Editor to turn on automatic logon -cmd](tests/9719d0e1-4fe0-4b2e-9a72-7ad3ee8ddc70.md)
   * T1562.001 [LockBit Black - Disable Privacy Settings Experience Using Registry -cmd](tests/d6d22332-d07d-498f-aea0-6139ecb7850e.md)
@@ -4094,6 +4103,7 @@
   * T1112 [Disable Windows Lock Workstation Feature](tests/3dacb0d2-46ee-4c27-ac1b-f9886bf91a56.md)
   * T1112 [Disable Windows Change Password Feature](tests/d4a6da40-618f-454d-9a9e-26af552aaeb0.md)
 * registry_set_disable_microsoft_office_security_features.yml
+  * T1204.002 [Mirror Blast Emulation](tests/24fd9719-7419-42dd-bce6-ab3463110b3c.md)
   * T1562.001 [Disable Microsoft Office Security Features](tests/6f5fb61b-4e56-4a3d-a8c3-82e13686c6d7.md)
 * registry_set_disable_privacy_settings_experience.yml
   * T1562.001 [LockBit Black - Disable Privacy Settings Experience Using Registry -Powershell](tests/d8c57eaa-497a-4a08-961e-bd5efd7c9374.md)
@@ -4139,6 +4149,7 @@
 * registry_set_office_security.yml
   * T1204.002 [Office Generic Payload Download](tests/5202ee05-c420-4148-bf5e-fd7f7d24850c.md)
   * T1564 [Extract binary files via VBA](tests/6afe288a-8a8b-4d33-a629-8d03ba9dad3a.md)
+  * T1204.002 [Mirror Blast Emulation](tests/24fd9719-7419-42dd-bce6-ab3463110b3c.md)
   * T1562.001 [Disable Microsoft Office Security Features](tests/6f5fb61b-4e56-4a3d-a8c3-82e13686c6d7.md)
 * registry_set_office_vsto_persistence.yml
   * T1219 [TeamViewer Files Detected Test on Windows](tests/8ca3b96d-8983-4a7f-b125-fc98cc0a2aa0.md)
