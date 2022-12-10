@@ -52,8 +52,8 @@ defense-evasion;T1548.002;powershell;['windows'];WinPwn - UAC Magic;964d8bf8-37b
 defense-evasion;T1548.002;powershell;['windows'];WinPwn - UAC Bypass ccmstp technique;f3c145f9-3c8d-422c-bd99-296a17a8f567;True;19
 defense-evasion;T1548.002;powershell;['windows'];WinPwn - UAC Bypass DiskCleanup technique;1ed67900-66cd-4b09-b546-2a0ef4431a0c;True;20
 defense-evasion;T1548.002;powershell;['windows'];WinPwn - UAC Bypass DccwBypassUAC technique;2b61977b-ae2d-4ae4-89cb-5c36c89586be;True;21
-defense-evasion;T1548.002;powershell;['windows'];Disable UAC admin consent prompt via ConsentPromptBehaviorAdmin registry key;251c5936-569f-42f4-9ac2-87a173b9e9b8;False;22
-defense-evasion;T1548.002;powershell;['windows'];UAC Bypass with WSReset Registry Modification;3b96673f-9c92-40f1-8a3e-ca060846f8d9;False;23
+defense-evasion;T1548.002;powershell;['windows'];Disable UAC admin consent prompt via ConsentPromptBehaviorAdmin registry key;251c5936-569f-42f4-9ac2-87a173b9e9b8;True;22
+defense-evasion;T1548.002;powershell;['windows'];UAC Bypass with WSReset Registry Modification;3b96673f-9c92-40f1-8a3e-ca060846f8d9;True;23
 defense-evasion;T1548.003;sh;['macos', 'linux'];Sudo usage;150c3a08-ee6e-48a6-aeaf-3659d24ceb4e;False;1
 defense-evasion;T1548.003;sh;['macos', 'linux'];Unlimited sudo cache timeout;a7b17659-dd5e-46f7-b7d1-e6792c91d0bc;False;2
 defense-evasion;T1548.003;sh;['macos', 'linux'];Disable tty_tickets for sudo caching;91a60b03-fb75-4d24-a42e-2eb8956e8de1;False;3
@@ -64,7 +64,7 @@ defense-evasion;T1036.005;powershell;['windows'];Masquerade as a built-in system
 defense-evasion;T1564;powershell;['windows'];Extract binary files via VBA;6afe288a-8a8b-4d33-a629-8d03ba9dad3a;True;1
 defense-evasion;T1564;command_prompt;['windows'];"Create a Hidden User Called ""$""";2ec63cc2-4975-41a6-bf09-dffdfb610778;True;2
 defense-evasion;T1564;powershell;['windows'];"Create an ""Administrator "" user (with a space on the end)";5bb20389-39a5-4e99-9264-aeb92a55a85c;True;3
-defense-evasion;T1564;command_prompt;['windows'];Create and Hide a Service with sc.exe;333c7de0-6fbe-42aa-ac2b-c7e40b18246a;False;4
+defense-evasion;T1564;command_prompt;['windows'];Create and Hide a Service with sc.exe;333c7de0-6fbe-42aa-ac2b-c7e40b18246a;True;4
 defense-evasion;T1484.002;powershell;['azure-ad'];Add Federation to Azure AD;8906c5d0-3ee5-4f63-897a-f6cafd3fdbb7;False;1
 defense-evasion;T1497.001;sh;['linux'];Detect Virtualization Environment (Linux);dfbd1a21-540d-4574-9731-e852bd6fe840;False;1
 defense-evasion;T1497.001;powershell;['windows'];Detect Virtualization Environment (Windows);502a7dc4-9d6f-4d28-abf2-f0e84692562d;True;2
@@ -474,8 +474,8 @@ privilege-escalation;T1548.002;powershell;['windows'];WinPwn - UAC Magic;964d8bf
 privilege-escalation;T1548.002;powershell;['windows'];WinPwn - UAC Bypass ccmstp technique;f3c145f9-3c8d-422c-bd99-296a17a8f567;True;19
 privilege-escalation;T1548.002;powershell;['windows'];WinPwn - UAC Bypass DiskCleanup technique;1ed67900-66cd-4b09-b546-2a0ef4431a0c;True;20
 privilege-escalation;T1548.002;powershell;['windows'];WinPwn - UAC Bypass DccwBypassUAC technique;2b61977b-ae2d-4ae4-89cb-5c36c89586be;True;21
-privilege-escalation;T1548.002;powershell;['windows'];Disable UAC admin consent prompt via ConsentPromptBehaviorAdmin registry key;251c5936-569f-42f4-9ac2-87a173b9e9b8;False;22
-privilege-escalation;T1548.002;powershell;['windows'];UAC Bypass with WSReset Registry Modification;3b96673f-9c92-40f1-8a3e-ca060846f8d9;False;23
+privilege-escalation;T1548.002;powershell;['windows'];Disable UAC admin consent prompt via ConsentPromptBehaviorAdmin registry key;251c5936-569f-42f4-9ac2-87a173b9e9b8;True;22
+privilege-escalation;T1548.002;powershell;['windows'];UAC Bypass with WSReset Registry Modification;3b96673f-9c92-40f1-8a3e-ca060846f8d9;True;23
 privilege-escalation;T1548.003;sh;['macos', 'linux'];Sudo usage;150c3a08-ee6e-48a6-aeaf-3659d24ceb4e;False;1
 privilege-escalation;T1548.003;sh;['macos', 'linux'];Unlimited sudo cache timeout;a7b17659-dd5e-46f7-b7d1-e6792c91d0bc;False;2
 privilege-escalation;T1548.003;sh;['macos', 'linux'];Disable tty_tickets for sudo caching;91a60b03-fb75-4d24-a42e-2eb8956e8de1;False;3
@@ -570,6 +570,7 @@ privilege-escalation;T1547.001;powershell;['windows'];HKCU - Policy Settings Exp
 privilege-escalation;T1547.001;powershell;['windows'];HKLM - Policy Settings Explorer Run Key;b5c9a9bc-dda3-4ea0-b16a-add8e81ab75f;True;13
 privilege-escalation;T1547.001;powershell;['windows'];HKLM - Append Command to Winlogon Userinit KEY Value;f7fab6cc-8ece-4ca7-a0f1-30a22fccd374;True;14
 privilege-escalation;T1547.001;powershell;['windows'];HKLM - Modify default System Shell - Winlogon Shell KEY Value ;1d958c61-09c6-4d9e-b26b-4130314e520e;True;15
+privilege-escalation;T1547.001;command_prompt;['windows'];secedit used to create a Run key in the HKLM Hive;14fdc3f1-6fc3-4556-8d36-aa89d9d42d02;False;16
 privilege-escalation;T1547.006;bash;['linux'];Linux - Load Kernel Module via insmod;687dcb93-9656-4853-9c36-9977315e9d23;False;1
 privilege-escalation;T1547.006;bash;['macos'];MacOS - Load Kernel Module via kextload and kmutil;f4391089-d3a5-4dd1-ab22-0419527f2672;False;2
 privilege-escalation;T1547.006;bash;['macos'];MacOS - Load Kernel Module via KextManagerLoadKextWithURL();f0007753-beb3-41ea-9948-760785e4c1e5;False;3
@@ -816,6 +817,7 @@ persistence;T1547.001;powershell;['windows'];HKCU - Policy Settings Explorer Run
 persistence;T1547.001;powershell;['windows'];HKLM - Policy Settings Explorer Run Key;b5c9a9bc-dda3-4ea0-b16a-add8e81ab75f;True;13
 persistence;T1547.001;powershell;['windows'];HKLM - Append Command to Winlogon Userinit KEY Value;f7fab6cc-8ece-4ca7-a0f1-30a22fccd374;True;14
 persistence;T1547.001;powershell;['windows'];HKLM - Modify default System Shell - Winlogon Shell KEY Value ;1d958c61-09c6-4d9e-b26b-4130314e520e;True;15
+persistence;T1547.001;command_prompt;['windows'];secedit used to create a Run key in the HKLM Hive;14fdc3f1-6fc3-4556-8d36-aa89d9d42d02;False;16
 persistence;T1136.003;sh;['iaas:aws'];AWS - Create a new IAM user;8d1c2368-b503-40c9-9057-8e42f21c58ad;False;1
 persistence;T1098;powershell;['windows'];Admin Account Manipulate;5598f7cb-cf43-455e-883a-f6008c5d46af;True;1
 persistence;T1098;powershell;['windows'];Domain Account and Group Manipulate;a55a22e9-a3d3-42ce-bd48-2653adb8f7a9;True;2
@@ -970,6 +972,7 @@ credential-access;T1003;powershell;['windows'];Credential Dumping with NPPSpy;9e
 credential-access;T1003;powershell;['windows'];Dump svchost.exe to gather RDP credentials;d400090a-d8ca-4be0-982e-c70598a23de9;True;3
 credential-access;T1003;powershell;['windows'];Retrieve Microsoft IIS Service Account Credentials Using AppCmd (using list);6c7a4fd3-5b0b-4b30-a93e-39411b25d889;False;4
 credential-access;T1003;powershell;['windows'];Retrieve Microsoft IIS Service Account Credentials Using AppCmd (using config);42510244-5019-48fa-a0e5-66c3b76e6049;False;5
+credential-access;T1003;powershell;['windows'];Dump Credential Manager using keymgr.dll and rundll32.exe;84113186-ed3c-4d0d-8a3c-8980c86c1f4a;False;6
 credential-access;T1539;powershell;['windows'];Steal Firefox Cookies (Windows);4b437357-f4e9-4c84-9fa6-9bcee6f826aa;True;1
 credential-access;T1539;powershell;['windows'];Steal Chrome Cookies (Windows);26a6b840-4943-4965-8df5-ef1f9a282440;True;2
 credential-access;T1003.002;command_prompt;['windows'];Registry dump of SAM, creds, and secrets;5c2571d0-1572-416d-9676-812e64ca9f44;True;1
@@ -1271,6 +1274,7 @@ discovery;T1201;command_prompt;['windows'];Examine domain password policy - Wind
 discovery;T1201;bash;['macos'];Examine password policy - macOS;4b7fa042-9482-45e1-b348-4b756b2a0742;False;7
 discovery;T1201;powershell;['windows'];Get-DomainPolicy with PowerView;3177f4da-3d4b-4592-8bdc-aa23d0b2e843;True;8
 discovery;T1201;powershell;['windows'];Enumerate Active Directory Password Policy with get-addefaultdomainpasswordpolicy;b2698b33-984c-4a1c-93bb-e4ba72a0babb;True;9
+discovery;T1201;command_prompt;['windows'];Use of SecEdit.exe to export the local security policy (including the password policy);510cc97f-56ac-4cd3-a198-d3218c23d889;False;10
 discovery;T1614.001;command_prompt;['windows'];Discover System Language by Registry Query;631d4cf1-42c9-4209-8fe9-6bd4de9421be;True;1
 discovery;T1614.001;command_prompt;['windows'];Discover System Language with chcp;d91473ca-944e-477a-b484-0e80217cd789;True;2
 discovery;T1012;command_prompt;['windows'];Query Registry;8f7578c4-9863-4d83-875c-a565573bbdf0;True;1
