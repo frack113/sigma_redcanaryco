@@ -157,11 +157,11 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1547.014
-[HKLM - Add malicious StubPath value to existing Active Setup Entry](tests/39e417dd-4fed-4d9c-ae3a-ba433b4d0e9a.md) ['windows'] (sigma rule :x:)
+[HKLM - Add malicious StubPath value to existing Active Setup Entry](tests/39e417dd-4fed-4d9c-ae3a-ba433b4d0e9a.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[HKLM - re-execute 'Internet Explorer Core Fonts' StubPath payload by decreasing version number](tests/04d55cef-f283-40ba-ae2a-316bc3b5e78c.md) ['windows'] (sigma rule :x:)
+[HKLM - re-execute 'Internet Explorer Core Fonts' StubPath payload by decreasing version number](tests/04d55cef-f283-40ba-ae2a-316bc3b5e78c.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[HKLM - Add atomic_test key to launch executable as part of user setup](tests/deff4586-0517-49c2-981d-bbea24d48d71.md) ['windows'] (sigma rule :x:)
+[HKLM - Add atomic_test key to launch executable as part of user setup](tests/deff4586-0517-49c2-981d-bbea24d48d71.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1070.004
@@ -441,7 +441,7 @@ Caution: a test can generate a lot of noise...
 
 [Kill antimalware protected processes using Backstab](tests/24a12b91-05a7-4deb-8d7f-035fa98591bc.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[WMIC Tamper with Windows Defender Evade Scanning Folder](tests/59d386fc-3a4b-41b8-850d-9e3eee24dfe4.md) ['windows'] (sigma rule :x:)
+[WMIC Tamper with Windows Defender Evade Scanning Folder](tests/59d386fc-3a4b-41b8-850d-9e3eee24dfe4.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Tamper with Windows Defender Evade Scanning -Folder](tests/0b19f4ee-de90-4059-88cb-63c800c683ed.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -685,7 +685,7 @@ Caution: a test can generate a lot of noise...
 ### T1546.008
 [Attaches Command Prompt as a Debugger to a List of Target Processes](tests/3309f53e-b22b-4eb6-8fd2-a6cf58b355a9.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Create Symbolic Link From osk.exe to cmd.exe](tests/51ef369c-5e87-4f33-88cd-6d61be63edf2.md) ['windows'] (sigma rule :x:)
+[Create Symbolic Link From osk.exe to cmd.exe](tests/51ef369c-5e87-4f33-88cd-6d61be63edf2.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Replace binary of sticky keys](tests/934e90cf-29ca-48b3-863c-411737ad44e3.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -841,7 +841,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1567.002
-[Exfiltrate data with rclone to cloud Storage - Mega (Windows)](tests/8529ee44-279a-4a19-80bf-b846a40dda58.md) ['windows'] (sigma rule :x:)
+[Exfiltrate data with rclone to cloud Storage - Mega (Windows)](tests/8529ee44-279a-4a19-80bf-b846a40dda58.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1033
@@ -1089,11 +1089,11 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1547.004
-[Winlogon HKLM Userinit Key Persistence - PowerShell](tests/f9b8daff-8fa7-4e6a-a1a7-7c14675a545b.md) ['windows'] (sigma rule :x:)
+[Winlogon HKLM Userinit Key Persistence - PowerShell](tests/f9b8daff-8fa7-4e6a-a1a7-7c14675a545b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Winlogon Shell Key Persistence - PowerShell](tests/bf9f9d65-ee4d-4c3e-a843-777d04f19c38.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Winlogon HKLM Shell Key Persistence - PowerShell](tests/95a3c42f-8c88-4952-ad60-13b81d929a9d.md) ['windows'] (sigma rule :x:)
+[Winlogon HKLM Shell Key Persistence - PowerShell](tests/95a3c42f-8c88-4952-ad60-13b81d929a9d.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Winlogon Userinit Key Persistence - PowerShell](tests/fb32c935-ee2e-454b-8fa3-1c46b42e8dfb.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1343,7 +1343,7 @@ Caution: a test can generate a lot of noise...
 
 [HKLM - Append Command to Winlogon Userinit KEY Value](tests/f7fab6cc-8ece-4ca7-a0f1-30a22fccd374.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[secedit used to create a Run key in the HKLM Hive](tests/14fdc3f1-6fc3-4556-8d36-aa89d9d42d02.md) ['windows'] (sigma rule :x:)
+[secedit used to create a Run key in the HKLM Hive](tests/14fdc3f1-6fc3-4556-8d36-aa89d9d42d02.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Change Startup Folder - HKCU Modify User Shell Folders Startup Value](tests/8834b65a-f808-4ece-ad7e-2acdf647aafa.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1493,7 +1493,7 @@ Caution: a test can generate a lot of noise...
 
 [Examine password complexity policy - CentOS/RHEL 6.x](tests/6ce12552-0adb-4f56-89ff-95ce268f6358.md) ['linux'] (sigma rule :x:)
 
-[Use of SecEdit.exe to export the local security policy (including the password policy)](tests/510cc97f-56ac-4cd3-a198-d3218c23d889.md) ['windows'] (sigma rule :x:)
+[Use of SecEdit.exe to export the local security policy (including the password policy)](tests/510cc97f-56ac-4cd3-a198-d3218c23d889.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Enumerate Active Directory Password Policy with get-addefaultdomainpasswordpolicy](tests/b2698b33-984c-4a1c-93bb-e4ba72a0babb.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1593,7 +1593,7 @@ Caution: a test can generate a lot of noise...
 
 [Dump svchost.exe to gather RDP credentials](tests/d400090a-d8ca-4be0-982e-c70598a23de9.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Dump Credential Manager using keymgr.dll and rundll32.exe](tests/84113186-ed3c-4d0d-8a3c-8980c86c1f4a.md) ['windows'] (sigma rule :x:)
+[Dump Credential Manager using keymgr.dll and rundll32.exe](tests/84113186-ed3c-4d0d-8a3c-8980c86c1f4a.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Credential Dumping with NPPSpy](tests/9e2173c0-ba26-4cdf-b0ed-8c54b27e3ad6.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1605,7 +1605,7 @@ Caution: a test can generate a lot of noise...
 
 [DNS C2](tests/e7bf9802-2e78-4db9-93b5-181b7bcd37d7.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[DNS Regular Beaconing](tests/3efc144e-1af8-46bb-8ca2-1376bb6db8b6.md) ['windows'] (sigma rule :x:)
+[DNS Regular Beaconing](tests/3efc144e-1af8-46bb-8ca2-1376bb6db8b6.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [DNS Long Domain Query](tests/fef31710-223a-40ee-8462-a396d6b66978.md) ['windows'] (sigma rule :x:)
 
@@ -1891,11 +1891,11 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1546
-[HKLM - Persistence using CommandProcessor AutoRun key (With Elevation)](tests/a574dafe-a903-4cce-9701-14040f4f3532.md) ['windows'] (sigma rule :x:)
+[HKLM - Persistence using CommandProcessor AutoRun key (With Elevation)](tests/a574dafe-a903-4cce-9701-14040f4f3532.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[HKCU - Persistence using CommandProcessor AutoRun key (Without Elevation)](tests/36b8dbf9-59b1-4e9b-a3bb-36e80563ef01.md) ['windows'] (sigma rule :x:)
+[HKCU - Persistence using CommandProcessor AutoRun key (Without Elevation)](tests/36b8dbf9-59b1-4e9b-a3bb-36e80563ef01.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Persistence with Custom AutodialDLL](tests/aca9ae16-7425-4b6d-8c30-cad306fdbd5b.md) ['windows'] (sigma rule :x:)
+[Persistence with Custom AutodialDLL](tests/aca9ae16-7425-4b6d-8c30-cad306fdbd5b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1059.005

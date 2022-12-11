@@ -1,7 +1,7 @@
 
 [back](../index.md)
 
-Find sigma rule :x: 
+Find sigma rule :heavy_check_mark: 
 
 # Attack: Active Setup 
 
@@ -36,6 +36,8 @@ Without the last command it will normally run on next user logon. Note: this tes
 powershell
 
 # Sigma Rule
+ - proc_creation_win_susp_runonce_execution.yml (id: 198effb6-6c98-4d0c-9ea3-451fa143c45c)
+
 
 
 [back](../index.md)

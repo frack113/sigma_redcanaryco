@@ -2006,6 +2006,7 @@
   * T1059.001 [PowerUp Invoke-AllChecks](tests/1289f78d-22d2-4590-ac76-166737e1811b.md)
   * T1078.003 [WinPwn - Loot local Credentials - Safetykatz](tests/e9fdb899-a980-4ba4-934b-486ad22e22f4.md)
   * T1059.001 [ATHPowerShellCommandLineParameter -EncodedCommand parameter variations](tests/86a43bad-12e3-4e85-b97c-4d5cf25b95c3.md)
+  * T1003 [Dump Credential Manager using keymgr.dll and rundll32.exe](tests/84113186-ed3c-4d0d-8a3c-8980c86c1f4a.md)
   * T1555.003 [WinPwn - PowerSharpPack - Sharpweb for Browser Credentials](tests/e5e3d639-6ea8-4408-9ecd-d5a286268ca0.md)
   * T1555 [WinPwn - Loot local Credentials - lazagne](tests/079ee2e9-6f16-47ca-a635-14efcd994118.md)
   * T1047 [Create a Process using WMI Query and an Encoded Command](tests/7db7a7f9-9531-4840-9b30-46220135441c.md)
@@ -2327,9 +2328,11 @@
   * T1218.007 [WMI Win32_Product Class - Execute Local MSI file with embedded VBScript](tests/cf470d9a-58e7-43e5-b0d2-805dffc05576.md)
   * T1218.007 [WMI Win32_Product Class - Execute Local MSI file with embedded JScript](tests/882082f0-27c6-4eec-a43c-9aa80bccdb30.md)
 * posh_ps_winlogon_helper_dll.yml
+  * T1547.004 [Winlogon HKLM Userinit Key Persistence - PowerShell](tests/f9b8daff-8fa7-4e6a-a1a7-7c14675a545b.md)
   * T1547.001 [HKLM - Modify default System Shell - Winlogon Shell KEY Value ](tests/1d958c61-09c6-4d9e-b26b-4130314e520e.md)
   * T1547.001 [HKLM - Append Command to Winlogon Userinit KEY Value](tests/f7fab6cc-8ece-4ca7-a0f1-30a22fccd374.md)
   * T1547.004 [Winlogon Shell Key Persistence - PowerShell](tests/bf9f9d65-ee4d-4c3e-a843-777d04f19c38.md)
+  * T1547.004 [Winlogon HKLM Shell Key Persistence - PowerShell](tests/95a3c42f-8c88-4952-ad60-13b81d929a9d.md)
   * T1547.004 [Winlogon Userinit Key Persistence - PowerShell](tests/fb32c935-ee2e-454b-8fa3-1c46b42e8dfb.md)
   * T1547.004 [Winlogon Notify Key Logon Persistence - PowerShell](tests/d40da266-e073-4e5a-bb8b-2b385023e5f9.md)
   * T1562.001 [Lockbit Black - Use Registry Editor to turn on automatic logon -Powershell](tests/5e27f36d-5132-4537-b43b-413b0d5eec9a.md)
@@ -2387,6 +2390,8 @@
   * T1134.001 [Launch NSudo Executable](tests/7be1bc0f-d8e5-4345-9333-f5f67d742cb9.md)
   * T1003.001 [Dump LSASS.exe using imported Microsoft DLLs](tests/86fc3f40-237f-4701-b155-81c01c48d697.md)
   * T1003 [Gsecdump](tests/96345bfc-8ae7-4b6a-80b7-223200f24ef9.md)
+* proc_creation_create_link_osk_cmd.yml
+  * T1546.008 [Create Symbolic Link From osk.exe to cmd.exe](tests/51ef369c-5e87-4f33-88cd-6d61be63edf2.md)
 * proc_creation_win_abusing_debug_privilege.yml
   * T1106 [WinPwn - Get SYSTEM shell - Bind System Shell using CreateProcess technique](tests/7ec5b74e-8289-4ff2-a162-b6f286a33abd.md)
   * T1569.002 [Execute a Command as a Service](tests/2382dee2-a75f-49aa-9378-f52df6ed3fb1.md)
@@ -2505,6 +2510,7 @@
   * T1222.001 [cacls - Grant permission to specified user or group recursively](tests/a8206bcc-f282-40a9-a389-05d9c0263485.md)
   * T1222.001 [Grant Full Access to folder for Everyone - Ryuk Ransomware Style](tests/ac7e6118-473d-41ec-9ac0-ef4f1d1ed2f6.md)
   * T1222.001 [attrib - Remove read-only attribute](tests/bec1e95c-83aa-492e-ab77-60c71bbd21b0.md)
+  * T1546.008 [Create Symbolic Link From osk.exe to cmd.exe](tests/51ef369c-5e87-4f33-88cd-6d61be63edf2.md)
   * T1546.008 [Replace binary of sticky keys](tests/934e90cf-29ca-48b3-863c-411737ad44e3.md)
 * proc_creation_win_findstr_gpp_passwords.yml
   * T1552.006 [GPP Passwords (findstr)](tests/870fe8fb-5e23-4f5f-b89d-dd7fe26f3b5f.md)
@@ -2813,6 +2819,7 @@
   * T1003.003 [Dump Active Directory Database with NTDSUtil](tests/2364e33d-ceab-4641-8468-bfb1d7cc2723.md)
   * T1098 [Password Change on Directory Service Restore Mode (DSRM) Account](tests/d5b886d9-d1c7-4b6e-a7b0-460041bf2823.md)
 * proc_creation_win_ntfs_short_name_path_use_cli.yml
+  * T1567.002 [Exfiltrate data with rclone to cloud Storage - Mega (Windows)](tests/8529ee44-279a-4a19-80bf-b846a40dda58.md)
   * T1569.002 [BlackCat pre-encryption cmds with Lateral Movement](tests/31eb7828-97d7-4067-9c1e-c6feb85edc4b.md)
   * T1592.002 [Enumerate COM Objects in Registry with Powershell](tests/0d80d088-a84c-4353-af1a-fc8b439f1564.md)
 * proc_creation_win_ntfs_short_name_path_use_image.yml
@@ -3079,6 +3086,7 @@
   * T1546.015 [COM hijacking via TreatAs](tests/33eacead-f117-4863-8eb0-5c6304fbfaa9.md)
   * T1546.015 [COM Hijacking - InprocServer32](tests/48117158-d7be-441b-bc6a-d9e36e47b52b.md)
   * T1218.011 [Rundll32 execute VBscript command](tests/638730e7-7aed-43dc-bf8c-8117f805f5bb.md)
+  * T1003 [Dump Credential Manager using keymgr.dll and rundll32.exe](tests/84113186-ed3c-4d0d-8a3c-8980c86c1f4a.md)
   * T1218.011 [Execution of non-dll using rundll32.exe](tests/ae3a8605-b26e-457c-b6b3-2702fd335bac.md)
   * T1219 [ScreenConnect Application Download and Install on Windows](tests/4a18cc4e-416f-4966-9a9d-75731c4684c0.md)
   * T1546.015 [COM Hijacking with RunDLL32 (Local Server Switch)](tests/123520cc-e998-471b-a920-bd28e3feafa0.md)
@@ -3233,6 +3241,7 @@
   * T1140 [Certutil Rename and Decode](tests/71abc534-3c05-4d0c-80f7-cbe93cb2aa94.md)
   * T1036.003 [Masquerading - cscript.exe running as notepad.exe](tests/3a2a578b-0a01-46e4-92e3-62e2859b42f0.md)
   * T1547.001 [Change Startup Folder - HKLM Modify User Shell Folders Common Startup Value](tests/acfef903-7662-447e-a391-9c91c2f00f7b.md)
+  * T1546.008 [Create Symbolic Link From osk.exe to cmd.exe](tests/51ef369c-5e87-4f33-88cd-6d61be63edf2.md)
   * T1003.003 [Copy NTDS.dit from Volume Shadow Copy](tests/c6237146-9ea6-4711-85c9-c56d263a6b03.md)
   * T1546.008 [Replace binary of sticky keys](tests/934e90cf-29ca-48b3-863c-411737ad44e3.md)
   * T1574.001 [DLL Search Order Hijacking - amsi.dll](tests/8549ad4b-b5df-4a2d-a3d7-2aee9e7052a3.md)
@@ -3599,6 +3608,7 @@
   * T1105 [MAZE Propagation Script](tests/70f4d07c-5c3e-4d53-bb0a-cdf3ada14baf.md)
   * T1082 [WinPwn - GeneralRecon](tests/7804659b-fdbf-4cf6-b06a-c03e758590e8.md)
   * T1546.015 [COM hijacking via TreatAs](tests/33eacead-f117-4863-8eb0-5c6304fbfaa9.md)
+  * T1003 [Dump Credential Manager using keymgr.dll and rundll32.exe](tests/84113186-ed3c-4d0d-8a3c-8980c86c1f4a.md)
   * T1548.002 [WinPwn - UAC Bypass DiskCleanup technique](tests/1ed67900-66cd-4b09-b546-2a0ef4431a0c.md)
   * T1546.015 [COM Hijacking with RunDLL32 (Local Server Switch)](tests/123520cc-e998-471b-a920-bd28e3feafa0.md)
 * proc_creation_win_susp_print.yml
@@ -3608,6 +3618,7 @@
 * proc_creation_win_susp_progname.yml
   * T1087.002 [Get-DomainUser with PowerView](tests/93662494-5ed7-4454-a04c-8c8372808ac2.md)
   * T1558.004 [Get-DomainUser with PowerView](tests/d6139549-7b72-4e48-9ea1-324fc9bdf88a.md)
+  * T1071.004 [DNS Regular Beaconing](tests/3efc144e-1af8-46bb-8ca2-1376bb6db8b6.md)
   * T1069.002 [Get-DomainGroup with PowerView](tests/5a8a181c-2c8e-478d-a943-549305a01230.md)
   * T1201 [Get-DomainPolicy with PowerView](tests/3177f4da-3d4b-4592-8bdc-aa23d0b2e843.md)
   * T1018 [Get-DomainController with PowerView](tests/b9d2e8ca-5520-4737-8076-4f08913da2c4.md)
@@ -3632,6 +3643,7 @@
 * proc_creation_win_susp_radmin.yml
   * T1072 [Radmin Viewer Utility](tests/b4988cad-6ed2-434d-ace5-ea2670782129.md)
 * proc_creation_win_susp_rclone_execution.yml
+  * T1567.002 [Exfiltrate data with rclone to cloud Storage - Mega (Windows)](tests/8529ee44-279a-4a19-80bf-b846a40dda58.md)
   * T1048.003 [Exfiltration Over Alternative Protocol - FTP - Rclone](tests/b854eb97-bf9b-45ab-a1b5-b94e4880c56b.md)
 * proc_creation_win_susp_recon.yml
   * T1119 [Recon information for export with Command Prompt](tests/aa1180e2-f329-4e1e-8625-2472ec0bfaf3.md)
@@ -3677,9 +3689,15 @@
   * T1218.002 [Control Panel Items](tests/037e9d8a-9e46-4255-8b33-2ae3b545ca6f.md)
 * proc_creation_win_susp_rundll32_js_runhtmlapplication.yml
   * T1218.011 [Rundll32 execute JavaScript Remote Payload With GetObject](tests/57ba4ce9-ee7a-4f27-9928-3c70c489b59d.md)
+* proc_creation_win_susp_rundll32_keymgr.yml
+  * T1003 [Dump Credential Manager using keymgr.dll and rundll32.exe](tests/84113186-ed3c-4d0d-8a3c-8980c86c1f4a.md)
 * proc_creation_win_susp_rundll32_script_run.yml
   * T1218.011 [Rundll32 execute JavaScript Remote Payload With GetObject](tests/57ba4ce9-ee7a-4f27-9928-3c70c489b59d.md)
   * T1218.011 [Rundll32 execute VBscript command](tests/638730e7-7aed-43dc-bf8c-8117f805f5bb.md)
+* proc_creation_win_susp_runonce_execution.yml
+  * T1547.014 [HKLM - Add malicious StubPath value to existing Active Setup Entry](tests/39e417dd-4fed-4d9c-ae3a-ba433b4d0e9a.md)
+  * T1547.014 [HKLM - re-execute 'Internet Explorer Core Fonts' StubPath payload by decreasing version number](tests/04d55cef-f283-40ba-ae2a-316bc3b5e78c.md)
+  * T1547.014 [HKLM - Add atomic_test key to launch executable as part of user setup](tests/deff4586-0517-49c2-981d-bbea24d48d71.md)
 * proc_creation_win_susp_schtask_creation.yml
   * T1195 [Octopus Scanner Malware Open Source Supply Chain](tests/82a9f001-94c5-495e-9ed5-f530dbded5e2.md)
   * T1053.005 [Scheduled Task Executing Base64 Encoded Commands From Registry](tests/e895677d-4f06-49ab-91b6-ae3742d0a2ba.md)
@@ -3714,6 +3732,9 @@
   * T1204.002 [OSTap Style Macro Execution](tests/8bebc690-18c7-4549-bc98-210f7019efff.md)
   * T1547.001 [Suspicious jse file run from startup Folder](tests/dade9447-791e-4c8f-b04b-3a35855dfa06.md)
   * T1204.002 [OSTap Payload Download](tests/3f3af983-118a-4fa1-85d3-ba4daa739d80.md)
+* proc_creation_win_susp_secedit.yml
+  * T1547.001 [secedit used to create a Run key in the HKLM Hive](tests/14fdc3f1-6fc3-4556-8d36-aa89d9d42d02.md)
+  * T1201 [Use of SecEdit.exe to export the local security policy (including the password policy)](tests/510cc97f-56ac-4cd3-a198-d3218c23d889.md)
 * proc_creation_win_susp_service_dacl_modification.yml
   * T1564 [Create and Hide a Service with sc.exe](tests/333c7de0-6fbe-42aa-ac2b-c7e40b18246a.md)
 * proc_creation_win_susp_service_modification.yml
@@ -3980,6 +4001,8 @@
   * T1220 [MSXSL Bypass using remote files](tests/a7c3ab07-52fb-49c8-ab6d-e9c6d4a0a985.md)
   * T1220 [MSXSL Bypass using local files](tests/ca23bfb2-023f-49c5-8802-e66997de462d.md)
   * T1220 [WMIC bypass using remote XSL file](tests/7f5be499-33be-4129-a560-66021f379b9b.md)
+* proc_creation_wmic_tamper_defender.yml
+  * T1562.001 [WMIC Tamper with Windows Defender Evade Scanning Folder](tests/59d386fc-3a4b-41b8-850d-9e3eee24dfe4.md)
 * process_access_win_shellcode_inject_msf_empire.yml
   * T1106 [WinPwn - Get SYSTEM shell - Bind System Shell using CreateProcess technique](tests/7ec5b74e-8289-4ff2-a162-b6f286a33abd.md)
   * T1003.002 [WinPwn - Loot local Credentials - Dump SAM-File for NTLM Hashes](tests/0c0f5f06-166a-4f4d-bb4a-719df9a01dbb.md)
@@ -4037,6 +4060,9 @@
   * T1547.010 [Add Port Monitor persistence in Registry](tests/d34ef297-f178-4462-871e-9ce618d44e50.md)
 * registry_set_allow_rdp_remote_assistance_feature.yml
   * T1112 [Allow RDP Remote Assistance Feature](tests/86677d0e-0b5e-4a2b-b302-454175f9aa9e.md)
+* registry_set_asep_reg_keys_modification_common.yml
+  * T1546 [HKLM - Persistence using CommandProcessor AutoRun key (With Elevation)](tests/a574dafe-a903-4cce-9701-14040f4f3532.md)
+  * T1546 [HKCU - Persistence using CommandProcessor AutoRun key (Without Elevation)](tests/36b8dbf9-59b1-4e9b-a3bb-36e80563ef01.md)
 * registry_set_asep_reg_keys_modification_currentcontrolset.yml
   * T1556.002 [Install and Register Password Filter DLL](tests/a7961770-beb5-4134-9674-83d7e1fa865c.md)
   * T1547.002 [Authentication Package](tests/be2590e8-4ac3-47ac-b4b5-945820f2fbe9.md)
@@ -4044,6 +4070,7 @@
   * T1003 [Credential Dumping with NPPSpy](tests/9e2173c0-ba26-4cdf-b0ed-8c54b27e3ad6.md)
 * registry_set_asep_reg_keys_modification_currentversion.yml
   * T1218 [InfDefaultInstall.exe .inf Execution](tests/54ad7d5a-a1b5-472c-b6c4-f8090fb2daef.md)
+  * T1547.001 [secedit used to create a Run key in the HKLM Hive](tests/14fdc3f1-6fc3-4556-8d36-aa89d9d42d02.md)
   * T1547.001 [SystemBC Malware-as-a-Service Registry](tests/9dc7767b-30c1-4cc4-b999-50cab5e27891.md)
   * T1112 [Modify Registry of Local Machine - cmd](tests/282f929a-6bc5-42b8-bd93-960c3ba35afe.md)
   * T1547.001 [Reg Key RunOnce](tests/554cbd88-cde1-4b56-8168-0be552eed9eb.md)
@@ -4056,9 +4083,11 @@
   * T1036.003 [Masquerading - non-windows exe running as windows exe](tests/bc15c13f-d121-4b1f-8c7d-28d95854d086.md)
 * registry_set_asep_reg_keys_modification_currentversion_nt.yml
   * T1546.008 [Attaches Command Prompt as a Debugger to a List of Target Processes](tests/3309f53e-b22b-4eb6-8fd2-a6cf58b355a9.md)
+  * T1547.004 [Winlogon HKLM Userinit Key Persistence - PowerShell](tests/f9b8daff-8fa7-4e6a-a1a7-7c14675a545b.md)
   * T1547.001 [HKLM - Modify default System Shell - Winlogon Shell KEY Value ](tests/1d958c61-09c6-4d9e-b26b-4130314e520e.md)
   * T1547.001 [HKLM - Append Command to Winlogon Userinit KEY Value](tests/f7fab6cc-8ece-4ca7-a0f1-30a22fccd374.md)
   * T1547.004 [Winlogon Shell Key Persistence - PowerShell](tests/bf9f9d65-ee4d-4c3e-a843-777d04f19c38.md)
+  * T1547.004 [Winlogon HKLM Shell Key Persistence - PowerShell](tests/95a3c42f-8c88-4952-ad60-13b81d929a9d.md)
   * T1546.012 [IFEO Global Flags](tests/46b1f278-c8ee-4aa5-acce-65e77b11f3c1.md)
   * T1546.010 [Install AppInit Shim](tests/a58d9386-3080-4242-ab5f-454c16503d18.md)
   * T1546.012 [GlobalFlags in Image File Execution Options](tests/13117939-c9b2-4a43-999e-0a543df92f0d.md)
@@ -4092,6 +4121,7 @@
   * T1562.001 [Kill antimalware protected processes using Backstab](tests/24a12b91-05a7-4deb-8d7f-035fa98591bc.md)
 * registry_set_defender_exclusions.yml
   * T1562.001 [Tamper with Windows Defender Evade Scanning -Process](tests/a123ce6a-3916-45d6-ba9c-7d4081315c27.md)
+  * T1562.001 [WMIC Tamper with Windows Defender Evade Scanning Folder](tests/59d386fc-3a4b-41b8-850d-9e3eee24dfe4.md)
   * T1562.001 [Tamper with Windows Defender Evade Scanning -Folder](tests/0b19f4ee-de90-4059-88cb-63c800c683ed.md)
   * T1562.001 [Tamper with Windows Defender Evade Scanning -Extension](tests/315f4be6-2240-4552-b3e1-d1047f5eecea.md)
 * registry_set_disable_administrative_share.yml
@@ -4166,6 +4196,8 @@
   * T1137.004 [Install Outlook Home Page Persistence](tests/7a91ad51-e6d2-4d43-9471-f26362f5738e.md)
 * registry_set_outlook_security.yml
   * T1137 [Office Application Startup - Outlook as a C2](tests/bfe6ac15-c50b-4c4f-a186-0fc6b8ba936c.md)
+* registry_set_persistence_autodial_dll.yml
+  * T1546 [Persistence with Custom AutodialDLL](tests/aca9ae16-7425-4b6d-8c30-cad306fdbd5b.md)
 * registry_set_persistence_search_order.yml
   * T1219 [TeamViewer Files Detected Test on Windows](tests/8ca3b96d-8983-4a7f-b125-fc98cc0a2aa0.md)
 * registry_set_powershell_as_service.yml
