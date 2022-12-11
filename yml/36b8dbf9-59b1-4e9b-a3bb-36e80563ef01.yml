@@ -17,5 +17,7 @@ description: |-
   An adversary may abuse the CommandProcessor AutoRun registry key to persist. Every time cmd.exe is executed, the command defined in the AutoRun key also gets executed.
   [reference](https://devblogs.microsoft.com/oldnewthing/20071121-00/?p=24433)
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: f59c3faf-50f3-464b-9f4c-1b67ab512d99
+    name: registry_set_asep_reg_keys_modification_common.yml

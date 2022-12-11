@@ -17,5 +17,7 @@ description: |
   This behaviour is typical of implants either in an idle state waiting for instructions or configured to use a low query volume over time to evade threshold based detection.
   A custom domain and sub-domain will need to be passed as input parameters for this test to work. Upon execution, DNS information about the domain will be displayed for each callout.
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: efdd8dd5-cee8-4e59-9390-7d4d5e4dd6f6
+    name: proc_creation_win_susp_progname.yml

@@ -14,5 +14,9 @@ description: |
   This test uses rclone to exfiltrate data to a remote cloud storage instance. (Mega)
   See https://thedfirreport.com/2022/06/16/sans-ransomware-summit-2022-can-you-detect-this/
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: e37db05d-d1f9-49c8-b464-cee1a4b11638
+    name: proc_creation_win_susp_rclone_execution.yml
+  - id: 349d891d-fef0-4fe4-bc53-eee623a15969
+    name: proc_creation_win_ntfs_short_name_path_use_cli.yml

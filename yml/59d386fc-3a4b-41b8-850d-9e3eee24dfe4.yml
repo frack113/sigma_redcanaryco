@@ -15,5 +15,9 @@ description: |
   The following Atomic will attempt to exclude a folder within Defender leveraging WMI
   Reference: https://www.bleepingcomputer.com/news/security/gootkit-malware-bypasses-windows-defender-by-setting-path-exclusions/
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 51cbac1e-eee3-4a90-b1b7-358efb81fa0a
+    name: proc_creation_wmic_tamper_defender.yml
+  - id: a982fc9c-6333-4ffb-a51d-addb04e8b529
+    name: registry_set_defender_exclusions.yml

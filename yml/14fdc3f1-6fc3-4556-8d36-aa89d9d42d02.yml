@@ -52,5 +52,9 @@ description: |
   secedit allows to manipulate the HKLM hive of the Windows registry. This test creates a Run key with the keyname calc having calc.exe as the value in the HKLM hive.
   [Reference](https://blueteamops.medium.com/secedit-and-i-know-it-595056dee53d)
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: c2c76b77-32be-4d1f-82c9-7e544bdfe0eb
+    name: proc_creation_win_susp_secedit.yml
+  - id: 20f0ee37-5942-4e45-b7d5-c5b5db9df5cd
+    name: registry_set_asep_reg_keys_modification_currentversion.yml

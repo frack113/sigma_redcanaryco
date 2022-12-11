@@ -16,4 +16,6 @@ description: |-
   [Reference](https://twitter.com/0gtweet/status/1588815661085917186?cxt=HHwWhIDUyaDbzYwsAAAA)
 executor: powershell
 sigma: false
-sigma_rule: []
+sigma_rule: 
+- id: 2d3cdeec-c0db-45b4-aa86-082f7eb75701
+  name: proc_creation_win_iis_service_account_password_dumped.yml

@@ -329,7 +329,7 @@ defense-evasion;T1562.001;command_prompt;['windows'];LockBit Black - Use Registr
 defense-evasion;T1562.001;powershell;['windows'];LockBit Black - Disable Privacy Settings Experience Using Registry -Powershell;d8c57eaa-497a-4a08-961e-bd5efd7c9374;True;34
 defense-evasion;T1562.001;powershell;['windows'];Lockbit Black - Use Registry Editor to turn on automatic logon -Powershell;5e27f36d-5132-4537-b43b-413b0d5eec9a;True;35
 defense-evasion;T1562.001;powershell;['windows'];Disable Windows Defender with PwSh Disable-WindowsOptionalFeature;f542ffd3-37b4-4528-837f-682874faa012;True;36
-defense-evasion;T1562.001;command_prompt;['windows'];WMIC Tamper with Windows Defender Evade Scanning Folder;59d386fc-3a4b-41b8-850d-9e3eee24dfe4;False;37
+defense-evasion;T1562.001;command_prompt;['windows'];WMIC Tamper with Windows Defender Evade Scanning Folder;59d386fc-3a4b-41b8-850d-9e3eee24dfe4;True;37
 defense-evasion;T1055.012;powershell;['windows'];Process Hollowing using PowerShell;562427b4-39ef-4e8c-af88-463a78e70b9c;True;1
 defense-evasion;T1055.012;powershell;['windows'];RunPE via VBA;3ad4a037-1598-4136-837c-4027e4fa319b;True;2
 defense-evasion;T1027;sh;['macos', 'linux'];Decode base64 Data into Script;f45df6be-2e1e-4136-a384-8f18ab3826fb;False;1
@@ -482,9 +482,9 @@ privilege-escalation;T1548.003;sh;['macos', 'linux'];Disable tty_tickets for sud
 privilege-escalation;T1574.011;powershell;['windows'];Service Registry Permissions Weakness;f7536d63-7fd4-466f-89da-7e48d550752a;True;1
 privilege-escalation;T1574.011;command_prompt;['windows'];Service ImagePath Change with reg.exe;f38e9eea-e1d7-4ba6-b716-584791963827;True;2
 privilege-escalation;T1547;command_prompt;['windows'];Add a driver;cb01b3da-b0e7-4e24-bf6d-de5223526785;True;1
-privilege-escalation;T1547.014;powershell;['windows'];HKLM - Add atomic_test key to launch executable as part of user setup;deff4586-0517-49c2-981d-bbea24d48d71;False;1
-privilege-escalation;T1547.014;powershell;['windows'];HKLM - Add malicious StubPath value to existing Active Setup Entry;39e417dd-4fed-4d9c-ae3a-ba433b4d0e9a;False;2
-privilege-escalation;T1547.014;powershell;['windows'];HKLM - re-execute 'Internet Explorer Core Fonts' StubPath payload by decreasing version number;04d55cef-f283-40ba-ae2a-316bc3b5e78c;False;3
+privilege-escalation;T1547.014;powershell;['windows'];HKLM - Add atomic_test key to launch executable as part of user setup;deff4586-0517-49c2-981d-bbea24d48d71;True;1
+privilege-escalation;T1547.014;powershell;['windows'];HKLM - Add malicious StubPath value to existing Active Setup Entry;39e417dd-4fed-4d9c-ae3a-ba433b4d0e9a;True;2
+privilege-escalation;T1547.014;powershell;['windows'];HKLM - re-execute 'Internet Explorer Core Fonts' StubPath payload by decreasing version number;04d55cef-f283-40ba-ae2a-316bc3b5e78c;True;3
 privilege-escalation;T1484.002;powershell;['azure-ad'];Add Federation to Azure AD;8906c5d0-3ee5-4f63-897a-f6cafd3fdbb7;False;1
 privilege-escalation;T1543.003;command_prompt;['windows'];Modify Fax service to run PowerShell;ed366cde-7d12-49df-a833-671904770b9f;True;1
 privilege-escalation;T1543.003;command_prompt;['windows'];Service Installation CMD;981e2942-e433-44e9-afc1-8c957a1496b6;True;2
@@ -529,14 +529,14 @@ privilege-escalation;T1548.001;sh;['linux'];Provide the SetUID capability to a f
 privilege-escalation;T1547.004;powershell;['windows'];Winlogon Shell Key Persistence - PowerShell;bf9f9d65-ee4d-4c3e-a843-777d04f19c38;True;1
 privilege-escalation;T1547.004;powershell;['windows'];Winlogon Userinit Key Persistence - PowerShell;fb32c935-ee2e-454b-8fa3-1c46b42e8dfb;True;2
 privilege-escalation;T1547.004;powershell;['windows'];Winlogon Notify Key Logon Persistence - PowerShell;d40da266-e073-4e5a-bb8b-2b385023e5f9;True;3
-privilege-escalation;T1547.004;powershell;['windows'];Winlogon HKLM Shell Key Persistence - PowerShell;95a3c42f-8c88-4952-ad60-13b81d929a9d;False;4
-privilege-escalation;T1547.004;powershell;['windows'];Winlogon HKLM Userinit Key Persistence - PowerShell;f9b8daff-8fa7-4e6a-a1a7-7c14675a545b;False;5
+privilege-escalation;T1547.004;powershell;['windows'];Winlogon HKLM Shell Key Persistence - PowerShell;95a3c42f-8c88-4952-ad60-13b81d929a9d;True;4
+privilege-escalation;T1547.004;powershell;['windows'];Winlogon HKLM Userinit Key Persistence - PowerShell;f9b8daff-8fa7-4e6a-a1a7-7c14675a545b;True;5
 privilege-escalation;T1546.012;command_prompt;['windows'];IFEO Add Debugger;fdda2626-5234-4c90-b163-60849a24c0b8;True;1
 privilege-escalation;T1546.012;command_prompt;['windows'];IFEO Global Flags;46b1f278-c8ee-4aa5-acce-65e77b11f3c1;True;2
 privilege-escalation;T1546.012;powershell;['windows'];GlobalFlags in Image File Execution Options;13117939-c9b2-4a43-999e-0a543df92f0d;True;3
 privilege-escalation;T1546.008;powershell;['windows'];Attaches Command Prompt as a Debugger to a List of Target Processes;3309f53e-b22b-4eb6-8fd2-a6cf58b355a9;True;1
 privilege-escalation;T1546.008;command_prompt;['windows'];Replace binary of sticky keys;934e90cf-29ca-48b3-863c-411737ad44e3;True;2
-privilege-escalation;T1546.008;command_prompt;['windows'];Create Symbolic Link From osk.exe to cmd.exe;51ef369c-5e87-4f33-88cd-6d61be63edf2;False;3
+privilege-escalation;T1546.008;command_prompt;['windows'];Create Symbolic Link From osk.exe to cmd.exe;51ef369c-5e87-4f33-88cd-6d61be63edf2;True;3
 privilege-escalation;T1055.004;command_prompt;['windows'];Process Injection via C#;611b39b7-e243-4c81-87a4-7145a90358b1;True;1
 privilege-escalation;T1546.009;powershell;['windows'];Create registry persistence via AppCert DLL;a5ad6104-5bab-4c43-b295-b4c44c7c6b05;True;1
 privilege-escalation;T1547.015;powershell;['windows'];Persistence by modifying Windows Terminal profile;ec5d76ef-82fe-48da-b931-bdb25a62bc65;False;1
@@ -570,7 +570,7 @@ privilege-escalation;T1547.001;powershell;['windows'];HKCU - Policy Settings Exp
 privilege-escalation;T1547.001;powershell;['windows'];HKLM - Policy Settings Explorer Run Key;b5c9a9bc-dda3-4ea0-b16a-add8e81ab75f;True;13
 privilege-escalation;T1547.001;powershell;['windows'];HKLM - Append Command to Winlogon Userinit KEY Value;f7fab6cc-8ece-4ca7-a0f1-30a22fccd374;True;14
 privilege-escalation;T1547.001;powershell;['windows'];HKLM - Modify default System Shell - Winlogon Shell KEY Value ;1d958c61-09c6-4d9e-b26b-4130314e520e;True;15
-privilege-escalation;T1547.001;command_prompt;['windows'];secedit used to create a Run key in the HKLM Hive;14fdc3f1-6fc3-4556-8d36-aa89d9d42d02;False;16
+privilege-escalation;T1547.001;command_prompt;['windows'];secedit used to create a Run key in the HKLM Hive;14fdc3f1-6fc3-4556-8d36-aa89d9d42d02;True;16
 privilege-escalation;T1547.006;bash;['linux'];Linux - Load Kernel Module via insmod;687dcb93-9656-4853-9c36-9977315e9d23;False;1
 privilege-escalation;T1547.006;bash;['macos'];MacOS - Load Kernel Module via kextload and kmutil;f4391089-d3a5-4dd1-ab22-0419527f2672;False;2
 privilege-escalation;T1547.006;bash;['macos'];MacOS - Load Kernel Module via KextManagerLoadKextWithURL();f0007753-beb3-41ea-9948-760785e4c1e5;False;3
@@ -579,9 +579,9 @@ privilege-escalation;T1053.006;sh;['linux'];Create a user level transient system
 privilege-escalation;T1053.006;sh;['linux'];Create a system level transient systemd service and timer;d3eda496-1fc0-49e9-aff5-3bec5da9fa22;False;3
 privilege-escalation;T1055.012;powershell;['windows'];Process Hollowing using PowerShell;562427b4-39ef-4e8c-af88-463a78e70b9c;True;1
 privilege-escalation;T1055.012;powershell;['windows'];RunPE via VBA;3ad4a037-1598-4136-837c-4027e4fa319b;True;2
-privilege-escalation;T1546;powershell;['windows'];Persistence with Custom AutodialDLL;aca9ae16-7425-4b6d-8c30-cad306fdbd5b;False;1
-privilege-escalation;T1546;powershell;['windows'];HKLM - Persistence using CommandProcessor AutoRun key (With Elevation);a574dafe-a903-4cce-9701-14040f4f3532;False;2
-privilege-escalation;T1546;powershell;['windows'];HKCU - Persistence using CommandProcessor AutoRun key (Without Elevation);36b8dbf9-59b1-4e9b-a3bb-36e80563ef01;False;3
+privilege-escalation;T1546;powershell;['windows'];Persistence with Custom AutodialDLL;aca9ae16-7425-4b6d-8c30-cad306fdbd5b;True;1
+privilege-escalation;T1546;powershell;['windows'];HKLM - Persistence using CommandProcessor AutoRun key (With Elevation);a574dafe-a903-4cce-9701-14040f4f3532;True;2
+privilege-escalation;T1546;powershell;['windows'];HKCU - Persistence using CommandProcessor AutoRun key (Without Elevation);36b8dbf9-59b1-4e9b-a3bb-36e80563ef01;True;3
 privilege-escalation;T1546.004;sh;['macos', 'linux'];Add command to .bash_profile;94500ae1-7e31-47e3-886b-c328da46872f;False;1
 privilege-escalation;T1546.004;sh;['macos', 'linux'];Add command to .bashrc;0a898315-4cfa-4007-bafe-33a4646d115f;False;2
 privilege-escalation;T1134.005;command_prompt;['windows'];Injection SID-History with mimikatz;6bef32e5-9456-4072-8f14-35566fb85401;True;1
@@ -732,9 +732,9 @@ persistence;T1053.007;bash;['containers'];CreateCronjob;f2fa019e-fb2a-4d28-9dc6-
 persistence;T1574.011;powershell;['windows'];Service Registry Permissions Weakness;f7536d63-7fd4-466f-89da-7e48d550752a;True;1
 persistence;T1574.011;command_prompt;['windows'];Service ImagePath Change with reg.exe;f38e9eea-e1d7-4ba6-b716-584791963827;True;2
 persistence;T1547;command_prompt;['windows'];Add a driver;cb01b3da-b0e7-4e24-bf6d-de5223526785;True;1
-persistence;T1547.014;powershell;['windows'];HKLM - Add atomic_test key to launch executable as part of user setup;deff4586-0517-49c2-981d-bbea24d48d71;False;1
-persistence;T1547.014;powershell;['windows'];HKLM - Add malicious StubPath value to existing Active Setup Entry;39e417dd-4fed-4d9c-ae3a-ba433b4d0e9a;False;2
-persistence;T1547.014;powershell;['windows'];HKLM - re-execute 'Internet Explorer Core Fonts' StubPath payload by decreasing version number;04d55cef-f283-40ba-ae2a-316bc3b5e78c;False;3
+persistence;T1547.014;powershell;['windows'];HKLM - Add atomic_test key to launch executable as part of user setup;deff4586-0517-49c2-981d-bbea24d48d71;True;1
+persistence;T1547.014;powershell;['windows'];HKLM - Add malicious StubPath value to existing Active Setup Entry;39e417dd-4fed-4d9c-ae3a-ba433b4d0e9a;True;2
+persistence;T1547.014;powershell;['windows'];HKLM - re-execute 'Internet Explorer Core Fonts' StubPath payload by decreasing version number;04d55cef-f283-40ba-ae2a-316bc3b5e78c;True;3
 persistence;T1543.003;command_prompt;['windows'];Modify Fax service to run PowerShell;ed366cde-7d12-49df-a833-671904770b9f;True;1
 persistence;T1543.003;command_prompt;['windows'];Service Installation CMD;981e2942-e433-44e9-afc1-8c957a1496b6;True;2
 persistence;T1543.003;powershell;['windows'];Service Installation PowerShell;491a4af6-a521-4b74-b23b-f7b3f1ee9e77;True;3
@@ -779,15 +779,15 @@ persistence;T1136.001;command_prompt;['windows'];Create a new Windows admin user
 persistence;T1547.004;powershell;['windows'];Winlogon Shell Key Persistence - PowerShell;bf9f9d65-ee4d-4c3e-a843-777d04f19c38;True;1
 persistence;T1547.004;powershell;['windows'];Winlogon Userinit Key Persistence - PowerShell;fb32c935-ee2e-454b-8fa3-1c46b42e8dfb;True;2
 persistence;T1547.004;powershell;['windows'];Winlogon Notify Key Logon Persistence - PowerShell;d40da266-e073-4e5a-bb8b-2b385023e5f9;True;3
-persistence;T1547.004;powershell;['windows'];Winlogon HKLM Shell Key Persistence - PowerShell;95a3c42f-8c88-4952-ad60-13b81d929a9d;False;4
-persistence;T1547.004;powershell;['windows'];Winlogon HKLM Userinit Key Persistence - PowerShell;f9b8daff-8fa7-4e6a-a1a7-7c14675a545b;False;5
+persistence;T1547.004;powershell;['windows'];Winlogon HKLM Shell Key Persistence - PowerShell;95a3c42f-8c88-4952-ad60-13b81d929a9d;True;4
+persistence;T1547.004;powershell;['windows'];Winlogon HKLM Userinit Key Persistence - PowerShell;f9b8daff-8fa7-4e6a-a1a7-7c14675a545b;True;5
 persistence;T1098.004;bash;['macos', 'linux'];Modify SSH Authorized Keys;342cc723-127c-4d3a-8292-9c0c6b4ecadc;False;1
 persistence;T1546.012;command_prompt;['windows'];IFEO Add Debugger;fdda2626-5234-4c90-b163-60849a24c0b8;True;1
 persistence;T1546.012;command_prompt;['windows'];IFEO Global Flags;46b1f278-c8ee-4aa5-acce-65e77b11f3c1;True;2
 persistence;T1546.012;powershell;['windows'];GlobalFlags in Image File Execution Options;13117939-c9b2-4a43-999e-0a543df92f0d;True;3
 persistence;T1546.008;powershell;['windows'];Attaches Command Prompt as a Debugger to a List of Target Processes;3309f53e-b22b-4eb6-8fd2-a6cf58b355a9;True;1
 persistence;T1546.008;command_prompt;['windows'];Replace binary of sticky keys;934e90cf-29ca-48b3-863c-411737ad44e3;True;2
-persistence;T1546.008;command_prompt;['windows'];Create Symbolic Link From osk.exe to cmd.exe;51ef369c-5e87-4f33-88cd-6d61be63edf2;False;3
+persistence;T1546.008;command_prompt;['windows'];Create Symbolic Link From osk.exe to cmd.exe;51ef369c-5e87-4f33-88cd-6d61be63edf2;True;3
 persistence;T1136.002;command_prompt;['windows'];Create a new Windows domain admin user;fcec2963-9951-4173-9bfa-98d8b7834e62;True;1
 persistence;T1136.002;command_prompt;['windows'];Create a new account similar to ANONYMOUS LOGON;dc7726d2-8ccb-4cc6-af22-0d5afb53a548;True;2
 persistence;T1136.002;powershell;['windows'];Create a new Domain Account using PowerShell;5a3497a4-1568-4663-b12a-d4a5ed70c7d7;True;3
@@ -817,7 +817,7 @@ persistence;T1547.001;powershell;['windows'];HKCU - Policy Settings Explorer Run
 persistence;T1547.001;powershell;['windows'];HKLM - Policy Settings Explorer Run Key;b5c9a9bc-dda3-4ea0-b16a-add8e81ab75f;True;13
 persistence;T1547.001;powershell;['windows'];HKLM - Append Command to Winlogon Userinit KEY Value;f7fab6cc-8ece-4ca7-a0f1-30a22fccd374;True;14
 persistence;T1547.001;powershell;['windows'];HKLM - Modify default System Shell - Winlogon Shell KEY Value ;1d958c61-09c6-4d9e-b26b-4130314e520e;True;15
-persistence;T1547.001;command_prompt;['windows'];secedit used to create a Run key in the HKLM Hive;14fdc3f1-6fc3-4556-8d36-aa89d9d42d02;False;16
+persistence;T1547.001;command_prompt;['windows'];secedit used to create a Run key in the HKLM Hive;14fdc3f1-6fc3-4556-8d36-aa89d9d42d02;True;16
 persistence;T1136.003;sh;['iaas:aws'];AWS - Create a new IAM user;8d1c2368-b503-40c9-9057-8e42f21c58ad;False;1
 persistence;T1098;powershell;['windows'];Admin Account Manipulate;5598f7cb-cf43-455e-883a-f6008c5d46af;True;1
 persistence;T1098;powershell;['windows'];Domain Account and Group Manipulate;a55a22e9-a3d3-42ce-bd48-2653adb8f7a9;True;2
@@ -834,9 +834,9 @@ persistence;T1547.006;bash;['macos'];MacOS - Load Kernel Module via KextManagerL
 persistence;T1053.006;bash;['linux'];Create Systemd Service and Timer;f4983098-bb13-44fb-9b2c-46149961807b;False;1
 persistence;T1053.006;sh;['linux'];Create a user level transient systemd service and timer;3de33f5b-62e5-4e63-a2a0-6fd8808c80ec;False;2
 persistence;T1053.006;sh;['linux'];Create a system level transient systemd service and timer;d3eda496-1fc0-49e9-aff5-3bec5da9fa22;False;3
-persistence;T1546;powershell;['windows'];Persistence with Custom AutodialDLL;aca9ae16-7425-4b6d-8c30-cad306fdbd5b;False;1
-persistence;T1546;powershell;['windows'];HKLM - Persistence using CommandProcessor AutoRun key (With Elevation);a574dafe-a903-4cce-9701-14040f4f3532;False;2
-persistence;T1546;powershell;['windows'];HKCU - Persistence using CommandProcessor AutoRun key (Without Elevation);36b8dbf9-59b1-4e9b-a3bb-36e80563ef01;False;3
+persistence;T1546;powershell;['windows'];Persistence with Custom AutodialDLL;aca9ae16-7425-4b6d-8c30-cad306fdbd5b;True;1
+persistence;T1546;powershell;['windows'];HKLM - Persistence using CommandProcessor AutoRun key (With Elevation);a574dafe-a903-4cce-9701-14040f4f3532;True;2
+persistence;T1546;powershell;['windows'];HKCU - Persistence using CommandProcessor AutoRun key (Without Elevation);36b8dbf9-59b1-4e9b-a3bb-36e80563ef01;True;3
 persistence;T1546.004;sh;['macos', 'linux'];Add command to .bash_profile;94500ae1-7e31-47e3-886b-c328da46872f;False;1
 persistence;T1546.004;sh;['macos', 'linux'];Add command to .bashrc;0a898315-4cfa-4007-bafe-33a4646d115f;False;2
 persistence;T1547.002;powershell;['windows'];Authentication Package;be2590e8-4ac3-47ac-b4b5-945820f2fbe9;True;1
@@ -972,7 +972,7 @@ credential-access;T1003;powershell;['windows'];Credential Dumping with NPPSpy;9e
 credential-access;T1003;powershell;['windows'];Dump svchost.exe to gather RDP credentials;d400090a-d8ca-4be0-982e-c70598a23de9;True;3
 credential-access;T1003;powershell;['windows'];Retrieve Microsoft IIS Service Account Credentials Using AppCmd (using list);6c7a4fd3-5b0b-4b30-a93e-39411b25d889;False;4
 credential-access;T1003;powershell;['windows'];Retrieve Microsoft IIS Service Account Credentials Using AppCmd (using config);42510244-5019-48fa-a0e5-66c3b76e6049;False;5
-credential-access;T1003;powershell;['windows'];Dump Credential Manager using keymgr.dll and rundll32.exe;84113186-ed3c-4d0d-8a3c-8980c86c1f4a;False;6
+credential-access;T1003;powershell;['windows'];Dump Credential Manager using keymgr.dll and rundll32.exe;84113186-ed3c-4d0d-8a3c-8980c86c1f4a;True;6
 credential-access;T1539;powershell;['windows'];Steal Firefox Cookies (Windows);4b437357-f4e9-4c84-9fa6-9bcee6f826aa;True;1
 credential-access;T1539;powershell;['windows'];Steal Chrome Cookies (Windows);26a6b840-4943-4965-8df5-ef1f9a282440;True;2
 credential-access;T1003.002;command_prompt;['windows'];Registry dump of SAM, creds, and secrets;5c2571d0-1572-416d-9676-812e64ca9f44;True;1
@@ -1274,7 +1274,7 @@ discovery;T1201;command_prompt;['windows'];Examine domain password policy - Wind
 discovery;T1201;bash;['macos'];Examine password policy - macOS;4b7fa042-9482-45e1-b348-4b756b2a0742;False;7
 discovery;T1201;powershell;['windows'];Get-DomainPolicy with PowerView;3177f4da-3d4b-4592-8bdc-aa23d0b2e843;True;8
 discovery;T1201;powershell;['windows'];Enumerate Active Directory Password Policy with get-addefaultdomainpasswordpolicy;b2698b33-984c-4a1c-93bb-e4ba72a0babb;True;9
-discovery;T1201;command_prompt;['windows'];Use of SecEdit.exe to export the local security policy (including the password policy);510cc97f-56ac-4cd3-a198-d3218c23d889;False;10
+discovery;T1201;command_prompt;['windows'];Use of SecEdit.exe to export the local security policy (including the password policy);510cc97f-56ac-4cd3-a198-d3218c23d889;True;10
 discovery;T1614.001;command_prompt;['windows'];Discover System Language by Registry Query;631d4cf1-42c9-4209-8fe9-6bd4de9421be;True;1
 discovery;T1614.001;command_prompt;['windows'];Discover System Language with chcp;d91473ca-944e-477a-b484-0e80217cd789;True;2
 discovery;T1012;command_prompt;['windows'];Query Registry;8f7578c4-9863-4d83-875c-a565573bbdf0;True;1
@@ -1326,7 +1326,7 @@ discovery;T1124;command_prompt;['windows'];System Time Discovery W32tm as a Dela
 command-and-control;T1132.001;sh;['macos', 'linux'];Base64 Encoded data.;1164f70f-9a88-4dff-b9ff-dc70e7bf0c25;False;1
 command-and-control;T1132.001;powershell;['windows'];XOR Encoded data.;c3ed6d2a-e3ad-400d-ad78-bbfdbfeacc08;True;2
 command-and-control;T1071.004;powershell;['windows'];DNS Large Query Volume;1700f5d6-5a44-487b-84de-bc66f507b0a6;False;1
-command-and-control;T1071.004;powershell;['windows'];DNS Regular Beaconing;3efc144e-1af8-46bb-8ca2-1376bb6db8b6;False;2
+command-and-control;T1071.004;powershell;['windows'];DNS Regular Beaconing;3efc144e-1af8-46bb-8ca2-1376bb6db8b6;True;2
 command-and-control;T1071.004;powershell;['windows'];DNS Long Domain Query;fef31710-223a-40ee-8462-a396d6b66978;False;3
 command-and-control;T1071.004;powershell;['windows'];DNS C2;e7bf9802-2e78-4db9-93b5-181b7bcd37d7;True;4
 command-and-control;T1219;powershell;['windows'];TeamViewer Files Detected Test on Windows;8ca3b96d-8983-4a7f-b125-fc98cc0a2aa0;True;1
@@ -1444,7 +1444,7 @@ exfiltration;T1041;powershell;['windows'];C2 Data Exfiltration;d1253f6e-c29b-49d
 exfiltration;T1048;sh;['macos', 'linux'];Exfiltration Over Alternative Protocol - SSH;f6786cc8-beda-4915-a4d6-ac2f193bb988;False;1
 exfiltration;T1048;sh;['macos', 'linux'];Exfiltration Over Alternative Protocol - SSH;7c3cb337-35ae-4d06-bf03-3032ed2ec268;False;2
 exfiltration;T1048;powershell;['windows'];DNSExfiltration (doh);c943d285-ada3-45ca-b3aa-7cd6500c6a48;True;3
-exfiltration;T1567.002;powershell;['windows'];Exfiltrate data with rclone to cloud Storage - Mega (Windows);8529ee44-279a-4a19-80bf-b846a40dda58;False;1
+exfiltration;T1567.002;powershell;['windows'];Exfiltrate data with rclone to cloud Storage - Mega (Windows);8529ee44-279a-4a19-80bf-b846a40dda58;True;1
 exfiltration;T1030;sh;['macos', 'linux'];Data Transfer Size Limits;ab936c51-10f4-46ce-9144-e02137b2016a;False;1
 exfiltration;T1048.003;manual;['macos', 'linux'];Exfiltration Over Alternative Protocol - HTTP;1d1abbd6-a3d3-4b2e-bef5-c59293f46eff;False;1
 exfiltration;T1048.003;powershell;['windows'];Exfiltration Over Alternative Protocol - ICMP;dd4b4421-2e25-4593-90ae-7021947ad12e;True;2
