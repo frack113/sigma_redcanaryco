@@ -70,8 +70,6 @@ powershell
 
  - posh_ps_accessing_win_api.yml (id: 03d83090-8cba-44a0-b02f-0b756a050306)
 
- - sysmon_accessing_winapi_in_powershell_credentials_dumping.yml (id: 3f07b9d1-2082-4c56-9277-613a621983cc)
-
 
 
 [back](../index.md)
