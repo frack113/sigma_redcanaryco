@@ -14,7 +14,7 @@ os:
 description: |
   Enumerates started system services using net.exe and writes them to a file. This technique has been used by multiple threat actors.
 
-  Upon successful execution, net.exe will run from cmd.exe that queries services. Expected output is to a txt file in c:\Windows\Temp\service-list.txt.s
+  Upon successful execution, net.exe will run from cmd.exe that queries services. Expected output is to a txt file in in the temp directory called service-list.txt.
 executor: command_prompt
 sigma: true
 sigma_rule:

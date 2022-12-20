@@ -1,0 +1,21 @@
+Attack_name: Impair Defenses
+Attack_description: |-
+  Adversaries may maliciously modify components of a victim environment in order to hinder or disable defensive mechanisms. This not only involves impairing preventative defenses, such as firewalls and anti-virus, but also detection capabilities that defenders can use to audit activity and identify malicious behavior. This may also span both native defenses as well as supplemental capabilities installed by users and administrators.
+
+  Adversaries could also target event aggregation and analysis mechanisms, or otherwise disrupt these procedures by altering other system components.
+guid: 40075d5f-3a70-4c66-9125-f72bee87247d
+name: Windows Disable LSA Protection
+tactic:
+  - defense-evasion
+technique:
+  - T1562
+os:
+  - windows
+description: "The following Atomic adds a registry entry to disable LSA Protection.\n\nThe LSA controls and manages user rights information, password hashes and other important bits of information in memory.\
+  \ Attacker tools, such as mimikatz, rely on accessing this content to scrape password hashes or clear-text passwords. Enabling LSA Protection configures Windows to control the information stored in memory\
+  \ in a more secure fashion - specifically, to prevent non-protected processes from accessing that data.\nUpon successful execution, the registry will be modified and RunAsPPL will be set to 0, disabling\
+  \ Lsass protection.\nhttps://learn.microsoft.com/en-us/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#how-to-disable-lsa-protection\nhttps://blog.netwrix.com/2022/01/11/understanding-lsa-protection/\n\
+  https://thedfirreport.com/2022/03/21/phosphorus-automates-initial-access-using-proxyshell/  \n"
+executor: command_prompt
+sigma: false
+sigma_rule: []

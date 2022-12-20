@@ -13,7 +13,7 @@ technique:
   - T1021.001
 os:
   - windows
-description: 'Changing RDP Port to Non Standard Port via Remote Desktop Application over Powershell
+description: 'Changing RDP Port to Non Standard Port via Powershell
 
   '
 executor: powershell

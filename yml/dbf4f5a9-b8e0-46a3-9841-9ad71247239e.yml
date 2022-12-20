@@ -30,5 +30,4 @@ sigma_rule:
     name: proc_creation_win_susp_csc_folder.yml
   - id: 32d0d3e2-e58d-4d41-926b-18b520b2b32d
     name: proc_access_win_cred_dump_lsass_access.yml
-  - id: 3f07b9d1-2082-4c56-9277-613a621983cc
-    name: sysmon_accessing_winapi_in_powershell_credentials_dumping.yml
+

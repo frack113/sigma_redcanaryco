@@ -20,4 +20,4 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: bf4fc428-dcc3-4bbd-99fe-2422aeee2544
-    name: registry_set_etw_disabled.yml
+    name: registry_set_dot_net_etw_tamper.yml

@@ -15,7 +15,7 @@ description: |-
   AppCmd.exe is a command line utility which is used for managing an IIS web server. The list command within the tool reveals the service account credentials configured for the webserver. An adversary may use these credentials for other malicious purposes.
   [Reference](https://twitter.com/0gtweet/status/1588815661085917186?cxt=HHwWhIDUyaDbzYwsAAAA)
 executor: powershell
-sigma: false
-sigma_rule: 
-- id: 2d3cdeec-c0db-45b4-aa86-082f7eb75701
-  name: proc_creation_win_iis_service_account_password_dumped.yml
+sigma: true
+sigma_rule:
+  - id: 2d3cdeec-c0db-45b4-aa86-082f7eb75701
+    name: proc_creation_win_iis_service_account_password_dumped.yml

@@ -121,6 +121,7 @@ defense-evasion;T1140;sh;['linux', 'macos'];Base64 decoding with Python;356dc0e8
 defense-evasion;T1140;sh;['linux', 'macos'];Base64 decoding with Perl;6604d964-b9f6-4d4b-8ce8-499829a14d0a;False;4
 defense-evasion;T1140;sh;['linux', 'macos'];Base64 decoding with shell utilities;b4f6a567-a27a-41e5-b8ef-ac4b4008bb7e;False;5
 defense-evasion;T1140;sh;['linux', 'macos'];Hex decoding with shell utilities;005943f9-8dd5-4349-8b46-0313c0a9f973;False;6
+defense-evasion;T1562;command_prompt;['windows'];Windows Disable LSA Protection;40075d5f-3a70-4c66-9125-f72bee87247d;False;1
 defense-evasion;T1055.003;powershell;['windows'];Thread Execution Hijacking;578025d5-faa9-4f6d-8390-aae527d503e1;False;1
 defense-evasion;T1036;powershell;['windows'];System File Copied to Unusual Location;51005ac7-52e2-45e0-bdab-d17c6d4916cd;True;1
 defense-evasion;T1036;powershell;['windows'];Malware Masquerading and Execution from Zip File;4449c89b-ec82-43a4-89c1-91e2f1abeecc;True;2
@@ -689,6 +690,7 @@ execution;T1059.001;powershell;['windows'];ATHPowerShellCommandLineParameter -En
 execution;T1059.001;command_prompt;['windows'];PowerShell Command Execution;a538de64-1c74-46ed-aa60-b995ed302598;True;19
 execution;T1059.001;powershell;['windows'];PowerShell Invoke Known Malicious Cmdlets;49eb9404-5e0f-4031-a179-b40f7be385e3;True;20
 execution;T1059.001;powershell;['windows'];PowerUp Invoke-AllChecks;1289f78d-22d2-4590-ac76-166737e1811b;True;21
+execution;T1059.001;powershell;['windows'];Abuse Nslookup with DNS Records;999bff6d-dc15-44c9-9f5c-e1051bfc86e1;False;22
 execution;T1053.006;bash;['linux'];Create Systemd Service and Timer;f4983098-bb13-44fb-9b2c-46149961807b;False;1
 execution;T1053.006;sh;['linux'];Create a user level transient systemd service and timer;3de33f5b-62e5-4e63-a2a0-6fd8808c80ec;False;2
 execution;T1053.006;sh;['linux'];Create a system level transient systemd service and timer;d3eda496-1fc0-49e9-aff5-3bec5da9fa22;False;3
@@ -949,9 +951,8 @@ lateral-movement;T1550.002;command_prompt;['windows'];Mimikatz Pass the Hash;ec2
 lateral-movement;T1550.002;command_prompt;['windows'];crackmapexec Pass the Hash;eb05b028-16c8-4ad8-adea-6f5b219da9a9;True;2
 lateral-movement;T1550.002;powershell;['windows'];Invoke-WMIExec Pass the Hash;f8757545-b00a-4e4e-8cfb-8cfb961ee713;True;3
 lateral-movement;T1021.001;powershell;['windows'];RDP to DomainController;355d4632-8cb9-449d-91ce-b566d0253d3e;True;1
-lateral-movement;T1021.001;powershell;['windows'];RDP to Server;7382a43e-f19c-46be-8f09-5c63af7d3e2b;True;2
-lateral-movement;T1021.001;powershell;['windows'];Changing RDP Port to Non Standard Port via Powershell;2f840dd4-8a2e-4f44-beb3-6b2399ea3771;True;3
-lateral-movement;T1021.001;command_prompt;['windows'];Changing RDP Port to Non Standard Port via Command_Prompt;74ace21e-a31c-4f7d-b540-53e4eb6d1f73;True;4
+lateral-movement;T1021.001;powershell;['windows'];Changing RDP Port to Non Standard Port via Powershell;2f840dd4-8a2e-4f44-beb3-6b2399ea3771;True;2
+lateral-movement;T1021.001;command_prompt;['windows'];Changing RDP Port to Non Standard Port via Command_Prompt;74ace21e-a31c-4f7d-b540-53e4eb6d1f73;True;3
 credential-access;T1556.003;sh;['linux'];Malicious PAM rule;4b9dde80-ae22-44b1-a82a-644bf009eb9c;False;1
 credential-access;T1556.003;sh;['linux'];Malicious PAM module;65208808-3125-4a2e-8389-a0a00e9ab326;False;2
 credential-access;T1056.001;powershell;['windows'];Input Capture;d9b633ca-8efb-45e6-b838-70f595c6ae26;True;1
@@ -970,8 +971,8 @@ credential-access;T1110.001;powershell;['windows'];Password Brute User using Ker
 credential-access;T1003;command_prompt;['windows'];Gsecdump;96345bfc-8ae7-4b6a-80b7-223200f24ef9;True;1
 credential-access;T1003;powershell;['windows'];Credential Dumping with NPPSpy;9e2173c0-ba26-4cdf-b0ed-8c54b27e3ad6;True;2
 credential-access;T1003;powershell;['windows'];Dump svchost.exe to gather RDP credentials;d400090a-d8ca-4be0-982e-c70598a23de9;True;3
-credential-access;T1003;powershell;['windows'];Retrieve Microsoft IIS Service Account Credentials Using AppCmd (using list);6c7a4fd3-5b0b-4b30-a93e-39411b25d889;False;4
-credential-access;T1003;powershell;['windows'];Retrieve Microsoft IIS Service Account Credentials Using AppCmd (using config);42510244-5019-48fa-a0e5-66c3b76e6049;False;5
+credential-access;T1003;powershell;['windows'];Retrieve Microsoft IIS Service Account Credentials Using AppCmd (using list);6c7a4fd3-5b0b-4b30-a93e-39411b25d889;True;4
+credential-access;T1003;powershell;['windows'];Retrieve Microsoft IIS Service Account Credentials Using AppCmd (using config);42510244-5019-48fa-a0e5-66c3b76e6049;True;5
 credential-access;T1003;powershell;['windows'];Dump Credential Manager using keymgr.dll and rundll32.exe;84113186-ed3c-4d0d-8a3c-8980c86c1f4a;True;6
 credential-access;T1539;powershell;['windows'];Steal Firefox Cookies (Windows);4b437357-f4e9-4c84-9fa6-9bcee6f826aa;True;1
 credential-access;T1539;powershell;['windows'];Steal Chrome Cookies (Windows);26a6b840-4943-4965-8df5-ef1f9a282440;True;2
@@ -1305,6 +1306,7 @@ discovery;T1018;powershell;['windows'];Enumerate Active Directory Computers with
 discovery;T1018;powershell;['windows'];Enumerate Active Directory Computers with ADSISearcher;64ede6ac-b57a-41c2-a7d1-32c6cd35397d;True;17
 discovery;T1018;powershell;['windows'];Get-DomainController with PowerView;b9d2e8ca-5520-4737-8076-4f08913da2c4;True;18
 discovery;T1018;powershell;['windows'];Get-wmiobject to Enumerate Domain Controllers;e3cf5123-f6c9-4375-bdf2-1bb3ba43a1ad;True;19
+discovery;T1018;command_prompt;['windows'];Remote System Discovery - net group Domain Controller;5843529a-5056-4bc1-9c13-a311e2af4ca0;False;20
 discovery;T1046;bash;['linux', 'macos'];Port Scan;68e907da-2539-48f6-9fc9-257a78c05540;False;1
 discovery;T1046;sh;['linux', 'macos'];Port Scan Nmap;515942b0-a09f-4163-a7bb-22fefb6f185f;True;2
 discovery;T1046;powershell;['windows'];Port Scan NMap for Windows;d696a3cb-d7a8-4976-8eb5-5af4abf2e3df;True;3
