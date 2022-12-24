@@ -11,12 +11,12 @@
 * create_remote_thread_win_susp_remote_thread_source.yml
   * T1018 [Get-DomainController with PowerView](tests/b9d2e8ca-5520-4737-8076-4f08913da2c4.md)
   * T1134.004 [Parent PID Spoofing using PowerShell](tests/069258f4-2162-46e9-9a25-c9c6c56150d2.md)
-* dns_query_remote_access_software_domains.yml
+* dns_query_win_regsvr32_network_activity.yml
+  * T1218.010 [Regsvr32 remote COM scriptlet execution](tests/c9d0c4ef-8a96-4794-a75b-3d3a5e6f2a36.md)
+* dns_query_win_remote_access_software_domains.yml
   * T1219 [GoToAssist Files Detected Test on Windows](tests/1b72b3bd-72f8-4b63-a30b-84e91b9c3578.md)
   * T1219 [Ammyy Admin Software Execution](tests/0ae9e327-3251-465a-a53b-485d4e3f58fa.md)
   * T1219 [LogMeIn Files Detected Test on Windows](tests/d03683ec-aae0-42f9-9b4c-534780e0f8e1.md)
-* dns_query_win_regsvr32_network_activity.yml
-  * T1218.010 [Regsvr32 remote COM scriptlet execution](tests/c9d0c4ef-8a96-4794-a75b-3d3a5e6f2a36.md)
 * file_access_win_browser_credential_stealing.yml
   * T1539 [Steal Firefox Cookies (Windows)](tests/4b437357-f4e9-4c84-9fa6-9bcee6f826aa.md)
   * T1555.003 [WebBrowserPassView - Credentials from Browser](tests/e359627f-2d90-4320-ba5e-b0f878155bbe.md)
@@ -2375,6 +2375,13 @@
   * T1555.003 [WebBrowserPassView - Credentials from Browser](tests/e359627f-2d90-4320-ba5e-b0f878155bbe.md)
   * T1562.001 [Disable Defender Using NirSoft AdvancedRun](tests/81ce22fd-9612-4154-918e-8a1f285d214d.md)
   * T1555 [WinPwn - Loot local Credentials - lazagne](tests/079ee2e9-6f16-47ca-a635-14efcd994118.md)
+* proc_access_win_shellcode_inject_msf_empire.yml
+  * T1078.003 [WinPwn - Loot local Credentials - Safetykatz](tests/e9fdb899-a980-4ba4-934b-486ad22e22f4.md)
+  * T1003.002 [WinPwn - Loot local Credentials - Dump SAM-File for NTLM Hashes](tests/0c0f5f06-166a-4f4d-bb4a-719df9a01dbb.md)
+  * T1082 [WinPwn - winPEAS](tests/eea1d918-825e-47dd-acc2-814d6c58c0e1.md)
+  * T1187 [WinPwn - PowerSharpPack - Retrieving NTLM Hashes without Touching LSASS](tests/7f06b25c-799e-40f1-89db-999c9cc84317.md)
+  * T1106 [WinPwn - Get SYSTEM shell - Bind System Shell using CreateProcess technique](tests/7ec5b74e-8289-4ff2-a162-b6f286a33abd.md)
+  * T1106 [WinPwn - Get SYSTEM shell - Pop System Shell using CreateProcess technique](tests/ce4e76e6-de70-4392-9efe-b281fc2b4087.md)
 * proc_access_win_susp_proc_access_lsass.yml
   * T1003.001 [Create Mini Dump of LSASS.exe using ProcDump](tests/7cede33f-0acd-44ef-9774-15511300b24b.md)
   * T1003.001 [Dump LSASS.exe Memory using ProcDump](tests/0be2230c-9ab3-4ac2-8826-3199b9a0ebf8.md)
@@ -2390,8 +2397,6 @@
   * T1550.002 [Mimikatz Pass the Hash](tests/ec23cef9-27d9-46e4-a68d-6f75f7b86908.md)
   * T1555 [WinPwn - Loot local Credentials - lazagne](tests/079ee2e9-6f16-47ca-a635-14efcd994118.md)
   * T1204.002 [Excel 4 Macro](tests/4ea1fc97-8a46-4b4e-ba48-af43d2a98052.md)
-* proc_creation_create_link_osk_cmd.yml
-  * T1546.008 [Create Symbolic Link From osk.exe to cmd.exe](tests/51ef369c-5e87-4f33-88cd-6d61be63edf2.md)
 * proc_creation_win_abusing_debug_privilege.yml
   * T1106 [WinPwn - Get SYSTEM shell - Pop System Shell using NamedPipe Impersonation technique](tests/e1f93a06-1649-4f07-89a8-f57279a7d60e.md)
   * T1569.002 [Execute a Command as a Service](tests/2382dee2-a75f-49aa-9378-f52df6ed3fb1.md)
@@ -2480,6 +2485,8 @@
   * T1003.003 [Copy NTDS.dit from Volume Shadow Copy](tests/c6237146-9ea6-4711-85c9-c56d263a6b03.md)
   * T1003.002 [dump volume shadow copy hives with System.IO.File](tests/9d77fed7-05f8-476e-a81b-8ff0472c64d0.md)
   * T1564.004 [Alternate Data Streams (ADS)](tests/8822c3b0-d9f9-4daf-a043-49f4602364f4.md)
+* proc_creation_win_create_link_osk_cmd.yml
+  * T1546.008 [Create Symbolic Link From osk.exe to cmd.exe](tests/51ef369c-5e87-4f33-88cd-6d61be63edf2.md)
 * proc_creation_win_data_compressed_with_rar.yml
   * T1560.001 [Compress Data for Exfiltration With Rar](tests/02ea31cb-3b4c-4a2d-9bf1-e4e70ebcf5d0.md)
   * T1560.001 [Compress Data and lock with password for Exfiltration with winrar](tests/8dd61a55-44c6-43cc-af0c-8bdda276860c.md)
@@ -3973,6 +3980,8 @@
   * T1047 [WMI Reconnaissance List Remote Services](tests/0fd48ef7-d890-4e93-a533-f7dedd5191d3.md)
 * proc_creation_win_wmic_remove_application.yml
   * T1047 [Application uninstall using WMIC](tests/c510d25b-1667-467d-8331-a56d3e9bc4ff.md)
+* proc_creation_win_wmic_tamper_defender.yml
+  * T1562.001 [WMIC Tamper with Windows Defender Evade Scanning Folder](tests/59d386fc-3a4b-41b8-850d-9e3eee24dfe4.md)
 * proc_creation_win_wmiprvse_spawning_process.yml
   * T1218.005 [Invoke HTML Application - JScript Engine with Inline Protocol Handler](tests/d3eaaf6a-cdb1-44a9-9ede-b6c337d0d840.md)
   * T1218.001 [Invoke CHM with default Shortcut Command Execution](tests/29d6f0d7-be63-4482-8827-ea77126c1ef7.md)
@@ -4003,15 +4012,6 @@
   * T1220 [WMIC bypass using local XSL file](tests/1b237334-3e21-4a0c-8178-b8c996124988.md)
   * T1220 [WMIC bypass using remote XSL file](tests/7f5be499-33be-4129-a560-66021f379b9b.md)
   * T1220 [MSXSL Bypass using remote files](tests/a7c3ab07-52fb-49c8-ab6d-e9c6d4a0a985.md)
-* proc_creation_wmic_tamper_defender.yml
-  * T1562.001 [WMIC Tamper with Windows Defender Evade Scanning Folder](tests/59d386fc-3a4b-41b8-850d-9e3eee24dfe4.md)
-* process_access_win_shellcode_inject_msf_empire.yml
-  * T1078.003 [WinPwn - Loot local Credentials - Safetykatz](tests/e9fdb899-a980-4ba4-934b-486ad22e22f4.md)
-  * T1003.002 [WinPwn - Loot local Credentials - Dump SAM-File for NTLM Hashes](tests/0c0f5f06-166a-4f4d-bb4a-719df9a01dbb.md)
-  * T1082 [WinPwn - winPEAS](tests/eea1d918-825e-47dd-acc2-814d6c58c0e1.md)
-  * T1187 [WinPwn - PowerSharpPack - Retrieving NTLM Hashes without Touching LSASS](tests/7f06b25c-799e-40f1-89db-999c9cc84317.md)
-  * T1106 [WinPwn - Get SYSTEM shell - Bind System Shell using CreateProcess technique](tests/7ec5b74e-8289-4ff2-a162-b6f286a33abd.md)
-  * T1106 [WinPwn - Get SYSTEM shell - Pop System Shell using CreateProcess technique](tests/ce4e76e6-de70-4392-9efe-b281fc2b4087.md)
 * registry_add_logon_scripts_userinitmprlogonscript_reg.yml
   * T1037.001 [Logon Scripts](tests/d6042746-07d4-4c92-9ad8-e644c114a231.md)
 * registry_add_sysinternals_eula_accepted.yml
