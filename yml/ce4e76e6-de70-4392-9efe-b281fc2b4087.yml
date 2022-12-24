@@ -46,7 +46,7 @@ sigma_rule:
   - id: 32d0d3e2-e58d-4d41-926b-18b520b2b32d
     name: proc_access_win_cred_dump_lsass_access.yml
   - id: 250ae82f-736e-4844-a68b-0b5e8cc887da
-    name: process_access_win_shellcode_inject_msf_empire.yml
+    name: proc_access_win_shellcode_inject_msf_empire.yml
   - id: d522eca2-2973-4391-a3e0-ef0374321dae
     name: proc_creation_win_abusing_debug_privilege.yml
   - id: 1f21ec3f-810d-4b0e-8045-322202e22b4b

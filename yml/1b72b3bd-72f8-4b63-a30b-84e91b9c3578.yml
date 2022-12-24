@@ -27,6 +27,6 @@ sigma_rule:
   - id: b6d98a4f-cef0-4abf-bbf6-24132854a83d
     name: proc_creation_win_gotoopener.yml
   - id: 4d07b1f4-cb00-4470-b9f8-b0191d48ff52
-    name: dns_query_remote_access_software_domains.yml
+    name: dns_query_win_remote_access_software_domains.yml
   - id: 5d756aee-ad3e-4306-ad95-cb1abec48de2
     name: file_event_win_gotoopener_artefact.yml

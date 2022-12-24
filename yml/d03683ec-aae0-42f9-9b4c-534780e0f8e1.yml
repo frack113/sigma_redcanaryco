@@ -22,7 +22,7 @@ sigma_rule:
   - id: 9fc51a3c-81b3-4fa7-b35f-7c02cf10fd2d
     name: proc_creation_win_web_request_cmd_and_cmdlets.yml
   - id: 4d07b1f4-cb00-4470-b9f8-b0191d48ff52
-    name: dns_query_remote_access_software_domains.yml
+    name: dns_query_win_remote_access_software_domains.yml
   - id: 1f21ec3f-810d-4b0e-8045-322202e22b4b
     name: net_connection_win_powershell_network_connection.yml
   - id: 79a87aa6-e4bd-42fc-a5bb-5e6fbdcd62f5

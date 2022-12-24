@@ -20,6 +20,6 @@ sigma_rule:
   - id: 1547e27c-3974-43e2-a7d7-7f484fb928ec
     name: registry_set_add_load_service_in_safe_mode.yml
   - id: 4d07b1f4-cb00-4470-b9f8-b0191d48ff52
-    name: dns_query_remote_access_software_domains.yml
+    name: dns_query_win_remote_access_software_domains.yml
   - id: 5e993621-67d4-488a-b9ae-b420d08b96cb
     name: win_system_susp_service_installation_folder.yml

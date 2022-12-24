@@ -31,7 +31,7 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: e9b61244-893f-427c-b287-3e708f321c6b
-    name: proc_creation_create_link_osk_cmd.yml
+    name: proc_creation_win_create_link_osk_cmd.yml
   - id: fff9d2b7-e11c-4a69-93d3-40ef66189767
     name: proc_creation_win_susp_copy_system32.yml
   - id: 37ae075c-271b-459b-8d7b-55ad5f993dd8

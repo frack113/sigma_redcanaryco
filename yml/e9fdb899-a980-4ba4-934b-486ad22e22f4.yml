@@ -87,7 +87,7 @@ sigma_rule:
   - id: 32d0d3e2-e58d-4d41-926b-18b520b2b32d
     name: proc_access_win_cred_dump_lsass_access.yml
   - id: 250ae82f-736e-4844-a68b-0b5e8cc887da
-    name: process_access_win_shellcode_inject_msf_empire.yml
+    name: proc_access_win_shellcode_inject_msf_empire.yml
   - id: 8d31a8ce-46b5-4dd6-bdc3-680931f1db86
     name: posh_pm_bad_opsec_artifacts.yml
   - id: cef24b90-dddc-4ae1-a09a-8764872f69fc
