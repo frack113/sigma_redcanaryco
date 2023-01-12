@@ -53,8 +53,8 @@ sigma_rule:
     name: posh_ps_susp_getprocess_lsass.yml
   - id: 1f49f2ab-26bc-48b3-96cc-dcffbc93eadf
     name: posh_ps_susp_keywords.yml
-  - id: 6d3f1399-a81c-4409-aff3-1ecfe9330baf
-    name: posh_ps_invoke_nightmare.yml
+  - id: f331aa1f-8c53-4fc3-b083-cc159bc971cb
+    name: file_event_win_powershell_exploit_scripts.yml
   - id: f772cee9-b7c2-4cb2-8f07-49870adc02e0
     name: posh_ps_nishang_malicious_commandlets.yml
   - id: 4fdc44df-bfe9-4fcc-b041-68f5a2d3031c

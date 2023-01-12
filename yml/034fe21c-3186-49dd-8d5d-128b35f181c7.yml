@@ -13,7 +13,8 @@ technique:
   - T1082
 os:
   - linux
-description: 'Identify kernel modules installed. Upon successful execution stdout will display kernel modules installed on host.
+description: 'Enumerate kernel modules installed 3 different ways. Upon successful execution stdout will display kernel modules installed on host 2 times, followed by list of modules matching ''vmw'' if
+  present.
 
   '
 executor: sh

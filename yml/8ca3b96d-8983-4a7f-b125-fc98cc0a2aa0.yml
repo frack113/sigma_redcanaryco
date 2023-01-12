@@ -37,6 +37,6 @@ sigma_rule:
   - id: baecf8fb-edbf-429f-9ade-31fc3f22b970
     name: registry_set_asep_reg_keys_modification_office.yml
   - id: 9d15044a-7cfe-4d23-8085-6ebc11df7685
-    name: registry_set_office_vsto_persistence.yml
+    name: registry_set_persistence_office_vsto.yml
   - id: d88d0ab2-e696-4d40-a2ed-9790064e66b3
-    name: registry_set_ie_persistence.yml
+    name: registry_set_persistence_ie.yml

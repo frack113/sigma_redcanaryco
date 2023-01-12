@@ -27,14 +27,17 @@ Attack_description: |
   * Kerberos: Preferred for mutual client-server domain authentication in Windows 2000 and later.
   * CredSSP:  Provides SSO and Network Level Authentication for Remote Desktop Services.(Citation: TechNet Blogs Credential Protection)
 guid: 9d0072c8-7cca-45c4-bd14-f852cfa35cf0
-name: Dump LSASS with .Net 5 createdump.exe
+name: Dump LSASS with createdump.exe from .Net v5
 tactic:
   - credential-access
 technique:
   - T1003.001
 os:
   - windows
-description: "This test uses the technique describe in this tweet \n(https://twitter.com/bopin2020/status/1366400799199272960?s=20) from @bopin2020 in order to dump lsass\n"
+description: |
+  Use createdump executable from .NET to create an LSASS dump.
+
+  [Reference](https://twitter.com/bopin2020/status/1366400799199272960?s=20)
 executor: powershell
 sigma: true
 sigma_rule:

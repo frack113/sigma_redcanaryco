@@ -31,8 +31,8 @@ sigma_rule:
     name: image_load_susp_system_drawing_load.yml
   - id: 8e5e38e4-5350-4c0b-895a-e872ce0dd54f
     name: net_connection_win_msiexec.yml
-  - id: e4b63079-6198-405c-abd7-3fe8b0ce3263
-    name: file_event_win_susp_clr_logs.yml
+  - id: e0b06658-7d1d-4cd3-bf15-03467507ff7c
+    name: file_event_win_net_cli_artefact.yml
   - id: fec96f39-988b-4586-b746-b93d59fd1922
     name: file_event_win_screenconnect_artefact.yml
   - id: e4a74e34-ecde-4aab-b2fb-9112dd01aed0

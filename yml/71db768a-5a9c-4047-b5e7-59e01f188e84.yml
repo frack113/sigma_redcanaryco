@@ -8,7 +8,7 @@ Attack_description: |-
 
   The Registry of a remote system may be modified to aid in execution of files as part of lateral movement. It requires the remote Registry service to be running on the target system. (Citation: Microsoft Remote) Often [Valid Accounts](https://attack.mitre.org/techniques/T1078) are required, along with access to the remote system's [SMB/Windows Admin Shares](https://attack.mitre.org/techniques/T1021/002) for RPC communication.
 guid: 71db768a-5a9c-4047-b5e7-59e01f188e84
-name: DisallowRun Execution Of Certain Application
+name: DisallowRun Execution Of Certain Applications
 tactic:
   - defense-evasion
 technique:
@@ -16,7 +16,7 @@ technique:
 os:
   - windows
 description: "Modify the registry of the currently logged in user using reg.exe via cmd console to prevent user running specific computer programs that could aid them in manually removing malware or detecting\
-  \ it \nusing security product.\nSee how azorult malware abuses this technique- https://app.any.run/tasks/a6f2ffe2-e6e2-4396-ae2e-04ea0143f2d8/\n"
+  \ it \nusing security product.\n"
 executor: command_prompt
 sigma: true
 sigma_rule:

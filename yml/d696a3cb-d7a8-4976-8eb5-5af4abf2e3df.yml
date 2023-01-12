@@ -18,4 +18,4 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: f6ecd1cf-19b8-4488-97f6-00f0924991a3
-    name: proc_creation_win_susp_nmap.yml
+    name: proc_creation_win_nmap_zenmap.yml

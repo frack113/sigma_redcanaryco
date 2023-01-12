@@ -4,7 +4,7 @@ Attack_description: |-
 
   Adversaries can use this to register code to be executed when the shell encounters specific interrupts as a persistence mechanism. Trap commands are of the following format <code>trap 'command list' signals</code> where "command list" will be executed when "signals" are received.(Citation: Trap Manual)(Citation: Cyberciti Trap Statements)
 guid: a74b2e07-5952-4c03-8b56-56274b076b61
-name: Trap
+name: Trap EXIT
 tactic:
   - privilege-escalation
   - persistence
@@ -14,8 +14,8 @@ os:
   - macos
   - linux
 description: |
-  After exiting the shell, the script will download and execute.
-  After sending a keyboard interrupt (CTRL+C) the script will download and execute.
+  Launch bash shell with command arg to create TRAP on EXIT.
+  The trap executes script that writes to /tmp/art-fish.txt
 executor: sh
 sigma: false
 sigma_rule: []

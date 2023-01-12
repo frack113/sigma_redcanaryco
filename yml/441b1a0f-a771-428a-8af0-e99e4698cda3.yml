@@ -4,14 +4,16 @@ Attack_description: "Adversaries may abuse Microsoft Office add-ins to obtain pe
   \ add-ins, automation add-ins, VBA Editor (VBE), Visual Studio Tools for Office (VSTO) add-ins, and Outlook add-ins. (Citation: MRWLabs Office Persistence Add-ins)(Citation: FireEye Mail CDS 2018)\n\n\
   Add-ins can be used to obtain persistence because they can be set to execute code when an Office application starts. "
 guid: 441b1a0f-a771-428a-8af0-e99e4698cda3
-name: Code Executed Via Excel Add-in File (Xll)
+name: Code Executed Via Excel Add-in File (XLL)
 tactic:
   - persistence
 technique:
   - T1137.006
 os:
   - windows
-description: "Downloads a XLL file and loads it using the excel add-ins library.\nThis causes excel to display the message \"Hello World\"\nSource of XLL - https://github.com/edparcell/HelloWorldXll \n"
+description: |
+  Loads an XLL file using the excel add-ins library.
+  This causes excel to launch Notepad.exe as a child process. This atomic test does not include persistent code execution as you would typically see when this is implemented in malware.
 executor: powershell
 sigma: true
 sigma_rule:

@@ -29,4 +29,4 @@ sigma_rule:
   - id: cbf93e5d-ca6c-4722-8bea-e9119007c248
     name: registry_set_asep_reg_keys_modification_currentversion_nt.yml
   - id: 36803969-5421-41ec-b92f-8500f79c23b0
-    name: registry_set_globalflags_persistence.yml
+    name: registry_set_persistence_globalflags.yml

@@ -31,7 +31,11 @@ technique:
   - T1110.001
 os:
   - linux
-description: "Brute force the password of a local user account which is a member of the sudo'ers group on a Debian based Linux distribution.  \n"
+description: |
+  Attempts to sudo with current user using passwords from a list.  Will run sudo 3 times, each with 3 different password attempts.
+  PreRequisites : debian,ubuntu,kali and pam_tally NOT configured.
+  If the password list contains the user password in last 9 entries, a sudo will be attempted and will succeed if user is in /etc/sudoers.
+  The /var/log/auth.log will show evidence of "3 incorrect password attempts" or "user NOT in sudoers"
 executor: sh
 sigma: false
 sigma_rule: []

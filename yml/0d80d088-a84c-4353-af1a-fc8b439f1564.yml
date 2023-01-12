@@ -23,7 +23,7 @@ sigma_rule:
   - id: 162e69a7-7981-4344-84a9-0f1c9a217a52
     name: posh_ps_susp_directory_enum.yml
   - id: 9d15044a-7cfe-4d23-8085-6ebc11df7685
-    name: registry_set_office_vsto_persistence.yml
+    name: registry_set_persistence_office_vsto.yml
   - id: baecf8fb-edbf-429f-9ade-31fc3f22b970
     name: registry_set_asep_reg_keys_modification_office.yml
   - id: 75e33ce3-ae32-4dcc-9aa8-a2a3029d6f84

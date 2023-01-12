@@ -30,7 +30,7 @@ sigma_rule:
   - id: 85b0b087-eddf-4a2b-b033-d771fa2b9775
     name: proc_creation_win_susp_powershell_download_iex.yml
   - id: ca2092a1-c273-4878-9b4b-0d60115bf5ea
-    name: proc_creation_win_susp_powershell_enc_cmd.yml
+    name: proc_creation_win_susp_powershell_base64_encoded_cmd.yml
   - id: 89819aa4-bbd6-46bc-88ec-c7f7fe30efa6
     name: posh_ps_malicious_commandlets.yml
   - id: 1139d2e2-84b1-4226-b445-354492eba8ba
@@ -50,7 +50,7 @@ sigma_rule:
   - id: 250ae82f-736e-4844-a68b-0b5e8cc887da
     name: proc_access_win_shellcode_inject_msf_empire.yml
   - id: b9d9cc83-380b-4ba3-8d8f-60c0e7e2930c
-    name: proc_creation_win_susp_powershell_cmd_patterns.yml
+    name: proc_creation_win_susp_powershell_encoded_cmd_patterns.yml
   - id: fb843269-508c-4b76-8b8d-88679db22ce7
     name: proc_creation_win_susp_powershell_encode.yml
   - id: 2617e7ed-adb7-40ba-b0f3-8f9945fe6c09

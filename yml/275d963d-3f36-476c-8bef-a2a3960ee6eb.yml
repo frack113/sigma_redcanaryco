@@ -23,6 +23,6 @@ sigma_rule:
   - id: 87e3c4e8-a6a8-4ad9-bb4f-46e7ff99a180
     name: proc_creation_win_set_policies_to_unsecure_level.yml
   - id: 95eadcb2-92e4-4ed1-9031-92547773a6db
-    name: proc_creation_win_susp_powershell_parent_combo.yml
+    name: proc_creation_win_susp_powershell_script_engine_parent_.yml
   - id: f4bbd493-b796-416e-bbf2-121235348529
     name: proc_creation_win_non_interactive_powershell.yml
