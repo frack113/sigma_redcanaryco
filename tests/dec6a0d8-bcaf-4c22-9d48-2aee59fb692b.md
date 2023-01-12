@@ -66,7 +66,7 @@ powershell
 
  - posh_ps_susp_getprocess_lsass.yml (id: 84c174ab-d3ef-481f-9c86-a50d0b8e3edb)
 
- - posh_ps_invoke_nightmare.yml (id: 6d3f1399-a81c-4409-aff3-1ecfe9330baf)
+ - file_event_win_powershell_exploit_scripts.yml (id: f331aa1f-8c53-4fc3-b083-cc159bc971cb)
 
  - posh_ps_malicious_keywords.yml (id: f62176f3-8128-4faa-bf6c-83261322e5eb)
 
