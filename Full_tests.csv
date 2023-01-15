@@ -127,7 +127,7 @@ defense-evasion;T1036;powershell;['windows'];System File Copied to Unusual Locat
 defense-evasion;T1036;powershell;['windows'];Malware Masquerading and Execution from Zip File;4449c89b-ec82-43a4-89c1-91e2f1abeecc;True;2
 defense-evasion;T1055;powershell;['windows'];Shellcode execution via VBA;1c91e740-1729-4329-b779-feba6e71d048;True;1
 defense-evasion;T1055;command_prompt;['windows'];Remote Process Injection in LSASS via mimikatz;3203ad24-168e-4bec-be36-f79b13ef8a83;True;2
-defense-evasion;T1055;powershell;['windows'];Section View Injection;c6952f41-6cf0-450a-b352-2ca8dae7c178;False;3
+defense-evasion;T1055;powershell;['windows'];Section View Injection;c6952f41-6cf0-450a-b352-2ca8dae7c178;True;3
 defense-evasion;T1218;command_prompt;['windows'];mavinject - Inject DLL into running process;c426dacf-575d-4937-8611-a148a86a5e61;True;1
 defense-evasion;T1218;command_prompt;['windows'];Register-CimProvider - Execute evil dll;ad2c17ed-f626-4061-b21e-b9804a6f3655;True;2
 defense-evasion;T1218;command_prompt;['windows'];InfDefaultInstall.exe .inf Execution;54ad7d5a-a1b5-472c-b6c4-f8090fb2daef;True;3
@@ -335,7 +335,7 @@ defense-evasion;T1562.001;powershell;['windows'];LockBit Black - Disable Privacy
 defense-evasion;T1562.001;powershell;['windows'];Lockbit Black - Use Registry Editor to turn on automatic logon -Powershell;5e27f36d-5132-4537-b43b-413b0d5eec9a;True;35
 defense-evasion;T1562.001;powershell;['windows'];Disable Windows Defender with PwSh Disable-WindowsOptionalFeature;f542ffd3-37b4-4528-837f-682874faa012;True;36
 defense-evasion;T1562.001;command_prompt;['windows'];WMIC Tamper with Windows Defender Evade Scanning Folder;59d386fc-3a4b-41b8-850d-9e3eee24dfe4;True;37
-defense-evasion;T1562.001;command_prompt;['windows'];Delete Windows Defender Scheduled Tasks;4b841aa1-0d05-4b32-bbe7-7564346e7c76;False;38
+defense-evasion;T1562.001;command_prompt;['windows'];Delete Windows Defender Scheduled Tasks;4b841aa1-0d05-4b32-bbe7-7564346e7c76;True;38
 defense-evasion;T1055.012;powershell;['windows'];Process Hollowing using PowerShell;562427b4-39ef-4e8c-af88-463a78e70b9c;True;1
 defense-evasion;T1055.012;powershell;['windows'];RunPE via VBA;3ad4a037-1598-4136-837c-4027e4fa319b;True;2
 defense-evasion;T1027;sh;['macos', 'linux'];Decode base64 Data into Script;f45df6be-2e1e-4136-a384-8f18ab3826fb;False;1
@@ -508,7 +508,7 @@ privilege-escalation;T1547.010;command_prompt;['windows'];Add Port Monitor persi
 privilege-escalation;T1037.002;manual;['macos'];Logon Scripts - Mac;f047c7de-a2d9-406e-a62b-12a09d9516f4;False;1
 privilege-escalation;T1055;powershell;['windows'];Shellcode execution via VBA;1c91e740-1729-4329-b779-feba6e71d048;True;1
 privilege-escalation;T1055;command_prompt;['windows'];Remote Process Injection in LSASS via mimikatz;3203ad24-168e-4bec-be36-f79b13ef8a83;True;2
-privilege-escalation;T1055;powershell;['windows'];Section View Injection;c6952f41-6cf0-450a-b352-2ca8dae7c178;False;3
+privilege-escalation;T1055;powershell;['windows'];Section View Injection;c6952f41-6cf0-450a-b352-2ca8dae7c178;True;3
 privilege-escalation;T1611;sh;['containers'];Deploy container using nsenter container escape;0b2f9520-a17a-4671-9dba-3bd034099fff;False;1
 privilege-escalation;T1611;sh;['containers'];Mount host filesystem to escape privileged Docker container;6c499943-b098-4bc6-8d38-0956fc182984;False;2
 privilege-escalation;T1547.009;command_prompt;['windows'];Shortcut Modification;ce4fc678-364f-4282-af16-2fb4c78005ce;True;1
@@ -699,7 +699,7 @@ execution;T1059.001;powershell;['windows'];ATHPowerShellCommandLineParameter -En
 execution;T1059.001;command_prompt;['windows'];PowerShell Command Execution;a538de64-1c74-46ed-aa60-b995ed302598;True;19
 execution;T1059.001;powershell;['windows'];PowerShell Invoke Known Malicious Cmdlets;49eb9404-5e0f-4031-a179-b40f7be385e3;True;20
 execution;T1059.001;powershell;['windows'];PowerUp Invoke-AllChecks;1289f78d-22d2-4590-ac76-166737e1811b;True;21
-execution;T1059.001;powershell;['windows'];Abuse Nslookup with DNS Records;999bff6d-dc15-44c9-9f5c-e1051bfc86e1;False;22
+execution;T1059.001;powershell;['windows'];Abuse Nslookup with DNS Records;999bff6d-dc15-44c9-9f5c-e1051bfc86e1;True;22
 execution;T1053.006;bash;['linux'];Create Systemd Service and Timer;f4983098-bb13-44fb-9b2c-46149961807b;False;1
 execution;T1053.006;sh;['linux'];Create a user level transient systemd service and timer;3de33f5b-62e5-4e63-a2a0-6fd8808c80ec;False;2
 execution;T1053.006;sh;['linux'];Create a system level transient systemd service and timer;d3eda496-1fc0-49e9-aff5-3bec5da9fa22;False;3
@@ -757,7 +757,7 @@ persistence;T1137;command_prompt;['windows'];Office Application Startup - Outloo
 persistence;T1574.001;command_prompt;['windows'];DLL Search Order Hijacking - amsi.dll;8549ad4b-b5df-4a2d-a3d7-2aee9e7052a3;True;1
 persistence;T1137.006;powershell;['windows'];Code Executed Via Excel Add-in File (XLL);441b1a0f-a771-428a-8af0-e99e4698cda3;True;1
 persistence;T1137.006;powershell;['windows'];Persistent Code Execution Via Excel Add-in File (XLL);9c307886-9fef-41d5-b344-073a0f5b2f5f;False;2
-persistence;T1137.006;powershell;['windows'];Persistent Code Execution Via Word Add-in File (WLL);95408a99-4fa7-4cd6-a7ef-cb65f86351cf;False;3
+persistence;T1137.006;powershell;['windows'];Persistent Code Execution Via Word Add-in File (WLL);95408a99-4fa7-4cd6-a7ef-cb65f86351cf;True;3
 persistence;T1137.006;powershell;['windows'];Persistent Code Execution Via Excel VBA Add-in File (XLAM);082141ed-b048-4c86-99c7-2b8da5b5bf48;False;4
 persistence;T1137.006;powershell;['windows'];Persistent Code Execution Via PowerPoint VBA Add-in File (PPAM);f89e58f9-2b49-423b-ac95-1f3e7cfd8277;False;5
 persistence;T1505.002;powershell;['windows'];Install MS Exchange Transport Agent Persistence;43e92449-ff60-46e9-83a3-1a38089df94d;True;1
@@ -1323,7 +1323,7 @@ discovery;T1018;powershell;['windows'];Enumerate Active Directory Computers with
 discovery;T1018;powershell;['windows'];Enumerate Active Directory Computers with ADSISearcher;64ede6ac-b57a-41c2-a7d1-32c6cd35397d;True;17
 discovery;T1018;powershell;['windows'];Get-DomainController with PowerView;b9d2e8ca-5520-4737-8076-4f08913da2c4;True;18
 discovery;T1018;powershell;['windows'];Get-wmiobject to Enumerate Domain Controllers;e3cf5123-f6c9-4375-bdf2-1bb3ba43a1ad;True;19
-discovery;T1018;command_prompt;['windows'];Remote System Discovery - net group Domain Controller;5843529a-5056-4bc1-9c13-a311e2af4ca0;False;20
+discovery;T1018;command_prompt;['windows'];Remote System Discovery - net group Domain Controller;5843529a-5056-4bc1-9c13-a311e2af4ca0;True;20
 discovery;T1046;bash;['linux', 'macos'];Port Scan;68e907da-2539-48f6-9fc9-257a78c05540;False;1
 discovery;T1046;sh;['linux', 'macos'];Port Scan Nmap;515942b0-a09f-4163-a7bb-22fefb6f185f;True;2
 discovery;T1046;powershell;['windows'];Port Scan NMap for Windows;d696a3cb-d7a8-4976-8eb5-5af4abf2e3df;True;3
@@ -1411,7 +1411,7 @@ impact;T1489;command_prompt;['windows'];Windows - Stop service using Service Con
 impact;T1489;command_prompt;['windows'];Windows - Stop service using net.exe;41274289-ec9c-4213-bea4-e43c4aa57954;True;2
 impact;T1489;command_prompt;['windows'];Windows - Stop service by killing process;f3191b84-c38b-400b-867e-3a217a27795f;True;3
 impact;T1491.001;powershell;['windows'];Replace Desktop Wallpaper;30558d53-9d76-41c4-9267-a7bd5184bed3;True;1
-impact;T1491.001;powershell;['windows'];Configure LegalNoticeCaption and LegalNoticeText registry keys to display ransom message;ffcbfaab-c9ff-470b-928c-f086b326089b;False;2
+impact;T1491.001;powershell;['windows'];Configure LegalNoticeCaption and LegalNoticeText registry keys to display ransom message;ffcbfaab-c9ff-470b-928c-f086b326089b;True;2
 impact;T1531;command_prompt;['windows'];Change User Password - Windows;1b99ef28-f83c-4ec5-8a08-1a56263a5bb2;True;1
 impact;T1531;command_prompt;['windows'];Delete User - Windows;f21a1d7d-a62f-442a-8c3a-2440d43b19e5;True;2
 impact;T1531;powershell;['windows'];Remove Account From Domain Admin Group;43f71395-6c37-498e-ab17-897d814a0947;True;3

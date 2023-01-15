@@ -414,6 +414,8 @@ cisco_cli_local_accounts.yml;False
 cisco_cli_modify_config.yml;False
 cisco_cli_moving_data.yml;False
 cisco_cli_net_sniff.yml;False
+cisco_bgp_md5_auth_failed.yml;False
+cisco_ldp_md5_auth_failed.yml;False
 net_dns_c2_detection.yml;False
 net_dns_external_service_interaction_domains.yml;False
 net_dns_high_bytes_out.yml;False
@@ -432,6 +434,8 @@ net_firewall_high_dns_bytes_out.yml;False
 net_firewall_high_dns_requests_rate.yml;False
 net_firewall_susp_network_scan_by_ip.yml;False
 net_firewall_susp_network_scan_by_port.yml;False
+huawei_bgp_auth_failed.yml;False
+juniper_bgp_missing_md5.yml;False
 zeek_dce_rpc_domain_user_enumeration.yml;False
 zeek_dce_rpc_mitre_bzar_execution.yml;False
 zeek_dce_rpc_mitre_bzar_persistence.yml;False
@@ -572,12 +576,20 @@ win_mssql_sp_procoption_set.yml;False
 win_mssql_xp_cmdshell_audit_log.yml;False
 win_mssql_xp_cmdshell_change.yml;False
 win_software_atera_rmm_agent_install.yml;False
+win_software_restriction_policies_block.yml;False
 win_susp_backup_delete.yml;False
 win_susp_msmpeng_crash.yml;False
 win_vul_cve_2020_0688.yml;False
 win_vul_cve_2021_41379.yml;False
 win_werfault_susp_lsass_credential_dump.yml;False
 win_applocker_file_was_not_allowed_to_run.yml;False
+win_appxdeployment_server_applocker_block.yml;False
+win_appxdeployment_server_mal_appx_names.yml;False
+win_appxdeployment_server_policy_block.yml;False
+win_appxdeployment_server_susp_appx_package_installation.yml;False
+win_appxdeployment_server_susp_domains.yml;False
+win_appxdeployment_server_susp_package_locations.yml;False
+win_appxdeployment_server_uncommon_package_locations.yml;False
 win_bits_client_direct_ip_access.yml;False
 win_bits_client_susp_domain.yml;False
 win_bits_client_susp_local_file.yml;False
@@ -599,6 +611,7 @@ win_firewall_as_failed.yml;False
 win_firewall_as_reset.yml;False
 win_firewall_as_setting_change.yml;False
 win_ldap_recon.yml;False
+win_lsa_server_normal_user_admin.yml;False
 win_exchange_cve_2021_42321.yml;False
 win_exchange_proxylogon_oabvirtualdir.yml;False
 win_exchange_proxyshell_certificate_generation.yml;False
@@ -835,6 +848,7 @@ win_system_volume_shadow_copy_mount.yml;False
 win_system_vul_cve_2020_1472.yml;False
 win_system_vul_cve_2021_42278_or_cve_2021_42287.yml;False
 win_taskscheduler_rare_schtask_creation.yml;False
+win_taskscheduler_susp_schtasks_delete.yml;True
 win_taskscheduler_susp_task_locations.yml;False
 win_terminalservices_rdp_ngrok.yml;False
 win_defender_alert_lsass_access.yml;False
@@ -858,8 +872,8 @@ create_remote_thread_win_password_dumper_lsass.yml;False
 create_remote_thread_win_powershell_code_injection.yml;True
 create_remote_thread_win_susp_powershell_rundll32.yml;False
 create_remote_thread_win_susp_remote_thread_source.yml;True
-create_remote_thread_win_susp_remote_thread_target.yml;False
-create_remote_thread_win_susp_targets.yml;False
+create_remote_thread_win_susp_remote_thread_target.yml;True
+create_remote_thread_win_susp_targets.yml;True
 create_remote_thread_win_ttdinjec.yml;False
 create_remote_thread_win_winapi_in_powershell_credentials_dumping.yml;False
 create_stream_hash_ads_executable.yml;False
@@ -871,7 +885,7 @@ create_stream_hash_susp_domain_ext_combo_med.yml;False
 create_stream_hash_susp_ip_domains.yml;False
 dns_query_win_anonymfiles_com.yml;False
 dns_query_win_hybridconnectionmgr_servicebus.yml;False
-dns_query_win_lobas_appinstaller.yml;False
+dns_query_win_lolbin_appinstaller.yml;False
 dns_query_win_mal_cobaltstrike.yml;False
 dns_query_win_mega_nz.yml;False
 dns_query_win_possible_dns_rebinding.yml;False
@@ -972,7 +986,7 @@ file_event_win_new_src_file.yml;True
 file_event_win_notepad_plus_plus_persistence.yml;False
 file_event_win_ntds_dit.yml;False
 file_event_win_ntds_exfil_tools.yml;False
-file_event_win_office_persistence.yml;False
+file_event_win_office_persistence.yml;True
 file_event_win_outlook_c2_macro_creation.yml;True
 file_event_win_outlook_newform.yml;True
 file_event_win_pcre_net_temp_file.yml;False
@@ -1726,6 +1740,7 @@ proc_creation_win_lolbin_wlrmdr.yml;False
 proc_creation_win_long_powershell_commandline.yml;True
 proc_creation_win_lsass_dump.yml;True
 proc_creation_win_lsass_shtinkering.yml;False
+proc_creation_win_lsa_disablerestrictedadmin.yml;False
 proc_creation_win_mailboxexport_share.yml;False
 proc_creation_win_malicious_cmdlets.yml;False
 proc_creation_win_malware_conti.yml;False
@@ -1789,7 +1804,7 @@ proc_creation_win_network_scan_loop.yml;True
 proc_creation_win_network_sniffing.yml;True
 proc_creation_win_net_default_accounts_manipulation.yml;False
 proc_creation_win_net_enum.yml;True
-proc_creation_win_net_recon.yml;False
+proc_creation_win_net_recon.yml;True
 proc_creation_win_net_user_add.yml;True
 proc_creation_win_net_user_add_never_expire.yml;True
 proc_creation_win_net_use_admin_share.yml;False
@@ -1802,7 +1817,7 @@ proc_creation_win_node_abuse.yml;False
 proc_creation_win_non_interactive_powershell.yml;True
 proc_creation_win_non_priv_reg_or_ps.yml;False
 proc_creation_win_nps.yml;False
-proc_creation_win_nslookup_poweshell_download.yml;False
+proc_creation_win_nslookup_poweshell_download.yml;True
 proc_creation_win_ntdsutil_usage.yml;True
 proc_creation_win_ntfs_short_name_path_use_cli.yml;True
 proc_creation_win_ntfs_short_name_path_use_image.yml;True
@@ -1816,7 +1831,7 @@ proc_creation_win_office_proxy_exec_wmic.yml;False
 proc_creation_win_office_shell.yml;True
 proc_creation_win_office_spawning_wmi_commandline.yml;False
 proc_creation_win_office_spawn_exe_from_users_directory.yml;True
-proc_creation_win_office_svchost_child.yml;False
+proc_creation_win_office_svchost_child.yml;True
 proc_creation_win_outlook_shell.yml;False
 proc_creation_win_pdqdeploy_runner_susp_children.yml;False
 proc_creation_win_pdq_deploy.yml;True
@@ -1957,6 +1972,7 @@ proc_creation_win_selectmyparent.yml;False
 proc_creation_win_service_execution.yml;True
 proc_creation_win_service_stop.yml;True
 proc_creation_win_set_policies_to_unsecure_level.yml;True
+proc_creation_win_set_unsecure_powershell_policy.yml;False
 proc_creation_win_shadowcopy_deletion_via_powershell.yml;False
 proc_creation_win_shadow_copies_access_symlink.yml;True
 proc_creation_win_shadow_copies_creation.yml;True
@@ -1988,6 +2004,7 @@ proc_creation_win_susp_adfind_usage.yml;True
 proc_creation_win_susp_adidnsdump.yml;True
 proc_creation_win_susp_advancedrun.yml;True
 proc_creation_win_susp_advancedrun_priv_user.yml;True
+proc_creation_win_susp_appx_execution.yml;False
 proc_creation_win_susp_athremotefxvgpudisablementcommand.yml;True
 proc_creation_win_susp_base64_invoke.yml;False
 proc_creation_win_susp_base64_load.yml;False
@@ -2202,7 +2219,7 @@ proc_creation_win_susp_runscripthelper.yml;False
 proc_creation_win_susp_run_locations.yml;True
 proc_creation_win_susp_rurat_exec_location.yml;False
 proc_creation_win_susp_schtasks_change.yml;False
-proc_creation_win_susp_schtasks_delete.yml;False
+proc_creation_win_susp_schtasks_delete.yml;True
 proc_creation_win_susp_schtasks_delete_all.yml;False
 proc_creation_win_susp_schtasks_disable.yml;True
 proc_creation_win_susp_schtasks_env_folder.yml;True
@@ -2314,6 +2331,7 @@ proc_creation_win_tool_runx_as_system.yml;False
 proc_creation_win_tor_browser.yml;True
 proc_creation_win_trufflesnout.yml;True
 proc_creation_win_trust_discovery.yml;True
+proc_creation_win_turn_on_dev_features.yml;False
 proc_creation_win_uac_bypass_changepk_slui.yml;False
 proc_creation_win_uac_bypass_cleanmgr.yml;False
 proc_creation_win_uac_bypass_cmstp.yml;True
@@ -2441,7 +2459,7 @@ registry_event_susp_download_run_key.yml;False
 registry_event_susp_lsass_dll_load.yml;True
 registry_event_susp_mic_cam_access.yml;True
 registry_event_trust_record_modification.yml;True
-registry_set_legalnotice_susp_message.yml;False
+registry_set_legalnotice_susp_message.yml;True
 registry_set_add_hidden_user.yml;True
 registry_set_add_load_service_in_safe_mode.yml;True
 registry_set_add_port_monitor.yml;True
@@ -2520,6 +2538,8 @@ registry_set_hide_scheduled_task_via_index_tamper.yml;False
 registry_set_install_root_or_ca_certificat.yml;True
 registry_set_lolbin_onedrivestandaloneupdater.yml;False
 registry_set_lsass_usermode_dumping.yml;False
+registry_set_lsa_disablerestrictedadmin - Copie.yml;False
+registry_set_lsa_disablerestrictedadmin.yml;False
 registry_set_mal_adwind.yml;False
 registry_set_mal_blue_mockingbird.yml;False
 registry_set_net_cli_ngenassemblyusagelog.yml;False
@@ -2552,6 +2572,7 @@ registry_set_persistence_typed_paths.yml;False
 registry_set_policies_associations_tamper.yml;False
 registry_set_policies_attachments_tamper.yml;False
 registry_set_powershell_as_service.yml;True
+registry_set_powershell_execution_policy.yml;False
 registry_set_powershell_in_run_keys.yml;True
 registry_set_powershell_logging_disabled.yml;True
 registry_set_renamed_sysinternals_eula_accepted.yml;False
@@ -2577,6 +2598,7 @@ registry_set_terminal_server_suspicious.yml;False
 registry_set_terminal_server_tampering.yml;True
 registry_set_timeproviders_dllname.yml;True
 registry_set_treatas_persistence.yml;True
+registry_set_turn_on_dev_features.yml;False
 registry_set_uac_bypass_eventvwr.yml;False
 registry_set_uac_bypass_sdclt.yml;False
 registry_set_uac_bypass_winsat.yml;False
@@ -2587,6 +2609,7 @@ registry_set_wdigest_enable_uselogoncredential.yml;True
 registry_set_windows_defender_tamper.yml;True
 registry_set_winlogon_allow_multiple_tssessions.yml;False
 registry_set_winlogon_notify_key.yml;True
+registry_set_xll_persistance.yml;False
 sysmon_config_modification.yml;False
 sysmon_config_modification_error.yml;False
 sysmon_config_modification_status.yml;False
