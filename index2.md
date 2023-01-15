@@ -11,6 +11,10 @@
 * create_remote_thread_win_susp_remote_thread_source.yml
   * T1134.004 [Parent PID Spoofing using PowerShell](tests/069258f4-2162-46e9-9a25-c9c6c56150d2.md)
   * T1018 [Get-DomainController with PowerView](tests/b9d2e8ca-5520-4737-8076-4f08913da2c4.md)
+* create_remote_thread_win_susp_remote_thread_target.yml
+  * T1055 [Section View Injection](tests/c6952f41-6cf0-450a-b352-2ca8dae7c178.md)
+* create_remote_thread_win_susp_targets.yml
+  * T1055 [Section View Injection](tests/c6952f41-6cf0-450a-b352-2ca8dae7c178.md)
 * dns_query_win_regsvr32_network_activity.yml
   * T1218.010 [Regsvr32 remote COM scriptlet execution](tests/c9d0c4ef-8a96-4794-a75b-3d3a5e6f2a36.md)
 * dns_query_win_remote_access_software_domains.yml
@@ -136,6 +140,8 @@
   * T1218 [Renamed Microsoft.Workflow.Compiler.exe Payload Executions](tests/4cc40fd7-87b8-4b16-b2d7-57534b86b911.md)
 * file_event_win_new_src_file.yml
   * T1218.011 [Rundll32 with desk.cpl](tests/83a95136-a496-423c-81d3-1c6750133917.md)
+* file_event_win_office_persistence.yml
+  * T1137.006 [Persistent Code Execution Via Word Add-in File (WLL)](tests/95408a99-4fa7-4cd6-a7ef-cb65f86351cf.md)
 * file_event_win_outlook_c2_macro_creation.yml
   * T1137 [Office Application Startup - Outlook as a C2](tests/bfe6ac15-c50b-4c4f-a186-0fc6b8ba936c.md)
 * file_event_win_outlook_newform.yml
@@ -2736,6 +2742,8 @@
   * T1018 [Remote System Discovery - net](tests/85321a9c-897f-4a60-9f20-29788e50bccd.md)
   * T1016 [Qakbot Recon](tests/121de5c6-5818-4868-b8a7-8fd07c455c1b.md)
   * T1016 [System Network Configuration Discovery (TrickBot Style)](tests/dafaf052-5508-402d-bf77-51e0700c02e2.md)
+* proc_creation_win_net_recon.yml
+  * T1018 [Remote System Discovery - net group Domain Controller](tests/5843529a-5056-4bc1-9c13-a311e2af4ca0.md)
 * proc_creation_win_net_user_add.yml
   * T1078.001 [Enable Guest account with RDP capability and admin privileges](tests/99747561-ed8d-47f2-9c91-1e5fde1ed6e0.md)
   * T1564 [Create a Hidden User Called "$"](tests/2ec63cc2-4975-41a6-bf09-dffdfb610778.md)
@@ -2766,6 +2774,7 @@
   * T1219 [NetSupport - RAT Execution](tests/ecca999b-e0c8-40e8-8416-ad320b146a75.md)
 * proc_creation_win_network_scan_loop.yml
   * T1018 [Remote System Discovery - nslookup](tests/baa01aaa-5e13-45ec-8a0d-e46c93c9760f.md)
+  * T1059.001 [Abuse Nslookup with DNS Records](tests/999bff6d-dc15-44c9-9f5c-e1051bfc86e1.md)
   * T1018 [Remote System Discovery - ping sweep](tests/6db1f57f-d1d5-4223-8a66-55c9c65a9592.md)
 * proc_creation_win_network_sniffing.yml
   * T1040 [Packet Capture Windows Command Prompt](tests/a5b2f6a0-24b4-493e-9590-c699f75723ca.md)
@@ -2829,6 +2838,8 @@
   * T1134.001 [Launch NSudo Executable](tests/7be1bc0f-d8e5-4345-9333-f5f67d742cb9.md)
   * T1069.002 [Get-DomainGroup with PowerView](tests/5a8a181c-2c8e-478d-a943-549305a01230.md)
   * T1546.009 [Create registry persistence via AppCert DLL](tests/a5ad6104-5bab-4c43-b295-b4c44c7c6b05.md)
+* proc_creation_win_nslookup_poweshell_download.yml
+  * T1059.001 [Abuse Nslookup with DNS Records](tests/999bff6d-dc15-44c9-9f5c-e1051bfc86e1.md)
 * proc_creation_win_ntdsutil_usage.yml
   * T1003.003 [Dump Active Directory Database with NTDSUtil](tests/2364e33d-ceab-4641-8468-bfb1d7cc2723.md)
   * T1098 [Password Change on Directory Service Restore Mode (DSRM) Account](tests/d5b886d9-d1c7-4b6e-a7b0-460041bf2823.md)
@@ -2852,6 +2863,8 @@
   * T1055 [Shellcode execution via VBA](tests/1c91e740-1729-4329-b779-feba6e71d048.md)
 * proc_creation_win_office_spawn_exe_from_users_directory.yml
   * T1564 [Extract binary files via VBA](tests/6afe288a-8a8b-4d33-a629-8d03ba9dad3a.md)
+* proc_creation_win_office_svchost_child.yml
+  * T1137.006 [Persistent Code Execution Via Word Add-in File (WLL)](tests/95408a99-4fa7-4cd6-a7ef-cb65f86351cf.md)
 * proc_creation_win_pdq_deploy.yml
   * T1072 [PDQ Deploy RAT](tests/e447b83b-a698-4feb-bed1-a7aaf45c3443.md)
 * proc_creation_win_powershell_amsi_bypass.yml
@@ -3161,6 +3174,7 @@
   * T1548.002 [WinPwn - UAC Bypass DiskCleanup technique](tests/1ed67900-66cd-4b09-b546-2a0ef4431a0c.md)
   * T1218.005 [Invoke HTML Application - Simulate Lateral Movement over UNC Path](tests/b8a8bdb2-7eae-490d-8251-d5e0295b2362.md)
   * T1218.005 [Invoke HTML Application - JScript Engine with Inline Protocol Handler](tests/d3eaaf6a-cdb1-44a9-9ede-b6c337d0d840.md)
+  * T1059.001 [Abuse Nslookup with DNS Records](tests/999bff6d-dc15-44c9-9f5c-e1051bfc86e1.md)
 * proc_creation_win_software_discovery.yml
   * T1518 [Find and Display Internet Explorer Browser Version](tests/68981660-6670-47ee-a5fa-7e74806420a4.md)
 * proc_creation_win_spn_enum.yml
@@ -3437,6 +3451,7 @@
   * T1087.001 [Enumerate all accounts via PowerShell (Local)](tests/ae4b6361-b5f8-46cb-a3f9-9cf108ccfe7b.md)
   * T1135 [View available share drives](tests/ab39a04f-0c93-4540-9ff2-83f862c385ae.md)
   * T1087.002 [Enumerate Default Domain Admin Details (Domain)](tests/c70ab9fd-19e2-4e02-a83c-9cfa8eaa8fef.md)
+  * T1018 [Remote System Discovery - net group Domain Controller](tests/5843529a-5056-4bc1-9c13-a311e2af4ca0.md)
 * proc_creation_win_susp_netsh_discovery_command.yml
   * T1016 [List Windows Firewall Rules](tests/038263cb-00f4-4b0a-98ae-0696c67e1752.md)
 * proc_creation_win_susp_netsh_dll_persistence.yml
@@ -3715,6 +3730,8 @@
   * T1053.005 [Scheduled task Remote](tests/2e5eac3e-327b-4a88-a0c0-c4057039a8dd.md)
   * T1053.005 [Scheduled task Local](tests/42f53695-ad4a-4546-abb6-7d837f644a71.md)
   * T1036.004 [Creating W32Time similar named service using schtasks](tests/f9f2fe59-96f7-4a7d-ba9f-a9783200d4c9.md)
+* proc_creation_win_susp_schtasks_delete.yml
+  * T1562.001 [Delete Windows Defender Scheduled Tasks](tests/4b841aa1-0d05-4b32-bbe7-7564346e7c76.md)
 * proc_creation_win_susp_schtasks_disable.yml
   * T1490 [Windows - Disable the SR scheduled task](tests/1c68c68d-83a4-4981-974e-8993055fa034.md)
 * proc_creation_win_susp_schtasks_env_folder.yml
@@ -4177,6 +4194,8 @@
   * T1112 [Windows HideSCAVolume Group Policy Feature](tests/7f037590-b4c6-4f13-b3cc-e424c5ab8ade.md)
 * registry_set_install_root_or_ca_certificat.yml
   * T1553.004 [Add Root Certificate to CurrentUser Certificate Store](tests/ca20a3f1-42b5-4e21-ad3f-1049199ec2e0.md)
+* registry_set_legalnotice_susp_message.yml
+  * T1491.001 [Configure LegalNoticeCaption and LegalNoticeText registry keys to display ransom message](tests/ffcbfaab-c9ff-470b-928c-f086b326089b.md)
 * registry_set_office_security.yml
   * T1564 [Extract binary files via VBA](tests/6afe288a-8a8b-4d33-a629-8d03ba9dad3a.md)
   * T1204.002 [Mirror Blast Emulation](tests/24fd9719-7419-42dd-bce6-ab3463110b3c.md)
@@ -4310,6 +4329,8 @@
   * T1106 [WinPwn - Get SYSTEM shell - Pop System Shell using NamedPipe Impersonation technique](tests/e1f93a06-1649-4f07-89a8-f57279a7d60e.md)
 * win_system_susp_service_installation_folder.yml
   * T1219 [Ammyy Admin Software Execution](tests/0ae9e327-3251-465a-a53b-485d4e3f58fa.md)
+* win_taskscheduler_susp_schtasks_delete.yml
+  * T1562.001 [Delete Windows Defender Scheduled Tasks](tests/4b841aa1-0d05-4b32-bbe7-7564346e7c76.md)
 * win_wmi_persistence.yml
   * T1546.003 [Persistence via WMI Event Subscription - ActiveScriptEventConsumer](tests/fecd0dfd-fb55-45fa-a10b-6250272d0832.md)
   * T1546.003 [Persistence via WMI Event Subscription - CommandLineEventConsumer](tests/3c64f177-28e2-49eb-a799-d767b24dd1e0.md)

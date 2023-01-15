@@ -383,7 +383,7 @@ Caution: a test can generate a lot of noise...
 
 [Enumerate Active Directory Computers with ADSISearcher](tests/64ede6ac-b57a-41c2-a7d1-32c6cd35397d.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Remote System Discovery - net group Domain Controller](tests/5843529a-5056-4bc1-9c13-a311e2af4ca0.md) ['windows'] (sigma rule :x:)
+[Remote System Discovery - net group Domain Controller](tests/5843529a-5056-4bc1-9c13-a311e2af4ca0.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1562.001
@@ -421,7 +421,7 @@ Caution: a test can generate a lot of noise...
 
 [Disable macOS Gatekeeper](tests/2a821573-fb3f-4e71-92c3-daac7432f053.md) ['macos'] (sigma rule :x:)
 
-[Delete Windows Defender Scheduled Tasks](tests/4b841aa1-0d05-4b32-bbe7-7564346e7c76.md) ['windows'] (sigma rule :x:)
+[Delete Windows Defender Scheduled Tasks](tests/4b841aa1-0d05-4b32-bbe7-7564346e7c76.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Unload Sysmon Filter Driver](tests/811b3e76-c41b-430c-ac0d-e2380bfaa164.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -843,7 +843,7 @@ Caution: a test can generate a lot of noise...
 
 [NTFS Alternate Data Stream Access](tests/8e5c5532-1181-4c1d-bb79-b3a9f5dbd680.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Abuse Nslookup with DNS Records](tests/999bff6d-dc15-44c9-9f5c-e1051bfc86e1.md) ['windows'] (sigma rule :x:)
+[Abuse Nslookup with DNS Records](tests/999bff6d-dc15-44c9-9f5c-e1051bfc86e1.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [ATHPowerShellCommandLineParameter -Command parameter variations](tests/686a9785-f99b-41d4-90df-66ed515f81d7.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1067,7 +1067,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1137.006
-[Persistent Code Execution Via Word Add-in File (WLL)](tests/95408a99-4fa7-4cd6-a7ef-cb65f86351cf.md) ['windows'] (sigma rule :x:)
+[Persistent Code Execution Via Word Add-in File (WLL)](tests/95408a99-4fa7-4cd6-a7ef-cb65f86351cf.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Persistent Code Execution Via Excel Add-in File (XLL)](tests/9c307886-9fef-41d5-b344-073a0f5b2f5f.md) ['windows'] (sigma rule :x:)
 
@@ -1303,7 +1303,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1055
-[Section View Injection](tests/c6952f41-6cf0-450a-b352-2ca8dae7c178.md) ['windows'] (sigma rule :x:)
+[Section View Injection](tests/c6952f41-6cf0-450a-b352-2ca8dae7c178.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Remote Process Injection in LSASS via mimikatz](tests/3203ad24-168e-4bec-be36-f79b13ef8a83.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1761,7 +1761,7 @@ Caution: a test can generate a lot of noise...
 ### T1491.001
 [Replace Desktop Wallpaper](tests/30558d53-9d76-41c4-9267-a7bd5184bed3.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Configure LegalNoticeCaption and LegalNoticeText registry keys to display ransom message](tests/ffcbfaab-c9ff-470b-928c-f086b326089b.md) ['windows'] (sigma rule :x:)
+[Configure LegalNoticeCaption and LegalNoticeText registry keys to display ransom message](tests/ffcbfaab-c9ff-470b-928c-f086b326089b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1048.003
