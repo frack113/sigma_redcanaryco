@@ -38,9 +38,9 @@ powershell
 
  - proc_creation_win_susp_powershell_download_cradles.yml (id: 6e897651-f157-4d8f-aaeb-df8151488385)
 
- - proc_creation_win_powershell_download_patterns.yml (id: e6c54d94-498c-4562-a37c-b469d8e9a275)
+ - proc_creation_win_powershell_susp_download_patterns.yml (id: e6c54d94-498c-4562-a37c-b469d8e9a275)
 
- - proc_creation_win_powershell_download.yml (id: 3b6ab547-8ec2-4991-b9d2-2b06702a48d7)
+ - proc_creation_win_powershell_download_patterns.yml (id: 3b6ab547-8ec2-4991-b9d2-2b06702a48d7)
 
  - posh_ps_susp_invocation_specific.yml (id: ae7fbf8e-f3cb-49fd-8db4-5f3bed522c71)
 
