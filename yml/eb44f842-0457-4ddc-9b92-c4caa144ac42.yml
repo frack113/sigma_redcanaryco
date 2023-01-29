@@ -55,7 +55,7 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: 3b6ab547-8ec2-4991-b9d2-2b06702a48d7
-    name: proc_creation_win_powershell_download.yml
+    name: proc_creation_win_powershell_download_patterns.yml
   - id: 8ff28fdd-e2fa-4dfa-aeda-ef3d61c62090
     name: posh_pm_susp_invocation_specific.yml
   - id: ae7fbf8e-f3cb-49fd-8db4-5f3bed522c71

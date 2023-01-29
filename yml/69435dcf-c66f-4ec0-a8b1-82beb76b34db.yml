@@ -24,4 +24,4 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: e4ed6030-ffe5-4e6a-8a8a-ab3c1ab9d94e
-    name: proc_creation_win_iis_http_logging.yml
+    name: proc_creation_win_iis_appcmd_http_logging.yml

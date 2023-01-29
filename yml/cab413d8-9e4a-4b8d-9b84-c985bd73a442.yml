@@ -23,7 +23,7 @@ sigma_rule:
   - id: a642964e-bead-4bed-8910-1bb4d63e3b4d
     name: proc_creation_win_mimikatz_command_line.yml
   - id: cdf05894-89e7-4ead-b2b0-0a5f97a90f2f
-    name: proc_creation_win_powershell_cmdline_specific_comb_methods.yml
+    name: proc_creation_win_powershell_encoding_patterns.yml
   - id: dcd74b95-3f36-4ed9-9598-0490951643aa
     name: posh_ps_powerview_malicious_commandlets.yml
   - id: 89819aa4-bbd6-46bc-88ec-c7f7fe30efa6

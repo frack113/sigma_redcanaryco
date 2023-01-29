@@ -20,4 +20,4 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: 30edb182-aa75-42c0-b0a9-e998bb29067c
-    name: proc_creation_win_powershell_amsi_bypass.yml
+    name: proc_creation_win_powershell_amsi_init_failed_bypass.yml

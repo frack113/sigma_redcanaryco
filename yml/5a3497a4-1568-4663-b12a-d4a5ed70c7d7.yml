@@ -18,7 +18,7 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: cdf05894-89e7-4ead-b2b0-0a5f97a90f2f
-    name: proc_creation_win_powershell_cmdline_specific_comb_methods.yml
+    name: proc_creation_win_powershell_encoding_patterns.yml
   - id: b29a93fb-087c-4b5b-a84d-ee3309e69d08
     name: posh_ps_directoryservices_accountmanagement.yml
 

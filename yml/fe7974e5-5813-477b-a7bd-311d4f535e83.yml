@@ -15,9 +15,10 @@ technique:
   - T1112
 os:
   - windows
-description: 'Enabling Restricted Admin Mode via Command_Prompt,enables an attacker to perform a pass-the-hash attack using RDP
+description: |
+  Enabling Restricted Admin Mode via Command_Prompt,enables an attacker to perform a pass-the-hash attack using RDP.
 
-  '
+  See [Passing the Hash with Remote Desktop](https://www.kali.org/blog/passing-hash-remote-desktop/)
 executor: command_prompt
 sigma: false
 sigma_rule: []

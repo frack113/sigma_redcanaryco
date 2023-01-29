@@ -23,4 +23,4 @@ sigma_rule:
   - id: 91cb43db-302a-47e3-b3c8-7ede481e27bf
     name: file_access_win_browser_credential_stealing.yml
   - id: 4833155a-4053-4c9c-a997-777fcea0baa7
-    name: proc_creation_win_sqlite_firefox_cookies.yml
+    name: proc_creation_win_sqlite_firefox_gecko_profile_data.yml
