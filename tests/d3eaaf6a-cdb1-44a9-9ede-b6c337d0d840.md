@@ -36,7 +36,7 @@ Executes an HTA Application with JScript Engine and Inline Protocol Handler.
 powershell
 
 # Sigma Rule
- - proc_creation_win_susp_powershell_parent_process.yml (id: 754ed792-634f-40ae-b3bc-e0448d33f695)
+ - proc_creation_win_powershell_susp_parent_process.yml (id: 754ed792-634f-40ae-b3bc-e0448d33f695)
 
  - posh_ps_accessing_win_api.yml (id: 03d83090-8cba-44a0-b02f-0b756a050306)
 
@@ -70,7 +70,7 @@ powershell
 
  - proc_creation_win_wmiprvse_spawning_process.yml (id: d21374ff-f574-44a7-9998-4a8c8bf33d7d)
 
- - proc_creation_win_mshta_spawn_shell.yml (id: 03cc0c25-389f-4bf8-b48d-11878079f1ca)
+ - proc_creation_win_mshta_susp_child_processes.yml (id: 03cc0c25-389f-4bf8-b48d-11878079f1ca)
 
 
 

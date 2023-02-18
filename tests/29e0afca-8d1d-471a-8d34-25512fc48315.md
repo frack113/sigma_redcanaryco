@@ -48,7 +48,7 @@ powershell
 
  - registry_set_timeproviders_dllname.yml (id: e88a6ddc-74f7-463b-9b26-f69fc0d2ce85)
 
- - proc_creation_win_service_execution.yml (id: 2a072a96-a086-49fa-bcb5-15cc5a619093)
+ - proc_creation_win_net_start_service.yml (id: 2a072a96-a086-49fa-bcb5-15cc5a619093)
 
  - image_load_susp_dll_load_system_process.yml (id: 9e9a9002-56c4-40fd-9eff-e4b09bfa5f6c)
 

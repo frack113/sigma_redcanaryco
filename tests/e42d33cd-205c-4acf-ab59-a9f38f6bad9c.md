@@ -37,7 +37,7 @@ powershell
 # Sigma Rule
  - win_alert_mimikatz_keywords.yml (id: 06d71506-7beb-4f22-8888-e2e5e2ca7fd8)
 
- - proc_creation_win_hack_rubeus.yml (id: 7ec2c172-dceb-4c10-92c9-87c1881b7e18)
+ - proc_creation_win_hktl_rubeus.yml (id: 7ec2c172-dceb-4c10-92c9-87c1881b7e18)
 
  - file_event_win_detect_powerup_dllhijacking.yml (id: 602a1f13-c640-4d73-b053-be9a2fa58b96)
 

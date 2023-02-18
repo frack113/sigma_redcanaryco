@@ -41,9 +41,7 @@ powershell
 
  - file_event_win_susp_dropper.yml (id: 297afac9-5d02-4138-8c58-b977bac60556)
 
- - proc_creation_win_susp_wmic_execution.yml (id: 526be59f-a573-4eea-b5f7-f0973207634d)
-
- - proc_creation_win_wmic_remote_command.yml (id: e42af9df-d90b-4306-b7fb-05c863847ebd)
+ - proc_creation_win_wmic_process_creation.yml (id: 526be59f-a573-4eea-b5f7-f0973207634d)
 
  - proc_creation_win_susp_powershell_sub_processes.yml (id: e4b6d2a7-d8a4-4f19-acbd-943c16d90647)
 
