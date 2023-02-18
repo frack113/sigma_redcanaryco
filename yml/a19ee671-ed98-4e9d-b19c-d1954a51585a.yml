@@ -22,9 +22,9 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: e6ce8457-68b1-485b-9bdd-3c2b5d679aa9
-    name: image_load_susp_winword_vbadll_load.yml
+    name: image_load_office_vbadll_load.yml
   - id: 438025f9-5856-4663-83f7-52f878a70a50
-    name: proc_creation_win_office_shell.yml
+    name: proc_creation_win_office_susp_child_processes.yml
   - id: e32f92d1-523e-49c3-9374-bdb13b46a3ba
     name: proc_creation_win_susp_mshta_pattern.yml
   - id: cc7abbd0-762b-41e3-8a26-57ad50d2eea3

@@ -15,7 +15,7 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: 01aeb693-138d-49d2-9403-c4f52d7d3d62
-    name: proc_creation_win_netsh_allow_port_rdp.yml
+    name: proc_creation_win_netsh_fw_allow_rdp.yml
   - id: cd5cfd80-aa5f-44c0-9c20-108c4ae12e3c
-    name: proc_creation_win_netsh_fw_add.yml
+    name: proc_creation_win_netsh_fw_add_rule.yml
 

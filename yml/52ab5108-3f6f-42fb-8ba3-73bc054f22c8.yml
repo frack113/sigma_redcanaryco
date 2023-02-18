@@ -21,6 +21,6 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 3bad990e-4848-4a78-9530-b427d854aac0
-    name: proc_creation_win_trust_discovery.yml
+    name: proc_creation_win_dsquery_domain_trust_discovery.yml
   - id: 5cc90652-4cbd-4241-aa3b-4b462fa5a248
     name: proc_creation_win_nltest_recon.yml

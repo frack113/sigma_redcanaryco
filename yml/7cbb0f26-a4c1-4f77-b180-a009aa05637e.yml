@@ -18,4 +18,4 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: 419dbf2b-8a9b-4bea-bf99-7544b050ec8d
-    name: proc_creation_win_workflow_compiler.yml
+    name: proc_creation_win_lolbin_workflow_compiler.yml

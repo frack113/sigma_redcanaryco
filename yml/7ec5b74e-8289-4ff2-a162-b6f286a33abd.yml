@@ -56,7 +56,7 @@ sigma_rule:
   - id: 2617e7ed-adb7-40ba-b0f3-8f9945fe6c09
     name: proc_creation_win_susp_system_user_anomaly.yml
   - id: d0d28567-4b9a-45e2-8bbc-fb1b66a1f7f6
-    name: proc_creation_win_long_powershell_commandline.yml
+    name: proc_creation_win_powershell_abnormal_commandline_size.yml
   - id: d522eca2-2973-4391-a3e0-ef0374321dae
     name: proc_creation_win_abusing_debug_privilege.yml
   - id: 635dbb88-67b3-4b41-9ea5-a3af2dd88153

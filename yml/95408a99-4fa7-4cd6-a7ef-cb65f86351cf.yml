@@ -17,6 +17,6 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: 9bdaf1e9-fdef-443b-8081-4341b74a7e28
-    name: proc_creation_win_office_svchost_child.yml
+    name: proc_creation_win_office_svchost_parent.yml
   - id: 8e1cb247-6cf6-42fa-b440-3f27d57e9936
-    name: file_event_win_office_persistence.yml
+    name: file_event_win_persistence_office_addin.yml

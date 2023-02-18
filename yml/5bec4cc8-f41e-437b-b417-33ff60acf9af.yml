@@ -1,0 +1,22 @@
+Attack_name: 'Command and Scripting Interpreter: Bash'
+Attack_description: |-
+  Adversaries may abuse Unix shell commands and scripts for execution. Unix shells are the primary command prompt on Linux and macOS systems, though many variations of the Unix shell exist (e.g. sh, bash, zsh, etc.) depending on the specific OS or distribution.(Citation: DieNet Bash)(Citation: Apple ZShell) Unix shells can control every aspect of a system, with certain commands requiring elevated privileges.
+
+  Unix shells also support scripts that enable sequential execution of commands as well as other typical programming operations such as conditionals and loops. Common uses of shell scripts include long or repetitive tasks, or the need to run the same set of commands on multiple systems.
+
+  Adversaries may abuse Unix shells to execute various commands or payloads. Interactive shells may be accessed through command and control channels or during lateral movement such as with [SSH](https://attack.mitre.org/techniques/T1021/004). Adversaries may also leverage shell scripts to deliver and execute multiple commands on victims or as part of payloads used for persistence.
+guid: 5bec4cc8-f41e-437b-b417-33ff60acf9af
+name: Obfuscated command line scripts
+tactic:
+  - execution
+technique:
+  - T1059.004
+os:
+  - linux
+description: 'An adversary may pre-compute the base64 representations of the terminal commands that they wish to execute in an attempt to avoid or frustrate detection. The following commands base64 encodes
+  the text string id, then base64 decodes the string, then pipes it as a command to bash, which results in the id command being executed.
+
+  '
+executor: sh
+sigma: false
+sigma_rule: []

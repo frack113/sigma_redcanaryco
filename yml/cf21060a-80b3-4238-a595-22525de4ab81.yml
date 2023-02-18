@@ -27,5 +27,5 @@ sigma_rule:
   - id: 41d40bff-377a-43e2-8e1b-2e543069e079
     name: proc_creation_win_malware_wannacry.yml
   - id: 1444443e-6757-43e4-9ea4-c8fc705f79a2
-    name: proc_creation_win_bootconf_mod.yml
+    name: proc_creation_win_bcdedit_boot_conf_tamper.yml
 

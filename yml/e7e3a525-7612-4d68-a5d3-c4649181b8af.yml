@@ -19,7 +19,7 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: 754ed792-634f-40ae-b3bc-e0448d33f695
-    name: proc_creation_win_susp_powershell_parent_process.yml
+    name: proc_creation_win_powershell_susp_parent_process.yml
   - id: 1f49f2ab-26bc-48b3-96cc-dcffbc93eadf
     name: posh_ps_susp_keywords.yml
   - id: 03d83090-8cba-44a0-b02f-0b756a050306

@@ -19,4 +19,4 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: 999e8307-a775-4d5f-addc-4855632335be
-    name: proc_creation_win_ransom_blackbyte.yml
+    name: proc_creation_win_malware_blackbyte_ransomware.yml

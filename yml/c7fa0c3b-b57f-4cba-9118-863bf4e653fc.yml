@@ -29,7 +29,7 @@ sigma_rule:
   - id: 502b42de-4306-40b4-9596-6f590c81f073
     name: proc_creation_win_local_system_owner_account_discovery.yml
   - id: d0d28567-4b9a-45e2-8bbc-fb1b66a1f7f6
-    name: proc_creation_win_long_powershell_commandline.yml
+    name: proc_creation_win_powershell_abnormal_commandline_size.yml
   - id: 1cdd9a09-06c9-4769-99ff-626e2b3991b8
     name: proc_creation_win_susp_double_extension.yml
   - id: cea72823-df4d-4567-950c-0b579eaf0846

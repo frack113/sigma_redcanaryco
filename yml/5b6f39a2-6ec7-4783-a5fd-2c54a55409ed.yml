@@ -82,7 +82,7 @@ sigma_rule:
   - id: e4b6d2a7-d8a4-4f19-acbd-943c16d90647
     name: proc_creation_win_susp_powershell_sub_processes.yml
   - id: 221b251a-357a-49a9-920a-271802777cc0
-    name: proc_creation_win_wmic_reconnaissance.yml
+    name: proc_creation_win_wmic_recon_process.yml
   - id: 06ce37c2-61ab-4f05-9ff5-b1a96d18ae32
     name: image_load_wmic_remote_xsl_scripting_dlls.yml
   - id: 97a80ec7-0e2f-4d05-9ef4-65760e634f6b

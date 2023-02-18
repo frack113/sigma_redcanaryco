@@ -25,6 +25,6 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: b9cbbc17-d00d-4e3d-a827-b06d03d2380d
-    name: proc_creation_win_monitoring_for_persistence_via_bits.yml
+    name: proc_creation_win_persistence_bitsadmin.yml
   - id: d059842b-6b9d-4ed1-b5c3-5b89143c6ede
     name: proc_creation_win_bitsadmin_download.yml

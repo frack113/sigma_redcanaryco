@@ -39,7 +39,7 @@ sigma_rule:
   - id: b8af5f36-1361-4ebe-9e76-e36128d947bf
     name: posh_ps_remove_item_path.yml
   - id: 40f9af16-589d-4984-b78d-8c2aec023197
-    name: proc_creation_win_high_integrity_sdclt.yml
+    name: proc_creation_win_uac_bypass_sdclt.yml
   - id: da2738f2-fadb-4394-afa7-0a0674885afa
     name: proc_creation_win_sdclt_child_process.yml
   - id: 1f21ec3f-810d-4b0e-8045-322202e22b4b

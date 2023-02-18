@@ -22,4 +22,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: d813d662-785b-42ca-8b4a-f7457d78d5a9
-    name: image_load_susp_advapi32_dll.yml
+    name: image_load_side_load_advapi32.yml

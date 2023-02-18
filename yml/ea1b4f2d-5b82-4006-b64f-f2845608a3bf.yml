@@ -20,4 +20,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 69ca006d-b9a9-47f5-80ff-ecd4d25d481a
-    name: proc_creation_win_trufflesnout.yml
+    name: proc_creation_win_hktl_trufflesnout.yml

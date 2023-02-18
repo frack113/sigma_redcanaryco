@@ -19,7 +19,5 @@ description: |
 
   Upon successful execution of this test, you will find three files named, sam, system and security in the %temp% directory.
 executor: command_prompt
-sigma: true
-sigma_rule:
-  - id: 038cd51c-3ad8-41c5-ba8f-5d1c92f3cc1e
-    name: proc_creation_win_reg_dump_sam.yml
+sigma: false
+sigma_rule: []

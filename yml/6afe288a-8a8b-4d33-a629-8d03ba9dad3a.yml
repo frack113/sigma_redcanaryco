@@ -21,7 +21,7 @@ sigma_rule:
   - id: a166f74e-bf44-409d-b9ba-ea4b2dd8b3cd
     name: registry_set_office_security.yml
   - id: e6ce8457-68b1-485b-9bdd-3c2b5d679aa9
-    name: image_load_susp_winword_vbadll_load.yml
+    name: image_load_office_vbadll_load.yml
   - id: 635dbb88-67b3-4b41-9ea5-a3af2dd88153
     name: net_connection_win_binary_github_com.yml
   - id: 1f21ec3f-810d-4b0e-8045-322202e22b4b

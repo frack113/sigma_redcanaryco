@@ -26,7 +26,7 @@ sigma_rule:
   - id: 79a87aa6-e4bd-42fc-a5bb-5e6fbdcd62f5
     name: proc_creation_win_msiexec_install_quiet.yml
   - id: c3a99af4-35a9-4668-879e-c09aeb4f2bdf
-    name: proc_creation_win_run_executable_invalid_extension.yml
+    name: proc_creation_win_rundll32_executable_invalid_extension.yml
   - id: 666ecfc7-229d-42b8-821e-1a8f8cb7057c
     name: image_load_susp_system_drawing_load.yml
   - id: 8e5e38e4-5350-4c0b-895a-e872ce0dd54f

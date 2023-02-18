@@ -18,6 +18,6 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: 526be59f-a573-4eea-b5f7-f0973207634d
-    name: proc_creation_win_susp_wmic_execution.yml
+    name: proc_creation_win_wmic_process_creation.yml
   - id: d21374ff-f574-44a7-9998-4a8c8bf33d7d
     name: proc_creation_win_wmiprvse_spawning_process.yml

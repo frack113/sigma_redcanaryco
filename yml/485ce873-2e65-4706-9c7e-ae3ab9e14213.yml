@@ -27,4 +27,4 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: 5589ab4f-a767-433c-961d-c91f3f704db1
-    name: proc_creation_win_tools_relay_attacks.yml
+    name: proc_creation_win_hktl_relay_attacks_tools.yml

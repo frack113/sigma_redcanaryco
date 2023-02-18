@@ -28,7 +28,7 @@ sigma_rule:
   - id: 9fc51a3c-81b3-4fa7-b35f-7c02cf10fd2d
     name: proc_creation_win_web_request_cmd_and_cmdlets.yml
   - id: 754ed792-634f-40ae-b3bc-e0448d33f695
-    name: proc_creation_win_susp_powershell_parent_process.yml
+    name: proc_creation_win_powershell_susp_parent_process.yml
   - id: 1139d2e2-84b1-4226-b445-354492eba8ba
     name: posh_ps_web_request_cmd_and_cmdlets.yml
   - id: b8af5f36-1361-4ebe-9e76-e36128d947bf
@@ -40,9 +40,9 @@ sigma_rule:
   - id: 1f21ec3f-810d-4b0e-8045-322202e22b4b
     name: net_connection_win_powershell_network_connection.yml
   - id: e6ce8457-68b1-485b-9bdd-3c2b5d679aa9
-    name: image_load_susp_winword_vbadll_load.yml
+    name: image_load_office_vbadll_load.yml
   - id: 438025f9-5856-4663-83f7-52f878a70a50
-    name: proc_creation_win_office_shell.yml
+    name: proc_creation_win_office_susp_child_processes.yml
   - id: 64e8e417-c19a-475a-8d19-98ea705394cc
     name: posh_pm_alternate_powershell_hosts.yml
   - id: 64e8e417-c19a-475a-8d19-98ea705394cc

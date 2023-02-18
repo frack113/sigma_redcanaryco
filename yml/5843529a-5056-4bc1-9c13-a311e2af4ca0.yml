@@ -20,6 +20,6 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: d95de845-b83c-4a9a-8a6a-4fc802ebf6c0
-    name: proc_creation_win_net_recon.yml
+    name: proc_creation_win_net_groups_and_accounts_recon.yml
   - id: 183e7ea8-ac4b-4c23-9aec-b3dac4e401ac
     name: proc_creation_win_susp_net_execution.yml

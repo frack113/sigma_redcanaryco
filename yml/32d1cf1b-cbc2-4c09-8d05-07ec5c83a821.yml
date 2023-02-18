@@ -31,4 +31,4 @@ sigma_rule:
   - id: e79a9e79-eb72-4e78-a628-0e7e8f59e89c
     name: proc_creation_win_susp_rundll32_by_ordinal.yml
   - id: c3a99af4-35a9-4668-879e-c09aeb4f2bdf
-    name: proc_creation_win_run_executable_invalid_extension.yml
+    name: proc_creation_win_rundll32_executable_invalid_extension.yml

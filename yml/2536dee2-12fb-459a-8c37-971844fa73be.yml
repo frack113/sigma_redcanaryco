@@ -52,7 +52,7 @@ sigma_rule:
   - id: 1f49f2ab-26bc-48b3-96cc-dcffbc93eadf
     name: posh_ps_susp_keywords.yml
   - id: 646ea171-dded-4578-8a4d-65e9822892e3
-    name: proc_creation_win_process_dump_rundll32_comsvcs.yml
+    name: proc_creation_win_rundll32_process_dump_via_comsvcs.yml
   - id: a49fa4d5-11db-418c-8473-1e014a8dd462
     name: proc_access_win_lsass_dump_comsvcs_dll.yml
   - id: 32d0d3e2-e58d-4d41-926b-18b520b2b32d

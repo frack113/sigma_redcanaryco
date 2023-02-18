@@ -24,7 +24,7 @@ sigma_rule:
   - id: d7bcd677-645d-4691-a8d4-7a5602b780d1
     name: proc_creation_win_powershell_cmdline_special_characters.yml
   - id: d0d28567-4b9a-45e2-8bbc-fb1b66a1f7f6
-    name: proc_creation_win_long_powershell_commandline.yml
+    name: proc_creation_win_powershell_abnormal_commandline_size.yml
   - id: a642964e-bead-4bed-8910-1bb4d63e3b4d
     name: proc_creation_win_mimikatz_command_line.yml
   - id: 89819aa4-bbd6-46bc-88ec-c7f7fe30efa6

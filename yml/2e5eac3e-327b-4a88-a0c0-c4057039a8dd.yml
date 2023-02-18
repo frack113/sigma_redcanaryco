@@ -17,7 +17,6 @@ os:
   - windows
 description: |
   Create a task on a remote system.
-
   Upon successful execution, cmd.exe will create a scheduled task to spawn cmd.exe at 20:10 on a remote endpoint.
 executor: command_prompt
 sigma: true

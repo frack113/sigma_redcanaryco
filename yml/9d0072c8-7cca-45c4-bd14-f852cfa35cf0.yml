@@ -42,7 +42,7 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: 515c8be5-e5df-4c5e-8f6d-a4a2f05e4b48
-    name: proc_creation_win_proc_dump_createdump.yml
+    name: proc_creation_win_lolbin_createdump.yml
   - id: 63332011-f057-496c-ad8d-d2b6afb27f96
     name: proc_creation_win_susp_tasklist_command.yml
   - id: a6a39bdb-935c-4f0a-ab77-35f4bbf44d33

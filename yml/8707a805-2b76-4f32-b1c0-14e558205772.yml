@@ -25,8 +25,8 @@ sigma_rule:
   - id: cc7abbd0-762b-41e3-8a26-57ad50d2eea3
     name: proc_creation_win_susp_mshta_execution.yml
   - id: 754ed792-634f-40ae-b3bc-e0448d33f695
-    name: proc_creation_win_susp_powershell_parent_process.yml
+    name: proc_creation_win_powershell_susp_parent_process.yml
   - id: 03cc0c25-389f-4bf8-b48d-11878079f1ca
-    name: proc_creation_win_mshta_spawn_shell.yml
+    name: proc_creation_win_mshta_susp_child_processes.yml
   - id: f4bbd493-b796-416e-bbf2-121235348529
     name: proc_creation_win_non_interactive_powershell.yml

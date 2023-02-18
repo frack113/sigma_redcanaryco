@@ -22,6 +22,6 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: c3a99af4-35a9-4668-879e-c09aeb4f2bdf
-    name: proc_creation_win_run_executable_invalid_extension.yml
+    name: proc_creation_win_rundll32_executable_invalid_extension.yml
   - id: f1edd233-30b5-4823-9e6a-c4171b24d316
     name: proc_creation_win_rundll32_registered_com_objects.yml

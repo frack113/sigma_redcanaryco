@@ -23,7 +23,7 @@ sigma_rule:
   - id: 183e7ea8-ac4b-4c23-9aec-b3dac4e401ac
     name: proc_creation_win_susp_net_execution.yml
   - id: 2a072a96-a086-49fa-bcb5-15cc5a619093
-    name: proc_creation_win_service_execution.yml
+    name: proc_creation_win_net_start_service.yml
   - id: d522eca2-2973-4391-a3e0-ef0374321dae
     name: proc_creation_win_abusing_debug_privilege.yml
   - id: 9847f263-4a81-424f-970c-875dab15b79b

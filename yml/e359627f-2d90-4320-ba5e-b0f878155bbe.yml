@@ -23,7 +23,7 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: d0dae994-26c6-4d2d-83b5-b3c8b79ae513
-    name: proc_creation_win_webbrowserpassview.yml
+    name: proc_creation_win_pua_webbrowserpassview.yml
   - id: 91cb43db-302a-47e3-b3c8-7ede481e27bf
     name: file_access_win_browser_credential_stealing.yml
   - id: 678dfc63-fefb-47a5-a04c-26bcf8cc9f65

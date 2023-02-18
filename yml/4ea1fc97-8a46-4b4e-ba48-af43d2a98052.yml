@@ -29,7 +29,7 @@ sigma_rule:
   - id: a6a39bdb-935c-4f0a-ab77-35f4bbf44d33
     name: proc_creation_win_susp_script_exec_from_temp.yml
   - id: e6ce8457-68b1-485b-9bdd-3c2b5d679aa9
-    name: image_load_susp_winword_vbadll_load.yml
+    name: image_load_office_vbadll_load.yml
   - id: c7a74c80-ba5a-486e-9974-ab9e682bc5e4
     name: file_event_win_script_creation_by_office_using_file_ext.yml
   - id: 75e33ce3-ae32-4dcc-9aa8-a2a3029d6f84
@@ -39,6 +39,6 @@ sigma_rule:
   - id: 9ae01559-cf7e-4f8e-8e14-4c290a1b4784
     name: image_load_uipromptforcreds_dlls.yml
   - id: 25ffa65d-76d8-4da5-a832-3f2b0136e133
-    name: registry_add_sysinternals_eula_accepted.yml
+    name: registry_add_pua_sysinternals_execution_via_eula.yml
   - id: fa34b441-961a-42fa-a100-ecc28c886725
     name: proc_access_win_susp_proc_access_lsass_susp_source.yml

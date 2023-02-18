@@ -25,4 +25,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 89f75308-5b1b-4390-b2d8-d6b2340efaf8
-    name: proc_creation_win_delete_systemstatebackup.yml
+    name: proc_creation_win_wbadmin_delete_systemstatebackup.yml

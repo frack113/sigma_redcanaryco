@@ -22,6 +22,6 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: 45a594aa-1fbd-4972-a809-ff5a99dd81b8
-    name: proc_creation_win_run_powershell_script_from_ads.yml
+    name: proc_creation_win_powershell_run_script_from_ads.yml
   - id: 8c521530-5169-495d-a199-0a3a881ad24e
     name: posh_ps_ntfs_ads_access.yml

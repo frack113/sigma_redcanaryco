@@ -1,0 +1,26 @@
+Attack_name: 'System Location Discovery: System Language Discovery'
+Attack_description: "Adversaries may attempt to gather information about the system language of a victim in order to infer the geographical location of that host. This information may be used to shape follow-on\
+  \ behaviors, including whether the adversary infects the target and/or attempts specific actions. This decision may be employed by malware developers and operators to reduce their risk of attracting the\
+  \ attention of specific law enforcement agencies or prosecution/scrutiny from other entities.(Citation: Malware System Language Check)\n\nThere are various sources of data an adversary could use to infer\
+  \ system language, such as system defaults and keyboard layouts. Specific checks will vary based on the target and/or adversary, but may involve behaviors such as [Query Registry](https://attack.mitre.org/techniques/T1012)\
+  \ and calls to [Native API](https://attack.mitre.org/techniques/T1106) functions.(Citation: CrowdStrike Ryuk January 2019) \n\nFor example, on a Windows system adversaries may attempt to infer the language\
+  \ of a system by querying the registry key <code>HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Nls\\Language</code> or parsing the outputs of Windows API functions <code>GetUserDefaultUILanguage</code>,\
+  \ <code>GetSystemDefaultUILanguage</code>, <code>GetKeyboardLayoutList</code> and <code>GetUserDefaultLangID</code>.(Citation: Darkside Ransomware Cybereason)(Citation: Securelist JSWorm)(Citation: SecureList\
+  \ SynAck Doppelgänging May 2018)\n\nOn a macOS or Linux system, adversaries may query <code>locale</code> to retrieve the value of the <code>$LANG</code> environment variable."
+guid: 07ce871a-b3c3-44a3-97fa-a20118fdc7c9
+name: Discover System Language with localectl
+tactic:
+  - discovery
+technique:
+  - T1614.001
+os:
+  - linux
+description: |
+  Identify System language with the `localectl` command.
+
+  Upon successful execution, the key `System Locale` from the output will contain the
+  `LANG` environment variable that has the 5 character locale result that can be looked
+  up to correlate the language and territory.
+executor: sh
+sigma: false
+sigma_rule: []

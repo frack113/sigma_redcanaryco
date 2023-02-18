@@ -29,7 +29,7 @@ sigma_rule:
   - id: 75e33ce3-ae32-4dcc-9aa8-a2a3029d6f84
     name: net_connection_win_excel_outbound_network_connection.yml
   - id: e6ce8457-68b1-485b-9bdd-3c2b5d679aa9
-    name: image_load_susp_winword_vbadll_load.yml
+    name: image_load_office_vbadll_load.yml
   - id: 349d891d-fef0-4fe4-bc53-eee623a15969
     name: proc_creation_win_ntfs_short_name_path_use_cli.yml
   - id: a96970af-f126-420d-90e1-d37bf25e50e1

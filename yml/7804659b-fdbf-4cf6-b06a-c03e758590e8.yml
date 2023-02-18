@@ -86,7 +86,7 @@ sigma_rule:
   - id: 0ef56343-059e-4cb6-adc1-4c3c967c5e46
     name: proc_creation_win_susp_systeminfo.yml
   - id: 221b251a-357a-49a9-920a-271802777cc0
-    name: proc_creation_win_wmic_reconnaissance.yml
+    name: proc_creation_win_wmic_recon_process.yml
   - id: e4b6d2a7-d8a4-4f19-acbd-943c16d90647
     name: proc_creation_win_susp_powershell_sub_processes.yml
   - id: 06ce37c2-61ab-4f05-9ff5-b1a96d18ae32
