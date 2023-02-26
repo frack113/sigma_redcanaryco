@@ -43,7 +43,7 @@ powershell
 
  - proc_creation_win_wmic_process_creation.yml (id: 526be59f-a573-4eea-b5f7-f0973207634d)
 
- - proc_creation_win_susp_powershell_sub_processes.yml (id: e4b6d2a7-d8a4-4f19-acbd-943c16d90647)
+ - proc_creation_win_powershell_susp_child_processes.yml (id: e4b6d2a7-d8a4-4f19-acbd-943c16d90647)
 
 
 

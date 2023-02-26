@@ -221,6 +221,12 @@ Caution: a test can generate a lot of noise...
 
 [Disable Carbon Black Response](tests/8fba7766-2d11-4b4a-979a-1e3d9cc9a88c.md) ['macos'] (sigma rule :x:)
 
+[Clear History](tests/23b88394-091b-4968-a42d-fb8076992443.md) ['linux'] (sigma rule :x:)
+
+[Suspend History](tests/94f6a1c9-aae7-46a4-9083-2bb1f5768ec4.md) ['linux'] (sigma rule :x:)
+
+[Disable Memory Swap](tests/e74e4c63-6fde-4ad2-9ee8-21c3a1733114.md) ['linux'] (sigma rule :x:)
+
 [Delete Windows Defender Scheduled Tasks](tests/4b841aa1-0d05-4b32-bbe7-7564346e7c76.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Disable LittleSnitch](tests/62155dd8-bb3d-4f32-b31c-6532ff3ac6a3.md) ['macos'] (sigma rule :x:)
@@ -234,6 +240,8 @@ Caution: a test can generate a lot of noise...
 [LockBit Black - Disable Privacy Settings Experience Using Registry -Powershell](tests/d8c57eaa-497a-4a08-961e-bd5efd7c9374.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [AMSI Bypass - Remove AMSI Provider Reg Key](tests/13f09b91-c953-438e-845b-b585e51cac9b.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Clear Pagging Cache](tests/f790927b-ea85-4a16-b7b2-7eb44176a510.md) ['linux'] (sigma rule :x:)
 
 [Disable Windows Defender with PwSh Disable-WindowsOptionalFeature](tests/f542ffd3-37b4-4528-837f-682874faa012.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -262,6 +270,8 @@ Caution: a test can generate a lot of noise...
 [Tamper with Windows Defender Evade Scanning -Process](tests/a123ce6a-3916-45d6-ba9c-7d4081315c27.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Disable Microsoft Office Security Features](tests/6f5fb61b-4e56-4a3d-a8c3-82e13686c6d7.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Reboot Linux Host via Kernel System Request](tests/6d6d3154-1a52-4d1a-9d51-92ab8148b32e.md) ['linux'] (sigma rule :x:)
 
 [Uninstall Crowdstrike Falcon on Windows](tests/b32b1ccf-f7c1-49bc-9ddd-7d7466a7b297.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -483,11 +493,15 @@ Caution: a test can generate a lot of noise...
 
 [Command line scripts](tests/b04ed73c-7d43-4dc8-b563-a2fc595cba1a.md) ['linux'] (sigma rule :x:)
 
+[Change login shell](tests/c7ac59cb-13cc-4622-81dc-6d2fee9bfac7.md) ['linux'] (sigma rule :x:)
+
 [What shell is running](tests/7b38e5cc-47be-44f0-a425-390305c76c17.md) ['linux'] (sigma rule :x:)
 
 [Command-Line Interface](tests/d0c88567-803d-4dca-99b4-7ce65e7b257c.md) ['macos', 'linux'] (sigma rule :x:)
 
 [New script file in the tmp directory](tests/8cd1947b-4a54-41fb-b5ea-07d0ace04f81.md) ['linux'] (sigma rule :x:)
+
+[Environment variable scripts](tests/bdaebd56-368b-4970-a523-f905ff4a8a51.md) ['linux'] (sigma rule :x:)
 
 [Create and Execute Bash Shell Script](tests/7e7ac3ed-f795-4fa5-b711-09d6fbe9b873.md) ['macos', 'linux'] (sigma rule :x:)
 
@@ -711,7 +725,11 @@ Caution: a test can generate a lot of noise...
 
 [Set a SetGID flag on file](tests/db55f666-7cba-46c6-9fe6-205a05c3242c.md) ['macos', 'linux'] (sigma rule :x:)
 
+[Do reconnaissance for files that have the setuid bit set](tests/8e36da01-cd29-45fd-be72-8a0fcaad4481.md) ['linux'] (sigma rule :x:)
+
 [Provide the SetUID capability to a file](tests/1ac3272f-9bcf-443a-9888-4b1d3de785c1.md) ['linux'] (sigma rule :x:)
+
+[Do reconnaissance for files that have the setgid bit set](tests/3fb46e17-f337-4c14-9f9a-a471946533e2.md) ['linux'] (sigma rule :x:)
 
 [Make and modify binary from C source](tests/896dfe97-ae43-4101-8e96-9a7996555d80.md) ['macos', 'linux'] (sigma rule :x:)
 
@@ -917,9 +935,13 @@ Caution: a test can generate a lot of noise...
 
 [Disable Windows Change Password Feature](tests/d4a6da40-618f-454d-9a9e-26af552aaeb0.md) ['windows'] (sigma rule :heavy_check_mark:)
 
+[Event Viewer Registry Modification - Redirection Program](tests/81483501-b8a5-4225-8b32-52128e2f69db.md) ['windows'] (sigma rule :x:)
+
 [Windows HideSCAHealth Group Policy Feature](tests/a4637291-40b1-4a96-8c82-b28f1d73e54e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Windows HideSCAVolume Group Policy Feature](tests/7f037590-b4c6-4f13-b3cc-e424c5ab8ade.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Event Viewer Registry Modification - Redirection URL](tests/6174be7f-5153-4afd-92c5-e0c3b7cdb5ae.md) ['windows'] (sigma rule :x:)
 
 [Disable Windows Toast Notifications](tests/003f466a-6010-4b15-803a-cbb478a314d7.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1287,7 +1309,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1098
-[Azure - adding service principal to Azure AD role](tests/92c40b3f-c406-4d1f-8d2b-c039bf5009e4.md) ['azure-ad'] (sigma rule :x:)
+[Azure AD - adding service principal to Azure AD role](tests/92c40b3f-c406-4d1f-8d2b-c039bf5009e4.md) ['azure-ad'] (sigma rule :x:)
 
 [Domain Account and Group Manipulate](tests/a55a22e9-a3d3-42ce-bd48-2653adb8f7a9.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1295,9 +1317,9 @@ Caution: a test can generate a lot of noise...
 
 [Azure - adding service principal to Azure role in subscription](tests/c8f4bc29-a151-48da-b3be-4680af56f404.md) ['iaas:azure'] (sigma rule :x:)
 
-[AzureAD - adding permission to application](tests/94ea9cc3-81f9-4111-8dde-3fb54f36af4b.md) ['azure-ad'] (sigma rule :x:)
+[Azure AD - adding permission to application](tests/94ea9cc3-81f9-4111-8dde-3fb54f36af4b.md) ['azure-ad'] (sigma rule :x:)
 
-[Azure - adding user to Azure AD role](tests/0e65ae27-5385-46b4-98ac-607a8ee82261.md) ['azure-ad'] (sigma rule :x:)
+[Azure AD - adding user to Azure AD role](tests/0e65ae27-5385-46b4-98ac-607a8ee82261.md) ['azure-ad'] (sigma rule :x:)
 
 [Admin Account Manipulate](tests/5598f7cb-cf43-455e-883a-f6008c5d46af.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1357,7 +1379,7 @@ Caution: a test can generate a lot of noise...
 
 [PowerDump Hashes and Usernames from Registry](tests/804f28fc-68fc-40da-b5a2-e9d0bce5c193.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Registry dump of SAM, creds, and secrets](tests/5c2571d0-1572-416d-9676-812e64ca9f44.md) ['windows'] (sigma rule :x:)
+[Registry dump of SAM, creds, and secrets](tests/5c2571d0-1572-416d-9676-812e64ca9f44.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [dump volume shadow copy hives with certutil](tests/eeb9751a-d598-42d3-b11c-c122d9c3f6c7.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1641,13 +1663,13 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1543.003
-[Service Installation PowerShell](tests/491a4af6-a521-4b74-b23b-f7b3f1ee9e77.md) ['windows'] (sigma rule :heavy_check_mark:)
+[Service Installation PowerShell](tests/491a4af6-a521-4b74-b23b-f7b3f1ee9e77.md) ['windows'] (sigma rule :x:)
 
 [Modify Fax service to run PowerShell](tests/ed366cde-7d12-49df-a833-671904770b9f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [TinyTurla backdoor service w64time](tests/ef0581fd-528e-4662-87bc-4c2affb86940.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Service Installation CMD](tests/981e2942-e433-44e9-afc1-8c957a1496b6.md) ['windows'] (sigma rule :heavy_check_mark:)
+[Service Installation CMD](tests/981e2942-e433-44e9-afc1-8c957a1496b6.md) ['windows'] (sigma rule :x:)
 
 
 ### T1550.003
@@ -1810,8 +1832,6 @@ Caution: a test can generate a lot of noise...
 [AWS - CloudTrail Logs Impairment Through S3 Lifecycle Rule using Stratus](tests/22d89a2f-d475-4895-b2d4-68626d49c029.md) ['linux', 'macos'] (sigma rule :x:)
 
 [AWS CloudWatch Log Stream Deletes](tests/33ca84bc-4259-4943-bd36-4655dc420932.md) ['iaas:aws'] (sigma rule :x:)
-
-[AWS - CloudWatch Log Stream Deletes](tests/89422c87-b57b-4a04-a12a-802bb11d06121.md) ['iaas:aws'] (sigma rule :x:)
 
 [Office 365 - Exchange Audit Log Disabled](tests/1ee572f3-056c-4632-a7fc-7e7c42b1543c.md) ['office-365'] (sigma rule :x:)
 
@@ -2158,6 +2178,8 @@ Caution: a test can generate a lot of noise...
 
 ### T1124
 [System Time Discovery in macOS](tests/f449c933-0891-407f-821e-7916a21a1a6f.md) ['macos'] (sigma rule :x:)
+
+[System Time with Windows time Command](tests/53ead5db-7098-4111-bb3f-563be390e72e.md) ['windows'] (sigma rule :x:)
 
 [System Time Discovery - PowerShell](tests/1d5711d6-655c-4a47-ae9c-6503c74fa877.md) ['windows'] (sigma rule :heavy_check_mark:)
 

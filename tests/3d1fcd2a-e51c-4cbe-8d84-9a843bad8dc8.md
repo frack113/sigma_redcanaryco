@@ -35,7 +35,7 @@ powershell
 # Sigma Rule
  - posh_pm_susp_ad_group_reco.yml (id: 815bfc17-7fc6-4908-a55e-2f37b98cedb4)
 
- - proc_creation_win_non_interactive_powershell.yml (id: f4bbd493-b796-416e-bbf2-121235348529)
+ - proc_creation_win_powershell_non_interactive_execution.yml (id: f4bbd493-b796-416e-bbf2-121235348529)
 
  - posh_ps_get_adgroup.yml (id: 8c3a6607-b7dc-4f0d-a646-ef38c00b76ee)
 
