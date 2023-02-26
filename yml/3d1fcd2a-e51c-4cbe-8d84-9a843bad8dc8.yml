@@ -21,7 +21,7 @@ sigma_rule:
   - id: 815bfc17-7fc6-4908-a55e-2f37b98cedb4
     name: posh_pm_susp_ad_group_reco.yml
   - id: f4bbd493-b796-416e-bbf2-121235348529
-    name: proc_creation_win_non_interactive_powershell.yml
+    name: proc_creation_win_powershell_non_interactive_execution.yml
   - id: 8c3a6607-b7dc-4f0d-a646-ef38c00b76ee
     name: posh_ps_get_adgroup.yml
   - id: 1f21ec3f-810d-4b0e-8045-322202e22b4b

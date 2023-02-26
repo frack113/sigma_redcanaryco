@@ -22,9 +22,9 @@ sigma_rule:
   - id: 06d71506-7beb-4f22-8888-e2e5e2ca7fd8
     name: win_alert_mimikatz_keywords.yml
   - id: f4bbd493-b796-416e-bbf2-121235348529
-    name: proc_creation_win_non_interactive_powershell.yml
+    name: proc_creation_win_powershell_non_interactive_execution.yml
   - id: a642964e-bead-4bed-8910-1bb4d63e3b4d
-    name: proc_creation_win_mimikatz_command_line.yml
+    name: proc_creation_win_hktl_mimikatz_command_line.yml
   - id: 9292293b-8496-4715-9db6-37028dcda4b3
     name: proc_creation_win_lolbin_replace.yml
   - id: b8af5f36-1361-4ebe-9e76-e36128d947bf
@@ -36,7 +36,7 @@ sigma_rule:
   - id: 0332a266-b584-47b4-933d-a00b103e1b37
     name: posh_ps_susp_gwmi.yml
   - id: 602a1f13-c640-4d73-b053-be9a2fa58b96
-    name: file_event_win_detect_powerup_dllhijacking.yml
+    name: file_event_win_hktl_powerup_dllhijacking.yml
   - id: 24e3e58a-646b-4b50-adef-02ef935b9fc8
     name: proc_creation_win_hktl_execution_via_imphashes.yml
 

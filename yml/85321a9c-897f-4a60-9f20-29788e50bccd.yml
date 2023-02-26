@@ -23,4 +23,4 @@ sigma_rule:
   - id: 62510e69-616b-4078-b371-847da438cc03
     name: proc_creation_win_net_share_and_sessions_enum.yml
   - id: 183e7ea8-ac4b-4c23-9aec-b3dac4e401ac
-    name: proc_creation_win_susp_net_execution.yml
+    name: proc_creation_win_net_susp_execution.yml

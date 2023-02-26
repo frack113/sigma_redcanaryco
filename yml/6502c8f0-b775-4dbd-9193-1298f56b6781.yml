@@ -42,9 +42,9 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: b2815d0d-7481-4bf0-9b6c-a4c48a94b349
-    name: proc_creation_win_susp_powershell_getprocess_lsass.yml
+    name: proc_creation_win_powershell_getprocess_lsass.yml
   - id: a642964e-bead-4bed-8910-1bb4d63e3b4d
-    name: proc_creation_win_mimikatz_command_line.yml
+    name: proc_creation_win_hktl_mimikatz_command_line.yml
   - id: 8ff28fdd-e2fa-4dfa-aeda-ef3d61c62090
     name: posh_pm_susp_invocation_specific.yml
   - id: ae7fbf8e-f3cb-49fd-8db4-5f3bed522c71
@@ -64,4 +64,4 @@ sigma_rule:
   - id: 5e3d3601-0662-4af0-b1d2-36a05e90c40a
     name: file_event_win_lsass_memory_dump_file_creation.yml
   - id: 0e277796-5f23-4e49-a490-483131d4f6e1
-    name: image_load_susp_dbghelp_dbgcore_load.yml
+    name: image_load_dll_dbghelp_dbgcore_susp_load.yml

@@ -20,4 +20,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: c2c76b77-32be-4d1f-82c9-7e544bdfe0eb
-    name: proc_creation_win_susp_secedit.yml
+    name: proc_creation_win_secedit_execution.yml

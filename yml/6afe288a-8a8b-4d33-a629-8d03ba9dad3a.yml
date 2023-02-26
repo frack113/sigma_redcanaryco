@@ -31,4 +31,4 @@ sigma_rule:
   - id: aa3a6f94-890e-4e22-b634-ffdfd54792cc
     name: proc_creation_win_office_spawn_exe_from_users_directory.yml
   - id: 0e277796-5f23-4e49-a490-483131d4f6e1
-    name: image_load_susp_dbghelp_dbgcore_load.yml
+    name: image_load_dll_dbghelp_dbgcore_susp_load.yml

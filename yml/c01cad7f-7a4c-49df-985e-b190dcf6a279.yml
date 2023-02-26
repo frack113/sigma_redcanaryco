@@ -20,7 +20,7 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 5e3cc4d8-3e68-43db-8656-eaaeefdec9cc
-    name: proc_creation_win_susp_invoke_webrequest_download.yml
+    name: proc_creation_win_powershell_invoke_webrequest_download.yml
   - id: 9fc51a3c-81b3-4fa7-b35f-7c02cf10fd2d
     name: proc_creation_win_web_request_cmd_and_cmdlets.yml
   - id: a6a39bdb-935c-4f0a-ab77-35f4bbf44d33

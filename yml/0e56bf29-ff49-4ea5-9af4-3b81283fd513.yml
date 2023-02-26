@@ -20,6 +20,6 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: f576a613-2392-4067-9d1a-9345fb58d8d1
-    name: proc_creation_win_automated_collection.yml
+    name: proc_creation_win_susp_automated_collection.yml
   - id: bd5971a7-626d-46ab-8176-ed643f694f68
     name: posh_ps_susp_extracting.yml

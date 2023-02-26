@@ -22,4 +22,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: af491bca-e752-4b44-9c86-df5680533dbc
-    name: proc_creation_win_susp_finger_usage.yml
+    name: proc_creation_win_finger_usage.yml

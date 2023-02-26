@@ -22,10 +22,10 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: e593cf51-88db-4ee1-b920-37e89012a3c9
-    name: proc_creation_win_susp_rundll32_activity.yml
+    name: proc_creation_win_rundll32_susp_activity.yml
   - id: 0ba863e6-def5-4e50-9cea-4dd8c7dc46a4
     name: proc_creation_win_control_panel_item.yml
   - id: e79a9e79-eb72-4e78-a628-0e7e8f59e89c
-    name: proc_creation_win_susp_rundll32_by_ordinal.yml
+    name: proc_creation_win_rundll32_by_ordinal.yml
   - id: 9be34ad0-b6a7-4fbd-91cf-fc7ec1047f5f
     name: proc_creation_win_apt_unc2452_cmds.yml

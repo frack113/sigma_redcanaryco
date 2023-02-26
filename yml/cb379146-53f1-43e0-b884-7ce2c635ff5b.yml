@@ -20,4 +20,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: f576a613-2392-4067-9d1a-9345fb58d8d1
-    name: proc_creation_win_automated_collection.yml
+    name: proc_creation_win_susp_automated_collection.yml

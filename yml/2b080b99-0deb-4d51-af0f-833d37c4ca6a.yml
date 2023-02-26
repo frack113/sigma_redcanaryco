@@ -20,4 +20,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: e218595b-bbe7-4ee5-8a96-f32a24ad3468
-    name: proc_creation_win_susp_curl_download.yml
+    name: proc_creation_win_curl_susp_download.yml

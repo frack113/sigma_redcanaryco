@@ -34,9 +34,9 @@ sigma_rule:
   - id: e28a5a99-da44-436d-b7a0-2afc20a5f413
     name: proc_creation_win_susp_whoami.yml
   - id: 502b42de-4306-40b4-9596-6f590c81f073
-    name: proc_creation_win_local_system_owner_account_discovery.yml
+    name: proc_creation_win_susp_local_system_owner_account_discovery.yml
   - id: f4bbd493-b796-416e-bbf2-121235348529
-    name: proc_creation_win_non_interactive_powershell.yml
+    name: proc_creation_win_powershell_non_interactive_execution.yml
   - id: dcd74b95-3f36-4ed9-9598-0490951643aa
     name: posh_ps_powerview_malicious_commandlets.yml
   - id: 1139d2e2-84b1-4226-b445-354492eba8ba

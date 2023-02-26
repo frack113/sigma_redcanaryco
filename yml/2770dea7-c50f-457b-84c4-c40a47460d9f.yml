@@ -24,5 +24,3 @@ sigma: true
 sigma_rule:
   - id: 8c3c76ca-8f8b-4b1d-aaf3-81aebcd367c9
     name: file_event_win_creation_unquoted_service_path.yml
-  - id: 7fe71fc9-de3b-432a-8d57-8c809efc10ab
-    name: proc_creation_win_new_service_creation.yml

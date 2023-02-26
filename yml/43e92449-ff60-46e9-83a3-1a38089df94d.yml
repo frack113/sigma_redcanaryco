@@ -21,5 +21,5 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: 83809e84-4475-4b69-bc3e-4aad8568612f
-    name: proc_creation_win_msexchange_transport_agent.yml
+    name: proc_creation_win_powershell_msexchange_transport_agent.yml
 

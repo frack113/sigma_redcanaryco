@@ -27,4 +27,4 @@ sigma_rule:
   - id: 06d71506-7beb-4f22-8888-e2e5e2ca7fd8
     name: win_alert_mimikatz_keywords.yml
   - id: a642964e-bead-4bed-8910-1bb4d63e3b4d
-    name: proc_creation_win_mimikatz_command_line.yml
+    name: proc_creation_win_hktl_mimikatz_command_line.yml

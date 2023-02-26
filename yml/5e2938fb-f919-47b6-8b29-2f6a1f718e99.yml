@@ -18,4 +18,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 455b9d50-15a1-4b99-853f-8d37655a4c1b
-    name: proc_creation_win_susp_adfind_enumeration.yml
+    name: proc_creation_win_adfind_enumeration.yml

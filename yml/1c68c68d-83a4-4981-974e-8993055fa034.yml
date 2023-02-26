@@ -25,5 +25,5 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 9ac94dc8-9042-493c-ba45-3b5e7c86b980
-    name: proc_creation_win_susp_schtasks_disable.yml
+    name: proc_creation_win_schtasks_disable.yml
 

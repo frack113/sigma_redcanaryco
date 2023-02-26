@@ -35,5 +35,5 @@ sigma_rule:
   - id: 297afac9-5d02-4138-8c58-b977bac60556
     name: file_event_win_susp_dropper.yml
   - id: 37ae075c-271b-459b-8d7b-55ad5f993dd8
-    name: proc_creation_win_file_permission_modifications.yml
+    name: proc_creation_win_susp_file_permission_modifications.yml
 

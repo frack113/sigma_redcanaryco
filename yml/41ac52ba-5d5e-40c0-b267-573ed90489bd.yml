@@ -28,6 +28,6 @@ sigma_rule:
   - id: 89819aa4-bbd6-46bc-88ec-c7f7fe30efa6
     name: posh_ps_malicious_commandlets.yml
   - id: 0e277796-5f23-4e49-a490-483131d4f6e1
-    name: image_load_susp_dbghelp_dbgcore_load.yml
+    name: image_load_dll_dbghelp_dbgcore_susp_load.yml
   - id: 8d31a8ce-46b5-4dd6-bdc3-680931f1db86
     name: posh_pm_bad_opsec_artifacts.yml

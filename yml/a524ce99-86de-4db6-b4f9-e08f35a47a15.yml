@@ -23,6 +23,6 @@ sigma_rule:
   - id: cd219ff3-fa99-45d4-8380-a7d15116c6dc
     name: proc_creation_win_net_user_add.yml
   - id: 183e7ea8-ac4b-4c23-9aec-b3dac4e401ac
-    name: proc_creation_win_susp_net_execution.yml
+    name: proc_creation_win_net_susp_execution.yml
   - id: 502b42de-4306-40b4-9596-6f590c81f073
-    name: proc_creation_win_local_system_owner_account_discovery.yml
+    name: proc_creation_win_susp_local_system_owner_account_discovery.yml

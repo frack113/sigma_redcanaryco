@@ -25,9 +25,9 @@ sigma_rule:
   - id: 1139d2e2-84b1-4226-b445-354492eba8ba
     name: posh_ps_web_request_cmd_and_cmdlets.yml
   - id: cc7abbd0-762b-41e3-8a26-57ad50d2eea3
-    name: proc_creation_win_susp_mshta_execution.yml
+    name: proc_creation_win_mshta_susp_execution.yml
   - id: e32f92d1-523e-49c3-9374-bdb13b46a3ba
-    name: proc_creation_win_susp_mshta_pattern.yml
+    name: proc_creation_win_mshta_susp_pattern.yml
   - id: 3a6586ad-127a-4d3b-a677-1e6eacdf8fde
     name: proc_creation_win_shell_spawn_susp_program.yml
   - id: 03cc0c25-389f-4bf8-b48d-11878079f1ca

@@ -21,4 +21,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: e0b0c2ab-3d52-46d9-8cb7-049dc775fbd1
-    name: proc_creation_win_enumeration_for_credentials_in_registry.yml
+    name: proc_creation_win_reg_enumeration_for_credentials_in_registry.yml

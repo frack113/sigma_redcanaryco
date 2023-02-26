@@ -225,6 +225,8 @@ defense-evasion;T1112;command_prompt;['windows'];DisallowRun Execution Of Certai
 defense-evasion;T1112;command_prompt;['windows'];Enabling Restricted Admin Mode via Command_Prompt;fe7974e5-5813-477b-a7bd-311d4f535e83;False;44
 defense-evasion;T1112;command_prompt;['windows'];Mimic Ransomware - Enable Multiple User Sessions;39f1f378-ba8a-42b3-96dc-2a6540cfc1e3;False;45
 defense-evasion;T1112;command_prompt;['windows'];Mimic Ransomware - Allow Multiple RDP Sessions per User;35727d9e-7a7f-4d0c-a259-dc3906d6e8b9;False;46
+defense-evasion;T1112;command_prompt;['windows'];Event Viewer Registry Modification - Redirection URL;6174be7f-5153-4afd-92c5-e0c3b7cdb5ae;False;47
+defense-evasion;T1112;command_prompt;['windows'];Event Viewer Registry Modification - Redirection Program;81483501-b8a5-4225-8b32-52128e2f69db;False;48
 defense-evasion;T1574.008;powershell;['windows'];powerShell Persistence via hijacking default modules - Get-Variable.exe;1561de08-0b4b-498e-8261-e922f3494aae;True;1
 defense-evasion;T1027.001;sh;['macos', 'linux'];Pad Binary to Change Hash - Linux/macOS dd;ffe2346c-abd5-4b45-a713-bf5f1ebd573a;False;1
 defense-evasion;T1484.001;command_prompt;['windows'];LockBit Black - Modify Group policy settings -cmd;9ab80952-74ee-43da-a98c-1e740a985f28;True;1
@@ -244,6 +246,8 @@ defense-evasion;T1548.001;sh;['macos', 'linux'];Set a SetUID flag on file;759055
 defense-evasion;T1548.001;sh;['macos', 'linux'];Set a SetGID flag on file;db55f666-7cba-46c6-9fe6-205a05c3242c;False;3
 defense-evasion;T1548.001;sh;['linux'];Make and modify capabilities of a binary;db53959c-207d-4000-9e7a-cd8eb417e072;False;4
 defense-evasion;T1548.001;sh;['linux'];Provide the SetUID capability to a file;1ac3272f-9bcf-443a-9888-4b1d3de785c1;False;5
+defense-evasion;T1548.001;sh;['linux'];Do reconnaissance for files that have the setuid bit set;8e36da01-cd29-45fd-be72-8a0fcaad4481;False;6
+defense-evasion;T1548.001;sh;['linux'];Do reconnaissance for files that have the setgid bit set;3fb46e17-f337-4c14-9f9a-a471946533e2;False;7
 defense-evasion;T1218.008;command_prompt;['windows'];Odbcconf.exe - Execute Arbitrary DLL;2430498b-06c0-4b92-a448-8ad263c388e2;True;1
 defense-evasion;T1218.008;command_prompt;['windows'];Odbcconf.exe - Load Response File;331ce274-f9c9-440b-9f8c-a1006e1fce0b;True;2
 defense-evasion;T1562.006;bash;['linux'];Auditing Configuration Changes on Linux Host;212cfbcf-4770-4980-bc21-303e37abd0e3;False;1
@@ -339,6 +343,11 @@ defense-evasion;T1562.001;powershell;['windows'];Lockbit Black - Use Registry Ed
 defense-evasion;T1562.001;powershell;['windows'];Disable Windows Defender with PwSh Disable-WindowsOptionalFeature;f542ffd3-37b4-4528-837f-682874faa012;True;36
 defense-evasion;T1562.001;command_prompt;['windows'];WMIC Tamper with Windows Defender Evade Scanning Folder;59d386fc-3a4b-41b8-850d-9e3eee24dfe4;True;37
 defense-evasion;T1562.001;command_prompt;['windows'];Delete Windows Defender Scheduled Tasks;4b841aa1-0d05-4b32-bbe7-7564346e7c76;True;38
+defense-evasion;T1562.001;sh;['linux'];Clear History;23b88394-091b-4968-a42d-fb8076992443;False;39
+defense-evasion;T1562.001;sh;['linux'];Suspend History;94f6a1c9-aae7-46a4-9083-2bb1f5768ec4;False;40
+defense-evasion;T1562.001;sh;['linux'];Reboot Linux Host via Kernel System Request;6d6d3154-1a52-4d1a-9d51-92ab8148b32e;False;41
+defense-evasion;T1562.001;sh;['linux'];Clear Pagging Cache;f790927b-ea85-4a16-b7b2-7eb44176a510;False;42
+defense-evasion;T1562.001;sh;['linux'];Disable Memory Swap;e74e4c63-6fde-4ad2-9ee8-21c3a1733114;False;43
 defense-evasion;T1055.012;powershell;['windows'];Process Hollowing using PowerShell;562427b4-39ef-4e8c-af88-463a78e70b9c;True;1
 defense-evasion;T1055.012;powershell;['windows'];RunPE via VBA;3ad4a037-1598-4136-837c-4027e4fa319b;True;2
 defense-evasion;T1027;sh;['macos', 'linux'];Decode base64 Data into Script;f45df6be-2e1e-4136-a384-8f18ab3826fb;False;1
@@ -394,8 +403,7 @@ defense-evasion;T1562.008;sh;['linux', 'macos'];AWS - Disable CloudTrail Logging
 defense-evasion;T1562.008;sh;['linux', 'macos'];AWS - CloudTrail Logs Impairment Through S3 Lifecycle Rule using Stratus;22d89a2f-d475-4895-b2d4-68626d49c029;False;5
 defense-evasion;T1562.008;sh;['linux', 'macos'];AWS - Remove VPC Flow Logs using Stratus;93c150f5-ad7b-4ee3-8992-df06dec2ac79;False;6
 defense-evasion;T1562.008;sh;['iaas:aws'];AWS - CloudWatch Log Group Deletes;89422c87-b57b-4a04-a8ca-802bb9d06121;False;7
-defense-evasion;T1562.008;sh;['iaas:aws'];AWS - CloudWatch Log Stream Deletes;89422c87-b57b-4a04-a12a-802bb11d06121;False;8
-defense-evasion;T1562.008;sh;['iaas:aws'];AWS CloudWatch Log Stream Deletes;33ca84bc-4259-4943-bd36-4655dc420932;False;9
+defense-evasion;T1562.008;sh;['iaas:aws'];AWS CloudWatch Log Stream Deletes;33ca84bc-4259-4943-bd36-4655dc420932;False;8
 defense-evasion;T1564.003;powershell;['windows'];Hidden Window;f151ee37-9e2b-47e6-80e4-550b9f999b7a;True;1
 defense-evasion;T1027.006;powershell;['windows'];HTML Smuggling Remote Payload;30cbeda4-08d9-42f1-8685-197fad677734;False;1
 defense-evasion;T1070.004;sh;['linux', 'macos'];Delete a single file - Linux/macOS;562d737f-2fc6-4b09-8c2a-7f8ff0828480;False;1
@@ -496,8 +504,8 @@ privilege-escalation;T1547.014;powershell;['windows'];HKLM - Add malicious StubP
 privilege-escalation;T1547.014;powershell;['windows'];HKLM - re-execute 'Internet Explorer Core Fonts' StubPath payload by decreasing version number;04d55cef-f283-40ba-ae2a-316bc3b5e78c;True;3
 privilege-escalation;T1484.002;powershell;['azure-ad'];Add Federation to Azure AD;8906c5d0-3ee5-4f63-897a-f6cafd3fdbb7;False;1
 privilege-escalation;T1543.003;command_prompt;['windows'];Modify Fax service to run PowerShell;ed366cde-7d12-49df-a833-671904770b9f;True;1
-privilege-escalation;T1543.003;command_prompt;['windows'];Service Installation CMD;981e2942-e433-44e9-afc1-8c957a1496b6;True;2
-privilege-escalation;T1543.003;powershell;['windows'];Service Installation PowerShell;491a4af6-a521-4b74-b23b-f7b3f1ee9e77;True;3
+privilege-escalation;T1543.003;command_prompt;['windows'];Service Installation CMD;981e2942-e433-44e9-afc1-8c957a1496b6;False;2
+privilege-escalation;T1543.003;powershell;['windows'];Service Installation PowerShell;491a4af6-a521-4b74-b23b-f7b3f1ee9e77;False;3
 privilege-escalation;T1543.003;command_prompt;['windows'];TinyTurla backdoor service w64time;ef0581fd-528e-4662-87bc-4c2affb86940;True;4
 privilege-escalation;T1053.003;bash;['macos', 'linux'];Cron - Replace crontab with referenced file;435057fb-74b1-410e-9403-d81baf194f75;False;1
 privilege-escalation;T1053.003;bash;['macos', 'linux'];Cron - Add script to all cron subfolders;b7d42afa-9086-4c8a-b7b0-8ea3faa6ebb0;False;2
@@ -537,6 +545,8 @@ privilege-escalation;T1548.001;sh;['macos', 'linux'];Set a SetUID flag on file;7
 privilege-escalation;T1548.001;sh;['macos', 'linux'];Set a SetGID flag on file;db55f666-7cba-46c6-9fe6-205a05c3242c;False;3
 privilege-escalation;T1548.001;sh;['linux'];Make and modify capabilities of a binary;db53959c-207d-4000-9e7a-cd8eb417e072;False;4
 privilege-escalation;T1548.001;sh;['linux'];Provide the SetUID capability to a file;1ac3272f-9bcf-443a-9888-4b1d3de785c1;False;5
+privilege-escalation;T1548.001;sh;['linux'];Do reconnaissance for files that have the setuid bit set;8e36da01-cd29-45fd-be72-8a0fcaad4481;False;6
+privilege-escalation;T1548.001;sh;['linux'];Do reconnaissance for files that have the setgid bit set;3fb46e17-f337-4c14-9f9a-a471946533e2;False;7
 privilege-escalation;T1547.004;powershell;['windows'];Winlogon Shell Key Persistence - PowerShell;bf9f9d65-ee4d-4c3e-a843-777d04f19c38;True;1
 privilege-escalation;T1547.004;powershell;['windows'];Winlogon Userinit Key Persistence - PowerShell;fb32c935-ee2e-454b-8fa3-1c46b42e8dfb;True;2
 privilege-escalation;T1547.004;powershell;['windows'];Winlogon Notify Key Logon Persistence - PowerShell;d40da266-e073-4e5a-bb8b-2b385023e5f9;True;3
@@ -720,6 +730,8 @@ execution;T1059.004;sh;['linux'];What shell is running;7b38e5cc-47be-44f0-a425-3
 execution;T1059.004;sh;['linux'];What shells are available;bf23c7dc-1004-4949-8262-4c1d1ef87702;False;7
 execution;T1059.004;sh;['linux'];Command line scripts;b04ed73c-7d43-4dc8-b563-a2fc595cba1a;False;8
 execution;T1059.004;sh;['linux'];Obfuscated command line scripts;5bec4cc8-f41e-437b-b417-33ff60acf9af;False;9
+execution;T1059.004;bash;['linux'];Change login shell;c7ac59cb-13cc-4622-81dc-6d2fee9bfac7;False;10
+execution;T1059.004;bash;['linux'];Environment variable scripts;bdaebd56-368b-4970-a523-f905ff4a8a51;False;11
 execution;T1059.006;sh;['linux'];Execute shell script via python's command mode arguement;3a95cdb2-c6ea-4761-b24e-02b71889b8bb;False;1
 execution;T1059.006;sh;['linux'];Execute Python via scripts (Linux);6c4d1dcb-33c7-4c36-a8df-c6cfd0408be8;False;2
 execution;T1059.006;sh;['linux'];Execute Python via Python executables (Linux);0b44d79b-570a-4b27-a31f-3bf2156e5eaa;False;3
@@ -760,8 +772,8 @@ persistence;T1547.014;powershell;['windows'];HKLM - Add atomic_test key to launc
 persistence;T1547.014;powershell;['windows'];HKLM - Add malicious StubPath value to existing Active Setup Entry;39e417dd-4fed-4d9c-ae3a-ba433b4d0e9a;True;2
 persistence;T1547.014;powershell;['windows'];HKLM - re-execute 'Internet Explorer Core Fonts' StubPath payload by decreasing version number;04d55cef-f283-40ba-ae2a-316bc3b5e78c;True;3
 persistence;T1543.003;command_prompt;['windows'];Modify Fax service to run PowerShell;ed366cde-7d12-49df-a833-671904770b9f;True;1
-persistence;T1543.003;command_prompt;['windows'];Service Installation CMD;981e2942-e433-44e9-afc1-8c957a1496b6;True;2
-persistence;T1543.003;powershell;['windows'];Service Installation PowerShell;491a4af6-a521-4b74-b23b-f7b3f1ee9e77;True;3
+persistence;T1543.003;command_prompt;['windows'];Service Installation CMD;981e2942-e433-44e9-afc1-8c957a1496b6;False;2
+persistence;T1543.003;powershell;['windows'];Service Installation PowerShell;491a4af6-a521-4b74-b23b-f7b3f1ee9e77;False;3
 persistence;T1543.003;command_prompt;['windows'];TinyTurla backdoor service w64time;ef0581fd-528e-4662-87bc-4c2affb86940;True;4
 persistence;T1053.003;bash;['macos', 'linux'];Cron - Replace crontab with referenced file;435057fb-74b1-410e-9403-d81baf194f75;False;1
 persistence;T1053.003;bash;['macos', 'linux'];Cron - Add script to all cron subfolders;b7d42afa-9086-4c8a-b7b0-8ea3faa6ebb0;False;2
@@ -851,11 +863,11 @@ persistence;T1136.003;sh;['iaas:aws'];AWS - Create a new IAM user;8d1c2368-b503-
 persistence;T1098;powershell;['windows'];Admin Account Manipulate;5598f7cb-cf43-455e-883a-f6008c5d46af;True;1
 persistence;T1098;powershell;['windows'];Domain Account and Group Manipulate;a55a22e9-a3d3-42ce-bd48-2653adb8f7a9;True;2
 persistence;T1098;sh;['iaas:aws'];AWS - Create a group and add a user to that group;8822c3b0-d9f9-4daf-a043-49f110a31122;False;3
-persistence;T1098;powershell;['azure-ad'];Azure - adding user to Azure AD role;0e65ae27-5385-46b4-98ac-607a8ee82261;False;4
-persistence;T1098;powershell;['azure-ad'];Azure - adding service principal to Azure AD role;92c40b3f-c406-4d1f-8d2b-c039bf5009e4;False;5
+persistence;T1098;powershell;['azure-ad'];Azure AD - adding user to Azure AD role;0e65ae27-5385-46b4-98ac-607a8ee82261;False;4
+persistence;T1098;powershell;['azure-ad'];Azure AD - adding service principal to Azure AD role;92c40b3f-c406-4d1f-8d2b-c039bf5009e4;False;5
 persistence;T1098;powershell;['iaas:azure'];Azure - adding user to Azure role in subscription;1a94b3fc-b080-450a-b3d8-6d9b57b472ea;False;6
 persistence;T1098;powershell;['iaas:azure'];Azure - adding service principal to Azure role in subscription;c8f4bc29-a151-48da-b3be-4680af56f404;False;7
-persistence;T1098;powershell;['azure-ad'];AzureAD - adding permission to application;94ea9cc3-81f9-4111-8dde-3fb54f36af4b;False;8
+persistence;T1098;powershell;['azure-ad'];Azure AD - adding permission to application;94ea9cc3-81f9-4111-8dde-3fb54f36af4b;False;8
 persistence;T1098;command_prompt;['windows'];Password Change on Directory Service Restore Mode (DSRM) Account;d5b886d9-d1c7-4b6e-a7b0-460041bf2823;True;9
 persistence;T1547.006;bash;['linux'];Linux - Load Kernel Module via insmod;687dcb93-9656-4853-9c36-9977315e9d23;False;1
 persistence;T1547.006;bash;['macos'];MacOS - Load Kernel Module via kextload and kmutil;f4391089-d3a5-4dd1-ab22-0419527f2672;False;2
@@ -1009,7 +1021,7 @@ credential-access;T1003;powershell;['windows'];Retrieve Microsoft IIS Service Ac
 credential-access;T1003;powershell;['windows'];Dump Credential Manager using keymgr.dll and rundll32.exe;84113186-ed3c-4d0d-8a3c-8980c86c1f4a;True;6
 credential-access;T1539;powershell;['windows'];Steal Firefox Cookies (Windows);4b437357-f4e9-4c84-9fa6-9bcee6f826aa;True;1
 credential-access;T1539;powershell;['windows'];Steal Chrome Cookies (Windows);26a6b840-4943-4965-8df5-ef1f9a282440;True;2
-credential-access;T1003.002;command_prompt;['windows'];Registry dump of SAM, creds, and secrets;5c2571d0-1572-416d-9676-812e64ca9f44;False;1
+credential-access;T1003.002;command_prompt;['windows'];Registry dump of SAM, creds, and secrets;5c2571d0-1572-416d-9676-812e64ca9f44;True;1
 credential-access;T1003.002;command_prompt;['windows'];Registry parse with pypykatz;a96872b2-cbf3-46cf-8eb4-27e8c0e85263;True;2
 credential-access;T1003.002;command_prompt;['windows'];esentutl.exe SAM copy;a90c2f4d-6726-444e-99d2-a00cd7c20480;True;3
 credential-access;T1003.002;powershell;['windows'];PowerDump Hashes and Usernames from Registry;804f28fc-68fc-40da-b5a2-e9d0bce5c193;True;4
@@ -1370,6 +1382,7 @@ discovery;T1124;command_prompt;['windows'];System Time Discovery;20aba24b-e61f-4
 discovery;T1124;powershell;['windows'];System Time Discovery - PowerShell;1d5711d6-655c-4a47-ae9c-6503c74fa877;True;2
 discovery;T1124;sh;['macos'];System Time Discovery in macOS;f449c933-0891-407f-821e-7916a21a1a6f;False;3
 discovery;T1124;command_prompt;['windows'];System Time Discovery W32tm as a Delay;d5d5a6b0-0f92-42d8-985d-47aafa2dd4db;True;4
+discovery;T1124;command_prompt;['windows'];System Time with Windows time Command;53ead5db-7098-4111-bb3f-563be390e72e;False;5
 command-and-control;T1132.001;sh;['macos', 'linux'];Base64 Encoded data.;1164f70f-9a88-4dff-b9ff-dc70e7bf0c25;False;1
 command-and-control;T1132.001;powershell;['windows'];XOR Encoded data.;c3ed6d2a-e3ad-400d-ad78-bbfdbfeacc08;True;2
 command-and-control;T1071.004;powershell;['windows'];DNS Large Query Volume;1700f5d6-5a44-487b-84de-bc66f507b0a6;False;1

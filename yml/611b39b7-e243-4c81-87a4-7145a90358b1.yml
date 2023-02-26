@@ -30,4 +30,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 0e277796-5f23-4e49-a490-483131d4f6e1
-    name: image_load_susp_dbghelp_dbgcore_load.yml
+    name: image_load_dll_dbghelp_dbgcore_susp_load.yml

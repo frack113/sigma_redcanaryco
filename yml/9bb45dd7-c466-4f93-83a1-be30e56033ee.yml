@@ -20,4 +20,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 9a132afa-654e-11eb-ae93-0242ac130002
-    name: proc_creation_win_susp_adfind_usage.yml
+    name: proc_creation_win_adfind_susp_usage.yml

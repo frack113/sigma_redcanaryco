@@ -21,9 +21,7 @@ description: |
 executor: command_prompt
 sigma: true
 sigma_rule:
-  - id: 7fe71fc9-de3b-432a-8d57-8c809efc10ab
-    name: proc_creation_win_new_service_creation.yml
   - id: a537cfc3-4297-4789-92b5-345bfd845ad0
     name: proc_creation_win_sc_hide_sevices.yml
   - id: 99cf1e02-00fb-4c0d-8375-563f978dfd37
-    name: proc_creation_win_susp_service_dacl_modification.yml
+    name: proc_creation_win_sc_service_dacl_modification.yml

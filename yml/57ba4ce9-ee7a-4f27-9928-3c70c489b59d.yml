@@ -25,9 +25,9 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 73fcad2e-ff14-4c38-b11d-4172c8ac86c7
-    name: proc_creation_win_susp_rundll32_script_run.yml
+    name: proc_creation_win_rundll32_script_run.yml
   - id: 9f06447a-a33a-4cbe-a94f-a3f43184a7a3
-    name: proc_creation_win_susp_rundll32_js_runhtmlapplication.yml
+    name: proc_creation_win_rundll32_js_runhtmlapplication.yml
   - id: c3a99af4-35a9-4668-879e-c09aeb4f2bdf
     name: proc_creation_win_rundll32_executable_invalid_extension.yml
   - id: cdc8da7d-c303-42f8-b08c-b4ab47230263

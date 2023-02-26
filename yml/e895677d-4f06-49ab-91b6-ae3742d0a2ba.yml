@@ -23,4 +23,4 @@ sigma_rule:
   - id: e32d4572-9826-4738-b651-95fa63747e8a
     name: proc_creation_win_powershell_frombase64string.yml
   - id: 92626ddd-662c-49e3-ac59-f6535f12d189
-    name: proc_creation_win_susp_schtask_creation.yml
+    name: proc_creation_win_schtasks_creation.yml

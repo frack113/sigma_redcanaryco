@@ -18,6 +18,6 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 8e2b24c9-4add-46a0-b4bb-0057b4e6187d
-    name: proc_creation_win_susp_regsvr32_anomalies.yml
+    name: proc_creation_win_regsvr32_anomalies.yml
   - id: 666ecfc7-229d-42b8-821e-1a8f8cb7057c
-    name: image_load_susp_system_drawing_load.yml
+    name: image_load_dll_system_drawing_load.yml

@@ -27,7 +27,7 @@ sigma_rule:
   - id: 36480ae1-a1cb-4eaa-a0d6-29801d7e9142
     name: proc_creation_win_renamed_binary.yml
   - id: 092bc4b9-3d1d-43b4-a6b4-8c8acd83522f
-    name: image_load_in_memory_powershell.yml
+    name: image_load_dll_system_management_automation_susp_load.yml
   - id: fe6e002f-f244-4278-9263-20e4b593827f
     name: image_load_alternate_powershell_hosts_moduleload.yml
   - id: 64e8e417-c19a-475a-8d19-98ea705394cc

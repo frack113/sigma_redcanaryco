@@ -19,7 +19,7 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: f4bbd493-b796-416e-bbf2-121235348529
-    name: proc_creation_win_non_interactive_powershell.yml
+    name: proc_creation_win_powershell_non_interactive_execution.yml
   - id: 771d1eb5-9587-4568-95fb-9ec44153a012
     name: proc_creation_win_pua_nsudo.yml
   - id: fa34b441-961a-42fa-a100-ecc28c886725

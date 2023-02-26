@@ -37,6 +37,6 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 502b42de-4306-40b4-9596-6f590c81f073
-    name: proc_creation_win_local_system_owner_account_discovery.yml
+    name: proc_creation_win_susp_local_system_owner_account_discovery.yml
   - id: 2dbd9d3d-9e27-42a8-b8df-f13825c6c3d5
     name: proc_creation_win_susp_webdav_client_execution.yml

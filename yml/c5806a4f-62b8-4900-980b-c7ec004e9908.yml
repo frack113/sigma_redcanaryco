@@ -16,4 +16,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 63332011-f057-496c-ad8d-d2b6afb27f96
-    name: proc_creation_win_susp_tasklist_command.yml
+    name: proc_creation_win_tasklist_basic_execution.yml

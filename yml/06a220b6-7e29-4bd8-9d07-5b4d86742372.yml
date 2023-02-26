@@ -25,7 +25,7 @@ sigma_rule:
   - id: 9fc51a3c-81b3-4fa7-b35f-7c02cf10fd2d
     name: proc_creation_win_web_request_cmd_and_cmdlets.yml
   - id: f4bbd493-b796-416e-bbf2-121235348529
-    name: proc_creation_win_non_interactive_powershell.yml
+    name: proc_creation_win_powershell_non_interactive_execution.yml
   - id: 3b6ab547-8ec2-4991-b9d2-2b06702a48d7
     name: proc_creation_win_powershell_download_patterns.yml
   - id: 8ff28fdd-e2fa-4dfa-aeda-ef3d61c62090

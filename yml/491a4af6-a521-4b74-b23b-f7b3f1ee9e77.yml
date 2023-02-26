@@ -24,8 +24,5 @@ description: |
   Installs A Local Service via PowerShell.
   Upon successful execution, powershell will download `AtomicService.exe` from github. Powershell will then use `New-Service` and `Start-Service` to start service. Results will be displayed.
 executor: powershell
-sigma: true
-sigma_rule:
-  - id: 7fe71fc9-de3b-432a-8d57-8c809efc10ab
-    name: proc_creation_win_new_service_creation.yml
-
+sigma: false
+sigma_rule: []

@@ -17,11 +17,9 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 502b42de-4306-40b4-9596-6f590c81f073
-    name: proc_creation_win_local_system_owner_account_discovery.yml
-  - id: 7fe71fc9-de3b-432a-8d57-8c809efc10ab
-    name: proc_creation_win_new_service_creation.yml
+    name: proc_creation_win_susp_local_system_owner_account_discovery.yml
   - id: 183e7ea8-ac4b-4c23-9aec-b3dac4e401ac
-    name: proc_creation_win_susp_net_execution.yml
+    name: proc_creation_win_net_susp_execution.yml
   - id: 2a072a96-a086-49fa-bcb5-15cc5a619093
     name: proc_creation_win_net_start_service.yml
   - id: d522eca2-2973-4391-a3e0-ef0374321dae

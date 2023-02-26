@@ -20,7 +20,7 @@ sigma_rule:
   - id: 8d31a8ce-46b5-4dd6-bdc3-680931f1db86
     name: posh_pm_bad_opsec_artifacts.yml
   - id: f4bbd493-b796-416e-bbf2-121235348529
-    name: proc_creation_win_non_interactive_powershell.yml
+    name: proc_creation_win_powershell_non_interactive_execution.yml
   - id: 29e1c216-6408-489d-8a06-ee9d151ef819
     name: posh_ps_susp_mount_diskimage.yml
   - id: 8bc063d5-3a3a-4f01-a140-bc15e55e8437
@@ -28,7 +28,7 @@ sigma_rule:
   - id: 66a4d409-451b-4151-94f4-a55d559c49b0
     name: posh_ps_susp_mounted_share_deletion.yml
   - id: e79a9e79-eb72-4e78-a628-0e7e8f59e89c
-    name: proc_creation_win_susp_rundll32_by_ordinal.yml
+    name: proc_creation_win_rundll32_by_ordinal.yml
   - id: d4ca7c59-e9e4-42d8-bf57-91a776efcb87
     name: proc_creation_win_lolbin_not_from_c_drive.yml
   - id: e0b06658-7d1d-4cd3-bf15-03467507ff7c

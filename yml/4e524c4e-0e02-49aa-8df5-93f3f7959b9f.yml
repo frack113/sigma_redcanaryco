@@ -16,11 +16,11 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: f4bbd493-b796-416e-bbf2-121235348529
-    name: proc_creation_win_non_interactive_powershell.yml
+    name: proc_creation_win_powershell_non_interactive_execution.yml
   - id: 85b0b087-eddf-4a2b-b033-d771fa2b9775
-    name: proc_creation_win_susp_powershell_download_iex.yml
+    name: proc_creation_win_powershell_download_iex.yml
   - id: 6e897651-f157-4d8f-aaeb-df8151488385
-    name: proc_creation_win_susp_powershell_download_cradles.yml
+    name: proc_creation_win_powershell_download_cradles.yml
   - id: 87e3c4e8-a6a8-4ad9-bb4f-46e7ff99a180
     name: proc_creation_win_set_policies_to_unsecure_level.yml
   - id: efdd8dd5-cee8-4e59-9390-7d4d5e4dd6f6

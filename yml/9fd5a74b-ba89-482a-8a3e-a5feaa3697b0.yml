@@ -24,4 +24,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: e79a9e79-eb72-4e78-a628-0e7e8f59e89c
-    name: proc_creation_win_susp_rundll32_by_ordinal.yml
+    name: proc_creation_win_rundll32_by_ordinal.yml

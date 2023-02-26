@@ -35,7 +35,7 @@ sigma_rule:
   - id: fe6e002f-f244-4278-9263-20e4b593827f
     name: image_load_alternate_powershell_hosts_moduleload.yml
   - id: 092bc4b9-3d1d-43b4-a6b4-8c8acd83522f
-    name: image_load_in_memory_powershell.yml
+    name: image_load_dll_system_management_automation_susp_load.yml
   - id: 90217a70-13fc-48e4-b3db-0d836c5824ac
     name: image_load_office_dotnet_gac_dll_load.yml
   - id: c7a74c80-ba5a-486e-9974-ab9e682bc5e4
@@ -43,4 +43,4 @@ sigma_rule:
   - id: 64e8e417-c19a-475a-8d19-98ea705394cc
     name: posh_pm_alternate_powershell_hosts.yml
   - id: 0e277796-5f23-4e49-a490-483131d4f6e1
-    name: image_load_susp_dbghelp_dbgcore_load.yml
+    name: image_load_dll_dbghelp_dbgcore_susp_load.yml

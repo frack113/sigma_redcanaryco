@@ -18,4 +18,4 @@ sigma_rule:
   - id: 1cfac73c-be78-4f9a-9b08-5bde0c3953ab
     name: proc_creation_win_apt_wocao.yml
   - id: 92626ddd-662c-49e3-ac59-f6535f12d189
-    name: proc_creation_win_susp_schtask_creation.yml
+    name: proc_creation_win_schtasks_creation.yml

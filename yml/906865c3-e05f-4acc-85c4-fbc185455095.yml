@@ -22,15 +22,15 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: e32f92d1-523e-49c3-9374-bdb13b46a3ba
-    name: proc_creation_win_susp_mshta_pattern.yml
+    name: proc_creation_win_mshta_susp_pattern.yml
   - id: cc7abbd0-762b-41e3-8a26-57ad50d2eea3
-    name: proc_creation_win_susp_mshta_execution.yml
+    name: proc_creation_win_mshta_susp_execution.yml
   - id: 754ed792-634f-40ae-b3bc-e0448d33f695
     name: proc_creation_win_powershell_susp_parent_process.yml
   - id: 03cc0c25-389f-4bf8-b48d-11878079f1ca
     name: proc_creation_win_mshta_susp_child_processes.yml
   - id: f4bbd493-b796-416e-bbf2-121235348529
-    name: proc_creation_win_non_interactive_powershell.yml
+    name: proc_creation_win_powershell_non_interactive_execution.yml
   - id: 4fdc44df-bfe9-4fcc-b041-68f5a2d3031c
     name: posh_ps_localuser.yml
   - id: fa6a5a45-3ee2-4529-aa14-ee5edc9e29cb

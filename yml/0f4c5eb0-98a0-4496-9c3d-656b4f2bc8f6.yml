@@ -30,9 +30,9 @@ sigma_rule:
   - id: 06d71506-7beb-4f22-8888-e2e5e2ca7fd8
     name: win_alert_mimikatz_keywords.yml
   - id: a642964e-bead-4bed-8910-1bb4d63e3b4d
-    name: proc_creation_win_mimikatz_command_line.yml
+    name: proc_creation_win_hktl_mimikatz_command_line.yml
   - id: f4bbd493-b796-416e-bbf2-121235348529
-    name: proc_creation_win_non_interactive_powershell.yml
+    name: proc_creation_win_powershell_non_interactive_execution.yml
   - id: d7bcd677-645d-4691-a8d4-7a5602b780d1
     name: proc_creation_win_powershell_cmdline_special_characters.yml
   - id: c947b146-0abc-4c87-9c64-b17e9d7274a2

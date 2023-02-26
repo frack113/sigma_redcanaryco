@@ -23,7 +23,7 @@ sigma_rule:
   - id: a29c1813-ab1f-4dde-b489-330b952e91ae
     name: proc_creation_win_susp_network_command.yml
   - id: 183e7ea8-ac4b-4c23-9aec-b3dac4e401ac
-    name: proc_creation_win_susp_net_execution.yml
+    name: proc_creation_win_net_susp_execution.yml
   - id: 62510e69-616b-4078-b371-847da438cc03
     name: proc_creation_win_net_share_and_sessions_enum.yml
   - id: 3bad990e-4848-4a78-9530-b427d854aac0

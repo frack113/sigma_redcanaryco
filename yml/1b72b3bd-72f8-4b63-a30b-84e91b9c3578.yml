@@ -25,7 +25,7 @@ sigma_rule:
   - id: 1f21ec3f-810d-4b0e-8045-322202e22b4b
     name: net_connection_win_powershell_network_connection.yml
   - id: b6d98a4f-cef0-4abf-bbf6-24132854a83d
-    name: proc_creation_win_gotoopener.yml
+    name: proc_creation_win_remote_access_tools_gotoopener.yml
   - id: 4d07b1f4-cb00-4470-b9f8-b0191d48ff52
     name: dns_query_win_remote_access_software_domains.yml
   - id: 5d756aee-ad3e-4306-ad95-cb1abec48de2

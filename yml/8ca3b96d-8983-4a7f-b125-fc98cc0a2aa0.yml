@@ -27,9 +27,9 @@ sigma_rule:
   - id: 1f21ec3f-810d-4b0e-8045-322202e22b4b
     name: net_connection_win_powershell_network_connection.yml
   - id: 92626ddd-662c-49e3-ac59-f6535f12d189
-    name: proc_creation_win_susp_schtask_creation.yml
+    name: proc_creation_win_schtasks_creation.yml
   - id: 43f487f0-755f-4c2a-bce7-d6d2eec2fcf8
-    name: proc_creation_win_susp_schtasks_user_temp.yml
+    name: proc_creation_win_schtasks_user_temp.yml
   - id: 9711de76-5d4f-4c50-a94f-21e4e8f8384d
     name: file_event_win_install_teamviewer_desktop.yml
   - id: a0ff33d8-79e4-4cef-b4f3-9dc4133ccd12

@@ -11,7 +11,7 @@ technique:
   - T1098
 os:
   - iaas:azure
-description: "The adversarie want to add service principal to some Azure role, also called Azure resource role. Threat actor \nmay be interested primarily in highly privileged roles, e.g. Owner, Contributor.\n\
+description: "The adversaries want to add service principal to some Azure role, also called Azure resource role. Threat actor \nmay be interested primarily in highly privileged roles, e.g. Owner, Contributor.\n\
   By default, the role Reader is assigned to service principal in this test.\n\nNew-AzRoleAssignment cmdlet could be also use to assign user/service principal to resource, resource group and management\
   \ group.\n\nThe account you use to run the PowerShell command must have Microsoft.Authorization/roleAssignments/write \n(e.g. such as User Access Administrator or Owner) and the Azure Active Directory\
   \ Graph Directory.Read.All \nand Microsoft Graph Directory.Read.All permissions.\n\nDetection hint - check Operation Name \"Create role assignment\" in subscriptions Activity Logs.\n"

@@ -20,7 +20,7 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: a238b5d0-ce2d-4414-a676-7a531b3d13d6
-    name: proc_creation_win_etw_trace_evasion.yml
+    name: proc_creation_win_susp_etw_trace_evasion.yml
   - id: cc36992a-4671-4f21-a91d-6c2b72a2edf5
     name: proc_creation_win_susp_eventlog_clear.yml
 

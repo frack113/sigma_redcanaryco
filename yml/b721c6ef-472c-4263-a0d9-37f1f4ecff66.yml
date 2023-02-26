@@ -17,5 +17,3 @@ sigma: true
 sigma_rule:
   - id: 1cfac73c-be78-4f9a-9b08-5bde0c3953ab
     name: proc_creation_win_apt_wocao.yml
-  - id: 7fe71fc9-de3b-432a-8d57-8c809efc10ab
-    name: proc_creation_win_new_service_creation.yml

@@ -56,7 +56,7 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: 602a1f13-c640-4d73-b053-be9a2fa58b96
-    name: file_event_win_detect_powerup_dllhijacking.yml
+    name: file_event_win_hktl_powerup_dllhijacking.yml
   - id: 2aa0a6b4-a865-495b-ab51-c28249537b75
     name: file_event_win_startup_folder_file_write.yml
 

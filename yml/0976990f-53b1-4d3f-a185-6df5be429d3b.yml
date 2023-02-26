@@ -21,4 +21,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: e56d3073-83ff-4021-90fe-c658e0709e72
-    name: proc_creation_win_susp_gpresult.yml
+    name: proc_creation_win_gpresult_execution.yml

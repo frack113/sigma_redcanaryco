@@ -1,0 +1,18 @@
+Attack_name: 'Impair Defenses: Disable or Modify Tools'
+Attack_description: |-
+  Adversaries may modify and/or disable security tools to avoid possible detection of their malware/tools and activities. This may take the many forms, such as killing security software processes or services, modifying / deleting Registry keys or configuration files so that tools do not operate properly, or other methods to interfere with security tools scanning or reporting information.
+
+  Adversaries may also tamper with artifacts deployed and utilized by security tools. Security tools may make dynamic changes to system components in order to maintain visibility into specific events. For example, security products may load their own modules and/or modify those loaded by processes to facilitate data collection. Similar to [Indicator Blocking](https://attack.mitre.org/techniques/T1562/006), adversaries may unhook or otherwise modify these features added by tools (especially those that exist in userland or are otherwise potentially accessible to adversaries) to avoid detection.(Citation: OutFlank System Calls)(Citation: MDSec System Calls)
+guid: e74e4c63-6fde-4ad2-9ee8-21c3a1733114
+name: Disable Memory Swap
+tactic:
+  - defense-evasion
+technique:
+  - T1562.001
+os:
+  - linux
+description: "disable swapping of device paging that impaire the compromised host to swap data if the RAM is full. Awfulshred wiper used this technique as an additional \npayload to the compromised host\
+  \ and to make sure that there will be no recoverable data due to swap feature of linux.\n"
+executor: sh
+sigma: false
+sigma_rule: []

@@ -35,5 +35,5 @@ sigma_rule:
   - id: fff9d2b7-e11c-4a69-93d3-40ef66189767
     name: proc_creation_win_susp_copy_system32.yml
   - id: 37ae075c-271b-459b-8d7b-55ad5f993dd8
-    name: proc_creation_win_file_permission_modifications.yml
+    name: proc_creation_win_susp_file_permission_modifications.yml
 

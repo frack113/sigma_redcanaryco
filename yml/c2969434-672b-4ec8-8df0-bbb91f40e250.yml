@@ -38,7 +38,7 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: a642964e-bead-4bed-8910-1bb4d63e3b4d
-    name: proc_creation_win_mimikatz_command_line.yml
+    name: proc_creation_win_hktl_mimikatz_command_line.yml
   - id: 1883444f-084b-419b-ac62-e0d0c5b3693f
     name: posh_ps_susp_networkcredential.yml
   - id: 1f21ec3f-810d-4b0e-8045-322202e22b4b

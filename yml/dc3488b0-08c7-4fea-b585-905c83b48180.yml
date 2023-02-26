@@ -19,4 +19,4 @@ sigma_rule:
   - id: 4f4eaa9f-5ad4-410c-a4be-bc6132b0175a
     name: proc_creation_win_cmd_redirect.yml
   - id: 3286d37a-00fd-41c2-a624-a672dcd34e60
-    name: proc_creation_win_susp_curl_useragent.yml
+    name: proc_creation_win_curl_useragent.yml

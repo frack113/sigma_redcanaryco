@@ -128,7 +128,7 @@ with pathlib.Path("index.yaml").open("r", encoding="UTF-8") as file:
             atomic_tests = yml_index[tactic][technique]["atomic_tests"]
             nb_tests = len(atomic_tests)
 
-            print(f"found {tactic} / {technique} : {nb_tests} tests")
+            print(f"Found {tactic} / {technique} : {nb_tests} tests")
 
             head_info = {
                 "description": "",

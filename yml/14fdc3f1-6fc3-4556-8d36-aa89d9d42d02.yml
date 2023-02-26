@@ -55,6 +55,6 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: c2c76b77-32be-4d1f-82c9-7e544bdfe0eb
-    name: proc_creation_win_susp_secedit.yml
+    name: proc_creation_win_secedit_execution.yml
   - id: 20f0ee37-5942-4e45-b7d5-c5b5db9df5cd
     name: registry_set_asep_reg_keys_modification_currentversion.yml

@@ -24,4 +24,4 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: fb843269-508c-4b76-8b8d-88679db22ce7
-    name: proc_creation_win_susp_powershell_encode.yml
+    name: proc_creation_win_powershell_encode.yml
