@@ -92,7 +92,7 @@ sigma_rule:
   - id: 06ce37c2-61ab-4f05-9ff5-b1a96d18ae32
     name: image_load_wmic_remote_xsl_scripting_dlls.yml
   - id: 97a80ec7-0e2f-4d05-9ef4-65760e634f6b
-    name: proc_creation_win_whoami_priv.yml
+    name: proc_creation_win_whoami_priv_discovery.yml
   - id: 1c67a717-32ba-409b-a45d-0fb704a73a81
     name: proc_creation_win_net_network_connections_discovery.yml
   - id: 183e7ea8-ac4b-4c23-9aec-b3dac4e401ac

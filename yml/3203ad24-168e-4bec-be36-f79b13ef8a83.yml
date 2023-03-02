@@ -23,7 +23,7 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 730fc21b-eaff-474b-ad23-90fd265d4988
-    name: proc_creation_win_susp_psexec_eula.yml
+    name: proc_creation_win_sysinternals_psexec_execution.yml
   - id: 25ffa65d-76d8-4da5-a832-3f2b0136e133
     name: registry_add_pua_sysinternals_execution_via_eula.yml
 

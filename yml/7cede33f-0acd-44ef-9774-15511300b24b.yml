@@ -49,7 +49,7 @@ sigma_rule:
   - id: 7cccd811-7ae9-4ebe-9afd-cb5c406b824b
     name: proc_creation_win_sysinternals_eula_accepted.yml
   - id: 2e65275c-8288-4ab4-aeb7-6274f58b6b20
-    name: proc_creation_win_procdump.yml
+    name: proc_creation_win_sysinternals_procdump.yml
   - id: 25ffa65d-76d8-4da5-a832-3f2b0136e133
     name: registry_add_pua_sysinternals_execution_via_eula.yml
   - id: 32d0d3e2-e58d-4d41-926b-18b520b2b32d

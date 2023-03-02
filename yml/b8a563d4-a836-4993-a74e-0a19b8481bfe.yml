@@ -1,0 +1,18 @@
+Attack_name: 'Account Discovery: Domain Account'
+Attack_description: |-
+  Adversaries may attempt to get a listing of domain accounts. This information can help adversaries determine which domain accounts exist to aid in follow-on behavior.
+
+  Commands such as <code>net user /domain</code> and <code>net group /domain</code> of the [Net](https://attack.mitre.org/software/S0039) utility, <code>dscacheutil -q group</code>on macOS, and <code>ldapsearch</code> on Linux can list domain users and groups.
+guid: b8a563d4-a836-4993-a74e-0a19b8481bfe
+name: Wevtutil - Discover NTLM Users Remote
+tactic:
+  - discovery
+technique:
+  - T1087.002
+os:
+  - windows
+description: "This test discovers users who have authenticated against a Domain Controller via NTLM. \nThis is done remotely via wmic and captures the event code 4776 from the domain controller and stores\
+  \ the ouput in C:\\temp. [Reference](https://www.reliaquest.com/blog/socgholish-fakeupdates/)\n"
+executor: powershell
+sigma: false
+sigma_rule: []

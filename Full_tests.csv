@@ -121,6 +121,7 @@ defense-evasion;T1140;sh;['linux', 'macos'];Base64 decoding with Python;356dc0e8
 defense-evasion;T1140;sh;['linux', 'macos'];Base64 decoding with Perl;6604d964-b9f6-4d4b-8ce8-499829a14d0a;False;4
 defense-evasion;T1140;sh;['linux', 'macos'];Base64 decoding with shell utilities;b4f6a567-a27a-41e5-b8ef-ac4b4008bb7e;False;5
 defense-evasion;T1140;sh;['linux', 'macos'];Hex decoding with shell utilities;005943f9-8dd5-4349-8b46-0313c0a9f973;False;6
+defense-evasion;T1140;sh;['linux', 'macos'];Linux Base64 Encoded Shebang in CLI;3a15c372-67c1-4430-ac8e-ec06d641ce4d;False;7
 defense-evasion;T1562;command_prompt;['windows'];Windows Disable LSA Protection;40075d5f-3a70-4c66-9125-f72bee87247d;False;1
 defense-evasion;T1055.003;powershell;['windows'];Thread Execution Hijacking;578025d5-faa9-4f6d-8390-aae527d503e1;False;1
 defense-evasion;T1036;powershell;['windows'];System File Copied to Unusual Location;51005ac7-52e2-45e0-bdab-d17c6d4916cd;True;1
@@ -1193,6 +1194,7 @@ discovery;T1087.002;powershell;['windows'];Enumerate Linked Policies In ADSISear
 discovery;T1087.002;powershell;['windows'];Enumerate Root Domain linked policies Discovery;00c652e2-0750-4ca6-82ff-0204684a6fe4;True;14
 discovery;T1087.002;powershell;['windows'];WinPwn - generaldomaininfo;ce483c35-c74b-45a7-a670-631d1e69db3d;True;15
 discovery;T1087.002;powershell;['windows'];Kerbrute - userenum;f450461c-18d1-4452-9f0d-2c42c3f08624;True;16
+discovery;T1087.002;powershell;['windows'];Wevtutil - Discover NTLM Users Remote;b8a563d4-a836-4993-a74e-0a19b8481bfe;False;17
 discovery;T1087.001;sh;['linux'];Enumerate all accounts (Local);f8aab3dd-5990-4bf8-b8ab-2226c951696f;False;1
 discovery;T1087.001;sh;['linux', 'macos'];View sudoers access;fed9be70-0186-4bde-9f8a-20945f9370c2;False;2
 discovery;T1087.001;sh;['linux', 'macos'];View accounts with UID 0;c955a599-3653-4fe5-b631-f11c00eb0397;False;3
@@ -1271,6 +1273,7 @@ discovery;T1082;powershell;['azure-ad'];Azure Security Scan with SkyArk;26a18d3d
 discovery;T1082;sh;['linux'];Linux List Kernel Modules;034fe21c-3186-49dd-8d5d-128b35f181c7;False;24
 discovery;T1082;command_prompt;['windows'];System Information Discovery with WMIC;8851b73a-3624-4bf7-8704-aa312411565c;False;25
 discovery;T1010;command_prompt;['windows'];List Process Main Windows - C# .NET;fe94a1c3-3e22-4dc9-9fdf-3a8bdbc10dc4;True;1
+discovery;T1580;sh;['linux', 'macos'];AWS - EC2 Enumeration from Cloud Instance;99ee161b-dcb1-4276-8ecb-7cfdcb207820;False;1
 discovery;T1217;sh;['linux'];List Mozilla Firefox Bookmark Database Files on Linux;3a41f169-a5ab-407f-9269-abafdb5da6c2;False;1
 discovery;T1217;sh;['macos'];List Mozilla Firefox Bookmark Database Files on macOS;1ca1f9c7-44bc-46bb-8c85-c50e2e94267b;False;2
 discovery;T1217;sh;['macos'];List Google Chrome Bookmark JSON Files on macOS;b789d341-154b-4a42-a071-9111588be9bc;False;3
@@ -1461,6 +1464,7 @@ impact;T1486;bash;['linux'];Encrypt files using 7z (Linux);53e6735a-4727-44cc-b3
 impact;T1486;bash;['linux'];Encrypt files using ccrypt (Linux);08cbf59f-85da-4369-a5f4-049cffd7709f;False;3
 impact;T1486;bash;['linux'];Encrypt files using openssl (Linux);142752dc-ca71-443b-9359-cf6f497315f1;False;4
 impact;T1486;command_prompt;['windows'];PureLocker Ransom Note;649349c7-9abf-493b-a7a2-b1aa4d141528;True;5
+impact;T1486;powershell;['windows'];Data Encrypted with GPG4Win;4541e2c2-33c8-44b1-be79-9161440f1718;False;6
 impact;T1496;bash;['macos', 'linux'];macOS/Linux - Simulate CPU Load with Yes;904a5a0e-fb02-490d-9f8d-0e256eb37549;False;1
 impact;T1485;powershell;['windows'];Windows - Overwrite file with Sysinternals SDelete;476419b5-aebf-4366-a131-ae3e8dae5fc2;True;1
 impact;T1485;bash;['linux', 'macos'];macOS/Linux - Overwrite file with DD;38deee99-fd65-4031-bec8-bfa4f9f26146;False;2

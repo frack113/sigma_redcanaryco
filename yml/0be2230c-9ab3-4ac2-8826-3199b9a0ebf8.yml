@@ -45,15 +45,15 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 2e65275c-8288-4ab4-aeb7-6274f58b6b20
-    name: proc_creation_win_procdump.yml
+    name: proc_creation_win_sysinternals_procdump.yml
   - id: 5afee48e-67dd-4e03-a783-f74259dcf998
-    name: proc_creation_win_susp_procdump_lsass.yml
+    name: proc_creation_win_sysinternals_procdump_lsass.yml
   - id: ffa6861c-4461-4f59-8a41-578c39f3f23e
     name: proc_creation_win_lsass_dump.yml
   - id: 4a0b2c7e-7cb2-495d-8b63-5f268e7bfd67
-    name: proc_creation_win_renamed_procdump.yml
+    name: proc_creation_win_renamed_sysinternals_procdump.yml
   - id: 4a0b2c7e-7cb2-495d-8b63-5f268e7bfd67
-    name: proc_creation_win_renamed_procdump.yml
+    name: proc_creation_win_renamed_sysinternals_procdump.yml
   - id: 7cccd811-7ae9-4ebe-9afd-cb5c406b824b
     name: proc_creation_win_sysinternals_eula_accepted.yml
   - id: 25ffa65d-76d8-4da5-a832-3f2b0136e133
