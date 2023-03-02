@@ -627,6 +627,8 @@ Caution: a test can generate a lot of noise...
 
 [Enumerate Active Directory for Unconstrained Delegation](tests/46f8dbe9-22a5-4770-8513-66119c5be63b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
+[Wevtutil - Discover NTLM Users Remote](tests/b8a563d4-a836-4993-a74e-0a19b8481bfe.md) ['windows'] (sigma rule :x:)
+
 [Enumerate Linked Policies In ADSISearcher Discovery](tests/7ab0205a-34e4-4a44-9b04-e1541d1a57be.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Enumerate all accounts (Domain)](tests/6fbc9e68-5ad7-444a-bd11-8bf3136c477e.md) ['windows'] (sigma rule :heavy_check_mark:)
@@ -1082,6 +1084,20 @@ Caution: a test can generate a lot of noise...
 [WebBrowserPassView - Credentials from Browser](tests/e359627f-2d90-4320-ba5e-b0f878155bbe.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
+### T1486
+[Data Encrypted with GPG4Win](tests/4541e2c2-33c8-44b1-be79-9161440f1718.md) ['windows'] (sigma rule :x:)
+
+[Encrypt files using openssl (Linux)](tests/142752dc-ca71-443b-9359-cf6f497315f1.md) ['linux'] (sigma rule :x:)
+
+[Encrypt files using gpg (Linux)](tests/7b8ce084-3922-4618-8d22-95f996173765.md) ['linux'] (sigma rule :x:)
+
+[Encrypt files using ccrypt (Linux)](tests/08cbf59f-85da-4369-a5f4-049cffd7709f.md) ['linux'] (sigma rule :x:)
+
+[Encrypt files using 7z (Linux)](tests/53e6735a-4727-44cc-b35b-237682a151ad.md) ['linux'] (sigma rule :x:)
+
+[PureLocker Ransom Note](tests/649349c7-9abf-493b-a7a2-b1aa4d141528.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+
 ### T1070.003
 [Clear Bash history (truncate)](tests/47966a1d-df4f-4078-af65-db6d9aa20739.md) ['linux'] (sigma rule :x:)
 
@@ -1338,6 +1354,8 @@ Caution: a test can generate a lot of noise...
 
 ### T1140
 [Deobfuscate/Decode Files Or Information](tests/dc6fe391-69e6-4506-bd06-ea5eeb4082f8.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Linux Base64 Encoded Shebang in CLI](tests/3a15c372-67c1-4430-ac8e-ec06d641ce4d.md) ['linux', 'macos'] (sigma rule :x:)
 
 [Certutil Rename and Decode](tests/71abc534-3c05-4d0c-80f7-cbe93cb2aa94.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1736,18 +1754,6 @@ Caution: a test can generate a lot of noise...
 [Malicious PAM module](tests/65208808-3125-4a2e-8389-a0a00e9ab326.md) ['linux'] (sigma rule :x:)
 
 [Malicious PAM rule](tests/4b9dde80-ae22-44b1-a82a-644bf009eb9c.md) ['linux'] (sigma rule :x:)
-
-
-### T1486
-[Encrypt files using openssl (Linux)](tests/142752dc-ca71-443b-9359-cf6f497315f1.md) ['linux'] (sigma rule :x:)
-
-[Encrypt files using gpg (Linux)](tests/7b8ce084-3922-4618-8d22-95f996173765.md) ['linux'] (sigma rule :x:)
-
-[Encrypt files using ccrypt (Linux)](tests/08cbf59f-85da-4369-a5f4-049cffd7709f.md) ['linux'] (sigma rule :x:)
-
-[Encrypt files using 7z (Linux)](tests/53e6735a-4727-44cc-b35b-237682a151ad.md) ['linux'] (sigma rule :x:)
-
-[PureLocker Ransom Note](tests/649349c7-9abf-493b-a7a2-b1aa4d141528.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1572
@@ -2698,6 +2704,10 @@ Caution: a test can generate a lot of noise...
 
 ### T1133
 [Running Chrome VPN Extensions via the Registry 2 vpn extension](tests/4c8db261-a58b-42a6-a866-0a294deedde4.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+
+### T1580
+[AWS - EC2 Enumeration from Cloud Instance](tests/99ee161b-dcb1-4276-8ecb-7cfdcb207820.md) ['linux', 'macos'] (sigma rule :x:)
 
 
 ### T1569.002

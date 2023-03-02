@@ -3343,16 +3343,6 @@
   * T1132.001 [XOR Encoded data.](tests/c3ed6d2a-e3ad-400d-ad78-bbfdbfeacc08.md)
   * T1059.001 [Obfuscation Tests](tests/4297c41a-8168-4138-972d-01f3ee92c804.md)
   * T1027 [Obfuscated Command in PowerShell](tests/8b3f4ed6-077b-4bdd-891c-2d237f19410f.md)
-* proc_creation_win_procdump.yml
-  * T1003.001 [Create Mini Dump of LSASS.exe using ProcDump](tests/7cede33f-0acd-44ef-9774-15511300b24b.md)
-  * T1003.001 [Dump LSASS.exe Memory using ProcDump](tests/0be2230c-9ab3-4ac2-8826-3199b9a0ebf8.md)
-* proc_creation_win_psexesvc_start.yml
-  * T1562.006 [Disable Powershell ETW Provider - Windows](tests/6f118276-121d-4c09-bb58-a8fb4a72ee84.md)
-  * T1550.003 [Rubeus Kerberos Pass The Ticket](tests/a2fc4ec5-12c6-4fb4-b661-961f23f359cb.md)
-  * T1569.002 [Use PsExec to execute a command on a remote host](tests/873106b7-cfed-454b-8680-fa9f6400431c.md)
-  * T1021.002 [Copy and Execute File with PsExec](tests/0eb03d41-79e4-4393-8e57-6344856be1cf.md)
-  * T1207 [DCShadow (Active Directory)](tests/0f4c5eb0-98a0-4496-9c3d-656b4f2bc8f6.md)
-  * T1003.004 [Dumping LSA Secrets](tests/55295ab0-a703-433b-9ca4-ae13807de12f.md)
 * proc_creation_win_pua_advancedrun.yml
   * T1562.001 [Disable Defender Using NirSoft AdvancedRun](tests/81ce22fd-9612-4154-918e-8a1f285d214d.md)
 * proc_creation_win_pua_advancedrun_priv_user.yml
@@ -3453,7 +3443,7 @@
   * T1036.003 [Masquerading - cscript.exe running as notepad.exe](tests/3a2a578b-0a01-46e4-92e3-62e2859b42f0.md)
 * proc_creation_win_renamed_netsupport_rat.yml
   * T1219 [NetSupport - RAT Execution](tests/ecca999b-e0c8-40e8-8416-ad320b146a75.md)
-* proc_creation_win_renamed_procdump.yml
+* proc_creation_win_renamed_sysinternals_procdump.yml
   * T1003.001 [Dump LSASS.exe Memory using ProcDump](tests/0be2230c-9ab3-4ac2-8826-3199b9a0ebf8.md)
   * T1003.001 [Dump LSASS.exe Memory using ProcDump](tests/0be2230c-9ab3-4ac2-8826-3199b9a0ebf8.md)
 * proc_creation_win_root_certificate_installed.yml
@@ -3502,13 +3492,13 @@
   * T1218.011 [Rundll32 advpack.dll Execution](tests/d91cae26-7fc1-457b-a854-34c8aad48c89.md)
   * T1218.002 [Control Panel Items](tests/037e9d8a-9e46-4255-8b33-2ae3b545ca6f.md)
   * T1218.011 [Execution of HTA and VBS Files using Rundll32 and URL.dll](tests/22cfde89-befe-4e15-9753-47306b37a6e3.md)
-* proc_creation_win_sc_hide_sevices.yml
-  * T1564 [Create and Hide a Service with sc.exe](tests/333c7de0-6fbe-42aa-ac2b-c7e40b18246a.md)
 * proc_creation_win_sc_query.yml
   * T1007 [System Service Discovery](tests/89676ba1-b1f8-47ee-b940-2e1a113ebc71.md)
   * T1119 [Recon information for export with Command Prompt](tests/aa1180e2-f329-4e1e-8625-2472ec0bfaf3.md)
   * T1562.001 [Tamper with Windows Defender Command Prompt](tests/aa875ed4-8935-47e2-b2c5-6ec00ab220d2.md)
-* proc_creation_win_sc_service_dacl_modification.yml
+* proc_creation_win_sc_sdset_deny_service_access.yml
+  * T1564 [Create and Hide a Service with sc.exe](tests/333c7de0-6fbe-42aa-ac2b-c7e40b18246a.md)
+* proc_creation_win_sc_sdset_hide_sevices.yml
   * T1564 [Create and Hide a Service with sc.exe](tests/333c7de0-6fbe-42aa-ac2b-c7e40b18246a.md)
 * proc_creation_win_sc_service_path_modification.yml
   * T1543.003 [Modify Fax service to run PowerShell](tests/ed366cde-7d12-49df-a833-671904770b9f.md)
@@ -3536,8 +3526,6 @@
 * proc_creation_win_sdclt_child_process.yml
   * T1059.001 [Invoke-AppPathBypass](tests/06a220b6-7e29-4bd8-9d07-5b4d86742372.md)
   * T1548.002 [Bypass UAC using sdclt DelegateExecute](tests/3be891eb-4608-4173-87e8-78b494c029b7.md)
-* proc_creation_win_sdelete.yml
-  * T1485 [Windows - Overwrite file with Sysinternals SDelete](tests/476419b5-aebf-4366-a131-ae3e8dae5fc2.md)
 * proc_creation_win_secedit_execution.yml
   * T1547.001 [secedit used to create a Run key in the HKLM Hive](tests/14fdc3f1-6fc3-4556-8d36-aa89d9d42d02.md)
   * T1201 [Use of SecEdit.exe to export the local security policy (including the password policy)](tests/510cc97f-56ac-4cd3-a198-d3218c23d889.md)
@@ -3703,8 +3691,6 @@
   * T1218.008 [Odbcconf.exe - Load Response File](tests/331ce274-f9c9-440b-9f8c-a1006e1fce0b.md)
 * proc_creation_win_susp_print.yml
   * T1564.004 [Alternate Data Streams (ADS)](tests/8822c3b0-d9f9-4daf-a043-49f4602364f4.md)
-* proc_creation_win_susp_procdump_lsass.yml
-  * T1003.001 [Dump LSASS.exe Memory using ProcDump](tests/0be2230c-9ab3-4ac2-8826-3199b9a0ebf8.md)
 * proc_creation_win_susp_progname.yml
   * T1069.002 [Get-DomainGroup with PowerView](tests/5a8a181c-2c8e-478d-a943-549305a01230.md)
   * T1018 [Get-DomainController with PowerView](tests/b9d2e8ca-5520-4737-8076-4f08913da2c4.md)
@@ -3715,17 +3701,6 @@
   * T1069.002 [Get-DomainGroupMember with PowerView](tests/46352f40-f283-4fe5-b56d-d9a71750e145.md)
   * T1558.004 [Get-DomainUser with PowerView](tests/d6139549-7b72-4e48-9ea1-324fc9bdf88a.md)
   * T1087.002 [Get-DomainUser with PowerView](tests/93662494-5ed7-4454-a04c-8c8372808ac2.md)
-* proc_creation_win_susp_psexec_eula.yml
-  * T1562.006 [Disable Powershell ETW Provider - Windows](tests/6f118276-121d-4c09-bb58-a8fb4a72ee84.md)
-  * T1550.003 [Rubeus Kerberos Pass The Ticket](tests/a2fc4ec5-12c6-4fb4-b661-961f23f359cb.md)
-  * T1055 [Remote Process Injection in LSASS via mimikatz](tests/3203ad24-168e-4bec-be36-f79b13ef8a83.md)
-  * T1569.002 [Use PsExec to execute a command on a remote host](tests/873106b7-cfed-454b-8680-fa9f6400431c.md)
-  * T1021.002 [Copy and Execute File with PsExec](tests/0eb03d41-79e4-4393-8e57-6344856be1cf.md)
-  * T1207 [DCShadow (Active Directory)](tests/0f4c5eb0-98a0-4496-9c3d-656b4f2bc8f6.md)
-  * T1003.004 [Dumping LSA Secrets](tests/55295ab0-a703-433b-9ca4-ae13807de12f.md)
-  * T1569.002 [BlackCat pre-encryption cmds with Lateral Movement](tests/31eb7828-97d7-4067-9c1e-c6feb85edc4b.md)
-* proc_creation_win_susp_psloglist.yml
-  * T1003.004 [Dumping LSA Secrets](tests/55295ab0-a703-433b-9ca4-ae13807de12f.md)
 * proc_creation_win_susp_psr_capture_screenshots.yml
   * T1113 [Windows Screencapture](tests/3c898f62-626c-47d5-aad2-6de873d69153.md)
 * proc_creation_win_susp_rclone_execution.yml
@@ -3772,8 +3747,6 @@
   * T1105 [svchost writing a file to a UNC path](tests/fa5a2759-41d7-4e13-a19c-e8f28a53566f.md)
   * T1036.005 [Masquerade as a built-in system executable](tests/35eb8d16-9820-4423-a2a1-90c4f5edd9ca.md)
   * T1036.003 [Masquerading - windows exe running as different windows exe](tests/c3d24a39-2bfe-4c6a-b064-90cd73896cb0.md)
-* proc_creation_win_susp_sysinternal_suite_tools_masquerading.yml
-  * T1555.003 [Run Chrome-password Collector](tests/8c05b133-d438-47ca-a630-19cc464c4622.md)
 * proc_creation_win_susp_system_user_anomaly.yml
   * T1106 [WinPwn - Get SYSTEM shell - Bind System Shell using CreateProcess technique](tests/7ec5b74e-8289-4ff2-a162-b6f286a33abd.md)
 * proc_creation_win_susp_systeminfo.yml
@@ -3796,10 +3769,6 @@
 * proc_creation_win_susp_where_execution.yml
   * T1217 [List Mozilla Firefox bookmarks on Windows with command prompt](tests/4312cdbc-79fc-4a9c-becc-53d49c734bc5.md)
   * T1217 [List Google Chrome / Edge Chromium Bookmarks on Windows with command prompt](tests/76f71e2f-480e-4bed-b61e-398fe17499d5.md)
-* proc_creation_win_susp_whoami.yml
-  * T1552.001 [WinPwn - sensitivefiles](tests/114dd4e3-8d1c-4ea7-bb8d-8d8f6aca21f0.md)
-  * T1036.003 [File Extension Masquerading](tests/c7fa0c3b-b57f-4cba-9118-863bf4e653fc.md)
-  * T1558.004 [Get-DomainUser with PowerView](tests/d6139549-7b72-4e48-9ea1-324fc9bdf88a.md)
 * proc_creation_win_susp_winzip.yml
   * T1560.001 [Compress Data and lock with password for Exfiltration with winzip](tests/01df0353-d531-408d-a0c5-3161bf822134.md)
 * proc_creation_win_susp_wuauclt.yml
@@ -3816,6 +3785,26 @@
   * T1021.002 [Copy and Execute File with PsExec](tests/0eb03d41-79e4-4393-8e57-6344856be1cf.md)
   * T1003.004 [Dumping LSA Secrets](tests/55295ab0-a703-433b-9ca4-ae13807de12f.md)
   * T1569.002 [BlackCat pre-encryption cmds with Lateral Movement](tests/31eb7828-97d7-4067-9c1e-c6feb85edc4b.md)
+* proc_creation_win_sysinternals_procdump.yml
+  * T1003.001 [Create Mini Dump of LSASS.exe using ProcDump](tests/7cede33f-0acd-44ef-9774-15511300b24b.md)
+  * T1003.001 [Dump LSASS.exe Memory using ProcDump](tests/0be2230c-9ab3-4ac2-8826-3199b9a0ebf8.md)
+* proc_creation_win_sysinternals_procdump_lsass.yml
+  * T1003.001 [Dump LSASS.exe Memory using ProcDump](tests/0be2230c-9ab3-4ac2-8826-3199b9a0ebf8.md)
+* proc_creation_win_sysinternals_psexec_execution.yml
+  * T1562.006 [Disable Powershell ETW Provider - Windows](tests/6f118276-121d-4c09-bb58-a8fb4a72ee84.md)
+  * T1550.003 [Rubeus Kerberos Pass The Ticket](tests/a2fc4ec5-12c6-4fb4-b661-961f23f359cb.md)
+  * T1055 [Remote Process Injection in LSASS via mimikatz](tests/3203ad24-168e-4bec-be36-f79b13ef8a83.md)
+  * T1569.002 [Use PsExec to execute a command on a remote host](tests/873106b7-cfed-454b-8680-fa9f6400431c.md)
+  * T1021.002 [Copy and Execute File with PsExec](tests/0eb03d41-79e4-4393-8e57-6344856be1cf.md)
+  * T1207 [DCShadow (Active Directory)](tests/0f4c5eb0-98a0-4496-9c3d-656b4f2bc8f6.md)
+  * T1003.004 [Dumping LSA Secrets](tests/55295ab0-a703-433b-9ca4-ae13807de12f.md)
+  * T1569.002 [BlackCat pre-encryption cmds with Lateral Movement](tests/31eb7828-97d7-4067-9c1e-c6feb85edc4b.md)
+* proc_creation_win_sysinternals_psloglist.yml
+  * T1003.004 [Dumping LSA Secrets](tests/55295ab0-a703-433b-9ca4-ae13807de12f.md)
+* proc_creation_win_sysinternals_sdelete.yml
+  * T1485 [Windows - Overwrite file with Sysinternals SDelete](tests/476419b5-aebf-4366-a131-ae3e8dae5fc2.md)
+* proc_creation_win_sysinternals_tools_masquerading.yml
+  * T1555.003 [Run Chrome-password Collector](tests/8c05b133-d438-47ca-a630-19cc464c4622.md)
 * proc_creation_win_system_exe_anomaly.yml
   * T1218 [Renamed Microsoft.Workflow.Compiler.exe Payload Executions](tests/4cc40fd7-87b8-4b16-b2d7-57534b86b911.md)
   * T1036.003 [Malicious process Masquerading as LSM.exe](tests/83810c46-f45e-4485-9ab6-8ed0e9e6ed7f.md)
@@ -3851,7 +3840,7 @@
   * T1219 [UltraVNC Execution](tests/42e51815-a6cc-4c75-b970-3f0ff54b610e.md)
 * proc_creation_win_uninstall_crowdstrike_falcon.yml
   * T1562.001 [Uninstall Crowdstrike Falcon on Windows](tests/b32b1ccf-f7c1-49bc-9ddd-7d7466a7b297.md)
-* proc_creation_win_uninstall_sysmon.yml
+* proc_creation_win_uninstall_sysinternals_sysmon.yml
   * T1562.001 [Uninstall Sysmon](tests/a316fb2e-5344-470d-91c1-23e15c374edc.md)
 * proc_creation_win_w32tm.yml
   * T1124 [System Time Discovery W32tm as a Delay](tests/d5d5a6b0-0f92-42d8-985d-47aafa2dd4db.md)
@@ -3947,7 +3936,11 @@
   * T1106 [WinPwn - Get SYSTEM shell - Bind System Shell using CreateProcess technique](tests/7ec5b74e-8289-4ff2-a162-b6f286a33abd.md)
   * T1106 [WinPwn - Get SYSTEM shell - Pop System Shell using CreateProcess technique](tests/ce4e76e6-de70-4392-9efe-b281fc2b4087.md)
   * T1082 [WinPwn - winPEAS](tests/eea1d918-825e-47dd-acc2-814d6c58c0e1.md)
-* proc_creation_win_whoami_priv.yml
+* proc_creation_win_whoami_execution.yml
+  * T1552.001 [WinPwn - sensitivefiles](tests/114dd4e3-8d1c-4ea7-bb8d-8d8f6aca21f0.md)
+  * T1036.003 [File Extension Masquerading](tests/c7fa0c3b-b57f-4cba-9118-863bf4e653fc.md)
+  * T1558.004 [Get-DomainUser with PowerView](tests/d6139549-7b72-4e48-9ea1-324fc9bdf88a.md)
+* proc_creation_win_whoami_priv_discovery.yml
   * T1082 [WinPwn - GeneralRecon](tests/7804659b-fdbf-4cf6-b06a-c03e758590e8.md)
   * T1082 [WinPwn - General privesc checks](tests/5b6f39a2-6ec7-4783-a5fd-2c54a55409ed.md)
 * proc_creation_win_wmic_namespace_defender.yml
