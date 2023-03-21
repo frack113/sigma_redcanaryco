@@ -22,5 +22,5 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: bb58aa4a-b80b-415a-a2c0-2f65a4c81009
-    name: proc_creation_win_susp_desktopimgdownldr.yml
+    name: proc_creation_win_desktopimgdownldr_susp_execution.yml
 

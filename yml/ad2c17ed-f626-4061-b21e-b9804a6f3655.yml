@@ -18,4 +18,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: a2910908-e86f-4687-aeba-76a5f996e652
-    name: proc_creation_win_susp_register_cimprovider.yml
+    name: proc_creation_win_registry_cimprovider_dll_load.yml

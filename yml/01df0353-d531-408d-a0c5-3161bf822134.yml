@@ -20,4 +20,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: e2e80da2-8c66-4e00-ae3c-2eebd29f6b6d
-    name: proc_creation_win_susp_winzip.yml
+    name: proc_creation_win_winzip_password_compression.yml

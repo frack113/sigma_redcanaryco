@@ -20,4 +20,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 1e33157c-53b1-41ad-bbcc-780b80b58288
-    name: proc_creation_win_susp_script_execution.yml
+    name: proc_creation_win_script_execution.yml

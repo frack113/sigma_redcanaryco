@@ -19,4 +19,4 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: 88656cec-6c3b-487c-82c0-f73ebb805503
-    name: proc_creation_win_ultraviewer.yml
+    name: proc_creation_win_remote_access_software_ultraviewer.yml

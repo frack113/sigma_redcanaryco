@@ -20,5 +20,7 @@ description: |
   https://blog.sekoia.io/aurora-a-rising-stealer-flying-under-the-radar
   https://blog.cyble.com/2023/01/18/aurora-a-stealer-using-shapeshifting-tactics/
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 9d5a1274-922a-49d0-87f3-8c653483b909
+    name: proc_creation_win_wmic_recon_system_info_discovery.yml

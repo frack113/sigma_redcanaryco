@@ -17,7 +17,7 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: 9fc51a3c-81b3-4fa7-b35f-7c02cf10fd2d
-    name: proc_creation_win_web_request_cmd_and_cmdlets.yml
+    name: proc_creation_win_susp_web_request_cmd_and_cmdlets.yml
   - id: d4488827-73af-4f8d-9244-7b7662ef046e
     name: posh_ps_susp_invoke_webrequest_useragent.yml
   - id: 1139d2e2-84b1-4226-b445-354492eba8ba

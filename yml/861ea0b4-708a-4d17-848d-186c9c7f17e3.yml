@@ -18,4 +18,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 379fa130-190e-4c3f-b7bc-6c8e834485f3
-    name: proc_creation_win_cmd_delete.yml
+    name: proc_creation_win_cmd_del_execution.yml

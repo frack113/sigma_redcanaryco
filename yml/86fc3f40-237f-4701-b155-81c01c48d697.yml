@@ -40,7 +40,7 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: ffa6861c-4461-4f59-8a41-578c39f3f23e
-    name: proc_creation_win_lsass_dump.yml
+    name: proc_creation_win_susp_lsass_dump.yml
   - id: 32d0d3e2-e58d-4d41-926b-18b520b2b32d
     name: proc_access_win_cred_dump_lsass_access.yml
   - id: fa34b441-961a-42fa-a100-ecc28c886725

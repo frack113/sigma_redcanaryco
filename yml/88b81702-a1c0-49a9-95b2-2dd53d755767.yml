@@ -21,4 +21,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: bab049ca-7471-4828-9024-38279a4c04da
-    name: proc_creation_win_run_virtualbox.yml
+    name: proc_creation_win_virtualbox_execution.yml

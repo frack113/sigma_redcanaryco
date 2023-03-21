@@ -21,4 +21,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: f8ad2e2c-40b6-4117-84d7-20b89896ab23
-    name: proc_creation_win_network_scan_loop.yml
+    name: proc_creation_win_susp_network_scan_loop.yml

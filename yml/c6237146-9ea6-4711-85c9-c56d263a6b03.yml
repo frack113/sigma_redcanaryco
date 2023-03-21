@@ -30,7 +30,7 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: e7be6119-fc37-43f0-ad4f-1f3f99be2f9f
-    name: proc_creation_win_copying_sensitive_files_with_credential_data.yml
+    name: proc_creation_win_esentutl_sensitive_file_copy.yml
   - id: c73124a7-3e89-44a3-bdc1-25fe4df754b1
     name: proc_creation_win_cmd_shadowcopy_access.yml
   - id: f57f8d16-1f39-4dcb-a604-6c73d9b54b3d

@@ -18,7 +18,7 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 65d2be45-8600-4042-b4c0-577a1ff8a60e
-    name: proc_creation_win_susp_odbcconf.yml
+    name: proc_creation_win_odbcconf_susp_exec.yml
   - id: 092bc4b9-3d1d-43b4-a6b4-8c8acd83522f
     name: image_load_dll_system_management_automation_susp_load.yml
   - id: ad1f4bb9-8dfb-4765-adb6-2a7cfb6c0f94

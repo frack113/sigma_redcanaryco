@@ -24,4 +24,4 @@ executor: manual
 sigma: true
 sigma_rule:
   - id: e0552b19-5a83-4222-b141-b36184bb8d79
-    name: proc_creation_win_susp_char_in_cmd.yml
+    name: proc_creation_win_susp_cli_obfuscation_unicode.yml

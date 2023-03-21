@@ -18,4 +18,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 6a5f68d1-c4b5-46b9-94ee-5324892ea939
-    name: proc_creation_win_uninstall_sysinternals_sysmon.yml
+    name: proc_creation_win_sysinternals_sysmon_uninstall.yml

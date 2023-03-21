@@ -22,6 +22,6 @@ sigma_rule:
   - id: 4a5f5a5e-ac01-474b-9b4e-d61298c9df1d
     name: registry_set_powershell_as_service.yml
   - id: d522eca2-2973-4391-a3e0-ef0374321dae
-    name: proc_creation_win_abusing_debug_privilege.yml
+    name: proc_creation_win_susp_abusing_debug_privilege.yml
   - id: 754ed792-634f-40ae-b3bc-e0448d33f695
     name: proc_creation_win_powershell_susp_parent_process.yml

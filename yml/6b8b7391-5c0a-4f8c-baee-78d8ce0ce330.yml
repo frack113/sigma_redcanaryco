@@ -20,6 +20,6 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: b52e84a3-029e-4529-b09b-71d19dd27e94
-    name: proc_creation_win_anydesk_execution.yml
+    name: proc_creation_win_remote_access_tools_anydesk.yml
   - id: 0b9ad457-2554-44c1-82c2-d56a99c42377
     name: file_event_win_anydesk_artefact.yml

@@ -20,4 +20,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 725a9768-0f5e-4cb3-aec2-bc5719c6831a
-    name: proc_creation_win_susp_where_execution.yml
+    name: proc_creation_win_where_browser_data_recon.yml

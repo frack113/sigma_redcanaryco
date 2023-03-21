@@ -26,8 +26,8 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 40b19fa6-d835-400c-b301-41f3a2baacaf
-    name: proc_creation_win_shadow_copies_access_symlink.yml
+    name: proc_creation_win_cmd_mklink_shadow_copies_access_symlink.yml
   - id: f57f8d16-1f39-4dcb-a604-6c73d9b54b3d
     name: proc_creation_win_malware_conti_shadowcopy.yml
   - id: b17ea6f7-6e90-447e-a799-e6c0a493d6ce
-    name: proc_creation_win_shadow_copies_creation.yml
+    name: proc_creation_win_susp_shadow_copies_creation.yml

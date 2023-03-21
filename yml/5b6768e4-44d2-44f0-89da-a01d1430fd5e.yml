@@ -49,7 +49,8 @@ technique:
 os:
   - windows
 description: |
-  bat files can be placed in and executed from the startup folder to maintain persistance.
+  bat files can be placed in and executed from the startup folder to maintain persistance
+
   Upon execution, cmd will be run and immediately closed. Additionally, the new files can be viewed in the "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup"
   folder and will also run when the computer is restarted and the user logs in.
 executor: powershell

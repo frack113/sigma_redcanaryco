@@ -20,4 +20,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: e6313acd-208c-44fc-a0ff-db85d572e90e
-    name: proc_creation_win_susp_recon_network_activity.yml
+    name: proc_creation_win_nslookup_domain_discovery.yml

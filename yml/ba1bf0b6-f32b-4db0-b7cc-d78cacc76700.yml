@@ -23,15 +23,18 @@ Attack_description: |-
   In addition to management services, adversaries may "target single sign-on (SSO) and cloud-based applications utilizing federated authentication protocols," as well as externally facing email applications, such as Office 365.(Citation: US-CERT TA18-068A 2018). Further, adversaries may abuse network device interfaces (such as `wlanAPI`) to brute force accessible wifi-router(s) via wireless authentication protocols.(Citation: Trend Micro Emotet 2020)
 
   In default environments, LDAP and Kerberos connection attempts are less likely to trigger events over SMB, which creates Windows "logon failure" event ID 4625.
-guid: b72958a7-53e3-4809-9ee1-58f6ecd99ade
-name: SUDO brute force Redhat
+guid: ba1bf0b6-f32b-4db0-b7cc-d78cacc76700
+name: SUDO Brute Force - Debian
 tactic:
   - credential-access
 technique:
   - T1110.001
 os:
   - linux
-description: "Brute force the password of a local user account which is a member of the sudo'ers group on a Redhat based Linux distribution.  \n"
-executor: sh
+description: "An adversary may find themselves on a box (e.g. via ssh key auth, with no password) with a user that has sudo'ers privileges, but they do not know the users password. Normally, failed attempts\
+  \ to access root will not cause the root account to become locked, to prevent denial-of-service. This functionality enables an attacker to undertake a local brute force password guessing attack without\
+  \ locking out the root user. \n\nThis test creates the \"art\" user with a password of \"password123\", logs in, downloads and executes the sudo_bruteforce.sh which brute force guesses the password, then\
+  \ deletes the user\n"
+executor: bash
 sigma: false
 sigma_rule: []

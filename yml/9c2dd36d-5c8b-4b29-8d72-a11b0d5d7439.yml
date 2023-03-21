@@ -26,4 +26,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 58f50261-c53b-4c88-bd12-1d71f12eda4c
-    name: proc_creation_win_susp_vaultcmd.yml
+    name: proc_creation_win_vaultcmd_list_creds.yml

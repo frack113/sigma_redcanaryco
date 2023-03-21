@@ -22,7 +22,7 @@ sigma_rule:
   - id: 3b6ab547-8ec2-4991-b9d2-2b06702a48d7
     name: proc_creation_win_powershell_download_patterns.yml
   - id: 9fc51a3c-81b3-4fa7-b35f-7c02cf10fd2d
-    name: proc_creation_win_web_request_cmd_and_cmdlets.yml
+    name: proc_creation_win_susp_web_request_cmd_and_cmdlets.yml
   - id: 85b0b087-eddf-4a2b-b033-d771fa2b9775
     name: proc_creation_win_powershell_download_iex.yml
   - id: e6c54d94-498c-4562-a37c-b469d8e9a275
@@ -30,7 +30,7 @@ sigma_rule:
   - id: 6e897651-f157-4d8f-aaeb-df8151488385
     name: proc_creation_win_powershell_download_cradles.yml
   - id: f35c5d71-b489-4e22-a115-f003df287317
-    name: proc_creation_win_cobaltstrike_process_patterns.yml
+    name: proc_creation_win_hktl_cobaltstrike_process_patterns.yml
   - id: 89819aa4-bbd6-46bc-88ec-c7f7fe30efa6
     name: posh_ps_malicious_commandlets.yml
   - id: ae7fbf8e-f3cb-49fd-8db4-5f3bed522c71
@@ -54,9 +54,9 @@ sigma_rule:
   - id: 635dbb88-67b3-4b41-9ea5-a3af2dd88153
     name: net_connection_win_binary_github_com.yml
   - id: 15619216-e993-4721-b590-4c520615a67d
-    name: proc_creation_win_meterpreter_or_cobaltstrike_getsystem_service_start.yml
+    name: proc_creation_win_hktl_meterpreter_getsystem.yml
   - id: d522eca2-2973-4391-a3e0-ef0374321dae
-    name: proc_creation_win_abusing_debug_privilege.yml
+    name: proc_creation_win_susp_abusing_debug_privilege.yml
   - id: 4f4eaa9f-5ad4-410c-a4be-bc6132b0175a
     name: proc_creation_win_cmd_redirect.yml
   - id: 843544a7-56e0-4dcc-a44f-5cc266dd97d6

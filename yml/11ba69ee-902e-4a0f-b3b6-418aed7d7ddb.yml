@@ -1,0 +1,18 @@
+Attack_name: Process Discovery
+Attack_description: |-
+  Adversaries may attempt to get information about running processes on a system. Information obtained could be used to gain an understanding of common software/applications running on systems within the network. Adversaries may use the information from [Process Discovery](https://attack.mitre.org/techniques/T1057) during automated discovery to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or attempts specific actions.
+
+  In Windows environments, adversaries could obtain details on running processes using the [Tasklist](https://attack.mitre.org/software/S0057) utility via [cmd](https://attack.mitre.org/software/S0106) or <code>Get-Process</code> via [PowerShell](https://attack.mitre.org/techniques/T1059/001). Information about processes can also be extracted from the output of [Native API](https://attack.mitre.org/techniques/T1106) calls such as <code>CreateToolhelp32Snapshot</code>. In Mac and Linux, this is accomplished with the <code>ps</code> command. Adversaries may also opt to enumerate processes via /proc.
+guid: 11ba69ee-902e-4a0f-b3b6-418aed7d7ddb
+name: Discover Specific Process - tasklist
+tactic:
+  - discovery
+technique:
+  - T1057
+os:
+  - windows
+description: "Adversaries may use command line tools to discover specific processes in preparation of further attacks. \nExamples of this could be discovering the PID of lsass.exe to dump its memory or\
+  \ discovering whether specific security processes (e.g. AV or EDR) are running.\n"
+executor: command_prompt
+sigma: false
+sigma_rule: []

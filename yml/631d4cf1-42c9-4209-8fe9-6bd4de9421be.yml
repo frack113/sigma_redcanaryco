@@ -20,4 +20,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 7090adee-82e2-4269-bd59-80691e7c6338
-    name: proc_creation_win_susp_codepage_lookup.yml
+    name: proc_creation_win_chcp_codepage_lookup.yml

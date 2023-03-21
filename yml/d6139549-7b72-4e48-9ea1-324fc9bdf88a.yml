@@ -26,11 +26,11 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: 9fc51a3c-81b3-4fa7-b35f-7c02cf10fd2d
-    name: proc_creation_win_web_request_cmd_and_cmdlets.yml
+    name: proc_creation_win_susp_web_request_cmd_and_cmdlets.yml
   - id: efdd8dd5-cee8-4e59-9390-7d4d5e4dd6f6
     name: proc_creation_win_susp_progname.yml
   - id: 7be5fb68-f9ef-476d-8b51-0256ebece19e
-    name: proc_creation_win_susp_hostname.yml
+    name: proc_creation_win_hostname_execution.yml
   - id: e28a5a99-da44-436d-b7a0-2afc20a5f413
     name: proc_creation_win_whoami_execution.yml
   - id: 502b42de-4306-40b4-9596-6f590c81f073

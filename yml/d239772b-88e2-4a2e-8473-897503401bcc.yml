@@ -25,4 +25,4 @@ sigma_rule:
   - id: f37aba28-a9e6-4045-882c-d5004043b337
     name: proc_creation_win_lolbin_cmdl32.yml
   - id: 86085955-ea48-42a2-9dd3-85d4c36b167d
-    name: proc_creation_win_susp_taskkill.yml
+    name: proc_creation_win_taskkill_execution.yml

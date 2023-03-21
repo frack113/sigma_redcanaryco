@@ -18,4 +18,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: e13f668e-7f95-443d-98d2-1816a7648a7b
-    name: proc_creation_win_software_discovery.yml
+    name: proc_creation_win_reg_software_discovery.yml

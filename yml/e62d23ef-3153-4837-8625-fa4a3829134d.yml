@@ -1,0 +1,18 @@
+Attack_name: 'Create Account: Cloud Account'
+Attack_description: |-
+  Adversaries may create a cloud account to maintain access to victim systems. With a sufficient level of access, such accounts may be used to establish secondary credentialed access that does not require persistent remote access tools to be deployed on the system.(Citation: Microsoft O365 Admin Roles)(Citation: Microsoft Support O365 Add Another Admin, October 2019)(Citation: AWS Create IAM User)(Citation: GCP Create Cloud Identity Users)(Citation: Microsoft Azure AD Users)
+
+  Adversaries may create accounts that only have access to specific cloud services, which can reduce the chance of detection.
+guid: e62d23ef-3153-4837-8625-fa4a3829134d
+name: Azure AD - Create a new user
+tactic:
+  - persistence
+technique:
+  - T1136.003
+os:
+  - azure-ad
+description: Creates a new user in Azure AD. Upon successful creation, a new user will be created. Adversaries create new users so that their malicious activity does not interrupt the normal functions of
+  the compromised users and can remain undetected for a long time.
+executor: powershell
+sigma: false
+sigma_rule: []

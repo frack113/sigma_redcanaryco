@@ -20,10 +20,8 @@ description: |
 executor: command_prompt
 sigma: true
 sigma_rule:
-  - id: 0eb2107b-a596-422e-b123-b389d5594ed7
-    name: proc_creation_win_apt_hurricane_panda.yml
   - id: ffa28e60-bdb1-46e0-9f82-05f7a61cc06e
-    name: proc_creation_win_susp_add_user_remote_desktop.yml
+    name: proc_creation_win_susp_add_user_remote_desktop_group.yml
   - id: 183e7ea8-ac4b-4c23-9aec-b3dac4e401ac
     name: proc_creation_win_net_susp_execution.yml
   - id: 502b42de-4306-40b4-9596-6f590c81f073

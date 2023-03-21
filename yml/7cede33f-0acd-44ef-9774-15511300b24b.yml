@@ -45,7 +45,7 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: ffa6861c-4461-4f59-8a41-578c39f3f23e
-    name: proc_creation_win_lsass_dump.yml
+    name: proc_creation_win_susp_lsass_dump.yml
   - id: 7cccd811-7ae9-4ebe-9afd-cb5c406b824b
     name: proc_creation_win_sysinternals_eula_accepted.yml
   - id: 2e65275c-8288-4ab4-aeb7-6274f58b6b20

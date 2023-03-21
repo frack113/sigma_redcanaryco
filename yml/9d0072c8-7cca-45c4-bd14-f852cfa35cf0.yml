@@ -48,4 +48,4 @@ sigma_rule:
   - id: a6a39bdb-935c-4f0a-ab77-35f4bbf44d33
     name: proc_creation_win_susp_script_exec_from_temp.yml
   - id: ffa6861c-4461-4f59-8a41-578c39f3f23e
-    name: proc_creation_win_lsass_dump.yml
+    name: proc_creation_win_susp_lsass_dump.yml

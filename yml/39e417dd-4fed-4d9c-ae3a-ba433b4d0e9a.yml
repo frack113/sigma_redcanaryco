@@ -21,4 +21,4 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: 198effb6-6c98-4d0c-9ea3-451fa143c45c
-    name: proc_creation_win_susp_runonce_execution.yml
+    name: proc_creation_win_runonce_execution.yml

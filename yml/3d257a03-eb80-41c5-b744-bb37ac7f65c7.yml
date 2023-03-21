@@ -1,0 +1,18 @@
+Attack_name: System Owner/User Discovery
+Attack_description: |-
+  Adversaries may attempt to identify the primary user, currently logged in user, set of users that commonly uses a system, or whether a user is actively using the system. They may do this, for example, by retrieving account usernames or by using [OS Credential Dumping](https://attack.mitre.org/techniques/T1003). The information may be collected in a number of different ways using other Discovery techniques, because user and username details are prevalent throughout a system and include running process ownership, file/directory ownership, session information, and system logs. Adversaries may use the information from [System Owner/User Discovery](https://attack.mitre.org/techniques/T1033) during automated discovery to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or attempts specific actions.
+
+  Various utilities and commands may acquire this information, including <code>whoami</code>. In macOS and Linux, the currently logged in user can be identified with <code>w</code> and <code>who</code>. On macOS the <code>dscl . list /Users | grep -v '_'</code> command can also be used to enumerate user accounts. Environment variables, such as <code>%USERNAME%</code> and <code>$USER</code>, may also be used to access this information.
+guid: 3d257a03-eb80-41c5-b744-bb37ac7f65c7
+name: System Discovery - SocGholish whoami
+tactic:
+  - discovery
+technique:
+  - T1033
+os:
+  - windows
+description: "SocGholish performs whoami discovery commands and outputs the results to a tmp file. \nThe test will generate a filename similar to the random one generated during execution and write the\
+  \ file to AppData\\Temp.\n\nReference: https://redcanary.com/threat-detection-report/threats/socgholish/\n"
+executor: powershell
+sigma: false
+sigma_rule: []

@@ -25,4 +25,4 @@ sigma_rule:
   - id: cea72823-df4d-4567-950c-0b579eaf0846
     name: proc_creation_win_malware_script_dropper.yml
   - id: 1e33157c-53b1-41ad-bbcc-780b80b58288
-    name: proc_creation_win_susp_script_execution.yml
+    name: proc_creation_win_script_execution.yml

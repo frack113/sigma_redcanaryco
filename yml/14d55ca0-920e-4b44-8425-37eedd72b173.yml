@@ -24,4 +24,4 @@ sigma_rule:
   - id: d88d0ab2-e696-4d40-a2ed-9790064e66b3
     name: registry_set_persistence_ie.yml
   - id: 86085955-ea48-42a2-9dd3-85d4c36b167d
-    name: proc_creation_win_susp_taskkill.yml
+    name: proc_creation_win_taskkill_execution.yml

@@ -19,4 +19,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 7dc2dedd-7603-461a-bc13-15803d132355
-    name: proc_creation_win_susp_conhost.yml
+    name: proc_creation_win_conhost_susp_child_process.yml

@@ -1,0 +1,23 @@
+Attack_name: Inter-Process Communication
+Attack_description: "Adversaries may abuse inter-process communication (IPC) mechanisms for local code or command execution. IPC is typically used by processes to share data, communicate with each other,\
+  \ or synchronize execution. IPC is also commonly used to avoid situations such as deadlocks, which occurs when processes are stuck in a cyclic waiting pattern. \n\nAdversaries may abuse IPC to execute\
+  \ arbitrary code or commands. IPC mechanisms may differ depending on OS, but typically exists in a form accessible through programming languages/libraries or native interfaces such as Windows [Dynamic\
+  \ Data Exchange](https://attack.mitre.org/techniques/T1559/002) or [Component Object Model](https://attack.mitre.org/techniques/T1559/001). Linux environments support several different IPC mechanisms,\
+  \ two of which being sockets and pipes.(Citation: Linux IPC) Higher level execution mediums, such as those of [Command and Scripting Interpreter](https://attack.mitre.org/techniques/T1059)s, may also\
+  \ leverage underlying IPC mechanisms. Adversaries may also use [Remote Services](https://attack.mitre.org/techniques/T1021) such as [Distributed Component Object Model](https://attack.mitre.org/techniques/T1021/003)\
+  \ to facilitate remote IPC execution.(Citation: Fireeye Hunting COM June 2019)"
+guid: 7a48f482-246f-4aeb-9837-21c271ebf244
+name: Cobalt Strike post-exploitation pipe (4.2 and later)
+tactic:
+  - execution
+technique:
+  - T1559
+os:
+  - windows
+description: |
+  Uses the [Named Pipes Micro Emulation](https://github.com/center-for-threat-informed-defense/adversary_emulation_library/tree/master/micro_emulation_plans/src/named_pipes) executable from the Center for Threat Informed Defense to create a named pipe for inter-process communication.
+
+  The named pipe executable will pause for 30 seconds to allow the client and server to exchange a message through the pipe.
+executor: command_prompt
+sigma: false
+sigma_rule: []

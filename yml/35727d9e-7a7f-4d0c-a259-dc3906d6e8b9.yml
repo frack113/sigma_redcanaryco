@@ -18,5 +18,10 @@ os:
 description: "This test emulates Mimic ransomware's ability to enable multiple RDP sessions per user by modifying the fSingleSessionPerUser value within the Terminal Server registry key. \nSee [Mimic Ransomware\
   \ Overview] (https://www.trendmicro.com/en_us/research/23/a/new-mimic-ransomware-abuses-everything-apis-for-its-encryption-p.html)\n"
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 0d5675be-bc88-4172-86d3-1e96a4476536
+    name: proc_creation_win_reg_rdp_keys_tamper.yml
+  - id: a2863fbc-d5cb-48d5-83fb-d976d4b1743b
+    name: registry_set_terminal_server_suspicious.yml
+

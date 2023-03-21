@@ -21,6 +21,6 @@ sigma_rule:
   - id: 0afbd410-de03-4078-8491-f132303cb67d
     name: proc_creation_win_renamed_netsupport_rat.yml
   - id: 37e8d358-6408-4853-82f4-98333fca7014
-    name: proc_creation_win_susp_netsupport_rat_exec_location.yml
+    name: proc_creation_win_remote_access_tools_netsupport_susp_exec.yml
   - id: 758ff488-18d5-4cbe-8ec4-02b6285a434f
-    name: proc_creation_win_netsupport.yml
+    name: proc_creation_win_remote_access_tools_netsupport.yml

@@ -22,6 +22,6 @@ sigma_rule:
   - id: fb843269-508c-4b76-8b8d-88679db22ce7
     name: proc_creation_win_powershell_encode.yml
   - id: 52cad028-0ff0-4854-8f67-d25dfcbc78b4
-    name: proc_creation_win_html_help_spawn.yml
+    name: proc_creation_win_hh_html_help_susp_child_process.yml
   - id: 313fbb0a-a341-4682-848d-6d6f8c4fab7c
     name: posh_ps_susp_windowstyle.yml
