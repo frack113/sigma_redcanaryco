@@ -41,7 +41,7 @@ The Active Directory database NTDS.dit may be dumped by copying it from a Volume
 command_prompt
 
 # Sigma Rule
- - proc_creation_win_shadow_copies_creation.yml (id: b17ea6f7-6e90-447e-a799-e6c0a493d6ce)
+ - proc_creation_win_susp_shadow_copies_creation.yml (id: b17ea6f7-6e90-447e-a799-e6c0a493d6ce)
 
 
 

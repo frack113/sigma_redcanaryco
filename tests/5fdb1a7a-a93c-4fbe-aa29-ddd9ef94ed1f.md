@@ -37,9 +37,7 @@ Creates a root CA with certutil
 powershell
 
 # Sigma Rule
- - proc_creation_win_root_certificate_installed.yml (id: 46591fae-7a4c-46ea-aec3-dff5e6d785dc)
-
- - proc_creation_win_shell_spawn_susp_program.yml (id: 3a6586ad-127a-4d3b-a677-1e6eacdf8fde)
+ - proc_creation_win_susp_shell_spawn_susp_program.yml (id: 3a6586ad-127a-4d3b-a677-1e6eacdf8fde)
 
 
 

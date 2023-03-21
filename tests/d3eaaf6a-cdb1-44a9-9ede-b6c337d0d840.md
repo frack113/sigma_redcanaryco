@@ -58,11 +58,9 @@ powershell
 
  - posh_ps_file_and_directory_discovery.yml (id: d23f2ba5-9da0-4463-8908-8ee47f614bb9)
 
- - proc_creation_win_shell_spawn_susp_program.yml (id: 3a6586ad-127a-4d3b-a677-1e6eacdf8fde)
+ - proc_creation_win_susp_shell_spawn_susp_program.yml (id: 3a6586ad-127a-4d3b-a677-1e6eacdf8fde)
 
  - proc_creation_win_mshta_susp_execution.yml (id: cc7abbd0-762b-41e3-8a26-57ad50d2eea3)
-
- - proc_creation_win_apt_lazarus_activity_apr21.yml (id: 4a12fa47-c735-4032-a214-6fab5b120670)
 
  - proc_creation_win_apt_ta505_dropper.yml (id: 18cf6cf0-39b0-4c22-9593-e244bdc9a2d4)
 

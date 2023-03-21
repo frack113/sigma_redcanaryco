@@ -40,8 +40,6 @@ powershell
 # Sigma Rule
  - proc_creation_win_net_susp_execution.yml (id: 183e7ea8-ac4b-4c23-9aec-b3dac4e401ac)
 
- - proc_creation_win_service_stop.yml (id: eb87818d-db5d-49cc-a987-d5da331fbd90)
-
  - proc_creation_win_remote_time_discovery.yml (id: b243b280-65fe-48df-ba07-6ddea7646427)
 
  - file_event_win_shell_write_susp_directory.yml (id: 1277f594-a7d1-4f28-a2d3-73af5cbeab43)

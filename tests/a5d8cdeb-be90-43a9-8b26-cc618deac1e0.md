@@ -1,0 +1,40 @@
+
+[back](../index.md)
+
+Find sigma rule :x: 
+
+# Attack: System Services: Service Execution 
+
+Adversaries may abuse the Windows service control manager to execute malicious commands or payloads. The Windows service control manager (<code>services.exe</code>) is an interface to manage and manipulate services.(Citation: Microsoft Service Control Manager) The service control manager is accessible to users via GUI components as well as system utilities such as <code>sc.exe</code> and [Net](https://attack.mitre.org/software/S0039).
+
+[PsExec](https://attack.mitre.org/software/S0029) can also be used to execute commands or payloads via a temporary Windows service created through the service control manager API.(Citation: Russinovich Sysinternals) Tools such as [PsExec](https://attack.mitre.org/software/S0029) and <code>sc.exe</code> can accept remote servers as arguments and may be used to conduct remote execution.
+
+Adversaries may leverage these mechanisms to execute malicious content. This can be done by either executing a new or modified service. This technique is the execution used in conjunction with [Windows Service](https://attack.mitre.org/techniques/T1543/003) during service persistence or privilege escalation.
+
+# MITRE
+## Tactic
+  - execution
+
+
+## technique
+  - T1569.002
+
+
+# Test : Use RemCom to execute a command on a remote host
+## OS
+  - windows
+
+
+## Description:
+Requires having RemCom installed, path to RemCom is one of the input input_arguments
+Will start a process on a remote host.
+Upon successful execution, cmd will utilize RemCom.exe to spawn calc.exe on a remote endpoint (default:localhost).
+
+
+## Executor
+command_prompt
+
+# Sigma Rule
+
+
+[back](../index.md)

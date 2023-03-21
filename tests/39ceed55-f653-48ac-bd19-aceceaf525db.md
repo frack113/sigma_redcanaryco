@@ -58,9 +58,7 @@ powershell
 
  - proc_creation_win_mshta_susp_pattern.yml (id: e32f92d1-523e-49c3-9374-bdb13b46a3ba)
 
- - proc_creation_win_apt_lazarus_activity_apr21.yml (id: 4a12fa47-c735-4032-a214-6fab5b120670)
-
- - proc_creation_win_shell_spawn_susp_program.yml (id: 3a6586ad-127a-4d3b-a677-1e6eacdf8fde)
+ - proc_creation_win_susp_shell_spawn_susp_program.yml (id: 3a6586ad-127a-4d3b-a677-1e6eacdf8fde)
 
  - proc_creation_win_mshta_susp_execution.yml (id: cc7abbd0-762b-41e3-8a26-57ad50d2eea3)
 
