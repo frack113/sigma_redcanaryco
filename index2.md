@@ -15,6 +15,10 @@
   * T1055 [Section View Injection](tests/c6952f41-6cf0-450a-b352-2ca8dae7c178.md)
 * create_remote_thread_win_susp_targets.yml
   * T1055 [Section View Injection](tests/c6952f41-6cf0-450a-b352-2ca8dae7c178.md)
+* create_stream_hash_ads_executable.yml
+  * T1216.001 [PubPrn.vbs Signed Script Bypass](tests/9dd29a1f-1e16-4862-be83-913b10a88f6c.md)
+* create_stream_hash_creation_internet_file.yml
+  * T1216.001 [PubPrn.vbs Signed Script Bypass](tests/9dd29a1f-1e16-4862-be83-913b10a88f6c.md)
 * dns_query_win_regsvr32_network_activity.yml
   * T1218.010 [Regsvr32 remote COM scriptlet execution](tests/c9d0c4ef-8a96-4794-a75b-3d3a5e6f2a36.md)
 * dns_query_win_remote_access_software_domains.yml
@@ -550,6 +554,8 @@
   * T1016 [List Open Egress Ports](tests/4b467538-f102-491d-ace7-ed487b853bf5.md)
 * pipe_created_efspotato_namedpipe.yml
   * T1134.001 [Bad Potato](tests/9c6d799b-c111-4749-a42f-ec2f8cb51448.md)
+* pipe_created_mal_cobaltstrike.yml
+  * T1559 [Cobalt Strike Artifact Kit pipe](tests/bd13b9fc-b758-496a-b81a-397462f82c72.md)
 * pipe_created_psexec_default_pipe.yml
   * T1569.002 [Use PsExec to execute a command on a remote host](tests/873106b7-cfed-454b-8680-fa9f6400431c.md)
   * T1021.002 [Copy and Execute File with PsExec](tests/0eb03d41-79e4-4393-8e57-6344856be1cf.md)
@@ -2127,6 +2133,8 @@
   * T1119 [Recon information for export with PowerShell](tests/c3f6d794-50dd-482f-b640-0384fbb7db26.md)
 * posh_ps_susp_remove_adgroupmember.yml
   * T1531 [Remove Account From Domain Admin Group](tests/43f71395-6c37-498e-ab17-897d814a0947.md)
+* posh_ps_susp_set_alias.yml
+  * T1546 [WMI Invoke-CimMethod Start Process](tests/adae83d3-0df6-45e7-b2c3-575f91584577.md)
 * posh_ps_susp_smb_share_reco.yml
   * T1070.005 [Remove Network Share PowerShell](tests/0512d214-9512-4d22-bde7-f37e058259b3.md)
   * T1135 [Network Share Discovery PowerShell](tests/1b0814d1-bb24-402d-9615-1b20c50733fb.md)
@@ -2694,6 +2702,8 @@
   * T1105 [Printer Migration Command-Line Tool UNC share folder into a zip file](tests/49845fc1-7961-4590-a0f0-3dbcf065ae7e.md)
 * proc_creation_win_lolbin_protocolhandler_download.yml
   * T1218 [ProtocolHandler.exe Downloaded a Suspicious File](tests/db020456-125b-4c8b-a4a7-487df8afb5a2.md)
+* proc_creation_win_lolbin_pubprn.yml
+  * T1216.001 [PubPrn.vbs Signed Script Bypass](tests/9dd29a1f-1e16-4862-be83-913b10a88f6c.md)
 * proc_creation_win_lolbin_replace.yml
   * T1105 [Lolbas replace.exe use to copy file](tests/54782d65-12f0-47a5-b4c1-b70ee23de6df.md)
   * T1558.002 [Crafting Active Directory silver tickets with mimikatz](tests/385e59aa-113e-4711-84d9-f637aef01f2c.md)
@@ -2875,6 +2885,7 @@
   * T1562.004 [Open a local port through Windows Firewall to any profile](tests/9636dd6e-7599-40d2-8eee-ac16434f35ed.md)
 * proc_creation_win_netsh_fw_disable.yml
   * T1562.004 [Disable Microsoft Defender Firewall](tests/88d05800-a5e4-407e-9b53-ece4174f197f.md)
+  * T1562.004 [Blackbit - Disable Windows Firewall using netsh firewall](tests/91f348e6-3760-4997-a93b-2ceee7f254ee.md)
 * proc_creation_win_netsh_fw_enable_group_rule.yml
   * T1562.004 [Allow SMB and RDP on Microsoft Defender Firewall](tests/d9841bf8-f161-4c73-81e9-fd773a5ff8c1.md)
 * proc_creation_win_netsh_fw_rules_discovery.yml
@@ -2930,6 +2941,8 @@
   * T1123 [using device audio capture commandlet](tests/9c3ad250-b185-4444-b5a9-d69218a10c95.md)
 * proc_creation_win_powershell_base64_encoded_cmd.yml
   * T1106 [WinPwn - Get SYSTEM shell - Bind System Shell using CreateProcess technique](tests/7ec5b74e-8289-4ff2-a162-b6f286a33abd.md)
+* proc_creation_win_powershell_cmdline_convertto_securestring.yml
+  * T1546 [WMI Invoke-CimMethod Start Process](tests/adae83d3-0df6-45e7-b2c3-575f91584577.md)
 * proc_creation_win_powershell_cmdline_special_characters.yml
   * T1204.002 [Excel 4 Macro](tests/4ea1fc97-8a46-4b4e-ba48-af43d2a98052.md)
   * T1204.002 [OSTAP JS version](tests/add560ef-20d6-4011-a937-2c340f930911.md)
@@ -2940,6 +2953,8 @@
   * T1087.002 [Enumerate Linked Policies In ADSISearcher Discovery](tests/7ab0205a-34e4-4a44-9b04-e1541d1a57be.md)
   * T1207 [DCShadow (Active Directory)](tests/0f4c5eb0-98a0-4496-9c3d-656b4f2bc8f6.md)
   * T1087.002 [Enumerate Root Domain linked policies Discovery](tests/00c652e2-0750-4ca6-82ff-0204684a6fe4.md)
+* proc_creation_win_powershell_create_service.yml
+  * T1543.003 [Service Installation PowerShell](tests/491a4af6-a521-4b74-b23b-f7b3f1ee9e77.md)
 * proc_creation_win_powershell_defender_exclusion.yml
   * T1562.001 [Tamper with Windows Defender Evade Scanning -Process](tests/a123ce6a-3916-45d6-ba9c-7d4081315c27.md)
   * T1562.001 [Tamper with Windows Defender Evade Scanning -Extension](tests/315f4be6-2240-4552-b3e1-d1047f5eecea.md)
@@ -3363,6 +3378,8 @@
 * proc_creation_win_reg_enumeration_for_credentials_in_registry.yml
   * T1552.002 [Enumeration for PuTTY Credentials in Registry](tests/af197fd7-e868-448e-9bd5-05d1bcd9d9e5.md)
   * T1552.002 [Enumeration for Credentials in Registry](tests/b6ec082c-7384-46b3-a111-9a9b8b14e5e7.md)
+* proc_creation_win_reg_lsa_ppl_protection_disabled.yml
+  * T1562 [Windows Disable LSA Protection](tests/40075d5f-3a70-4c66-9125-f72bee87247d.md)
 * proc_creation_win_reg_machineguid.yml
   * T1082 [Windows MachineGUID Discovery](tests/224b4daf-db44-404e-b6b2-f4d1f0126ef8.md)
 * proc_creation_win_reg_modify_group_policy_settings.yml
@@ -3489,6 +3506,9 @@
   * T1547.014 [HKLM - re-execute 'Internet Explorer Core Fonts' StubPath payload by decreasing version number](tests/04d55cef-f283-40ba-ae2a-316bc3b5e78c.md)
   * T1547.014 [HKLM - Add atomic_test key to launch executable as part of user setup](tests/deff4586-0517-49c2-981d-bbea24d48d71.md)
   * T1547.014 [HKLM - Add malicious StubPath value to existing Active Setup Entry](tests/39e417dd-4fed-4d9c-ae3a-ba433b4d0e9a.md)
+* proc_creation_win_sc_create_service.yml
+  * T1543.003 [Service Installation CMD](tests/981e2942-e433-44e9-afc1-8c957a1496b6.md)
+  * T1543.003 [Remote Service Installation CMD](tests/fb4151a2-db33-4f8c-b7f8-78ea8790f961.md)
 * proc_creation_win_sc_query.yml
   * T1007 [System Service Discovery](tests/89676ba1-b1f8-47ee-b940-2e1a113ebc71.md)
   * T1562.001 [Tamper with Windows Defender Command Prompt](tests/aa875ed4-8935-47e2-b2c5-6ec00ab220d2.md)
@@ -3519,6 +3539,8 @@
   * T1204.002 [OSTap Payload Download](tests/3f3af983-118a-4fa1-85d3-ba4daa739d80.md)
   * T1204.002 [OSTap Style Macro Execution](tests/8bebc690-18c7-4549-bc98-210f7019efff.md)
   * T1204.002 [OSTAP JS version](tests/add560ef-20d6-4011-a937-2c340f930911.md)
+  * T1216.001 [PubPrn.vbs Signed Script Bypass](tests/9dd29a1f-1e16-4862-be83-913b10a88f6c.md)
+  * T1059.007 [JScript execution to gather local computer information via wscript](tests/0709945e-4fec-4c49-9faf-c3c292a74484.md)
   * T1547.001 [Suspicious jse file run from startup Folder](tests/dade9447-791e-4c8f-b04b-3a35855dfa06.md)
   * T1105 [OSTAP Worming Activity](tests/2ca61766-b456-4fcf-a35a-1233685e1cad.md)
 * proc_creation_win_script_wscript_shell_cli.yml
@@ -3687,6 +3709,10 @@
   * T1114.001 [Email Collection with PowerShell Get-Inbox](tests/3f1b5096-0139-4736-9b78-19bcb02bb1cb.md)
   * T1039 [Copy a sensitive File over Administive share with Powershell](tests/7762e120-5879-44ff-97f8-008b401b9a98.md)
   * T1003.001 [Dump LSASS with createdump.exe from .Net v5](tests/9d0072c8-7cca-45c4-bd14-f852cfa35cf0.md)
+* proc_creation_win_susp_service_creation.yml
+  * T1543.003 [Service Installation CMD](tests/981e2942-e433-44e9-afc1-8c957a1496b6.md)
+  * T1543.003 [Remote Service Installation CMD](tests/fb4151a2-db33-4f8c-b7f8-78ea8790f961.md)
+  * T1543.003 [Service Installation PowerShell](tests/491a4af6-a521-4b74-b23b-f7b3f1ee9e77.md)
 * proc_creation_win_susp_shadow_copies_creation.yml
   * T1003.003 [Create Volume Shadow Copy remotely with WMI](tests/d893459f-71f0-484d-9808-ec83b2b64226.md)
   * T1003.003 [Create Volume Shadow Copy with WMI](tests/224f7de0-8f0a-4a94-b5d8-989b036c86da.md)
@@ -4085,6 +4111,7 @@
 * registry_set_disable_defender_firewall.yml
   * T1562.004 [Disable Microsoft Defender Firewall](tests/88d05800-a5e4-407e-9b53-ece4174f197f.md)
   * T1562.004 [Disable Microsoft Defender Firewall via Registry](tests/afedc8c4-038c-4d82-b3e5-623a95f8a612.md)
+  * T1562.004 [Blackbit - Disable Windows Firewall using netsh firewall](tests/91f348e6-3760-4997-a93b-2ceee7f254ee.md)
 * registry_set_disable_function_user.yml
   * T1548.002 [Disable UAC admin consent prompt via ConsentPromptBehaviorAdmin registry key](tests/251c5936-569f-42f4-9ac2-87a173b9e9b8.md)
   * T1112 [Disable Windows Lock Workstation Feature](tests/3dacb0d2-46ee-4c27-ac1b-f9886bf91a56.md)
@@ -4142,6 +4169,9 @@
   * T1204.002 [Mirror Blast Emulation](tests/24fd9719-7419-42dd-bce6-ab3463110b3c.md)
 * registry_set_persistence_autodial_dll.yml
   * T1546 [Persistence with Custom AutodialDLL](tests/aca9ae16-7425-4b6d-8c30-cad306fdbd5b.md)
+* registry_set_persistence_event_viewer_events_asp.yml
+  * T1112 [Event Viewer Registry Modification - Redirection Program](tests/81483501-b8a5-4225-8b32-52128e2f69db.md)
+  * T1112 [Event Viewer Registry Modification - Redirection URL](tests/6174be7f-5153-4afd-92c5-e0c3b7cdb5ae.md)
 * registry_set_persistence_globalflags.yml
   * T1546.012 [IFEO Global Flags](tests/46b1f278-c8ee-4aa5-acce-65e77b11f3c1.md)
   * T1546.012 [GlobalFlags in Image File Execution Options](tests/13117939-c9b2-4a43-999e-0a543df92f0d.md)

@@ -723,7 +723,7 @@ Caution: a test can generate a lot of noise...
 
 [Activate Windows NoControlPanel Group Policy Feature](tests/a450e469-ba54-4de1-9deb-9023a6111690.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Event Viewer Registry Modification - Redirection Program](tests/81483501-b8a5-4225-8b32-52128e2f69db.md) ['windows'] (sigma rule :x:)
+[Event Viewer Registry Modification - Redirection Program](tests/81483501-b8a5-4225-8b32-52128e2f69db.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Modify Registry of Local Machine - cmd](tests/282f929a-6bc5-42b8-bd93-960c3ba35afe.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -777,6 +777,8 @@ Caution: a test can generate a lot of noise...
 
 [Windows Add Registry Value to Load Service in Safe Mode with Network](tests/c173c948-65e5-499c-afbe-433722ed5bd4.md) ['windows'] (sigma rule :heavy_check_mark:)
 
+[Enabling Remote Desktop Protocol via Remote Registry](tests/e3ad8e83-3089-49ff-817f-e52f8c948090.md) ['windows'] (sigma rule :x:)
+
 [Javascript in registry](tests/15f44ea9-4571-4837-be9e-802431a7bfae.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [DisallowRun Execution Of Certain Applications](tests/71db768a-5a9c-4047-b5e7-59e01f188e84.md) ['windows'] (sigma rule :heavy_check_mark:)
@@ -811,7 +813,7 @@ Caution: a test can generate a lot of noise...
 
 [Ursnif Malware Registry Key Creation](tests/c375558d-7c25-45e9-bd64-7b23a97c1db0.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Event Viewer Registry Modification - Redirection URL](tests/6174be7f-5153-4afd-92c5-e0c3b7cdb5ae.md) ['windows'] (sigma rule :x:)
+[Event Viewer Registry Modification - Redirection URL](tests/6174be7f-5153-4afd-92c5-e0c3b7cdb5ae.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Disable Windows CMD application](tests/d2561a6d-72bd-408c-b150-13efe1801c2a.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -959,7 +961,7 @@ Caution: a test can generate a lot of noise...
 
 [Disable Microsoft Defender Firewall via Registry](tests/afedc8c4-038c-4d82-b3e5-623a95f8a612.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Blackbit - Disable Windows Firewall using netsh firewall](tests/91f348e6-3760-4997-a93b-2ceee7f254ee.md) ['windows'] (sigma rule :x:)
+[Blackbit - Disable Windows Firewall using netsh firewall](tests/91f348e6-3760-4997-a93b-2ceee7f254ee.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [LockBit Black - Unusual Windows firewall registry modification -cmd](tests/a4651931-ebbb-4cde-9363-ddf3d66214cb.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1870,6 +1872,38 @@ Caution: a test can generate a lot of noise...
 [Create Hidden User using UniqueID < 500](tests/4238a7f0-a980-4fff-98a2-dfc0a363d507.md) ['macos'] (sigma rule :x:)
 
 
+### T1070.002
+[Real-time system log clearance/deletion](tests/848e43b3-4c0a-4e4c-b4c9-d1e8cea9651c.md) ['macos'] (sigma rule :x:)
+
+[Delete system log files via unlink utility](tests/03013b4b-01db-437d-909b-1fdaa5010ee8.md) ['macos'] (sigma rule :x:)
+
+[Delete system log files using OSAScript](tests/810a465f-cd4f-47bc-b43e-d2de3b033ecc.md) ['macos'] (sigma rule :x:)
+
+[Delete log files via cat utility by appending /dev/null or /dev/zero](tests/c23bdb88-928d-493e-b46d-df2906a50941.md) ['macos'] (sigma rule :x:)
+
+[Delete log files using built-in log utility](tests/653d39cd-bae7-499a-898c-9fb96b8b5cd1.md) ['macos'] (sigma rule :x:)
+
+[rm -rf](tests/989cc1b1-3642-4260-a809-54f9dd559683.md) ['macos', 'linux'] (sigma rule :x:)
+
+[Overwrite Linux Log](tests/d304b2dc-90b4-4465-a650-16ddd503f7b5.md) ['linux'] (sigma rule :x:)
+
+[Overwrite macOS system log via echo utility](tests/0208ea60-98f1-4e8c-8052-930dce8f742c.md) ['macos'] (sigma rule :x:)
+
+[Delete system log files using Applescript](tests/e62f8694-cbc7-468f-862c-b10cd07e1757.md) ['macos'] (sigma rule :x:)
+
+[Delete system log files using shred utility](tests/86f0e4d5-3ca7-45fb-829d-4eda32b232bb.md) ['macos'] (sigma rule :x:)
+
+[System log file deletion via find utility](tests/bc8eeb4a-cc3e-45ec-aa6e-41e973da2558.md) ['macos'] (sigma rule :x:)
+
+[Overwrite Linux Mail Spool](tests/1602ff76-ed7f-4c94-b550-2f727b4782d4.md) ['linux'] (sigma rule :x:)
+
+[Delete system log files using srm utility](tests/b0768a5e-0f32-4e75-ae5b-d036edcf96b6.md) ['macos'] (sigma rule :x:)
+
+[Truncate system log files via truncate utility](tests/6290f8a8-8ee9-4661-b9cf-390031bf6973.md) ['macos'] (sigma rule :x:)
+
+[Delete system journal logs via rm and journalctl utilities](tests/ca50dd85-81ff-48ca-92e1-61f119cb1dcf.md) ['linux'] (sigma rule :x:)
+
+
 ### T1003.004
 [Dumping LSA Secrets](tests/55295ab0-a703-433b-9ca4-ae13807de12f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -2187,7 +2221,7 @@ Caution: a test can generate a lot of noise...
 ### T1059.007
 [JScript execution to gather local computer information via cscript](tests/01d75adf-ca1b-4dd1-ac96-7c9550ad1035.md) ['windows'] (sigma rule :x:)
 
-[JScript execution to gather local computer information via wscript](tests/0709945e-4fec-4c49-9faf-c3c292a74484.md) ['windows'] (sigma rule :x:)
+[JScript execution to gather local computer information via wscript](tests/0709945e-4fec-4c49-9faf-c3c292a74484.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1132.001
@@ -2280,6 +2314,8 @@ Caution: a test can generate a lot of noise...
 
 ### T1027.001
 [Pad Binary to Change Hash - Linux/macOS dd](tests/ffe2346c-abd5-4b45-a713-bf5f1ebd573a.md) ['macos', 'linux'] (sigma rule :x:)
+
+[Pad Binary to Change Hash using truncate command - Linux/macOS](tests/e22a9e89-69c7-410f-a473-e6c212cd2292.md) ['macos', 'linux'] (sigma rule :x:)
 
 
 ### T1071.001
@@ -2376,14 +2412,24 @@ Caution: a test can generate a lot of noise...
 [Radmin Viewer Utility](tests/b4988cad-6ed2-434d-ace5-ea2670782129.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
+### T1562
+[Disable journal logging via sed utility](tests/12e5551c-8d5c-408e-b3e4-63f53b03379f.md) ['linux'] (sigma rule :x:)
+
+[Windows Disable LSA Protection](tests/40075d5f-3a70-4c66-9125-f72bee87247d.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Disable journal logging via systemctl utility](tests/c3a377f9-1203-4454-aa35-9d391d34768f.md) ['linux'] (sigma rule :x:)
+
+
 ### T1543.003
-[Service Installation CMD](tests/981e2942-e433-44e9-afc1-8c957a1496b6.md) ['windows'] (sigma rule :x:)
+[Service Installation CMD](tests/981e2942-e433-44e9-afc1-8c957a1496b6.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Remote Service Installation CMD](tests/fb4151a2-db33-4f8c-b7f8-78ea8790f961.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [TinyTurla backdoor service w64time](tests/ef0581fd-528e-4662-87bc-4c2affb86940.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Modify Fax service to run PowerShell](tests/ed366cde-7d12-49df-a833-671904770b9f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Service Installation PowerShell](tests/491a4af6-a521-4b74-b23b-f7b3f1ee9e77.md) ['windows'] (sigma rule :x:)
+[Service Installation PowerShell](tests/491a4af6-a521-4b74-b23b-f7b3f1ee9e77.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1547.006
@@ -2419,7 +2465,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1216.001
-[PubPrn.vbs Signed Script Bypass](tests/9dd29a1f-1e16-4862-be83-913b10a88f6c.md) ['windows'] (sigma rule :x:)
+[PubPrn.vbs Signed Script Bypass](tests/9dd29a1f-1e16-4862-be83-913b10a88f6c.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1021.003
@@ -2534,14 +2580,6 @@ Caution: a test can generate a lot of noise...
 [SyncAppvPublishingServer Signed Script PowerShell Command Execution](tests/275d963d-3f36-476c-8bef-a2a3960ee6eb.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [manage-bde.wsf Signed Script Command Execution](tests/2a8f2d3c-3dec-4262-99dd-150cb2a4d63a.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-
-### T1070.002
-[rm -rf](tests/989cc1b1-3642-4260-a809-54f9dd559683.md) ['macos', 'linux'] (sigma rule :x:)
-
-[Overwrite Linux Log](tests/d304b2dc-90b4-4465-a650-16ddd503f7b5.md) ['linux'] (sigma rule :x:)
-
-[Overwrite Linux Mail Spool](tests/1602ff76-ed7f-4c94-b550-2f727b4782d4.md) ['linux'] (sigma rule :x:)
 
 
 ### T1006
@@ -2743,7 +2781,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1559
-[Cobalt Strike Artifact Kit pipe](tests/bd13b9fc-b758-496a-b81a-397462f82c72.md) ['windows'] (sigma rule :x:)
+[Cobalt Strike Artifact Kit pipe](tests/bd13b9fc-b758-496a-b81a-397462f82c72.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Cobalt Strike Lateral Movement (psexec_psh) pipe](tests/830c8b6c-7a70-4f40-b975-8bbe74558acd.md) ['windows'] (sigma rule :x:)
 
@@ -2943,6 +2981,8 @@ Caution: a test can generate a lot of noise...
 
 [HKCU - Persistence using CommandProcessor AutoRun key (Without Elevation)](tests/36b8dbf9-59b1-4e9b-a3bb-36e80563ef01.md) ['windows'] (sigma rule :heavy_check_mark:)
 
+[WMI Invoke-CimMethod Start Process](tests/adae83d3-0df6-45e7-b2c3-575f91584577.md) ['windows'] (sigma rule :heavy_check_mark:)
+
 
 ### T1041
 [C2 Data Exfiltration](tests/d1253f6e-c29b-49dc-b466-2147a6191932.md) ['windows'] (sigma rule :heavy_check_mark:)
@@ -3014,10 +3054,6 @@ Caution: a test can generate a lot of noise...
 [AppleScript - Prompt User for Password](tests/76628574-0bc1-4646-8fe2-8f4427b47d15.md) ['macos'] (sigma rule :x:)
 
 [PowerShell - Prompt User for Password](tests/2b162bfd-0928-4d4c-9ec3-4d9f88374b52.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-
-### T1562
-[Windows Disable LSA Protection](tests/40075d5f-3a70-4c66-9125-f72bee87247d.md) ['windows'] (sigma rule :x:)
 
 
 ### T1574.009
