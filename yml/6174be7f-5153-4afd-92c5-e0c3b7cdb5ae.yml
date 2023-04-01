@@ -18,5 +18,7 @@ os:
 description: Modify event viewer registry values to alter the behavior of the online help redirection. Upon opening an event in event viewer and attempting to view the help page for the event, it will open
   the URL or execute the program defined in the redirection URL registry entry.
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: a1e11042-a74a-46e6-b07c-c4ce8ecc239b
+    name: registry_set_persistence_event_viewer_events_asp.yml

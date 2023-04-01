@@ -1,0 +1,19 @@
+Attack_name: Impair Defenses
+Attack_description: |-
+  Adversaries may maliciously modify components of a victim environment in order to hinder or disable defensive mechanisms. This not only involves impairing preventative defenses, such as firewalls and anti-virus, but also detection capabilities that defenders can use to audit activity and identify malicious behavior. This may also span both native defenses as well as supplemental capabilities installed by users and administrators.
+
+  Adversaries could also target event aggregation and analysis mechanisms, or otherwise disrupt these procedures by altering other system components.
+guid: c3a377f9-1203-4454-aa35-9d391d34768f
+name: Disable journal logging via systemctl utility
+tactic:
+  - defense-evasion
+technique:
+  - T1562
+os:
+  - linux
+description: 'The atomic test disables the journal logging using built-in systemctl utility
+
+  '
+executor: sh
+sigma: false
+sigma_rule: []

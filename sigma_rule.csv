@@ -235,7 +235,6 @@ onelogin_user_account_locked.yml;False
 default_credentials_usage.yml;False
 host_without_firewall.yml;False
 netflow_cleartext_protocols.yml;False
-lnx_auditd_alter_bash_profile.yml;False
 lnx_auditd_audio_capture.yml;False
 lnx_auditd_auditing_config_change.yml;False
 lnx_auditd_binary_padding.yml;False
@@ -266,6 +265,7 @@ lnx_auditd_ld_so_preload_mod.yml;False
 lnx_auditd_load_module_insmod.yml;False
 lnx_auditd_logging_config_change.yml;False
 lnx_auditd_masquerading_crond.yml;False
+lnx_auditd_modify_system_firewall.yml;False
 lnx_auditd_network_service_scanning.yml;False
 lnx_auditd_network_sniffing.yml;False
 lnx_auditd_omigod_scx_runasprovider_executeshellcommand.yml;False
@@ -284,6 +284,7 @@ lnx_auditd_systemd_service_creation.yml;False
 lnx_auditd_system_info_discovery.yml;False
 lnx_auditd_system_info_discovery2.yml;False
 lnx_auditd_system_shutdown_reboot.yml;False
+lnx_auditd_unix_shell_configuration_modification.yml;False
 lnx_auditd_unzip_hidden_zip_files_steganography.yml;False
 lnx_auditd_user_discovery.yml;False
 lnx_auditd_web_rce.yml;False
@@ -518,6 +519,7 @@ proxy_powershell_ua.yml;False
 proxy_pwndrop.yml;False
 proxy_raw_paste_service_access.yml;False
 proxy_susp_flash_download_loc.yml;False
+proxy_susp_ipfs_cred_harvest.yml;False
 proxy_telegram_api.yml;False
 proxy_turla_comrat.yml;False
 proxy_ua_apt.yml;False
@@ -908,8 +910,8 @@ create_remote_thread_win_susp_remote_thread_target.yml;True
 create_remote_thread_win_susp_targets.yml;True
 create_remote_thread_win_ttdinjec.yml;False
 create_remote_thread_win_winapi_in_powershell_credentials_dumping.yml;False
-create_stream_hash_ads_executable.yml;False
-create_stream_hash_creation_internet_file.yml;False
+create_stream_hash_ads_executable.yml;True
+create_stream_hash_creation_internet_file.yml;True
 create_stream_hash_file_sharing_domains_download_susp_extension.yml;False
 create_stream_hash_file_sharing_domains_download_unusual_extension.yml;False
 create_stream_hash_hacktool_download.yml;False
@@ -1131,6 +1133,7 @@ image_load_side_load_coregen.yml;False
 image_load_side_load_dbgcore_dll.yml;False
 image_load_side_load_dbghelp_dll.yml;False
 image_load_side_load_from_non_system_location.yml;False
+image_load_side_load_iviewers.yml;False
 image_load_side_load_jsschhlp.yml;False
 image_load_side_load_non_existent_dlls.yml;False
 image_load_side_load_office_dlls.yml;False
@@ -1203,7 +1206,7 @@ pipe_created_cred_dump_tools_named_pipes.yml;False
 pipe_created_diagtrack_eop_default_pipe.yml;False
 pipe_created_efspotato_namedpipe.yml;True
 pipe_created_koh_default_pipe.yml;False
-pipe_created_mal_cobaltstrike.yml;False
+pipe_created_mal_cobaltstrike.yml;True
 pipe_created_mal_cobaltstrike_re.yml;False
 pipe_created_mal_namedpipes.yml;False
 pipe_created_paexec_default_pipe.yml;False
@@ -1387,7 +1390,7 @@ posh_ps_susp_proxy_scripts.yml;False
 posh_ps_susp_recon_export.yml;True
 posh_ps_susp_remove_adgroupmember.yml;True
 posh_ps_susp_service_dacl_modification_set_service.yml;False
-posh_ps_susp_set_alias.yml;False
+posh_ps_susp_set_alias.yml;True
 posh_ps_susp_smb_share_reco.yml;True
 posh_ps_susp_ssl_keyword.yml;False
 posh_ps_susp_start_process.yml;True
@@ -1804,7 +1807,7 @@ proc_creation_win_lolbin_presentationhost_download.yml;False
 proc_creation_win_lolbin_pressaynkey.yml;False
 proc_creation_win_lolbin_printbrm.yml;True
 proc_creation_win_lolbin_protocolhandler_download.yml;True
-proc_creation_win_lolbin_pubprn.yml;False
+proc_creation_win_lolbin_pubprn.yml;True
 proc_creation_win_lolbin_rasautou_dll_execution.yml;False
 proc_creation_win_lolbin_rdrleakdiag.yml;False
 proc_creation_win_lolbin_regasm.yml;False
@@ -1979,11 +1982,11 @@ proc_creation_win_powershell_base64_mppreference.yml;False
 proc_creation_win_powershell_base64_reflective_assembly_load.yml;False
 proc_creation_win_powershell_base64_shellcode.yml;False
 proc_creation_win_powershell_base64_wmi_classes.yml;False
-proc_creation_win_powershell_cmdline_convertto_securestring.yml;False
+proc_creation_win_powershell_cmdline_convertto_securestring.yml;True
 proc_creation_win_powershell_cmdline_reversed_strings.yml;False
 proc_creation_win_powershell_cmdline_special_characters.yml;True
 proc_creation_win_powershell_computer_discovery_get_adcomputer.yml;False
-proc_creation_win_powershell_create_service.yml;False
+proc_creation_win_powershell_create_service.yml;True
 proc_creation_win_powershell_decode_gzip.yml;False
 proc_creation_win_powershell_defender_disable_feature.yml;False
 proc_creation_win_powershell_defender_exclusion.yml;True
@@ -2125,7 +2128,7 @@ proc_creation_win_reg_dumping_sensitive_hives.yml;True
 proc_creation_win_reg_enumeration_for_credentials_in_registry.yml;True
 proc_creation_win_reg_import_from_suspicious_paths.yml;False
 proc_creation_win_reg_lsa_disable_restricted_admin.yml;False
-proc_creation_win_reg_lsa_ppl_protection_disabled.yml;False
+proc_creation_win_reg_lsa_ppl_protection_disabled.yml;True
 proc_creation_win_reg_machineguid.yml;True
 proc_creation_win_reg_modify_group_policy_settings.yml;True
 proc_creation_win_reg_open_command.yml;True
@@ -2229,7 +2232,7 @@ proc_creation_win_scrcons_susp_child_process.yml;False
 proc_creation_win_script_execution.yml;True
 proc_creation_win_script_wscript_shell_cli.yml;True
 proc_creation_win_sc_change_sevice_image_path_by_non_admin.yml;False
-proc_creation_win_sc_create_service.yml;False
+proc_creation_win_sc_create_service.yml;True
 proc_creation_win_sc_disable_service.yml;False
 proc_creation_win_sc_new_kernel_driver.yml;False
 proc_creation_win_sc_query.yml;True
@@ -2331,7 +2334,7 @@ proc_creation_win_susp_remote_desktop_tunneling.yml;False
 proc_creation_win_susp_right_to_left_override.yml;False
 proc_creation_win_susp_script_exec_from_env_folder.yml;False
 proc_creation_win_susp_script_exec_from_temp.yml;True
-proc_creation_win_susp_service_creation.yml;False
+proc_creation_win_susp_service_creation.yml;True
 proc_creation_win_susp_service_dir.yml;False
 proc_creation_win_susp_service_tamper.yml;False
 proc_creation_win_susp_shadow_copies_creation.yml;True
@@ -2626,7 +2629,7 @@ registry_set_persistence_autodial_dll.yml;True
 registry_set_persistence_chm.yml;False
 registry_set_persistence_com_hijacking_susp_locations.yml;False
 registry_set_persistence_custom_protocol_handler.yml;False
-registry_set_persistence_event_viewer_events_asp.yml;False
+registry_set_persistence_event_viewer_events_asp.yml;True
 registry_set_persistence_globalflags.yml;True
 registry_set_persistence_ie.yml;True
 registry_set_persistence_ifilter.yml;False

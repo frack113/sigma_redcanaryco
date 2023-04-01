@@ -12,5 +12,9 @@ os:
   - windows
 description: "An adversary tries to modify the windows firewall configuration using the deprecated netsh firewall command (command still works).     \n"
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 57c4bf16-227f-4394-8ec7-1b745ee061c3
+    name: proc_creation_win_netsh_fw_disable.yml
+  - id: 974515da-6cc5-4c95-ae65-f97f9150ec7f
+    name: registry_set_disable_defender_firewall.yml

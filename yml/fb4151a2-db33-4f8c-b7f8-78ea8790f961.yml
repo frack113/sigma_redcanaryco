@@ -11,22 +11,22 @@ Attack_description: "Adversaries may create or modify Windows services to repeat
   \ Unit42 AcidBox June 2020)\n\nServices may be created with administrator privileges but are executed under SYSTEM privileges, so an adversary may also use a service to escalate privileges. Adversaries\
   \ may also directly start services through [Service Execution](https://attack.mitre.org/techniques/T1569/002). To make detection analysis more challenging, malicious services may also incorporate [Masquerade\
   \ Task or Service](https://attack.mitre.org/techniques/T1036/004) (ex: using a service and/or payload name related to a legitimate OS or benign software component)."
-guid: 491a4af6-a521-4b74-b23b-f7b3f1ee9e77
-name: Service Installation PowerShell
+guid: fb4151a2-db33-4f8c-b7f8-78ea8790f961
+name: Remote Service Installation CMD
 tactic:
-  - privilege-escalation
   - persistence
+  - privilege-escalation
 technique:
   - T1543.003
 os:
   - windows
 description: |
-  Installs A Local Service via PowerShell.
-  Upon successful execution, powershell will download `AtomicService.exe` from github. Powershell will then use `New-Service` and `Start-Service` to start service. Results will be displayed.
-executor: powershell
+  Download an executable from github and start it as a service on a remote endpoint
+  Upon successful execution, powershell will download `AtomicService.exe` from github. cmd.exe will spawn sc.exe which will create and start the service. Results will output via stdout.
+executor: command_prompt
 sigma: true
 sigma_rule:
+  - id: 85ff530b-261d-48c6-a441-facaa2e81e48
+    name: proc_creation_win_sc_create_service.yml
   - id: 17a1be64-8d88-40bf-b5ff-a4f7a50ebcc8
     name: proc_creation_win_susp_service_creation.yml
-  - id: c02e96b7-c63a-4c47-bd83-4a9f74afcfb2
-    name: proc_creation_win_powershell_create_service.yml

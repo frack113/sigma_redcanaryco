@@ -1,0 +1,25 @@
+Attack_name: 'Indicator Removal on Host: Clear Linux or Mac System Logs'
+Attack_description: |
+  Adversaries may clear system logs to hide evidence of an intrusion. macOS and Linux both keep track of system or user-initiated actions via system logs. The majority of native system logging is stored under the <code>/var/log/</code> directory. Subfolders in this directory categorize logs by their related functions, such as:(Citation: Linux Logs)
+
+  * <code>/var/log/messages:</code>: General and system-related messages
+  * <code>/var/log/secure</code> or <code>/var/log/auth.log</code>: Authentication logs
+  * <code>/var/log/utmp</code> or <code>/var/log/wtmp</code>: Login records
+  * <code>/var/log/kern.log</code>: Kernel logs
+  * <code>/var/log/cron.log</code>: Crond logs
+  * <code>/var/log/maillog</code>: Mail server logs
+  * <code>/var/log/httpd/</code>: Web server access and error logs
+guid: 653d39cd-bae7-499a-898c-9fb96b8b5cd1
+name: Delete log files using built-in log utility
+tactic:
+  - defense-evasion
+technique:
+  - T1070.002
+os:
+  - macos
+description: 'This test deletes main log datastore, inflight log data, time-to-live data(TTL), fault and error content
+
+  '
+executor: sh
+sigma: false
+sigma_rule: []

@@ -1,0 +1,20 @@
+Attack_name: Impair Defenses
+Attack_description: |-
+  Adversaries may maliciously modify components of a victim environment in order to hinder or disable defensive mechanisms. This not only involves impairing preventative defenses, such as firewalls and anti-virus, but also detection capabilities that defenders can use to audit activity and identify malicious behavior. This may also span both native defenses as well as supplemental capabilities installed by users and administrators.
+
+  Adversaries could also target event aggregation and analysis mechanisms, or otherwise disrupt these procedures by altering other system components.
+guid: 12e5551c-8d5c-408e-b3e4-63f53b03379f
+name: Disable journal logging via sed utility
+tactic:
+  - defense-evasion
+technique:
+  - T1562
+os:
+  - linux
+description: 'The atomic test disables the journal logging by searching and replacing the "Storage" parameter to "none" within the journald.conf file, thus any new journal entries will only be temporarily
+  available in memory and not written to disk
+
+  '
+executor: sh
+sigma: false
+sigma_rule: []

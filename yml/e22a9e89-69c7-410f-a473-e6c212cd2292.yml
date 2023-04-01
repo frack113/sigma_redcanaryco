@@ -5,8 +5,8 @@ Attack_description: "Adversaries may use binary padding to add junk data and cha
   \ end or applied to sections of malware.(Citation: Securelist Malware Tricks April 2017) Increasing the file size may decrease the effectiveness of certain tools and detection capabilities that are not\
   \ designed or configured to scan large files. This may also reduce the likelihood of being collected for analysis. Public file scanning services, such as VirusTotal, limits the maximum size of an uploaded\
   \ file to be analyzed.(Citation: VirusTotal FAQ) "
-guid: ffe2346c-abd5-4b45-a713-bf5f1ebd573a
-name: Pad Binary to Change Hash - Linux/macOS dd
+guid: e22a9e89-69c7-410f-a473-e6c212cd2292
+name: Pad Binary to Change Hash using truncate command - Linux/macOS
 tactic:
   - defense-evasion
 technique:
@@ -15,9 +15,9 @@ os:
   - macos
   - linux
 description: |
-  Uses dd to add a zero byte, high-quality random data, and low-quality random data to the binary to change the hash.
+  Uses truncate to add a byte to the binary to change the hash.
 
-  Upon successful execution, dd will modify `/tmp/evil-binary`, therefore the expected hash will change.
+  Upon successful execution, truncate will modify `/tmp/evil-binary`, therefore the expected hash will change.
 executor: sh
 sigma: false
 sigma_rule: []

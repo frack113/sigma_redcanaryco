@@ -17,5 +17,13 @@ description: 'Executes the signed PubPrn.vbs script with options to download and
 
   '
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 573df571-a223-43bc-846e-3f98da481eca
+    name: create_stream_hash_creation_internet_file.yml
+  - id: b69888d4-380c-45ce-9cf9-d9ce46e67821
+    name: create_stream_hash_ads_executable.yml
+  - id: 1fb76ab8-fa60-4b01-bddd-71e89bf555da
+    name: proc_creation_win_lolbin_pubprn.yml
+  - id: 1e33157c-53b1-41ad-bbcc-780b80b58288
+    name: proc_creation_win_script_execution.yml

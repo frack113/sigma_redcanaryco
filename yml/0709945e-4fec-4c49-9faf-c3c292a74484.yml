@@ -17,5 +17,7 @@ os:
   - windows
 description: JScript execution test, execute JScript via wscript command. When successful, system information will be shown with four message boxes.
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 1e33157c-53b1-41ad-bbcc-780b80b58288
+    name: proc_creation_win_script_execution.yml

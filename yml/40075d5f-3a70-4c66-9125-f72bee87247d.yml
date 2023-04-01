@@ -17,5 +17,7 @@ description: "The following Atomic adds a registry entry to disable LSA Protecti
   \ Lsass protection.\nhttps://learn.microsoft.com/en-us/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#how-to-disable-lsa-protection\nhttps://blog.netwrix.com/2022/01/11/understanding-lsa-protection/\n\
   https://thedfirreport.com/2022/03/21/phosphorus-automates-initial-access-using-proxyshell/  \n"
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 8c0eca51-0f88-4db2-9183-fdfb10c703f9
+    name: proc_creation_win_reg_lsa_ppl_protection_disabled.yml

@@ -24,5 +24,9 @@ description: |
   Download an executable from github and start it as a service.
   Upon successful execution, powershell will download `AtomicService.exe` from github. cmd.exe will spawn sc.exe which will create and start the service. Results will output via stdout.
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 17a1be64-8d88-40bf-b5ff-a4f7a50ebcc8
+    name: proc_creation_win_susp_service_creation.yml
+  - id: 85ff530b-261d-48c6-a441-facaa2e81e48
+    name: proc_creation_win_sc_create_service.yml
