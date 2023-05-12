@@ -64,13 +64,13 @@ powershell
 
  - win_susp_mshta_execution.yml (id: cc7abbd0-762b-41e3-8a26-57ad50d2eea3)
 
- - win_apt_ta505_dropper.yml (id: 18cf6cf0-39b0-4c22-9593-e244bdc9a2d4)
+ - win_apt_ta505_dropper.yml (id: 8a582fe2-0882-4b89-a82a-da6b2dc32937)
 
  - win_wmiprvse_spawning_process.yml (id: d21374ff-f574-44a7-9998-4a8c8bf33d7d)
 
  - file_event_win_shell_write_susp_directory.yml (id: 1277f594-a7d1-4f28-a2d3-73af5cbeab43)
 
- - sysmon_win_binary_github_com.yml (id: 635dbb88-67b3-4b41-9ea5-a3af2dd88153)
+ - sysmon_win_binary_github_com.yml (id: e0f8ab85-0ac9-423b-a73a-81b3c7b1aa97)
 
 
 

@@ -39,7 +39,7 @@ command_prompt
 
  - sysmon_rundll32_net_connections.yml (id: cdc8da7d-c303-42f8-b08c-b4ab47230263)
 
- - sysmon_win_binary_github_com.yml (id: 635dbb88-67b3-4b41-9ea5-a3af2dd88153)
+ - sysmon_win_binary_github_com.yml (id: e0f8ab85-0ac9-423b-a73a-81b3c7b1aa97)
 
 
 

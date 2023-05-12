@@ -56,30 +56,32 @@ class csvdata:
     data = [header]
 
 
-def load_sigma_yaml(path) -> sigma:
+def load_sigma_yaml(paths:list) -> sigma:
     sigma_data = sigma()
-    sigmahq_files = pathlib.Path(path).glob("**/*.yml")
 
-    for sigmahq_yml in sigmahq_files:
-        with sigmahq_yml.open("r", encoding="UTF-8") as file:
-            yml_sigma = yaml.load(file)
-            sigma_data.uuid[yml_sigma["id"]] = sigmahq_yml.name
-            sigma_data.name[sigmahq_yml.name] = yml_sigma["id"]
-            sigma_data.url[sigmahq_yml.name] = str(
-                pathlib.PurePosixPath(sigmahq_yml)
-            ).replace("../sigma", "https://github.com/SigmaHQ/sigma/tree/master")
+    for path in paths:
+        sigmahq_files = pathlib.Path(path).glob("**/*.yml")
 
-            if "tags" in yml_sigma:
-                for tag in yml_sigma["tags"]:
-                    if re.match("attack.t\d+.*", tag):
-                        mitre = tag.replace("attack.t", "T")
+        for sigmahq_yml in sigmahq_files:
+            with sigmahq_yml.open("r", encoding="UTF-8") as file:
+                yml_sigma = yaml.load(file)
+                sigma_data.uuid[yml_sigma["id"]] = sigmahq_yml.name
+                sigma_data.name[sigmahq_yml.name] = yml_sigma["id"]
+                sigma_data.url[sigmahq_yml.name] = str(
+                    pathlib.PurePosixPath(sigmahq_yml)
+                ).replace("../sigma", "https://github.com/SigmaHQ/sigma/tree/master")
 
-                        if not mitre in sigma_data.tag:
-                            sigma_data.tag[mitre] = []
+                if "tags" in yml_sigma:
+                    for tag in yml_sigma["tags"]:
+                        if re.match("attack.t\d+.*", tag):
+                            mitre = tag.replace("attack.t", "T")
 
-                        sigma_data.tag[mitre].append(sigmahq_yml.name)
+                            if not mitre in sigma_data.tag:
+                                sigma_data.tag[mitre] = []
 
-    sigma_data.use = {name: False for name in sigma_data.name.keys()}
+                            sigma_data.tag[mitre].append(sigmahq_yml.name)
+
+        sigma_data.use = {name: False for name in sigma_data.name.keys()}
 
     return sigma_data
 
@@ -109,7 +111,7 @@ def check_redcanary_yaml(path, delta):
             file.write(my_file.content.decode())
 
 
-sigma_data = load_sigma_yaml("../sigma/rules")
+sigma_data = load_sigma_yaml(["../sigma/rules","../sigma/rules-emerging-threats"])
 check_redcanary_yaml("index.yaml", 86400)
 
 full_csv = csvdata()

@@ -1,0 +1,19 @@
+Attack_name: 'Impair Defenses: Disable or Modify Tools'
+Attack_description: |-
+  Adversaries may modify and/or disable security tools to avoid possible detection of their malware/tools and activities. This may take the many forms, such as killing security software processes or services, modifying / deleting Registry keys or configuration files so that tools do not operate properly, or other methods to interfere with security tools scanning or reporting information.
+
+  Adversaries may also tamper with artifacts deployed and utilized by security tools. Security tools may make dynamic changes to system components in order to maintain visibility into specific events. For example, security products may load their own modules and/or modify those loaded by processes to facilitate data collection. Similar to [Indicator Blocking](https://attack.mitre.org/techniques/T1562/006), adversaries may unhook or otherwise modify these features added by tools (especially those that exist in userland or are otherwise potentially accessible to adversaries) to avoid detection.(Citation: OutFlank System Calls)(Citation: MDSec System Calls)
+guid: 70bd71e6-eba4-4e00-92f7-617911dbe020
+name: Disable Hypervisor-Enforced Code Integrity (HVCI)
+tactic:
+  - defense-evasion
+technique:
+  - T1562.001
+os:
+  - windows
+description: "This test disables Hypervisor-Enforced Code Integrity (HVCI) by setting the registry key HKLM:\\SYSTEM\\CurrentControlSet\\Control\\DeviceGuard\\Scenarios\\HypervisorEnforcedCodeIntegrity\
+  \ \"Enabled\" value to \"0\".\nThe pre-req needs to be ran in order to setup HVCI and have it enabled. \nWe do not recommend running this in production.\n[Black Lotus Campaign](https://www.microsoft.com/en-us/security/blog/2023/04/11/guidance-for-investigating-attacks-using-cve-2022-21894-the-blacklotus-campaign/)\n\
+  [Microsoft](https://learn.microsoft.com/en-us/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity)\n"
+executor: powershell
+sigma: false
+sigma_rule: []

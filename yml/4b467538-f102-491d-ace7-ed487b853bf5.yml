@@ -28,5 +28,5 @@ sigma_rule:
   - id: e54979bd-c5f9-4d6c-967b-a04b19ac4c74
     name: net_connection_win_susp_outbound_kerberos_connection.yml
   - id: ed74fe75-7594-4b4b-ae38-e38e3fd2eb23
-    name: net_connection_win_susp_rdp.yml
+    name: net_connection_win_rdp_outbound_over_non_standard_tools.yml
 

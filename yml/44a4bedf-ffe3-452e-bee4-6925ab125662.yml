@@ -24,5 +24,5 @@ sigma_rule:
     name: net_connection_win_msiexec.yml
   - id: f4bbd493-b796-416e-bbf2-121235348529
     name: proc_creation_win_powershell_non_interactive_execution.yml
-  - id: 635dbb88-67b3-4b41-9ea5-a3af2dd88153
-    name: net_connection_win_binary_github_com.yml
+  - id: e0f8ab85-0ac9-423b-a73a-81b3c7b1aa97
+    name: net_connection_win_binary_susp_com.yml

@@ -1,0 +1,23 @@
+Attack_name: 'Valid Accounts: Local Accounts'
+Attack_description: "Adversaries may obtain and abuse credentials of a local account as a means of gaining Initial Access, Persistence, Privilege Escalation, or Defense Evasion. Local accounts are those\
+  \ configured by an organization for use by users, remote support, services, or for administration on a single system or service.\n\nLocal Accounts may also be abused to elevate privileges and harvest\
+  \ credentials through [OS Credential Dumping](https://attack.mitre.org/techniques/T1003). Password reuse may allow the abuse of local accounts across a set of machines on a network for the purposes of\
+  \ Privilege Escalation and Lateral Movement. "
+guid: 02a91c34-8a5b-4bed-87af-501103eb5357
+name: Create local account (Linux)
+tactic:
+  - defense-evasion
+  - persistence
+  - privilege-escalation
+  - initial-access
+technique:
+  - T1078.003
+os:
+  - linux
+description: 'An adversary may wish to create an account with admin privileges to work with. In this test we create a "art" user with the password art, switch to art, execute whoami, exit and delete the
+  art user.
+
+  '
+executor: bash
+sigma: false
+sigma_rule: []

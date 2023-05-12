@@ -250,6 +250,7 @@ defense-evasion;T1484.001;command_prompt;['windows'];LockBit Black - Modify Grou
 defense-evasion;T1484.001;powershell;['windows'];LockBit Black - Modify Group policy settings -Powershell;b51eae65-5441-4789-b8e8-64783c26c1d1;True;2
 defense-evasion;T1078.001;command_prompt;['windows'];Enable Guest account with RDP capability and admin privileges;99747561-ed8d-47f2-9c91-1e5fde1ed6e0;True;1
 defense-evasion;T1078.001;command_prompt;['windows'];Activate Guest Account;aa6cb8c4-b582-4f8e-b677-37733914abda;True;2
+defense-evasion;T1078.001;command_prompt;['macos'];Enable Guest Account on macOS;0315bdff-4178-47e9-81e4-f31a6d23f7e4;False;3
 defense-evasion;T1574.006;bash;['linux'];Shared Library Injection via /etc/ld.so.preload;39cb0e67-dd0d-4b74-a74b-c072db7ae991;False;1
 defense-evasion;T1574.006;bash;['linux'];Shared Library Injection via LD_PRELOAD;bc219ff7-789f-4d51-9142-ecae3397deae;False;2
 defense-evasion;T1574.006;bash;['macos'];Dylib Injection via DYLD_INSERT_LIBRARIES;4d66029d-7355-43fd-93a4-b63ba92ea1be;False;3
@@ -285,6 +286,7 @@ defense-evasion;T1553.005;powershell;['windows'];Mount ISO image;002cca30-4778-4
 defense-evasion;T1553.005;powershell;['windows'];Mount an ISO image and run executable from the ISO;42f22b00-0242-4afc-a61b-0da05041f9cc;True;2
 defense-evasion;T1553.005;powershell;['windows'];Remove the Zone.Identifier alternate data stream;64b12afc-18b8-4d3f-9eab-7f6cae7c73f9;True;3
 defense-evasion;T1553.005;powershell;['windows'];Execute LNK file from ISO;c2587b8d-743d-4985-aa50-c83394eaeb68;True;4
+defense-evasion;T1612;sh;['containers'];Build Image On Host;2db30061-589d-409b-b125-7b473944f9b3;False;1
 defense-evasion;T1218.005;command_prompt;['windows'];Mshta executes JavaScript Scheme Fetch Remote Payload With GetObject;1483fab9-4f52-4217-a9ce-daa9d7747cae;True;1
 defense-evasion;T1218.005;command_prompt;['windows'];Mshta executes VBScript to execute malicious command;906865c3-e05f-4acc-85c4-fbc185455095;True;2
 defense-evasion;T1218.005;powershell;['windows'];Mshta Executes Remote HTML Application (HTA);c4b97eeb-5249-4455-a607-59f95485cb45;True;3
@@ -304,6 +306,11 @@ defense-evasion;T1564.002;sh;['macos'];Create Hidden User using IsHidden option;
 defense-evasion;T1564.002;command_prompt;['windows'];Create Hidden User in Registry;173126b7-afe4-45eb-8680-fa9f6400431c;True;3
 defense-evasion;T1562.003;sh;['linux', 'macos'];Disable history collection;4eafdb45-0f79-4d66-aa86-a3e2c08791f5;False;1
 defense-evasion;T1562.003;manual;['macos', 'linux'];Mac HISTCONTROL;468566d5-83e5-40c1-b338-511e1659628d;False;2
+defense-evasion;T1562.003;bash;['linux'];Clear bash history;878794f7-c511-4199-a950-8c28b3ed8e5b;False;3
+defense-evasion;T1562.003;bash;['linux'];Setting the HISTCONTROL environment variable;10ab786a-028e-4465-96f6-9e83ca6c5f24;False;4
+defense-evasion;T1562.003;bash;['linux'];Setting the HISTFILESIZE environment variable;5cafd6c1-2f43-46eb-ac47-a5301ba0a618;False;5
+defense-evasion;T1562.003;bash;['linux'];Setting the HISTFILE environment variable;b3dacb6c-a9e3-44ec-bf87-38db60c5cad1;False;6
+defense-evasion;T1562.003;bash;['linux'];Setting the HISTIGNORE environment variable;f12acddb-7502-4ce6-a146-5b62c59592f1;False;7
 defense-evasion;T1134.004;powershell;['windows'];Parent PID Spoofing using PowerShell;069258f4-2162-46e9-9a25-c9c6c56150d2;True;1
 defense-evasion;T1134.004;powershell;['windows'];Parent PID Spoofing - Spawn from Current Process;14920ebd-1d61-491a-85e0-fe98efe37f25;True;2
 defense-evasion;T1134.004;powershell;['windows'];Parent PID Spoofing - Spawn from Specified Process;cbbff285-9051-444a-9d17-c07cd2d230eb;True;3
@@ -365,6 +372,7 @@ defense-evasion;T1562.001;sh;['linux'];Suspend History;94f6a1c9-aae7-46a4-9083-2
 defense-evasion;T1562.001;sh;['linux'];Reboot Linux Host via Kernel System Request;6d6d3154-1a52-4d1a-9d51-92ab8148b32e;False;41
 defense-evasion;T1562.001;sh;['linux'];Clear Pagging Cache;f790927b-ea85-4a16-b7b2-7eb44176a510;False;42
 defense-evasion;T1562.001;sh;['linux'];Disable Memory Swap;e74e4c63-6fde-4ad2-9ee8-21c3a1733114;False;43
+defense-evasion;T1562.001;powershell;['windows'];Disable Hypervisor-Enforced Code Integrity (HVCI);70bd71e6-eba4-4e00-92f7-617911dbe020;False;44
 defense-evasion;T1055.012;powershell;['windows'];Process Hollowing using PowerShell;562427b4-39ef-4e8c-af88-463a78e70b9c;True;1
 defense-evasion;T1055.012;powershell;['windows'];RunPE via VBA;3ad4a037-1598-4136-837c-4027e4fa319b;True;2
 defense-evasion;T1027;sh;['macos', 'linux'];Decode base64 Data into Script;f45df6be-2e1e-4136-a384-8f18ab3826fb;False;1
@@ -474,6 +482,9 @@ defense-evasion;T1078.003;bash;['macos'];Enable root account using dsenableroot 
 defense-evasion;T1078.003;bash;['macos'];Add a new/existing user to the admin group using dseditgroup utility - macOS;433842ba-e796-4fd5-a14f-95d3a1970875;False;5
 defense-evasion;T1078.003;powershell;['windows'];WinPwn - Loot local Credentials - powerhell kittie;9e9fd066-453d-442f-88c1-ad7911d32912;True;6
 defense-evasion;T1078.003;powershell;['windows'];WinPwn - Loot local Credentials - Safetykatz;e9fdb899-a980-4ba4-934b-486ad22e22f4;True;7
+defense-evasion;T1078.003;bash;['linux'];Create local account (Linux);02a91c34-8a5b-4bed-87af-501103eb5357;False;8
+defense-evasion;T1078.003;bash;['linux'];Reactivate a locked/expired account (Linux);d2b95631-62d7-45a3-aaef-0972cea97931;False;9
+defense-evasion;T1078.003;bash;['linux'];Login as nobody (Linux);3d2cd093-ee05-41bd-a802-59ee5c301b85;False;10
 defense-evasion;T1127;command_prompt;['windows'];Lolbin Jsc.exe compile javascript to exe;1ec1c269-d6bd-49e7-b71b-a461f7fa7bc8;True;1
 defense-evasion;T1127;command_prompt;['windows'];Lolbin Jsc.exe compile javascript to dll;3fc9fea2-871d-414d-8ef6-02e85e322b80;True;2
 defense-evasion;T1574.012;powershell;['windows'];User scope COR_PROFILER;9d5f89dc-c3a5-4f8a-a4fc-a6ed02e7cb5a;True;1
@@ -553,6 +564,7 @@ privilege-escalation;T1484.001;command_prompt;['windows'];LockBit Black - Modify
 privilege-escalation;T1484.001;powershell;['windows'];LockBit Black - Modify Group policy settings -Powershell;b51eae65-5441-4789-b8e8-64783c26c1d1;True;2
 privilege-escalation;T1078.001;command_prompt;['windows'];Enable Guest account with RDP capability and admin privileges;99747561-ed8d-47f2-9c91-1e5fde1ed6e0;True;1
 privilege-escalation;T1078.001;command_prompt;['windows'];Activate Guest Account;aa6cb8c4-b582-4f8e-b677-37733914abda;True;2
+privilege-escalation;T1078.001;command_prompt;['macos'];Enable Guest Account on macOS;0315bdff-4178-47e9-81e4-f31a6d23f7e4;False;3
 privilege-escalation;T1547.003;powershell;['windows'];Create a new time provider;df1efab7-bc6d-4b88-8be9-91f55ae017aa;True;1
 privilege-escalation;T1547.003;powershell;['windows'];Edit an existing time provider;29e0afca-8d1d-471a-8d34-25512fc48315;True;2
 privilege-escalation;T1546.005;sh;['macos', 'linux'];Trap EXIT;a74b2e07-5952-4c03-8b56-56274b076b61;False;1
@@ -631,6 +643,7 @@ privilege-escalation;T1546.004;sh;['macos', 'linux'];Add command to .bashrc;0a89
 privilege-escalation;T1546.004;sh;['linux'];Append to the system shell profile;694b3cc8-6a78-4d35-9e74-0123d009e94b;False;3
 privilege-escalation;T1546.004;sh;['linux'];Append commands user shell profile;bbdb06bc-bab6-4f5b-8232-ba3fbed51d77;False;4
 privilege-escalation;T1546.004;sh;['linux'];System shell profile scripts;8fe2ccfd-f079-4c03-b1a9-bd9b362b67d4;False;5
+privilege-escalation;T1546.004;bash;['linux'];Create/Append to .bash_logout;37ad2f24-7c53-4a50-92da-427a4ad13f58;False;6
 privilege-escalation;T1134.005;command_prompt;['windows'];Injection SID-History with mimikatz;6bef32e5-9456-4072-8f14-35566fb85401;True;1
 privilege-escalation;T1547.002;powershell;['windows'];Authentication Package;be2590e8-4ac3-47ac-b4b5-945820f2fbe9;True;1
 privilege-escalation;T1546.015;powershell;['windows'];COM Hijacking - InprocServer32;48117158-d7be-441b-bc6a-d9e36e47b52b;True;1
@@ -669,6 +682,9 @@ privilege-escalation;T1078.003;bash;['macos'];Enable root account using dsenable
 privilege-escalation;T1078.003;bash;['macos'];Add a new/existing user to the admin group using dseditgroup utility - macOS;433842ba-e796-4fd5-a14f-95d3a1970875;False;5
 privilege-escalation;T1078.003;powershell;['windows'];WinPwn - Loot local Credentials - powerhell kittie;9e9fd066-453d-442f-88c1-ad7911d32912;True;6
 privilege-escalation;T1078.003;powershell;['windows'];WinPwn - Loot local Credentials - Safetykatz;e9fdb899-a980-4ba4-934b-486ad22e22f4;True;7
+privilege-escalation;T1078.003;bash;['linux'];Create local account (Linux);02a91c34-8a5b-4bed-87af-501103eb5357;False;8
+privilege-escalation;T1078.003;bash;['linux'];Reactivate a locked/expired account (Linux);d2b95631-62d7-45a3-aaef-0972cea97931;False;9
+privilege-escalation;T1078.003;bash;['linux'];Login as nobody (Linux);3d2cd093-ee05-41bd-a802-59ee5c301b85;False;10
 privilege-escalation;T1574.012;powershell;['windows'];User scope COR_PROFILER;9d5f89dc-c3a5-4f8a-a4fc-a6ed02e7cb5a;True;1
 privilege-escalation;T1574.012;powershell;['windows'];System Scope COR_PROFILER;f373b482-48c8-4ce4-85ed-d40c8b3f7310;True;2
 privilege-escalation;T1574.012;powershell;['windows'];Registry-free process scope COR_PROFILER;79d57242-bbef-41db-b301-9d01d9f6e817;True;3
@@ -759,6 +775,7 @@ execution;T1059.004;sh;['linux'];Command line scripts;b04ed73c-7d43-4dc8-b563-a2
 execution;T1059.004;sh;['linux'];Obfuscated command line scripts;5bec4cc8-f41e-437b-b417-33ff60acf9af;False;9
 execution;T1059.004;bash;['linux'];Change login shell;c7ac59cb-13cc-4622-81dc-6d2fee9bfac7;False;10
 execution;T1059.004;bash;['linux'];Environment variable scripts;bdaebd56-368b-4970-a523-f905ff4a8a51;False;11
+execution;T1059.004;bash;['linux'];Detecting pipe-to-shell;fca246a8-a585-4f28-a2df-6495973976a1;False;12
 execution;T1559;command_prompt;['windows'];Cobalt Strike Artifact Kit pipe;bd13b9fc-b758-496a-b81a-397462f82c72;True;1
 execution;T1559;command_prompt;['windows'];Cobalt Strike Lateral Movement (psexec_psh) pipe;830c8b6c-7a70-4f40-b975-8bbe74558acd;False;2
 execution;T1559;command_prompt;['windows'];Cobalt Strike SSH (postex_ssh) pipe;d1f72fa0-5bc2-4b4b-bd1e-43b6e8cfb2e6;False;3
@@ -838,6 +855,7 @@ persistence;T1574.008;powershell;['windows'];powerShell Persistence via hijackin
 persistence;T1505.003;command_prompt;['windows'];Web Shell Written to Disk;0a2ce662-1efa-496f-a472-2fe7b080db16;True;1
 persistence;T1078.001;command_prompt;['windows'];Enable Guest account with RDP capability and admin privileges;99747561-ed8d-47f2-9c91-1e5fde1ed6e0;True;1
 persistence;T1078.001;command_prompt;['windows'];Activate Guest Account;aa6cb8c4-b582-4f8e-b677-37733914abda;True;2
+persistence;T1078.001;command_prompt;['macos'];Enable Guest Account on macOS;0315bdff-4178-47e9-81e4-f31a6d23f7e4;False;3
 persistence;T1547.003;powershell;['windows'];Create a new time provider;df1efab7-bc6d-4b88-8be9-91f55ae017aa;True;1
 persistence;T1547.003;powershell;['windows'];Edit an existing time provider;29e0afca-8d1d-471a-8d34-25512fc48315;True;2
 persistence;T1546.005;sh;['macos', 'linux'];Trap EXIT;a74b2e07-5952-4c03-8b56-56274b076b61;False;1
@@ -922,6 +940,7 @@ persistence;T1546.004;sh;['macos', 'linux'];Add command to .bashrc;0a898315-4cfa
 persistence;T1546.004;sh;['linux'];Append to the system shell profile;694b3cc8-6a78-4d35-9e74-0123d009e94b;False;3
 persistence;T1546.004;sh;['linux'];Append commands user shell profile;bbdb06bc-bab6-4f5b-8232-ba3fbed51d77;False;4
 persistence;T1546.004;sh;['linux'];System shell profile scripts;8fe2ccfd-f079-4c03-b1a9-bd9b362b67d4;False;5
+persistence;T1546.004;bash;['linux'];Create/Append to .bash_logout;37ad2f24-7c53-4a50-92da-427a4ad13f58;False;6
 persistence;T1547.002;powershell;['windows'];Authentication Package;be2590e8-4ac3-47ac-b4b5-945820f2fbe9;True;1
 persistence;T1546.015;powershell;['windows'];COM Hijacking - InprocServer32;48117158-d7be-441b-bc6a-d9e36e47b52b;True;1
 persistence;T1546.015;powershell;['windows'];Powershell Execute COM Object;752191b1-7c71-445c-9dbe-21bb031b18eb;True;2
@@ -963,6 +982,9 @@ persistence;T1078.003;bash;['macos'];Enable root account using dsenableroot util
 persistence;T1078.003;bash;['macos'];Add a new/existing user to the admin group using dseditgroup utility - macOS;433842ba-e796-4fd5-a14f-95d3a1970875;False;5
 persistence;T1078.003;powershell;['windows'];WinPwn - Loot local Credentials - powerhell kittie;9e9fd066-453d-442f-88c1-ad7911d32912;True;6
 persistence;T1078.003;powershell;['windows'];WinPwn - Loot local Credentials - Safetykatz;e9fdb899-a980-4ba4-934b-486ad22e22f4;True;7
+persistence;T1078.003;bash;['linux'];Create local account (Linux);02a91c34-8a5b-4bed-87af-501103eb5357;False;8
+persistence;T1078.003;bash;['linux'];Reactivate a locked/expired account (Linux);d2b95631-62d7-45a3-aaef-0972cea97931;False;9
+persistence;T1078.003;bash;['linux'];Login as nobody (Linux);3d2cd093-ee05-41bd-a802-59ee5c301b85;False;10
 persistence;T1574.012;powershell;['windows'];User scope COR_PROFILER;9d5f89dc-c3a5-4f8a-a4fc-a6ed02e7cb5a;True;1
 persistence;T1574.012;powershell;['windows'];System Scope COR_PROFILER;f373b482-48c8-4ce4-85ed-d40c8b3f7310;True;2
 persistence;T1574.012;powershell;['windows'];Registry-free process scope COR_PROFILER;79d57242-bbef-41db-b301-9d01d9f6e817;True;3
@@ -1158,17 +1180,18 @@ credential-access;T1003.005;command_prompt;['windows'];Cached Credential Dump vi
 credential-access;T1558.001;powershell;['windows'];Crafting Active Directory golden tickets with mimikatz;9726592a-dabc-4d4d-81cd-44070008b3af;True;1
 credential-access;T1558.001;powershell;['windows'];Crafting Active Directory golden tickets with Rubeus;e42d33cd-205c-4acf-ab59-a9f38f6bad9c;True;2
 credential-access;T1552.003;sh;['linux', 'macos'];Search Through Bash History;3cfde62b-7c33-4b26-a61e-755d6131c8ce;False;1
-credential-access;T1552.001;bash;['macos'];Extract Browser and System credentials with LaZagne;9e507bb8-1d30-4e3b-a49b-cb5727d7ea79;False;1
-credential-access;T1552.001;sh;['macos', 'linux'];Extract passwords with grep;bd4cf0d1-7646-474e-8610-78ccf5a097c4;False;2
-credential-access;T1552.001;powershell;['windows'];Extracting passwords with findstr;0e56bf29-ff49-4ea5-9af4-3b81283fd513;True;3
-credential-access;T1552.001;command_prompt;['windows'];Access unattend.xml;367d4004-5fc0-446d-823f-960c74ae52c3;True;4
-credential-access;T1552.001;bash;['macos', 'linux'];Find and Access Github Credentials;da4f751a-020b-40d7-b9ff-d433b7799803;False;5
-credential-access;T1552.001;powershell;['windows'];WinPwn - sensitivefiles;114dd4e3-8d1c-4ea7-bb8d-8d8f6aca21f0;True;6
-credential-access;T1552.001;powershell;['windows'];WinPwn - Snaffler;fdd0c913-714b-4c13-b40f-1824d6c015f2;True;7
-credential-access;T1552.001;powershell;['windows'];WinPwn - powershellsensitive;75f66e03-37d3-4704-9520-3210efbe33ce;True;8
-credential-access;T1552.001;powershell;['windows'];WinPwn - passhunt;00e3e3c7-6c3c-455e-bd4b-461c7f0e7797;True;9
-credential-access;T1552.001;powershell;['windows'];WinPwn - SessionGopher;c9dc9de3-f961-4284-bd2d-f959c9f9fda5;True;10
-credential-access;T1552.001;powershell;['windows'];WinPwn - Loot local Credentials - AWS, Microsoft Azure, and Google Compute credentials;aaa87b0e-5232-4649-ae5c-f1724a4b2798;True;11
+credential-access;T1552.001;sh;['macos', 'linux'];Find AWS credentials;2b93758e-a8d7-4e3b-bc7b-d3aa8d7ecb17;False;1
+credential-access;T1552.001;bash;['macos'];Extract Browser and System credentials with LaZagne;9e507bb8-1d30-4e3b-a49b-cb5727d7ea79;False;2
+credential-access;T1552.001;sh;['macos', 'linux'];Extract passwords with grep;bd4cf0d1-7646-474e-8610-78ccf5a097c4;False;3
+credential-access;T1552.001;powershell;['windows'];Extracting passwords with findstr;0e56bf29-ff49-4ea5-9af4-3b81283fd513;True;4
+credential-access;T1552.001;command_prompt;['windows'];Access unattend.xml;367d4004-5fc0-446d-823f-960c74ae52c3;True;5
+credential-access;T1552.001;bash;['macos', 'linux'];Find and Access Github Credentials;da4f751a-020b-40d7-b9ff-d433b7799803;False;6
+credential-access;T1552.001;powershell;['windows'];WinPwn - sensitivefiles;114dd4e3-8d1c-4ea7-bb8d-8d8f6aca21f0;True;7
+credential-access;T1552.001;powershell;['windows'];WinPwn - Snaffler;fdd0c913-714b-4c13-b40f-1824d6c015f2;True;8
+credential-access;T1552.001;powershell;['windows'];WinPwn - powershellsensitive;75f66e03-37d3-4704-9520-3210efbe33ce;True;9
+credential-access;T1552.001;powershell;['windows'];WinPwn - passhunt;00e3e3c7-6c3c-455e-bd4b-461c7f0e7797;True;10
+credential-access;T1552.001;powershell;['windows'];WinPwn - SessionGopher;c9dc9de3-f961-4284-bd2d-f959c9f9fda5;True;11
+credential-access;T1552.001;powershell;['windows'];WinPwn - Loot local Credentials - AWS, Microsoft Azure, and Google Compute credentials;aaa87b0e-5232-4649-ae5c-f1724a4b2798;True;12
 credential-access;T1528;powershell;['iaas:azure'];Azure - Dump All Azure Key Vaults with Microburst;1b83cddb-eaa7-45aa-98a5-85fb0a8807ea;False;1
 credential-access;T1552.006;command_prompt;['windows'];GPP Passwords (findstr);870fe8fb-5e23-4f5f-b89d-dd7fe26f3b5f;True;1
 credential-access;T1552.006;powershell;['windows'];GPP Passwords (Get-GPPPassword);e9584f82-322c-474a-b831-940fd8b4455c;True;2
@@ -1363,6 +1386,7 @@ discovery;T1069.001;powershell;['windows'];Permission Groups Discovery PowerShel
 discovery;T1069.001;powershell;['windows'];SharpHound3 - LocalAdmin;e03ada14-0980-4107-aff1-7783b2b59bb1;True;4
 discovery;T1069.001;powershell;['windows'];Wmic Group Discovery;7413be50-be8e-430f-ad4d-07bf197884b2;True;5
 discovery;T1069.001;powershell;['windows'];WMIObject Group Discovery;69119e58-96db-4110-ad27-954e48f3bb13;True;6
+discovery;T1069.001;sh;['containers'];Permission Groups Discovery for Containers- Local Groups;007d7aa4-8c4d-4f55-ba6a-7c965d51219c;False;7
 discovery;T1201;bash;['linux'];Examine password complexity policy - Ubuntu;085fe567-ac84-47c7-ac4c-2688ce28265b;False;1
 discovery;T1201;bash;['linux'];Examine password complexity policy - CentOS/RHEL 7.x;78a12e65-efff-4617-bc01-88f17d71315d;False;2
 discovery;T1201;bash;['linux'];Examine password complexity policy - CentOS/RHEL 6.x;6ce12552-0adb-4f56-89ff-95ce268f6358;False;3
@@ -1418,6 +1442,7 @@ discovery;T1046;powershell;['windows'];WinPwn - spoolvulnscan;54574908-f1de-4356
 discovery;T1046;powershell;['windows'];WinPwn - MS17-10;97585b04-5be2-40e9-8c31-82157b8af2d6;True;6
 discovery;T1046;powershell;['windows'];WinPwn - bluekeep;1cca5640-32a9-46e6-b8e0-fabbe2384a73;True;7
 discovery;T1046;powershell;['windows'];WinPwn - fruit;bb037826-cbe8-4a41-93ea-b94059d6bb98;True;8
+discovery;T1046;sh;['containers'];Network Service Discovery for Containers;06eaafdb-8982-426e-8a31-d572da633caa;False;9
 discovery;T1518;command_prompt;['windows'];Find and Display Internet Explorer Browser Version;68981660-6670-47ee-a5fa-7e74806420a4;True;1
 discovery;T1518;powershell;['windows'];Applications Installed;c49978f6-bd6e-4221-ad2c-9e3e30cc1e3b;True;2
 discovery;T1518;sh;['macos'];Find and Display Safari Browser Version;103d6533-fd2a-4d08-976a-4a598565280f;False;3
@@ -1540,6 +1565,7 @@ initial-access;T1091;powershell;['windows'];USB Malware Spread Simulation;d44b72
 initial-access;T1195;command_prompt;['windows'];Octopus Scanner Malware Open Source Supply Chain;82a9f001-94c5-495e-9ed5-f530dbded5e2;True;1
 initial-access;T1078.001;command_prompt;['windows'];Enable Guest account with RDP capability and admin privileges;99747561-ed8d-47f2-9c91-1e5fde1ed6e0;True;1
 initial-access;T1078.001;command_prompt;['windows'];Activate Guest Account;aa6cb8c4-b582-4f8e-b677-37733914abda;True;2
+initial-access;T1078.001;command_prompt;['macos'];Enable Guest Account on macOS;0315bdff-4178-47e9-81e4-f31a6d23f7e4;False;3
 initial-access;T1078.004;sh;['google-workspace', 'iaas:gcp'];Creating GCP Service Account and Service Account Key;9fdd83fd-bd53-46e5-a716-9dec89c8ae8e;False;1
 initial-access;T1078.004;powershell;['iaas:azure'];Azure Persistence Automation Runbook Created or Modified;348f4d14-4bd3-4f6b-bd8a-61237f78b3ac;False;2
 initial-access;T1078.003;command_prompt;['windows'];Create local account with admin privileges;a524ce99-86de-4db6-b4f9-e08f35a47a15;True;1
@@ -1549,6 +1575,9 @@ initial-access;T1078.003;bash;['macos'];Enable root account using dsenableroot u
 initial-access;T1078.003;bash;['macos'];Add a new/existing user to the admin group using dseditgroup utility - macOS;433842ba-e796-4fd5-a14f-95d3a1970875;False;5
 initial-access;T1078.003;powershell;['windows'];WinPwn - Loot local Credentials - powerhell kittie;9e9fd066-453d-442f-88c1-ad7911d32912;True;6
 initial-access;T1078.003;powershell;['windows'];WinPwn - Loot local Credentials - Safetykatz;e9fdb899-a980-4ba4-934b-486ad22e22f4;True;7
+initial-access;T1078.003;bash;['linux'];Create local account (Linux);02a91c34-8a5b-4bed-87af-501103eb5357;False;8
+initial-access;T1078.003;bash;['linux'];Reactivate a locked/expired account (Linux);d2b95631-62d7-45a3-aaef-0972cea97931;False;9
+initial-access;T1078.003;bash;['linux'];Login as nobody (Linux);3d2cd093-ee05-41bd-a802-59ee5c301b85;False;10
 exfiltration;T1020;powershell;['windows'];IcedID Botnet HTTP PUT;9c780d3d-3a14-4278-8ee5-faaeb2ccfbe0;True;1
 exfiltration;T1048.002;command_prompt;['windows'];Exfiltrate data HTTPS using curl windows;1cdf2fb0-51b6-4fd8-96af-77020d5f1bf0;True;1
 exfiltration;T1048.002;bash;['macos', 'linux'];Exfiltrate data HTTPS using curl linux;4a4f31e2-46ea-4c26-ad89-f09ad1d5fe01;False;2

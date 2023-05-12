@@ -1,0 +1,20 @@
+Attack_name: Network Service Discovery
+Attack_description: "Adversaries may attempt to get a listing of services running on remote hosts and local network infrastructure devices, including those that may be vulnerable to remote software exploitation.\
+  \ Common methods to acquire this information include port and/or vulnerability scans using tools that are brought onto a system.(Citation: CISA AR21-126A FIVEHANDS May 2021)   \n\nWithin cloud environments,\
+  \ adversaries may attempt to discover services running on other cloud hosts. Additionally, if the cloud environment is connected to a on-premises environment, adversaries may be able to identify services\
+  \ running on non-cloud systems as well.\n\nWithin macOS environments, adversaries may use the native Bonjour application to discover services running on other macOS hosts within a network. The Bonjour\
+  \ mDNSResponder daemon automatically registers and advertises a host’s registered services on the network. For example, adversaries can use a mDNS query (such as <code>dns-sd -B _ssh._tcp .</code>) to\
+  \ find other systems broadcasting the ssh service.(Citation: apple doco bonjour description)(Citation: macOS APT Activity Bradley)"
+guid: 06eaafdb-8982-426e-8a31-d572da633caa
+name: Network Service Discovery for Containers
+tactic:
+  - discovery
+technique:
+  - T1046
+os:
+  - containers
+description: Attackers may try to obtain a list of services that are operating on remote hosts and local network infrastructure devices, in order to identify potential vulnerabilities that can be exploited
+  through remote software attacks. They typically use tools to conduct port and vulnerability scans in order to obtain this information.
+executor: sh
+sigma: false
+sigma_rule: []

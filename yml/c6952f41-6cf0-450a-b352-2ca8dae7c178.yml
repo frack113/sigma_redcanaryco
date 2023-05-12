@@ -18,7 +18,7 @@ description: "This test creates a section object in the local process followed b
 executor: powershell
 sigma: true
 sigma_rule:
-  - id: f016c716-754a-467f-a39e-63c06f773987
-    name: create_remote_thread_win_susp_remote_thread_target.yml
   - id: a1a144b7-5c9b-4853-a559-2172be8d4a03
-    name: create_remote_thread_win_susp_targets.yml
+    name: create_remote_thread_win_uncommon_target_image.yml
+  - id: a1a144b7-5c9b-4853-a559-2172be8d4a03
+    name: create_remote_thread_win_uncommon_target_image.yml

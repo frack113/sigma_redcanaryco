@@ -64,7 +64,7 @@ powershell
 
  - win_apt_lazarus_activity_apr21.yml (id: 4a12fa47-c735-4032-a214-6fab5b120670)
 
- - win_apt_ta505_dropper.yml (id: 18cf6cf0-39b0-4c22-9593-e244bdc9a2d4)
+ - win_apt_ta505_dropper.yml (id: 8a582fe2-0882-4b89-a82a-da6b2dc32937)
 
  - win_susp_mshta_pattern.yml (id: e32f92d1-523e-49c3-9374-bdb13b46a3ba)
 

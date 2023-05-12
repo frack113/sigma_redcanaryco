@@ -25,6 +25,6 @@ sigma_rule:
   - id: 9fc51a3c-81b3-4fa7-b35f-7c02cf10fd2d
     name: proc_creation_win_susp_web_request_cmd_and_cmdlets.yml
   - id: d2e3f2f6-7e09-4bf2-bc5d-90186809e7fb
-    name: posh_ps_upload.yml
+    name: posh_ps_script_with_upload_capabilities.yml
   - id: 1139d2e2-84b1-4226-b445-354492eba8ba
     name: posh_ps_web_request_cmd_and_cmdlets.yml
