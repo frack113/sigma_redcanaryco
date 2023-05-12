@@ -36,7 +36,7 @@ powershell
 
  - posh_ps_web_request_cmd_and_cmdlets.yml (id: 1139d2e2-84b1-4226-b445-354492eba8ba)
 
- - posh_ps_upload.yml (id: d2e3f2f6-7e09-4bf2-bc5d-90186809e7fb)
+ - posh_ps_script_with_upload_capabilities.yml (id: d2e3f2f6-7e09-4bf2-bc5d-90186809e7fb)
 
  - net_connection_win_powershell_network_connection.yml (id: 1f21ec3f-810d-4b0e-8045-322202e22b4b)
 

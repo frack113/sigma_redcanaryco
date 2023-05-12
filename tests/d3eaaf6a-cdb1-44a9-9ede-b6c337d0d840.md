@@ -62,7 +62,7 @@ powershell
 
  - proc_creation_win_mshta_susp_execution.yml (id: cc7abbd0-762b-41e3-8a26-57ad50d2eea3)
 
- - proc_creation_win_apt_ta505_dropper.yml (id: 18cf6cf0-39b0-4c22-9593-e244bdc9a2d4)
+ - proc_creation_win_wmiprvse_susp_child_processes.yml (id: 8a582fe2-0882-4b89-a82a-da6b2dc32937)
 
  - proc_creation_win_mshta_susp_pattern.yml (id: e32f92d1-523e-49c3-9374-bdb13b46a3ba)
 
