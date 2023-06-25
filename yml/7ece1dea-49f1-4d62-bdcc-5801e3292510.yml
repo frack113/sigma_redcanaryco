@@ -1,0 +1,20 @@
+Attack_name: Account Manipulation
+Attack_description: "Adversaries may manipulate accounts to maintain access to victim systems. Account manipulation may consist of any action that preserves adversary access to a compromised account, such\
+  \ as modifying credentials or permission groups. These actions could also include account activity designed to subvert security policies, such as performing iterative password updates to bypass password\
+  \ duration policies and preserve the life of compromised credentials. \n\nIn order to create or manipulate accounts, the adversary must already have sufficient permissions on systems or the domain. However,\
+  \ account manipulation may also lead to privilege escalation where modifications grant access to additional roles, permissions, or higher-privileged [Valid Accounts](https://attack.mitre.org/techniques/T1078)."
+guid: 7ece1dea-49f1-4d62-bdcc-5801e3292510
+name: GCP - Delete Service Account Key
+tactic:
+  - persistence
+technique:
+  - T1098
+os:
+  - iaas:gcp
+description: "This Atomic will: \n  - Create a service account\n  - Create a service account key, \n  - Store the result of retrieving a single key for that service account as a variable\n  - Pass that\
+  \ variable for deletion\n  - Delete the service account\n\nThe idea for this Atomic came from a Rule published by the Elastic team.\n\nIdentifies the deletion of an Identity and Access Management (IAM)\
+  \ service account key in Google Cloud Platform (GCP).\nEach service account is associated with two sets of public/private RSA key pairs that are used to authenticate. \nIf a key is deleted, the application\
+  \ will no longer be able to access Google Cloud resources using that key. A security best practice is to rotate your service account keys regularly.\n\nReference: https://github.com/elastic/detection-rules/blob/main/rules/integrations/gcp/impact_gcp_storage_bucket_deleted.toml\n"
+executor: sh
+sigma: false
+sigma_rule: []

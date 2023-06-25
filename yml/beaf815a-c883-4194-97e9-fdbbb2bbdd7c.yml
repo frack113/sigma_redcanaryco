@@ -1,7 +1,8 @@
 Attack_name: 'Impair Defenses: Disable or Modify System Firewall'
-Attack_description: "Adversaries may disable or modify system firewalls in order to bypass controls limiting network usage. Changes could be disabling the entire mechanism as well as adding, deleting, or\
-  \ modifying particular rules. This can be done numerous ways depending on the operating system, including via command-line, editing Windows Registry keys, and Windows Control Panel.\n\nModifying or disabling\
-  \ a system firewall may enable adversary C2 communications, lateral movement, and/or data exfiltration that would otherwise not be allowed. "
+Attack_description: |-
+  Adversaries may disable or modify system firewalls in order to bypass controls limiting network usage. Changes could be disabling the entire mechanism as well as adding, deleting, or modifying particular rules. This can be done numerous ways depending on the operating system, including via command-line, editing Windows Registry keys, and Windows Control Panel.
+
+  Modifying or disabling a system firewall may enable adversary C2 communications, lateral movement, and/or data exfiltration that would otherwise not be allowed. For example, adversaries may add a new firewall rule for a well-known protocol (such as RDP) using a non-traditional and potentially less securitized port (i.e. [Non-Standard Port](https://attack.mitre.org/techniques/T1571)).(Citation: change_rdp_port_conti)
 guid: beaf815a-c883-4194-97e9-fdbbb2bbdd7c
 name: Edit UFW firewall user.rules file
 tactic:

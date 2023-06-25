@@ -3,6 +3,8 @@ Attack_description: |-
   Adversaries may create a cloud account to maintain access to victim systems. With a sufficient level of access, such accounts may be used to establish secondary credentialed access that does not require persistent remote access tools to be deployed on the system.(Citation: Microsoft O365 Admin Roles)(Citation: Microsoft Support O365 Add Another Admin, October 2019)(Citation: AWS Create IAM User)(Citation: GCP Create Cloud Identity Users)(Citation: Microsoft Azure AD Users)
 
   Adversaries may create accounts that only have access to specific cloud services, which can reduce the chance of detection.
+
+  Once an adversary has created a cloud account, they can then manipulate that account to ensure persistence and allow access to additional resources - for example, by adding [Additional Cloud Credentials](https://attack.mitre.org/techniques/T1098/001) or assigning [Additional Cloud Roles](https://attack.mitre.org/techniques/T1098/003).
 guid: 8d1c2368-b503-40c9-9057-8e42f21c58ad
 name: AWS - Create a new IAM user
 tactic:

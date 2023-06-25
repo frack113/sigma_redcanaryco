@@ -26,4 +26,4 @@ sigma_rule:
   - id: 1fb76ab8-fa60-4b01-bddd-71e89bf555da
     name: proc_creation_win_lolbin_pubprn.yml
   - id: 1e33157c-53b1-41ad-bbcc-780b80b58288
-    name: proc_creation_win_script_execution.yml
+    name: proc_creation_win_wscript_cscript_script_exec.yml

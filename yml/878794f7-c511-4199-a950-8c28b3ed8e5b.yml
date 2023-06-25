@@ -11,7 +11,7 @@ Attack_description: "Adversaries may impair command history logging to hide comm
   \ where these logs are saved using <code>Set-PSReadLineOption -HistorySavePath {File Path}</code>. This will cause <code>ConsoleHost_history.txt</code> to stop receiving logs. Additionally, it is possible\
   \ to turn off logging to this file using the PowerShell command <code>Set-PSReadlineOption -HistorySaveStyle SaveNothing</code>.(Citation: Microsoft PowerShell Command History)(Citation: Sophos PowerShell\
   \ command audit)(Citation: Sophos PowerShell Command History Forensics)\n\nAdversaries may also leverage a [Network Device CLI](https://attack.mitre.org/techniques/T1059/008) on network devices to disable\
-  \ historical command logging."
+  \ historical command logging (e.g. <code>no logging</code>)."
 guid: 878794f7-c511-4199-a950-8c28b3ed8e5b
 name: Clear bash history
 tactic:

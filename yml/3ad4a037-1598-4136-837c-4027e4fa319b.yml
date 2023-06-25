@@ -32,8 +32,8 @@ sigma_rule:
     name: image_load_office_dotnet_clr_dll_load.yml
   - id: ff0f2b05-09db-4095-b96d-1b75ca24894a
     name: image_load_office_dotnet_assembly_dll_load.yml
-  - id: fe6e002f-f244-4278-9263-20e4b593827f
-    name: image_load_alternate_powershell_hosts_moduleload.yml
+  - id: 092bc4b9-3d1d-43b4-a6b4-8c8acd83522f
+    name: image_load_dll_system_management_automation_susp_load.yml
   - id: 092bc4b9-3d1d-43b4-a6b4-8c8acd83522f
     name: image_load_dll_system_management_automation_susp_load.yml
   - id: 90217a70-13fc-48e4-b3db-0d836c5824ac

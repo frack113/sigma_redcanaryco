@@ -1,11 +1,13 @@
 Attack_name: 'Unsecured Credentials: Private Keys'
 Attack_description: "Adversaries may search for private key certificate files on compromised systems for insecurely stored credentials. Private cryptographic keys and certificates are used for authentication,\
   \ encryption/decryption, and digital signatures.(Citation: Wikipedia Public Key Crypto) Common key and certificate file extensions include: .key, .pgp, .gpg, .ppk., .p12, .pem, .pfx, .cer, .p7b, .asc.\
-  \ \n\nAdversaries may also look in common key directories, such as <code>~/.ssh</code> for SSH keys on * nix-based systems or <code>C:&#92;Users&#92;(username)&#92;.ssh&#92;</code> on Windows. These private\
-  \ keys can be used to authenticate to [Remote Services](https://attack.mitre.org/techniques/T1021) like SSH or for use in decrypting other collected files such as email.\n\nAdversary tools have been discovered\
-  \ that search compromised systems for file extensions relating to cryptographic keys and certificates.(Citation: Kaspersky Careto)(Citation: Palo Alto Prince of Persia)\n\nSome private keys require a\
-  \ password or passphrase for operation, so an adversary may also use [Input Capture](https://attack.mitre.org/techniques/T1056) for keylogging or attempt to [Brute Force](https://attack.mitre.org/techniques/T1110)\
-  \ the passphrase off-line."
+  \ \n\nAdversaries may also look in common key directories, such as <code>~/.ssh</code> for SSH keys on * nix-based systems or <code>C:&#92;Users&#92;(username)&#92;.ssh&#92;</code> on Windows. Adversary\
+  \ tools may also search compromised systems for file extensions relating to cryptographic keys and certificates.(Citation: Kaspersky Careto)(Citation: Palo Alto Prince of Persia)\n\nWhen a device is registered\
+  \ to Azure AD, a device key and a transport key are generated and used to verify the device’s identity.(Citation: Microsoft Primary Refresh Token) An adversary with access to the device may be able to\
+  \ export the keys in order to impersonate the device.(Citation: AADInternals Azure AD Device Identities)\n\nOn network devices, private keys may be exported via [Network Device CLI](https://attack.mitre.org/techniques/T1059/008)\
+  \ commands such as `crypto pki export`.(Citation: cisco_deploy_rsa_keys) \n\nSome private keys require a password or passphrase for operation, so an adversary may also use [Input Capture](https://attack.mitre.org/techniques/T1056)\
+  \ for keylogging or attempt to [Brute Force](https://attack.mitre.org/techniques/T1110) the passphrase off-line. These private keys can be used to authenticate to [Remote Services](https://attack.mitre.org/techniques/T1021)\
+  \ like SSH or for use in decrypting other collected files such as email."
 guid: 78e95057-d429-4e66-8f82-0f060c1ac96f
 name: ADFS token signing and encryption certificates theft - Local
 tactic:
@@ -41,7 +43,7 @@ sigma_rule:
   - id: 1139d2e2-84b1-4226-b445-354492eba8ba
     name: posh_ps_web_request_cmd_and_cmdlets.yml
   - id: aa7a3fce-bef5-4311-9cc1-5f04bb8c308c
-    name: posh_ps_susp_export_pfxcertificate.yml
+    name: posh_ps_export_certificate.yml
   - id: b8af5f36-1361-4ebe-9e76-e36128d947bf
     name: posh_ps_remove_item_path.yml
   - id: 9a7afa56-4762-43eb-807d-c3dc9ffe211b

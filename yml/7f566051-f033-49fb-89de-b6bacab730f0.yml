@@ -17,6 +17,9 @@ description: |
   Methods to identify Security Software on an endpoint
 
   when sucessfully executed, powershell is going to processes related AV products if they are running.
+  Note that, depending on the privilege of current user, get-process | ?{$_.Description -like "*"} may not return the processes related to AV products of the check.
+  For instance, only with Administrator right, you can see the process description of McAffee processes. Hence, it is better to use get-process | ?{$_.ProcessName -like "*"},
+  if you know the name of those processes.
 executor: powershell
 sigma: true
 sigma_rule:

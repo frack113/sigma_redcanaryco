@@ -34,7 +34,7 @@ sigma_rule:
   - id: e0b06658-7d1d-4cd3-bf15-03467507ff7c
     name: file_event_win_net_cli_artefact.yml
   - id: fec96f39-988b-4586-b746-b93d59fd1922
-    name: file_event_win_screenconnect_artefact.yml
+    name: file_event_win_remote_access_tools_screenconnect_artefact.yml
   - id: e4a74e34-ecde-4aab-b2fb-9112dd01aed0
     name: file_event_win_csharp_compile_artefact.yml
   - id: dcaa3f04-70c3-427a-80b4-b870d73c94c4

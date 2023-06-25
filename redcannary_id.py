@@ -111,7 +111,7 @@ def check_redcanary_yaml(path, delta):
             file.write(my_file.content.decode())
 
 
-sigma_data = load_sigma_yaml(["../sigma/rules","../sigma/rules-emerging-threats"])
+sigma_data = load_sigma_yaml(["../sigma/rules","../sigma/rules-emerging-threats","../sigma/rules-threat-hunting"])
 check_redcanary_yaml("index.yaml", 86400)
 
 full_csv = csvdata()

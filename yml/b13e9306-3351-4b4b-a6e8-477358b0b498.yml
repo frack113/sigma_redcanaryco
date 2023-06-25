@@ -8,7 +8,7 @@ Attack_description: |-
   * <code>wevtutil cl application</code>
   * <code>wevtutil cl security</code>
 
-  These logs may also be cleared through other mechanisms, such as the event viewer GUI or [PowerShell](https://attack.mitre.org/techniques/T1059/001).
+  These logs may also be cleared through other mechanisms, such as the event viewer GUI or [PowerShell](https://attack.mitre.org/techniques/T1059/001). For example, adversaries may use the PowerShell command <code>Remove-EventLog -LogName Security</code> to delete the Security EventLog and after reboot, disable future logging. Note: events may still be generated and logged in the .evtx file between the time the command is run and the reboot.(Citation: disable_win_evt_logging)
 guid: b13e9306-3351-4b4b-a6e8-477358b0b498
 name: Delete System Logs Using Clear-EventLog
 tactic:

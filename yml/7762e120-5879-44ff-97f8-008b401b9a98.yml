@@ -3,7 +3,7 @@ Attack_description: Adversaries may search network shares on computers they have
   shared directory, network file server, etc.) that are accessible from the current system prior to Exfiltration. Interactive command shells may be in use, and common functionality within [cmd](https://attack.mitre.org/software/S0106)
   may be used to gather information.
 guid: 7762e120-5879-44ff-97f8-008b401b9a98
-name: Copy a sensitive File over Administive share with Powershell
+name: Copy a sensitive File over Administrative share with Powershell
 tactic:
   - collection
 technique:

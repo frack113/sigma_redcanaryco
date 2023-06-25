@@ -1,0 +1,19 @@
+Attack_name: 'Impair Defenses: Disable Cloud Logs'
+Attack_description: |-
+  An adversary may disable cloud logging capabilities and integrations to limit what data is collected on their activities and avoid detection. Cloud environments allow for collection and analysis of audit and application logs that provide insight into what activities a user does within the environment. If an adversary has sufficient permissions, they can disable logging to avoid detection of their activities.
+
+  For example, in AWS an adversary may disable CloudWatch/CloudTrail integrations prior to conducting further malicious activity.(Citation: Following the CloudTrail: Generating strong AWS security signals with Sumo Logic) In Office 365, an adversary may disable logging on mail collection activities for specific users by using the `Set-MailboxAuditBypassAssociation` cmdlet, by disabling M365 Advanced Auditing for the user, or by downgrading the user’s license from an Enterprise E5 to an Enterprise E3 license.(Citation: Dark Reading Microsoft 365 Attacks 2021)
+guid: d56152ec-01d9-42a2-877c-aac1f6ebe8e6
+name: GCP - Delete Activity Event Log
+tactic:
+  - defense-evasion
+technique:
+  - T1562.008
+os:
+  - iaas:gcp
+description: "GCP provides 4 types of Cloud Audit Logs: Admin Activity, Data Access, System Events, and Policy Denied.\nAn adversary may attempt to delete logs in order to hide their activity. However,\
+  \ Admin Activity, System Events, and Policy Deny events logs cannot be deleted. \n\nThis Atomic attempts to delete the Activity Event log. An event is generated under the method name of `google.logging.v2.LoggingServiceV2.DeleteLog`\
+  \ with a Serverity of `ERROR`.\n"
+executor: sh
+sigma: false
+sigma_rule: []

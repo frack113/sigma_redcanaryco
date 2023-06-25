@@ -3,8 +3,8 @@ Attack_description: "Adversaries may transfer tools or other files from an exter
   \ victim network through the command and control channel or through alternate protocols such as [ftp](https://attack.mitre.org/software/S0095). Once present, adversaries may also transfer/spread tools\
   \ between victim devices within a compromised environment (i.e. [Lateral Tool Transfer](https://attack.mitre.org/techniques/T1570)). \n\nFiles can also be transferred using various [Web Service](https://attack.mitre.org/techniques/T1102)s\
   \ as well as native or otherwise present tools on the victim system.(Citation: PTSecurity Cobalt Dec 2016)\n\nOn Windows, adversaries may use various utilities to download tools, such as `copy`, `finger`,\
-  \ and [PowerShell](https://attack.mitre.org/techniques/T1059/001) commands such as <code>IEX(New-Object Net.WebClient).downloadString()</code> and <code>Invoke-WebRequest</code>. On Linux and macOS systems,\
-  \ a variety of utilities also exist, such as `curl`, `scp`, `sftp`, `tftp`, `rsync`, `finger`, and `wget`.(Citation: t1105_lolbas)"
+  \ [certutil](https://attack.mitre.org/software/S0160), and [PowerShell](https://attack.mitre.org/techniques/T1059/001) commands such as <code>IEX(New-Object Net.WebClient).downloadString()</code> and\
+  \ <code>Invoke-WebRequest</code>. On Linux and macOS systems, a variety of utilities also exist, such as `curl`, `scp`, `sftp`, `tftp`, `rsync`, `finger`, and `wget`.(Citation: t1105_lolbas)"
 guid: 815bef8b-bf91-4b67-be4c-abe4c2a94ccc
 name: Download a File with Windows Defender MpCmdRun.exe
 tactic:

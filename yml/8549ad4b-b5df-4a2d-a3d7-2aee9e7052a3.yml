@@ -29,5 +29,5 @@ sigma_rule:
     name: proc_creation_win_susp_copy_system32.yml
   - id: 092bc4b9-3d1d-43b4-a6b4-8c8acd83522f
     name: image_load_dll_system_management_automation_susp_load.yml
-  - id: fe6e002f-f244-4278-9263-20e4b593827f
-    name: image_load_alternate_powershell_hosts_moduleload.yml
+  - id: 092bc4b9-3d1d-43b4-a6b4-8c8acd83522f
+    name: image_load_dll_system_management_automation_susp_load.yml

@@ -3,7 +3,7 @@ Attack_description: "Adversaries may attempt to extract credential material from
   \ SAM database is stored. The SAM is a database file that contains local accounts for the host, typically those found with the <code>net user</code> command. Enumerating the SAM database requires SYSTEM\
   \ level access.\n\nA number of tools can be used to retrieve the SAM file through in-memory techniques:\n\n* pwdumpx.exe\n* [gsecdump](https://attack.mitre.org/software/S0008)\n* [Mimikatz](https://attack.mitre.org/software/S0002)\n\
   * secretsdump.py\n\nAlternatively, the SAM can be extracted from the Registry with Reg:\n\n* <code>reg save HKLM\\sam sam</code>\n* <code>reg save HKLM\\system system</code>\n\nCreddump7 can then be used\
-  \ to process the SAM database locally to retrieve hashes.(Citation: GitHub Creddump7)\n\nNotes: \n* RID 500 account is the local, built-in administrator.\n* RID 501 is the guest account.\n* User accounts\
+  \ to process the SAM database locally to retrieve hashes.(Citation: GitHub Creddump7)\n\nNotes: \n\n* RID 500 account is the local, built-in administrator.\n* RID 501 is the guest account.\n* User accounts\
   \ start with a RID of 1,000+.\n"
 guid: eeb9751a-d598-42d3-b11c-c122d9c3f6c7
 name: dump volume shadow copy hives with certutil

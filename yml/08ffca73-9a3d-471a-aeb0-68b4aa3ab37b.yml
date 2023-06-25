@@ -19,7 +19,7 @@ description: 'Regsvr32.exe is a command-line program used to register and unregi
 executor: command_prompt
 sigma: true
 sigma_rule:
-  - id: 8e2b24c9-4add-46a0-b4bb-0057b4e6187d
-    name: proc_creation_win_regsvr32_anomalies.yml
+  - id: 089fc3d2-71e8-4763-a8a5-c97fbb0a403e
+    name: proc_creation_win_regsvr32_susp_extensions.yml
   - id: e0b06658-7d1d-4cd3-bf15-03467507ff7c
     name: file_event_win_net_cli_artefact.yml

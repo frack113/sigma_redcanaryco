@@ -1,0 +1,17 @@
+Attack_name: 'Account Discovery: Domain Account'
+Attack_description: "Adversaries may attempt to get a listing of domain accounts. This information can help adversaries determine which domain accounts exist to aid in follow-on behavior such as targeting\
+  \ specific accounts which possess particular privileges.\n\nCommands such as <code>net user /domain</code> and <code>net group /domain</code> of the [Net](https://attack.mitre.org/software/S0039) utility,\
+  \ <code>dscacheutil -q group</code>on macOS, and <code>ldapsearch</code> on Linux can list domain users and groups. [PowerShell](https://attack.mitre.org/techniques/T1059/001) cmdlets including <code>Get-ADUser</code>\
+  \ and <code>Get-ADGroupMember</code> may enumerate members of Active Directory groups.  "
+guid: 394012d9-2164-4d4f-b9e5-acf30ba933fe
+name: Suspicious LAPS Attributes Query with Get-ADComputer all properties
+tactic:
+  - discovery
+technique:
+  - T1087.002
+os:
+  - windows
+description: This test executes LDAP query using powershell command Get-ADComputer and lists all the properties including Microsoft LAPS attributes ms-mcs-AdmPwd and ms-mcs-AdmPwdExpirationTime
+executor: powershell
+sigma: false
+sigma_rule: []

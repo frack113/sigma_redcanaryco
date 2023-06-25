@@ -1,0 +1,19 @@
+Attack_name: 'Impair Defenses: Disable Cloud Logs'
+Attack_description: |-
+  An adversary may disable cloud logging capabilities and integrations to limit what data is collected on their activities and avoid detection. Cloud environments allow for collection and analysis of audit and application logs that provide insight into what activities a user does within the environment. If an adversary has sufficient permissions, they can disable logging to avoid detection of their activities.
+
+  For example, in AWS an adversary may disable CloudWatch/CloudTrail integrations prior to conducting further malicious activity.(Citation: Following the CloudTrail: Generating strong AWS security signals with Sumo Logic) In Office 365, an adversary may disable logging on mail collection activities for specific users by using the `Set-MailboxAuditBypassAssociation` cmdlet, by disabling M365 Advanced Auditing for the user, or by downgrading the user’s license from an Enterprise E5 to an Enterprise E3 license.(Citation: Dark Reading Microsoft 365 Attacks 2021)
+guid: c9a2f6fe-7197-488c-af6d-10c782121ca6
+name: Office 365 - Set Audit Bypass For a Mailbox
+tactic:
+  - defense-evasion
+technique:
+  - T1562.008
+os:
+  - office-365
+description: |
+  Use Exchange Management Shell to Mailbox auditing to bypass. It will prevent any mailbox audit logging entries being generated for the target e-mail box.
+  https://learn.microsoft.com/en-us/powershell/module/exchange/set-mailboxauditbypassassociation?view=exchange-ps
+executor: powershell
+sigma: false
+sigma_rule: []

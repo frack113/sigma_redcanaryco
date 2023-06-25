@@ -6,8 +6,8 @@ Attack_description: "Adversaries may attempt to get a listing of network connect
   \ Overview)(Citation: Google VPC Overview) Similarly, adversaries who gain access to network devices may also perform similar discovery activities to gather information about connected systems and services.\n\
   \nUtilities and commands that acquire this information include [netstat](https://attack.mitre.org/software/S0104), \"net use,\" and \"net session\" with [Net](https://attack.mitre.org/software/S0039).\
   \ In Mac and Linux, [netstat](https://attack.mitre.org/software/S0104) and <code>lsof</code> can be used to list current connections. <code>who -a</code> and <code>w</code> can be used to show which users\
-  \ are currently logged in, similar to \"net session\". Additionally, built-in features native to network devices and [Network Device CLI](https://attack.mitre.org/techniques/T1059/008) may be used.(Citation:\
-  \ US-CERT-TA18-106A)"
+  \ are currently logged in, similar to \"net session\". Additionally, built-in features native to network devices and [Network Device CLI](https://attack.mitre.org/techniques/T1059/008) may be used (e.g.\
+  \ <code>show ip sockets</code>, <code>show tcp brief</code>).(Citation: US-CERT-TA18-106A)"
 guid: '0940a971-809a-48f1-9c4d-b1d785e96ee5'
 name: System Network Connections Discovery
 tactic:

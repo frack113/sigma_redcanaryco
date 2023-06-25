@@ -1,0 +1,19 @@
+Attack_name: 'Permission Groups Discovery: Domain Groups'
+Attack_description: |-
+  Adversaries may attempt to find domain-level groups and permission settings. The knowledge of domain-level permission groups can help adversaries determine which groups exist and which users belong to a particular group. Adversaries may use this information to determine which users have elevated permissions, such as domain administrators.
+
+  Commands such as <code>net group /domain</code> of the [Net](https://attack.mitre.org/software/S0039) utility,  <code>dscacheutil -q group</code> on macOS, and <code>ldapsearch</code> on Linux can list domain-level groups.
+guid: 22cf8cb9-adb1-4e8c-80ca-7c723dfc8784
+name: Active Directory Enumeration with LDIFDE
+tactic:
+  - discovery
+technique:
+  - T1069.002
+os:
+  - windows
+description: |
+  Output information from Active Directory to a specified file. [Ldifde](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc731033(v=ws.11)) is a CLI tool for creating, modifying and deleting directory objects.
+  The test is derived from the CISA Report on Voly Typhoon. Reference: https://media.defense.gov/2023/May/24/2003229517/-1/-1/0/CSA_Living_off_the_Land.PDF
+executor: command_prompt
+sigma: false
+sigma_rule: []

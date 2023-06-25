@@ -17,5 +17,5 @@ description: 'Execute arbitrary DLL file stored locally.
 executor: command_prompt
 sigma: true
 sigma_rule:
-  - id: 65d2be45-8600-4042-b4c0-577a1ff8a60e
-    name: proc_creation_win_odbcconf_susp_exec.yml
+  - id: 5f03babb-12db-4eec-8c82-7b4cb5580868
+    name: proc_creation_win_odbcconf_response_file.yml
