@@ -1,0 +1,19 @@
+Attack_name: 'Account Discovery: Domain Account'
+Attack_description: "Adversaries may attempt to get a listing of domain accounts. This information can help adversaries determine which domain accounts exist to aid in follow-on behavior such as targeting\
+  \ specific accounts which possess particular privileges.\n\nCommands such as <code>net user /domain</code> and <code>net group /domain</code> of the [Net](https://attack.mitre.org/software/S0039) utility,\
+  \ <code>dscacheutil -q group</code>on macOS, and <code>ldapsearch</code> on Linux can list domain users and groups. [PowerShell](https://attack.mitre.org/techniques/T1059/001) cmdlets including <code>Get-ADUser</code>\
+  \ and <code>Get-ADGroupMember</code> may enumerate members of Active Directory groups.  "
+guid: '096b6d2a-b63f-4100-8fa0-525da4cd25ca'
+name: Active Directory Domain Search
+tactic:
+  - discovery
+technique:
+  - T1087.002
+os:
+  - linux
+description: 'Output information from LDAPSearch. LDAP Password is the admin-user password on Active Directory
+
+  '
+executor: sh
+sigma: false
+sigma_rule: []

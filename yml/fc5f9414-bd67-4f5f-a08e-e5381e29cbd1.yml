@@ -16,5 +16,13 @@ description: |
   If the password is succesfully changed to the new password, the credential file will be updated to reflect the new password.  You can then run the atomic manually and specify a new password of your choosing, however the
   password policy will likely prevent you from setting the password back to what it was.
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 74403157-20f5-415d-89a7-c505779585cf
+    name: proc_creation_win_powershell_cmdline_convertto_securestring.yml
+  - id: eca91c7c-9214-47b9-b4c5-cb1d7e4f2350
+    name: win_security_susp_outbound_kerberos_connection.yml
+  - id: b8af5f36-1361-4ebe-9e76-e36128d947bf
+    name: posh_ps_remove_item_path.yml
+  - id: 4096a49c-7de4-4da0-a230-c66ccd56ea5a
+    name: posh_ps_susp_get_current_user.yml

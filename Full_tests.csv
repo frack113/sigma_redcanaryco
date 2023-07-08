@@ -66,6 +66,7 @@ defense-evasion;T1564;command_prompt;['windows'];"Create a Hidden User Called ""
 defense-evasion;T1564;powershell;['windows'];"Create an ""Administrator "" user (with a space on the end)";5bb20389-39a5-4e99-9264-aeb92a55a85c;True;3
 defense-evasion;T1564;command_prompt;['windows'];Create and Hide a Service with sc.exe;333c7de0-6fbe-42aa-ac2b-c7e40b18246a;True;4
 defense-evasion;T1484.002;powershell;['azure-ad'];Add Federation to Azure AD;8906c5d0-3ee5-4f63-897a-f6cafd3fdbb7;False;1
+defense-evasion;T1562.009;command_prompt;['windows'];Safe Mode Boot;2a78362e-b79a-4482-8e24-be397bce4d85;False;1
 defense-evasion;T1497.001;sh;['linux'];Detect Virtualization Environment (Linux);dfbd1a21-540d-4574-9731-e852bd6fe840;False;1
 defense-evasion;T1497.001;powershell;['windows'];Detect Virtualization Environment (Windows);502a7dc4-9d6f-4d28-abf2-f0e84692562d;True;2
 defense-evasion;T1497.001;sh;['macos'];Detect Virtualization Environment (MacOS);a960185f-aef6-4547-8350-d1ce16680d09;False;3
@@ -138,7 +139,7 @@ defense-evasion;T1140;bash;['linux', 'macos'];XOR decoding and command execution
 defense-evasion;T1562;command_prompt;['windows'];Windows Disable LSA Protection;40075d5f-3a70-4c66-9125-f72bee87247d;True;1
 defense-evasion;T1562;sh;['linux'];Disable journal logging via systemctl utility;c3a377f9-1203-4454-aa35-9d391d34768f;False;2
 defense-evasion;T1562;sh;['linux'];Disable journal logging via sed utility;12e5551c-8d5c-408e-b3e4-63f53b03379f;False;3
-defense-evasion;T1055.003;powershell;['windows'];Thread Execution Hijacking;578025d5-faa9-4f6d-8390-aae527d503e1;False;1
+defense-evasion;T1055.003;powershell;['windows'];Thread Execution Hijacking;578025d5-faa9-4f6d-8390-aae527d503e1;True;1
 defense-evasion;T1036;powershell;['windows'];System File Copied to Unusual Location;51005ac7-52e2-45e0-bdab-d17c6d4916cd;True;1
 defense-evasion;T1036;powershell;['windows'];Malware Masquerading and Execution from Zip File;4449c89b-ec82-43a4-89c1-91e2f1abeecc;True;2
 defense-evasion;T1070.008;powershell;['windows'];Copy and Delete Mailbox Data on Windows;d29f01ea-ac72-4efc-8a15-bea64b77fabf;False;1
@@ -389,6 +390,7 @@ defense-evasion;T1562.001;sh;['linux'];Reboot Linux Host via Kernel System Reque
 defense-evasion;T1562.001;sh;['linux'];Clear Pagging Cache;f790927b-ea85-4a16-b7b2-7eb44176a510;False;41
 defense-evasion;T1562.001;sh;['linux'];Disable Memory Swap;e74e4c63-6fde-4ad2-9ee8-21c3a1733114;False;42
 defense-evasion;T1562.001;powershell;['windows'];Disable Hypervisor-Enforced Code Integrity (HVCI);70bd71e6-eba4-4e00-92f7-617911dbe020;False;43
+defense-evasion;T1562.001;command_prompt;['windows'];AMSI Bypass - Override AMSI via COM;17538258-5699-4ff1-92d1-5ac9b0dc21f5;False;44
 defense-evasion;T1055.012;powershell;['windows'];Process Hollowing using PowerShell;562427b4-39ef-4e8c-af88-463a78e70b9c;True;1
 defense-evasion;T1055.012;powershell;['windows'];RunPE via VBA;3ad4a037-1598-4136-837c-4027e4fa319b;True;2
 defense-evasion;T1027;sh;['macos', 'linux'];Decode base64 Data into Script;f45df6be-2e1e-4136-a384-8f18ab3826fb;False;1
@@ -565,7 +567,7 @@ privilege-escalation;T1053.003;bash;['macos', 'linux'];Cron - Replace crontab wi
 privilege-escalation;T1053.003;bash;['macos', 'linux'];Cron - Add script to all cron subfolders;b7d42afa-9086-4c8a-b7b0-8ea3faa6ebb0;False;2
 privilege-escalation;T1053.003;bash;['linux'];Cron - Add script to /var/spool/cron/crontabs/ folder;2d943c18-e74a-44bf-936f-25ade6cccab4;False;3
 privilege-escalation;T1574.001;command_prompt;['windows'];DLL Search Order Hijacking - amsi.dll;8549ad4b-b5df-4a2d-a3d7-2aee9e7052a3;True;1
-privilege-escalation;T1055.003;powershell;['windows'];Thread Execution Hijacking;578025d5-faa9-4f6d-8390-aae527d503e1;False;1
+privilege-escalation;T1055.003;powershell;['windows'];Thread Execution Hijacking;578025d5-faa9-4f6d-8390-aae527d503e1;True;1
 privilege-escalation;T1546.011;command_prompt;['windows'];Application Shim Installation;9ab27e22-ee62-4211-962b-d36d9a0e6a18;True;1
 privilege-escalation;T1546.011;powershell;['windows'];New shim database files created in the default shim database directory;aefd6866-d753-431f-a7a4-215ca7e3f13d;True;2
 privilege-escalation;T1546.011;powershell;['windows'];Registry key creation and/or modification events for SDB;9b6a06f9-ab5e-4e8d-8289-1df4289db02f;True;3
@@ -912,6 +914,8 @@ persistence;T1546.008;command_prompt;['windows'];Create Symbolic Link From osk.e
 persistence;T1136.002;command_prompt;['windows'];Create a new Windows domain admin user;fcec2963-9951-4173-9bfa-98d8b7834e62;True;1
 persistence;T1136.002;command_prompt;['windows'];Create a new account similar to ANONYMOUS LOGON;dc7726d2-8ccb-4cc6-af22-0d5afb53a548;True;2
 persistence;T1136.002;powershell;['windows'];Create a new Domain Account using PowerShell;5a3497a4-1568-4663-b12a-d4a5ed70c7d7;True;3
+persistence;T1136.002;sh;['linux'];Active Directory Create Admin Account;562aa072-524e-459a-ba2b-91f1afccf5ab;False;4
+persistence;T1136.002;sh;['linux'];Active Directory Create User Account (Non-elevated);8c992cb3-a46e-4fd5-b005-b1bab185af31;False;5
 persistence;T1546.009;powershell;['windows'];Create registry persistence via AppCert DLL;a5ad6104-5bab-4c43-b295-b4c44c7c6b05;True;1
 persistence;T1547.015;powershell;['windows'];Persistence by modifying Windows Terminal profile;ec5d76ef-82fe-48da-b931-bdb25a62bc65;False;1
 persistence;T1547.015;bash;['macos'];Add macOS LoginItem using Applescript;716e756a-607b-41f3-8204-b214baf37c1d;False;2
@@ -952,7 +956,7 @@ persistence;T1098;powershell;['iaas:azure'];Azure - adding user to Azure role in
 persistence;T1098;powershell;['iaas:azure'];Azure - adding service principal to Azure role in subscription;c8f4bc29-a151-48da-b3be-4680af56f404;False;7
 persistence;T1098;powershell;['azure-ad'];Azure AD - adding permission to application;94ea9cc3-81f9-4111-8dde-3fb54f36af4b;False;8
 persistence;T1098;command_prompt;['windows'];Password Change on Directory Service Restore Mode (DSRM) Account;d5b886d9-d1c7-4b6e-a7b0-460041bf2823;True;9
-persistence;T1098;powershell;['windows'];Domain Password Policy Check: Short Password;fc5f9414-bd67-4f5f-a08e-e5381e29cbd1;False;10
+persistence;T1098;powershell;['windows'];Domain Password Policy Check: Short Password;fc5f9414-bd67-4f5f-a08e-e5381e29cbd1;True;10
 persistence;T1098;powershell;['windows'];Domain Password Policy Check: No Number in Password;68190529-069b-4ffc-a942-919704158065;False;11
 persistence;T1098;powershell;['windows'];Domain Password Policy Check: No Special Character in Password;7d984ef2-2db2-4cec-b090-e637e1698f61;False;12
 persistence;T1098;powershell;['windows'];Domain Password Policy Check: No Uppercase Character in Password;b299c120-44a7-4d68-b8e2-8ba5a28511ec;False;13
@@ -1189,6 +1193,7 @@ credential-access;T1003;powershell;['windows'];Retrieve Microsoft IIS Service Ac
 credential-access;T1003;powershell;['windows'];Dump Credential Manager using keymgr.dll and rundll32.exe;84113186-ed3c-4d0d-8a3c-8980c86c1f4a;True;6
 credential-access;T1539;powershell;['windows'];Steal Firefox Cookies (Windows);4b437357-f4e9-4c84-9fa6-9bcee6f826aa;True;1
 credential-access;T1539;powershell;['windows'];Steal Chrome Cookies (Windows);26a6b840-4943-4965-8df5-ef1f9a282440;True;2
+credential-access;T1539;bash;['macos'];Steal Chrome Cookies via Remote Debugging (Mac);e43cfdaf-3fb8-4a45-8de0-7eee8741d072;False;3
 credential-access;T1003.002;command_prompt;['windows'];Registry dump of SAM, creds, and secrets;5c2571d0-1572-416d-9676-812e64ca9f44;True;1
 credential-access;T1003.002;command_prompt;['windows'];Registry parse with pypykatz;a96872b2-cbf3-46cf-8eb4-27e8c0e85263;True;2
 credential-access;T1003.002;command_prompt;['windows'];esentutl.exe SAM copy;a90c2f4d-6726-444e-99d2-a00cd7c20480;True;3
@@ -1341,7 +1346,7 @@ discovery;T1033;sh;['linux', 'macos'];System Owner/User Discovery;2a9b677d-a230-
 discovery;T1033;powershell;['windows'];Find computers where user has session - Stealth mode (PowerView);29857f27-a36f-4f7e-8084-4557cd6207ca;True;3
 discovery;T1033;powershell;['windows'];User Discovery With Env Vars PowerShell Script;dcb6cdee-1fb0-4087-8bf8-88cfd136ba51;True;4
 discovery;T1033;powershell;['windows'];GetCurrent User with PowerShell Script;1392bd0f-5d5a-429e-81d9-eb9d4d4d5b3b;True;5
-discovery;T1033;powershell;['windows'];System Discovery - SocGholish whoami;3d257a03-eb80-41c5-b744-bb37ac7f65c7;False;6
+discovery;T1033;powershell;['windows'];System Discovery - SocGholish whoami;3d257a03-eb80-41c5-b744-bb37ac7f65c7;True;6
 discovery;T1613;sh;['containers'];Container and ResourceDiscovery;8a895923-f99f-4668-acf2-6cc59a44f05e;False;1
 discovery;T1615;command_prompt;['windows'];Display group policy information via gpresult;0976990f-53b1-4d3f-a185-6df5be429d3b;True;1
 discovery;T1615;powershell;['windows'];Get-DomainGPO to display group policy information via PowerView;4e524c4e-0e02-49aa-8df5-93f3f7959b9f;True;2
@@ -1370,6 +1375,7 @@ discovery;T1087.002;powershell;['windows'];Suspicious LAPS Attributes Query with
 discovery;T1087.002;powershell;['windows'];Suspicious LAPS Attributes Query with Get-ADComputer all properties and SearchScope;ffbcfd62-15d6-4989-a21a-80bfc8e58bb5;False;20
 discovery;T1087.002;powershell;['windows'];Suspicious LAPS Attributes Query with adfind all properties;abf00f6c-9983-4d9a-afbc-6b1c6c6448e1;False;21
 discovery;T1087.002;powershell;['windows'];Suspicious LAPS Attributes Query with adfind ms-Mcs-AdmPwd;51a98f96-0269-4e09-a10f-e307779a8b05;False;22
+discovery;T1087.002;sh;['linux'];Active Directory Domain Search;096b6d2a-b63f-4100-8fa0-525da4cd25ca;False;23
 discovery;T1087.001;sh;['linux'];Enumerate all accounts (Local);f8aab3dd-5990-4bf8-b8ab-2226c951696f;False;1
 discovery;T1087.001;sh;['linux', 'macos'];View sudoers access;fed9be70-0186-4bde-9f8a-20945f9370c2;False;2
 discovery;T1087.001;sh;['linux', 'macos'];View accounts with UID 0;c955a599-3653-4fe5-b631-f11c00eb0397;False;3
@@ -1397,7 +1403,8 @@ discovery;T1069.002;powershell;['windows'];Enumerate Active Directory Groups wit
 discovery;T1069.002;powershell;['windows'];Get-ADUser Enumeration using UserAccountControl flags (AS-REP Roasting);43fa81fb-34bb-4b5f-867b-03c7dbe0e3d8;True;11
 discovery;T1069.002;powershell;['windows'];Get-DomainGroupMember with PowerView;46352f40-f283-4fe5-b56d-d9a71750e145;True;12
 discovery;T1069.002;powershell;['windows'];Get-DomainGroup with PowerView;5a8a181c-2c8e-478d-a943-549305a01230;True;13
-discovery;T1069.002;command_prompt;['windows'];Active Directory Enumeration with LDIFDE;22cf8cb9-adb1-4e8c-80ca-7c723dfc8784;False;14
+discovery;T1069.002;command_prompt;['windows'];Active Directory Enumeration with LDIFDE;22cf8cb9-adb1-4e8c-80ca-7c723dfc8784;True;14
+discovery;T1069.002;sh;['linux'];Active Directory Domain Search Using LDAP - Linux (Ubuntu)/macOS;d58d749c-4450-4975-a9e9-8b1d562755c2;False;15
 discovery;T1007;command_prompt;['windows'];System Service Discovery;89676ba1-b1f8-47ee-b940-2e1a113ebc71;True;1
 discovery;T1007;command_prompt;['windows'];System Service Discovery - net.exe;5f864a3f-8ce9-45c0-812c-bdf7d8aeacc3;True;2
 discovery;T1007;bash;['linux'];System Service Discovery - systemctl;f4b26bce-4c2c-46c0-bcc5-fce062d38bef;False;3
@@ -1432,7 +1439,7 @@ discovery;T1082;bash;['linux'];Linux VM Check via Kernel Modules;8057d484-0fae-4
 discovery;T1082;command_prompt;['windows'];Hostname Discovery (Windows);85cfbf23-4a1e-4342-8792-007e004b975f;True;6
 discovery;T1082;bash;['linux', 'macos'];Hostname Discovery;486e88ea-4f56-470f-9b57-3f4d73f39133;False;7
 discovery;T1082;command_prompt;['windows'];Windows MachineGUID Discovery;224b4daf-db44-404e-b6b2-f4d1f0126ef8;True;8
-discovery;T1082;powershell;['windows'];Griffon Recon;69bd4abe-8759-49a6-8d21-0f15822d6370;False;9
+discovery;T1082;powershell;['windows'];Griffon Recon;69bd4abe-8759-49a6-8d21-0f15822d6370;True;9
 discovery;T1082;command_prompt;['windows'];Environment variables discovery on windows;f400d1c0-1804-4ff8-b069-ef5ddd2adbf3;False;10
 discovery;T1082;sh;['macos', 'linux'];Environment variables discovery on macos and linux;fcbdd43f-f4ad-42d5-98f3-0218097e2720;False;11
 discovery;T1082;sh;['macos'];Show System Integrity Protection status (MacOS);327cc050-9e99-4c8e-99b5-1d15f2fb6b96;False;12
@@ -1449,6 +1456,7 @@ discovery;T1082;powershell;['windows'];WinPwn - PowerSharpPack - Seatbelt;5c16ce
 discovery;T1082;powershell;['azure-ad'];Azure Security Scan with SkyArk;26a18d3d-f8bc-486b-9a33-d6df5d78a594;False;23
 discovery;T1082;sh;['linux'];Linux List Kernel Modules;034fe21c-3186-49dd-8d5d-128b35f181c7;False;24
 discovery;T1082;command_prompt;['windows'];System Information Discovery with WMIC;8851b73a-3624-4bf7-8704-aa312411565c;True;25
+discovery;T1082;command_prompt;['windows'];Driver Enumeration using DriverQuery;bd85e3d1-4aeb-4a1d-850f-7be3cb8d60b9;False;26
 discovery;T1010;command_prompt;['windows'];List Process Main Windows - C# .NET;fe94a1c3-3e22-4dc9-9fdf-3a8bdbc10dc4;True;1
 discovery;T1580;sh;['linux', 'macos'];AWS - EC2 Enumeration from Cloud Instance;99ee161b-dcb1-4276-8ecb-7cfdcb207820;False;1
 discovery;T1217;sh;['linux'];List Mozilla Firefox Bookmark Database Files on Linux;3a41f169-a5ab-407f-9269-abafdb5da6c2;False;1
