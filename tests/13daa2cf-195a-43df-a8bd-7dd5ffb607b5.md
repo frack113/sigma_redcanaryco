@@ -1,0 +1,37 @@
+
+[back](../index.md)
+
+Find sigma rule :x: 
+
+# Attack: Network Share Discovery 
+
+Adversaries may look for folders and drives shared on remote systems as a means of identifying sources of information to gather as a precursor for Collection and to identify potential systems of interest for Lateral Movement. Networks often contain shared network drives and folders that enable users to access file directories on various systems across a network. 
+
+File sharing over a Windows network occurs over the SMB protocol. (Citation: Wikipedia Shared Resource) (Citation: TechNet Shared Folder) [Net](https://attack.mitre.org/software/S0039) can be used to query a remote system for available shared drives using the <code>net view \\\\remotesystem</code> command. It can also be used to query shared drives on the local system using <code>net share</code>. For macOS, the <code>sharing -l</code> command lists all shared points used for smb services.
+
+# MITRE
+## Tactic
+  - discovery
+
+
+## technique
+  - T1135
+
+
+# Test : Network Share Discovery via dir command
+## OS
+  - windows
+
+
+## Description:
+Network Share Discovery utilizing the dir command prompt. The computer ip variable may need to be modified to point to a different host ip
+Upon execution avalaible network shares will be displayed in the commandline session
+
+
+## Executor
+command_prompt
+
+# Sigma Rule
+
+
+[back](../index.md)
