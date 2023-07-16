@@ -18,10 +18,10 @@ description: "Emulates the JS -> MSI chain of the MirrorBlast T505 campaign by e
 executor: powershell
 sigma: true
 sigma_rule:
-  - id: 7c637634-c95d-4bbf-b26c-a82510874b34
-    name: registry_set_disable_microsoft_office_security_features.yml
+  - id: a5c7a43f-6009-4a8c-80c5-32abf1c53ecc
+    name: registry_set_office_disable_protected_view_features.yml
   - id: a166f74e-bf44-409d-b9ba-ea4b2dd8b3cd
-    name: registry_set_office_security.yml
+    name: registry_set_office_trust_record_susp_location.yml
   - id: b1c50487-1967-4315-a026-6491686d860e
     name: file_event_win_office_macro_files_from_susp_process.yml
   - id: e6ce8457-68b1-485b-9bdd-3c2b5d679aa9

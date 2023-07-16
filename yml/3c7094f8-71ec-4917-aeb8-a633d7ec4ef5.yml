@@ -10,7 +10,7 @@ tactic:
 technique:
   - T1619
 os:
-  - iaas:azure
+  - iaas:aws
 description: "This test will enumerate all the S3 buckets in the user account and lists all the files in each bucket. \n"
 executor: sh
 sigma: false

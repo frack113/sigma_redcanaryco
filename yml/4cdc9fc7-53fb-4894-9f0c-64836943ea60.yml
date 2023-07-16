@@ -7,28 +7,21 @@ Attack_description: "Adversaries may tunnel network communications to and from a
   \ adversaries during [Dynamic Resolution](https://attack.mitre.org/techniques/T1568). Known as DNS over HTTPS (DoH), queries to resolve C2 infrastructure may be encapsulated within encrypted HTTPS packets.(Citation:\
   \ BleepingComp Godlua JUL19) \n\nAdversaries may also leverage [Protocol Tunneling](https://attack.mitre.org/techniques/T1572) in conjunction with [Proxy](https://attack.mitre.org/techniques/T1090) and/or\
   \ [Protocol Impersonation](https://attack.mitre.org/techniques/T1001/003) to further conceal C2 communications and infrastructure. "
-guid: ae9ef4b0-d8c1-49d4-8758-06206f19af0a
-name: DNS over HTTPS Large Query Volume
+guid: 4cdc9fc7-53fb-4894-9f0c-64836943ea60
+name: run ngrok
 tactic:
   - command-and-control
 technique:
   - T1572
 os:
   - windows
-description: |
-  This test simulates an infected host sending a large volume of DoH queries to a command and control server.
-  The intent of this test is to trigger threshold based detection on the number of DoH queries either from a single source system or to a single targe domain.
-  A custom domain and sub-domain will need to be passed as input parameters for this test to work. Upon execution, DNS information about the domain will be displayed for each callout in a JSON format.
+description: 'Download and run ngrok. Create tunnel to chosen port.
+
+  '
 executor: powershell
 sigma: true
 sigma_rule:
-  - id: 9fc51a3c-81b3-4fa7-b35f-7c02cf10fd2d
-    name: proc_creation_win_susp_web_request_cmd_and_cmdlets.yml
-  - id: 6e897651-f157-4d8f-aaeb-df8151488385
-    name: proc_creation_win_powershell_download_cradles.yml
-  - id: 1edff897-9146-48d2-9066-52e8d8f80a2f
-    name: proc_creation_win_powershell_invoke_webrequest_direct_ip.yml
-  - id: 1139d2e2-84b1-4226-b445-354492eba8ba
-    name: posh_ps_web_request_cmd_and_cmdlets.yml
-  - id: 1f21ec3f-810d-4b0e-8045-322202e22b4b
-    name: net_connection_win_powershell_network_connection.yml
+  - id: ee37eb7c-a4e7-4cd5-8fa4-efa27f1c3f31
+    name: proc_creation_win_pua_ngrok.yml
+  - id: 3dfd06d2-eaf4-4532-9555-68aca59f57c4
+    name: proc_creation_win_susp_execution_path.yml

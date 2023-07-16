@@ -12,6 +12,7 @@ technique:
 os:
   - linux
   - macos
+  - iaas:aws
 description: 'This Atomic will attempt to remove AWS VPC Flow Logs configuration. Stratus Red Team is a self-contained binary. You can use it to easily detonate offensive attack techniques against a live
   cloud environment. Ref: https://stratus-red-team.cloud/attack-techniques/AWS/aws.defense-evasion.vpc-remove-flow-logs/
 

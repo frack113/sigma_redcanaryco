@@ -30,6 +30,6 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: a166f74e-bf44-409d-b9ba-ea4b2dd8b3cd
-    name: registry_set_office_security.yml
-  - id: 7c637634-c95d-4bbf-b26c-a82510874b34
-    name: registry_set_disable_microsoft_office_security_features.yml
+    name: registry_set_office_trust_record_susp_location.yml
+  - id: a5c7a43f-6009-4a8c-80c5-32abf1c53ecc
+    name: registry_set_office_disable_protected_view_features.yml

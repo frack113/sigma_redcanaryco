@@ -1,0 +1,22 @@
+Attack_name: Lateral Tool Transfer
+Attack_description: |-
+  Adversaries may transfer tools or other files between systems in a compromised environment. Once brought into the victim environment (i.e. [Ingress Tool Transfer](https://attack.mitre.org/techniques/T1105)) files may then be copied from one system to another to stage adversary tools or other files over the course of an operation. Adversaries may copy files between internal victim systems to support lateral movement using inherent file sharing protocols such as file sharing over [SMB/Windows Admin Shares](https://attack.mitre.org/techniques/T1021/002) to connected network shares or with authenticated connections via [Remote Desktop Protocol](https://attack.mitre.org/techniques/T1021/001).(Citation: Unit42 LockerGoga 2019)
+
+  Files can also be transferred using native or otherwise present tools on the victim system, such as scp, rsync, curl, sftp, and [ftp](https://attack.mitre.org/software/S0095).
+guid: 183235ca-8e6c-422c-88c2-3aa28c4825d9
+name: Exfiltration Over SMB over QUIC (NET USE)
+tactic:
+  - lateral-movement
+technique:
+  - T1570
+os:
+  - windows
+description: |
+  Simulates an attacker exfiltrating data over SMB over QUIC using the NET USE command.
+  Prerequisites:
+    - A file server running Windows Server 2022 Datacenter: Azure Edition
+    - A Windows 11 computer
+    - Windows Admin Center
+executor: powershell
+sigma: false
+sigma_rule: []

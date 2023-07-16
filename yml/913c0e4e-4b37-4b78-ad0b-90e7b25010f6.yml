@@ -26,4 +26,4 @@ sigma_rule:
   - id: 0a13e132-651d-11eb-ae93-0242ac130002
     name: proc_creation_win_auditpol_susp_execution.yml
   - id: 69aeb277-f15f-4d2d-b32a-55e883609563
-    name: win_security_disable_event_logging.yml
+    name: win_security_disable_event_auditing.yml

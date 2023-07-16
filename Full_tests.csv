@@ -444,9 +444,9 @@ defense-evasion;T1127.001;command_prompt;['windows'];MSBuild Bypass Using Inline
 defense-evasion;T1562.008;sh;['iaas:aws'];AWS - CloudTrail Changes;9c10dc6b-20bd-403a-8e67-50ef7d07ed4e;False;1
 defense-evasion;T1562.008;powershell;['iaas:azure'];Azure - Eventhub Deletion;5e09bed0-7d33-453b-9bf3-caea32bff719;False;2
 defense-evasion;T1562.008;powershell;['office-365'];Office 365 - Exchange Audit Log Disabled;1ee572f3-056c-4632-a7fc-7e7c42b1543c;False;3
-defense-evasion;T1562.008;sh;['linux', 'macos'];AWS - Disable CloudTrail Logging Through Event Selectors using Stratus;a27418de-bdce-4ebd-b655-38f11142bf0c;False;4
+defense-evasion;T1562.008;sh;['linux', 'macos', 'iaas:aws'];AWS - Disable CloudTrail Logging Through Event Selectors using Stratus;a27418de-bdce-4ebd-b655-38f11142bf0c;False;4
 defense-evasion;T1562.008;sh;['linux', 'macos'];AWS - CloudTrail Logs Impairment Through S3 Lifecycle Rule using Stratus;22d89a2f-d475-4895-b2d4-68626d49c029;False;5
-defense-evasion;T1562.008;sh;['linux', 'macos'];AWS - Remove VPC Flow Logs using Stratus;93c150f5-ad7b-4ee3-8992-df06dec2ac79;False;6
+defense-evasion;T1562.008;sh;['linux', 'macos', 'iaas:aws'];AWS - Remove VPC Flow Logs using Stratus;93c150f5-ad7b-4ee3-8992-df06dec2ac79;False;6
 defense-evasion;T1562.008;sh;['iaas:aws'];AWS - CloudWatch Log Group Deletes;89422c87-b57b-4a04-a8ca-802bb9d06121;False;7
 defense-evasion;T1562.008;sh;['iaas:aws'];AWS CloudWatch Log Stream Deletes;33ca84bc-4259-4943-bd36-4655dc420932;False;8
 defense-evasion;T1562.008;powershell;['office-365'];Office 365 - Set Audit Bypass For a Mailbox;c9a2f6fe-7197-488c-af6d-10c782121ca6;False;9
@@ -816,7 +816,7 @@ execution;T1059.003;powershell;['windows'];Create and Execute Batch Script;9e889
 execution;T1059.003;command_prompt;['windows'];Writes text to a file and displays it.;127b4afe-2346-4192-815c-69042bec570e;True;2
 execution;T1059.003;command_prompt;['windows'];Suspicious Execution via Windows Command Shell;d0eb3597-a1b3-4d65-b33b-2cda8d397f20;True;3
 execution;T1059.003;powershell;['windows'];Simulate BlackByte Ransomware Print Bombing;6b2903ac-8f36-450d-9ad5-b220e8a2dcb9;True;4
-execution;T1059.003;command_prompt;['windows'];Command Prompt read contents from CMD file and execute;df81db1b-066c-4802-9bc8-b6d030c3ba8e;False;5
+execution;T1059.003;command_prompt;['windows'];Command Prompt read contents from CMD file and execute;df81db1b-066c-4802-9bc8-b6d030c3ba8e;True;5
 execution;T1059.005;powershell;['windows'];Visual Basic script execution to gather local computer information;1620de42-160a-4fe5-bbaf-d3fef0181ce9;False;1
 execution;T1059.005;powershell;['windows'];Encoded VBS code execution;e8209d5f-e42d-45e6-9c2f-633ac4f1eefa;True;2
 execution;T1059.005;powershell;['windows'];Extract Memory via VBA;8faff437-a114-4547-9a60-749652a03df6;True;3
@@ -824,8 +824,8 @@ execution;T1569.002;command_prompt;['windows'];Execute a Command as a Service;23
 execution;T1569.002;command_prompt;['windows'];Use PsExec to execute a command on a remote host;873106b7-cfed-454b-8680-fa9f6400431c;True;2
 execution;T1569.002;bash;['linux'];psexec.py (Impacket);edbcd8c9-3639-4844-afad-455c91e95a35;False;3
 execution;T1569.002;powershell;['windows'];BlackCat pre-encryption cmds with Lateral Movement;31eb7828-97d7-4067-9c1e-c6feb85edc4b;True;4
-execution;T1569.002;command_prompt;['windows'];Use RemCom to execute a command on a remote host;a5d8cdeb-be90-43a9-8b26-cc618deac1e0;False;5
-execution;T1569.002;command_prompt;['windows'];Snake Malware Service Create;b8db787e-dbea-493c-96cb-9272296ddc49;False;6
+execution;T1569.002;command_prompt;['windows'];Use RemCom to execute a command on a remote host;a5d8cdeb-be90-43a9-8b26-cc618deac1e0;True;5
+execution;T1569.002;command_prompt;['windows'];Snake Malware Service Create;b8db787e-dbea-493c-96cb-9272296ddc49;True;6
 execution;T1053.002;command_prompt;['windows'];At.exe Scheduled task;4a6c0dc4-0f2a-4203-9298-a5a9bdc21ed8;True;1
 execution;T1053.002;sh;['linux'];At - Schedule a job;7266d898-ac82-4ec0-97c7-436075d0d08e;False;2
 persistence;T1053.005;command_prompt;['windows'];Scheduled Task Startup Script;fec27f65-db86-4c2d-b66c-61945aee87c2;True;1
@@ -1048,9 +1048,10 @@ command-and-control;T1219;powershell;['windows'];NetSupport - RAT Execution;ecca
 command-and-control;T1219;powershell;['windows'];UltraViewer - RAT Execution;19acf63b-55c4-4b6a-8552-00a8865105c8;True;9
 command-and-control;T1219;powershell;['windows'];UltraVNC Execution;42e51815-a6cc-4c75-b970-3f0ff54b610e;True;10
 command-and-control;T1219;powershell;['windows'];MSP360 Connect Execution;b1b8128b-c5d4-4de9-bf70-e60419274562;False;11
-command-and-control;T1572;powershell;['windows'];DNS over HTTPS Large Query Volume;ae9ef4b0-d8c1-49d4-8758-06206f19af0a;False;1
+command-and-control;T1572;powershell;['windows'];DNS over HTTPS Large Query Volume;ae9ef4b0-d8c1-49d4-8758-06206f19af0a;True;1
 command-and-control;T1572;powershell;['windows'];DNS over HTTPS Regular Beaconing;0c5f9705-c575-42a6-9609-cbbff4b2fc9b;True;2
-command-and-control;T1572;powershell;['windows'];DNS over HTTPS Long Domain Query;748a73d5-cea4-4f34-84d8-839da5baa99c;False;3
+command-and-control;T1572;powershell;['windows'];DNS over HTTPS Long Domain Query;748a73d5-cea4-4f34-84d8-839da5baa99c;True;3
+command-and-control;T1572;powershell;['windows'];run ngrok;4cdc9fc7-53fb-4894-9f0c-64836943ea60;True;4
 command-and-control;T1090.003;powershell;['windows'];Psiphon;14d55ca0-920e-4b44-8425-37eedd72b173;True;1
 command-and-control;T1090.003;powershell;['windows'];Tor Proxy Usage - Windows;7b9d85e5-c4ce-4434-8060-d3de83595e69;True;2
 command-and-control;T1090.003;sh;['linux'];Tor Proxy Usage - Debian/Ubuntu;5ff9d047-6e9c-4357-b39b-5cf89d9b59c7;True;3
@@ -1163,6 +1164,8 @@ lateral-movement;T1550.003;command_prompt;['windows'];Mimikatz Kerberos Ticket A
 lateral-movement;T1550.003;powershell;['windows'];Rubeus Kerberos Pass The Ticket;a2fc4ec5-12c6-4fb4-b661-961f23f359cb;True;2
 lateral-movement;T1072;command_prompt;['windows'];Radmin Viewer Utility;b4988cad-6ed2-434d-ace5-ea2670782129;True;1
 lateral-movement;T1072;command_prompt;['windows'];PDQ Deploy RAT;e447b83b-a698-4feb-bed1-a7aaf45c3443;True;2
+lateral-movement;T1570;powershell;['windows'];Exfiltration Over SMB over QUIC (New-SmbMapping);d8d13303-159e-4f33-89f4-9f07812d016f;False;1
+lateral-movement;T1570;powershell;['windows'];Exfiltration Over SMB over QUIC (NET USE);183235ca-8e6c-422c-88c2-3aa28c4825d9;False;2
 lateral-movement;T1563.002;command_prompt;['windows'];RDP hijacking;a37ac520-b911-458e-8aed-c5f1576d9f46;True;1
 lateral-movement;T1550.002;command_prompt;['windows'];Mimikatz Pass the Hash;ec23cef9-27d9-46e4-a68d-6f75f7b86908;True;1
 lateral-movement;T1550.002;command_prompt;['windows'];crackmapexec Pass the Hash;eb05b028-16c8-4ad8-adea-6f5b219da9a9;True;2
@@ -1236,7 +1239,7 @@ credential-access;T1555;powershell;['windows'];Enumerate credentials from Window
 credential-access;T1555;powershell;['windows'];WinPwn - Loot local Credentials - lazagne;079ee2e9-6f16-47ca-a635-14efcd994118;True;6
 credential-access;T1555;powershell;['windows'];WinPwn - Loot local Credentials - Wifi Credentials;afe369c2-b42e-447f-98a3-fb1f4e2b8552;True;7
 credential-access;T1555;powershell;['windows'];WinPwn - Loot local Credentials - Decrypt Teamviewer Passwords;db965264-3117-4bad-b7b7-2523b7856b92;True;8
-credential-access;T1552;sh;['linux', 'macos'];AWS - Retrieve EC2 Password Data using stratus;a21118de-b11e-4ebd-b655-42f11142df0c;False;1
+credential-access;T1552;sh;['linux', 'macos', 'iaas:aws'];AWS - Retrieve EC2 Password Data using stratus;a21118de-b11e-4ebd-b655-42f11142df0c;False;1
 credential-access;T1555.003;powershell;['windows'];Run Chrome-password Collector;8c05b133-d438-47ca-a630-19cc464c4622;True;1
 credential-access;T1555.003;sh;['macos'];Search macOS Safari Cookies;c1402f7b-67ca-43a8-b5f3-3143abedc01b;False;2
 credential-access;T1555.003;command_prompt;['windows'];LaZagne - Credentials from Browser;9a2915b3-3954-4cce-8c76-00fbf4dbd014;True;3
@@ -1289,7 +1292,7 @@ credential-access;T1110.003;sh;['iaas:aws'];AWS - Password Spray an AWS using Go
 credential-access;T1003.005;command_prompt;['windows'];Cached Credential Dump via Cmdkey;56506854-89d6-46a3-9804-b7fde90791f9;True;1
 credential-access;T1558.001;powershell;['windows'];Crafting Active Directory golden tickets with mimikatz;9726592a-dabc-4d4d-81cd-44070008b3af;True;1
 credential-access;T1558.001;powershell;['windows'];Crafting Active Directory golden tickets with Rubeus;e42d33cd-205c-4acf-ab59-a9f38f6bad9c;True;2
-credential-access;T1649;powershell;['windows'];Staging Local Certificates via Export-Certificate;eb121494-82d1-4148-9e2b-e624e03fbf3d;False;1
+credential-access;T1649;powershell;['windows'];Staging Local Certificates via Export-Certificate;eb121494-82d1-4148-9e2b-e624e03fbf3d;True;1
 credential-access;T1552.003;sh;['linux', 'macos'];Search Through Bash History;3cfde62b-7c33-4b26-a61e-755d6131c8ce;False;1
 credential-access;T1552.001;sh;['macos', 'linux'];Find AWS credentials;2b93758e-a8d7-4e3b-bc7b-d3aa8d7ecb17;False;1
 credential-access;T1552.001;bash;['macos'];Extract Browser and System credentials with LaZagne;9e507bb8-1d30-4e3b-a49b-cb5727d7ea79;False;2
@@ -1458,7 +1461,7 @@ discovery;T1082;sh;['linux'];Linux List Kernel Modules;034fe21c-3186-49dd-8d5d-1
 discovery;T1082;command_prompt;['windows'];System Information Discovery with WMIC;8851b73a-3624-4bf7-8704-aa312411565c;True;25
 discovery;T1082;command_prompt;['windows'];Driver Enumeration using DriverQuery;bd85e3d1-4aeb-4a1d-850f-7be3cb8d60b9;False;26
 discovery;T1010;command_prompt;['windows'];List Process Main Windows - C# .NET;fe94a1c3-3e22-4dc9-9fdf-3a8bdbc10dc4;True;1
-discovery;T1580;sh;['linux', 'macos'];AWS - EC2 Enumeration from Cloud Instance;99ee161b-dcb1-4276-8ecb-7cfdcb207820;False;1
+discovery;T1580;sh;['linux', 'macos', 'iaas:aws'];AWS - EC2 Enumeration from Cloud Instance;99ee161b-dcb1-4276-8ecb-7cfdcb207820;False;1
 discovery;T1217;sh;['linux'];List Mozilla Firefox Bookmark Database Files on Linux;3a41f169-a5ab-407f-9269-abafdb5da6c2;False;1
 discovery;T1217;sh;['macos'];List Mozilla Firefox Bookmark Database Files on macOS;1ca1f9c7-44bc-46bb-8c85-c50e2e94267b;False;2
 discovery;T1217;sh;['macos'];List Google Chrome Bookmark JSON Files on macOS;b789d341-154b-4a42-a071-9111588be9bc;False;3
@@ -1494,7 +1497,7 @@ discovery;T1049;command_prompt;['windows'];System Network Connections Discovery;
 discovery;T1049;powershell;['windows'];System Network Connections Discovery with PowerShell;f069f0f1-baad-4831-aa2b-eddac4baac4a;True;2
 discovery;T1049;sh;['linux', 'macos'];System Network Connections Discovery Linux & MacOS;9ae28d3f-190f-4fa0-b023-c7bd3e0eabf2;False;3
 discovery;T1049;powershell;['windows'];System Discovery using SharpView;96f974bb-a0da-4d87-a744-ff33e73367e9;True;4
-discovery;T1619;sh;['iaas:azure'];AWS S3 Enumeration;3c7094f8-71ec-4917-aeb8-a633d7ec4ef5;False;1
+discovery;T1619;sh;['iaas:aws'];AWS S3 Enumeration;3c7094f8-71ec-4917-aeb8-a633d7ec4ef5;False;1
 discovery;T1057;sh;['macos', 'linux'];Process Discovery - ps;4ff64f0b-aaf2-4866-b39d-38d9791407cc;False;1
 discovery;T1057;command_prompt;['windows'];Process Discovery - tasklist;c5806a4f-62b8-4900-980b-c7ec004e9908;True;2
 discovery;T1057;powershell;['windows'];Process Discovery - Get-Process;3b3809b6-a54b-4f5b-8aff-cb51f2e97b34;True;3
