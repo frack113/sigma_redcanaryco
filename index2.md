@@ -149,6 +149,11 @@
   * T1137 [Office Application Startup - Outlook as a C2](tests/bfe6ac15-c50b-4c4f-a186-0fc6b8ba936c.md)
 * file_event_win_office_outlook_newform.yml
   * T1592.002 [Enumerate COM Objects in Registry with Powershell](tests/0d80d088-a84c-4353-af1a-fc8b439f1564.md)
+* file_event_win_office_susp_file_extension.yml
+  * T1564 [Extract binary files via VBA](tests/6afe288a-8a8b-4d33-a629-8d03ba9dad3a.md)
+  * T1055.012 [RunPE via VBA](tests/3ad4a037-1598-4136-837c-4027e4fa319b.md)
+  * T1204.002 [Office launching .bat file from AppData](tests/9215ea92-1ded-41b7-9cd6-79f9a78397aa.md)
+  * T1204.002 [Excel 4 Macro](tests/4ea1fc97-8a46-4b4e-ba48-af43d2a98052.md)
 * file_event_win_powershell_exploit_scripts.yml
   * T1555 [WinPwn - Loot local Credentials - lazagne](tests/079ee2e9-6f16-47ca-a635-14efcd994118.md)
   * T1082 [WinPwn - Powersploits privesc checks](tests/345cb8e4-d2de-4011-a580-619cf5a9e2d7.md)
@@ -197,11 +202,6 @@
   * T1219 [ScreenConnect Application Download and Install on Windows](tests/4a18cc4e-416f-4966-9a9d-75731c4684c0.md)
 * file_event_win_sam_dump.yml
   * T1003.002 [Registry dump of SAM, creds, and secrets](tests/5c2571d0-1572-416d-9676-812e64ca9f44.md)
-* file_event_win_script_creation_by_office_using_file_ext.yml
-  * T1564 [Extract binary files via VBA](tests/6afe288a-8a8b-4d33-a629-8d03ba9dad3a.md)
-  * T1055.012 [RunPE via VBA](tests/3ad4a037-1598-4136-837c-4027e4fa319b.md)
-  * T1204.002 [Office launching .bat file from AppData](tests/9215ea92-1ded-41b7-9cd6-79f9a78397aa.md)
-  * T1204.002 [Excel 4 Macro](tests/4ea1fc97-8a46-4b4e-ba48-af43d2a98052.md)
 * file_event_win_shell_write_susp_directory.yml
   * T1218.005 [Invoke HTML Application - Direct download from URI](tests/39ceed55-f653-48ac-bd19-aceceaf525db.md)
   * T1547.003 [Edit an existing time provider](tests/29e0afca-8d1d-471a-8d34-25512fc48315.md)
@@ -498,10 +498,12 @@
   * T1059.001 [Run BloodHound from local disk](tests/a21bb23e-e677-4ee7-af90-6931b57b6350.md)
   * T1074.001 [Stage data from Discovery.bat](tests/107706a5-6f9f-451a-adae-bab8c667829f.md)
   * T1135 [WinPwn - shareenumeration](tests/987901d1-5b87-4558-a6d9-cffcabc638b8.md)
+  * T1572 [DNS over HTTPS Long Domain Query](tests/748a73d5-cea4-4f34-84d8-839da5baa99c.md)
   * T1518 [WinPwn - Dotnetsearch](tests/7e79a1b6-519e-433c-ad55-3ff293667101.md)
   * T1087.002 [Enumerate Root Domain linked policies Discovery](tests/00c652e2-0750-4ca6-82ff-0204684a6fe4.md)
   * T1110.003 [Password spray all Active Directory domain users with a single password via LDAP against domain controller (NTLM or Kerberos)](tests/f14d956a-5b6e-4a93-847f-0c415142f07d.md)
   * T1518 [WinPwn - DotNet](tests/10ba02d0-ab76-4f80-940d-451633f24c5b.md)
+  * T1572 [DNS over HTTPS Large Query Volume](tests/ae9ef4b0-d8c1-49d4-8758-06206f19af0a.md)
   * T1110.001 [Brute Force Credentials of single Active Directory domain user via LDAP against domain controller (NTLM or Kerberos)](tests/c2969434-672b-4ec8-8df0-bbb91f40e250.md)
   * T1204.002 [Potentially Unwanted Applications (PUA)](tests/02f35d62-9fdc-4a97-b899-a5d9a876d295.md)
   * T1082 [WinPwn - Morerecon](tests/3278b2f6-f733-4875-9ef4-bfed34244f0a.md)
@@ -2320,9 +2322,11 @@
   * T1074.001 [Stage data from Discovery.bat](tests/107706a5-6f9f-451a-adae-bab8c667829f.md)
   * T1059.001 [Obfuscation Tests](tests/4297c41a-8168-4138-972d-01f3ee92c804.md)
   * T1135 [WinPwn - shareenumeration](tests/987901d1-5b87-4558-a6d9-cffcabc638b8.md)
+  * T1572 [DNS over HTTPS Long Domain Query](tests/748a73d5-cea4-4f34-84d8-839da5baa99c.md)
   * T1518 [WinPwn - Dotnetsearch](tests/7e79a1b6-519e-433c-ad55-3ff293667101.md)
   * T1552.004 [ADFS token signing and encryption certificates theft - Local](tests/78e95057-d429-4e66-8f82-0f060c1ac96f.md)
   * T1518 [WinPwn - DotNet](tests/10ba02d0-ab76-4f80-940d-451633f24c5b.md)
+  * T1572 [DNS over HTTPS Large Query Volume](tests/ae9ef4b0-d8c1-49d4-8758-06206f19af0a.md)
   * T1105 [iwr or Invoke Web-Request download](tests/c01cad7f-7a4c-49df-985e-b190dcf6a279.md)
   * T1059.001 [Mimikatz](tests/f3132740-55bc-48c4-bcc0-758a459cd027.md)
   * T1187 [WinPwn - PowerSharpPack - Retrieving NTLM Hashes without Touching LSASS](tests/7f06b25c-799e-40f1-89db-999c9cc84317.md)
@@ -2478,6 +2482,8 @@
   * T1059.003 [Suspicious Execution via Windows Command Shell](tests/d0eb3597-a1b3-4d65-b33b-2cda8d397f20.md)
 * proc_creation_win_cmd_shadowcopy_access.yml
   * T1003.003 [Copy NTDS.dit from Volume Shadow Copy](tests/c6237146-9ea6-4711-85c9-c56d263a6b03.md)
+* proc_creation_win_cmd_stdin_redirect.yml
+  * T1059.003 [Command Prompt read contents from CMD file and execute](tests/df81db1b-066c-4802-9bc8-b6d030c3ba8e.md)
 * proc_creation_win_cmdkey_recon.yml
   * T1003.005 [Cached Credential Dump via Cmdkey](tests/56506854-89d6-46a3-9804-b7fde90791f9.md)
   * T1087.001 [Enumerate all accounts via PowerShell (Local)](tests/ae4b6361-b5f8-46cb-a3f9-9cf108ccfe7b.md)
@@ -2694,13 +2700,8 @@
   * T1056.004 [Hook PowerShell TLS Encrypt/Decrypt Messages](tests/de1934ea-1fbf-425b-8795-65fb27dd7e33.md)
 * proc_creation_win_lolbin_not_from_c_drive.yml
   * T1553.005 [Execute LNK file from ISO](tests/c2587b8d-743d-4985-aa50-c83394eaeb68.md)
-* proc_creation_win_lolbin_office.yml
-  * T1218 [ProtocolHandler.exe Downloaded a Suspicious File](tests/db020456-125b-4c8b-a4a7-487df8afb5a2.md)
 * proc_creation_win_lolbin_pcwutl.yml
   * T1218.011 [Launches an executable using Rundll32 and pcwutl.dll](tests/9f5d081a-ee5a-42f9-a04e-b7bdc487e676.md)
-* proc_creation_win_lolbin_pktmon.yml
-  * T1040 [Windows Internal pktmon capture](tests/c67ba807-f48b-446e-b955-e4928cd1bf91.md)
-  * T1040 [Windows Internal pktmon set filter](tests/855fb8b4-b8ab-4785-ae77-09f5df7bff55.md)
 * proc_creation_win_lolbin_printbrm.yml
   * T1105 [Printer Migration Command-Line Tool UNC share folder into a zip file](tests/49845fc1-7961-4590-a0f0-3dbcf065ae7e.md)
 * proc_creation_win_lolbin_protocolhandler_download.yml
@@ -2711,8 +2712,6 @@
   * T1558.002 [Crafting Active Directory silver tickets with mimikatz](tests/385e59aa-113e-4711-84d9-f637aef01f2c.md)
   * T1105 [Lolbas replace.exe use to copy file](tests/54782d65-12f0-47a5-b4c1-b70ee23de6df.md)
   * T1105 [Lolbas replace.exe use to copy UNC file](tests/ed0335ac-0354-400c-8148-f6151d20035a.md)
-* proc_creation_win_lolbin_rundll32_installscreensaver.yml
-  * T1218.011 [Rundll32 with desk.cpl](tests/83a95136-a496-423c-81d3-1c6750133917.md)
 * proc_creation_win_lolbin_susp_certreq_download.yml
   * T1105 [certreq download](tests/6fdaae87-c05b-42f8-842e-991a74e8376b.md)
 * proc_creation_win_lolbin_susp_driver_installed_by_pnputil.yml
@@ -2916,6 +2915,8 @@
 * proc_creation_win_odbcconf_response_file.yml
   * T1218.008 [Odbcconf.exe - Load Response File](tests/331ce274-f9c9-440b-9f8c-a1006e1fce0b.md)
   * T1218.008 [Odbcconf.exe - Execute Arbitrary DLL](tests/2430498b-06c0-4b92-a448-8ad263c388e2.md)
+* proc_creation_win_office_arbitrary_cli_download.yml
+  * T1218 [ProtocolHandler.exe Downloaded a Suspicious File](tests/db020456-125b-4c8b-a4a7-487df8afb5a2.md)
 * proc_creation_win_office_spawn_exe_from_users_directory.yml
   * T1564 [Extract binary files via VBA](tests/6afe288a-8a8b-4d33-a629-8d03ba9dad3a.md)
 * proc_creation_win_office_susp_child_processes.yml
@@ -2932,6 +2933,9 @@
   * T1137.006 [Persistent Code Execution Via Word Add-in File (WLL)](tests/95408a99-4fa7-4cd6-a7ef-cb65f86351cf.md)
 * proc_creation_win_pdqdeploy_execution.yml
   * T1072 [PDQ Deploy RAT](tests/e447b83b-a698-4feb-bed1-a7aaf45c3443.md)
+* proc_creation_win_pktmon_execution.yml
+  * T1040 [Windows Internal pktmon capture](tests/c67ba807-f48b-446e-b955-e4928cd1bf91.md)
+  * T1040 [Windows Internal pktmon set filter](tests/855fb8b4-b8ab-4785-ae77-09f5df7bff55.md)
 * proc_creation_win_powershell_abnormal_commandline_size.yml
   * T1059.001 [Mimikatz - Cradlecraft PsSendKeys](tests/af1800cf-9f9d-4fd1-a709-14b1e6de020d.md)
   * T1036.003 [File Extension Masquerading](tests/c7fa0c3b-b57f-4cba-9118-863bf4e653fc.md)
@@ -3013,6 +3017,7 @@
   * T1135 [WinPwn - shareenumeration](tests/987901d1-5b87-4558-a6d9-cffcabc638b8.md)
   * T1518 [WinPwn - Dotnetsearch](tests/7e79a1b6-519e-433c-ad55-3ff293667101.md)
   * T1518 [WinPwn - DotNet](tests/10ba02d0-ab76-4f80-940d-451633f24c5b.md)
+  * T1572 [DNS over HTTPS Large Query Volume](tests/ae9ef4b0-d8c1-49d4-8758-06206f19af0a.md)
   * T1187 [WinPwn - PowerSharpPack - Retrieving NTLM Hashes without Touching LSASS](tests/7f06b25c-799e-40f1-89db-999c9cc84317.md)
   * T1082 [WinPwn - Morerecon](tests/3278b2f6-f733-4875-9ef4-bfed34244f0a.md)
   * T1046 [WinPwn - bluekeep](tests/1cca5640-32a9-46e6-b8e0-fabbe2384a73.md)
@@ -3161,6 +3166,8 @@
   * T1552.004 [ADFS token signing and encryption certificates theft - Remote](tests/cab413d8-9e4a-4b8d-9b84-c985bd73a442.md)
   * T1033 [System Discovery - SocGholish whoami](tests/3d257a03-eb80-41c5-b744-bb37ac7f65c7.md)
   * T1059.001 [Obfuscation Tests](tests/4297c41a-8168-4138-972d-01f3ee92c804.md)
+* proc_creation_win_powershell_export_certificate.yml
+  * T1649 [Staging Local Certificates via Export-Certificate](tests/eb121494-82d1-4148-9e2b-e624e03fbf3d.md)
 * proc_creation_win_powershell_frombase64string.yml
   * T1027 [Execute base64-encoded PowerShell from Windows Registry](tests/450e7218-7915-4be4-8b9b-464a49eafcec.md)
   * T1059.001 [PowerShell Fileless Script Execution](tests/fa050f5e-bc75-4230-af73-b6fd7852cd73.md)
@@ -3169,6 +3176,8 @@
 * proc_creation_win_powershell_getprocess_lsass.yml
   * T1003.001 [Dump LSASS.exe Memory using comsvcs.dll](tests/2536dee2-12fb-459a-8c37-971844fa73be.md)
   * T1003.001 [Dump LSASS.exe Memory using Out-Minidump.ps1](tests/6502c8f0-b775-4dbd-9193-1298f56b6781.md)
+* proc_creation_win_powershell_invoke_webrequest_direct_ip.yml
+  * T1572 [DNS over HTTPS Large Query Volume](tests/ae9ef4b0-d8c1-49d4-8758-06206f19af0a.md)
 * proc_creation_win_powershell_invoke_webrequest_download.yml
   * T1105 [iwr or Invoke Web-Request download](tests/c01cad7f-7a4c-49df-985e-b190dcf6a279.md)
 * proc_creation_win_powershell_msexchange_transport_agent.yml
@@ -3349,6 +3358,8 @@
   * T1562.001 [Disable Defender Using NirSoft AdvancedRun](tests/81ce22fd-9612-4154-918e-8a1f285d214d.md)
 * proc_creation_win_pua_netcat.yml
   * T1095 [Netcat C2](tests/bcf0d1c1-3f6a-4847-b1c9-7ed4ea321f37.md)
+* proc_creation_win_pua_ngrok.yml
+  * T1572 [run ngrok](tests/4cdc9fc7-53fb-4894-9f0c-64836943ea60.md)
 * proc_creation_win_pua_nimgrab.yml
   * T1105 [Nimgrab - Transfer Files](tests/b1729c57-9384-4d1c-9b99-9b220afb384e.md)
 * proc_creation_win_pua_nmap_zenmap.yml
@@ -3484,6 +3495,8 @@
   * T1218.011 [Rundll32 execute VBscript command using Ordinal number](tests/32d1cf1b-cbc2-4c09-8d05-07ec5c83a821.md)
   * T1218.011 [Execution of non-dll using rundll32.exe](tests/ae3a8605-b26e-457c-b6b3-2702fd335bac.md)
   * T1218.011 [Rundll32 with desk.cpl](tests/83a95136-a496-423c-81d3-1c6750133917.md)
+* proc_creation_win_rundll32_installscreensaver.yml
+  * T1218.011 [Rundll32 with desk.cpl](tests/83a95136-a496-423c-81d3-1c6750133917.md)
 * proc_creation_win_rundll32_js_runhtmlapplication.yml
   * T1218.011 [Rundll32 execute JavaScript Remote Payload With GetObject](tests/57ba4ce9-ee7a-4f27-9928-3c70c489b59d.md)
 * proc_creation_win_rundll32_keymgr.yml
@@ -3514,6 +3527,7 @@
   * T1547.014 [HKLM - Add atomic_test key to launch executable as part of user setup](tests/deff4586-0517-49c2-981d-bbea24d48d71.md)
   * T1547.014 [HKLM - re-execute 'Internet Explorer Core Fonts' StubPath payload by decreasing version number](tests/04d55cef-f283-40ba-ae2a-316bc3b5e78c.md)
 * proc_creation_win_sc_create_service.yml
+  * T1569.002 [Snake Malware Service Create](tests/b8db787e-dbea-493c-96cb-9272296ddc49.md)
   * T1543.003 [Remote Service Installation CMD](tests/fb4151a2-db33-4f8c-b7f8-78ea8790f961.md)
   * T1543.003 [Service Installation CMD](tests/981e2942-e433-44e9-afc1-8c957a1496b6.md)
 * proc_creation_win_sc_query.yml
@@ -3633,6 +3647,7 @@
   * T1070.001 [Delete System Logs Using Clear-EventLog](tests/b13e9306-3351-4b4b-a6e8-477358b0b498.md)
   * T1562.002 [Disable Event Logging with wevtutil](tests/b26a3340-dad7-4360-9176-706269c74103.md)
 * proc_creation_win_susp_execution_path.yml
+  * T1572 [run ngrok](tests/4cdc9fc7-53fb-4894-9f0c-64836943ea60.md)
   * T1218.004 [InstallUtil evasive invocation](tests/559e6d06-bb42-4307-bff7-3b95a8254bad.md)
   * T1048.003 [Exfiltration Over Alternative Protocol - FTP - Rclone](tests/b854eb97-bf9b-45ab-a1b5-b94e4880c56b.md)
 * proc_creation_win_susp_file_permission_modifications.yml
@@ -3674,8 +3689,10 @@
   * T1018 [Remote System Discovery - nslookup](tests/baa01aaa-5e13-45ec-8a0d-e46c93c9760f.md)
 * proc_creation_win_susp_non_exe_image.yml
   * T1140 [Certutil Rename and Decode](tests/71abc534-3c05-4d0c-80f7-cbe93cb2aa94.md)
+  * T1569.002 [Use RemCom to execute a command on a remote host](tests/a5d8cdeb-be90-43a9-8b26-cc618deac1e0.md)
 * proc_creation_win_susp_ntfs_short_name_path_use_cli.yml
   * T1567.002 [Exfiltrate data with rclone to cloud Storage - Mega (Windows)](tests/8529ee44-279a-4a19-80bf-b846a40dda58.md)
+  * T1569.002 [Use RemCom to execute a command on a remote host](tests/a5d8cdeb-be90-43a9-8b26-cc618deac1e0.md)
   * T1569.002 [BlackCat pre-encryption cmds with Lateral Movement](tests/31eb7828-97d7-4067-9c1e-c6feb85edc4b.md)
   * T1592.002 [Enumerate COM Objects in Registry with Powershell](tests/0d80d088-a84c-4353-af1a-fc8b439f1564.md)
 * proc_creation_win_susp_ntfs_short_name_path_use_image.yml
@@ -3819,6 +3836,7 @@
   * T1518 [WinPwn - Dotnetsearch](tests/7e79a1b6-519e-433c-ad55-3ff293667101.md)
   * T1056.004 [Hook PowerShell TLS Encrypt/Decrypt Messages](tests/de1934ea-1fbf-425b-8795-65fb27dd7e33.md)
   * T1518 [WinPwn - DotNet](tests/10ba02d0-ab76-4f80-940d-451633f24c5b.md)
+  * T1572 [DNS over HTTPS Large Query Volume](tests/ae9ef4b0-d8c1-49d4-8758-06206f19af0a.md)
   * T1105 [iwr or Invoke Web-Request download](tests/c01cad7f-7a4c-49df-985e-b190dcf6a279.md)
   * T1187 [WinPwn - PowerSharpPack - Retrieving NTLM Hashes without Touching LSASS](tests/7f06b25c-799e-40f1-89db-999c9cc84317.md)
   * T1204.002 [Potentially Unwanted Applications (PUA)](tests/02f35d62-9fdc-4a97-b899-a5d9a876d295.md)
@@ -4014,6 +4032,8 @@
   * T1204.002 [OSTap Payload Download](tests/3f3af983-118a-4fa1-85d3-ba4daa739d80.md)
 * proc_creation_win_wuauclt_execution.yml
   * T1218 [Load Arbitrary DLL via Wuauclt (Windows Update Client)](tests/49fbd548-49e9-4bb7-94a6-3769613912b8.md)
+* raw_access_thread_disk_access_using_illegitimate_tools.yml
+  * T1569.002 [Use RemCom to execute a command on a remote host](tests/a5d8cdeb-be90-43a9-8b26-cc618deac1e0.md)
 * registry_add_persistence_logon_scripts_userinitmprlogonscript.yml
   * T1037.001 [Logon Scripts](tests/d6042746-07d4-4c92-9ad8-e644c114a231.md)
 * registry_add_pua_sysinternals_execution_via_eula.yml
@@ -4035,6 +4055,8 @@
   * T1548.002 [WinPwn - UAC Bypass ccmstp technique](tests/f3c145f9-3c8d-422c-bd99-296a17a8f567.md)
 * registry_event_net_ntlm_downgrade.yml
   * T1187 [WinPwn - PowerSharpPack - Retrieving NTLM Hashes without Touching LSASS](tests/7f06b25c-799e-40f1-89db-999c9cc84317.md)
+* registry_event_office_trust_record_modification.yml
+  * T1218 [ProtocolHandler.exe Downloaded a Suspicious File](tests/db020456-125b-4c8b-a4a7-487df8afb5a2.md)
 * registry_event_persistence_recycle_bin.yml
   * T1547.001 [Add persistance via Recycle bin](tests/bda6a3d6-7aa7-4e89-908b-306772e9662f.md)
 * registry_event_shell_open_keys_manipulation.yml
@@ -4050,8 +4072,6 @@
 * registry_event_susp_mic_cam_access.yml
   * T1125 [Registry artefact when application use webcam](tests/6581e4a7-42e3-43c5-a0d2-5a0d62f9702a.md)
   * T1123 [Registry artefact when application use microphone](tests/7a21cce2-6ada-4f7c-afd9-e1e9c481e44a.md)
-* registry_event_trust_record_modification.yml
-  * T1218 [ProtocolHandler.exe Downloaded a Suspicious File](tests/db020456-125b-4c8b-a4a7-487df8afb5a2.md)
 * registry_set_add_load_service_in_safe_mode.yml
   * T1112 [Windows Add Registry Value to Load Service in Safe Mode without Network](tests/1dd59fb3-1cb3-4828-805d-cf80b4c3bbb5.md)
   * T1112 [Windows Add Registry Value to Load Service in Safe Mode with Network](tests/c173c948-65e5-499c-afbe-433722ed5bd4.md)
@@ -4141,9 +4161,6 @@
   * T1112 [Disable Windows CMD application](tests/d2561a6d-72bd-408c-b150-13efe1801c2a.md)
   * T1112 [Disable Windows Task Manager application](tests/af254e70-dd0e-4de6-9afe-a994d9ea8b62.md)
   * T1112 [Disable Windows Shutdown Button](tests/6e0d1131-2d7e-4905-8ca5-d6172f05d03d.md)
-* registry_set_disable_microsoft_office_security_features.yml
-  * T1204.002 [Mirror Blast Emulation](tests/24fd9719-7419-42dd-bce6-ab3463110b3c.md)
-  * T1562.001 [Disable Microsoft Office Security Features](tests/6f5fb61b-4e56-4a3d-a8c3-82e13686c6d7.md)
 * registry_set_disable_privacy_settings_experience.yml
   * T1562.001 [LockBit Black - Disable Privacy Settings Experience Using Registry -Powershell](tests/d8c57eaa-497a-4a08-961e-bd5efd7c9374.md)
 * registry_set_disable_security_center_notifications.yml
@@ -4178,9 +4195,12 @@
   * T1553.004 [Add Root Certificate to CurrentUser Certificate Store](tests/ca20a3f1-42b5-4e21-ad3f-1049199ec2e0.md)
 * registry_set_legalnotice_susp_message.yml
   * T1491.001 [Configure LegalNoticeCaption and LegalNoticeText registry keys to display ransom message](tests/ffcbfaab-c9ff-470b-928c-f086b326089b.md)
+* registry_set_office_disable_protected_view_features.yml
+  * T1204.002 [Mirror Blast Emulation](tests/24fd9719-7419-42dd-bce6-ab3463110b3c.md)
+  * T1562.001 [Disable Microsoft Office Security Features](tests/6f5fb61b-4e56-4a3d-a8c3-82e13686c6d7.md)
 * registry_set_office_outlook_security_settings.yml
   * T1137 [Office Application Startup - Outlook as a C2](tests/bfe6ac15-c50b-4c4f-a186-0fc6b8ba936c.md)
-* registry_set_office_security.yml
+* registry_set_office_trust_record_susp_location.yml
   * T1204.002 [Mirror Blast Emulation](tests/24fd9719-7419-42dd-bce6-ab3463110b3c.md)
   * T1564 [Extract binary files via VBA](tests/6afe288a-8a8b-4d33-a629-8d03ba9dad3a.md)
   * T1562.001 [Disable Microsoft Office Security Features](tests/6f5fb61b-4e56-4a3d-a8c3-82e13686c6d7.md)
@@ -4283,7 +4303,7 @@
   * T1047 [Application uninstall using WMIC](tests/c510d25b-1667-467d-8331-a56d3e9bc4ff.md)
 * win_defender_disabled.yml
   * T1562.001 [Tamper with Windows Defender ATP using Aliases - PowerShell](tests/c531aa6e-9c97-4b29-afee-9b7be6fc8a64.md)
-* win_security_disable_event_logging.yml
+* win_security_disable_event_auditing.yml
   * T1562.002 [Clear Windows Audit Policy Config](tests/913c0e4e-4b37-4b78-ad0b-90e7b25010f6.md)
 * win_security_event_log_cleared.yml
   * T1070.001 [Clear Event Logs via VBA](tests/1b682d84-f075-4f93-9a89-8a8de19ffd6e.md)

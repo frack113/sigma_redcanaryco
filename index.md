@@ -1515,7 +1515,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1619
-[AWS S3 Enumeration](tests/3c7094f8-71ec-4917-aeb8-a633d7ec4ef5.md) ['iaas:azure'] (sigma rule :x:)
+[AWS S3 Enumeration](tests/3c7094f8-71ec-4917-aeb8-a633d7ec4ef5.md) ['iaas:aws'] (sigma rule :x:)
 
 
 ### T1003.007
@@ -1700,6 +1700,16 @@ Caution: a test can generate a lot of noise...
 [Cron - Add script to all cron subfolders](tests/b7d42afa-9086-4c8a-b7b0-8ea3faa6ebb0.md) ['macos', 'linux'] (sigma rule :x:)
 
 
+### T1572
+[run ngrok](tests/4cdc9fc7-53fb-4894-9f0c-64836943ea60.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[DNS over HTTPS Regular Beaconing](tests/0c5f9705-c575-42a6-9609-cbbff4b2fc9b.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[DNS over HTTPS Long Domain Query](tests/748a73d5-cea4-4f34-84d8-839da5baa99c.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[DNS over HTTPS Large Query Volume](tests/ae9ef4b0-d8c1-49d4-8758-06206f19af0a.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+
 ### T1070.002
 [Delete log files using built-in log utility](tests/653d39cd-bae7-499a-898c-9fb96b8b5cd1.md) ['macos'] (sigma rule :x:)
 
@@ -1851,13 +1861,13 @@ Caution: a test can generate a lot of noise...
 ### T1569.002
 [Execute a Command as a Service](tests/2382dee2-a75f-49aa-9378-f52df6ed3fb1.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Snake Malware Service Create](tests/b8db787e-dbea-493c-96cb-9272296ddc49.md) ['windows'] (sigma rule :x:)
+[Snake Malware Service Create](tests/b8db787e-dbea-493c-96cb-9272296ddc49.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Use PsExec to execute a command on a remote host](tests/873106b7-cfed-454b-8680-fa9f6400431c.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [psexec.py (Impacket)](tests/edbcd8c9-3639-4844-afad-455c91e95a35.md) ['linux'] (sigma rule :x:)
 
-[Use RemCom to execute a command on a remote host](tests/a5d8cdeb-be90-43a9-8b26-cc618deac1e0.md) ['windows'] (sigma rule :x:)
+[Use RemCom to execute a command on a remote host](tests/a5d8cdeb-be90-43a9-8b26-cc618deac1e0.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [BlackCat pre-encryption cmds with Lateral Movement](tests/31eb7828-97d7-4067-9c1e-c6feb85edc4b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1939,11 +1949,11 @@ Caution: a test can generate a lot of noise...
 ### T1562.008
 [AWS - CloudTrail Logs Impairment Through S3 Lifecycle Rule using Stratus](tests/22d89a2f-d475-4895-b2d4-68626d49c029.md) ['linux', 'macos'] (sigma rule :x:)
 
-[AWS - Disable CloudTrail Logging Through Event Selectors using Stratus](tests/a27418de-bdce-4ebd-b655-38f11142bf0c.md) ['linux', 'macos'] (sigma rule :x:)
+[AWS - Disable CloudTrail Logging Through Event Selectors using Stratus](tests/a27418de-bdce-4ebd-b655-38f11142bf0c.md) ['linux', 'macos', 'iaas:aws'] (sigma rule :x:)
 
 [Office 365 - Set Audit Bypass For a Mailbox](tests/c9a2f6fe-7197-488c-af6d-10c782121ca6.md) ['office-365'] (sigma rule :x:)
 
-[AWS - Remove VPC Flow Logs using Stratus](tests/93c150f5-ad7b-4ee3-8992-df06dec2ac79.md) ['linux', 'macos'] (sigma rule :x:)
+[AWS - Remove VPC Flow Logs using Stratus](tests/93c150f5-ad7b-4ee3-8992-df06dec2ac79.md) ['linux', 'macos', 'iaas:aws'] (sigma rule :x:)
 
 [Office 365 - Exchange Audit Log Disabled](tests/1ee572f3-056c-4632-a7fc-7e7c42b1543c.md) ['office-365'] (sigma rule :x:)
 
@@ -2265,11 +2275,17 @@ Caution: a test can generate a lot of noise...
 
 [Simulate BlackByte Ransomware Print Bombing](tests/6b2903ac-8f36-450d-9ad5-b220e8a2dcb9.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Command Prompt read contents from CMD file and execute](tests/df81db1b-066c-4802-9bc8-b6d030c3ba8e.md) ['windows'] (sigma rule :x:)
+[Command Prompt read contents from CMD file and execute](tests/df81db1b-066c-4802-9bc8-b6d030c3ba8e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Writes text to a file and displays it.](tests/127b4afe-2346-4192-815c-69042bec570e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Suspicious Execution via Windows Command Shell](tests/d0eb3597-a1b3-4d65-b33b-2cda8d397f20.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+
+### T1570
+[Exfiltration Over SMB over QUIC (NET USE)](tests/183235ca-8e6c-422c-88c2-3aa28c4825d9.md) ['windows'] (sigma rule :x:)
+
+[Exfiltration Over SMB over QUIC (New-SmbMapping)](tests/d8d13303-159e-4f33-89f4-9f07812d016f.md) ['windows'] (sigma rule :x:)
 
 
 ### T1090.003
@@ -2719,7 +2735,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1580
-[AWS - EC2 Enumeration from Cloud Instance](tests/99ee161b-dcb1-4276-8ecb-7cfdcb207820.md) ['linux', 'macos'] (sigma rule :x:)
+[AWS - EC2 Enumeration from Cloud Instance](tests/99ee161b-dcb1-4276-8ecb-7cfdcb207820.md) ['linux', 'macos', 'iaas:aws'] (sigma rule :x:)
 
 
 ### T1553.005
@@ -2819,7 +2835,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1552
-[AWS - Retrieve EC2 Password Data using stratus](tests/a21118de-b11e-4ebd-b655-42f11142df0c.md) ['linux', 'macos'] (sigma rule :x:)
+[AWS - Retrieve EC2 Password Data using stratus](tests/a21118de-b11e-4ebd-b655-42f11142df0c.md) ['linux', 'macos', 'iaas:aws'] (sigma rule :x:)
 
 
 ### T1070.008
@@ -2918,14 +2934,6 @@ Caution: a test can generate a lot of noise...
 [Data Transfer Size Limits](tests/ab936c51-10f4-46ce-9144-e02137b2016a.md) ['macos', 'linux'] (sigma rule :x:)
 
 
-### T1572
-[DNS over HTTPS Regular Beaconing](tests/0c5f9705-c575-42a6-9609-cbbff4b2fc9b.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[DNS over HTTPS Long Domain Query](tests/748a73d5-cea4-4f34-84d8-839da5baa99c.md) ['windows'] (sigma rule :x:)
-
-[DNS over HTTPS Large Query Volume](tests/ae9ef4b0-d8c1-49d4-8758-06206f19af0a.md) ['windows'] (sigma rule :x:)
-
-
 ### T1055.003
 [Thread Execution Hijacking](tests/578025d5-faa9-4f6d-8390-aae527d503e1.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -3003,7 +3011,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1649
-[Staging Local Certificates via Export-Certificate](tests/eb121494-82d1-4148-9e2b-e624e03fbf3d.md) ['windows'] (sigma rule :x:)
+[Staging Local Certificates via Export-Certificate](tests/eb121494-82d1-4148-9e2b-e624e03fbf3d.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1497.001

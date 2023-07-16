@@ -1,7 +1,7 @@
 
 [back](../index.md)
 
-Find sigma rule :x: 
+Find sigma rule :heavy_check_mark: 
 
 # Attack: System Services: Service Execution 
 
@@ -35,6 +35,12 @@ Upon successful execution, cmd will utilize RemCom.exe to spawn calc.exe on a re
 command_prompt
 
 # Sigma Rule
+ - proc_creation_win_susp_ntfs_short_name_path_use_cli.yml (id: 349d891d-fef0-4fe4-bc53-eee623a15969)
+
+ - proc_creation_win_susp_non_exe_image.yml (id: c09dad97-1c78-4f71-b127-7edb2b8e491a)
+
+ - raw_access_thread_disk_access_using_illegitimate_tools.yml (id: db809f10-56ce-4420-8c86-d6a7d793c79c)
+
 
 
 [back](../index.md)
