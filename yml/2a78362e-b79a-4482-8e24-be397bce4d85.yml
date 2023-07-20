@@ -15,5 +15,7 @@ os:
   - windows
 description: Allows adversaries to abuse safe mode to disable endpoint defenses that may not start with limited boot
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: c9fbe8e9-119d-40a6-9b59-dd58a5d84429
+    name: proc_creation_win_bcdedit_susp_execution.yml

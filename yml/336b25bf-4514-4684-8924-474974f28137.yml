@@ -22,5 +22,25 @@ description: |
   Reference: https://posts.specterops.io/code-signing-certificate-cloning-attacks-and-defenses-6f98657fc6ec
   Reference: https://www.splunk.com/en_us/blog/security/a-golden-saml-journey-solarwinds-continued.html
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 3a6586ad-127a-4d3b-a677-1e6eacdf8fde
+    name: proc_creation_win_susp_shell_spawn_susp_program.yml
+  - id: e4b6d2a7-d8a4-4f19-acbd-943c16d90647
+    name: proc_creation_win_powershell_susp_child_processes.yml
+  - id: 3ffd6f51-e6c1-47b7-94b4-c1e61d4117c5
+    name: proc_creation_win_certutil_export_pfx.yml
+  - id: 1139d2e2-84b1-4226-b445-354492eba8ba
+    name: posh_ps_web_request_cmd_and_cmdlets.yml
+  - id: 96cd126d-f970-49c4-848a-da3a09f55c55
+    name: posh_ps_susp_set_alias.yml
+  - id: d223b46b-5621-4037-88fe-fda32eead684
+    name: registry_set_install_root_or_ca_certificat.yml
+  - id: 8d31a8ce-46b5-4dd6-bdc3-680931f1db86
+    name: posh_pm_bad_opsec_artifacts.yml
+  - id: 6e897651-f157-4d8f-aaeb-df8151488385
+    name: proc_creation_win_powershell_download_cradles.yml
+  - id: 85b0b087-eddf-4a2b-b033-d771fa2b9775
+    name: proc_creation_win_powershell_download_iex.yml
+  - id: 9fc51a3c-81b3-4fa7-b35f-7c02cf10fd2d
+    name: proc_creation_win_susp_web_request_cmd_and_cmdlets.yml

@@ -66,7 +66,7 @@ defense-evasion;T1564;command_prompt;['windows'];"Create a Hidden User Called ""
 defense-evasion;T1564;powershell;['windows'];"Create an ""Administrator "" user (with a space on the end)";5bb20389-39a5-4e99-9264-aeb92a55a85c;True;3
 defense-evasion;T1564;command_prompt;['windows'];Create and Hide a Service with sc.exe;333c7de0-6fbe-42aa-ac2b-c7e40b18246a;True;4
 defense-evasion;T1484.002;powershell;['azure-ad'];Add Federation to Azure AD;8906c5d0-3ee5-4f63-897a-f6cafd3fdbb7;False;1
-defense-evasion;T1562.009;command_prompt;['windows'];Safe Mode Boot;2a78362e-b79a-4482-8e24-be397bce4d85;False;1
+defense-evasion;T1562.009;command_prompt;['windows'];Safe Mode Boot;2a78362e-b79a-4482-8e24-be397bce4d85;True;1
 defense-evasion;T1497.001;sh;['linux'];Detect Virtualization Environment (Linux);dfbd1a21-540d-4574-9731-e852bd6fe840;False;1
 defense-evasion;T1497.001;powershell;['windows'];Detect Virtualization Environment (Windows);502a7dc4-9d6f-4d28-abf2-f0e84692562d;True;2
 defense-evasion;T1497.001;sh;['macos'];Detect Virtualization Environment (MacOS);a960185f-aef6-4547-8350-d1ce16680d09;False;3
@@ -290,8 +290,8 @@ defense-evasion;T1562.006;bash;['linux'];Logging Configuration Changes on Linux 
 defense-evasion;T1562.006;powershell;['windows'];Disable Powershell ETW Provider - Windows;6f118276-121d-4c09-bb58-a8fb4a72ee84;True;3
 defense-evasion;T1562.006;command_prompt;['windows'];Disable .NET Event Tracing for Windows Via Registry (cmd);8a4c33be-a0d3-434a-bee6-315405edbd5b;True;4
 defense-evasion;T1562.006;powershell;['windows'];Disable .NET Event Tracing for Windows Via Registry (powershell);19c07a45-452d-4620-90ed-4c34fffbe758;True;5
-defense-evasion;T1562.006;command_prompt;['windows'];LockBit Black - Disable the ETW Provider of Windows Defender -cmd;f6df0b8e-2c83-44c7-ba5e-0fa4386bec41;False;6
-defense-evasion;T1562.006;powershell;['windows'];LockBit Black - Disable the ETW Provider of Windows Defender -Powershell;69fc085b-5444-4879-8002-b24c8e1a3e02;False;7
+defense-evasion;T1562.006;command_prompt;['windows'];LockBit Black - Disable the ETW Provider of Windows Defender -cmd;f6df0b8e-2c83-44c7-ba5e-0fa4386bec41;True;6
+defense-evasion;T1562.006;powershell;['windows'];LockBit Black - Disable the ETW Provider of Windows Defender -Powershell;69fc085b-5444-4879-8002-b24c8e1a3e02;True;7
 defense-evasion;T1070;command_prompt;['windows'];Indicator Removal using FSUtil;b4115c7a-0e92-47f0-a61e-17e7218b2435;True;1
 defense-evasion;T1550.003;command_prompt;['windows'];Mimikatz Kerberos Ticket Attack;dbf38128-7ba7-4776-bedf-cc2eed432098;True;1
 defense-evasion;T1550.003;powershell;['windows'];Rubeus Kerberos Pass The Ticket;a2fc4ec5-12c6-4fb4-b661-961f23f359cb;True;2
@@ -366,7 +366,7 @@ defense-evasion;T1562.001;command_prompt;['windows'];Tamper with Windows Defende
 defense-evasion;T1562.001;powershell;['windows'];Tamper with Windows Defender Registry;1b3e0146-a1e5-4c5c-89fb-1bb2ffe8fc45;True;17
 defense-evasion;T1562.001;powershell;['windows'];Disable Microsoft Office Security Features;6f5fb61b-4e56-4a3d-a8c3-82e13686c6d7;True;18
 defense-evasion;T1562.001;command_prompt;['windows'];Remove Windows Defender Definition Files;3d47daaa-2f56-43e0-94cc-caf5d8d52a68;True;19
-defense-evasion;T1562.001;powershell;['windows'];Stop and Remove Arbitrary Security Windows Service;ae753dda-0f15-4af6-a168-b9ba16143143;False;20
+defense-evasion;T1562.001;powershell;['windows'];Stop and Remove Arbitrary Security Windows Service;ae753dda-0f15-4af6-a168-b9ba16143143;True;20
 defense-evasion;T1562.001;powershell;['windows'];Uninstall Crowdstrike Falcon on Windows;b32b1ccf-f7c1-49bc-9ddd-7d7466a7b297;True;21
 defense-evasion;T1562.001;powershell;['windows'];Tamper with Windows Defender Evade Scanning -Folder;0b19f4ee-de90-4059-88cb-63c800c683ed;True;22
 defense-evasion;T1562.001;powershell;['windows'];Tamper with Windows Defender Evade Scanning -Extension;315f4be6-2240-4552-b3e1-d1047f5eecea;True;23
@@ -390,7 +390,7 @@ defense-evasion;T1562.001;sh;['linux'];Reboot Linux Host via Kernel System Reque
 defense-evasion;T1562.001;sh;['linux'];Clear Pagging Cache;f790927b-ea85-4a16-b7b2-7eb44176a510;False;41
 defense-evasion;T1562.001;sh;['linux'];Disable Memory Swap;e74e4c63-6fde-4ad2-9ee8-21c3a1733114;False;42
 defense-evasion;T1562.001;powershell;['windows'];Disable Hypervisor-Enforced Code Integrity (HVCI);70bd71e6-eba4-4e00-92f7-617911dbe020;False;43
-defense-evasion;T1562.001;command_prompt;['windows'];AMSI Bypass - Override AMSI via COM;17538258-5699-4ff1-92d1-5ac9b0dc21f5;False;44
+defense-evasion;T1562.001;command_prompt;['windows'];AMSI Bypass - Override AMSI via COM;17538258-5699-4ff1-92d1-5ac9b0dc21f5;True;44
 defense-evasion;T1055.012;powershell;['windows'];Process Hollowing using PowerShell;562427b4-39ef-4e8c-af88-463a78e70b9c;True;1
 defense-evasion;T1055.012;powershell;['windows'];RunPE via VBA;3ad4a037-1598-4136-837c-4027e4fa319b;True;2
 defense-evasion;T1027;sh;['macos', 'linux'];Decode base64 Data into Script;f45df6be-2e1e-4136-a384-8f18ab3826fb;False;1
@@ -649,11 +649,11 @@ privilege-escalation;T1547.001;powershell;['windows'];HKLM - Policy Settings Exp
 privilege-escalation;T1547.001;powershell;['windows'];HKLM - Append Command to Winlogon Userinit KEY Value;f7fab6cc-8ece-4ca7-a0f1-30a22fccd374;True;14
 privilege-escalation;T1547.001;powershell;['windows'];HKLM - Modify default System Shell - Winlogon Shell KEY Value ;1d958c61-09c6-4d9e-b26b-4130314e520e;True;15
 privilege-escalation;T1547.001;command_prompt;['windows'];secedit used to create a Run key in the HKLM Hive;14fdc3f1-6fc3-4556-8d36-aa89d9d42d02;True;16
-privilege-escalation;T1547.001;powershell;['windows'];Modify BootExecute Value;befc2b40-d487-4a5a-8813-c11085fb5672;False;17
+privilege-escalation;T1547.001;powershell;['windows'];Modify BootExecute Value;befc2b40-d487-4a5a-8813-c11085fb5672;True;17
 privilege-escalation;T1547.006;bash;['linux'];Linux - Load Kernel Module via insmod;687dcb93-9656-4853-9c36-9977315e9d23;False;1
 privilege-escalation;T1547.006;bash;['macos'];MacOS - Load Kernel Module via kextload and kmutil;f4391089-d3a5-4dd1-ab22-0419527f2672;False;2
 privilege-escalation;T1547.006;bash;['macos'];MacOS - Load Kernel Module via KextManagerLoadKextWithURL();f0007753-beb3-41ea-9948-760785e4c1e5;False;3
-privilege-escalation;T1547.006;powershell;['windows'];Snake Malware Kernel Driver Comadmin;e5cb5564-cc7b-4050-86e8-f2d9eec1941f;False;4
+privilege-escalation;T1547.006;powershell;['windows'];Snake Malware Kernel Driver Comadmin;e5cb5564-cc7b-4050-86e8-f2d9eec1941f;True;4
 privilege-escalation;T1053.006;bash;['linux'];Create Systemd Service and Timer;f4983098-bb13-44fb-9b2c-46149961807b;False;1
 privilege-escalation;T1053.006;sh;['linux'];Create a user level transient systemd service and timer;3de33f5b-62e5-4e63-a2a0-6fd8808c80ec;False;2
 privilege-escalation;T1053.006;sh;['linux'];Create a system level transient systemd service and timer;d3eda496-1fc0-49e9-aff5-3bec5da9fa22;False;3
@@ -943,7 +943,7 @@ persistence;T1547.001;powershell;['windows'];HKLM - Policy Settings Explorer Run
 persistence;T1547.001;powershell;['windows'];HKLM - Append Command to Winlogon Userinit KEY Value;f7fab6cc-8ece-4ca7-a0f1-30a22fccd374;True;14
 persistence;T1547.001;powershell;['windows'];HKLM - Modify default System Shell - Winlogon Shell KEY Value ;1d958c61-09c6-4d9e-b26b-4130314e520e;True;15
 persistence;T1547.001;command_prompt;['windows'];secedit used to create a Run key in the HKLM Hive;14fdc3f1-6fc3-4556-8d36-aa89d9d42d02;True;16
-persistence;T1547.001;powershell;['windows'];Modify BootExecute Value;befc2b40-d487-4a5a-8813-c11085fb5672;False;17
+persistence;T1547.001;powershell;['windows'];Modify BootExecute Value;befc2b40-d487-4a5a-8813-c11085fb5672;True;17
 persistence;T1136.003;sh;['iaas:aws'];AWS - Create a new IAM user;8d1c2368-b503-40c9-9057-8e42f21c58ad;False;1
 persistence;T1136.003;powershell;['azure-ad'];Azure AD - Create a new user;e62d23ef-3153-4837-8625-fa4a3829134d;False;2
 persistence;T1136.003;powershell;['azure-ad'];Azure AD - Create a new user via Azure CLI;228c7498-be31-48e9-83b7-9cb906504ec8;False;3
@@ -967,7 +967,7 @@ persistence;T1098;sh;['iaas:gcp'];GCP - Delete Service Account Key;7ece1dea-49f1
 persistence;T1547.006;bash;['linux'];Linux - Load Kernel Module via insmod;687dcb93-9656-4853-9c36-9977315e9d23;False;1
 persistence;T1547.006;bash;['macos'];MacOS - Load Kernel Module via kextload and kmutil;f4391089-d3a5-4dd1-ab22-0419527f2672;False;2
 persistence;T1547.006;bash;['macos'];MacOS - Load Kernel Module via KextManagerLoadKextWithURL();f0007753-beb3-41ea-9948-760785e4c1e5;False;3
-persistence;T1547.006;powershell;['windows'];Snake Malware Kernel Driver Comadmin;e5cb5564-cc7b-4050-86e8-f2d9eec1941f;False;4
+persistence;T1547.006;powershell;['windows'];Snake Malware Kernel Driver Comadmin;e5cb5564-cc7b-4050-86e8-f2d9eec1941f;True;4
 persistence;T1053.006;bash;['linux'];Create Systemd Service and Timer;f4983098-bb13-44fb-9b2c-46149961807b;False;1
 persistence;T1053.006;sh;['linux'];Create a user level transient systemd service and timer;3de33f5b-62e5-4e63-a2a0-6fd8808c80ec;False;2
 persistence;T1053.006;sh;['linux'];Create a system level transient systemd service and timer;d3eda496-1fc0-49e9-aff5-3bec5da9fa22;False;3
@@ -1263,9 +1263,9 @@ credential-access;T1552.004;sh;['macos', 'linux'];Copy Private SSH Keys with rsy
 credential-access;T1552.004;sh;['macos', 'linux'];Copy the users GnuPG directory with rsync;2a5a0601-f5fb-4e2e-aa09-73282ae6afca;False;5
 credential-access;T1552.004;powershell;['windows'];ADFS token signing and encryption certificates theft - Local;78e95057-d429-4e66-8f82-0f060c1ac96f;True;6
 credential-access;T1552.004;powershell;['windows'];ADFS token signing and encryption certificates theft - Remote;cab413d8-9e4a-4b8d-9b84-c985bd73a442;True;7
-credential-access;T1552.004;powershell;['windows'];CertUtil ExportPFX;336b25bf-4514-4684-8924-474974f28137;False;8
-credential-access;T1552.004;powershell;['windows'];Export Root Certificate with Export-PFXCertificate;7617f689-bbd8-44bc-adcd-6f8968897848;False;9
-credential-access;T1552.004;powershell;['windows'];Export Root Certificate with Export-Certificate;78b274f8-acb0-428b-b1f7-7b0d0e73330a;False;10
+credential-access;T1552.004;powershell;['windows'];CertUtil ExportPFX;336b25bf-4514-4684-8924-474974f28137;True;8
+credential-access;T1552.004;powershell;['windows'];Export Root Certificate with Export-PFXCertificate;7617f689-bbd8-44bc-adcd-6f8968897848;True;9
+credential-access;T1552.004;powershell;['windows'];Export Root Certificate with Export-Certificate;78b274f8-acb0-428b-b1f7-7b0d0e73330a;True;10
 credential-access;T1552.004;command_prompt;['windows'];Export Certificates with Mimikatz;290df60e-4b5d-4a5e-b0c7-dc5348ea0c86;False;11
 credential-access;T1557.001;powershell;['windows'];LLMNR Poisoning with Inveigh (PowerShell);deecd55f-afe0-4a62-9fba-4d1ba2deb321;True;1
 credential-access;T1003.001;command_prompt;['windows'];Dump LSASS.exe Memory using ProcDump;0be2230c-9ab3-4ac2-8826-3199b9a0ebf8;True;1

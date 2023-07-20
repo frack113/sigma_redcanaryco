@@ -24,5 +24,7 @@ description: "With administrative rights, an adversary can disable AMSI via regi
   \ COM object for AMSI and points it to a DLL that does not exist.\nThis is currently being used by AsyncRAT and others. \nhttps://strontic.github.io/xcyclopedia/library/clsid_fdb00e52-a214-4aa1-8fba-4357bb0072ec.html\n\
   https://securitynews.sonicwall.com/xmlpost/asyncrat-variant-includes-cryptostealer-capabilites/\n"
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 160d2780-31f7-4922-8b3a-efce30e63e96
+    name: registry_set_amsi_com_hijack.yml

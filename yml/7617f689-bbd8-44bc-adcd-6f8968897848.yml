@@ -20,5 +20,17 @@ description: |
   Creates a Root certificate and exports it with Export-PFXCertificate PowerShell Cmdlet.
   Upon a successful attempt, this will write a pfx to disk and utilize the Cmdlet Export-PFXCertificate.
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 213d6a77-3d55-4ce8-ba74-fcfef741974e
+    name: proc_creation_win_susp_private_keys_recon.yml
+  - id: 74403157-20f5-415d-89a7-c505779585cf
+    name: proc_creation_win_powershell_cmdline_convertto_securestring.yml
+  - id: 9e716b33-63b2-46da-86a4-bd3c3b9b5dfb
+    name: proc_creation_win_powershell_export_certificate.yml
+  - id: aa7a3fce-bef5-4311-9cc1-5f04bb8c308c
+    name: posh_ps_export_certificate.yml
+  - id: d223b46b-5621-4037-88fe-fda32eead684
+    name: registry_set_install_root_or_ca_certificat.yml
+  - id: dca1b3e8-e043-4ec8-85d7-867f334b5724
+    name: file_event_win_susp_pfx_file_creation.yml
