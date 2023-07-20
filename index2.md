@@ -132,6 +132,8 @@
   * T1003.001 [Dump LSASS.exe Memory using ProcDump](tests/0be2230c-9ab3-4ac2-8826-3199b9a0ebf8.md)
 * file_event_win_mal_octopus_scanner.yml
   * T1195 [Octopus Scanner Malware Open Source Supply Chain](tests/82a9f001-94c5-495e-9ed5-f530dbded5e2.md)
+* file_event_win_malware_snake_encrypted_payload_ioc.yml
+  * T1547.006 [Snake Malware Kernel Driver Comadmin](tests/e5cb5564-cc7b-4050-86e8-f2d9eec1941f.md)
 * file_event_win_net_cli_artefact.yml
   * T1218 [Renamed Microsoft.Workflow.Compiler.exe Payload Executions](tests/4cc40fd7-87b8-4b16-b2d7-57534b86b911.md)
   * T1219 [ScreenConnect Application Download and Install on Windows](tests/4a18cc4e-416f-4966-9a9d-75731c4684c0.md)
@@ -238,6 +240,8 @@
   * T1204.002 [LNK Payload Download](tests/581d7521-9c4b-420e-9695-2aec5241167f.md)
 * file_event_win_susp_get_variable.yml
   * T1574.008 [powerShell Persistence via hijacking default modules - Get-Variable.exe](tests/1561de08-0b4b-498e-8261-e922f3494aae.md)
+* file_event_win_susp_pfx_file_creation.yml
+  * T1552.004 [Export Root Certificate with Export-PFXCertificate](tests/7617f689-bbd8-44bc-adcd-6f8968897848.md)
 * file_event_win_tool_psexec.yml
   * T1569.002 [Use PsExec to execute a command on a remote host](tests/873106b7-cfed-454b-8680-fa9f6400431c.md)
   * T1003.004 [Dumping LSA Secrets](tests/55295ab0-a703-433b-9ca4-ae13807de12f.md)
@@ -624,6 +628,7 @@
   * T1562.001 [WinPwn - Kill the event log services for stealth](tests/7869d7a3-3a30-4d2c-a5d2-f1cd9c34ce66.md)
   * T1135 [WinPwn - shareenumeration](tests/987901d1-5b87-4558-a6d9-cffcabc638b8.md)
   * T1518 [WinPwn - Dotnetsearch](tests/7e79a1b6-519e-433c-ad55-3ff293667101.md)
+  * T1552.004 [CertUtil ExportPFX](tests/336b25bf-4514-4684-8924-474974f28137.md)
   * T1518 [WinPwn - DotNet](tests/10ba02d0-ab76-4f80-940d-451633f24c5b.md)
   * T1187 [WinPwn - PowerSharpPack - Retrieving NTLM Hashes without Touching LSASS](tests/7f06b25c-799e-40f1-89db-999c9cc84317.md)
   * T1082 [WinPwn - Morerecon](tests/3278b2f6-f733-4875-9ef4-bfed34244f0a.md)
@@ -1085,7 +1090,9 @@
   * T1555 [Enumerate credentials from Windows Credential Manager using vaultcmd.exe [Windows Credentials]](tests/36753ded-e5c4-4eb5-bc3c-e8fba236878d.md)
   * T1555 [Enumerate credentials from Windows Credential Manager using vaultcmd.exe [Web Credentials]](tests/bc071188-459f-44d5-901a-f8f2625b2d2e.md)
 * posh_ps_export_certificate.yml
+  * T1552.004 [Export Root Certificate with Export-PFXCertificate](tests/7617f689-bbd8-44bc-adcd-6f8968897848.md)
   * T1552.004 [ADFS token signing and encryption certificates theft - Local](tests/78e95057-d429-4e66-8f82-0f060c1ac96f.md)
+  * T1552.004 [Export Root Certificate with Export-Certificate](tests/78b274f8-acb0-428b-b1f7-7b0d0e73330a.md)
 * posh_ps_file_and_directory_discovery.yml
   * T1555 [WinPwn - Loot local Credentials - lazagne](tests/079ee2e9-6f16-47ca-a635-14efcd994118.md)
   * T1134.004 [Parent PID Spoofing - Spawn from svchost.exe](tests/e9f2b777-3123-430b-805d-5cedc66ab591.md)
@@ -2147,6 +2154,7 @@
   * T1531 [Remove Account From Domain Admin Group](tests/43f71395-6c37-498e-ab17-897d814a0947.md)
 * posh_ps_susp_set_alias.yml
   * T1546 [WMI Invoke-CimMethod Start Process](tests/adae83d3-0df6-45e7-b2c3-575f91584577.md)
+  * T1552.004 [CertUtil ExportPFX](tests/336b25bf-4514-4684-8924-474974f28137.md)
 * posh_ps_susp_smb_share_reco.yml
   * T1070.005 [Remove Network Share PowerShell](tests/0512d214-9512-4d22-bde7-f37e058259b3.md)
   * T1135 [Network Share Discovery PowerShell](tests/1b0814d1-bb24-402d-9615-1b20c50733fb.md)
@@ -2325,6 +2333,7 @@
   * T1572 [DNS over HTTPS Long Domain Query](tests/748a73d5-cea4-4f34-84d8-839da5baa99c.md)
   * T1518 [WinPwn - Dotnetsearch](tests/7e79a1b6-519e-433c-ad55-3ff293667101.md)
   * T1552.004 [ADFS token signing and encryption certificates theft - Local](tests/78e95057-d429-4e66-8f82-0f060c1ac96f.md)
+  * T1552.004 [CertUtil ExportPFX](tests/336b25bf-4514-4684-8924-474974f28137.md)
   * T1518 [WinPwn - DotNet](tests/10ba02d0-ab76-4f80-940d-451633f24c5b.md)
   * T1572 [DNS over HTTPS Large Query Volume](tests/ae9ef4b0-d8c1-49d4-8758-06206f19af0a.md)
   * T1105 [iwr or Invoke Web-Request download](tests/c01cad7f-7a4c-49df-985e-b190dcf6a279.md)
@@ -2440,6 +2449,8 @@
   * T1562.002 [Clear Windows Audit Policy Config](tests/913c0e4e-4b37-4b78-ad0b-90e7b25010f6.md)
 * proc_creation_win_bcdedit_boot_conf_tamper.yml
   * T1490 [Windows - Disable Windows Recovery Console Repair](tests/cf21060a-80b3-4238-a595-22525de4ab81.md)
+* proc_creation_win_bcdedit_susp_execution.yml
+  * T1562.009 [Safe Mode Boot](tests/2a78362e-b79a-4482-8e24-be397bce4d85.md)
 * proc_creation_win_bitsadmin_download.yml
   * T1197 [Persist, Download, & Execute](tests/62a06ec5-5754-47d2-bcfc-123d8314c6ae.md)
   * T1105 [Windows - BITSAdmin BITS Download](tests/a1921cd3-9a2d-47d5-a891-f1d0f2a7a31b.md)
@@ -2451,6 +2462,8 @@
   * T1090.003 [Tor Proxy Usage - Windows](tests/7b9d85e5-c4ce-4434-8060-d3de83595e69.md)
 * proc_creation_win_certutil_encode.yml
   * T1003.002 [dump volume shadow copy hives with certutil](tests/eeb9751a-d598-42d3-b11c-c122d9c3f6c7.md)
+* proc_creation_win_certutil_export_pfx.yml
+  * T1552.004 [CertUtil ExportPFX](tests/336b25bf-4514-4684-8924-474974f28137.md)
 * proc_creation_win_chcp_codepage_lookup.yml
   * T1614.001 [Discover System Language by Registry Query](tests/631d4cf1-42c9-4209-8fe9-6bd4de9421be.md)
   * T1614.001 [Discover System Language with chcp](tests/d91473ca-944e-477a-b484-0e80217cd789.md)
@@ -2947,6 +2960,7 @@
 * proc_creation_win_powershell_base64_encoded_cmd.yml
   * T1106 [WinPwn - Get SYSTEM shell - Bind System Shell using CreateProcess technique](tests/7ec5b74e-8289-4ff2-a162-b6f286a33abd.md)
 * proc_creation_win_powershell_cmdline_convertto_securestring.yml
+  * T1552.004 [Export Root Certificate with Export-PFXCertificate](tests/7617f689-bbd8-44bc-adcd-6f8968897848.md)
   * T1098 [Domain Password Policy Check: Short Password](tests/fc5f9414-bd67-4f5f-a08e-e5381e29cbd1.md)
   * T1546 [WMI Invoke-CimMethod Start Process](tests/adae83d3-0df6-45e7-b2c3-575f91584577.md)
 * proc_creation_win_powershell_cmdline_special_characters.yml
@@ -3016,6 +3030,7 @@
   * T1562.001 [WinPwn - Kill the event log services for stealth](tests/7869d7a3-3a30-4d2c-a5d2-f1cd9c34ce66.md)
   * T1135 [WinPwn - shareenumeration](tests/987901d1-5b87-4558-a6d9-cffcabc638b8.md)
   * T1518 [WinPwn - Dotnetsearch](tests/7e79a1b6-519e-433c-ad55-3ff293667101.md)
+  * T1552.004 [CertUtil ExportPFX](tests/336b25bf-4514-4684-8924-474974f28137.md)
   * T1518 [WinPwn - DotNet](tests/10ba02d0-ab76-4f80-940d-451633f24c5b.md)
   * T1572 [DNS over HTTPS Large Query Volume](tests/ae9ef4b0-d8c1-49d4-8758-06206f19af0a.md)
   * T1187 [WinPwn - PowerSharpPack - Retrieving NTLM Hashes without Touching LSASS](tests/7f06b25c-799e-40f1-89db-999c9cc84317.md)
@@ -3073,6 +3088,7 @@
   * T1562.001 [WinPwn - Kill the event log services for stealth](tests/7869d7a3-3a30-4d2c-a5d2-f1cd9c34ce66.md)
   * T1135 [WinPwn - shareenumeration](tests/987901d1-5b87-4558-a6d9-cffcabc638b8.md)
   * T1518 [WinPwn - Dotnetsearch](tests/7e79a1b6-519e-433c-ad55-3ff293667101.md)
+  * T1552.004 [CertUtil ExportPFX](tests/336b25bf-4514-4684-8924-474974f28137.md)
   * T1518 [WinPwn - DotNet](tests/10ba02d0-ab76-4f80-940d-451633f24c5b.md)
   * T1187 [WinPwn - PowerSharpPack - Retrieving NTLM Hashes without Touching LSASS](tests/7f06b25c-799e-40f1-89db-999c9cc84317.md)
   * T1082 [WinPwn - Morerecon](tests/3278b2f6-f733-4875-9ef4-bfed34244f0a.md)
@@ -3167,7 +3183,9 @@
   * T1033 [System Discovery - SocGholish whoami](tests/3d257a03-eb80-41c5-b744-bb37ac7f65c7.md)
   * T1059.001 [Obfuscation Tests](tests/4297c41a-8168-4138-972d-01f3ee92c804.md)
 * proc_creation_win_powershell_export_certificate.yml
+  * T1552.004 [Export Root Certificate with Export-PFXCertificate](tests/7617f689-bbd8-44bc-adcd-6f8968897848.md)
   * T1649 [Staging Local Certificates via Export-Certificate](tests/eb121494-82d1-4148-9e2b-e624e03fbf3d.md)
+  * T1552.004 [Export Root Certificate with Export-Certificate](tests/78b274f8-acb0-428b-b1f7-7b0d0e73330a.md)
 * proc_creation_win_powershell_frombase64string.yml
   * T1027 [Execute base64-encoded PowerShell from Windows Registry](tests/450e7218-7915-4be4-8b9b-464a49eafcec.md)
   * T1059.001 [PowerShell Fileless Script Execution](tests/fa050f5e-bc75-4230-af73-b6fd7852cd73.md)
@@ -3238,6 +3256,8 @@
   * T1547.001 [SystemBC Malware-as-a-Service Registry](tests/9dc7767b-30c1-4cc4-b999-50cab5e27891.md)
   * T1112 [Change Powershell Execution Policy to Bypass](tests/f3a6cceb-06c9-48e5-8df8-8867a6814245.md)
   * T1216 [SyncAppvPublishingServer Signed Script PowerShell Command Execution](tests/275d963d-3f36-476c-8bef-a2a3960ee6eb.md)
+* proc_creation_win_powershell_stop_service.yml
+  * T1562.001 [Stop and Remove Arbitrary Security Windows Service](tests/ae753dda-0f15-4af6-a168-b9ba16143143.md)
 * proc_creation_win_powershell_susp_child_processes.yml
   * T1087.002 [Wevtutil - Discover NTLM Users Remote](tests/b8a563d4-a836-4993-a74e-0a19b8481bfe.md)
   * T1082 [WinPwn - GeneralRecon](tests/7804659b-fdbf-4cf6-b06a-c03e758590e8.md)
@@ -3247,6 +3267,7 @@
   * T1546.015 [COM hijacking via TreatAs](tests/33eacead-f117-4863-8eb0-5c6304fbfaa9.md)
   * T1546.015 [COM Hijacking with RunDLL32 (Local Server Switch)](tests/123520cc-e998-471b-a920-bd28e3feafa0.md)
   * T1003 [Dump Credential Manager using keymgr.dll and rundll32.exe](tests/84113186-ed3c-4d0d-8a3c-8980c86c1f4a.md)
+  * T1552.004 [CertUtil ExportPFX](tests/336b25bf-4514-4684-8924-474974f28137.md)
   * T1548.002 [WinPwn - UAC Bypass DiskCleanup technique](tests/1ed67900-66cd-4b09-b546-2a0ef4431a0c.md)
 * proc_creation_win_powershell_susp_download_patterns.yml
   * T1555 [WinPwn - Loot local Credentials - lazagne](tests/079ee2e9-6f16-47ca-a635-14efcd994118.md)
@@ -3393,6 +3414,7 @@
   * T1112 [Disable Windows Error Reporting Settings](tests/d2c9e41e-cd86-473d-980d-b6403562e3e1.md)
 * proc_creation_win_reg_dumping_sensitive_hives.yml
   * T1003.002 [Registry dump of SAM, creds, and secrets](tests/5c2571d0-1572-416d-9676-812e64ca9f44.md)
+  * T1547.001 [Modify BootExecute Value](tests/befc2b40-d487-4a5a-8813-c11085fb5672.md)
 * proc_creation_win_reg_enumeration_for_credentials_in_registry.yml
   * T1552.002 [Enumeration for PuTTY Credentials in Registry](tests/af197fd7-e868-448e-9bd5-05d1bcd9d9e5.md)
   * T1552.002 [Enumeration for Credentials in Registry](tests/b6ec082c-7384-46b3-a111-9a9b8b14e5e7.md)
@@ -3700,6 +3722,7 @@
   * T1569.002 [BlackCat pre-encryption cmds with Lateral Movement](tests/31eb7828-97d7-4067-9c1e-c6feb85edc4b.md)
   * T1592.002 [Enumerate COM Objects in Registry with Powershell](tests/0d80d088-a84c-4353-af1a-fc8b439f1564.md)
 * proc_creation_win_susp_private_keys_recon.yml
+  * T1552.004 [Export Root Certificate with Export-PFXCertificate](tests/7617f689-bbd8-44bc-adcd-6f8968897848.md)
   * T1552.004 [Private Keys](tests/520ce462-7ca7-441e-b5a5-f8347f632696.md)
 * proc_creation_win_susp_progname.yml
   * T1018 [Get-DomainController with PowerView](tests/b9d2e8ca-5520-4737-8076-4f08913da2c4.md)
@@ -3728,6 +3751,8 @@
   * T1543.003 [Remote Service Installation CMD](tests/fb4151a2-db33-4f8c-b7f8-78ea8790f961.md)
   * T1543.003 [Service Installation CMD](tests/981e2942-e433-44e9-afc1-8c957a1496b6.md)
   * T1543.003 [Service Installation PowerShell](tests/491a4af6-a521-4b74-b23b-f7b3f1ee9e77.md)
+* proc_creation_win_susp_service_tamper.yml
+  * T1562.001 [Stop and Remove Arbitrary Security Windows Service](tests/ae753dda-0f15-4af6-a168-b9ba16143143.md)
 * proc_creation_win_susp_shadow_copies_creation.yml
   * T1003.003 [Create Symlink to Volume Shadow Copy](tests/21748c28-2793-4284-9e07-d6d028b66702.md)
   * T1003.003 [Create Volume Shadow Copy with vssadmin](tests/dcebead7-6c28-4b4b-bf3c-79deb1b1fc7f.md)
@@ -3746,6 +3771,7 @@
   * T1059.001 [Abuse Nslookup with DNS Records](tests/999bff6d-dc15-44c9-9f5c-e1051bfc86e1.md)
   * T1553.004 [Install root CA on Windows with certutil](tests/5fdb1a7a-a93c-4fbe-aa29-ddd9ef94ed1f.md)
   * T1105 [certutil download (verifyctl)](tests/ffd492e3-0455-4518-9fb1-46527c9f241b.md)
+  * T1552.004 [CertUtil ExportPFX](tests/336b25bf-4514-4684-8924-474974f28137.md)
   * T1003.002 [dump volume shadow copy hives with certutil](tests/eeb9751a-d598-42d3-b11c-c122d9c3f6c7.md)
   * T1218.005 [Invoke HTML Application - JScript Engine with Inline Protocol Handler](tests/d3eaaf6a-cdb1-44a9-9ede-b6c337d0d840.md)
   * T1548.002 [WinPwn - UAC Bypass DiskCleanup technique](tests/1ed67900-66cd-4b09-b546-2a0ef4431a0c.md)
@@ -3835,6 +3861,7 @@
   * T1135 [WinPwn - shareenumeration](tests/987901d1-5b87-4558-a6d9-cffcabc638b8.md)
   * T1518 [WinPwn - Dotnetsearch](tests/7e79a1b6-519e-433c-ad55-3ff293667101.md)
   * T1056.004 [Hook PowerShell TLS Encrypt/Decrypt Messages](tests/de1934ea-1fbf-425b-8795-65fb27dd7e33.md)
+  * T1552.004 [CertUtil ExportPFX](tests/336b25bf-4514-4684-8924-474974f28137.md)
   * T1518 [WinPwn - DotNet](tests/10ba02d0-ab76-4f80-940d-451633f24c5b.md)
   * T1572 [DNS over HTTPS Large Query Volume](tests/ae9ef4b0-d8c1-49d4-8758-06206f19af0a.md)
   * T1105 [iwr or Invoke Web-Request download](tests/c01cad7f-7a4c-49df-985e-b190dcf6a279.md)
@@ -4080,6 +4107,8 @@
   * T1547.010 [Add Port Monitor persistence in Registry](tests/d34ef297-f178-4462-871e-9ce618d44e50.md)
 * registry_set_allow_rdp_remote_assistance_feature.yml
   * T1112 [Allow RDP Remote Assistance Feature](tests/86677d0e-0b5e-4a2b-b302-454175f9aa9e.md)
+* registry_set_amsi_com_hijack.yml
+  * T1562.001 [AMSI Bypass - Override AMSI via COM](tests/17538258-5699-4ff1-92d1-5ac9b0dc21f5.md)
 * registry_set_asep_reg_keys_modification_common.yml
   * T1546 [HKCU - Persistence using CommandProcessor AutoRun key (Without Elevation)](tests/36b8dbf9-59b1-4e9b-a3bb-36e80563ef01.md)
   * T1546 [HKLM - Persistence using CommandProcessor AutoRun key (With Elevation)](tests/a574dafe-a903-4cce-9701-14040f4f3532.md)
@@ -4172,6 +4201,9 @@
 * registry_set_disable_windows_firewall.yml
   * T1562.004 [LockBit Black - Unusual Windows firewall registry modification -Powershell](tests/80b453d1-eec5-4144-bf08-613a6c3ffe12.md)
   * T1562.004 [LockBit Black - Unusual Windows firewall registry modification -cmd](tests/a4651931-ebbb-4cde-9363-ddf3d66214cb.md)
+* registry_set_disable_winevt_logging.yml
+  * T1562.006 [LockBit Black - Disable the ETW Provider of Windows Defender -cmd](tests/f6df0b8e-2c83-44c7-ba5e-0fa4386bec41.md)
+  * T1562.006 [LockBit Black - Disable the ETW Provider of Windows Defender -Powershell](tests/69fc085b-5444-4879-8002-b24c8e1a3e02.md)
 * registry_set_disallowrun_execution.yml
   * T1112 [DisallowRun Execution Of Certain Applications](tests/71db768a-5a9c-4047-b5e7-59e01f188e84.md)
 * registry_set_dot_net_etw_tamper.yml
@@ -4192,7 +4224,10 @@
   * T1112 [Windows HideSCAHealth Group Policy Feature](tests/a4637291-40b1-4a96-8c82-b28f1d73e54e.md)
   * T1112 [Hide Windows Clock Group Policy Feature](tests/8023db1e-ad06-4966-934b-b6a0ae52689e.md)
 * registry_set_install_root_or_ca_certificat.yml
+  * T1552.004 [Export Root Certificate with Export-PFXCertificate](tests/7617f689-bbd8-44bc-adcd-6f8968897848.md)
   * T1553.004 [Add Root Certificate to CurrentUser Certificate Store](tests/ca20a3f1-42b5-4e21-ad3f-1049199ec2e0.md)
+  * T1552.004 [Export Root Certificate with Export-Certificate](tests/78b274f8-acb0-428b-b1f7-7b0d0e73330a.md)
+  * T1552.004 [CertUtil ExportPFX](tests/336b25bf-4514-4684-8924-474974f28137.md)
 * registry_set_legalnotice_susp_message.yml
   * T1491.001 [Configure LegalNoticeCaption and LegalNoticeText registry keys to display ransom message](tests/ffcbfaab-c9ff-470b-928c-f086b326089b.md)
 * registry_set_office_disable_protected_view_features.yml

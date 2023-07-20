@@ -419,7 +419,7 @@ Caution: a test can generate a lot of noise...
 
 [Reg Key RunOnce](tests/554cbd88-cde1-4b56-8168-0be552eed9eb.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Modify BootExecute Value](tests/befc2b40-d487-4a5a-8813-c11085fb5672.md) ['windows'] (sigma rule :x:)
+[Modify BootExecute Value](tests/befc2b40-d487-4a5a-8813-c11085fb5672.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [HKLM - Policy Settings Explorer Run Key](tests/b5c9a9bc-dda3-4ea0-b16a-add8e81ab75f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1185,7 +1185,7 @@ Caution: a test can generate a lot of noise...
 ### T1552.004
 [Discover Private SSH Keys](tests/46959285-906d-40fa-9437-5a439accd878.md) ['macos', 'linux'] (sigma rule :x:)
 
-[Export Root Certificate with Export-PFXCertificate](tests/7617f689-bbd8-44bc-adcd-6f8968897848.md) ['windows'] (sigma rule :x:)
+[Export Root Certificate with Export-PFXCertificate](tests/7617f689-bbd8-44bc-adcd-6f8968897848.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Copy Private SSH Keys with CP](tests/7c247dc7-5128-4643-907b-73a76d9135c3.md) ['linux'] (sigma rule :x:)
 
@@ -1199,9 +1199,9 @@ Caution: a test can generate a lot of noise...
 
 [ADFS token signing and encryption certificates theft - Local](tests/78e95057-d429-4e66-8f82-0f060c1ac96f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Export Root Certificate with Export-Certificate](tests/78b274f8-acb0-428b-b1f7-7b0d0e73330a.md) ['windows'] (sigma rule :x:)
+[Export Root Certificate with Export-Certificate](tests/78b274f8-acb0-428b-b1f7-7b0d0e73330a.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[CertUtil ExportPFX](tests/336b25bf-4514-4684-8924-474974f28137.md) ['windows'] (sigma rule :x:)
+[CertUtil ExportPFX](tests/336b25bf-4514-4684-8924-474974f28137.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Private Keys](tests/520ce462-7ca7-441e-b5a5-f8347f632696.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1265,7 +1265,7 @@ Caution: a test can generate a lot of noise...
 
 [Disable Microsoft Office Security Features](tests/6f5fb61b-4e56-4a3d-a8c3-82e13686c6d7.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[AMSI Bypass - Override AMSI via COM](tests/17538258-5699-4ff1-92d1-5ac9b0dc21f5.md) ['windows'] (sigma rule :x:)
+[AMSI Bypass - Override AMSI via COM](tests/17538258-5699-4ff1-92d1-5ac9b0dc21f5.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [LockBit Black - Disable Privacy Settings Experience Using Registry -Powershell](tests/d8c57eaa-497a-4a08-961e-bd5efd7c9374.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1291,7 +1291,7 @@ Caution: a test can generate a lot of noise...
 
 [Disable LittleSnitch](tests/62155dd8-bb3d-4f32-b31c-6532ff3ac6a3.md) ['macos'] (sigma rule :x:)
 
-[Stop and Remove Arbitrary Security Windows Service](tests/ae753dda-0f15-4af6-a168-b9ba16143143.md) ['windows'] (sigma rule :x:)
+[Stop and Remove Arbitrary Security Windows Service](tests/ae753dda-0f15-4af6-a168-b9ba16143143.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Stop and unload Crowdstrike Falcon on macOS](tests/b3e7510c-2d4c-4249-a33f-591a2bc83eef.md) ['macos'] (sigma rule :x:)
 
@@ -2689,7 +2689,7 @@ Caution: a test can generate a lot of noise...
 
 [Auditing Configuration Changes on Linux Host](tests/212cfbcf-4770-4980-bc21-303e37abd0e3.md) ['linux'] (sigma rule :x:)
 
-[LockBit Black - Disable the ETW Provider of Windows Defender -cmd](tests/f6df0b8e-2c83-44c7-ba5e-0fa4386bec41.md) ['windows'] (sigma rule :x:)
+[LockBit Black - Disable the ETW Provider of Windows Defender -cmd](tests/f6df0b8e-2c83-44c7-ba5e-0fa4386bec41.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Disable .NET Event Tracing for Windows Via Registry (powershell)](tests/19c07a45-452d-4620-90ed-4c34fffbe758.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -2697,7 +2697,7 @@ Caution: a test can generate a lot of noise...
 
 [Logging Configuration Changes on Linux Host](tests/7d40bc58-94c7-4fbb-88d9-ebce9fcdb60c.md) ['linux'] (sigma rule :x:)
 
-[LockBit Black - Disable the ETW Provider of Windows Defender -Powershell](tests/69fc085b-5444-4879-8002-b24c8e1a3e02.md) ['windows'] (sigma rule :x:)
+[LockBit Black - Disable the ETW Provider of Windows Defender -Powershell](tests/69fc085b-5444-4879-8002-b24c8e1a3e02.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1021.006
@@ -2799,7 +2799,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1547.006
-[Snake Malware Kernel Driver Comadmin](tests/e5cb5564-cc7b-4050-86e8-f2d9eec1941f.md) ['windows'] (sigma rule :x:)
+[Snake Malware Kernel Driver Comadmin](tests/e5cb5564-cc7b-4050-86e8-f2d9eec1941f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Linux - Load Kernel Module via insmod](tests/687dcb93-9656-4853-9c36-9977315e9d23.md) ['linux'] (sigma rule :x:)
 
@@ -3279,7 +3279,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1562.009
-[Safe Mode Boot](tests/2a78362e-b79a-4482-8e24-be397bce4d85.md) ['windows'] (sigma rule :x:)
+[Safe Mode Boot](tests/2a78362e-b79a-4482-8e24-be397bce4d85.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1496
