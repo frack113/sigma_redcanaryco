@@ -19,5 +19,7 @@ description: |
 
   The named pipe executable will pause for 30 seconds to allow the client and server to exchange a message through the pipe.
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: d5601f8c-b26f-4ab0-9035-69e11a8d4ad2
+    name: pipe_created_mal_cobaltstrike.yml

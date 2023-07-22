@@ -20,5 +20,7 @@ description: |
   The following Atomic test will utilize Mimikatz to extract the certificates from the local system My store. This tool is available at https://github.com/gentilkiwi/mimikatz and can be obtained using the get-prereq_commands.
   A successful attempt will stdout the certificates and write multiple .pfx and .der files to disk.
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: a642964e-bead-4bed-8910-1bb4d63e3b4d
+    name: proc_creation_win_hktl_mimikatz_command_line.yml
