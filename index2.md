@@ -561,6 +561,9 @@
   * T1134.001 [Bad Potato](tests/9c6d799b-c111-4749-a42f-ec2f8cb51448.md)
 * pipe_created_mal_cobaltstrike.yml
   * T1559 [Cobalt Strike Artifact Kit pipe](tests/bd13b9fc-b758-496a-b81a-397462f82c72.md)
+  * T1559 [Cobalt Strike SSH (postex_ssh) pipe](tests/d1f72fa0-5bc2-4b4b-bd1e-43b6e8cfb2e6.md)
+  * T1559 [Cobalt Strike post-exploitation pipe (4.2 and later)](tests/7a48f482-246f-4aeb-9837-21c271ebf244.md)
+  * T1559 [Cobalt Strike Lateral Movement (psexec_psh) pipe](tests/830c8b6c-7a70-4f40-b975-8bbe74558acd.md)
 * pipe_created_psexec_default_pipe.yml
   * T1569.002 [Use PsExec to execute a command on a remote host](tests/873106b7-cfed-454b-8680-fa9f6400431c.md)
   * T1021.002 [Copy and Execute File with PsExec](tests/0eb03d41-79e4-4393-8e57-6344856be1cf.md)
@@ -2642,6 +2645,7 @@
   * T1059.001 [Mimikatz - Cradlecraft PsSendKeys](tests/af1800cf-9f9d-4fd1-a709-14b1e6de020d.md)
   * T1558.002 [Crafting Active Directory silver tickets with mimikatz](tests/385e59aa-113e-4711-84d9-f637aef01f2c.md)
   * T1134.005 [Injection SID-History with mimikatz](tests/6bef32e5-9456-4072-8f14-35566fb85401.md)
+  * T1552.004 [Export Certificates with Mimikatz](tests/290df60e-4b5d-4a5e-b0c7-dc5348ea0c86.md)
   * T1550.003 [Mimikatz Kerberos Ticket Attack](tests/dbf38128-7ba7-4776-bedf-cc2eed432098.md)
   * T1558.001 [Crafting Active Directory golden tickets with mimikatz](tests/9726592a-dabc-4d4d-81cd-44070008b3af.md)
   * T1552.004 [ADFS token signing and encryption certificates theft - Remote](tests/cab413d8-9e4a-4b8d-9b84-c985bd73a442.md)

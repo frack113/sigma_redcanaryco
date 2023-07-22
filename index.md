@@ -487,11 +487,11 @@ Caution: a test can generate a lot of noise...
 
 [Cobalt Strike post-exploitation pipe (before 4.2)](tests/8dbfc15c-527b-4ab0-a272-019f469d367f.md) ['windows'] (sigma rule :x:)
 
-[Cobalt Strike SSH (postex_ssh) pipe](tests/d1f72fa0-5bc2-4b4b-bd1e-43b6e8cfb2e6.md) ['windows'] (sigma rule :x:)
+[Cobalt Strike SSH (postex_ssh) pipe](tests/d1f72fa0-5bc2-4b4b-bd1e-43b6e8cfb2e6.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Cobalt Strike post-exploitation pipe (4.2 and later)](tests/7a48f482-246f-4aeb-9837-21c271ebf244.md) ['windows'] (sigma rule :x:)
+[Cobalt Strike post-exploitation pipe (4.2 and later)](tests/7a48f482-246f-4aeb-9837-21c271ebf244.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Cobalt Strike Lateral Movement (psexec_psh) pipe](tests/830c8b6c-7a70-4f40-b975-8bbe74558acd.md) ['windows'] (sigma rule :x:)
+[Cobalt Strike Lateral Movement (psexec_psh) pipe](tests/830c8b6c-7a70-4f40-b975-8bbe74558acd.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1562.004
@@ -1189,7 +1189,7 @@ Caution: a test can generate a lot of noise...
 
 [Copy Private SSH Keys with CP](tests/7c247dc7-5128-4643-907b-73a76d9135c3.md) ['linux'] (sigma rule :x:)
 
-[Export Certificates with Mimikatz](tests/290df60e-4b5d-4a5e-b0c7-dc5348ea0c86.md) ['windows'] (sigma rule :x:)
+[Export Certificates with Mimikatz](tests/290df60e-4b5d-4a5e-b0c7-dc5348ea0c86.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Copy Private SSH Keys with rsync](tests/864bb0b2-6bb5-489a-b43b-a77b3a16d68a.md) ['macos', 'linux'] (sigma rule :x:)
 
