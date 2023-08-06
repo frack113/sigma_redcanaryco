@@ -65,7 +65,7 @@ powershell
 
  - posh_ps_detect_vm_env.yml (id: d93129cd-1ee0-479f-bc03-ca6f129882e3)
 
- - posh_ps_accessing_win_api.yml (id: 03d83090-8cba-44a0-b02f-0b756a050306)
+ - posh_ps_win_api_susp_access.yml (id: 03d83090-8cba-44a0-b02f-0b756a050306)
 
  - posh_ps_susp_gwmi.yml (id: 0332a266-b584-47b4-933d-a00b103e1b37)
 

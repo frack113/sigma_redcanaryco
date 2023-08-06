@@ -33,7 +33,7 @@ Upon successful execution, powershell will download the .cs from the Atomic Red 
 command_prompt
 
 # Sigma Rule
- - proc_creation_win_csc_susp_folder.yml (id: dcaa3f04-70c3-427a-80b4-b870d73c94c4)
+ - proc_creation_win_csc_susp_dynamic_compilation.yml (id: dcaa3f04-70c3-427a-80b4-b870d73c94c4)
 
 
 

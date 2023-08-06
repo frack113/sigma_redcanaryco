@@ -49,7 +49,7 @@ powershell
 
  - posh_ps_susp_networkcredential.yml (id: 1883444f-084b-419b-ac62-e0d0c5b3693f)
 
- - posh_ps_accessing_win_api.yml (id: 03d83090-8cba-44a0-b02f-0b756a050306)
+ - posh_ps_win_api_susp_access.yml (id: 03d83090-8cba-44a0-b02f-0b756a050306)
 
  - net_connection_win_powershell_network_connection.yml (id: 1f21ec3f-810d-4b0e-8045-322202e22b4b)
 
