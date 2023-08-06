@@ -13,5 +13,9 @@ os:
   - windows
 description: Adversaries may rely on a user running a malicious image to facilitate execution
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 29e1c216-6408-489d-8a06-ee9d151ef819
+    name: posh_ps_susp_mount_diskimage.yml
+  - id: 0248a7bc-8a9a-4cd8-a57e-3ae8e073a073
+    name: win_security_iso_mount.yml

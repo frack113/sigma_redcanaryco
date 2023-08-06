@@ -58,7 +58,7 @@ sigma_rule:
   - id: 84c174ab-d3ef-481f-9c86-a50d0b8e3edb
     name: posh_ps_susp_getprocess_lsass.yml
   - id: 03d83090-8cba-44a0-b02f-0b756a050306
-    name: posh_ps_accessing_win_api.yml
+    name: posh_ps_win_api_susp_access.yml
   - id: f62176f3-8128-4faa-bf6c-83261322e5eb
     name: posh_ps_malicious_keywords.yml
   - id: 32d0d3e2-e58d-4d41-926b-18b520b2b32d

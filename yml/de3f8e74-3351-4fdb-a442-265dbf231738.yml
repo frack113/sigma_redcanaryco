@@ -3,22 +3,16 @@ Attack_description: |-
   Adversaries may abuse security support providers (SSPs) to execute DLLs when the system boots. Windows SSP DLLs are loaded into the Local Security Authority (LSA) process at system start. Once loaded into the LSA, SSP DLLs have access to encrypted and plaintext passwords that are stored in Windows, such as any logged-on user's Domain password or smart card PINs.
 
   The SSP configuration is stored in two Registry keys: <code>HKLM\SYSTEM\CurrentControlSet\Control\Lsa\Security Packages</code> and <code>HKLM\SYSTEM\CurrentControlSet\Control\Lsa\OSConfig\Security Packages</code>. An adversary may modify these Registry keys to add new SSPs, which will be loaded the next time the system boots, or when the AddSecurityPackage Windows API function is called.(Citation: Graeber 2014)
-guid: afdfd7e3-8a0b-409f-85f7-886fdf249c9e
-name: Modify HKLM:\System\CurrentControlSet\Control\Lsa Security Support Provider configuration in registry
+guid: de3f8e74-3351-4fdb-a442-265dbf231738
+name: Modify HKLM:\System\CurrentControlSet\Control\Lsa\OSConfig Security Support Provider configuration in registry
 tactic:
-  - privilege-escalation
   - persistence
+  - privilege-escalation
 technique:
   - T1547.005
 os:
   - windows
-description: |
-  Add a value to a Windows registry Security Support Provider pointing to a payload .dll which will normally need to be copied in the system32 folder.
-  A common DLL used with this techquite is the minilib.dll from mimikatz, see https://pentestlab.blog/2019/10/21/persistence-security-support-provider/
+description: Add a value to a Windows registry SSP key, simulating an adversarial modification of those keys.
 executor: powershell
-sigma: true
-sigma_rule:
-  - id: eeb30123-9fbd-4ee8-aaa0-2e545bbed6dc
-    name: registry_event_ssp_added_lsa_config.yml
-  - id: 737e618a-a410-49b5-bec3-9e55ff7fbc15
-    name: proc_creation_win_susp_calc.yml
+sigma: false
+sigma_rule: []

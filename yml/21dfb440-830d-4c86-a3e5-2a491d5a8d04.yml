@@ -18,5 +18,7 @@ description: |
   it has changed to a state of STOP_PENDING. If the spooler service was not running "The service has not been started." will be displayed and it can be
   started by running the cleanup command.
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 81bcb81b-5b1f-474b-b373-52c871aaa7b1
+    name: proc_creation_win_sc_stop_service.yml

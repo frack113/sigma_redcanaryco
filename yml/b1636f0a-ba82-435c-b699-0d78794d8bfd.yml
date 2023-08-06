@@ -19,6 +19,6 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: 03d83090-8cba-44a0-b02f-0b756a050306
-    name: posh_ps_accessing_win_api.yml
+    name: posh_ps_win_api_susp_access.yml
   - id: f62176f3-8128-4faa-bf6c-83261322e5eb
     name: posh_ps_malicious_keywords.yml

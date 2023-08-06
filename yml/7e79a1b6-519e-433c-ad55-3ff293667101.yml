@@ -40,7 +40,7 @@ sigma_rule:
   - id: d93129cd-1ee0-479f-bc03-ca6f129882e3
     name: posh_ps_detect_vm_env.yml
   - id: 03d83090-8cba-44a0-b02f-0b756a050306
-    name: posh_ps_accessing_win_api.yml
+    name: posh_ps_win_api_susp_access.yml
   - id: 4096a49c-7de4-4da0-a230-c66ccd56ea5a
     name: posh_ps_susp_get_current_user.yml
   - id: 403c2cc0-7f6b-4925-9423-bfa573bed7eb

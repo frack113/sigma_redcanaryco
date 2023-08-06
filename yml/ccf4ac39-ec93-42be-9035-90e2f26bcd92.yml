@@ -39,7 +39,7 @@ sigma_rule:
   - id: 1f49f2ab-26bc-48b3-96cc-dcffbc93eadf
     name: posh_ps_susp_keywords.yml
   - id: 03d83090-8cba-44a0-b02f-0b756a050306
-    name: posh_ps_accessing_win_api.yml
+    name: posh_ps_win_api_susp_access.yml
   - id: f62176f3-8128-4faa-bf6c-83261322e5eb
     name: posh_ps_malicious_keywords.yml
   - id: 1f21ec3f-810d-4b0e-8045-322202e22b4b

@@ -39,7 +39,7 @@ sigma_rule:
   - id: 1883444f-084b-419b-ac62-e0d0c5b3693f
     name: posh_ps_susp_networkcredential.yml
   - id: 03d83090-8cba-44a0-b02f-0b756a050306
-    name: posh_ps_accessing_win_api.yml
+    name: posh_ps_win_api_susp_access.yml
   - id: 1f21ec3f-810d-4b0e-8045-322202e22b4b
     name: net_connection_win_powershell_network_connection.yml
   - id: e0f8ab85-0ac9-423b-a73a-81b3c7b1aa97

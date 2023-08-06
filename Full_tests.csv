@@ -260,6 +260,7 @@ defense-evasion;T1112;command_prompt;['windows'];Windows Auto Update Option to N
 defense-evasion;T1112;command_prompt;['windows'];Do Not Connect To Win Update;d1de3767-99c2-4c6c-8c5a-4ba4586474c8;False;54
 defense-evasion;T1112;command_prompt;['windows'];Tamper Win Defender Protection;3b625eaa-c10d-4635-af96-3eae7d2a2f3c;False;55
 defense-evasion;T1112;powershell;['windows'];Snake Malware Registry Blob;8318ad20-0488-4a64-98f4-72525a012f6b;False;56
+defense-evasion;T1112;command_prompt;['windows'];Allow Simultaneous Download Registry;37950714-e923-4f92-8c7c-51e4b6fffbf6;False;57
 defense-evasion;T1574.008;powershell;['windows'];powerShell Persistence via hijacking default modules - Get-Variable.exe;1561de08-0b4b-498e-8261-e922f3494aae;True;1
 defense-evasion;T1027.001;sh;['macos', 'linux'];Pad Binary to Change Hash - Linux/macOS dd;ffe2346c-abd5-4b45-a713-bf5f1ebd573a;False;1
 defense-evasion;T1027.001;sh;['macos', 'linux'];Pad Binary to Change Hash using truncate command - Linux/macOS;e22a9e89-69c7-410f-a473-e6c212cd2292;False;2
@@ -391,6 +392,7 @@ defense-evasion;T1562.001;sh;['linux'];Clear Pagging Cache;f790927b-ea85-4a16-b7
 defense-evasion;T1562.001;sh;['linux'];Disable Memory Swap;e74e4c63-6fde-4ad2-9ee8-21c3a1733114;False;42
 defense-evasion;T1562.001;powershell;['windows'];Disable Hypervisor-Enforced Code Integrity (HVCI);70bd71e6-eba4-4e00-92f7-617911dbe020;False;43
 defense-evasion;T1562.001;command_prompt;['windows'];AMSI Bypass - Override AMSI via COM;17538258-5699-4ff1-92d1-5ac9b0dc21f5;True;44
+defense-evasion;T1562.001;bash;['iaas:aws'];AWS - GuardDuty Suspension or Deletion;11e65d8d-e7e4-470e-a3ff-82bc56ad938e;False;45
 defense-evasion;T1055.012;powershell;['windows'];Process Hollowing using PowerShell;562427b4-39ef-4e8c-af88-463a78e70b9c;True;1
 defense-evasion;T1055.012;powershell;['windows'];RunPE via VBA;3ad4a037-1598-4136-837c-4027e4fa319b;True;2
 defense-evasion;T1027;sh;['macos', 'linux'];Decode base64 Data into Script;f45df6be-2e1e-4136-a384-8f18ab3826fb;False;1
@@ -566,6 +568,7 @@ privilege-escalation;T1543.003;command_prompt;['windows'];Remote Service Install
 privilege-escalation;T1053.003;bash;['macos', 'linux'];Cron - Replace crontab with referenced file;435057fb-74b1-410e-9403-d81baf194f75;False;1
 privilege-escalation;T1053.003;bash;['macos', 'linux'];Cron - Add script to all cron subfolders;b7d42afa-9086-4c8a-b7b0-8ea3faa6ebb0;False;2
 privilege-escalation;T1053.003;bash;['linux'];Cron - Add script to /var/spool/cron/crontabs/ folder;2d943c18-e74a-44bf-936f-25ade6cccab4;False;3
+privilege-escalation;T1547.012;powershell;['windows'];Print Processors;f7d38f47-c61b-47cc-a59d-fc0368f47ed0;False;1
 privilege-escalation;T1574.001;command_prompt;['windows'];DLL Search Order Hijacking - amsi.dll;8549ad4b-b5df-4a2d-a3d7-2aee9e7052a3;True;1
 privilege-escalation;T1055.003;powershell;['windows'];Thread Execution Hijacking;578025d5-faa9-4f6d-8390-aae527d503e1;True;1
 privilege-escalation;T1546.011;command_prompt;['windows'];Application Shim Installation;9ab27e22-ee62-4211-962b-d36d9a0e6a18;True;1
@@ -580,7 +583,8 @@ privilege-escalation;T1611;sh;['containers'];Deploy container using nsenter cont
 privilege-escalation;T1611;sh;['containers'];Mount host filesystem to escape privileged Docker container;6c499943-b098-4bc6-8d38-0956fc182984;False;2
 privilege-escalation;T1547.009;command_prompt;['windows'];Shortcut Modification;ce4fc678-364f-4282-af16-2fb4c78005ce;True;1
 privilege-escalation;T1547.009;powershell;['windows'];Create shortcut to cmd in startup folders;cfdc954d-4bb0-4027-875b-a1893ce406f2;True;2
-privilege-escalation;T1547.005;powershell;['windows'];Modify SSP configuration in registry;afdfd7e3-8a0b-409f-85f7-886fdf249c9e;True;1
+privilege-escalation;T1547.005;powershell;['windows'];Modify HKLM:\System\CurrentControlSet\Control\Lsa Security Support Provider configuration in registry;afdfd7e3-8a0b-409f-85f7-886fdf249c9e;True;1
+privilege-escalation;T1547.005;powershell;['windows'];Modify HKLM:\System\CurrentControlSet\Control\Lsa\OSConfig Security Support Provider configuration in registry;de3f8e74-3351-4fdb-a442-265dbf231738;False;2
 privilege-escalation;T1543.004;bash;['macos'];Launch Daemon;03ab8df5-3a6b-4417-b6bd-bb7a5cfd74cf;False;1
 privilege-escalation;T1574.008;powershell;['windows'];powerShell Persistence via hijacking default modules - Get-Variable.exe;1561de08-0b4b-498e-8261-e922f3494aae;True;1
 privilege-escalation;T1484.001;command_prompt;['windows'];LockBit Black - Modify Group policy settings -cmd;9ab80952-74ee-43da-a98c-1e740a985f28;True;1
@@ -807,7 +811,7 @@ execution;T1559;command_prompt;['windows'];Cobalt Strike Lateral Movement (psexe
 execution;T1559;command_prompt;['windows'];Cobalt Strike SSH (postex_ssh) pipe;d1f72fa0-5bc2-4b4b-bd1e-43b6e8cfb2e6;False;3
 execution;T1559;command_prompt;['windows'];Cobalt Strike post-exploitation pipe (4.2 and later);7a48f482-246f-4aeb-9837-21c271ebf244;False;4
 execution;T1559;command_prompt;['windows'];Cobalt Strike post-exploitation pipe (before 4.2);8dbfc15c-527b-4ab0-a272-019f469d367f;False;5
-execution;T1204.003;powershell;['windows'];Malicious Execution from Mounted ISO Image;e9795c8d-42aa-4ed4-ad80-551ed793d006;False;1
+execution;T1204.003;powershell;['windows'];Malicious Execution from Mounted ISO Image;e9795c8d-42aa-4ed4-ad80-551ed793d006;True;1
 execution;T1059.006;sh;['linux'];Execute shell script via python's command mode arguement;3a95cdb2-c6ea-4761-b24e-02b71889b8bb;False;1
 execution;T1059.006;sh;['linux'];Execute Python via scripts (Linux);6c4d1dcb-33c7-4c36-a8df-c6cfd0408be8;False;2
 execution;T1059.006;sh;['linux'];Execute Python via Python executables (Linux);0b44d79b-570a-4b27-a31f-3bf2156e5eaa;False;3
@@ -858,6 +862,8 @@ persistence;T1053.003;bash;['macos', 'linux'];Cron - Replace crontab with refere
 persistence;T1053.003;bash;['macos', 'linux'];Cron - Add script to all cron subfolders;b7d42afa-9086-4c8a-b7b0-8ea3faa6ebb0;False;2
 persistence;T1053.003;bash;['linux'];Cron - Add script to /var/spool/cron/crontabs/ folder;2d943c18-e74a-44bf-936f-25ade6cccab4;False;3
 persistence;T1137;command_prompt;['windows'];Office Application Startup - Outlook as a C2;bfe6ac15-c50b-4c4f-a186-0fc6b8ba936c;True;1
+persistence;T1098.003;powershell;['azure-ad'];Azure AD - Add Company Administrator Role to a user;4d77f913-56f5-4a14-b4b1-bf7bb24298ad;False;1
+persistence;T1547.012;powershell;['windows'];Print Processors;f7d38f47-c61b-47cc-a59d-fc0368f47ed0;False;1
 persistence;T1574.001;command_prompt;['windows'];DLL Search Order Hijacking - amsi.dll;8549ad4b-b5df-4a2d-a3d7-2aee9e7052a3;True;1
 persistence;T1137.006;powershell;['windows'];Code Executed Via Excel Add-in File (XLL);441b1a0f-a771-428a-8af0-e99e4698cda3;True;1
 persistence;T1137.006;powershell;['windows'];Persistent Code Execution Via Excel Add-in File (XLL);9c307886-9fef-41d5-b344-073a0f5b2f5f;False;2
@@ -871,7 +877,7 @@ persistence;T1176;manual;['linux', 'windows', 'macos'];Chrome (Developer Mode);3
 persistence;T1176;manual;['linux', 'windows', 'macos'];Chrome (Chrome Web Store);4c83940d-8ca5-4bb2-8100-f46dc914bc3f;False;2
 persistence;T1176;manual;['linux', 'windows', 'macos'];Firefox;cb790029-17e6-4c43-b96f-002ce5f10938;False;3
 persistence;T1176;manual;['windows', 'macos'];Edge Chromium Addon - VPN;3d456e2b-a7db-4af8-b5b3-720e7c4d9da5;False;4
-persistence;T1176;powershell;['windows'];Google Chrome Load Unpacked Extension With Command Line;7a714703-9f6b-461c-b06d-e6aeac650f27;False;5
+persistence;T1176;powershell;['windows'];Google Chrome Load Unpacked Extension With Command Line;7a714703-9f6b-461c-b06d-e6aeac650f27;True;5
 persistence;T1546.011;command_prompt;['windows'];Application Shim Installation;9ab27e22-ee62-4211-962b-d36d9a0e6a18;True;1
 persistence;T1546.011;powershell;['windows'];New shim database files created in the default shim database directory;aefd6866-d753-431f-a7a4-215ca7e3f13d;True;2
 persistence;T1546.011;powershell;['windows'];Registry key creation and/or modification events for SDB;9b6a06f9-ab5e-4e8d-8289-1df4289db02f;True;3
@@ -879,7 +885,8 @@ persistence;T1547.010;command_prompt;['windows'];Add Port Monitor persistence in
 persistence;T1037.002;manual;['macos'];Logon Scripts - Mac;f047c7de-a2d9-406e-a62b-12a09d9516f4;False;1
 persistence;T1547.009;command_prompt;['windows'];Shortcut Modification;ce4fc678-364f-4282-af16-2fb4c78005ce;True;1
 persistence;T1547.009;powershell;['windows'];Create shortcut to cmd in startup folders;cfdc954d-4bb0-4027-875b-a1893ce406f2;True;2
-persistence;T1547.005;powershell;['windows'];Modify SSP configuration in registry;afdfd7e3-8a0b-409f-85f7-886fdf249c9e;True;1
+persistence;T1547.005;powershell;['windows'];Modify HKLM:\System\CurrentControlSet\Control\Lsa Security Support Provider configuration in registry;afdfd7e3-8a0b-409f-85f7-886fdf249c9e;True;1
+persistence;T1547.005;powershell;['windows'];Modify HKLM:\System\CurrentControlSet\Control\Lsa\OSConfig Security Support Provider configuration in registry;de3f8e74-3351-4fdb-a442-265dbf231738;False;2
 persistence;T1543.004;bash;['macos'];Launch Daemon;03ab8df5-3a6b-4417-b6bd-bb7a5cfd74cf;False;1
 persistence;T1574.008;powershell;['windows'];powerShell Persistence via hijacking default modules - Get-Variable.exe;1561de08-0b4b-498e-8261-e922f3494aae;True;1
 persistence;T1505.003;command_prompt;['windows'];Web Shell Written to Disk;0a2ce662-1efa-496f-a472-2fe7b080db16;True;1
@@ -1009,6 +1016,7 @@ persistence;T1547.007;sh;['macos'];Re-Opened Applications using LoginHook;5f5b71
 persistence;T1547.007;sh;['macos'];Append to existing loginwindow for Re-Opened Applications;766b6c3c-9353-4033-8b7e-38b309fa3a93;False;3
 persistence;T1574.002;command_prompt;['windows'];DLL Side-Loading using the Notepad++ GUP.exe binary;65526037-7079-44a9-bda1-2cb624838040;True;1
 persistence;T1574.002;command_prompt;['windows'];DLL Side-Loading using the dotnet startup hook environment variable;d322cdd7-7d60-46e3-9111-648848da7c02;False;2
+persistence;T1098.002;powershell;['office-365'];EXO - Full access mailbox permission granted to a user;17d046be-fdd0-4cbb-b5c7-55c85d9d0714;False;1
 persistence;T1037.001;command_prompt;['windows'];Logon Scripts;d6042746-07d4-4c92-9ad8-e644c114a231;True;1
 persistence;T1137.002;powershell;['windows'];Office Application Startup Test Persistence (HKCU);c3e35b58-fe1c-480b-b540-7600fb612563;True;1
 persistence;T1547.008;powershell;['windows'];Modify Registry to load Arbitrary DLL into LSASS - LsaDbExtPt;8ecef16d-d289-46b4-917b-0dba6dc81cf1;True;1
@@ -1567,6 +1575,7 @@ discovery;T1046;powershell;['windows'];WinPwn - MS17-10;97585b04-5be2-40e9-8c31-
 discovery;T1046;powershell;['windows'];WinPwn - bluekeep;1cca5640-32a9-46e6-b8e0-fabbe2384a73;True;7
 discovery;T1046;powershell;['windows'];WinPwn - fruit;bb037826-cbe8-4a41-93ea-b94059d6bb98;True;8
 discovery;T1046;sh;['containers'];Network Service Discovery for Containers;06eaafdb-8982-426e-8a31-d572da633caa;False;9
+discovery;T1046;powershell;['windows'];Port-Scanning /24 Subnet with PowerShell;05df2a79-dba6-4088-a804-9ca0802ca8e4;False;10
 discovery;T1518;command_prompt;['windows'];Find and Display Internet Explorer Browser Version;68981660-6670-47ee-a5fa-7e74806420a4;True;1
 discovery;T1518;powershell;['windows'];Applications Installed;c49978f6-bd6e-4221-ad2c-9e3e30cc1e3b;True;2
 discovery;T1518;sh;['macos'];Find and Display Safari Browser Version;103d6533-fd2a-4d08-976a-4a598565280f;False;3
@@ -1579,7 +1588,7 @@ discovery;T1124;sh;['macos'];System Time Discovery in macOS;f449c933-0891-407f-8
 discovery;T1124;command_prompt;['windows'];System Time Discovery W32tm as a Delay;d5d5a6b0-0f92-42d8-985d-47aafa2dd4db;True;4
 discovery;T1124;command_prompt;['windows'];System Time with Windows time Command;53ead5db-7098-4111-bb3f-563be390e72e;False;5
 reconnaissance;T1592.001;powershell;['windows'];Enumerate PlugNPlay Camera;d430bf85-b656-40e7-b238-42db01df0183;True;1
-impact;T1489;command_prompt;['windows'];Windows - Stop service using Service Controller;21dfb440-830d-4c86-a3e5-2a491d5a8d04;False;1
+impact;T1489;command_prompt;['windows'];Windows - Stop service using Service Controller;21dfb440-830d-4c86-a3e5-2a491d5a8d04;True;1
 impact;T1489;command_prompt;['windows'];Windows - Stop service using net.exe;41274289-ec9c-4213-bea4-e43c4aa57954;True;2
 impact;T1489;command_prompt;['windows'];Windows - Stop service by killing process;f3191b84-c38b-400b-867e-3a217a27795f;True;3
 impact;T1491.001;powershell;['windows'];Replace Desktop Wallpaper;30558d53-9d76-41c4-9267-a7bd5184bed3;True;1
@@ -1614,6 +1623,7 @@ impact;T1490;command_prompt;['windows'];Windows - Delete Backup Files;6b1dbaf6-c
 impact;T1490;command_prompt;['windows'];Windows - wbadmin Delete systemstatebackup;584331dd-75bc-4c02-9e0b-17f5fd81c748;True;7
 impact;T1490;command_prompt;['windows'];Windows - Disable the SR scheduled task;1c68c68d-83a4-4981-974e-8993055fa034;True;8
 impact;T1490;command_prompt;['windows'];Disable System Restore Through Registry;66e647d1-8741-4e43-b7c1-334760c2047f;True;9
+impact;T1490;powershell;['windows'];Windows - vssadmin Resize Shadowstorage Volume;da558b07-69ae-41b9-b9d4-4d98154a7049;False;10
 impact;T1529;command_prompt;['windows'];Shutdown System - Windows;ad254fa8-45c0-403b-8c77-e00b3d3e7a64;True;1
 impact;T1529;command_prompt;['windows'];Restart System - Windows;f4648f0d-bf78-483c-bafc-3ec99cd1c302;True;2
 impact;T1529;bash;['macos', 'linux'];Restart System via `shutdown` - macOS/Linux;6326dbc4-444b-4c04-88f4-27e94d0327cb;False;3

@@ -20,6 +20,7 @@ os:
 description: |
   An adversary can disable the ETW Provider of Windows Defender,
   so nothing would be logged to Microsoft-Windows-Windows-Defender/Operational anymore.
+  https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-075a
 executor: powershell
 sigma: true
 sigma_rule:

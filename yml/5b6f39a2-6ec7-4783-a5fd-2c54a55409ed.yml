@@ -34,7 +34,7 @@ sigma_rule:
   - id: 8ff28fdd-e2fa-4dfa-aeda-ef3d61c62090
     name: posh_pm_susp_invocation_specific.yml
   - id: 03d83090-8cba-44a0-b02f-0b756a050306
-    name: posh_ps_accessing_win_api.yml
+    name: posh_ps_win_api_susp_access.yml
   - id: d23f2ba5-9da0-4463-8908-8ee47f614bb9
     name: posh_ps_file_and_directory_discovery.yml
   - id: 0332a266-b584-47b4-933d-a00b103e1b37

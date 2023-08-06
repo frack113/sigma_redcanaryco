@@ -1,0 +1,27 @@
+Attack_name: 'Boot or Logon Autostart Execution: Print Processors'
+Attack_description: "Adversaries may abuse print processors to run malicious DLLs during system boot for persistence and/or privilege escalation. Print processors are DLLs that are loaded by the print spooler\
+  \ service, spoolsv.exe, during boot. \n\nAdversaries may abuse the print spooler service by adding print processors that load malicious DLLs at startup. A print processor can be installed through the\
+  \ <code>AddPrintProcessor</code> API call with an account that has <code>SeLoadDriverPrivilege</code> enabled. Alternatively, a print processor can be registered to the print spooler service by adding\
+  \ the <code>HKLM\\SYSTEM\\\\[CurrentControlSet or ControlSet001]\\Control\\Print\\Environments\\\\[Windows architecture: e.g., Windows x64]\\Print Processors\\\\[user defined]\\Driver</code> Registry\
+  \ key that points to the DLL. For the print processor to be correctly installed, it must be located in the system print-processor directory that can be found with the <code>GetPrintProcessorDirectory</code>\
+  \ API call.(Citation: Microsoft AddPrintProcessor May 2018) After the print processors are installed, the print spooler service, which starts during boot, must be restarted in order for them to run.(Citation:\
+  \ ESET PipeMon May 2020) The print spooler service runs under SYSTEM level permissions, therefore print processors installed by an adversary may run under elevated privileges."
+guid: f7d38f47-c61b-47cc-a59d-fc0368f47ed0
+name: Print Processors
+tactic:
+  - persistence
+  - privilege-escalation
+technique:
+  - T1547.012
+os:
+  - windows
+description: |
+  Establishes persistence by creating a new print processor registry key under HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print\Environments\Windows x64\Print Processors.
+  The new print processor will point to a DLL which will be loaded by the spooler service after a reboot. The DLL will then create the file AtomicTest.txt in C:\Users\Public\ as validation that the test is successful.
+
+  Note: The test assumes a x64 Windows operating system.
+
+  The payload source code is based on a blog post by stmxcsr: [https://stmxcsr.com/persistence/print-processor.html](https://stmxcsr.com/persistence/print-processor.html)
+executor: powershell
+sigma: false
+sigma_rule: []

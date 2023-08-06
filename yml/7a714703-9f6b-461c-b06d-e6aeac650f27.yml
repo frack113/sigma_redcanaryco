@@ -24,5 +24,9 @@ description: |-
   https://attack.mitre.org/techniques/T1176/
   https://securityintelligence.com/posts/grandoreiro-malware-now-targeting-banks-in-spain/
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 27ba3207-dd30-4812-abbf-5d20c57d474e
+    name: proc_creation_win_browsers_chromium_susp_load_extension.yml
+  - id: 7047d730-036f-4f40-b9d8-1c63e36d5e62
+    name: file_event_win_powershell_drop_binary_or_script.yml
