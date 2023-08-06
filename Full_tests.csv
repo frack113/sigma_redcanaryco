@@ -807,9 +807,9 @@ execution;T1059.004;bash;['linux'];Change login shell;c7ac59cb-13cc-4622-81dc-6d
 execution;T1059.004;bash;['linux'];Environment variable scripts;bdaebd56-368b-4970-a523-f905ff4a8a51;False;11
 execution;T1059.004;bash;['linux'];Detecting pipe-to-shell;fca246a8-a585-4f28-a2df-6495973976a1;False;12
 execution;T1559;command_prompt;['windows'];Cobalt Strike Artifact Kit pipe;bd13b9fc-b758-496a-b81a-397462f82c72;True;1
-execution;T1559;command_prompt;['windows'];Cobalt Strike Lateral Movement (psexec_psh) pipe;830c8b6c-7a70-4f40-b975-8bbe74558acd;False;2
-execution;T1559;command_prompt;['windows'];Cobalt Strike SSH (postex_ssh) pipe;d1f72fa0-5bc2-4b4b-bd1e-43b6e8cfb2e6;False;3
-execution;T1559;command_prompt;['windows'];Cobalt Strike post-exploitation pipe (4.2 and later);7a48f482-246f-4aeb-9837-21c271ebf244;False;4
+execution;T1559;command_prompt;['windows'];Cobalt Strike Lateral Movement (psexec_psh) pipe;830c8b6c-7a70-4f40-b975-8bbe74558acd;True;2
+execution;T1559;command_prompt;['windows'];Cobalt Strike SSH (postex_ssh) pipe;d1f72fa0-5bc2-4b4b-bd1e-43b6e8cfb2e6;True;3
+execution;T1559;command_prompt;['windows'];Cobalt Strike post-exploitation pipe (4.2 and later);7a48f482-246f-4aeb-9837-21c271ebf244;True;4
 execution;T1559;command_prompt;['windows'];Cobalt Strike post-exploitation pipe (before 4.2);8dbfc15c-527b-4ab0-a272-019f469d367f;False;5
 execution;T1204.003;powershell;['windows'];Malicious Execution from Mounted ISO Image;e9795c8d-42aa-4ed4-ad80-551ed793d006;True;1
 execution;T1059.006;sh;['linux'];Execute shell script via python's command mode arguement;3a95cdb2-c6ea-4761-b24e-02b71889b8bb;False;1
@@ -1274,7 +1274,7 @@ credential-access;T1552.004;powershell;['windows'];ADFS token signing and encryp
 credential-access;T1552.004;powershell;['windows'];CertUtil ExportPFX;336b25bf-4514-4684-8924-474974f28137;True;8
 credential-access;T1552.004;powershell;['windows'];Export Root Certificate with Export-PFXCertificate;7617f689-bbd8-44bc-adcd-6f8968897848;True;9
 credential-access;T1552.004;powershell;['windows'];Export Root Certificate with Export-Certificate;78b274f8-acb0-428b-b1f7-7b0d0e73330a;True;10
-credential-access;T1552.004;command_prompt;['windows'];Export Certificates with Mimikatz;290df60e-4b5d-4a5e-b0c7-dc5348ea0c86;False;11
+credential-access;T1552.004;command_prompt;['windows'];Export Certificates with Mimikatz;290df60e-4b5d-4a5e-b0c7-dc5348ea0c86;True;11
 credential-access;T1557.001;powershell;['windows'];LLMNR Poisoning with Inveigh (PowerShell);deecd55f-afe0-4a62-9fba-4d1ba2deb321;True;1
 credential-access;T1003.001;command_prompt;['windows'];Dump LSASS.exe Memory using ProcDump;0be2230c-9ab3-4ac2-8826-3199b9a0ebf8;True;1
 credential-access;T1003.001;powershell;['windows'];Dump LSASS.exe Memory using comsvcs.dll;2536dee2-12fb-459a-8c37-971844fa73be;True;2
