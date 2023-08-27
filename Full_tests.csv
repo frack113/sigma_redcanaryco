@@ -65,6 +65,7 @@ defense-evasion;T1564;powershell;['windows'];Extract binary files via VBA;6afe28
 defense-evasion;T1564;command_prompt;['windows'];"Create a Hidden User Called ""$""";2ec63cc2-4975-41a6-bf09-dffdfb610778;True;2
 defense-evasion;T1564;powershell;['windows'];"Create an ""Administrator "" user (with a space on the end)";5bb20389-39a5-4e99-9264-aeb92a55a85c;True;3
 defense-evasion;T1564;command_prompt;['windows'];Create and Hide a Service with sc.exe;333c7de0-6fbe-42aa-ac2b-c7e40b18246a;True;4
+defense-evasion;T1564;powershell;['windows'];Command Execution with NirCmd;2748ab4a-1e0b-4cf2-a2b0-8ef765bec7be;False;5
 defense-evasion;T1484.002;powershell;['azure-ad'];Add Federation to Azure AD;8906c5d0-3ee5-4f63-897a-f6cafd3fdbb7;False;1
 defense-evasion;T1562.009;command_prompt;['windows'];Safe Mode Boot;2a78362e-b79a-4482-8e24-be397bce4d85;True;1
 defense-evasion;T1497.001;sh;['linux'];Detect Virtualization Environment (Linux);dfbd1a21-540d-4574-9731-e852bd6fe840;False;1
@@ -163,6 +164,7 @@ defense-evasion;T1218;command_prompt;['windows'];Load Arbitrary DLL via Wuauclt 
 defense-evasion;T1218;command_prompt;['windows'];Lolbin Gpscript logon option;5bcda9cd-8e85-48fa-861d-b5a85d91d48c;True;10
 defense-evasion;T1218;command_prompt;['windows'];Lolbin Gpscript startup option;f8da74bb-21b8-4af9-8d84-f2c8e4a220e3;True;11
 defense-evasion;T1218;command_prompt;['windows'];Lolbas ie4uinit.exe use as proxy;13c0804e-615e-43ad-b223-2dfbacd0b0b3;True;12
+defense-evasion;T1218;powershell;['windows'];LOLBAS CustomShellHost to Spawn Process;b1eeb683-90bb-4365-bbc2-2689015782fe;False;13
 defense-evasion;T1070.006;sh;['linux', 'macos'];Set a file's access timestamp;5f9113d5-ed75-47ed-ba23-ea3573d05810;False;1
 defense-evasion;T1070.006;sh;['linux', 'macos'];Set a file's modification timestamp;20ef1523-8758-4898-b5a2-d026cc3d2c52;False;2
 defense-evasion;T1070.006;sh;['linux', 'macos'];Set a file's creation timestamp;8164a4a6-f99c-4661-ac4f-80f5e4e78d2b;False;3

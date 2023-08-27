@@ -37,6 +37,7 @@ class my_data:
     # Use to add missing field when update class
     def check(self):
         # pass
+        # file deepcode ignore UpdateAPI: <please specify a reason of ignoring this>
         if not "executor" in self.data.keys():
             self.data["executor"]= ""
 
