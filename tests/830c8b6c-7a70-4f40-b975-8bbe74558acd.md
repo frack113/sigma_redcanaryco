@@ -33,7 +33,7 @@ The named pipe executable will pause for 30 seconds to allow the client and serv
 command_prompt
 
 # Sigma Rule
- - pipe_created_mal_cobaltstrike.yml (id: d5601f8c-b26f-4ab0-9035-69e11a8d4ad2)
+ - pipe_created_hktl_cobaltstrike.yml (id: d5601f8c-b26f-4ab0-9035-69e11a8d4ad2)
 
 
 
