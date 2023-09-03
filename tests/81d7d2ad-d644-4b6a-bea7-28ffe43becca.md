@@ -9,7 +9,7 @@ Adversaries may log user keystrokes to intercept credentials as the user types t
 
 Keylogging is the most prevalent type of input capture, with many different ways of intercepting keystrokes.(Citation: Adventures of a Keystroke) Some methods include:
 
-* Hooking API callbacks used for processing keystrokes. Unlike [Credential API Hooking](https://attack.mitre.org/techniques/T1056/004), this focuses solely on API functions intended for processing keystroke data.
+ * Hooking API callbacks used for processing keystrokes. Unlike [Credential API Hooking](https://attack.mitre.org/techniques/T1056/004), this focuses solely on API functions intended for processing keystroke data.
 * Reading raw keystroke data from the hardware buffer.
 * Windows Registry modifications.
 * Custom drivers.

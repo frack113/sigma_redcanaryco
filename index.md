@@ -35,6 +35,8 @@ Caution: a test can generate a lot of noise...
 
 [Hostname Discovery (Windows)](tests/85cfbf23-4a1e-4342-8792-007e004b975f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
+[System Information Discovery](tests/4060ee98-01ae-4c8e-8aad-af8300519cc7.md) ['windows'] (sigma rule :x:)
+
 [WinPwn - winPEAS](tests/eea1d918-825e-47dd-acc2-814d6c58c0e1.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Environment variables discovery on windows](tests/f400d1c0-1804-4ff8-b069-ef5ddd2adbf3.md) ['windows'] (sigma rule :x:)
@@ -610,6 +612,8 @@ Caution: a test can generate a lot of noise...
 [Changing RDP Port to Non Standard Port via Powershell](tests/2f840dd4-8a2e-4f44-beb3-6b2399ea3771.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Changing RDP Port to Non Standard Port via Command_Prompt](tests/74ace21e-a31c-4f7d-b540-53e4eb6d1f73.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Disable NLA for RDP via Command Prompt](tests/01d1c6c0-faf0-408e-b368-752a02285cb2.md) ['windows'] (sigma rule :x:)
 
 [RDP to DomainController](tests/355d4632-8cb9-449d-91ce-b566d0253d3e.md) ['windows'] (sigma rule :heavy_check_mark:)
 

