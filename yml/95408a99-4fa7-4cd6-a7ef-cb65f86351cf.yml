@@ -1,8 +1,8 @@
 Attack_name: 'Office Application Startup: Add-ins'
-Attack_description: "Adversaries may abuse Microsoft Office add-ins to obtain persistence on a compromised system. Office add-ins can be used to add functionality to Office programs. (Citation: Microsoft\
-  \ Office Add-ins) There are different types of add-ins that can be used by the various Office products; including Word/Excel add-in Libraries (WLL/XLL), VBA add-ins, Office Component Object Model (COM)\
-  \ add-ins, automation add-ins, VBA Editor (VBE), Visual Studio Tools for Office (VSTO) add-ins, and Outlook add-ins. (Citation: MRWLabs Office Persistence Add-ins)(Citation: FireEye Mail CDS 2018)\n\n\
-  Add-ins can be used to obtain persistence because they can be set to execute code when an Office application starts. "
+Attack_description: "Adversaries may abuse Microsoft Office add-ins to obtain persistence on a compromised system. Office add-ins can be used to add functionality to Office programs. (Citation: Microsoft
+  Office Add-ins) There are different types of add-ins that can be used by the various Office products; including Word/Excel add-in Libraries (WLL/XLL), VBA add-ins, Office Component Object Model (COM)
+  add-ins, automation add-ins, VBA Editor (VBE), Visual Studio Tools for Office (VSTO) add-ins, and Outlook add-ins. (Citation: MRWLabs Office Persistence Add-ins)(Citation: FireEye Mail CDS 2018)\n\nAdd-ins
+  can be used to obtain persistence because they can be set to execute code when an Office application starts. "
 guid: 95408a99-4fa7-4cd6-a7ef-cb65f86351cf
 name: Persistent Code Execution Via Word Add-in File (WLL)
 tactic:
@@ -11,8 +11,8 @@ technique:
   - T1137.006
 os:
   - windows
-description: "Creates a Word Add-in file (WLL) which runs automatically when Word is started\nThe sample WLL provided launches the notepad as a proof-of-concept for persistent execution from Office.\nSuccessfully\
-  \ tested on 32-bit Office 2016. Not successful from microsoft 365 version of Office. \n"
+description: "Creates a Word Add-in file (WLL) which runs automatically when Word is started\nThe sample WLL provided launches the notepad as a proof-of-concept for persistent execution from Office.\nSuccessfully
+  tested on 32-bit Office 2016. Not successful from microsoft 365 version of Office. \n"
 executor: powershell
 sigma: true
 sigma_rule:

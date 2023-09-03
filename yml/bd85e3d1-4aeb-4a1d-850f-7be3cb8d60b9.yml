@@ -13,8 +13,8 @@ technique:
   - T1082
 os:
   - windows
-description: "Executes the driverquery command to list drivers installed on the system. Adversaries utilize the feature to enumerate the driver and it can be\nused for Exploitation. \ncommand /v - provide\
-  \ verbose output but not valid for signed drivers\n        /si - provide information about signed drivers \n"
+description: "Executes the driverquery command to list drivers installed on the system. Adversaries utilize the feature to enumerate the driver and it can be\nused for Exploitation. \ncommand /v - provide
+  verbose output but not valid for signed drivers\n        /si - provide information about signed drivers \n"
 executor: command_prompt
 sigma: false
 sigma_rule: []

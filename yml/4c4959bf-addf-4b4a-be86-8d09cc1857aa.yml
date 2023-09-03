@@ -13,7 +13,7 @@ technique:
   - T1033
 os:
   - windows
-description: "Identify System owner or users on an endpoint.\n\nUpon successful execution, cmd.exe will spawn multiple commands against a target host to identify usernames. Output will be via stdout. \n\
+description: "Identify System owner or users on an endpoint.\n\nUpon successful execution, cmd.exe will spawn multiple commands against a target host to identify usernames. Output will be via stdout. \n
   Additionally, two files will be written to disk - computers.txt and usernames.txt.\n"
 executor: command_prompt
 sigma: true

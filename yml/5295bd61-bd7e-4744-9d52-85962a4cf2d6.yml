@@ -11,8 +11,8 @@ technique:
   - T1021.006
 os:
   - windows
-description: "Simulate lateral movement with PowerShell Remoting on the local host. \nUpon successful execution, PowerShell will execute `whoami` using `Invoke-Command`, targeting the \nlocal machine as\
-  \ remote target.\n"
+description: "Simulate lateral movement with PowerShell Remoting on the local host. \nUpon successful execution, PowerShell will execute `whoami` using `Invoke-Command`, targeting the \nlocal machine as
+  remote target.\n"
 executor: powershell
 sigma: true
 sigma_rule:

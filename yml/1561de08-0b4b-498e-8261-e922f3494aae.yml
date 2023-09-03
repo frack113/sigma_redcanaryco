@@ -17,8 +17,8 @@ technique:
   - T1574.008
 os:
   - windows
-description: "Colibri leverages PowerShell in a unique way to maintain persistence after a reboot. Depending on the Windows version, Colibri drops its copy in %APPDATA%\\Local\\Microsoft\\WindowsApps and\
-  \ \nnames it Get-Variable.exe for Windows 10 and above.\nhttps://blog.malwarebytes.com/threat-intelligence/2022/04/colibri-loader-combines-task-scheduler-and-powershell-in-clever-persistence-technique/\n"
+description: "Colibri leverages PowerShell in a unique way to maintain persistence after a reboot. Depending on the Windows version, Colibri drops its copy in %APPDATA%\\Local\\Microsoft\\WindowsApps and
+  \nnames it Get-Variable.exe for Windows 10 and above.\nhttps://blog.malwarebytes.com/threat-intelligence/2022/04/colibri-loader-combines-task-scheduler-and-powershell-in-clever-persistence-technique/\n"
 executor: powershell
 sigma: true
 sigma_rule:

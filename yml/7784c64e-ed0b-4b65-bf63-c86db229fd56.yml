@@ -11,8 +11,8 @@ technique:
   - T1562.004
 os:
   - linux
-description: "Some Linux systems may not activate ufw, but use iptables for firewall rules instead. (ufw works on top of iptables.) \nAttackers cannot directly disable iptables, as it is not implemented\
-  \ as a service like ufw. But they can flush all iptables \nrules, which in fact \"disable\" iptables. \n"
+description: "Some Linux systems may not activate ufw, but use iptables for firewall rules instead. (ufw works on top of iptables.) \nAttackers cannot directly disable iptables, as it is not implemented
+  as a service like ufw. But they can flush all iptables \nrules, which in fact \"disable\" iptables. \n"
 executor: sh
 sigma: false
 sigma_rule: []

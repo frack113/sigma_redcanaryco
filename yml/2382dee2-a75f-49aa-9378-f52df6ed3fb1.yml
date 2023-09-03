@@ -13,8 +13,8 @@ technique:
   - T1569.002
 os:
   - windows
-description: "Creates a service specifying an arbitrary command and executes it. When executing commands such as PowerShell, the service will report that it did not start correctly even when code executes\
-  \ properly.\n\nUpon successful execution, cmd.exe creates a new service using sc.exe that will start powershell.exe to create a new file `art-marker.txt`\n\n[BlackCat Ransomware (ALPHV)](https://www.varonis.com/blog/blackcat-ransomware)\
+description: "Creates a service specifying an arbitrary command and executes it. When executing commands such as PowerShell, the service will report that it did not start correctly even when code executes
+  properly.\n\nUpon successful execution, cmd.exe creates a new service using sc.exe that will start powershell.exe to create a new file `art-marker.txt`\n\n[BlackCat Ransomware (ALPHV)](https://www.varonis.com/blog/blackcat-ransomware)\
   \  \n[Cybereason vs. BlackCat Ransomware](https://www.cybereason.com/blog/cybereason-vs.-blackcat-ransomware)\n"
 executor: command_prompt
 sigma: true

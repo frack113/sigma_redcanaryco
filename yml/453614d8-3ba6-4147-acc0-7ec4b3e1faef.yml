@@ -11,9 +11,9 @@ technique:
   - T1027.004
 os:
   - windows
-description: "When C# is compiled dynamically, a .cmdline file will be created as a part of the process. \nCertain processes are not typically observed compiling C# code, but can do so without touching\
-  \ disk. This can be used to unpack a payload for execution.\nThe exe file that will be executed is named as T1027.004_DynamicCompile.exe is contained in the 'bin' folder of this atomic, and the source\
-  \ code to the file is in the 'src' folder.\nUpon execution, the exe will print 'T1027.004 Dynamic Compile'.\n"
+description: "When C# is compiled dynamically, a .cmdline file will be created as a part of the process. \nCertain processes are not typically observed compiling C# code, but can do so without touching
+  disk. This can be used to unpack a payload for execution.\nThe exe file that will be executed is named as T1027.004_DynamicCompile.exe is contained in the 'bin' folder of this atomic, and the source code
+  to the file is in the 'src' folder.\nUpon execution, the exe will print 'T1027.004 Dynamic Compile'.\n"
 executor: powershell
 sigma: true
 sigma_rule:

@@ -12,9 +12,9 @@ technique:
   - T1547.008
 os:
   - windows
-description: "The following Atomic will modify an undocumented registry key that may be abused to load a arbitrary DLL into LSASS. \n\nUpon execution, the registry key will be modified and a value will\
-  \ contain the path to the DLL. \nReference: https://blog.xpnsec.com/exploring-mimikatz-part-1/ and source https://github.com/oxfemale/LogonCredentialsSteal\nNote that if any LSA based protection is enabled,\
-  \ this will most likely not be successful with LSASS.exe loading the DLL.\n"
+description: "The following Atomic will modify an undocumented registry key that may be abused to load a arbitrary DLL into LSASS. \n\nUpon execution, the registry key will be modified and a value will
+  contain the path to the DLL. \nReference: https://blog.xpnsec.com/exploring-mimikatz-part-1/ and source https://github.com/oxfemale/LogonCredentialsSteal\nNote that if any LSA based protection is enabled,
+  this will most likely not be successful with LSASS.exe loading the DLL.\n"
 executor: powershell
 sigma: true
 sigma_rule:

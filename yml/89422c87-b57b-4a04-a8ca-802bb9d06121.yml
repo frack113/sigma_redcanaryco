@@ -11,8 +11,8 @@ technique:
   - T1562.008
 os:
   - iaas:aws
-description: "Creates a new cloudWatch log group in AWS, Upon successful creation it will Delete the group. Attackers can use this technique to evade defenses by \ndeleting the log stream. Once it is deleted,\
-  \ the logs created by the attackers will not be logged. https://www.elastic.co/guide/en/security/current/aws-cloudwatch-log-group-deletion.html#aws-cloudwatch-log-group-deletion\n"
+description: "Creates a new cloudWatch log group in AWS, Upon successful creation it will Delete the group. Attackers can use this technique to evade defenses by \ndeleting the log stream. Once it is deleted,
+  the logs created by the attackers will not be logged. https://www.elastic.co/guide/en/security/current/aws-cloudwatch-log-group-deletion.html#aws-cloudwatch-log-group-deletion\n"
 executor: sh
 sigma: false
 sigma_rule: []

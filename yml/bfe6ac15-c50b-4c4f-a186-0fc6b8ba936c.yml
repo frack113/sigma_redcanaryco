@@ -11,9 +11,9 @@ technique:
   - T1137
 os:
   - windows
-description: "As outlined in MDSEC's Blog post https://www.mdsec.co.uk/2020/11/a-fresh-outlook-on-mail-based-persistence/ \nit is possible to use Outlook Macro as a way to achieve persistance and execute\
-  \ arbitrary commands. This transform Outlook into a C2.\nToo achieve this two things must happened on the syste\n- The macro security registry value must be set to '4'\n- A file called VbaProject.OTM\
-  \ must be created in the Outlook Folder.\n"
+description: "As outlined in MDSEC's Blog post https://www.mdsec.co.uk/2020/11/a-fresh-outlook-on-mail-based-persistence/ \nit is possible to use Outlook Macro as a way to achieve persistance and execute
+  arbitrary commands. This transform Outlook into a C2.\nToo achieve this two things must happened on the syste\n- The macro security registry value must be set to '4'\n- A file called VbaProject.OTM must
+  be created in the Outlook Folder.\n"
 executor: command_prompt
 sigma: true
 sigma_rule:

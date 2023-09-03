@@ -18,8 +18,8 @@ technique:
   - T1548.002
 os:
   - windows
-description: "Executes User Account Control Bypass according to the methods listed below. Upon successful execution you should see event viewer load and two administrative command prompts.\nNote: The cleanup_command's\
-  \ which kill the spawned cmd and event viewer processes only work if run as admin.\n\nAuthor: winscripting.blog\n\nType:\tShell API\n\nMethod: Registry key manipulation\n\nTarget:\t\\system32\\fodhelper.exe\n\
+description: "Executes User Account Control Bypass according to the methods listed below. Upon successful execution you should see event viewer load and two administrative command prompts.\nNote: The cleanup_command's
+  which kill the spawned cmd and event viewer processes only work if run as admin.\n\nAuthor: winscripting.blog\n\nType:\tShell API\n\nMethod: Registry key manipulation\n\nTarget:\t\\system32\\fodhelper.exe\n
   \nComponent:\tAttacker defined\n\nImplementation:\tucmShellRegModMethod\n\nUCM Method:\tUacMethodMsSettings2\n\nhttps://github.com/hfiref0x/UACME\n"
 executor: command_prompt
 sigma: true

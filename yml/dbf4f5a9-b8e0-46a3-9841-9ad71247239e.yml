@@ -14,9 +14,9 @@ technique:
   - T1134.002
 os:
   - windows
-description: "This Action demonstrates how an access token for a specific program can spawn another program under a different owner. \nAdversaries can leverage access tokens to run programs under a different\
-  \ user not only to achieve privilege escalation but also to evade detection by blending in with normal user activity. \nThis Action will query all processes and list the process name and owner.It will\
-  \ then make a copy of an existing token to create a new instance of cmd.exe\n"
+description: "This Action demonstrates how an access token for a specific program can spawn another program under a different owner. \nAdversaries can leverage access tokens to run programs under a different
+  user not only to achieve privilege escalation but also to evade detection by blending in with normal user activity. \nThis Action will query all processes and list the process name and owner.It will then
+  make a copy of an existing token to create a new instance of cmd.exe\n"
 executor: powershell
 sigma: true
 sigma_rule:

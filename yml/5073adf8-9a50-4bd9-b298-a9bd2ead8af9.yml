@@ -18,7 +18,7 @@ technique:
   - T1548.002
 os:
   - windows
-description: "Bypasses User Account Control using Event Viewer and a relevant Windows Registry modification. More information here - https://enigma0x3.net/2016/08/15/fileless-uac-bypass-using-eventvwr-exe-and-registry-hijacking/\n\
+description: "Bypasses User Account Control using Event Viewer and a relevant Windows Registry modification. More information here - https://enigma0x3.net/2016/08/15/fileless-uac-bypass-using-eventvwr-exe-and-registry-hijacking/\n
   Upon execution command prompt should be launched with administrative privileges. \n"
 executor: command_prompt
 sigma: true

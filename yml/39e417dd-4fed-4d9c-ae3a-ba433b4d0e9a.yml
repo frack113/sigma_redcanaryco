@@ -14,9 +14,9 @@ technique:
   - T1547.014
 os:
   - windows
-description: "This test will add a StubPath entry to the Active Setup native registry key associated with 'Internet Explorer Core Fonts' (UUID {C9E9A340-D1F1-11D0-821E-444553540600}) \nSaid key doesn't\
-  \ have a StubPath value by default, by adding one it will launch calc by forcing to run active setup using runonce.exe /AlternateShellStartup. \nWithout the last command it will normally run on next user\
-  \ logon. Note: this test will only run once successfully if no cleanup command is run in between test.\n"
+description: "This test will add a StubPath entry to the Active Setup native registry key associated with 'Internet Explorer Core Fonts' (UUID {C9E9A340-D1F1-11D0-821E-444553540600}) \nSaid key doesn't
+  have a StubPath value by default, by adding one it will launch calc by forcing to run active setup using runonce.exe /AlternateShellStartup. \nWithout the last command it will normally run on next user
+  logon. Note: this test will only run once successfully if no cleanup command is run in between test.\n"
 executor: powershell
 sigma: true
 sigma_rule:

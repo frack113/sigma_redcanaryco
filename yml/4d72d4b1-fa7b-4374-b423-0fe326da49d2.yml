@@ -15,8 +15,8 @@ technique:
   - T1112
 os:
   - windows
-description: "Modify the registry of the currently logged in user using reg.exe via cmd console to Disable context menu for taskbar Group Policy. \nTake note that some Group Policy changes might require\
-  \ a restart to take effect.\nSee how ransomware abuses this technique- https://www.virustotal.com/gui/file/2d7855bf6470aa323edf2949b54ce2a04d9e38770f1322c3d0420c2303178d91/details\n"
+description: "Modify the registry of the currently logged in user using reg.exe via cmd console to Disable context menu for taskbar Group Policy. \nTake note that some Group Policy changes might require
+  a restart to take effect.\nSee how ransomware abuses this technique- https://www.virustotal.com/gui/file/2d7855bf6470aa323edf2949b54ce2a04d9e38770f1322c3d0420c2303178d91/details\n"
 executor: command_prompt
 sigma: true
 sigma_rule:

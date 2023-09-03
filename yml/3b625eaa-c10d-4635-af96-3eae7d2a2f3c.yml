@@ -15,8 +15,8 @@ technique:
   - T1112
 os:
   - windows
-description: "Tamper Win Defender Protection. RedLine Stealer is executing another component file to modify this win defender feature in registry. \nTake note that this modification might not be enough\
-  \ to disable this feature but can be a good indicator of malicious process that \ntries to tamper this Win Defender feature settings.\n"
+description: "Tamper Win Defender Protection. RedLine Stealer is executing another component file to modify this win defender feature in registry. \nTake note that this modification might not be enough
+  to disable this feature but can be a good indicator of malicious process that \ntries to tamper this Win Defender feature settings.\n"
 executor: command_prompt
 sigma: false
 sigma_rule: []

@@ -13,8 +13,8 @@ technique:
   - T1606.002
 os:
   - azure-ad
-description: "Forge a \"Golden SAML\" token which allows to impersonate any Azure AD user, and authenticate to AADGraph (as a proof). \nYou will need the ADFS token signing certificate (see T1552.004 to\
-  \ export it).\nMore info here : https://o365blog.com/post/adfs/\n"
+description: "Forge a \"Golden SAML\" token which allows to impersonate any Azure AD user, and authenticate to AADGraph (as a proof). \nYou will need the ADFS token signing certificate (see T1552.004 to
+  export it).\nMore info here : https://o365blog.com/post/adfs/\n"
 executor: powershell
 sigma: false
 sigma_rule: []

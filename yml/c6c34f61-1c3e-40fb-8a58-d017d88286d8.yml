@@ -11,8 +11,8 @@ technique:
   - T1083
 os:
   - windows
-description: "This test emulates MAZE ransomware's ability to enumerate directories using Powershell. \nUpon successful execution, this test will output the directory enumeration results to a specified\
-  \ file, as well as display them in the active window. \nSee https://www.mandiant.com/resources/tactics-techniques-procedures-associated-with-maze-ransomware-incidents\n"
+description: "This test emulates MAZE ransomware's ability to enumerate directories using Powershell. \nUpon successful execution, this test will output the directory enumeration results to a specified
+  file, as well as display them in the active window. \nSee https://www.mandiant.com/resources/tactics-techniques-procedures-associated-with-maze-ransomware-incidents\n"
 executor: powershell
 sigma: true
 sigma_rule:

@@ -15,9 +15,9 @@ technique:
   - T1539
 os:
   - windows
-description: "This test queries Chrome's SQLite database to steal the encrypted cookie data, designed to function similarly to Zloader/Zbot's cookie theft function. \nOnce an adversary obtains the encrypted\
-  \ cookie info, they could go on to decrypt the encrypted value, potentially allowing for session theft. \nNote: If Chrome is running, the process will be killed to ensure that the DB file isn't locked.\
-  \ \nSee https://www.malwarebytes.com/resources/files/2020/05/the-silent-night-zloader-zbot_final.pdf. \n"
+description: "This test queries Chrome's SQLite database to steal the encrypted cookie data, designed to function similarly to Zloader/Zbot's cookie theft function. \nOnce an adversary obtains the encrypted
+  cookie info, they could go on to decrypt the encrypted value, potentially allowing for session theft. \nNote: If Chrome is running, the process will be killed to ensure that the DB file isn't locked.
+  \nSee https://www.malwarebytes.com/resources/files/2020/05/the-silent-night-zloader-zbot_final.pdf. \n"
 executor: powershell
 sigma: true
 sigma_rule:

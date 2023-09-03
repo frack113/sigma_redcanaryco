@@ -10,9 +10,9 @@ technique:
   - T1070.005
 os:
   - windows
-description: "Administrative shares are hidden network shares created by Microsoft’s Windows NT operating systems that grant system administrators \nremote access to every disk volume on a network-connected\
-  \ system. These shares are automatically created at started unless they have been\npurposefully disabled as is done in this Atomic test. As Microsoft puts it, \"Missing administrative shares typically\
-  \ \nindicate that the computer in question has been compromised by malicious software.\"\nhttps://threatpost.com/conti-ransomware-gang-has-full-log4shell-attack-chain/177173/\n"
+description: "Administrative shares are hidden network shares created by Microsoft’s Windows NT operating systems that grant system administrators \nremote access to every disk volume on a network-connected
+  system. These shares are automatically created at started unless they have been\npurposefully disabled as is done in this Atomic test. As Microsoft puts it, \"Missing administrative shares typically \n
+  indicate that the computer in question has been compromised by malicious software.\"\nhttps://threatpost.com/conti-ransomware-gang-has-full-log4shell-attack-chain/177173/\n"
 executor: command_prompt
 sigma: true
 sigma_rule:

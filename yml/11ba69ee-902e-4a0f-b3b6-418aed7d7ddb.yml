@@ -13,8 +13,8 @@ technique:
   - T1057
 os:
   - windows
-description: "Adversaries may use command line tools to discover specific processes in preparation of further attacks. \nExamples of this could be discovering the PID of lsass.exe to dump its memory or\
-  \ discovering whether specific security processes (e.g. AV or EDR) are running.\n"
+description: "Adversaries may use command line tools to discover specific processes in preparation of further attacks. \nExamples of this could be discovering the PID of lsass.exe to dump its memory or
+  discovering whether specific security processes (e.g. AV or EDR) are running.\n"
 executor: command_prompt
 sigma: false
 sigma_rule: []

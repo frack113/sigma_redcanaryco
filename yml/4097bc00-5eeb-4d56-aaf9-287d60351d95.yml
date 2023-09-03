@@ -31,10 +31,10 @@ technique:
   - T1110.001
 os:
   - linux
-description: "An adversary may find themselves on a box (e.g. via ssh key auth, with no password) with a user that has sudo'ers privileges, but they do not know the users password. Normally, failed attempts\
-  \ to access root will not cause the root account to become locked, to prevent denial-of-service. This functionality enables an attacker to undertake a local brute force password guessing attack without\
-  \ locking out the root user. \n\nThis test creates the \"art\" user with a password of \"password123\", logs in, downloads and executes the sudo_bruteforce.sh which brute force guesses the password, then\
-  \ deletes the user\n"
+description: "An adversary may find themselves on a box (e.g. via ssh key auth, with no password) with a user that has sudo'ers privileges, but they do not know the users password. Normally, failed attempts
+  to access root will not cause the root account to become locked, to prevent denial-of-service. This functionality enables an attacker to undertake a local brute force password guessing attack without
+  locking out the root user. \n\nThis test creates the \"art\" user with a password of \"password123\", logs in, downloads and executes the sudo_bruteforce.sh which brute force guesses the password, then
+  deletes the user\n"
 executor: bash
 sigma: false
 sigma_rule: []

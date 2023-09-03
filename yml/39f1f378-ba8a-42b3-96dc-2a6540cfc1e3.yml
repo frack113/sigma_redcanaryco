@@ -15,8 +15,8 @@ technique:
   - T1112
 os:
   - windows
-description: "This test emulates Mimic ransomware's ability to enable multiple user sessions by modifying the AllowMultipleTSSessions value within the Winlogon registry key. \nSee [Mimic Ransomware Overview]\
-  \ (https://www.trendmicro.com/en_us/research/23/a/new-mimic-ransomware-abuses-everything-apis-for-its-encryption-p.html)\n"
+description: "This test emulates Mimic ransomware's ability to enable multiple user sessions by modifying the AllowMultipleTSSessions value within the Winlogon registry key. \nSee [Mimic Ransomware Overview]
+  (https://www.trendmicro.com/en_us/research/23/a/new-mimic-ransomware-abuses-everything-apis-for-its-encryption-p.html)\n"
 executor: command_prompt
 sigma: false
 sigma_rule: []

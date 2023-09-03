@@ -1,8 +1,8 @@
 Attack_name: Clipboard Data
-Attack_description: "Adversaries may collect data stored in the clipboard from users copying information within or between applications. \n\nFor example, on Windows adversaries can access clipboard data\
-  \ by using <code>clip.exe</code> or <code>Get-Clipboard</code>.(Citation: MSDN Clipboard)(Citation: clip_win_server)(Citation: CISA_AA21_200B) Additionally, adversaries may monitor then replace users’\
-  \ clipboard with their data (e.g., [Transmitted Data Manipulation](https://attack.mitre.org/techniques/T1565/002)).(Citation: mining_ruby_reversinglabs)\n\nmacOS and Linux also have commands, such as\
-  \ <code>pbpaste</code>, to grab clipboard contents.(Citation: Operating with EmPyre)"
+Attack_description: "Adversaries may collect data stored in the clipboard from users copying information within or between applications. \n\nFor example, on Windows adversaries can access clipboard data
+  by using <code>clip.exe</code> or <code>Get-Clipboard</code>.(Citation: MSDN Clipboard)(Citation: clip_win_server)(Citation: CISA_AA21_200B) Additionally, adversaries may monitor then replace users’ clipboard
+  with their data (e.g., [Transmitted Data Manipulation](https://attack.mitre.org/techniques/T1565/002)).(Citation: mining_ruby_reversinglabs)\n\nmacOS and Linux also have commands, such as <code>pbpaste</code>,
+  to grab clipboard contents.(Citation: Operating with EmPyre)"
 guid: d6dc21af-bec9-4152-be86-326b6babd416
 name: Execute Commands from Clipboard using PowerShell
 tactic:

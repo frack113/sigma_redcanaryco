@@ -11,10 +11,10 @@ technique:
   - T1564
 os:
   - windows
-description: "This module extracts a binary (calc.exe) from inside of another binary. \n\nIn the wild maldoc authors will use this technique to hide binaries inside of files stored \nwithin the office document\
-  \ itself. An example of this technique can be seen in sample\n\nf986040c7dd75b012e7dfd876acb33a158abf651033563ab068800f07f508226\n\nThis sample contains a document inside of itself. Document 1 is the\
-  \ actual maldoc itself, document 2\nis the same document without all the malicious code. Document 1 will copy Document 2 to the file system\nand then \"peek\" inside of this document and pull out the\
-  \ oleObject.bin file. Contained inside of this\noleObject.bin file is a payload that is parsed out and executed on the file system.\n"
+description: "This module extracts a binary (calc.exe) from inside of another binary. \n\nIn the wild maldoc authors will use this technique to hide binaries inside of files stored \nwithin the office document
+  itself. An example of this technique can be seen in sample\n\nf986040c7dd75b012e7dfd876acb33a158abf651033563ab068800f07f508226\n\nThis sample contains a document inside of itself. Document 1 is the actual
+  maldoc itself, document 2\nis the same document without all the malicious code. Document 1 will copy Document 2 to the file system\nand then \"peek\" inside of this document and pull out the oleObject.bin
+  file. Contained inside of this\noleObject.bin file is a payload that is parsed out and executed on the file system.\n"
 executor: powershell
 sigma: true
 sigma_rule:

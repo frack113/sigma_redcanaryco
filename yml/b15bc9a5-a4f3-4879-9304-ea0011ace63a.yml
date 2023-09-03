@@ -28,9 +28,9 @@ technique:
   - T1110.003
 os:
   - windows
-description: "Perform a domain password spray using the same core method of the [DomainPasswordSpray tool](https://github.com/dafthack/DomainPasswordSpray) \nbut without all the extra code that makes the\
-  \ script get blocked by many AVs. \nThis atomic test will attempt a single password against all users in a password list at $env:Temp\\usersdpsLight.txt. You can create this file manually\nor with the\
-  \ automated prereq_command. The prereq_command will limit the user list to 200 users by default to help you avoid massive account lockout.\n"
+description: "Perform a domain password spray using the same core method of the [DomainPasswordSpray tool](https://github.com/dafthack/DomainPasswordSpray) \nbut without all the extra code that makes the
+  script get blocked by many AVs. \nThis atomic test will attempt a single password against all users in a password list at $env:Temp\\usersdpsLight.txt. You can create this file manually\nor with the automated
+  prereq_command. The prereq_command will limit the user list to 200 users by default to help you avoid massive account lockout.\n"
 executor: powershell
 sigma: true
 sigma_rule:

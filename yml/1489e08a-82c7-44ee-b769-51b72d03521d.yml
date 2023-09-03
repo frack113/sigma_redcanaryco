@@ -17,9 +17,9 @@ technique:
   - T1221
 os:
   - windows
-description: "Open a .docx file that loads a remote .dotm macro enabled template from https://github.com/redcanaryco/atomic-red-team/tree/master/atomics/T1221/src/opencalc.dotm \nExecutes the code specified\
-  \ within the .dotm template.\nRequires download of WINWORD found in Microsoft Ofiice at Microsoft: https://www.microsoft.com/en-us/download/office.aspx.  \nDefault docs file opens Calculator.exe when\
-  \ test sucessfully executed, while AV turned off.\n"
+description: "Open a .docx file that loads a remote .dotm macro enabled template from https://github.com/redcanaryco/atomic-red-team/tree/master/atomics/T1221/src/opencalc.dotm \nExecutes the code specified
+  within the .dotm template.\nRequires download of WINWORD found in Microsoft Ofiice at Microsoft: https://www.microsoft.com/en-us/download/office.aspx.  \nDefault docs file opens Calculator.exe when test
+  sucessfully executed, while AV turned off.\n"
 executor: command_prompt
 sigma: true
 sigma_rule:

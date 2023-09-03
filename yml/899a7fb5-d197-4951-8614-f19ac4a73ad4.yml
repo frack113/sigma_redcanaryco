@@ -11,8 +11,8 @@ technique:
   - T1562.004
 os:
   - linux
-description: "Instead of completely \"disabling\" iptables, adversaries may choose to delete a certain rule, which, for example, blocks data exfiltration via ftp.\nBy doing so, they may cause less noise\
-  \ to avoid detection. \n"
+description: "Instead of completely \"disabling\" iptables, adversaries may choose to delete a certain rule, which, for example, blocks data exfiltration via ftp.\nBy doing so, they may cause less noise
+  to avoid detection. \n"
 executor: sh
 sigma: false
 sigma_rule: []

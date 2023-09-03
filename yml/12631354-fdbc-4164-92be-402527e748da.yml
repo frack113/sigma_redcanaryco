@@ -11,8 +11,8 @@ technique:
   - T1090.003
 os:
   - macos
-description: "This test is designed to launch the tor proxy service, which is what is utilized in the background by the Tor Browser and other applications with add-ons in order to provide onion routing\
-  \ functionality.\nUpon successful execution, the tor proxy service will be launched. \n"
+description: "This test is designed to launch the tor proxy service, which is what is utilized in the background by the Tor Browser and other applications with add-ons in order to provide onion routing
+  functionality.\nUpon successful execution, the tor proxy service will be launched. \n"
 executor: sh
 sigma: false
 sigma_rule: []

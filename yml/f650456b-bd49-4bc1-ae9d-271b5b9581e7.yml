@@ -15,8 +15,8 @@ technique:
   - T1564.001
 os:
   - windows
-description: "Disable Show Hidden files switch in registry. This technique was abused by several malware to hide their files from normal user.\nSee how this trojan abuses this technique - https://www.sophos.com/en-us/threat-center/threat-analyses/viruses-and-spyware/W32~Tiotua-P/detailed-analysis.aspx\
-  \ \n"
+description: "Disable Show Hidden files switch in registry. This technique was abused by several malware to hide their files from normal user.\nSee how this trojan abuses this technique - https://www.sophos.com/en-us/threat-center/threat-analyses/viruses-and-spyware/W32~Tiotua-P/detailed-analysis.aspx
+  \n"
 executor: command_prompt
 sigma: true
 sigma_rule:

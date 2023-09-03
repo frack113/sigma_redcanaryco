@@ -1,8 +1,8 @@
 Attack_name: 'Valid Accounts: Local Accounts'
-Attack_description: "Adversaries may obtain and abuse credentials of a local account as a means of gaining Initial Access, Persistence, Privilege Escalation, or Defense Evasion. Local accounts are those\
-  \ configured by an organization for use by users, remote support, services, or for administration on a single system or service.\n\nLocal Accounts may also be abused to elevate privileges and harvest\
-  \ credentials through [OS Credential Dumping](https://attack.mitre.org/techniques/T1003). Password reuse may allow the abuse of local accounts across a set of machines on a network for the purposes of\
-  \ Privilege Escalation and Lateral Movement. "
+Attack_description: "Adversaries may obtain and abuse credentials of a local account as a means of gaining Initial Access, Persistence, Privilege Escalation, or Defense Evasion. Local accounts are those
+  configured by an organization for use by users, remote support, services, or for administration on a single system or service.\n\nLocal Accounts may also be abused to elevate privileges and harvest credentials
+  through [OS Credential Dumping](https://attack.mitre.org/techniques/T1003). Password reuse may allow the abuse of local accounts across a set of machines on a network for the purposes of Privilege Escalation
+  and Lateral Movement. "
 guid: e9fdb899-a980-4ba4-934b-486ad22e22f4
 name: WinPwn - Loot local Credentials - Safetykatz
 tactic:

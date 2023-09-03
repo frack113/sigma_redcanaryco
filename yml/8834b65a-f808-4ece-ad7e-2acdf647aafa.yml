@@ -48,8 +48,8 @@ technique:
   - T1547.001
 os:
   - windows
-description: "This test will modify the HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders  -V \"Startup\" value \nto point to a new startup folder where a payload\
-  \ could be stored to launch at boot.  *successful execution requires system restart\n"
+description: "This test will modify the HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders  -V \"Startup\" value \nto point to a new startup folder where a payload
+  could be stored to launch at boot.  *successful execution requires system restart\n"
 executor: powershell
 sigma: true
 sigma_rule:

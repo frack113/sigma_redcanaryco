@@ -10,8 +10,8 @@ technique:
   - T1555
 os:
   - windows
-description: "The [LaZagne project](https://github.com/AlessandroZ/LaZagne) is an open source application used to retrieve lots of passwords stored on a local computer. \nEach software stores its passwords\
-  \ using different techniques (plaintext, APIs, custom algorithms, databases, etc.). \nThis tool has been developed for the purpose of finding these passwords for the most commonly-used software"
+description: "The [LaZagne project](https://github.com/AlessandroZ/LaZagne) is an open source application used to retrieve lots of passwords stored on a local computer. \nEach software stores its passwords
+  using different techniques (plaintext, APIs, custom algorithms, databases, etc.). \nThis tool has been developed for the purpose of finding these passwords for the most commonly-used software"
 executor: powershell
 sigma: true
 sigma_rule:

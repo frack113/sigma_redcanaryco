@@ -11,8 +11,8 @@ technique:
   - T1012
 os:
   - windows
-description: "Query Windows Registry with Powershell cmdlets, i.e., Get-Item and Get-ChildItem. The results from above can also be achieved with Get-Item and Get-ChildItem.\nUnlike using \"reg query\" which\
-  \ then executes reg.exe, using cmdlets won't generate new processes, which may evade detection systems monitoring process generation. \n"
+description: "Query Windows Registry with Powershell cmdlets, i.e., Get-Item and Get-ChildItem. The results from above can also be achieved with Get-Item and Get-ChildItem.\nUnlike using \"reg query\" which
+  then executes reg.exe, using cmdlets won't generate new processes, which may evade detection systems monitoring process generation. \n"
 executor: powershell
 sigma: false
 sigma_rule: []

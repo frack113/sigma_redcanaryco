@@ -15,8 +15,8 @@ technique:
   - T1112
 os:
   - windows
-description: "Modify the registry of the currently logged in user using reg.exe via cmd console to Disable Control Panel Group Policy. \nTake note that some Group Policy changes might require a restart\
-  \ to take effect.\nSee how Trojan abuses this technique- https://www.sophos.com/de-de/threat-center/threat-analyses/viruses-and-spyware/Troj~Krotten-N/detailed-analysis\n"
+description: "Modify the registry of the currently logged in user using reg.exe via cmd console to Disable Control Panel Group Policy. \nTake note that some Group Policy changes might require a restart
+  to take effect.\nSee how Trojan abuses this technique- https://www.sophos.com/de-de/threat-center/threat-analyses/viruses-and-spyware/Troj~Krotten-N/detailed-analysis\n"
 executor: command_prompt
 sigma: true
 sigma_rule:

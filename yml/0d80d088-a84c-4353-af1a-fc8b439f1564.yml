@@ -13,8 +13,8 @@ technique:
   - T1012
 os:
   - windows
-description: "This test is designed to enumerate the COM objects listed in HKCR, then output their methods and CLSIDs to a text file.\nAn adversary could then use this information to identify COM objects\
-  \ that might be vulnerable to abuse, such as using them to spawn arbitrary processes. \nSee: https://www.mandiant.com/resources/hunting-com-objects"
+description: "This test is designed to enumerate the COM objects listed in HKCR, then output their methods and CLSIDs to a text file.\nAn adversary could then use this information to identify COM objects
+  that might be vulnerable to abuse, such as using them to spawn arbitrary processes. \nSee: https://www.mandiant.com/resources/hunting-com-objects"
 executor: powershell
 sigma: true
 sigma_rule:

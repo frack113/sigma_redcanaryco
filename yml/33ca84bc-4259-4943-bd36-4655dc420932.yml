@@ -11,8 +11,8 @@ technique:
   - T1562.008
 os:
   - iaas:aws
-description: "Creates a new cloudWatch log stream in AWS, Upon successful creation it will Delete the stream. Attackers can use this technique to evade defenses by \ndeleting the log stream. Once it is\
-  \ deleted, the logs created by the attackers will not be logged. https://www.elastic.co/guide/en/security/current/aws-cloudwatch-log-stream-deletion.html\n"
+description: "Creates a new cloudWatch log stream in AWS, Upon successful creation it will Delete the stream. Attackers can use this technique to evade defenses by \ndeleting the log stream. Once it is
+  deleted, the logs created by the attackers will not be logged. https://www.elastic.co/guide/en/security/current/aws-cloudwatch-log-stream-deletion.html\n"
 executor: sh
 sigma: false
 sigma_rule: []

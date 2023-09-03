@@ -14,9 +14,9 @@ technique:
   - T1546.003
 os:
   - windows
-description: "The following Atomic will utilize MOFComp.exe to load a local MOF file.\nThe Managed Object Format (MOF) compiler parses a file containing MOF statements and adds the classes and class instances\
-  \ defined in the file to the WMI repository. \nTo query for the class:  gwmi __eventfilter -namespace root\\subscription\nA successful execution will add the class to WMI root namespace.\nReference: https://pentestlab.blog/2020/01/21/persistence-wmi-event-subscription/\
-  \ and https://thedfirreport.com/2022/07/11/select-xmrig-from-sqlserver/.\n"
+description: "The following Atomic will utilize MOFComp.exe to load a local MOF file.\nThe Managed Object Format (MOF) compiler parses a file containing MOF statements and adds the classes and class instances
+  defined in the file to the WMI repository. \nTo query for the class:  gwmi __eventfilter -namespace root\\subscription\nA successful execution will add the class to WMI root namespace.\nReference: https://pentestlab.blog/2020/01/21/persistence-wmi-event-subscription/
+  and https://thedfirreport.com/2022/07/11/select-xmrig-from-sqlserver/.\n"
 executor: powershell
 sigma: true
 sigma_rule:

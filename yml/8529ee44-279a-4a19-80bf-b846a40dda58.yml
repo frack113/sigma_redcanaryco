@@ -1,7 +1,7 @@
 Attack_name: 'Exfiltration Over Web Service: Exfiltration to Cloud Storage'
-Attack_description: "Adversaries may exfiltrate data to a cloud storage service rather than over their primary command and control channel. Cloud storage services allow for the storage, edit, and retrieval\
-  \ of data from a remote cloud storage server over the Internet.\n\nExamples of cloud storage services include Dropbox and Google Docs. Exfiltration to these cloud storage services can provide a significant\
-  \ amount of cover to the adversary if hosts within the network are already communicating with the service. "
+Attack_description: "Adversaries may exfiltrate data to a cloud storage service rather than over their primary command and control channel. Cloud storage services allow for the storage, edit, and retrieval
+  of data from a remote cloud storage server over the Internet.\n\nExamples of cloud storage services include Dropbox and Google Docs. Exfiltration to these cloud storage services can provide a significant
+  amount of cover to the adversary if hosts within the network are already communicating with the service. "
 guid: 8529ee44-279a-4a19-80bf-b846a40dda58
 name: Exfiltrate data with rclone to cloud Storage - Mega (Windows)
 tactic:

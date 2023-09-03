@@ -11,11 +11,11 @@ technique:
   - T1491.001
 os:
   - windows
-description: "Display ransom message to users at system start-up by configuring registry keys HKLM\\SOFTWARE\\Micosoft\\Windows\\CurrentVersion\\Policies\\System\\LegalNoticeCaption and HKLM\\SOFTWARE\\\
-  Micosoft\\Windows\\CurrentVersion\\Policies\\System\\LegalNoticeText.\n\n[SynAck Ransomware](https://www.trendmicro.com/vinfo/es/security/news/cybercrime-and-digital-threats/synack-ransomware-leverages-process-doppelg-nging-for-evasion-and-infection),\
-  \ \n[Grief Ransomware](https://redcanary.com/blog/grief-ransomware/), \n[Maze Ransomware](https://cyware.com/research-and-analysis/maze-ransomware-a-deadly-combination-of-data-theft-and-encryption-to-target-us-organizations-8f27),\n\
-  [Pysa Ransomware](https://www.cybereason.com/blog/research/threat-analysis-report-inside-the-destructive-pysa-ransomware),\n[Spook Ransomware](https://community.fortinet.com/t5/FortiEDR/Threat-Coverage-How-FortiEDR-protects-against-Spook-Ransomware/ta-p/204226),\n\
-  [DopplePaymer Ransomware](https://www.microsoft.com/en-us/wdsi/threats/malware-encyclopedia-description?Name=Ransom:Win32/Dopplepaymer&threatId=-2147221958),\n[Reedemer Ransomware](https://blog.cyble.com/2022/07/20/redeemer-ransomware-back-action/),\n\
+description: "Display ransom message to users at system start-up by configuring registry keys HKLM\\SOFTWARE\\Micosoft\\Windows\\CurrentVersion\\Policies\\System\\LegalNoticeCaption and HKLM\\SOFTWARE\\
+  Micosoft\\Windows\\CurrentVersion\\Policies\\System\\LegalNoticeText.\n\n[SynAck Ransomware](https://www.trendmicro.com/vinfo/es/security/news/cybercrime-and-digital-threats/synack-ransomware-leverages-process-doppelg-nging-for-evasion-and-infection),
+  \n[Grief Ransomware](https://redcanary.com/blog/grief-ransomware/), \n[Maze Ransomware](https://cyware.com/research-and-analysis/maze-ransomware-a-deadly-combination-of-data-theft-and-encryption-to-target-us-organizations-8f27),\n
+  [Pysa Ransomware](https://www.cybereason.com/blog/research/threat-analysis-report-inside-the-destructive-pysa-ransomware),\n[Spook Ransomware](https://community.fortinet.com/t5/FortiEDR/Threat-Coverage-How-FortiEDR-protects-against-Spook-Ransomware/ta-p/204226),\n
+  [DopplePaymer Ransomware](https://www.microsoft.com/en-us/wdsi/threats/malware-encyclopedia-description?Name=Ransom:Win32/Dopplepaymer&threatId=-2147221958),\n[Reedemer Ransomware](https://blog.cyble.com/2022/07/20/redeemer-ransomware-back-action/),\n
   [Kangaroo Ransomware](https://www.bleepingcomputer.com/news/security/the-kangaroo-ransomware-not-only-encrypts-your-data-but-tries-to-lock-you-out-of-windows/)\n"
 executor: powershell
 sigma: true

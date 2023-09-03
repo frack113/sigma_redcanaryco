@@ -1,11 +1,11 @@
 Attack_name: 'Archive Collected Data: Archive via Utility'
-Attack_description: "Adversaries may use utilities to compress and/or encrypt collected data prior to exfiltration. Many utilities include functionalities to compress, encrypt, or otherwise package data\
-  \ into a format that is easier/more secure to transport.\n\nAdversaries may abuse various utilities to compress or encrypt data before exfiltration. Some third party utilities may be preinstalled, such\
-  \ as <code>tar</code> on Linux and macOS or <code>zip</code> on Windows systems. \n\nOn Windows, <code>diantz</code> or <code> makecab</code> may be used to package collected files into a cabinet (.cab)\
-  \ file. <code>diantz</code> may also be used to download and compress files from remote locations (i.e. [Remote Data Staging](https://attack.mitre.org/techniques/T1074/002)).(Citation: diantz.exe_lolbas)\
-  \ <code>xcopy</code> on Windows can copy files and directories with a variety of options. Additionally, adversaries may use [certutil](https://attack.mitre.org/software/S0160) to Base64 encode collected\
-  \ data before exfiltration. \n\nAdversaries may use also third party utilities, such as 7-Zip, WinRAR, and WinZip, to perform similar activities.(Citation: 7zip Homepage)(Citation: WinRAR Homepage)(Citation:\
-  \ WinZip Homepage)"
+Attack_description: "Adversaries may use utilities to compress and/or encrypt collected data prior to exfiltration. Many utilities include functionalities to compress, encrypt, or otherwise package data
+  into a format that is easier/more secure to transport.\n\nAdversaries may abuse various utilities to compress or encrypt data before exfiltration. Some third party utilities may be preinstalled, such
+  as <code>tar</code> on Linux and macOS or <code>zip</code> on Windows systems. \n\nOn Windows, <code>diantz</code> or <code> makecab</code> may be used to package collected files into a cabinet (.cab)
+  file. <code>diantz</code> may also be used to download and compress files from remote locations (i.e. [Remote Data Staging](https://attack.mitre.org/techniques/T1074/002)).(Citation: diantz.exe_lolbas)
+  <code>xcopy</code> on Windows can copy files and directories with a variety of options. Additionally, adversaries may use [certutil](https://attack.mitre.org/software/S0160) to Base64 encode collected
+  data before exfiltration. \n\nAdversaries may use also third party utilities, such as 7-Zip, WinRAR, and WinZip, to perform similar activities.(Citation: 7zip Homepage)(Citation: WinRAR Homepage)(Citation:
+  WinZip Homepage)"
 guid: a743e3a6-e8b2-4a30-abe7-ca85d201b5d3
 name: Encrypts collected data with AES-256 and Base64
 tactic:
@@ -15,9 +15,9 @@ technique:
 os:
   - linux
   - macos
-description: "An adversary may compress all the collected data, encrypt and send them to a C2 server using base64 encoding. \nThis atomic test tries to emulate the behaviour of the FLEXIROOT backdoor to\
-  \ archive the collected data. FLEXIROOT typically utilizes AES encryption and base64 encoding to transfer the encrypted data to the C2 server. \nIn this test, standard zip compression and the OpenSSL\
-  \ library are used to encrypt the compressed data.\nhttps://attack.mitre.org/versions/v7/software/S0267/"
+description: "An adversary may compress all the collected data, encrypt and send them to a C2 server using base64 encoding. \nThis atomic test tries to emulate the behaviour of the FLEXIROOT backdoor to
+  archive the collected data. FLEXIROOT typically utilizes AES encryption and base64 encoding to transfer the encrypted data to the C2 server. \nIn this test, standard zip compression and the OpenSSL library
+  are used to encrypt the compressed data.\nhttps://attack.mitre.org/versions/v7/software/S0267/"
 executor: bash
 sigma: false
 sigma_rule: []

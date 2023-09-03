@@ -11,8 +11,8 @@ technique:
   - T1070.006
 os:
   - windows
-description: "Timestomp kxwn.lock.\n\nSuccessful execution will include the placement of kxwn.lock in #{file_path} and execution of timestomp.ps1 to modify the time of the .lock file. \n\n[Mitre ATT&CK\
-  \ Evals](https://github.com/mitre-attack/attack-arsenal/blob/master/adversary_emulation/APT29/CALDERA_DIY/evals/data/abilities/defensive-evasion/4a2ad84e-a93a-4b2e-b1f0-c354d6a41278.yml)\n"
+description: "Timestomp kxwn.lock.\n\nSuccessful execution will include the placement of kxwn.lock in #{file_path} and execution of timestomp.ps1 to modify the time of the .lock file. \n\n[Mitre ATT&CK
+  Evals](https://github.com/mitre-attack/attack-arsenal/blob/master/adversary_emulation/APT29/CALDERA_DIY/evals/data/abilities/defensive-evasion/4a2ad84e-a93a-4b2e-b1f0-c354d6a41278.yml)\n"
 executor: powershell
 sigma: true
 sigma_rule:

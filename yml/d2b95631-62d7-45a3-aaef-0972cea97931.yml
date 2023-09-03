@@ -1,8 +1,8 @@
 Attack_name: 'Valid Accounts: Local Accounts'
-Attack_description: "Adversaries may obtain and abuse credentials of a local account as a means of gaining Initial Access, Persistence, Privilege Escalation, or Defense Evasion. Local accounts are those\
-  \ configured by an organization for use by users, remote support, services, or for administration on a single system or service.\n\nLocal Accounts may also be abused to elevate privileges and harvest\
-  \ credentials through [OS Credential Dumping](https://attack.mitre.org/techniques/T1003). Password reuse may allow the abuse of local accounts across a set of machines on a network for the purposes of\
-  \ Privilege Escalation and Lateral Movement. "
+Attack_description: "Adversaries may obtain and abuse credentials of a local account as a means of gaining Initial Access, Persistence, Privilege Escalation, or Defense Evasion. Local accounts are those
+  configured by an organization for use by users, remote support, services, or for administration on a single system or service.\n\nLocal Accounts may also be abused to elevate privileges and harvest credentials
+  through [OS Credential Dumping](https://attack.mitre.org/techniques/T1003). Password reuse may allow the abuse of local accounts across a set of machines on a network for the purposes of Privilege Escalation
+  and Lateral Movement. "
 guid: d2b95631-62d7-45a3-aaef-0972cea97931
 name: Reactivate a locked/expired account (Linux)
 tactic:
@@ -14,9 +14,9 @@ technique:
   - T1078.003
 os:
   - linux
-description: "A system administrator may have locked and expired a user account rather than deleting it. \"the user is coming back, at some stage\" An adversary may reactivate a inactive account in an attempt\
-  \ to appear legitimate. \n\nIn this test we create a \"art\" user with the password art, lock and expire the account, try to su to art and fail, unlock and renew the account, su successfully, then delete\
-  \ the account.\n"
+description: "A system administrator may have locked and expired a user account rather than deleting it. \"the user is coming back, at some stage\" An adversary may reactivate a inactive account in an attempt
+  to appear legitimate. \n\nIn this test we create a \"art\" user with the password art, lock and expire the account, try to su to art and fail, unlock and renew the account, su successfully, then delete
+  the account.\n"
 executor: bash
 sigma: false
 sigma_rule: []

@@ -12,8 +12,8 @@ technique:
   - T1610
 os:
   - containers
-description: "Adversaries may deploy containers based on retrieved or built malicious images or from benign images that download and execute malicious payloads at runtime. They can do this using docker\
-  \ create and docker start commands. Kinsing & Doki was exploited using this technique. \n"
+description: "Adversaries may deploy containers based on retrieved or built malicious images or from benign images that download and execute malicious payloads at runtime. They can do this using docker
+  create and docker start commands. Kinsing & Doki was exploited using this technique. \n"
 executor: bash
 sigma: false
 sigma_rule: []

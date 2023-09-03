@@ -15,8 +15,8 @@ technique:
   - T1112
 os:
   - windows
-description: "Modify the registry of the currently logged in user using reg.exe via cmd console to prevent user running specific computer programs that could aid them in manually removing malware or detecting\
-  \ it \nusing security product.\n"
+description: "Modify the registry of the currently logged in user using reg.exe via cmd console to prevent user running specific computer programs that could aid them in manually removing malware or detecting
+  it \nusing security product.\n"
 executor: command_prompt
 sigma: true
 sigma_rule:

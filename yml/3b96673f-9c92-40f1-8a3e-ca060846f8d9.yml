@@ -18,9 +18,9 @@ technique:
   - T1548.002
 os:
   - windows
-description: "The following UAC bypass is focused on a registry key under \"HKCU:\\Software\\Classes\\AppX82a6gwre4fdg3bt635tn5ctqjf8msdd2\\Shell\\open\\command\" that will trigger a command once wsreset.exe\
-  \ runs. \nThis bypass is limited to Windows 10 1803/1809 and may not run on Server platforms. The registry mod is where interest will be.\nIf successful, the command to run will spawn off wsreset.exe.\
-  \ \n[UAC Bypass in Windows 10 Store Binary](https://0x1.gitlab.io/exploit/UAC-Bypass-in-Windows-10-Store-Binary/)\n"
+description: "The following UAC bypass is focused on a registry key under \"HKCU:\\Software\\Classes\\AppX82a6gwre4fdg3bt635tn5ctqjf8msdd2\\Shell\\open\\command\" that will trigger a command once wsreset.exe
+  runs. \nThis bypass is limited to Windows 10 1803/1809 and may not run on Server platforms. The registry mod is where interest will be.\nIf successful, the command to run will spawn off wsreset.exe. \n
+  [UAC Bypass in Windows 10 Store Binary](https://0x1.gitlab.io/exploit/UAC-Bypass-in-Windows-10-Store-Binary/)\n"
 executor: powershell
 sigma: true
 sigma_rule:

@@ -13,8 +13,8 @@ technique:
   - T1219
 os:
   - windows
-description: "A recent trend by threat actors, once a foothold is established, maintain long term persistence using third party remote services such as UltraViewer to provide the operator with access to\
-  \ the network using legitimate services. \n"
+description: "A recent trend by threat actors, once a foothold is established, maintain long term persistence using third party remote services such as UltraViewer to provide the operator with access to
+  the network using legitimate services. \n"
 executor: powershell
 sigma: true
 sigma_rule:

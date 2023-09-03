@@ -13,8 +13,8 @@ technique:
   - T1033
 os:
   - windows
-description: "SocGholish performs whoami discovery commands and outputs the results to a tmp file. \nThe test will generate a filename similar to the random one generated during execution and write the\
-  \ file to AppData\\Temp.\n\nReference: https://redcanary.com/threat-detection-report/threats/socgholish/\n"
+description: "SocGholish performs whoami discovery commands and outputs the results to a tmp file. \nThe test will generate a filename similar to the random one generated during execution and write the
+  file to AppData\\Temp.\n\nReference: https://redcanary.com/threat-detection-report/threats/socgholish/\n"
 executor: powershell
 sigma: true
 sigma_rule:

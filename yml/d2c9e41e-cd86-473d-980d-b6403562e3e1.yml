@@ -15,8 +15,8 @@ technique:
   - T1112
 os:
   - windows
-description: "Modify the registry of the currently logged in user using reg.exe via cmd console to disable windows error reporting settings. This Windows feature allow the use to report bug, errors, failure\
-  \ or problems \nencounter in specific application or process.\nSee how azorult malware abuses this technique- https://app.any.run/tasks/a6f2ffe2-e6e2-4396-ae2e-04ea0143f2d8/\n"
+description: "Modify the registry of the currently logged in user using reg.exe via cmd console to disable windows error reporting settings. This Windows feature allow the use to report bug, errors, failure
+  or problems \nencounter in specific application or process.\nSee how azorult malware abuses this technique- https://app.any.run/tasks/a6f2ffe2-e6e2-4396-ae2e-04ea0143f2d8/\n"
 executor: command_prompt
 sigma: true
 sigma_rule:

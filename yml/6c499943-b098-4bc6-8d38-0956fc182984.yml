@@ -15,9 +15,9 @@ technique:
   - T1611
 os:
   - containers
-description: "This technique abuses privileged Docker containers to mount the host's filesystem and then create a cron job to launch a reverse shell as the host's superuser.\nThe container running the test\
-  \ needs be privileged.  It may take up to a minute for this to run due to how often crond triggers a job.\nDev note: the echo to create cron_filename is broken up to prevent localized execution of hostname\
-  \ and id by Powershell. \n"
+description: "This technique abuses privileged Docker containers to mount the host's filesystem and then create a cron job to launch a reverse shell as the host's superuser.\nThe container running the test
+  needs be privileged.  It may take up to a minute for this to run due to how often crond triggers a job.\nDev note: the echo to create cron_filename is broken up to prevent localized execution of hostname
+  and id by Powershell. \n"
 executor: sh
 sigma: false
 sigma_rule: []

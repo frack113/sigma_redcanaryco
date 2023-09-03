@@ -34,9 +34,9 @@ technique:
   - T1003.001
 os:
   - windows
-description: "Dumps credentials from memory via Powershell by invoking a remote mimikatz script.\nIf Mimikatz runs successfully you will see several usernames and hashes output to the screen.\nCommon failures\
-  \ include seeing an \\\"access denied\\\" error which results when Anti-Virus blocks execution. \nOr, if you try to run the test without the required administrative privileges you will see this error\
-  \ near the bottom of the output to the screen \"ERROR kuhl_m_sekurlsa_acquireLSA\"\n"
+description: "Dumps credentials from memory via Powershell by invoking a remote mimikatz script.\nIf Mimikatz runs successfully you will see several usernames and hashes output to the screen.\nCommon failures
+  include seeing an \\\"access denied\\\" error which results when Anti-Virus blocks execution. \nOr, if you try to run the test without the required administrative privileges you will see this error near
+  the bottom of the output to the screen \"ERROR kuhl_m_sekurlsa_acquireLSA\"\n"
 executor: powershell
 sigma: true
 sigma_rule:

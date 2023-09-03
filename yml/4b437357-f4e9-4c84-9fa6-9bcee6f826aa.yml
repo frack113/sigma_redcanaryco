@@ -15,8 +15,8 @@ technique:
   - T1539
 os:
   - windows
-description: "This test queries Firefox's cookies.sqlite database to steal the cookie data contained within it, similar to Zloader/Zbot's cookie theft function. \nNote: If Firefox is running, the process\
-  \ will be killed to ensure that the DB file isn't locked. \nSee https://www.malwarebytes.com/resources/files/2020/05/the-silent-night-zloader-zbot_final.pdf. \n"
+description: "This test queries Firefox's cookies.sqlite database to steal the cookie data contained within it, similar to Zloader/Zbot's cookie theft function. \nNote: If Firefox is running, the process
+  will be killed to ensure that the DB file isn't locked. \nSee https://www.malwarebytes.com/resources/files/2020/05/the-silent-night-zloader-zbot_final.pdf. \n"
 executor: powershell
 sigma: true
 sigma_rule:

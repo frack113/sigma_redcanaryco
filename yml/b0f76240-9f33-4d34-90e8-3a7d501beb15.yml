@@ -18,9 +18,9 @@ technique:
   - T1548.002
 os:
   - windows
-description: "Executes User Account Control Bypass according to the methods listed below. Upon successful execution you should see event viewer load and two administrative command prompts.\nNote: The cleanup_command's\
-  \ which kill the spawned cmd and event viewer processes only work if run as admin.\n\nAuthor: Enigma0x3\n\nType:\tShell API\n\nMethod: Registry key manipulation\n\nTarget:\t\\system32\\sdclt.exe\n\nComponent:\
-  \ Attacker defined\n\nImplementation:\tucmSdcltIsolatedCommandMethod\n\nUCM Method:\tUacMethodShellSdclt\n\nhttps://github.com/hfiref0x/UACME\n"
+description: "Executes User Account Control Bypass according to the methods listed below. Upon successful execution you should see event viewer load and two administrative command prompts.\nNote: The cleanup_command's
+  which kill the spawned cmd and event viewer processes only work if run as admin.\n\nAuthor: Enigma0x3\n\nType:\tShell API\n\nMethod: Registry key manipulation\n\nTarget:\t\\system32\\sdclt.exe\n\nComponent:
+  Attacker defined\n\nImplementation:\tucmSdcltIsolatedCommandMethod\n\nUCM Method:\tUacMethodShellSdclt\n\nhttps://github.com/hfiref0x/UACME\n"
 executor: command_prompt
 sigma: true
 sigma_rule:

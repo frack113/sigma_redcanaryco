@@ -13,8 +13,8 @@ technique:
   - T1059.004
 os:
   - linux
-description: "An adversary may want to use a different login shell. The chsh command changes the user login shell. The following test, creates an art user with a /bin/bash shell, changes the users shell\
-  \ to sh, then deletes the art user. \n"
+description: "An adversary may want to use a different login shell. The chsh command changes the user login shell. The following test, creates an art user with a /bin/bash shell, changes the users shell
+  to sh, then deletes the art user. \n"
 executor: bash
 sigma: false
 sigma_rule: []

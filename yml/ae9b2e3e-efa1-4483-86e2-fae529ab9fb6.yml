@@ -15,9 +15,9 @@ technique:
   - T1552.005
 os:
   - azure-ad
-description: "This test uses the MSOnline Powershell module to retrieve all user attributes for a specified account, which can sometimes contain unsecured credentials. \nUpon successful execution, this\
-  \ test will scan all user attributes for any strings containing \"password\".\nThose unsecured credentials will be output to a text file, as well as the account that they are associated with and the user\
-  \ attribute in which they were found. \nSee: https://github.com/dafthack/CloudPentestCheatsheets/blob/master/cheatsheets/Azure.md\n"
+description: "This test uses the MSOnline Powershell module to retrieve all user attributes for a specified account, which can sometimes contain unsecured credentials. \nUpon successful execution, this
+  test will scan all user attributes for any strings containing \"password\".\nThose unsecured credentials will be output to a text file, as well as the account that they are associated with and the user
+  attribute in which they were found. \nSee: https://github.com/dafthack/CloudPentestCheatsheets/blob/master/cheatsheets/Azure.md\n"
 executor: powershell
 sigma: false
 sigma_rule: []
