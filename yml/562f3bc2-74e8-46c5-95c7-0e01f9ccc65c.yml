@@ -1,0 +1,20 @@
+Attack_name: Screen Capture
+Attack_description: 'Adversaries may attempt to take screen captures of the desktop to gather information over the course of an operation. Screen capturing functionality may be included as a feature of
+  a remote access tool used in post-compromise operations. Taking a screenshot is also typically possible through native utilities or API calls, such as <code>CopyFromScreen</code>, <code>xwd</code>, or
+  <code>screencapture</code>.(Citation: CopyFromScreen .NET)(Citation: Antiquated Mac Malware)
+
+  '
+guid: 562f3bc2-74e8-46c5-95c7-0e01f9ccc65c
+name: X Windows Capture (freebsd)
+tactic:
+  - collection
+technique:
+  - T1113
+os:
+  - linux
+description: 'Use xwd command to collect a full desktop screenshot and review file with xwud
+
+  '
+executor: sh
+sigma: false
+sigma_rule: []

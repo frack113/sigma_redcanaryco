@@ -80,7 +80,7 @@ sigma_rule:
   - id: bde47d4b-9987-405c-94c7-b080410e8ea7
     name: posh_ps_clearing_windows_console_history.yml
   - id: 904e8e61-8edf-4350-b59c-b905fc8e810c
-    name: posh_ps_security_software_discovery.yml
+    name: posh_ps_get_process_security_software_discovery.yml
   - id: 32d0d3e2-e58d-4d41-926b-18b520b2b32d
     name: proc_access_win_cred_dump_lsass_access.yml
   - id: 8d31a8ce-46b5-4dd6-bdc3-680931f1db86

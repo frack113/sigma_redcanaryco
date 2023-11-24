@@ -41,7 +41,7 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: ffa6861c-4461-4f59-8a41-578c39f3f23e
-    name: proc_creation_win_susp_lsass_dump.yml
+    name: proc_creation_win_susp_lsass_dmp_cli_keywords.yml
   - id: 06d71506-7beb-4f22-8888-e2e5e2ca7fd8
     name: win_alert_mimikatz_keywords.yml
   - id: a642964e-bead-4bed-8910-1bb4d63e3b4d

@@ -12,9 +12,9 @@ technique:
 os:
   - linux
   - macos
-description: 'Compile a c file with either gcc or clang on Linux or Macos.
+description: 'Compile a c file with either gcc or clang on FreeBSD, Linux or Macos.
 
   '
-executor: bash
+executor: sh
 sigma: false
 sigma_rule: []

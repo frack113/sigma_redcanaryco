@@ -11,7 +11,7 @@ Attack_description: "Adversaries may encrypt data on target systems or on large 
   such as changing victim wallpapers, or otherwise intimidate victims by sending ransom notes or other messages to connected printers (known as \"print bombing\").(Citation: NHS Digital Egregor Nov 2020)\n
   \nIn cloud environments, storage objects within compromised accounts may also be encrypted.(Citation: Rhino S3 Ransomware Part 1)"
 guid: '08cbf59f-85da-4369-a5f4-049cffd7709f'
-name: Encrypt files using ccrypt (Linux)
+name: Encrypt files using ccrypt (FreeBSD/Linux)
 tactic:
   - impact
 technique:
@@ -22,6 +22,6 @@ description: 'Attempts to encrypt data on target systems as root to simulate an 
   home directory.
 
   '
-executor: bash
+executor: sh
 sigma: false
 sigma_rule: []

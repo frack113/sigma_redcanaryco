@@ -12,8 +12,8 @@ tactic:
 technique:
   - T1552.001
 os:
-  - macos
   - linux
+  - macos
 description: 'This test looks for .netrc files (which stores github credentials in clear text )and dumps its contents if found.
 
   '

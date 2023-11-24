@@ -22,8 +22,8 @@ sigma: true
 sigma_rule:
   - id: 7f43c430-5001-4f8b-aaa9-c3b88f18fa5c
     name: proc_creation_win_susp_alternate_data_streams.yml
-  - id: bf6c39fc-e203-45b9-9538-05397c1b4f3f
-    name: proc_creation_win_lolbin_findstr.yml
+  - id: 587254ee-a24b-4335-b3cd-065c0f1f4baa
+    name: proc_creation_win_findstr_download.yml
   - id: 1277f594-a7d1-4f28-a2d3-73af5cbeab43
     name: file_event_win_shell_write_susp_directory.yml
   - id: bafac3d6-7de9-4dd9-8874-4a1194b493ed
@@ -32,3 +32,5 @@ sigma_rule:
     name: proc_creation_win_regedit_export_keys.yml
   - id: e7be6119-fc37-43f0-ad4f-1f3f99be2f9f
     name: proc_creation_win_esentutl_sensitive_file_copy.yml
+  - id: 04936b66-3915-43ad-a8e5-809eadfd1141
+    name: proc_creation_win_findstr_subfolder_search.yml

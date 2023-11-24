@@ -15,9 +15,9 @@ tactic:
 technique:
   - T1552.004
 os:
-  - macos
   - linux
-description: 'Discover private SSH keys on a macOS or Linux system.
+  - macos
+description: 'Discover private SSH keys on a FreeBSD, macOS or Linux system.
 
   '
 executor: sh

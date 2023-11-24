@@ -19,4 +19,4 @@ sigma_rule:
   - id: c363385c-f75d-4753-a108-c1a8e28bdbda
     name: proc_creation_win_lolbin_manage_bde.yml
   - id: 737e618a-a410-49b5-bec3-9e55ff7fbc15
-    name: proc_creation_win_susp_calc.yml
+    name: proc_creation_win_calc_uncommon_exec.yml

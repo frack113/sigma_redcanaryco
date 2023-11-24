@@ -6,14 +6,14 @@ Attack_description: |-
 
   Specific storage locations vary based on platform and/or application, but browser information is typically stored in local files and databases (e.g., `%APPDATA%/Google/Chrome`).(Citation: Chrome Roaming Profiles)
 guid: 3a41f169-a5ab-407f-9269-abafdb5da6c2
-name: List Mozilla Firefox Bookmark Database Files on Linux
+name: List Mozilla Firefox Bookmark Database Files on FreeBSD/Linux
 tactic:
   - discovery
 technique:
   - T1217
 os:
   - linux
-description: 'Searches for Mozilla Firefox''s places.sqlite file (on Linux distributions) that contains bookmarks and lists any found instances to a text file.
+description: 'Searches for Mozilla Firefox''s places.sqlite file (on FreeBSD or Linux distributions) that contains bookmarks and lists any found instances to a text file.
 
   '
 executor: sh

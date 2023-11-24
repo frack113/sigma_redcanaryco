@@ -6,17 +6,17 @@ Attack_description: |-
 
   Adversaries may attempt to shutdown/reboot a system after impacting it in other ways, such as [Disk Structure Wipe](https://attack.mitre.org/techniques/T1561/002) or [Inhibit System Recovery](https://attack.mitre.org/techniques/T1490), to hasten the intended effects on system availability.(Citation: Talos Nyetya June 2017)(Citation: Talos Olympic Destroyer 2018)
 guid: 6326dbc4-444b-4c04-88f4-27e94d0327cb
-name: Restart System via `shutdown` - macOS/Linux
+name: Restart System via `shutdown` - FreeBSD/macOS/Linux
 tactic:
   - impact
 technique:
   - T1529
 os:
-  - macos
   - linux
-description: 'This test restarts a macOS/Linux system.
+  - macos
+description: 'This test restarts a FreeBSD/macOS/Linux system.
 
   '
-executor: bash
+executor: sh
 sigma: false
 sigma_rule: []

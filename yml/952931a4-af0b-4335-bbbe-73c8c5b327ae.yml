@@ -10,8 +10,8 @@ tactic:
 technique:
   - T1069.001
 os:
-  - macos
   - linux
+  - macos
 description: 'Permission Groups Discovery
 
   '

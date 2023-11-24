@@ -17,6 +17,6 @@ description: 'An adversary may place scripts in an environment variable because 
   containing an echo command, then pipes the variable to /bin/bash
 
   '
-executor: bash
+executor: sh
 sigma: false
 sigma_rule: []

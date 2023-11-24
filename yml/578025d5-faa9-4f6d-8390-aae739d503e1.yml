@@ -1,0 +1,21 @@
+Attack_name: 'Process Injection: Portable Executable Injection'
+Attack_description: "Adversaries may inject portable executables (PE) into processes in order to evade process-based defenses as well as possibly elevate privileges. PE injection is a method of executing
+  arbitrary code in the address space of a separate live process. \n\nPE injection is commonly performed by copying code (perhaps without a file on disk) into the virtual address space of the target process
+  before invoking it via a new thread. The write can be performed with native Windows API calls such as <code>VirtualAllocEx</code> and <code>WriteProcessMemory</code>, then invoked with <code>CreateRemoteThread</code>
+  or additional code (ex: shellcode). The displacement of the injected code does introduce the additional requirement for functionality to remap memory references. (Citation: Elastic Process Injection July
+  2017) \n\nRunning code in the context of another process may allow access to the process's memory, system/network resources, and possibly elevated privileges. Execution via PE injection may also evade
+  detection from security products since the execution is masked under a legitimate process. "
+guid: 578025d5-faa9-4f6d-8390-aae739d503e1
+name: Portable Executable Injection
+tactic:
+  - defense-evasion
+  - privilege-escalation
+technique:
+  - T1055.002
+os:
+  - windows
+description: This test injects a portable executable into a remote Notepad process memory using Portable Executable Injection and base-address relocation techniques. When successful, a message box will
+  appear with the title "Warning" and the content "Atomic Red Team" after a few seconds.
+executor: powershell
+sigma: false
+sigma_rule: []

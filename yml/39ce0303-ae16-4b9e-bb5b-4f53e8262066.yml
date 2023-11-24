@@ -15,6 +15,6 @@ os:
 description: 'Utilize curl to download discovery.sh and execute a basic information gathering shell script
 
   '
-executor: bash
+executor: sh
 sigma: false
 sigma_rule: []

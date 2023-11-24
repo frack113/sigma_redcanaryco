@@ -36,4 +36,4 @@ sigma_rule:
   - id: f57f8d16-1f39-4dcb-a604-6c73d9b54b3d
     name: proc_creation_win_malware_conti_shadowcopy.yml
   - id: fff9d2b7-e11c-4a69-93d3-40ef66189767
-    name: proc_creation_win_susp_copy_system32.yml
+    name: proc_creation_win_susp_copy_system_dir.yml

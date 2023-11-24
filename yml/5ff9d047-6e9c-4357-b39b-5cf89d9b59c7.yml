@@ -4,7 +4,7 @@ Attack_description: |-
 
   In the case of network infrastructure, particularly routers, it is possible for an adversary to leverage multiple compromised devices to create a multi-hop proxy chain within the Wide-Area Network (WAN) of the enterprise.  By leveraging [Patch System Image](https://attack.mitre.org/techniques/T1601/001), adversaries can add custom code to the affected network devices that will implement onion routing between those nodes.  This custom onion routing network will transport the encrypted C2 traffic through the compromised population, allowing adversaries to communicate with any device within the onion routing network.  This method is dependent upon the [Network Boundary Bridging](https://attack.mitre.org/techniques/T1599) method in order to allow the adversaries to cross the protected network boundary of the Internet perimeter and into the organization’s WAN. Protocols such as ICMP may be used as a transport.
 guid: 5ff9d047-6e9c-4357-b39b-5cf89d9b59c7
-name: Tor Proxy Usage - Debian/Ubuntu
+name: Tor Proxy Usage - Debian/Ubuntu/FreeBSD
 tactic:
   - command-and-control
 technique:

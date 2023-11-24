@@ -12,8 +12,8 @@ tactic:
 technique:
   - T1027.001
 os:
-  - macos
   - linux
+  - macos
 description: |
   Uses dd to add a zero byte, high-quality random data, and low-quality random data to the binary to change the hash.
 

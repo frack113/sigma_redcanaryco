@@ -1,0 +1,20 @@
+Attack_name: 'Event Triggered Execution: Trap'
+Attack_description: |-
+  Adversaries may establish persistence by executing malicious content triggered by an interrupt signal. The <code>trap</code> command allows programs and shells to specify commands that will be executed upon receiving interrupt signals. A common situation is a script allowing for graceful termination and handling of common keyboard interrupts like <code>ctrl+c</code> and <code>ctrl+d</code>.
+
+  Adversaries can use this to register code to be executed when the shell encounters specific interrupts as a persistence mechanism. Trap commands are of the following format <code>trap 'command list' signals</code> where "command list" will be executed when "signals" are received.(Citation: Trap Manual)(Citation: Cyberciti Trap Statements)
+guid: ade10242-1eac-43df-8412-be0d4c704ada
+name: Trap SIGINT (freebsd)
+tactic:
+  - privilege-escalation
+  - persistence
+technique:
+  - T1546.005
+os:
+  - linux
+description: |
+  Launch bash shell with command arg to create TRAP on SIGINT (CTRL+C), then send SIGINT signal.
+  The trap executes script that writes to /tmp/art-fish.txt
+executor: sh
+sigma: false
+sigma_rule: []

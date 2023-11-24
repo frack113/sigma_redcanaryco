@@ -4,7 +4,7 @@ Attack_description: |-
 
   There are tools available from the host operating system to perform cleanup, but adversaries may use other tools as well.(Citation: Microsoft SDelete July 2016) Examples of built-in [Command and Scripting Interpreter](https://attack.mitre.org/techniques/T1059) functions include <code>del</code> on Windows and <code>rm</code> or <code>unlink</code> on Linux and macOS.
 guid: 562d737f-2fc6-4b09-8c2a-7f8ff0828480
-name: Delete a single file - Linux/macOS
+name: Delete a single file - FreeBSD/Linux/macOS
 tactic:
   - defense-evasion
 technique:

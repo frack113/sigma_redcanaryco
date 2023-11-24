@@ -1,0 +1,23 @@
+Attack_name: Process Injection
+Attack_description: "Adversaries may inject code into processes in order to evade process-based defenses as well as possibly elevate privileges. Process injection is a method of executing arbitrary code
+  in the address space of a separate live process. Running code in the context of another process may allow access to the process's memory, system/network resources, and possibly elevated privileges. Execution
+  via process injection may also evade detection from security products since the execution is masked under a legitimate process. \n\nThere are many different ways to inject code into a process, many of
+  which abuse legitimate functionalities. These implementations exist for every major OS but are typically platform specific. \n\nMore sophisticated samples may perform multiple process injections to segment
+  modules and further evade detection, utilizing named pipes or other inter-process communication (IPC) mechanisms as a communication channel. "
+guid: '0128e48e-8c1a-433a-a11a-a5387384f1e1'
+name: Read-Write-Execute process Injection
+tactic:
+  - defense-evasion
+  - privilege-escalation
+technique:
+  - T1055
+os:
+  - windows
+description: "This test exploited the vulnerability in legitimate PE formats where sections have RWX permission and enough space for shellcode.\nThe RWX injection avoided the use of VirtualAlloc, WriteVirtualMemory,
+  and ProtectVirtualMemory, thus evading detection mechanisms \nthat relied on API call sequences and heuristics. The RWX injection utilises API call sequences: LoadLibrary --> GetModuleInformation -->
+  GetModuleHandleA --> RtlCopyMemory --> CreateThread.\nThe injected shellcode will open a message box and a notepad.\nRWX Process Injection, also known as MockingJay, was introduced to the security community
+  by SecurityJoes.\nMore details can be found at https://www.securityjoes.com/post/process-mockingjay-echoing-rwx-in-userland-to-achieve-code-execution.\nThe original injector and idea were developed for
+  game cheats, as visible at https://github.com/M-r-J-o-h-n/SWH-Injector.\n"
+executor: powershell
+sigma: false
+sigma_rule: []

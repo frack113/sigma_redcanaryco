@@ -13,6 +13,7 @@ guid: 17d046be-fdd0-4cbb-b5c7-55c85d9d0714
 name: EXO - Full access mailbox permission granted to a user
 tactic:
   - persistence
+  - privilege-escalation
 technique:
   - T1098.002
 os:

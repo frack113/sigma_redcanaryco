@@ -25,11 +25,11 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: fff9d2b7-e11c-4a69-93d3-40ef66189767
-    name: proc_creation_win_susp_copy_system32.yml
+    name: proc_creation_win_susp_copy_system_dir.yml
   - id: 737e618a-a410-49b5-bec3-9e55ff7fbc15
-    name: proc_creation_win_susp_calc.yml
+    name: proc_creation_win_calc_uncommon_exec.yml
   - id: c048f047-7e2a-4888-b302-55f509d4a91d
-    name: file_event_win_new_src_file.yml
+    name: file_event_win_new_scr_file.yml
   - id: 97aa2e88-555c-450d-85a6-229bcd87efb8
     name: file_event_win_creation_scr_binary_file.yml
   - id: 15bd98ea-55f4-4d37-b09a-e7caa0fa2221

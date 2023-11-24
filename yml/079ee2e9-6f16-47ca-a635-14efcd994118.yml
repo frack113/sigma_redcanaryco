@@ -1,7 +1,7 @@
 Attack_name: Credentials from Password Stores
 Attack_description: Adversaries may search for common password storage locations to obtain user credentials. Passwords are stored in several places on a system, depending on the operating system or application
-  holding the credentials. There are also specific applications that store passwords to make it easier for users manage and maintain. Once credentials are obtained, they can be used to perform lateral movement
-  and access restricted information.
+  holding the credentials. There are also specific applications and services that store passwords to make them easier for users to manage and maintain, such as password managers and cloud secrets vaults.
+  Once credentials are obtained, they can be used to perform lateral movement and access restricted information.
 guid: '079ee2e9-6f16-47ca-a635-14efcd994118'
 name: WinPwn - Loot local Credentials - lazagne
 tactic:
@@ -78,7 +78,7 @@ sigma_rule:
   - id: e0f8ab85-0ac9-423b-a73a-81b3c7b1aa97
     name: net_connection_win_binary_susp_com.yml
   - id: 297afac9-5d02-4138-8c58-b977bac60556
-    name: file_event_win_susp_dropper.yml
+    name: file_event_win_susp_binary_dropper.yml
   - id: cbb56d62-4060-40f7-9466-d8aaf3123f83
     name: image_load_susp_python_image_load.yml
   - id: fa34b441-961a-42fa-a100-ecc28c886725
@@ -88,7 +88,7 @@ sigma_rule:
   - id: 32d0d3e2-e58d-4d41-926b-18b520b2b32d
     name: proc_access_win_cred_dump_lsass_access.yml
   - id: 91cb43db-302a-47e3-b3c8-7ede481e27bf
-    name: file_access_win_browser_credential_stealing.yml
+    name: file_access_win_browser_credential_access.yml
   - id: 8d31a8ce-46b5-4dd6-bdc3-680931f1db86
     name: posh_pm_bad_opsec_artifacts.yml
   - id: cef24b90-dddc-4ae1-a09a-8764872f69fc

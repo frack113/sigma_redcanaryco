@@ -14,9 +14,7 @@ technique:
 os:
   - linux
   - macos
-description: 'Use Perl to decode a base64-encoded text string and echo it to the console
-
-  '
+description: "Use Perl to decode a base64-encoded text string and echo it to the console    \n"
 executor: sh
 sigma: false
 sigma_rule: []

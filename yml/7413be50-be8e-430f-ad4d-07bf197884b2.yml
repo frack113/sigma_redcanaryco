@@ -14,7 +14,7 @@ os:
 description: 'Utilizing wmic.exe to enumerate groups on the local system. Upon execution, information will be displayed of local groups on system.
 
   '
-executor: powershell
+executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 164eda96-11b2-430b-85ff-6a265c15bf32

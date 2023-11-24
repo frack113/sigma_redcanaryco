@@ -12,11 +12,11 @@ tactic:
 technique:
   - T1053.003
 os:
-  - macos
   - linux
+  - macos
 description: 'This test replaces the current user''s crontab file with the contents of the referenced file. This technique was used by numerous IoT automated exploitation attacks.
 
   '
-executor: bash
+executor: sh
 sigma: false
 sigma_rule: []

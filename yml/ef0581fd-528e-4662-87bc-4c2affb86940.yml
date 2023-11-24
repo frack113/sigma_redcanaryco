@@ -28,6 +28,6 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: fff9d2b7-e11c-4a69-93d3-40ef66189767
-    name: proc_creation_win_susp_copy_system32.yml
+    name: proc_creation_win_susp_copy_system_dir.yml
   - id: 612e47e9-8a59-43a6-b404-f48683f45bd6
     name: registry_set_servicedll_hijack.yml

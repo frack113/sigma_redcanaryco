@@ -1,0 +1,21 @@
+Attack_name: 'Scheduled Task/Job: Cron'
+Attack_description: "Adversaries may abuse the <code>cron</code> utility to perform task scheduling for initial or recurring execution of malicious code.(Citation: 20 macOS Common Tools and Techniques)
+  The <code>cron</code> utility is a time-based job scheduler for Unix-like operating systems.  The <code> crontab</code> file contains the schedule of cron entries to be run and the specified times for
+  execution. Any <code>crontab</code> files are stored in operating system-specific file paths.\n\nAn adversary may use <code>cron</code> in Linux or Unix environments to execute programs at system startup
+  or on a scheduled basis for [Persistence](https://attack.mitre.org/tactics/TA0003). "
+guid: '078e69eb-d9fb-450e-b9d0-2e118217c846'
+name: Cron - Add script to /etc/cron.d folder
+tactic:
+  - execution
+  - persistence
+  - privilege-escalation
+technique:
+  - T1053.003
+os:
+  - linux
+description: 'This test adds a script to /etc/cron.d folder configured to execute on a schedule.
+
+  '
+executor: sh
+sigma: false
+sigma_rule: []

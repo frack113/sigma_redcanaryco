@@ -14,9 +14,9 @@ technique:
 os:
   - linux
   - macos
-description: 'Identify system hostname for Linux and macOS systems.
+description: 'Identify system hostname for FreeBSD, Linux and macOS systems.
 
   '
-executor: bash
+executor: sh
 sigma: false
 sigma_rule: []

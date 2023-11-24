@@ -8,7 +8,7 @@ Attack_description: |-
 
   In cloud environments, adversaries may leverage access to delete cloud storage, cloud storage accounts, machine images, and other infrastructure crucial to operations to damage an organization or their customers.(Citation: Data Destruction - Threat Post)(Citation: DOJ  - Cisco Insider)
 guid: 476419b5-aebf-4366-a131-ae3e8dae5fc2
-name: Windows - Overwrite file with Sysinternals SDelete
+name: Windows - Overwrite file with SysInternals SDelete
 tactic:
   - impact
 technique:
@@ -16,7 +16,7 @@ technique:
 os:
   - windows
 description: |
-  Overwrites and deletes a file using Sysinternals SDelete. Upon successful execution, "Files deleted: 1" will be displayed in
+  Overwrites and deletes a file using SysInternals SDelete. Upon successful execution, "Files deleted: 1" will be displayed in
   the powershell session along with other information about the file that was deleted.
 executor: powershell
 sigma: true

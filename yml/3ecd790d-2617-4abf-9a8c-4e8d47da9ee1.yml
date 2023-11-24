@@ -10,7 +10,7 @@ Attack_description: |-
 
   There have also been instances of botnets using a persistent backdoor through malicious Chrome extensions.(Citation: Stantinko Botnet) There have also been similar examples of extensions being used for command & control.(Citation: Chrome Extension C2 Malware)
 guid: 3ecd790d-2617-4abf-9a8c-4e8d47da9ee1
-name: Chrome (Developer Mode)
+name: Chrome/Chromium (Developer Mode)
 tactic:
   - persistence
 technique:
@@ -19,7 +19,7 @@ os:
   - linux
   - windows
   - macos
-description: Turn on Chrome developer mode and Load Extension found in the src directory
+description: Turn on Chrome/Chromium developer mode and Load Extension found in the src directory
 executor: manual
 sigma: false
 sigma_rule: []

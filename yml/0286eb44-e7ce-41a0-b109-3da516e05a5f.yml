@@ -13,8 +13,8 @@ tactic:
 technique:
   - T1560.001
 os:
-  - macos
   - linux
+  - macos
 description: 'Encrypt data for exiltration
 
   '

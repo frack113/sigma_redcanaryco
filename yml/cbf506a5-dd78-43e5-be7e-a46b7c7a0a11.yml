@@ -19,7 +19,7 @@ technique:
   - T1070.003
 os:
   - linux
-description: 'Clears bash history via rm
+description: 'Clears bash history via echo
 
   '
 executor: sh

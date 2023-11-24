@@ -17,7 +17,7 @@ technique:
 os:
   - macos
   - linux
-description: 'This test sets the SetUID flag on a file in Linux and macOS.
+description: 'This test sets the SetUID flag on a file in FreeBSD.
 
   '
 executor: sh

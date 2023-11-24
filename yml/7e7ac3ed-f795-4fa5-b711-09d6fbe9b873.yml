@@ -12,9 +12,9 @@ tactic:
 technique:
   - T1059.004
 os:
-  - macos
   - linux
-description: 'Creates and executes a simple bash script.
+  - macos
+description: 'Creates and executes a simple sh script.
 
   '
 executor: sh

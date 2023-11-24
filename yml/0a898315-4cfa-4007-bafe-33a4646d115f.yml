@@ -1,4 +1,4 @@
-Attack_name: 'Event Triggered Execution: .bash_profile and .bashrc'
+Attack_name: 'Event Triggered Execution: .bash_profile .bashrc and .shrc'
 Attack_description: "Adversaries may establish persistence through executing malicious commands triggered by a user’s shell. User [Unix Shell](https://attack.mitre.org/techniques/T1059/004)s execute several
   configuration scripts at different points throughout the session based on events. For example, when a user opens a command-line interface or remotely logs in (such as via SSH) a login shell is initiated.
   The login shell executes scripts from the system (<code>/etc</code>) and the user’s home directory (<code>~/</code>) to configure the environment. All login shells on a system use /etc/profile when initiated.

@@ -11,7 +11,7 @@ Attack_description: "Adversaries may encrypt data on target systems or on large 
   such as changing victim wallpapers, or otherwise intimidate victims by sending ransom notes or other messages to connected printers (known as \"print bombing\").(Citation: NHS Digital Egregor Nov 2020)\n
   \nIn cloud environments, storage objects within compromised accounts may also be encrypted.(Citation: Rhino S3 Ransomware Part 1)"
 guid: 53e6735a-4727-44cc-b35b-237682a151ad
-name: Encrypt files using 7z (Linux)
+name: Encrypt files using 7z (FreeBSD/Linux)
 tactic:
   - impact
 technique:
@@ -21,6 +21,6 @@ os:
 description: 'Uses 7z to encrypt a file
 
   '
-executor: bash
+executor: sh
 sigma: false
 sigma_rule: []

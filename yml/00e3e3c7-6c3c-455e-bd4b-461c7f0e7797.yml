@@ -78,7 +78,7 @@ sigma_rule:
   - id: e0f8ab85-0ac9-423b-a73a-81b3c7b1aa97
     name: net_connection_win_binary_susp_com.yml
   - id: 297afac9-5d02-4138-8c58-b977bac60556
-    name: file_event_win_susp_dropper.yml
+    name: file_event_win_susp_binary_dropper.yml
   - id: a6a39bdb-935c-4f0a-ab77-35f4bbf44d33
     name: proc_creation_win_susp_script_exec_from_temp.yml
   - id: 64e8e417-c19a-475a-8d19-98ea705394cc
@@ -86,4 +86,4 @@ sigma_rule:
   - id: cbb56d62-4060-40f7-9466-d8aaf3123f83
     name: image_load_susp_python_image_load.yml
   - id: 91cb43db-302a-47e3-b3c8-7ede481e27bf
-    name: file_access_win_browser_credential_stealing.yml
+    name: file_access_win_browser_credential_access.yml

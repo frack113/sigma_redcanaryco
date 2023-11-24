@@ -12,8 +12,8 @@ tactic:
 technique:
   - T1552.001
 os:
-  - macos
   - linux
+  - macos
 description: 'Extracting credentials from files
 
   '

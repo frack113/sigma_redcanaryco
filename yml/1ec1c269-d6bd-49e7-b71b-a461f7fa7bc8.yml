@@ -21,4 +21,4 @@ sigma_rule:
   - id: 52788a70-f1da-40dd-8fbd-73b5865d6568
     name: proc_creation_win_lolbin_jsc.yml
   - id: 297afac9-5d02-4138-8c58-b977bac60556
-    name: file_event_win_susp_dropper.yml
+    name: file_event_win_susp_binary_dropper.yml

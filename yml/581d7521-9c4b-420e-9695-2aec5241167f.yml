@@ -31,6 +31,6 @@ sigma_rule:
   - id: 1f21ec3f-810d-4b0e-8045-322202e22b4b
     name: net_connection_win_powershell_network_connection.yml
   - id: 297afac9-5d02-4138-8c58-b977bac60556
-    name: file_event_win_susp_dropper.yml
+    name: file_event_win_susp_binary_dropper.yml
   - id: 86085955-ea48-42a2-9dd3-85d4c36b167d
     name: proc_creation_win_taskkill_execution.yml

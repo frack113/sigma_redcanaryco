@@ -63,7 +63,7 @@ sigma_rule:
     name: posh_ps_malicious_keywords.yml
   - id: 32d0d3e2-e58d-4d41-926b-18b520b2b32d
     name: proc_access_win_cred_dump_lsass_access.yml
-  - id: 5e3d3601-0662-4af0-b1d2-36a05e90c40a
-    name: file_event_win_lsass_memory_dump_file_creation.yml
+  - id: a5a2d357-1ab8-4675-a967-ef9990a59391
+    name: file_event_win_lsass_default_dump_file_names.yml
   - id: 0e277796-5f23-4e49-a490-483131d4f6e1
     name: image_load_dll_dbghelp_dbgcore_susp_load.yml

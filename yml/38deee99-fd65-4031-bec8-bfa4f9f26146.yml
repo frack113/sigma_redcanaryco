@@ -8,7 +8,7 @@ Attack_description: |-
 
   In cloud environments, adversaries may leverage access to delete cloud storage, cloud storage accounts, machine images, and other infrastructure crucial to operations to damage an organization or their customers.(Citation: Data Destruction - Threat Post)(Citation: DOJ  - Cisco Insider)
 guid: 38deee99-fd65-4031-bec8-bfa4f9f26146
-name: macOS/Linux - Overwrite file with DD
+name: FreeBSD/macOS/Linux - Overwrite file with DD
 tactic:
   - impact
 technique:
@@ -19,6 +19,6 @@ os:
 description: |
   Overwrites and deletes a file using DD.
   To stop the test, break the command with CTRL/CMD+C.
-executor: bash
+executor: sh
 sigma: false
 sigma_rule: []

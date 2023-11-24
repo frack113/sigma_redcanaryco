@@ -2,7 +2,7 @@ Attack_name: Masquerading
 Attack_description: |-
   Adversaries may attempt to manipulate features of their artifacts to make them appear legitimate or benign to users and/or security tools. Masquerading occurs when the name or location of an object, legitimate or malicious, is manipulated or abused for the sake of evading defenses and observation. This may include manipulating file metadata, tricking users into misidentifying the file type, and giving legitimate task or service names.
 
-  Renaming abusable system utilities to evade security monitoring is also a form of [Masquerading](https://attack.mitre.org/techniques/T1036).(Citation: LOLBAS Main Site)
+  Renaming abusable system utilities to evade security monitoring is also a form of [Masquerading](https://attack.mitre.org/techniques/T1036).(Citation: LOLBAS Main Site) Masquerading may also include the use of [Proxy](https://attack.mitre.org/techniques/T1090) or VPNs to disguise IP addresses, which can allow adversaries to blend in with normal network traffic and bypass conditional access policies or anti-abuse protections.
 guid: 4449c89b-ec82-43a4-89c1-91e2f1abeecc
 name: Malware Masquerading and Execution from Zip File
 tactic:
@@ -16,4 +16,4 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: bbfd974c-248e-4435-8de6-1e938c79c5c1
-    name: file_rename_win_not_dll_to_dll.yml
+    name: file_rename_win_non_dll_to_dll_ext.yml

@@ -5,7 +5,7 @@ Attack_description: "Adversaries may steal data by exfiltrating it over an asymm
   and the public key of the other entity. The public keys of each entity are exchanged before encrypted communications begin. \n\nNetwork protocols that use asymmetric encryption (such as HTTPS/TLS/SSL)
   often utilize symmetric encryption once keys are exchanged. Adversaries may opt to use these encrypted mechanisms that are baked into a protocol. "
 guid: 4a4f31e2-46ea-4c26-ad89-f09ad1d5fe01
-name: Exfiltrate data HTTPS using curl linux
+name: Exfiltrate data HTTPS using curl freebsd,linux or macos
 tactic:
   - exfiltration
 technique:

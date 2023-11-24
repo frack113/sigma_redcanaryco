@@ -7,20 +7,21 @@ Attack_description: "Adversaries may modify the SSH <code>authorized_keys</code>
   to modify the SSH authorized_keys file of a particular virtual machine via the command line interface or rest API. For example, by using the Google Cloud CLI’s “add-metadata” command an adversary may
   add SSH keys to a user account.(Citation: Google Cloud Add Metadata)(Citation: Google Cloud Privilege Escalation) Similarly, in Azure, an adversary may update the authorized_keys file of a virtual machine
   via a PATCH request to the API.(Citation: Azure Update Virtual Machines) This ensures that an adversary possessing the corresponding private key may log in as an existing user via SSH.(Citation: Venafi
-  SSH Key Abuse)(Citation: Cybereason Linux Exim Worm) \n\nWhere authorized_keys files are modified via cloud APIs or command line interfaces, an adversary may achieve privilege escalation on the target
-  virtual machine if they add a key to a higher-privileged user. \n\nSSH keys can also be added to accounts on network devices, such as with the `ip ssh pubkey-chain` [Network Device CLI](https://attack.mitre.org/techniques/T1059/008)
-  command.(Citation: cisco_ip_ssh_pubkey_ch_cmd)"
+  SSH Key Abuse)(Citation: Cybereason Linux Exim Worm) It may also lead to privilege escalation where the virtual machine or instance has distinct permissions from the requesting user.\n\nWhere authorized_keys
+  files are modified via cloud APIs or command line interfaces, an adversary may achieve privilege escalation on the target virtual machine if they add a key to a higher-privileged user. \n\nSSH keys can
+  also be added to accounts on network devices, such as with the `ip ssh pubkey-chain` [Network Device CLI](https://attack.mitre.org/techniques/T1059/008) command.(Citation: cisco_ip_ssh_pubkey_ch_cmd)"
 guid: 342cc723-127c-4d3a-8292-9c0c6b4ecadc
 name: Modify SSH Authorized Keys
 tactic:
   - persistence
+  - privilege-escalation
 technique:
   - T1098.004
 os:
-  - macos
   - linux
+  - macos
 description: "Modify contents of <user-home>/.ssh/authorized_keys to maintain persistence on victim host. \nIf the user is able to save the same contents in the authorized_keys file, it shows user can modify
   the file.\n"
-executor: bash
+executor: sh
 sigma: false
 sigma_rule: []

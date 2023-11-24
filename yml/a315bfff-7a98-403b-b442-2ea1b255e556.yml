@@ -4,7 +4,7 @@ Attack_description: 'Adversaries may rename legitimate system utilities to try t
   <code>rundll32.exe</code>). (Citation: Elastic Masquerade Ball) An alternative case occurs when a legitimate utility is copied or moved to a different directory and renamed to avoid detections based on
   system utilities executing from non-standard paths. (Citation: F-Secure CozyDuke)'
 guid: a315bfff-7a98-403b-b442-2ea1b255e556
-name: Masquerading as Linux crond process.
+name: Masquerading as FreeBSD or Linux crond process.
 tactic:
   - defense-evasion
 technique:

@@ -28,7 +28,7 @@ sigma_rule:
   - id: c0b2768a-dd06-4671-8339-b16ca8d1f27f
     name: proc_creation_win_fsutil_symlinkevaluation.yml
   - id: 297afac9-5d02-4138-8c58-b977bac60556
-    name: file_event_win_susp_dropper.yml
+    name: file_event_win_susp_binary_dropper.yml
   - id: 730fc21b-eaff-474b-ad23-90fd265d4988
     name: proc_creation_win_sysinternals_psexec_execution.yml
   - id: a96970af-f126-420d-90e1-d37bf25e50e1

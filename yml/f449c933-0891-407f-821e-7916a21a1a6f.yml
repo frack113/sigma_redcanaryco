@@ -8,12 +8,13 @@ Attack_description: |-
 
   This information could be useful for performing other techniques, such as executing a file with a [Scheduled Task/Job](https://attack.mitre.org/techniques/T1053)(Citation: RSA EU12 They're Inside), or to discover locality information based on time zone to assist in victim targeting (i.e. [System Location Discovery](https://attack.mitre.org/techniques/T1614)). Adversaries may also use knowledge of system time as part of a time bomb, or delaying execution until a specified date/time.(Citation: AnyRun TimeBomb)
 guid: f449c933-0891-407f-821e-7916a21a1a6f
-name: System Time Discovery in macOS
+name: System Time Discovery in FreeBSD/macOS
 tactic:
   - discovery
 technique:
   - T1124
 os:
+  - linux
   - macos
 description: "Identify system time. Upon execution, the local computer system time and timezone will be displayed. \n"
 executor: sh

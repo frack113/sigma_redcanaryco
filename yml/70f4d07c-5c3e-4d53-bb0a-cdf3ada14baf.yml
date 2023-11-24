@@ -1,10 +1,13 @@
 Attack_name: Ingress Tool Transfer
 Attack_description: "Adversaries may transfer tools or other files from an external system into a compromised environment. Tools or files may be copied from an external adversary-controlled system to the
   victim network through the command and control channel or through alternate protocols such as [ftp](https://attack.mitre.org/software/S0095). Once present, adversaries may also transfer/spread tools between
-  victim devices within a compromised environment (i.e. [Lateral Tool Transfer](https://attack.mitre.org/techniques/T1570)). \n\nFiles can also be transferred using various [Web Service](https://attack.mitre.org/techniques/T1102)s
-  as well as native or otherwise present tools on the victim system.(Citation: PTSecurity Cobalt Dec 2016)\n\nOn Windows, adversaries may use various utilities to download tools, such as `copy`, `finger`,
-  [certutil](https://attack.mitre.org/software/S0160), and [PowerShell](https://attack.mitre.org/techniques/T1059/001) commands such as <code>IEX(New-Object Net.WebClient).downloadString()</code> and <code>Invoke-WebRequest</code>.
-  On Linux and macOS systems, a variety of utilities also exist, such as `curl`, `scp`, `sftp`, `tftp`, `rsync`, `finger`, and `wget`.(Citation: t1105_lolbas)"
+  victim devices within a compromised environment (i.e. [Lateral Tool Transfer](https://attack.mitre.org/techniques/T1570)). \n\nOn Windows, adversaries may use various utilities to download tools, such
+  as `copy`, `finger`, [certutil](https://attack.mitre.org/software/S0160), and [PowerShell](https://attack.mitre.org/techniques/T1059/001) commands such as <code>IEX(New-Object Net.WebClient).downloadString()</code>
+  and <code>Invoke-WebRequest</code>. On Linux and macOS systems, a variety of utilities also exist, such as `curl`, `scp`, `sftp`, `tftp`, `rsync`, `finger`, and `wget`.(Citation: t1105_lolbas)\n\nAdversaries
+  may also abuse installers and package managers, such as `yum` or `winget`, to download tools to victim hosts.\n\nFiles can also be transferred using various [Web Service](https://attack.mitre.org/techniques/T1102)s
+  as well as native or otherwise present tools on the victim system.(Citation: PTSecurity Cobalt Dec 2016) In some cases, adversaries may be able to leverage services that sync between a web-based and an
+  on-premises client, such as Dropbox or OneDrive, to transfer files onto victim systems. For example, by compromising a cloud account and logging into the service's web portal, an adversary may be able
+  to trigger an automatic syncing process that transfers the file onto the victim's machine.(Citation: Dropbox Malware Sync)"
 guid: 70f4d07c-5c3e-4d53-bb0a-cdf3ada14baf
 name: MAZE Propagation Script
 tactic:
@@ -22,9 +25,9 @@ sigma_rule:
   - id: 855bc8b5-2ae8-402e-a9ed-b889e6df1900
     name: proc_creation_win_susp_copy_lateral_movement.yml
   - id: fff9d2b7-e11c-4a69-93d3-40ef66189767
-    name: proc_creation_win_susp_copy_system32.yml
+    name: proc_creation_win_susp_copy_system_dir.yml
   - id: 297afac9-5d02-4138-8c58-b977bac60556
-    name: file_event_win_susp_dropper.yml
+    name: file_event_win_susp_binary_dropper.yml
   - id: 526be59f-a573-4eea-b5f7-f0973207634d
     name: proc_creation_win_wmic_process_creation.yml
   - id: e4b6d2a7-d8a4-4f19-acbd-943c16d90647

@@ -19,8 +19,8 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: fff9d2b7-e11c-4a69-93d3-40ef66189767
-    name: proc_creation_win_susp_copy_system32.yml
+    name: proc_creation_win_susp_copy_system_dir.yml
   - id: 297afac9-5d02-4138-8c58-b977bac60556
-    name: file_event_win_susp_dropper.yml
+    name: file_event_win_susp_binary_dropper.yml
   - id: d3bf399f-b0cf-4250-8bb4-dfc192ab81dc
     name: proc_creation_win_lolbin_ie4uinit.yml

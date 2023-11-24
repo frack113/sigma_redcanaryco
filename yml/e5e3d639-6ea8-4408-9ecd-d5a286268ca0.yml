@@ -42,6 +42,6 @@ sigma_rule:
   - id: 1f49f2ab-26bc-48b3-96cc-dcffbc93eadf
     name: posh_ps_susp_keywords.yml
   - id: 91cb43db-302a-47e3-b3c8-7ede481e27bf
-    name: file_access_win_browser_credential_stealing.yml
+    name: file_access_win_browser_credential_access.yml
   - id: 8d31a8ce-46b5-4dd6-bdc3-680931f1db86
     name: posh_pm_bad_opsec_artifacts.yml

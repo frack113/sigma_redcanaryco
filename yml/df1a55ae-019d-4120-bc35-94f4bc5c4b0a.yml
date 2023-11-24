@@ -1,19 +1,19 @@
-Attack_name: 'OS Credential Dumping: /etc/passwd and /etc/shadow'
+Attack_name: 'OS Credential Dumping: /etc/passwd, /etc/master.passwd and /etc/shadow'
 Attack_description: |
   Adversaries may attempt to dump the contents of <code>/etc/passwd</code> and <code>/etc/shadow</code> to enable offline password cracking. Most modern Linux operating systems use a combination of <code>/etc/passwd</code> and <code>/etc/shadow</code> to store user account information including password hashes in <code>/etc/shadow</code>. By default, <code>/etc/shadow</code> is only readable by the root user.(Citation: Linux Password and Shadow File Formats)
 
   The Linux utility, unshadow, can be used to combine the two files in a format suited for password cracking utilities such as John the Ripper:(Citation: nixCraft - John the Ripper) <code># /usr/bin/unshadow /etc/passwd /etc/shadow > /tmp/crack.password.db</code>
 guid: df1a55ae-019d-4120-bc35-94f4bc5c4b0a
-name: Access /etc/{shadow,passwd} with a standard bin that's not cat
+name: Access /etc/{shadow,passwd,master.passwd} with a standard bin that's not cat
 tactic:
   - credential-access
 technique:
   - T1003.008
 os:
   - linux
-description: 'Dump /etc/passwd and /etc/shadow using ed
+description: 'Dump /etc/passwd, /etc/master.passwd and /etc/shadow using ed
 
   '
-executor: bash
+executor: sh
 sigma: false
 sigma_rule: []

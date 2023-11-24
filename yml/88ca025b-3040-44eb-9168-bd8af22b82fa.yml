@@ -1,0 +1,21 @@
+Attack_name: Browser Bookmark Discovery
+Attack_description: |-
+  Adversaries may enumerate information about browsers to learn more about compromised environments. Data saved by browsers (such as bookmarks, accounts, and browsing history) may reveal a variety of personal information about users (e.g., banking sites, relationships/interests, social media, etc.) as well as details about internal network resources such as servers, tools/dashboards, or other related infrastructure.(Citation: Kaspersky Autofill)
+
+  Browser information may also highlight additional targets after an adversary has access to valid credentials, especially [Credentials In Files](https://attack.mitre.org/techniques/T1552/001) associated with logins cached by a browser.
+
+  Specific storage locations vary based on platform and/or application, but browser information is typically stored in local files and databases (e.g., `%APPDATA%/Google/Chrome`).(Citation: Chrome Roaming Profiles)
+guid: 88ca025b-3040-44eb-9168-bd8af22b82fa
+name: List Google Chromium Bookmark JSON Files on FreeBSD
+tactic:
+  - discovery
+technique:
+  - T1217
+os:
+  - linux
+description: 'Searches for Google Chromium''s Bookmark file (on FreeBSD) that contains bookmarks in JSON format and lists any found instances to a text file.
+
+  '
+executor: sh
+sigma: false
+sigma_rule: []

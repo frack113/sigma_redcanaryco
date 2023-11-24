@@ -15,6 +15,6 @@ description: 'This test deletes the entire root filesystem of a Linux system. Th
   equipment.
 
   '
-executor: bash
+executor: sh
 sigma: false
 sigma_rule: []

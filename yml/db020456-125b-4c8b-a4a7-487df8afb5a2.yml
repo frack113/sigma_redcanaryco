@@ -18,7 +18,7 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 104cdb48-a7a8-4ca7-a453-32942c6e5dcb
-    name: proc_creation_win_lolbin_protocolhandler_download.yml
+    name: proc_creation_win_protocolhandler_download.yml
   - id: 4ae3e30b-b03f-43aa-87e3-b622f4048eed
     name: proc_creation_win_office_arbitrary_cli_download.yml
   - id: 295a59c1-7b79-4b47-a930-df12c15fc9c2

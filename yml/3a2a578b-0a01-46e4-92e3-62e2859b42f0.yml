@@ -19,7 +19,7 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: fff9d2b7-e11c-4a69-93d3-40ef66189767
-    name: proc_creation_win_susp_copy_system32.yml
+    name: proc_creation_win_susp_copy_system_dir.yml
   - id: 36480ae1-a1cb-4eaa-a0d6-29801d7e9142
     name: proc_creation_win_renamed_binary.yml
   - id: 0ba1da6d-b6ce-4366-828c-18826c9de23e

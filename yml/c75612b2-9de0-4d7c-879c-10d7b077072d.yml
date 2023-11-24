@@ -4,7 +4,7 @@ Attack_description: |-
 
   Some archival libraries are preinstalled on systems, such as bzip2 on macOS and Linux, and zip on Windows. Note that the libraries are different from the utilities. The libraries can be linked against when compiling, while the utilities require spawning a subshell, or a similar execution mechanism.
 guid: c75612b2-9de0-4d7c-879c-10d7b077072d
-name: Compressing data using bz2 in Python (Linux)
+name: Compressing data using bz2 in Python (FreeBSD/Linux)
 tactic:
   - collection
 technique:
@@ -14,6 +14,6 @@ os:
 description: 'Uses bz2 from Python to compress files
 
   '
-executor: bash
+executor: sh
 sigma: false
 sigma_rule: []

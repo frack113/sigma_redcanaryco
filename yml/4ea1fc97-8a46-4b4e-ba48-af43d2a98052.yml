@@ -37,7 +37,7 @@ sigma_rule:
   - id: cea72823-df4d-4567-950c-0b579eaf0846
     name: proc_creation_win_malware_script_dropper.yml
   - id: 9ae01559-cf7e-4f8e-8e14-4c290a1b4784
-    name: image_load_credui_uncommon_process_load.yml
+    name: image_load_dll_credui_uncommon_process_load.yml
   - id: 25ffa65d-76d8-4da5-a832-3f2b0136e133
     name: registry_add_pua_sysinternals_execution_via_eula.yml
   - id: fa34b441-961a-42fa-a100-ecc28c886725

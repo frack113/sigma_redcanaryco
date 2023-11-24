@@ -1,0 +1,26 @@
+Attack_name: 'Create or Modify System Process: SysV/Systemd Service'
+Attack_description: "Adversaries may create or modify systemd services to repeatedly execute malicious payloads as part of persistence. Systemd is a system and service manager commonly used for managing
+  background daemon processes (also known as services) and other system resources.(Citation: Linux man-pages: systemd January 2014) Systemd is the default initialization (init) system on many Linux distributions
+  replacing legacy init systems, including SysVinit and Upstart, while remaining backwards compatible.  \n\nSystemd utilizes unit configuration files with the `.service` file extension to encode information
+  about a service's process. By default, system level unit files are stored in the `/systemd/system` directory of the root owned directories (`/`). User level unit files are stored in the `/systemd/user`
+  directories of the user owned directories (`$HOME`).(Citation: lambert systemd 2022) \n\nInside the `.service` unit files, the following directives are used to execute commands:(Citation: freedesktop
+  systemd.service)  \n\n* `ExecStart`, `ExecStartPre`, and `ExecStartPost` directives execute when a service is started manually by `systemctl` or on system start if the service is set to automatically
+  start.\n* `ExecReload` directive executes when a service restarts. \n* `ExecStop`, `ExecStopPre`, and `ExecStopPost` directives execute when a service is stopped.  \n\nAdversaries have created new service
+  files, altered the commands a `.service` file’s directive executes, and modified the user directive a `.service` file executes as, which could result in privilege escalation. Adversaries may also place
+  symbolic links in these directories, enabling systemd to find these payloads regardless of where they reside on the filesystem.(Citation: Anomali Rocke March 2019)(Citation: airwalk backdoor unix systems)(Citation:
+  Rapid7 Service Persistence 22JUNE2016) "
+guid: 760fe8d2-79d9-494f-905e-a239a3df86f6
+name: Create SysV Service
+tactic:
+  - persistence
+  - privilege-escalation
+technique:
+  - T1543.002
+os:
+  - linux
+description: 'This test creates a SysV service unit file and enables it as a service.
+
+  '
+executor: sh
+sigma: false
+sigma_rule: []

@@ -10,8 +10,8 @@ tactic:
 technique:
   - T1090.001
 os:
-  - macos
   - linux
+  - macos
 description: |
   Enable traffic redirection.
 

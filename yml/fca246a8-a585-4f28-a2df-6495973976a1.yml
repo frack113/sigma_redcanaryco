@@ -18,6 +18,6 @@ description: 'An adversary may develop a useful utility or subvert the CI/CD pip
   and not for those who DO NOT. This test uses curl to download the pipe-to-shell.sh script, the first time without piping it to bash and the second piping it into bash which executes the echo command.
 
   '
-executor: bash
+executor: sh
 sigma: false
 sigma_rule: []

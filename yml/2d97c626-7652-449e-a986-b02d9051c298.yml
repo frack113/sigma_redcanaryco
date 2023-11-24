@@ -1,0 +1,18 @@
+Attack_name: 'Data Encoding: Standard Encoding'
+Attack_description: 'Adversaries may encode data with a standard data encoding system to make the content of command and control traffic more difficult to detect. Command and control (C2) information can
+  be encoded using a standard data encoding system that adheres to existing protocol specifications. Common data encoding schemes include ASCII, Unicode, hexadecimal, Base64, and MIME.(Citation: Wikipedia
+  Binary-to-text Encoding)(Citation: Wikipedia Character Encoding) Some data encoding systems may also result in data compression, such as gzip.'
+guid: 2d97c626-7652-449e-a986-b02d9051c298
+name: Base64 Encoded data (freebsd)
+tactic:
+  - command-and-control
+technique:
+  - T1132.001
+os:
+  - linux
+description: 'Utilizing a common technique for posting base64 encoded data.
+
+  '
+executor: sh
+sigma: false
+sigma_rule: []

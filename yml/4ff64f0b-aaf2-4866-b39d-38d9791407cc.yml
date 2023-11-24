@@ -12,8 +12,8 @@ tactic:
 technique:
   - T1057
 os:
-  - macos
   - linux
+  - macos
 description: |
   Utilize ps to identify processes.
 

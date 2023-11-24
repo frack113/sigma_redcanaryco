@@ -1,0 +1,18 @@
+Attack_name: 'Exfiltration Over Web Service: Exfiltration to Text Storage Sites'
+Attack_description: "Adversaries may exfiltrate data to text storage sites instead of their primary command and control channel. Text storage sites, such as <code>pastebin[.]com</code>, are commonly used
+  by developers to share code and other information.  \n\nText storage sites are often used to host malicious code for C2 communication (e.g., [Stage Capabilities](https://attack.mitre.org/techniques/T1608)),
+  but adversaries may also use these sites to exfiltrate collected data. Furthermore, paid features and encryption options may allow adversaries to conceal and store data more securely.(Citation: Pastebin
+  EchoSec)\n\n**Note:** This is distinct from [Exfiltration to Code Repository](https://attack.mitre.org/techniques/T1567/001), which highlight access to code repositories via APIs."
+guid: c2e8ab6e-431e-460a-a2aa-3bc6a32022e3
+name: Exfiltrate data with HTTP POST to text storage sites - pastebin.com (Windows)
+tactic:
+  - exfiltration
+technique:
+  - T1567.003
+os:
+  - windows
+description: "This test uses HTTP POST to exfiltrate data to a remote text storage site. (pastebin)                             \nSee https://web.archive.org/web/20201107203304/https://www.echosec.net/blog/what-is-pastebin-and-why-do-hackers-love-it\
+  \                \n"
+executor: powershell
+sigma: false
+sigma_rule: []

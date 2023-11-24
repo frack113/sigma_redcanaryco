@@ -1,7 +1,7 @@
 Attack_name: Credentials from Password Stores
 Attack_description: Adversaries may search for common password storage locations to obtain user credentials. Passwords are stored in several places on a system, depending on the operating system or application
-  holding the credentials. There are also specific applications that store passwords to make it easier for users manage and maintain. Once credentials are obtained, they can be used to perform lateral movement
-  and access restricted information.
+  holding the credentials. There are also specific applications and services that store passwords to make them easier for users to manage and maintain, such as password managers and cloud secrets vaults.
+  Once credentials are obtained, they can be used to perform lateral movement and access restricted information.
 guid: 234f9b7c-b53d-4f32-897b-b880a6c9ea7b
 name: Extract Windows Credential Manager via VBA
 tactic:

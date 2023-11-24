@@ -12,8 +12,8 @@ tactic:
 technique:
   - T1059.004
 os:
-  - macos
   - linux
+  - macos
 description: |
   Using Curl to download and pipe a payload to Bash. NOTE: Curl-ing to Bash is generally a bad idea if you don't control the server.
 

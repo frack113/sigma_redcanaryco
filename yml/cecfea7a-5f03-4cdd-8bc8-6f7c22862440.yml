@@ -21,4 +21,4 @@ sigma_rule:
   - id: 9aa5106d-bce3-4b13-86df-3a20f1d5cf0b
     name: proc_creation_win_lolbin_forfiles.yml
   - id: 737e618a-a410-49b5-bec3-9e55ff7fbc15
-    name: proc_creation_win_susp_calc.yml
+    name: proc_creation_win_calc_uncommon_exec.yml

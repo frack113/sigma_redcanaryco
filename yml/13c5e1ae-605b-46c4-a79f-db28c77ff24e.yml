@@ -10,8 +10,8 @@ tactic:
 technique:
   - T1083
 os:
-  - macos
   - linux
+  - macos
 description: 'Find or discover files on the file system
 
   '

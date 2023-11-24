@@ -9,7 +9,7 @@ Attack_description: "Adversaries may attempt to get a listing of network connect
   in, similar to \"net session\". Additionally, built-in features native to network devices and [Network Device CLI](https://attack.mitre.org/techniques/T1059/008) may be used (e.g. <code>show ip sockets</code>,
   <code>show tcp brief</code>).(Citation: US-CERT-TA18-106A)"
 guid: 9ae28d3f-190f-4fa0-b023-c7bd3e0eabf2
-name: System Network Connections Discovery Linux & MacOS
+name: System Network Connections Discovery FreeBSD, Linux & MacOS
 tactic:
   - discovery
 technique:

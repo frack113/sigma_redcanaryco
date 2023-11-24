@@ -16,6 +16,5 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: af77cf95-c469-471c-b6a0-946c685c4798
-    name: proc_creation_win_lolbin_wuauclt.yml
-  - id: d7825193-b70a-48a4-b992-8b5b3015cc11
-    name: proc_creation_win_wuauclt_execution.yml
+    name: proc_creation_win_wuauclt_dll_loading.yml
+

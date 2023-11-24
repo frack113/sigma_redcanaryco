@@ -4,14 +4,14 @@ Attack_description: |-
 
   Adversaries may use the information from [System Service Discovery](https://attack.mitre.org/techniques/T1007) during automated discovery to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or attempts specific actions.
 guid: f4b26bce-4c2c-46c0-bcc5-fce062d38bef
-name: System Service Discovery - systemctl
+name: System Service Discovery - systemctl/service
 tactic:
   - discovery
 technique:
   - T1007
 os:
   - linux
-description: 'Enumerates system service using systemctl
+description: 'Enumerates system service using systemctl/service
 
   '
 executor: bash

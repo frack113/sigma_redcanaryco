@@ -11,7 +11,7 @@ Attack_description: "Adversaries may encrypt data on target systems or on large 
   such as changing victim wallpapers, or otherwise intimidate victims by sending ransom notes or other messages to connected printers (known as \"print bombing\").(Citation: NHS Digital Egregor Nov 2020)\n
   \nIn cloud environments, storage objects within compromised accounts may also be encrypted.(Citation: Rhino S3 Ransomware Part 1)"
 guid: 142752dc-ca71-443b-9359-cf6f497315f1
-name: Encrypt files using openssl (Linux)
+name: Encrypt files using openssl (FreeBSD/Linux)
 tactic:
   - impact
 technique:
@@ -21,6 +21,6 @@ os:
 description: 'Uses openssl to encrypt a file
 
   '
-executor: bash
+executor: sh
 sigma: false
 sigma_rule: []
