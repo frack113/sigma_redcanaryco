@@ -1,0 +1,17 @@
+Attack_name: Exfiltration Over C2 Channel
+Attack_description: Adversaries may steal data by exfiltrating it over an existing command and control channel. Stolen data is encoded into the normal communications channel using the same protocol as command
+  and control communications.
+guid: c9207f3e-213d-4cc7-ad2a-7697a7237df9
+name: Text Based Data Exfiltration using DNS subdomains
+tactic:
+  - exfiltration
+technique:
+  - T1041
+os:
+  - windows
+description: 'Simulates an adversary using DNS tunneling to exfiltrate data over a Command and Control (C2) channel.
+
+  '
+executor: powershell
+sigma: false
+sigma_rule: []

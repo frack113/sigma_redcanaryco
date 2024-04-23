@@ -1,0 +1,23 @@
+Attack_name: Software Deployment Tools
+Attack_description: "Adversaries may gain access to and use third-party software suites installed within an enterprise network, such as administration, monitoring, and deployment systems, to move laterally
+  through the network. Third-party applications and software deployment systems may be in use in the network environment for administration purposes (e.g., SCCM, HBSS, Altiris, etc.).  \n\nAccess to a third-party
+  network-wide or enterprise-wide software system may enable an adversary to have remote code execution on all systems that are connected to such a system. The access may be used to laterally move to other
+  systems, gather information, or cause a specific effect, such as wiping the hard drives on all endpoints. Network infrastructure may also have administration tools that can be similarly abused by adversaries.
+  (Citation: Fortinet Zero-Day and Custom Malware Used by Suspected Chinese Actor in Espionage Operation)\n\nThe permissions required for this action vary by system configuration; local credentials may
+  be sufficient with direct access to the third-party system, or specific domain credentials may be required. However, the system may require an administrative account to log in or to perform it's intended
+  purpose."
+guid: 2169e8b0-2ee7-44cb-8a6e-d816a5db7d8a
+name: Deploy 7-Zip Using Chocolatey
+tactic:
+  - execution
+  - lateral-movement
+technique:
+  - T1072
+os:
+  - windows
+description: 'An adversary may use Chocolatey to remotely deploy the 7-Zip file archiver utility.
+
+  '
+executor: powershell
+sigma: false
+sigma_rule: []

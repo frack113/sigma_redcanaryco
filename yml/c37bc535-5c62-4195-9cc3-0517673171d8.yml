@@ -40,8 +40,8 @@ description: |
   Python 3 must be installed, use the get_prereq_command's to meet the prerequisites for this test.
 
   Successful execution of this test will display multiple usernames and passwords/hashes to the screen.
+
+  Will create a Python virtual environment within the External Payloads folder that can be deleted manually post test execution.
 executor: command_prompt
-sigma: true
-sigma_rule:
-  - id: 7186e989-4ed7-4f4e-a656-4674b9e3e48b
-    name: proc_access_win_pypykatz_cred_dump_lsass_access.yml
+sigma: false
+sigma_rule: []

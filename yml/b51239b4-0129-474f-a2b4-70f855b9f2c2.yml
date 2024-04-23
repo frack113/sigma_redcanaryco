@@ -15,7 +15,5 @@ os:
   - windows
 description: "Utilize get-wmiObject PowerShell cmdlet to identify processes.\n\nUpon successful execution, powershell.exe will execute get-wmiObject to list processes. Output will be via stdout. \n"
 executor: powershell
-sigma: true
-sigma_rule:
-  - id: 0332a266-b584-47b4-933d-a00b103e1b37
-    name: posh_ps_susp_gwmi.yml
+sigma: false
+sigma_rule: []

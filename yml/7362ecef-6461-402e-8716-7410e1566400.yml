@@ -1,0 +1,23 @@
+Attack_name: Process Injection
+Attack_description: "Adversaries may inject code into processes in order to evade process-based defenses as well as possibly elevate privileges. Process injection is a method of executing arbitrary code
+  in the address space of a separate live process. Running code in the context of another process may allow access to the process's memory, system/network resources, and possibly elevated privileges. Execution
+  via process injection may also evade detection from security products since the execution is masked under a legitimate process. \n\nThere are many different ways to inject code into a process, many of
+  which abuse legitimate functionalities. These implementations exist for every major OS but are typically platform specific. \n\nMore sophisticated samples may perform multiple process injections to segment
+  modules and further evade detection, utilizing named pipes or other inter-process communication (IPC) mechanisms as a communication channel. "
+guid: 7362ecef-6461-402e-8716-7410e1566400
+name: Process Injection with Go using EtwpCreateEtwThread WinAPI
+tactic:
+  - defense-evasion
+  - privilege-escalation
+technique:
+  - T1055
+os:
+  - windows
+description: "Uses EtwpCreateEtwThread function from ntdll.dll to execute shellcode within the application's process.\nThis program loads the DLLs and gets a handle to the used procedures itself instead
+  of using the windows package directly.\n\nSteps taken with this technique\n1. Allocate memory for the shellcode with VirtualAlloc setting the page permissions to Read/Write\n2. Use the RtlCopyMemory macro
+  to copy the shellcode to the allocated memory space\n3. Change the memory page permissions to Execute/Read with VirtualProtect\n4. Call EtwpCreateEtwThread on shellcode address\n5. Call WaitForSingleObject
+  so the program does not end before the shellcode is executed\n\n- PoC Credit: (https://github.com/Ne0nd0g/go-shellcode/tree/master#EtwpCreateEtwThread)\n- References: \n  - https://gist.github.com/TheWover/b2b2e427d3a81659942f4e8b9a978dc3\n\
+  \  - https://www.geoffchappell.com/studies/windows/win32/ntdll/api/etw/index.htm\n"
+executor: powershell
+sigma: false
+sigma_rule: []

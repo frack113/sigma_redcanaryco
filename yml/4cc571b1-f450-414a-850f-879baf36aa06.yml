@@ -1,0 +1,27 @@
+Attack_name: 'Process Injection: Asynchronous Procedure Call'
+Attack_description: "Adversaries may inject malicious code into processes via the asynchronous procedure call (APC) queue in order to evade process-based defenses as well as possibly elevate privileges.
+  APC injection is a method of executing arbitrary code in the address space of a separate live process. \n\nAPC injection is commonly performed by attaching malicious code to the APC Queue (Citation: Microsoft
+  APC) of a process's thread. Queued APC functions are executed when the thread enters an alterable state.(Citation: Microsoft APC) A handle to an existing victim process is first created with native Windows
+  API calls such as <code>OpenThread</code>. At this point <code>QueueUserAPC</code> can be used to invoke a function (such as <code>LoadLibrayA</code> pointing to a malicious DLL). \n\nA variation of APC
+  injection, dubbed \"Early Bird injection\", involves creating a suspended process in which malicious code can be written and executed before the process' entry point (and potentially subsequent anti-malware
+  hooks) via an APC. (Citation: CyberBit Early Bird Apr 2018) AtomBombing (Citation: ENSIL AtomBombing Oct 2016) is another variation that utilizes APCs to invoke malicious code previously written to the
+  global atom table.(Citation: Microsoft Atom Table)\n\nRunning code in the context of another process may allow access to the process's memory, system/network resources, and possibly elevated privileges.
+  Execution via APC injection may also evade detection from security products since the execution is masked under a legitimate process. "
+guid: 4cc571b1-f450-414a-850f-879baf36aa06
+name: Remote Process Injection with Go using NtQueueApcThreadEx WinAPI
+tactic:
+  - defense-evasion
+  - privilege-escalation
+technique:
+  - T1055.004
+os:
+  - windows
+description: "Uses the undocumented NtQueueAPCThreadEx WinAPI to create a \"Special User APC\" in the current thread of the current process to execute shellcode. \nSince the shellcode is loaded and executed
+  in the current process it is considered local shellcode execution.\n\nSteps taken with this technique\n1. Allocate memory for the shellcode with VirtualAlloc setting the page permissions to Read/Write\n
+  2. Use the RtlCopyMemory macro to copy the shellcode to the allocated memory space\n3. Change the memory page permissions to Execute/Read with VirtualProtect\n4. Get a handle to the current thread\n5.
+  Execute the shellcode in the current thread by creating a Special User APC through the NtQueueApcThreadEx function\n\n- PoC Credit: (https://github.com/Ne0nd0g/go-shellcode/tree/master#rtlcreateuserthread)\n
+  - References:\n  - https://repnz.github.io/posts/apc/user-apc/\n  - https://docs.rs/ntapi/0.3.1/ntapi/ntpsapi/fn.NtQueueApcThreadEx.html\n  - https://0x00sec.org/t/process-injection-apc-injection/24608\n\
+  \  - https://twitter.com/aionescu/status/992264290924032005\n  - http://www.opening-windows.com/techart_windows_vista_apc_internals2.htm#_Toc229652505\n"
+executor: powershell
+sigma: false
+sigma_rule: []

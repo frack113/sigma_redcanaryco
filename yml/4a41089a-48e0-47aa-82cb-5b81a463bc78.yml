@@ -25,7 +25,5 @@ description: "Windows Management Instrumentation(WMI) objects contain system inf
 executor: powershell
 sigma: true
 sigma_rule:
-  - id: 0332a266-b584-47b4-933d-a00b103e1b37
-    name: posh_ps_susp_gwmi.yml
   - id: d93129cd-1ee0-479f-bc03-ca6f129882e3
     name: posh_ps_detect_vm_env.yml

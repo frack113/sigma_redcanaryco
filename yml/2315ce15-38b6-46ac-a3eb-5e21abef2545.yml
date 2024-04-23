@@ -1,0 +1,21 @@
+Attack_name: Process Injection
+Attack_description: "Adversaries may inject code into processes in order to evade process-based defenses as well as possibly elevate privileges. Process injection is a method of executing arbitrary code
+  in the address space of a separate live process. Running code in the context of another process may allow access to the process's memory, system/network resources, and possibly elevated privileges. Execution
+  via process injection may also evade detection from security products since the execution is masked under a legitimate process. \n\nThere are many different ways to inject code into a process, many of
+  which abuse legitimate functionalities. These implementations exist for every major OS but are typically platform specific. \n\nMore sophisticated samples may perform multiple process injections to segment
+  modules and further evade detection, utilizing named pipes or other inter-process communication (IPC) mechanisms as a communication channel. "
+guid: 2315ce15-38b6-46ac-a3eb-5e21abef2545
+name: Process Injection with Go using UuidFromStringA WinAPI
+tactic:
+  - defense-evasion
+  - privilege-escalation
+technique:
+  - T1055
+os:
+  - windows
+description: "Uses WinAPI UuidFromStringA to load shellcode to a memory address then executes the shellcode using EnumSystemLocalesA.\nWith this technique, memory is allocated on the heap and does not use
+  commonly suspicious APIs such as VirtualAlloc, WriteProcessMemory, or CreateThread \n- PoC Credit: (https://github.com/Ne0nd0g/go-shellcode/tree/master#uuidfromstringa)\n- References: \n  - https://research.nccgroup.com/2021/01/23/rift-analysing-a-lazarus-shellcode-execution-method/\n\
+  \  - https://twitter.com/_CPResearch_/status/1352310521752662018\n  - https://blog.securehat.co.uk/process-injection/shellcode-execution-via-enumsystemlocala\n"
+executor: powershell
+sigma: false
+sigma_rule: []

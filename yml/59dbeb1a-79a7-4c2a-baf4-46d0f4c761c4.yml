@@ -37,7 +37,6 @@ description: 'Bruteforce a single user''s password from a wordlist
 executor: powershell
 sigma: true
 sigma_rule:
-  - id: 628d7a0b-7b84-4466-8552-e6138bc03b43
-    name: net_connection_win_susp_epmap.yml
+
   - id: e54979bd-c5f9-4d6c-967b-a04b19ac4c74
     name: net_connection_win_susp_outbound_kerberos_connection.yml

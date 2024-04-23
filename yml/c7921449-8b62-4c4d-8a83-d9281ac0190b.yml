@@ -1,0 +1,20 @@
+Attack_name: Data Obfuscation via Steganography
+Attack_description: 'Adversaries may use steganographic techniques to hide command and control traffic to make detection efforts more difficult. Steganographic techniques can be used to hide data in digital
+  messages that are transferred between systems. This hidden information can be used for command and control of compromised systems. In some cases, the passing of files embedded using steganography, such
+  as image or document files, can be used for command and control. '
+guid: c7921449-8b62-4c4d-8a83-d9281ac0190b
+name: Steganographic Tarball Embedding
+tactic:
+  - command-and-control
+technique:
+  - T1001.002
+os:
+  - windows
+description: "This atomic test, named \"Steganographic Tarball Embedding\", simulates the technique of data obfuscation via steganography by embedding a tar archive file (tarball) \nwithin an image.\n\n
+  The test begins by ensuring the availability of the image file and the tarball file containing data . It then generates random passwords and saves them to a \nfile. Subsequently, the tarball file is created,
+  containing the passwords file. The test executor command reads the contents of the image \nfile and the tarball file as byte arrays and appends them together to form a new image file. This process effectively
+  embeds the tarball \nfile within the image, utilizing steganography techniques for data obfuscation.\n\nThis atomic test simulates the technique of data obfuscation via steganography, enabling attackers
+  to clandestinely transfer files across systems undetected. \nBy embedding the tarball file within the image, adversaries can obscure their activities, facilitating covert communication and data exfiltration.\n"
+executor: powershell
+sigma: false
+sigma_rule: []

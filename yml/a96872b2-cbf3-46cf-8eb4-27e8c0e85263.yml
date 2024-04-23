@@ -13,9 +13,10 @@ technique:
   - T1003.002
 os:
   - windows
-description: 'Parses registry hives to obtain stored credentials
+description: |
+  Parses registry hives to obtain stored credentials.
 
-  '
+  Will create a Python virtual environment within the External Payloads folder that can be deleted manually post test execution.
 executor: command_prompt
 sigma: true
 sigma_rule:

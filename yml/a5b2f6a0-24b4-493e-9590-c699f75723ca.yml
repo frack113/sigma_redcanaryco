@@ -27,4 +27,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: ba1f7802-adc7-48b4-9ecb-81e227fddfd5
-    name: proc_creation_win_network_sniffing.yml
+    name: proc_creation_win_susp_network_sniffing.yml

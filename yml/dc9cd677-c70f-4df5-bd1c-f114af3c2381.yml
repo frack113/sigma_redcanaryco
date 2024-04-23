@@ -18,7 +18,7 @@ technique:
 os:
   - windows
 description: "Firepwd.py is a script that can decrypt Mozilla (Thunderbird, Firefox) passwords.\nUpon successful execution, the decrypted credentials will be output to a text file, as well as displayed
-  on screen. \n"
+  on screen. \n\nWill create a Python virtual environment within the External Payloads folder that can be deleted manually post test execution.\n"
 executor: powershell
 sigma: true
 sigma_rule:

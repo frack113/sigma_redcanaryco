@@ -1,0 +1,15 @@
+Attack_name: Data Transfer Size Limits
+Attack_description: An adversary may exfiltrate data in fixed size chunks instead of whole files or limit packet sizes below certain thresholds. This approach may be used to avoid triggering network data
+  transfer threshold alerts.
+guid: f0287b58-f4bc-40f6-87eb-692e126e7f8f
+name: Network-Based Data Transfer in Small Chunks
+tactic:
+  - exfiltration
+technique:
+  - T1030
+os:
+  - windows
+description: Simulate transferring data over a network in small chunks to evade detection.
+executor: powershell
+sigma: false
+sigma_rule: []

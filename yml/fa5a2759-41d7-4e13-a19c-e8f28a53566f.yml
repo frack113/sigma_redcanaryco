@@ -33,4 +33,4 @@ sigma_rule:
   - id: 36480ae1-a1cb-4eaa-a0d6-29801d7e9142
     name: proc_creation_win_renamed_binary.yml
   - id: 01d2e2a1-5f09-44f7-9fc1-24faa7479b6d
-    name: proc_creation_win_svchost_susp_parent_process.yml
+    name: proc_creation_win_svchost_uncommon_parent_process.yml

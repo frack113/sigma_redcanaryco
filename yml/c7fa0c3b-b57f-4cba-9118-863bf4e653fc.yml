@@ -33,7 +33,7 @@ sigma_rule:
   - id: 1cdd9a09-06c9-4769-99ff-626e2b3991b8
     name: proc_creation_win_susp_double_extension.yml
   - id: cea72823-df4d-4567-950c-0b579eaf0846
-    name: proc_creation_win_malware_script_dropper.yml
+    name: proc_creation_win_wscript_cscript_dropper.yml
   - id: a6a39bdb-935c-4f0a-ab77-35f4bbf44d33
     name: proc_creation_win_susp_script_exec_from_temp.yml
   - id: f4bbd493-b796-416e-bbf2-121235348529

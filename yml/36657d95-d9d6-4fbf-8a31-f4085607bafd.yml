@@ -1,0 +1,17 @@
+Attack_name: 'Email Collection: Remote Email Collection'
+Attack_description: Adversaries may target an Exchange server, Office 365, or Google Workspace to collect sensitive information. Adversaries may leverage a user's credentials and interact directly with
+  the Exchange server to acquire information from within a network. Adversaries may also access externally facing Exchange services, Office 365, or Google Workspace to access email using credentials or
+  access tokens. Tools such as [MailSniper](https://attack.mitre.org/software/S0413) can be used to automate searches for specific keywords.
+guid: 36657d95-d9d6-4fbf-8a31-f4085607bafd
+name: Office365 - Remote Mail Collected
+tactic:
+  - collection
+technique:
+  - T1114.002
+os:
+  - office-365
+description: "Create and register an entra application that downloads emails from a tenant's Office 365 mailboxes using the Microsoft Graph API app-only access. This can be used by an adversary to collect
+  an organization's sensitive information. \n"
+executor: powershell
+sigma: false
+sigma_rule: []

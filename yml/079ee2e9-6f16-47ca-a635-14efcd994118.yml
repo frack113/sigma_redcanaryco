@@ -35,10 +35,6 @@ sigma_rule:
     name: posh_ps_detect_vm_env.yml
   - id: 89819aa4-bbd6-46bc-88ec-c7f7fe30efa6
     name: posh_ps_malicious_commandlets.yml
-  - id: 0332a266-b584-47b4-933d-a00b103e1b37
-    name: posh_ps_susp_gwmi.yml
-  - id: d23f2ba5-9da0-4463-8908-8ee47f614bb9
-    name: posh_ps_file_and_directory_discovery.yml
   - id: 03d83090-8cba-44a0-b02f-0b756a050306
     name: posh_ps_win_api_susp_access.yml
   - id: 1f49f2ab-26bc-48b3-96cc-dcffbc93eadf
@@ -76,17 +72,15 @@ sigma_rule:
   - id: 1f21ec3f-810d-4b0e-8045-322202e22b4b
     name: net_connection_win_powershell_network_connection.yml
   - id: e0f8ab85-0ac9-423b-a73a-81b3c7b1aa97
-    name: net_connection_win_binary_susp_com.yml
+    name: net_connection_win_susp_file_sharing_domains_susp_folders.yml
   - id: 297afac9-5d02-4138-8c58-b977bac60556
     name: file_event_win_susp_binary_dropper.yml
   - id: cbb56d62-4060-40f7-9466-d8aaf3123f83
     name: image_load_susp_python_image_load.yml
   - id: fa34b441-961a-42fa-a100-ecc28c886725
-    name: proc_access_win_susp_proc_access_lsass_susp_source.yml
+    name: proc_access_win_lsass_susp_source_process.yml
   - id: 678dfc63-fefb-47a5-a04c-26bcf8cc9f65
-    name: proc_access_win_rare_proc_access_lsass.yml
-  - id: 32d0d3e2-e58d-4d41-926b-18b520b2b32d
-    name: proc_access_win_cred_dump_lsass_access.yml
+    name: proc_access_win_lsass_uncommon_access_flag.yml
   - id: 91cb43db-302a-47e3-b3c8-7ede481e27bf
     name: file_access_win_browser_credential_access.yml
   - id: 8d31a8ce-46b5-4dd6-bdc3-680931f1db86

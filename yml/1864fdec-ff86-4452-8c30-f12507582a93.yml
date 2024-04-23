@@ -8,25 +8,16 @@ Attack_description: "Adversaries may acquire credentials from Keychain. Keychain
   from <code>~/Library/Keychains/login.keychain-db</code>. Adversaries may also directly read Login Keychain credentials from the <code>~/Library/Keychains/login.keychain</code> file. Both methods require
   a password, where the default password for the Login Keychain is the current user’s password to login to the macOS host.(Citation: External to DA, the OS X Way)(Citation: Empire Keychain Decrypt)  "
 guid: 1864fdec-ff86-4452-8c30-f12507582a93
-name: Keychain
+name: Export Certificate Item(s)
 tactic:
   - credential-access
 technique:
   - T1555.001
 os:
   - macos
-description: |
-  ### Keychain Files
+description: 'This command finds all certificate items and sends the output to local file in pem format.
 
-    ~/Library/Keychains/
-
-    /Library/Keychains/
-
-    /Network/Library/Keychains/
-
-    [Security Reference](https://developer.apple.com/legacy/library/documentation/Darwin/Reference/ManPages/man1/security.1.html)
-
-    [Keychain dumper](https://github.com/juuso/keychaindump)
+  '
 executor: sh
 sigma: false
 sigma_rule: []

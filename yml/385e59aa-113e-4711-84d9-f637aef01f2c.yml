@@ -33,8 +33,6 @@ sigma_rule:
     name: posh_ps_malicious_keywords.yml
   - id: d93129cd-1ee0-479f-bc03-ca6f129882e3
     name: posh_ps_detect_vm_env.yml
-  - id: 0332a266-b584-47b4-933d-a00b103e1b37
-    name: posh_ps_susp_gwmi.yml
   - id: 602a1f13-c640-4d73-b053-be9a2fa58b96
     name: file_event_win_hktl_powerup_dllhijacking.yml
   - id: 24e3e58a-646b-4b50-adef-02ef935b9fc8

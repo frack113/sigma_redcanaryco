@@ -7,8 +7,8 @@ Attack_description: |-
   A number of PowerShell-based offensive testing tools are available, including [Empire](https://attack.mitre.org/software/S0363),  [PowerSploit](https://attack.mitre.org/software/S0194), [PoshC2](https://attack.mitre.org/software/S0378), and PSAttack.(Citation: Github PSAttack)
 
   PowerShell commands/scripts can also be executed without directly invoking the <code>powershell.exe</code> binary through interfaces to PowerShell's underlying <code>System.Management.Automation</code> assembly DLL exposed through the .NET framework and Windows Common Language Interface (CLI).(Citation: Sixdub PowerPick Jan 2016)(Citation: SilentBreak Offensive PS Dec 2015)(Citation: Microsoft PSfromCsharp APR 2014)
-guid: 9148e7c4-9356-420e-a416-e896e9c0f73e
-name: PowerShell Downgrade Attack
+guid: 4099086c-1470-4223-8085-8186e1ed5948
+name: SOAPHound - Build Cache
 tactic:
   - execution
 technique:
@@ -16,12 +16,8 @@ technique:
 os:
   - windows
 description: |
-  This test requires the manual installation of PowerShell V2.
-
-  Attempts to run powershell commands in version 2.0 https://www.leeholmes.com/blog/2017/03/17/detecting-and-preventing-powershell-downgrade-attacks/
+  Build cache using SOAPHound. Upon execution, a cache will be built and stored in the specified cache filename.
+  src: https://github.com/FalconForceTeam/SOAPHound
 executor: powershell
-sigma: true
-sigma_rule:
-  - id: b3512211-c67e-4707-bedc-66efc7848863
-    name: proc_creation_win_powershell_downgrade_attack.yml
-
+sigma: false
+sigma_rule: []

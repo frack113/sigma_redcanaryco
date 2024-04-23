@@ -1,0 +1,26 @@
+Attack_name: 'Process Injection: Process Hollowing'
+Attack_description: "Adversaries may inject malicious code into suspended and hollowed processes in order to evade process-based defenses. Process hollowing is a method of executing arbitrary code in the
+  address space of a separate live process.  \n\nProcess hollowing is commonly performed by creating a process in a suspended state then unmapping/hollowing its memory, which can then be replaced with malicious
+  code. A victim process can be created with native Windows API calls such as <code>CreateProcess</code>, which includes a flag to suspend the processes primary thread. At this point the process can be
+  unmapped using APIs calls such as <code>ZwUnmapViewOfSection</code> or <code>NtUnmapViewOfSection</code>  before being written to, realigned to the injected code, and resumed via <code>VirtualAllocEx</code>,
+  <code>WriteProcessMemory</code>, <code>SetThreadContext</code>, then <code>ResumeThread</code> respectively.(Citation: Leitch Hollowing)(Citation: Elastic Process Injection July 2017)\n\nThis is very
+  similar to [Thread Local Storage](https://attack.mitre.org/techniques/T1055/005) but creates a new process rather than targeting an existing process. This behavior will likely not result in elevated privileges
+  since the injected process was spawned from (and thus inherits the security context) of the injecting process. However, execution via process hollowing may also evade detection from security products
+  since the execution is masked under a legitimate process. "
+guid: 94903cc5-d462-498a-b919-b1e5ab155fee
+name: Process Hollowing in Go using CreateProcessW and CreatePipe WinAPIs (T1055.012)
+tactic:
+  - defense-evasion
+  - privilege-escalation
+technique:
+  - T1055.012
+os:
+  - windows
+description: |
+  Create a process in a suspended state, execute shellcode to spawn calc.exe in a child process, and then resume the original process.
+  This test uses the CreatePipe function to create an anonymous pipe that parent and child processes can communicate over. This anonymous pipe
+  allows for the retrieval of output generated from executed shellcode.
+  - PoC Credit: (https://github.com/Ne0nd0g/go-shellcode#createprocesswithpipe)
+executor: powershell
+sigma: false
+sigma_rule: []

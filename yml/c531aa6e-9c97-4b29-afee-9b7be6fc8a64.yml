@@ -31,5 +31,3 @@ sigma_rule:
     name: posh_ps_tamper_windows_defender_set_mp.yml
   - id: 0eb46774-f1ab-4a74-8238-1155855f2263
     name: registry_set_windows_defender_tamper.yml
-  - id: fe34868f-6e0e-4882-81f6-c43aa8f15b62
-    name: win_defender_disabled.yml

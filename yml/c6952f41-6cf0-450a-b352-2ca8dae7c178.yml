@@ -19,6 +19,6 @@ executor: powershell
 sigma: true
 sigma_rule:
   - id: a1a144b7-5c9b-4853-a559-2172be8d4a03
-    name: create_remote_thread_win_uncommon_target_image.yml
+    name: create_remote_thread_win_susp_uncommon_target_image.yml
   - id: a1a144b7-5c9b-4853-a559-2172be8d4a03
-    name: create_remote_thread_win_uncommon_target_image.yml
+    name: create_remote_thread_win_susp_uncommon_target_image.yml

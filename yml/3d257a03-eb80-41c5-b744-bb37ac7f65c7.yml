@@ -29,7 +29,7 @@ sigma_rule:
   - id: f4bbd493-b796-416e-bbf2-121235348529
     name: proc_creation_win_powershell_non_interactive_execution.yml
   - id: c30fb093-1109-4dc8-88a8-b30d11c95a5d
-    name: proc_creation_win_whoami_susp_flags.yml
+    name: proc_creation_win_whoami_output.yml
   - id: cdf05894-89e7-4ead-b2b0-0a5f97a90f2f
     name: proc_creation_win_powershell_encoding_patterns.yml
   - id: 91edcfb1-2529-4ac2-9ecc-7617f895c7e4

@@ -33,10 +33,6 @@ sigma_rule:
     name: posh_ps_web_request_cmd_and_cmdlets.yml
   - id: 8ff28fdd-e2fa-4dfa-aeda-ef3d61c62090
     name: posh_pm_susp_invocation_specific.yml
-  - id: d23f2ba5-9da0-4463-8908-8ee47f614bb9
-    name: posh_ps_file_and_directory_discovery.yml
-  - id: 0332a266-b584-47b4-933d-a00b103e1b37
-    name: posh_ps_susp_gwmi.yml
   - id: 89819aa4-bbd6-46bc-88ec-c7f7fe30efa6
     name: posh_ps_malicious_commandlets.yml
   - id: 03d83090-8cba-44a0-b02f-0b756a050306
@@ -82,7 +78,7 @@ sigma_rule:
   - id: 7b836d7f-179c-4ba4-90a7-a7e60afb48e6
     name: posh_ps_invoke_command_remote.yml
   - id: e0f8ab85-0ac9-423b-a73a-81b3c7b1aa97
-    name: net_connection_win_binary_susp_com.yml
+    name: net_connection_win_susp_file_sharing_domains_susp_folders.yml
   - id: 1f21ec3f-810d-4b0e-8045-322202e22b4b
     name: net_connection_win_powershell_network_connection.yml
   - id: e4a74e34-ecde-4aab-b2fb-9112dd01aed0

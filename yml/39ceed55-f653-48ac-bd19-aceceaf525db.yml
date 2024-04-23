@@ -30,14 +30,10 @@ sigma_rule:
     name: posh_ps_susp_windowstyle.yml
   - id: 1883444f-084b-419b-ac62-e0d0c5b3693f
     name: posh_ps_susp_networkcredential.yml
-  - id: 0332a266-b584-47b4-933d-a00b103e1b37
-    name: posh_ps_susp_gwmi.yml
   - id: 1f49f2ab-26bc-48b3-96cc-dcffbc93eadf
     name: posh_ps_susp_keywords.yml
   - id: 63bf8794-9917-45bc-88dd-e1b5abc0ecfd
     name: posh_ps_copy_item_system_directory.yml
-  - id: d23f2ba5-9da0-4463-8908-8ee47f614bb9
-    name: posh_ps_file_and_directory_discovery.yml
   - id: e32f92d1-523e-49c3-9374-bdb13b46a3ba
     name: proc_creation_win_mshta_susp_pattern.yml
   - id: 3a6586ad-127a-4d3b-a677-1e6eacdf8fde
@@ -51,5 +47,5 @@ sigma_rule:
   - id: 1277f594-a7d1-4f28-a2d3-73af5cbeab43
     name: file_event_win_shell_write_susp_directory.yml
   - id: e0f8ab85-0ac9-423b-a73a-81b3c7b1aa97
-    name: net_connection_win_binary_susp_com.yml
+    name: net_connection_win_susp_file_sharing_domains_susp_folders.yml
 

@@ -1,0 +1,21 @@
+Attack_name: Data Obfuscation via Steganography
+Attack_description: 'Adversaries may use steganographic techniques to hide command and control traffic to make detection efforts more difficult. Steganographic techniques can be used to hide data in digital
+  messages that are transferred between systems. This hidden information can be used for command and control of compromised systems. In some cases, the passing of files embedded using steganography, such
+  as image or document files, can be used for command and control. '
+guid: 04bb8e3d-1670-46ab-a3f1-5cee64da29b6
+name: Embedded Script in Image Execution via Extract-Invoke-PSImage
+tactic:
+  - command-and-control
+technique:
+  - T1001.002
+os:
+  - windows
+description: "This atomic test demonstrates the technique of data obfuscation via steganography, where a PowerShell script is concealed within an image file. \nThe PowerShell script is embedded using steganography
+  techniques, making it undetectable by traditional security measures. The script is hidden \nwithin the pixels of the image, enabling attackers to covertly transfer and execute malicious code across systems.\n
+  \nThe test begins by ensuring the availability of the malicious image file and the Extract-Invoke-PSImage script. The test proceeds to extract the hidden \nPowerShell script (decoded.ps1) from the image
+  file using the Extract-Invoke-PSImage tool. The extracted script is then decoded from base64 encoding and saved as a \nseparate PowerShell (textExtraction.ps1). Consequently, the textExtraction.ps1 script
+  is executed.\n\nIn the case of this atomic test, the malicious image file which is downloaded has the powershell command Start-Process notepad embedded within in base64. This\nis done to emulate an attackers
+  behaviour in the case they were to execute malware embedded within the image file. \n"
+executor: powershell
+sigma: false
+sigma_rule: []
