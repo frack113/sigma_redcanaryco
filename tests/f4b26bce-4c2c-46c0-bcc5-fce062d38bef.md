@@ -18,13 +18,13 @@ Adversaries may use the information from [System Service Discovery](https://atta
   - T1007
 
 
-# Test : System Service Discovery - systemctl
+# Test : System Service Discovery - systemctl/service
 ## OS
   - linux
 
 
 ## Description:
-Enumerates system service using systemctl
+Enumerates system service using systemctl/service
 
 
 ## Executor

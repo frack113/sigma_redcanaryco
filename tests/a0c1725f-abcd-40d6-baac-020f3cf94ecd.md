@@ -1,0 +1,51 @@
+
+[back](../index.md)
+
+Find sigma rule :x: 
+
+# Attack: Process Injection 
+
+Adversaries may inject code into processes in order to evade process-based defenses as well as possibly elevate privileges. Process injection is a method of executing arbitrary code in the address space of a separate live process. Running code in the context of another process may allow access to the process's memory, system/network resources, and possibly elevated privileges. Execution via process injection may also evade detection from security products since the execution is masked under a legitimate process. 
+
+There are many different ways to inject code into a process, many of which abuse legitimate functionalities. These implementations exist for every major OS but are typically platform specific. 
+
+More sophisticated samples may perform multiple process injections to segment modules and further evade detection, utilizing named pipes or other inter-process communication (IPC) mechanisms as a communication channel. 
+
+# MITRE
+## Tactic
+  - defense-evasion
+  - privilege-escalation
+
+
+## technique
+  - T1055
+
+
+# Test : Remote Process Injection with Go using RtlCreateUserThread WinAPI
+## OS
+  - windows
+
+
+## Description:
+Executes shellcode in a remote process.
+
+Steps taken with this technique
+1. Get a handle to the target process
+2. Allocate memory for the shellcode with VirtualAllocEx setting the page permissions to Read/Write
+3. Use the WriteProcessMemory to copy the shellcode to the allocated memory space in the remote process
+4. Change the memory page permissions to Execute/Read with VirtualProtectEx
+ 5. Execute the entrypoint of the shellcode in the remote process with RtlCreateUserThread
+6. Close the handle to the remote process
+
+- PoC Credit: (https://github.com/Ne0nd0g/go-shellcode/tree/master#rtlcreateuserthread)
+ - References: 
+  - https://www.cobaltstrike.com/blog/cobalt-strikes-process-injection-the-details-cobalt-strike
+
+
+## Executor
+powershell
+
+# Sigma Rule
+
+
+[back](../index.md)

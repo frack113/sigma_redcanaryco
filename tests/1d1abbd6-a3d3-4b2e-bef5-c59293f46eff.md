@@ -25,7 +25,7 @@ Adversaries may opt to obfuscate this data, without the use of encryption, withi
 
 
 ## Description:
-A firewall rule (iptables or firewalld) will be needed to allow exfiltration on port 1337.
+A firewall rule (ipfw,pf,iptables or firewalld) will be needed to allow exfiltration on port 1337.
 
 Upon successful execution, sh will be used to make a directory (/tmp/victim-staging-area), write a txt file, and host the directory with Python on port 1337, to be later downloaded.
 

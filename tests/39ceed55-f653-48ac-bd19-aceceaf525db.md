@@ -48,13 +48,9 @@ powershell
 
  - posh_ps_susp_networkcredential.yml (id: 1883444f-084b-419b-ac62-e0d0c5b3693f)
 
- - posh_ps_susp_gwmi.yml (id: 0332a266-b584-47b4-933d-a00b103e1b37)
-
  - posh_ps_susp_keywords.yml (id: 1f49f2ab-26bc-48b3-96cc-dcffbc93eadf)
 
  - posh_ps_copy_item_system_directory.yml (id: 63bf8794-9917-45bc-88dd-e1b5abc0ecfd)
-
- - posh_ps_file_and_directory_discovery.yml (id: d23f2ba5-9da0-4463-8908-8ee47f614bb9)
 
  - proc_creation_win_mshta_susp_pattern.yml (id: e32f92d1-523e-49c3-9374-bdb13b46a3ba)
 
@@ -68,7 +64,7 @@ powershell
 
  - file_event_win_shell_write_susp_directory.yml (id: 1277f594-a7d1-4f28-a2d3-73af5cbeab43)
 
- - net_connection_win_binary_susp_com.yml (id: e0f8ab85-0ac9-423b-a73a-81b3c7b1aa97)
+ - net_connection_win_susp_file_sharing_domains_susp_folders.yml (id: e0f8ab85-0ac9-423b-a73a-81b3c7b1aa97)
 
 
 

@@ -38,7 +38,7 @@ Payload source code: https://github.com/tr4cefl0w/payloads/tree/master/T1547.003
 powershell
 
 # Sigma Rule
- - proc_creation_win_net_susp_execution.yml (id: 183e7ea8-ac4b-4c23-9aec-b3dac4e401ac)
+ - proc_creation_win_net_execution.yml (id: 183e7ea8-ac4b-4c23-9aec-b3dac4e401ac)
 
  - proc_creation_win_remote_time_discovery.yml (id: b243b280-65fe-48df-ba07-6ddea7646427)
 

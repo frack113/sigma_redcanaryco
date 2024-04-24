@@ -3,7 +3,7 @@
 
 Find sigma rule :x: 
 
-# Attack: Impair Defenses: HISTCONTROL 
+# Attack: Impair Defenses: Impair Command History Logging 
 
 Adversaries may impair command history logging to hide commands they run on a compromised system. Various command interpreters keep track of the commands users type in their terminal so that users can retrace what they've done. 
 

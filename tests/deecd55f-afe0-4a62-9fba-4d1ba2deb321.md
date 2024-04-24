@@ -53,7 +53,7 @@ powershell
 
  - net_connection_win_powershell_network_connection.yml (id: 1f21ec3f-810d-4b0e-8045-322202e22b4b)
 
- - net_connection_win_binary_susp_com.yml (id: e0f8ab85-0ac9-423b-a73a-81b3c7b1aa97)
+ - net_connection_win_susp_file_sharing_domains_susp_folders.yml (id: e0f8ab85-0ac9-423b-a73a-81b3c7b1aa97)
 
 
 

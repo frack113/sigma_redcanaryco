@@ -1,7 +1,7 @@
 
 [back](../index.md)
 
-Find sigma rule :x: 
+Find sigma rule :heavy_check_mark: 
 
 # Attack: Email Collection: Mailbox Manipulation 
 
@@ -33,6 +33,10 @@ Copies and deletes mail data on Windows
 powershell
 
 # Sigma Rule
+ - posh_ps_susp_get_current_user.yml (id: 4096a49c-7de4-4da0-a230-c66ccd56ea5a)
+
+ - posh_ps_remove_item_path.yml (id: b8af5f36-1361-4ebe-9e76-e36128d947bf)
+
 
 
 [back](../index.md)

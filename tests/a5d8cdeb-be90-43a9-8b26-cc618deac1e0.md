@@ -39,7 +39,7 @@ command_prompt
 
  - proc_creation_win_susp_non_exe_image.yml (id: c09dad97-1c78-4f71-b127-7edb2b8e491a)
 
- - raw_access_thread_disk_access_using_illegitimate_tools.yml (id: db809f10-56ce-4420-8c86-d6a7d793c79c)
+ - raw_access_thread_susp_disk_access_using_uncommon_tools.yml (id: db809f10-56ce-4420-8c86-d6a7d793c79c)
 
 
 
