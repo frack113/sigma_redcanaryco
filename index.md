@@ -395,6 +395,8 @@ Caution: a test can generate a lot of noise...
 
 [Activate Windows NoTrayContextMenu Group Policy Feature](tests/4d72d4b1-fa7b-4374-b423-0fe326da49d2.md) ['windows'] (sigma rule :heavy_check_mark:)
 
+[Enable RDP via Registry (fDenyTSConnections)](tests/16bdbe52-371c-4ccf-b708-79fba61f1db4.md) ['windows'] (sigma rule :x:)
+
 [Event Viewer Registry Modification - Redirection Program](tests/81483501-b8a5-4225-8b32-52128e2f69db.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Snake Malware Registry Blob](tests/8318ad20-0488-4a64-98f4-72525a012f6b.md) ['windows'] (sigma rule :x:)
@@ -478,6 +480,8 @@ Caution: a test can generate a lot of noise...
 [Share Discovery with PowerView](tests/b1636f0a-ba82-435c-b699-0d78794d8bfd.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Network Share Discovery - linux](tests/875805bc-9e86-4e87-be86-3a5527315cae.md) ['linux'] (sigma rule :x:)
+
+[Enumerate All Network Shares with SharpShares](tests/d1fa2a69-b0a2-4e8a-9112-529b00c19a41.md) ['windows'] (sigma rule :x:)
 
 [Network Share Discovery](tests/f94b5ad9-911c-4eff-9718-fd21899db4f7.md) ['macos'] (sigma rule :x:)
 
@@ -1583,6 +1587,8 @@ Caution: a test can generate a lot of noise...
 
 [Dump Credential Manager using keymgr.dll and rundll32.exe](tests/84113186-ed3c-4d0d-8a3c-8980c86c1f4a.md) ['windows'] (sigma rule :heavy_check_mark:)
 
+[Send NTLM Hash with RPC Test Connection](tests/0b207037-813c-4444-ac3f-b597cf280a67.md) ['windows'] (sigma rule :x:)
+
 [Retrieve Microsoft IIS Service Account Credentials Using AppCmd (using config)](tests/42510244-5019-48fa-a0e5-66c3b76e6049.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Dump svchost.exe to gather RDP credentials](tests/d400090a-d8ca-4be0-982e-c70598a23de9.md) ['windows'] (sigma rule :heavy_check_mark:)
@@ -2401,7 +2407,7 @@ Caution: a test can generate a lot of noise...
 ### T1564.003
 [Hidden Window](tests/f151ee37-9e2b-47e6-80e4-550b9f999b7a.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Headless Browser Accessing Mockbin](tests/0ad9ab92-c48c-4f08-9b20-9633277c4646.md) ['windows'] (sigma rule :x:)
+[Headless Browser Accessing Mockbin](tests/0ad9ab92-c48c-4f08-9b20-9633277c4646.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1486
@@ -2472,6 +2478,14 @@ Caution: a test can generate a lot of noise...
 [Connection Proxy](tests/0ac21132-4485-4212-a681-349e8a6637cd.md) ['linux', 'macos'] (sigma rule :x:)
 
 [portproxy reg key](tests/b8223ea9-4be2-44a6-b50a-9657a3d4e72a.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+
+### T1187
+[Trigger an authenticated RPC call to a target server with no Sign flag set](tests/81cfdd7f-1f41-4cc5-9845-bb5149438e37.md) ['windows'] (sigma rule :x:)
+
+[PetitPotam](tests/485ce873-2e65-4706-9c7e-ae3ab9e14213.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[WinPwn - PowerSharpPack - Retrieving NTLM Hashes without Touching LSASS](tests/7f06b25c-799e-40f1-89db-999c9cc84317.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1546.003
@@ -2744,6 +2758,12 @@ Caution: a test can generate a lot of noise...
 [Compressing data using zipfile in Python (FreeBSD/Linux)](tests/001a042b-859f-44d9-bf81-fd1c4e2200b0.md) ['linux'] (sigma rule :x:)
 
 
+### T1562.012
+[Delete all auditd rules using auditctl](tests/33a29ab1-cabb-407f-9448-269041bf2856.md) ['linux'] (sigma rule :x:)
+
+[Disable auditd using auditctl](tests/7906f0a6-b527-46ee-9026-6e81a9184e08.md) ['linux'] (sigma rule :x:)
+
+
 ### T1003.008
 [Access /etc/passwd (Local)](tests/60e860b6-8ae6-49db-ad07-5e73edd88f5d.md) ['linux'] (sigma rule :x:)
 
@@ -2958,6 +2978,16 @@ Caution: a test can generate a lot of noise...
 
 ### T1610
 [Deploy Docker container](tests/59aa6f26-7620-417e-9318-589e0fb7a372.md) ['containers'] (sigma rule :x:)
+
+
+### T1048.002
+[Exfiltrate data in a file over HTTPS using wget](tests/7ccdfcfa-6707-46bc-b812-007ab6ff951c.md) ['linux'] (sigma rule :x:)
+
+[Exfiltrate data HTTPS using curl windows](tests/1cdf2fb0-51b6-4fd8-96af-77020d5f1bf0.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+[Exfiltrate data HTTPS using curl freebsd,linux or macos](tests/4a4f31e2-46ea-4c26-ad89-f09ad1d5fe01.md) ['macos', 'linux'] (sigma rule :x:)
+
+[Exfiltrate data as text over HTTPS using wget](tests/8bec51da-7a6d-4346-b941-51eca448c4b0.md) ['linux'] (sigma rule :x:)
 
 
 ### T1053.006
@@ -3310,12 +3340,6 @@ Caution: a test can generate a lot of noise...
 [Process Injection via Extra Window Memory (EWM) x64 executable](tests/93ca40d2-336c-446d-bcef-87f14d438018.md) ['windows'] (sigma rule :x:)
 
 
-### T1048.002
-[Exfiltrate data HTTPS using curl windows](tests/1cdf2fb0-51b6-4fd8-96af-77020d5f1bf0.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[Exfiltrate data HTTPS using curl freebsd,linux or macos](tests/4a4f31e2-46ea-4c26-ad89-f09ad1d5fe01.md) ['macos', 'linux'] (sigma rule :x:)
-
-
 ### T1133
 [Running Chrome VPN Extensions via the Registry 2 vpn extension](tests/4c8db261-a58b-42a6-a866-0a294deedde4.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -3524,12 +3548,6 @@ Caution: a test can generate a lot of noise...
 [Create and start Hyper-V virtual machine](tests/fb8d4d7e-f5a4-481c-8867-febf13f8b6d3.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
-### T1187
-[PetitPotam](tests/485ce873-2e65-4706-9c7e-ae3ab9e14213.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-[WinPwn - PowerSharpPack - Retrieving NTLM Hashes without Touching LSASS](tests/7f06b25c-799e-40f1-89db-999c9cc84317.md) ['windows'] (sigma rule :heavy_check_mark:)
-
-
 ### T1055.001
 [Process Injection via mavinject.exe](tests/74496461-11a1-4982-b439-4d87a550d254.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -3584,6 +3602,10 @@ Caution: a test can generate a lot of noise...
 [Copy a sensitive File over Administrative share with copy](tests/6ed67921-1774-44ba-bac6-adb51ed60660.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Copy a sensitive File over Administrative share with Powershell](tests/7762e120-5879-44ff-97f8-008b401b9a98.md) ['windows'] (sigma rule :heavy_check_mark:)
+
+
+### T1622
+[Detect a Debugger Presence in the Machine](tests/58bd8c8d-3a1a-4467-a69c-439c75469b07.md) ['windows'] (sigma rule :x:)
 
 
 ### T1021.006

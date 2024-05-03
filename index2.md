@@ -2292,6 +2292,10 @@
   * T1105 [Windows - BITSAdmin BITS Download](tests/a1921cd3-9a2d-47d5-a891-f1d0f2a7a31b.md)
 * proc_creation_win_bitsadmin_potential_persistence.yml
   * T1197 [Persist, Download, & Execute](tests/62a06ec5-5754-47d2-bcfc-123d8314c6ae.md)
+* proc_creation_win_browsers_chromium_headless_exec.yml
+  * T1564.003 [Headless Browser Accessing Mockbin](tests/0ad9ab92-c48c-4f08-9b20-9633277c4646.md)
+* proc_creation_win_browsers_chromium_mockbin_abuse.yml
+  * T1564.003 [Headless Browser Accessing Mockbin](tests/0ad9ab92-c48c-4f08-9b20-9633277c4646.md)
 * proc_creation_win_browsers_chromium_susp_load_extension.yml
   * T1176 [Google Chrome Load Unpacked Extension With Command Line](tests/7a714703-9f6b-461c-b06d-e6aeac650f27.md)
 * proc_creation_win_browsers_tor_execution.yml
@@ -2346,6 +2350,8 @@
   * T1003.005 [Cached Credential Dump via Cmdkey](tests/56506854-89d6-46a3-9804-b7fde90791f9.md)
   * T1087.001 [Enumerate all accounts via PowerShell (Local)](tests/ae4b6361-b5f8-46cb-a3f9-9cf108ccfe7b.md)
   * T1087.001 [Enumerate all accounts on Windows (Local)](tests/80887bec-5a9b-4efc-a81d-f83eb2eb32ab.md)
+* proc_creation_win_cmdl32_arbitrary_file_download.yml
+  * T1105 [Download a file with Microsoft Connection Manager Auto-Download](tests/d239772b-88e2-4a2e-8473-897503401bcc.md)
 * proc_creation_win_conhost_susp_child_process.yml
   * T1202 [Indirect Command Execution - conhost.exe](tests/cf3391e0-b482-4b02-87fc-ca8362269b29.md)
 * proc_creation_win_control_panel_item.yml
@@ -2541,18 +2547,16 @@
   * T1003 [Retrieve Microsoft IIS Service Account Credentials Using AppCmd (using config)](tests/42510244-5019-48fa-a0e5-66c3b76e6049.md)
 * proc_creation_win_infdefaultinstall_execute_sct_scripts.yml
   * T1218 [InfDefaultInstall.exe .inf Execution](tests/54ad7d5a-a1b5-472c-b6c4-f8090fb2daef.md)
+* proc_creation_win_jsc_execution.yml
+  * T1127 [Lolbin Jsc.exe compile javascript to dll](tests/3fc9fea2-871d-414d-8ef6-02e85e322b80.md)
+  * T1127 [Lolbin Jsc.exe compile javascript to exe](tests/1ec1c269-d6bd-49e7-b71b-a461f7fa7bc8.md)
 * proc_creation_win_ldifde_export.yml
   * T1069.002 [Active Directory Enumeration with LDIFDE](tests/22cf8cb9-adb1-4e8c-80ca-7c723dfc8784.md)
-* proc_creation_win_lolbin_cmdl32.yml
-  * T1105 [Download a file with Microsoft Connection Manager Auto-Download](tests/d239772b-88e2-4a2e-8473-897503401bcc.md)
 * proc_creation_win_lolbin_gpscript.yml
   * T1218 [Lolbin Gpscript logon option](tests/5bcda9cd-8e85-48fa-861d-b5a85d91d48c.md)
   * T1218 [Lolbin Gpscript startup option](tests/f8da74bb-21b8-4af9-8d84-f2c8e4a220e3.md)
 * proc_creation_win_lolbin_ie4uinit.yml
   * T1218 [Lolbas ie4uinit.exe use as proxy](tests/13c0804e-615e-43ad-b223-2dfbacd0b0b3.md)
-* proc_creation_win_lolbin_jsc.yml
-  * T1127 [Lolbin Jsc.exe compile javascript to dll](tests/3fc9fea2-871d-414d-8ef6-02e85e322b80.md)
-  * T1127 [Lolbin Jsc.exe compile javascript to exe](tests/1ec1c269-d6bd-49e7-b71b-a461f7fa7bc8.md)
 * proc_creation_win_lolbin_manage_bde.yml
   * T1216 [manage-bde.wsf Signed Script Command Execution](tests/2a8f2d3c-3dec-4262-99dd-150cb2a4d63a.md)
 * proc_creation_win_lolbin_mavinject_process_injection.yml
