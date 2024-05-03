@@ -1,0 +1,17 @@
+Attack_name: OS Credential Dumping
+Attack_description: |
+  Adversaries may attempt to dump credentials to obtain account login and credential material, normally in the form of a hash or a clear text password. Credentials can be obtained from OS caches, memory, or structures.(Citation: Brining MimiKatz to Unix) Credentials can then be used to perform [Lateral Movement](https://attack.mitre.org/tactics/TA0008) and access restricted information.
+
+  Several of the tools mentioned in associated sub-techniques may be used by both adversaries and professional security testers. Additional custom tools likely exist as well.
+guid: 0b207037-813c-4444-ac3f-b597cf280a67
+name: Send NTLM Hash with RPC Test Connection
+tactic:
+  - credential-access
+technique:
+  - T1003
+os:
+  - windows
+description: "RpcPing command can be used to send an RPC test connection to the target server (-s) and force the NTLM hash to be sent in the process. \nRef: https://twitter.com/vysecurity/status/974806438316072960"
+executor: powershell
+sigma: false
+sigma_rule: []

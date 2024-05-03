@@ -19,4 +19,4 @@ executor: command_prompt
 sigma: true
 sigma_rule:
   - id: 52788a70-f1da-40dd-8fbd-73b5865d6568
-    name: proc_creation_win_lolbin_jsc.yml
+    name: proc_creation_win_jsc_execution.yml

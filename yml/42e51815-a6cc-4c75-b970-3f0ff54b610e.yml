@@ -3,8 +3,9 @@ Attack_description: "An adversary may use legitimate desktop support and remote 
   such as `VNC`, `Team Viewer`, `AnyDesk`, `ScreenConnect`, `LogMein`, `AmmyyAdmin`, and other remote monitoring and management (RMM) tools, are commonly used as legitimate technical support software and
   may be allowed by application control within a target environment.(Citation: Symantec Living off the Land)(Citation: CrowdStrike 2015 Global Threat Report)(Citation: CrySyS Blog TeamSpy)\n\nRemote access
   software may be installed and used post-compromise as an alternate communications channel for redundant access or as a way to establish an interactive remote desktop session with the target system. They
-  may also be used as a component of malware to establish a reverse connection or back-connect to a service or adversary controlled system.\n \nAdversaries may similarly abuse response features included
-  in EDR and other defensive tools that enable remote access.\n\nInstallation of many remote access software may also include persistence (e.g., the software's installation routine creates a [Windows Service](https://attack.mitre.org/techniques/T1543/003))."
+  may also be used as a component of malware to establish a reverse connection or back-connect to a service or adversary-controlled system.\n \nAdversaries may similarly abuse response features included
+  in EDR and other defensive tools that enable remote access.\n\nInstallation of many remote access software may also include persistence (e.g., the software's installation routine creates a [Windows Service](https://attack.mitre.org/techniques/T1543/003)).
+  Remote access modules/features may also exist as part of otherwise existing software (e.g., Google Chrome’s Remote Desktop).(Citation: Google Chrome Remote Desktop)(Citation: Chrome Remote Desktop)"
 guid: 42e51815-a6cc-4c75-b970-3f0ff54b610e
 name: UltraVNC Execution
 tactic:

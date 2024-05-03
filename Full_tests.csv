@@ -245,6 +245,8 @@ defense-evasion;T1562.004;command_prompt;['windows'];Blackbit - Disable Windows 
 defense-evasion;T1562.004;command_prompt;['windows'];ESXi - Disable Firewall via Esxcli;bac8a340-be64-4491-a0cc-0985cb227f5a;False;23
 defense-evasion;T1562.004;powershell;['windows'];Set a firewall rule using New-NetFirewallRule;94be7646-25f6-467e-af23-585fb13000c8;False;24
 defense-evasion;T1553.003;command_prompt;['windows'];SIP (Subject Interface Package) Hijacking via Custom DLL;e12f5d8d-574a-4e9d-8a84-c0e8b4a8a675;False;1
+defense-evasion;T1562.012;sh;['linux'];Delete all auditd rules using auditctl;33a29ab1-cabb-407f-9448-269041bf2856;False;1
+defense-evasion;T1562.012;sh;['linux'];Disable auditd using auditctl;7906f0a6-b527-46ee-9026-6e81a9184e08;False;2
 defense-evasion;T1207;powershell;['windows'];DCShadow (Active Directory);0f4c5eb0-98a0-4496-9c3d-656b4f2bc8f6;True;1
 defense-evasion;T1610;bash;['containers'];Deploy Docker container;59aa6f26-7620-417e-9318-589e0fb7a372;False;1
 defense-evasion;T1112;command_prompt;['windows'];Modify Registry of Current User Profile - cmd;1324796b-d0f6-455a-b4ae-21ffee6aa6b9;True;1
@@ -316,6 +318,7 @@ defense-evasion;T1112;command_prompt;['windows'];Disabling ShowUI Settings of Wi
 defense-evasion;T1112;command_prompt;['windows'];Enable Proxy Settings;eb0ba433-63e5-4a8c-a9f0-27c4192e1336;False;67
 defense-evasion;T1112;command_prompt;['windows'];Set-Up Proxy Server;d88a3d3b-d016-4939-a745-03638aafd21b;False;68
 defense-evasion;T1112;command_prompt;['windows'];RDP Authentication Level Override;7e7b62e9-5f83-477d-8935-48600f38a3c6;False;69
+defense-evasion;T1112;command_prompt;['windows'];Enable RDP via Registry (fDenyTSConnections);16bdbe52-371c-4ccf-b708-79fba61f1db4;False;70
 defense-evasion;T1574.008;powershell;['windows'];powerShell Persistence via hijacking default modules - Get-Variable.exe;1561de08-0b4b-498e-8261-e922f3494aae;True;1
 defense-evasion;T1027.001;sh;['linux', 'macos'];Pad Binary to Change Hash - Linux/macOS dd;ffe2346c-abd5-4b45-a713-bf5f1ebd573a;False;1
 defense-evasion;T1027.001;sh;['linux', 'macos'];Pad Binary to Change Hash using truncate command - Linux/macOS;e22a9e89-69c7-410f-a473-e6c212cd2292;False;2
@@ -537,7 +540,7 @@ defense-evasion;T1562.008;sh;['iaas:aws'];AWS CloudWatch Log Stream Deletes;33ca
 defense-evasion;T1562.008;powershell;['office-365'];Office 365 - Set Audit Bypass For a Mailbox;c9a2f6fe-7197-488c-af6d-10c782121ca6;False;9
 defense-evasion;T1562.008;sh;['iaas:gcp'];GCP - Delete Activity Event Log;d56152ec-01d9-42a2-877c-aac1f6ebe8e6;False;10
 defense-evasion;T1564.003;powershell;['windows'];Hidden Window;f151ee37-9e2b-47e6-80e4-550b9f999b7a;True;1
-defense-evasion;T1564.003;command_prompt;['windows'];Headless Browser Accessing Mockbin;0ad9ab92-c48c-4f08-9b20-9633277c4646;False;2
+defense-evasion;T1564.003;command_prompt;['windows'];Headless Browser Accessing Mockbin;0ad9ab92-c48c-4f08-9b20-9633277c4646;True;2
 defense-evasion;T1027.006;powershell;['windows'];HTML Smuggling Remote Payload;30cbeda4-08d9-42f1-8685-197fad677734;False;1
 defense-evasion;T1070.004;sh;['linux', 'macos'];Delete a single file - FreeBSD/Linux/macOS;562d737f-2fc6-4b09-8c2a-7f8ff0828480;False;1
 defense-evasion;T1070.004;sh;['linux', 'macos'];Delete an entire folder - FreeBSD/Linux/macOS;a415f17e-ce8d-4ce2-a8b4-83b674e7017e;False;2
@@ -554,6 +557,7 @@ defense-evasion;T1027.002;sh;['linux'];Binary simply packed by UPX (linux);11c46
 defense-evasion;T1027.002;sh;['linux'];Binary packed by UPX, with modified headers (linux);f06197f8-ff46-48c2-a0c6-afc1b50665e1;False;2
 defense-evasion;T1027.002;sh;['macos'];Binary simply packed by UPX;b16ef901-00bb-4dda-b4fc-a04db5067e20;False;3
 defense-evasion;T1027.002;sh;['macos'];Binary packed by UPX, with modified headers;4d46e16b-5765-4046-9f25-a600d3e65e4d;False;4
+defense-evasion;T1622;powershell;['windows'];Detect a Debugger Presence in the Machine;58bd8c8d-3a1a-4467-a69c-439c75469b07;False;1
 defense-evasion;T1036.006;manual;['macos'];Space After Filename (Manual);89a7dd26-e510-4c9f-9b15-f3bae333360f;False;1
 defense-evasion;T1036.006;sh;['macos', 'linux'];Space After Filename;b95ce2eb-a093-4cd8-938d-5258cef656ea;False;2
 defense-evasion;T1550.002;command_prompt;['windows'];Mimikatz Pass the Hash;ec23cef9-27d9-46e4-a68d-6f75f7b86908;True;1
@@ -1405,6 +1409,7 @@ credential-access;T1003;powershell;['windows'];Dump svchost.exe to gather RDP cr
 credential-access;T1003;powershell;['windows'];Retrieve Microsoft IIS Service Account Credentials Using AppCmd (using list);6c7a4fd3-5b0b-4b30-a93e-39411b25d889;True;4
 credential-access;T1003;powershell;['windows'];Retrieve Microsoft IIS Service Account Credentials Using AppCmd (using config);42510244-5019-48fa-a0e5-66c3b76e6049;True;5
 credential-access;T1003;powershell;['windows'];Dump Credential Manager using keymgr.dll and rundll32.exe;84113186-ed3c-4d0d-8a3c-8980c86c1f4a;True;6
+credential-access;T1003;powershell;['windows'];Send NTLM Hash with RPC Test Connection;0b207037-813c-4444-ac3f-b597cf280a67;False;7
 credential-access;T1539;powershell;['windows'];Steal Firefox Cookies (Windows);4b437357-f4e9-4c84-9fa6-9bcee6f826aa;True;1
 credential-access;T1539;powershell;['windows'];Steal Chrome Cookies (Windows);26a6b840-4943-4965-8df5-ef1f9a282440;True;2
 credential-access;T1539;bash;['macos'];Steal Chrome Cookies via Remote Debugging (Mac);e43cfdaf-3fb8-4a45-8de0-7eee8741d072;False;3
@@ -1543,6 +1548,7 @@ credential-access;T1110.004;sh;['linux'];SSH Credential Stuffing From FreeBSD;a7
 credential-access;T1110.004;powershell;['windows'];Brute Force:Credential Stuffing using Kerbrute Tool;4852c630-87a9-409b-bb5e-5dc12c9ebcde;True;4
 credential-access;T1187;powershell;['windows'];PetitPotam;485ce873-2e65-4706-9c7e-ae3ab9e14213;True;1
 credential-access;T1187;powershell;['windows'];WinPwn - PowerSharpPack - Retrieving NTLM Hashes without Touching LSASS;7f06b25c-799e-40f1-89db-999c9cc84317;True;2
+credential-access;T1187;powershell;['windows'];Trigger an authenticated RPC call to a target server with no Sign flag set;81cfdd7f-1f41-4cc5-9845-bb5149438e37;False;3
 credential-access;T1003.008;bash;['linux'];Access /etc/shadow (Local);3723ab77-c546-403c-8fb4-bb577033b235;False;1
 credential-access;T1003.008;sh;['linux'];Access /etc/master.passwd (Local);5076874f-a8e6-4077-8ace-9e5ab54114a5;False;2
 credential-access;T1003.008;sh;['linux'];Access /etc/passwd (Local);60e860b6-8ae6-49db-ad07-5e73edd88f5d;False;3
@@ -1670,6 +1676,7 @@ discovery;T1135;powershell;['windows'];Share Discovery with PowerView;b1636f0a-b
 discovery;T1135;powershell;['windows'];PowerView ShareFinder;d07e4cc1-98ae-447e-9d31-36cb430d28c4;True;8
 discovery;T1135;powershell;['windows'];WinPwn - shareenumeration;987901d1-5b87-4558-a6d9-cffcabc638b8;True;9
 discovery;T1135;command_prompt;['windows'];Network Share Discovery via dir command;13daa2cf-195a-43df-a8bd-7dd5ffb607b5;False;10
+discovery;T1135;powershell;['windows'];Enumerate All Network Shares with SharpShares;d1fa2a69-b0a2-4e8a-9112-529b00c19a41;False;11
 discovery;T1120;powershell;['windows'];Win32_PnPEntity Hardware Inventory;2cb4dbf2-2dca-4597-8678-4d39d207a3a5;True;1
 discovery;T1120;powershell;['windows'];WinPwn - printercheck;cb6e76ca-861e-4a7f-be08-564caa3e6f75;True;2
 discovery;T1120;command_prompt;['windows'];Peripheral Device Discovery via fsutil;424e18fd-48b8-4201-8d3a-bf591523a686;False;3
@@ -1831,6 +1838,7 @@ discovery;T1518;sh;['macos'];Find and Display Safari Browser Version;103d6533-fd
 discovery;T1518;powershell;['windows'];WinPwn - Dotnetsearch;7e79a1b6-519e-433c-ad55-3ff293667101;True;4
 discovery;T1518;powershell;['windows'];WinPwn - DotNet;10ba02d0-ab76-4f80-940d-451633f24c5b;True;5
 discovery;T1518;powershell;['windows'];WinPwn - powerSQL;0bb64470-582a-4155-bde2-d6003a95ed34;True;6
+discovery;T1622;powershell;['windows'];Detect a Debugger Presence in the Machine;58bd8c8d-3a1a-4467-a69c-439c75469b07;False;1
 discovery;T1124;command_prompt;['windows'];System Time Discovery;20aba24b-e61f-4b26-b4ce-4784f763ca20;True;1
 discovery;T1124;powershell;['windows'];System Time Discovery - PowerShell;1d5711d6-655c-4a47-ae9c-6503c74fa877;True;2
 discovery;T1124;sh;['linux', 'macos'];System Time Discovery in FreeBSD/macOS;f449c933-0891-407f-821e-7916a21a1a6f;False;3
@@ -1917,6 +1925,8 @@ exfiltration;T1020;powershell;['windows'];IcedID Botnet HTTP PUT;9c780d3d-3a14-4
 exfiltration;T1020;powershell;['windows'];Exfiltration via Encrypted FTP;5b380e96-b0ef-4072-8a8e-f194cb9eb9ac;False;2
 exfiltration;T1048.002;command_prompt;['windows'];Exfiltrate data HTTPS using curl windows;1cdf2fb0-51b6-4fd8-96af-77020d5f1bf0;True;1
 exfiltration;T1048.002;bash;['macos', 'linux'];Exfiltrate data HTTPS using curl freebsd,linux or macos;4a4f31e2-46ea-4c26-ad89-f09ad1d5fe01;False;2
+exfiltration;T1048.002;sh;['linux'];Exfiltrate data in a file over HTTPS using wget;7ccdfcfa-6707-46bc-b812-007ab6ff951c;False;3
+exfiltration;T1048.002;sh;['linux'];Exfiltrate data as text over HTTPS using wget;8bec51da-7a6d-4346-b941-51eca448c4b0;False;4
 exfiltration;T1041;powershell;['windows'];C2 Data Exfiltration;d1253f6e-c29b-49dc-b466-2147a6191932;True;1
 exfiltration;T1041;powershell;['windows'];Text Based Data Exfiltration using DNS subdomains;c9207f3e-213d-4cc7-ad2a-7697a7237df9;False;2
 exfiltration;T1048;sh;['macos', 'linux'];Exfiltration Over Alternative Protocol - SSH;f6786cc8-beda-4915-a4d6-ac2f193bb988;False;1

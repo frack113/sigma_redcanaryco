@@ -10,8 +10,9 @@ Attack_description: "Adversaries may add adversary-controlled credentials to a c
   in the environment (i.e. [Cloud Accounts](https://attack.mitre.org/techniques/T1078/004)).(Citation: Rhino Security Labs AWS Privilege Escalation)(Citation: Sysdig ScarletEel 2.0) For example, in Azure
   AD environments, an adversary with the Application Administrator role can add a new set of credentials to their application's service principal. In doing so the adversary would be able to access the service
   principal’s roles and permissions, which may be different from those of the Application Administrator.(Citation: SpecterOps Azure Privilege Escalation) \n\nIn AWS environments, adversaries with the appropriate
-  permissions may also use the `sts:GetFederationToken` API call to create a temporary set of credentials tied to the permissions of the original user account. These credentials may remain valid for the
-  duration of their lifetime even if the original account’s API credentials are deactivated.\n(Citation: Crowdstrike AWS User Federation Persistence)"
+  permissions may also use the `sts:GetFederationToken` API call to create a temporary set of credentials to [Forge Web Credentials](https://attack.mitre.org/techniques/T1606) tied to the permissions of
+  the original user account. These temporary credentials may remain valid for the duration of their lifetime even if the original account’s API credentials are deactivated.\n(Citation: Crowdstrike AWS User
+  Federation Persistence)"
 guid: b8e747c3-bdf7-4d71-bce2-f1df2a057406
 name: Azure AD Application Hijacking - Service Principal
 tactic:

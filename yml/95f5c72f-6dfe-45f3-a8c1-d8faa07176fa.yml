@@ -20,24 +20,13 @@ technique:
   - T1562.003
 os:
   - windows
-description: |
-  In Windows operating systems, command line auditing is controlled through the following registry value:
-
-    Registry Path: HKLM\Software\Microsoft\Windows\CurrentVersion\Policies\System\Audit
-    Registry Value: ProcessCreationIncludeCmdLine_Enabled
-
-  When command line auditing is enabled, the system records detailed information about command execution, including the command executed, the user account responsible for executing the command, and the timestamp of the execution.
-  This information is crucial for security monitoring and forensic analysis, as it helps organizations detect and investigate unauthorized or malicious activities within their systems.
-  By default, command line auditing may not be enabled in Windows systems, and administrators must manually configure the appropriate registry settings to activate it.
-  Conversely, attackers may attempt to tamper with these registry keys to disable command line auditing, as part of their efforts to evade detection and cover their tracks while perpetrating malicious activities.
-
-  Because this attack runs a Powershell cmdlet, this attack can be detected by monitoring both:
-    Powershell Logging (Windows Powershell Event ID 400, 800, 4103, 4104)
-    Registry events (Windows Event ID 4657, Sysmon Event ID 13)
-
-  Read more here:
-  https://securitydatasets.com/notebooks/atomic/windows/defense_evasion/SDWIN-220703123711.html
-  https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/new-itemproperty?view=powershell-7.4#example-2-add-a-registry-entry-to-a-key
+description: "In Windows operating systems, command line auditing is controlled through the following registry value:\n\n  Registry Path: HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\\
+  Audit\n  \n  Registry Value: ProcessCreationIncludeCmdLine_Enabled\n\nWhen command line auditing is enabled, the system records detailed information about command execution, including the command executed,
+  the user account responsible for executing the command, and the timestamp of the execution.\nThis information is crucial for security monitoring and forensic analysis, as it helps organizations detect
+  and investigate unauthorized or malicious activities within their systems.\nBy default, command line auditing may not be enabled in Windows systems, and administrators must manually configure the appropriate
+  registry settings to activate it.\nConversely, attackers may attempt to tamper with these registry keys to disable command line auditing, as part of their efforts to evade detection and cover their tracks
+  while perpetrating malicious activities.\n\nBecause this attack runs a Powershell cmdlet, this attack can be detected by monitoring both:\n  Powershell Logging (Windows Powershell Event ID 400, 800, 4103,
+  4104)\n  Registry events (Windows Event ID 4657, Sysmon Event ID 13)\n\nRead more here:\nhttps://securitydatasets.com/notebooks/atomic/windows/defense_evasion/SDWIN-220703123711.html\nhttps://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/new-itemproperty?view=powershell-7.4#example-2-add-a-registry-entry-to-a-key\n"
 executor: powershell
 sigma: false
 sigma_rule: []

@@ -1,11 +1,13 @@
 Attack_name: 'Hide Artifacts: Hidden Window'
 Attack_description: "Adversaries may use hidden windows to conceal malicious activity from the plain sight of users. In some cases, windows that would typically be displayed when an application carries
-  out an operation can be hidden. This may be utilized by system administrators to avoid disrupting user work environments when carrying out administrative tasks. \n\nOn Windows, there are a variety of
-  features in scripting languages in Windows, such as [PowerShell](https://attack.mitre.org/techniques/T1059/001), Jscript, and [Visual Basic](https://attack.mitre.org/techniques/T1059/005) to make windows
-  hidden. One example of this is <code>powershell.exe -WindowStyle Hidden</code>. (Citation: PowerShell About 2019)\n\nSimilarly, on macOS the configurations for how applications run are listed in property
-  list (plist) files. One of the tags in these files can be <code>apple.awt.UIElement</code>, which allows for Java applications to prevent the application's icon from appearing in the Dock. A common use
-  for this is when applications run in the system tray, but don't also want to show up in the Dock.\n\nAdversaries may abuse these functionalities to hide otherwise visible windows from users so as not
-  to alert the user to adversary activity on the system.(Citation: Antiquated Mac Malware)"
+  out an operation can be hidden. This may be utilized by system administrators to avoid disrupting user work environments when carrying out administrative tasks. \n\nAdversaries may abuse these functionalities
+  to hide otherwise visible windows from users so as not to alert the user to adversary activity on the system.(Citation: Antiquated Mac Malware)\n\nOn macOS, the configurations for how applications run
+  are listed in property list (plist) files. One of the tags in these files can be <code>apple.awt.UIElement</code>, which allows for Java applications to prevent the application's icon from appearing in
+  the Dock. A common use for this is when applications run in the system tray, but don't also want to show up in the Dock.\n\nSimilarly, on Windows there are a variety of features in scripting languages,
+  such as [PowerShell](https://attack.mitre.org/techniques/T1059/001), Jscript, and [Visual Basic](https://attack.mitre.org/techniques/T1059/005) to make windows hidden. One example of this is <code>powershell.exe
+  -WindowStyle Hidden</code>.(Citation: PowerShell About 2019)\n\nIn addition, Windows supports the `CreateDesktop()` API that can create a hidden desktop window with its own corresponding <code>explorer.exe</code>
+  process.(Citation: Hidden VNC)(Citation: Anatomy of an hVNC Attack)  All applications running on the hidden desktop window, such as a hidden VNC (hVNC) session,(Citation: Hidden VNC) will be invisible
+  to other desktops windows."
 guid: 0ad9ab92-c48c-4f08-9b20-9633277c4646
 name: Headless Browser Accessing Mockbin
 tactic:
@@ -19,5 +21,9 @@ description: |
   The default Mockbin ID forwards to google.com and you may view the details here https://mockbin.org/bin/f6b9a876-a826-4ac0-83b8-639d6ad516ec/view.
   Reference: https://cert.gov.ua/article/5702579
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 1c526788-0abe-4713-862f-b520da5e5316
+    name: proc_creation_win_browsers_chromium_mockbin_abuse.yml
+  - id: ef9dcfed-690c-4c5d-a9d1-482cd422225c
+    name: proc_creation_win_browsers_chromium_headless_exec.yml
