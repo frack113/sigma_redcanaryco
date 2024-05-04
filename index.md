@@ -41,7 +41,7 @@ Caution: a test can generate a lot of noise...
 
 [Tamper with Windows Defender Evade Scanning -Extension](tests/315f4be6-2240-4552-b3e1-d1047f5eecea.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Tamper with Windows Defender Registry - Powershell](tests/a72cfef8-d252-48b3-b292-635d332625c3.md) ['windows'] (sigma rule :x:)
+[Tamper with Windows Defender Registry - Powershell](tests/a72cfef8-d252-48b3-b292-635d332625c3.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Stop Crowdstrike Falcon on Linux](tests/828a1278-81cc-4802-96ab-188bf29ca77d.md) ['linux'] (sigma rule :x:)
 
@@ -57,7 +57,7 @@ Caution: a test can generate a lot of noise...
 
 [Lockbit Black - Use Registry Editor to turn on automatic logon -Powershell](tests/5e27f36d-5132-4537-b43b-413b0d5eec9a.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Disable Hypervisor-Enforced Code Integrity (HVCI)](tests/70bd71e6-eba4-4e00-92f7-617911dbe020.md) ['windows'] (sigma rule :x:)
+[Disable Hypervisor-Enforced Code Integrity (HVCI)](tests/70bd71e6-eba4-4e00-92f7-617911dbe020.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Tamper with Defender ATP on Linux/MacOS](tests/40074085-dbc8-492b-90a3-11bcfc52fda8.md) ['linux', 'macos'] (sigma rule :x:)
 
@@ -85,7 +85,7 @@ Caution: a test can generate a lot of noise...
 
 [Tamper with Windows Defender ATP using Aliases - PowerShell](tests/c531aa6e-9c97-4b29-afee-9b7be6fc8a64.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Tamper with Windows Defender Registry - Reg.exe](tests/1f6743da-6ecc-4a93-b03f-dc357e4b313f.md) ['windows'] (sigma rule :x:)
+[Tamper with Windows Defender Registry - Reg.exe](tests/1f6743da-6ecc-4a93-b03f-dc357e4b313f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Tamper with Windows Defender Registry](tests/1b3e0146-a1e5-4c5c-89fb-1bb2ffe8fc45.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -519,7 +519,7 @@ Caution: a test can generate a lot of noise...
 
 [UACME Bypass Method 56](tests/235ec031-cd2d-465d-a7ae-68bab281e80e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Disable ConsentPromptBehaviorAdmin via registry keys](tests/a768aaa2-2442-475c-8990-69cf33af0f4e.md) ['windows'] (sigma rule :x:)
+[Disable ConsentPromptBehaviorAdmin via registry keys](tests/a768aaa2-2442-475c-8990-69cf33af0f4e.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Bypass UAC using Event Viewer (cmd)](tests/5073adf8-9a50-4bd9-b298-a9bd2ead8af9.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -1615,7 +1615,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1562.010
-[PowerShell Version 2 Downgrade](tests/47c96489-2f55-4774-a6df-39faff428f6f.md) ['windows'] (sigma rule :x:)
+[PowerShell Version 2 Downgrade](tests/47c96489-2f55-4774-a6df-39faff428f6f.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [ESXi - Change VIB acceptance level to CommunitySupported via ESXCLI](tests/14d55b96-b2f5-428d-8fed-49dc4d9dd616.md) ['linux'] (sigma rule :x:)
 
@@ -3089,7 +3089,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1553.003
-[SIP (Subject Interface Package) Hijacking via Custom DLL](tests/e12f5d8d-574a-4e9d-8a84-c0e8b4a8a675.md) ['windows'] (sigma rule :x:)
+[SIP (Subject Interface Package) Hijacking via Custom DLL](tests/e12f5d8d-574a-4e9d-8a84-c0e8b4a8a675.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1003.003

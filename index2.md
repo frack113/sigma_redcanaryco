@@ -2815,6 +2815,8 @@
 * proc_creation_win_powershell_disable_defender_av_security_monitoring.yml
   * T1562.001 [Tamper with Windows Defender Command Prompt](tests/aa875ed4-8935-47e2-b2c5-6ec00ab220d2.md)
   * T1562.001 [Disable Defender Using NirSoft AdvancedRun](tests/81ce22fd-9612-4154-918e-8a1f285d214d.md)
+* proc_creation_win_powershell_downgrade_attack.yml
+  * T1562.010 [PowerShell Version 2 Downgrade](tests/47c96489-2f55-4774-a6df-39faff428f6f.md)
 * proc_creation_win_powershell_download_cradles.yml
   * T1555.003 [WinPwn - Loot local Credentials - mimi-kittenz](tests/ec1d0b37-f659-4186-869f-31a554891611.md)
   * T1082 [WinPwn - Morerecon](tests/3278b2f6-f733-4875-9ef4-bfed34244f0a.md)
@@ -3265,6 +3267,7 @@
   * T1518 [Find and Display Internet Explorer Browser Version](tests/68981660-6670-47ee-a5fa-7e74806420a4.md)
 * proc_creation_win_reg_susp_paths.yml
   * T1562.001 [LockBit Black - Use Registry Editor to turn on automatic logon -cmd](tests/9719d0e1-4fe0-4b2e-9a72-7ad3ee8ddc70.md)
+  * T1562.001 [Tamper with Windows Defender Registry - Reg.exe](tests/1f6743da-6ecc-4a93-b03f-dc357e4b313f.md)
   * T1112 [Ursnif Malware Registry Key Creation](tests/c375558d-7c25-45e9-bd64-7b23a97c1db0.md)
   * T1562.001 [LockBit Black - Disable Privacy Settings Experience Using Registry -cmd](tests/d6d22332-d07d-498f-aea0-6139ecb7850e.md)
 * proc_creation_win_regedit_export_keys.yml
@@ -3278,6 +3281,8 @@
 * proc_creation_win_regsvr32_flags_anomaly.yml
   * T1218.010 [Regsvr32 remote COM scriptlet execution](tests/c9d0c4ef-8a96-4794-a75b-3d3a5e6f2a36.md)
   * T1218.010 [Regsvr32 local COM scriptlet execution](tests/449aa403-6aba-47ce-8a37-247d21ef0306.md)
+* proc_creation_win_regsvr32_susp_exec_path_2.yml
+  * T1553.003 [SIP (Subject Interface Package) Hijacking via Custom DLL](tests/e12f5d8d-574a-4e9d-8a84-c0e8b4a8a675.md)
 * proc_creation_win_regsvr32_susp_extensions.yml
   * T1218.010 [Regsvr32 Silent DLL Install Call DllRegisterServer](tests/9d71c492-ea2e-4c08-af16-c6994cdf029f.md)
   * T1218.010 [Regsvr32 Registering Non DLL](tests/1ae5ea1f-0a4e-4e54-b2f5-4ac328a7f421.md)
@@ -3285,6 +3290,8 @@
   * T1218.010 [Regsvr32 local DLL execution](tests/08ffca73-9a3d-471a-aeb0-68b4aa3ab37b.md)
   * T1564.006 [Register Portable Virtualbox](tests/c59f246a-34f8-4e4d-9276-c295ef9ba0dd.md)
   * T1218.010 [Regsvr32 local COM scriptlet execution](tests/449aa403-6aba-47ce-8a37-247d21ef0306.md)
+* proc_creation_win_regsvr32_susp_parent.yml
+  * T1553.003 [SIP (Subject Interface Package) Hijacking via Custom DLL](tests/e12f5d8d-574a-4e9d-8a84-c0e8b4a8a675.md)
 * proc_creation_win_regsvr32_uncommon_extension.yml
   * T1218.010 [Regsvr32 Registering Non DLL](tests/1ae5ea1f-0a4e-4e54-b2f5-4ac328a7f421.md)
 * proc_creation_win_remote_access_tools_anydesk.yml
@@ -4002,6 +4009,8 @@
   * T1562.001 [Tamper with Windows Defender Evade Scanning -Process](tests/a123ce6a-3916-45d6-ba9c-7d4081315c27.md)
   * T1562.001 [Tamper with Windows Defender Evade Scanning -Extension](tests/315f4be6-2240-4552-b3e1-d1047f5eecea.md)
   * T1562.001 [Tamper with Windows Defender Evade Scanning -Folder](tests/0b19f4ee-de90-4059-88cb-63c800c683ed.md)
+* registry_set_deviceguard_hypervisorenforcedcodeintegrity_disabled.yml
+  * T1562.001 [Disable Hypervisor-Enforced Code Integrity (HVCI)](tests/70bd71e6-eba4-4e00-92f7-617911dbe020.md)
 * registry_set_disable_administrative_share.yml
   * T1070.005 [Disable Administrative Share Creation at Startup](tests/99c657aa-ebeb-4179-a665-69288fdd12b8.md)
 * registry_set_disable_defender_firewall.yml
@@ -4013,6 +4022,7 @@
   * T1112 [Disable Windows Task Manager application](tests/af254e70-dd0e-4de6-9afe-a994d9ea8b62.md)
   * T1112 [Disable Windows Registry Tool](tests/ac34b0f7-0f85-4ac0-b93e-3ced2bc69bb8.md)
   * T1548.002 [Disable UAC admin consent prompt via ConsentPromptBehaviorAdmin registry key](tests/251c5936-569f-42f4-9ac2-87a173b9e9b8.md)
+  * T1548.002 [Disable ConsentPromptBehaviorAdmin via registry keys](tests/a768aaa2-2442-475c-8990-69cf33af0f4e.md)
   * T1112 [Disable Windows Toast Notifications](tests/003f466a-6010-4b15-803a-cbb478a314d7.md)
   * T1112 [Disable Windows Lock Workstation Feature](tests/3dacb0d2-46ee-4c27-ac1b-f9886bf91a56.md)
   * T1112 [Disable Windows Change Password Feature](tests/d4a6da40-618f-454d-9a9e-26af552aaeb0.md)
@@ -4115,6 +4125,8 @@
   * T1112 [Activate Windows NoPropertiesMyDocuments Group Policy Feature](tests/20fc9daa-bd48-4325-9aff-81b967a84b1d.md)
   * T1112 [Activate Windows NoSetTaskbar Group Policy Feature](tests/d29b7faf-7355-4036-9ed3-719bd17951ed.md)
   * T1112 [Disable Windows LogOff Button](tests/e246578a-c24d-46a7-9237-0213ff86fb0c.md)
+* registry_set_sip_persistence.yml
+  * T1553.003 [SIP (Subject Interface Package) Hijacking via Custom DLL](tests/e12f5d8d-574a-4e9d-8a84-c0e8b4a8a675.md)
 * registry_set_special_accounts.yml
   * T1564.002 [Create Hidden User in Registry](tests/173126b7-afe4-45eb-8680-fa9f6400431c.md)
   * T1564.002 [Create Hidden User in Registry](tests/173126b7-afe4-45eb-8680-fa9f6400431c.md)
@@ -4138,7 +4150,9 @@
 * registry_set_wdigest_enable_uselogoncredential.yml
   * T1112 [Modify registry to store logon credentials](tests/c0413fb5-33e2-40b7-9b6f-60b29f4a7a18.md)
 * registry_set_windows_defender_tamper.yml
+  * T1562.001 [Tamper with Windows Defender Registry - Powershell](tests/a72cfef8-d252-48b3-b292-635d332625c3.md)
   * T1562.001 [Tamper with Windows Defender ATP using Aliases - PowerShell](tests/c531aa6e-9c97-4b29-afee-9b7be6fc8a64.md)
+  * T1562.001 [Tamper with Windows Defender Registry - Reg.exe](tests/1f6743da-6ecc-4a93-b03f-dc357e4b313f.md)
   * T1562.001 [Tamper with Windows Defender Registry](tests/1b3e0146-a1e5-4c5c-89fb-1bb2ffe8fc45.md)
 * registry_set_winlogon_notify_key.yml
   * T1547.004 [Winlogon Notify Key Logon Persistence - PowerShell](tests/d40da266-e073-4e5a-bb8b-2b385023e5f9.md)
