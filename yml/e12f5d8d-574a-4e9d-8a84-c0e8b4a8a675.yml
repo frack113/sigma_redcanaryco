@@ -23,5 +23,11 @@ os:
 description: "Registers a DLL that logs signature checks, mimicking SIP hijacking. This test uses a DLL from \nhttps://github.com/gtworek/PSBits/tree/master/SIP and registers it using regsvr32, thereby
   causing\nthe system to utilize it during signature checks, and logging said checks.\n"
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: ab37a6ec-6068-432b-a64e-2c7bf95b1d22
+    name: proc_creation_win_regsvr32_susp_parent.yml
+  - id: 327ff235-94eb-4f06-b9de-aaee571324be
+    name: proc_creation_win_regsvr32_susp_exec_path_2.yml
+  - id: 5a2b21ee-6aaa-4234-ac9d-59a59edf90a1
+    name: registry_set_sip_persistence.yml

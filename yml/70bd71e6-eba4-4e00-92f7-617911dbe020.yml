@@ -25,5 +25,7 @@ description: "This test disables Hypervisor-Enforced Code Integrity (HVCI) by se
   \"Enabled\" value to \"0\".\nThe pre-req needs to be ran in order to setup HVCI and have it enabled. \nWe do not recommend running this in production.\n[Black Lotus Campaign](https://www.microsoft.com/en-us/security/blog/2023/04/11/guidance-for-investigating-attacks-using-cve-2022-21894-the-blacklotus-campaign/)\n\
   [Microsoft](https://learn.microsoft.com/en-us/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity)\n"
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 8b7273a4-ba5d-4d8a-b04f-11f2900d043a
+    name: registry_set_deviceguard_hypervisorenforcedcodeintegrity_disabled.yml

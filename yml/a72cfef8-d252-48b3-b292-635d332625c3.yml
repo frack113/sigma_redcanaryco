@@ -25,5 +25,7 @@ description: 'Disable Windows Defender by tampering with windows defender regist
 
   '
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 0eb46774-f1ab-4a74-8238-1155855f2263
+    name: registry_set_windows_defender_tamper.yml

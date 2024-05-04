@@ -63,7 +63,7 @@ defense-evasion;T1548.002;powershell;['windows'];Disable UAC admin consent promp
 defense-evasion;T1548.002;powershell;['windows'];UAC Bypass with WSReset Registry Modification;3b96673f-9c92-40f1-8a3e-ca060846f8d9;True;23
 defense-evasion;T1548.002;powershell;['windows'];Disable UAC - Switch to the secure desktop when prompting for elevation via registry key;85f3a526-4cfa-4fe7-98c1-dea99be025c7;False;24
 defense-evasion;T1548.002;command_prompt;['windows'];Disable UAC notification via registry keys;160a7c77-b00e-4111-9e45-7c2a44eda3fd;False;25
-defense-evasion;T1548.002;command_prompt;['windows'];Disable ConsentPromptBehaviorAdmin via registry keys;a768aaa2-2442-475c-8990-69cf33af0f4e;False;26
+defense-evasion;T1548.002;command_prompt;['windows'];Disable ConsentPromptBehaviorAdmin via registry keys;a768aaa2-2442-475c-8990-69cf33af0f4e;True;26
 defense-evasion;T1548.003;sh;['macos', 'linux'];Sudo usage;150c3a08-ee6e-48a6-aeaf-3659d24ceb4e;False;1
 defense-evasion;T1548.003;sh;['linux'];Sudo usage (freebsd);2bf9a018-4664-438a-b435-cc6f8c6f71b1;False;2
 defense-evasion;T1548.003;sh;['macos', 'linux'];Unlimited sudo cache timeout;a7b17659-dd5e-46f7-b7d1-e6792c91d0bc;False;3
@@ -244,7 +244,7 @@ defense-evasion;T1562.004;powershell;['windows'];LockBit Black - Unusual Windows
 defense-evasion;T1562.004;command_prompt;['windows'];Blackbit - Disable Windows Firewall using netsh firewall;91f348e6-3760-4997-a93b-2ceee7f254ee;True;22
 defense-evasion;T1562.004;command_prompt;['windows'];ESXi - Disable Firewall via Esxcli;bac8a340-be64-4491-a0cc-0985cb227f5a;False;23
 defense-evasion;T1562.004;powershell;['windows'];Set a firewall rule using New-NetFirewallRule;94be7646-25f6-467e-af23-585fb13000c8;False;24
-defense-evasion;T1553.003;command_prompt;['windows'];SIP (Subject Interface Package) Hijacking via Custom DLL;e12f5d8d-574a-4e9d-8a84-c0e8b4a8a675;False;1
+defense-evasion;T1553.003;command_prompt;['windows'];SIP (Subject Interface Package) Hijacking via Custom DLL;e12f5d8d-574a-4e9d-8a84-c0e8b4a8a675;True;1
 defense-evasion;T1562.012;sh;['linux'];Delete all auditd rules using auditctl;33a29ab1-cabb-407f-9448-269041bf2856;False;1
 defense-evasion;T1562.012;sh;['linux'];Disable auditd using auditctl;7906f0a6-b527-46ee-9026-6e81a9184e08;False;2
 defense-evasion;T1207;powershell;['windows'];DCShadow (Active Directory);0f4c5eb0-98a0-4496-9c3d-656b4f2bc8f6;True;1
@@ -375,7 +375,7 @@ defense-evasion;T1612;sh;['containers'];Build Image On Host;2db30061-589d-409b-b
 defense-evasion;T1055.002;powershell;['windows'];Portable Executable Injection;578025d5-faa9-4f6d-8390-aae739d503e1;False;1
 defense-evasion;T1562.010;powershell;['linux'];ESXi - Change VIB acceptance level to CommunitySupported via PowerCLI;062f92c9-28b1-4391-a5f8-9d8ca6852091;False;1
 defense-evasion;T1562.010;command_prompt;['linux'];ESXi - Change VIB acceptance level to CommunitySupported via ESXCLI;14d55b96-b2f5-428d-8fed-49dc4d9dd616;False;2
-defense-evasion;T1562.010;powershell;['windows'];PowerShell Version 2 Downgrade;47c96489-2f55-4774-a6df-39faff428f6f;False;3
+defense-evasion;T1562.010;powershell;['windows'];PowerShell Version 2 Downgrade;47c96489-2f55-4774-a6df-39faff428f6f;True;3
 defense-evasion;T1218.005;command_prompt;['windows'];Mshta executes JavaScript Scheme Fetch Remote Payload With GetObject;1483fab9-4f52-4217-a9ce-daa9d7747cae;True;1
 defense-evasion;T1218.005;command_prompt;['windows'];Mshta executes VBScript to execute malicious command;906865c3-e05f-4acc-85c4-fbc185455095;True;2
 defense-evasion;T1218.005;powershell;['windows'];Mshta Executes Remote HTML Application (HTA);c4b97eeb-5249-4455-a607-59f95485cb45;True;3
@@ -467,12 +467,12 @@ defense-evasion;T1562.001;sh;['linux'];Suspend History;94f6a1c9-aae7-46a4-9083-2
 defense-evasion;T1562.001;sh;['linux'];Reboot Linux Host via Kernel System Request;6d6d3154-1a52-4d1a-9d51-92ab8148b32e;False;41
 defense-evasion;T1562.001;sh;['linux'];Clear Pagging Cache;f790927b-ea85-4a16-b7b2-7eb44176a510;False;42
 defense-evasion;T1562.001;sh;['linux'];Disable Memory Swap;e74e4c63-6fde-4ad2-9ee8-21c3a1733114;False;43
-defense-evasion;T1562.001;powershell;['windows'];Disable Hypervisor-Enforced Code Integrity (HVCI);70bd71e6-eba4-4e00-92f7-617911dbe020;False;44
+defense-evasion;T1562.001;powershell;['windows'];Disable Hypervisor-Enforced Code Integrity (HVCI);70bd71e6-eba4-4e00-92f7-617911dbe020;True;44
 defense-evasion;T1562.001;command_prompt;['windows'];AMSI Bypass - Override AMSI via COM;17538258-5699-4ff1-92d1-5ac9b0dc21f5;True;45
 defense-evasion;T1562.001;bash;['iaas:aws'];AWS - GuardDuty Suspension or Deletion;11e65d8d-e7e4-470e-a3ff-82bc56ad938e;False;46
 defense-evasion;T1562.001;sh;['linux', 'macos'];Tamper with Defender ATP on Linux/MacOS;40074085-dbc8-492b-90a3-11bcfc52fda8;False;47
-defense-evasion;T1562.001;command_prompt;['windows'];Tamper with Windows Defender Registry - Reg.exe;1f6743da-6ecc-4a93-b03f-dc357e4b313f;False;48
-defense-evasion;T1562.001;powershell;['windows'];Tamper with Windows Defender Registry - Powershell;a72cfef8-d252-48b3-b292-635d332625c3;False;49
+defense-evasion;T1562.001;command_prompt;['windows'];Tamper with Windows Defender Registry - Reg.exe;1f6743da-6ecc-4a93-b03f-dc357e4b313f;True;48
+defense-evasion;T1562.001;powershell;['windows'];Tamper with Windows Defender Registry - Powershell;a72cfef8-d252-48b3-b292-635d332625c3;True;49
 defense-evasion;T1562.001;powershell;['linux'];ESXi - Disable Account Lockout Policy via PowerCLI;091a6290-cd29-41cb-81ea-b12f133c66cb;False;50
 defense-evasion;T1562.001;powershell;['windows'];Delete Microsoft Defender ASR Rules - InTune;eea0a6c2-84e9-4e8c-a242-ac585d28d0d1;False;51
 defense-evasion;T1562.001;powershell;['windows'];Delete Microsoft Defender ASR Rules - GPO;0e7b8a4b-2ca5-4743-a9f9-96051abb6e50;False;52
@@ -649,7 +649,7 @@ privilege-escalation;T1548.002;powershell;['windows'];Disable UAC admin consent 
 privilege-escalation;T1548.002;powershell;['windows'];UAC Bypass with WSReset Registry Modification;3b96673f-9c92-40f1-8a3e-ca060846f8d9;True;23
 privilege-escalation;T1548.002;powershell;['windows'];Disable UAC - Switch to the secure desktop when prompting for elevation via registry key;85f3a526-4cfa-4fe7-98c1-dea99be025c7;False;24
 privilege-escalation;T1548.002;command_prompt;['windows'];Disable UAC notification via registry keys;160a7c77-b00e-4111-9e45-7c2a44eda3fd;False;25
-privilege-escalation;T1548.002;command_prompt;['windows'];Disable ConsentPromptBehaviorAdmin via registry keys;a768aaa2-2442-475c-8990-69cf33af0f4e;False;26
+privilege-escalation;T1548.002;command_prompt;['windows'];Disable ConsentPromptBehaviorAdmin via registry keys;a768aaa2-2442-475c-8990-69cf33af0f4e;True;26
 privilege-escalation;T1548.003;sh;['macos', 'linux'];Sudo usage;150c3a08-ee6e-48a6-aeaf-3659d24ceb4e;False;1
 privilege-escalation;T1548.003;sh;['linux'];Sudo usage (freebsd);2bf9a018-4664-438a-b435-cc6f8c6f71b1;False;2
 privilege-escalation;T1548.003;sh;['macos', 'linux'];Unlimited sudo cache timeout;a7b17659-dd5e-46f7-b7d1-e6792c91d0bc;False;3
