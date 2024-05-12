@@ -18,5 +18,7 @@ description: |
   Upon successful execution a listing of Systems from AD will output with their paths.
   Reference: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-wmiobject?view=powershell-5.1
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 31d68132-4038-47c7-8f8e-635a39a7c174
+    name: win_ldap_recon.yml

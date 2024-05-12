@@ -1585,7 +1585,7 @@ discovery;T1033;powershell;['windows'];Find computers where user has session - S
 discovery;T1033;powershell;['windows'];User Discovery With Env Vars PowerShell Script;dcb6cdee-1fb0-4087-8bf8-88cfd136ba51;True;4
 discovery;T1033;powershell;['windows'];GetCurrent User with PowerShell Script;1392bd0f-5d5a-429e-81d9-eb9d4d4d5b3b;True;5
 discovery;T1033;powershell;['windows'];System Discovery - SocGholish whoami;3d257a03-eb80-41c5-b744-bb37ac7f65c7;True;6
-discovery;T1033;command_prompt;['windows'];System Owner/User Discovery Using Command Prompt;ba38e193-37a6-4c41-b214-61b33277fe36;False;7
+discovery;T1033;command_prompt;['windows'];System Owner/User Discovery Using Command Prompt;ba38e193-37a6-4c41-b214-61b33277fe36;True;7
 discovery;T1613;sh;['containers'];Docker Container and Resource Discovery;ea2255df-d781-493b-9693-ac328f9afc3f;False;1
 discovery;T1613;sh;['containers'];Podman Container and Resource Discovery;fc631702-3f03-4f2b-8d8a-6b3d055580a1;False;2
 discovery;T1615;command_prompt;['windows'];Display group policy information via gpresult;0976990f-53b1-4d3f-a185-6df5be429d3b;True;1
@@ -1677,6 +1677,7 @@ discovery;T1135;powershell;['windows'];PowerView ShareFinder;d07e4cc1-98ae-447e-
 discovery;T1135;powershell;['windows'];WinPwn - shareenumeration;987901d1-5b87-4558-a6d9-cffcabc638b8;True;9
 discovery;T1135;command_prompt;['windows'];Network Share Discovery via dir command;13daa2cf-195a-43df-a8bd-7dd5ffb607b5;False;10
 discovery;T1135;powershell;['windows'];Enumerate All Network Shares with SharpShares;d1fa2a69-b0a2-4e8a-9112-529b00c19a41;False;11
+discovery;T1135;powershell;['windows'];Enumerate All Network Shares with Snaffler;b19d74b7-5e72-450a-8499-82e49e379d1a;False;12
 discovery;T1120;powershell;['windows'];Win32_PnPEntity Hardware Inventory;2cb4dbf2-2dca-4597-8678-4d39d207a3a5;True;1
 discovery;T1120;powershell;['windows'];WinPwn - printercheck;cb6e76ca-861e-4a7f-be08-564caa3e6f75;True;2
 discovery;T1120;command_prompt;['windows'];Peripheral Device Discovery via fsutil;424e18fd-48b8-4201-8d3a-bf591523a686;False;3
@@ -1762,6 +1763,7 @@ discovery;T1057;powershell;['windows'];Process Discovery - Get-Process;3b3809b6-
 discovery;T1057;powershell;['windows'];Process Discovery - get-wmiObject;b51239b4-0129-474f-a2b4-70f855b9f2c2;False;4
 discovery;T1057;command_prompt;['windows'];Process Discovery - wmic process;640cbf6d-659b-498b-ba53-f6dd1a1cc02c;True;5
 discovery;T1057;command_prompt;['windows'];Discover Specific Process - tasklist;11ba69ee-902e-4a0f-b3b6-418aed7d7ddb;False;6
+discovery;T1057;powershell;['windows'];Process Discovery - Process Hacker;966f4c16-1925-4d9b-8ce0-01334ee0867d;False;7
 discovery;T1069.001;sh;['linux', 'macos'];Permission Groups Discovery (Local);952931a4-af0b-4335-bbbe-73c8c5b327ae;False;1
 discovery;T1069.001;command_prompt;['windows'];Basic Permission Groups Discovery Windows (Local);1f454dd6-e134-44df-bebb-67de70fb6cd8;True;2
 discovery;T1069.001;powershell;['windows'];Permission Groups Discovery PowerShell (Local);a580462d-2c19-4bc7-8b9a-57a41b7d3ba4;True;3
@@ -1820,7 +1822,7 @@ discovery;T1018;powershell;['windows'];Enumerate domain computers within Active 
 discovery;T1018;powershell;['windows'];Enumerate Active Directory Computers with Get-AdComputer;97e89d9e-e3f5-41b5-a90f-1e0825df0fdf;True;17
 discovery;T1018;powershell;['windows'];Enumerate Active Directory Computers with ADSISearcher;64ede6ac-b57a-41c2-a7d1-32c6cd35397d;True;18
 discovery;T1018;powershell;['windows'];Get-DomainController with PowerView;b9d2e8ca-5520-4737-8076-4f08913da2c4;True;19
-discovery;T1018;powershell;['windows'];Get-WmiObject to Enumerate Domain Controllers;e3cf5123-f6c9-4375-bdf2-1bb3ba43a1ad;False;20
+discovery;T1018;powershell;['windows'];Get-WmiObject to Enumerate Domain Controllers;e3cf5123-f6c9-4375-bdf2-1bb3ba43a1ad;True;20
 discovery;T1018;command_prompt;['windows'];Remote System Discovery - net group Domain Controller;5843529a-5056-4bc1-9c13-a311e2af4ca0;True;21
 discovery;T1046;bash;['linux', 'macos'];Port Scan;68e907da-2539-48f6-9fc9-257a78c05540;False;1
 discovery;T1046;sh;['linux', 'macos'];Port Scan Nmap;515942b0-a09f-4163-a7bb-22fefb6f185f;True;2
