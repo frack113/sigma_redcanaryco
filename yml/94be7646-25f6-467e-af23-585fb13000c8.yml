@@ -15,5 +15,9 @@ os:
   - windows
 description: This test will attempt to create a new inbound/outbound firewall rule using the New-NetFirewallRule commandlet.
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: eca81e8d-09e1-4d04-8614-c91f44fd0519
+    name: win_firewall_as_add_rule_wmiprvse.yml
+  - id: cde0a575-7d3d-4a49-9817-b8004a7bf105
+    name: win_firewall_as_add_rule.yml

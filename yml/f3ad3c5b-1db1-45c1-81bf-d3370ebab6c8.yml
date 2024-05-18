@@ -24,5 +24,7 @@ description: |
   Upon execution, calc.exe will be launched.
   This technique is documented by Levan Abesadze - https://medium.com/@Wolverineisstillalive/system-binary-proxy-execution-rundll32-bypass-method-790871e1f2b7
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: e593cf51-88db-4ee1-b920-37e89012a3c9
+    name: proc_creation_win_rundll32_susp_activity.yml

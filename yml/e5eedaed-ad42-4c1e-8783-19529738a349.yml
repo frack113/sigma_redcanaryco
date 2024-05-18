@@ -15,5 +15,9 @@ description: |
   Executes a process under a trusted Microsoft signed binary,mseddge. This test will spawn "calc.exe" as a child process of msedge.exe
   - https://lolbas-project.github.io/lolbas/Binaries/Msedge/
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 737e618a-a410-49b5-bec3-9e55ff7fbc15
+    name: proc_creation_win_calc_uncommon_exec.yml
+  - id: 378a05d8-963c-46c9-bcce-13c7657eac99
+    name: proc_creation_win_susp_electron_execution_proxy.yml

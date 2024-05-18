@@ -18,5 +18,11 @@ description: |
   [LOLBAS](https://lolbas-project.github.io/lolbas/Binaries/CustomShellHost/)
   [BishopFox](https://bishopfox.com/blog/edr-bypass-with-lolbins)
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: f5d19838-41b5-476c-98d8-ba8af4929ee2
+    name: proc_creation_win_susp_copy_system_dir_lolbin.yml
+  - id: fff9d2b7-e11c-4a69-93d3-40ef66189767
+    name: proc_creation_win_susp_copy_system_dir.yml
+  - id: e4a6b256-3e47-40fc-89d2-7a477edd6915
+    name: proc_creation_win_susp_system_exe_anomaly.yml

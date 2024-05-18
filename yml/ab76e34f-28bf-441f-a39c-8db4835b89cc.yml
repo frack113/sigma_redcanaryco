@@ -17,5 +17,9 @@ description: |
   - https://lolbas-project.github.io/lolbas/Binaries/Provlaunch/
   Registry keys are deleted after successful execution.
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 2a4b3e61-9d22-4e4a-b60f-6e8f0cde6f25
+    name: proc_creation_win_registry_provlaunch_provisioning_command.yml
+  - id: f9999590-1f94-4a34-a91e-951e47bedefd
+    name: proc_creation_win_provlaunch_susp_child_process.yml

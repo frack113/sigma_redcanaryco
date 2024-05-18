@@ -19,5 +19,7 @@ description: 'Enabling RDP through remote registry.
 
   '
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 0d5675be-bc88-4172-86d3-1e96a4476536
+    name: proc_creation_win_reg_rdp_keys_tamper.yml

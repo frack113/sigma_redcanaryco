@@ -23,5 +23,7 @@ description: |
   This test, based on common Gamarue tradecraft, consists of a DLL file with a .init extension being run by rundll32.exe. When this DLL file's 'krnl' function is called, it launches a Windows pop-up.
   DLL created with the AtomicTestHarnesses Portable Executable Builder script.
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: c3a99af4-35a9-4668-879e-c09aeb4f2bdf
+    name: proc_creation_win_rundll32_uncommon_dll_extension.yml

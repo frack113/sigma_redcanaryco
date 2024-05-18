@@ -24,5 +24,7 @@ description: 'This atomic regarding UACDisableNotify pertains to the notificatio
 
   '
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: c5f6a85d-b647-40f7-bbad-c10b66bab038
+    name: registry_set_uac_disable_notification.yml

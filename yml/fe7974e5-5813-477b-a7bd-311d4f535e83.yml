@@ -20,5 +20,7 @@ description: |
 
   See [Passing the Hash with Remote Desktop](https://www.kali.org/blog/passing-hash-remote-desktop/)
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: d6ce7ebd-260b-4323-9768-a9631c8d4db2
+    name: registry_set_lsa_disablerestrictedadmin.yml
