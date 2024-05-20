@@ -157,6 +157,7 @@
   * T1055.012 [RunPE via VBA](tests/3ad4a037-1598-4136-837c-4027e4fa319b.md)
 * file_event_win_powershell_drop_binary_or_script.yml
   * T1176 [Google Chrome Load Unpacked Extension With Command Line](tests/7a714703-9f6b-461c-b06d-e6aeac650f27.md)
+  * T1505.005 [Simulate Patching termsrv.dll](tests/0b2eadeb-4a64-4449-9d43-3d999f4a317b.md)
 * file_event_win_powershell_exploit_scripts.yml
   * T1558.003 [WinPwn - Kerberoasting](tests/78d10e20-c874-45f2-a9df-6fea0120ec27.md)
   * T1552.001 [WinPwn - SessionGopher](tests/c9dc9de3-f961-4284-bd2d-f959c9f9fda5.md)
@@ -2274,6 +2275,8 @@
   * T1036.004 [Creating W32Time similar named service using schtasks](tests/f9f2fe59-96f7-4a7d-ba9f-a9783200d4c9.md)
 * proc_creation_win_at_interactive_execution.yml
   * T1053.002 [At.exe Scheduled task](tests/4a6c0dc4-0f2a-4203-9298-a5a9bdc21ed8.md)
+* proc_creation_win_atbroker_uncommon_ats_execution.yml
+  * T1546.008 [Atbroker.exe (AT) Executes Arbitrary Command via Registry Key](tests/444ff124-4c83-4e28-8df6-6efd3ece6bd4.md)
 * proc_creation_win_attrib_hiding_files.yml
   * T1222.001 [attrib - hide file](tests/32b979da-7b68-42c9-9a99-0e39900fc36c.md)
   * T1564.001 [Create Windows Hidden File with Attrib](tests/dadb792e-4358-4d8d-9207-b771faa0daa5.md)
@@ -3080,6 +3083,9 @@
   * T1003.002 [dump volume shadow copy hives with System.IO.File](tests/9d77fed7-05f8-476e-a81b-8ff0472c64d0.md)
 * proc_creation_win_powershell_script_engine_parent.yml
   * T1216 [SyncAppvPublishingServer Signed Script PowerShell Command Execution](tests/275d963d-3f36-476c-8bef-a2a3960ee6eb.md)
+* proc_creation_win_powershell_set_acl.yml
+  * T1505.005 [Modify Terminal Services DLL Path](tests/18136e38-0530-49b2-b309-eed173787471.md)
+  * T1505.005 [Simulate Patching termsrv.dll](tests/0b2eadeb-4a64-4449-9d43-3d999f4a317b.md)
 * proc_creation_win_powershell_set_policies_to_unsecure_level.yml
   * T1216 [SyncAppvPublishingServer Signed Script PowerShell Command Execution](tests/275d963d-3f36-476c-8bef-a2a3960ee6eb.md)
   * T1112 [Change Powershell Execution Policy to Bypass](tests/f3a6cceb-06c9-48e5-8df8-8867a6814245.md)
@@ -3395,10 +3401,14 @@
   * T1562.001 [Tamper with Windows Defender Command Prompt](tests/aa875ed4-8935-47e2-b2c5-6ec00ab220d2.md)
   * T1119 [Recon information for export with Command Prompt](tests/aa1180e2-f329-4e1e-8625-2472ec0bfaf3.md)
   * T1007 [System Service Discovery](tests/89676ba1-b1f8-47ee-b940-2e1a113ebc71.md)
+* proc_creation_win_sc_sdset_allow_service_changes.yml
+  * T1569.002 [Modifying ACL of Service Control Manager via SDET](tests/bf07f520-3909-4ef5-aa22-877a50f2f77b.md)
 * proc_creation_win_sc_sdset_deny_service_access.yml
   * T1564 [Create and Hide a Service with sc.exe](tests/333c7de0-6fbe-42aa-ac2b-c7e40b18246a.md)
 * proc_creation_win_sc_sdset_hide_sevices.yml
   * T1564 [Create and Hide a Service with sc.exe](tests/333c7de0-6fbe-42aa-ac2b-c7e40b18246a.md)
+* proc_creation_win_sc_sdset_modification.yml
+  * T1569.002 [Modifying ACL of Service Control Manager via SDET](tests/bf07f520-3909-4ef5-aa22-877a50f2f77b.md)
 * proc_creation_win_sc_service_path_modification.yml
   * T1543.003 [Modify Fax service to run PowerShell](tests/ed366cde-7d12-49df-a833-671904770b9f.md)
 * proc_creation_win_sc_service_tamper_for_persistence.yml
@@ -3483,6 +3493,7 @@
   * T1036.003 [Malicious process Masquerading as LSM.exe](tests/83810c46-f45e-4485-9ab6-8ed0e9e6ed7f.md)
   * T1003.003 [Copy NTDS.dit from Volume Shadow Copy](tests/c6237146-9ea6-4711-85c9-c56d263a6b03.md)
   * T1036.003 [Masquerading as Windows LSASS process](tests/5ba5a3d1-cf3c-4499-968a-a93155d1f717.md)
+  * T1505.005 [Simulate Patching termsrv.dll](tests/0b2eadeb-4a64-4449-9d43-3d999f4a317b.md)
   * T1140 [Certutil Rename and Decode](tests/71abc534-3c05-4d0c-80f7-cbe93cb2aa94.md)
   * T1105 [MAZE Propagation Script](tests/70f4d07c-5c3e-4d53-bb0a-cdf3ada14baf.md)
   * T1546.008 [Replace binary of sticky keys](tests/934e90cf-29ca-48b3-863c-411737ad44e3.md)
@@ -3950,6 +3961,8 @@
   * T1547.005 [Modify HKLM:\System\CurrentControlSet\Control\Lsa Security Support Provider configuration in registry](tests/afdfd7e3-8a0b-409f-85f7-886fdf249c9e.md)
 * registry_event_stickykey_like_backdoor.yml
   * T1546.008 [Attaches Command Prompt as a Debugger to a List of Target Processes](tests/3309f53e-b22b-4eb6-8fd2-a6cf58b355a9.md)
+* registry_event_susp_atbroker_change.yml
+  * T1546.008 [Atbroker.exe (AT) Executes Arbitrary Command via Registry Key](tests/444ff124-4c83-4e28-8df6-6efd3ece6bd4.md)
 * registry_event_susp_lsass_dll_load.yml
   * T1547.008 [Modify Registry to load Arbitrary DLL into LSASS - LsaDbExtPt](tests/8ecef16d-d289-46b4-917b-0dba6dc81cf1.md)
 * registry_event_susp_mic_cam_access.yml
@@ -3961,6 +3974,7 @@
   * T1112 [Windows Add Registry Value to Load Service in Safe Mode without Network](tests/1dd59fb3-1cb3-4828-805d-cf80b4c3bbb5.md)
 * registry_set_add_port_monitor.yml
   * T1547.010 [Add Port Monitor persistence in Registry](tests/d34ef297-f178-4462-871e-9ce618d44e50.md)
+  * T1547.012 [Print Processors](tests/f7d38f47-c61b-47cc-a59d-fc0368f47ed0.md)
 * registry_set_allow_rdp_remote_assistance_feature.yml
   * T1112 [Allow RDP Remote Assistance Feature](tests/86677d0e-0b5e-4a2b-b302-454175f9aa9e.md)
 * registry_set_amsi_com_hijack.yml
@@ -4132,6 +4146,7 @@
   * T1562.001 [Kill antimalware protected processes using Backstab](tests/24a12b91-05a7-4deb-8d7f-035fa98591bc.md)
 * registry_set_servicedll_hijack.yml
   * T1543.003 [TinyTurla backdoor service w64time](tests/ef0581fd-528e-4662-87bc-4c2affb86940.md)
+  * T1505.005 [Modify Terminal Services DLL Path](tests/18136e38-0530-49b2-b309-eed173787471.md)
 * registry_set_set_nopolicies_user.yml
   * T1112 [Activate Windows NoSetTaskbar Group Policy Feature](tests/d29b7faf-7355-4036-9ed3-719bd17951ed.md)
   * T1112 [Activate Windows NoClose Group Policy Feature](tests/12f50e15-dbc6-478b-a801-a746e8ba1723.md)
@@ -4159,6 +4174,7 @@
   * T1112 [Mimic Ransomware - Allow Multiple RDP Sessions per User](tests/35727d9e-7a7f-4d0c-a259-dc3906d6e8b9.md)
 * registry_set_terminal_server_tampering.yml
   * T1078.001 [Enable Guest account with RDP capability and admin privileges](tests/99747561-ed8d-47f2-9c91-1e5fde1ed6e0.md)
+  * T1505.005 [Modify Terminal Services DLL Path](tests/18136e38-0530-49b2-b309-eed173787471.md)
 * registry_set_timeproviders_dllname.yml
   * T1547.003 [Edit an existing time provider](tests/29e0afca-8d1d-471a-8d34-25512fc48315.md)
   * T1547.003 [Create a new time provider](tests/df1efab7-bc6d-4b88-8be9-91f55ae017aa.md)

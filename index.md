@@ -2065,7 +2065,7 @@ Caution: a test can generate a lot of noise...
 
 [Use PsExec to execute a command on a remote host](tests/873106b7-cfed-454b-8680-fa9f6400431c.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Modifying ACL of Service Control Manager via SDET](tests/bf07f520-3909-4ef5-aa22-877a50f2f77b.md) ['windows'] (sigma rule :x:)
+[Modifying ACL of Service Control Manager via SDET](tests/bf07f520-3909-4ef5-aa22-877a50f2f77b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Execute a Command as a Service](tests/2382dee2-a75f-49aa-9378-f52df6ed3fb1.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -2461,7 +2461,7 @@ Caution: a test can generate a lot of noise...
 ### T1546.008
 [Create Symbolic Link From osk.exe to cmd.exe](tests/51ef369c-5e87-4f33-88cd-6d61be63edf2.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Atbroker.exe (AT) Executes Arbitrary Command via Registry Key](tests/444ff124-4c83-4e28-8df6-6efd3ece6bd4.md) ['windows'] (sigma rule :x:)
+[Atbroker.exe (AT) Executes Arbitrary Command via Registry Key](tests/444ff124-4c83-4e28-8df6-6efd3ece6bd4.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 [Replace binary of sticky keys](tests/934e90cf-29ca-48b3-863c-411737ad44e3.md) ['windows'] (sigma rule :heavy_check_mark:)
 
@@ -3183,9 +3183,9 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1505.005
-[Modify Terminal Services DLL Path](tests/18136e38-0530-49b2-b309-eed173787471.md) ['windows'] (sigma rule :x:)
+[Modify Terminal Services DLL Path](tests/18136e38-0530-49b2-b309-eed173787471.md) ['windows'] (sigma rule :heavy_check_mark:)
 
-[Simulate Patching termsrv.dll](tests/0b2eadeb-4a64-4449-9d43-3d999f4a317b.md) ['windows'] (sigma rule :x:)
+[Simulate Patching termsrv.dll](tests/0b2eadeb-4a64-4449-9d43-3d999f4a317b.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1571
@@ -3705,7 +3705,7 @@ Caution: a test can generate a lot of noise...
 
 
 ### T1547.012
-[Print Processors](tests/f7d38f47-c61b-47cc-a59d-fc0368f47ed0.md) ['windows'] (sigma rule :x:)
+[Print Processors](tests/f7d38f47-c61b-47cc-a59d-fc0368f47ed0.md) ['windows'] (sigma rule :heavy_check_mark:)
 
 
 ### T1552
