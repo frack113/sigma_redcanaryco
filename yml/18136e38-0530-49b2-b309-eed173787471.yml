@@ -16,5 +16,11 @@ os:
 description: This atomic test simulates the modification of the ServiceDll value in HKLM\System\CurrentControlSet\services\TermService\Parameters. This technique may be leveraged by adversaries to establish
   persistence by loading a patched version of the DLL containing malicious code.
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: bdeb2cff-af74-4094-8426-724dc937f20a
+    name: proc_creation_win_powershell_set_acl.yml
+  - id: 3f6b7b62-61aa-45db-96bd-9c31b36b653c
+    name: registry_set_terminal_server_tampering.yml
+  - id: 612e47e9-8a59-43a6-b404-f48683f45bd6
+    name: registry_set_servicedll_hijack.yml

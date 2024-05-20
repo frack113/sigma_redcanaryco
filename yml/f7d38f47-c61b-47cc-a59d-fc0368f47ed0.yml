@@ -24,5 +24,7 @@ description: |
 
   The payload source code is based on a blog post by stmxcsr: [https://stmxcsr.com/persistence/print-processor.html](https://stmxcsr.com/persistence/print-processor.html)
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 944e8941-f6f6-4ee8-ac05-1c224e923c0e
+    name: registry_set_add_port_monitor.yml

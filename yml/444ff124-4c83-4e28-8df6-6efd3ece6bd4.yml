@@ -28,5 +28,9 @@ description: 'Executes code specified in the registry for a new AT (Assistive Te
 
   '
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 9577edbb-851f-4243-8c91-1d5b50c1a39b
+    name: registry_event_susp_atbroker_change.yml
+  - id: f24bcaea-0cd1-11eb-adc1-0242ac120002
+    name: proc_creation_win_atbroker_uncommon_ats_execution.yml

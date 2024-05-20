@@ -16,5 +16,9 @@ os:
 description: "Modify permissions of Service Control Manager via SDSET. This allows any administrative user to escalate privilege and create a service with SYSTEM level privileges.Restart is required.\n\
   [Blog](https://0xv1n.github.io/posts/scmanager/)  \n"
 executor: command_prompt
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: 6c8fbee5-dee8-49bc-851d-c3142d02aa47
+    name: proc_creation_win_sc_sdset_allow_service_changes.yml
+  - id: 98c5aeef-32d5-492f-b174-64a691896d25
+    name: proc_creation_win_sc_sdset_modification.yml

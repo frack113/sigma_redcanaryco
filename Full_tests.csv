@@ -677,7 +677,7 @@ privilege-escalation;T1053.003;sh;['linux'];Cron - Add script to /etc/cron.d fol
 privilege-escalation;T1053.003;bash;['linux'];Cron - Add script to /var/spool/cron/crontabs/ folder;2d943c18-e74a-44bf-936f-25ade6cccab4;False;4
 privilege-escalation;T1098.003;powershell;['azure-ad'];Azure AD - Add Company Administrator Role to a user;4d77f913-56f5-4a14-b4b1-bf7bb24298ad;False;1
 privilege-escalation;T1098.003;powershell;['azure-ad'];Simulate - Post BEC persistence via user password reset followed by user added to company administrator role;14f3af20-61f1-45b8-ad31-4637815f3f44;False;2
-privilege-escalation;T1547.012;powershell;['windows'];Print Processors;f7d38f47-c61b-47cc-a59d-fc0368f47ed0;False;1
+privilege-escalation;T1547.012;powershell;['windows'];Print Processors;f7d38f47-c61b-47cc-a59d-fc0368f47ed0;True;1
 privilege-escalation;T1574.001;command_prompt;['windows'];DLL Search Order Hijacking - amsi.dll;8549ad4b-b5df-4a2d-a3d7-2aee9e7052a3;True;1
 privilege-escalation;T1055.003;powershell;['windows'];Thread Execution Hijacking;578025d5-faa9-4f6d-8390-aae527d503e1;True;1
 privilege-escalation;T1546.011;command_prompt;['windows'];Application Shim Installation;9ab27e22-ee62-4211-962b-d36d9a0e6a18;True;1
@@ -744,7 +744,7 @@ privilege-escalation;T1546.012;powershell;['windows'];GlobalFlags in Image File 
 privilege-escalation;T1546.008;powershell;['windows'];Attaches Command Prompt as a Debugger to a List of Target Processes;3309f53e-b22b-4eb6-8fd2-a6cf58b355a9;True;1
 privilege-escalation;T1546.008;command_prompt;['windows'];Replace binary of sticky keys;934e90cf-29ca-48b3-863c-411737ad44e3;True;2
 privilege-escalation;T1546.008;command_prompt;['windows'];Create Symbolic Link From osk.exe to cmd.exe;51ef369c-5e87-4f33-88cd-6d61be63edf2;True;3
-privilege-escalation;T1546.008;command_prompt;['windows'];Atbroker.exe (AT) Executes Arbitrary Command via Registry Key;444ff124-4c83-4e28-8df6-6efd3ece6bd4;False;4
+privilege-escalation;T1546.008;command_prompt;['windows'];Atbroker.exe (AT) Executes Arbitrary Command via Registry Key;444ff124-4c83-4e28-8df6-6efd3ece6bd4;True;4
 privilege-escalation;T1055.004;command_prompt;['windows'];Process Injection via C#;611b39b7-e243-4c81-87a4-7145a90358b1;True;1
 privilege-escalation;T1055.004;powershell;['windows'];EarlyBird APC Queue Injection in Go;73785dd2-323b-4205-ab16-bb6f06677e14;False;2
 privilege-escalation;T1055.004;powershell;['windows'];Remote Process Injection with Go using NtQueueApcThreadEx WinAPI;4cc571b1-f450-414a-850f-879baf36aa06;False;3
@@ -996,7 +996,7 @@ execution;T1569.002;bash;['linux'];psexec.py (Impacket);edbcd8c9-3639-4844-afad-
 execution;T1569.002;powershell;['windows'];BlackCat pre-encryption cmds with Lateral Movement;31eb7828-97d7-4067-9c1e-c6feb85edc4b;True;4
 execution;T1569.002;command_prompt;['windows'];Use RemCom to execute a command on a remote host;a5d8cdeb-be90-43a9-8b26-cc618deac1e0;True;5
 execution;T1569.002;command_prompt;['windows'];Snake Malware Service Create;b8db787e-dbea-493c-96cb-9272296ddc49;True;6
-execution;T1569.002;command_prompt;['windows'];Modifying ACL of Service Control Manager via SDET;bf07f520-3909-4ef5-aa22-877a50f2f77b;False;7
+execution;T1569.002;command_prompt;['windows'];Modifying ACL of Service Control Manager via SDET;bf07f520-3909-4ef5-aa22-877a50f2f77b;True;7
 execution;T1053.002;command_prompt;['windows'];At.exe Scheduled task;4a6c0dc4-0f2a-4203-9298-a5a9bdc21ed8;True;1
 execution;T1053.002;sh;['linux'];At - Schedule a job;7266d898-ac82-4ec0-97c7-436075d0d08e;False;2
 persistence;T1053.005;command_prompt;['windows'];Scheduled Task Startup Script;fec27f65-db86-4c2d-b66c-61945aee87c2;True;1
@@ -1036,7 +1036,7 @@ persistence;T1053.003;bash;['linux'];Cron - Add script to /var/spool/cron/cronta
 persistence;T1137;command_prompt;['windows'];Office Application Startup - Outlook as a C2;bfe6ac15-c50b-4c4f-a186-0fc6b8ba936c;True;1
 persistence;T1098.003;powershell;['azure-ad'];Azure AD - Add Company Administrator Role to a user;4d77f913-56f5-4a14-b4b1-bf7bb24298ad;False;1
 persistence;T1098.003;powershell;['azure-ad'];Simulate - Post BEC persistence via user password reset followed by user added to company administrator role;14f3af20-61f1-45b8-ad31-4637815f3f44;False;2
-persistence;T1547.012;powershell;['windows'];Print Processors;f7d38f47-c61b-47cc-a59d-fc0368f47ed0;False;1
+persistence;T1547.012;powershell;['windows'];Print Processors;f7d38f47-c61b-47cc-a59d-fc0368f47ed0;True;1
 persistence;T1574.001;command_prompt;['windows'];DLL Search Order Hijacking - amsi.dll;8549ad4b-b5df-4a2d-a3d7-2aee9e7052a3;True;1
 persistence;T1137.006;powershell;['windows'];Code Executed Via Excel Add-in File (XLL);441b1a0f-a771-428a-8af0-e99e4698cda3;True;1
 persistence;T1137.006;powershell;['windows'];Persistent Code Execution Via Excel Add-in File (XLL);9c307886-9fef-41d5-b344-073a0f5b2f5f;False;2
@@ -1045,8 +1045,8 @@ persistence;T1137.006;powershell;['windows'];Persistent Code Execution Via Excel
 persistence;T1137.006;powershell;['windows'];Persistent Code Execution Via PowerPoint VBA Add-in File (PPAM);f89e58f9-2b49-423b-ac95-1f3e7cfd8277;False;5
 persistence;T1505.002;powershell;['windows'];Install MS Exchange Transport Agent Persistence;43e92449-ff60-46e9-83a3-1a38089df94d;True;1
 persistence;T1556.002;powershell;['windows'];Install and Register Password Filter DLL;a7961770-beb5-4134-9674-83d7e1fa865c;True;1
-persistence;T1505.005;powershell;['windows'];Simulate Patching termsrv.dll;0b2eadeb-4a64-4449-9d43-3d999f4a317b;False;1
-persistence;T1505.005;powershell;['windows'];Modify Terminal Services DLL Path;18136e38-0530-49b2-b309-eed173787471;False;2
+persistence;T1505.005;powershell;['windows'];Simulate Patching termsrv.dll;0b2eadeb-4a64-4449-9d43-3d999f4a317b;True;1
+persistence;T1505.005;powershell;['windows'];Modify Terminal Services DLL Path;18136e38-0530-49b2-b309-eed173787471;True;2
 persistence;T1176;manual;['linux', 'windows', 'macos'];Chrome/Chromium (Developer Mode);3ecd790d-2617-4abf-9a8c-4e8d47da9ee1;False;1
 persistence;T1176;manual;['linux', 'windows', 'macos'];Chrome/Chromium (Chrome Web Store);4c83940d-8ca5-4bb2-8100-f46dc914bc3f;False;2
 persistence;T1176;manual;['linux', 'windows', 'macos'];Firefox;cb790029-17e6-4c43-b96f-002ce5f10938;False;3
@@ -1097,7 +1097,7 @@ persistence;T1546.012;powershell;['windows'];GlobalFlags in Image File Execution
 persistence;T1546.008;powershell;['windows'];Attaches Command Prompt as a Debugger to a List of Target Processes;3309f53e-b22b-4eb6-8fd2-a6cf58b355a9;True;1
 persistence;T1546.008;command_prompt;['windows'];Replace binary of sticky keys;934e90cf-29ca-48b3-863c-411737ad44e3;True;2
 persistence;T1546.008;command_prompt;['windows'];Create Symbolic Link From osk.exe to cmd.exe;51ef369c-5e87-4f33-88cd-6d61be63edf2;True;3
-persistence;T1546.008;command_prompt;['windows'];Atbroker.exe (AT) Executes Arbitrary Command via Registry Key;444ff124-4c83-4e28-8df6-6efd3ece6bd4;False;4
+persistence;T1546.008;command_prompt;['windows'];Atbroker.exe (AT) Executes Arbitrary Command via Registry Key;444ff124-4c83-4e28-8df6-6efd3ece6bd4;True;4
 persistence;T1136.002;command_prompt;['windows'];Create a new Windows domain admin user;fcec2963-9951-4173-9bfa-98d8b7834e62;True;1
 persistence;T1136.002;command_prompt;['windows'];Create a new account similar to ANONYMOUS LOGON;dc7726d2-8ccb-4cc6-af22-0d5afb53a548;True;2
 persistence;T1136.002;powershell;['windows'];Create a new Domain Account using PowerShell;5a3497a4-1568-4663-b12a-d4a5ed70c7d7;True;3

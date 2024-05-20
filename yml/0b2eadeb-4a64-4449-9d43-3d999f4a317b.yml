@@ -17,5 +17,11 @@ description: |
   Simulates patching of termsrv.dll by making a benign change to the file and replacing it with the original afterwards.
   Before we can make the modifications we need to take ownership of the file and grant ourselves the necessary permissions.
 executor: powershell
-sigma: false
-sigma_rule: []
+sigma: true
+sigma_rule:
+  - id: fff9d2b7-e11c-4a69-93d3-40ef66189767
+    name: proc_creation_win_susp_copy_system_dir.yml
+  - id: bdeb2cff-af74-4094-8426-724dc937f20a
+    name: proc_creation_win_powershell_set_acl.yml
+  - id: 7047d730-036f-4f40-b9d8-1c63e36d5e62
+    name: file_event_win_powershell_drop_binary_or_script.yml
