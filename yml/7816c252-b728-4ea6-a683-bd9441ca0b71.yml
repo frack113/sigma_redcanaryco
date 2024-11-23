@@ -1,0 +1,17 @@
+Attack_name: Signed Binary Proxy Execution
+Attack_description: |-
+  Adversaries may bypass process and/or signature-based defenses by proxying execution of malicious content with signed, or otherwise trusted, binaries. Binaries used in this technique are often Microsoft-signed files, indicating that they have been either downloaded from Microsoft or are already native in the operating system.(Citation: LOLBAS Project) Binaries signed with trusted digital certificates can typically execute on Windows systems protected by digital signature validation. Several Microsoft signed binaries that are default on Windows installations can be used to proxy execution of other files or commands.
+
+  Similarly, on Linux systems adversaries may abuse trusted binaries such as <code>split</code> to proxy execution of malicious commands.(Citation: split man page)(Citation: GTFO split)
+guid: 7816c252-b728-4ea6-a683-bd9441ca0b71
+name: System Binary Proxy Execution - Wlrmdr Lolbin
+tactic:
+  - defense-evasion
+technique:
+  - T1218
+os:
+  - windows
+description: Use wlrmdr(Windows Logon Reminder executable) as a proxy binary to evade defensive countermeasures
+executor: powershell
+sigma: false
+sigma_rule: []

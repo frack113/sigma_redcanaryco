@@ -1,0 +1,17 @@
+Attack_name: System Service Discovery
+Attack_description: |-
+  Adversaries may try to gather information about registered local system services. Adversaries may obtain information about services using tools as well as OS utility commands such as <code>sc query</code>, <code>tasklist /svc</code>, <code>systemctl --type=service</code>, and <code>net start</code>.
+
+  Adversaries may use the information from [System Service Discovery](https://attack.mitre.org/techniques/T1007) during automated discovery to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or attempts specific actions.
+guid: 51f17016-d8fa-4360-888a-df4bf92c4a04
+name: Get-Service Execution
+tactic:
+  - discovery
+technique:
+  - T1007
+os:
+  - windows
+description: Executes the Get-Service cmdlet to gather objects representing all services on the local system.
+executor: command_prompt
+sigma: false
+sigma_rule: []

@@ -15,7 +15,7 @@ technique:
 os:
   - linux
 description: 'An adversary may try to re-purpose a system account to appear legitimate. In this test change the login shell of the nobody account, change its password to nobody, su to nobody, exit, then
-  reset nobody''s shell to /usr/sbin/nologin.
+  reset nobody''s shell to /usr/sbin/nologin. Here is how the nobody entry should look like in `/etc/passwd` before the test is executed and right after the cleanup: `# -> nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin`
 
   '
 executor: bash

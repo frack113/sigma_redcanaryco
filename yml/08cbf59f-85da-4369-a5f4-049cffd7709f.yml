@@ -18,7 +18,7 @@ technique:
   - T1486
 os:
   - linux
-description: 'Attempts to encrypt data on target systems as root to simulate an inturruption authentication to target system. If root permissions are not available then attempts to encrypt data within user''s
+description: 'Attempts to encrypt data on target systems as root to simulate an interruption authentication to target system. If root permissions are not available then attempts to encrypt data within user''s
   home directory.
 
   '

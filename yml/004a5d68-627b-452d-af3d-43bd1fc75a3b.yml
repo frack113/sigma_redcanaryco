@@ -1,0 +1,21 @@
+Attack_name: 'System Services: Service Execution'
+Attack_description: |-
+  Adversaries may abuse the Windows service control manager to execute malicious commands or payloads. The Windows service control manager (<code>services.exe</code>) is an interface to manage and manipulate services.(Citation: Microsoft Service Control Manager) The service control manager is accessible to users via GUI components as well as system utilities such as <code>sc.exe</code> and [Net](https://attack.mitre.org/software/S0039).
+
+  [PsExec](https://attack.mitre.org/software/S0029) can also be used to execute commands or payloads via a temporary Windows service created through the service control manager API.(Citation: Russinovich Sysinternals) Tools such as [PsExec](https://attack.mitre.org/software/S0029) and <code>sc.exe</code> can accept remote servers as arguments and may be used to conduct remote execution.
+
+  Adversaries may leverage these mechanisms to execute malicious content. This can be done by either executing a new or modified service. This technique is the execution used in conjunction with [Windows Service](https://attack.mitre.org/techniques/T1543/003) during service persistence or privilege escalation.
+guid: 004a5d68-627b-452d-af3d-43bd1fc75a3b
+name: Pipe Creation - PsExec Tool Execution From Suspicious Locations
+tactic:
+  - execution
+technique:
+  - T1569.002
+os:
+  - windows
+description: Requires PsExec tool installed. BlackCat Ransomeware tried to propagate by creating pipe using PsExec process executing from suspicious locations (In the particular case the legitimate PsExec
+  executable is embedded within the Windows variant and is dropped in the victim’s %TEMP% directory). pon successful execution, PsExec will be executed from suspicious location and create a new pipe to
+  execute CMD.
+executor: powershell
+sigma: false
+sigma_rule: []

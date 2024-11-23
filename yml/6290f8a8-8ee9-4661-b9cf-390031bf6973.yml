@@ -17,7 +17,7 @@ technique:
   - T1070.002
 os:
   - macos
-description: 'This test truncates the system log files using the truncate utility with (-s 0 or --size=0) parameter which sets file size to zero, thus emptying the file content
+description: 'This test truncates the system log files using the truncate utility with (-s 0) parameter which sets file size to zero, thus emptying the file content
 
   '
 executor: sh

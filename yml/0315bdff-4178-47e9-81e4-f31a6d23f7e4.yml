@@ -15,6 +15,6 @@ technique:
 os:
   - macos
 description: This test enables the guest account on macOS using sysadminctl utility.
-executor: command_prompt
+executor: sh
 sigma: false
 sigma_rule: []

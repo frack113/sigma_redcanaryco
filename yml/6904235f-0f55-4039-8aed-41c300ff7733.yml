@@ -1,0 +1,22 @@
+Attack_name: 'Valid Accounts: Local Accounts'
+Attack_description: "Adversaries may obtain and abuse credentials of a local account as a means of gaining Initial Access, Persistence, Privilege Escalation, or Defense Evasion. Local accounts are those
+  configured by an organization for use by users, remote support, services, or for administration on a single system or service.\n\nLocal Accounts may also be abused to elevate privileges and harvest credentials
+  through [OS Credential Dumping](https://attack.mitre.org/techniques/T1003). Password reuse may allow the abuse of local accounts across a set of machines on a network for the purposes of Privilege Escalation
+  and Lateral Movement. "
+guid: 6904235f-0f55-4039-8aed-41c300ff7733
+name: Use PsExec to elevate to NT Authority\SYSTEM account
+tactic:
+  - defense-evasion
+  - persistence
+  - privilege-escalation
+  - initial-access
+technique:
+  - T1078.003
+os:
+  - windows
+description: "PsExec is a powerful tool most known for its remote management capability. However, it can also be used to run processes as the local system account.\n\nThe local system account is a default
+  windows account which has unrestricted access to all system resources.\n\nUpon successful execution, PsExec.exe will spawn a command prompt which will run 'whoami' as the local system account and then
+  exit.    \n"
+executor: command_prompt
+sigma: false
+sigma_rule: []

@@ -12,7 +12,7 @@ tactic:
 technique:
   - T1083
 os:
-  - linux
+  - windows
 description: |
   An adversary uses the find command to enumerate vmdks on an ESXi host.
   [Reference](https://www.crowdstrike.com/blog/hypervisor-jackpotting-ecrime-actors-increase-targeting-of-esxi-servers/)

@@ -12,7 +12,7 @@ tactic:
 technique:
   - T1529
 os:
-  - linux
+  - windows
 description: |
   Avoslocker malware has inbuilt functionality to enumerate the VM instances and uses the esxcli command to forcefully power off them.
   [Reference](https://blogs.vmware.com/security/2022/02/avoslocker-modern-linux-ransomware-threats.html)

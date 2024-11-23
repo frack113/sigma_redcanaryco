@@ -1,0 +1,18 @@
+Attack_name: Data from Removable Media
+Attack_description: "Adversaries may search connected removable media on computers they have compromised to find files of interest. Sensitive data can be collected from any removable media (optical disk
+  drive, USB memory, etc.) connected to the compromised system prior to Exfiltration. Interactive command shells may be in use, and common functionality within [cmd](https://attack.mitre.org/software/S0106)
+  may be used to gather information. \n\nSome adversaries may also use [Automated Collection](https://attack.mitre.org/techniques/T1119) on removable media."
+guid: 0b29f7e3-a050-44b7-bf05-9fb86af1ec2e
+name: Identify Documents on USB and Removable Media via PowerShell
+tactic:
+  - collection
+technique:
+  - T1025
+os:
+  - windows
+description: "This test simulates an attack where PowerShell is used to detect connected USB or other removable storage devices and gather a list of specific document files \n(e.g., .docx, .xls, .txt, .pdf).
+  The command works by first identifying removable drives on the system and then recursively searching through each one for files \nmatching the targeted extensions. If no removable drives are present,
+  the script will return a message stating that no media is detected. This behavior mimics \nhow adversaries might scan for sensitive documents on removable devices for exfiltration or analysis.\n"
+executor: command_prompt
+sigma: false
+sigma_rule: []

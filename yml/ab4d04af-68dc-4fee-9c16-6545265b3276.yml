@@ -1,0 +1,20 @@
+Attack_name: 'Command and Scripting Interpreter: Bash'
+Attack_description: |-
+  Adversaries may abuse Unix shell commands and scripts for execution. Unix shells are the primary command prompt on Linux and macOS systems, though many variations of the Unix shell exist (e.g. sh, bash, zsh, etc.) depending on the specific OS or distribution.(Citation: DieNet Bash)(Citation: Apple ZShell) Unix shells can control every aspect of a system, with certain commands requiring elevated privileges.
+
+  Unix shells also support scripts that enable sequential execution of commands as well as other typical programming operations such as conditionals and loops. Common uses of shell scripts include long or repetitive tasks, or the need to run the same set of commands on multiple systems.
+
+  Adversaries may abuse Unix shells to execute various commands or payloads. Interactive shells may be accessed through command and control channels or during lateral movement such as with [SSH](https://attack.mitre.org/techniques/T1021/004). Adversaries may also leverage shell scripts to deliver and execute multiple commands on victims or as part of payloads used for persistence.
+guid: ab4d04af-68dc-4fee-9c16-6545265b3276
+name: Shell Creation using busybox command
+tactic:
+  - execution
+technique:
+  - T1059.004
+os:
+  - linux
+description: "BusyBox is a multi-call binary. A multi-call binary is an executable program that performs the same job as more than one utility program. It can be used to break out from restricted environments
+  by spawning an interactive system shell. \nReference - https://gtfobins.github.io/gtfobins/busybox/"
+executor: sh
+sigma: false
+sigma_rule: []

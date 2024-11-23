@@ -1,0 +1,19 @@
+Attack_name: Indirect Command Execution
+Attack_description: |-
+  Adversaries may abuse utilities that allow for command execution to bypass security restrictions that limit the use of command-line interpreters. Various Windows utilities may be used to execute commands, possibly without invoking [cmd](https://attack.mitre.org/software/S0106). For example, [Forfiles](https://attack.mitre.org/software/S0193), the Program Compatibility Assistant (pcalua.exe), components of the Windows Subsystem for Linux (WSL), Scriptrunner.exe, as well as other utilities may invoke the execution of programs and commands from a [Command and Scripting Interpreter](https://attack.mitre.org/techniques/T1059), Run window, or via scripts.(Citation: VectorSec ForFiles Aug 2017)(Citation: Evi1cg Forfiles Nov 2017)(Citation: Secure Team - Scriptrunner.exe)(Citation: SS64)(Citation: Bleeping Computer - Scriptrunner.exe)
+
+  Adversaries may abuse these features for [Defense Evasion](https://attack.mitre.org/tactics/TA0005), specifically to perform arbitrary execution while subverting detections and/or mitigation controls (such as Group Policy) that limit/prevent the usage of [cmd](https://attack.mitre.org/software/S0106) or file extensions more commonly associated with malicious payloads.
+guid: 0fd14730-6226-4f5e-8d67-43c65f1be940
+name: Indirect Command Execution - Scriptrunner.exe
+tactic:
+  - defense-evasion
+technique:
+  - T1202
+os:
+  - windows
+description: |-
+  The "ScriptRunner.exe" binary can be abused to proxy execution through it and bypass possible whitelisting. Upon test execution, calc.exe should open
+  Reference: https://x.com/NickTyrer/status/914234924655312896
+executor: powershell
+sigma: false
+sigma_rule: []

@@ -13,7 +13,7 @@ tactic:
 technique:
   - T1562.010
 os:
-  - linux
+  - windows
 description: |
   An adversary will change the VIB acceptance level to CommunitySupported to downgrade the acceptance criteria via ESXCLI. Afterwards an adversary may proceed to installing malicious VIBs on the host.
   [Reference](https://www.mandiant.com/resources/blog/esxi-hypervisors-detection-hardening)

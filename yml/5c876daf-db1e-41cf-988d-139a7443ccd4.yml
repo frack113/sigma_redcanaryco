@@ -1,0 +1,17 @@
+Attack_name: Peripheral Device Discovery
+Attack_description: 'Adversaries may attempt to gather information about attached peripheral devices and components connected to a computer system.(Citation: Peripheral Discovery Linux)(Citation: Peripheral
+  Discovery macOS) Peripheral devices could include auxiliary resources that support a variety of functionalities such as keyboards, printers, cameras, smart card readers, or removable storage. The information
+  may be used to enhance their awareness of the system and network environment or may be used for further actions.'
+guid: 5c876daf-db1e-41cf-988d-139a7443ccd4
+name: Get Printer Device List via PowerShell Command
+tactic:
+  - discovery
+technique:
+  - T1120
+os:
+  - windows
+description: "This test uses PowerShell to list printers on a Windows system, demonstrating a discovery technique attackers might use to \ngather details on connected devices. Using Get-Printer, they can
+  view information on all available printers, identifying \npotential devices for further targeting.\n"
+executor: powershell
+sigma: false
+sigma_rule: []

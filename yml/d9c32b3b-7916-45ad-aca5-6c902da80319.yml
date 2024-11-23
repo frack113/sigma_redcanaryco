@@ -1,0 +1,19 @@
+Attack_name: 'System Network Configuration Discovery: Internet Connection Discovery'
+Attack_description: |-
+  Adversaries may check for Internet connectivity on compromised systems. This may be performed during automated discovery and can be accomplished in numerous ways such as using [Ping](https://attack.mitre.org/software/S0097), <code>tracert</code>, and GET requests to websites.
+
+  Adversaries may use the results and responses from these requests to determine if the system is capable of communicating with their C2 servers before attempting to connect to them. The results may also be used to identify routes, redirectors, and proxy servers.
+guid: d9c32b3b-7916-45ad-aca5-6c902da80319
+name: Check internet connection using Test-NetConnection in PowerShell (TCP-SMB)
+tactic:
+  - discovery
+technique:
+  - T1016.001
+os:
+  - windows
+description: 'Check internet connection using PowerShell''s Test-NetConnection cmdlet and the TCP protocol to check for outbound SMB (Port 445) access. The default target is 8.8.8.8.
+
+  '
+executor: powershell
+sigma: false
+sigma_rule: []

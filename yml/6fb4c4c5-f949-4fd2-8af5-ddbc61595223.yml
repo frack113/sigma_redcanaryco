@@ -1,0 +1,19 @@
+Attack_name: Query Registry
+Attack_description: |-
+  Adversaries may interact with the Windows Registry to gather information about the system, configuration, and installed software.
+
+  The Registry contains a significant amount of information about the operating system, configuration, software, and security.(Citation: Wikipedia Windows Registry) Information can easily be queried using the [Reg](https://attack.mitre.org/software/S0075) utility, though other means to access the Registry exist. Some of the information may help adversaries to further their operation within a network. Adversaries may use the information from [Query Registry](https://attack.mitre.org/techniques/T1012) during automated discovery to shape follow-on behaviors, including whether or not the adversary fully infects the target and/or attempts specific actions.
+guid: 6fb4c4c5-f949-4fd2-8af5-ddbc61595223
+name: Reg query for AlwaysInstallElevated status
+tactic:
+  - discovery
+technique:
+  - T1012
+os:
+  - windows
+description: The reg query commands allows to check the status of the AlwaysInstallElevated registry key for both the user and the machine. If both queries return a value of 0x1, then AlwaysInstallElevated
+  is enabled for both user and machine thus allowing a regular user to install a Microsoft Windows Installer package with system level privileges. This can be abused by an attacker to escalate privileges
+  in the host to SYSTEM level.
+executor: command_prompt
+sigma: false
+sigma_rule: []

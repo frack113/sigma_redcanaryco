@@ -12,7 +12,7 @@ tactic:
 technique:
   - T1082
 os:
-  - linux
+  - windows
 description: |
   An adversary will using ESXCLI to enumerate the Virtual Machines on the host prior to executing power off routine.
   [Reference](https://www.crowdstrike.com/blog/hypervisor-jackpotting-ecrime-actors-increase-targeting-of-esxi-servers/)

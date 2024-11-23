@@ -1,0 +1,20 @@
+Attack_name: Screen Capture
+Attack_description: 'Adversaries may attempt to take screen captures of the desktop to gather information over the course of an operation. Screen capturing functionality may be included as a feature of
+  a remote access tool used in post-compromise operations. Taking a screenshot is also typically possible through native utilities or API calls, such as <code>CopyFromScreen</code>, <code>xwd</code>, or
+  <code>screencapture</code>.(Citation: CopyFromScreen .NET)(Citation: Antiquated Mac Malware)
+
+  '
+guid: 5a496325-0115-4274-8eb9-755b649ad0fb
+name: Windows Recall Feature Enabled - DisableAIDataAnalysis Value Deleted
+tactic:
+  - collection
+technique:
+  - T1113
+os:
+  - windows
+description: "Detects the enabling of the Windows Recall feature via registry manipulation. Windows Recall can be enabled by deleting the existing \"DisableAIDataAnalysis\" registry value. Adversaries may
+  enable Windows Recall as part of post-exploitation discovery and collection activities. This rule assumes that Recall is already explicitly disabled on the host, and subsequently enabled by the adversary.
+  \n- https://learn.microsoft.com/en-us/windows/client-management/manage-recall\n- https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-windowsai#disableaidataanalysis"
+executor: powershell
+sigma: false
+sigma_rule: []

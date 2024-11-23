@@ -82,4 +82,4 @@ sigma_rule:
   - id: cbb56d62-4060-40f7-9466-d8aaf3123f83
     name: image_load_susp_python_image_load.yml
   - id: 91cb43db-302a-47e3-b3c8-7ede481e27bf
-    name: file_access_win_browser_credential_access.yml
+    name: file_access_win_browsers_credential.yml

@@ -12,7 +12,7 @@ tactic:
 technique:
   - T1082
 os:
-  - linux
+  - windows
 description: |
   Darkside ransomware utilises various ESXCLI commands to obtain information about the ESXi Host.
   [Reference](https://www.trendmicro.com/en_ph/research/21/e/darkside-linux-vms-targeted.html)

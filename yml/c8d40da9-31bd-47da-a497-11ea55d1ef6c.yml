@@ -5,16 +5,16 @@ Attack_description: |-
   Tools such as [Systeminfo](https://attack.mitre.org/software/S0096) can be used to gather detailed system information. If running with privileged access, a breakdown of system data can be gathered through the <code>systemsetup</code> configuration tool on macOS. As an example, adversaries with user-level access can execute the <code>df -aH</code> command to obtain currently mounted disks and associated freely available space. Adversaries may also leverage a [Network Device CLI](https://attack.mitre.org/techniques/T1059/008) on network devices to gather detailed system information (e.g. <code>show version</code>).(Citation: US-CERT-TA18-106A) [System Information Discovery](https://attack.mitre.org/techniques/T1082) combined with information gathered from other forms of discovery and reconnaissance can drive payload development and concealment.(Citation: OSX.FairyTale)(Citation: 20 macOS Common Tools and Techniques)
 
   Infrastructure as a Service (IaaS) cloud providers such as AWS, GCP, and Azure allow access to instance and virtual machine information via APIs. Successful authenticated API calls can return data such as the operating system platform and status of a particular instance or the model view of a virtual machine.(Citation: Amazon Describe Instance)(Citation: Google Instances Resource)(Citation: Microsoft Virutal Machine API)
-guid: bd85e3d1-4aeb-4a1d-850f-7be3cb8d60b9
-name: Driver Enumeration using DriverQuery
+guid: c8d40da9-31bd-47da-a497-11ea55d1ef6c
+name: sysctl to gather macOS hardware info
 tactic:
   - discovery
 technique:
   - T1082
 os:
-  - windows
-description: "Executes the driverquery command to list drivers installed on the system. Adversaries utilize the feature to enumerate the driver and it can be\nused for Exploitation. \ncommand /v - provide
-  verbose output but not valid for signed drivers\n        /si - provide information about signed drivers \n"
-executor: command_prompt
+  - macos
+description: Gets the macOS hardware information, which can be used to determine whether the target macOS host is running on a physical or virtual machine. sysctl can be used to gather interesting macOS
+  host data, including hardware information, memory size, logical cpu information, etc.
+executor: sh
 sigma: false
 sigma_rule: []

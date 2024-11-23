@@ -18,6 +18,6 @@ os:
 description: 'An adversary may compress data (e.g., sensitive documents) that is collected prior to exfiltration. This test uses standard zip compression.
 
   '
-executor: sh
+executor: bash
 sigma: false
 sigma_rule: []

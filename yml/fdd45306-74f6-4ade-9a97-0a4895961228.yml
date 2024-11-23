@@ -1,0 +1,20 @@
+Attack_name: Boot or Logon Autostart Execution
+Attack_description: |-
+  Adversaries may configure system settings to automatically execute a program during system boot or logon to maintain persistence or gain higher-level privileges on compromised systems. Operating systems may have mechanisms for automatically running a program on system boot or account logon.(Citation: Microsoft Run Key)(Citation: MSDN Authentication Packages)(Citation: Microsoft TimeProvider)(Citation: Cylance Reg Persistence Sept 2013)(Citation: Linux Kernel Programming) These mechanisms may include automatically executing programs that are placed in specially designated directories or are referenced by repositories that store configuration information, such as the Windows Registry. An adversary may achieve the same goal by modifying or extending features of the kernel.
+
+  Since some boot or logon autostart programs run with higher privileges, an adversary may leverage these to elevate privileges.
+guid: fdd45306-74f6-4ade-9a97-0a4895961228
+name: Leverage Virtual Channels to execute custom DLL during successful RDP session
+tactic:
+  - persistence
+  - privilege-escalation
+technique:
+  - T1547
+os:
+  - windows
+description: "Virtual Channels can be leveraged to alter RDP behavior using dedicated Addins.The mechanism is implemented using DLLs which can be executed during RDP session automatically. \nThe DLLs are
+  loaded in the host system only after successful connection is established with the remote system.\nOnce the test is run, amsi.dll will be loaded on the host system during successful RDP session.\nBlog
+  :https://learn.microsoft.com/en-us/windows/win32/termserv/terminal-services-virtual-channels?redirectedfrom=MSDN\n"
+executor: command_prompt
+sigma: false
+sigma_rule: []

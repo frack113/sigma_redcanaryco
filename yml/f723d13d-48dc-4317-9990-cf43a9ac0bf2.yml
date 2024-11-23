@@ -1,0 +1,19 @@
+Attack_name: 'Indicator Removal on Host: File Deletion'
+Attack_description: |-
+  Adversaries may delete files left behind by the actions of their intrusion activity. Malware, tools, or other non-native files dropped or created on a system by an adversary (ex: [Ingress Tool Transfer](https://attack.mitre.org/techniques/T1105)) may leave traces to indicate to what was done within a network and how. Removal of these files can occur during an intrusion, or as part of a post-intrusion process to minimize the adversary's footprint.
+
+  There are tools available from the host operating system to perform cleanup, but adversaries may use other tools as well.(Citation: Microsoft SDelete July 2016) Examples of built-in [Command and Scripting Interpreter](https://attack.mitre.org/techniques/T1059) functions include <code>del</code> on Windows and <code>rm</code> or <code>unlink</code> on Linux and macOS.
+guid: f723d13d-48dc-4317-9990-cf43a9ac0bf2
+name: Clears Recycle bin via rd
+tactic:
+  - defense-evasion
+technique:
+  - T1070.004
+os:
+  - windows
+description: |
+  An adversary clears the recycle bin in the system partition using rd to remove traces of deleted files.
+  [Reference](https://thedfirreport.com/2024/08/12/threat-actors-toolkit-leveraging-sliver-poshc2-batch-scripts/)
+executor: command_prompt
+sigma: false
+sigma_rule: []

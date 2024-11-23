@@ -12,6 +12,7 @@ technique:
 os:
   - linux
   - macos
+  - iaas:aws
 description: 'This Atomic test will use the Stratus Red Team will first setup a CloudTrail logging into an S3 bucket and will then make an API call to update the lifecycle rule on that S3 bucket with an
   expiration date of 1 day. This will essentially delete all the logs after one day. Adversaries often do this actiivity to evade detection. Stratus Red Team is a self-contained binary. You can use it to
   easily detonate offensive attack techniques against a live cloud environment. ref: https://stratus-red-team.cloud/attack-techniques/AWS/aws.defense-evasion.cloudtrail-lifecycle-rule/

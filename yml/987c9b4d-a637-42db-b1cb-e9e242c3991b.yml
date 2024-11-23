@@ -12,7 +12,7 @@ tactic:
 technique:
   - T1529
 os:
-  - linux
+  - windows
 description: |
   In VMWARE ESXi, process names starting with vmx are associated with running VMs. An adversary can use the pkill command to kill all processes with a prefix vmx.
   [Reference](https://www.crowdstrike.com/blog/hypervisor-jackpotting-ecrime-actors-increase-targeting-of-esxi-servers/)

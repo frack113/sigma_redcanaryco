@@ -1,0 +1,27 @@
+Attack_name: 'Hijack Execution Flow: DLL Search Order Hijacking'
+Attack_description: |-
+  Adversaries may execute their own malicious payloads by hijacking the search order used to load DLLs. Windows systems use a common method to look for required DLLs to load into a program. (Citation: Microsoft Dynamic Link Library Search Order)(Citation: FireEye Hijacking July 2010) Hijacking DLL loads may be for the purpose of establishing persistence as well as elevating privileges and/or evading restrictions on file execution.
+
+  There are many ways an adversary can hijack DLL loads. Adversaries may plant trojan dynamic-link library files (DLLs) in a directory that will be searched before the location of a legitimate library that will be requested by a program, causing Windows to load their malicious library when it is called for by the victim program. Adversaries may also perform DLL preloading, also called binary planting attacks, (Citation: OWASP Binary Planting) by placing a malicious DLL with the same name as an ambiguously specified DLL in a location that Windows searches before the legitimate DLL. Often this location is the current working directory of the program.(Citation: FireEye fxsst June 2011) Remote DLL preloading attacks occur when a program sets its current directory to a remote location such as a Web share before loading a DLL. (Citation: Microsoft Security Advisory 2269637)
+
+  Phantom DLL hijacking is a specific type of DLL search order hijacking where adversaries target references to non-existent DLL files.(Citation: Hexacorn DLL Hijacking)(Citation: Adversaries Hijack DLLs) They may be able to load their own malicious DLL by planting it with the correct name in the location of the missing module.
+
+  Adversaries may also directly modify the search order via DLL redirection, which after being enabled (in the Registry and creation of a redirection file) may cause a program to load a different DLL.(Citation: Microsoft Dynamic-Link Library Redirection)(Citation: Microsoft Manifests)(Citation: FireEye DLL Search Order Hijacking)
+
+  If a search order-vulnerable program is configured to run at a higher privilege level, then the adversary-controlled DLL that is loaded will also be executed at the higher level. In this case, the technique could be used for privilege escalation from user to administrator or SYSTEM or from administrator to SYSTEM, depending on the program. Programs that fall victim to path hijacking may appear to behave normally because malicious DLLs may be configured to also load the legitimate DLLs they were meant to replace.
+guid: 46ed938b-c617-429a-88dc-d49b5c9ffedb
+name: Phantom Dll Hijacking - WinAppXRT.dll
+tactic:
+  - persistence
+  - privilege-escalation
+  - defense-evasion
+technique:
+  - T1574.001
+os:
+  - windows
+description: ".NET components (a couple of DLLs loaded anytime .NET apps are executed) when they are loaded they look for an environment variable called APPX_PROCESS\nSetting the environmental variable
+  and dropping the phantom WinAppXRT.dll in e.g. c:\\windows\\system32 (or any other location accessible via PATH) will ensure the \nWinAppXRT.dll is loaded everytime user launches an application using
+  .NET.\n\nUpon successful execution, amsi.dll will be copied and renamed to WinAppXRT.dll and then WinAppXRT.dll will be copied to system32 folder for loading during execution of any .NET application.\n"
+executor: command_prompt
+sigma: false
+sigma_rule: []
